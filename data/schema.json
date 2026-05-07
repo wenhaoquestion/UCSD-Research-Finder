@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/research-atlas.schema.json",
+  "title": "Research Atlas Dataset",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "collectionPolicy",
+    "professors",
+    "labs"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "datasetName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "collectionPolicy": {
+      "type": "object",
+      "required": [
+        "publicPagesOnly",
+        "recruitingClaimsRequireExplicitEvidence",
+        "unknownMeansNoExplicitStatementCaptured"
+      ],
+      "properties": {
+        "publicPagesOnly": {
+          "type": "boolean"
+        },
+        "recruitingClaimsRequireExplicitEvidence": {
+          "type": "boolean"
+        },
+        "unknownMeansNoExplicitStatementCaptured": {
+          "type": "boolean"
+        },
+        "studentPrivacyBoundary": {
+          "type": "string"
+        }
+      }
+    },
+    "professors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/professor"
+      }
+    },
+    "labs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lab"
+      }
+    }
+  },
+  "$defs": {
+    "urlOrMissing": {
+      "type": "string",
+      "pattern": "^(https?://|Not found$|Unknown$)"
+    },
+    "emailOrMissing": {
+      "type": "string",
+      "pattern": "^([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}|Not found|Unknown)$"
+    },
+    "recruitingStatus": {
+      "type": "string",
+      "enum": [
+        "Recruiting",
+        "Not recruiting",
+        "Unknown"
+      ]
+    },
+    "recruitingEvidence": {
+      "type": "object",
+      "required": [
+        "text",
+        "url"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "sourceUrls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^https?://"
+      }
+    },
+    "professor": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "institution",
+        "department",
+        "officialProfileUrl",
+        "personalWebsiteUrl",
+        "email",
+        "researchAreas",
+        "researchSummary",
+        "googleScholarUrl",
+        "labAffiliation",
+        "recruitingStatus",
+        "recruitingEvidence",
+        "sourceUrls",
+        "lastVerified"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "institution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "department": {
+          "type": "string",
+          "minLength": 1
+        },
+        "officialProfileUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "personalWebsiteUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "email": {
+          "$ref": "#/$defs/emailOrMissing"
+        },
+        "researchAreas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "researchSummary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "googleScholarUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "labAffiliation": {
+          "type": "string"
+        },
+        "labAffiliationUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "recruitingStatus": {
+          "$ref": "#/$defs/recruitingStatus"
+        },
+        "recruitingEvidence": {
+          "$ref": "#/$defs/recruitingEvidence"
+        },
+        "sourceUrls": {
+          "$ref": "#/$defs/sourceUrls"
+        },
+        "lastVerified": {
+          "type": "string"
+        }
+      }
+    },
+    "lab": {
+      "type": "object",
+      "required": [
+        "id",
+        "labName",
+        "institution",
+        "department",
+        "labWebsiteUrl",
+        "principalInvestigator",
+        "researchAreas",
+        "description",
+        "contactEmail",
+        "recruitingStatus",
+        "recruitingEvidence",
+        "sourceUrls",
+        "lastVerified"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "labName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "institution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "department": {
+          "type": "string",
+          "minLength": 1
+        },
+        "labWebsiteUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "principalInvestigator": {
+          "type": "string"
+        },
+        "principalInvestigatorProfileUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "researchAreas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contactEmail": {
+          "$ref": "#/$defs/emailOrMissing"
+        },
+        "recruitingStatus": {
+          "$ref": "#/$defs/recruitingStatus"
+        },
+        "recruitingEvidence": {
+          "$ref": "#/$defs/recruitingEvidence"
+        },
+        "sourceUrls": {
+          "$ref": "#/$defs/sourceUrls"
+        },
+        "lastVerified": {
+          "type": "string"
+        },
+        "recordSubtype": {
+          "type": "string",
+          "enum": [
+            "lab",
+            "research_area",
+            "center",
+            "program",
+            "contact"
+          ]
+        },
+        "legacyKind": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

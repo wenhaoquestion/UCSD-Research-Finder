@@ -1,0 +1,36 @@
+{
+  "schools": [
+    {
+      "id": "ucsd",
+      "name": "University of California San Diego",
+      "baseUrl": "https://ucsd.edu",
+      "departments": [
+        {
+          "name": "Computer Science and Engineering",
+          "facultyUrls": [
+            "https://cse.ucsd.edu/people/faculty-profiles"
+          ],
+          "labUrls": [
+            "https://cse.ucsd.edu/research",
+            "https://dbucsd.github.io/",
+            "https://mlsys-ucsd.org/"
+          ]
+        },
+        {
+          "name": "Bioengineering",
+          "facultyUrls": [
+            "http://be.ucsd.edu/faculty"
+          ],
+          "labUrls": [
+            "http://be.ucsd.edu/research-groups"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Add more schools or departments here, then run scripts/collect_research_data.py.",
+    "Only include public pages that do not require authentication.",
+    "The collector marks recruiting as Unknown unless it sees an explicit public statement."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "university": {
+    "id": "ucsd",
+    "name": "UC San Diego",
+    "url": "https://ucsd.edu/"
+  },
+  "sources": [
+    {
+      "id": "ucsd-cse-faculty",
+      "name": "CSE Faculty Profiles",
+      "url": "https://cse.ucsd.edu/people/faculty-profiles",
+      "kind": "faculty_directory",
+      "enabled": true
+    },
+    {
+      "id": "ucsd-cse-research",
+      "name": "CSE Research Areas",
+      "url": "https://cse.ucsd.edu/research",
+      "kind": "research_areas",
+      "enabled": true
+    },
+    {
+      "id": "ucsd-biology-api",
+      "name": "Biological Sciences Public Faculty API",
+      "url": "https://biology.ucsd.edu/research/faculty/index.html",
+      "kind": "faculty_directory",
+      "enabled": true
+    },
+    {
+      "id": "ucsd-biology-research-topics-api",
+      "name": "Biological Sciences Research Topics",
+      "url": "https://biology.ucsd.edu/research/research-topics/index.html",
+      "kind": "research_topics",
+      "enabled": true
+    },
+    {
+      "id": "ucsd-neurosciences-labs",
+      "name": "Neurosciences Research Labs",
+      "url": "https://neurosciences.ucsd.edu/research/labs/index.html",
+      "kind": "lab_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-cse-undergrad-research",
+      "name": "CSE Undergraduate Research",
+      "url": "https://cse.ucsd.edu/undergraduate/undergraduate-research",
+      "kind": "program_source",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-cse-undergrad-tutors",
+      "name": "CSE Undergraduate Tutors",
+      "url": "https://cse.ucsd.edu/undergraduate/undergraduate-tutors",
+      "kind": "contact_source",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-cogsci-labs",
+      "name": "Cognitive Science Research Labs",
+      "url": "https://cogsci.ucsd.edu/research/research-labs.html",
+      "kind": "lab_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-bioengineering-research-groups",
+      "name": "Bioengineering Research Focus & Groups",
+      "url": "https://bioengineering.ucsd.edu/research-focus",
+      "kind": "lab_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-cardiology-labs",
+      "name": "Cardiology Research Groups & Labs",
+      "url": "https://cardiology.ucsd.edu/research/labs/index.html",
+      "kind": "lab_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-designlab-faculty",
+      "name": "Design Lab Faculty",
+      "url": "https://designlab.ucsd.edu/people/faculty.html",
+      "kind": "faculty_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-designlab-about",
+      "name": "Design Lab About",
+      "url": "https://designlab.ucsd.edu/about/index.html",
+      "kind": "center_source",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-hdsi-faculty",
+      "name": "HDSI Faculty",
+      "url": "https://datascience.ucsd.edu/faculty/",
+      "kind": "faculty_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-dstl",
+      "name": "Data Science Teaching and Learning Lab",
+      "url": "https://dstl.ucsd.edu/",
+      "kind": "lab_page",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-physics-faculty",
+      "name": "Physics Faculty Directory",
+      "url": "https://physics.ucsd.edu/people/faculty",
+      "kind": "faculty_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-physics-research",
+      "name": "Physics Research Areas",
+      "url": "https://physics.ucsd.edu/research",
+      "kind": "research_areas",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-astronomy-faculty",
+      "name": "Astronomy & Astrophysics Faculty",
+      "url": "https://cass.ucsd.edu/index.php/people/faculty",
+      "kind": "faculty_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-math-faculty",
+      "name": "Mathematics Faculty Directory",
+      "url": "https://www.math.ucsd.edu/people/faculty/",
+      "kind": "faculty_directory",
+      "enabled": false
+    },
+    {
+      "id": "ucsd-math-research",
+      "name": "Mathematics Research Areas",
+      "url": "https://www.math.ucsd.edu/research/",
+      "kind": "research_areas",
+      "enabled": false
+    }
+  ],
+  "coverage": [
+    {"department": "Computer Science and Engineering", "status": "crawler", "sourceIds": ["ucsd-cse-faculty", "ucsd-cse-research"]},
+    {"department": "Biological Sciences", "status": "crawler", "sourceIds": ["ucsd-biology-api", "ucsd-biology-research-topics-api"]},
+    {"department": "Neurosciences", "status": "source_registered", "sourceIds": ["ucsd-neurosciences-labs"]},
+    {"department": "Physics", "status": "source_registered", "sourceIds": ["ucsd-physics-faculty", "ucsd-physics-research"]},
+    {"department": "Astronomy and Astrophysics", "status": "source_registered", "sourceIds": ["ucsd-astronomy-faculty"]},
+    {"department": "Mathematics", "status": "source_registered", "sourceIds": ["ucsd-math-faculty", "ucsd-math-research"]},
+    {"department": "Cognitive Science", "status": "seeded_labs", "sourceIds": ["ucsd-cogsci-labs"]},
+    {"department": "Bioengineering", "status": "seeded_labs", "sourceIds": ["ucsd-bioengineering-research-groups"]},
+    {"department": "Halicioglu Data Science Institute", "status": "source_registered", "sourceIds": ["ucsd-hdsi-faculty", "ucsd-dstl"]},
+    {"department": "Design Lab", "status": "seeded_center", "sourceIds": ["ucsd-designlab-faculty", "ucsd-designlab-about"]}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python3 scripts/optimize_index.py)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('data/ucsd/research-index.json'\\)\\); r=d['records'][0]; print\\('keys:', list\\(r.keys\\(\\)\\)\\); print\\('records:', len\\(d['records']\\)\\); print\\('facets keys:', list\\(d.get\\('facets',{}\\).keys\\(\\)\\)\\); print\\('coverage:', len\\(d.get\\('coverage', []\\)\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(python3 -m http.server 8765)",
+      "Bash(curl -s -o /dev/null -w \"index.html: %{http_code} size=%{size_download} time_total=%{time_total}s\\\\n\" http://localhost:8765/)",
+      "Bash(curl -s -o /dev/null -w \"research-index.json: %{http_code} size=%{size_download} time_total=%{time_total}s\\\\n\" http://localhost:8765/data/ucsd/research-index.json)",
+      "Bash(curl -s -o /dev/null -w \"app.js: %{http_code} size=%{size_download} time_total=%{time_total}s\\\\n\" http://localhost:8765/assets/app.js)",
+      "Bash(curl -s -o /dev/null -w \"styles.css: %{http_code} size=%{size_download} time_total=%{time_total}s\\\\n\" http://localhost:8765/assets/styles.css)",
+      "Bash(python3 -)",
+      "Bash(pkill -f \"http.server 8765\")"
+    ]
+  }
+}

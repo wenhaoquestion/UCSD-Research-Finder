@@ -1,0 +1,34 @@
+name: Update Research Atlas data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 10 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build legacy UCSD source index
+        run: python3 scripts/build_ucsd_index.py
+      - name: Migrate UCSD index into Research Atlas schema
+        run: python3 scripts/migrate_ucsd_index.py --input data/ucsd/research-index.json --out data/research-atlas.json
+      - name: Validate data
+        run: python3 scripts/validate_data.py
+      - name: Audit lab quality
+        run: python3 scripts/audit_research_atlas.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No data changes"
+          else
+            git add data/ucsd/research-index.json data/research-atlas.json
+            git commit -m "Update Research Atlas data"
+            git push
+          fi
