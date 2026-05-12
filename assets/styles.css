@@ -632,6 +632,14 @@ input::placeholder {
   font-weight: 750;
 }
 
+.record-meta-line {
+  margin: -3px 0 0;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -835,7 +843,9 @@ input::placeholder {
 }
 
 .source-list,
-.link-list {
+.link-list,
+.publication-list,
+.detail-field-list {
   display: grid;
   gap: 8px;
   margin: 0;
@@ -844,7 +854,8 @@ input::placeholder {
 }
 
 .source-list a,
-.link-list a {
+.link-list a,
+.publication-list li {
   display: block;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -857,8 +868,28 @@ input::placeholder {
   overflow-wrap: anywhere;
 }
 
+.publication-list li {
+  display: grid;
+  gap: 4px;
+}
+
+.publication-list a,
+.publication-list strong {
+  color: var(--blue);
+  font-size: 13.5px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.publication-list span {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
 .source-list a:hover,
-.link-list a:hover {
+.link-list a:hover,
+.publication-list a:hover {
   border-color: #b8c5bd;
   background: var(--panel-soft);
 }

@@ -129,6 +129,22 @@ def validate_professor(record: Dict[str, object]) -> None:
     for field in ["officialProfileUrl", "personalWebsiteUrl", "googleScholarUrl", "labAffiliationUrl"]:
         if field in record:
             validate_urlish(record_id, field, str(record[field]))
+    for field in ["googleScholarSearchUrl", "linkedinSearchUrl", "possibleScholarSourceUrl"]:
+        if field in record:
+            validate_urlish(record_id, field, str(record[field]))
+    academic = record.get("academicProfile")
+    if isinstance(academic, dict):
+        for field in ["openAlexAuthorId", "openAlexUrl"]:
+            if field in academic:
+                validate_urlish(record_id, f"academicProfile.{field}", str(academic[field]))
+        publications = academic.get("recentPublications", [])
+        if not isinstance(publications, list):
+            fail(f"{record_id}.academicProfile.recentPublications must be a list")
+        for publication in publications:
+            if not isinstance(publication, dict):
+                fail(f"{record_id}.academicProfile.recentPublications entries must be objects")
+            if "url" in publication:
+                validate_urlish(record_id, "academicProfile.recentPublications.url", str(publication["url"]))
 
 
 def validate_lab(record: Dict[str, object]) -> None:

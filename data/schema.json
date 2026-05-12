@@ -156,6 +156,18 @@
         "googleScholarUrl": {
           "$ref": "#/$defs/urlOrMissing"
         },
+        "googleScholarSearchUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "linkedinSearchUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "possibleScholarSourceUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "academicProfile": {
+          "$ref": "#/$defs/academicProfile"
+        },
         "labAffiliation": {
           "type": "string"
         },
@@ -170,6 +182,70 @@
         },
         "sourceUrls": {
           "$ref": "#/$defs/sourceUrls"
+        },
+        "lastVerified": {
+          "type": "string"
+        }
+      }
+    },
+    "academicProfile": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "openAlexAuthorId": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "openAlexUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "matchedName": {
+          "type": "string"
+        },
+        "matchConfidence": {
+          "type": "number"
+        },
+        "worksCount": {
+          "type": ["number", "string"]
+        },
+        "citationCount": {
+          "type": ["number", "string"]
+        },
+        "hIndex": {
+          "type": ["number", "string"]
+        },
+        "i10Index": {
+          "type": ["number", "string"]
+        },
+        "recentPublications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "year": {
+                "type": ["number", "string"]
+              },
+              "publicationDate": {
+                "type": "string"
+              },
+              "citationCount": {
+                "type": ["number", "string"]
+              },
+              "venue": {
+                "type": "string"
+              },
+              "url": {
+                "$ref": "#/$defs/urlOrMissing"
+              },
+              "source": {
+                "type": "string"
+              }
+            }
+          }
         },
         "lastVerified": {
           "type": "string"

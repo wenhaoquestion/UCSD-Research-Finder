@@ -1,4 +1,5 @@
 const DATA_URL = "data/research-atlas.json";
+const REAL_PORTAL_DATA_URL = "data/ucsd/real-portal-resources.json";
 const NOT_FOUND = "Not found";
 const UNKNOWN = "Unknown";
 const PAGE_SIZE = 80;
@@ -39,6 +40,7 @@ const els = {
   savedList: document.querySelector("#savedList"),
   professorCount: document.querySelector("#professorCount"),
   labCount: document.querySelector("#labCount"),
+  realResourceCount: document.querySelector("#realResourceCount"),
   sourceCount: document.querySelector("#sourceCount"),
   verifiedCount: document.querySelector("#verifiedCount"),
   template: document.querySelector("#resultTemplate"),
@@ -87,7 +89,10 @@ function professorLinks(professor) {
   return [
     ["Faculty profile", professor.officialProfileUrl],
     ["Personal website", professor.personalWebsiteUrl],
-    ["Google Scholar", professor.googleScholarUrl],
+    ["Google Scholar profile", professor.googleScholarUrl],
+    ["Google Scholar search", professor.googleScholarSearchUrl],
+    ["OpenAlex author", professor.academicProfile?.openAlexUrl],
+    ["LinkedIn search", professor.linkedinSearchUrl],
     ["Lab affiliation", professor.labAffiliationUrl],
   ].filter(([, url]) => isKnown(url));
 }
@@ -99,7 +104,24 @@ function labLinks(lab) {
   ].filter(([, url]) => isKnown(url));
 }
 
-function buildRecords(data) {
+function resourceLinks(resource) {
+  return [
+    ["REAL Portal", resource.sourceUrl],
+    ...(resource.externalUrls || []).map((url, index) => [`External link ${index + 1}`, url]),
+  ].filter(([, url]) => isKnown(url));
+}
+
+function resourceAreas(resource) {
+  const areas = ["Experiential learning"];
+  const text = normalize(`${resource.title} ${resource.description} ${resource.resourceType}`);
+  if (text.includes("research")) areas.push("Research");
+  if (text.includes("intern")) areas.push("Internship");
+  if (text.includes("volunteer")) areas.push("Volunteer");
+  if (text.includes("co curricular") || resource.resourceType === "Co-curricular") areas.push("Co-curricular");
+  return unique(areas);
+}
+
+function buildRecords(data, realPortalData = null) {
   const professors = (data.professors || []).map((item) => {
     const displayName = valueOrFallback(item.name);
     return {
@@ -132,7 +154,29 @@ function buildRecords(data) {
     };
   });
 
-  return [...professors, ...labs];
+  const resources = (realPortalData?.resources || []).map((item) => {
+    const displayName = valueOrFallback(item.title);
+    return {
+      ...item,
+      id: item.id || `real-${displayName}`,
+      recordType: "resource",
+      displayName,
+      displayKind: "REAL Resource",
+      institution: "University of California San Diego",
+      department: valueOrFallback(item.organization),
+      affiliationLine: [item.resourceType, item.organization].filter(isKnown).join(" · "),
+      summary: valueOrFallback(item.description),
+      email: valueOrFallback(item.contactEmails?.[0]),
+      researchAreas: resourceAreas(item),
+      sourceUrls: [item.sourceUrl || realPortalData.sourceUrl].filter(isKnown),
+      links: resourceLinks(item),
+      recruitingStatus: UNKNOWN,
+      recruitingEvidence: { text: "", url: "" },
+      lastVerified: item.lastVerified,
+    };
+  });
+
+  return [...professors, ...labs, ...resources];
 }
 
 function buildIndex(records) {
@@ -148,6 +192,16 @@ function buildIndex(records) {
       record.email,
       record.labAffiliation,
       record.principalInvestigator,
+      record.organization,
+      record.resourceType,
+      record.applicationProcedure,
+      record.academicProfile?.matchedName,
+      record.academicProfile?.openAlexUrl,
+      ...(record.academicProfile?.recentPublications || []).flatMap((paper) => [
+        paper.title,
+        paper.venue,
+        paper.year,
+      ]),
       record.recruitingStatus,
       record.recruitingEvidence?.text,
       ...(record.researchAreas || []),
@@ -314,6 +368,31 @@ function makeEmail(record) {
   return row;
 }
 
+function numberLabel(value) {
+  if (!isKnown(value)) return "";
+  if (typeof value === "number") return value.toLocaleString();
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? numeric.toLocaleString() : String(value);
+}
+
+function recordMetaLine(record) {
+  const parts = [];
+  if (record.recordType === "professor") {
+    const academic = record.academicProfile || {};
+    if (isKnown(academic.citationCount)) parts.push(`${numberLabel(academic.citationCount)} citations`);
+    if (isKnown(academic.worksCount)) parts.push(`${numberLabel(academic.worksCount)} works`);
+    if (isKnown(academic.hIndex)) parts.push(`h-index ${numberLabel(academic.hIndex)}`);
+  } else if (record.recordType === "resource") {
+    if (isKnown(record.yearOfActivity)) parts.push(record.yearOfActivity);
+    if (isKnown(record.applicationProcedure)) parts.push(record.applicationProcedure);
+  }
+  if (!parts.length) return null;
+  const meta = document.createElement("p");
+  meta.className = "record-meta-line";
+  meta.textContent = parts.join(" · ");
+  return meta;
+}
+
 function renderCard(record, position) {
   const fragment = els.template.content.cloneNode(true);
   const card = fragment.querySelector(".result-card");
@@ -340,6 +419,8 @@ function renderCard(record, position) {
   save.addEventListener("click", () => toggleSaved(record.id));
 
   email.replaceChildren(makeEmail(record));
+  const meta = recordMetaLine(record);
+  if (meta) email.after(meta);
   tags.replaceChildren(...(record.researchAreas || []).slice(0, 7).map(makeTag));
 
   const primary = record.links[0];
@@ -383,11 +464,13 @@ function render() {
 function renderMetrics() {
   const professors = state.records.filter((record) => record.recordType === "professor").length;
   const labs = state.records.filter((record) => record.recordType === "lab").length;
+  const resources = state.records.filter((record) => record.recordType === "resource").length;
   const sources = unique(state.records.flatMap((record) => record.sourceUrls || [])).length;
   const verified = state.records.reduce((sum, record) => sum + Number(record.sourceUrls?.length || 0), 0);
 
   els.professorCount.textContent = professors;
   els.labCount.textContent = labs;
+  els.realResourceCount.textContent = resources;
   els.sourceCount.textContent = sources;
   els.verifiedCount.textContent = verified;
 
@@ -503,6 +586,53 @@ function sourceList(urls) {
   return list;
 }
 
+function publicationList(publications) {
+  const list = document.createElement("ul");
+  list.className = "publication-list";
+  list.replaceChildren(
+    ...(publications.length ? publications : [{ title: NOT_FOUND }]).map((paper) => {
+      const li = document.createElement("li");
+      const title = isKnown(paper.url) ? document.createElement("a") : document.createElement("strong");
+      if (isKnown(paper.url)) {
+        title.href = paper.url;
+        title.target = "_blank";
+        title.rel = "noreferrer";
+      }
+      title.textContent = paper.title || NOT_FOUND;
+      const meta = document.createElement("span");
+      meta.textContent = [
+        paper.publicationDate || paper.year,
+        paper.venue,
+        isKnown(paper.citationCount) ? `${numberLabel(paper.citationCount)} citations` : "",
+      ]
+        .filter(isKnown)
+        .join(" · ");
+      li.append(title, meta);
+      return li;
+    }),
+  );
+  return list;
+}
+
+function detailFieldList(fields) {
+  const list = document.createElement("div");
+  list.className = "detail-field-list";
+  const entries = Object.entries(fields || {});
+  list.replaceChildren(
+    ...(entries.length ? entries : [["Details", NOT_FOUND]]).map(([label, value]) => {
+      const item = document.createElement("div");
+      item.className = "drawer-field";
+      const key = document.createElement("span");
+      key.textContent = label;
+      const body = document.createElement("p");
+      body.textContent = value;
+      item.append(key, body);
+      return item;
+    }),
+  );
+  return list;
+}
+
 function openDrawer(id) {
   const record = state.records.find((item) => item.id === id);
   if (!record) return;
@@ -525,6 +655,7 @@ function openDrawer(id) {
   const grid = document.createElement("div");
   grid.className = "drawer-grid";
   if (record.recordType === "professor") {
+    const academic = record.academicProfile || {};
     grid.append(
       field("University", record.institution),
       field("Department", record.department),
@@ -533,15 +664,31 @@ function openDrawer(id) {
       field("Faculty profile", record.officialProfileUrl),
       field("Personal website", record.personalWebsiteUrl),
       field("Google Scholar", record.googleScholarUrl),
+      field("Scholar search", record.googleScholarSearchUrl),
+      field("OpenAlex", academic.openAlexUrl),
+      field("Citations", academic.citationCount),
+      field("Works", academic.worksCount),
+      field("h-index", academic.hIndex),
       field("Last verified", record.lastVerified),
     );
-  } else {
+  } else if (record.recordType === "lab") {
     grid.append(
       field("University", record.institution),
       field("Department", record.department),
       field("Principal investigator", record.principalInvestigator),
       field("Contact email", record.email),
       field("Lab website", record.labWebsiteUrl),
+      field("Last verified", record.lastVerified),
+    );
+  } else {
+    grid.append(
+      field("University", record.institution),
+      field("Organization", record.organization),
+      field("Resource type", record.resourceType),
+      field("Year", record.yearOfActivity),
+      field("Application", record.applicationProcedure),
+      field("Contact email", record.email),
+      field("REAL Portal", record.sourceUrl),
       field("Last verified", record.lastVerified),
     );
   }
@@ -556,8 +703,17 @@ function openDrawer(id) {
     heading,
     grid,
     section("Research areas", linkFreeList(record.researchAreas || [])),
-    section("Recruitment evidence", recruitment),
   );
+
+  if (record.recordType === "professor") {
+    const publications = record.academicProfile?.recentPublications || [];
+    root.appendChild(section("Recent publications", publicationList(publications)));
+    root.appendChild(section("Recruitment evidence", recruitment));
+  } else if (record.recordType === "resource") {
+    root.appendChild(section("REAL Portal details", detailFieldList(record.detailFields || { Description: record.summary })));
+  } else {
+    root.appendChild(section("Recruitment evidence", recruitment));
+  }
 
   if (record.links.length) root.appendChild(section("Useful links", linkList(record.links)));
   root.appendChild(section("Source URLs", sourceList(record.sourceUrls || [])));
@@ -596,8 +752,10 @@ async function loadData() {
   const response = await fetch(DATA_URL, { credentials: "omit" });
   if (!response.ok) throw new Error(`Could not load ${DATA_URL}: ${response.status}`);
   const data = await response.json();
+  const realResponse = await fetch(REAL_PORTAL_DATA_URL, { credentials: "omit" }).catch(() => null);
+  const realPortalData = realResponse?.ok ? await realResponse.json() : null;
   state.data = data;
-  state.records = buildRecords(data);
+  state.records = buildRecords(data, realPortalData);
   state.index = buildIndex(state.records);
   renderFacets();
   renderMetrics();

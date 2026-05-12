@@ -1,10 +1,10 @@
 # Research Atlas
 
-Research Atlas is a static, GitHub Pages-ready search platform for students looking for professors, research labs, emails, research areas, lab links, Google Scholar links, and explicit recruiting information.
+Research Atlas is a static, GitHub Pages-ready search platform for students looking for professors, research labs, REAL Portal opportunities, emails, research areas, lab links, Google Scholar profile/search links, recent publications, citation counts, and explicit recruiting information.
 
 The project was rebuilt from a UCSD-specific research finder into a cleaner static app with a canonical `professors` and `labs` data schema. The old UCSD crawler and cache remain in `data/ucsd/` and `scripts/build_ucsd_index.py` as legacy source material.
 
-The current bundled UCSD dataset contains 4,304 professor records and 435 stricter lab records. Broad research-topic, academic-support, facility/resource, publication, project, FAQ, and directory pages are kept as sources when useful, but they are not shown as labs.
+The current bundled UCSD dataset contains 4,304 professor records, 435 stricter lab records, and 877 public REAL Portal resources. Broad research-topic, academic-support, facility/resource, publication, project, FAQ, and directory pages are kept as sources when useful, but they are not shown as labs.
 
 ## What Changed
 
@@ -12,6 +12,8 @@ The current bundled UCSD dataset contains 4,304 professor records and 435 strict
 - New canonical dataset at `data/research-atlas.json`.
 - New JSON schema at `data/schema.json`.
 - New source configuration at `data/sources.json`.
+- UCSD REAL Portal resource import at `data/ucsd/real-portal-resources.json`.
+- Professor academic/contact enrichment at `scripts/enrich_professor_metadata.py`.
 - New generic public-page collector at `scripts/collect_research_data.py`.
 - New UCSD legacy migration script at `scripts/migrate_ucsd_index.py`.
 - New strict validator at `scripts/validate_data.py`.
@@ -49,6 +51,17 @@ python3 scripts/validate_data.py /path/to/another-atlas.json
 
 The collector is intentionally conservative. It only reads public pages, follows shallow faculty/lab/research links, optionally enriches the first page of discovered personal websites, and keeps `recruitingStatus` as `Unknown` unless it finds explicit public language such as “we are recruiting,” “open positions,” or “not accepting students.”
 
+## Professor Metadata Enrichment
+
+Run this after rebuilding UCSD data when you want richer outreach and publication metadata:
+
+```bash
+python3 scripts/enrich_professor_metadata.py
+python3 scripts/validate_data.py
+```
+
+The enrichment script adds Google Scholar author-search links for every professor, preserves confirmed `scholar.google.com` profile links when public pages expose them, adds LinkedIn search links, and uses OpenAlex for citation counts, h-index, recent publications, and author profile links. It only fills emails from public UCSD pages or public UCSD Profiles vCards.
+
 ## Rebuild The Full UCSD Dataset
 
 The new frontend reads `data/research-atlas.json`, while the old UCSD crawler writes `data/ucsd/research-index.json`. To preserve the full UCSD coverage, rebuild and migrate:
@@ -64,8 +77,9 @@ python3 scripts/audit_research_atlas.py
 
 The app reads:
 
-- `professors[]`: name, institution, department, faculty profile, personal site, email, research areas, summary, Google Scholar, lab affiliation, recruiting status, evidence, sources.
+- `professors[]`: name, institution, department, faculty profile, personal site, email, research areas, summary, Google Scholar profile/search, LinkedIn search, OpenAlex academic metadata, lab affiliation, recruiting status, evidence, sources.
 - `labs[]`: lab name, institution, department, lab website if found, PI, research areas, description, contact email, recruiting status, evidence, sources.
+- `data/ucsd/real-portal-resources.json`: public REAL Portal title, organization, resource type, description, application details, contact emails when shown, and source URL.
 
 Research topic pages, such as Biology research-topic index pages, should be used to discover professors and their lab links. They should not be published as lab records unless the target page is an actual lab/laboratory/research-group page.
 

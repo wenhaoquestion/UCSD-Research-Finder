@@ -12,6 +12,10 @@ flowchart LR
   F --> G["GitHub Pages"]
   H["Legacy UCSD crawler/cache"] --> I["UCSD migration script"]
   I --> D
+  J["REAL Portal browser import"] --> K["data/ucsd/real-portal-resources.json"]
+  K --> F
+  L["OpenAlex + public UCSD profiles"] --> M["Professor enrichment script"]
+  M --> D
 ```
 
 ## Static Frontend
@@ -20,9 +24,9 @@ Files:
 
 - `index.html`: semantic shell, search controls, filters, results, details drawer.
 - `assets/styles.css`: responsive visual system for desktop and mobile.
-- `assets/app.js`: client-side indexing, searching, filtering, saved records, details view.
+- `assets/app.js`: client-side indexing, searching, filtering, saved records, REAL Portal resource loading, details view.
 
-The browser loads `data/research-atlas.json`, merges `professors[]` and `labs[]` into one searchable index, and filters entirely client-side. This keeps hosting simple and makes GitHub Pages deployment immediate.
+The browser loads `data/research-atlas.json` and `data/ucsd/real-portal-resources.json`, merges professors, labs, and REAL Portal resources into one searchable index, and filters entirely client-side. This keeps hosting simple and makes GitHub Pages deployment immediate.
 
 ## Canonical Dataset
 
@@ -41,6 +45,9 @@ Professor records include:
 - `researchAreas`
 - `researchSummary`
 - `googleScholarUrl`
+- `googleScholarSearchUrl`
+- `linkedinSearchUrl`
+- `academicProfile` with OpenAlex citation counts, h-index, works count, recent publications, and source links
 - `labAffiliation`
 - `labAffiliationUrl`
 - `recruitingStatus`
@@ -65,6 +72,8 @@ Lab records include:
 - `lastVerified`
 
 UCSD migrated lab records may also include `recordSubtype`, currently `lab`.
+
+REAL Portal resources are kept in `data/ucsd/real-portal-resources.json` because they come from a separate browser-rendered public portal. They are presented as a third record type in the frontend rather than mixed into `labs[]`.
 
 Broad research-topic pages, academic-support pages, research facilities/resources pages, clubs, FAQ pages, publication pages, project pages, and department directory pages are not lab records. They can remain in `sourceUrls` when they support discovery, but the published lab list should point to actual lab, laboratory, or PI-linked research-group pages.
 
