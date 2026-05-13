@@ -333,6 +333,18 @@ function makeLink(label, url, className = "") {
   return anchor;
 }
 
+function cardLinks(record) {
+  if (record.recordType === "professor") {
+    return [
+      ["Personal website", record.personalWebsiteUrl],
+      ["Faculty profile", record.officialProfileUrl],
+    ]
+      .filter(([, url]) => isKnown(url))
+      .map(([label, url], index) => [label, url, index === 0 ? "primary-link" : ""]);
+  }
+  return record.links.slice(0, 1).map(([label, url]) => [label, url, "primary-link"]);
+}
+
 function makeEmail(record) {
   const row = document.createDocumentFragment();
   if (!isKnown(record.email)) {
@@ -423,9 +435,13 @@ function renderCard(record, position) {
   if (meta) email.after(meta);
   tags.replaceChildren(...(record.researchAreas || []).slice(0, 7).map(makeTag));
 
-  const primary = record.links[0];
   const actionNodes = [];
-  if (primary) actionNodes.push(makeLink(primary[0], primary[1], "primary-link"));
+  const seenActionUrls = new Set();
+  for (const [label, url, className] of cardLinks(record)) {
+    if (seenActionUrls.has(url)) continue;
+    seenActionUrls.add(url);
+    actionNodes.push(makeLink(label, url, className));
+  }
 
   const details = document.createElement("button");
   details.className = "details-button";
