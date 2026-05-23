@@ -1102,7 +1102,8 @@ def update_dataset(data: dict[str, Any], args: argparse.Namespace, cache: dict[s
         if not website:
             continue
         page = fetch_page(cache, website)
-        publish, kind = should_publish_research_site(professor, website, page, "final")
+        source_hint = "math_api" if professor.get("department") == "Mathematics" else "physics_api"
+        publish, kind = should_publish_research_site(professor, website, page, source_hint)
         if not publish:
             continue
         lab = make_lab_record(professor, website, cache, kind)
