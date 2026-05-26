@@ -17,6 +17,29 @@ jobs:
         run: python3 scripts/build_ucsd_index.py
       - name: Migrate UCSD index into Research Atlas schema
         run: python3 scripts/migrate_ucsd_index.py --input data/ucsd/research-index.json --out data/research-atlas.json
+      - name: Prevent accidental dataset shrink
+        run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          baseline = json.loads(subprocess.check_output(["git", "show", "HEAD:data/research-atlas.json"]))
+          proposed = json.loads(Path("data/research-atlas.json").read_text())
+          shrunk = []
+
+          for key in ("professors", "labs"):
+            before = len(baseline.get(key, []))
+            after = len(proposed.get(key, []))
+            print(f"{key}: baseline={before} proposed={after}")
+            if after < before:
+              shrunk.append(f"{key} dropped from {before} to {after}")
+
+          if shrunk:
+            print("::error::Refusing to commit a smaller generated dataset: " + "; ".join(shrunk))
+            sys.exit(1)
+          PY
       - name: Validate data
         run: python3 scripts/validate_data.py
       - name: Audit lab quality

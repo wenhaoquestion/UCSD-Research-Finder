@@ -3,6 +3,7 @@ const REAL_PORTAL_DATA_URL = "data/ucsd/real-portal-resources.json";
 const NOT_FOUND = "Not found";
 const UNKNOWN = "Unknown";
 const PAGE_SIZE = 80;
+const DATA_FETCH_OPTIONS = { credentials: "omit", cache: "no-store" };
 
 const state = {
   data: null,
@@ -765,10 +766,10 @@ function applyStateFromControls() {
 }
 
 async function loadData() {
-  const response = await fetch(DATA_URL, { credentials: "omit" });
+  const response = await fetch(DATA_URL, DATA_FETCH_OPTIONS);
   if (!response.ok) throw new Error(`Could not load ${DATA_URL}: ${response.status}`);
   const data = await response.json();
-  const realResponse = await fetch(REAL_PORTAL_DATA_URL, { credentials: "omit" }).catch(() => null);
+  const realResponse = await fetch(REAL_PORTAL_DATA_URL, DATA_FETCH_OPTIONS).catch(() => null);
   const realPortalData = realResponse?.ok ? await realResponse.json() : null;
   state.data = data;
   state.records = buildRecords(data, realPortalData);
