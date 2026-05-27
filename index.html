@@ -8,11 +8,16 @@
       content="A static, source-backed professor and research lab discovery platform for students."
     />
     <title>Research Atlas</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f6f63'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='white'%3ERA%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
     <link rel="preload" href="data/research-atlas.json" as="fetch" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
+    <div class="pointer-glow" aria-hidden="true"></div>
     <header class="topbar">
       <a class="brand" href="./" aria-label="Research Atlas home">
         <span class="brand-mark" aria-hidden="true">RA</span>
@@ -30,6 +35,14 @@
 
     <main>
       <section class="hero" aria-label="Research search controls">
+        <div class="hero-frame" aria-hidden="true"></div>
+        <div class="hero-ambient" aria-hidden="true">
+          <span class="ambient-line ambient-line-a"></span>
+          <span class="ambient-line ambient-line-b"></span>
+          <span class="ambient-plate ambient-plate-a"></span>
+          <span class="ambient-plate ambient-plate-b"></span>
+          <span class="ambient-plate ambient-plate-c"></span>
+        </div>
         <div class="hero-copy">
           <p class="eyebrow-label">Source-backed discovery</p>
           <h1>Find professors and labs by the work they actually publish.</h1>
@@ -48,34 +61,23 @@
 
         <form class="search-panel" id="searchForm" role="search">
           <label class="search-box" for="query">
-            <span>Search</span>
+            <span>Find a professor, lab, paper, or topic</span>
             <input
               id="query"
               name="query"
               type="search"
-              placeholder="machine learning, HCI, robotics, professor name, email, lab"
+              placeholder="ML, HCI, robotics, professor, email, lab"
               autocomplete="off"
             />
           </label>
-          <label for="typeFilter">
-            <span>Type</span>
-            <select id="typeFilter" name="type">
-              <option value="all">Professors, labs, and resources</option>
-              <option value="professor">Professors</option>
-              <option value="lab">Labs</option>
-              <option value="resource">REAL resources</option>
-            </select>
-          </label>
-          <label for="recruitingFilter">
-            <span>Recruiting</span>
-            <select id="recruitingFilter" name="recruiting">
-              <option value="all">Any status</option>
-              <option value="Recruiting">Explicitly recruiting</option>
-              <option value="Not recruiting">Not recruiting</option>
-              <option value="Unknown">Unknown</option>
-            </select>
-          </label>
           <button class="primary-action" type="submit">Search</button>
+          <div class="quick-actions" aria-label="Quick filters">
+            <button type="button" data-smart-filter="recruiting">Open recruiting</button>
+            <button type="button" data-smart-filter="verified">Verified metrics</button>
+            <button type="button" data-smart-filter="professor">Professors</button>
+            <button type="button" data-smart-filter="lab">Labs</button>
+            <button type="button" data-smart-filter="resource">REAL</button>
+          </div>
         </form>
 
         <a
@@ -98,20 +100,48 @@
             <button id="clearFilters" type="button">Clear</button>
           </div>
 
-          <label for="institutionFilter">
-            <span>University</span>
-            <select id="institutionFilter"></select>
-          </label>
+          <div class="filter-group">
+            <span class="control-label">Show</span>
+            <div class="segmented-control" aria-label="Record type">
+              <button type="button" class="segment is-active" data-type-choice="all">All</button>
+              <button type="button" class="segment" data-type-choice="professor">Professors</button>
+              <button type="button" class="segment" data-type-choice="lab">Labs</button>
+              <button type="button" class="segment" data-type-choice="resource">REAL</button>
+            </div>
+          </div>
 
-          <label for="departmentFilter">
-            <span>Department</span>
-            <select id="departmentFilter"></select>
-          </label>
+          <details class="filter-section" open>
+            <summary>Priority filters</summary>
 
-          <label for="areaFilter">
-            <span>Research area</span>
-            <select id="areaFilter"></select>
-          </label>
+            <label for="recruitingFilter">
+              <span>Recruiting</span>
+              <select id="recruitingFilter" name="recruiting">
+                <option value="all">Any status</option>
+                <option value="Recruiting">Explicitly recruiting</option>
+                <option value="Not recruiting">Not recruiting</option>
+                <option value="Unknown">Unknown</option>
+              </select>
+            </label>
+          </details>
+
+          <details class="filter-section">
+            <summary>Advanced filters</summary>
+
+            <label for="departmentFilter">
+              <span>Department</span>
+              <select id="departmentFilter"></select>
+            </label>
+
+            <label for="areaFilter">
+              <span>Research area</span>
+              <select id="areaFilter"></select>
+            </label>
+
+            <label for="institutionFilter">
+              <span>University</span>
+              <select id="institutionFilter"></select>
+            </label>
+          </details>
 
           <label for="sortFilter">
             <span>Sort</span>
@@ -119,6 +149,7 @@
               <option value="relevance">Relevance</option>
               <option value="name">Name</option>
               <option value="department">Department</option>
+              <option value="citations">Citations</option>
               <option value="sources">Source count</option>
             </select>
           </label>
@@ -140,12 +171,14 @@
             </div>
             <p id="updatedAt" class="updated-at">Preparing index</p>
           </div>
+          <div id="resultSummary" class="result-summary" aria-label="Current result summary"></div>
 
+          <div id="activeFilters" class="active-filters" aria-label="Active filters"></div>
           <div id="areaChips" class="chip-row" aria-label="Popular research areas"></div>
 
           <div class="accuracy-note">
-            Recruiting status is shown only when the dataset contains an explicit public statement. Otherwise entries
-            stay marked as Unknown.
+            Recruiting status uses explicit public statements. Citation metrics are shown only for verified OpenAlex
+            matches; Scholar opens a live search.
           </div>
 
           <div id="results" class="results-grid" aria-live="polite">
@@ -160,7 +193,7 @@
       </section>
     </main>
 
-    <aside id="detailDrawer" class="detail-drawer" aria-hidden="true" aria-label="Record details">
+    <aside id="detailDrawer" class="detail-drawer" aria-hidden="true" aria-label="Record details" hidden>
       <div class="drawer-scrim" data-close-drawer></div>
       <section class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
         <button class="drawer-close" type="button" data-close-drawer aria-label="Close details">Close</button>
@@ -188,6 +221,7 @@
       </article>
     </template>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
     <script src="assets/app.js" defer></script>
   </body>
 </html>
