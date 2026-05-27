@@ -271,7 +271,7 @@ a:focus-visible {
 .hero {
   position: relative;
   display: grid;
-  min-height: clamp(470px, 54vh, 560px);
+  min-height: clamp(430px, 48vh, 520px);
   align-content: end;
   gap: 24px;
   overflow: hidden;
@@ -432,7 +432,7 @@ a:focus-visible {
 .hero h1 {
   max-width: 820px;
   margin: 0;
-  font-size: clamp(34px, 4.9vw, 60px);
+  font-size: clamp(34px, 4.6vw, 56px);
   font-weight: 850;
   letter-spacing: 0;
   line-height: 1.02;
@@ -637,17 +637,17 @@ input::placeholder {
   }
 
   .hero-copy {
-    max-width: 760px;
+    max-width: 720px;
   }
 
   .hero h1 {
-    max-width: 720px;
+    max-width: 680px;
   }
 
   .hero-metrics {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    max-width: 720px;
+    max-width: 700px;
     gap: 8px;
   }
 
@@ -680,7 +680,7 @@ input::placeholder {
   position: relative;
   z-index: 1;
   display: grid;
-  max-width: 1480px;
+  max-width: 1680px;
   grid-template-columns: 300px minmax(0, 1fr);
   gap: 24px;
   margin: -34px auto 0;
@@ -1014,7 +1014,6 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
-  perspective: 1200px;
 }
 
 .result-card,
@@ -1036,13 +1035,10 @@ input::placeholder {
   padding: 18px;
   --card-x: 50%;
   --card-y: 50%;
-  --tilt-x: 0deg;
-  --tilt-y: 0deg;
   transition:
     border-color var(--transition),
     box-shadow var(--transition),
     transform var(--transition);
-  transform-style: preserve-3d;
   will-change: transform;
 }
 
@@ -1076,10 +1072,7 @@ input::placeholder {
 .result-card:hover {
   border-color: rgba(15, 111, 99, 0.28);
   box-shadow: var(--shadow-hover);
-  transform:
-    translateY(-6px)
-    rotateX(var(--tilt-y))
-    rotateY(var(--tilt-x));
+  transform: translateY(-4px);
 }
 
 .result-card:hover::before {
@@ -1744,6 +1737,18 @@ input::placeholder {
   background: var(--panel-soft);
   box-shadow: var(--shadow-sm);
   transform: translateY(-1px);
+}
+
+@media (min-width: 1500px) {
+  .workspace {
+    max-width: none;
+    grid-template-columns: 320px minmax(0, 1fr);
+    padding-inline: clamp(24px, 3vw, 72px);
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 1080px) {

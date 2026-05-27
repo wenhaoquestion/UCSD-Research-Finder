@@ -1493,8 +1493,6 @@ function resetCardMotion(card) {
   const gsap = gsapCore();
   if (gsap && !prefersReducedMotion()) {
     gsap.to(card, {
-      "--tilt-x": "0deg",
-      "--tilt-y": "0deg",
       "--card-x": "50%",
       "--card-y": "50%",
       duration: 0.34,
@@ -1503,8 +1501,6 @@ function resetCardMotion(card) {
     return;
   }
 
-  card.style.setProperty("--tilt-x", "0deg");
-  card.style.setProperty("--tilt-y", "0deg");
   card.style.setProperty("--card-x", "50%");
   card.style.setProperty("--card-y", "50%");
 }
@@ -1548,22 +1544,16 @@ function initMotionInteractions() {
     const y = event.clientY - rect.top;
     const xPercent = (x / rect.width) * 100;
     const yPercent = (y / rect.height) * 100;
-    const tiltX = `${(xPercent - 50) * 0.07}deg`;
-    const tiltY = `${(50 - yPercent) * 0.06}deg`;
     if (gsap) {
       gsap.to(card, {
         "--card-x": `${xPercent}%`,
         "--card-y": `${yPercent}%`,
-        "--tilt-x": tiltX,
-        "--tilt-y": tiltY,
-        duration: 0.18,
+        duration: 0.24,
         ease: "power2.out",
       });
     } else {
       card.style.setProperty("--card-x", `${xPercent}%`);
       card.style.setProperty("--card-y", `${yPercent}%`);
-      card.style.setProperty("--tilt-x", tiltX);
-      card.style.setProperty("--tilt-y", tiltY);
     }
   });
 
