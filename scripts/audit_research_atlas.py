@@ -8,6 +8,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from rebuild_verified_atlas import url_key
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "data" / "research-atlas.json"
@@ -28,17 +29,6 @@ SUSPICIOUS_URL_PARTS = [
     "/projects/",
     "faculty-and-research/index",
 ]
-
-
-def url_key(url: str) -> str:
-    value = (url or "").lower().split("#", 1)[0].split("?", 1)[0].rstrip("/")
-    value = re.sub(r"^https?://", "", value)
-    value = re.sub(r"^www\.", "", value)
-    value = value.replace("/index.html", "").replace("/index.htm", "").replace("/index.php", "")
-    host = value.split("/", 1)[0]
-    if LAB_TOKEN_RE.search(host):
-        return host
-    return value
 
 
 def main() -> None:

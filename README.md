@@ -1,140 +1,95 @@
 # Research Atlas
 
-Research Atlas is a static, GitHub Pages-ready search platform for students looking for professors, research labs, REAL Portal opportunities, emails, research areas, lab links, Google Scholar profile/search links, recent publications, citation counts, and explicit recruiting information.
+A static UC San Diego research finder with faculty profiles, labs, contacts, teaching schedules, PI Review mentoring ratings, Rate My Professors teaching ratings, and public REAL Portal opportunities.
 
-The project was rebuilt from a UCSD-specific research finder into a cleaner static app with a canonical `professors` and `labs` data schema. The old UCSD crawler and cache remain in `data/ucsd/` and `scripts/build_ucsd_index.py` as legacy source material.
+The served dataset uses **schema v3**. Each newly asserted field includes its source, supporting text, extraction method, and actual observation time. A successful page request does not verify every fact on the page. Current counts and unresolved gaps are generated in [the data quality report](docs/DATA_QUALITY_REPORT.md); machine-readable coverage by department is in `data/quality/refresh-report.json`.
 
-The current bundled UCSD dataset contains 4,304 professor records, 435 stricter lab records, and 877 public REAL Portal resources. Broad research-topic, academic-support, facility/resource, publication, project, FAQ, and directory pages are kept as sources when useful, but they are not shown as labs.
+## Run locally
 
-## What Changed
-
-- New polished frontend in `index.html`, `assets/styles.css`, and `assets/app.js`.
-- New canonical dataset at `data/research-atlas.json`.
-- New JSON schema at `data/schema.json`.
-- New source configuration at `data/sources.json`.
-- UCSD REAL Portal resource import at `data/ucsd/real-portal-resources.json`.
-- Professor academic/contact enrichment at `scripts/enrich_professor_metadata.py`.
-- New generic public-page collector at `scripts/collect_research_data.py`.
-- New UCSD legacy migration script at `scripts/migrate_ucsd_index.py`.
-- New strict validator at `scripts/validate_data.py`.
-- GitHub Pages deployment workflow in `.github/workflows/deploy-pages.yml`.
-
-## Local Run
-
-Use a local server because browsers block `fetch()` for JSON files opened directly from disk.
+Python 3.11+ is required for the collection scripts. The website itself needs only a static server.
 
 ```bash
 python3 scripts/validate_data.py
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000`.
+Open http://localhost:8000. Search accepts professor names, research text, and course codes such as `CSE151A`. Filters include courses, both rating platforms, and records with field evidence. Details show dates, sample sizes, all confirmed lab associations, and original sources. Former and emeritus faculty retain their source-reported category.
 
-## Data Collection
+## Refresh public data
 
-Edit `data/sources.json` with the target school, department, faculty directory pages, lab pages, and research group pages. Then run:
-
-```bash
-python3 scripts/collect_research_data.py --config data/sources.json --out data/research-atlas.json
-python3 scripts/validate_data.py
-```
-
-Useful options:
+Collectors produce evidence files; the offline builder merges them into the website dataset. Failed requests remain distinguishable from missing matches. Existing values do not acquire a new verification date merely because the builder ran.
 
 ```bash
-python3 scripts/collect_research_data.py --max-pages 120 --max-depth 1
-python3 scripts/collect_research_data.py --personal-limit 50
-python3 scripts/collect_research_data.py --no-robots
-python3 scripts/collect_research_data.py --write-empty
-python3 scripts/validate_data.py /path/to/another-atlas.json
-```
+# Official lab directories and professor profiles; personal sites are one additional hop.
+python3 scripts/refresh_labs.py --personal-sites --personal-site-limit 0
+python3 scripts/refresh_faculty_directories.py
+python3 scripts/refresh_source_checks.py
 
-The collector is intentionally conservative. It only reads public pages, follows shallow faculty/lab/research links, optionally enriches the first page of discovered personal websites, and keeps `recruitingStatus` as `Unknown` unless it finds explicit public language such as “we are recruiting,” “open positions,” or “not accepting students.”
+# Add newly discovered faculty before matching courses and ratings.
+python3 scripts/rebuild_verified_atlas.py
 
-## Professor Metadata Enrichment
+# Official departmental schedules. PDF sources require pdftotext and pdfplumber.
+python3 scripts/refresh_teaching.py --refresh
 
-Run this after rebuilding UCSD data when you want richer outreach and publication metadata:
+# PI Review's public directory and exact-name RMP searches.
+python3 scripts/refresh_ratings.py --pi-all --rmp-limit 10000
 
-```bash
-python3 scripts/enrich_professor_metadata.py
-python3 scripts/validate_data.py
-```
+# Replace REAL only after all advertised public cards are collected.
+python3 scripts/refresh_real_portal.py
 
-The enrichment script adds Google Scholar author-search links for every professor, preserves confirmed `scholar.google.com` profile links when public pages expose them, adds LinkedIn search links, and uses OpenAlex for citation counts, h-index, recent publications, and author profile links. It only fills emails from public UCSD pages or public UCSD Profiles vCards.
-
-## Rebuild The Full UCSD Dataset
-
-The new frontend reads `data/research-atlas.json`, while the old UCSD crawler writes `data/ucsd/research-index.json`. To preserve the full UCSD coverage, rebuild and migrate:
-
-```bash
-python3 scripts/build_ucsd_index.py
-python3 scripts/migrate_ucsd_index.py --input data/ucsd/research-index.json --out data/research-atlas.json
+python3 scripts/rebuild_verified_atlas.py
 python3 scripts/validate_data.py
 python3 scripts/audit_research_atlas.py
+python3 -m unittest discover -s tests -v
 ```
 
-## Data Schema
+For the two PDF schedules, install `poppler`/`poppler-utils` for `pdftotext` and `pdfplumber` in the chosen Python environment, or pass `--pdf-python /path/to/python-with-pdfplumber`. Other teaching sources use the standard library and system `curl`. A failed PDF source is recorded as a coverage gap. To rebind already captured courses after the faculty roster changes, without requesting pages or changing observation timestamps:
 
-The app reads:
-
-- `professors[]`: name, institution, department, faculty profile, personal site, email, research areas, summary, Google Scholar profile/search, LinkedIn search, OpenAlex academic metadata, lab affiliation, recruiting status, evidence, sources.
-- `labs[]`: lab name, institution, department, lab website if found, PI, research areas, description, contact email, recruiting status, evidence, sources.
-- `data/ucsd/real-portal-resources.json`: public REAL Portal title, organization, resource type, description, application details, contact emails when shown, and source URL.
-
-Research topic pages, such as Biology research-topic index pages, should be used to discover professors and their lab links. They should not be published as lab records unless the target page is an actual lab/laboratory/research-group page.
-
-Rules enforced by `scripts/validate_data.py`:
-
-- Every record must include at least one source URL.
-- Missing fields must be `Not found` or `Unknown`.
-- Recruiting claims require evidence text and an evidence URL.
-- Evidence URLs must also appear in `sourceUrls`.
-
-## Deploy To GitHub Pages
-
-Option 1: Pages from branch
-
-1. Push this repository to GitHub.
-2. Go to Settings -> Pages.
-3. Set the source to the main branch and root folder.
-4. Save. GitHub Pages will serve `index.html`.
-
-Option 2: GitHub Actions
-
-1. Push to `main`.
-2. Enable Pages with “GitHub Actions” as the source.
-3. The `Deploy static site to GitHub Pages` workflow uploads the repository as a static Pages artifact.
-
-## Project Structure
-
-```text
-.
-├── index.html
-├── assets/
-│   ├── app.js
-│   └── styles.css
-├── data/
-│   ├── research-atlas.json
-│   ├── schema.json
-│   ├── sources.json
-│   └── ucsd/
-├── scripts/
-│   ├── collect_research_data.py
-│   ├── migrate_ucsd_index.py
-│   ├── audit_research_atlas.py
-│   ├── validate_data.py
-│   └── build_ucsd_index.py
-├── docs/
-│   └── ARCHITECTURE.md
-└── .github/workflows/
-    ├── deploy-pages.yml
-    └── update-data.yml
+```bash
+python3 scripts/refresh_teaching.py --rematch
+python3 scripts/rebuild_verified_atlas.py
 ```
 
-## Future Improvements
+### Rate limits, caches, and continuation
 
-- Add school-specific adapters for departments with unusual markup.
-- Add a manual review UI for confirming auto-collected summaries before publishing.
-- Store field-level provenance so each email, summary, and research area points to the exact supporting source.
-- Add export to CSV for students building outreach lists.
-- Add optional search-provider integration for discovering seed pages before crawling.
+UCSD Profiles publishes a **10-second crawl delay**. The default lab refresh defers uncached slow-host profiles rather than ignoring that rule. Complete them in resumable batches:
+
+```bash
+python3 scripts/refresh_labs.py --include-slow-profiles --slow-profile-limit 60 --personal-sites --personal-site-limit 0
+```
+
+Fresh cached pages do not consume the slow-host budget; later runs advance to remaining pages. Lab and rating caches have a default 30-day maximum age. `--refresh` forces new requests; cache reuse preserves the original `observedAt`. Collector cache paths can be placed under `.cache/atlas` for durable local or CI runs. Never clear the cache between continuation batches.
+
+The existing Monday update workflow now runs the evidence pipeline, tests, validation, and a guard against unexplained record loss. It retains caches across runs and budgets slow-host requests. Workflow changes take effect only after the repository changes are pushed.
+
+## What the data means
+
+- `fieldEvidence`: field-specific source URL, observation timestamp, supporting text, and method.
+- `verification`: partial source checks, latest attempt, and fields with evidence. `source_checked` is not a guarantee of current employment or a completely verified profile.
+- `lastVerified`: retained historical field from the legacy schema; the UI uses actual evidence timestamps for new claims.
+- `appointmentStatus`, `directoryListings`, `departmentAffiliations`: directory-reported roles and affiliations; undated catalog entries do not prove a current appointment.
+- `labAffiliations`: multiple sourced links. A faculty link to a lab is not by itself proof that the person is its PI.
+- `teaching.courses`: explicit instructor assignments, course code/title, advertised term, source, and identity match. Scheduled courses may change. Historical schedules are not proof the teaching occurred. Surname-only matches stay under `teaching.candidates`.
+- `ratings.rateMyPI`: **PI Review** (`pi-review.com`), the mentoring-review source used here. `ratings.rateMyProfessors`: the separate teaching-review platform. Scores are not combined; missing/ambiguous/inaccessible/no-review cases never become zero scores. Sample sizes and collection dates are shown.
+- `researchAreas`: explicit research labels from official directory entries, supplemented by controlled phrases in sourced research paragraphs. Empty lists mean no supported tags have been captured.
+- REAL includes co-curricular listings as well as research/internship opportunities; a public listing does not establish an active opening.
+
+See [the architecture](docs/ARCHITECTURE.md) and [the JSON schema](data/schema.json).
+
+## Legacy correction and preservation
+
+The old collector matched navigation links and whole-page keywords. This assigned support mailboxes, department pages, and unrelated research labels to many professors. The v3 migration removes those unsupported values and saves the originals in `data/quality/legacy-remediation.json`. Personal research sites incorrectly counted as labs, and same-person catalog duplicates, are preserved in `data/quality/quarantined-records.json`.
+
+The old UCSD index and old collectors remain for historical discovery. They refuse to overwrite a v3 served dataset. To investigate them, write to a separate candidate file and review the evidence. Do not run the old build/migration sequence over the new dataset.
+
+## Files
+
+- `index.html`, `assets/app.js`, `assets/styles.css`: static search and details UI.
+- `data/research-atlas.json`: served professor and lab records.
+- `data/ucsd/*-evidence.json`: independent captures and unresolved identity candidates.
+- `data/ucsd/lab-identity-review.json`: sourced decisions about duplicate lab websites, incorrect directory destinations, and research-group membership.
+- `data/ucsd/source-checks.json`: URL checks and undated catalog listings.
+- `data/ucsd/real-portal-resources.json`: complete public REAL snapshot and page receipts.
+- `data/quality/`: coverage report and preserved corrections.
+- `scripts/refresh_*.py`, `scripts/rebuild_verified_atlas.py`: refresh and merge pipeline.
+- `tests/`: extraction, identity, pagination-content, and provenance regressions.

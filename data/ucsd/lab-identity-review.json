@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-10-03T00:08:07+00:00",
+  "reviewType": "manual_source_identity_review",
+  "scope": "Only the four flagged Aran, Schmid-Schoenbein, Chien, and Arun Kumar lab-identity cases. No canonical records or original lab-evidence artifact were modified.",
+  "entries": [
+    {
+      "sourceLabId": "ucsd-bioengineering-lab-aran-lab",
+      "targetLabId": "ucsd-lab-from-faculty-sites-ucsd-edu-aran-lab",
+      "action": "merge",
+      "reason": "The official department directory and the live lab site identify the same Aran Lab and Kiana Aran as its principal investigator. Keep the publicly verified site as the primary URL; the old domain is an alias supported by the directory, not a confirmed redirect.",
+      "primaryLabName": "Aran Lab",
+      "primaryLabWebsiteUrl": "https://sites.ucsd.edu/aran-lab/",
+      "acceptedAliasUrls": [
+        "https://aranlab.ucsd.edu/"
+      ],
+      "rejectedAliasUrls": [],
+      "evidence": [
+        {
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "method": "manual_review_of_cached_official_directory_card",
+          "evidence": "The Aran Lab card identifies Kiana Aran as principal investigator and links its title and Website link to aranlab.ucsd.edu.",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://sites.ucsd.edu/aran-lab/",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The page identifies Aran Lab at UC San Diego, says Kiana Aran directs it, and labels her Principal Investigator in the people section.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://sites.ucsd.edu/aran-lab/"
+        }
+      ],
+      "limitations": [
+        "The old domain was not fetched because robots.txt was unavailable; no claim is made that it redirects or returns an HTTP error."
+      ]
+    },
+    {
+      "sourceLabId": "ucsd-live-lab-1dc665a0e493c5",
+      "targetLabId": "ucsd-live-lab-d2d234fc0f3eba",
+      "action": "merge",
+      "reason": "A single official department directory card associates both URLs with Schmid-Schoenbein Lab and the same principal investigator, establishing aliases directly.",
+      "primaryLabName": "Microcirculation Laboratory",
+      "alternateNames": [
+        "Schmid-Schoenbein Lab"
+      ],
+      "primaryLabWebsiteUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+      "acceptedAliasUrls": [
+        "https://microcirculation.eng.ucsd.edu/"
+      ],
+      "rejectedAliasUrls": [],
+      "evidence": [
+        {
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "method": "manual_review_of_cached_official_directory_card",
+          "evidence": "One Schmid-Schoenbein Lab card names Geert Schmid-Schoenbein as principal investigator, links the lab name to microcirculation.eng.ucsd.edu, and links Website to the Google Site at microcirculation-autodigestion/home.",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The destination returns a public page titled Microcirculation Laboratory, without an authentication redirect.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home"
+        }
+      ],
+      "limitations": [
+        "The engineering domain was not fetched because robots.txt was unavailable; no claim is made that it redirects or returns an HTTP error."
+      ]
+    },
+    {
+      "sourceLabId": "ucsd-live-lab-a8cda37f5229ab",
+      "targetLabId": "ucsd-lab-from-faculty-sites-google-com-ucsd-edu-chien-lab-home",
+      "action": "merge",
+      "reason": "The directory record is named Chien Lab and identifies Shu Chien, so its lab identity can be consolidated into the official-profile lab link. Its Website destination is a separate institute and is erroneous as an individual lab URL. This is record consolidation with a rejected URL, not a claim that IEM is a Chien Lab alias.",
+      "primaryLabName": "Chien Lab",
+      "primaryLabWebsiteUrl": "https://sites.google.com/ucsd.edu/chien-lab/home",
+      "acceptedAliasUrls": [],
+      "rejectedAliasUrls": [
+        "https://iem.ucsd.edu/"
+      ],
+      "rejectSourceWebsiteUrls": [
+        "https://iem.ucsd.edu/"
+      ],
+      "rejectSourceFields": [
+        "labWebsiteUrl",
+        "fieldEvidence.labWebsiteUrl",
+        "websiteCheck"
+      ],
+      "retainSourceFields": [
+        "labName",
+        "principalInvestigator",
+        "fieldEvidence.labName",
+        "fieldEvidence.principalInvestigator"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "method": "manual_review_of_cached_official_directory_card",
+          "evidence": "The directory labels the record Chien Lab and identifies Shu Chien, but its lab-name and Website links point to iem.ucsd.edu.",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://iem.ucsd.edu/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The destination is titled Institute of Engineering in Medicine; its main news identifies Andrew McCulloch as IEM Director. It is an institute website, not a personal Chien Lab website.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://iem.ucsd.edu/"
+        },
+        {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/chien-lab/home",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The URL redirects to Google account sign-in. HTTP 200 describes the sign-in page, not a publicly accessible lab page.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/ucsd.edu/chien-lab/home&followup=https://sites.google.com/ucsd.edu/chien-lab/home&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-2130219416:1790985951809553"
+        }
+      ],
+      "limitations": [
+        "The Chien Google Site is supported as a lab link by the official Jacobs profile, but the destination requires authentication. Do not mark destination identity as verified or public availability as reachable.",
+        "Preserve the rejected IEM URL in the review/audit trail only; do not treat it as an accepted lab alias or independent Shu Chien lab."
+      ],
+      "targetWebsiteStatus": "authentication_required"
+    }
+  ],
+  "keptDistinct": [
+    {
+      "labId": "ucsd-hdsi-ada-lab",
+      "action": "retain_distinct",
+      "recommendedName": "Arun's Data Analytics (ADA) Lab",
+      "recommendedRecordSubtype": "lab",
+      "professorName": "Arun Kumar",
+      "relationshipType": "principal_investigator",
+      "reason": "This is Arun Kumar's own research group, which explicitly identifies the other two organizations as groups of which it is a member.",
+      "evidence": [
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The homepage identifies the ADA Lab as a research group headed by Arun Kumar, affiliated with UCSD CSE and HDSI, and distinguishes its membership in Database Lab and ML Systems Group.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ]
+    },
+    {
+      "labId": "ucsd-hdsi-mlsys",
+      "action": "retain_distinct",
+      "recommendedName": "UC San Diego ML Systems Group",
+      "recommendedRecordSubtype": "research_group",
+      "professorName": "Arun Kumar",
+      "relationshipType": "member",
+      "removeUnverifiedSolePrincipalInvestigator": true,
+      "reason": "The site describes a group of faculty, researchers, and students spanning CSE and HDSI. ADA membership is explicit; the evidence does not establish Arun Kumar as the sole principal investigator.",
+      "evidence": [
+        {
+          "sourceUrl": "https://mlsys-ucsd.org/",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The main page identifies UC San Diego ML Systems Group as a multi-faculty research group spanning CSE and HDSI.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://mlsys-ucsd.org/"
+        },
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "ADA lists the ML Systems Group as one of the groups of which its members are members.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ],
+      "relationship": "research_group_member"
+    },
+    {
+      "labId": "ucsd-hdsi-database-lab",
+      "action": "retain_distinct",
+      "recommendedName": "UCSD Database Lab",
+      "recommendedRecordSubtype": "research_group",
+      "professorName": "Arun Kumar",
+      "relationshipType": "member",
+      "removeUnverifiedSolePrincipalInvestigator": true,
+      "reason": "This is a distinct multi-faculty data-management group. ADA explicitly lists membership and the group site lists Arun alongside other faculty.",
+      "evidence": [
+        {
+          "sourceUrl": "https://dbucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The site describes a group spanning UCSD CSE and HDSI; its Faculty section lists Arun Kumar alongside Alin Deutch (site spelling) and Babak Salimi, with additional affiliated faculty.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://dbucsd.github.io/"
+        },
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "ADA lists Database Lab as one of the groups of which its members are members.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ],
+      "relationship": "research_group_member"
+    }
+  ],
+  "websiteCorrections": [
+    {
+      "labId": "ucsd-lab-from-faculty-sites-google-com-ucsd-edu-chien-lab-home",
+      "field": "websiteCheck.status",
+      "value": "authentication_required",
+      "reason": "The response is Google Drive sign-in after a cross-host redirect; a 200 response must not imply public access to the lab.",
+      "evidence": [
+        {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/chien-lab/home",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The final URL is on accounts.google.com and the page title is Google Drive: Sign-in.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/ucsd.edu/chien-lab/home&followup=https://sites.google.com/ucsd.edu/chien-lab/home&osid=1&passive=1209600&service=wise&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-2130219416:1790985951809553"
+        }
+      ]
+    }
+  ],
+  "relatedSourceStatements": [
+    {
+      "labId": "ucsd-hdsi-ada-lab",
+      "field": "graduateAdvisingAvailability",
+      "text": "The ADA homepage says there are currently no graduate students and the author expects to resume advising from Fall 2027. Preserve this limited graduate-advising scope; it is not evidence of current recruiting for all audiences.",
+      "sourcePageStatementDate": null,
+      "evidence": [
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The Graduate Students section says there are none and states an expectation of resuming advising from Fall 2027.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "labId": "ucsd-hdsi-mlsys",
+      "clearFields": [
+        "principalInvestigator",
+        "principalInvestigatorProfileUrl"
+      ],
+      "relationship": "research_group_member",
+      "reason": "The site describes a group of faculty, researchers, and students spanning CSE and HDSI. ADA membership is explicit; the evidence does not establish Arun Kumar as the sole principal investigator.",
+      "evidence": [
+        {
+          "sourceUrl": "https://mlsys-ucsd.org/",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The main page identifies UC San Diego ML Systems Group as a multi-faculty research group spanning CSE and HDSI.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://mlsys-ucsd.org/"
+        },
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "ADA lists the ML Systems Group as one of the groups of which its members are members.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ]
+    },
+    {
+      "labId": "ucsd-hdsi-database-lab",
+      "clearFields": [
+        "principalInvestigator",
+        "principalInvestigatorProfileUrl"
+      ],
+      "relationship": "research_group_member",
+      "reason": "This is a distinct multi-faculty data-management group. ADA explicitly lists membership and the group site lists Arun alongside other faculty.",
+      "evidence": [
+        {
+          "sourceUrl": "https://dbucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:52+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "The site describes a group spanning UCSD CSE and HDSI; its Faculty section lists Arun Kumar alongside Alin Deutch (site spelling) and Babak Salimi, with additional affiliated faculty.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://dbucsd.github.io/"
+        },
+        {
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "observedAt": "2026-10-03T00:05:51+00:00",
+          "method": "manual_public_page_identity_review",
+          "evidence": "ADA lists Database Lab as one of the groups of which its members are members.",
+          "status": "verified",
+          "httpStatus": 200,
+          "finalUrl": "https://adalabucsd.github.io/"
+        }
+      ]
+    }
+  ]
+}

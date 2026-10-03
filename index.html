@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A static, source-backed professor and research lab discovery platform for students."
+      content="Discover UC San Diego professors, research labs, teaching records and student ratings with dated sources and visible verification gaps."
     />
     <title>Research Atlas</title>
     <link
@@ -45,35 +45,37 @@
         </div>
         <div class="hero-copy">
           <p class="eyebrow-label">Source-backed discovery</p>
-          <h1>Find professors and labs by the work they actually publish.</h1>
+          <h1>Find professors, their labs, and the courses they teach.</h1>
           <p class="hero-subtitle">
-            Search public university pages, lab sites, emails, research areas, and explicit recruiting notes in one
-            student-friendly workspace.
+            Explore research, teaching, and student ratings with sources and dates. See what has been checked,
+            what is historical, and what still needs verification.
           </p>
           <div class="hero-metrics" aria-label="Dataset summary">
             <span><strong id="professorCount">0</strong> professors</span>
             <span><strong id="labCount">0</strong> labs</span>
             <span><strong id="realResourceCount">0</strong> REAL resources</span>
             <span><strong id="sourceCount">0</strong> sources</span>
-            <span><strong id="verifiedCount">0</strong> verified fields</span>
+            <span><strong id="verifiedCount">0</strong> fields with evidence</span>
           </div>
         </div>
 
         <form class="search-panel" id="searchForm" role="search">
           <label class="search-box" for="query">
-            <span>Find a professor, lab, paper, or topic</span>
+            <span>Find a professor, lab, course, or research topic</span>
             <input
               id="query"
               name="query"
               type="search"
-              placeholder="ML, HCI, robotics, professor, email, lab"
+              placeholder="CSE 151A, robotics, professor, email, lab"
               autocomplete="off"
             />
           </label>
           <button class="primary-action" type="submit">Search</button>
           <div class="quick-actions" aria-label="Quick filters">
             <button type="button" data-smart-filter="recruiting">Open recruiting</button>
-            <button type="button" data-smart-filter="verified">Verified metrics</button>
+            <button type="button" data-smart-filter="verified">Source checked</button>
+            <button type="button" data-smart-filter="courses">With courses</button>
+            <button type="button" data-smart-filter="ratings">With ratings</button>
             <button type="button" data-smart-filter="professor">Professors</button>
             <button type="button" data-smart-filter="lab">Labs</button>
             <button type="button" data-smart-filter="resource">REAL</button>
@@ -120,6 +122,17 @@
                 <option value="Recruiting">Explicitly recruiting</option>
                 <option value="Not recruiting">Not recruiting</option>
                 <option value="Unknown">Unknown</option>
+              </select>
+            </label>
+            <label for="evidenceFilter">
+              <span>Available evidence</span>
+              <select id="evidenceFilter">
+                <option value="all">All records</option>
+                <option value="courses">Official teaching records</option>
+                <option value="ratings">Any published rating</option>
+                <option value="rateMyPI">PI Review score</option>
+                <option value="rateMyProfessors">Rate My Professors score</option>
+                <option value="needs_review">Needs verification</option>
               </select>
             </label>
           </details>
@@ -177,8 +190,11 @@
           <div id="areaChips" class="chip-row" aria-label="Popular research areas"></div>
 
           <div class="accuracy-note">
-            Recruiting status uses explicit public statements. Citation metrics are shown only for verified OpenAlex
-            matches; Scholar opens a live search.
+            Courses include a term and distinguish plans from teaching history. PI Review reports mentoring opinions;
+            Rate My Professors reports teaching opinions. Scores include sample size and retrieval date. A missing score
+            means unverified or unavailable, never zero. “Source checked” does not mean every field is current.
+            Dates use Pacific Time.
+            <a href="data/quality/refresh-report.json" target="_blank" rel="noreferrer">Data coverage &amp; known gaps</a>.
           </div>
 
           <div id="results" class="results-grid" aria-live="polite">

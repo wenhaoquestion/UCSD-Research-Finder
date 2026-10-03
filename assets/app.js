@@ -53,6 +53,7 @@ const state = {
   department: "all",
   area: "all",
   recruiting: "all",
+  evidence: "all",
   verifiedOnly: false,
   sort: "relevance",
   visibleLimit: PAGE_SIZE,
@@ -67,6 +68,7 @@ const els = {
   typeButtons: [...document.querySelectorAll("[data-type-choice]")],
   smartFilterButtons: [...document.querySelectorAll("[data-smart-filter]")],
   recruiting: document.querySelector("#recruitingFilter"),
+  evidence: document.querySelector("#evidenceFilter"),
   institution: document.querySelector("#institutionFilter"),
   department: document.querySelector("#departmentFilter"),
   area: document.querySelector("#areaFilter"),
@@ -141,6 +143,83 @@ function uniqueLinks(links) {
   return out;
 }
 
+function coursesFor(record) {
+  return Array.isArray(record.teaching?.courses) ? record.teaching.courses : [];
+}
+
+function courseTermOrder(course) {
+  const term = String(course.term || "");
+  const year = Number(term.match(/\b(?:19|20)\d{2}\b/)?.[0] || 0);
+  const season = (term.match(/\b(winter|spring|summer|fall|autumn)\b/i)?.[1] || "").toLowerCase();
+  return year * 10 + ({ winter: 1, spring: 2, summer: 3, fall: 4, autumn: 4 }[season] || 0);
+}
+
+function ratedPlatforms(record) {
+  return Object.entries(record.ratings || {}).filter(([, rating]) => (
+    rating.status === "verified" && numericMetric(rating.score) && Number(rating.reviewCount) > 0
+  ));
+}
+
+function evidenceFields(record) {
+  return Object.entries(record.fieldEvidence || {}).filter(([, items]) => (
+    Array.isArray(items) && items.some((item) => item.sourceUrl && item.observedAt)
+  ));
+}
+
+function sourceChecked(record) {
+  return record.verification?.status === "source_checked" || evidenceFields(record).length > 0;
+}
+
+function verificationLabel(record) {
+  if (record.verification?.status === "needs_review") return "Needs review";
+  if (record.verification?.status === "unavailable") return "Source unavailable";
+  if (sourceChecked(record)) return "Partly source checked";
+  return "Legacy · not reverified";
+}
+
+function facultyLabel(record) {
+  const legacyRole = {
+    emeritus: "Emeritus faculty",
+    former: "Former faculty · directory",
+    deceased: "Deceased · directory",
+  }[record.facultyStatus];
+  return legacyRole || ({
+    listed_faculty: "Listed in official faculty directory",
+    affiliate: "Affiliate · directory",
+    emeritus: "Emeritus faculty",
+    lecturer: "Lecturer · directory",
+    adjunct: "Adjunct faculty · directory",
+  })[record.appointmentStatus] || (record.facultyStatus === "listed_in_official_directory" ? "Listed in official directory" : "Status not verified");
+}
+
+function departmentNames(record) {
+  return uniqueByNormalized([
+    record.department,
+    ...(record.departmentAffiliations || []).map((item) => typeof item === "string" ? item : item.department || item.name),
+    ...(Array.isArray(record.directoryListings) ? record.directoryListings.map((item) => item.department) : []),
+  ]);
+}
+
+function dateLabel(value) {
+  if (!isKnown(value)) return "Not checked";
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(value))) return String(value);
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return "Date unavailable";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(date);
+}
+
+function ratingStatusLabel(rating) {
+  return ({
+    no_reviews: "No reviews on matched profile",
+    not_found: "No exact match in checked source",
+    unavailable: "Source unavailable",
+    needs_review: "Identity needs review",
+    not_checked: "Not checked",
+  })[rating?.status] || "Not verified";
+}
+
 function gsapCore() {
   return window.gsap || null;
 }
@@ -168,11 +247,12 @@ function professorLinks(professor) {
   return [
     ["Faculty profile", professor.officialProfileUrl],
     ["Personal website", professor.personalWebsiteUrl],
-    ["Google Scholar profile", professor.googleScholarUrl],
+    ["Google Scholar profile", hasScholarProfile(professor) ? professor.googleScholarUrl : null],
     ["Google Scholar search", professor.googleScholarSearchUrl],
     ["OpenAlex author", professor.academicProfile?.openAlexUrl],
     ["LinkedIn search", professor.linkedinSearchUrl],
     ["Lab affiliation", professor.labAffiliationUrl],
+    ...(professor.labAffiliations || []).filter((lab) => lab.url !== professor.labAffiliationUrl).map((lab) => [lab.labName || "Related lab", lab.url]),
   ].filter(([, url]) => isKnown(url));
 }
 
@@ -207,7 +287,7 @@ function buildRecords(data, realPortalData = null) {
       ...item,
       recordType: "professor",
       displayName,
-      displayKind: "Professor",
+      displayKind: ["emeritus", "former", "deceased"].includes(item.facultyStatus) || ["affiliate", "emeritus", "lecturer", "adjunct"].includes(item.appointmentStatus) ? facultyLabel(item) : "Professor",
       affiliationLine: [item.institution, item.department].filter(isKnown).join(" / "),
       summary: valueOrFallback(item.researchSummary),
       email: valueOrFallback(item.email),
@@ -259,8 +339,12 @@ function buildRecords(data, realPortalData = null) {
 }
 
 function professorMergeKey(record) {
-  if (isKnown(record.email)) return `email:${String(record.email).toLowerCase()}`;
-  if (hasScholarProfile(record)) return `scholar:${record.googleScholarUrl}`;
+  const name = normalize(record.displayName || record.name);
+  if (!name || !isKnown(record.displayName || record.name)) return "";
+  // Department offices and research centers share contact addresses. An email
+  // alone is not a person identity and must not collapse different professors.
+  if (isKnown(record.email)) return `name:${name}|email:${String(record.email).toLowerCase()}`;
+  if (hasScholarProfile(record)) return `name:${name}|scholar:${record.googleScholarUrl}`;
   return "";
 }
 
@@ -313,10 +397,34 @@ function mergeProfessorGroup(records) {
   base.linkedinSearchUrl = records.find((record) => isKnown(record.linkedinSearchUrl))?.linkedinSearchUrl || base.linkedinSearchUrl;
   base.labAffiliation = uniqueByNormalized(records.map((record) => record.labAffiliation)).join(" + ") || base.labAffiliation;
   base.labAffiliationUrl = records.find((record) => isKnown(record.labAffiliationUrl))?.labAffiliationUrl || base.labAffiliationUrl;
+  base.labAffiliations = [...new Map(records.flatMap((record) => record.labAffiliations || []).map((lab) => [`${lab.labId}|${lab.url}`, lab])).values()];
+  base.aliasNames = uniqueByNormalized(records.flatMap((record) => record.aliasNames || []));
+  base.departmentAffiliations = uniqueByNormalized(records.flatMap(departmentNames));
+  base.directoryListings = records.flatMap((record) => Array.isArray(record.directoryListings) ? record.directoryListings : []);
   base.researchAreas = uniqueByNormalized(records.flatMap((record) => record.researchAreas || []));
   base.sourceUrls = unique(records.flatMap((record) => record.sourceUrls || []).filter(isKnown));
   base.links = uniqueLinks(records.flatMap((record) => record.links || []));
   base.academicProfile = academicRecord.academicProfile || base.academicProfile;
+  const courseMap = new Map(records.flatMap(coursesFor).map((course) => [
+    [course.courseCode, course.term, course.sourceUrl].join("|"), course,
+  ]));
+  base.teaching = { ...(base.teaching || {}), courses: [...courseMap.values()] };
+  base.teaching.candidates = [...new Map(records.flatMap((record) => record.teaching?.candidates || []).map((course) => [
+    [course.courseCode, course.term, course.sourceUrl, course.instructorName].join("|"), course,
+  ])).values()];
+  base.ratings = {};
+  for (const record of [...records].sort((a, b) => String(a.verification?.lastAttemptedAt || "").localeCompare(String(b.verification?.lastAttemptedAt || "")))) {
+    for (const [key, rating] of Object.entries(record.ratings || {})) {
+      if (!base.ratings[key] || rating.status === "verified") base.ratings[key] = rating;
+    }
+  }
+  base.fieldEvidence = {};
+  records.forEach((record) => Object.entries(record.fieldEvidence || {}).forEach(([key, values]) => {
+    base.fieldEvidence[key] = [...(base.fieldEvidence[key] || []), ...(Array.isArray(values) ? values : [])];
+  }));
+  base.verification = records.find((record) => record.verification?.status === "needs_review")?.verification
+    || records.find((record) => record.verification?.status === "source_checked")?.verification
+    || base.verification;
   base.recruitingStatus = records.find((record) => record.recruitingStatus === "Recruiting")?.recruitingStatus
     || records.find((record) => record.recruitingStatus === "Not recruiting")?.recruitingStatus
     || base.recruitingStatus;
@@ -349,10 +457,17 @@ function buildIndex(records) {
       record.displayKind,
       record.institution,
       record.department,
+      record.facultyStatus,
+      record.directorySection,
+      record.appointmentStatus,
+      ...(record.aliasNames || []),
+      ...departmentNames(record),
       record.summary,
       record.email,
       record.labAffiliation,
+      ...(record.labAffiliations || []).flatMap((lab) => [lab.labName, lab.url]),
       record.principalInvestigator,
+      ...(record.relatedProfessorNames || []),
       record.organization,
       record.resourceType,
       record.applicationProcedure,
@@ -365,6 +480,8 @@ function buildIndex(records) {
       ]),
       record.recruitingStatus,
       record.recruitingEvidence?.text,
+      ...coursesFor(record).flatMap((course) => [course.courseCode, String(course.courseCode || "").replace(/\s+/g, ""), course.title, course.term, course.status]),
+      ...Object.values(record.ratings || {}).map((rating) => rating.platform),
       ...(record.researchAreas || []),
       ...linkText,
       ...sourceText,
@@ -388,7 +505,7 @@ function setSelectOptions(select, values, allLabel) {
 
 function renderFacets() {
   const institutions = unique(state.records.map((record) => record.institution).filter(isKnown)).sort();
-  const departments = unique(state.records.map((record) => record.department).filter(isKnown)).sort();
+  const departments = unique(state.records.flatMap(departmentNames).filter(isKnown)).sort();
   const areas = unique(state.records.flatMap((record) => record.researchAreas || [])).sort();
 
   setSelectOptions(els.institution, institutions, "All universities");
@@ -431,6 +548,8 @@ function updateSmartFilterButtons() {
     const isActive = (
       (key === "recruiting" && state.recruiting === "Recruiting") ||
       (key === "verified" && state.verifiedOnly) ||
+      (key === "courses" && state.evidence === "courses") ||
+      (key === "ratings" && state.evidence === "ratings") ||
       (key === "professor" && state.type === "professor" && !state.verifiedOnly) ||
       (key === "lab" && state.type === "lab") ||
       (key === "resource" && state.type === "resource")
@@ -470,10 +589,14 @@ function filteredRecords() {
 
     if (state.type !== "all" && record.recordType !== state.type) return;
     if (state.institution !== "all" && record.institution !== state.institution) return;
-    if (state.department !== "all" && record.department !== state.department) return;
+    if (state.department !== "all" && !departmentNames(record).includes(state.department)) return;
     if (state.area !== "all" && !(record.researchAreas || []).includes(state.area)) return;
     if (state.recruiting !== "all" && record.recruitingStatus !== state.recruiting) return;
-    if (state.verifiedOnly && !academicMetrics(record).verified) return;
+    if (state.verifiedOnly && !sourceChecked(record)) return;
+    if (state.evidence === "courses" && !coursesFor(record).length) return;
+    if (state.evidence === "ratings" && !ratedPlatforms(record).length) return;
+    if (["rateMyPI", "rateMyProfessors"].includes(state.evidence) && !ratedPlatforms(record).some(([key]) => key === state.evidence)) return;
+    if (state.evidence === "needs_review" && sourceChecked(record) && record.verification?.status !== "needs_review") return;
     if (terms.length && !terms.every((term) => indexed.haystack.includes(term))) return;
 
     rows.push({ record, index, score: scoreRecord(record, indexed, terms) });
@@ -662,7 +785,10 @@ function academicMetrics(record) {
   const profile = record.academicProfile || {};
   const hasMetrics = hasAcademicMetrics(record);
   const source = isKnown(profile.source) ? profile.source : (isKnown(profile.openAlexUrl) ? "OpenAlex" : UNKNOWN);
-  const verified = hasMetrics && academicProfileLooksRelevant(record);
+  const verified = hasMetrics && (
+    profile.verificationStatus === "verified"
+    || (record.fieldEvidence?.academicProfile || []).some((evidence) => evidence.sourceUrl && evidence.observedAt && evidence.status === "verified")
+  );
   return {
     profile,
     hasMetrics,
@@ -688,7 +814,13 @@ function scholarUrl(record) {
 }
 
 function hasScholarProfile(record) {
-  return isKnown(record.googleScholarUrl) && record.googleScholarUrl.includes("scholar.google.");
+  if (!isKnown(record.googleScholarUrl)) return false;
+  try {
+    const url = new URL(record.googleScholarUrl);
+    return /^scholar\.google\.[a-z.]+$/.test(url.hostname) && url.pathname === "/citations" && Boolean(url.searchParams.get("user"));
+  } catch {
+    return false;
+  }
 }
 
 function bestRecentPublication(record) {
@@ -790,12 +922,40 @@ function renderCardInsights(record) {
   row.append(
     makeInsight("Sources", numberLabel(record.sourceUrls?.length || 0)),
     makeInsight("Contact", isKnown(record.email) ? "Email" : "Missing", isKnown(record.email) ? "good" : "muted"),
-    makeInsight("Evidence", metricBadgeText(record)),
+    makeInsight("Data", verificationLabel(record), sourceChecked(record) ? "good" : "muted"),
   );
   if (record.recordType === "resource" && isKnown(record.applicationProcedure)) {
     row.append(makeInsight("Apply", record.applicationProcedure));
   }
   return row;
+}
+
+function renderTeachingRatingPreview(record) {
+  if (record.recordType !== "professor") return null;
+  const preview = document.createElement("div");
+  preview.className = "teaching-rating-preview";
+  const courseLine = document.createElement("p");
+  const courses = coursesFor(record);
+  courseLine.textContent = courses.length
+    ? `Teaching: ${unique(courses.map((course) => `${course.courseCode} (${course.term || "term not specified"})`)).slice(0, 2).join(" · ")}${courses.length > 2 ? ` · +${courses.length - 2} records` : ""}`
+    : "Teaching: no verified course records yet";
+  if (record.teaching?.candidates?.length) courseLine.textContent += ` · ${record.teaching.candidates.length} unverified leads in details`;
+  preview.append(courseLine);
+  const ratings = ratedPlatforms(record);
+  if (ratings.length) {
+    ratings.forEach(([, rating]) => {
+      const line = document.createElement("p");
+      line.className = "rating-preview-line";
+      line.textContent = `${rating.platform}: ${rating.score}/${rating.scale || 5} · ${rating.reviewCount} reviews · retrieved ${dateLabel(rating.observedAt)}`;
+      preview.append(line);
+    });
+  } else {
+    const line = document.createElement("p");
+    line.className = "unverified-note";
+    line.textContent = "Ratings: no verified score yet";
+    preview.append(line);
+  }
+  return preview;
 }
 
 function renderTags(tags, limit = 4) {
@@ -865,6 +1025,8 @@ function renderCard(record, position) {
 
   const scholarPreview = renderScholarPreview(record);
   if (scholarPreview) summary.after(scholarPreview);
+  const teachingPreview = renderTeachingRatingPreview(record);
+  if (teachingPreview) summary.after(teachingPreview);
 
   email.replaceChildren(makeEmail(record));
   const meta = recordMetaLine(record);
@@ -883,7 +1045,7 @@ function renderCard(record, position) {
   const details = document.createElement("button");
   details.className = "details-button";
   details.type = "button";
-  details.textContent = `Sources (${record.sourceUrls.length})`;
+  details.textContent = `Details & sources (${record.sourceUrls.length})`;
   details.addEventListener("click", () => openDrawer(record.id));
   actionNodes.push(details);
 
@@ -1091,14 +1253,18 @@ function renderResultSummary(records) {
   const labs = records.filter((record) => record.recordType === "lab").length;
   const resources = records.filter((record) => record.recordType === "resource").length;
   const recruiting = records.filter((record) => record.recruitingStatus === "Recruiting").length;
-  const verified = records.filter((record) => academicMetrics(record).verified).length;
+  const verified = records.filter(sourceChecked).length;
+  const teaching = records.filter((record) => coursesFor(record).length).length;
+  const ratings = records.filter((record) => ratedPlatforms(record).length).length;
 
   els.resultSummary.replaceChildren(
     makeResultSummaryItem("Professors", professors),
     makeResultSummaryItem("Labs", labs),
     makeResultSummaryItem("REAL", resources),
     makeResultSummaryItem("Recruiting", recruiting),
-    makeResultSummaryItem("Verified", verified),
+    makeResultSummaryItem("Source checked", verified),
+    makeResultSummaryItem("With courses", teaching),
+    makeResultSummaryItem("With ratings", ratings),
   );
 }
 
@@ -1119,7 +1285,8 @@ function renderActiveFilters() {
   if (state.area !== "all") filters.push(["Area", state.area]);
   if (state.recruiting !== "all") filters.push(["Recruiting", state.recruiting]);
   if (state.institution !== "all") filters.push(["University", state.institution]);
-  if (state.verifiedOnly) filters.push(["Metrics", "Verified only"]);
+  if (state.verifiedOnly) filters.push(["Evidence", "Source checked", "verified"]);
+  if (state.evidence !== "all") filters.push(["Availability", els.evidence.selectedOptions[0]?.textContent || state.evidence, "evidence"]);
   if (state.sort !== "relevance") filters.push(["Sort", slugLabel(state.sort)]);
 
   els.activeFilters.hidden = !filters.length;
@@ -1137,6 +1304,7 @@ function renderActiveFilters() {
 function syncControlsFromState() {
   els.query.value = state.query;
   els.recruiting.value = state.recruiting;
+  els.evidence.value = state.evidence;
   els.institution.value = state.institution;
   els.department.value = state.department;
   els.area.value = state.area;
@@ -1149,7 +1317,8 @@ function clearFilter(key) {
   if (key === "area") state.area = "all";
   if (key === "recruiting") state.recruiting = "all";
   if (key === "university") state.institution = "all";
-  if (key === "metrics") state.verifiedOnly = false;
+  if (key === "verified") state.verifiedOnly = false;
+  if (key === "evidence") state.evidence = "all";
   if (key === "sort") state.sort = "relevance";
   state.visibleLimit = PAGE_SIZE;
   syncControlsFromState();
@@ -1162,7 +1331,7 @@ function renderMetrics() {
   const labs = state.records.filter((record) => record.recordType === "lab").length;
   const resources = state.records.filter((record) => record.recordType === "resource").length;
   const sources = unique(state.records.flatMap((record) => record.sourceUrls || [])).length;
-  const verified = state.records.reduce((sum, record) => sum + Number(record.sourceUrls?.length || 0), 0);
+  const verified = state.records.reduce((sum, record) => sum + evidenceFields(record).length, 0);
 
   animateMetricCount(els.professorCount, professors);
   animateMetricCount(els.labCount, labs);
@@ -1172,7 +1341,7 @@ function renderMetrics() {
 
   const date = state.data?.generatedAt ? new Date(state.data.generatedAt) : null;
   els.updatedAt.textContent = date && !Number.isNaN(date.valueOf())
-    ? `Updated ${date.toLocaleDateString()}`
+    ? `Dataset built ${dateLabel(state.data.generatedAt)} · field dates vary`
     : "Using bundled sample data";
 }
 
@@ -1329,6 +1498,233 @@ function detailFieldList(fields) {
   return list;
 }
 
+function teachingDetails(record) {
+  const wrapper = document.createElement("div");
+  const note = document.createElement("p");
+  note.className = "evidence-note";
+  note.textContent = "Official teaching records. Historical assignments do not promise a future offering; planned assignments may change.";
+  wrapper.append(note);
+  const courses = coursesFor(record);
+  if (!courses.length) {
+    note.textContent = `No verified teaching records captured. Status: ${record.teaching?.candidates?.length ? "candidate assignments need identity verification" : record.teaching?.status === "not_found" ? "not found in checked sources" : "not yet checked"}.`;
+    const candidates = teachingCandidateDetails(record);
+    if (candidates) wrapper.append(candidates);
+    return wrapper;
+  }
+  const list = document.createElement("ul");
+  list.className = "course-list";
+  [...courses].sort((a, b) => courseTermOrder(b) - courseTermOrder(a)).forEach((course) => {
+    const item = document.createElement("li");
+    const title = document.createElement("strong");
+    title.textContent = [course.courseCode, course.title].filter(Boolean).join(" · ");
+    const meta = document.createElement("span");
+    meta.className = "evidence-meta";
+    const status = { historical: "Teaching history", current: "Current term", planned: "Planned", tentative: "Tentative", scheduled: "Scheduled", unknown: "Term not classified" }[course.status] || course.status || "Term not classified";
+    meta.textContent = `${course.term || "Term not specified"} · ${course.isTentative ? `${status} (tentative)` : status} · observed ${dateLabel(course.observedAt)}`;
+    item.append(title, meta);
+    if (course.sourceUrl) item.append(makeLink("Official course source", course.sourceUrl));
+    if (course.dataUrl && course.dataUrl !== course.sourceUrl) item.append(makeLink("Published schedule", course.dataUrl));
+    list.append(item);
+  });
+  wrapper.append(list);
+  const candidates = teachingCandidateDetails(record);
+  if (candidates) wrapper.append(candidates);
+  return wrapper;
+}
+
+function teachingCandidateDetails(record) {
+  const candidates = record.teaching?.candidates || [];
+  if (!candidates.length) return null;
+  const details = document.createElement("details");
+  details.className = "teaching-candidates";
+  const summary = document.createElement("summary");
+  summary.textContent = `Unverified teaching leads (${candidates.length})`;
+  const note = document.createElement("p");
+  note.className = "evidence-note";
+  note.textContent = "These assignments need an identity check. A surname-only match does not establish that this professor teaches the course. Leads are excluded from verified course counts and the official teaching filter.";
+  const list = document.createElement("ul");
+  list.className = "course-list";
+  [...candidates].sort((a, b) => courseTermOrder(b) - courseTermOrder(a)).forEach((course) => {
+    const item = document.createElement("li");
+    const title = document.createElement("strong");
+    title.textContent = [course.courseCode, course.title].filter(isKnown).join(" · ");
+    const meta = document.createElement("span");
+    meta.className = "evidence-meta";
+    meta.textContent = `${course.term || "Term not specified"}${course.isTentative ? " · tentative schedule" : ""} · observed ${dateLabel(course.observedAt)}`;
+    const identity = document.createElement("p");
+    identity.className = "evidence-note";
+    identity.textContent = `Listed instructor: ${course.instructorName || "Not captured"} · ${String(course.matchMethod || "").includes("surname") ? "Surname-only match" : "Identity match needs review"}`;
+    item.append(title, meta, identity);
+    if (course.evidence) {
+      const excerpt = document.createElement("p");
+      excerpt.className = "evidence-note";
+      excerpt.textContent = course.evidence;
+      item.append(excerpt);
+    }
+    if (course.sourceUrl) item.append(makeLink("Official teaching source", course.sourceUrl));
+    if (course.dataUrl && course.dataUrl !== course.sourceUrl) item.append(makeLink("Published schedule", course.dataUrl));
+    list.append(item);
+  });
+  details.append(summary, note, list);
+  return details;
+}
+
+function labAffiliationDetails(record) {
+  const wrapper = document.createElement("div");
+  const affiliations = record.labAffiliations || [];
+  if (!affiliations.length) {
+    const note = document.createElement("p");
+    note.className = "evidence-note";
+    note.textContent = "No lab relationship has been reverified for this professor yet.";
+    wrapper.append(note);
+    return wrapper;
+  }
+  const list = document.createElement("ul");
+  list.className = "field-evidence-list";
+  affiliations.forEach((lab) => {
+    const item = document.createElement("li");
+    const heading = document.createElement("strong");
+    heading.textContent = lab.labName || "Research group";
+    const relationship = document.createElement("p");
+    relationship.className = "evidence-meta";
+    const evidence = Array.isArray(lab.fieldEvidence) ? lab.fieldEvidence[0] : (lab.fieldEvidence || {});
+    const relationLabel = {
+      faculty_lab_link: "Lab linked from faculty profile",
+      official_directory_same_record: "Listed together in official directory",
+      principal_investigator: "Listed as principal investigator",
+    }[lab.relationship] || "Documented lab association";
+    relationship.textContent = `${relationLabel} · observed ${dateLabel(evidence.observedAt)}`;
+    item.append(heading, relationship);
+    if (evidence.evidence) {
+      const excerpt = document.createElement("p");
+      excerpt.textContent = evidence.evidence;
+      item.append(excerpt);
+    }
+    if (lab.url) item.append(makeLink("Lab website", lab.url));
+    if (evidence.sourceUrl) item.append(makeLink("Relationship source", evidence.sourceUrl));
+    list.append(item);
+  });
+  wrapper.append(list);
+  const note = document.createElement("p");
+  note.className = "evidence-note";
+  note.textContent = "An associated lab link alone does not establish that the professor leads the lab. The relationship and original wording are shown above.";
+  wrapper.append(note);
+  return wrapper;
+}
+
+function facultyDirectoryDetails(record) {
+  const wrapper = document.createElement("div");
+  wrapper.append(field("Directory status", facultyLabel(record)), field("Department affiliations", departmentNames(record)));
+  if (record.aliasNames?.length) wrapper.append(field("Also listed as", record.aliasNames));
+  const listings = Array.isArray(record.directoryListings) ? record.directoryListings : [];
+  const list = document.createElement("ul");
+  list.className = "field-evidence-list";
+  listings.forEach((entry) => {
+    const item = document.createElement("li");
+    const label = document.createElement("strong");
+    label.textContent = [entry.department, entry.listedRole].filter(isKnown).join(" · ") || "Official directory listing";
+    const date = document.createElement("span");
+    date.className = "evidence-meta";
+    date.textContent = `Observed ${dateLabel(entry.observedAt)}`;
+    item.append(label, date);
+    if (entry.evidence) {
+      const excerpt = document.createElement("p");
+      excerpt.textContent = typeof entry.evidence === "string" ? entry.evidence : entry.evidence.evidence || "";
+      if (excerpt.textContent) item.append(excerpt);
+    }
+    if (entry.sourceUrl) item.append(makeLink("Directory source", entry.sourceUrl));
+    list.append(item);
+  });
+  if (list.children.length) wrapper.append(list);
+  const note = document.createElement("p");
+  note.className = "evidence-note";
+  note.textContent = "These roles describe how official directories list this person. A directory listing alone does not confirm current employment.";
+  wrapper.append(note);
+  return wrapper;
+}
+
+function ratingDetails(record) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "rating-details";
+  for (const [key, label, purpose] of [["rateMyPI", "PI Review", "Mentoring opinions"], ["rateMyProfessors", "Rate My Professors", "Teaching opinions"]]) {
+    const rating = record.ratings?.[key];
+    const panel = document.createElement("article");
+    panel.className = "rating-panel";
+    const heading = document.createElement("h4");
+    heading.textContent = `${rating?.platform || label} · ${purpose}`;
+    const score = document.createElement("p");
+    const verified = ratedPlatforms(record).some(([ratedKey]) => ratedKey === key);
+    score.className = "rating-value";
+    score.textContent = verified ? `${rating.score} / ${rating.scale || 5} · ${rating.reviewCount} ${rating.reviewCount === 1 ? "review" : "reviews"}` : ratingStatusLabel(rating);
+    panel.append(heading, score);
+    if (verified && rating.reviewCount < 5) {
+      const sample = document.createElement("p");
+      sample.className = "evidence-note";
+      sample.textContent = "Small sample: fewer than five reviews.";
+      panel.append(sample);
+    }
+    if (verified && key === "rateMyProfessors") {
+      const extra = document.createElement("p");
+      extra.textContent = [
+        numericMetric(rating.difficulty) ? `Difficulty ${rating.difficulty}/5` : "",
+        numericMetric(rating.wouldTakeAgainPercent) ? `${rating.wouldTakeAgainPercent}% would take again` : "",
+      ].filter(Boolean).join(" · ");
+      if (extra.textContent) panel.append(extra);
+    }
+    const retrieved = document.createElement("p");
+    retrieved.className = "evidence-meta";
+    retrieved.textContent = rating?.observedAt ? `Retrieved ${dateLabel(rating.observedAt)}${rating.latestReviewAt ? ` · latest review ${dateLabel(rating.latestReviewAt)}` : " · review dates: see original source"}` : "Not checked for this professor";
+    panel.append(retrieved);
+    if (rating?.sourceUrl) panel.append(makeLink(verified ? "Open rating source" : "Open platform search / source", rating.sourceUrl));
+    else panel.append(makeLink(key === "rateMyPI" ? "Browse PI Review UCSD directory" : "Search Rate My Professors", key === "rateMyPI" ? "https://pi-review.com/universities/158" : `https://www.ratemyprofessors.com/search/professors/1079?q=${encodeURIComponent(record.displayName)}`));
+    wrapper.append(panel);
+  }
+  const notice = document.createElement("p");
+  notice.className = "evidence-note";
+  notice.textContent = "These are separate platforms and measures. PI Review (pi-review.com) is the mentoring source used here. Reviews are self-selected opinions; a freshly retrieved score can still be based on old reviews.";
+  wrapper.append(notice);
+  return wrapper;
+}
+
+function verificationDetails(record) {
+  const wrapper = document.createElement("div");
+  const summary = document.createElement("p");
+  summary.className = "evidence-note";
+  summary.textContent = `${verificationLabel(record)}. Last source attempt: ${dateLabel(record.verification?.lastAttemptedAt)}. Each item below applies only to the named field.`;
+  wrapper.append(summary);
+  const issues = record.verification?.issues || [];
+  if (issues.length) {
+    const note = document.createElement("p");
+    note.className = "evidence-note";
+    note.textContent = issues.map((issue) => typeof issue === "string" ? issue : (issue.message || issue.reason || issue.code || "Review needed")).join(" · ");
+    wrapper.append(note);
+  }
+  const list = document.createElement("ul");
+  list.className = "field-evidence-list";
+  evidenceFields(record).forEach(([key, items]) => {
+    items.forEach((evidence) => {
+      if (!evidence.sourceUrl || !evidence.observedAt) return;
+      const item = document.createElement("li");
+      const label = document.createElement("strong");
+      label.textContent = `${slugLabel(key.replace(/([a-z])([A-Z])/g, "$1 $2"))} · ${dateLabel(evidence.observedAt)}`;
+      item.append(label);
+      if (evidence.evidence || evidence.text) {
+        const quote = document.createElement("p");
+        quote.textContent = evidence.evidence || evidence.text;
+        item.append(quote);
+      }
+      item.append(makeLink("Field source", evidence.sourceUrl));
+      list.append(item);
+    });
+  });
+  if (!list.children.length) {
+    const empty = document.createElement("p");
+    empty.textContent = "No field-level evidence recorded. Existing source links and legacy dates do not establish that this entry was reverified.";
+    wrapper.append(empty);
+  } else wrapper.append(list);
+  return wrapper;
+}
+
 function animateDrawerOpen() {
   const gsap = gsapCore();
   if (!gsap || prefersReducedMotion()) return;
@@ -1382,6 +1778,8 @@ function openDrawer(id) {
     grid.append(
       field("University", record.institution),
       field("Department", record.department),
+      field("Directory status", facultyLabel(record)),
+      ...(record.directorySection ? [field("Directory section", record.directorySection)] : []),
       field("Email", record.email),
       field("Lab affiliation", record.labAffiliation),
       field("Faculty profile", record.officialProfileUrl),
@@ -1393,16 +1791,17 @@ function openDrawer(id) {
       field("Citations", metrics.verified ? academic.citationCount : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
       field("Works", metrics.verified ? academic.worksCount : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
       field("h-index", metrics.verified ? academic.hIndex : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
-      field("Last verified", record.lastVerified),
+      field("Legacy verification date", record.lastVerified),
     );
   } else if (record.recordType === "lab") {
     grid.append(
       field("University", record.institution),
       field("Department", record.department),
       field("Principal investigator", record.principalInvestigator),
+      ...(record.relatedProfessorNames?.length ? [field("Associated professors", record.relatedProfessorNames)] : []),
       field("Contact email", record.email),
       field("Lab website", record.labWebsiteUrl),
-      field("Last verified", record.lastVerified),
+      field("Legacy verification date", record.lastVerified),
     );
   } else {
     grid.append(
@@ -1413,7 +1812,7 @@ function openDrawer(id) {
       field("Application", record.applicationProcedure),
       field("Contact email", record.email),
       field("REAL Portal", record.sourceUrl),
-      field("Last verified", record.lastVerified),
+      field("Legacy verification date", record.lastVerified),
     );
   }
 
@@ -1423,11 +1822,16 @@ function openDrawer(id) {
     ? `${record.recruitingStatus}: ${record.recruitingEvidence.text}`
     : `${record.recruitingStatus || UNKNOWN}: no explicit public recruiting statement is captured for this entry.`;
 
-  root.append(
-    heading,
-    grid,
-    section("Research areas", linkFreeList(record.researchAreas || [])),
-  );
+  root.append(heading);
+
+  if (record.recordType === "professor") {
+    root.appendChild(section("Labs & research groups", labAffiliationDetails(record)));
+    root.appendChild(section("Student ratings", ratingDetails(record)));
+    root.appendChild(section("Courses & teaching", teachingDetails(record)));
+    root.appendChild(section("Faculty roles & affiliations", facultyDirectoryDetails(record)));
+  }
+
+  root.append(grid, section("Research areas", linkFreeList(record.researchAreas || [])));
 
   if (record.recordType === "professor") {
     const metrics = academicMetrics(record);
@@ -1441,6 +1845,7 @@ function openDrawer(id) {
   }
 
   if (record.links.length) root.appendChild(section("Useful links", linkList(record.links)));
+  root.appendChild(section("Verification & field evidence", verificationDetails(record)));
   root.appendChild(section("Source URLs", sourceList(record.sourceUrls || [])));
 
   els.drawerContent.replaceChildren(root);
@@ -1583,6 +1988,7 @@ function initMotionInteractions() {
 function applyStateFromControls() {
   state.query = els.query.value;
   state.recruiting = els.recruiting.value;
+  state.evidence = els.evidence.value;
   state.institution = els.institution.value;
   state.department = els.department.value;
   state.area = els.area.value;
@@ -1594,14 +2000,11 @@ function applySmartFilter(key) {
     state.recruiting = state.recruiting === "Recruiting" ? "all" : "Recruiting";
   }
   if (key === "verified") {
-    const nextVerified = !state.verifiedOnly;
-    state.verifiedOnly = nextVerified;
-    if (nextVerified) {
-      state.type = "professor";
-      state.sort = "citations";
-    } else if (state.sort === "citations") {
-      state.sort = "relevance";
-    }
+    state.verifiedOnly = !state.verifiedOnly;
+  }
+  if (["courses", "ratings"].includes(key)) {
+    state.evidence = state.evidence === key ? "all" : key;
+    if (state.evidence !== "all") state.type = "professor";
   }
   if (["professor", "lab", "resource"].includes(key)) {
     state.type = state.type === key && !state.verifiedOnly ? "all" : key;
@@ -1635,7 +2038,7 @@ els.form.addEventListener("submit", (event) => {
   render();
 });
 
-[els.query, els.recruiting, els.institution, els.department, els.area, els.sort].forEach((control) => {
+[els.query, els.recruiting, els.evidence, els.institution, els.department, els.area, els.sort].forEach((control) => {
   control.addEventListener(control === els.query ? "input" : "change", () => {
     applyStateFromControls();
     state.visibleLimit = PAGE_SIZE;
@@ -1672,6 +2075,7 @@ els.clear.addEventListener("click", () => {
   state.department = "all";
   state.area = "all";
   state.recruiting = "all";
+  state.evidence = "all";
   state.verifiedOnly = false;
   state.sort = "relevance";
   state.visibleLimit = PAGE_SIZE;

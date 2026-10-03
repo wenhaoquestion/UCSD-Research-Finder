@@ -32,6 +32,33 @@
     -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, ui-sans-serif, sans-serif;
 }
 
+.teaching-rating-preview {
+  padding: 11px 13px;
+  margin: 10px 0;
+  border-left: 3px solid var(--teal);
+  background: var(--panel-soft);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.teaching-rating-preview p { margin: 3px 0; }
+.unverified-note, .evidence-note, .evidence-meta { color: var(--muted); }
+.evidence-note { font-size: 13px; line-height: 1.6; }
+.evidence-meta { display: block; font-size: 12px; line-height: 1.55; margin: 5px 0; }
+.course-list, .field-evidence-list { list-style: none; padding: 0; margin: 12px 0; }
+.course-list li, .field-evidence-list li { padding: 13px 0; border-bottom: 1px solid var(--line); }
+.course-list strong, .field-evidence-list strong { display: block; font-size: 14px; line-height: 1.5; }
+.field-evidence-list p { font-size: 13px; line-height: 1.55; overflow-wrap: anywhere; }
+.rating-details { display: grid; gap: 12px; }
+.rating-panel { padding: 15px; border: 1px solid var(--line); background: var(--panel-soft); border-radius: var(--radius); }
+.rating-panel h4 { margin: 0 0 8px; font-size: 14px; }
+.rating-panel p { margin: 7px 0; font-size: 13px; }
+.rating-panel .rating-value { color: var(--ink); font-size: 18px; font-weight: 700; }
+.teaching-candidates { margin-top: 14px; padding: 12px; border: 1px dashed var(--gold); border-radius: var(--radius); background: #fffaf0; }
+.teaching-candidates summary { cursor: pointer; font-size: 14px; font-weight: 700; }
+.teaching-candidates[open] > summary { margin-bottom: 10px; }
+
 * {
   box-sizing: border-box;
 }
