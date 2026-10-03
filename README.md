@@ -60,7 +60,9 @@ python3 scripts/refresh_labs.py --include-slow-profiles --slow-profile-limit 60 
 
 Fresh cached pages do not consume the slow-host budget; later runs advance to remaining pages. Lab and rating caches have a default 30-day maximum age. `--refresh` forces new requests; cache reuse preserves the original `observedAt`. Collector cache paths can be placed under `.cache/atlas` for durable local or CI runs. Never clear the cache between continuation batches.
 
-The existing Monday update workflow now runs the evidence pipeline, tests, validation, and a guard against unexplained record loss. It retains caches across runs and budgets slow-host requests. Workflow changes take effect only after the repository changes are pushed.
+The lab collector also retains the complete existing output as its incremental baseline. A limited refresh or a missing local HTML cache does not erase cloud evidence for unattempted profiles. New failures update the latest check while keeping historical field evidence and its original dates. Keep `data/ucsd/lab-evidence.json` when moving a completed capture between computers.
+
+Use the commands above for v3 refreshes. The legacy scheduled workflow has not been upgraded in this branch; cloud backfill results are imported independently of GitHub Actions.
 
 ## What the data means
 

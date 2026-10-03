@@ -1,5 +1,37 @@
 # UCSD Profiles cloud handoff
 
+## Completed capture and local import — October 3, 2026
+
+The original 1,572 deferred profiles were processed in ChatGPT's cloud runtime:
+1,373 identity matches, 56 identity cases needing review, and 143 failed fetches
+(130 HTTP 404, two HTTP 504, and 11 responses above the size limit). No profiles
+remain deferred in this capture. Queue completion does not mean every profile
+was verified.
+
+The complete evidence was imported locally after verifying the transfer archive
+and checking all professor IDs, prior lab IDs, non-target evidence, directories,
+personal-site observations, teaching assignments, and both rating platforms.
+An offline local rebuild exactly matched the cloud atlas before editorial review.
+Four news articles misclassified as labs were then moved to the quarantine
+archive, with incorrect professor relationships cleared. The reviewed dataset
+contains **4,392 professor records and 686 labs/research groups**, compared with
+616 labs before the cloud backfill. The raw capture is retained unchanged.
+
+- `data/quality/cloud-backfill/result-summary.json`: original cloud-run results.
+- `data/quality/cloud-backfill/profile-outcomes.json`: all 1,572 profile outcomes.
+- `data/quality/cloud-backfill/failed-and-review.json`: 199 unresolved outcomes.
+- `data/quality/cloud-backfill/import-receipt.json`: archive and file hashes,
+  preservation checks, and the final lab review decisions.
+- `data/ucsd/profile-backfill-checkpoint.json` and
+  `profile-backfill-progress.json`: resumable cloud checkpoints.
+
+The original cloud archive SHA256 is
+`1851f9e80379b282d312b3f2aceb38a8caf04f952fb74d7af5ff96efc03820ae`.
+The compact transfer archive SHA256 is
+`f8590b2b6b40a29e39d5c38764210c5d2933bc6a4fa1b6b72de12501b723ddca`.
+
+## Original execution instructions
+
 The user requested **ChatGPT's cloud computer**, not GitHub Actions. This branch
 is a source/data handoff. No cloud workflow is needed or authorized by this guide.
 

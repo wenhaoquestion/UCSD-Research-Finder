@@ -17,6 +17,8 @@ import unicodedata
 import urllib.parse
 from pathlib import Path
 
+from lab_destinations import nonlab_destination_reason
+
 ROOT = Path(__file__).resolve().parents[1]
 MISSING = "Not found"
 RESEARCH_PHRASES = {
@@ -315,7 +317,9 @@ def reject_nonlabs(data):
     bad_urls, bad_ids = set(), set()
     for lab in data["labs"]:
         url = lab["labWebsiteUrl"]
-        reason = None
+        # Captured links can contain repairable host/path whitespace. Use the
+        # same normalization as served URLs, but archive the untouched record.
+        reason = nonlab_destination_reason(encode_url(url))
         if re.search(r"doi\.org/|\.pdf(?:$|[?#])|/publications?(?:[/.?#]|$)|people/lab-staff", url, re.I):
             reason = "Publication, DOI, PDF, or staff directory is not a laboratory homepage."
         if lab["labName"].strip().lower() in {"lab staff", "lab awards", "lab publications", "our publications"}:

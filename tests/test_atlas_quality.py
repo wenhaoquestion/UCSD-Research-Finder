@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from rebuild_verified_atlas import build, clean_legacy, attach_evidence, valid_url, consolidate_catalog_duplicates, derive_research_tags, url_key, reject_nonlabs, apply_lab_identity_review
+from rebuild_verified_atlas import build, clean_legacy, attach_evidence, valid_url, consolidate_catalog_duplicates, derive_research_tags, url_key, reject_nonlabs, apply_lab_identity_review, encode_url
 from enrich_professor_metadata import likely_same_person
 from validate_data import validate_professor
 from refresh_real_portal import parse_cards
@@ -161,6 +161,100 @@ class QualityTests(unittest.TestCase):
         self.assertEqual(len(removed), 1)
         self.assertEqual(d["labs"], [])
         self.assertEqual(p["labAffiliationUrl"], "Not found")
+
+    def test_news_lab_mentions_are_archived_and_all_relationships_repaired(self):
+        # These are the four observed false lab entities in the cloud capture.
+        news = [
+            ("cres", "Our lab receives three CRES awards", "https://ucsdnews.ucsd.edu/feature/chancellors-research-excellence-scholars-program-launches"),
+            ("stem", "New Blood: Lab-Grown Stem Cells Bode Well for Transplants, Aging Research", "https://health.ucsd.edu/news/releases/Pages/2021-08-12-new-blood-lab-grown-stem-cells-bode-well-for-transplants-aging-research.aspx"),
+            ("space", "Stem cell research finds a unique lab — the International Space Station", "https://www.washingtonpost.com/science/stem-cells-in-space/2020/12/04/8915f700-2471-11eb-a688-5298ad5d580a_story.html://"),
+            ("kusi", "UC San Diego to advance stem cell therapies in new space station lab", "https://www.kusi.com/uc-san-diego-to-advance-stem-cell-therapies-in-new-space-station-lab/"),
+        ]
+        good_url = "https://real-lab.ucsd.edu/"
+        proof = {"sourceUrl": "https://profiles.ucsd.edu/ada", "observedAt": "2026-10-03T01:45:49+00:00", "method": "official_profile_explicit_lab_link", "evidence": "Real Lab"}
+        d = atlas()
+        d["professors"] = []
+        d["labs"] = [{"id": "real", "labName": "Real Lab", "labWebsiteUrl": good_url, "fieldEvidence": {"labName": [proof]}}]
+        for index, (lid, title, url) in enumerate(news):
+            p = professor(lid)
+            e = {**proof, "evidence": f"{title} → {url}"}
+            bad = {"id": lid, "labName": title, "labWebsiteUrl": url, "professorIds": [lid], "fieldEvidence": {"labName": [e], "labWebsiteUrl": [e]}, "sourceUrls": [proof["sourceUrl"], url], "lastVerified": "2026-10-02", "extraCapturedMetadata": {"keep": True}}
+            d["labs"].append(bad)
+            p.update(labAffiliation=title, labAffiliationUrl=url, fieldEvidence={"labAffiliation": [e], "labAffiliationUrl": [e]})
+            p["labAffiliations"] = [{"labId": lid, "labName": title, "url": url, "fieldEvidence": e}]
+            if index == 0:
+                p["labAffiliations"].append({"labId": "real", "labName": "Real Lab", "url": good_url, "fieldEvidence": proof})
+            d["professors"].append(p)
+        originals = copy.deepcopy(d["labs"])
+
+        removed = reject_nonlabs(d)
+
+        self.assertEqual({r["record"]["id"]: r["record"] for r in removed}, {r["id"]: r for r in originals[1:]})
+        self.assertTrue(all(r["reason"] for r in removed))
+        self.assertEqual(d["labs"], originals[:1])
+        self.assertEqual(d["professors"][0]["labAffiliation"], "Real Lab")
+        self.assertEqual(d["professors"][0]["labAffiliationUrl"], good_url)
+        self.assertEqual(d["professors"][0]["fieldEvidence"]["labAffiliationUrl"], [proof])
+        for p in d["professors"][1:]:
+            self.assertEqual(p["labAffiliation"], "Not found")
+            self.assertEqual(p["labAffiliationUrl"], "Not found")
+            self.assertEqual(p["labAffiliations"], [])
+            self.assertNotIn("labAffiliation", p["fieldEvidence"])
+            self.assertNotIn("labAffiliationUrl", p["fieldEvidence"])
+        surviving_ids = {lab["id"] for lab in d["labs"]}
+        self.assertTrue(all(a["labId"] in surviving_ids for p in d["professors"] for a in p["labAffiliations"]))
+        self.assertEqual(reject_nonlabs(d), [])
+
+    def test_damaged_url_is_not_saved_as_a_lab_homepage(self):
+        d = atlas()
+        damaged = "https://example.ucsd.edu/lab.html://"
+        p = d["professors"][0]
+        p.update(labAffiliation="Example Lab", labAffiliationUrl=damaged)
+        p["labAffiliations"] = [{"labId": "damaged", "labName": "Example Lab", "url": damaged}]
+        d["labs"] = [{"id": "damaged", "labName": "Example Lab", "labWebsiteUrl": damaged}]
+        original = copy.deepcopy(d["labs"][0])
+        removed = reject_nonlabs(d)
+        self.assertEqual(removed[0]["record"], original)
+        self.assertEqual(d["labs"], [])
+        self.assertEqual(p["labAffiliations"], [])
+        self.assertEqual(p["labAffiliationUrl"], "Not found")
+
+    def test_full_build_normalizes_recaptured_lab_urls_before_classification(self):
+        # A normalized canonical record can be overwritten by its raw capture
+        # during merge. Exercise that complete ordering, not reject_nonlabs alone.
+        urls = {
+            "sebat": "https://sebatlab.org /",
+            "muscle": "http://muscle.ucsd.edu /",
+            "optics": "https://www.ece.ucsd.edu/faculty-research/Ultrafast and Nanoscale Optics Group (Professor Shaya Fainman)",
+            "damaged": "https://broken.ucsd.edu/lab%3A%2F%2F",
+        }
+        d = atlas()
+        d["qualityMigrationVersion"] = 1
+        raw_labs, affiliations = [], []
+        for lid, raw_url in urls.items():
+            e = {"sourceUrl": "https://profiles.ucsd.edu/ada", "observedAt": "2026-10-03T01:45:49+00:00", "method": "official_profile_explicit_lab_link", "evidence": f"{lid} Lab → {raw_url}"}
+            raw = {"id": lid, "labName": lid + " Lab", "labWebsiteUrl": raw_url,
+                   "department": "Bioengineering", "sourceUrls": [e["sourceUrl"], raw_url],
+                   "professorIds": ["p"], "fieldEvidence": {"labName": [e], "labWebsiteUrl": [e]}}
+            raw_labs.append(raw)
+            d["labs"].append({**copy.deepcopy(raw), "labWebsiteUrl": encode_url(raw_url)})
+            affiliations.append({"labId": lid, "labName": raw["labName"], "url": raw_url, "fieldEvidence": e})
+        d["professors"][0].update(labAffiliation="sebat Lab", labAffiliationUrl=encode_url(urls["sebat"]))
+        capture = {"labs": raw_labs, "byProfessorId": {"p": {"labAffiliations": affiliations}}}
+        original_capture = copy.deepcopy(capture)
+
+        result, _, _, quarantine = build(d, capture, {}, {}, {})
+
+        self.assertEqual({lab["id"] for lab in result["labs"]}, {"sebat", "muscle", "optics"})
+        for lab in result["labs"]:
+            self.assertEqual(lab["labWebsiteUrl"], encode_url(urls[lab["id"]]))
+        self.assertEqual([row["record"]["id"] for row in quarantine], ["damaged"])
+        self.assertEqual(quarantine[0]["record"]["labWebsiteUrl"], urls["damaged"])
+        p = result["professors"][0]
+        self.assertEqual(p["labAffiliationUrl"], "https://sebatlab.org/")
+        self.assertEqual({a["labId"] for a in p["labAffiliations"]}, {"sebat", "muscle", "optics"})
+        self.assertTrue(all(a["url"] == encode_url(urls[a["labId"]]) for a in p["labAffiliations"]))
+        self.assertEqual(capture, original_capture)
 
     def test_catalog_duplicate_merge_retains_alias_and_sources(self):
         d = atlas()

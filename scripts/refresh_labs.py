@@ -6,15 +6,20 @@ host. Only the page's main content can support a faculty relationship. Discovery
 is deliberately separate from proof: navigation links and URL-name guesses never
 establish a PI/lab relationship. A fetch timestamp does not mean a page's content
 was recently authored, nor does an official profile establish current employment.
+An existing --out is the complete incremental baseline: partial refreshes retain
+unattempted observations and independently sourced evidence, including backfills.
 """
 from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import copy
 import datetime as dt
 import hashlib
 import json
+import os
 import re
+import tempfile
 import threading
 import time
 import unicodedata
@@ -27,11 +32,14 @@ from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from lab_destinations import nonlab_destination_reason
+
 ROOT = Path(__file__).resolve().parents[1]
 UA = "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)"
 MISSING = "Not found"
 LAB_RE = re.compile(r"\b(?:lab(?:orator(?:y|ies))?|(?:research )?group)\b", re.I)
 GENERIC_LAB = re.compile(r"^(?:research |faculty |our |all |department )?(?:labs?|laboratory|laboratories|(?:research )?groups?)(?: directory| websites?)?$", re.I)
+GENERIC_LAB_LINK = re.compile(r"(?:my |our |the |visit |view )?(?:research )?(?:lab(?:oratory)?|research group)(?: (?:web ?site|site|homepage|page))?", re.I)
 EMAIL_RE = re.compile(r"[\w.+%-]+@[\w.-]+\.[a-zA-Z]{2,}")
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
@@ -263,6 +271,8 @@ def valid_lab_label(label):
 
 def is_lab_destination(url):
     """Publication titles may contain 'lab'; their links are not lab websites."""
+    if nonlab_destination_reason(url):
+        return False
     parsed = urllib.parse.urlsplit(url)
     host, path = (parsed.hostname or "").lower(), urllib.parse.unquote(parsed.path).lower()
     if host in {"profiles.ucsd.edu", "catalog.ucsd.edu", "courses.ucsd.edu"}:
@@ -277,9 +287,13 @@ def is_lab_destination(url):
 
 def make_lab(label, url, dept, meta, context, professor=None):
     label = clean(label)
-    if re.fullmatch(r"(?:my |our |the |visit |view )?(?:research )?(?:lab(?:oratory)?|research group)(?: (?:web ?site|homepage|page))?", label, re.I):
+    generic = bool(GENERIC_LAB_LINK.fullmatch(label))
+    if generic:
         label = f"{professor['name']} — lab website" if professor else label
-    e = evidence(meta, "official_profile_explicit_lab_link" if professor else "official_directory_main_content", context)
+    method = "official_profile_explicit_lab_link" if professor else "official_directory_main_content"
+    if generic:
+        method = "official_profile_generic_lab_link" if professor else "official_directory_generic_lab_link"
+    e = evidence(meta, method, context)
     host = urllib.parse.urlsplit(url).hostname or ""
     university_hosts = {"cam.ac.uk": "University of Cambridge", "stanford.edu": "Stanford University", "harvard.edu": "Harvard University", "berkeley.edu": "University of California Berkeley", "ox.ac.uk": "University of Oxford", "mit.edu": "Massachusetts Institute of Technology"}
     external_institution = next((institution for domain, institution in university_hosts.items() if host == domain or host.endswith("." + domain)), None)
@@ -592,9 +606,152 @@ def parse_personal_site(person, meta, markup, profile_evidence):
     return result, patch, lab
 
 
+def unique_values(items):
+    """Preserve heterogeneous historical fetch/check records without coercion."""
+    seen, result = set(), []
+    for item in items:
+        key = json.dumps(item, sort_keys=True, ensure_ascii=False)
+        if key not in seen:
+            seen.add(key)
+            result.append(copy.deepcopy(item))
+    return result
+
+
+def evidence_items(value):
+    return value if isinstance(value, list) else [value] if isinstance(value, dict) else []
+
+
+def observation_time(proof):
+    times = []
+    for item in evidence_items(proof):
+        try:
+            stamp = dt.datetime.fromisoformat(item.get("observedAt") or "")
+            if stamp.tzinfo:
+                times.append(stamp.astimezone(dt.UTC))
+        except (ValueError, TypeError):
+            pass
+    return max(times, default=dt.datetime.min.replace(tzinfo=dt.UTC))
+
+
+def has_value(value):
+    return value is not None and value not in ("", "Unknown", MISSING, [])
+
+
+def generic_lab_name(value, proof):
+    methods = [e.get("method", "") for e in evidence_items(proof)]
+    return bool(methods) and (all(m.endswith("_generic_lab_link") for m in methods) or
+        # Compatibility with captures made before generic labels had a method.
+        ((str(value).endswith(" — lab website") or GENERIC_LAB_LINK.fullmatch(str(value))) and any(m == "official_profile_explicit_lab_link" for m in methods)))
+
+
+def merge_observed_fields(previous, incoming):
+    """Update positively observed fields, retaining independent older evidence.
+
+    An absent field is not a retraction. Replaced values keep their own proof in
+    history instead of misattributing that proof to the new value. Old cache
+    replays cannot supersede newer observations from a cloud backfill.
+    """
+    merged = copy.deepcopy(previous)
+    fields = merged.setdefault("fieldEvidence", {})
+    for field, proof in incoming.get("fieldEvidence", {}).items():
+        old_proof = fields.get(field)
+        if field not in incoming:
+            fields[field] = unique_values(evidence_items(old_proof) + evidence_items(proof))
+            continue
+        value = incoming[field]
+        if not has_value(value):
+            continue
+        old_value = merged.get(field)
+        if has_value(old_value) and old_value != value:
+            url_field = {"labName": "labWebsiteUrl", "labAffiliation": "labAffiliationUrl"}.get(field)
+            same_lab = url_field and canonical_url(previous.get(url_field, "")).rstrip("/") == canonical_url(incoming.get(url_field, "")).rstrip("/")
+            old_generic, new_generic = generic_lab_name(old_value, old_proof), generic_lab_name(value, proof)
+            if same_lab and new_generic and not old_generic:
+                merged["additionalLabLinkObservations"] = unique_values(merged.get("additionalLabLinkObservations", []) + [{"field": field, "value": value, "fieldEvidence": evidence_items(proof)}])
+                continue
+            if observation_time(proof) < observation_time(old_proof) and not (same_lab and old_generic and not new_generic):
+                continue
+            # A profile's short bio must not erase a previously checked personal
+            # site's research excerpt or Scholar link (also the backfill policy).
+            if field in {"researchSummary", "googleScholarUrl"} and any("personal_site" in e.get("method", "") for e in evidence_items(old_proof)) and not any("personal_site" in e.get("method", "") for e in evidence_items(proof)):
+                merged["additionalProfileObservations"] = unique_values(merged.get("additionalProfileObservations", []) + [{"field": field, "value": value, "fieldEvidence": evidence_items(proof)}])
+                continue
+            merged["previousFieldObservations"] = unique_values(merged.get("previousFieldObservations", []) + [{"field": field, "value": old_value, "fieldEvidence": evidence_items(old_proof)}])
+            fields[field] = copy.deepcopy(proof)
+        else:
+            fields[field] = unique_values(evidence_items(old_proof) + evidence_items(proof)) if old_proof else copy.deepcopy(proof)
+        merged[field] = copy.deepcopy(value)
+    return merged
+
+
+def merge_profile_observation(previous, incoming):
+    verification = incoming.get("verification", {})
+    old_verification = previous.get("verification", {})
+    if not verification.get("observedAt") or observation_time(verification) < observation_time(old_verification):
+        return copy.deepcopy(previous)
+    merged = merge_observed_fields(previous, incoming) if verification.get("status") == "verified" else copy.deepcopy(previous)
+    if old_verification and old_verification != verification:
+        merged["verificationHistory"] = unique_values(merged.get("verificationHistory", []) + [old_verification])
+    # A new fetch/identity failure is still the latest check. Historical field
+    # evidence survives, but the person is no longer reported as just verified.
+    merged["verification"] = copy.deepcopy(verification)
+    affiliations = merged.setdefault("labAffiliations", [])
+    by_url = {canonical_url(a["url"]).rstrip("/"): a for a in affiliations}
+    for fresh in incoming.get("labAffiliations", []):
+        key = canonical_url(fresh["url"]).rstrip("/")
+        old = by_url.get(key)
+        if old is None:
+            old = copy.deepcopy(fresh)
+            affiliations.append(old)
+            by_url[key] = old
+        else:
+            old_proof = copy.deepcopy(old.get("fieldEvidence"))
+            if observation_time(fresh.get("fieldEvidence")) >= observation_time(old_proof):
+                preserved = {"labId": old.get("labId")}
+                if generic_lab_name(fresh.get("labName"), fresh.get("fieldEvidence")) and not generic_lab_name(old.get("labName"), old_proof):
+                    preserved["labName"] = old.get("labName")
+                if old.get("relationship") in {"personal_site_explicit_pi", "official_directory_same_record"} and fresh.get("relationship") == "faculty_lab_link":
+                    preserved["relationship"] = old["relationship"]
+                old.update(copy.deepcopy(fresh))
+                old.update({k: v for k, v in preserved.items() if v is not None})
+            old["fieldEvidence"] = unique_values(evidence_items(old_proof) + evidence_items(fresh.get("fieldEvidence")))
+    return merged
+
+
+def load_previous_capture(path):
+    if not path.exists():
+        return {}
+    capture = json.loads(path.read_text())
+    for key, kind in [("byProfessorId", dict), ("labs", list), ("professors", list), ("fetches", list), ("personalSiteChecks", list), ("directoryListings", dict)]:
+        if not isinstance(capture.get(key), kind):
+            raise ValueError(f"Refusing to replace existing capture: {key} must be {kind.__name__}")
+    expected = capture.get("stats", {}).get("professorRecords", 0)
+    if isinstance(expected, int) and expected > len(capture["byProfessorId"]):
+        raise ValueError("Refusing to replace an existing capture with an incomplete roster")
+    return capture
+
+
+def atomic_capture(path, output):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporary = tempfile.mkstemp(prefix=path.name + ".", suffix=".tmp", dir=path.parent)
+    try:
+        with os.fdopen(fd, "w") as stream:
+            json.dump(output, stream, indent=2, ensure_ascii=False)
+            stream.write("\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
+
+
 def run(args):
     data = json.loads(args.input.read_text())
-    professors = data["professors"]
+    previous = load_previous_capture(args.out)
+    professors = list(data["professors"])
+    input_ids = {p["id"] for p in professors}
+    professors += [p for p in previous.get("professors", []) if p["id"] not in input_ids]
     fetcher = Fetcher(args.cache, args.timeout, args.delay, args.refresh, args.max_cache_age_days)
     new_professors, alternative, directory_listings = discover_faculty(fetcher, professors)
     professors = professors + new_professors
@@ -615,40 +772,73 @@ def run(args):
     selected, slow_deferred = select_slow_profiles(selected, fetcher, args.include_slow_profiles, args.slow_profile_limit)
     if args.limit:
         selected = selected[:args.limit]
-    output = {"schemaVersion": 1, "generatedAt": now(), "collectionState": "in_progress", "collectionPolicy": {
+    output = copy.deepcopy(previous)
+    output.update({"schemaVersion": 1, "generatedAt": now(), "collectionState": "in_progress", "collectionPolicy": {
+        **previous.get("collectionPolicy", {}),
         "identity": "An official profile heading or title must match first and last name before extracting person fields.",
         "relationships": "Only main-content lab links or a lab-directory record can support a faculty/lab relationship. Shared navigation is excluded.",
         "missing": "Missing or failed verification means unknown, not no lab or no current affiliation.",
         "freshness": "observedAt is the actual UTC retrieval time, not the date the source was authored. Cache reuse preserves observedAt.",
-        "robots": "Robots disallow and unavailable robots are skipped; requests are bounded and per-host rate limited."},
-        "labs": [], "professors": export_professors, "directoryListings": directory_listings, "byProfessorId": {}, "personalSiteChecks": [], "fetches": [], "stats": {}}
-    selected_ids = {p["id"] for p in selected}
+        "robots": "Robots disallow and unavailable robots are skipped; requests are bounded and per-host rate limited.",
+        "incrementalRefresh": "Unattempted records and independent historical evidence survive partial runs. Actual new failures update verification; older cache replays cannot replace newer observations."}})
+    for key, default in [("labs", []), ("professors", []), ("directoryListings", {}), ("byProfessorId", {}), ("personalSiteChecks", []), ("fetches", []), ("stats", {})]:
+        output.setdefault(key, default)
+    exports = {p["id"]: p for p in output["professors"]}
+    for person in export_professors:
+        if person["id"] not in exports:
+            exports[person["id"]] = copy.deepcopy(person)
+        else:
+            old = exports[person["id"]]
+            merged = merge_observed_fields(old, person)
+            merged["sourceUrls"] = unique_values(old.get("sourceUrls", []) + person.get("sourceUrls", []))
+            for key in ["facultyStatus", "directorySection", "directoryEvidence", "lastVerified"]:
+                if observation_time(person.get("directoryEvidence")) >= observation_time(old.get("directoryEvidence")) and key in person:
+                    merged[key] = copy.deepcopy(person[key])
+            exports[person["id"]] = merged
+    output["professors"] = list(exports.values())
+    for pid, listing in directory_listings.items():
+        old = output["directoryListings"].get(pid)
+        if not old or observation_time(listing.get("evidence")) >= observation_time(old.get("evidence")):
+            output["directoryListings"][pid] = copy.deepcopy(listing)
     for p in professors:
-        if p["id"] not in selected_ids:
+        if p["id"] not in output["byProfessorId"]:
             output["byProfessorId"][p["id"]] = {"verification": {"status": "catalog_only" if "catalog.ucsd.edu" in p.get("officialProfileUrl", "") else "not_attempted", "sourceUrl": p.get("officialProfileUrl", ""), "observedAt": None, "identityMatched": False}, "fieldEvidence": {}, "labAffiliations": []}
-            if p["id"] in slow_deferred:
-                output["byProfessorId"][p["id"]]["verification"].update(status="deferred_crawl_delay", reason="Official UCSD Profiles robots.txt requires Crawl-Delay: 10. This page is outside the current slow-host budget; resume with --include-slow-profiles and --slow-profile-limit.", robotsUrl="https://profiles.ucsd.edu/robots.txt", crawlDelaySeconds=10)
-    labs = {}
+        verification = output["byProfessorId"][p["id"]]["verification"]
+        if p["id"] in slow_deferred and not verification.get("observedAt") and verification.get("status") != "verified":
+            verification.update(status="deferred_crawl_delay", sourceUrl=p["officialProfileUrl"], reason="Official UCSD Profiles robots.txt requires Crawl-Delay: 10. This page is outside the current slow-host budget; resume with --include-slow-profiles and --slow-profile-limit.", robotsUrl="https://profiles.ucsd.edu/robots.txt", crawlDelaySeconds=10)
+    labs = {canonical_url(lab["labWebsiteUrl"]).rstrip("/"): copy.deepcopy(lab) for lab in output["labs"]}
+    baseline_fetches = copy.deepcopy(output["fetches"])
+    baseline_attempts = output["stats"].get("profileAttempts", 0)
+    output["refreshRun"] = {"startedAt": now(), "selectedProfiles": len(selected), "slowDeferredProfiles": len(slow_deferred), "completedProfileObservations": 0}
+    completed_ids = set()
 
     def merge_lab(lab):
         key = canonical_url(lab["labWebsiteUrl"]).rstrip("/")
         if key not in labs:
-            labs[key] = lab
+            labs[key] = copy.deepcopy(lab)
         else:
             old = labs[key]
-            old["sourceUrls"] = list(dict.fromkeys(old["sourceUrls"] + lab["sourceUrls"]))
-            old["professorIds"] = list(dict.fromkeys(old["professorIds"] + lab["professorIds"]))
-            if old["principalInvestigator"] == MISSING and lab["principalInvestigator"] != MISSING:
-                old.update({k: lab[k] for k in ["principalInvestigator", "principalInvestigatorProfileUrl", "relationshipType"]})
-                old["fieldEvidence"]["principalInvestigator"] = lab["fieldEvidence"]["principalInvestigator"]
+            merged = merge_observed_fields(old, lab)
+            for field in ["sourceUrls", "professorIds", "relatedProfessorNames"]:
+                if field in old or field in lab:
+                    merged[field] = unique_values(old.get(field, []) + lab.get(field, []))
+            if has_value(lab.get("principalInvestigator")) and merged.get("principalInvestigator") == lab["principalInvestigator"] and observation_time(lab.get("fieldEvidence", {}).get("principalInvestigator")) >= observation_time(old.get("fieldEvidence", {}).get("principalInvestigator")):
+                for field in ["principalInvestigatorProfileUrl", "relationshipType"]:
+                    if field in lab:
+                        merged[field] = copy.deepcopy(lab[field])
+            if lab.get("lastVerified", "") > old.get("lastVerified", ""):
+                merged["lastVerified"] = lab["lastVerified"]
+            labs[key] = merged
 
     def save():
         output["generatedAt"] = now()
         output["labs"] = sorted(labs.values(), key=lambda x: x["labName"].lower())
-        output["fetches"] = sorted(fetcher.results.values(), key=lambda x: x["sourceUrl"])
-        output["stats"] = {"professorRecords": len(professors), "profileAttempts": len(selected), "professorsProcessed": len(output["byProfessorId"]), "verificationStatuses": dict(Counter(p["verification"]["status"] for p in output["byProfessorId"].values())), "labs": len(labs), "labsWithProfessorMatch": sum(bool(l["professorIds"]) for l in labs.values()), "fetchStatuses": dict(Counter(f["status"] for f in output["fetches"]))}
-        args.out.parent.mkdir(parents=True, exist_ok=True)
-        args.out.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n")
+        output["fetches"] = unique_values(baseline_fetches + list(fetcher.results.values()))
+        output["personalSiteChecks"] = unique_values(output["personalSiteChecks"])
+        output["refreshRun"]["completedProfileObservations"] = len(completed_ids)
+        output["refreshRun"]["updatedAt"] = output["generatedAt"]
+        output["stats"].update({"professorRecords": len(output["byProfessorId"]), "profileAttempts": baseline_attempts + len(completed_ids), "profileAttemptsSemantics": "Cumulative completed profile observations across capture runs, including cached responses; current-run count is refreshRun.completedProfileObservations.", "professorsProcessed": len(output["byProfessorId"]), "verificationStatuses": dict(Counter(p.get("verification", {}).get("status", "unknown") for p in output["byProfessorId"].values())), "labs": len(labs), "labsWithProfessorMatch": sum(bool(l.get("professorIds")) for l in labs.values()), "fetchStatuses": dict(Counter(f.get("status", "unknown") for f in output["fetches"] if isinstance(f, dict)))})
+        atomic_capture(args.out, output)
 
     seeds = directory_seeds(data)
     print(f"Fetching {len(seeds)} official lab/research directories and {len(selected)} faculty profiles", flush=True)
@@ -669,7 +859,8 @@ def run(args):
             if p["id"] in alternative and patch["verification"]["identityMatched"]:
                 patch["officialProfileUrl"] = p["officialProfileUrl"]
                 patch["fieldEvidence"]["officialProfileUrl"] = p["directoryEvidence"]
-            output["byProfessorId"][p["id"]] = patch
+            output["byProfessorId"][p["id"]] = merge_profile_observation(output["byProfessorId"][p["id"]], patch)
+            completed_ids.add(p["id"])
             for lab in new_labs:
                 merge_lab(lab)
             if index % 100 == 0:
@@ -682,8 +873,8 @@ def run(args):
             patch = output["byProfessorId"].get(person["id"], {})
             url = patch.get("personalWebsiteUrl")
             proof = patch.get("fieldEvidence", {}).get("personalWebsiteUrl")
-            if url and proof and person["id"] not in has_lab:
-                candidates.append((person, url, proof))
+            if url and proof and person["id"] in completed_ids and patch.get("verification", {}).get("status") == "verified" and person["id"] not in has_lab:
+                candidates.append((person, url, max(evidence_items(proof), key=observation_time)))
         candidates = candidates[:args.personal_site_limit] if args.personal_site_limit else candidates
         print(f"Checking {len(candidates)} verified personal-site links for lab/owner evidence", flush=True)
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -693,11 +884,7 @@ def run(args):
                 meta, markup = future.result()
                 check, fields, lab = parse_personal_site(person, meta, markup, proof)
                 output["personalSiteChecks"].append(check)
-                patch = output["byProfessorId"][person["id"]]
-                for key, value in fields.items():
-                    if key != "fieldEvidence" and not patch.get(key):
-                        patch[key] = value
-                        patch["fieldEvidence"][key] = fields["fieldEvidence"][key]
+                output["byProfessorId"][person["id"]] = merge_observed_fields(output["byProfessorId"][person["id"]], fields)
                 if lab:
                     merge_lab(lab)
                 if index % 50 == 0:
@@ -720,12 +907,10 @@ def run(args):
             for affiliation in patch["labAffiliations"]:
                 if canonical_url(affiliation["url"]).rstrip("/") == canonical_url(lab["labWebsiteUrl"]).rstrip("/"):
                     affiliation["labId"] = lab["id"]
-    for pid, listing in directory_listings.items():
+    for pid, listing in output["directoryListings"].items():
         patch = output["byProfessorId"].get(pid)
         if patch:
-            patch["facultyStatus"] = listing["facultyStatus"]
-            patch["directorySection"] = listing["directorySection"]
-            patch["fieldEvidence"]["facultyStatus"] = listing["evidence"]
+            output["byProfessorId"][pid] = merge_observed_fields(patch, {"facultyStatus": listing["facultyStatus"], "directorySection": listing["directorySection"], "fieldEvidence": {"facultyStatus": listing["evidence"], "directorySection": listing["evidence"]}})
     output["collectionState"] = "completed"
     save()
     print(json.dumps(output["stats"], indent=2), flush=True)
@@ -734,7 +919,7 @@ def run(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=ROOT / "data/research-atlas.json")
-    parser.add_argument("--out", type=Path, default=ROOT / "data/ucsd/lab-evidence.json")
+    parser.add_argument("--out", type=Path, default=ROOT / "data/ucsd/lab-evidence.json", help="Full capture to update atomically; existing evidence is retained for records not re-observed. Use a new path for a fresh capture.")
     parser.add_argument("--cache", type=Path, default=Path("/tmp/research-atlas-lab-cache"))
     parser.add_argument("--workers", type=int, default=24)
     parser.add_argument("--timeout", type=float, default=6)
