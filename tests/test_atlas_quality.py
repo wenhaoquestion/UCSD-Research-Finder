@@ -7,9 +7,9 @@ import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from rebuild_verified_atlas import build, clean_legacy, attach_evidence, valid_url, consolidate_catalog_duplicates, derive_research_tags, url_key, reject_nonlabs, apply_lab_identity_review, encode_url
+from rebuild_verified_atlas import build, clean_legacy, attach_evidence, valid_url, consolidate_catalog_duplicates, derive_research_tags, url_key, reject_nonlabs, apply_lab_identity_review, encode_url, apply_lab_expansion
 from enrich_professor_metadata import likely_same_person
-from validate_data import validate_professor
+from validate_data import validate_professor, validate_lab
 from refresh_real_portal import parse_cards
 
 
@@ -306,3 +306,145 @@ class ProfileKeywordAreaTests(unittest.TestCase):
         derive_research_tags(record)
         self.assertEqual(record["researchAreas"], ["Genomics"])
         self.assertEqual(record["fieldEvidence"]["researchAreas"][0]["method"], "explicit_topic_phrases_in_official_profile_keywords")
+
+
+class LabExpansionTests(unittest.TestCase):
+    OBSERVED = "2026-10-07T23:00:00+00:00"
+
+    def proof(self, url, text):
+        return [{"sourceUrl": url, "observedAt": self.OBSERVED, "evidence": text, "method": "manual_official_source_review", "status": "verified"}]
+
+    def addition(self, lab_id="new-lab", url="https://sites.ucsd.edu/new-lab/", pi="Ada Lovelace"):
+        directory = "https://dept.ucsd.edu/research/labs.html"
+        return {"id": lab_id, "labName": "New Lab", "department": "Computer Science and Engineering", "labWebsiteUrl": url,
+                "principalInvestigator": pi, "sourceUrls": [directory, url], "lastVerified": "2026-10-07", "recordSubtype": "lab",
+                "fieldEvidence": {"labName": self.proof(directory, "New Lab -> " + url), "labWebsiteUrl": self.proof(directory, "New Lab -> " + url),
+                                  "principalInvestigator": self.proof(url, "Ada Lovelace, Principal Investigator")}}
+
+    def test_reviewed_addition_is_published_once_and_rebuild_is_idempotent(self):
+        expansion = {"generatedAt": self.OBSERVED, "additions": [self.addition()]}
+        first, *_ = build(atlas(), {}, {}, {}, {}, lab_expansion=expansion)
+        lab = next(l for l in first["labs"] if l["id"] == "new-lab")
+        self.assertEqual(lab["verification"]["status"], "source_checked")
+        self.assertEqual(lab["fieldEvidence"]["principalInvestigator"][0]["sourceUrl"], "https://sites.ucsd.edu/new-lab/")
+        self.assertEqual(lab["description"], "Not found")
+        validate_lab(lab)
+        second, *_ = build(copy.deepcopy(first), {}, {}, {}, {}, lab_expansion=expansion)
+        self.assertEqual(first, second)
+        self.assertEqual(sum(l["id"] == "new-lab" for l in second["labs"]), 1)
+
+    def test_reviewed_addition_requires_official_ucsd_name_source_and_pi_evidence(self):
+        item = self.addition()
+        item["fieldEvidence"]["labName"] = self.proof("https://example.com/labs", "New Lab")
+        with self.assertRaisesRegex(ValueError, "official UCSD source"):
+            apply_lab_expansion(atlas(), {"additions": [item]})
+        item = self.addition()
+        del item["fieldEvidence"]["principalInvestigator"]
+        with self.assertRaisesRegex(ValueError, "principalInvestigator evidence"):
+            apply_lab_expansion(atlas(), {"additions": [item]})
+        item = self.addition(url="https://today.ucsd.edu/news/story/new-lab")
+        with self.assertRaisesRegex(ValueError, "non-lab destination"):
+            apply_lab_expansion(atlas(), {"additions": [item]})
+
+    def test_reviewed_addition_cannot_reuse_an_existing_lab_url_or_alias(self):
+        d = atlas()
+        d["labs"] = [{"id": "old", "labName": "Old Lab", "labWebsiteUrl": "https://old.ucsd.edu/", "sourceUrls": [],
+                      "alternateWebsiteUrls": ["https://sites.ucsd.edu/old-lab/"]}]
+        for url in ["https://old.ucsd.edu/index.html", "https://www.sites.ucsd.edu/old-lab"]:
+            with self.assertRaisesRegex(ValueError, "duplicates old"):
+                apply_lab_expansion(copy.deepcopy(d), {"additions": [self.addition(url=url)]})
+
+    def test_enrichment_fills_placeholders_but_never_replaces_values(self):
+        d = atlas()
+        d["labs"] = [{"id": "a", "labName": "A Lab", "labWebsiteUrl": "https://a.ucsd.edu/", "principalInvestigator": "Not found", "sourceUrls": []},
+                     {"id": "b", "labName": "B Lab", "labWebsiteUrl": "https://b.ucsd.edu/", "principalInvestigator": "Grace Hopper", "sourceUrls": []}]
+        proof = {"principalInvestigator": self.proof("https://dept.ucsd.edu/labs", "PI: Ada Lovelace")}
+        skipped = apply_lab_expansion(d, {"enrichments": [{"labId": "a", "fields": {"principalInvestigator": "Ada Lovelace"}, "evidence": proof},
+                                                          {"labId": "b", "fields": {"principalInvestigator": "Ada Lovelace"}, "evidence": proof}]})
+        self.assertEqual(d["labs"][0]["principalInvestigator"], "Ada Lovelace")
+        self.assertEqual(d["labs"][1]["principalInvestigator"], "Grace Hopper")
+        self.assertEqual(skipped[0]["labId"], "b")
+        with self.assertRaisesRegex(ValueError, "lacks evidence"):
+            apply_lab_expansion(d, {"enrichments": [{"labId": "a", "fields": {"description": "x"}, "evidence": {}}]})
+
+    def test_reviewed_affiliation_is_appended_to_existing_multiple_links(self):
+        d = atlas()
+        p = d["professors"][0]
+        existing = [{"labId": "one", "labName": "One Lab", "url": "https://one.ucsd.edu/"}, {"labId": "two", "labName": "Two Lab", "url": "https://two.ucsd.edu/"}]
+        p["labAffiliations"] = copy.deepcopy(existing)
+        p["labAffiliation"], p["labAffiliationUrl"] = "One Lab", "https://one.ucsd.edu/"
+        link = {"professorId": "p", "labId": "new-lab", "relationship": "principal_investigator_per_official_source",
+                "evidence": self.proof("https://dept.ucsd.edu/research/labs.html", "New Lab PI: Ada Lovelace")}
+        apply_lab_expansion(d, {"additions": [self.addition()], "professorAffiliations": [link, link]})
+        self.assertEqual(p["labAffiliations"][:2], existing)
+        self.assertEqual([a["labId"] for a in p["labAffiliations"]], ["one", "two", "new-lab"])
+        self.assertEqual(p["labAffiliationUrl"], "https://one.ucsd.edu/")
+        self.assertIn("p", d["labs"][-1]["professorIds"])
+
+    def test_rebuild_merges_reviewed_addition_without_erasing_later_capture(self):
+        expansion = {"additions": [self.addition()]}
+        first, *_ = build(atlas(), {}, {}, {}, {}, lab_expansion=expansion)
+        lab = next(l for l in first["labs"] if l["id"] == "new-lab")
+        later = {"sourceUrl": "https://sites.ucsd.edu/new-lab/about", "observedAt": "2026-10-09T00:00:00+00:00", "evidence": "We study proofs.", "method": "later_capture"}
+        lab["description"] = "We study proofs."
+        lab["fieldEvidence"]["description"] = [later]
+        lab["aliasNames"] = ["Proof Lab"]
+        lab["sourceUrls"].append("https://sites.ucsd.edu/new-lab/about")
+        second, *_ = build(copy.deepcopy(first), {}, {}, {}, {}, lab_expansion=expansion)
+        merged = next(l for l in second["labs"] if l["id"] == "new-lab")
+        self.assertEqual(merged["description"], "We study proofs.")
+        self.assertEqual(merged["fieldEvidence"]["description"], [later])
+        self.assertEqual(merged["aliasNames"], ["Proof Lab"])
+        self.assertIn("https://sites.ucsd.edu/new-lab/about", merged["sourceUrls"])
+        self.assertEqual(merged["principalInvestigator"], "Ada Lovelace")
+
+    def test_reviewed_addition_applies_same_nonlab_rules_as_captures(self):
+        for url in ["https://dept.ucsd.edu/research/lab.pdf", "https://doi.org/10.1000/lab", "https://dept.ucsd.edu/lab/publications/"]:
+            with self.assertRaisesRegex(ValueError, "non-lab destination"):
+                apply_lab_expansion(atlas(), {"additions": [self.addition(url=url)]})
+        item = self.addition()
+        item["labName"] = "Lab Publications"
+        with self.assertRaisesRegex(ValueError, "non-lab destination"):
+            apply_lab_expansion(atlas(), {"additions": [item]})
+
+    def test_reviewed_affiliation_requires_sourced_evidence(self):
+        url = "https://dept.ucsd.edu/labs"
+        bad = [[], None, {}, [None], [[]], [{}],
+               [{"sourceUrl": "", "observedAt": self.OBSERVED, "evidence": "x"}],
+               [{"sourceUrl": None, "observedAt": self.OBSERVED, "evidence": "x"}],
+               [{"sourceUrl": url, "observedAt": "", "evidence": "x"}],
+               [{"sourceUrl": url, "observedAt": None, "evidence": "x"}],
+               [{"sourceUrl": url, "observedAt": [], "evidence": "x"}],
+               [{"sourceUrl": url, "observedAt": self.OBSERVED, "evidence": "  "}]]
+        bad += [[{"sourceUrl": url, "observedAt": self.OBSERVED, "evidence": empty}] for empty in (None, [], {}, ["x"], {"text": "x"})]
+        for evidence in bad:
+            d = atlas()
+            link = {"professorId": "p", "labId": "new-lab", "relationship": "principal_investigator_per_official_source", "evidence": evidence}
+            with self.subTest(evidence=evidence), self.assertRaisesRegex(ValueError, "lacks source evidence"):
+                apply_lab_expansion(d, {"additions": [self.addition()], "professorAffiliations": [link]})
+            self.assertNotIn("labAffiliations", d["professors"][0])
+            self.assertNotIn("p", d["labs"][-1].get("professorIds", []))
+        for relationship in ("", "  ", None, [], {}):
+            d = atlas()
+            link = {"professorId": "p", "labId": "new-lab", "relationship": relationship, "evidence": self.proof(url, "PI")}
+            with self.subTest(relationship=relationship), self.assertRaisesRegex(ValueError, "relationship"):
+                apply_lab_expansion(d, {"additions": [self.addition()], "professorAffiliations": [link]})
+            self.assertNotIn("labAffiliations", d["professors"][0])
+
+    def test_reviewed_addition_and_enrichment_reject_non_string_evidence(self):
+        for empty in (None, [], {}, ["x"], {"text": "x"}):
+            item = self.addition()
+            item["fieldEvidence"]["principalInvestigator"] = [{"sourceUrl": "https://sites.ucsd.edu/new-lab/", "observedAt": self.OBSERVED, "evidence": empty}]
+            with self.subTest(evidence=empty), self.assertRaisesRegex(ValueError, "principalInvestigator evidence"):
+                apply_lab_expansion(atlas(), {"additions": [item]})
+            d = atlas()
+            d["labs"] = [{"id": "a", "labName": "A Lab", "labWebsiteUrl": "https://a.ucsd.edu/", "principalInvestigator": "Not found", "sourceUrls": []}]
+            proof = {"principalInvestigator": [{"sourceUrl": "https://a.ucsd.edu/", "observedAt": self.OBSERVED, "evidence": empty}]}
+            with self.subTest(enrichment=empty), self.assertRaisesRegex(ValueError, "lacks evidence"):
+                apply_lab_expansion(d, {"enrichments": [{"labId": "a", "fields": {"principalInvestigator": "Ada Lovelace"}, "evidence": proof}]})
+            self.assertEqual(d["labs"][0]["principalInvestigator"], "Not found")
+
+    def test_full_build_with_unsourced_affiliation_fails_before_publication(self):
+        link = {"professorId": "p", "labId": "new-lab", "relationship": None, "evidence": [{"sourceUrl": "https://dept.ucsd.edu/labs", "observedAt": self.OBSERVED, "evidence": None}]}
+        with self.assertRaises(ValueError):
+            build(atlas(), {}, {}, {}, {}, lab_expansion={"additions": [self.addition()], "professorAffiliations": [link]})

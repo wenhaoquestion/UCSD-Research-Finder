@@ -410,6 +410,15 @@ def main() -> None:
 
     validate_references(data)
 
+    # Reviewed lab additions are published only through the builder; a stale atlas fails here.
+    review_path = ROOT / "data" / "ucsd" / "lab-expansion-review.json"
+    if args.data_path.resolve() == DEFAULT_DATA_PATH.resolve() and review_path.exists():
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        lab_ids = {record["id"] for record in labs}
+        missing = [item["id"] for item in review.get("additions", []) if item["id"] not in lab_ids]
+        if missing:
+            fail(f"reviewed lab additions not published; run scripts/rebuild_verified_atlas.py: {missing[:5]}")
+
     policies = data.get("collectionPolicy", {})
     if policies.get("recruitingClaimsRequireExplicitEvidence") is not True:
         fail("collectionPolicy.recruitingClaimsRequireExplicitEvidence must be true")

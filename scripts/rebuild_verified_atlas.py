@@ -315,19 +315,25 @@ def consolidate_catalog_duplicates(data):
     return removed
 
 
+def nonlab_reason(name, url):
+    """Reason a lab name/URL pair cannot be a laboratory record, or ''."""
+    # Captured links can contain repairable host/path whitespace. Use the
+    # same normalization as served URLs, but archive the untouched record.
+    reason = nonlab_destination_reason(encode_url(url))
+    if re.search(r"doi\.org/|\.pdf(?:$|[?#])|/publications?(?:[/.?#]|$)|people/lab-staff", url, re.I):
+        reason = "Publication, DOI, PDF, or staff directory is not a laboratory homepage."
+    if name.strip().lower() in {"lab staff", "lab awards", "lab publications", "our publications"}:
+        reason = "Generic staff/publication/award page is not a laboratory."
+    return reason
+
+
 def reject_nonlabs(data):
     """Exclude concrete non-lab page types even when an anchor contains 'lab'."""
     rejected, keep = [], []
     bad_urls, bad_ids = set(), set()
     for lab in data["labs"]:
         url = lab["labWebsiteUrl"]
-        # Captured links can contain repairable host/path whitespace. Use the
-        # same normalization as served URLs, but archive the untouched record.
-        reason = nonlab_destination_reason(encode_url(url))
-        if re.search(r"doi\.org/|\.pdf(?:$|[?#])|/publications?(?:[/.?#]|$)|people/lab-staff", url, re.I):
-            reason = "Publication, DOI, PDF, or staff directory is not a laboratory homepage."
-        if lab["labName"].strip().lower() in {"lab staff", "lab awards", "lab publications", "our publications"}:
-            reason = "Generic staff/publication/award page is not a laboratory."
+        reason = nonlab_reason(lab["labName"], url)
         if reason:
             rejected.append({"reason": reason, "record": copy.deepcopy(lab)})
             bad_urls.add(url_key(url))
@@ -450,9 +456,113 @@ def apply_lab_identity_review(data, review):
     return removed
 
 
-def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence=None, lab_review=None):
+def sourced(e):
+    """An evidence item with a valid source URL, an observation time and non-empty supporting text."""
+    return isinstance(e, dict) and isinstance(e.get("sourceUrl"), str) and valid_url(e["sourceUrl"]) \
+        and isinstance(e.get("observedAt"), str) and bool(e["observedAt"].strip()) \
+        and isinstance(e.get("evidence"), str) and bool(e["evidence"].strip())
+
+
+def apply_lab_expansion(data, expansion):
+    """Add manually reviewed labs and fill missing lab fields from official sources.
+
+    Reviewed additions are idempotent by ID. A website or alias URL already owned by
+    another lab is an unresolved duplicate and stops the build. Enrichment only fills
+    placeholders; an existing value is never replaced. Professor links are appended so
+    existing multiple affiliations survive.
+    """
+    by_id = {l["id"]: l for l in data["labs"]}
+    owners = {}
+    for lab in data["labs"]:
+        for u in [lab["labWebsiteUrl"]] + lab.get("alternateWebsiteUrls", []):
+            owners.setdefault(url_key(u), lab["id"])
+    for item in expansion.get("additions", []):
+        evidence = item.get("fieldEvidence", {})
+        for field in ["labName", "labWebsiteUrl"] + (["principalInvestigator"] if known(item.get("principalInvestigator")) else []):
+            items = evidence.get(field)
+            if not isinstance(items, list) or not any(sourced(e) for e in items):
+                raise ValueError(f"Reviewed lab {item['id']} lacks {field} evidence")
+        hosts = [(urllib.parse.urlsplit(e["sourceUrl"]).hostname or "").lower() for e in evidence["labName"]]
+        if not any(h == "ucsd.edu" or h.endswith(".ucsd.edu") for h in hosts):
+            raise ValueError(f"Reviewed lab {item['id']} lacks an official UCSD source for its name")
+        for u in [item["labWebsiteUrl"]] + item.get("alternateWebsiteUrls", []):
+            reason = nonlab_reason(item["labName"], u)
+            if reason:
+                raise ValueError(f"Reviewed lab {item['id']} uses a non-lab destination {u}: {reason}")
+            owner = owners.get(url_key(u))
+            if owner and owner != item["id"]:
+                raise ValueError(f"Reviewed lab {item['id']} duplicates {owner} at {u}")
+        record = {k: copy.deepcopy(v) for k, v in item.items() if k not in {"candidateId", "fieldEvidence"}}
+        record.setdefault("institution", "University of California San Diego")
+        for f in ["principalInvestigatorProfileUrl", "description", "contactEmail"]:
+            record.setdefault(f, MISSING)
+        record.setdefault("researchAreas", [])
+        record.setdefault("recruitingStatus", "Unknown")
+        record.setdefault("recruitingEvidence", {"text": "", "url": ""})
+        old = by_id.get(item["id"])
+        if old:
+            # Lossless merge: later captures may have filled fields, aliases or sources.
+            # The reviewed snapshot only adds list members and fills placeholders.
+            for field, value in record.items():
+                if isinstance(value, list) and isinstance(old.get(field, []), list):
+                    merged = list(old.get(field, []))
+                    merged += [v for v in value if v not in merged]
+                    if merged or field in old:
+                        old[field] = merged
+                elif not known(old.get(field)) and (known(value) or field not in old):
+                    old[field] = value
+            record = old
+        else:
+            record["fieldEvidence"] = {}
+            data["labs"].append(record)
+            by_id[record["id"]] = record
+        for field, items in evidence.items():
+            attach_evidence(record, field, items)
+        for u in [record["labWebsiteUrl"]] + record.get("alternateWebsiteUrls", []):
+            owners.setdefault(url_key(u), record["id"])
+    skipped = []
+    for item in expansion.get("enrichments", []):
+        target = by_id.get(item["labId"])
+        if not target:
+            raise ValueError(f"Lab enrichment targets unknown lab {item['labId']}")
+        for field, value in item.get("fields", {}).items():
+            if field not in {"principalInvestigator", "principalInvestigatorProfileUrl", "description", "researchAreas"}:
+                raise ValueError(f"Unsupported lab enrichment field {field}")
+            if known(target.get(field)) and target[field] != value:
+                skipped.append({"labId": target["id"], "field": field, "kept": target[field], "proposed": value})
+                continue
+            proof = (item.get("evidence") or {}).get(field)
+            proof = [e for e in (proof if isinstance(proof, list) else [proof]) if sourced(e)]
+            if proof and attach_evidence(target, field, proof):
+                target[field] = copy.deepcopy(value)
+            else:
+                raise ValueError(f"Lab enrichment {target['id']}.{field} lacks evidence")
+    people = {pid: p for p in data["professors"] for pid in [p["id"]] + p.get("aliasIds", [])}
+    for link in expansion.get("professorAffiliations", []):
+        person, lab = people.get(link["professorId"]), by_id.get(link["labId"])
+        if not person or not lab:
+            raise ValueError(f"Reviewed affiliation references unknown record {link['professorId']} -> {link['labId']}")
+        items = link.get("evidence") if isinstance(link.get("evidence"), list) else [link.get("evidence")]
+        proof = [copy.deepcopy(e) for e in items if sourced(e)]
+        relationship = link.get("relationship")
+        if not proof or not isinstance(relationship, str) or not relationship.strip():
+            raise ValueError(f"Reviewed affiliation {link['professorId']} -> {link['labId']} lacks source evidence or relationship")
+        affiliations = person.setdefault("labAffiliations", [])
+        if not any(a.get("labId") == lab["id"] or url_key(a.get("url", "")) == url_key(lab["labWebsiteUrl"]) for a in affiliations):
+            affiliations.append({"labId": lab["id"], "labName": lab["labName"], "url": lab["labWebsiteUrl"],
+                                 "relationship": link["relationship"], "fieldEvidence": proof[0] if len(proof) == 1 else proof})
+        if not known(person.get("labAffiliationUrl")):
+            person["labAffiliation"], person["labAffiliationUrl"] = lab["labName"], lab["labWebsiteUrl"]
+            for f in ["labAffiliation", "labAffiliationUrl"]:
+                attach_evidence(person, f, proof)
+        lab["professorIds"] = list(dict.fromkeys(lab.get("professorIds", []) + [person["id"]]))
+    return skipped
+
+
+def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence=None, lab_review=None, lab_expansion=None):
     faculty_evidence = faculty_evidence or {}
     lab_review = lab_review or {}
+    lab_expansion = lab_expansion or {}
     before = profile(data)
     changes, quarantine = clean_legacy(data)
     by_id = {p["id"]: p for p in data["professors"]}
@@ -547,6 +657,7 @@ def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence
     quarantine.extend(reject_nonlabs(data))
     quarantine.extend(consolidate_lab_urls(data))
     quarantine.extend(apply_lab_identity_review(data, lab_review))
+    apply_lab_expansion(data, lab_expansion)
     labs_by_url = {url_key(l["labWebsiteUrl"]): l for l in data["labs"]}
     labs_by_url.update({url_key(u): l for l in data["labs"] for u in l.get("alternateWebsiteUrls", [])})
     canonical_ids = {pid: p["id"] for p in data["professors"] for pid in [p["id"]] + p.get("aliasIds", [])}
@@ -594,7 +705,7 @@ def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence
                 if affiliation.get("fieldEvidence") and record["id"] in by_id:
                     target["professorIds"] = list(dict.fromkeys(target.get("professorIds", []) + [record["id"]]))
     data["schemaVersion"] = "3.0.0"
-    stamps = [p.get("generatedAt") for p in [lab_evidence, teaching, ratings, source_checks, faculty_evidence, lab_review] if p.get("generatedAt")]
+    stamps = [p.get("generatedAt") for p in [lab_evidence, teaching, ratings, source_checks, faculty_evidence, lab_review, lab_expansion] if p.get("generatedAt")]
     data["generatedAt"] = max(stamps, default=data["generatedAt"])
     data["description"] = "UCSD research discovery with field-level evidence, source checks, teaching schedules, and separate student-rating platforms."
     data["collectionPolicy"].update({"fieldEvidenceRequiredForNewClaims": True, "fetchDateIsNotWholeRecordVerification": True,
@@ -662,7 +773,8 @@ def main():
             raise SystemExit(f"Refusing incomplete capture {name}: {value['collectionState']}; served dataset preserved.")
         return value
     atlas, report, changes, quarantine = build(json.loads(args.atlas.read_text()), read("lab-evidence.json"),
-                                              read("teaching-evidence.json"), read("ratings-evidence.json"), read("source-checks.json"), read("faculty-evidence.json"), read("lab-identity-review.json"))
+                                              read("teaching-evidence.json"), read("ratings-evidence.json"), read("source-checks.json"), read("faculty-evidence.json"), read("lab-identity-review.json"),
+                                              read("lab-expansion-review.json"))
     from validate_data import validate_professor, validate_lab, validate_references
     ids = set()
     for kind, validate in [("professors", validate_professor), ("labs", validate_lab)]:

@@ -114,6 +114,9 @@ The old UCSD index and old collectors remain for historical discovery. They refu
 - `data/research-atlas.json`: served professor and lab records.
 - `data/ucsd/*-evidence.json`: independent captures and unresolved identity candidates.
 - `data/ucsd/lab-identity-review.json`: sourced decisions about duplicate lab websites, incorrect directory destinations, and research-group membership.
+- `data/ucsd/lab-expansion-review.json`: manually reviewed additions and missing-field enrichments, consumed by the offline builder; duplicate URLs and unsourced PI claims are rejected.
+- `data/ucsd/lab-expansion-candidates.json`: dated discovery decisions, exclusions, and unresolved candidates for the lab expansion; candidate investigator names are leads unless supported by reviewed leadership evidence.
+- `docs/LAB_EXPANSION_REVIEW.md`: scope, net changes, limitations, and validation of the October 2026 lab review.
 - `data/ucsd/source-checks.json`: URL checks and undated catalog listings.
 - `data/ucsd/real-portal-resources.json`: complete public REAL snapshot and page receipts.
 - `data/quality/`: coverage report and preserved corrections.
