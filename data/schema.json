@@ -133,6 +133,18 @@
           "type": "string",
           "minLength": 1
         },
+        "departments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mergedProfessorIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "officialProfileUrl": {
           "$ref": "#/$defs/urlOrMissing"
         },
@@ -155,6 +167,9 @@
         },
         "googleScholarUrl": {
           "$ref": "#/$defs/urlOrMissing"
+        },
+        "externalProfiles": {
+          "$ref": "#/$defs/externalProfiles"
         },
         "googleScholarSearchUrl": {
           "$ref": "#/$defs/urlOrMissing"
@@ -200,6 +215,12 @@
         "openAlexUrl": {
           "$ref": "#/$defs/urlOrMissing"
         },
+        "semanticScholarAuthorId": {
+          "type": ["string", "null"]
+        },
+        "semanticScholarUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
         "matchedName": {
           "type": "string"
         },
@@ -241,7 +262,39 @@
               "url": {
                 "$ref": "#/$defs/urlOrMissing"
               },
+              "doi": {
+                "$ref": "#/$defs/urlOrMissing"
+              },
+              "openAlexUrl": {
+                "$ref": "#/$defs/urlOrMissing"
+              },
+              "semanticScholarUrl": {
+                "$ref": "#/$defs/urlOrMissing"
+              },
+              "journalImpactFactor": {
+                "$ref": "#/$defs/journalImpactFactor"
+              },
               "source": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "metricSources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "url": {
+                "$ref": "#/$defs/urlOrMissing"
+              },
+              "matchConfidence": {
+                "type": ["number", "string"]
+              },
+              "lastVerified": {
                 "type": "string"
               }
             }
@@ -249,6 +302,67 @@
         },
         "lastVerified": {
           "type": "string"
+        }
+      }
+    },
+    "externalProfiles": {
+      "type": "object",
+      "properties": {
+        "googleScholar": {
+          "$ref": "#/$defs/externalProfile"
+        },
+        "linkedin": {
+          "$ref": "#/$defs/externalProfile"
+        }
+      }
+    },
+    "externalProfile": {
+      "type": "object",
+      "properties": {
+        "profileUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "searchUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "candidate_search",
+            "not_found",
+            "blocked",
+            "unavailable"
+          ]
+        },
+        "sourceUrl": {
+          "$ref": "#/$defs/urlOrMissing"
+        },
+        "lastChecked": {
+          "type": "string"
+        }
+      }
+    },
+    "journalImpactFactor": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": ["number", "string"]
+        },
+        "year": {
+          "type": ["number", "string"]
+        },
+        "source": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "unavailable_open_data",
+            "not_found",
+            "unknown"
+          ]
         }
       }
     },
@@ -284,6 +398,18 @@
         "department": {
           "type": "string",
           "minLength": 1
+        },
+        "departments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mergedLabIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "labWebsiteUrl": {
           "$ref": "#/$defs/urlOrMissing"
@@ -331,6 +457,32 @@
             "program",
             "contact"
           ]
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "coverageStatus": {
+          "type": "string",
+          "enum": [
+            "entity_verified",
+            "overview_only",
+            "needs_source_review"
+          ]
+        },
+        "discoveryMethod": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "piCandidates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "overviewSourceUrl": {
+          "$ref": "#/$defs/urlOrMissing"
         },
         "legacyKind": {
           "type": "string"

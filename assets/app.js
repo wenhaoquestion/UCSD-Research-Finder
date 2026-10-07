@@ -2,9 +2,11 @@ const DATA_URL = "data/research-atlas.json";
 const REAL_PORTAL_DATA_URL = "data/ucsd/real-portal-resources.json";
 const NOT_FOUND = "Not found";
 const UNKNOWN = "Unknown";
-const PAGE_SIZE = 80;
-const DATA_FETCH_OPTIONS = { credentials: "same-origin", cache: "no-store" };
-const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
+const PAGE_SIZE = 40;
+const AUTO_LOAD_LIMIT = PAGE_SIZE * 5;
+const SEARCH_DEBOUNCE_MS = 140;
+const SAVED_KEY = "researchAtlasSaved";
+const DATA_FETCH_OPTIONS = { credentials: "same-origin", cache: "no-cache" };
 const METRIC_STOPWORDS = new Set([
   "about",
   "across",
@@ -43,58 +45,128 @@ const METRIC_STOPWORDS = new Set([
   "with",
 ]);
 
-const state = {
-  data: null,
-  records: [],
-  index: [],
+const DEFAULT_FILTERS = {
   query: "",
   type: "all",
-  institution: "all",
   department: "all",
   area: "all",
   recruiting: "all",
+  evidence: "all",
   verifiedOnly: false,
+  savedOnly: false,
   sort: "relevance",
+};
+
+// Short URL parameter names keep shared links readable.
+const URL_KEYS = {
+  query: "q",
+  type: "type",
+  department: "dept",
+  area: "area",
+  recruiting: "status",
+  evidence: "evidence",
+  verifiedOnly: "checked",
+  savedOnly: "saved",
+  sort: "sort",
+};
+
+const TYPE_KEYS = ["professor", "lab", "resource"];
+const EVIDENCE_LABELS = {
+  courses: "Official teaching records",
+  ratings: "Any published rating",
+  rateMyPI: "PI Review score",
+  rateMyProfessors: "Rate My Professors score",
+  needs_review: "Needs verification",
+};
+const RATING_PLATFORMS = [
+  ["rateMyPI", "PI Review", "Mentoring opinions"],
+  ["rateMyProfessors", "Rate My Professors", "Teaching opinions"],
+];
+const RATING_SHORT = { rateMyPI: "PI Review", rateMyProfessors: "RMP" };
+
+const media = (query) => window.matchMedia(query);
+const DESKTOP_DETAIL_QUERY = media("(min-width: 1280px)");
+const DRAWER_QUERY = media("(max-width: 899px)");
+const COMPACT_QUERY = media("(max-width: 639px)");
+const REDUCED_MOTION_QUERY = media("(prefers-reduced-motion: reduce)");
+
+const state = {
+  ...DEFAULT_FILTERS,
+  data: null,
+  records: [],
+  index: [],
+  byId: new Map(),
+  results: [],
+  highlighter: null,
   visibleLimit: PAGE_SIZE,
-  saved: new Set(JSON.parse(localStorage.getItem("researchAtlasSaved") || "[]")),
-  activeRecord: null,
+  activeId: "",
+  userSelected: false,
+  saved: new Set(readStoredList(SAVED_KEY)),
 };
 
 const els = {
   form: document.querySelector("#searchForm"),
-  hero: document.querySelector(".hero"),
   query: document.querySelector("#query"),
   typeButtons: [...document.querySelectorAll("[data-type-choice]")],
-  smartFilterButtons: [...document.querySelectorAll("[data-smart-filter]")],
-  recruiting: document.querySelector("#recruitingFilter"),
-  institution: document.querySelector("#institutionFilter"),
+  typeCounts: [...document.querySelectorAll("[data-count]")],
+  quickButtons: [...document.querySelectorAll("[data-quick]")],
   department: document.querySelector("#departmentFilter"),
   area: document.querySelector("#areaFilter"),
+  evidence: document.querySelector("#evidenceFilter"),
+  verifiedOnly: document.querySelector("#verifiedOnly"),
+  recruiting: document.querySelector("#recruitingFilter"),
   sort: document.querySelector("#sortFilter"),
   clear: document.querySelector("#clearFilters"),
-  results: document.querySelector("#results"),
-  empty: document.querySelector("#emptyState"),
-  heading: document.querySelector("#resultHeading"),
-  updatedAt: document.querySelector("#updatedAt"),
-  activeFilters: document.querySelector("#activeFilters"),
-  resultSummary: document.querySelector("#resultSummary"),
-  areaChips: document.querySelector("#areaChips"),
-  loadMore: document.querySelector("#loadMore"),
-  savedCount: document.querySelector("#savedCount"),
-  savedList: document.querySelector("#savedList"),
+  filtersButton: document.querySelector("#filtersButton"),
+  filterCount: document.querySelector("#filterCount"),
+  savedToggle: document.querySelector("#savedToggle"),
+  savedCountTop: document.querySelector("#savedCountTop"),
+  shareButton: document.querySelector("#shareButton"),
+  rail: document.querySelector("#filterRail"),
+  railClose: document.querySelector("#railClose"),
+  railApply: document.querySelector("#railApply"),
   professorCount: document.querySelector("#professorCount"),
   labCount: document.querySelector("#labCount"),
   realResourceCount: document.querySelector("#realResourceCount"),
-  sourceCount: document.querySelector("#sourceCount"),
-  verifiedCount: document.querySelector("#verifiedCount"),
-  template: document.querySelector("#resultTemplate"),
-  drawer: document.querySelector("#detailDrawer"),
-  drawerContent: document.querySelector("#drawerContent"),
+  courseCount: document.querySelector("#courseCount"),
+  ratingCount: document.querySelector("#ratingCount"),
+  updatedAt: document.querySelector("#updatedAt"),
+  workspace: document.querySelector("#workspace"),
+  resultHeading: document.querySelector("#resultHeading"),
+  coverageLine: document.querySelector("#coverageLine"),
+  activeFilters: document.querySelector("#activeFilters"),
+  results: document.querySelector("#results"),
+  loadMore: document.querySelector("#loadMore"),
+  empty: document.querySelector("#emptyState"),
+  emptyHint: document.querySelector("#emptyHint"),
+  emptyReset: document.querySelector("#emptyReset"),
+  savedCount: document.querySelector("#savedCount"),
+  savedList: document.querySelector("#savedList"),
+  detailPanel: document.querySelector("#detailPanel"),
+  detailContent: document.querySelector("#detailContent"),
+  detailClose: document.querySelector("#detailClose"),
+  scrim: document.querySelector("#scrim"),
+  toast: document.querySelector("#toast"),
 };
 
-const motion = {
-  mm: null,
-};
+/* ---------- Small utilities ---------- */
+
+function readStoredList(key) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeStoredList(key, values) {
+  try {
+    localStorage.setItem(key, JSON.stringify(values));
+  } catch {
+    // Private mode or blocked storage: saving still works for this visit.
+  }
+}
 
 function normalize(value) {
   return String(value || "")
@@ -104,14 +176,12 @@ function normalize(value) {
     .trim();
 }
 
-function valueOrFallback(value) {
-  if (value === null || value === undefined || value === "") return NOT_FOUND;
-  if (Array.isArray(value) && value.length === 0) return NOT_FOUND;
-  return value;
-}
-
 function isKnown(value) {
   return value !== null && value !== undefined && value !== "" && value !== NOT_FOUND && value !== UNKNOWN;
+}
+
+function knownText(value) {
+  return isKnown(value) ? String(value) : "";
 }
 
 function unique(values) {
@@ -141,38 +211,214 @@ function uniqueLinks(links) {
   return out;
 }
 
-function gsapCore() {
-  return window.gsap || null;
+function numericMetric(value) {
+  const numeric = Number(value);
+  return isKnown(value) && Number.isFinite(numeric) && numeric >= 0;
 }
 
-function prefersReducedMotion() {
-  return window.matchMedia(REDUCED_MOTION_QUERY).matches;
-}
-
-function option(value, label) {
-  const node = document.createElement("option");
-  node.value = value;
-  node.textContent = label;
-  return node;
+function formatNumber(value) {
+  return Number(value || 0).toLocaleString("en-US");
 }
 
 function slugLabel(value) {
-  return value
+  return String(value || "")
     .split(/[\s_-]+/)
     .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
 }
 
+function cleanText(value) {
+  return String(value || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function debounce(fn, wait) {
+  let timer = 0;
+  return (...args) => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => fn(...args), wait);
+  };
+}
+
+function make(tag, className = "", content = "") {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (content !== "" && content !== null && content !== undefined) node.append(content);
+  return node;
+}
+
+function makeExternal(label, url, className = "") {
+  const anchor = make("a", className, label);
+  anchor.href = url;
+  anchor.target = "_blank";
+  anchor.rel = "noreferrer";
+  return anchor;
+}
+
+function prefersReducedMotion() {
+  return REDUCED_MOTION_QUERY.matches;
+}
+
+/* ---------- Evidence model ---------- */
+
+function coursesFor(record) {
+  return Array.isArray(record.teaching?.courses) ? record.teaching.courses : [];
+}
+
+function courseTermOrder(course) {
+  const term = String(course.term || "");
+  const year = Number(term.match(/\b(?:19|20)\d{2}\b/)?.[0] || 0);
+  const season = (term.match(/\b(winter|spring|summer|fall|autumn)\b/i)?.[1] || "").toLowerCase();
+  return year * 10 + ({ winter: 1, spring: 2, summer: 3, fall: 4, autumn: 4 }[season] || 0);
+}
+
+function ratedPlatforms(record) {
+  return Object.entries(record.ratings || {}).filter(([, rating]) => (
+    rating.status === "verified" && numericMetric(rating.score) && Number(rating.reviewCount) > 0
+  ));
+}
+
+function bestRating(record) {
+  return ratedPlatforms(record).sort(([, a], [, b]) => Number(b.reviewCount) - Number(a.reviewCount))[0] || null;
+}
+
+function evidenceFields(record) {
+  return Object.entries(record.fieldEvidence || {}).filter(([, items]) => (
+    Array.isArray(items) && items.some((item) => item.sourceUrl && item.observedAt)
+  ));
+}
+
+function sourceChecked(record) {
+  return record.verification?.status === "source_checked" || evidenceFields(record).length > 0;
+}
+
+function verificationLabel(record) {
+  if (record.verification?.status === "needs_review") return "Needs review";
+  if (record.verification?.status === "unavailable") return "Source unavailable";
+  if (sourceChecked(record)) return "Partly source checked";
+  return "Legacy · not reverified";
+}
+
+function facultyLabel(record) {
+  const legacyRole = {
+    emeritus: "Emeritus faculty",
+    former: "Former faculty · directory",
+    deceased: "Deceased · directory",
+  }[record.facultyStatus];
+  return legacyRole || ({
+    listed_faculty: "Listed in official faculty directory",
+    affiliate: "Affiliate · directory",
+    emeritus: "Emeritus faculty",
+    lecturer: "Lecturer · directory",
+    adjunct: "Adjunct faculty · directory",
+  })[record.appointmentStatus] || (record.facultyStatus === "listed_in_official_directory" ? "Listed in official directory" : "Status not verified");
+}
+
+function departmentNames(record) {
+  return uniqueByNormalized([
+    record.department,
+    ...(record.departmentAffiliations || []).map((item) => typeof item === "string" ? item : item.department || item.name),
+    ...(Array.isArray(record.directoryListings) ? record.directoryListings.map((item) => item.department) : []),
+  ]);
+}
+
+function dateLabel(value) {
+  if (!isKnown(value)) return "Not checked";
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(value))) return String(value);
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return "Date unavailable";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit",
+  }).format(date);
+}
+
+function ratingStatusLabel(rating) {
+  return ({
+    no_reviews: "No reviews on matched profile",
+    not_found: "No exact match in checked source",
+    unavailable: "Source unavailable",
+    needs_review: "Identity needs review",
+    not_checked: "Not checked",
+  })[rating?.status] || "Not verified";
+}
+
+function hasScholarProfile(record) {
+  if (!isKnown(record.googleScholarUrl)) return false;
+  try {
+    const url = new URL(record.googleScholarUrl);
+    return /^scholar\.google\.[a-z.]+$/.test(url.hostname) && url.pathname === "/citations" && Boolean(url.searchParams.get("user"));
+  } catch {
+    return false;
+  }
+}
+
+function tokenSet(value) {
+  return new Set(
+    normalize(cleanText(value))
+      .split(/\s+/)
+      .filter((token) => token.length > 2 && !/^\d+$/.test(token) && !METRIC_STOPWORDS.has(token)),
+  );
+}
+
+function relevantPublications(record) {
+  const recordTokens = tokenSet([record.department, record.summary, record.labAffiliation, ...(record.researchAreas || [])].join(" "));
+  const publications = record.academicProfile?.recentPublications || [];
+  return publications
+    .map((paper) => {
+      let score = 0;
+      for (const token of tokenSet([paper.title, paper.venue].join(" "))) {
+        if (recordTokens.has(token)) score += 1;
+      }
+      return { paper, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || String(b.paper.publicationDate || b.paper.year || "").localeCompare(String(a.paper.publicationDate || a.paper.year || "")))
+    .map(({ paper }) => paper);
+}
+
+function hasAcademicMetrics(record) {
+  const profile = record.academicProfile || {};
+  return numericMetric(profile.citationCount) || numericMetric(profile.worksCount) || numericMetric(profile.hIndex);
+}
+
+// Citation numbers are shown only when the author match itself carries verification evidence.
+function academicMetrics(record) {
+  const profile = record.academicProfile || {};
+  const hasMetrics = hasAcademicMetrics(record);
+  const source = isKnown(profile.source) ? profile.source : (isKnown(profile.openAlexUrl) ? "OpenAlex" : UNKNOWN);
+  const verified = hasMetrics && (
+    profile.verificationStatus === "verified"
+    || (record.fieldEvidence?.academicProfile || []).some((evidence) => evidence.sourceUrl && evidence.observedAt && evidence.status === "verified")
+  );
+  return {
+    profile,
+    hasMetrics,
+    verified,
+    source,
+    citationCount: verified && numericMetric(profile.citationCount) ? Number(profile.citationCount) : -1,
+    status: verified ? `${source} verified` : (hasMetrics ? `${source} needs review` : "Not verified"),
+  };
+}
+
+/* ---------- Record model ---------- */
+
 function professorLinks(professor) {
   return [
     ["Faculty profile", professor.officialProfileUrl],
     ["Personal website", professor.personalWebsiteUrl],
-    ["Google Scholar profile", professor.googleScholarUrl],
+    ["Google Scholar profile", hasScholarProfile(professor) ? professor.googleScholarUrl : null],
     ["Google Scholar search", professor.googleScholarSearchUrl],
     ["OpenAlex author", professor.academicProfile?.openAlexUrl],
     ["LinkedIn search", professor.linkedinSearchUrl],
     ["Lab affiliation", professor.labAffiliationUrl],
+    ...(professor.labAffiliations || []).filter((lab) => lab.url !== professor.labAffiliationUrl).map((lab) => [lab.labName || "Related lab", lab.url]),
   ].filter(([, url]) => isKnown(url));
 }
 
@@ -185,7 +431,7 @@ function labLinks(lab) {
 
 function resourceLinks(resource) {
   return [
-    ["REAL Portal", resource.sourceUrl],
+    ["REAL Portal listing", resource.sourceUrl],
     ...(resource.externalUrls || []).map((url, index) => [`External link ${index + 1}`, url]),
   ].filter(([, url]) => isKnown(url));
 }
@@ -200,67 +446,83 @@ function resourceAreas(resource) {
   return unique(areas);
 }
 
+function professorKind(item) {
+  const flagged = ["emeritus", "former", "deceased"].includes(item.facultyStatus)
+    || ["affiliate", "emeritus", "lecturer", "adjunct"].includes(item.appointmentStatus);
+  return flagged ? facultyLabel(item).split(" · ")[0] : "Professor";
+}
+
+// Derived facts are computed once so filtering and sorting stay cheap on every keystroke.
+function withFacts(record) {
+  const rating = bestRating(record);
+  record.facts = {
+    courses: coursesFor(record).length,
+    ratings: ratedPlatforms(record).map(([key]) => key),
+    rating,
+    checked: sourceChecked(record),
+    needsReview: record.verification?.status === "needs_review",
+    metrics: academicMetrics(record),
+  };
+  return record;
+}
+
 function buildRecords(data, realPortalData = null) {
-  const professors = mergeProfessorDuplicates((data.professors || []).map((item) => {
-    const displayName = valueOrFallback(item.name);
-    return {
-      ...item,
-      recordType: "professor",
-      displayName,
-      displayKind: "Professor",
-      affiliationLine: [item.institution, item.department].filter(isKnown).join(" / "),
-      summary: valueOrFallback(item.researchSummary),
-      email: valueOrFallback(item.email),
-      researchAreas: item.researchAreas || [],
-      sourceUrls: item.sourceUrls || [],
-      links: professorLinks(item),
-    };
+  const professors = mergeProfessorDuplicates((data.professors || []).map((item) => ({
+    ...item,
+    recordType: "professor",
+    displayName: knownText(item.name) || NOT_FOUND,
+    displayKind: professorKind(item),
+    summary: knownText(item.researchSummary),
+    email: knownText(item.email),
+    researchAreas: item.researchAreas || [],
+    sourceUrls: item.sourceUrls || [],
+    links: professorLinks(item),
+  }))).map((record) => withFacts({
+    ...record,
+    departments: record.mergedProfileCount > 1 ? record.departmentAffiliations : departmentNames(record),
   }));
 
-  const labs = (data.labs || []).map((item) => {
-    const displayName = valueOrFallback(item.labName);
-    return {
-      ...item,
-      recordType: "lab",
-      displayName,
-      displayKind: slugLabel(item.recordSubtype || "lab"),
-      affiliationLine: [item.institution, item.department].filter(isKnown).join(" / "),
-      summary: valueOrFallback(item.description),
-      email: valueOrFallback(item.contactEmail),
-      researchAreas: item.researchAreas || [],
-      sourceUrls: item.sourceUrls || [],
-      links: labLinks(item),
-    };
-  });
+  const labs = (data.labs || []).map((item) => withFacts({
+    ...item,
+    recordType: "lab",
+    displayName: knownText(item.labName) || NOT_FOUND,
+    displayKind: item.recordSubtype === "research_group" ? "Research group" : "Lab",
+    departments: departmentNames(item),
+    summary: knownText(item.description),
+    email: knownText(item.contactEmail),
+    researchAreas: item.researchAreas || [],
+    sourceUrls: item.sourceUrls || [],
+    links: labLinks(item),
+  }));
 
-  const resources = (realPortalData?.resources || []).map((item) => {
-    const displayName = valueOrFallback(item.title);
-    return {
-      ...item,
-      id: item.id || `real-${displayName}`,
-      recordType: "resource",
-      displayName,
-      displayKind: "REAL Resource",
-      institution: "University of California San Diego",
-      department: valueOrFallback(item.organization),
-      affiliationLine: [item.resourceType, item.organization].filter(isKnown).join(" / "),
-      summary: valueOrFallback(item.description),
-      email: valueOrFallback(item.contactEmails?.[0]),
-      researchAreas: resourceAreas(item),
-      sourceUrls: [item.sourceUrl || realPortalData.sourceUrl].filter(isKnown),
-      links: resourceLinks(item),
-      recruitingStatus: UNKNOWN,
-      recruitingEvidence: { text: "", url: "" },
-      lastVerified: item.lastVerified,
-    };
-  });
+  const resources = (realPortalData?.resources || []).map((item) => withFacts({
+    ...item,
+    id: item.id || `real-${item.title}`,
+    recordType: "resource",
+    displayName: knownText(item.title) || NOT_FOUND,
+    displayKind: "REAL resource",
+    institution: "University of California San Diego",
+    department: knownText(item.organization),
+    departments: uniqueByNormalized([item.organization]),
+    summary: knownText(item.description),
+    email: knownText(item.contactEmails?.[0]),
+    researchAreas: resourceAreas(item),
+    sourceUrls: [item.sourceUrl || realPortalData.sourceUrl].filter(isKnown),
+    links: resourceLinks(item),
+    recruitingStatus: UNKNOWN,
+    recruitingEvidence: { text: "", url: "" },
+  }));
 
   return [...professors, ...labs, ...resources];
 }
 
 function professorMergeKey(record) {
-  if (isKnown(record.email)) return `email:${String(record.email).toLowerCase()}`;
-  if (hasScholarProfile(record)) return `scholar:${record.googleScholarUrl}`;
+  const name = normalize(record.displayName || record.name);
+  if (!name || !isKnown(record.displayName || record.name)) return "";
+  // Department offices and research centers share contact addresses. An email
+  // alone is not a person identity and must not collapse different professors.
+  if (isKnown(record.email)) return `name:${name}|email:${String(record.email).toLowerCase()}`;
+  if (hasScholarProfile(record)) return `name:${name}|scholar:${record.googleScholarUrl}`;
   return "";
 }
 
@@ -302,7 +564,6 @@ function mergeProfessorGroup(records) {
   base.mergedProfileCount = records.length;
   base.department = departments.join(" + ");
   base.institution = institutions[0] || base.institution;
-  base.affiliationLine = [base.institution, base.department].filter(isKnown).join(" / ");
   base.summary = summaryRecord.summary;
   base.researchSummary = summaryRecord.summary;
   base.email = records.find((record) => isKnown(record.email))?.email || base.email;
@@ -313,10 +574,34 @@ function mergeProfessorGroup(records) {
   base.linkedinSearchUrl = records.find((record) => isKnown(record.linkedinSearchUrl))?.linkedinSearchUrl || base.linkedinSearchUrl;
   base.labAffiliation = uniqueByNormalized(records.map((record) => record.labAffiliation)).join(" + ") || base.labAffiliation;
   base.labAffiliationUrl = records.find((record) => isKnown(record.labAffiliationUrl))?.labAffiliationUrl || base.labAffiliationUrl;
+  base.labAffiliations = [...new Map(records.flatMap((record) => record.labAffiliations || []).map((lab) => [`${lab.labId}|${lab.url}`, lab])).values()];
+  base.aliasNames = uniqueByNormalized(records.flatMap((record) => record.aliasNames || []));
+  base.departmentAffiliations = uniqueByNormalized(records.flatMap(departmentNames));
+  base.directoryListings = records.flatMap((record) => Array.isArray(record.directoryListings) ? record.directoryListings : []);
   base.researchAreas = uniqueByNormalized(records.flatMap((record) => record.researchAreas || []));
   base.sourceUrls = unique(records.flatMap((record) => record.sourceUrls || []).filter(isKnown));
   base.links = uniqueLinks(records.flatMap((record) => record.links || []));
   base.academicProfile = academicRecord.academicProfile || base.academicProfile;
+  const courseMap = new Map(records.flatMap(coursesFor).map((course) => [
+    [course.courseCode, course.term, course.sourceUrl].join("|"), course,
+  ]));
+  base.teaching = { ...(base.teaching || {}), courses: [...courseMap.values()] };
+  base.teaching.candidates = [...new Map(records.flatMap((record) => record.teaching?.candidates || []).map((course) => [
+    [course.courseCode, course.term, course.sourceUrl, course.instructorName].join("|"), course,
+  ])).values()];
+  base.ratings = {};
+  for (const record of [...records].sort((a, b) => String(a.verification?.lastAttemptedAt || "").localeCompare(String(b.verification?.lastAttemptedAt || "")))) {
+    for (const [key, rating] of Object.entries(record.ratings || {})) {
+      if (!base.ratings[key] || rating.status === "verified") base.ratings[key] = rating;
+    }
+  }
+  base.fieldEvidence = {};
+  records.forEach((record) => Object.entries(record.fieldEvidence || {}).forEach(([key, values]) => {
+    base.fieldEvidence[key] = [...(base.fieldEvidence[key] || []), ...(Array.isArray(values) ? values : [])];
+  }));
+  base.verification = records.find((record) => record.verification?.status === "needs_review")?.verification
+    || records.find((record) => record.verification?.status === "source_checked")?.verification
+    || base.verification;
   base.recruitingStatus = records.find((record) => record.recruitingStatus === "Recruiting")?.recruitingStatus
     || records.find((record) => record.recruitingStatus === "Not recruiting")?.recruitingStatus
     || base.recruitingStatus;
@@ -342,1364 +627,1252 @@ function mergeProfessorDuplicates(professors) {
 
 function buildIndex(records) {
   return records.map((record) => {
-    const linkText = record.links.flatMap(([label, url]) => [label, url]);
-    const sourceText = record.sourceUrls || [];
+    const departments = record.departments || departmentNames(record);
     const fields = [
       record.displayName,
       record.displayKind,
       record.institution,
-      record.department,
+      record.facultyStatus,
+      record.directorySection,
+      record.appointmentStatus,
+      ...(record.aliasNames || []),
+      ...departments,
       record.summary,
       record.email,
       record.labAffiliation,
+      ...(record.labAffiliations || []).flatMap((lab) => [lab.labName, lab.url]),
       record.principalInvestigator,
+      ...(record.relatedProfessorNames || []),
       record.organization,
       record.resourceType,
       record.applicationProcedure,
       record.academicProfile?.matchedName,
       record.academicProfile?.openAlexUrl,
-      ...(record.academicProfile?.recentPublications || []).flatMap((paper) => [
-        paper.title,
-        paper.venue,
-        paper.year,
-      ]),
+      ...(record.academicProfile?.recentPublications || []).flatMap((paper) => [paper.title, paper.venue, paper.year]),
       record.recruitingStatus,
       record.recruitingEvidence?.text,
+      // Compact codes ("cse151a") are indexed so course searches work without the space.
+      ...coursesFor(record).flatMap((course) => [course.courseCode, String(course.courseCode || "").replace(/\s+/g, ""), course.title, course.term, course.status]),
+      ...Object.values(record.ratings || {}).map((rating) => rating.platform),
       ...(record.researchAreas || []),
-      ...linkText,
-      ...sourceText,
+      ...(record.links || []).flatMap(([label, url]) => [label, url]),
+      ...(record.sourceUrls || []),
     ];
 
     return {
-      haystack: normalize(fields.join(" ")),
+      haystack: normalize(fields.filter(isKnown).join(" ")),
       name: normalize(record.displayName),
-      department: normalize(record.department),
+      departments: departments.map(normalize),
       areas: (record.researchAreas || []).map(normalize),
-      sourceCount: (record.sourceUrls || []).length,
     };
   });
 }
 
-function setSelectOptions(select, values, allLabel) {
-  const current = select.value || "all";
-  select.replaceChildren(option("all", allLabel), ...values.map((value) => option(value, value)));
-  select.value = values.includes(current) ? current : "all";
-}
-
-function renderFacets() {
-  const institutions = unique(state.records.map((record) => record.institution).filter(isKnown)).sort();
-  const departments = unique(state.records.map((record) => record.department).filter(isKnown)).sort();
-  const areas = unique(state.records.flatMap((record) => record.researchAreas || [])).sort();
-
-  setSelectOptions(els.institution, institutions, "All universities");
-  setSelectOptions(els.department, departments, "All departments");
-  setSelectOptions(els.area, areas, "All research areas");
-
-  const topAreas = [...areas]
-    .sort((a, b) => areaCount(b) - areaCount(a) || a.localeCompare(b))
-    .slice(0, 10);
-
-  els.areaChips.replaceChildren(
-    ...topAreas.map((area) => {
-      const button = document.createElement("button");
-      button.className = `chip${state.area === area ? " is-active" : ""}`;
-      button.type = "button";
-      button.textContent = area;
-      button.addEventListener("click", () => {
-        state.area = state.area === area ? "all" : area;
-        state.visibleLimit = PAGE_SIZE;
-        els.area.value = state.area;
-        renderFacets();
-        render();
-      });
-      return button;
-    }),
-  );
-}
-
-function updateTypeButtons() {
-  els.typeButtons.forEach((button) => {
-    const isActive = button.dataset.typeChoice === state.type;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
-}
-
-function updateSmartFilterButtons() {
-  els.smartFilterButtons.forEach((button) => {
-    const key = button.dataset.smartFilter;
-    const isActive = (
-      (key === "recruiting" && state.recruiting === "Recruiting") ||
-      (key === "verified" && state.verifiedOnly) ||
-      (key === "professor" && state.type === "professor" && !state.verifiedOnly) ||
-      (key === "lab" && state.type === "lab") ||
-      (key === "resource" && state.type === "resource")
-    );
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
-}
-
-function areaCount(area) {
-  return state.records.filter((record) => (record.researchAreas || []).includes(area)).length;
-}
+/* ---------- Search & filtering ---------- */
 
 function compileTerms() {
   return normalize(state.query).split(/\s+/).filter(Boolean);
 }
 
+function matchesFilters(record, indexed, terms) {
+  const { facts } = record;
+  if (state.savedOnly && !state.saved.has(record.id)) return false;
+  if (state.department !== "all" && !record.departments.includes(state.department)) return false;
+  if (state.area !== "all" && !record.researchAreas.includes(state.area)) return false;
+  if (state.recruiting !== "all" && (record.recruitingStatus || UNKNOWN) !== state.recruiting) return false;
+  if (state.verifiedOnly && !facts.checked) return false;
+  if (state.evidence === "courses" && !facts.courses) return false;
+  if (state.evidence === "ratings" && !facts.ratings.length) return false;
+  if (["rateMyPI", "rateMyProfessors"].includes(state.evidence) && !facts.ratings.includes(state.evidence)) return false;
+  if (state.evidence === "needs_review" && facts.checked && !facts.needsReview) return false;
+  if (terms.length && !terms.every((term) => indexed.haystack.includes(term))) return false;
+  return true;
+}
+
 function scoreRecord(record, indexed, terms) {
-  if (!terms.length) return 0;
-  let score = 0;
+  const { facts } = record;
+  // Without a query, records with more checked evidence surface first.
+  let score = (facts.checked ? 4 : 0) + (facts.courses ? 3 : 0) + (facts.ratings.length ? 2 : 0) + (facts.metrics.verified ? 2 : 0);
   for (const term of terms) {
-    if (indexed.name.includes(term)) score += 8;
-    if (indexed.department.includes(term)) score += 4;
-    if (indexed.areas.some((area) => area.includes(term))) score += 5;
+    if (indexed.name.startsWith(term)) score += 6;
+    if (indexed.name.includes(term)) score += 10;
+    if (indexed.departments.some((department) => department.includes(term))) score += 5;
+    if (indexed.areas.some((area) => area.includes(term))) score += 6;
     if (indexed.haystack.includes(term)) score += 1;
   }
-  if (record.recruitingStatus === "Recruiting") score += 2;
+  if (record.recruitingStatus === "Recruiting") score += 3;
   return score;
 }
 
-function filteredRecords() {
+function ratingSortValue(record) {
+  const rating = record.facts.rating?.[1];
+  return rating ? Number(rating.score) * 1000 + Math.min(Number(rating.reviewCount), 999) : -1;
+}
+
+const byName = (a, b) => a.record.displayName.localeCompare(b.record.displayName);
+const SORTERS = {
+  relevance: (a, b) => b.score - a.score || byName(a, b),
+  name: byName,
+  department: (a, b) => (a.record.departments[0] || "").localeCompare(b.record.departments[0] || "") || byName(a, b),
+  courses: (a, b) => b.record.facts.courses - a.record.facts.courses || byName(a, b),
+  rating: (a, b) => ratingSortValue(b.record) - ratingSortValue(a.record) || byName(a, b),
+  citations: (a, b) => b.record.facts.metrics.citationCount - a.record.facts.metrics.citationCount || byName(a, b),
+  sources: (a, b) => b.record.sourceUrls.length - a.record.sourceUrls.length || byName(a, b),
+};
+
+// One pass computes the visible rows and the per-type counts under every other filter,
+// so the type tabs always show how many records each tab would reveal.
+function computeResults() {
   const terms = compileTerms();
+  const counts = { all: 0, professor: 0, lab: 0, resource: 0 };
   const rows = [];
-
-  state.records.forEach((record, index) => {
-    const indexed = state.index[index];
-
+  state.records.forEach((record, i) => {
+    const indexed = state.index[i];
+    if (!matchesFilters(record, indexed, terms)) return;
+    counts.all += 1;
+    counts[record.recordType] += 1;
     if (state.type !== "all" && record.recordType !== state.type) return;
-    if (state.institution !== "all" && record.institution !== state.institution) return;
-    if (state.department !== "all" && record.department !== state.department) return;
-    if (state.area !== "all" && !(record.researchAreas || []).includes(state.area)) return;
-    if (state.recruiting !== "all" && record.recruitingStatus !== state.recruiting) return;
-    if (state.verifiedOnly && !academicMetrics(record).verified) return;
-    if (terms.length && !terms.every((term) => indexed.haystack.includes(term))) return;
-
-    rows.push({ record, index, score: scoreRecord(record, indexed, terms) });
+    rows.push({ record, score: state.sort === "relevance" ? scoreRecord(record, indexed, terms) : 0 });
   });
-
-  rows.sort((a, b) => {
-    if (state.sort === "name") return a.record.displayName.localeCompare(b.record.displayName);
-    if (state.sort === "department") {
-      return (
-        (a.record.department || "").localeCompare(b.record.department || "") ||
-        a.record.displayName.localeCompare(b.record.displayName)
-      );
-    }
-    if (state.sort === "citations") {
-      return citationSortValue(b.record) - citationSortValue(a.record) || a.record.displayName.localeCompare(b.record.displayName);
-    }
-    if (state.sort === "sources") {
-      return b.record.sourceUrls.length - a.record.sourceUrls.length || a.record.displayName.localeCompare(b.record.displayName);
-    }
-    return b.score - a.score || a.record.displayName.localeCompare(b.record.displayName);
-  });
-
-  return rows.map((row) => row.record);
+  rows.sort(SORTERS[state.sort] || SORTERS.relevance);
+  return { records: rows.map((row) => row.record), counts, terms };
 }
 
-function citationSortValue(record) {
-  const metrics = academicMetrics(record);
-  const value = metrics.verified ? metrics.profile.citationCount : UNKNOWN;
-  if (!isKnown(value)) return -1;
-  const numeric = Number(value);
-  return Number.isFinite(numeric) ? numeric : -1;
+function buildHighlighter(terms) {
+  const usable = terms.filter((term) => term.length > 1).sort((a, b) => b.length - a.length);
+  return usable.length ? new RegExp(usable.map(escapeRegExp).join("|"), "gi") : null;
 }
 
-function statusClass(status) {
-  if (status === "Recruiting") return "recruiting";
-  if (status === "Not recruiting") return "not-recruiting";
-  return "unknown";
-}
-
-function makeTag(text) {
-  const tag = document.createElement("span");
-  tag.textContent = text;
-  return tag;
-}
-
-function makeLink(label, url, className = "") {
-  const anchor = document.createElement("a");
-  anchor.className = `link-button ${className}`.trim();
-  anchor.href = url;
-  anchor.target = "_blank";
-  anchor.rel = "noreferrer";
-  anchor.textContent = label;
-  return anchor;
-}
-
-function cardLinks(record) {
-  if (record.recordType === "professor") {
-    return [
-      ["Personal website", record.personalWebsiteUrl],
-      ["Faculty profile", record.officialProfileUrl],
-    ]
-      .filter(([, url]) => isKnown(url))
-      .map(([label, url], index) => [label, url, index === 0 ? "primary-link" : ""]);
+function highlight(value) {
+  const source = String(value || "");
+  const fragment = document.createDocumentFragment();
+  if (!state.highlighter) {
+    fragment.append(source);
+    return fragment;
   }
-  return record.links.slice(0, 1).map(([label, url]) => [label, url, "primary-link"]);
-}
-
-function makeEmail(record) {
-  const row = document.createDocumentFragment();
-  if (!isKnown(record.email)) {
-    const missing = document.createElement("span");
-    missing.className = "email-pill";
-    missing.textContent = "Email not found";
-    row.appendChild(missing);
-    return row;
+  let last = 0;
+  for (const match of source.matchAll(state.highlighter)) {
+    fragment.append(source.slice(last, match.index), make("mark", "", match[0]));
+    last = match.index + match[0].length;
   }
-
-  const email = document.createElement("a");
-  email.className = "email-pill";
-  email.href = `mailto:${record.email}`;
-  email.textContent = record.email;
-  row.appendChild(email);
-
-  const copy = document.createElement("button");
-  copy.className = "email-copy";
-  copy.type = "button";
-  copy.textContent = "Copy";
-  copy.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(record.email);
-      copy.textContent = "Copied";
-      window.setTimeout(() => {
-        copy.textContent = "Copy";
-      }, 1200);
-    } catch {
-      copy.textContent = "Select email";
-    }
-  });
-  row.appendChild(copy);
-  return row;
-}
-
-function numberLabel(value) {
-  if (!isKnown(value)) return "";
-  if (typeof value === "number") return value.toLocaleString();
-  const numeric = Number(value);
-  return Number.isFinite(numeric) ? numeric.toLocaleString() : String(value);
-}
-
-function numericMetric(value) {
-  const numeric = Number(value);
-  return isKnown(value) && Number.isFinite(numeric) && numeric >= 0;
-}
-
-function cleanText(value) {
-  return String(value || "")
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function tokenSet(value) {
-  return new Set(
-    normalize(cleanText(value))
-      .split(/\s+/)
-      .filter((token) => token.length > 2 && !/^\d+$/.test(token) && !METRIC_STOPWORDS.has(token)),
-  );
-}
-
-function recordEvidenceTokens(record) {
-  return tokenSet([
-    record.department,
-    record.summary,
-    record.labAffiliation,
-    ...(record.researchAreas || []),
-  ].join(" "));
-}
-
-function paperEvidenceTokens(paper) {
-  return tokenSet([
-    paper.title,
-    paper.venue,
-  ].join(" "));
-}
-
-function publicationRelevanceScore(record, paper) {
-  const recordTokens = recordEvidenceTokens(record);
-  const paperTokens = paperEvidenceTokens(paper);
-  let score = 0;
-
-  for (const token of paperTokens) {
-    if (recordTokens.has(token)) score += 1;
-  }
-
-  return score;
-}
-
-function relevantPublications(record) {
-  const publications = record.academicProfile?.recentPublications || [];
-  return publications
-    .map((paper) => ({ paper, score: publicationRelevanceScore(record, paper) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score || String(b.paper.publicationDate || b.paper.year || "").localeCompare(String(a.paper.publicationDate || a.paper.year || "")))
-    .map(({ paper }) => paper);
-}
-
-function hasAcademicMetrics(record) {
-  const profile = record.academicProfile || {};
-  return numericMetric(profile.citationCount) || numericMetric(profile.worksCount) || numericMetric(profile.hIndex);
-}
-
-function academicProfileLooksRelevant(record) {
-  const profile = record.academicProfile || {};
-  if (!hasAcademicMetrics(record)) return false;
-
-  const confidence = Number(profile.matchConfidence);
-  if (Number.isFinite(confidence) && confidence < 0.95) return false;
-
-  const publications = profile.recentPublications || [];
-  if (!publications.length) return Number.isFinite(confidence) && confidence >= 0.98;
-
-  return relevantPublications(record).length > 0;
-}
-
-function academicMetrics(record) {
-  const profile = record.academicProfile || {};
-  const hasMetrics = hasAcademicMetrics(record);
-  const source = isKnown(profile.source) ? profile.source : (isKnown(profile.openAlexUrl) ? "OpenAlex" : UNKNOWN);
-  const verified = hasMetrics && academicProfileLooksRelevant(record);
-  return {
-    profile,
-    hasMetrics,
-    verified,
-    source,
-    status: verified ? `${source} verified` : (hasMetrics ? `${source} needs review` : "Not verified"),
-  };
-}
-
-function initials(name) {
-  const parts = cleanText(name).split(/\s+/).filter(Boolean);
-  if (!parts.length) return "?";
-  return parts.slice(0, 2).map((part) => part[0]).join("").toUpperCase();
-}
-
-function scholarUrl(record) {
-  if (hasScholarProfile(record)) {
-    return record.googleScholarUrl;
-  }
-  if (isKnown(record.googleScholarSearchUrl)) return record.googleScholarSearchUrl;
-  const query = encodeURIComponent(`${record.displayName} ${record.institution || "UC San Diego"}`);
-  return `https://scholar.google.com/citations?view_op=search_authors&mauthors=${query}&hl=en`;
-}
-
-function hasScholarProfile(record) {
-  return isKnown(record.googleScholarUrl) && record.googleScholarUrl.includes("scholar.google.");
-}
-
-function bestRecentPublication(record) {
-  return relevantPublications(record).find((paper) => isKnown(paper.title))
-    || (record.academicProfile?.recentPublications || []).find((paper) => isKnown(paper.title));
-}
-
-function makeMetric(label, value, emptyLabel = "N/A") {
-  const item = document.createElement("span");
-  const number = document.createElement("strong");
-  number.textContent = isKnown(value) ? numberLabel(value) : emptyLabel;
-  const text = document.createElement("span");
-  text.textContent = label;
-  item.append(number, text);
-  return item;
-}
-
-function renderScholarPreview(record) {
-  if (record.recordType !== "professor") return null;
-
-  const metrics = academicMetrics(record);
-  const academic = metrics.profile;
-  const paper = metrics.verified ? bestRecentPublication(record) : null;
-  const wrapper = document.createElement("div");
-  wrapper.className = "scholar-preview";
-
-  const header = document.createElement("div");
-  header.className = "scholar-preview-head";
-  const label = document.createElement("span");
-  label.className = "metric-title";
-  label.textContent = "Academic metrics";
-  const source = document.createElement("em");
-  source.className = `metric-source${metrics.verified ? " is-verified" : metrics.hasMetrics ? " is-review" : ""}`;
-  source.textContent = metrics.status;
-  label.appendChild(source);
-
-  const scholar = makeLink(hasScholarProfile(record) ? "Scholar profile" : "Scholar search", scholarUrl(record), "scholar-link");
-  header.append(label, scholar);
-
-  if (!metrics.verified) {
-    const notice = document.createElement("p");
-    notice.className = "metrics-review";
-    notice.textContent = metrics.hasMetrics
-      ? "Citation numbers are hidden because the publication match needs review."
-      : "Citation metrics are not verified in the local metadata yet.";
-    wrapper.append(header, notice);
-    return wrapper;
-  }
-
-  const stats = document.createElement("div");
-  stats.className = "scholar-stats";
-  stats.append(
-    makeMetric("citations", academic.citationCount),
-    makeMetric("works", academic.worksCount),
-  );
-
-  const recent = document.createElement("p");
-  recent.className = "recent-paper";
-  if (paper) {
-    recent.textContent = `Recent: ${cleanText(paper.title)}`;
-    const paperMeta = [paper.publicationDate || paper.year, isKnown(paper.citationCount) ? `${numberLabel(paper.citationCount)} citations` : ""]
-      .filter(isKnown)
-      .join(" / ");
-    if (paperMeta) {
-      const meta = document.createElement("span");
-      meta.textContent = paperMeta;
-      recent.appendChild(meta);
-    }
-  } else {
-    recent.textContent = "Recent papers not available in the local metadata yet.";
-  }
-
-  wrapper.append(header, stats, recent);
-  return wrapper;
-}
-
-function metricBadgeText(record) {
-  if (record.recordType !== "professor") return record.displayKind;
-  const metrics = academicMetrics(record);
-  if (metrics.verified) return `${metrics.source} verified`;
-  if (metrics.hasMetrics) return "Metrics need review";
-  return "Metrics pending";
-}
-
-function makeInsight(label, value, className = "") {
-  const item = document.createElement("span");
-  item.className = `insight-pill ${className}`.trim();
-  const key = document.createElement("span");
-  key.textContent = label;
-  const body = document.createElement("strong");
-  body.textContent = value;
-  item.append(key, body);
-  return item;
-}
-
-function renderCardInsights(record) {
-  const row = document.createElement("div");
-  row.className = "card-insights";
-  row.append(
-    makeInsight("Sources", numberLabel(record.sourceUrls?.length || 0)),
-    makeInsight("Contact", isKnown(record.email) ? "Email" : "Missing", isKnown(record.email) ? "good" : "muted"),
-    makeInsight("Evidence", metricBadgeText(record)),
-  );
-  if (record.recordType === "resource" && isKnown(record.applicationProcedure)) {
-    row.append(makeInsight("Apply", record.applicationProcedure));
-  }
-  return row;
-}
-
-function renderTags(tags, limit = 4) {
-  const visible = (tags || []).slice(0, limit).map(makeTag);
-  const remaining = Math.max((tags || []).length - limit, 0);
-  if (remaining > 0) {
-    const more = makeTag(`+${remaining}`);
-    more.className = "more-tag";
-    visible.push(more);
-  }
-  return visible;
-}
-
-function recordMetaLine(record) {
-  const parts = [];
-  if (record.recordType === "professor") {
-    return null;
-  } else if (record.recordType === "resource") {
-    if (isKnown(record.yearOfActivity)) parts.push(record.yearOfActivity);
-    if (isKnown(record.applicationProcedure)) parts.push(record.applicationProcedure);
-  }
-  if (!parts.length) return null;
-  const meta = document.createElement("p");
-  meta.className = "record-meta-line";
-  meta.textContent = parts.join(" / ");
-  return meta;
-}
-
-function renderCard(record, position) {
-  const fragment = els.template.content.cloneNode(true);
-  const card = fragment.querySelector(".result-card");
-  const typeBadge = fragment.querySelector(".type-badge");
-  const statusBadge = fragment.querySelector(".status-badge");
-  const topline = fragment.querySelector(".card-topline");
-  const titleRow = fragment.querySelector(".card-title-row");
-  const title = fragment.querySelector("h3");
-  const affiliation = fragment.querySelector(".card-affiliation");
-  const save = fragment.querySelector(".save-button");
-  const summary = fragment.querySelector(".summary");
-  const email = fragment.querySelector(".email-row");
-  const tags = fragment.querySelector(".tag-list");
-  const actions = fragment.querySelector(".card-actions");
-
-  card.dataset.interactiveCard = "";
-  typeBadge.textContent = record.displayKind;
-  statusBadge.textContent = record.recruitingStatus || UNKNOWN;
-  statusBadge.classList.add(statusClass(record.recruitingStatus));
-  if (record.mergedProfileCount > 1) {
-    const mergeBadge = document.createElement("span");
-    mergeBadge.className = "merge-badge";
-    mergeBadge.textContent = `${record.mergedProfileCount} merged`;
-    topline.appendChild(mergeBadge);
-  }
-
-  const avatar = document.createElement("span");
-  avatar.className = `record-avatar ${record.recordType}`;
-  avatar.textContent = initials(record.displayName);
-  titleRow.insertBefore(avatar, titleRow.firstElementChild);
-
-  title.textContent = record.displayName;
-  affiliation.textContent = record.affiliationLine || record.institution || NOT_FOUND;
-  summary.textContent = record.summary;
-
-  save.textContent = state.saved.has(record.id) ? "Saved" : "Save";
-  save.classList.toggle("is-saved", state.saved.has(record.id));
-  save.addEventListener("click", () => toggleSaved(record.id));
-
-  const scholarPreview = renderScholarPreview(record);
-  if (scholarPreview) summary.after(scholarPreview);
-
-  email.replaceChildren(makeEmail(record));
-  const meta = recordMetaLine(record);
-  if (meta) email.after(meta);
-  email.after(renderCardInsights(record));
-  tags.replaceChildren(...renderTags(record.researchAreas || []));
-
-  const actionNodes = [];
-  const seenActionUrls = new Set();
-  for (const [label, url, className] of cardLinks(record)) {
-    if (seenActionUrls.has(url)) continue;
-    seenActionUrls.add(url);
-    actionNodes.push(makeLink(label, url, className));
-  }
-
-  const details = document.createElement("button");
-  details.className = "details-button";
-  details.type = "button";
-  details.textContent = `Sources (${record.sourceUrls.length})`;
-  details.addEventListener("click", () => openDrawer(record.id));
-  actionNodes.push(details);
-
-  actions.replaceChildren(...actionNodes);
+  fragment.append(source.slice(last));
   return fragment;
 }
 
-function initGsapMotion() {
-  const gsap = gsapCore();
-  if (!gsap) return;
+/* ---------- URL state ---------- */
 
-  gsap.defaults({ duration: 0.6, ease: "power3.out", overwrite: "auto" });
-  motion.mm = gsap.matchMedia();
-  motion.mm.add(
-    {
-      isDesktop: "(min-width: 900px)",
-      isMobile: "(max-width: 899px)",
-      reduceMotion: REDUCED_MOTION_QUERY,
-    },
-    (context) => {
-      const { isDesktop, isMobile, reduceMotion } = context.conditions;
-      if (reduceMotion) {
-        gsap.set(
-          [
-            ".topbar",
-            ".brand-mark",
-            ".top-links a",
-            ".hero-frame",
-            ".hero-ambient span",
-            ".hero-copy .eyebrow-label",
-            ".hero-copy h1",
-            ".hero-subtitle",
-            ".hero-metrics span",
-            ".search-panel",
-            ".quick-actions button",
-            ".filter-panel",
-            ".results-toolbar",
-            ".result-summary span",
-            ".active-filters",
-            ".chip-row",
-            ".accuracy-note",
-          ],
-          { clearProps: "all" },
-        );
-        return;
-      }
-
-      gsap.from(".topbar", { y: -18, autoAlpha: 0, duration: 0.5, ease: "power2.out" });
-      gsap.from(".brand-mark", { scale: 0.82, rotation: -4, autoAlpha: 0, duration: 0.58, ease: "back.out(1.7)" });
-      gsap.from(".top-links a", { y: -8, autoAlpha: 0, duration: 0.42, stagger: 0.05, delay: 0.08 });
-      gsap.from(".hero-frame", { scale: isDesktop ? 0.985 : 1, autoAlpha: 0, duration: 0.78, ease: "power2.out" });
-      gsap.from(".hero-ambient span", {
-        x: (index) => (index % 2 === 0 ? 28 : -18),
-        y: (index) => (index % 2 === 0 ? 12 : -10),
-        scale: 0.96,
-        autoAlpha: 0,
-        duration: 0.9,
-        stagger: 0.08,
-        ease: "power3.out",
-      });
-      gsap.from(".hero-copy .eyebrow-label, .hero-copy h1, .hero-subtitle, .hero-metrics span", {
-        y: isMobile ? 16 : 28,
-        autoAlpha: 0,
-        duration: 0.72,
-        stagger: { each: 0.07, from: "start" },
-      });
-      gsap.from(".search-panel", {
-        y: isMobile ? 18 : 30,
-        scale: isDesktop ? 0.985 : 1,
-        autoAlpha: 0,
-        duration: 0.78,
-        delay: 0.12,
-        ease: "back.out(1.18)",
-      });
-      gsap.from(".quick-actions button", {
-        y: 8,
-        autoAlpha: 0,
-        duration: 0.42,
-        stagger: 0.04,
-        delay: 0.22,
-      });
-      gsap.from(".filter-panel", {
-        x: isDesktop ? -24 : 0,
-        y: isDesktop ? 0 : 18,
-        autoAlpha: 0,
-        duration: 0.68,
-        delay: 0.18,
-      });
-      gsap.from(".results-toolbar, .result-summary span, .active-filters, .chip-row, .accuracy-note", {
-        y: 14,
-        autoAlpha: 0,
-        duration: 0.5,
-        stagger: 0.05,
-        delay: 0.24,
-      });
-
-      if (isDesktop) {
-        gsap.to(".ambient-line-a", { x: "+=34", duration: 7, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".ambient-line-b", { x: "-=24", duration: 8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-        gsap.to(".ambient-plate-a, .ambient-plate-b, .ambient-plate-c", {
-          y: (index) => [10, -8, 12][index] || 8,
-          duration: 5.5,
-          repeat: -1,
-          yoyo: true,
-          stagger: 0.28,
-          ease: "sine.inOut",
-        });
-      }
-    },
-  );
-}
-
-function animateResults() {
-  const gsap = gsapCore();
-  if (!gsap || prefersReducedMotion()) return;
-
-  const cards = [...els.results.querySelectorAll(".result-card")].slice(0, 24);
-  if (!cards.length) return;
-
-  gsap.killTweensOf(cards);
-  gsap.fromTo(
-    cards,
-    { y: 18, scale: 0.985, autoAlpha: 0 },
-    {
-      y: 0,
-      scale: 1,
-      autoAlpha: 1,
-      duration: 0.46,
-      ease: "power2.out",
-      stagger: { each: 0.025, from: "start" },
-      clearProps: "transform,opacity,visibility",
-    },
-  );
-}
-
-function animateMetricCount(element, targetValue) {
-  const gsap = gsapCore();
-  const target = Number(targetValue) || 0;
-  const current = Number(String(element.textContent || "0").replace(/,/g, "")) || 0;
-
-  if (!gsap || prefersReducedMotion()) {
-    element.textContent = target.toLocaleString();
-    return;
+function readUrl() {
+  const params = new URL(window.location.href).searchParams;
+  for (const [key, param] of Object.entries(URL_KEYS)) {
+    if (!params.has(param)) continue;
+    const value = params.get(param);
+    state[key] = typeof DEFAULT_FILTERS[key] === "boolean" ? value === "1" : value;
   }
-
-  const proxy = { value: current };
-  gsap.to(proxy, {
-    value: target,
-    duration: 1,
-    ease: "power2.out",
-    onUpdate: () => {
-      element.textContent = Math.round(proxy.value).toLocaleString();
-    },
-    onComplete: () => {
-      element.textContent = target.toLocaleString();
-    },
-  });
-}
-
-function animateSearchFeedback() {
-  const gsap = gsapCore();
-  if (!gsap || prefersReducedMotion()) return;
-
-  gsap.fromTo(
-    els.form,
-    { scale: 0.992 },
-    { scale: 1, duration: 0.32, ease: "back.out(2.2)", clearProps: "transform" },
-  );
-}
-
-function render() {
-  const records = filteredRecords();
-  const visible = records.slice(0, state.visibleLimit);
-  const shown = Math.min(visible.length, records.length);
-  els.heading.textContent = records.length
-    ? `${records.length} ${records.length === 1 ? "match" : "matches"} - showing ${shown}`
-    : "0 matches";
-  els.empty.hidden = records.length !== 0;
-  els.loadMore.hidden = shown >= records.length;
-  els.loadMore.textContent = `Load more (${records.length - shown} remaining)`;
-  renderResultSummary(records);
-  renderActiveFilters();
-  updateTypeButtons();
-  updateSmartFilterButtons();
-
-  if (!records.length) {
-    els.results.replaceChildren();
-    renderSaved();
-    return;
+  if (!["all", ...TYPE_KEYS].includes(state.type)) state.type = "all";
+  if (!SORTERS[state.sort]) state.sort = "relevance";
+  if (state.evidence !== "all" && !EVIDENCE_LABELS[state.evidence]) state.evidence = "all";
+  if (params.has("id")) {
+    state.activeId = params.get("id");
+    state.userSelected = true;
   }
-
-  const fragment = document.createDocumentFragment();
-  visible.forEach((record, index) => fragment.appendChild(renderCard(record, index)));
-  els.results.replaceChildren(fragment);
-  els.results.classList.remove("is-refreshing");
-  window.requestAnimationFrame(() => {
-    els.results.classList.add("is-refreshing");
-    animateResults();
-  });
-  renderSaved();
 }
 
-function renderResultSummary(records) {
-  const professors = records.filter((record) => record.recordType === "professor").length;
-  const labs = records.filter((record) => record.recordType === "lab").length;
-  const resources = records.filter((record) => record.recordType === "resource").length;
-  const recruiting = records.filter((record) => record.recruitingStatus === "Recruiting").length;
-  const verified = records.filter((record) => academicMetrics(record).verified).length;
-
-  els.resultSummary.replaceChildren(
-    makeResultSummaryItem("Professors", professors),
-    makeResultSummaryItem("Labs", labs),
-    makeResultSummaryItem("REAL", resources),
-    makeResultSummaryItem("Recruiting", recruiting),
-    makeResultSummaryItem("Verified", verified),
-  );
-}
-
-function makeResultSummaryItem(label, value) {
-  const item = document.createElement("span");
-  const number = document.createElement("strong");
-  number.textContent = numberLabel(value);
-  const text = document.createElement("span");
-  text.textContent = label;
-  item.append(number, text);
-  return item;
-}
-
-function renderActiveFilters() {
-  const filters = [];
-  if (state.type !== "all") filters.push(["Type", slugLabel(state.type)]);
-  if (state.department !== "all") filters.push(["Department", state.department]);
-  if (state.area !== "all") filters.push(["Area", state.area]);
-  if (state.recruiting !== "all") filters.push(["Recruiting", state.recruiting]);
-  if (state.institution !== "all") filters.push(["University", state.institution]);
-  if (state.verifiedOnly) filters.push(["Metrics", "Verified only"]);
-  if (state.sort !== "relevance") filters.push(["Sort", slugLabel(state.sort)]);
-
-  els.activeFilters.hidden = !filters.length;
-  els.activeFilters.replaceChildren(
-    ...filters.map(([label, value, key]) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.dataset.filterKey = key || label.toLowerCase();
-      chip.textContent = `${label}: ${value}`;
-      return chip;
-    }),
-  );
-}
-
-function syncControlsFromState() {
-  els.query.value = state.query;
-  els.recruiting.value = state.recruiting;
-  els.institution.value = state.institution;
-  els.department.value = state.department;
-  els.area.value = state.area;
-  els.sort.value = state.sort;
-}
-
-function clearFilter(key) {
-  if (key === "type") state.type = "all";
-  if (key === "department") state.department = "all";
-  if (key === "area") state.area = "all";
-  if (key === "recruiting") state.recruiting = "all";
-  if (key === "university") state.institution = "all";
-  if (key === "metrics") state.verifiedOnly = false;
-  if (key === "sort") state.sort = "relevance";
-  state.visibleLimit = PAGE_SIZE;
-  syncControlsFromState();
-  if (key === "area") renderFacets();
-  render();
-}
-
-function renderMetrics() {
-  const professors = state.records.filter((record) => record.recordType === "professor").length;
-  const labs = state.records.filter((record) => record.recordType === "lab").length;
-  const resources = state.records.filter((record) => record.recordType === "resource").length;
-  const sources = unique(state.records.flatMap((record) => record.sourceUrls || [])).length;
-  const verified = state.records.reduce((sum, record) => sum + Number(record.sourceUrls?.length || 0), 0);
-
-  animateMetricCount(els.professorCount, professors);
-  animateMetricCount(els.labCount, labs);
-  animateMetricCount(els.realResourceCount, resources);
-  animateMetricCount(els.sourceCount, sources);
-  animateMetricCount(els.verifiedCount, verified);
-
-  const date = state.data?.generatedAt ? new Date(state.data.generatedAt) : null;
-  els.updatedAt.textContent = date && !Number.isNaN(date.valueOf())
-    ? `Updated ${date.toLocaleDateString()}`
-    : "Using bundled sample data";
-}
-
-function toggleSaved(id) {
-  if (state.saved.has(id)) state.saved.delete(id);
-  else state.saved.add(id);
-  localStorage.setItem("researchAtlasSaved", JSON.stringify([...state.saved]));
-  render();
-}
-
-function renderSaved() {
-  const savedRecords = [...state.saved]
-    .map((id) => state.records.find((record) => record.id === id))
-    .filter(Boolean);
-
-  els.savedCount.textContent = savedRecords.length;
-  if (!savedRecords.length) {
-    const empty = document.createElement("p");
-    empty.className = "updated-at";
-    empty.textContent = "No saved entries yet.";
-    els.savedList.replaceChildren(empty);
-    return;
+function writeUrl() {
+  const params = new URLSearchParams();
+  for (const [key, param] of Object.entries(URL_KEYS)) {
+    const value = state[key];
+    if (value === DEFAULT_FILTERS[key] || value === "") continue;
+    params.set(param, typeof value === "boolean" ? "1" : value);
   }
-
-  els.savedList.replaceChildren(
-    ...savedRecords.map((record) => {
-      const item = document.createElement("a");
-      item.className = "saved-item";
-      item.href = "#";
-      item.innerHTML = "<strong></strong><span></span>";
-      item.querySelector("strong").textContent = record.displayName;
-      item.querySelector("span").textContent = record.displayKind;
-      item.addEventListener("click", (event) => {
-        event.preventDefault();
-        openDrawer(record.id);
-      });
-      return item;
-    }),
-  );
-}
-
-function field(label, value) {
-  const wrapper = document.createElement("div");
-  wrapper.className = "drawer-field";
-  const labelNode = document.createElement("span");
-  labelNode.textContent = label;
-  wrapper.appendChild(labelNode);
-
-  if (isKnown(value) && /^https?:\/\//.test(String(value))) {
-    const link = document.createElement("a");
-    link.href = value;
-    link.target = "_blank";
-    link.rel = "noreferrer";
-    link.textContent = value;
-    wrapper.appendChild(link);
-  } else {
-    const strong = document.createElement("strong");
-    strong.textContent = Array.isArray(value) ? value.join(", ") : valueOrFallback(value);
-    wrapper.appendChild(strong);
+  if (state.userSelected && state.activeId) params.set("id", state.activeId);
+  const query = params.toString();
+  const next = `${window.location.pathname}${query ? `?${query}` : ""}`;
+  if (next !== `${window.location.pathname}${window.location.search}`) {
+    window.history.replaceState(null, "", next);
   }
-
-  return wrapper;
 }
 
-function section(title, child) {
-  const wrapper = document.createElement("section");
-  wrapper.className = "drawer-section";
-  const heading = document.createElement("h3");
-  heading.textContent = title;
-  wrapper.append(heading, child);
-  return wrapper;
-}
+/* ---------- Facets & controls ---------- */
 
-function linkList(items) {
-  const list = document.createElement("ul");
-  list.className = "link-list";
-  list.replaceChildren(
-    ...items.map(([label, url]) => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noreferrer";
-      a.textContent = `${label}: ${url}`;
-      li.appendChild(a);
-      return li;
-    }),
-  );
-  return list;
-}
-
-function sourceList(urls) {
-  const list = document.createElement("ul");
-  list.className = "source-list";
-  list.replaceChildren(
-    ...urls.map((url) => {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noreferrer";
-      a.textContent = url;
-      li.appendChild(a);
-      return li;
-    }),
-  );
-  return list;
-}
-
-function publicationList(publications) {
-  const list = document.createElement("ul");
-  list.className = "publication-list";
-  list.replaceChildren(
-    ...(publications.length ? publications : [{ title: NOT_FOUND }]).map((paper) => {
-      const li = document.createElement("li");
-      const title = isKnown(paper.url) ? document.createElement("a") : document.createElement("strong");
-      if (isKnown(paper.url)) {
-        title.href = paper.url;
-        title.target = "_blank";
-        title.rel = "noreferrer";
-      }
-      title.textContent = cleanText(paper.title) || NOT_FOUND;
-      const meta = document.createElement("span");
-      meta.textContent = [
-        paper.publicationDate || paper.year,
-        paper.venue,
-        isKnown(paper.citationCount) ? `${numberLabel(paper.citationCount)} citations` : "",
-      ]
-        .filter(isKnown)
-        .join(" / ");
-      li.append(title, meta);
-      return li;
-    }),
-  );
-  return list;
-}
-
-function detailFieldList(fields) {
-  const list = document.createElement("div");
-  list.className = "detail-field-list";
-  const entries = Object.entries(fields || {});
-  list.replaceChildren(
-    ...(entries.length ? entries : [["Details", NOT_FOUND]]).map(([label, value]) => {
-      const item = document.createElement("div");
-      item.className = "drawer-field";
-      const key = document.createElement("span");
-      key.textContent = label;
-      const body = document.createElement("p");
-      body.textContent = value;
-      item.append(key, body);
-      return item;
-    }),
-  );
-  return list;
-}
-
-function animateDrawerOpen() {
-  const gsap = gsapCore();
-  if (!gsap || prefersReducedMotion()) return;
-
-  const panel = els.drawer.querySelector(".drawer-panel");
-  const scrim = els.drawer.querySelector(".drawer-scrim");
-  const content = [...els.drawerContent.children];
-  gsap.killTweensOf([panel, scrim, ...content]);
-  gsap.fromTo(scrim, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.22, ease: "power1.out" });
-  gsap.fromTo(panel, { x: 44, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: 0.42, ease: "power3.out" });
-  gsap.fromTo(
-    content,
-    { y: 12, autoAlpha: 0 },
-    { y: 0, autoAlpha: 1, duration: 0.34, delay: 0.1, stagger: 0.035, ease: "power2.out" },
-  );
-}
-
-function finishDrawerClose() {
-  const gsap = gsapCore();
-  const panel = els.drawer.querySelector(".drawer-panel");
-  const scrim = els.drawer.querySelector(".drawer-scrim");
-  els.drawer.classList.remove("is-open");
-  els.drawer.hidden = true;
-  if (gsap) gsap.set([panel, scrim, ...els.drawerContent.children], { clearProps: "all" });
-}
-
-function openDrawer(id) {
-  const record = state.records.find((item) => item.id === id);
-  if (!record) return;
-  state.activeRecord = record;
-
-  const root = document.createDocumentFragment();
-  const heading = document.createElement("div");
-  heading.className = "drawer-heading";
-  const label = document.createElement("p");
-  label.className = "eyebrow-label";
-  label.textContent = `${record.displayKind} - ${record.recruitingStatus || UNKNOWN}`;
-  const title = document.createElement("h2");
-  title.id = "drawerTitle";
-  title.textContent = record.displayName;
-  const summary = document.createElement("p");
-  summary.className = "summary";
-  summary.textContent = record.summary;
-  heading.append(label, title, summary);
-
-  const grid = document.createElement("div");
-  grid.className = "drawer-grid";
-  if (record.recordType === "professor") {
-    const metrics = academicMetrics(record);
-    const academic = metrics.profile;
-    grid.append(
-      field("University", record.institution),
-      field("Department", record.department),
-      field("Email", record.email),
-      field("Lab affiliation", record.labAffiliation),
-      field("Faculty profile", record.officialProfileUrl),
-      field("Personal website", record.personalWebsiteUrl),
-      field("Google Scholar", record.googleScholarUrl),
-      field("Scholar search", record.googleScholarSearchUrl),
-      field("OpenAlex", academic.openAlexUrl),
-      field("Metric status", metrics.status),
-      field("Citations", metrics.verified ? academic.citationCount : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
-      field("Works", metrics.verified ? academic.worksCount : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
-      field("h-index", metrics.verified ? academic.hIndex : (metrics.hasMetrics ? "Hidden until match is reviewed" : UNKNOWN)),
-      field("Last verified", record.lastVerified),
-    );
-  } else if (record.recordType === "lab") {
-    grid.append(
-      field("University", record.institution),
-      field("Department", record.department),
-      field("Principal investigator", record.principalInvestigator),
-      field("Contact email", record.email),
-      field("Lab website", record.labWebsiteUrl),
-      field("Last verified", record.lastVerified),
-    );
-  } else {
-    grid.append(
-      field("University", record.institution),
-      field("Organization", record.organization),
-      field("Resource type", record.resourceType),
-      field("Year", record.yearOfActivity),
-      field("Application", record.applicationProcedure),
-      field("Contact email", record.email),
-      field("REAL Portal", record.sourceUrl),
-      field("Last verified", record.lastVerified),
-    );
+function countBy(values) {
+  const counts = new Map();
+  for (const value of values) {
+    if (isKnown(value)) counts.set(value, (counts.get(value) || 0) + 1);
   }
-
-  const recruitment = document.createElement("p");
-  recruitment.className = "summary";
-  recruitment.textContent = record.recruitingEvidence?.text
-    ? `${record.recruitingStatus}: ${record.recruitingEvidence.text}`
-    : `${record.recruitingStatus || UNKNOWN}: no explicit public recruiting statement is captured for this entry.`;
-
-  root.append(
-    heading,
-    grid,
-    section("Research areas", linkFreeList(record.researchAreas || [])),
-  );
-
-  if (record.recordType === "professor") {
-    const metrics = academicMetrics(record);
-    const publications = metrics.verified ? relevantPublications(record) : [];
-    root.appendChild(section("Recent publications", publicationList(publications)));
-    root.appendChild(section("Recruitment evidence", recruitment));
-  } else if (record.recordType === "resource") {
-    root.appendChild(section("REAL Portal details", detailFieldList(record.detailFields || { Description: record.summary })));
-  } else {
-    root.appendChild(section("Recruitment evidence", recruitment));
-  }
-
-  if (record.links.length) root.appendChild(section("Useful links", linkList(record.links)));
-  root.appendChild(section("Source URLs", sourceList(record.sourceUrls || [])));
-
-  els.drawerContent.replaceChildren(root);
-  els.drawer.hidden = false;
-  els.drawer.classList.add("is-open");
-  els.drawer.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-  animateDrawerOpen();
+  return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
 
-function linkFreeList(items) {
-  const tags = document.createElement("div");
-  tags.className = "tag-list";
-  tags.replaceChildren(...(items.length ? items : [NOT_FOUND]).map(makeTag));
-  return tags;
+function setSelectOptions(select, entries, allLabel, current) {
+  const options = [new Option(allLabel, "all")];
+  for (const [value, count] of entries) options.push(new Option(`${value} (${formatNumber(count)})`, value));
+  select.replaceChildren(...options);
+  select.value = entries.some(([value]) => value === current) ? current : "all";
 }
 
-function closeDrawer() {
-  const gsap = gsapCore();
-  const panel = els.drawer.querySelector(".drawer-panel");
-  const scrim = els.drawer.querySelector(".drawer-scrim");
-  els.drawer.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-  state.activeRecord = null;
-
-  if (gsap && !prefersReducedMotion()) {
-    gsap.killTweensOf([panel, scrim]);
-    gsap.to(panel, { x: 38, autoAlpha: 0, duration: 0.26, ease: "power2.in" });
-    gsap.to(scrim, { autoAlpha: 0, duration: 0.2, ease: "power1.out", onComplete: finishDrawerClose });
-    return;
-  }
-
-  els.drawer.classList.remove("is-open");
-  window.setTimeout(() => {
-    if (!els.drawer.classList.contains("is-open")) els.drawer.hidden = true;
-  }, 220);
-}
-
-function addRipple(target, event) {
-  const rect = target.getBoundingClientRect();
-  const ripple = document.createElement("span");
-  ripple.className = "ripple";
-  ripple.style.left = `${event.clientX - rect.left}px`;
-  ripple.style.top = `${event.clientY - rect.top}px`;
-  target.appendChild(ripple);
-  ripple.addEventListener("animationend", () => ripple.remove(), { once: true });
-}
-
-function resetCardMotion(card) {
-  const gsap = gsapCore();
-  if (gsap && !prefersReducedMotion()) {
-    gsap.to(card, {
-      "--card-x": "50%",
-      "--card-y": "50%",
-      duration: 0.34,
-      ease: "power2.out",
-    });
-    return;
-  }
-
-  card.style.setProperty("--card-x", "50%");
-  card.style.setProperty("--card-y", "50%");
-}
-
-function initMotionInteractions() {
-  const reduceMotion = prefersReducedMotion();
-  if (reduceMotion) return;
-  const gsap = gsapCore();
-
-  let pointerTimer = 0;
-  document.addEventListener("pointermove", (event) => {
-    if (event.pointerType === "touch") return;
-
-    document.documentElement.style.setProperty("--pointer-x", `${event.clientX}px`);
-    document.documentElement.style.setProperty("--pointer-y", `${event.clientY}px`);
-    document.body.classList.add("is-pointer-active");
-    window.clearTimeout(pointerTimer);
-    pointerTimer = window.setTimeout(() => document.body.classList.remove("is-pointer-active"), 900);
-
-    if (els.hero?.contains(event.target)) {
-      const rect = els.hero.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      if (gsap) {
-        gsap.to(els.hero, {
-          "--hero-pan-x": `${x * 22}px`,
-          "--hero-pan-y": `${y * 14}px`,
-          duration: 0.45,
-          ease: "power2.out",
-        });
-      } else {
-        els.hero.style.setProperty("--hero-pan-x", `${x * 18}px`);
-        els.hero.style.setProperty("--hero-pan-y", `${y * 12}px`);
-      }
-    }
-
-    const card = event.target.closest("[data-interactive-card]");
-    if (!card) return;
-    const rect = card.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    const xPercent = (x / rect.width) * 100;
-    const yPercent = (y / rect.height) * 100;
-    if (gsap) {
-      gsap.to(card, {
-        "--card-x": `${xPercent}%`,
-        "--card-y": `${yPercent}%`,
-        duration: 0.24,
-        ease: "power2.out",
-      });
-    } else {
-      card.style.setProperty("--card-x", `${xPercent}%`);
-      card.style.setProperty("--card-y", `${yPercent}%`);
-    }
-  });
-
-  els.hero?.addEventListener("pointerleave", () => {
-    if (gsap) {
-      gsap.to(els.hero, { "--hero-pan-x": "0px", "--hero-pan-y": "0px", duration: 0.5, ease: "power2.out" });
-    } else {
-      els.hero.style.setProperty("--hero-pan-x", "0px");
-      els.hero.style.setProperty("--hero-pan-y", "0px");
-    }
-  });
-
-  document.addEventListener("pointerout", (event) => {
-    const card = event.target.closest?.("[data-interactive-card]");
-    if (card && !card.contains(event.relatedTarget)) resetCardMotion(card);
-  });
-
-  document.addEventListener("click", (event) => {
-    const target = event.target.closest(
-      ".primary-action, .quick-actions button, .panel-head button, .drawer-close, .save-button, .link-button, .details-button, .chip, .segment, .load-more, .top-links a, .active-filters button",
-    );
-    if (!target) return;
-    addRipple(target, event);
-  });
-}
-
-function applyStateFromControls() {
-  state.query = els.query.value;
-  state.recruiting = els.recruiting.value;
-  state.institution = els.institution.value;
+function renderFacets() {
+  setSelectOptions(els.department, countBy(state.records.flatMap((record) => record.departments)), "All departments", state.department);
+  setSelectOptions(els.area, countBy(state.records.flatMap((record) => record.researchAreas)), "All research areas", state.area);
   state.department = els.department.value;
   state.area = els.area.value;
+}
+
+function syncStateFromControls() {
+  state.query = els.query.value.trim();
+  state.department = els.department.value;
+  state.area = els.area.value;
+  state.evidence = els.evidence.value;
+  state.verifiedOnly = els.verifiedOnly.checked;
+  state.recruiting = els.recruiting.value;
   state.sort = els.sort.value;
 }
 
-function applySmartFilter(key) {
-  if (key === "recruiting") {
-    state.recruiting = state.recruiting === "Recruiting" ? "all" : "Recruiting";
+function syncControls() {
+  if (els.query.value.trim() !== state.query) els.query.value = state.query;
+  els.department.value = state.department;
+  els.area.value = state.area;
+  els.evidence.value = state.evidence;
+  els.verifiedOnly.checked = state.verifiedOnly;
+  els.recruiting.value = state.recruiting;
+  els.sort.value = state.sort;
+  for (const select of [els.department, els.area, els.evidence, els.recruiting]) {
+    select.classList.toggle("is-set", select.value !== "all");
   }
-  if (key === "verified") {
-    const nextVerified = !state.verifiedOnly;
-    state.verifiedOnly = nextVerified;
-    if (nextVerified) {
-      state.type = "professor";
-      state.sort = "citations";
-    } else if (state.sort === "citations") {
-      state.sort = "relevance";
-    }
-  }
-  if (["professor", "lab", "resource"].includes(key)) {
-    state.type = state.type === key && !state.verifiedOnly ? "all" : key;
-    if (key !== "professor") state.verifiedOnly = false;
-  }
-  state.visibleLimit = PAGE_SIZE;
-  syncControlsFromState();
-  render();
+  els.savedToggle.setAttribute("aria-pressed", String(state.savedOnly));
+  els.quickButtons.forEach((button) => {
+    const key = button.dataset.quick;
+    const active = key === "checked" ? state.verifiedOnly : state.evidence === key;
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
+function activeFilterEntries() {
+  const entries = [];
+  if (state.savedOnly) entries.push(["savedOnly", "Saved", "only"]);
+  if (state.department !== "all") entries.push(["department", "Dept", state.department]);
+  if (state.area !== "all") entries.push(["area", "Area", state.area]);
+  if (state.evidence !== "all") entries.push(["evidence", "Evidence", EVIDENCE_LABELS[state.evidence]]);
+  if (state.verifiedOnly) entries.push(["verifiedOnly", "Data", "source checked"]);
+  if (state.recruiting !== "all") entries.push(["recruiting", "Status", state.recruiting]);
+  return entries;
+}
+
+function renderActiveFilters() {
+  const entries = activeFilterEntries();
+  els.activeFilters.hidden = entries.length === 0;
+  const chips = entries.map(([key, label, value]) => {
+    const chip = make("button", "chip");
+    chip.type = "button";
+    chip.dataset.filterKey = key;
+    chip.setAttribute("aria-label", `Remove filter ${label}: ${value}`);
+    chip.append(make("small", "", label), value);
+    return chip;
+  });
+  if (entries.length > 1) {
+    const clearAll = make("button", "text-button chip-clear", "Clear all");
+    clearAll.type = "button";
+    clearAll.dataset.filterKey = "*";
+    chips.push(clearAll);
+  }
+  els.activeFilters.replaceChildren(...chips);
+  const railFilters = entries.filter(([key]) => key !== "savedOnly").length;
+  els.filterCount.hidden = railFilters === 0;
+  els.filterCount.textContent = railFilters;
+}
+
+function resetFilters({ keepQuery = false } = {}) {
+  const query = state.query;
+  Object.assign(state, DEFAULT_FILTERS);
+  if (keepQuery) state.query = query;
+  syncControls();
+  update({ scroll: true });
+}
+
+function clearFilter(key) {
+  if (key === "*") {
+    resetFilters({ keepQuery: true });
+    return;
+  }
+  state[key] = DEFAULT_FILTERS[key];
+  syncControls();
+  update({ scroll: true });
+}
+
+function applyQuickFilter(key) {
+  if (key === "checked") state.verifiedOnly = !state.verifiedOnly;
+  else state.evidence = state.evidence === key ? "all" : key;
+  syncControls();
+  update({ scroll: true });
+}
+
+/* ---------- Result rows ---------- */
+
+const BOOKMARK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17L12 16.2l-5.5 4.3z"/></svg>';
+
+function rowMetric(label, value, known = true) {
+  const cell = make("div", `row-metric${known ? "" : " is-empty"}`);
+  cell.append(make("dt", "", label), make("dd", "", known ? value : "—"));
+  return cell;
+}
+
+function rowMetrics(record) {
+  const list = make("dl", "row-metrics");
+  const { facts } = record;
+  if (record.recordType === "professor") {
+    if (facts.metrics.verified) list.append(rowMetric("Citations", formatNumber(facts.metrics.citationCount)));
+    list.append(rowMetric("Courses", formatNumber(facts.courses), facts.courses > 0));
+    if (facts.rating) {
+      const [key, rating] = facts.rating;
+      list.append(rowMetric(`${RATING_SHORT[key] || rating.platform} · ${formatNumber(rating.reviewCount)}`, `${rating.score}`));
+    } else {
+      list.append(rowMetric("Rating", "", false));
+    }
+  } else if (record.recordType === "lab") {
+    list.append(rowMetric("Sources", formatNumber(record.sourceUrls.length)));
+  } else if (isKnown(record.yearOfActivity)) {
+    list.append(rowMetric("Year", String(record.yearOfActivity)));
+  }
+  return list;
+}
+
+function rowTags(record) {
+  const departments = new Set(record.departments.map(normalize));
+  const tags = record.researchAreas.filter((area) => !departments.has(normalize(area)));
+  if (record.recordType === "lab" && isKnown(record.principalInvestigator)) tags.unshift(`PI ${record.principalInvestigator}`);
+  if (record.recordType === "professor" && record.facts.courses) {
+    tags.unshift(...unique(coursesFor(record).map((course) => course.courseCode)).slice(0, 3));
+  }
+  if (!tags.length) return null;
+  const row = make("p", "row-tags");
+  row.append(...tags.slice(0, 6).map((tag) => make("span", "", highlight(tag))));
+  return row;
+}
+
+function makeSaveToggle(record) {
+  const saved = state.saved.has(record.id);
+  const button = make("button", "save-toggle");
+  button.type = "button";
+  button.dataset.saveId = record.id;
+  button.innerHTML = BOOKMARK_SVG;
+  button.setAttribute("aria-pressed", String(saved));
+  button.setAttribute("aria-label", `${saved ? "Remove" : "Save"} ${record.displayName}`);
+  button.title = saved ? "Saved (S)" : "Save (S)";
+  return button;
+}
+
+function renderRow(record, position, animateIndex) {
+  const row = make("li", "row");
+  row.dataset.id = record.id;
+  if (record.id === state.activeId) row.classList.add("is-selected");
+  if (animateIndex !== null && !prefersReducedMotion()) {
+    row.classList.add("is-entering");
+    row.style.setProperty("--i", animateIndex);
+    row.addEventListener("animationend", () => row.classList.remove("is-entering"), { once: true });
+  }
+
+  const meta = make("p", "row-meta");
+  meta.append(make("span", "row-kind", record.displayKind));
+  const departmentLine = record.recordType === "resource"
+    ? [record.resourceType, record.organization].filter(isKnown).join(" · ")
+    : record.departments.join(" · ");
+  if (departmentLine) meta.append(make("span", "row-dept", departmentLine));
+  if (record.recruitingStatus === "Recruiting") meta.append(make("span", "row-flag", "Recruiting"));
+  if (record.facts.needsReview) meta.append(make("span", "row-flag is-warn", "Needs review"));
+
+  const title = make("button", "row-title", highlight(record.displayName));
+  title.type = "button";
+  title.dataset.openId = record.id;
+
+  const main = make("div", "row-main");
+  main.append(meta, title);
+  if (record.summary) main.append(make("p", "row-summary", highlight(record.summary)));
+  const tags = rowTags(record);
+  if (tags) main.append(tags);
+
+  const side = make("div", "row-side");
+  side.append(rowMetrics(record), makeSaveToggle(record));
+
+  row.append(make("span", "row-index", String(position + 1).padStart(3, "0")), main, side);
+  return row;
+}
+
+function appendRows(from, to, animate) {
+  const fragment = document.createDocumentFragment();
+  state.results.slice(from, to).forEach((record, offset) => {
+    fragment.append(renderRow(record, from + offset, animate && offset < 14 ? offset : null));
+  });
+  els.results.append(fragment);
+}
+
+function renderCounts(counts) {
+  els.typeCounts.forEach((node) => {
+    node.textContent = formatNumber(counts[node.dataset.count] || 0);
+  });
+  els.typeButtons.forEach((button) => {
+    const type = button.dataset.typeChoice;
+    button.setAttribute("aria-pressed", String(type === state.type));
+    button.classList.toggle("is-empty", !counts[type]);
+  });
+}
+
+function renderHeading(total) {
+  els.resultHeading.textContent = `${formatNumber(total)} ${total === 1 ? "record" : "records"}`;
+  if (state.query) els.coverageLine.textContent = `matching “${state.query}”`;
+  else if (state.savedOnly) els.coverageLine.textContent = "in your saved list";
+  else els.coverageLine.textContent = "across UC San Diego";
+}
+
+function renderEmpty(total) {
+  els.empty.hidden = total !== 0;
+  if (total !== 0) return;
+  const filters = activeFilterEntries().length + (state.type !== "all" ? 1 : 0);
+  if (state.savedOnly && !state.saved.size) {
+    els.emptyHint.textContent = "You haven’t saved anything yet. Use the bookmark on any record, or press S.";
+  } else if (state.query && filters) {
+    els.emptyHint.textContent = `No records match “${state.query}” with ${filters} filter${filters > 1 ? "s" : ""} applied. Try removing a filter.`;
+  } else if (state.query) {
+    els.emptyHint.textContent = `No records contain “${state.query}”. Try a shorter or more general term — course codes work with or without the space.`;
+  } else {
+    els.emptyHint.textContent = "The current filters exclude every record. Remove one to widen the search.";
+  }
+}
+
+function renderLoadMore() {
+  const remaining = state.results.length - Math.min(state.visibleLimit, state.results.length);
+  els.loadMore.hidden = remaining <= 0;
+  els.loadMore.textContent = `Show ${formatNumber(Math.min(remaining, PAGE_SIZE))} more — ${formatNumber(remaining)} remaining`;
+}
+
+function render() {
+  const { records, counts, terms } = computeResults();
+  state.results = records;
+  state.highlighter = buildHighlighter(terms);
+
+  renderHeading(records.length);
+  renderCounts(counts);
+  renderActiveFilters();
+  renderEmpty(records.length);
+
+  els.results.replaceChildren();
+  els.results.setAttribute("aria-busy", "false");
+  appendRows(0, Math.min(state.visibleLimit, records.length), true);
+  renderLoadMore();
+
+  const activeVisible = records.some((record) => record.id === state.activeId);
+  if (!activeVisible && !state.userSelected && DESKTOP_DETAIL_QUERY.matches && records.length) {
+    showDetail(records[0].id);
+  } else {
+    highlightSelectedRow();
+  }
+  renderSaved();
+  writeUrl();
+}
+
+function loadMore() {
+  const from = Math.min(state.visibleLimit, state.results.length);
+  state.visibleLimit += PAGE_SIZE;
+  appendRows(from, Math.min(state.visibleLimit, state.results.length), true);
+  renderLoadMore();
+}
+
+function scrollToResults() {
+  const top = els.workspace.getBoundingClientRect().top + window.scrollY - els.form.offsetHeight;
+  if (window.scrollY > top + 4) {
+    window.scrollTo({ top, behavior: prefersReducedMotion() ? "auto" : "smooth" });
+  }
+}
+
+function update({ scroll = false } = {}) {
+  state.visibleLimit = PAGE_SIZE;
+  render();
+  if (scroll) scrollToResults();
+}
+
+/* ---------- Saved ---------- */
+
+function toggleSaved(id) {
+  if (!id) return;
+  const record = state.byId.get(id);
+  if (state.saved.has(id)) state.saved.delete(id);
+  else state.saved.add(id);
+  writeStoredList(SAVED_KEY, [...state.saved]);
+  const saved = state.saved.has(id);
+  document.querySelectorAll(`[data-save-id="${CSS.escape(id)}"]`).forEach((button) => {
+    button.setAttribute("aria-pressed", String(saved));
+    if (button.classList.contains("save-toggle")) {
+      button.setAttribute("aria-label", `${saved ? "Remove" : "Save"} ${record?.displayName || "record"}`);
+      button.title = saved ? "Saved (S)" : "Save (S)";
+    } else {
+      button.textContent = saved ? "Saved" : "Save";
+    }
+  });
+  showToast(saved ? `Saved ${record?.displayName || ""}` : "Removed from saved");
+  if (state.savedOnly) update();
+  else renderSaved();
+}
+
+function renderSaved() {
+  const saved = [...state.saved].map((id) => state.byId.get(id)).filter(Boolean);
+  els.savedCount.textContent = saved.length;
+  els.savedCountTop.textContent = saved.length;
+  if (!saved.length) {
+    els.savedList.replaceChildren(make("p", "saved-empty", "Bookmark records to keep a shortlist here."));
+    return;
+  }
+  els.savedList.replaceChildren(
+    ...saved.slice(0, 8).map((record) => {
+      const item = make("button", "saved-item");
+      item.type = "button";
+      item.dataset.openId = record.id;
+      item.append(make("strong", "", record.displayName), make("span", "", record.displayKind));
+      return item;
+    }),
+  );
+  if (saved.length > 8) {
+    const more = make("button", "text-button", `View all ${saved.length} saved`);
+    more.type = "button";
+    more.addEventListener("click", () => {
+      state.savedOnly = true;
+      syncControls();
+      closeRail();
+      update({ scroll: true });
+    });
+    els.savedList.append(more);
+  }
+}
+
+/* ---------- Detail ---------- */
+
+function highlightSelectedRow() {
+  els.results.querySelectorAll(".row").forEach((row) => {
+    row.classList.toggle("is-selected", row.dataset.id === state.activeId);
+  });
+}
+
+function showDetail(id) {
+  const record = state.byId.get(id);
+  if (!record) return false;
+  state.activeId = id;
+  const view = renderDetail(record);
+  if (!prefersReducedMotion()) {
+    view.classList.add("is-entering");
+    view.addEventListener("animationend", () => view.classList.remove("is-entering"), { once: true });
+  }
+  els.detailContent.replaceChildren(view);
+  els.detailPanel.scrollTop = 0;
+  highlightSelectedRow();
+  return true;
+}
+
+// Explicit selection: records the choice in the URL and, on narrow screens, opens the sheet.
+function openDetail(id, { reveal = true } = {}) {
+  if (!showDetail(id)) return;
+  state.userSelected = true;
+  writeUrl();
+  if (reveal && !DESKTOP_DETAIL_QUERY.matches) openSheet();
+}
+
+function detailSection(title, ...children) {
+  const section = make("section", "detail-section");
+  section.append(make("h3", "", title), ...children.filter(Boolean));
+  return section;
+}
+
+function note(text) {
+  return make("p", "note", text);
+}
+
+function fieldGrid(fields) {
+  const grid = make("dl", "field-grid");
+  for (const [label, value, url] of fields) {
+    const known = Array.isArray(value) ? value.length > 0 : isKnown(value);
+    const display = Array.isArray(value) ? value.join(", ") : String(value);
+    const cell = make("div");
+    const dd = make("dd", known ? "" : "is-empty");
+    if (known && isKnown(url)) dd.append(makeExternal(display, url, "inline-link"));
+    else dd.textContent = known ? display : "—";
+    cell.append(make("dt", "", label), dd);
+    grid.append(cell);
+  }
+  return grid;
+}
+
+function evidenceItem(title, meta, excerpt, links) {
+  const item = make("li");
+  item.append(make("strong", "", title));
+  if (meta) item.append(make("span", "evidence-meta", meta));
+  if (excerpt) item.append(make("p", "evidence-quote", excerpt));
+  const actions = links.filter(([, url]) => isKnown(url));
+  if (actions.length) {
+    const row = make("p", "evidence-links");
+    row.append(...actions.map(([label, url]) => makeExternal(label, url)));
+    item.append(row);
+  }
+  return item;
+}
+
+function detailHead(record) {
+  const head = make("header", "detail-head");
+  const kind = make("p", "detail-kind");
+  kind.append(make("span", "", record.displayKind));
+  if (record.recruitingStatus === "Recruiting") kind.append(make("span", "is-recruiting", "Recruiting"));
+  else if (record.recruitingStatus === "Not recruiting") kind.append(make("span", "is-muted", "Not recruiting"));
+  kind.append(make("span", record.facts.needsReview ? "is-warn" : "is-muted", verificationLabel(record)));
+  if (record.mergedProfileCount > 1) kind.append(make("span", "is-muted", `${record.mergedProfileCount} profiles merged`));
+
+  const affiliation = [record.departments.join(" / "), record.institution].filter(isKnown).join(" — ");
+  head.append(kind, make("h2", "detail-title", record.displayName), make("p", "detail-affiliation", affiliation || NOT_FOUND));
+
+  const quick = make("div", "detail-quick");
+  const save = make("button", "line-button", state.saved.has(record.id) ? "Saved" : "Save");
+  save.type = "button";
+  save.dataset.saveId = record.id;
+  save.setAttribute("aria-pressed", String(state.saved.has(record.id)));
+  quick.append(save);
+  if (record.email) {
+    const mail = make("a", "line-button", "Email");
+    mail.href = `mailto:${record.email}`;
+    const copy = make("button", "line-button", "Copy email");
+    copy.type = "button";
+    copy.dataset.copy = record.email;
+    copy.dataset.copyLabel = `Copied ${record.email}`;
+    quick.append(mail, copy);
+  }
+  const share = make("button", "line-button", "Copy link");
+  share.type = "button";
+  share.dataset.copyRecordLink = record.id;
+  quick.append(share);
+  head.append(quick);
+  return head;
+}
+
+function detailLinks(record) {
+  if (!record.links.length) return null;
+  const list = make("ul", "link-list");
+  for (const [label, url] of record.links) {
+    const item = make("li");
+    item.append(makeExternal(label, url));
+    list.append(item);
+  }
+  return detailSection("Links", list);
+}
+
+function detailOverview(record) {
+  const body = record.summary ? make("p", "", record.summary) : note("No public summary was captured for this record.");
+  let tags = null;
+  if (record.researchAreas.length) {
+    tags = make("div", "tag-list");
+    for (const area of record.researchAreas.slice(0, 14)) {
+      const tag = make("button", "", area);
+      tag.type = "button";
+      tag.dataset.areaFilter = area;
+      tag.title = `Filter by ${area}`;
+      tags.append(tag);
+    }
+  }
+  return detailSection("Overview", body, tags);
+}
+
+function teachingDetails(record) {
+  const courses = coursesFor(record);
+  const candidates = record.teaching?.candidates || [];
+  const parts = [];
+  if (!courses.length) {
+    const status = candidates.length
+      ? "candidate assignments need identity verification"
+      : record.teaching?.status === "not_found" ? "not found in checked sources" : "not yet checked";
+    parts.push(note(`No verified teaching records captured. Status: ${status}.`));
+  } else {
+    const list = make("ul", "evidence-list");
+    [...courses].sort((a, b) => courseTermOrder(b) - courseTermOrder(a)).forEach((course) => {
+      const status = { historical: "Teaching history", current: "Current term", planned: "Planned", tentative: "Tentative", scheduled: "Scheduled", unknown: "Term not classified" }[course.status] || course.status || "Term not classified";
+      list.append(evidenceItem(
+        [course.courseCode, course.title].filter(isKnown).join(" · "),
+        `${course.term || "Term not specified"} · ${course.isTentative ? `${status} (tentative)` : status} · observed ${dateLabel(course.observedAt)}`,
+        "",
+        [["Official course source", course.sourceUrl], ["Published schedule", course.dataUrl !== course.sourceUrl ? course.dataUrl : null]],
+      ));
+    });
+    parts.push(list, note("Official teaching records. Historical assignments do not promise a future offering; planned assignments may change."));
+  }
+  if (candidates.length) {
+    const details = make("details", "candidate-details");
+    details.append(make("summary", "", `Unverified teaching leads (${candidates.length})`));
+    details.append(note("These assignments need an identity check. A surname-only match does not establish that this professor teaches the course. Leads are excluded from verified course counts and the official teaching filter."));
+    const list = make("ul", "evidence-list");
+    [...candidates].sort((a, b) => courseTermOrder(b) - courseTermOrder(a)).forEach((course) => {
+      const identity = `Listed instructor: ${course.instructorName || "Not captured"} · ${String(course.matchMethod || "").includes("surname") ? "Surname-only match" : "Identity match needs review"}`;
+      list.append(evidenceItem(
+        [course.courseCode, course.title].filter(isKnown).join(" · "),
+        `${course.term || "Term not specified"}${course.isTentative ? " · tentative schedule" : ""} · observed ${dateLabel(course.observedAt)} · ${identity}`,
+        course.evidence || "",
+        [["Official teaching source", course.sourceUrl], ["Published schedule", course.dataUrl !== course.sourceUrl ? course.dataUrl : null]],
+      ));
+    });
+    details.append(list);
+    parts.push(details);
+  }
+  return detailSection("Courses & teaching", ...parts);
+}
+
+function ratingDetails(record) {
+  const grid = make("div", "rating-grid");
+  const verifiedKeys = record.facts.ratings;
+  for (const [key, label, purpose] of RATING_PLATFORMS) {
+    const rating = record.ratings?.[key];
+    const verified = verifiedKeys.includes(key);
+    const panel = make("article", `rating-panel${verified ? "" : " is-empty"}`);
+    panel.append(make("h4", "", rating?.platform || label), make("p", "rating-purpose", purpose));
+    if (verified) {
+      const score = make("p", "rating-score");
+      score.append(String(rating.score), make("small", "", ` / ${rating.scale || 5}`));
+      panel.append(score, make("p", "rating-count", `${formatNumber(rating.reviewCount)} ${Number(rating.reviewCount) === 1 ? "review" : "reviews"}`));
+      if (Number(rating.reviewCount) < 5) panel.append(make("p", "rating-warn", "Small sample: fewer than five reviews."));
+      if (key === "rateMyProfessors") {
+        const extra = [
+          numericMetric(rating.difficulty) ? `Difficulty ${rating.difficulty}/5` : "",
+          numericMetric(rating.wouldTakeAgainPercent) ? `${rating.wouldTakeAgainPercent}% would take again` : "",
+        ].filter(Boolean).join(" · ");
+        if (extra) panel.append(make("p", "rating-extra", extra));
+      }
+    } else {
+      panel.append(make("p", "rating-status", ratingStatusLabel(rating)));
+    }
+    panel.append(make("p", "evidence-meta", rating?.observedAt
+      ? `Retrieved ${dateLabel(rating.observedAt)}${rating.latestReviewAt ? ` · latest review ${dateLabel(rating.latestReviewAt)}` : " · review dates: see source"}`
+      : "Not checked for this professor"));
+    const fallback = key === "rateMyPI"
+      ? ["Browse PI Review UCSD directory", "https://pi-review.com/universities/158"]
+      : ["Search Rate My Professors", `https://www.ratemyprofessors.com/search/professors/1079?q=${encodeURIComponent(record.displayName)}`];
+    const [linkLabel, linkUrl] = rating?.sourceUrl ? [verified ? "Open rating source" : "Open platform search", rating.sourceUrl] : fallback;
+    panel.append(makeExternal(linkLabel, linkUrl, "inline-link"));
+    grid.append(panel);
+  }
+  return detailSection(
+    "Student ratings",
+    grid,
+    note("Separate platforms and measures. PI Review (pi-review.com) is the mentoring source used here. Reviews are self-selected opinions; a freshly retrieved score can still be based on old reviews."),
+  );
+}
+
+function labAffiliationDetails(record) {
+  const affiliations = record.labAffiliations || [];
+  if (!affiliations.length) return detailSection("Labs & research groups", note("No lab relationship has been reverified for this professor yet."));
+  const relationLabels = {
+    faculty_lab_link: "Lab linked from faculty profile",
+    official_directory_same_record: "Listed together in official directory",
+    principal_investigator: "Listed as principal investigator",
+  };
+  const list = make("ul", "evidence-list");
+  for (const lab of affiliations) {
+    const evidence = Array.isArray(lab.fieldEvidence) ? lab.fieldEvidence[0] || {} : (lab.fieldEvidence || {});
+    list.append(evidenceItem(
+      lab.labName || "Research group",
+      `${relationLabels[lab.relationship] || "Documented lab association"} · observed ${dateLabel(evidence.observedAt)}`,
+      evidence.evidence || "",
+      [["Lab website", lab.url], ["Relationship source", evidence.sourceUrl]],
+    ));
+  }
+  return detailSection(
+    "Labs & research groups",
+    list,
+    note("An associated lab link alone does not establish that the professor leads the lab. The relationship and original wording are shown above."),
+  );
+}
+
+function academicDetails(record) {
+  const { verified, hasMetrics, status, profile } = record.facts.metrics;
+  if (!verified) {
+    return detailSection("Academic metrics", note(hasMetrics
+      ? `${status}. Citation numbers are hidden because the publication match needs review.`
+      : "Citation metrics are not verified in the local metadata yet."));
+  }
+  const grid = make("dl", "metric-grid");
+  for (const [label, value] of [["Citations", profile.citationCount], ["Works", profile.worksCount], ["h-index", profile.hIndex], ["i10-index", profile.i10Index]]) {
+    const cell = make("div", numericMetric(value) ? "" : "is-empty");
+    cell.append(make("dt", "", label), make("dd", "", numericMetric(value) ? formatNumber(value) : "—"));
+    grid.append(cell);
+  }
+  const list = make("ol", "publication-list");
+  const publications = relevantPublications(record).slice(0, 5);
+  if (!publications.length) list.append(make("li", "is-placeholder", "No relevant recent publications in the local metadata."));
+  for (const paper of publications) {
+    const item = make("li");
+    item.append(
+      isKnown(paper.url) ? makeExternal(cleanText(paper.title), paper.url, "paper-title") : make("span", "paper-title", cleanText(paper.title)),
+      make("span", "", [paper.publicationDate || paper.year, paper.venue].filter(isKnown).join(" · ") || "Venue not listed"),
+      make("small", "", numericMetric(paper.citationCount) ? `${formatNumber(paper.citationCount)} citations` : ""),
+    );
+    list.append(item);
+  }
+  return detailSection("Academic metrics", grid, note(status), make("h4", "sub-heading", "Recent publications"), list);
+}
+
+function facultyDirectoryDetails(record) {
+  const fields = [
+    ["Directory status", facultyLabel(record)],
+    ["Department affiliations", record.departments],
+  ];
+  if (record.aliasNames?.length) fields.push(["Also listed as", record.aliasNames]);
+  if (record.directorySection) fields.push(["Directory section", record.directorySection]);
+  const parts = [fieldGrid(fields)];
+  const listings = Array.isArray(record.directoryListings) ? record.directoryListings : [];
+  if (listings.length) {
+    const list = make("ul", "evidence-list");
+    for (const entry of listings) {
+      const excerpt = typeof entry.evidence === "string" ? entry.evidence : entry.evidence?.evidence || "";
+      list.append(evidenceItem(
+        [entry.department, entry.listedRole].filter(isKnown).join(" · ") || "Official directory listing",
+        `Observed ${dateLabel(entry.observedAt)}`,
+        excerpt,
+        [["Directory source", entry.sourceUrl]],
+      ));
+    }
+    parts.push(list);
+  }
+  parts.push(note("These roles describe how official directories list this person. A directory listing alone does not confirm current employment."));
+  return detailSection("Faculty roles & affiliations", ...parts);
+}
+
+function detailFields(record) {
+  if (record.recordType === "professor") {
+    return detailSection("Contact", fieldGrid([
+      ["Email", record.email],
+      ["Lab affiliation", record.labAffiliation, record.labAffiliationUrl],
+      ["Legacy verification date", record.lastVerified],
+    ]));
+  }
+  if (record.recordType === "lab") {
+    return detailSection("Lab details", fieldGrid([
+      ["Principal investigator", record.principalInvestigator, record.principalInvestigatorProfileUrl],
+      ["Associated professors", record.relatedProfessorNames || []],
+      ["Contact", record.email],
+      ["Type", record.displayKind],
+      ["Legacy verification date", record.lastVerified],
+    ]));
+  }
+  const fields = [
+    ["Organization", record.organization],
+    ["Type", record.resourceType],
+    ["Year", record.yearOfActivity],
+    ["Contact", record.email],
+    ["How to apply", record.applicationProcedure],
+  ];
+  for (const [label, value] of Object.entries(record.detailFields || {})) {
+    if (!fields.some(([existing]) => existing === label)) fields.push([label, value]);
+  }
+  return detailSection("REAL Portal details", fieldGrid(fields));
+}
+
+function detailRecruitment(record) {
+  const evidence = record.recruitingEvidence || {};
+  const status = record.recruitingStatus || UNKNOWN;
+  const body = isKnown(evidence.text)
+    ? make("p", "", `${status}: “${cleanText(evidence.text)}”`)
+    : make("p", "", status === UNKNOWN
+      ? "No explicit public recruiting statement was captured. That doesn’t mean the group is closed — a short, specific email is usually the best way to ask."
+      : status);
+  const link = isKnown(evidence.url) ? makeExternal("View evidence source", evidence.url, "inline-link") : null;
+  return detailSection("Recruiting", body, link);
+}
+
+function verificationDetails(record) {
+  const parts = [note(`${verificationLabel(record)}. Last source attempt: ${dateLabel(record.verification?.lastAttemptedAt)}. Each item applies only to the named field.`)];
+  const issues = record.verification?.issues || [];
+  if (issues.length) {
+    parts.push(make("p", "rating-warn", issues.map((issue) => typeof issue === "string" ? issue : (issue.message || issue.reason || issue.code || "Review needed")).join(" · ")));
+  }
+  const list = make("ul", "evidence-list");
+  for (const [key, items] of evidenceFields(record)) {
+    for (const evidence of items) {
+      if (!evidence.sourceUrl || !evidence.observedAt) continue;
+      list.append(evidenceItem(
+        slugLabel(key.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/\./g, " ")),
+        dateLabel(evidence.observedAt),
+        evidence.evidence || evidence.text || "",
+        [["Field source", evidence.sourceUrl]],
+      ));
+    }
+  }
+  if (list.children.length) {
+    const details = make("details", "candidate-details");
+    details.append(make("summary", "", `Field evidence (${list.children.length})`), list);
+    parts.push(details);
+  } else {
+    parts.push(note("No field-level evidence recorded. Existing source links and legacy dates do not establish that this entry was reverified."));
+  }
+  return detailSection("Verification", ...parts);
+}
+
+function detailSources(record) {
+  const section = make("section", "detail-section");
+  const details = make("details", "source-details");
+  const summary = make("summary", "", "Source URLs");
+  summary.append(make("span", "", String(record.sourceUrls.length)));
+  const list = make("ul", "source-list");
+  for (const url of record.sourceUrls) {
+    const item = make("li");
+    item.append(makeExternal(url.replace(/^https?:\/\/(www\.)?/, ""), url));
+    list.append(item);
+  }
+  if (!record.sourceUrls.length) list.append(make("li", "", "No source URLs recorded."));
+  details.append(summary, list);
+  section.append(details);
+  return section;
+}
+
+function renderDetail(record) {
+  const root = make("article", "detail-record");
+  root.append(detailHead(record));
+  const sections = [detailLinks(record), detailOverview(record)];
+  if (record.recordType === "professor") {
+    sections.push(
+      teachingDetails(record),
+      ratingDetails(record),
+      labAffiliationDetails(record),
+      academicDetails(record),
+      facultyDirectoryDetails(record),
+    );
+  }
+  sections.push(detailFields(record));
+  if (record.recordType !== "resource") sections.push(detailRecruitment(record));
+  sections.push(verificationDetails(record), detailSources(record));
+  root.append(...sections.filter(Boolean));
+  return root;
+}
+
+/* ---------- Overlays (filter drawer, detail sheet) ---------- */
+
+let lastFocus = null;
+
+function syncOverlay() {
+  const open = els.rail.classList.contains("is-open") || els.detailPanel.classList.contains("is-open");
+  els.scrim.hidden = !open;
+  document.body.classList.toggle("is-locked", open);
+}
+
+function openSheet() {
+  lastFocus = document.activeElement;
+  els.detailPanel.classList.add("is-open");
+  els.detailPanel.setAttribute("role", "dialog");
+  els.detailPanel.setAttribute("aria-modal", "true");
+  syncOverlay();
+  els.detailPanel.focus({ preventScroll: true });
+}
+
+function closeSheet() {
+  if (!els.detailPanel.classList.contains("is-open")) return;
+  els.detailPanel.classList.remove("is-open");
+  els.detailPanel.removeAttribute("role");
+  els.detailPanel.removeAttribute("aria-modal");
+  syncOverlay();
+  const row = els.results.querySelector(`[data-open-id="${CSS.escape(state.activeId)}"]`);
+  (row || lastFocus)?.focus?.({ preventScroll: true });
+}
+
+function openRail() {
+  els.rail.classList.add("is-open");
+  els.filtersButton.setAttribute("aria-expanded", "true");
+  syncOverlay();
+  els.rail.querySelector("button, select")?.focus({ preventScroll: true });
+}
+
+function closeRail() {
+  if (!els.rail.classList.contains("is-open")) return;
+  els.rail.classList.remove("is-open");
+  els.filtersButton.setAttribute("aria-expanded", "false");
+  syncOverlay();
+  els.filtersButton.focus({ preventScroll: true });
+}
+
+function resetOverlaysForLayout() {
+  if (DESKTOP_DETAIL_QUERY.matches) {
+    els.detailPanel.classList.remove("is-open");
+    els.detailPanel.removeAttribute("role");
+    els.detailPanel.removeAttribute("aria-modal");
+    if (!state.activeId && state.results.length) showDetail(state.results[0].id);
+  }
+  if (!DRAWER_QUERY.matches) {
+    els.rail.classList.remove("is-open");
+    els.filtersButton.setAttribute("aria-expanded", "false");
+  }
+  syncOverlay();
+}
+
+/* ---------- Keyboard navigation ---------- */
+
+function moveSelection(delta) {
+  const current = state.results.findIndex((record) => record.id === state.activeId);
+  selectIndex(current === -1 ? 0 : current + delta);
+}
+
+function selectIndex(index) {
+  if (!state.results.length) return;
+  const next = Math.max(0, Math.min(state.results.length - 1, index));
+  if (next >= state.visibleLimit) loadMore();
+  const record = state.results[next];
+  openDetail(record.id, { reveal: false });
+  const button = els.results.querySelector(`[data-open-id="${CSS.escape(record.id)}"]`);
+  button?.focus({ preventScroll: true });
+  button?.closest(".row")?.scrollIntoView({ block: "nearest", behavior: prefersReducedMotion() ? "auto" : "smooth" });
+}
+
+function isTypingTarget(target) {
+  return target instanceof HTMLElement && (target.matches("input, select, textarea") || target.isContentEditable);
+}
+
+function focusSearch() {
+  els.query.focus();
+  els.query.select();
+}
+
+function handleKeydown(event) {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+    event.preventDefault();
+    focusSearch();
+    return;
+  }
+  if (event.key === "Escape") {
+    if (els.detailPanel.classList.contains("is-open")) closeSheet();
+    else if (els.rail.classList.contains("is-open")) closeRail();
+    else if (document.activeElement === els.query) els.query.blur();
+    return;
+  }
+  if (event.target === els.query && event.key === "ArrowDown") {
+    event.preventDefault();
+    selectIndex(0);
+    return;
+  }
+  if (isTypingTarget(event.target) || event.metaKey || event.ctrlKey || event.altKey) return;
+  const inResults = els.results.contains(event.target);
+  const key = event.key;
+  if (key === "/") {
+    event.preventDefault();
+    focusSearch();
+  } else if (key === "j" || (inResults && key === "ArrowDown")) {
+    event.preventDefault();
+    moveSelection(1);
+  } else if (key === "k" || (inResults && key === "ArrowUp")) {
+    event.preventDefault();
+    moveSelection(-1);
+  } else if (key === "s" && state.activeId) {
+    event.preventDefault();
+    toggleSaved(state.activeId);
+  }
+}
+
+/* ---------- Feedback ---------- */
+
+let toastTimer = 0;
+
+function showToast(message) {
+  els.toast.textContent = message;
+  els.toast.classList.add("is-visible");
+  window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => els.toast.classList.remove("is-visible"), 1800);
+}
+
+async function copyText(value, message) {
+  try {
+    await navigator.clipboard.writeText(value);
+  } catch {
+    const field = make("textarea");
+    field.value = value;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    document.body.append(field);
+    field.select();
+    document.execCommand("copy");
+    field.remove();
+  }
+  showToast(message);
+}
+
+function recordLink(id) {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.searchParams.set("id", id);
+  return url.toString();
+}
+
+/* ---------- Hero numbers ---------- */
+
+function animateNumber(element, target) {
+  const value = Number(target) || 0;
+  if (prefersReducedMotion()) {
+    element.textContent = formatNumber(value);
+    return;
+  }
+  const start = performance.now();
+  const duration = 900;
+  const step = (now) => {
+    const progress = Math.min(1, (now - start) / duration);
+    const eased = 1 - (1 - progress) ** 3;
+    element.textContent = formatNumber(Math.round(value * eased));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function renderStats() {
+  const count = (predicate) => state.records.filter(predicate).length;
+  animateNumber(els.professorCount, count((record) => record.recordType === "professor"));
+  animateNumber(els.labCount, count((record) => record.recordType === "lab"));
+  animateNumber(els.realResourceCount, count((record) => record.recordType === "resource"));
+  animateNumber(els.courseCount, count((record) => record.facts.courses > 0));
+  animateNumber(els.ratingCount, count((record) => record.facts.ratings.length > 0));
+  els.updatedAt.textContent = state.data?.generatedAt
+    ? `Dataset built ${dateLabel(state.data.generatedAt)} · field dates vary`
+    : "Bundled dataset";
+}
+
+/* ---------- Data loading ---------- */
+
 async function loadData() {
-  const response = await fetch(DATA_URL, DATA_FETCH_OPTIONS);
-  if (!response.ok) throw new Error(`Could not load ${DATA_URL}: ${response.status}`);
-  const data = await response.json();
-  const realResponse = await fetch(REAL_PORTAL_DATA_URL, DATA_FETCH_OPTIONS).catch(() => null);
-  const realPortalData = realResponse?.ok ? await realResponse.json() : null;
+  const [data, realPortalData] = await Promise.all([
+    fetch(DATA_URL, DATA_FETCH_OPTIONS).then((response) => {
+      if (!response.ok) throw new Error(`Could not load ${DATA_URL} (HTTP ${response.status}).`);
+      return response.json();
+    }),
+    fetch(REAL_PORTAL_DATA_URL, DATA_FETCH_OPTIONS)
+      .then((response) => (response.ok ? response.json() : null))
+      .catch(() => null),
+  ]);
   state.data = data;
   state.records = buildRecords(data, realPortalData);
   state.index = buildIndex(state.records);
+  state.byId = new Map(state.records.map((record) => [record.id, record]));
+
   renderFacets();
-  renderMetrics();
+  syncControls();
+  renderStats();
   render();
+
+  if (state.userSelected && state.byId.has(state.activeId)) {
+    openDetail(state.activeId, { reveal: true });
+  } else if (state.userSelected) {
+    state.userSelected = false;
+    state.activeId = "";
+    writeUrl();
+  }
 }
 
-els.form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  animateSearchFeedback();
-  applyStateFromControls();
-  state.visibleLimit = PAGE_SIZE;
-  renderFacets();
-  render();
-});
+/* ---------- Wiring ---------- */
 
-[els.query, els.recruiting, els.institution, els.department, els.area, els.sort].forEach((control) => {
-  control.addEventListener(control === els.query ? "input" : "change", () => {
-    applyStateFromControls();
-    state.visibleLimit = PAGE_SIZE;
-    if (control === els.area) renderFacets();
-    render();
+function bindEvents() {
+  const debouncedUpdate = debounce(() => update({ scroll: true }), SEARCH_DEBOUNCE_MS);
+
+  els.form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    syncStateFromControls();
+    update({ scroll: true });
+    if (DRAWER_QUERY.matches) els.query.blur();
   });
-});
 
-els.typeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    state.type = button.dataset.typeChoice || "all";
-    if (state.type !== "professor") state.verifiedOnly = false;
-    state.visibleLimit = PAGE_SIZE;
-    render();
+  els.query.addEventListener("input", () => {
+    syncStateFromControls();
+    debouncedUpdate();
   });
-});
 
-els.smartFilterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    applySmartFilter(button.dataset.smartFilter);
+  for (const control of [els.department, els.area, els.evidence, els.verifiedOnly, els.recruiting, els.sort]) {
+    control.addEventListener("change", () => {
+      syncStateFromControls();
+      syncControls();
+      update({ scroll: true });
+    });
+  }
+
+  els.typeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.type = button.dataset.typeChoice || "all";
+      update({ scroll: true });
+    });
   });
-});
 
-els.activeFilters.addEventListener("click", (event) => {
-  const chip = event.target.closest("[data-filter-key]");
-  if (!chip) return;
-  clearFilter(chip.dataset.filterKey);
-});
+  els.quickButtons.forEach((button) => {
+    button.addEventListener("click", () => applyQuickFilter(button.dataset.quick));
+  });
 
-els.clear.addEventListener("click", () => {
-  state.query = "";
-  state.type = "all";
-  state.institution = "all";
-  state.department = "all";
-  state.area = "all";
-  state.recruiting = "all";
-  state.verifiedOnly = false;
-  state.sort = "relevance";
-  state.visibleLimit = PAGE_SIZE;
-  syncControlsFromState();
-  renderFacets();
-  render();
-});
+  els.activeFilters.addEventListener("click", (event) => {
+    const chip = event.target.closest("[data-filter-key]");
+    if (chip) clearFilter(chip.dataset.filterKey);
+  });
 
-els.loadMore.addEventListener("click", () => {
-  state.visibleLimit += PAGE_SIZE;
-  render();
-});
+  els.clear.addEventListener("click", () => resetFilters({ keepQuery: true }));
+  els.emptyReset.addEventListener("click", () => resetFilters());
+  els.loadMore.addEventListener("click", loadMore);
 
-document.querySelectorAll("[data-close-drawer]").forEach((node) => {
-  node.addEventListener("click", closeDrawer);
-});
+  els.savedToggle.addEventListener("click", () => {
+    state.savedOnly = !state.savedOnly;
+    syncControls();
+    update({ scroll: true });
+  });
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && state.activeRecord) closeDrawer();
-});
+  els.shareButton.addEventListener("click", () => copyText(window.location.href, "Search link copied"));
+  els.filtersButton.addEventListener("click", openRail);
+  els.railClose.addEventListener("click", closeRail);
+  els.railApply.addEventListener("click", closeRail);
+  els.detailClose.addEventListener("click", closeSheet);
+  els.scrim.addEventListener("click", () => {
+    closeSheet();
+    closeRail();
+  });
 
-initGsapMotion();
-initMotionInteractions();
+  // Delegated clicks: row titles, saved list, save toggles, tags, copy buttons.
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-open-id], [data-save-id], [data-area-filter], [data-copy], [data-copy-record-link]");
+    if (!target) return;
+    if (target.dataset.saveId) {
+      toggleSaved(target.dataset.saveId);
+    } else if (target.dataset.openId) {
+      closeRail();
+      openDetail(target.dataset.openId);
+    } else if (target.dataset.areaFilter) {
+      state.area = target.dataset.areaFilter;
+      syncControls();
+      closeSheet();
+      update({ scroll: true });
+    } else if (target.dataset.copy) {
+      copyText(target.dataset.copy, target.dataset.copyLabel || "Copied");
+    } else if (target.dataset.copyRecordLink) {
+      copyText(recordLink(target.dataset.copyRecordLink), "Record link copied");
+    }
+  });
 
-loadData().catch((error) => {
-  els.heading.textContent = "Data unavailable";
-  els.updatedAt.textContent = error.message;
-  els.results.replaceChildren();
-  els.empty.hidden = false;
-  els.empty.textContent = "The data file could not be loaded. Run a local server and check data/research-atlas.json.";
-});
+  document.addEventListener("keydown", handleKeydown);
+  DESKTOP_DETAIL_QUERY.addEventListener("change", resetOverlaysForLayout);
+  DRAWER_QUERY.addEventListener("change", resetOverlaysForLayout);
+
+  const syncPlaceholder = () => {
+    els.query.placeholder = COMPACT_QUERY.matches ? "Search" : "Search a professor, lab, course, or topic";
+  };
+  COMPACT_QUERY.addEventListener("change", syncPlaceholder);
+  syncPlaceholder();
+
+  // Auto-load the first few pages as the reader nears the end of the list; after that the button stays manual.
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting) && !els.loadMore.hidden && state.visibleLimit < AUTO_LOAD_LIMIT) {
+        loadMore();
+      }
+    }, { rootMargin: "0px 0px 600px 0px" }).observe(els.loadMore);
+  }
+}
+
+function boot() {
+  bindEvents();
+  readUrl();
+  syncControls();
+  loadData().catch((error) => {
+    els.resultHeading.textContent = "Data unavailable";
+    els.coverageLine.textContent = error.message;
+    els.results.replaceChildren();
+    els.results.setAttribute("aria-busy", "false");
+    els.empty.hidden = false;
+    els.emptyHint.textContent = "The dataset could not be loaded. If you opened index.html directly, serve the folder with `python3 -m http.server` instead.";
+  });
+}
+
+// tests/test_frontend_data.cjs evaluates this file in a bare VM to exercise the data helpers;
+// only a real page (which has a document.readyState) boots the UI.
+if (document.readyState) boot();

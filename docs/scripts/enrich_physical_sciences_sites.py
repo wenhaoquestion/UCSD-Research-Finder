@@ -1079,16 +1079,16 @@ def update_dataset(data: dict[str, Any], args: argparse.Namespace, cache: dict[s
             accepted = next((candidate for candidate in found if candidate.get("accepted")), None)
             if accepted:
                 url = accepted["url"]
+                kind = str(accepted.get("kind", "personal_site"))
                 professor["personalWebsiteUrl"] = url
                 professor["labAffiliationUrl"] = url
-                professor["labAffiliation"] = research_site_name(str(professor.get("name", "")), str(accepted.get("kind", "personal_site")))
+                professor["labAffiliation"] = research_site_name(str(professor.get("name", "")), kind)
                 professor["sourceUrls"] = unique(list(professor.get("sourceUrls") or []) + [url])
 
     professors = consolidate_target_professors(professors)
     lab_by_id = {
         lab.get("id"): clean_recruiting_claim(lab)
         for lab in data.get("labs") or []
-        if lab.get("legacyKind") != "physical_sciences_personal_site"
     }
     lab_by_url = {
         (str(lab.get("department", "")), canonical_url_key(str(lab.get("labWebsiteUrl", "")))): lab.get("id")

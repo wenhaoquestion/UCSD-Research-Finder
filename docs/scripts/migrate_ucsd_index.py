@@ -18,7 +18,11 @@ DEFAULT_SUPPLEMENT = ROOT / "data" / "lab-overrides.json"
 MISSING = "Not found"
 UNKNOWN = "Unknown"
 URL_RE = re.compile(r"^https?://", re.I)
-LAB_TOKEN_RE = re.compile(r"(^|[^a-z])lab(orator(?:y|ies))?([^a-z]|$)|research[-_\s]?group|research[-_\s]?lab", re.I)
+LAB_TOKEN_RE = re.compile(
+    r"(^|[^a-z])lab(orator(?:y|ies))?([^a-z]|$)|research[-_\s]?group|research[-_\s]?lab|"
+    r"\b(center|centre|core|clinic|studio|observatory|institute|facility|collaborative)\b",
+    re.I,
+)
 
 DEPARTMENT_ALIASES = {
     "Data Science": "Halicioğlu Data Science Institute",
@@ -111,6 +115,12 @@ LABISH_TERMS = {
     "center",
     "centre",
     "core",
+    "clinic",
+    "collaborative",
+    "facility",
+    "institute",
+    "observatory",
+    "studio",
 }
 
 GENERIC_LAB_LABELS = {
@@ -330,6 +340,62 @@ def areas(record: Dict[str, object]) -> List[str]:
     return unique(values) or ["Research"]
 
 
+def entity_type_for(name: str, url: str, record_kind: str = "") -> str:
+    value = f"{name} {url} {record_kind}".lower()
+    if "research group" in value:
+        return "research_group"
+    if "core" in value:
+        return "core"
+    if "clinic" in value:
+        return "clinic"
+    if "studio" in value:
+        return "studio"
+    if "observatory" in value:
+        return "observatory"
+    if "facility" in value:
+        return "facility"
+    if "institute" in value:
+        return "institute"
+    if "center" in value or "centre" in value:
+        return "center"
+    return "lab"
+
+
+def confidence_for(pi: str, source_urls: List[str], legacy_kind: str) -> str:
+    if legacy_kind in {"curated_lab", "faculty_lab_link"} and pi not in {MISSING, UNKNOWN, ""}:
+        return "high"
+    if pi not in {MISSING, UNKNOWN, ""} or len(source_urls) > 1:
+        return "medium"
+    return "low"
+
+
+def lab_extensions(
+    *,
+    name: str,
+    url: str,
+    pi: str,
+    source_urls: List[str],
+    discovery_method: str,
+    confidence: str = "",
+    overview_url: str = "",
+) -> Dict[str, object]:
+    return {
+        "entityType": entity_type_for(name, url, discovery_method),
+        "coverageStatus": "entity_verified" if URL_RE.search(url) else "overview_only",
+        "discoveryMethod": discovery_method,
+        "confidence": confidence or confidence_for(pi, source_urls, discovery_method),
+        "piCandidates": [pi] if pi not in {MISSING, UNKNOWN, ""} else [],
+        "overviewSourceUrl": overview_url or (source_urls[0] if source_urls else MISSING),
+    }
+
+
+def discovery_method_for(record: Dict[str, object], fallback: str) -> str:
+    discovery = record.get("discovery")
+    if isinstance(discovery, dict) and discovery.get("method"):
+        return str(discovery["method"])
+    return fallback
+
+
 def verified_date(data: Dict[str, object]) -> str:
     generated = data.get("generatedAt")
     if not generated:
@@ -420,9 +486,10 @@ def lab_from(record: Dict[str, object], institution: str, date: str) -> Optional
         return None
     lab_website_url = canonical_display_url(site_url)
 
-    return {
+    lab_name = clean_lab_name(name, pi)
+    base = {
         "id": str(record.get("id") or f"ucsd-{kind}-{slug(name)}"),
-        "labName": clean_lab_name(name, pi),
+        "labName": lab_name,
         "institution": institution,
         "department": department_name(record.get("department")),
         "labWebsiteUrl": lab_website_url,
@@ -438,6 +505,16 @@ def lab_from(record: Dict[str, object], institution: str, date: str) -> Optional
         "recordSubtype": "lab",
         "legacyKind": kind,
     }
+    base.update(
+        lab_extensions(
+            name=lab_name,
+            url=lab_website_url,
+            pi=pi,
+            source_urls=urls,
+            discovery_method=discovery_method_for(record, kind),
+        )
+    )
+    return base
 
 
 def lab_name_from_url(url: str, pi: str) -> str:
@@ -496,7 +573,7 @@ def lab_from_professor_link(record: Dict[str, object], institution: str, date: s
     display_url = canonical_display_url(url)
     name = lab_name_from_url(display_url, pi)
 
-    return {
+    base = {
         "id": f"ucsd-lab-from-faculty-{slug(canonical_url_key(display_url))}",
         "labName": clean_lab_name(name, pi),
         "institution": institution,
@@ -514,6 +591,17 @@ def lab_from_professor_link(record: Dict[str, object], institution: str, date: s
         "recordSubtype": "lab",
         "legacyKind": "faculty_lab_link",
     }
+    base.update(
+        lab_extensions(
+            name=str(base["labName"]),
+            url=display_url,
+            pi=pi,
+            source_urls=urls,
+            discovery_method="faculty_lab_link",
+            overview_url=profile_url,
+        )
+    )
+    return base
 
 
 def merge_lab(existing: Dict[str, object], incoming: Dict[str, object]) -> Dict[str, object]:
@@ -560,7 +648,7 @@ def lab_from_supplement(item: Dict[str, object], date: str) -> Optional[Dict[str
     if not source_urls:
         return None
     pi = str(item.get("principalInvestigator") or MISSING)
-    return {
+    base = {
         "id": str(item.get("id") or f"ucsd-lab-curated-{slug(canonical_url_key(url))}"),
         "labName": clean_lab_name(name, pi),
         "institution": str(item.get("institution") or "University of California San Diego"),
@@ -578,6 +666,17 @@ def lab_from_supplement(item: Dict[str, object], date: str) -> Optional[Dict[str
         "recordSubtype": "lab",
         "legacyKind": "curated_lab",
     }
+    base.update(
+        lab_extensions(
+            name=str(base["labName"]),
+            url=str(base["labWebsiteUrl"]),
+            pi=pi,
+            source_urls=source_urls,
+            discovery_method="manual_curated_override",
+            confidence=str(item.get("confidence") or "high"),
+        )
+    )
+    return base
 
 
 def slug(value: str) -> str:

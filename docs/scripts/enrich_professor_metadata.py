@@ -29,6 +29,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ATLAS = ROOT / "data" / "research-atlas.json"
 DEFAULT_CACHE = ROOT / "data" / "ucsd" / "professor-enrichment-cache.json"
+DEFAULT_OVERRIDES = ROOT / "data" / "ucsd" / "profile-overrides.json"
 
 MISSING = "Not found"
 UNKNOWN = "Unknown"
@@ -383,6 +384,28 @@ def openalex_work_search_url(author_id: str) -> str:
     return f"https://api.openalex.org/works?{params}"
 
 
+def semantic_scholar_author_search_url(name: str) -> str:
+    fields = ",".join(
+        [
+            "name",
+            "url",
+            "affiliations",
+            "paperCount",
+            "citationCount",
+            "hIndex",
+            "papers.title",
+            "papers.year",
+            "papers.citationCount",
+            "papers.publicationDate",
+            "papers.venue",
+            "papers.url",
+            "papers.externalIds",
+        ]
+    )
+    params = urllib.parse.urlencode({"query": name, "limit": "5", "fields": fields})
+    return f"https://api.semanticscholar.org/graph/v1/author/search?{params}"
+
+
 def author_match_score(candidate: dict[str, Any], professor: dict[str, Any]) -> float:
     professor_tokens = set(name_tokens(str(professor.get("name", ""))))
     candidate_tokens = set(name_tokens(str(candidate.get("display_name", ""))))
@@ -399,14 +422,48 @@ def author_match_score(candidate: dict[str, Any], professor: dict[str, Any]) -> 
 def publication_from_work(work: dict[str, Any]) -> dict[str, Any]:
     location = work.get("primary_location") or {}
     source = location.get("source") or {}
+    doi = clean_text(work.get("doi") or "")
     return {
         "title": clean_text(work.get("display_name") or MISSING),
         "year": work.get("publication_year") or UNKNOWN,
         "publicationDate": work.get("publication_date") or UNKNOWN,
         "citationCount": work.get("cited_by_count", 0),
         "venue": clean_text(source.get("display_name") or UNKNOWN),
-        "url": work.get("doi") or location.get("landing_page_url") or work.get("id") or MISSING,
+        "url": doi or location.get("landing_page_url") or work.get("id") or MISSING,
+        "doi": doi or UNKNOWN,
+        "openAlexUrl": work.get("id") or MISSING,
+        "semanticScholarUrl": UNKNOWN,
+        "journalImpactFactor": open_data_impact_factor_marker(),
         "source": "OpenAlex",
+    }
+
+
+def publication_from_semantic_paper(paper: dict[str, Any]) -> dict[str, Any]:
+    external = paper.get("externalIds") or {}
+    doi = clean_text(external.get("DOI") or "")
+    if doi and not doi.lower().startswith("http"):
+        doi = f"https://doi.org/{doi}"
+    return {
+        "title": clean_text(paper.get("title") or MISSING),
+        "year": paper.get("year") or UNKNOWN,
+        "publicationDate": paper.get("publicationDate") or UNKNOWN,
+        "citationCount": paper.get("citationCount", 0),
+        "venue": clean_text(paper.get("venue") or UNKNOWN),
+        "url": paper.get("url") or doi or MISSING,
+        "doi": doi or UNKNOWN,
+        "openAlexUrl": UNKNOWN,
+        "semanticScholarUrl": paper.get("url") or UNKNOWN,
+        "journalImpactFactor": open_data_impact_factor_marker(),
+        "source": "Semantic Scholar",
+    }
+
+
+def open_data_impact_factor_marker() -> dict[str, str]:
+    return {
+        "value": UNKNOWN,
+        "year": UNKNOWN,
+        "source": "Unavailable in open-data mode",
+        "status": "unavailable_open_data",
     }
 
 
@@ -470,6 +527,62 @@ def fetch_openalex_profile(professor: dict[str, Any], cache: dict[str, Any], del
     return cache[record_id]
 
 
+def fetch_semantic_scholar_profile(professor: dict[str, Any], cache: dict[str, Any], delay: float) -> dict[str, Any]:
+    record_id = str(professor.get("id"))
+    if record_id in cache:
+        return cache[record_id]
+
+    name = str(professor.get("name", ""))
+    try:
+        authors = request_json(semantic_scholar_author_search_url(name)).get("data", [])
+    except Exception as exc:
+        cache[record_id] = {"checked": False, "source": "Semantic Scholar", "reason": type(exc).__name__}
+        return cache[record_id]
+
+    best = None
+    best_score = 0.0
+    for author in authors:
+        candidate_name = str(author.get("name") or "")
+        score = 0.0
+        if likely_same_person(candidate_name, name):
+            score += 0.75
+        affiliations = " ".join(str(item) for item in author.get("affiliations", []) or []).lower()
+        if any(token in affiliations for token in ["uc san diego", "ucsd", "university of california san diego"]):
+            score += 0.2
+        if score > best_score:
+            best = author
+            best_score = score
+
+    if not best or best_score < 0.75:
+        cache[record_id] = {
+            "checked": True,
+            "matched": False,
+            "source": "Semantic Scholar",
+            "matchConfidence": round(best_score, 3),
+        }
+        if delay:
+            time.sleep(delay)
+        return cache[record_id]
+
+    cache[record_id] = {
+        "checked": True,
+        "matched": True,
+        "source": "Semantic Scholar",
+        "semanticScholarAuthorId": str(best.get("authorId") or ""),
+        "semanticScholarUrl": best.get("url") or "",
+        "matchedName": best.get("name", ""),
+        "matchConfidence": round(best_score, 3),
+        "worksCount": best.get("paperCount", 0),
+        "citationCount": best.get("citationCount", 0),
+        "hIndex": best.get("hIndex", UNKNOWN),
+        "recentPublications": [publication_from_semantic_paper(paper) for paper in (best.get("papers") or [])[:5]],
+        "lastVerified": dt.date.today().isoformat(),
+    }
+    if delay:
+        time.sleep(delay)
+    return cache[record_id]
+
+
 def google_scholar_search_url(professor: dict[str, Any]) -> str:
     query = f"{professor.get('name', '')} {professor.get('institution', 'UC San Diego')}"
     params = urllib.parse.urlencode({"view_op": "search_authors", "mauthors": query, "hl": "en"})
@@ -481,9 +594,107 @@ def linkedin_search_url(professor: dict[str, Any]) -> str:
     return f"https://www.google.com/search?{urllib.parse.urlencode({'q': query})}"
 
 
-def apply_enrichment(professor: dict[str, Any], contact: dict[str, Any], academic: dict[str, Any]) -> dict[str, Any]:
+def profile_override_for(professor: dict[str, Any], overrides: dict[str, Any]) -> dict[str, Any]:
+    by_id = overrides.get("byId", {}) if isinstance(overrides, dict) else {}
+    by_name = overrides.get("byName", {}) if isinstance(overrides, dict) else {}
+    return dict(by_id.get(str(professor.get("id")), {}) or by_name.get(str(professor.get("name")), {}) or {})
+
+
+def confirmed_or_candidate_profile(profile_url: str, search_url: str, source_url: str = "") -> dict[str, str]:
+    if is_known(profile_url):
+        return {
+            "profileUrl": profile_url,
+            "searchUrl": search_url,
+            "status": "confirmed",
+            "sourceUrl": source_url or profile_url,
+            "lastChecked": dt.date.today().isoformat(),
+        }
+    return {
+        "profileUrl": MISSING,
+        "searchUrl": search_url,
+        "status": "candidate_search",
+        "sourceUrl": source_url or MISSING,
+        "lastChecked": dt.date.today().isoformat(),
+    }
+
+
+def metric_sources_for(academic: dict[str, Any], semantic: dict[str, Any]) -> list[dict[str, Any]]:
+    sources = []
+    if academic.get("matched"):
+        sources.append(
+            {
+                "source": "OpenAlex",
+                "url": academic.get("openAlexUrl") or MISSING,
+                "matchConfidence": academic.get("matchConfidence", 0),
+                "lastVerified": academic.get("lastVerified", dt.date.today().isoformat()),
+            }
+        )
+    if semantic.get("matched"):
+        sources.append(
+            {
+                "source": "Semantic Scholar",
+                "url": semantic.get("semanticScholarUrl") or MISSING,
+                "matchConfidence": semantic.get("matchConfidence", 0),
+                "lastVerified": semantic.get("lastVerified", dt.date.today().isoformat()),
+            }
+        )
+    return sources
+
+
+def choose_academic_profile(academic: dict[str, Any], semantic: dict[str, Any]) -> dict[str, Any]:
+    if academic.get("matched"):
+        selected = dict(academic)
+    elif semantic.get("matched"):
+        selected = dict(semantic)
+    else:
+        selected = {
+            "source": "OpenAlex",
+            "openAlexAuthorId": MISSING,
+            "openAlexUrl": MISSING,
+            "matchedName": MISSING,
+            "matchConfidence": max(float(academic.get("matchConfidence", 0) or 0), float(semantic.get("matchConfidence", 0) or 0)),
+            "worksCount": UNKNOWN,
+            "citationCount": UNKNOWN,
+            "hIndex": UNKNOWN,
+            "i10Index": UNKNOWN,
+            "recentPublications": [],
+            "lastVerified": dt.date.today().isoformat(),
+        }
+
+    selected.setdefault("openAlexAuthorId", academic.get("openAlexAuthorId", MISSING))
+    selected.setdefault("openAlexUrl", academic.get("openAlexUrl", MISSING))
+    selected.setdefault("semanticScholarAuthorId", semantic.get("semanticScholarAuthorId", MISSING))
+    selected.setdefault("semanticScholarUrl", semantic.get("semanticScholarUrl", MISSING))
+    selected.setdefault("i10Index", academic.get("i10Index", UNKNOWN))
+    selected["metricSources"] = metric_sources_for(academic, semantic)
+    selected["recentPublications"] = [
+        normalize_publication_metadata(publication)
+        for publication in selected.get("recentPublications", [])
+    ]
+    return selected
+
+
+def normalize_publication_metadata(publication: dict[str, Any]) -> dict[str, Any]:
+    item = dict(publication)
+    url = str(item.get("url") or "")
+    item.setdefault("doi", url if "doi.org/" in url else UNKNOWN)
+    item.setdefault("openAlexUrl", item.get("id") if str(item.get("id", "")).startswith("http") else UNKNOWN)
+    item.setdefault("semanticScholarUrl", UNKNOWN)
+    item.setdefault("journalImpactFactor", open_data_impact_factor_marker())
+    return item
+
+
+def apply_enrichment(
+    professor: dict[str, Any],
+    contact: dict[str, Any],
+    academic: dict[str, Any],
+    semantic: dict[str, Any],
+    overrides: dict[str, Any],
+) -> dict[str, Any]:
     updated = dict(professor)
     source_urls = list(updated.get("sourceUrls") or [])
+    override = profile_override_for(updated, overrides)
+    existing_academic = updated.get("academicProfile") if isinstance(updated.get("academicProfile"), dict) else {}
 
     current_scholar = str(updated.get("googleScholarUrl", MISSING))
     if is_known(current_scholar) and "scholar.google." not in current_scholar:
@@ -506,45 +717,53 @@ def apply_enrichment(professor: dict[str, Any], contact: dict[str, Any], academi
             updated["googleScholarUrl"] = contact["googleScholarUrl"]
             source_urls.append(contact["googleScholarUrl"])
 
+    if override.get("googleScholarUrl"):
+        updated["googleScholarUrl"] = override["googleScholarUrl"]
+        source_urls.append(override["googleScholarUrl"])
+    if override.get("linkedinUrl"):
+        updated["linkedinUrl"] = override["linkedinUrl"]
+        source_urls.append(override["linkedinUrl"])
+
     if contact.get("matched"):
         if "profiles.ucsd.edu/" in contact.get("url", ""):
             source_urls.append(contact["url"])
             if not is_known(updated.get("officialProfileUrl")) or "catalog.ucsd.edu" in str(updated.get("officialProfileUrl")):
                 updated["officialProfileUrl"] = contact["url"]
 
-    if academic.get("matched"):
+    if academic.get("matched") or semantic.get("matched") or academic.get("checked") or semantic.get("checked"):
+        updated["academicProfile"] = choose_academic_profile(academic, semantic)
+    elif existing_academic:
         updated["academicProfile"] = {
-            "source": "OpenAlex",
-            "openAlexAuthorId": academic.get("openAlexAuthorId", ""),
-            "openAlexUrl": academic.get("openAlexUrl", ""),
-            "matchedName": academic.get("matchedName", ""),
-            "matchConfidence": academic.get("matchConfidence", 0),
-            "worksCount": academic.get("worksCount", 0),
-            "citationCount": academic.get("citationCount", 0),
-            "hIndex": academic.get("hIndex", UNKNOWN),
-            "i10Index": academic.get("i10Index", UNKNOWN),
-            "recentPublications": academic.get("recentPublications", []),
-            "lastVerified": academic.get("lastVerified", dt.date.today().isoformat()),
+            **existing_academic,
+            "recentPublications": [
+                normalize_publication_metadata(publication)
+                for publication in existing_academic.get("recentPublications", [])
+            ],
+            "metricSources": existing_academic.get("metricSources", []),
+            "semanticScholarAuthorId": existing_academic.get("semanticScholarAuthorId", MISSING),
+            "semanticScholarUrl": existing_academic.get("semanticScholarUrl", MISSING),
         }
-        if academic.get("openAlexUrl"):
-            source_urls.append(academic["openAlexUrl"])
     else:
-        updated.setdefault(
-            "academicProfile",
-            {
-                "source": "OpenAlex",
-                "openAlexAuthorId": MISSING,
-                "openAlexUrl": MISSING,
-                "matchedName": MISSING,
-                "matchConfidence": academic.get("matchConfidence", 0),
-                "worksCount": UNKNOWN,
-                "citationCount": UNKNOWN,
-                "hIndex": UNKNOWN,
-                "i10Index": UNKNOWN,
-                "recentPublications": [],
-                "lastVerified": dt.date.today().isoformat(),
-            },
-        )
+        updated["academicProfile"] = choose_academic_profile({}, {})
+    if academic.get("openAlexUrl"):
+        source_urls.append(academic["openAlexUrl"])
+    if semantic.get("semanticScholarUrl"):
+        source_urls.append(semantic["semanticScholarUrl"])
+
+    scholar_profile = updated.get("googleScholarUrl", MISSING)
+    linkedin_profile = updated.get("linkedinUrl") or override.get("linkedinUrl") or MISSING
+    updated["externalProfiles"] = {
+        "googleScholar": confirmed_or_candidate_profile(
+            scholar_profile if is_known(scholar_profile) and "scholar.google." in str(scholar_profile) else MISSING,
+            updated["googleScholarSearchUrl"],
+            override.get("sourceUrl", ""),
+        ),
+        "linkedin": confirmed_or_candidate_profile(
+            linkedin_profile if is_known(linkedin_profile) and "linkedin.com/in/" in str(linkedin_profile) else MISSING,
+            updated["linkedinSearchUrl"],
+            override.get("sourceUrl", ""),
+        ),
+    }
 
     updated["sourceUrls"] = unique(url for url in source_urls if URL_RE.search(str(url)))
     return updated
@@ -552,7 +771,13 @@ def apply_enrichment(professor: dict[str, Any], contact: dict[str, Any], academi
 
 def load_cache(path: Path) -> dict[str, Any]:
     if not path.exists():
-        return {"schemaVersion": 1, "contacts": {}, "academic": {}, "profilePages": {}}
+        return {"schemaVersion": 2, "contacts": {}, "academic": {}, "semanticScholar": {}, "profilePages": {}}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_overrides(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {"schemaVersion": 1, "byId": {}, "byName": {}}
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -566,10 +791,13 @@ def main() -> None:
     parser.add_argument("--input", type=Path, default=DEFAULT_ATLAS)
     parser.add_argument("--out", type=Path, default=DEFAULT_ATLAS)
     parser.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
+    parser.add_argument("--overrides", type=Path, default=DEFAULT_OVERRIDES)
     parser.add_argument("--academic-limit", type=int, default=0, help="0 means all professors")
+    parser.add_argument("--semantic-scholar-limit", type=int, default=0, help="0 means all professors")
     parser.add_argument("--contact-limit", type=int, default=0, help="0 means all missing contacts")
     parser.add_argument("--missing-email-only", action="store_true", help="Only spend contact lookups on records missing email")
     parser.add_argument("--skip-openalex", action="store_true")
+    parser.add_argument("--skip-semantic-scholar", action="store_true")
     parser.add_argument("--skip-contact", action="store_true")
     parser.add_argument("--delay", type=float, default=0.08)
     parser.add_argument("--save-every", type=int, default=50)
@@ -577,18 +805,22 @@ def main() -> None:
 
     data = json.loads(args.input.read_text(encoding="utf-8"))
     cache = load_cache(args.cache)
+    overrides = load_overrides(args.overrides)
     contacts_cache = cache.setdefault("contacts", {})
     academic_cache = cache.setdefault("academic", {})
+    semantic_cache = cache.setdefault("semanticScholar", {})
     page_cache = cache.setdefault("profilePages", {})
 
     professors = data.get("professors", [])
     academic_remaining = args.academic_limit or len(professors)
+    semantic_remaining = args.semantic_scholar_limit or len(professors)
     contact_remaining = args.contact_limit or len(professors)
     enriched = []
 
     for index, professor in enumerate(professors, start=1):
         contact: dict[str, Any] = {}
         academic: dict[str, Any] = {}
+        semantic: dict[str, Any] = {}
 
         if not args.skip_contact and contact_remaining > 0:
             if args.missing_email_only:
@@ -629,7 +861,11 @@ def main() -> None:
             academic = fetch_openalex_profile(professor, academic_cache, args.delay)
             academic_remaining -= 1
 
-        enriched.append(apply_enrichment(professor, contact, academic))
+        if not args.skip_semantic_scholar and semantic_remaining > 0:
+            semantic = fetch_semantic_scholar_profile(professor, semantic_cache, args.delay)
+            semantic_remaining -= 1
+
+        enriched.append(apply_enrichment(professor, contact, academic, semantic, overrides))
 
         if index % args.save_every == 0:
             write_cache(args.cache, cache)

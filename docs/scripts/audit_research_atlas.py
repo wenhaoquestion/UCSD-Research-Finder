@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "data" / "research-atlas.json"
+DEFAULT_COVERAGE = ROOT / "data" / "ucsd" / "coverage-report.json"
 LAB_TOKEN_RE = re.compile(r"(^|[^a-z])lab(orator(?:y|ies))?([^a-z]|$)|research[-_\s]?group|research[-_\s]?lab", re.I)
 
 SUSPICIOUS_URL_PARTS = [
@@ -44,6 +45,7 @@ def url_key(url: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("data_path", nargs="?", type=Path, default=DEFAULT_DATA)
+    parser.add_argument("--coverage", type=Path, default=DEFAULT_COVERAGE)
     args = parser.parse_args()
 
     data = json.loads(args.data_path.read_text(encoding="utf-8"))
@@ -99,6 +101,22 @@ def main() -> None:
             print(f"  {group[0]['department']}: {group[0]['principalInvestigator']}")
             for lab in group:
                 print(f"    - {lab['labName']} | {lab['labWebsiteUrl']}")
+
+    if args.coverage.exists():
+        coverage = json.loads(args.coverage.read_text(encoding="utf-8"))
+        print("\nUCSD coverage report:")
+        print(f"  Departments covered: {coverage.get('coveredDepartments')}/{coverage.get('departmentCount')}")
+        print(f"  Lab-entity departments: {coverage.get('labEntityDepartments')}")
+        print(f"  Overview-only departments: {coverage.get('overviewOnlyDepartments')}")
+        print(f"  Needs source review: {coverage.get('needsSourceReviewDepartments')}")
+        academic = coverage.get("professorAcademicCoverage", {})
+        print(
+            "  Academic profiles: "
+            f"OpenAlex {academic.get('openAlexProfiles', 0)}, "
+            f"Semantic Scholar {academic.get('semanticScholarProfiles', 0)}, "
+            f"confirmed Scholar {academic.get('confirmedGoogleScholarProfiles', 0)}, "
+            f"candidate Scholar searches {academic.get('candidateGoogleScholarSearches', 0)}"
+        )
 
 
 if __name__ == "__main__":

@@ -2841,7 +2841,7 @@ def main() -> None:
     }
 
     # Slim + minify so the page only fetches fields the UI reads.
-    from optimize_index import slim_index  # local import to avoid hard dep
+    from docs.scripts.optimize_index import slim_index  # local import to avoid hard dep
 
     slim = slim_index(output)
     OUTPUT_PATH.write_text(
