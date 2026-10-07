@@ -226,8 +226,14 @@ def likely_same_person(profile_name: str, professor_name: str) -> bool:
         return False
     if profile_tokens == professor_tokens:
         return True
-    first_last = {professor_token_list[0], professor_token_list[-1]}
-    return bool(first_last <= profile_tokens or first_last <= professor_tokens)
+    # The old second subset test compared professor tokens to themselves, so
+    # every non-empty candidate name was accepted. Require an actual identity match.
+    if len(profile_token_list) < 2 or len(professor_token_list) < 2:
+        return False
+    return (profile_token_list[0] == professor_token_list[0]
+            and profile_token_list[-1] == professor_token_list[-1]
+            and (len(profile_token_list) == 2 or len(professor_token_list) == 2
+                 or profile_token_list[1][0] == professor_token_list[1][0]))
 
 
 def vcard_url_from_profile(profile_url: str, markup: str) -> str:
@@ -268,7 +274,7 @@ def profile_contact_from_url(professor: dict[str, Any], profile_url: str) -> dic
 
     email = vcard.get("email") or best_email_from_text(markup)
     matched_name = vcard.get("name") or profile_name
-    if matched_name and not likely_same_person(matched_name, str(professor.get("name", ""))):
+    if not matched_name or not likely_same_person(matched_name, str(professor.get("name", ""))):
         return {
             "checked": True,
             "matched": False,
@@ -802,6 +808,9 @@ def main() -> None:
     parser.add_argument("--delay", type=float, default=0.08)
     parser.add_argument("--save-every", type=int, default=50)
     args = parser.parse_args()
+
+    if args.out.exists() and json.loads(args.out.read_text()).get("schemaVersion", "").startswith("3."):
+        parser.error("Legacy enrichment cannot overwrite a v3 evidence dataset. Write to a separate candidate file; use the refresh_* and rebuild_verified_atlas pipeline.")
 
     data = json.loads(args.input.read_text(encoding="utf-8"))
     cache = load_cache(args.cache)

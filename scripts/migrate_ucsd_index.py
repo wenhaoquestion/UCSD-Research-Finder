@@ -740,6 +740,9 @@ def main() -> None:
     parser.add_argument("--supplement", type=Path, default=DEFAULT_SUPPLEMENT)
     args = parser.parse_args()
 
+    if args.out.exists() and json.loads(args.out.read_text()).get("schemaVersion", "").startswith("3."):
+        parser.error("Legacy migration cannot overwrite a v3 evidence dataset. Use --out with a separate candidate file; refresh and verify claims before merging.")
+
     data = json.loads(args.input.read_text(encoding="utf-8"))
     dataset = migrate(data, args.supplement)
     args.out.write_text(json.dumps(dataset, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

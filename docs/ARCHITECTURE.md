@@ -1,136 +1,53 @@
 # Architecture
 
-Research Atlas is designed as a static data product: collection happens ahead of time, the result is committed as JSON, and GitHub Pages serves the finished search experience with no backend.
+Research Atlas is a static site. Network collection occurs before publication; the browser loads a canonical professor/lab JSON and a separate REAL Portal snapshot. It needs no backend, account, or external API key.
 
 ```mermaid
 flowchart LR
-  A["data/sources.json"] --> B["Public-page collector"]
-  B --> C["Normalizer"]
-  C --> D["data/research-atlas.json"]
-  D --> E["Validator"]
-  E --> F["Static frontend"]
-  F --> G["GitHub Pages"]
-  H["Legacy UCSD crawler/cache"] --> I["UCSD migration script"]
-  I --> D
-  J["REAL Portal browser import"] --> K["data/ucsd/real-portal-resources.json"]
-  K --> F
-  L["OpenAlex + public UCSD profiles"] --> M["Professor enrichment script"]
-  M --> D
+  A[Official faculty and lab pages] --> B[Profile and directory collectors]
+  C[Official teaching schedules] --> D[Teaching collector]
+  E[PI Review and Rate My Professors] --> F[Rating collector]
+  B --> G[Evidence artifacts]
+  D --> G
+  F --> G
+  H[Catalog and existing lab URLs] --> I[Source checks]
+  G --> J[Offline verified-atlas builder]
+  I --> J
+  K[Legacy snapshot] --> J
+  J --> L[Canonical v3 dataset]
+  J --> M[Correction archive and quality report]
+  L --> N[Validation and regression tests]
+  O[Public REAL search pages] --> P[Complete pagination check]
+  P --> Q[REAL snapshot]
+  N --> R[Static search UI]
+  Q --> R
 ```
 
-## Static Frontend
+## Separate discovery, evidence, and display
 
-Files:
+Collectors write independent evidence artifacts. Unmatched course assignments and ambiguous rating identities stay in those artifacts. The builder attaches supported fields by stable professor ID, preserving source timestamps. It only consolidates a catalog record into a personal record when normalized full name and department agree; alias IDs are retained. The frontend no longer collapses unrelated people merely because a department mailbox is shared.
 
-- `index.html`: semantic shell, search controls, filters, results, details drawer.
-- `assets/styles.css`: responsive visual system for desktop and mobile.
-- `assets/app.js`: client-side indexing, searching, filtering, saved records, REAL Portal resource loading, details view.
+`fieldEvidence[field]` is an array of `{sourceUrl, observedAt, evidence, method}`. New claims require supporting text and a valid source URL. Retrieval success and source content dates are different. `verification.fieldsVerified` lists only fields with evidence, and `source_checked` means partial evidence is available. Legacy dates are not reset.
 
-The browser loads `data/research-atlas.json` and `data/ucsd/real-portal-resources.json`, merges professors, labs, and REAL Portal resources into one searchable index, and filters entirely client-side. This keeps hosting simple and makes GitHub Pages deployment immediate.
+Professor-to-lab links are many-to-many. `labAffiliations` preserves all captured relationships. A generic “Lab Website” link supports an association; a PI claim needs explicit person/leadership evidence. Personal research websites are not automatically laboratory records. Research topic tags come from exact phrases in a sourced research paragraph, not raw HTML, navigation, URL strings, or a department name.
 
-## Canonical Dataset
+## Source-specific readers
 
-The canonical file is `data/research-atlas.json`.
+- `refresh_labs.py`: excludes navigation/footer/sidebar material, verifies profile identity, parses local directory rows/cards, follows an optional single personal-site hop, respects robots and crawl delays, and supports bounded resumable caches.
+- `refresh_faculty_directories.py`: supplements current departmental rosters, profile links, roles, and cross-department affiliations.
+- `refresh_teaching.py`: uses explicit department adapters for HTML tables, published CSVs, official public data, and PDF schedules. Catalogs may supply titles only after an instructor assignment is separately evidenced. Partial names require review.
+- `refresh_ratings.py`: reads ordinary public HTML, matches names and UCSD identity, keeps both platforms separate, preserves review counts, and distinguishes no reviews from failed/unmatched searches.
+- `refresh_source_checks.py`: audits old lab URL reachability and retrieves catalog rows without treating catalog retrieval as proof of current employment.
+- `refresh_real_portal.py`: uses only the public page's read-only card-search operation. It refuses to replace the previous snapshot unless every advertised unique record is collected with consistent pagination totals.
 
-The current UCSD build migrates the full legacy index into this file: 4,304 professor records and 435 stricter lab records.
+## Merge and audit
 
-Professor records include:
+`rebuild_verified_atlas.py` is an offline transform with explicit inputs. Initial cleanup archives unsupported legacy values, generic support emails, false Scholar URLs, and directory-derived lab assignments. Removed personal-site pseudo-labs and duplicate catalog records remain in the review archive.
 
-- `name`
-- `institution`
-- `department`
-- `officialProfileUrl`
-- `personalWebsiteUrl`
-- `email`
-- `researchAreas`
-- `researchSummary`
-- `googleScholarUrl`
-- `googleScholarSearchUrl`
-- `linkedinSearchUrl`
-- `academicProfile` with OpenAlex citation counts, h-index, works count, recent publications, and source links
-- `labAffiliation`
-- `labAffiliationUrl`
-- `recruitingStatus`
-- `recruitingEvidence`
-- `sourceUrls`
-- `lastVerified`
+Coverage reports separate populated fields from fields with fresh evidence, and count course source rows separately from unique professor/course/term assignments. Ratings are source-reported subjective aggregates. Absent, ambiguous, unsearched, inaccessible, and zero-review identities are distinct states; no missing score is replaced with numeric zero.
 
-Lab records include:
+The strict validator checks URLs, evidence integrity, dates, unique IDs, rating ranges/sample sizes, recruiting evidence, and teaching provenance. Tests cover navigation pollution, wrong-person matches, shared emails, duplicate catalog records, table column alignment, malformed URLs, and REAL detail-field extraction.
 
-- `labName`
-- `institution`
-- `department`
-- `labWebsiteUrl`
-- `principalInvestigator`
-- `principalInvestigatorProfileUrl`
-- `researchAreas`
-- `description`
-- `contactEmail`
-- `recruitingStatus`
-- `recruitingEvidence`
-- `sourceUrls`
-- `lastVerified`
+## Refresh and deployment
 
-UCSD migrated lab records may also include `recordSubtype`, currently `lab`.
-
-REAL Portal resources are kept in `data/ucsd/real-portal-resources.json` because they come from a separate browser-rendered public portal. They are presented as a third record type in the frontend rather than mixed into `labs[]`.
-
-Broad research-topic pages, academic-support pages, research facilities/resources pages, clubs, FAQ pages, publication pages, project pages, and department directory pages are not lab records. They can remain in `sourceUrls` when they support discovery, but the published lab list should point to actual lab, laboratory, or PI-linked research-group pages.
-
-Missing fields should be written as `Not found` or `Unknown`. Recruiting is never inferred from general lab activity; it requires explicit public language and evidence.
-
-## Data Collection
-
-`scripts/collect_research_data.py` reads `data/sources.json`.
-
-The collector:
-
-- fetches only public HTTP(S) pages;
-- respects `robots.txt` by default;
-- follows shallow faculty, profile, lab, research group, and center links;
-- optionally enriches the first page of discovered personal websites with a bounded `--personal-limit`;
-- extracts emails, profile links, Scholar links, personal websites, lab links, research keywords, and short summaries;
-- detects explicit recruiting or not-recruiting phrases;
-- writes records in the canonical schema.
-
-It is intentionally conservative. Generic HTML is messy, and the script should prefer `Unknown` over unsupported claims. For high-quality production data, add school-specific adapters around this schema.
-
-## Validation
-
-`scripts/validate_data.py` enforces:
-
-- non-empty professor/lab arrays;
-- required fields for each record type;
-- at least one source URL per record;
-- valid URL/email shape or accepted missing markers;
-- explicit evidence text and evidence URL for `Recruiting` or `Not recruiting`;
-- collection policy requiring explicit recruiting evidence.
-
-## Legacy UCSD Assets
-
-The previous project generated `data/ucsd/research-index.json` with `scripts/build_ucsd_index.py`. Those files are kept so existing UCSD work is not lost, but the new frontend uses `data/research-atlas.json`.
-
-To keep full UCSD coverage:
-
-```bash
-python3 scripts/build_ucsd_index.py
-python3 scripts/migrate_ucsd_index.py --input data/ucsd/research-index.json --out data/research-atlas.json
-python3 scripts/validate_data.py
-python3 scripts/audit_research_atlas.py
-```
-
-Good migration path:
-
-1. Keep legacy crawler output for broad discovery.
-2. Convert reviewed records into the canonical professor/lab schema with `scripts/migrate_ucsd_index.py`.
-3. Use `sourceUrls` and `recruitingEvidence` to preserve provenance.
-4. Validate before publishing.
-
-## Deployment
-
-The repo can be deployed in either Pages mode:
-
-- Branch/root Pages deployment, because `index.html` is at the repo root.
-- Actions deployment through `.github/workflows/deploy-pages.yml`.
-
-`.nojekyll` is kept so GitHub Pages serves static JSON and folders without Jekyll processing.
+The update workflow replaces the old legacy-crawler pipeline, retains public-page caches, budgets UCSD Profiles' crawl delay, refreshes the serving data, and checks for unexplained record loss before committing. Failed source reads remain visible. The existing GitHub Pages workflow serves the static files after push; local edits do not publish by themselves.

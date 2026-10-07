@@ -7,6 +7,8 @@ import json
 import re
 import sys
 import argparse
+import datetime as dt
+import urllib.parse
 from pathlib import Path
 from typing import Dict, Iterable, List
 
@@ -32,7 +34,6 @@ PROFESSOR_REQUIRED = {
     "researchAreas",
     "researchSummary",
     "googleScholarUrl",
-    "externalProfiles",
     "labAffiliation",
     "recruitingStatus",
     "recruitingEvidence",
@@ -54,12 +55,6 @@ LAB_REQUIRED = {
     "recruitingEvidence",
     "sourceUrls",
     "lastVerified",
-    "entityType",
-    "coverageStatus",
-    "discoveryMethod",
-    "confidence",
-    "piCandidates",
-    "overviewSourceUrl",
 }
 
 
@@ -77,15 +72,15 @@ def require_fields(kind: str, record: Dict[str, object], required: Iterable[str]
 def validate_urlish(record_id: str, field: str, value: str) -> None:
     if value in {"Not found", "Unknown"}:
         return
-    if not URL_RE.search(value):
+    if not valid_url(value):
         fail(f"{record_id}.{field} must be http(s) URL or missing marker: {value}")
 
 
 def validate_sources(record_id: str, source_urls: List[str]) -> None:
-    if not source_urls:
+    if not isinstance(source_urls, list) or not source_urls:
         fail(f"{record_id} must include at least one source URL")
     for url in source_urls:
-        if not URL_RE.search(url):
+        if not valid_url(url):
             fail(f"{record_id} has invalid source URL: {url}")
 
 
@@ -168,11 +163,89 @@ def validate_common(kind: str, record: Dict[str, object]) -> None:
         fail(f"{record_id} missing department")
 
     areas = record.get("researchAreas")
-    if not isinstance(areas, list) or not areas or not all(str(area).strip() for area in areas):
-        fail(f"{record_id}.researchAreas must be a non-empty list")
+    if not isinstance(areas, list) or not all(isinstance(area, str) and area.strip() for area in areas):
+        fail(f"{record_id}.researchAreas must be a list of non-empty strings (empty means unknown)")
 
     validate_sources(record_id, record.get("sourceUrls", []))
     validate_recruiting(record_id, record)
+    if "fieldEvidence" in record:
+        validate_evidence(record)
+    if record.get("lastVerified"):
+        validate_date(record_id + ".lastVerified", record["lastVerified"])
+
+
+def valid_url(value):
+    if not isinstance(value, str) or re.search(r"\s", value):
+        return False
+    try:
+        parsed = urllib.parse.urlsplit(value)
+        return parsed.scheme in {"http", "https"} and bool(parsed.hostname) and not parsed.username and not parsed.password
+    except ValueError:
+        return False
+
+
+def validate_date(label, value):
+    try:
+        date = dt.datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        fail(f"{label} must be an ISO date/time")
+    if date.date() > dt.datetime.now(dt.timezone.utc).date():
+        fail(f"{label} cannot be in the future")
+
+
+def validate_evidence(record):
+    rid = record["id"]
+    fields = record["fieldEvidence"]
+    if not isinstance(fields, dict):
+        fail(f"{rid}.fieldEvidence must be an object")
+    for field, items in fields.items():
+        if not isinstance(items, list) or not items:
+            fail(f"{rid}.fieldEvidence.{field} must be a non-empty list")
+        for e in items:
+            if not isinstance(e, dict) or not valid_url(e.get("sourceUrl")) or not str(e.get("evidence", "")).strip():
+                fail(f"{rid}.{field} evidence requires supporting text and source URL")
+            if e["sourceUrl"] not in record["sourceUrls"]:
+                fail(f"{rid}.{field} evidence URL missing from sourceUrls")
+            validate_date(f"{rid}.{field}.observedAt", e.get("observedAt"))
+    v = record.get("verification", {})
+    if v.get("status") not in {"source_checked", "needs_review", "unavailable", "legacy_unverified"}:
+        fail(f"{rid}: invalid record verification status")
+    if v.get("status") == "source_checked" and not fields:
+        fail(f"{rid}: source_checked requires field evidence")
+    if set(v.get("fieldsVerified", [])) != set(fields):
+        fail(f"{rid}: fieldsVerified does not match fieldEvidence")
+
+
+def validate_teaching_and_ratings(record):
+    rid = record["id"]
+    teaching = record.get("teaching", {})
+    courses = teaching.get("courses", [])
+    if not isinstance(courses, list):
+        fail(f"{rid}.teaching.courses must be a list")
+    for c in courses:
+        if not isinstance(c, dict) or not all(c.get(f) for f in ["courseCode", "term", "sourceUrl", "observedAt", "evidence"]):
+            fail(f"{rid}: course requires code, term, evidence and timestamp")
+        if not valid_url(c["sourceUrl"]) or c["sourceUrl"] not in record["sourceUrls"]:
+            fail(f"{rid}: course source missing/invalid")
+        if c.get("status") not in {"historical", "scheduled", "undated", "current", "planned", "tentative"}:
+            fail(f"{rid}: invalid teaching status")
+        if c.get("matchConfidence") == "low" or c.get("verificationStatus") == "needs_review":
+            fail(f"{rid}: unconfirmed course identity must remain a candidate")
+        validate_date(f"{rid}.teaching.observedAt", c["observedAt"])
+    for platform, rating in record.get("ratings", {}).items():
+        if rating.get("status") not in {"verified", "no_reviews", "not_checked", "not_found", "unavailable", "needs_review"}:
+            fail(f"{rid}.{platform}: invalid rating status")
+        score, count = rating.get("score"), rating.get("reviewCount")
+        if rating.get("status") == "verified":
+            if type(score) not in {int, float} or not 1 <= score <= 5 or rating.get("scale") != 5:
+                fail(f"{rid}.{platform}: verified rating requires a score in [1, 5] on scale 5")
+            if type(count) is not int or count < 1:
+                fail(f"{rid}.{platform}: verified rating requires a positive review count")
+            if not valid_url(rating.get("sourceUrl")) or not record.get("fieldEvidence", {}).get("ratings." + platform):
+                fail(f"{rid}.{platform}: verified rating requires provenance")
+            validate_date(f"{rid}.{platform}.observedAt", rating.get("observedAt"))
+        elif score is not None:
+            fail(f"{rid}.{platform}: unverified ratings must use null, not zero or a guessed score")
 
 
 def validate_professor(record: Dict[str, object]) -> None:
@@ -191,7 +264,16 @@ def validate_professor(record: Dict[str, object]) -> None:
     for field in ["googleScholarSearchUrl", "linkedinSearchUrl", "possibleScholarSourceUrl"]:
         if field in record:
             validate_urlish(record_id, field, str(record[field]))
-    validate_external_profiles(record_id, record.get("externalProfiles"))
+    # June schema fields: checked when present, not required by schema 3.0 records.
+    if "externalProfiles" in record:
+        validate_external_profiles(record_id, record.get("externalProfiles"))
+    if "fieldEvidence" in record:
+        scholar = record.get("googleScholarUrl")
+        if scholar not in MISSING and scholar is not None:
+            parsed = urllib.parse.urlsplit(scholar)
+            if parsed.hostname not in {"scholar.google.com", "scholar.google.ch", "scholar.google.co.uk"} or parsed.path.rstrip("/") != "/citations" or not urllib.parse.parse_qs(parsed.query).get("user"):
+                fail(f"{record_id}: Google Scholar profile must identify an author")
+        validate_teaching_and_ratings(record)
     academic = record.get("academicProfile")
     if isinstance(academic, dict):
         for field in ["openAlexAuthorId", "openAlexUrl", "semanticScholarUrl"]:
@@ -220,17 +302,77 @@ def validate_lab(record: Dict[str, object]) -> None:
     for field in ["labWebsiteUrl", "principalInvestigatorProfileUrl"]:
         if field in record:
             validate_urlish(record_id, field, str(record[field]))
-    if record.get("coverageStatus") not in ALLOWED_COVERAGE_STATUS:
-        fail(f"{record_id}.coverageStatus is invalid: {record.get('coverageStatus')}")
-    if not str(record.get("entityType", "")).strip():
-        fail(f"{record_id}.entityType is required")
-    if not str(record.get("discoveryMethod", "")).strip():
-        fail(f"{record_id}.discoveryMethod is required")
-    if not str(record.get("confidence", "")).strip():
-        fail(f"{record_id}.confidence is required")
-    if not isinstance(record.get("piCandidates"), list):
-        fail(f"{record_id}.piCandidates must be a list")
-    validate_urlish(record_id, "overviewSourceUrl", str(record.get("overviewSourceUrl", "")))
+    # June lab coverage fields: checked when present, not required by schema 3.0 records.
+    if "coverageStatus" in record:
+        if record.get("coverageStatus") not in ALLOWED_COVERAGE_STATUS:
+            fail(f"{record_id}.coverageStatus is invalid: {record.get('coverageStatus')}")
+        if not str(record.get("entityType", "")).strip():
+            fail(f"{record_id}.entityType is required")
+        if not str(record.get("discoveryMethod", "")).strip():
+            fail(f"{record_id}.discoveryMethod is required")
+        if not str(record.get("confidence", "")).strip():
+            fail(f"{record_id}.confidence is required")
+        if not isinstance(record.get("piCandidates"), list):
+            fail(f"{record_id}.piCandidates must be a list")
+        validate_urlish(record_id, "overviewSourceUrl", str(record.get("overviewSourceUrl", "")))
+
+
+def validate_references(data: Dict[str, object]) -> None:
+    """Validate canonical professor/lab references after identity consolidation.
+
+    Callers must pass the served records, not capture-side alias IDs. Collections
+    without relationship fields remain valid; every declared relationship must
+    identify an existing record of the correct kind.
+    """
+    if not isinstance(data, dict):
+        fail("dataset must be an object")
+    groups = {}
+    for kind in ["professors", "labs"]:
+        records = data.get(kind, [])
+        if not isinstance(records, list):
+            fail(f"dataset.{kind} must be a list")
+        ids = set()
+        for record in records:
+            if not isinstance(record, dict):
+                fail(f"dataset.{kind} entries must be objects")
+            rid = record.get("id")
+            if not isinstance(rid, str) or not rid.strip():
+                fail(f"dataset.{kind} record id must be a non-empty string")
+            if rid in ids:
+                fail(f"duplicate {kind} id {rid}")
+            ids.add(rid)
+        groups[kind] = ids
+    shared = groups["professors"] & groups["labs"]
+    if shared:
+        fail(f"id used by both professor and lab: {sorted(shared)[0]}")
+
+    for lab in data.get("labs", []):
+        if "professorIds" not in lab:
+            continue
+        ids = lab["professorIds"]
+        if not isinstance(ids, list):
+            fail(f"{lab['id']}.professorIds must be a list")
+        for pid in ids:
+            if not isinstance(pid, str) or not pid.strip():
+                fail(f"{lab['id']}.professorIds entries must be non-empty strings")
+            if pid not in groups["professors"]:
+                fail(f"{lab['id']}.professorIds references missing professor {pid}")
+
+    for professor in data.get("professors", []):
+        if "labAffiliations" not in professor:
+            continue
+        affiliations = professor["labAffiliations"]
+        if not isinstance(affiliations, list):
+            fail(f"{professor['id']}.labAffiliations must be a list")
+        for index, affiliation in enumerate(affiliations):
+            label = f"{professor['id']}.labAffiliations[{index}]"
+            if not isinstance(affiliation, dict):
+                fail(f"{label} must be an object")
+            lid = affiliation.get("labId")
+            if not isinstance(lid, str) or not lid.strip():
+                fail(f"{label}.labId must be a non-empty string")
+            if lid not in groups["labs"]:
+                fail(f"{label}.labId references missing lab {lid}")
 
 
 def main() -> None:
@@ -259,6 +401,8 @@ def main() -> None:
         if record["id"] in seen:
             fail(f"duplicate id {record['id']}")
         seen.add(record["id"])
+
+    validate_references(data)
 
     policies = data.get("collectionPolicy", {})
     if policies.get("recruitingClaimsRequireExplicitEvidence") is not True:

@@ -1,0 +1,54 @@
+{
+  "sourceCommit": "80a9e57fe70b3f798d6e2884cb67fd7245f747ff",
+  "originalArchive": {
+    "filename": "UCSD-Profiles-cloud-backfill-complete.zip",
+    "sha256": "1851f9e80379b282d312b3f2aceb38a8caf04f952fb74d7af5ff96efc03820ae",
+    "bytes": 5005819
+  },
+  "importArchive": {
+    "filename": "UCSD-Profiles-cloud-backfill-handoff.tar.xz",
+    "sha256": "f8590b2b6b40a29e39d5c38764210c5d2933bc6a4fa1b6b72de12501b723ddca",
+    "bytes": 1841112
+  },
+  "files": {
+    "cloud-logs/failed-and-review.json": "87f6dc323d4fdd5ceea4fe5df4997087fd371e8bd3857a8b97adc111e42d37b1",
+    "cloud-logs/profile-outcomes.json": "82d85aa09d90c1a8d160127adffd163fab04228fc566cd9fd94a18f68ffc5411",
+    "cloud-logs/result-summary.json": "b22d87cc24a7c4afbbaecd2af384a01d18a5985aac245f7e6571af707cfce072",
+    "data/quality/legacy-remediation.json": "e032f51ba61075243f47e9faab5d458140fb3ec3126f03955505ab59de0da2db",
+    "data/quality/quarantined-records.json": "32bfe2536a9ac04e6c01d176c1309be9a86c1dba7b54dcc10109026e91fe59a6",
+    "data/quality/refresh-report.json": "1ea3037bf22bc98238d0d7ce4eaaed074a20e0b045dc452223400fe897c29f61",
+    "data/research-atlas.json": "71e88d9c7ce26f766944d999f1f54a91d4d56855157c4a6bc8d4b38d5e5ace03",
+    "data/ucsd/lab-evidence.json": "c84014a884dc41f900ca433ad4250aecb41b45b33f355b1f283cc919d326e3f4",
+    "data/ucsd/profile-backfill-checkpoint.json": "3dbffd8c8559ef3962a43b705398700eb18d94d150bacb23422255c60608c3d8",
+    "data/ucsd/profile-backfill-progress.json": "44d51eb7495e7d4a7abfc203ed6cef4a0828dc8d4fbb62d714173f6dcc581173",
+    "docs/DATA_QUALITY_REPORT.md": "63c4fe741c06a4158aa0d311f1a6c073b877d4dd30f7b12d6cb9e32224b44c08"
+  },
+  "preservationChecks": {
+    "allProfessorIdsRetained": true,
+    "allPriorLabIdsRetained": true,
+    "nonTargetEvidenceUnchanged": true,
+    "facultyDirectoriesUnchanged": true,
+    "personalSiteChecksUnchanged": true,
+    "allPriorFetchEvidenceRetained": true,
+    "coursesAndRatingsUnchanged": true,
+    "legacyCorrectionsUnchanged": true
+  },
+  "postImportReview": {
+    "professors": 4392,
+    "labs": 686,
+    "netNewLabs": 70,
+    "quarantinedCloudLabIds": [
+      "ucsd-live-lab-530ae578aa3c22",
+      "ucsd-live-lab-6a5408d428a658",
+      "ucsd-live-lab-a5bda0c9e3f0cc",
+      "ucsd-live-lab-f34aadb83f8c1f"
+    ],
+    "reason": "News or malformed article destinations do not identify laboratories; raw evidence and full rejected records retained.",
+    "cloudAtlasMatchedBeforeReview": true,
+    "allPreCloudProfessorAndLabIdsRetained": true,
+    "coursesAndBothRatingPlatformsUnchanged": true,
+    "rebuildIdempotent": true,
+    "pythonTestsPassed": 101,
+    "frontendDataTestsPassed": true
+  }
+}

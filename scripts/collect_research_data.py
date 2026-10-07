@@ -599,6 +599,9 @@ def main() -> None:
     parser.set_defaults(respect_robots=True)
     args = parser.parse_args()
 
+    if args.out.exists() and json.loads(args.out.read_text()).get("schemaVersion", "").startswith("3."):
+        parser.error("Legacy collection cannot overwrite a v3 evidence dataset. Use --out with a separate candidate file, then review evidence before merging.")
+
     config = json.loads(args.config.read_text(encoding="utf-8"))
     records = crawl(config, args)
     count = len(records["professors"]) + len(records["labs"])

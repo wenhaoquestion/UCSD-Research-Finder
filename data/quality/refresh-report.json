@@ -1,0 +1,2479 @@
+{
+  "generatedAt": "2026-10-03T06:15:16+00:00",
+  "before": {
+    "professors": 4335,
+    "labs": 545,
+    "departments": 55,
+    "professorFieldsPresent": {
+      "email": 3282,
+      "personalWebsiteUrl": 585,
+      "googleScholarUrl": 67,
+      "labAffiliationUrl": 2246,
+      "researchSummary": 4335
+    },
+    "professorsWithFieldEvidence": 0,
+    "professorsWithLabEvidence": 0,
+    "professorsWithCourses": 0,
+    "courseAssignments": 0,
+    "professorsWithRatings": {
+      "rateMyPI": 0,
+      "rateMyProfessors": 0
+    },
+    "verificationStatuses": {
+      "legacy_unverified": 4335
+    },
+    "duplicateProfessorNameDepartmentGroups": 5,
+    "duplicateLabUrlGroups": 1
+  },
+  "after": {
+    "professors": 4392,
+    "labs": 686,
+    "departments": 55,
+    "professorFieldsPresent": {
+      "email": 1781,
+      "personalWebsiteUrl": 828,
+      "googleScholarUrl": 141,
+      "labAffiliationUrl": 297,
+      "researchSummary": 795
+    },
+    "professorsWithFieldEvidence": 4048,
+    "professorFieldsWithEvidence": {
+      "name": 3156,
+      "email": 1200,
+      "personalWebsiteUrl": 726,
+      "googleScholarUrl": 141,
+      "researchSummary": 495,
+      "researchAreas": 358,
+      "labAffiliationUrl": 297,
+      "catalogListing": 1088
+    },
+    "professorsWithLabEvidence": 297,
+    "professorsWithCourses": 482,
+    "courseAssignments": 1429,
+    "uniqueProfessorCourseTerms": 1428,
+    "professorsWithRatings": {
+      "rateMyPI": 16,
+      "rateMyProfessors": 1243
+    },
+    "distinctRatedProfiles": {
+      "rateMyPI": 16,
+      "rateMyProfessors": 1229
+    },
+    "verificationStatuses": {
+      "source_checked": 4048,
+      "needs_review": 88,
+      "legacy_unverified": 84,
+      "unavailable": 172
+    },
+    "duplicateProfessorNameDepartmentGroups": 0,
+    "duplicateLabUrlGroups": 0
+  },
+  "remediationCounts": {
+    "researchAreas": 4779,
+    "researchSummary": 4023,
+    "labAffiliation": 2244,
+    "labAffiliationUrl": 2246,
+    "googleScholarUrl": 67,
+    "email": 1915,
+    "personalWebsiteUrl": 125,
+    "recruitingStatus": 1,
+    "recruitingEvidence": 1,
+    "description": 259,
+    "contactEmail": 21
+  },
+  "sourceCheckStatuses": {
+    "reachable": 766,
+    "unavailable": 60,
+    "http_error": 45,
+    "robots_disallowed": 9
+  },
+  "quarantinedRecords": 115,
+  "captureCoverage": {
+    "Lab/profile capture": {
+      "professorRecords": 4361,
+      "profileAttempts": 3356,
+      "professorsProcessed": 4361,
+      "verificationStatuses": {
+        "catalog_only": 1005,
+        "verified": 2888,
+        "fetch_error": 15,
+        "identity_not_confirmed": 244,
+        "http_error": 178,
+        "robots_unavailable": 31
+      },
+      "labs": 527,
+      "labsWithProfessorMatch": 312,
+      "fetchStatuses": {
+        "robots_unavailable": 208,
+        "ok": 3631,
+        "robots_denied": 16,
+        "fetch_error": 18,
+        "http_error": 202
+      }
+    },
+    "Faculty directory capture": {
+      "rawDirectoryListingCount": 624,
+      "directoryListingCount": 620,
+      "distinctProfessorsObserved": 570,
+      "newProfessorCount": 31,
+      "existingProfessorsUpdated": 539,
+      "departmentsObserved": 9,
+      "newProfessorsByDepartment": {
+        "Astronomy and Astrophysics": 13,
+        "Chemistry & Biochemistry": 3,
+        "NanoEngineering": 1,
+        "Bioengineering": 11,
+        "Structural Engineering": 2,
+        "Mathematics": 1
+      },
+      "listingsByStatus": {
+        "listed_faculty": 396,
+        "affiliate": 80,
+        "emeritus": 119,
+        "lecturer": 3,
+        "adjunct": 22
+      },
+      "individualProfileUpgrades": 87,
+      "uncertainListingCount": 2,
+      "fetchFailures": 0
+    },
+    "Teaching sources": {
+      "rosterProfessorCount": 4392,
+      "professorsWithTeachingEvidence": 754,
+      "professorsWithoutTeachingEvidence": 3638,
+      "linkedAssignmentCount": 2164,
+      "unmatchedAssignmentCount": 792,
+      "assignmentsNeedingIdentityReview": 735,
+      "highConfidenceAssignmentEvidenceCount": 1429,
+      "professorsWithHighConfidenceEvidence": 482,
+      "uniqueProfessorCourseTermCount": 2139,
+      "sourceCount": 34,
+      "failedSources": 0,
+      "byDepartment": {
+        "Anthropology": 58,
+        "Biological Sciences": 373,
+        "Chemistry & Biochemistry": 144,
+        "Cognitive Science": 69,
+        "Communication": 56,
+        "Computer Science and Engineering": 231,
+        "Economics": 49,
+        "Electrical and Computer Engineering": 134,
+        "Visual Arts": 118,
+        "Linguistics": 59,
+        "Mathematics": 205,
+        "Political Science": 52,
+        "Literature": 183,
+        "Sociology": 47,
+        "Physics": 137,
+        "History": 28,
+        "Psychology": 17,
+        "Astronomy and Astrophysics": 23,
+        "Public Health": 55,
+        "Structural Engineering": 34,
+        "Philosophy": 92
+      },
+      "professorsByDepartment": {
+        "Anthropology": 19,
+        "Biological Sciences": 145,
+        "Chemistry & Biochemistry": 59,
+        "Cognitive Science": 22,
+        "Communication": 15,
+        "Computer Science and Engineering": 67,
+        "Economics": 32,
+        "Electrical and Computer Engineering": 53,
+        "Visual Arts": 27,
+        "Linguistics": 13,
+        "Mathematics": 60,
+        "Political Science": 23,
+        "Literature": 50,
+        "Sociology": 17,
+        "Physics": 47,
+        "History": 19,
+        "Psychology": 14,
+        "Astronomy and Astrophysics": 14,
+        "Public Health": 23,
+        "Structural Engineering": 17,
+        "Philosophy": 21
+      },
+      "byStatus": {
+        "scheduled": 2099,
+        "historical": 65
+      },
+      "countingNote": "linkedAssignmentCount counts source evidence rows; multiple sources or topics can describe the same professor/course/term. Low-confidence surname candidates are included separately from high-confidence counts. professorsByDepartment counts each person once in each evidenced teaching department; cross-listed professors may appear in more than one department.",
+      "missingEvidenceMeaning": "No assignment evidence captured by these sources; does not mean the professor does not teach."
+    },
+    "Rating platforms": [
+      {
+        "key": "rateMyPI",
+        "platform": "PI Review",
+        "status": "ok",
+        "sourceUrl": "https://pi-review.com/universities/158",
+        "listedReviewCount": 17,
+        "listedPICount": 2202,
+        "observedProfiles": 2202,
+        "distinctObservedProfiles": 2202,
+        "observedRatedProfiles": 16,
+        "observedReviews": 17
+      },
+      {
+        "key": "rateMyProfessors",
+        "platform": "Rate My Professors",
+        "status": "search_complete",
+        "sourceUrl": "https://www.ratemyprofessors.com/search/professors/1079?q=*",
+        "namesSelected": 4360,
+        "namesSearched": 4360,
+        "failedOrSkippedSearches": 0,
+        "totalDistinctDatasetNames": 4360,
+        "matchedNamesObserved": 1368,
+        "notes": "First publicly rendered response for each selected exact-name query; not an exhaustive platform-directory export. Unsearched names are not_checked; failed requests are unavailable. No exact match does not prove no profile exists. Scores refer to teaching."
+      }
+    ],
+    "REAL Portal records": 948
+  },
+  "departments": {
+    "Anesthesiology": {
+      "professors": 0,
+      "labs": 11,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 0,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {},
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Anthropology": {
+      "professors": 39,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 20,
+        "personalWebsiteUrl": 3,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 2,
+        "researchSummary": 16
+      },
+      "professorsWithFieldEvidence": 38,
+      "professorFieldsWithEvidence": {
+        "name": 22,
+        "email": 18,
+        "personalWebsiteUrl": 3,
+        "googleScholarUrl": 0,
+        "researchSummary": 16,
+        "researchAreas": 10,
+        "labAffiliationUrl": 2,
+        "catalogListing": 20
+      },
+      "professorsWithLabEvidence": 2,
+      "professorsWithCourses": 19,
+      "courseAssignments": 58,
+      "uniqueProfessorCourseTerms": 57,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 21
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 21
+      },
+      "verificationStatuses": {
+        "source_checked": 38,
+        "needs_review": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Astronomy and Astrophysics": {
+      "professors": 16,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 14,
+        "personalWebsiteUrl": 13,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 2
+      },
+      "professorsWithFieldEvidence": 16,
+      "professorFieldsWithEvidence": {
+        "name": 14,
+        "email": 13,
+        "personalWebsiteUrl": 12,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 1
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 9
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 9
+      },
+      "verificationStatuses": {
+        "source_checked": 16
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Biochemistry and Molecular Biophysics": {
+      "professors": 10,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 8,
+        "personalWebsiteUrl": 4,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 8,
+      "professorFieldsWithEvidence": {
+        "name": 7,
+        "email": 1,
+        "personalWebsiteUrl": 4,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 3,
+        "labAffiliationUrl": 0,
+        "catalogListing": 3
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 3,
+      "courseAssignments": 6,
+      "uniqueProfessorCourseTerms": 6,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 3
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 3
+      },
+      "verificationStatuses": {
+        "source_checked": 8,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Bioengineering": {
+      "professors": 167,
+      "labs": 52,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 44,
+        "personalWebsiteUrl": 69,
+        "googleScholarUrl": 10,
+        "labAffiliationUrl": 43,
+        "researchSummary": 25
+      },
+      "professorsWithFieldEvidence": 163,
+      "professorFieldsWithEvidence": {
+        "name": 82,
+        "email": 43,
+        "personalWebsiteUrl": 68,
+        "googleScholarUrl": 10,
+        "researchSummary": 25,
+        "researchAreas": 19,
+        "labAffiliationUrl": 43,
+        "catalogListing": 84
+      },
+      "professorsWithLabEvidence": 43,
+      "professorsWithCourses": 1,
+      "courseAssignments": 1,
+      "uniqueProfessorCourseTerms": 1,
+      "professorsWithRatings": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 21
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 21
+      },
+      "verificationStatuses": {
+        "source_checked": 163,
+        "legacy_unverified": 2,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Biological Sciences": {
+      "professors": 252,
+      "labs": 121,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 217,
+        "personalWebsiteUrl": 10,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 14,
+        "researchSummary": 218
+      },
+      "professorsWithFieldEvidence": 232,
+      "professorFieldsWithEvidence": {
+        "name": 33,
+        "email": 6,
+        "personalWebsiteUrl": 10,
+        "googleScholarUrl": 1,
+        "researchSummary": 2,
+        "researchAreas": 2,
+        "labAffiliationUrl": 14,
+        "catalogListing": 119
+      },
+      "professorsWithLabEvidence": 14,
+      "professorsWithCourses": 145,
+      "courseAssignments": 373,
+      "uniqueProfessorCourseTerms": 373,
+      "professorsWithRatings": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 129
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 129
+      },
+      "verificationStatuses": {
+        "source_checked": 232,
+        "unavailable": 12,
+        "legacy_unverified": 8
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Cardiology": {
+      "professors": 0,
+      "labs": 11,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 0,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {},
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Cellular & Molecular Medicine": {
+      "professors": 22,
+      "labs": 30,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 4,
+        "personalWebsiteUrl": 2,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 14,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 22,
+      "professorFieldsWithEvidence": {
+        "name": 22,
+        "email": 3,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 14,
+        "catalogListing": 1
+      },
+      "professorsWithLabEvidence": 14,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "verificationStatuses": {
+        "source_checked": 22
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Chemistry & Biochemistry": {
+      "professors": 96,
+      "labs": 5,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 82,
+        "personalWebsiteUrl": 40,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 94,
+      "professorFieldsWithEvidence": {
+        "name": 64,
+        "email": 21,
+        "personalWebsiteUrl": 40,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 62,
+        "labAffiliationUrl": 0,
+        "catalogListing": 30
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 55,
+      "courseAssignments": 137,
+      "uniqueProfessorCourseTerms": 137,
+      "professorsWithRatings": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 64
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 64
+      },
+      "verificationStatuses": {
+        "source_checked": 94,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Cognitive Science": {
+      "professors": 54,
+      "labs": 16,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 22,
+        "personalWebsiteUrl": 17,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 11,
+        "researchSummary": 1
+      },
+      "professorsWithFieldEvidence": 46,
+      "professorFieldsWithEvidence": {
+        "name": 23,
+        "email": 21,
+        "personalWebsiteUrl": 17,
+        "googleScholarUrl": 1,
+        "researchSummary": 1,
+        "researchAreas": 0,
+        "labAffiliationUrl": 11,
+        "catalogListing": 20
+      },
+      "professorsWithLabEvidence": 11,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 33
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 33
+      },
+      "verificationStatuses": {
+        "source_checked": 46,
+        "legacy_unverified": 8
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Communication": {
+      "professors": 39,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 25,
+        "personalWebsiteUrl": 11,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 2,
+        "researchSummary": 9
+      },
+      "professorsWithFieldEvidence": 38,
+      "professorFieldsWithEvidence": {
+        "name": 24,
+        "email": 23,
+        "personalWebsiteUrl": 11,
+        "googleScholarUrl": 0,
+        "researchSummary": 9,
+        "researchAreas": 1,
+        "labAffiliationUrl": 2,
+        "catalogListing": 19
+      },
+      "professorsWithLabEvidence": 2,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 23
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 23
+      },
+      "verificationStatuses": {
+        "source_checked": 38,
+        "unavailable": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Computer Science and Engineering": {
+      "professors": 177,
+      "labs": 16,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 156,
+        "personalWebsiteUrl": 151,
+        "googleScholarUrl": 24,
+        "labAffiliationUrl": 3,
+        "researchSummary": 82
+      },
+      "professorsWithFieldEvidence": 177,
+      "professorFieldsWithEvidence": {
+        "name": 174,
+        "email": 151,
+        "personalWebsiteUrl": 147,
+        "googleScholarUrl": 24,
+        "researchSummary": 31,
+        "researchAreas": 20,
+        "labAffiliationUrl": 3,
+        "catalogListing": 35
+      },
+      "professorsWithLabEvidence": 3,
+      "professorsWithCourses": 67,
+      "courseAssignments": 232,
+      "uniqueProfessorCourseTerms": 232,
+      "professorsWithRatings": {
+        "rateMyPI": 3,
+        "rateMyProfessors": 107
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 3,
+        "rateMyProfessors": 107
+      },
+      "verificationStatuses": {
+        "source_checked": 177
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Dermatology": {
+      "professors": 12,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 1,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 10,
+      "professorFieldsWithEvidence": {
+        "name": 10,
+        "email": 1,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 10,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Economics": {
+      "professors": 58,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 58,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 58
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 43
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 43
+      },
+      "verificationStatuses": {
+        "source_checked": 58
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Education Studies": {
+      "professors": 40,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 27,
+        "personalWebsiteUrl": 9,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 0,
+        "researchSummary": 19
+      },
+      "professorsWithFieldEvidence": 35,
+      "professorFieldsWithEvidence": {
+        "name": 27,
+        "email": 27,
+        "personalWebsiteUrl": 8,
+        "googleScholarUrl": 1,
+        "researchSummary": 19,
+        "researchAreas": 3,
+        "labAffiliationUrl": 0,
+        "catalogListing": 10
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 10
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 10
+      },
+      "verificationStatuses": {
+        "source_checked": 35,
+        "legacy_unverified": 5
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Electrical and Computer Engineering": {
+      "professors": 114,
+      "labs": 26,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 77,
+        "personalWebsiteUrl": 39,
+        "googleScholarUrl": 21,
+        "labAffiliationUrl": 15,
+        "researchSummary": 37
+      },
+      "professorsWithFieldEvidence": 114,
+      "professorFieldsWithEvidence": {
+        "name": 79,
+        "email": 77,
+        "personalWebsiteUrl": 38,
+        "googleScholarUrl": 21,
+        "researchSummary": 37,
+        "researchAreas": 25,
+        "labAffiliationUrl": 15,
+        "catalogListing": 68
+      },
+      "professorsWithLabEvidence": 15,
+      "professorsWithCourses": 2,
+      "courseAssignments": 2,
+      "uniqueProfessorCourseTerms": 2,
+      "professorsWithRatings": {
+        "rateMyPI": 4,
+        "rateMyProfessors": 64
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 4,
+        "rateMyProfessors": 64
+      },
+      "verificationStatuses": {
+        "source_checked": 114
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Emergency Medicine": {
+      "professors": 88,
+      "labs": 3,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 4,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 77,
+      "professorFieldsWithEvidence": {
+        "name": 77,
+        "email": 2,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "verificationStatuses": {
+        "source_checked": 77,
+        "unavailable": 6,
+        "needs_review": 5
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Ethnic Studies": {
+      "professors": 33,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 1,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 33,
+      "professorFieldsWithEvidence": {
+        "name": 1,
+        "email": 1,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 1,
+        "labAffiliationUrl": 0,
+        "catalogListing": 33
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 20
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 20
+      },
+      "verificationStatuses": {
+        "source_checked": 33
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Family Medicine": {
+      "professors": 0,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 0,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {},
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Global Policy and Strategy": {
+      "professors": 57,
+      "labs": 5,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 40,
+        "personalWebsiteUrl": 32,
+        "googleScholarUrl": 6,
+        "labAffiliationUrl": 4,
+        "researchSummary": 29
+      },
+      "professorsWithFieldEvidence": 54,
+      "professorFieldsWithEvidence": {
+        "name": 43,
+        "email": 39,
+        "personalWebsiteUrl": 32,
+        "googleScholarUrl": 6,
+        "researchSummary": 29,
+        "researchAreas": 7,
+        "labAffiliationUrl": 4,
+        "catalogListing": 17
+      },
+      "professorsWithLabEvidence": 4,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 8
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 8
+      },
+      "verificationStatuses": {
+        "source_checked": 54,
+        "legacy_unverified": 3
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Halicioğlu Data Science Institute": {
+      "professors": 58,
+      "labs": 9,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 33,
+        "personalWebsiteUrl": 14,
+        "googleScholarUrl": 5,
+        "labAffiliationUrl": 3,
+        "researchSummary": 13
+      },
+      "professorsWithFieldEvidence": 43,
+      "professorFieldsWithEvidence": {
+        "name": 35,
+        "email": 33,
+        "personalWebsiteUrl": 12,
+        "googleScholarUrl": 5,
+        "researchSummary": 12,
+        "researchAreas": 10,
+        "labAffiliationUrl": 3,
+        "catalogListing": 29
+      },
+      "professorsWithLabEvidence": 3,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 20
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 20
+      },
+      "verificationStatuses": {
+        "source_checked": 43,
+        "legacy_unverified": 15
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "History": {
+      "professors": 74,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 52,
+        "personalWebsiteUrl": 2,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 25
+      },
+      "professorsWithFieldEvidence": 74,
+      "professorFieldsWithEvidence": {
+        "name": 53,
+        "email": 52,
+        "personalWebsiteUrl": 2,
+        "googleScholarUrl": 0,
+        "researchSummary": 25,
+        "researchAreas": 1,
+        "labAffiliationUrl": 0,
+        "catalogListing": 26
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 53
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 53
+      },
+      "verificationStatuses": {
+        "source_checked": 74
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Linguistics": {
+      "professors": 18,
+      "labs": 6,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 3,
+        "personalWebsiteUrl": 4,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 18,
+      "professorFieldsWithEvidence": {
+        "name": 3,
+        "email": 3,
+        "personalWebsiteUrl": 3,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 5
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 13,
+      "courseAssignments": 59,
+      "uniqueProfessorCourseTerms": 59,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 13
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 13
+      },
+      "verificationStatuses": {
+        "source_checked": 18
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Literature": {
+      "professors": 140,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 111,
+        "personalWebsiteUrl": 20,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 49
+      },
+      "professorsWithFieldEvidence": 132,
+      "professorFieldsWithEvidence": {
+        "name": 117,
+        "email": 108,
+        "personalWebsiteUrl": 20,
+        "googleScholarUrl": 0,
+        "researchSummary": 49,
+        "researchAreas": 7,
+        "labAffiliationUrl": 0,
+        "catalogListing": 27
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 50,
+      "courseAssignments": 183,
+      "uniqueProfessorCourseTerms": 183,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 63
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 63
+      },
+      "verificationStatuses": {
+        "source_checked": 132,
+        "legacy_unverified": 3,
+        "unavailable": 3,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Mathematics": {
+      "professors": 101,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 96,
+        "personalWebsiteUrl": 70,
+        "googleScholarUrl": 7,
+        "labAffiliationUrl": 0,
+        "researchSummary": 32
+      },
+      "professorsWithFieldEvidence": 100,
+      "professorFieldsWithEvidence": {
+        "name": 96,
+        "email": 95,
+        "personalWebsiteUrl": 70,
+        "googleScholarUrl": 7,
+        "researchSummary": 24,
+        "researchAreas": 92,
+        "labAffiliationUrl": 0,
+        "catalogListing": 86
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 60,
+      "courseAssignments": 205,
+      "uniqueProfessorCourseTerms": 205,
+      "professorsWithRatings": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 69
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 1,
+        "rateMyProfessors": 69
+      },
+      "verificationStatuses": {
+        "source_checked": 100,
+        "legacy_unverified": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Mechanical & Aerospace Engineering": {
+      "professors": 168,
+      "labs": 22,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 57,
+        "personalWebsiteUrl": 44,
+        "googleScholarUrl": 11,
+        "labAffiliationUrl": 24,
+        "researchSummary": 32
+      },
+      "professorsWithFieldEvidence": 164,
+      "professorFieldsWithEvidence": {
+        "name": 61,
+        "email": 56,
+        "personalWebsiteUrl": 43,
+        "googleScholarUrl": 11,
+        "researchSummary": 32,
+        "researchAreas": 17,
+        "labAffiliationUrl": 24,
+        "catalogListing": 107
+      },
+      "professorsWithLabEvidence": 24,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 2,
+        "rateMyProfessors": 45
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 2,
+        "rateMyProfessors": 45
+      },
+      "verificationStatuses": {
+        "source_checked": 164,
+        "legacy_unverified": 4
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Medicine": {
+      "professors": 509,
+      "labs": 35,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 10,
+        "personalWebsiteUrl": 7,
+        "googleScholarUrl": 2,
+        "labAffiliationUrl": 33,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 396,
+      "professorFieldsWithEvidence": {
+        "name": 396,
+        "email": 3,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 2,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 33,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 33,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "verificationStatuses": {
+        "source_checked": 396,
+        "unavailable": 106,
+        "needs_review": 7
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Music": {
+      "professors": 75,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 49,
+        "personalWebsiteUrl": 27,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 1,
+        "researchSummary": 10
+      },
+      "professorsWithFieldEvidence": 65,
+      "professorFieldsWithEvidence": {
+        "name": 61,
+        "email": 47,
+        "personalWebsiteUrl": 25,
+        "googleScholarUrl": 0,
+        "researchSummary": 10,
+        "researchAreas": 2,
+        "labAffiliationUrl": 1,
+        "catalogListing": 6
+      },
+      "professorsWithLabEvidence": 1,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 34
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 34
+      },
+      "verificationStatuses": {
+        "source_checked": 65,
+        "legacy_unverified": 8,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "NanoEngineering": {
+      "professors": 45,
+      "labs": 19,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 33,
+        "personalWebsiteUrl": 32,
+        "googleScholarUrl": 16,
+        "labAffiliationUrl": 18,
+        "researchSummary": 25
+      },
+      "professorsWithFieldEvidence": 45,
+      "professorFieldsWithEvidence": {
+        "name": 37,
+        "email": 32,
+        "personalWebsiteUrl": 30,
+        "googleScholarUrl": 16,
+        "researchSummary": 25,
+        "researchAreas": 19,
+        "labAffiliationUrl": 18,
+        "catalogListing": 12
+      },
+      "professorsWithLabEvidence": 18,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 3,
+        "rateMyProfessors": 21
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 3,
+        "rateMyProfessors": 21
+      },
+      "verificationStatuses": {
+        "source_checked": 45
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Neurological Surgery": {
+      "professors": 25,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 2,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 3,
+        "labAffiliationUrl": 1,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 24,
+      "professorFieldsWithEvidence": {
+        "name": 24,
+        "email": 2,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 3,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 1,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 1,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 24,
+        "needs_review": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Neurosciences": {
+      "professors": 105,
+      "labs": 37,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 1,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 15,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 94,
+      "professorFieldsWithEvidence": {
+        "name": 94,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 15,
+        "catalogListing": 2
+      },
+      "professorsWithLabEvidence": 15,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "verificationStatuses": {
+        "source_checked": 94,
+        "unavailable": 8,
+        "needs_review": 3
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Obstetrics, Gynecology & Reproductive Sciences": {
+      "professors": 77,
+      "labs": 21,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 2,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 9,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 66,
+      "professorFieldsWithEvidence": {
+        "name": 66,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 9,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 9,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 66,
+        "needs_review": 9,
+        "unavailable": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Orthopaedic Surgery": {
+      "professors": 0,
+      "labs": 4,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 0,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {},
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Otolaryngology": {
+      "professors": 23,
+      "labs": 5,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 1,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 1,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 20,
+      "professorFieldsWithEvidence": {
+        "name": 20,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 1,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 1,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 20,
+        "needs_review": 3
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Pathology": {
+      "professors": 83,
+      "labs": 27,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 4,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 7,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 77,
+      "professorFieldsWithEvidence": {
+        "name": 77,
+        "email": 3,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 7,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 7,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "verificationStatuses": {
+        "source_checked": 77,
+        "needs_review": 4,
+        "unavailable": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Pediatrics": {
+      "professors": 219,
+      "labs": 59,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 4,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 15,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 214,
+      "professorFieldsWithEvidence": {
+        "name": 214,
+        "email": 2,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 1,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 15,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 15,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 214,
+        "unavailable": 5
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Pharmacology": {
+      "professors": 14,
+      "labs": 13,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 13,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 12,
+        "researchSummary": 4
+      },
+      "professorsWithFieldEvidence": 13,
+      "professorFieldsWithEvidence": {
+        "name": 13,
+        "email": 12,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 1,
+        "researchSummary": 4,
+        "researchAreas": 4,
+        "labAffiliationUrl": 12,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 12,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 1
+      },
+      "verificationStatuses": {
+        "source_checked": 13,
+        "needs_review": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Pharmacy and Pharmaceutical Sciences": {
+      "professors": 41,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 41,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 3,
+        "labAffiliationUrl": 1,
+        "researchSummary": 34
+      },
+      "professorsWithFieldEvidence": 41,
+      "professorFieldsWithEvidence": {
+        "name": 41,
+        "email": 40,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 3,
+        "researchSummary": 34,
+        "researchAreas": 12,
+        "labAffiliationUrl": 1,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 1,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 2
+      },
+      "verificationStatuses": {
+        "source_checked": 41
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Philosophy": {
+      "professors": 31,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 2,
+        "personalWebsiteUrl": 2,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 30,
+      "professorFieldsWithEvidence": {
+        "name": 5,
+        "email": 1,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 23
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 21,
+      "courseAssignments": 66,
+      "uniqueProfessorCourseTerms": 66,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 22
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 22
+      },
+      "verificationStatuses": {
+        "source_checked": 30,
+        "needs_review": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Physics": {
+      "professors": 96,
+      "labs": 32,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 84,
+        "personalWebsiteUrl": 60,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 22
+      },
+      "professorsWithFieldEvidence": 93,
+      "professorFieldsWithEvidence": {
+        "name": 81,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 73
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 56
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 56
+      },
+      "verificationStatuses": {
+        "source_checked": 93,
+        "legacy_unverified": 1,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Political Science": {
+      "professors": 60,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 43,
+        "personalWebsiteUrl": 31,
+        "googleScholarUrl": 4,
+        "labAffiliationUrl": 0,
+        "researchSummary": 15
+      },
+      "professorsWithFieldEvidence": 56,
+      "professorFieldsWithEvidence": {
+        "name": 45,
+        "email": 42,
+        "personalWebsiteUrl": 29,
+        "googleScholarUrl": 4,
+        "researchSummary": 15,
+        "researchAreas": 4,
+        "labAffiliationUrl": 0,
+        "catalogListing": 13
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 23,
+      "courseAssignments": 52,
+      "uniqueProfessorCourseTerms": 52,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 41
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 41
+      },
+      "verificationStatuses": {
+        "source_checked": 56,
+        "needs_review": 3,
+        "unavailable": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Psychiatry": {
+      "professors": 253,
+      "labs": 47,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 13,
+        "personalWebsiteUrl": 3,
+        "googleScholarUrl": 4,
+        "labAffiliationUrl": 24,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 227,
+      "professorFieldsWithEvidence": {
+        "name": 227,
+        "email": 9,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 4,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 24,
+        "catalogListing": 2
+      },
+      "professorsWithLabEvidence": 24,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 4
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 4
+      },
+      "verificationStatuses": {
+        "source_checked": 227,
+        "unavailable": 12,
+        "needs_review": 14
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Psychology": {
+      "professors": 59,
+      "labs": 3,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 41,
+        "personalWebsiteUrl": 34,
+        "googleScholarUrl": 3,
+        "labAffiliationUrl": 3,
+        "researchSummary": 18
+      },
+      "professorsWithFieldEvidence": 58,
+      "professorFieldsWithEvidence": {
+        "name": 48,
+        "email": 38,
+        "personalWebsiteUrl": 34,
+        "googleScholarUrl": 3,
+        "researchSummary": 18,
+        "researchAreas": 9,
+        "labAffiliationUrl": 3,
+        "catalogListing": 12
+      },
+      "professorsWithLabEvidence": 3,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 36
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 36
+      },
+      "verificationStatuses": {
+        "source_checked": 58,
+        "needs_review": 1
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Public Health": {
+      "professors": 108,
+      "labs": 6,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 5,
+        "personalWebsiteUrl": 8,
+        "googleScholarUrl": 6,
+        "labAffiliationUrl": 8,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 97,
+      "professorFieldsWithEvidence": {
+        "name": 93,
+        "email": 2,
+        "personalWebsiteUrl": 3,
+        "googleScholarUrl": 6,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 8,
+        "catalogListing": 2
+      },
+      "professorsWithLabEvidence": 8,
+      "professorsWithCourses": 23,
+      "courseAssignments": 55,
+      "uniqueProfessorCourseTerms": 55,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 23
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 23
+      },
+      "verificationStatuses": {
+        "source_checked": 97,
+        "needs_review": 8,
+        "unavailable": 3
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Radiation Medicine": {
+      "professors": 36,
+      "labs": 16,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 6,
+        "researchSummary": 10
+      },
+      "professorsWithFieldEvidence": 34,
+      "professorFieldsWithEvidence": {
+        "name": 34,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 10,
+        "researchAreas": 10,
+        "labAffiliationUrl": 6,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 6,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 34,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Radiology": {
+      "professors": 72,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 1,
+        "personalWebsiteUrl": 2,
+        "googleScholarUrl": 1,
+        "labAffiliationUrl": 1,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 63,
+      "professorFieldsWithEvidence": {
+        "name": 63,
+        "email": 1,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 1,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 1,
+        "catalogListing": 1
+      },
+      "professorsWithLabEvidence": 1,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "source_checked": 63,
+        "unavailable": 9
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Rady School of Management": {
+      "professors": 57,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 44,
+        "personalWebsiteUrl": 19,
+        "googleScholarUrl": 3,
+        "labAffiliationUrl": 0,
+        "researchSummary": 20
+      },
+      "professorsWithFieldEvidence": 57,
+      "professorFieldsWithEvidence": {
+        "name": 47,
+        "email": 44,
+        "personalWebsiteUrl": 19,
+        "googleScholarUrl": 3,
+        "researchSummary": 20,
+        "researchAreas": 2,
+        "labAffiliationUrl": 0,
+        "catalogListing": 13
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 17
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 17
+      },
+      "verificationStatuses": {
+        "source_checked": 57
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Scripps Institution of Oceanography": {
+      "professors": 254,
+      "labs": 5,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 164,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 5,
+        "researchSummary": 11
+      },
+      "professorsWithFieldEvidence": 248,
+      "professorFieldsWithEvidence": {
+        "name": 191,
+        "email": 0,
+        "personalWebsiteUrl": 1,
+        "googleScholarUrl": 0,
+        "researchSummary": 11,
+        "researchAreas": 9,
+        "labAffiliationUrl": 5,
+        "catalogListing": 58
+      },
+      "professorsWithLabEvidence": 5,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 40
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 40
+      },
+      "verificationStatuses": {
+        "source_checked": 248,
+        "legacy_unverified": 4,
+        "needs_review": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Sociology": {
+      "professors": 43,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 36,
+        "personalWebsiteUrl": 16,
+        "googleScholarUrl": 2,
+        "labAffiliationUrl": 0,
+        "researchSummary": 17
+      },
+      "professorsWithFieldEvidence": 43,
+      "professorFieldsWithEvidence": {
+        "name": 39,
+        "email": 36,
+        "personalWebsiteUrl": 16,
+        "googleScholarUrl": 2,
+        "researchSummary": 17,
+        "researchAreas": 4,
+        "labAffiliationUrl": 0,
+        "catalogListing": 8
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 31
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 31
+      },
+      "verificationStatuses": {
+        "source_checked": 43
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Structural Engineering": {
+      "professors": 32,
+      "labs": 5,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 10,
+        "googleScholarUrl": 5,
+        "labAffiliationUrl": 0,
+        "researchSummary": 1
+      },
+      "professorsWithFieldEvidence": 32,
+      "professorFieldsWithEvidence": {
+        "name": 18,
+        "email": 0,
+        "personalWebsiteUrl": 10,
+        "googleScholarUrl": 5,
+        "researchSummary": 1,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 14
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 10
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 10
+      },
+      "verificationStatuses": {
+        "source_checked": 32
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Surgery": {
+      "professors": 0,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 0,
+      "professorFieldsWithEvidence": {
+        "name": 0,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {},
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Theatre & Dance": {
+      "professors": 115,
+      "labs": 0,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 53,
+        "personalWebsiteUrl": 19,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 11
+      },
+      "professorsWithFieldEvidence": 102,
+      "professorFieldsWithEvidence": {
+        "name": 87,
+        "email": 52,
+        "personalWebsiteUrl": 16,
+        "googleScholarUrl": 0,
+        "researchSummary": 11,
+        "researchAreas": 2,
+        "labAffiliationUrl": 0,
+        "catalogListing": 13
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 34
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 34
+      },
+      "verificationStatuses": {
+        "needs_review": 5,
+        "source_checked": 102,
+        "legacy_unverified": 6,
+        "unavailable": 2
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Urban Studies & Planning": {
+      "professors": 42,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 12,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 1
+      },
+      "professorsWithFieldEvidence": 30,
+      "professorFieldsWithEvidence": {
+        "name": 12,
+        "email": 12,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 1,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 18
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 14
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 14
+      },
+      "verificationStatuses": {
+        "legacy_unverified": 12,
+        "source_checked": 30
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Urology": {
+      "professors": 28,
+      "labs": 1,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 0,
+        "researchSummary": 0
+      },
+      "professorsWithFieldEvidence": 24,
+      "professorFieldsWithEvidence": {
+        "name": 24,
+        "email": 0,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 0,
+        "researchAreas": 0,
+        "labAffiliationUrl": 0,
+        "catalogListing": 0
+      },
+      "professorsWithLabEvidence": 0,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 0
+      },
+      "verificationStatuses": {
+        "needs_review": 4,
+        "source_checked": 24
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    },
+    "Visual Arts": {
+      "professors": 57,
+      "labs": 2,
+      "departments": 1,
+      "professorFieldsPresent": {
+        "email": 29,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "labAffiliationUrl": 2,
+        "researchSummary": 7
+      },
+      "professorsWithFieldEvidence": 53,
+      "professorFieldsWithEvidence": {
+        "name": 32,
+        "email": 28,
+        "personalWebsiteUrl": 0,
+        "googleScholarUrl": 0,
+        "researchSummary": 7,
+        "researchAreas": 1,
+        "labAffiliationUrl": 2,
+        "catalogListing": 20
+      },
+      "professorsWithLabEvidence": 2,
+      "professorsWithCourses": 0,
+      "courseAssignments": 0,
+      "uniqueProfessorCourseTerms": 0,
+      "professorsWithRatings": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 32
+      },
+      "distinctRatedProfiles": {
+        "rateMyPI": 0,
+        "rateMyProfessors": 31
+      },
+      "verificationStatuses": {
+        "source_checked": 53,
+        "legacy_unverified": 4
+      },
+      "duplicateProfessorNameDepartmentGroups": 0,
+      "duplicateLabUrlGroups": 0
+    }
+  }
+}
