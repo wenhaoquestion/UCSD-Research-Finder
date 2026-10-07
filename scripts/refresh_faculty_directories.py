@@ -46,6 +46,8 @@ MATH_FACULTY = "https://www.math.ucsd.edu/people/faculty"
 MATH_EMERITI = "https://www.math.ucsd.edu/people/emeriti-faculty"
 PHYSICS_FEED = "https://physics.ucsd.edu/api/profiles/faculty/000220"
 PHYSICS_DIRECTORY = "https://physics.ucsd.edu/people/faculty"
+BIOLOGY_PROFILES_FEED = "https://public.biology.ucsd.edu/api/prod/website-data/v1/profiles"
+BIOLOGY_DEPARTMENT = "Biological Sciences"
 
 SOURCES = [
     ("astronomy", "Astronomy and Astrophysics", "https://astro.ucsd.edu/people/faculty/index.html", "profile-listing-card", "astronomy"),
@@ -57,6 +59,15 @@ SOURCES = [
     ("nano", "NanoEngineering", "https://cne.ucsd.edu/fac", "faculty-profile", "engineering"),
     ("bioengineering", "Bioengineering", "https://be.ucsd.edu/faculty", "faculty-profile", "engineering"),
     ("structural", "Structural Engineering", "https://se.ucsd.edu/people/faculty/professors", "col-md-3", "structural"),
+    # Departments on the shared campus CMS template (profile-listing-card).
+    ("economics", "Economics", "https://economics.ucsd.edu/faculty-and-research/faculty-profiles/index.html", "profile-listing-card", "cascade"),
+    ("history", "History", "https://history.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("communication", "Communication", "https://communication.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("cognitive-science", "Cognitive Science", "https://cogsci.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("sociology", "Sociology", "https://sociology.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("linguistics", "Linguistics", "https://linguistics.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("visual-arts", "Visual Arts", "https://visarts.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
+    ("education-studies", "Education Studies", "https://eds.ucsd.edu/people/faculty/index.html", "profile-listing-card", "cascade"),
 ]
 
 
@@ -154,13 +165,15 @@ def card_records(source, meta, body):
     records = []
     section = "Emeritus Faculty" if "emeritus" in key else "Faculty directory"
     for node in main.walk():
-        if node.tag in {"h1", "h2"} and re.search(r"faculty|emerit|affiliat|memoriam|former", node.text(), re.I) and len(node.text()) < 100:
+        if node.tag in {"h1", "h2"} and re.search(r"faculty|emerit|affiliat|memoriam|former|lecturer", node.text(), re.I) and len(node.text()) < 100:
             section = node.text()
         if card_class not in node.attrs.get("class", "").split():
             continue
         children = list(node.walk())
-        if parser == "astronomy":
+        if parser in {"astronomy", "cascade"}:
             headings = [n for n in children if n.tag == "p" and "h3" in n.attrs.get("class", "").split()]
+            if parser == "cascade" and not headings:
+                headings = [n for n in children if n.tag in {"h2", "h3", "h4"}]
         elif parser == "structural":
             headings = [n for n in children if "views-field-field-last-name" in n.attrs.get("class", "").split()]
         else:
@@ -191,8 +204,17 @@ def card_records(source, meta, body):
         elif parser == "structural":
             role = "Faculty listed in Professors directory"
         else:
-            role_lines = [n.text() for n in children if n.tag in {"h5", "h6", "p"} and re.search(r"professor|lecturer|affiliate|chair|chancellor|provost|dean", n.text(), re.I) and len(n.text()) < 350]
-            role = " | ".join(dict.fromkeys(role_lines)) or "Faculty directory listing"
+            role_tags = {"h4", "h5", "h6", "p"} if parser == "cascade" else {"h5", "h6", "p"}
+            role_lines = [n.text() for n in children if n.tag in role_tags and n is not heading and re.search(r"professor|lecturer|affiliate|chair|chancellor|provost|dean", n.text(), re.I) and len(n.text()) < 350]
+            role = " | ".join(dict.fromkeys(role_lines))
+            if not role and parser == "cascade":
+                # Some departments print the title as bare text after the degree line.
+                match = re.search(r"\b((?:(?:Distinguished|Associate|Assistant|Teaching|Adjunct|Visiting|Research|Clinical|Senior)\s+)*(?:Professor|Lecturer)(?:\s+Emerit(?:us|a))?)\b", card_text.replace(heading.text(), ""))
+                role = match[1] if match else ""
+            if parser == "cascade":
+                # Titles share a paragraph with office and email on some cards.
+                role = clean(re.split(r"\s+(?=[\w.+%-]+@|(?:[A-Z]{2,6}|Room)\s+\d)", role)[0])
+            role = role or "Faculty directory listing"
         email_links = [n.attrs.get("href", "")[7:].split("?", 1)[0] for n in children if n.tag == "a" and n.attrs.get("href", "").startswith("mailto:")]
         email = next((e for e in email_links if e.lower().endswith("ucsd.edu")), "")
         if not email:
@@ -205,6 +227,9 @@ def card_records(source, meta, body):
             personal = ""
         scholar = next((u for _, _, u in card_links if "scholar.google." in u and "/citations?" in u and "user=" in u), "")
         areas = [clean(s) for s in node.attrs.get("data-research-areas", "").split(",") if clean(s)]
+        if parser == "cascade":
+            # Only labels linked to the department's own research-group index.
+            areas += [label for _, label, u in card_links if "research-groups" in urllib.parse.urlsplit(u).path and label]
         e = evidence(meta, "official_faculty_directory_card", f"{section} | {name} | {role}")
         records.append({"name": name, "department": department, "listedRole": role, "appointmentStatus": appointment_status(role, section), "directorySection": section,
             "sourceUrl": meta.get("finalUrl", url), "observedAt": meta["observedAt"], "evidence": e,
@@ -302,6 +327,57 @@ def physics_records(meta, body):
             "directorySection": "Faculty Profiles", "sourceUrl": PHYSICS_DIRECTORY, "observedAt": meta["observedAt"], "evidence": e,
             "profileUrl": profile, "namedLinkUrl": profile, "email": email, "personalWebsiteUrl": "", "googleScholarUrl": "", "researchAreas": []})
     return records
+
+
+def biology_profile_patches(meta, body, professors):
+    """The Biology website's public profile feed carries no names. Each entry's
+    profile path is the person's UCSD username, so it is linked only when that
+    username already identifies exactly one Biological Sciences professor, by
+    the same profile URL or as the local part of their @ucsd.edu address. The
+    feed never creates people and never overrides a field with its own evidence."""
+    by_username = defaultdict(list)
+    for professor in professors:
+        if professor.get("department") != BIOLOGY_DEPARTMENT:
+            continue
+        keys = set()
+        match = re.search(r"biology\.ucsd\.edu/research/faculty/([^/?#]+)", str(professor.get("officialProfileUrl", "")).lower())
+        if match:
+            keys.add(match[1])
+        email = str(professor.get("email", "")).lower()
+        if email.endswith("@ucsd.edu"):
+            keys.add(email.split("@")[0])
+        for key in keys:
+            by_username[key].append(professor)
+    patches, unmatched = {}, 0
+    for row in json.loads(body):
+        profile = "https:" + row["profileURL"] if str(row.get("profileURL", "")).startswith("//") else str(row.get("profileURL", ""))
+        username = profile.rstrip("/").rsplit("/", 1)[-1].lower()
+        people = by_username.get(username, [])
+        if not row.get("hasProfile") or len(people) != 1:
+            unmatched += 1
+            continue
+        person = people[0]
+        known = (person.get("fieldEvidence") or {})
+        sections = [clean(s.get("title", "")) for s in row.get("sections", []) if clean(s.get("title", ""))]
+        base = {**evidence(meta, "biology_profile_feed_username_link", f"{profile} | sections: {', '.join(sections)}"), "identityMatchConfidence": "medium"}
+        patch = {"fieldEvidence": {}}
+        if not individual_profile(person.get("officialProfileUrl", "")) and individual_profile(profile):
+            patch["officialProfileUrl"] = profile
+            patch["fieldEvidence"]["officialProfileUrl"] = {**base, "evidence": f"Profile feed entry → {profile}"}
+        summary = clean(row.get("researchSummary", ""))
+        if len(summary) >= 30 and not known.get("researchSummary"):
+            patch["researchSummary"] = summary[:1000]
+            patch["fieldEvidence"]["researchSummary"] = {**base, "method": "biology_profile_feed_research_summary", "evidence": summary}
+        lab = str(row.get("labURL", "")).strip()
+        if re.match(r"https?://", lab) and not known.get("personalWebsiteUrl") and person.get("personalWebsiteUrl") in {None, "", MISSING}:
+            patch["personalWebsiteUrl"] = canonical_url(lab)
+            patch["fieldEvidence"]["personalWebsiteUrl"] = {**base, "method": "biology_profile_feed_lab_url", "evidence": f"Lab URL: {lab}"}
+        if sections:
+            patch["researchAreasFromDirectory"] = sections
+            patch["fieldEvidence"]["researchAreasFromDirectory"] = {**base, "method": "biology_profile_feed_sections", "evidence": "Sections: " + ", ".join(sections)}
+        if patch["fieldEvidence"]:
+            patches[person["id"]] = patch
+    return patches, unmatched
 
 
 def legacy_initials_compatible(full_name, legacy_name):
@@ -425,7 +501,13 @@ def build_evidence(records, professors):
             patch["officialProfileUrl"] = row["profileUrl"]
             patch["fieldEvidence"]["officialProfileUrl"] = {**(row.get("metadataEvidence") or e), "method": "explicit_individual_profile_link_from_directory", "evidence": f"{row['name']} → {row['profileUrl']}"}
         for field in ["email", "personalWebsiteUrl", "googleScholarUrl"]:
-            if row.get(field) and (person in additions or person.get(field) in {None, "", MISSING}):
+            # An official card fills a missing value, replaces a legacy value that
+            # never had evidence, or corroborates an identical value. A value with
+            # its own field evidence is never overwritten by a directory card.
+            current = person.get(field)
+            unverified = not (person.get("fieldEvidence") or {}).get(field)
+            same = isinstance(current, str) and current.strip().lower() == str(row.get(field, "")).strip().lower()
+            if row.get(field) and (person in additions or current in {None, "", MISSING} or unverified or same):
                 patch[field] = row[field]
                 patch["fieldEvidence"][field] = {**e, "method": "explicit_person_card_value", "evidence": f"{row['name']} | {field}: {row[field]}"}
         if row.get("researchAreas"):
@@ -473,6 +555,18 @@ def main():
     parse_report.append({"sourceId": "physics-public-directory", "department": "Physics", "sourceUrl": PHYSICS_DIRECTORY, "listingCount": len(physics), "status": "parsed" if physics else physics_meta["status"]})
     print("physics", physics_meta["status"], len(physics), flush=True)
     additions, patches, uncertain = build_evidence(records, professors)
+    biology_meta, biology_body = fetcher.fetch(BIOLOGY_PROFILES_FEED)
+    biology, biology_unmatched = biology_profile_patches(biology_meta, biology_body, professors) if biology_meta["status"] == "ok" and biology_body else ({}, 0)
+    for pid, patch in biology.items():
+        target = patches.setdefault(pid, {"directoryListings": [], "departmentAffiliations": [], "fieldEvidence": {}})
+        for field, value in patch.items():
+            if field == "fieldEvidence":
+                for key, proof in value.items():
+                    target["fieldEvidence"].setdefault(key, proof)
+            else:
+                target.setdefault(field, value)
+    parse_report.append({"sourceId": "biology-public-profile-feed", "department": BIOLOGY_DEPARTMENT, "sourceUrl": BIOLOGY_PROFILES_FEED, "linkedProfiles": len(biology), "unlinkedFeedEntries": biology_unmatched, "status": "parsed" if biology else biology_meta["status"]})
+    print("biology-profile-feed", biology_meta["status"], len(biology), "linked,", biology_unmatched, "unlinked", flush=True)
     fetches = list(fetcher.results.values()) + [minimized["meta"]]
     output = {"schemaVersion": "1.0.0", "generatedAt": now(), "professors": additions, "byProfessorId": patches, "fetches": fetches, "sources": parse_report, "uncertainListings": uncertain,
         "coverage": {"rawDirectoryListingCount": len(records), "directoryListingCount": sum(len(p["directoryListings"]) for p in patches.values()), "distinctProfessorsObserved": len(patches), "newProfessorCount": len(additions),
@@ -485,6 +579,7 @@ def main():
             "Individual profile URLs are explicit directory links; their linked contents have not all been re-fetched by this collector.",
             "Names without full given-name evidence do not create new professors. Public staff, student, and postdoc feeds are excluded.",
             "The Mathematics endpoint is filtered using the public directory's own rules; raw employee data and unrelated personnel fields are not retained.",
+            "Biology profile-feed entries have no names; they are linked only when their username matches exactly one existing Biological Sciences profile URL or @ucsd.edu address (medium confidence), and never create people.",
             "Absence from these directories is not evidence that an existing professor has left UCSD."]}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n")

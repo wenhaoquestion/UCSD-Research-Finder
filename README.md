@@ -28,8 +28,9 @@ python3 scripts/refresh_source_checks.py
 # Add newly discovered faculty before matching courses and ratings.
 python3 scripts/rebuild_verified_atlas.py
 
-# Official departmental schedules. PDF sources require pdftotext and pdfplumber.
-python3 scripts/refresh_teaching.py --refresh
+# Official departmental schedules plus the campus Schedule of Classes.
+# PDF sources require pdftotext and pdfplumber.
+python3 scripts/refresh_teaching.py --refresh --cache-dir .cache/atlas/teaching
 
 # PI Review's public directory and exact-name RMP searches.
 python3 scripts/refresh_ratings.py --pi-all --rmp-limit 10000
@@ -49,6 +50,28 @@ For the two PDF schedules, install `poppler`/`poppler-utils` for `pdftotext` and
 python3 scripts/refresh_teaching.py --rematch
 python3 scripts/rebuild_verified_atlas.py
 ```
+
+### Campus Schedule of Classes
+
+`refresh_teaching.py` also reads the registrar's public Schedule of Classes (`act.ucsd.edu`), which lists the instructor of record for every section. By default it collects the three latest published quarters for the departments mapped in `SOC_DEPARTMENTS`, one request per second, caching each department/quarter so an interrupted run resumes. Independent study, internships, exams, and review sessions are excluded; interdisciplinary programs and colleges are not mapped, because instructors are matched only within the owning department.
+
+```bash
+# Refresh only the Schedule of Classes; other sources keep their saved rows and dates.
+python3 scripts/refresh_teaching.py --soc-only --cache-dir .cache/atlas/teaching
+python3 scripts/refresh_teaching.py --soc-only --soc-terms FA25,WI26,SP26
+```
+
+### Re-scanning official profile pages
+
+When the profile parser learns a new field, re-fetch already verified pages instead of only deferred ones. UCSD Profiles contributes its Overview section and Research keywords; Scripps profiles contribute their contact-card email, Research Topics, and research-profile link. A failed re-scan keeps the earlier verification and is recorded as `lastRescanAttempt`.
+
+```bash
+cd scripts
+python3 run_profile_backfill.py --rescan-before 2026-10-07T00:00:00+00:00 --max-seconds 6900 --cache ../.cache/atlas/profiles
+python3 run_profile_backfill.py --host scripps.ucsd.edu --rescan-before 2026-10-07T00:00:00+00:00 --cache ../.cache/atlas/profiles
+```
+
+Repeat a command until its `remainingDeferredProfiles` reaches 0. Both hosts are spaced at 10 seconds per request.
 
 ### Rate limits, caches, and continuation
 
@@ -73,7 +96,8 @@ Use the commands above for v3 refreshes. The legacy scheduled workflow has not b
 - `labAffiliations`: multiple sourced links. A faculty link to a lab is not by itself proof that the person is its PI.
 - `teaching.courses`: explicit instructor assignments, course code/title, advertised term, source, and identity match. Scheduled courses may change. Historical schedules are not proof the teaching occurred. Surname-only matches stay under `teaching.candidates`.
 - `ratings.rateMyPI`: **PI Review** (`pi-review.com`), the mentoring-review source used here. `ratings.rateMyProfessors`: the separate teaching-review platform. Scores are not combined; missing/ambiguous/inaccessible/no-review cases never become zero scores. Sample sizes and collection dates are shown.
-- `researchAreas`: explicit research labels from official directory entries, supplemented by controlled phrases in sourced research paragraphs. Empty lists mean no supported tags have been captured.
+- `researchAreas`: explicit research labels from official directory entries, supplemented by controlled phrases in sourced research paragraphs or official profile keywords. Empty lists mean no supported tags have been captured.
+- `researchKeywords`: the keywords or research topics a person lists on their official UCSD Profiles or Scripps profile. They are searchable; only controlled-vocabulary matches become `researchAreas`.
 - REAL includes co-curricular listings as well as research/internship opportunities; a public listing does not establish an active opening.
 
 See [the architecture](docs/ARCHITECTURE.md) and [the JSON schema](data/schema.json).

@@ -313,6 +313,66 @@ def make_lab(label, url, dept, meta, context, professor=None):
     return record
 
 
+UCSD_PROFILES_OVERVIEW = "http://vivoweb.org/ontology/core#overview"
+UCSD_PROFILES_KEYWORDS = "http://vivoweb.org/ontology/core#freetextKeyword"
+
+
+def apply_ucsd_profiles_sections(patch, meta, dom):
+    """UCSD Profiles labels the person's own Overview and Research keywords with
+    fixed VIVO ontology element IDs. Called only after identity is confirmed."""
+    nodes = {n.attrs.get("id"): n for n in dom.root.walk() if n.attrs.get("id") in {UCSD_PROFILES_OVERVIEW, UCSD_PROFILES_KEYWORDS}}
+    overview = nodes.get(UCSD_PROFILES_OVERVIEW)
+    if overview is not None and "researchSummary" not in patch:
+        text = overview.text()
+        if len(text) >= 90:
+            patch["researchSummary"] = text[:1000]
+            patch["fieldEvidence"]["researchSummary"] = evidence(meta, "ucsd_profiles_overview_section", text)
+    keywords = nodes.get(UCSD_PROFILES_KEYWORDS)
+    if keywords is not None:
+        terms = list(dict.fromkeys(clean(n.text()) for n in keywords.walk() if n.tag == "a" and 1 < len(clean(n.text())) <= 80))[:30]
+        if terms:
+            patch["researchKeywords"] = terms
+            patch["fieldEvidence"]["researchKeywords"] = evidence(meta, "ucsd_profiles_research_keywords", ", ".join(terms))
+
+
+def every_node(node):
+    """Unlike Node.walk, include sidebars; callers select specific fields."""
+    yield node
+    for child in node.children:
+        if isinstance(child, Node):
+            yield from every_node(child)
+
+
+def apply_scripps_profile_sections(patch, meta, dom):
+    """Scripps directory profiles render the person's own contact card in a
+    sidebar and their research topics as a labeled field. Both are fields of
+    this profile record, unlike shared navigation."""
+    fields = {}
+    for node in every_node(dom.root):
+        for name in ("views-field--dir-email", "views-field-research-topic", "views-field-ss-profile"):
+            if name in node.attrs.get("class", "").split():
+                fields.setdefault(name, node)
+    contact = fields.get("views-field--dir-email")
+    if contact is not None and "email" not in patch:
+        emails = list(dict.fromkeys(e for n in every_node(contact) if n.tag == "a" for e in EMAIL_RE.findall(urllib.parse.unquote(n.attrs.get("href", "")))))
+        if len(emails) == 1:
+            patch["email"] = emails[0]
+            patch["fieldEvidence"]["email"] = evidence(meta, "scripps_profile_contact_field", "Email: " + emails[0])
+    topics = fields.get("views-field-research-topic")
+    if topics is not None:
+        terms = list(dict.fromkeys(clean(n.text()) for n in every_node(topics) if n.tag == "a" and clean(n.text())))[:30]
+        if terms:
+            patch["researchKeywords"] = terms
+            patch["fieldEvidence"]["researchKeywords"] = evidence(meta, "scripps_profile_research_topics", "Research Topics: " + ", ".join(terms))
+    research = fields.get("views-field-ss-profile")
+    if research is not None and "personalWebsiteUrl" not in patch:
+        link = next((n for n in every_node(research) if n.tag == "a" and n.attrs.get("href")), None)
+        url = canonical_url(urllib.parse.urljoin(meta.get("finalUrl", meta["sourceUrl"]), link.attrs["href"])) if link is not None else ""
+        if re.fullmatch(r"https://[a-z0-9-]+\.scrippsprofiles\.ucsd\.edu/?", url):
+            patch["personalWebsiteUrl"] = url
+            patch["fieldEvidence"]["personalWebsiteUrl"] = evidence(meta, "scripps_profile_research_profile_link", clean(link.text()) + " " + url)
+
+
 def parse_profile(p, meta, markup):
     patch = {"verification": {"status": meta["status"], "sourceUrl": meta["sourceUrl"], "observedAt": meta["observedAt"], "identityMatched": False}, "fieldEvidence": {}, "labAffiliations": []}
     if meta["status"] != "ok":
@@ -360,6 +420,11 @@ def parse_profile(p, meta, markup):
     if summary:
         patch["researchSummary"] = summary[:1000]
         patch["fieldEvidence"]["researchSummary"] = evidence(meta, "official_profile_research_paragraph_excerpt", summary)
+    host = urllib.parse.urlsplit(meta.get("finalUrl", meta["sourceUrl"])).hostname
+    if host == "profiles.ucsd.edu":
+        apply_ucsd_profiles_sections(patch, meta, dom)
+    elif host == "scripps.ucsd.edu" and urllib.parse.urlsplit(meta.get("finalUrl", meta["sourceUrl"])).path.startswith("/profiles/"):
+        apply_scripps_profile_sections(patch, meta, dom)
     labs = []
     for n, label, url in lab_links:
         if not url or url == canonical_url(p["officialProfileUrl"]) or not valid_lab_label(label) or not is_lab_destination(url):

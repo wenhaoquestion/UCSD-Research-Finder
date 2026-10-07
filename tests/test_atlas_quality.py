@@ -297,3 +297,12 @@ class QualityTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ProfileKeywordAreaTests(unittest.TestCase):
+    def test_profile_keywords_map_only_to_controlled_areas_with_their_own_evidence(self):
+        proof = {"sourceUrl": "https://profiles.ucsd.edu/alice", "observedAt": "2026-10-07T00:00:00+00:00", "evidence": "Innate immunity, Siglecs, Genomics", "method": "ucsd_profiles_research_keywords"}
+        record = {"researchSummary": "Not found", "researchKeywords": ["Innate immunity", "Siglecs", "Genomics"], "fieldEvidence": {"researchKeywords": [proof]}}
+        derive_research_tags(record)
+        self.assertEqual(record["researchAreas"], ["Genomics"])
+        self.assertEqual(record["fieldEvidence"]["researchAreas"][0]["method"], "explicit_topic_phrases_in_official_profile_keywords")

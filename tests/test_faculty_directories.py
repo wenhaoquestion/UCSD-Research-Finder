@@ -59,6 +59,51 @@ class FacultyDirectoryTests(unittest.TestCase):
         self.assertIn("email", additions[0]["fieldEvidence"])
         self.assertIn("officialProfileUrl", additions[0]["fieldEvidence"])
 
+    def test_directory_card_replaces_only_unverified_legacy_values(self):
+        row = listing(email="alice@ucsd.edu")
+        legacy = {"id": "legacy", "name": "Alice Smith", "department": "Physics", "email": "physics-office@ucsd.edu"}
+        _, patches, _ = faculty.build_evidence([row], [legacy])
+        self.assertEqual(patches["legacy"]["email"], "alice@ucsd.edu")
+        verified = {**legacy, "id": "verified", "fieldEvidence": {"email": [{"sourceUrl": "https://profiles.ucsd.edu/alice", "observedAt": "2026-10-01T00:00:00Z", "evidence": "physics-office@ucsd.edu"}]}}
+        _, patches, _ = faculty.build_evidence([row], [verified])
+        self.assertNotIn("email", patches["verified"])
+        same = {**verified, "id": "same", "email": "Alice@ucsd.edu"}
+        _, patches, _ = faculty.build_evidence([row], [same])
+        self.assertEqual(patches["same"]["fieldEvidence"]["email"]["method"], "explicit_person_card_value")
+
+    def test_shared_cms_cards_capture_title_email_and_research_groups_only(self):
+        body = """<main><h2><a href="#">Faculty</a></h2><ul>
+          <li class="profile-listing-card"><span class="profile-listing-data"><p class="h3"><a href="alice.html"><strong>Alice Smith</strong></a></p>
+          <p>Associate Teaching Professor<br/>MCC 246<br/><a href="mailto:asmith@ucsd.edu">asmith@ucsd.edu</a></p></span></li>
+          <li class="profile-listing-card"><span class="profile-listing-data"><h3><a href="bob.html">Bob Jones</a></h3>
+          Ph.D., Somewhere, 2010<br/> Professor<br/>Research Groups: <a href="https://economics.ucsd.edu/faculty-and-research/research-groups.html#Labor">Labor Economics</a>
+          <a href="https://twitter.com/bob">Follow</a></span></li></ul></main>"""
+        source = ("economics", "Economics", "https://economics.ucsd.edu/faculty-and-research/faculty-profiles/index.html", "profile-listing-card", "cascade")
+        alice, bob = faculty.card_records(source, {**META, "sourceUrl": source[2], "finalUrl": source[2]}, body)
+        self.assertEqual((alice["name"], alice["listedRole"], alice["email"]), ("Alice Smith", "Associate Teaching Professor", "asmith@ucsd.edu"))
+        self.assertEqual((bob["listedRole"], bob["researchAreas"], bob["email"]), ("Professor", ["Labor Economics"], ""))
+        self.assertTrue(bob["profileUrl"].endswith("/faculty-profiles/bob.html"))
+
+    def test_biology_feed_links_only_unique_usernames_and_keeps_evidenced_fields(self):
+        feed = json.dumps([
+            {"profileURL": "//biology.ucsd.edu/research/faculty/asmith", "hasProfile": True, "labURL": "https://smithlab.ucsd.edu/", "researchSummary": "Synaptic plasticity in developing cortical circuits", "sections": [{"title": "Neurobiology"}]},
+            {"profileURL": "//biology.ucsd.edu/research/faculty/shared", "hasProfile": True, "labURL": "", "researchSummary": "Ambiguous username entry text", "sections": []},
+        ])
+        professors = [
+            {"id": "a", "name": "Alice Smith", "department": "Biological Sciences", "email": "asmith@ucsd.edu", "officialProfileUrl": "https://catalog.ucsd.edu/faculty/BIOL.html",
+             "fieldEvidence": {"researchSummary": [{"sourceUrl": "https://smithlab.ucsd.edu/", "observedAt": "2026-10-01T00:00:00Z", "evidence": "x"}]}},
+            {"id": "b", "name": "Bo Shared", "department": "Biological Sciences", "email": "shared@ucsd.edu"},
+            {"id": "c", "name": "Cy Shared", "department": "Biological Sciences", "email": "shared@ucsd.edu"},
+            {"id": "d", "name": "Dee Smith", "department": "Physics", "email": "asmith@ucsd.edu"},
+        ]
+        patches, unmatched = faculty.biology_profile_patches({**META, "sourceUrl": faculty.BIOLOGY_PROFILES_FEED, "finalUrl": faculty.BIOLOGY_PROFILES_FEED}, feed, professors)
+        self.assertEqual(list(patches), ["a"])
+        self.assertEqual(unmatched, 1)
+        self.assertNotIn("researchSummary", patches["a"])
+        self.assertEqual(patches["a"]["officialProfileUrl"], "https://biology.ucsd.edu/research/faculty/asmith")
+        self.assertEqual(patches["a"]["researchAreasFromDirectory"], ["Neurobiology"])
+        self.assertEqual(patches["a"]["fieldEvidence"]["personalWebsiteUrl"]["identityMatchConfidence"], "medium")
+
     def test_public_physics_nonfaculty_row_is_excluded(self):
         body = json.dumps([{"first_name": "Alice", "last_name": "Smith", "employee_class": "Academic: Non-Faculty"}, {"first_name": "Bob", "last_name": "Smith", "employee_class": "Academic: Emeriti", "email": "bob@ucsd.edu", "display_title": "Research Professor"}])
         rows = faculty.physics_records(META, body)

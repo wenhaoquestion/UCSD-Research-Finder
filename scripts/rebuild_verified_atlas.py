@@ -225,27 +225,31 @@ def attach_evidence(record, field, evidence):
 
 
 def derive_research_tags(record):
-    """Combine evidenced directory labels and explicit phrases in research prose."""
-    directory_sources = record.get("fieldEvidence", {}).get("researchAreasFromDirectory", [])
-    if isinstance(directory_sources, dict):
-        directory_sources = [directory_sources]
+    """Combine evidenced directory labels and explicit phrases in research prose
+    or in the person's own official profile keywords."""
+    def evidence_list(field):
+        value = record.get("fieldEvidence", {}).get(field, [])
+        return [value] if isinstance(value, dict) else value
+
+    def phrase_areas(text):
+        return [label for label, pattern in RESEARCH_PHRASES.items() if re.search(r"\b(?:" + pattern + r")\b", text, re.I)]
+
+    directory_sources = evidence_list("researchAreasFromDirectory")
     areas = list(record.get("researchAreasFromDirectory", [])) if directory_sources else []
-    sources = record.get("fieldEvidence", {}).get("researchSummary", [])
-    if isinstance(sources, dict):
-        sources = [sources]
-    paragraph_areas = []
-    if sources and known(record.get("researchSummary")):
-        for label, pattern in RESEARCH_PHRASES.items():
-            if re.search(r"\b(?:" + pattern + r")\b", record["researchSummary"], re.I):
-                paragraph_areas.append(label)
-    areas = list(dict.fromkeys(areas + paragraph_areas))
-    if sources or directory_sources:
+    sources = evidence_list("researchSummary")
+    paragraph_areas = phrase_areas(record["researchSummary"]) if sources and known(record.get("researchSummary")) else []
+    keyword_sources = evidence_list("researchKeywords")
+    keyword_areas = phrase_areas("; ".join(record.get("researchKeywords", []))) if keyword_sources else []
+    areas = list(dict.fromkeys(areas + paragraph_areas + keyword_areas))
+    if sources or directory_sources or keyword_sources:
         record["researchAreas"] = areas
         record["fieldEvidence"].pop("researchAreas", None)
         for source in directory_sources:
             attach_evidence(record, "researchAreas", {**source, "method": "explicit_research_areas_in_official_directory"})
         for source in sources if paragraph_areas else []:
             attach_evidence(record, "researchAreas", {**source, "method": "explicit_topic_phrases_in_sourced_research_paragraph"})
+        for source in keyword_sources if keyword_areas else []:
+            attach_evidence(record, "researchAreas", {**source, "method": "explicit_topic_phrases_in_official_profile_keywords"})
 
 
 def merge_patch(record, patch):

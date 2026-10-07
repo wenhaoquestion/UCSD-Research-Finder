@@ -36,4 +36,6 @@ assert.equal(evaluate('buildIndex([{ displayName: "Example", links: [], teaching
   'unverified leads cannot enter the normal course search index');
 assert(evaluate('buildIndex([{displayName: "Example Professor", links: [], teaching: {courses: [{courseCode:"CSE 151A", title:"Machine Learning", term:"Fall 2026"}]}}])[0].haystack.includes("cse151a")'),
   'compact course-code queries must be searchable');
+assert(evaluate('buildIndex([{displayName: "Example", links: [], researchKeywords: ["Zika virus"]}])[0].haystack.includes("zika")'),
+  'official profile keywords must be searchable');
 console.log('PASS: shared-email identity, field verification, missing scores, and course-code indexing');

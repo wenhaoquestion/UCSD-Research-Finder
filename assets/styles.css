@@ -1382,6 +1382,35 @@ svg {
   color: var(--accent);
 }
 
+.keyword-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.keyword-label {
+  width: 100%;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.keyword-list button {
+  color: var(--ink-2);
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+
+.keyword-list button:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
 .publication-list {
   counter-reset: pub;
 }

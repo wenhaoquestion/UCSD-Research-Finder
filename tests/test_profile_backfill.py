@@ -212,3 +212,74 @@ class ProfileBackfillTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+PROFILES_PAGE = """<html><head><title>Alice Rescan | UCSD Profiles</title></head><body><div id="ctl00_divProfilesContentMain">
+<h1>Alice Rescan</h1><table><tr><th>Email</th><td><a href="mailto:arescan@ucsd.edu">arescan@ucsd.edu</a></td></tr></table>
+<div id="http://vivoweb.org/ontology/core#overview">Dr. Rescan studies how innate immune cells respond to emerging viral infections, using genomic and imaging approaches in human tissue.</div>
+<div id="http://vivoweb.org/ontology/core#freetextKeyword"><a href="#">Innate immunity</a>, <a href="#">Genomics</a>, <a href="#">Innate immunity</a></div>
+</div></body></html>"""
+
+
+class UcsdProfilesSectionTests(unittest.TestCase):
+    def parse(self, name="Alice Rescan", url="https://profiles.ucsd.edu/alice.rescan"):
+        meta = {"status": "ok", "sourceUrl": url, "finalUrl": url, "observedAt": STAMP}
+        return backfill.parse_profile({"id": "p", "name": name, "department": "Medicine", "officialProfileUrl": url}, meta, PROFILES_PAGE)[0]
+
+    def test_overview_and_keywords_are_captured_with_their_own_methods(self):
+        patch = self.parse()
+        self.assertEqual(patch["email"], "arescan@ucsd.edu")
+        self.assertTrue(patch["researchSummary"].startswith("Dr. Rescan studies"))
+        self.assertEqual(patch["fieldEvidence"]["researchSummary"]["method"], "ucsd_profiles_overview_section")
+        self.assertEqual(patch["researchKeywords"], ["Innate immunity", "Genomics"])
+        self.assertEqual(patch["fieldEvidence"]["researchKeywords"]["method"], "ucsd_profiles_research_keywords")
+
+    def test_sections_require_confirmed_identity_and_the_profiles_host(self):
+        self.assertNotIn("researchSummary", self.parse(name="Bob Someone Else"))
+        self.assertNotIn("researchKeywords", self.parse(url="https://medicine.ucsd.edu/alice"))
+
+
+class RescanTests(unittest.TestCase):
+    def capture(self):
+        capture, atlas = fixture()
+        capture["byProfessorId"]["p0"]["verification"] = {"status": "verified", "sourceUrl": "https://profiles.ucsd.edu/p0", "observedAt": STAMP}
+        for pid in ["p1", "p2"]:
+            capture["byProfessorId"][pid]["verification"]["status"] = "verified"
+            capture["byProfessorId"][pid]["verification"]["observedAt"] = "2026-10-09T00:00:00+00:00"
+        return capture, atlas
+
+    def test_rescan_selects_only_verified_profiles_observed_before_the_cutoff(self):
+        capture, atlas = self.capture()
+        cutoff = backfill.dt.datetime.fromisoformat("2026-10-05T00:00:00+00:00")
+        self.assertEqual([p["id"] for p in backfill.pending_profiles(capture, atlas)[0]], [])
+        self.assertEqual([p["id"] for p in backfill.pending_profiles(capture, atlas, cutoff)[0]], ["p0"])
+
+    def test_failed_rescan_keeps_the_earlier_verification_and_is_not_retried(self):
+        capture, atlas = self.capture()
+        cutoff = backfill.dt.datetime.fromisoformat("2026-10-05T00:00:00+00:00")
+        fetcher = FakeFetcher({"p0": "fetch_error"})
+        fetcher.fetch = lambda url, inner=fetcher.fetch: (lambda meta, body: ({**meta, "observedAt": "2026-10-07T00:00:00+00:00"}, body))(*inner(url))
+        output, summary, code = run(capture, atlas, fetcher, rescan_before=cutoff)
+        record = output["byProfessorId"]["p0"]
+        self.assertEqual(record["verification"]["status"], "verified")
+        self.assertEqual(record["email"], "p0@ucsd.edu")
+        self.assertEqual(record["lastRescanAttempt"]["status"], "fetch_error")
+        self.assertEqual(backfill.pending_profiles(output, atlas, cutoff)[0], [])
+
+
+SCRIPPS_PAGE = """<html><head><title>Alice Rescan | Scripps</title></head><body>
+<nav><a href="mailto:sioweb@ucsd.edu">Web team</a><a href="/research/topics">Research Topics</a></nav>
+<div role="main"><h1>RESCAN, ALICE</h1><div class="views-field views-field-research-topic"><span>Research Topics: </span>
+<a href="/research/topics/ocean-acoustics">Ocean Acoustics</a>, <a href="/research/topics/polar-ecology">Polar Ecology</a></div></div>
+<aside role="complementary"><div class="views-field views-field-ss-profile"><a href="https://arescan.scrippsprofiles.ucsd.edu/">Research Profile</a></div>
+<div class="views-field views-field--dir-email"><a href="mailto:arescan%40ucsd.edu">arescan@ucsd.edu</a></div></aside></body></html>"""
+
+
+class ScrippsProfileTests(unittest.TestCase):
+    def test_sidebar_contact_card_and_topics_belong_to_the_profile(self):
+        url = "https://scripps.ucsd.edu/profiles/arescan"
+        meta = {"status": "ok", "sourceUrl": url, "finalUrl": url, "observedAt": STAMP}
+        patch = backfill.parse_profile({"id": "p", "name": "Alice Rescan", "department": "SIO", "officialProfileUrl": url}, meta, SCRIPPS_PAGE)[0]
+        self.assertEqual(patch["email"], "arescan@ucsd.edu")
+        self.assertEqual(patch["researchKeywords"], ["Ocean Acoustics", "Polar Ecology"])
+        self.assertEqual(patch["personalWebsiteUrl"], "https://arescan.scrippsprofiles.ucsd.edu/")

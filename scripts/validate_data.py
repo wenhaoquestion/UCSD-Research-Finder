@@ -254,6 +254,12 @@ def validate_professor(record: Dict[str, object]) -> None:
     record_id = str(record["id"])
     if not str(record.get("name", "")).strip():
         fail(f"{record_id} missing professor name")
+    if "researchKeywords" in record:
+        keywords = record["researchKeywords"]
+        if not isinstance(keywords, list) or not all(isinstance(k, str) and k.strip() for k in keywords):
+            fail(f"{record_id}.researchKeywords must be a list of non-empty strings")
+        if keywords and not record.get("fieldEvidence", {}).get("researchKeywords"):
+            fail(f"{record_id}.researchKeywords requires field evidence")
     if not str(record.get("researchSummary", "")).strip():
         fail(f"{record_id} missing research summary")
     if not EMAIL_RE.search(str(record.get("email", ""))):

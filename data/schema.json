@@ -234,6 +234,11 @@
               "$ref": "#/$defs/rating"
             }
           }
+        },
+        "researchKeywords": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Research keywords the person lists on their official UCSD Profiles page. Searchable; only controlled-vocabulary matches become researchAreas."
         }
       }
     },

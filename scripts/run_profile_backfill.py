@@ -35,6 +35,9 @@ from refresh_labs import Fetcher, UA, canonical_url, now, parse_profile
 
 ROOT = Path(__file__).resolve().parents[1]
 HOST = "profiles.ucsd.edu"
+# Other official profile hosts may be re-scanned with --host; the same 10-second
+# spacing, same-host redirect rule, and atomic resume semantics apply.
+ALLOWED_HOSTS = {"profiles.ucsd.edu", "scripps.ucsd.edu"}
 DEFERRED = "deferred_crawl_delay"
 HOST_STOP_STATUSES = {"robots_denied", "robots_unavailable"}
 
@@ -204,7 +207,15 @@ def merge_labs(output, additions):
     return {url: lab["id"] for url, lab in by_url.items()}
 
 
-def pending_profiles(capture, atlas):
+def rescan_due(patch, rescan_before):
+    """A verified observation older than the cutoff, not already retried since."""
+    if not rescan_before or patch.get("verification", {}).get("status") != "verified":
+        return False
+    stamps = [patch["verification"].get("observedAt"), patch.get("lastRescanAttempt", {}).get("observedAt")]
+    return all(not stamp or dt.datetime.fromisoformat(stamp) < rescan_before for stamp in stamps)
+
+
+def pending_profiles(capture, atlas, rescan_before=None):
     people = {}
     for person in atlas.get("professors", []) + capture.get("professors", []):
         people.setdefault(person["id"], person)
@@ -215,7 +226,7 @@ def pending_profiles(capture, atlas):
     selected, unresolved, outside = [], [], []
     for pid, patch in sorted(capture["byProfessorId"].items()):
         verification = patch.get("verification", {})
-        if verification.get("status") != DEFERRED:
+        if verification.get("status") != DEFERRED and not rescan_due(patch, rescan_before):
             continue
         url = profile_url(verification.get("sourceUrl", ""))
         if not url or urllib.parse.urlsplit(url).path in {"", "/", "/robots.txt"}:
@@ -251,11 +262,11 @@ def update_stats(output):
         fetchStatuses=dict(collections.Counter(f.get("status", "unknown") for f in output["fetches"] if isinstance(f, dict))))
 
 
-def process_batch(capture, atlas, fetcher, *, maximum=500, max_seconds=5700, persist=None, emit=print, clock=time.monotonic, stopped=lambda: False):
+def process_batch(capture, atlas, fetcher, *, maximum=500, max_seconds=5700, persist=None, emit=print, clock=time.monotonic, stopped=lambda: False, rescan_before=None):
     """Pure merge boundaries and injectable I/O make resume/failure testable."""
     validate_capture(capture)
     output = copy.deepcopy(capture)
-    pending, unresolved, outside = pending_profiles(output, atlas)
+    pending, unresolved, outside = pending_profiles(output, atlas, rescan_before)
     chosen = pending[:maximum]
     start = clock()
     summary = {"schemaVersion": 1, "startedAt": now(), "updatedAt": now(), "runState": "in_progress", "eligibleAtStart": len(pending),
@@ -271,7 +282,7 @@ def process_batch(capture, atlas, fetcher, *, maximum=500, max_seconds=5700, per
     def save():
         summary["updatedAt"] = now()
         summary["elapsedSeconds"] = round(clock() - start, 3)
-        summary["remainingDeferredProfiles"] = len(pending_profiles(output, atlas)[0])
+        summary["remainingDeferredProfiles"] = len(pending_profiles(output, atlas, rescan_before)[0])
         summary["wireRequests"] = getattr(fetcher, "wire_requests", None)
         output["generatedAt"] = summary["updatedAt"]
         output["profileBackfill"] = {"latestRun": copy.deepcopy(summary), "previousRuns": run_history}
@@ -303,7 +314,15 @@ def process_batch(capture, atlas, fetcher, *, maximum=500, max_seconds=5700, per
             meta = {"sourceUrl": person["officialProfileUrl"], "observedAt": now(), "status": "fetch_error", "error": str(error)[:300]}
             patch, labs = parse_profile(person, meta, "")
         pid = person["id"]
-        output["byProfessorId"][pid] = merge_profile_patch(output["byProfessorId"][pid], patch)
+        previous = output["byProfessorId"][pid]
+        if patch["verification"].get("status") != "verified" and previous.get("verification", {}).get("status") == "verified":
+            # A failed re-scan (timeout, 5xx, changed heading) must not discard
+            # an earlier successful observation; the attempt is still recorded.
+            kept = copy.deepcopy(previous)
+            kept["lastRescanAttempt"] = copy.deepcopy(patch["verification"])
+            output["byProfessorId"][pid] = kept
+        else:
+            output["byProfessorId"][pid] = merge_profile_patch(previous, patch)
         lab_ids = merge_labs(output, labs)
         for affiliation in output["byProfessorId"][pid].get("labAffiliations", []):
             target = lab_ids.get(url_identity(affiliation["url"]))
@@ -336,6 +355,7 @@ def process_batch(capture, atlas, fetcher, *, maximum=500, max_seconds=5700, per
 
 
 def main(argv=None):
+    global HOST
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("--atlas", type=Path, default=ROOT / "data/research-atlas.json")
     cli.add_argument("--evidence", type=Path, default=ROOT / "data/ucsd/lab-evidence.json", help="Full completed baseline or previous full checkpoint")
@@ -347,7 +367,10 @@ def main(argv=None):
     cli.add_argument("--max-seconds", type=float, default=5700, help="Wall-clock budget; 0 disables the budget")
     cli.add_argument("--timeout", type=float, default=25)
     cli.add_argument("--dry-run", action="store_true", help="Count eligible records without network or file changes")
+    cli.add_argument("--host", default=HOST, choices=sorted(ALLOWED_HOSTS), help="Official profile host to process")
+    cli.add_argument("--rescan-before", type=dt.datetime.fromisoformat, help="Also re-fetch verified profiles last observed before this ISO timestamp (with timezone), e.g. after the parser learns new fields")
     args = cli.parse_args(argv)
+    HOST = args.host
     if args.max_profiles < 1 or args.max_seconds < 0 or args.timeout <= 0:
         cli.error("max-profiles and timeout must be positive; max-seconds must be non-negative")
     args.out = args.out or args.evidence
@@ -360,7 +383,7 @@ def main(argv=None):
     atlas = json.loads(args.atlas.read_text())
     validate_capture(capture)
     if args.dry_run:
-        pending, unresolved, outside = pending_profiles(capture, atlas)
+        pending, unresolved, outside = pending_profiles(capture, atlas, args.rescan_before)
         print(json.dumps({"dryRun": True, "eligibleProfiles": len(pending), "selectedProfiles": min(args.max_profiles, len(pending)), "unresolvedProfessorIds": unresolved,
             "outsideProfileHostIds": outside, "estimatedMinimumBatchSeconds": min(args.max_profiles, len(pending)) * 10,
             "fullCaptureProfessorIds": len(capture["byProfessorId"]), "output": str(args.out)}, ensure_ascii=False, indent=2))
@@ -388,7 +411,7 @@ def main(argv=None):
             atomic_json(args.progress, {k: v for k, v in summary.items() if k != "attemptedProfessorIds"})
         try:
             _, _, code = process_batch(capture, atlas, ProfileFetcher(args.cache, args.timeout), maximum=args.max_profiles,
-                max_seconds=args.max_seconds, persist=persist, emit=lambda value: print(value, flush=True), stopped=lambda: stop[0])
+                max_seconds=args.max_seconds, persist=persist, emit=lambda value: print(value, flush=True), stopped=lambda: stop[0], rescan_before=args.rescan_before)
             return code
         finally:
             for s, handler in old_handlers.items():

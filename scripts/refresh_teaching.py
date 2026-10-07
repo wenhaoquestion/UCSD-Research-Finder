@@ -76,6 +76,35 @@ for _quarter, _year, _term_code in [("fall", 2026, "FA26"), ("winter", 2027, "WI
             f"https://lit-courses.ucsd.edu/cms-reports/cms-course_desc.php?acmc={_query}&qtr={_term_code}", "literature",
             term=f"{_quarter.title()} {_year}", landingUrl=f"https://literature.ucsd.edu/courses/courseofferings/2026-2027-{_quarter}-{_level}.html"))
 
+# The registrar's Schedule of Classes lists the instructor of record for every
+# section campus-wide. Each Schedule department maps to the one atlas department
+# whose faculty own its courses; programs and colleges taught across departments
+# are not mapped, because same-department matching would have nothing to bind to.
+SOC_BASE = "https://act.ucsd.edu/scheduleOfClasses/"
+SOC_LANDING = SOC_BASE + "scheduleOfClassesStudent.htm"
+SOC_DEPARTMENTS = {
+    "ANTH": "Anthropology", "ASTR": "Astronomy and Astrophysics", "BENG": "Bioengineering",
+    "BIOL": "Biological Sciences", "CMM": "Cellular & Molecular Medicine", "CHEM": "Chemistry & Biochemistry",
+    "COGS": "Cognitive Science", "COMM": "Communication", "CSE": "Computer Science and Engineering",
+    "DSC": "Halicioğlu Data Science Institute", "DERM": "Dermatology", "ECON": "Economics",
+    "EDS": "Education Studies", "ECE": "Electrical and Computer Engineering", "EMED": "Emergency Medicine",
+    "ETHN": "Ethnic Studies", "GPS": "Global Policy and Strategy", "HIST": "History", "LING": "Linguistics",
+    "LIT": "Literature", "MATH": "Mathematics", "MAE": "Mechanical & Aerospace Engineering", "MED": "Medicine",
+    "MUS": "Music", "NENG": "NanoEngineering", "NEU": "Neurosciences",
+    "OBG": "Obstetrics, Gynecology & Reproductive Sciences", "RMED": "Obstetrics, Gynecology & Reproductive Sciences",
+    "PATH": "Pathology", "PEDS": "Pediatrics", "PHAR": "Pharmacology", "CLPH": "Pharmacy and Pharmaceutical Sciences",
+    "PHIL": "Philosophy", "PHYS": "Physics", "POLI": "Political Science", "PSY": "Psychiatry", "PSYC": "Psychology",
+    "SPH": "Public Health", "RMAS": "Radiation Medicine", "RAD": "Radiology", "RSM": "Rady School of Management",
+    "SIO": "Scripps Institution of Oceanography", "SOC": "Sociology", "SE": "Structural Engineering",
+    "THEA": "Theatre & Dance", "USP": "Urban Studies & Planning", "UROL": "Urology", "VIS": "Visual Arts",
+}
+SOC_QUARTERS = {"FA": "Fall", "WI": "Winter", "SP": "Spring"}
+# Independent study, internships, exams, and review sessions list supervisors or
+# proctors rather than a taught class.
+SOC_TEACHING_TYPES = {"LE", "SE", "LA", "DI", "ST", "TU", "CL", "PR", "FW", "CO", "PB"}
+SOC_EXCLUDED_TITLE = re.compile(r"\b(?:independent study|directed (?:group )?study|special stud(?:y|ies)|thesis|dissertation|teaching apprentice|graduate research|doctoral research|honors research)\b", re.I)
+SOC_PAGE_RE = re.compile(r"Page\s*\(\s*\d+(?:&nbsp;|\s)+of(?:&nbsp;|\s)+(\d+)\s*\)")
+
 
 def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
@@ -439,6 +468,11 @@ def matching_professors(name, department, professors):
             full = name_tokens(p["name"])
             if len(full) < 2 or full[-1] != tokens[-1]:
                 continue
+            # Two different explicit middle initials name two different people.
+            supplied_initials = [t for t in tokens[1:-1] if len(t) == 1]
+            roster_initials = [t for t in full[1:-1] if len(t) == 1]
+            if supplied_initials and roster_initials and supplied_initials[0] != roster_initials[0]:
+                continue
             if (len(tokens[0]) == 1 and full[0].startswith(tokens[0])) or full[0] == tokens[0]:
                 # Every supplied non-initial token must occur in order.
                 supplied = [t for t in tokens[1:-1] if len(t) > 1]
@@ -524,6 +558,138 @@ def fetch(source, cache_dir, refresh):
         return source, "", meta
 
 
+def soc_term_label(code):
+    return f"{SOC_QUARTERS[code[:2]]} 20{code[2:]}"
+
+
+def soc_strip(fragment):
+    return clean(re.sub(r"<[^>]+>", " ", re.sub(r"&nbsp;", " ", fragment)))
+
+
+def parse_soc_pages(pages):
+    """Return one row per course, term-independent: code, title, and each
+    instructor with the meeting types they are listed on."""
+    courses = {}
+    course = None
+    for page in pages:
+        for match in re.finditer(r"<tr\b([^>]*)>(.*?)</tr>", page, re.S):
+            attrs, body = match.group(1), match.group(2)
+            if 'class="crsheader"' in body:
+                course_id = re.search(r"courseId=([A-Z]+)\s*(\d+[A-Z]*)", body)
+                title = re.search(r'<span class="boldtxt">(.*?)</span>', body, re.S)
+                if course_id and title:
+                    code = course_code(f"{course_id[1]} {course_id[2]}")
+                    course = courses.setdefault(code, {"courseCode": code, "title": soc_strip(title[1]), "instructors": {}})
+                continue
+            if course is None or not re.search(r'class="(?:sectxt|nonenrtxt)"', attrs) or "Cancelled" in body:
+                continue
+            cells = re.findall(r"<td\b[^>]*>(.*?)</td>", body, re.S)
+            kind = next((i for i, cell in enumerate(cells) if 'id="insTyp"' in cell), None)
+            if kind is None or kind + 6 >= len(cells):
+                continue
+            meeting = soc_strip(cells[kind])
+            if meeting not in SOC_TEACHING_TYPES or SOC_EXCLUDED_TITLE.search(course["title"]):
+                continue
+            section = soc_strip(cells[kind + 1])
+            for line in re.split(r"<br\s*/?>", cells[kind + 6]):
+                for name in instructor_names(soc_strip(line)):
+                    course["instructors"].setdefault(name, []).append(f"{meeting} {section}".strip())
+    return [row for row in courses.values() if row["instructors"]]
+
+
+def soc_sections(sections):
+    unique_sections = sorted(set(sections))
+    return ", ".join(unique_sections[:6]) + (f" +{len(unique_sections) - 6} more sections" if len(unique_sections) > 6 else "")
+
+
+class SocClient:
+    """Sequential, cookie-preserving client: result pages 2..N belong to the
+    session's most recent query."""
+    def __init__(self, delay):
+        import http.cookiejar
+        self.delay = delay
+        self.opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+        self._last = 0.0
+
+    def get(self, url):
+        import time
+        wait = self._last + self.delay - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        request = urllib.request.Request(url, headers={"User-Agent": "ResearchAtlas/2.0 (public academic schedules)"})
+        try:
+            with self.opener.open(request, timeout=45) as response:
+                return response.read(4_000_001).decode("utf-8", "replace")
+        finally:
+            self._last = time.monotonic()
+
+
+def soc_available_terms(client, limit):
+    page = client.get(SOC_LANDING)
+    codes = re.findall(r'<option value="((?:FA|WI|SP)\d{2})"', page)
+    terms = []
+    for code in codes:
+        if json.loads(client.get(f"{SOC_BASE}subject-list.json?selectedTerm={code}")):
+            terms.append(code)
+        if len(terms) == limit:
+            break
+    return terms
+
+
+def soc_query_url(term, department):
+    return f"{SOC_BASE}scheduleOfClassesStudentResult.htm?selectedTerm={term}&tabNum=tabs-dept&selectedDepartments={department}&_selectedDepartments=1"
+
+
+def fetch_soc(client, term, department, cache_dir, refresh):
+    cache_file = cache_dir / "soc" / f"{term}-{department}.json"
+    url = soc_query_url(term, department)
+    if cache_file.exists() and not refresh:
+        cached = json.loads(cache_file.read_text())
+        return cached["pages"], {**cached["meta"], "fromCache": True}
+    meta = {"id": f"soc-{term}-{department}", "url": url, "landingUrl": SOC_LANDING, "department": SOC_DEPARTMENTS[department],
+            "scheduleDepartment": department, "term": soc_term_label(term),
+            "observedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "fromCache": False}
+    try:
+        pages = [client.get(url)]
+        total = SOC_PAGE_RE.search(pages[0])
+        for number in range(2, int(total[1]) + 1 if total else 1):
+            pages.append(client.get(f"{SOC_BASE}scheduleOfClassesStudentResult.htm?page={number}"))
+        # Email lookup tokens identify personnel records and are not needed.
+        pages = [re.sub(r"pid=[^'\")]+", "pid=", page) for page in pages]
+        meta.update(status="fetched", pageCount=len(pages), sha256=hashlib.sha256("".join(pages).encode()).hexdigest())
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        cache_file.write_text(json.dumps({"meta": meta, "pages": pages}, ensure_ascii=False))
+        return pages, meta
+    except Exception as error:
+        meta.update(status="fetch_failed", error=str(error)[:500])
+        return [], meta
+
+
+def collect_soc(terms, cache_dir, refresh, delay, as_of):
+    client = SocClient(delay)
+    if terms == ["auto"]:
+        terms = soc_available_terms(client, 3)
+    records, sources = [], []
+    for term in terms:
+        for department in SOC_DEPARTMENTS:
+            pages, meta = fetch_soc(client, term, department, cache_dir, refresh)
+            parsed = []
+            source = {"id": meta["id"], "department": meta["department"], "url": meta["url"], "landingUrl": SOC_LANDING}
+            for row in parse_soc_pages(pages):
+                for name, sections in row["instructors"].items():
+                    emit(parsed, source, meta, as_of, row["courseCode"], row["title"], meta["term"], name,
+                         f"{meta['term']} | {row['courseCode']} {row['title']} | {soc_sections(sections)} | {name}",
+                         assignmentBasis="official_schedule_of_classes", isTentative=False,
+                         meetingTypes=sorted({s.split()[0] for s in sections}))
+            records.extend(parsed)
+            if meta["status"] == "fetched" or meta.get("fromCache"):
+                meta["status"] = "parsed" if parsed else "no_instructor_assignments"
+            meta["assignmentCount"] = len(parsed)
+            sources.append(meta)
+            print(f"{meta['id']}: {meta['status']} ({len(parsed)} assignments, {meta.get('pageCount', 0)} pages)", flush=True)
+    return records, sources
+
+
 def coverage(by_id, unmatched, sources, professor_count):
     linked = [item for rows in by_id.values() for item in rows]
     return {
@@ -553,10 +719,31 @@ def main():
     cli.add_argument("--refresh", action="store_true", help="Fetch sources again; preserve actual observation timestamps when using cache")
     cli.add_argument("--rematch", action="store_true", help="Rebind existing output only, with no network requests")
     cli.add_argument("--as-of", default=dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat(), help="Client date used to classify advertised terms")
+    cli.add_argument("--soc-terms", default="auto", help="Comma-separated Schedule of Classes term codes (e.g. FA25,WI26,SP26); 'auto' uses the three latest published quarters")
+    cli.add_argument("--soc-delay", type=float, default=1.0, help="Seconds between Schedule of Classes requests")
+    cli.add_argument("--no-soc", action="store_true", help="Skip the campus Schedule of Classes")
+    cli.add_argument("--soc-only", action="store_true", help="Collect only the Schedule of Classes; keep every other source's saved evidence and observation dates")
     args = cli.parse_args()
     as_of = dt.date.fromisoformat(args.as_of)
     professors = json.loads(args.atlas.read_text())["professors"]
-    if args.rematch:
+    if args.soc_only:
+        # Department sources keep their saved rows untouched; only the Schedule
+        # of Classes is (re)collected and its previous rows are replaced.
+        output = json.loads(args.output.read_text())
+        is_soc = lambda row: str(row.get("sourceId", row.get("id", ""))).startswith("soc-")
+        records = [row for rows in output["byProfessorId"].values() for row in rows] + output["unmatchedAssignments"]
+        records = [{k: v for k, v in row.items() if k not in {"matchMethod", "matchStatus", "candidateProfessorIds", "matchConfidence", "verificationStatus"}} for row in records if not is_soc(row)]
+        for row in records:
+            row["status"] = term_status(row["term"], as_of)
+        soc_records, soc_sources = collect_soc(args.soc_terms.split(","), args.cache_dir, args.refresh, args.soc_delay, as_of)
+        records += soc_records
+        sources = [meta for meta in output["sources"] if not is_soc(meta)] + soc_sources
+        output["scope"] = "UCSD public departmental teaching schedules and the campus Schedule of Classes"
+        output["warnings"] = [w for w in output["warnings"] if not w.startswith(("Psychology undergraduate", "Schedule of Classes rows"))] + [
+            "Psychology undergraduate and MAE department pages expose course availability without instructor names; the campus Schedule of Classes supplies their instructors of record.",
+            "Schedule of Classes rows record the instructor of record listed for past quarters. Independent study, internships, exams and review sessions are excluded. Programs and colleges taught across departments are not mapped.",
+        ]
+    elif args.rematch:
         output = json.loads(args.output.read_text())
         records = [row for rows in output["byProfessorId"].values() for row in rows] + output["unmatchedAssignments"]
         records = [{k: v for k, v in row.items() if k not in {"matchMethod", "matchStatus", "candidateProfessorIds", "matchConfidence", "verificationStatus"}} for row in records]
@@ -590,14 +777,19 @@ def main():
                 meta["landingUrl"] = source["landingUrl"]
             sources.append(meta)
             print(f"{source['id']}: {meta['status']} ({meta.get('assignmentCount', 0)} assignments)", flush=True)
-        output = {"schemaVersion": "1.0.0", "scope": "UCSD public departmental teaching schedules", "warnings": [
+        if not args.no_soc:
+            soc_records, soc_sources = collect_soc(args.soc_terms.split(","), args.cache_dir, args.refresh, args.soc_delay, as_of)
+            records.extend(soc_records)
+            sources.extend(soc_sources)
+        output = {"schemaVersion": "1.0.0", "scope": "UCSD public departmental teaching schedules and the campus Schedule of Classes", "warnings": [
             "Coverage is partial. Departments and instructors not represented here have not been exhaustively checked.",
             "Department schedules are tentative. Scheduled/historical classify the advertised term, not proof of actual or completed teaching.",
             "Catalog pages are used only to supply course titles after a teaching assignment is separately evidenced.",
             "Surname matching is limited to a unique person in the same department; ambiguous and unrecognized names remain unmatched.",
             "Surname-only links are low-confidence candidates marked needs_review; they are not verified instructor identities.",
             "A professor may match an additional department only when an observed faculty-directory listing explicitly supports that department.",
-            "Psychology undergraduate and MAE schedules currently expose course availability without instructor names.",
+            "Psychology undergraduate and MAE department pages expose course availability without instructor names; the campus Schedule of Classes supplies their instructors of record.",
+            "Schedule of Classes rows record the instructor of record listed for past quarters. Independent study, internships, exams and review sessions are excluded. Programs and colleges taught across departments are not mapped.",
         ]}
     by_id, unmatched = bind(records, professors)
     output.update(generatedAt=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), asOf=args.as_of, sources=sources, byProfessorId=by_id, unmatchedAssignments=unmatched, coverage=coverage(by_id, unmatched, sources, len(professors)))

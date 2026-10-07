@@ -655,6 +655,7 @@ function buildIndex(records) {
       ...coursesFor(record).flatMap((course) => [course.courseCode, String(course.courseCode || "").replace(/\s+/g, ""), course.title, course.term, course.status]),
       ...Object.values(record.ratings || {}).map((rating) => rating.platform),
       ...(record.researchAreas || []),
+      ...(record.researchKeywords || []),
       ...(record.links || []).flatMap(([label, url]) => [label, url]),
       ...(record.sourceUrls || []),
     ];
@@ -937,6 +938,8 @@ function rowMetrics(record) {
 function rowTags(record) {
   const departments = new Set(record.departments.map(normalize));
   const tags = record.researchAreas.filter((area) => !departments.has(normalize(area)));
+  // Profile keywords fill in for records whose prose matched no controlled area.
+  if (tags.length < 3) tags.push(...(record.researchKeywords || []).slice(0, 4 - tags.length));
   if (record.recordType === "lab" && isKnown(record.principalInvestigator)) tags.unshift(`PI ${record.principalInvestigator}`);
   if (record.recordType === "professor" && record.facts.courses) {
     tags.unshift(...unique(coursesFor(record).map((course) => course.courseCode)).slice(0, 3));
@@ -1269,7 +1272,19 @@ function detailOverview(record) {
       tags.append(tag);
     }
   }
-  return detailSection("Overview", body, tags);
+  let keywords = null;
+  if (record.researchKeywords?.length) {
+    keywords = make("div", "keyword-list");
+    keywords.append(make("span", "keyword-label", "Profile keywords"));
+    for (const keyword of record.researchKeywords) {
+      const button = make("button", "", keyword);
+      button.type = "button";
+      button.dataset.searchKeyword = keyword;
+      button.title = `Search for ${keyword}`;
+      keywords.append(button);
+    }
+  }
+  return detailSection("Overview", body, tags, keywords);
 }
 
 function teachingDetails(record) {
@@ -1820,7 +1835,7 @@ function bindEvents() {
 
   // Delegated clicks: row titles, saved list, save toggles, tags, copy buttons.
   document.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-open-id], [data-save-id], [data-area-filter], [data-copy], [data-copy-record-link]");
+    const target = event.target.closest("[data-open-id], [data-save-id], [data-area-filter], [data-search-keyword], [data-copy], [data-copy-record-link]");
     if (!target) return;
     if (target.dataset.saveId) {
       toggleSaved(target.dataset.saveId);
@@ -1829,6 +1844,11 @@ function bindEvents() {
       openDetail(target.dataset.openId);
     } else if (target.dataset.areaFilter) {
       state.area = target.dataset.areaFilter;
+      syncControls();
+      closeSheet();
+      update({ scroll: true });
+    } else if (target.dataset.searchKeyword) {
+      state.query = target.dataset.searchKeyword;
       syncControls();
       closeSheet();
       update({ scroll: true });

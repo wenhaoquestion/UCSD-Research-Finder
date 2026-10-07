@@ -42,6 +42,26 @@ class TeachingTests(unittest.TestCase):
         self.assertEqual([p["id"] for p in teaching.matching_professors("Alice Smith", "Physics", professors)[0]], ["1"])
         self.assertFalse(teaching.matching_professors("Alice Smith", "Chemistry", professors)[0])
 
+    def test_conflicting_middle_initials_do_not_match(self):
+        professors = [{"id": "1", "name": "Janis H. Jenkins", "department": "Anthropology"}]
+        self.assertFalse(teaching.matching_professors("Jenkins, Janis A", "Anthropology", professors)[0])
+        self.assertEqual(teaching.matching_professors("Jenkins, Janis H", "Anthropology", professors)[1], "exact_name_same_department")
+        self.assertEqual(teaching.matching_professors("Jenkins, Janis", "Anthropology", professors)[1], "unique_first_last_same_department")
+
+    def test_schedule_of_classes_rows_keep_taught_sections_only(self):
+        page = """<table><tr><td class="crsheader">MAE</td><td class="crsheader">8</td><td class="crsheader"><a href="#"><span class="boldtxt">MATLAB Program</span></a>
+          <span onclick="x('scheduleOfClassesPreReq.htm?termCode=SP26&courseId=MAE8 ')">Prerequisites</span></td></tr>
+          <tr class="sectxt"><td></td><td></td><td></td><td><span id="insTyp" title="Lecture">LE</span></td><td>A00</td><td>TuTh</td><td>12:30p</td><td>CENTR</td><td>216</td>
+          <td><a href="#">Arefiev, Alexey</a><br><a href="#">Mullin, Jennifer S</a></td></tr>
+          <tr class="sectxt"><td></td><td></td><td></td><td><span id="insTyp" title="Final">FI</span></td><td></td><td>M</td><td>11:30a</td><td>CENTR</td><td>216</td><td>Proctor, Pat</td></tr>
+          <tr class="sectxt"><td></td><td></td><td></td><td><span id="insTyp">DI</span></td><td>A01</td><td>Cancelled</td><td></td><td></td><td></td><td>Ghost, Gary</td></tr>
+          <tr><td class="crsheader">MAE</td><td class="crsheader">199</td><td class="crsheader"><span class="boldtxt">Independent Study</span>
+          <span onclick="x('scheduleOfClassesPreReq.htm?termCode=SP26&courseId=MAE199 ')">P</span></td></tr>
+          <tr class="sectxt"><td></td><td></td><td></td><td><span id="insTyp">LE</span></td><td>001</td><td></td><td></td><td></td><td></td><td>Arefiev, Alexey</td></tr></table>"""
+        rows = teaching.parse_soc_pages([page])
+        self.assertEqual([(r["courseCode"], r["title"], sorted(r["instructors"])) for r in rows],
+                         [("MAE 8", "MATLAB Program", ["Arefiev, Alexey", "Mullin, Jennifer S"])])
+
     def test_surname_only_link_is_not_verified(self):
         record = {"courseCode": "MATH 1", "title": "Title", "term": "Fall 2026", "instructorName": "Smith", "sourceId": "one", "department": "Mathematics"}
         linked, unmatched = teaching.bind([record], [{"id": "1", "name": "Alice Smith", "department": "Mathematics"}])
