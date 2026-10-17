@@ -1,0 +1,971 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T13:31:40.603295+00:00",
+  "isFinalIdentityReview": false,
+  "wireRequests": 0,
+  "candidateAtlasSha256": "19eb63ac2951ae925b88490ab227bf8adb6d726631c015b183096ff81bb7eee5",
+  "actualPrimaryMetadataCapturesChecked": 877,
+  "scope": "Surface comparison of retained labels and own profile headings. One verified malformed secondary research-link label is resolved through its original named faculty card and own linked subject. All other differences remain separately classified review leads. No legal-name-change or current-employment claim.",
+  "reviewStateCounts": {
+    "independent_source_chain_review_required": 40,
+    "resolved_secondary_research_label_to_existing_person": 1,
+    "same_letters_with_spacing_difference": 3,
+    "same_normalized_published_name": 5,
+    "profile_heading_not_full_person_name": 1
+  },
+  "entries": [
+    {
+      "professorId": "ucsd-faculty-alex-frano-pereira",
+      "nameAsRetained": "Alex Fraño Pereira",
+      "ownProfileNameAsDisplayed": "Alex Frano",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/alex.franopereira",
+        "sourceUrl": "https://profiles.ucsd.edu/alex.franopereira",
+        "observedAt": "2026-10-16T01:06:10+00:00",
+        "bodySha256": "638dc9295b6c9772397fb57d761d9660e91486745ec6b714e18f8c258f81a2fe",
+        "nameAsDisplayed": "Alex Frano",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/alex.franopereira",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184048/184048.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-faculty-gene-yeo",
+      "nameAsRetained": "Gene Yeo",
+      "ownProfileNameAsDisplayed": "Eugene Yeo",
+      "ownCapture": {
+        "requestedUrl": "http://profiles.ucsd.edu/Eugene.Yeo",
+        "sourceUrl": "https://profiles.ucsd.edu/Eugene.Yeo",
+        "observedAt": "2026-10-16T05:30:49+00:00",
+        "bodySha256": "2c0250b6a4cbda29e9f8066733745152aa826c6cb5195e2064982a9a8ca12779",
+        "nameAsDisplayed": "Eugene Yeo",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/eugene.yeo",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/171379/171379.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-bioengineering-king-research",
+      "nameAsRetained": "King Research",
+      "ownProfileNameAsDisplayed": "Kevin King",
+      "ownCapture": {
+        "requestedUrl": "http://profiles.ucsd.edu/kevin.king",
+        "sourceUrl": "https://profiles.ucsd.edu/kevin.king",
+        "observedAt": "2026-10-16T05:31:10+00:00",
+        "bodySha256": "3913f2e1ae3276e150bbc50888b03fbf70617db8123faa780eb1c18cd84f7861",
+        "nameAsDisplayed": "Kevin King",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/kevin.king",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/187194/187194.rdf"
+      },
+      "reviewStatus": "resolved_secondary_research_label_to_existing_person",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false,
+      "resolvedTargetProfessorId": "ucsd-bioengineering-kevin-king",
+      "resourceLabelBinding": {
+        "kind": "misparsed_research_link_in_named_faculty_card",
+        "roster": {
+          "requestedUrl": "http://be.ucsd.edu/faculty",
+          "sourceUrl": "https://be.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T05:30:11+00:00",
+          "bodySha256": "1f62c2b41b7d970d7e0f39679c2374c11aea40db436afda4e14e42e07afcd4e3",
+          "cardTag": "div",
+          "cardClass": "faculty-profile",
+          "headingTag": "h3",
+          "nameAsDisplayed": "Kevin King",
+          "cardText": "Kevin King Associate Professor King Research",
+          "roleAsListed": "Associate Professor King Research",
+          "primaryRawHref": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+          "secondaryLabel": "King Research",
+          "secondaryRawHref": "http://profiles.ucsd.edu/kevin.king"
+        },
+        "ownProfile": {
+          "requestedUrl": "http://profiles.ucsd.edu/kevin.king",
+          "sourceUrl": "https://profiles.ucsd.edu/kevin.king",
+          "observedAt": "2026-10-16T05:31:10+00:00",
+          "bodySha256": "3913f2e1ae3276e150bbc50888b03fbf70617db8123faa780eb1c18cd84f7861",
+          "nameAsDisplayed": "Kevin King",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/kevin.king",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/187194/187194.rdf"
+        },
+        "scope": "Correct a secondary research-link label parsed as a person; preserve both original records and all old observations. No legal-name-change, current-employment or catalog-initial expansion claim."
+      },
+      "reviewArtifact": "person-identity-review-20261016.json",
+      "preferredTargetNameChanged": false,
+      "originalIdAndWholeRecordPreserved": true
+    },
+    {
+      "professorId": "ucsd-communication-dee-dee-halleck",
+      "nameAsRetained": "Dee Dee Halleck",
+      "ownProfileNameAsDisplayed": "Deedee Halleck",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/deedee.halleck",
+        "sourceUrl": "https://profiles.ucsd.edu/deedee.halleck",
+        "observedAt": "2026-10-16T09:10:31+00:00",
+        "bodySha256": "f77aba376dbe755be45844b3967dc004f0d4fabec0580b0a6e673e9a90e41c45",
+        "nameAsDisplayed": "Deedee Halleck",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/deedee.halleck",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/193741/193741.rdf"
+      },
+      "reviewStatus": "same_letters_with_spacing_difference",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-dermatology-matt-hangauer",
+      "nameAsRetained": "Matt Hangauer",
+      "ownProfileNameAsDisplayed": "Matthew Hangauer",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/matthew.hangauer",
+        "sourceUrl": "https://profiles.ucsd.edu/matthew.hangauer",
+        "observedAt": "2026-10-16T01:07:10+00:00",
+        "bodySha256": "34df345d3074b013cf768e693db7b779e61de281c4654005a798d03349d088da",
+        "nameAsDisplayed": "Matthew Hangauer",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/matthew.hangauer",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/27125394/27125394.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-emergency-medicine-charles-o-connell",
+      "nameAsRetained": "Charles O'Connell",
+      "ownProfileNameAsDisplayed": "Charles O'connell",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/charles.oconnell",
+        "sourceUrl": "https://profiles.ucsd.edu/charles.oconnell",
+        "observedAt": "2026-10-16T01:07:40+00:00",
+        "bodySha256": "a27de6218ad624ddae1b109dfee774139163631ea96a448afebc05de7c82086c",
+        "nameAsDisplayed": "Charles O'connell",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/charles.oconnell",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184005/184005.rdf"
+      },
+      "reviewStatus": "same_normalized_published_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-emergency-medicine-doug-ballesteros",
+      "nameAsRetained": "Doug Ballesteros",
+      "ownProfileNameAsDisplayed": "Douglas Ballesteros",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/douglas.ballesteros",
+        "sourceUrl": "https://profiles.ucsd.edu/douglas.ballesteros",
+        "observedAt": "2026-10-16T01:07:50+00:00",
+        "bodySha256": "4db57241d0280e9486bd7d9a1229827f0ec5559cd2cfe6012fe2e84d4459612d",
+        "nameAsDisplayed": "Douglas Ballesteros",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/douglas.ballesteros",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/38182395/38182395.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-emergency-medicine-frannie-rudolf",
+      "nameAsRetained": "Frannie Rudolf",
+      "ownProfileNameAsDisplayed": "Frances Rudolf",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/frances.rudolf",
+        "sourceUrl": "https://profiles.ucsd.edu/frances.rudolf",
+        "observedAt": "2026-10-16T01:08:20+00:00",
+        "bodySha256": "04704220067a204703d2d64e1431feba737824386929e9292396a02c575221e7",
+        "nameAsDisplayed": "Frances Rudolf",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/frances.rudolf",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/73514160/73514160.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-emergency-medicine-nico-kahl",
+      "nameAsRetained": "Nico Kahl",
+      "ownProfileNameAsDisplayed": "Nicolas Kahl",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/nicolas.kahl",
+        "sourceUrl": "https://profiles.ucsd.edu/nicolas.kahl",
+        "observedAt": "2026-10-16T01:08:40+00:00",
+        "bodySha256": "3acf9ea57938024413f01bc117ab63f9465535a155338f4762553e33c931f7d3",
+        "nameAsDisplayed": "Nicolas Kahl",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/nicolas.kahl",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/132971142/132971142.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-emergency-medicine-ted-chan",
+      "nameAsRetained": "Ted Chan",
+      "ownProfileNameAsDisplayed": "Theodore Chan",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/theodore.chan",
+        "sourceUrl": "https://profiles.ucsd.edu/theodore.chan",
+        "observedAt": "2026-10-16T01:09:00+00:00",
+        "bodySha256": "dab9df3b7b75b5e28011ed4b6b6d28879f27b7c9971de4480a810906d10eff12",
+        "nameAsDisplayed": "Theodore Chan",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/theodore.chan",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/192138/192138.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-mathematics-john-oquigley",
+      "nameAsRetained": "John O’Quigley",
+      "ownProfileNameAsDisplayed": "John O'quigley",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/john.oquigley",
+        "sourceUrl": "https://profiles.ucsd.edu/john.oquigley",
+        "observedAt": "2026-10-16T07:04:25+00:00",
+        "bodySha256": "21716591e0c293135f9a83f8727582ef8f48ad7a470e89c4f9bd80dc005ceefb",
+        "nameAsDisplayed": "John O'quigley",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/john.oquigley",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184713/184713.rdf"
+      },
+      "reviewStatus": "same_normalized_published_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-mechanical-aerospace-engineering-mike-campbell",
+      "nameAsRetained": "Mike Campbell",
+      "ownProfileNameAsDisplayed": "Edward Campbell",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/edward.campbell",
+        "sourceUrl": "https://profiles.ucsd.edu/edward.campbell",
+        "observedAt": "2026-10-16T01:09:20+00:00",
+        "bodySha256": "dff2266f52ece3fcb93271947c27bafadaf6d80d869848e9bc30dbf3459a5565",
+        "nameAsDisplayed": "Edward Campbell",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/edward.campbell",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/378055159/378055159.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-medicine-ana-cristina-llorente-izquierdo",
+      "nameAsRetained": "Ana Cristina Llorente Izquierdo",
+      "ownProfileNameAsDisplayed": "Cristina Llorente",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/ana.llorenteizquierdo",
+        "sourceUrl": "https://profiles.ucsd.edu/ana.llorenteizquierdo",
+        "observedAt": "2026-10-16T01:10:43+00:00",
+        "bodySha256": "80437303cd1358bba1464c178de81e275be94af31f9b8055639ec3c4c5e3cf89",
+        "nameAsDisplayed": "Cristina Llorente",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/ana.llorenteizquierdo",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/180018/180018.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-medicine-christina-yen-le",
+      "nameAsRetained": "Christina Yen Le",
+      "ownProfileNameAsDisplayed": "Christina Schultz",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/christina.le",
+        "sourceUrl": "https://profiles.ucsd.edu/christina.le",
+        "observedAt": "2026-10-16T01:12:43+00:00",
+        "bodySha256": "29cf3fa45ab3e4b0ab5cb7760772af21f393d744b85a15093418a58b4cb748e7",
+        "nameAsDisplayed": "Christina Schultz",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/christina.le",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/180904/180904.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-medicine-christopher-ala-longhurst",
+      "nameAsRetained": "Christopher Ala Longhurst",
+      "ownProfileNameAsDisplayed": "Chris Longhurst",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/christopher.longhurst",
+        "sourceUrl": "https://profiles.ucsd.edu/christopher.longhurst",
+        "observedAt": "2026-10-16T01:13:13+00:00",
+        "bodySha256": "5916e30ad6808bb88ec716b51140b1f45ee119d239c20cdb6b20c6ba98b576e0",
+        "nameAsDisplayed": "Chris Longhurst",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/christopher.longhurst",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/193440/193440.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-medicine-james-raymond-templeman-jr",
+      "nameAsRetained": "James Raymond Templeman Jr",
+      "ownProfileNameAsDisplayed": "James Templeman",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/james.templeman",
+        "sourceUrl": "https://profiles.ucsd.edu/james.templeman",
+        "observedAt": "2026-10-16T01:16:28+00:00",
+        "bodySha256": "10e98cb6fbdcd0767fb55bab22b2e535ba1b1ac9836cbd4bc31f43544ddda0ac",
+        "nameAsDisplayed": "James Templeman",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/james.templeman",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/198672/198672.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-medicine-olivia-alison-potok",
+      "nameAsRetained": "Olivia Alison Potok",
+      "ownProfileNameAsDisplayed": "Alison Potok",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/olivia.potok",
+        "sourceUrl": "https://profiles.ucsd.edu/olivia.potok",
+        "observedAt": "2026-10-16T01:30:54+00:00",
+        "bodySha256": "84e67a70a7d505128bad46460e76d8b748001e4569160b48202654310b520703",
+        "nameAsDisplayed": "Alison Potok",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/olivia.potok",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/181213/181213.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-neurosciences-betul-m-gundogdu",
+      "nameAsRetained": "Betul M Gundogdu",
+      "ownProfileNameAsDisplayed": "Melek Gundogdu",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/melek.gundogdu",
+        "sourceUrl": "https://profiles.ucsd.edu/melek.gundogdu",
+        "observedAt": "2026-10-16T01:38:47+00:00",
+        "bodySha256": "9f20a04b6139f46cc93991b43ad4108b1ce1a00cc73f5f275e16e0b023e83e07",
+        "nameAsDisplayed": "Melek Gundogdu",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/melek.gundogdu",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/32283593/32283593.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-neurosciences-janne-kristoffer-nissinen",
+      "nameAsRetained": "Janne Kristoffer Nissinen",
+      "ownProfileNameAsDisplayed": "Kristoffer Nissinen",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/kristoffer.nissinen",
+        "sourceUrl": "https://profiles.ucsd.edu/kristoffer.nissinen",
+        "observedAt": "2026-10-16T01:39:47+00:00",
+        "bodySha256": "be01b47560b5508ab0623560761cabe66519e297f5332a634207b0815445c39b",
+        "nameAsDisplayed": "Kristoffer Nissinen",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/kristoffer.nissinen",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184680/184680.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-neurosciences-timothy-brown",
+      "nameAsRetained": "Timothy Brown",
+      "ownProfileNameAsDisplayed": "Tim Brown",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/timothy.brown",
+        "sourceUrl": "https://profiles.ucsd.edu/timothy.brown",
+        "observedAt": "2026-10-16T01:40:07+00:00",
+        "bodySha256": "ad2fc9f89e68dee2dddb17b146a69689e1c16ea8641465926466198cd69076f0",
+        "nameAsDisplayed": "Tim Brown",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/timothy.brown",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/183408/183408.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-obstetrics-gynecology-reproductive-sciences-cnm-carly-nathan",
+      "nameAsRetained": "Cnm Carly Nathan",
+      "ownProfileNameAsDisplayed": "Carly Nathan",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/carly.nathan",
+        "sourceUrl": "https://profiles.ucsd.edu/carly.nathan",
+        "observedAt": "2026-10-16T01:40:17+00:00",
+        "bodySha256": "d0bb41fd5a8c873c5961ff59ce7c19e4628b36fe8e271209376e67dd420ce739",
+        "nameAsDisplayed": "Carly Nathan",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/carly.nathan",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/391291522/391291522.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-obstetrics-gynecology-reproductive-sciences-cnm-jenique-keys",
+      "nameAsRetained": "Cnm Jenique Keys",
+      "ownProfileNameAsDisplayed": "Jenique Keys",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/jenique.keys",
+        "sourceUrl": "https://profiles.ucsd.edu/jenique.keys",
+        "observedAt": "2026-10-16T01:40:27+00:00",
+        "bodySha256": "3eb3e813d5023d8368e274ecf844c6fedd7415231d60c04aca4d3e26168c44b7",
+        "nameAsDisplayed": "Jenique Keys",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/jenique.keys",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/538745430/538745430.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-obstetrics-gynecology-reproductive-sciences-priya-pantham",
+      "nameAsRetained": "Priya Pantham",
+      "ownProfileNameAsDisplayed": "Priyadarshini Pantham",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/priyadarshini.pantham",
+        "sourceUrl": "https://profiles.ucsd.edu/priyadarshini.pantham",
+        "observedAt": "2026-10-16T01:41:27+00:00",
+        "bodySha256": "62fd6eb2614df151da503b7cfac406f3fbf34532b93f64664a1e2a2648906852",
+        "nameAsDisplayed": "Priyadarshini Pantham",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/priyadarshini.pantham",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/66147924/66147924.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-obstetrics-gynecology-reproductive-sciences-sandy-ramos",
+      "nameAsRetained": "Sandy Ramos",
+      "ownProfileNameAsDisplayed": "Gladys Ramos",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/gladys.ramos",
+        "sourceUrl": "https://profiles.ucsd.edu/gladys.ramos",
+        "observedAt": "2026-10-16T01:41:37+00:00",
+        "bodySha256": "fdf8c53303d68289fa77da4b472bb3d2a2cfed51fbe9cba6288a8d6f15324d5d",
+        "nameAsDisplayed": "Gladys Ramos",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/gladys.ramos",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/194095/194095.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-otolaryngology-iii-joseph-a-califano",
+      "nameAsRetained": "Iii Joseph A. Califano",
+      "ownProfileNameAsDisplayed": "Joseph Califano",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/joseph.califano",
+        "sourceUrl": "https://profiles.ucsd.edu/joseph.califano",
+        "observedAt": "2026-10-16T01:42:07+00:00",
+        "bodySha256": "c2e3f1fe7bfffef8d480da125302cc041650f6b922828edb7bd7c2eccd3cf457",
+        "nameAsDisplayed": "Joseph Califano",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/joseph.califano",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/178813/178813.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-pathology-huan-you-wang",
+      "nameAsRetained": "Huan-You Wang",
+      "ownProfileNameAsDisplayed": "Huanyou Wang",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/huan-you.wang",
+        "sourceUrl": "https://profiles.ucsd.edu/huan-you.wang",
+        "observedAt": "2026-10-16T01:42:27+00:00",
+        "bodySha256": "f53e0e0294f00bb1fe1b6b8f990377ece355cdaaf3de2f9ff083c59d8799b731",
+        "nameAsDisplayed": "Huanyou Wang",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/huan-you.wang",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/180838/180838.rdf"
+      },
+      "reviewStatus": "same_letters_with_spacing_difference",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-pathology-shizhen-emily-wang",
+      "nameAsRetained": "Shizhen (Emily) Wang",
+      "ownProfileNameAsDisplayed": "Emily Wang",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/shizhen.wang",
+        "sourceUrl": "https://profiles.ucsd.edu/shizhen.wang",
+        "observedAt": "2026-10-16T01:42:47+00:00",
+        "bodySha256": "58b7df33f1e0559acbc5bd8d322bfcb1732a3a2357e48135b361efa1237c2a95",
+        "nameAsDisplayed": "Emily Wang",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/shizhen.wang",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/171392/171392.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-andrea-spadoni-townsend",
+      "nameAsRetained": "Andrea Spadoni Townsend",
+      "ownProfileNameAsDisplayed": "Andrea Spadoni",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/andrea.townsend",
+        "sourceUrl": "https://profiles.ucsd.edu/andrea.townsend",
+        "observedAt": "2026-10-16T01:43:57+00:00",
+        "bodySha256": "09ac57f921fe4439d3f26d9a880a04fbe4c557fbb8a9b6acdeb707e5c77a6edf",
+        "nameAsDisplayed": "Andrea Spadoni",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/andrea.townsend",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/194281/194281.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-carrie-shilayansky",
+      "nameAsRetained": "Carrie Shilayansky",
+      "ownProfileNameAsDisplayed": "Carrie Shilyansky",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/carrie.shilyansky",
+        "sourceUrl": "https://profiles.ucsd.edu/carrie.shilyansky",
+        "observedAt": "2026-10-16T01:44:07+00:00",
+        "bodySha256": "01526e4f9e40e590acee7a55e6c4aa43bc57902d3c12633c7f3bd73ba3f32ce9",
+        "nameAsDisplayed": "Carrie Shilyansky",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/carrie.shilyansky",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/534044658/534044658.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-charlie-taylor",
+      "nameAsRetained": "Charlie Taylor",
+      "ownProfileNameAsDisplayed": "Charles Taylor",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/charles.taylor",
+        "sourceUrl": "https://profiles.ucsd.edu/charles.taylor",
+        "observedAt": "2026-10-16T01:44:27+00:00",
+        "bodySha256": "59ea7ae614b26c80f95de9bd8c6a5ca78d0b252f976f57fd7c33877075cc618b",
+        "nameAsDisplayed": "Charles Taylor",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/charles.taylor",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/178535/178535.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-jonathan-howlett",
+      "nameAsRetained": "Jonathan Howlett",
+      "ownProfileNameAsDisplayed": "Jonathon Howlett",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/jonathon.howlett",
+        "sourceUrl": "https://profiles.ucsd.edu/jonathon.howlett",
+        "observedAt": "2026-10-16T01:45:27+00:00",
+        "bodySha256": "c9960299bbfa663ebd9ae5ca49d80ded05d761db553ad9bab6e0179c47254627",
+        "nameAsDisplayed": "Jonathon Howlett",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/jonathon.howlett",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/193868/193868.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-lawrence-appelbaum",
+      "nameAsRetained": "Lawrence Appelbaum",
+      "ownProfileNameAsDisplayed": "Greg Appelbaum",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/lawrence.appelbaum",
+        "sourceUrl": "https://profiles.ucsd.edu/lawrence.appelbaum",
+        "observedAt": "2026-10-16T01:45:57+00:00",
+        "bodySha256": "026c979e5010d6ed9d05b5284c80ae36b111f865db56e62f0e8babc69caabf84",
+        "nameAsDisplayed": "Greg Appelbaum",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/lawrence.appelbaum",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/208650288/208650288.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-maryam-solitani",
+      "nameAsRetained": "Maryam Solitani",
+      "ownProfileNameAsDisplayed": "Maryam Soltani",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/maryam.soltani",
+        "sourceUrl": "https://profiles.ucsd.edu/maryam.soltani",
+        "observedAt": "2026-10-16T01:46:17+00:00",
+        "bodySha256": "fae2109510b09100a7077a46a124432008c588752a343480ead0843fb4e3c0aa",
+        "nameAsDisplayed": "Maryam Soltani",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/maryam.soltani",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/198571/198571.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-michael-caliguri",
+      "nameAsRetained": "Michael Caliguri",
+      "ownProfileNameAsDisplayed": "Michael Caligiuri",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/michael.caligiuri",
+        "sourceUrl": "https://profiles.ucsd.edu/michael.caligiuri",
+        "observedAt": "2026-10-16T01:46:27+00:00",
+        "bodySha256": "6e32b1a88605d325aaeea563ea18f2e0a5a4265b2a3559d3fec2890d269e70dd",
+        "nameAsDisplayed": "Michael Caligiuri",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/michael.caligiuri",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/191379/191379.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-nicholas-hollon",
+      "nameAsRetained": "Nicholas Hollon",
+      "ownProfileNameAsDisplayed": "Nick Hollon",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/nicholas.hollon",
+        "sourceUrl": "https://profiles.ucsd.edu/nicholas.hollon",
+        "observedAt": "2026-10-16T01:46:57+00:00",
+        "bodySha256": "2889eb8af1abb29b7b815220edb077e35cf92b9645044e968c6c24849af73b50",
+        "nameAsDisplayed": "Nick Hollon",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/nicholas.hollon",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/238157783/238157783.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-tara-ausin",
+      "nameAsRetained": "Tara Ausin",
+      "ownProfileNameAsDisplayed": "Tara Austin",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/tara.ausin",
+        "sourceUrl": "https://profiles.ucsd.edu/tara.ausin",
+        "observedAt": "2026-10-16T01:53:33+00:00",
+        "bodySha256": "695e313ca144244930b333feecd1de253096c242a36e0cf17650f5eeb006680b",
+        "nameAsDisplayed": "Tara Austin",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/tara.ausin",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/558309717/558309717.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-thomas-rutledge",
+      "nameAsRetained": "Thomas Rutledge",
+      "ownProfileNameAsDisplayed": "Tommy Rutledge",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/Thomas.Rutledge",
+        "sourceUrl": "https://profiles.ucsd.edu/Thomas.Rutledge",
+        "observedAt": "2026-10-16T01:53:44+00:00",
+        "bodySha256": "ac1640cfe144dfbd3b47076c0dbda0b776d5106bd5ab04f4058f85c3a2e87588",
+        "nameAsDisplayed": "Tommy Rutledge",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/thomas.rutledge",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/181320/181320.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-tina-beizai",
+      "nameAsRetained": "Tina Beizai",
+      "ownProfileNameAsDisplayed": "Kristin Beizai",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/kristin.beizai",
+        "sourceUrl": "https://profiles.ucsd.edu/kristin.beizai",
+        "observedAt": "2026-10-16T01:53:53+00:00",
+        "bodySha256": "840e55f4c96356810c13c68f889f60200b04d186d35b6ea334c02ae03a08db28",
+        "nameAsDisplayed": "Kristin Beizai",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/kristin.beizai",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/19628872/19628872.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-psychiatry-xian-jin-zhou",
+      "nameAsRetained": "Xian-jin Zhou",
+      "ownProfileNameAsDisplayed": "Xianjin Zhou",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/xianjin.zhou",
+        "sourceUrl": "https://profiles.ucsd.edu/xianjin.zhou",
+        "observedAt": "2026-10-16T01:54:03+00:00",
+        "bodySha256": "203d79fe5bed3d5bb8bfb94cbb73a6fb9581834ae3987aed7c35224551e2dd98",
+        "nameAsDisplayed": "Xianjin Zhou",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/xianjin.zhou",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/185006/185006.rdf"
+      },
+      "reviewStatus": "same_letters_with_spacing_difference",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-christine-zoumas-morse",
+      "nameAsRetained": "Christine Zoumas-Morse",
+      "ownProfileNameAsDisplayed": "Christine Zoumas",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/christine.zoumas-morse",
+        "sourceUrl": "https://profiles.ucsd.edu/christine.zoumas-morse",
+        "observedAt": "2026-10-16T01:54:33+00:00",
+        "bodySha256": "dce9c97c829fec193f40d15afe36fa9130e2bd9b2a25c86119a94b879ac7f765",
+        "nameAsDisplayed": "Christine Zoumas",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/christine.zoumas-morse",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/185313/185313.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-happy-araneta",
+      "nameAsRetained": "Happy Araneta",
+      "ownProfileNameAsDisplayed": "Maria Rosario Araneta",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/mariarosario.araneta",
+        "sourceUrl": "https://profiles.ucsd.edu/mariarosario.araneta",
+        "observedAt": "2026-10-16T01:54:43+00:00",
+        "bodySha256": "c23097ee91fcf3cc8215e3e10a120fe96b9b017796a59d320478146d20a64f5a",
+        "nameAsDisplayed": "Maria Rosario Araneta",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/mariarosario.araneta",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/193471/193471.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-holly-baker-shakya",
+      "nameAsRetained": "Holly Baker Shakya",
+      "ownProfileNameAsDisplayed": "Holly Baker",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/holly.shakya",
+        "sourceUrl": "https://profiles.ucsd.edu/holly.shakya",
+        "observedAt": "2026-10-16T01:55:03+00:00",
+        "bodySha256": "bed06e304df4bbc536fc7fbb5fb2cd44ecceb71fa2a131f37feb8c5155525817",
+        "nameAsDisplayed": "Holly Baker",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/holly.shakya",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/198497/198497.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-hyunkeun-ryan-cho",
+      "nameAsRetained": "Hyunkeun Ryan Cho",
+      "ownProfileNameAsDisplayed": "Hyun Keun Cho",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/hyunkeun.cho",
+        "sourceUrl": "https://profiles.ucsd.edu/hyunkeun.cho",
+        "observedAt": "2026-10-16T01:55:23+00:00",
+        "bodySha256": "4f85707a60d0ea93f6b53caf5842d1e49bcde817f516194d91eac34339261af2",
+        "nameAsDisplayed": "Hyun Keun Cho",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/hyunkeun.cho",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/573776864/573776864.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-nd-ryan-bradley",
+      "nameAsRetained": "Nd Ryan Bradley",
+      "ownProfileNameAsDisplayed": "Ryan Bradley",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/ryan.bradley",
+        "sourceUrl": "https://profiles.ucsd.edu/ryan.bradley",
+        "observedAt": "2026-10-16T01:55:53+00:00",
+        "bodySha256": "a8cde8b406b040c99e4f82acf9cc27f6ed41fdaa341e466b094d1db57307d754",
+        "nameAsDisplayed": "Ryan Bradley",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/ryan.bradley",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/181049/181049.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-samantha-hurst",
+      "nameAsRetained": "Samantha Hurst",
+      "ownProfileNameAsDisplayed": "B S L Hurst",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/samantha.hurst",
+        "sourceUrl": "https://profiles.ucsd.edu/samantha.hurst",
+        "observedAt": "2026-10-16T01:56:14+00:00",
+        "bodySha256": "8169fe272d5bc53d7457f03c524d7b497294069dd1d806dac1de404ba95a0547",
+        "nameAsDisplayed": "B S L Hurst",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/samantha.hurst",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/179426/179426.rdf"
+      },
+      "reviewStatus": "profile_heading_not_full_person_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-public-health-vivian-reznik",
+      "nameAsRetained": "Vivian Reznik",
+      "ownProfileNameAsDisplayed": "Vivian Ries",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/vivian.reznik",
+        "sourceUrl": "https://profiles.ucsd.edu/vivian.reznik",
+        "observedAt": "2026-10-16T01:56:23+00:00",
+        "bodySha256": "a182c32038845c0991857972288793782912f7ec3c4822c688918c294d817fea",
+        "nameAsDisplayed": "Vivian Ries",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/vivian.reznik",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/181259/181259.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-faculty-live-amy-bellinghausen-stewart",
+      "nameAsRetained": "Amy Bellinghausen-Stewart",
+      "ownProfileNameAsDisplayed": "Amy Bellinghausen",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/amy.bellinghausen",
+        "sourceUrl": "https://profiles.ucsd.edu/amy.bellinghausen",
+        "observedAt": "2026-10-16T02:05:22+00:00",
+        "bodySha256": "e8ae6972f9d64433d17678aa848d235a6a4f7f8ed65debcd712d69380f3a0d18",
+        "nameAsDisplayed": "Amy Bellinghausen",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/amy.bellinghausen",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/132968921/132968921.rdf"
+      },
+      "reviewStatus": "independent_source_chain_review_required",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-faculty-live-alice-pong-o-donnell",
+      "nameAsRetained": "Alice Pong O'donnell",
+      "ownProfileNameAsDisplayed": "Alice Pong O'donnell",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/alice.pongodonnell",
+        "sourceUrl": "https://profiles.ucsd.edu/alice.pongodonnell",
+        "observedAt": "2026-10-16T02:19:29+00:00",
+        "bodySha256": "d2631e93d850a6f8c90c2498d4fb17373f7dde20c878953b76c1efa348d2b002",
+        "nameAsDisplayed": "Alice Pong O'donnell",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/alice.pongodonnell",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184779/184779.rdf"
+      },
+      "reviewStatus": "same_normalized_published_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-profile-faculty-8a6914a18a0a4b",
+      "nameAsRetained": "Margaret O'byrne",
+      "ownProfileNameAsDisplayed": "Margaret O'byrne",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/margaret.obyrne",
+        "sourceUrl": "https://profiles.ucsd.edu/margaret.obyrne",
+        "observedAt": "2026-10-16T07:03:25+00:00",
+        "bodySha256": "1ed9d6bdf7beebe0f1fd374bac8b6ec7b235fc8cf180be2364dc6451b1326be8",
+        "nameAsDisplayed": "Margaret O'byrne",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/margaret.obyrne",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/184699/184699.rdf"
+      },
+      "reviewStatus": "same_normalized_published_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    },
+    {
+      "professorId": "ucsd-profile-faculty-1c37921e9a4044",
+      "nameAsRetained": "Ryan O'leary",
+      "ownProfileNameAsDisplayed": "Ryan O'leary",
+      "ownCapture": {
+        "requestedUrl": "https://profiles.ucsd.edu/ryan.oleary",
+        "sourceUrl": "https://profiles.ucsd.edu/ryan.oleary",
+        "observedAt": "2026-10-16T07:44:38+00:00",
+        "bodySha256": "4a2fb46815662e275ef49578c6553aa4f2c3c1b1cbbfeca472f883f05a1ac4fe",
+        "nameAsDisplayed": "Ryan O'leary",
+        "nameMethod": "profiles_page_title_h2",
+        "canonicalUri": "https://profiles.ucsd.edu/ryan.oleary",
+        "rdfAlternateUri": "https://researcherprofiles.org/profile/186676/186676.rdf"
+      },
+      "reviewStatus": "same_normalized_published_name",
+      "identityDifferenceEstablished": false,
+      "automaticNameChange": false
+    }
+  ],
+  "previousReviewAssessments": [
+    {
+      "schemaVersion": 1,
+      "reviewedAt": "2026-10-16T13:08:44.329389+00:00",
+      "isFinalIdentityReview": false,
+      "wireRequests": 0,
+      "candidateAtlasSha256": "19eb63ac2951ae925b88490ab227bf8adb6d726631c015b183096ff81bb7eee5",
+      "actualPrimaryMetadataCapturesChecked": 877,
+      "scope": "Surface comparison of retained labels and the current captured own profile heading. These are review leads, not proof of another person, a legal name change, current employment or source repurposing. No name or identity is changed by this assessment.",
+      "reviewStateCounts": {
+        "independent_source_chain_review_required": 40,
+        "retained_label_not_valid_person_name": 1,
+        "same_letters_with_spacing_difference": 3,
+        "same_normalized_published_name": 5,
+        "profile_heading_not_full_person_name": 1
+      }
+    }
+  ],
+  "candidateAfterResourceLabelResolutionSha256": "d5657d62081bbbf487aa279ff8bf8437b82357acbc0de72d3fb8a94427115296",
+  "namedRosterLinkAudit": "faculty-profile-subject-roster-links-20261016.json"
+}

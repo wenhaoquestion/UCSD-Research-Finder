@@ -1369,11 +1369,14 @@ svg {
 }
 
 .tag-list button {
-  height: 28px;
-  padding: 0 10px;
+  min-height: 28px;
+  max-width: 100%;
+  padding: 4px 10px;
   border: 1px solid var(--line);
   font-size: 12px;
   font-weight: 550;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
   transition: border-color 120ms, color 120ms;
 }
 

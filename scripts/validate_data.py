@@ -11,6 +11,7 @@ import datetime as dt
 import urllib.parse
 from pathlib import Path
 from typing import Dict, Iterable, List
+from lab_entities import LabIndex
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_PATH = ROOT / "data" / "research-atlas.json"
@@ -210,10 +211,15 @@ def validate_evidence(record):
     v = record.get("verification", {})
     if v.get("status") not in {"source_checked", "needs_review", "unavailable", "legacy_unverified"}:
         fail(f"{rid}: invalid record verification status")
-    if v.get("status") == "source_checked" and not fields:
+    # A dated observation of a broken identity link is evidence of an issue,
+    # not positive verification of a person field.
+    verified_fields = set(fields) - {'profileLinkIdentityReview'}
+    if v.get("status") == "source_checked" and not verified_fields:
         fail(f"{rid}: source_checked requires field evidence")
-    if set(v.get("fieldsVerified", [])) != set(fields):
+    if set(v.get("fieldsVerified", [])) != verified_fields:
         fail(f"{rid}: fieldsVerified does not match fieldEvidence")
+    if record.get('profileLinkIdentityReview', {}).get('captureVerified') and v.get('status') != 'needs_review':
+        fail(f"{rid}: reviewed profile link issue must remain needs_review")
 
 
 def validate_teaching_and_ratings(record):
@@ -351,6 +357,10 @@ def validate_references(data: Dict[str, object]) -> None:
     shared = groups["professors"] & groups["labs"]
     if shared:
         fail(f"id used by both professor and lab: {sorted(shared)[0]}")
+    try:
+        LabIndex(data.get('labs', [])).validate_sharing()
+    except ValueError as exc:
+        fail(str(exc))
 
     for lab in data.get("labs", []):
         if "professorIds" not in lab:

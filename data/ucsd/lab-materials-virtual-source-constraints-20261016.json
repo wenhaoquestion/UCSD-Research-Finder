@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T10:03:23.214280+00:00",
+  "isFinalScientificIdentityReview": false,
+  "sourceQueueSha256": "63871a510bbe8f2a2f57ced80c0dd6922b45d8bc7697730c11e9d1d3b14e2464",
+  "originalNamedSource": "Materials Virtual Lab",
+  "originalOfficialPublisherEvidence": {
+    "requestedUrl": "https://imdd.ucsd.edu/faculty",
+    "sourceUrl": "https://imdd.ucsd.edu/faculty",
+    "observedAt": "2026-10-16T01:29:07+00:00",
+    "bodySha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+    "evidenceType": "named_link",
+    "linkText": "Materials Virtual Lab",
+    "linkUrl": "https://materialsvirtuallab.org/",
+    "evidence": "Materials Virtual Lab -> https://materialsvirtuallab.org/",
+    "method": "reviewed_exact_named_campus_publisher_link",
+    "status": "verified"
+  },
+  "originalHomeCapture": {
+    "requestedUrl": "https://materialsvirtuallab.org/",
+    "sourceUrl": "https://materialsvirtuallab.org/",
+    "observedAt": "2026-10-16T01:37:11+00:00",
+    "bodySha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+    "bytes": 114
+  },
+  "publishedScriptNavigation": {
+    "requestedUrl": "https://materialsvirtuallab.org/",
+    "sourceUrl": "https://materialsvirtuallab.org/",
+    "observedAt": "2026-10-16T01:37:11+00:00",
+    "bodySha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+    "evidenceType": "literal_script_navigation",
+    "scriptText": "window.onload=function(){window.location.href=\"/lander\"}",
+    "rawTargetAsPublished": "/lander",
+    "resolvedTargetAsPublished": "https://materialsvirtuallab.org/lander",
+    "sourceBodyBytes": 114,
+    "scope": "A literal navigation statement is a discovery lead,not an observed HTTP redirect,canonical resource alias,named scientific identity or current institutional claim."
+  },
+  "actualBoundedNavigationAttempt": {
+    "requestedUrl": "https://materialsvirtuallab.org/lander",
+    "status": "robots_unavailable",
+    "capture": {
+      "sourceUrl": "https://materialsvirtuallab.org/lander",
+      "observedAt": "2026-10-17T10:00:41+00:00",
+      "status": "robots_unavailable",
+      "redirects": [
+        {
+          "from": "https://materialsvirtuallab.org/lander",
+          "to": "https://forsale.godaddy.com/forsale/materialsvirtuallab.org?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+          "httpStatus": 307
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://forsale.godaddy.com/robots.txt",
+        "observedAt": "2026-10-17T10:00:41+00:00",
+        "httpStatus": 403,
+        "retrievedEpoch": 1792231241.894381,
+        "error": "access_challenge",
+        "redirects": [],
+        "attempts": 1,
+        "status": "unavailable"
+      },
+      "blockedUrl": "https://forsale.godaddy.com/forsale/materialsvirtuallab.org?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+      "retrievedEpoch": 1792231241.8951502
+    },
+    "publishedNavigationEvidence": {
+      "requestedUrl": "https://materialsvirtuallab.org/",
+      "sourceUrl": "https://materialsvirtuallab.org/",
+      "observedAt": "2026-10-16T01:37:11+00:00",
+      "bodySha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+      "evidenceType": "literal_script_navigation",
+      "scriptText": "window.onload=function(){window.location.href=\"/lander\"}",
+      "rawTargetAsPublished": "/lander",
+      "resolvedTargetAsPublished": "https://materialsvirtuallab.org/lander",
+      "sourceBodyBytes": 114,
+      "scope": "A literal navigation statement is a discovery lead,not an observed HTTP redirect,canonical resource alias,named scientific identity or current institutional claim."
+    },
+    "maximumContentAttempts": 1,
+    "wireRequests": 3,
+    "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+    "liveQueueWritten": false,
+    "mainResponseCacheWritten": false
+  },
+  "actualHttpRedirectObservation": {
+    "from": "https://materialsvirtuallab.org/lander",
+    "to": "https://forsale.godaddy.com/forsale/materialsvirtuallab.org?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+    "httpStatus": 307
+  },
+  "initialOriginRobotsObservation": {
+    "sourceUrl": "https://materialsvirtuallab.org/robots.txt",
+    "observedAt": "2026-10-17T10:00:40+00:00",
+    "httpStatus": 200,
+    "retrievedEpoch": 1792231240.7137952,
+    "error": "",
+    "redirects": [],
+    "attempts": 1,
+    "status": "checked",
+    "attemptHistory": [
+      {
+        "sourceUrl": "https://materialsvirtuallab.org/robots.txt",
+        "observedAt": "2026-10-16T01:37:10+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792114630.957324,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      }
+    ]
+  },
+  "initialOriginRobotsBodySha256": "84f7242b69a0d079d88d20a768e20124979f0499d2b0e5b947cc4b32bc07dff9",
+  "blockedTargetRobotsObservation": {
+    "sourceUrl": "https://forsale.godaddy.com/robots.txt",
+    "observedAt": "2026-10-17T10:00:41+00:00",
+    "httpStatus": 403,
+    "retrievedEpoch": 1792231241.894381,
+    "error": "access_challenge",
+    "redirects": [],
+    "attempts": 1,
+    "status": "unavailable"
+  },
+  "blockedTargetRobotsBodySha256": "4ded210b2ab456202c9b56a5e550283edad828edd7c085daa69892f234e68c3b",
+  "blockedTargetRobotsBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/faculty-post-materials-capture-preview/evidence-corpus/robots-observations/new-materials-navigation/robots-e22b59322d3c7318e8897165cd1cf6555aed47d8640c8b6018103db4a96d121e.html",
+  "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+  "wireRequests": 3,
+  "wireRequestScope": "One initial origin robots request,one actual /lander content request returning307,one redirect target robots request returning403 challenge. No target page request and no retry/variant.",
+  "initialContentRequests": 1,
+  "blockedRedirectTargetContentRequests": 0,
+  "newScientificEntities": 0,
+  "canonicalAliasesAccepted": 0,
+  "currentInstitutionOrPersonIdentityAccepted": false,
+  "sourceCaseScientificallyResolved": false,
+  "scope": "The named campus publisher link and original114-byte script body remain dated evidence. The literal script target actually routes by307to a domain-sale URI;that target robots request is403access challenge,so its page contents were not obtained. A URI route is not a scientific lab identity,canonical alias,lab closure,person departure,current ownership or an absence finding. Keep the original case unresolved and preserve the exact source/transport constraints.",
+  "previousSourceDecision": {
+    "action": "unresolved",
+    "reason": "The positive Materials Virtual Lab response contains no readable title, heading or main text in this capture. Inspect its literal public rendered/source payload before accepting the named entity.",
+    "evidence": [],
+    "reviewState": "further_source_or_identity_work_required",
+    "absenceDepartureClosureInferred": false
+  },
+  "previousAccountingSourceCase": {
+    "url": "https://materialsvirtuallab.org/",
+    "sourceCaseStatus": "unresolved",
+    "assessment": "reviewed_unresolved",
+    "decisionAction": "unresolved",
+    "departmentAsRouted": "Interdisciplinary",
+    "canonicalLabId": null,
+    "reviewedLabIdAsRecorded": null,
+    "observedResourceCanonicalOwnerLabId": null,
+    "canonicalSharedEntityLabIds": [],
+    "proposedStableId": "ucsd-live-lab-88c6912c008996",
+    "fetchStatus": "ok",
+    "observedAt": "2026-10-16T01:37:11+00:00",
+    "bodySha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+    "sourceReasons": [
+      "destination_does_not_confirm_link_label",
+      "ucsd_affiliation_not_confirmed_on_destination"
+    ],
+    "decisionReason": "The positive Materials Virtual Lab response contains no readable title, heading or main text in this capture. Inspect its literal public rendered/source payload before accepting the named entity."
+  }
+}

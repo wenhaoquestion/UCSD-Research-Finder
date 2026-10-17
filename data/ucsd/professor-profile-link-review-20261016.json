@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T19:53:18.011552+00:00",
+  "isFinalIdentityReview": false,
+  "wireRequests": 0,
+  "entries": [
+    {
+      "action": "flag_composite_profile_link_identity_review",
+      "professorId": "ucsd-obstetrics-gynecology-reproductive-sciences-gillian-mackay",
+      "originalProfileUri": "https://profiles.ucsd.edu/kathryn.macaulay#https://profiles.ucsd.edu/gillian.mackay",
+      "originalProfessorRecordSha256": "6fc15adbd5e26d965aad670637445de3be1a153215ada126c20c46f1396cba9d",
+      "reason": "The exact stored original URI contains a second complete Profiles URI in its fragment. Its transport destination independently names Kathryn Macaulay and declares RDF 181220; the separately captured embedded URI names Gillian Mackay and declares RDF 28470299. Preserve both dated subject observations and the original person/URI, flag the unresolved link, and infer no identity alias, new primary URI, merge, department, appointment or absence. Different identifiers are not proof of different humans.",
+      "identityResolved": false,
+      "captures": [
+        {
+          "requestedUrl": "https://profiles.ucsd.edu/kathryn.macaulay",
+          "sourceUrl": "https://profiles.ucsd.edu/kathryn.macaulay",
+          "observedAt": "2026-10-16T15:45:49+00:00",
+          "bodySha256": "97c60ee9c4329358fed712a5d8a267ec0c44f819e29382a327b84bec2f606377",
+          "nameAsDisplayed": "Kathryn Macaulay",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/kathryn.macaulay",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/181220/181220.rdf"
+        },
+        {
+          "requestedUrl": "https://profiles.ucsd.edu/gillian.mackay",
+          "sourceUrl": "https://profiles.ucsd.edu/gillian.mackay",
+          "observedAt": "2026-10-16T13:17:39+00:00",
+          "bodySha256": "2d7ed4119280035b4e7bd023c597d25a5484d54cc527efeb7c7795cd23792b89",
+          "nameAsDisplayed": "Gillian Mackay",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/gillian.mackay",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/28470299/28470299.rdf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1922 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-17T19:51:24.920225+00:00",
+  "baseCommit": "df18bbed255211fc6bc9b7d6fbec3092306f8afd",
+  "sourceCommit": "cab926b368ab4d072965b9720e0bf53888d5bd14",
+  "scope": "collection",
+  "publicationStrategy": "Separate publication snapshot; original working branches, source commits and all uncommitted changes remain untouched. Original internal commit lineage is not pushed because it contains private authorization records.",
+  "sourceTreeEntriesIncluded": 240,
+  "sourceTreeEntriesExcluded": 117,
+  "excludedCategories": [
+    "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+  ],
+  "recordsEvidencePolicy": "Public research facts, stable IDs, official URLs, quotations, timestamps, raw content hashes, all prior reviewed records and explicit uncertainty are retained in JSON/JSONL. Original raw response bodies remain in the local evidence archive; this public branch is not a standalone raw-cache archive.",
+  "collectionQueueComplete": true,
+  "wholeIdentityReviewComplete": false,
+  "sourceEntries": [
+    {
+      "path": "README.md",
+      "bytes": 11870,
+      "sha256": "6c72bdb159b09bf62eed536dfd88815940bbb09c092da137a2557069e4ed2488"
+    },
+    {
+      "path": "assets/app.js",
+      "bytes": 76255,
+      "sha256": "549dcbf1b839598848ca0351b884eaa90230265095c924019b7d28d0ebf98e8d"
+    },
+    {
+      "path": "assets/styles.css",
+      "bytes": 34538,
+      "sha256": "d41ae8bdcef63a694fa56fd718120ff8913b5544b79a586315e4fadb33d973cc"
+    },
+    {
+      "path": "data/schema.json",
+      "bytes": 18267,
+      "sha256": "8d8f5df6debe32151223ae54a2384494e07d291575955e2aded5169b0396db46"
+    },
+    {
+      "path": "data/ucsd/collection-scope-20261016.json",
+      "bytes": 37354,
+      "sha256": "d324b5691a2f40e30ec8b81e2b251e69288faa607defb40d82af2537c3d9ac44"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-additional-sources.json",
+      "bytes": 696428,
+      "sha256": "8efcd8e93ca1853689e683f25d8f88184d7b8bd509578c0d6ab88ee075d8e8d1"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-decisions.json",
+      "bytes": 1093470,
+      "sha256": "884ab0c9a275f0efcd5e1a6a45004fe1a5672ce639937d95ce119aa944d5587b"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-existing-lab-merges.json",
+      "bytes": 50817,
+      "sha256": "e85d7bd1d1f0a1fdef5ae48bedd43cfa3045330af11ea3d26ca3f133c5f36048"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-manual-candidates.json",
+      "bytes": 3421,
+      "sha256": "187a1db055d93614393f249c6a10584a8d745775d0f2e69f7bfcc3ec1aa9e205"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-original-candidate-outcomes.json",
+      "bytes": 426206,
+      "sha256": "b1de565c6664227eec57229553a1cce3f5464417d2754818ab600ad6f80459dc"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-original-candidate-reviews.json",
+      "bytes": 13591,
+      "sha256": "573ac94e72021a2c6907a0c793230fae5845e0fdbf0e03bdc76f177c6cc4d6a5"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-reviewed-lab-handoff.json",
+      "bytes": 730420,
+      "sha256": "27418018af775f931c8b747b43cbd9bacc9a79aa7714b5675cb3e33a5e4376bc"
+    },
+    {
+      "path": "data/ucsd/coverage-20261016-scope-exclusions.json",
+      "bytes": 1093576,
+      "sha256": "452557df422c25ba46cb4c639e456c35b82ac5a36c12ae4beba12393106a8798"
+    },
+    {
+      "path": "data/ucsd/eligible-queue-drained-source-review-20261016.json",
+      "bytes": 590224,
+      "sha256": "e98a1d3cf7e75570355b2db6e306c4c142a09ed08535b00042300b3202a772ef"
+    },
+    {
+      "path": "data/ucsd/faculty-additional-profile-source-holds-20261016.json",
+      "bytes": 62291,
+      "sha256": "21062001ad2cc35fb16f6712fda7bb6e04f78e9a6a58d457616b3883f674951c"
+    },
+    {
+      "path": "data/ucsd/faculty-candidate-observation-history-20261016.json",
+      "bytes": 3921007,
+      "sha256": "1f55a938055e3d410c13ca1b0b9f690ae7e0eb0e8beb67af05ceec98a4de296d"
+    },
+    {
+      "path": "data/ucsd/faculty-candidate-primary-root-review-20261016.json",
+      "bytes": 13618,
+      "sha256": "ce8e34b229f918c7fca40db45f890ed404eacf8b5df5bd92084bbb1f550b60f6"
+    },
+    {
+      "path": "data/ucsd/faculty-candidate-refresh-20261016.json",
+      "bytes": 122232,
+      "sha256": "6bdf5cc36e591d9b6cc1eba9cdcfde8b2f1dbe16351185620e9144fdd5e28ed9"
+    },
+    {
+      "path": "data/ucsd/faculty-continuation-capture-review-20261016.json",
+      "bytes": 681356,
+      "sha256": "c795fdaa5915168df869b80c769250232c4c70c1d6adc5bc3e39cd29047df7cc"
+    },
+    {
+      "path": "data/ucsd/faculty-current-capture-review-20261016.json",
+      "bytes": 709476,
+      "sha256": "b70399a6a14d609c0d72f6db3d8fe8ba6a5b8ba0b3ee7d6e6db73ba139b321f2"
+    },
+    {
+      "path": "data/ucsd/faculty-current-source-refresh-20261016.json",
+      "bytes": 386089,
+      "sha256": "e8c5e4a0fd81f0bd532719b0203798f5ff0eae1635bdc01a777ce0ba9f0d2462"
+    },
+    {
+      "path": "data/ucsd/faculty-department-normalization-review-20261016.json",
+      "bytes": 1824498,
+      "sha256": "79329a2efd3953f6e2c24d6cc3e730b3219b18803bb345a242133753a64bde15"
+    },
+    {
+      "path": "data/ucsd/faculty-directory-primary-resource-review-20261016.json",
+      "bytes": 35576,
+      "sha256": "35d1464587b08d1adc387c28a5569cba7e7beb7c1a3fca2c0af34ed6f846b18d"
+    },
+    {
+      "path": "data/ucsd/faculty-email-source-refresh-20261016.json",
+      "bytes": 148825,
+      "sha256": "4c00921643df72878eaf2114f19bd6a0b5522c8a3894f60d2b56867c4992399c"
+    },
+    {
+      "path": "data/ucsd/faculty-existing-contact-identity-leads-20261016.json",
+      "bytes": 19086,
+      "sha256": "67fcb53b41d4b8d790e5a46dded048eba574f5e44eda0570cccfbad19de23888"
+    },
+    {
+      "path": "data/ucsd/faculty-existing-rdf-owner-leads-20261016.json",
+      "bytes": 137187,
+      "sha256": "47f60284d2693a7f3468634b8c2e719cc5c901887591fbf0c3336bd1ead631d3"
+    },
+    {
+      "path": "data/ucsd/faculty-fainman-person-identity-review-20261016.json",
+      "bytes": 465422,
+      "sha256": "1e2c29d88f93b189a63923b653860182e4ce65db07e54347de8416a4f242bfae"
+    },
+    {
+      "path": "data/ucsd/faculty-followup-capture-review-20261016.json",
+      "bytes": 663293,
+      "sha256": "b3cda5e19af48fe425d9451fdebd06964c0e8541e06832a69ffb186e5314ecad"
+    },
+    {
+      "path": "data/ucsd/faculty-global-identity-collision-leads-20261016.json",
+      "bytes": 145382,
+      "sha256": "badebbcf782711f8d3ac41aa4c69671587c1451a178c78bee09adc72b5b44f22"
+    },
+    {
+      "path": "data/ucsd/faculty-identity-review-20261016.json",
+      "bytes": 27485,
+      "sha256": "c3ff8777cfbb0432b71bd07f8c79f86f7399f52f1a6570e4e4e31c3816ed6958"
+    },
+    {
+      "path": "data/ucsd/faculty-identity-source-plan-20261016.json",
+      "bytes": 2734348,
+      "sha256": "13c4f9b80851d92f2a29a9957d927f078cde0f768ed951644a44799a41fd6caa"
+    },
+    {
+      "path": "data/ucsd/faculty-jacobs-qualification-assessment-20261016.json",
+      "bytes": 169426,
+      "sha256": "62a985e98e1f7c25068a7d76ff6a043179d5fae16d009021a48651fcb9b5aa93"
+    },
+    {
+      "path": "data/ucsd/faculty-late-capture-review-20261016.json",
+      "bytes": 114743,
+      "sha256": "8b1899cd74447456372b472b52231acb1b7205f0f414b95ad853a9786ca8270b"
+    },
+    {
+      "path": "data/ucsd/faculty-legacy-catalog-source-plan-20261016.json",
+      "bytes": 69538,
+      "sha256": "7a4780aa057a3e24b2b19737cca7f3d3a2bc33596ff96606a607d7990329a6aa"
+    },
+    {
+      "path": "data/ucsd/faculty-legacy-initial-expansion-review-20261016.json",
+      "bytes": 45157,
+      "sha256": "ef7bf4ef0175d3f08f5f7524e7ccfbd7d1aece69fd7316c65b393fbbba31ce43"
+    },
+    {
+      "path": "data/ucsd/faculty-original-source-identifier-audit-20261016.json",
+      "bytes": 2547371,
+      "sha256": "deba7832b0953cb61357977914759b1057e88049254251a5c12a00f9246a04a4"
+    },
+    {
+      "path": "data/ucsd/faculty-own-profile-endpoint-source-plan-20261016.json",
+      "bytes": 235033,
+      "sha256": "4422456549f910f83063371fa2b1855bc208bb23ce4a7726a52c85e38b9e6239"
+    },
+    {
+      "path": "data/ucsd/faculty-own-profile-link-assessment-20261016.json",
+      "bytes": 2648,
+      "sha256": "95abfc9262bb4f117a9ca18334fafbc357c28355df44adb5a201ad9925b1a0de"
+    },
+    {
+      "path": "data/ucsd/faculty-own-title-field-review-20261016.json",
+      "bytes": 1539266,
+      "sha256": "9cd6982d5055ae8724d8c9c4ac02ea18b214e85d443040af007065b78841893c"
+    },
+    {
+      "path": "data/ucsd/faculty-position-source-review-20261016.json",
+      "bytes": 578829,
+      "sha256": "8f8dc16a5a965fd016f0719aac4a44ae8930ced41e8349429c79bbb91ce502c7"
+    },
+    {
+      "path": "data/ucsd/faculty-post-unit-source-review-20261016.json",
+      "bytes": 146894,
+      "sha256": "9274013cc3d92946e4bf800c6914b6a35b74e6190abe160cf4fe4929fc96aca4"
+    },
+    {
+      "path": "data/ucsd/faculty-profile-identity-preflight-20261016.json",
+      "bytes": 24554,
+      "sha256": "97ff0ba4cb8c6c4c48e8247ca01ed93dccd0437922845f80956554c1bffb8aa7"
+    },
+    {
+      "path": "data/ucsd/faculty-profile-identity-review-20261016.json",
+      "bytes": 284232,
+      "sha256": "93fecdb9813b7a847d2d631ef77d197c29a36deab55127995fe9de2a00eb25ab"
+    },
+    {
+      "path": "data/ucsd/faculty-profile-subject-name-review-20261016.json",
+      "bytes": 47545,
+      "sha256": "a587f75b18d90a5f7928cbe63e7d7992315725dc5a0382f048478f5c8bd22b22"
+    },
+    {
+      "path": "data/ucsd/faculty-profile-subject-roster-links-20261016.json",
+      "bytes": 83564,
+      "sha256": "36184aa60ec64b064ce02d2df4a91be54461ab0f39e70564ec8df8c0b9bce9eb"
+    },
+    {
+      "path": "data/ucsd/faculty-profile-subject-source-plan-20261016.json",
+      "bytes": 7002,
+      "sha256": "0547063548d822feda98a97e5843aa902d5d7feaaa66baf2b6ec970e352e55a3"
+    },
+    {
+      "path": "data/ucsd/faculty-shared-person-identifier-review-20261016.json",
+      "bytes": 25778,
+      "sha256": "2aa15a5c08c9e203ba2dea5e7882b38e3d3cb3ab1e1185104d93d1ad67a4cab9"
+    },
+    {
+      "path": "data/ucsd/faculty-source-coverage-refresh-20261016.json",
+      "bytes": 2536409,
+      "sha256": "324d395c013605ad58ddc404cec25371d742d28a898689720875bf809c34dd70"
+    },
+    {
+      "path": "data/ucsd/faculty-source-refresh-20261016.json",
+      "bytes": 80499,
+      "sha256": "037c572851e5c113955628589c6b5ff57cb00e41a6a1c29c4fda9437c6af32c8"
+    },
+    {
+      "path": "data/ucsd/faculty-title-source-plan-20261016.json",
+      "bytes": 703155,
+      "sha256": "6b25d35fcb3d91d960c01b8ad9e999b3bcb6018b3a132c9fdcde053937730170"
+    },
+    {
+      "path": "data/ucsd/faculty-unmapped-department-labels-20261016.json",
+      "bytes": 1364869,
+      "sha256": "c35c41d5e80e18390125a657511771b3a3f5dcc9dc06b8d5d44eac458750615e"
+    },
+    {
+      "path": "data/ucsd/faculty-unmapped-unit-alias-review-20261016.json",
+      "bytes": 11105,
+      "sha256": "a676ebc4d0098fab99bafdc164884e586b489ffb5f645dbbe19bdc7d4a949e64"
+    },
+    {
+      "path": "data/ucsd/lab-abagyan-profile-resource-review-20261016.json",
+      "bytes": 63719,
+      "sha256": "217bd3a647fe7dfeb41f7513b9834e582323459ad413160fd5b9896038cdd266"
+    },
+    {
+      "path": "data/ucsd/lab-alias-resource-review-20261016.json",
+      "bytes": 756885,
+      "sha256": "726fd77554c8cfa5c13df8bb44054a0c127ee3989d5f7374067b0629e6baab7d"
+    },
+    {
+      "path": "data/ucsd/lab-bioarchaeology-source-review-20261016.json",
+      "bytes": 39086,
+      "sha256": "6d9cb5ce5490f30f3a223deeb61a65ed67c456b08e2a102a6b1da3f918e742ab"
+    },
+    {
+      "path": "data/ucsd/lab-captured-source-accounting-20261016.json",
+      "bytes": 1493244,
+      "sha256": "eade12d094976a4fcc4d96b5f6fc96e68f9bb5283f5c6b6e0cb3042cdea77d8a"
+    },
+    {
+      "path": "data/ucsd/lab-chattree-research-source-review-20261016.json",
+      "bytes": 101231,
+      "sha256": "e23d6f6eae8bf4e3c62256f59735fa3f05efe28cb476f462bde25336fa22f91e"
+    },
+    {
+      "path": "data/ucsd/lab-current-source-constraints-20261016.json",
+      "bytes": 222425,
+      "sha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3"
+    },
+    {
+      "path": "data/ucsd/lab-description-batch-review-20261016.json",
+      "bytes": 290058,
+      "sha256": "e91d976be68d720fb270eb521dcec6101a919e4ea32392c916f8b2aa797d7794"
+    },
+    {
+      "path": "data/ucsd/lab-evidence.json",
+      "bytes": 10030605,
+      "sha256": "8f04a82e2b172396fe7b5a41421999779d2ce09bd7b5ab052c73e0fcd11e18fe"
+    },
+    {
+      "path": "data/ucsd/lab-existing-own-resource-review-20261016.json",
+      "bytes": 18752,
+      "sha256": "899c2e647059d965f3cd75a8189ad86248e31edf811944bc02bf7614362f6b9c"
+    },
+    {
+      "path": "data/ucsd/lab-expansion-review.json",
+      "bytes": 487469,
+      "sha256": "40a28155e1550a66a777cfaa4effba21d4acae07307428b97fdfa2b7c6b21480"
+    },
+    {
+      "path": "data/ucsd/lab-field-review-20261016.json",
+      "bytes": 350822,
+      "sha256": "cedd93256183ad0f255de19c8d97e4a310d9cd65a89417d3d31a49b4ed66612d"
+    },
+    {
+      "path": "data/ucsd/lab-frontier-semantic-source-audit-20261016.json",
+      "bytes": 144615,
+      "sha256": "a0097bab27150f92b03f6d59e68c6441dad001082ac0a076b77292125bc0fd06"
+    },
+    {
+      "path": "data/ucsd/lab-graduate-program-affiliation-review-20261016.json",
+      "bytes": 10870,
+      "sha256": "77a6b357cc404de0f3c79323be6c4a8eb3474df0754b42b4d11e9a790755f7ea"
+    },
+    {
+      "path": "data/ucsd/lab-insight-research-resource-review-20261016.json",
+      "bytes": 49423,
+      "sha256": "3a2372292b1daaa841bcf80cdb3d5a842ebfa6c4cdc464ad0d8eb486ebc9baf0"
+    },
+    {
+      "path": "data/ucsd/lab-literal-source-chain-review-20261016.json",
+      "bytes": 37813,
+      "sha256": "80c1f0928e5b2842f2927d43aa06ea5e7be1710ee2eab5e8f38fdc163b6f8aed"
+    },
+    {
+      "path": "data/ucsd/lab-materials-virtual-source-constraints-20261016.json",
+      "bytes": 8212,
+      "sha256": "e882742621d5da7a2cdf72e279a5ae92cc20df40f9971a5ed8e223ec688620ac"
+    },
+    {
+      "path": "data/ucsd/lab-named-resource-chain-review-20261016.json",
+      "bytes": 248748,
+      "sha256": "c8657bdcc184863788dcdc3cce41fbce8ee531a28f7a33aef71dc4d27875b641"
+    },
+    {
+      "path": "data/ucsd/lab-new-positive-source-leads-20261016.json",
+      "bytes": 14352,
+      "sha256": "07202e13da1c7282c9ff0626ae0c35083db872a352141377626ebd4e3922cd98"
+    },
+    {
+      "path": "data/ucsd/lab-original-profile-chain-review-20261016.json",
+      "bytes": 151208,
+      "sha256": "802a6454bb2dd780d8b04f22d9584fc367c28eb492ca59626fb68fb7cdb583b6"
+    },
+    {
+      "path": "data/ucsd/lab-own-institution-review-20261016.json",
+      "bytes": 8797,
+      "sha256": "f7059264038f5c979af1934d9ef08f7cd92623f81b5740b9e8c776f777a025f2"
+    },
+    {
+      "path": "data/ucsd/lab-own-metadata-review-20261016.json",
+      "bytes": 1297571,
+      "sha256": "0898b83e147376a65b665d30b7d36cc100dc99fca7958ad31b6f02de46dad01f"
+    },
+    {
+      "path": "data/ucsd/lab-own-opportunities-review-20261016.json",
+      "bytes": 16185,
+      "sha256": "b42166a0f65c9c196917311f1018da455fae2e64abf4fe8e107a2e396bc00324"
+    },
+    {
+      "path": "data/ucsd/lab-preferred-resource-review-20261016.json",
+      "bytes": 137927,
+      "sha256": "abc8e57eaebbfaf1e96a4529eb1068b81c9a1345e65a1182bccf3ee42450c2a0"
+    },
+    {
+      "path": "data/ucsd/lab-published-fainman-source-constraint-20261016.json",
+      "bytes": 22187,
+      "sha256": "fef995119e99b1955e2687b10ad902c40ffdb1667c3fc7e6bdfb61315fedd732"
+    },
+    {
+      "path": "data/ucsd/lab-published-organization-resource-review-20261016.json",
+      "bytes": 20060,
+      "sha256": "369b462d3c3693ed2ef704dd76ab939d4601808f1199f385defcfa596a08e87f"
+    },
+    {
+      "path": "data/ucsd/lab-publisher-resource-review-20261016.json",
+      "bytes": 34785,
+      "sha256": "3a930b93f79c2194ff9e3b3eb3fdff756e7ae85f1c296e275d1eb8aec8009d92"
+    },
+    {
+      "path": "data/ucsd/lab-remaining-source-review-20261016.json",
+      "bytes": 1583434,
+      "sha256": "a4610799fc5297aa4cd2c567ef58ea005767de908c1718a6baee698727d1939f"
+    },
+    {
+      "path": "data/ucsd/lab-research-interest-group-review-20261016.json",
+      "bytes": 20178,
+      "sha256": "f531a64d93f9fd331a0288eff96b10c85403f934bb3924a311adcd17c0f33b03"
+    },
+    {
+      "path": "data/ucsd/lab-resource-association-review-20261016.json",
+      "bytes": 8958,
+      "sha256": "f406a6d3de49eec68830f7896c4c696bc355bcf93a41681ba0afe2783973936c"
+    },
+    {
+      "path": "data/ucsd/lab-resource-identity-review-20261016.json",
+      "bytes": 91383,
+      "sha256": "03c8744b88299bab1d0c266b06636f7f8b2755690c4d4df606a86b616ca8f980"
+    },
+    {
+      "path": "data/ucsd/lab-scoped-statements-review-20261016.json",
+      "bytes": 37825,
+      "sha256": "2320ae321a465ca130eb8bdb929331b9499fb3a4c92bac470b0b6e9c3599a04b"
+    },
+    {
+      "path": "data/ucsd/lab-source-resolution-review-20261016.json",
+      "bytes": 339187,
+      "sha256": "3d10f27c06db415c58674b1a7a82049c1144b0675c75c512d1c170481ab285b1"
+    },
+    {
+      "path": "data/ucsd/lab-ultrafast-own-resource-lead-20261016.json",
+      "bytes": 28627,
+      "sha256": "01e4dec3a3c89cb61662d0c99025eb5989e84366400e78005359d930007d9085"
+    },
+    {
+      "path": "data/ucsd/lab-ultrafast-owned-resource-review-20261016.json",
+      "bytes": 73567,
+      "sha256": "1aa47717f1fd8b8f07bb8ed836c02defaf8b1995d6c1ed52c8b6cd831a119dba"
+    },
+    {
+      "path": "data/ucsd/lab-uri-variant-review-20261016.json",
+      "bytes": 20149,
+      "sha256": "0540caf358b4470ccc4e9d1cc7dc77787f5f753039304aab87eb57060941c340"
+    },
+    {
+      "path": "data/ucsd/legacy-lab-identity-review-20261016.json",
+      "bytes": 62641,
+      "sha256": "d3d5cedcea02b08620d254d6247b76f045ac458047d4a4e5d844b78dfdd5a232"
+    },
+    {
+      "path": "data/ucsd/literal-frame-capture-manifest-20261016.json",
+      "bytes": 26862,
+      "sha256": "2dbfdcb67eadf73025628aa083c96ddb9fee73c6493f5203709c60d60d04edfb"
+    },
+    {
+      "path": "data/ucsd/math-profile-script-source-plan-20261016.json",
+      "bytes": 49674,
+      "sha256": "4e95364008f8065d4063cebfb1cf878b02763dbf052ef245baab5d407124871b"
+    },
+    {
+      "path": "data/ucsd/own-labelled-research-field-review-20261016.json",
+      "bytes": 555510,
+      "sha256": "55b170213c685de6c539e0c15e7c04b39e1ea83534ea43bfded772a2d1d48df5"
+    },
+    {
+      "path": "data/ucsd/person-identity-review-20261016.json",
+      "bytes": 734805,
+      "sha256": "1a5d4c9790288dff48be7876e03c3681de4f57cfecc69065a77a84b20fc8a046"
+    },
+    {
+      "path": "data/ucsd/professor-biography-review-20261016.json",
+      "bytes": 9096,
+      "sha256": "4c2c9230e9d023316d33465f1711e345bdafa664dab7fb4ec33ce82ae02c4192"
+    },
+    {
+      "path": "data/ucsd/professor-contact-scope-review-20261016.json",
+      "bytes": 92019,
+      "sha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058"
+    },
+    {
+      "path": "data/ucsd/professor-own-field-review-20261016.json",
+      "bytes": 2286722,
+      "sha256": "960c7f3cacd80ca0450de64e1bad22161d6f5e506674939ff7a267497efc4031"
+    },
+    {
+      "path": "data/ucsd/professor-own-field-source-audit-20261016.json",
+      "bytes": 278316,
+      "sha256": "119904bd0da59eadafbc3d650be0ca97cfbcec1a332d1a437468965114575fe6"
+    },
+    {
+      "path": "data/ucsd/professor-own-field-source-plan-20261016.json",
+      "bytes": 336117,
+      "sha256": "d92abd393ae9838205e322918d029efd041bb664df1c92a1696c2cc58c6e985d"
+    },
+    {
+      "path": "data/ucsd/professor-profile-link-review-20261016.json",
+      "bytes": 2246,
+      "sha256": "c32c9086670a79e8fa982e464261f03f543a9f8a0b52276cfcb74f20b2fe4e8a"
+    },
+    {
+      "path": "data/ucsd/professor-research-scope-review-20261016.json",
+      "bytes": 3427920,
+      "sha256": "8009310c013646f6b6d4e4d007d72821e65a8ee4b5eadb542b0e6366f3395d54"
+    },
+    {
+      "path": "data/ucsd/profile-backfill-checkpoint.json",
+      "bytes": 62821,
+      "sha256": "c89441635cc321914ce43e4ae49b594e2bfea7f5d68c57d4ce4051d353afe94e"
+    },
+    {
+      "path": "data/ucsd/profile-backfill-progress.json",
+      "bytes": 61867,
+      "sha256": "c2de46846a5eafb29aec9e65942265a90265b544bb46513b5a5997c4121602c5"
+    },
+    {
+      "path": "data/ucsd/profile-sitemap-20261016.json",
+      "bytes": 628277,
+      "sha256": "c8ae790ff222cd3f6ecdb14dab71935f0ce867029677f76584dbb362401a5024"
+    },
+    {
+      "path": "data/ucsd/profile-url-candidates-20261016.json",
+      "bytes": 7492,
+      "sha256": "92d0260ce534ea25072fe2b164077c07787301d119c59de836ee71050b10e210"
+    },
+    {
+      "path": "data/ucsd/profile-vcard-source-constraints-20261016.json",
+      "bytes": 7711,
+      "sha256": "4f7312ef31400aca514ff529dd681b25811f2395ac89112409b56531b3ecd0ef"
+    },
+    {
+      "path": "data/ucsd/published-personal-cv-source-constraints-20261016.json",
+      "bytes": 5652,
+      "sha256": "5e81fcddd1415b7a5b2687786ed014038af6ecee0e35123cbcca3a214b586391"
+    },
+    {
+      "path": "data/ucsd/shared-lab-resource-review-20261016.json",
+      "bytes": 18724,
+      "sha256": "2d91a793af8bdc833bb8ac5a5e1b39e2dc7047db514251e1a200f208937e1f4e"
+    },
+    {
+      "path": "data/ucsd/source-checks.json",
+      "bytes": 765257,
+      "sha256": "4332d875edeeffe8227db460232dde8fc48da3059c619e1551dd0f0f1d5422a8"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11444,
+      "sha256": "2d07bf79b67c3ea00f8aee26bcbe239fc74414ebc5d470e8aee0da1a7b3732f8"
+    },
+    {
+      "path": "scripts/apply_ucsd_coverage.py",
+      "bytes": 47730,
+      "sha256": "a61184691a3f5df57c639ac369bf66dd7c5923a57475394f0a7a1a94b5386bfe"
+    },
+    {
+      "path": "scripts/atlas_urls.py",
+      "bytes": 1888,
+      "sha256": "2770176cb42de8439af2761634650f4b427264334dfd702bc504e52d96f1c2a0"
+    },
+    {
+      "path": "scripts/audit_research_atlas.py",
+      "bytes": 4616,
+      "sha256": "a5fac80f646ca5fce4bafec183b2d4cc53dbf73f8f3d9d1f037208347d8d81c2"
+    },
+    {
+      "path": "scripts/audit_ucsd_preservation.py",
+      "bytes": 8075,
+      "sha256": "441503e15d5c65c9c69a284d4b3ab7153021331f849d7b92bf1f8e98de59f8e0"
+    },
+    {
+      "path": "scripts/candidate_primary_roots.py",
+      "bytes": 6469,
+      "sha256": "984428ed6ebc4edbc323845b2768c4936dce449937960411807e6a2ed3483b03"
+    },
+    {
+      "path": "scripts/candidate_profile_associations.py",
+      "bytes": 11806,
+      "sha256": "f3bbe4e6c497acec9d232b4152496988f6e445a8cb0443c0bfa556e46fff15cf"
+    },
+    {
+      "path": "scripts/collect_ucsd_coverage.py",
+      "bytes": 71280,
+      "sha256": "d47f57488b109b45ed09a14c5cd743c81b7d0508c50524c4dfe7ce92c37ada68"
+    },
+    {
+      "path": "scripts/collection_lock.py",
+      "bytes": 423,
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056"
+    },
+    {
+      "path": "scripts/collection_schedule.py",
+      "bytes": 1039,
+      "sha256": "1e56491d0c2b1f958acc1a68de53e7317c50cc915398f862371c1fcfdaff45cc"
+    },
+    {
+      "path": "scripts/collection_scope.py",
+      "bytes": 16034,
+      "sha256": "956fb5dc71e268162af4debbe2b2789165c9695424ba1dcb869bab6c0c573dbb"
+    },
+    {
+      "path": "scripts/existing_lab_own_resources.py",
+      "bytes": 10449,
+      "sha256": "13e8a5db448f6e75f892dd4fff70e332f66708370a63769616618f3d28cd18fe"
+    },
+    {
+      "path": "scripts/faculty_candidate_history.py",
+      "bytes": 13484,
+      "sha256": "fc060c13422e136f2dc89e68882f34284d8ec23062b1fe46815adbd37e037a28"
+    },
+    {
+      "path": "scripts/faculty_career_identity_reviews.py",
+      "bytes": 16952,
+      "sha256": "fe6ed1bdcc8a0ba02be0aa90068d2a14e950259c18dbb48be4ceae0c95c37500"
+    },
+    {
+      "path": "scripts/faculty_department_normalizations.py",
+      "bytes": 14323,
+      "sha256": "6bd3de1271720e580d93d035d50111cc223dd51f61f8cd7cddbb29824aa18aab"
+    },
+    {
+      "path": "scripts/faculty_own_overviews.py",
+      "bytes": 3789,
+      "sha256": "184f139737e13fd48d36639d7c026de647dfb0b16711f63b7d1b2bf00541e093"
+    },
+    {
+      "path": "scripts/faculty_profile_bindings.py",
+      "bytes": 25251,
+      "sha256": "6be3939b0c964d305258b587841bd2602f73fd1a3a9774194aba3af012883b36"
+    },
+    {
+      "path": "scripts/faculty_profile_chain_reviews.py",
+      "bytes": 12422,
+      "sha256": "be856aa316a28bfb755c3f18ebcbcbe99394fa048ae3bebdd6b45dc2da2ebc29"
+    },
+    {
+      "path": "scripts/faculty_resource_label_reviews.py",
+      "bytes": 7451,
+      "sha256": "f16be5101e35d2aaab6b027098a87d9f1cc586bb98c8b6d2062813967112369b"
+    },
+    {
+      "path": "scripts/faculty_scoped_titles.py",
+      "bytes": 8317,
+      "sha256": "d70101be80ea2ded5f48ea813c931438c012b00019e49e26ef9b57cc3ad078bd"
+    },
+    {
+      "path": "scripts/faculty_shared_primary_reviews.py",
+      "bytes": 12105,
+      "sha256": "628922b6d864cb2d45858c3cf0cac4496a6c15f7273b93328900b2142006f5c4"
+    },
+    {
+      "path": "scripts/lab_child_research_fields.py",
+      "bytes": 7025,
+      "sha256": "2430c0f4dd94946d594b7c882b495e70496dabe8c2c17aa28d7b682dc2e92c2c"
+    },
+    {
+      "path": "scripts/lab_entities.py",
+      "bytes": 9025,
+      "sha256": "427a814846380c25e882fe591368001cbc43e5daf87dfbec8edffcc1f5adcf1b"
+    },
+    {
+      "path": "scripts/lab_field_reviews.py",
+      "bytes": 17895,
+      "sha256": "87b6c8dbc77b2de5cf2833a338830fb75cd15de67ce4e0db608f6d103667072b"
+    },
+    {
+      "path": "scripts/lab_identity_merges.py",
+      "bytes": 11792,
+      "sha256": "8e7cf287660285276dc279fa165220474eb14c3024fff2e209191ddc9c501c9a"
+    },
+    {
+      "path": "scripts/lab_own_metadata.py",
+      "bytes": 18385,
+      "sha256": "49ce61383ac37504b9b645f546b8a66aed4b4e357779f3a70a63a39617cde0a0"
+    },
+    {
+      "path": "scripts/lab_ownership_reviews.py",
+      "bytes": 9946,
+      "sha256": "9963ddda6fe2d4600b5b32f380c2bf6a168cb723671fd742ecc6cccb66d8e77b"
+    },
+    {
+      "path": "scripts/lab_preferred_resources.py",
+      "bytes": 10738,
+      "sha256": "aa41d86de2992db67ee68ab77d944509f3c34617088ba925718b42808883ef70"
+    },
+    {
+      "path": "scripts/lab_professor_own_chain.py",
+      "bytes": 7092,
+      "sha256": "89a82b01bbf35059363932f13dad0411eee481447cd60e2e12f1ff2f6e5e69bf"
+    },
+    {
+      "path": "scripts/lab_profile_source_upgrades.py",
+      "bytes": 10840,
+      "sha256": "fae2a5f5ba623e044111cdeaf17d12486a06e4e5da14ca1ed86a859727880eda"
+    },
+    {
+      "path": "scripts/lab_program_affiliations.py",
+      "bytes": 9720,
+      "sha256": "4d4f80d512241acd3cee985f0b3074c0fdbf31f3abf867f5e33e9039dd4c36fc"
+    },
+    {
+      "path": "scripts/lab_research_resource_reviews.py",
+      "bytes": 11562,
+      "sha256": "90439dfdbf7517e6a889fa959db18821d51cba97dcd2a89d44904a2f74c5db9a"
+    },
+    {
+      "path": "scripts/lab_resource_associations.py",
+      "bytes": 5474,
+      "sha256": "9a49da1fb4ca3005fc25b49e2f9e86a41c35ba26ec17a4ac210a3f7b5ec958f7"
+    },
+    {
+      "path": "scripts/lab_resource_reviews.py",
+      "bytes": 6797,
+      "sha256": "40c197ef32b0aef32a52d56a80bb0bee489d9b065eb0653bb0600d623e1b6395"
+    },
+    {
+      "path": "scripts/lab_root_research_descriptions.py",
+      "bytes": 7319,
+      "sha256": "99cb311542c608cf637224b766add78e8c8c44906f4fbb187bcb5703d31a81b9"
+    },
+    {
+      "path": "scripts/labelled_profile_research.py",
+      "bytes": 8868,
+      "sha256": "79589927ab3c1851e9af55ed9fbb34705899200ac4b946190dad82a77e2cdfc2"
+    },
+    {
+      "path": "scripts/legacy_lab_review.py",
+      "bytes": 3906,
+      "sha256": "e600e3ffa7b082058163ae41d5bd64879acbf6cb02d020ba070bf01e91dff76b"
+    },
+    {
+      "path": "scripts/matsci_own_fields.py",
+      "bytes": 10532,
+      "sha256": "48673f1040adafe90cf7d732a40726706f5f347299f1325c5a37c06aca702a2c"
+    },
+    {
+      "path": "scripts/network_coordination.py",
+      "bytes": 12160,
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+    },
+    {
+      "path": "scripts/person_identity_reviews.py",
+      "bytes": 23638,
+      "sha256": "a754a6722a5d2eaef23760fe9377e8e9228740a598880d4b9d4495e81086ae56"
+    },
+    {
+      "path": "scripts/plan_ucsd_faculty_identity_sources.py",
+      "bytes": 15297,
+      "sha256": "2fe410ad8663624e81b82b944cb017fa4bf68e8fde29b06835310dd9f0336942"
+    },
+    {
+      "path": "scripts/plan_ucsd_faculty_title_sources.py",
+      "bytes": 10846,
+      "sha256": "da061bc9101bba1de8ce3e872b67edde96ff2a08b0b60ae8102956a5b628f1cd"
+    },
+    {
+      "path": "scripts/preview_ucsd_faculty.py",
+      "bytes": 6071,
+      "sha256": "2f79726b3d7382fbe3236e17c10afd0e671bd11ad18feb9d35363c4bcb6837ea"
+    },
+    {
+      "path": "scripts/preview_ucsd_reviewed_labs.py",
+      "bytes": 16665,
+      "sha256": "9a068cb2629b5e6f25ba1dc2ea918420d9cee843eb837a47daa628555284874b"
+    },
+    {
+      "path": "scripts/professor_biography_reviews.py",
+      "bytes": 10395,
+      "sha256": "2a9a8b0d025606d90ac8da4e369effddc16a48d4d420d05f1fef363f79d50554"
+    },
+    {
+      "path": "scripts/professor_contact_scope_reviews.py",
+      "bytes": 13771,
+      "sha256": "d4d28e7fbe4f72a0b69de6341f7a6a22aeb4942eac9713f62294b75ec04e1f00"
+    },
+    {
+      "path": "scripts/professor_own_field_reviews.py",
+      "bytes": 20503,
+      "sha256": "a4fa28a476c732c47a82ddd035603ec118f14dabdb26dc2ac2bf9ed40d4a5e03"
+    },
+    {
+      "path": "scripts/professor_profile_link_reviews.py",
+      "bytes": 4099,
+      "sha256": "ff50e79496e039e7ea2731ff0d1d2018e68b5749f0f0064e49855981f3abc3ed"
+    },
+    {
+      "path": "scripts/professor_research_scope_reviews.py",
+      "bytes": 22192,
+      "sha256": "d67a540a6c10ddf47594044d4f414defe7ef397d4d6538f86cdce5cf14a3111d"
+    },
+    {
+      "path": "scripts/provider_profile_fields.py",
+      "bytes": 5760,
+      "sha256": "eec013b883676464c9e58d76e2a4767e141da1c59bc578ad9f93308c82e0f82a"
+    },
+    {
+      "path": "scripts/published_organization_resources.py",
+      "bytes": 6916,
+      "sha256": "856406b27bc3d865d83e738ead00205829ed88b152cab832d52b0b6aa834fd2a"
+    },
+    {
+      "path": "scripts/queue_resource_keys.py",
+      "bytes": 6674,
+      "sha256": "1f3051e20eefc5603161de121eaafcba3a28dc377d521c3477fc58e4a3cfe6f5"
+    },
+    {
+      "path": "scripts/rady_own_fields.py",
+      "bytes": 7851,
+      "sha256": "b6dc4dd095725bfc27c8774f587ded2b75b562990bb2b34c6555aaa7a1415f7e"
+    },
+    {
+      "path": "scripts/rebuild_verified_atlas.py",
+      "bytes": 78159,
+      "sha256": "5479d09b6d9faccb99f27b5a0e06af6606227943d3bd00c75edfd57c2dbeaef1"
+    },
+    {
+      "path": "scripts/refresh_faculty_directories.py",
+      "bytes": 42945,
+      "sha256": "e3a35fce31e31721ca5a09f7c89c18720a7bbdfff8846b963bde7ef3d87ec9fc"
+    },
+    {
+      "path": "scripts/refresh_labs.py",
+      "bytes": 62769,
+      "sha256": "eb59835eb68d877f843a8e7063e731dc7ce7af89e8bc8e37d3dbda190dad671f"
+    },
+    {
+      "path": "scripts/report_ucsd_candidate_outcomes.py",
+      "bytes": 4049,
+      "sha256": "9d8dc42db2b14114133b2180f0cc179031d89f5c2ade0dcee91ec39819ee9350"
+    },
+    {
+      "path": "scripts/review_ucsd_coverage.py",
+      "bytes": 43565,
+      "sha256": "535c89014a3760daffcb729a9464d4adfede2ca3ce4f243362036a62c6f3e6f7"
+    },
+    {
+      "path": "scripts/run_ucsd_coverage_batches.py",
+      "bytes": 2602,
+      "sha256": "896d8be249e354c50af61fa2efa26629628314acd8f36dd5bf7233e05251efbd"
+    },
+    {
+      "path": "scripts/shared_lab_resources.py",
+      "bytes": 5677,
+      "sha256": "ca996fe6bff79531ba31c7d40436df06f3aac452de281bf2728c3adb500a9b1e"
+    },
+    {
+      "path": "scripts/validate_data.py",
+      "bytes": 20269,
+      "sha256": "3d27c29d45b08bc9dcb61bac8f23e299807a123f5f4725be89c1a22d95e261d1"
+    },
+    {
+      "path": "tests/check_ucsd_candidate_site.py",
+      "bytes": 27013,
+      "sha256": "a8a72d07a1befcaa64cf379b683d6945261c54f35498880971e5a61f4920ca22"
+    },
+    {
+      "path": "tests/test_atlas_quality.py",
+      "bytes": 30333,
+      "sha256": "4ec0e3c5208f7df6796d1098014c7e1d8345c283631e3935c7ceaea2ed659846"
+    },
+    {
+      "path": "tests/test_bound_candidate_alias_history.py",
+      "bytes": 5657,
+      "sha256": "69a156be20959c7ccda06a4b81e5179f5d2e560210ca4a83ef7ab53624c46835"
+    },
+    {
+      "path": "tests/test_candidate_primary_roots.py",
+      "bytes": 9581,
+      "sha256": "5b416b9a3e7ad82819a06f00b8536889ab18d98487973b54679c6bdb2173611e"
+    },
+    {
+      "path": "tests/test_collection_batches.py",
+      "bytes": 3402,
+      "sha256": "e27dd42b037d2a172c6c816196333f8da4a37ac459ca5741bfee2ead268043eb"
+    },
+    {
+      "path": "tests/test_collection_host_deferrals.py",
+      "bytes": 10772,
+      "sha256": "92644a27a985d88f067838c467dae987e17ff7fd586853deed4aafa552b0938b"
+    },
+    {
+      "path": "tests/test_collection_scope.py",
+      "bytes": 11563,
+      "sha256": "1ed428313c5c9f8ea9f625fbe2755df2dafb566d893b3fbb1ea146feab18c371"
+    },
+    {
+      "path": "tests/test_coverage_queue.py",
+      "bytes": 43666,
+      "sha256": "ae8862db2198a345631946087b84aefd472fc4bcc0e937f8f4340b74c1e37d2b"
+    },
+    {
+      "path": "tests/test_cross_department_candidate_history.py",
+      "bytes": 6613,
+      "sha256": "1ef89e57535942357737fb9b44cff2ea5730f88f5032d02dd7faccf6cd8e2752"
+    },
+    {
+      "path": "tests/test_exact_lab_resources.py",
+      "bytes": 5254,
+      "sha256": "0994520d637df18b177608cb3088328678b1ec9d5c71203f87f1c73c96efa2bd"
+    },
+    {
+      "path": "tests/test_existing_lab_own_resources.py",
+      "bytes": 11466,
+      "sha256": "b0e458fbdd13aa4f7d0ca8257d4d3f646bf97b74b458cb1fb721fdee71f8b875"
+    },
+    {
+      "path": "tests/test_export_profile_observations.py",
+      "bytes": 9926,
+      "sha256": "f3a71cc8b491b525301e7acc5339a336ce4dbd6bbf0fc9cbb00595934f7b533f"
+    },
+    {
+      "path": "tests/test_faculty_candidate_history.py",
+      "bytes": 8432,
+      "sha256": "9ea4707e7a96d8424feebc1a995841786915b97ac58223265dfb0e0b4947d3fc"
+    },
+    {
+      "path": "tests/test_faculty_career_identity_reviews.py",
+      "bytes": 14917,
+      "sha256": "f32d96648213456dcb931cea8bb1305811d3b462ebd10a5f2db7d34a1245b631"
+    },
+    {
+      "path": "tests/test_faculty_department_contexts.py",
+      "bytes": 4860,
+      "sha256": "11370654d09c2961655c3a9cf7202b354b8a68e10bed011274edff55bdb90f55"
+    },
+    {
+      "path": "tests/test_faculty_department_normalizations.py",
+      "bytes": 12631,
+      "sha256": "c7e3b871416aa8a5a88cde3cc63c4de3de56eb47fea4a8ca905415fc66ce2e86"
+    },
+    {
+      "path": "tests/test_faculty_directories.py",
+      "bytes": 11175,
+      "sha256": "39f9c8100f9dace32664a4e448de3906ab63194858a949f58d456fee5c387847"
+    },
+    {
+      "path": "tests/test_faculty_identity_source_plan.py",
+      "bytes": 12783,
+      "sha256": "8df64b53f43b4aad2c29ad581e3ef6542328fab9281f77c5c90cf8188d6b5c1c"
+    },
+    {
+      "path": "tests/test_faculty_initial_identity_guard.py",
+      "bytes": 3268,
+      "sha256": "2781bb7cec40fb4ea931339bd339684af19b5d7d50934d5beef532621ebf3b22"
+    },
+    {
+      "path": "tests/test_faculty_named_roster_binding.py",
+      "bytes": 9794,
+      "sha256": "c76dbb042d979670b06d72929ebf5dcd5ef691e47903c9eb172b3a8f09678f2e"
+    },
+    {
+      "path": "tests/test_faculty_own_overviews.py",
+      "bytes": 6518,
+      "sha256": "b824fa4268ea23408ad6d7972d4a0bcb884eeb533672b34889f4b4f43c7638e5"
+    },
+    {
+      "path": "tests/test_faculty_preview_snapshot.py",
+      "bytes": 4971,
+      "sha256": "e3536e65fb997892986e8d431a5a12892051bdcdd6676407dfe06a1e7534a12e"
+    },
+    {
+      "path": "tests/test_faculty_profile_bindings.py",
+      "bytes": 7778,
+      "sha256": "b13176f29dca12b0f061b1d67f9d840a9aa0451ae423994ce9106891d14bbdc0"
+    },
+    {
+      "path": "tests/test_faculty_profile_chain_reviews.py",
+      "bytes": 15220,
+      "sha256": "62b30f0f24053ef751c309e4376a7d0e47f263a043b9f5f5086daecb8e8fb3ed"
+    },
+    {
+      "path": "tests/test_faculty_profile_contact_links.py",
+      "bytes": 15959,
+      "sha256": "f47e3b03dadf4cdb2eed1ac63f35088d8a9af252dffb0eb27e78410759d13bf8"
+    },
+    {
+      "path": "tests/test_faculty_resource_label_reviews.py",
+      "bytes": 12821,
+      "sha256": "1d4761248ceaf56f4e271f0f2e7e5e697117f690d02bf8509e10957b001d0538"
+    },
+    {
+      "path": "tests/test_faculty_shared_primary_reviews.py",
+      "bytes": 13029,
+      "sha256": "2a85dcb249d1ebd6431f6fdecae75c3ac14ab018ad3898d302d98737c56f0451"
+    },
+    {
+      "path": "tests/test_faculty_source_counts.py",
+      "bytes": 1924,
+      "sha256": "30ed194f46d3f3700e13fb9600d4ff771db1da448314df21a92a7a3e11b79c4e"
+    },
+    {
+      "path": "tests/test_faculty_title_source_plan.py",
+      "bytes": 9513,
+      "sha256": "3e9ab6e6332d87fcd0731fde6e4e3a722b442e47a4480bbdef64b71247f01017"
+    },
+    {
+      "path": "tests/test_frontend_data.cjs",
+      "bytes": 9548,
+      "sha256": "7ac666e2cf1065de820aafe04d425bc68c6f0ab3ffba3bf871da24ea4502ecc5"
+    },
+    {
+      "path": "tests/test_jacobs_faculty_qualification.py",
+      "bytes": 12000,
+      "sha256": "b57ffcbb64d60d4fd7a995140f3c9b6a6bedecd193023e4b2a454ee40d919c54"
+    },
+    {
+      "path": "tests/test_lab_child_research_fields.py",
+      "bytes": 8117,
+      "sha256": "e2fbc1c8b5c2a492218f5461472fdcaef584d05e5c662da3e5091700b3e77933"
+    },
+    {
+      "path": "tests/test_lab_field_reviews.py",
+      "bytes": 23244,
+      "sha256": "a0ac55a31bc4018d1bbd152c9974ac80df222b6a8c0ec2e3103f0c87e28697c0"
+    },
+    {
+      "path": "tests/test_lab_identity_merges.py",
+      "bytes": 13545,
+      "sha256": "1788a5018df1e0dad9157e3c552cf9e03d7ed268447f649c4dbfc5ccf636b629"
+    },
+    {
+      "path": "tests/test_lab_own_metadata.py",
+      "bytes": 21389,
+      "sha256": "f604ed112723812ff317ea21543e6fb785c3e7ace349a93de1d7a34bff1879d7"
+    },
+    {
+      "path": "tests/test_lab_ownership_reviews.py",
+      "bytes": 8900,
+      "sha256": "a218156eead1bdcacfcda930a80f66997f43c22c3bd6fd13a5cf8cc278cc0287"
+    },
+    {
+      "path": "tests/test_lab_preferred_resources.py",
+      "bytes": 14868,
+      "sha256": "613ba3e268a0acca31d6da61b075a7ac39a116e9d91a0b018ab6534bbe75468e"
+    },
+    {
+      "path": "tests/test_lab_professor_own_chain.py",
+      "bytes": 10757,
+      "sha256": "34b28d40d064a3ad1954524be6444f7329412ad7e036875b3dae3aba1d722508"
+    },
+    {
+      "path": "tests/test_lab_profile_source_upgrades.py",
+      "bytes": 10761,
+      "sha256": "09e5fd26862f149dc605600c94da10b83e302b7a118502a942b4f59416aa563b"
+    },
+    {
+      "path": "tests/test_lab_program_affiliations.py",
+      "bytes": 10012,
+      "sha256": "ee607d121be90c9f70d57e31debfed2bf456c57da48f6ea1ad48e5651b7a44b9"
+    },
+    {
+      "path": "tests/test_lab_research_resource_reviews.py",
+      "bytes": 10358,
+      "sha256": "e0dbd249453c7f214962af43e8cdfc063522743a99a1fdeab8661135f0e4dc4a"
+    },
+    {
+      "path": "tests/test_lab_resource_associations.py",
+      "bytes": 8772,
+      "sha256": "969b80cd192609ab821948376eb860ba976a9fb169c9c0e0c555b643e49c1598"
+    },
+    {
+      "path": "tests/test_lab_resource_reviews.py",
+      "bytes": 9065,
+      "sha256": "ea061580b8136fb1128c438b12733f388e0adc070a5a1b4c407a1425831cf573"
+    },
+    {
+      "path": "tests/test_lab_root_research_descriptions.py",
+      "bytes": 9307,
+      "sha256": "89712219f56a67479b43d290a89736d77e94d1d5bd36cb3be106b2fc78b00d56"
+    },
+    {
+      "path": "tests/test_labelled_profile_research.py",
+      "bytes": 13087,
+      "sha256": "6213b73d8f0c0ae3c8623d15d706f458c0896948c08efde6a51ce6c709c8921e"
+    },
+    {
+      "path": "tests/test_labs.py",
+      "bytes": 31870,
+      "sha256": "2bf1a9130c81dd140b2f2ddc6629e3fd079fc8a1ae1ad6479f7d7e8e2afc7aed"
+    },
+    {
+      "path": "tests/test_legacy_lab_review.py",
+      "bytes": 3816,
+      "sha256": "945a40adaf5101a19a4ed0aec920045e9186082ae99606fdf737ed29520caae5"
+    },
+    {
+      "path": "tests/test_literal_directory_preference.py",
+      "bytes": 2768,
+      "sha256": "1efe61105ef13c9f851caed735400160821560c47cc82212f45b1ff737c20026"
+    },
+    {
+      "path": "tests/test_literal_transport_uris.py",
+      "bytes": 9983,
+      "sha256": "121b238b92d58e666d627ef9f841aecc96b4e2636a0a4c44259862d18fcbfc00"
+    },
+    {
+      "path": "tests/test_math_metadata_discovery.py",
+      "bytes": 5790,
+      "sha256": "de51a2e72a9cbd699205429219d8d6a2835bfbff4e06eac90ab4029eac17cdf4"
+    },
+    {
+      "path": "tests/test_matsci_own_fields.py",
+      "bytes": 8636,
+      "sha256": "5973c4359bd4bafe98809634c2e602cebbb00a44b4f4124347b34db023208157"
+    },
+    {
+      "path": "tests/test_matsci_retained_directory_primary.py",
+      "bytes": 9021,
+      "sha256": "182c8a0c7f041773cd271faaf1ef8adbc3c3d157b7e67c12966b391df9fe1a1e"
+    },
+    {
+      "path": "tests/test_network_coordination.py",
+      "bytes": 14620,
+      "sha256": "ceae75ae5a1190c005fcc2846f79e2c0b9b1bd401980fe4e3929396e9fb00f38"
+    },
+    {
+      "path": "tests/test_new_candidate_profile_associations.py",
+      "bytes": 8261,
+      "sha256": "15978a37b9c9a790ebf324659382baebf5ce8812c0d4b335e31be768b5ceccae"
+    },
+    {
+      "path": "tests/test_person_identity_reviews.py",
+      "bytes": 12696,
+      "sha256": "ec86b4b4e97c534a07c6176686a8d55992dcc0943c23281a22097f210081fa74"
+    },
+    {
+      "path": "tests/test_preservation_audit.py",
+      "bytes": 6781,
+      "sha256": "a87703f04120646458ce70de72e5155e698be9fd0597eb271004ead263c4cc6d"
+    },
+    {
+      "path": "tests/test_preview_capture_cache.py",
+      "bytes": 4975,
+      "sha256": "ed11541bd97ce98624b5a7a10954a35e98ece2627aba500a3961b7a093ea9111"
+    },
+    {
+      "path": "tests/test_professor_additional_math_source.py",
+      "bytes": 8693,
+      "sha256": "eba223b939aeece7a4feb7b1c7bd3f181066f47b0cf8868364b796dc4bc06280"
+    },
+    {
+      "path": "tests/test_professor_biography_reviews.py",
+      "bytes": 13523,
+      "sha256": "d030dc0a58f4888807eb5da39a80f5cd2d823967746f476d83cdc86caa24da4f"
+    },
+    {
+      "path": "tests/test_professor_contact_scope_reviews.py",
+      "bytes": 11998,
+      "sha256": "b3387c889212958b27065642b0c22dacb710b446bd18cef412f70b2128769276"
+    },
+    {
+      "path": "tests/test_professor_own_field_reviews.py",
+      "bytes": 11090,
+      "sha256": "9398f01283889d84b1d73d755f0444e637d254b3bb96bf0f3f263fc983a0e7dd"
+    },
+    {
+      "path": "tests/test_professor_profile_link_reviews.py",
+      "bytes": 8312,
+      "sha256": "3db2ce899d6f29181d11ebbb5600b9910e96a5e5e9b2a21cec8dff5d50c377e3"
+    },
+    {
+      "path": "tests/test_professor_research_scope_reviews.py",
+      "bytes": 21820,
+      "sha256": "f83cbb0b56f49739a748e4f815270fbbbeaae5b6645fb29950d7a09ba2948a0d"
+    },
+    {
+      "path": "tests/test_provider_profile_fields.py",
+      "bytes": 9400,
+      "sha256": "8c93fb6472475771fd4ad2f2dd5eca7e2da3fa79810fb30eaf649d2ae2990669"
+    },
+    {
+      "path": "tests/test_published_organization_resources.py",
+      "bytes": 12660,
+      "sha256": "658d54d7d90283ba7de100849be5bb2c0fc907736094a8e3306ebfd03b16f182"
+    },
+    {
+      "path": "tests/test_queue_resource_keys.py",
+      "bytes": 10749,
+      "sha256": "6bb7af99a04d5da0570db9d9bb9bf1af5edd7c31ce4736e31e7a816dfcc9fbdc"
+    },
+    {
+      "path": "tests/test_rady_own_fields.py",
+      "bytes": 9981,
+      "sha256": "38efc24dc5e4e58316ad72ba2bd974becc9c0dbd40e68d3b8da3a6082721b165"
+    },
+    {
+      "path": "tests/test_reviewed_handoff.py",
+      "bytes": 19658,
+      "sha256": "c2e93701de6b90fc568f51b93c08aca914e3e064d14433e24149f88c878c2991"
+    },
+    {
+      "path": "tests/test_scoped_faculty_titles.py",
+      "bytes": 15189,
+      "sha256": "fa743389793ed0f9293cacfc9c34c25b55285cd1ad4866fed44cb61f7b5d6a6e"
+    },
+    {
+      "path": "tests/test_shared_lab_entities.py",
+      "bytes": 9549,
+      "sha256": "5c2d4516b53c8a1083eec65846a69702c5c03163f3ec08d007abcdec0d9463df"
+    },
+    {
+      "path": "tests/test_shared_lab_resources.py",
+      "bytes": 7372,
+      "sha256": "db330e3845c0636e4429c7b43eba21bd809bb7b9f22dfeed1bb28d375af1bb49"
+    },
+    {
+      "path": "tests/test_unmapped_faculty_alias_review.py",
+      "bytes": 2647,
+      "sha256": "14c57ab26b2b6ebc6db7aa4c4f336204dd06a02760dbee209473ef399a9a47f2"
+    }
+  ],
+  "excludedEntries": [
+    {
+      "path": "docs/operations/NETWORK-COORDINATION-20261016.md",
+      "sha256": "4eea1b977b1ca924e5ae7287fa4b0b3d129b5f80aea17d5c3ec8169bc576e6e9",
+      "bytes": 3708,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/NEXT-20261016.md",
+      "sha256": "8f23b14033e4e5a1960d722feea093accb5d59de18132811f0b875027c801aef",
+      "bytes": 129187,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/PROGRESS-20261016.md",
+      "sha256": "7e55db9371e065119fbc14f40f1b4df18716b3795e0277a5fc17898b928dafec",
+      "bytes": 26127,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/allen-pi-preview-20261016.json",
+      "sha256": "06c6ad31ce6889776f36ca8c1de3497251cf8353b1454db0afbc1cadc314a959",
+      "bytes": 6381,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/batch-transition-20261016.json",
+      "sha256": "842143371c55bb544e303d9be3d4524bee8bc70bc68d46e806c14a826fa172cf",
+      "bytes": 1958,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/chattree-fainman-source-preview-20261016.json",
+      "sha256": "13b94d938cdc5826844061cc15cda26f686697dc923f562a4330ebd4ace8274b",
+      "bytes": 19210,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/completion-export-preparation-20261016.json",
+      "sha256": "2ea3a9be45b168ea15276be6bfec52faf13eaa43b1f4c5430072146cd0dc28ee",
+      "bytes": 24826,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/contact-normalization-20261016.json",
+      "sha256": "c0884026364b3da37c58f50b205edf53abc677fde82721bb3889a0bdfe40c382",
+      "bytes": 4347,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/cooldown-transition-20261016.json",
+      "sha256": "2624c3d9a57203cfaadda050906bf9e9a26ff0abf68d899256df5c5aad179929",
+      "bytes": 3035,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/eligible-queue-drained-source-preview-20261016.json",
+      "sha256": "7b52a81dca275eb5b4882e623445d976b4115cca71f064c03f42f2a02a538ba4",
+      "bytes": 30150,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/exact-key-scheduling-activation-20261016.json",
+      "sha256": "565ffc43422bc434c549b66ee2952f4c8e78b827c0804aed2cff2b20e91539c8",
+      "bytes": 6219,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/exact-resource-review-preview-20261016.json",
+      "sha256": "b1ed955c241978cbced0474eb3d0343b836007a82cf0f3d5214e5402f2aaa446",
+      "bytes": 5452,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-assembly-preview-20261016.json",
+      "sha256": "3df4b6af3d34096074213395bf7daf343883754999423f2b227cbfd966d6583d",
+      "bytes": 2504,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-continuation-capture-preview-20261016.json",
+      "sha256": "d17c16bfa045f62187c14d3723a8845d540f8df9cd481bf9eeb1ec0e684fe11d",
+      "bytes": 45193,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-current-capture-preview-20261016.json",
+      "sha256": "d9e6bac54c79837645e149b86ae56a58d6e32e7b8f34075d30308465f5a0e0dc",
+      "bytes": 88946,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-current-source-refresh-preview-20261016.json",
+      "sha256": "921a213575eb7c45b02d706d6cf7870c55ec962384c50ab4cae6ab57b60cd715",
+      "bytes": 12914,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-email-source-refresh-preview-20261016.json",
+      "sha256": "d93bdd71bbbf47e8f332643df089cb74b9162b09824715abf796aac72ebdb536",
+      "bytes": 92657,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-followup-capture-preview-20261016.json",
+      "sha256": "a8f9bf8a40a7b2f96aa77a42213118eb2f158bf1216bab6b7b398383a158e445",
+      "bytes": 48564,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-full-source-refresh-preview-20261016.json",
+      "sha256": "c09c9a5322d152a325540c7f87ce91dcdcffa3813bfce290769aaae748fc9e52",
+      "bytes": 8970,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-identity-source-activation-20261016.json",
+      "sha256": "1c6c1b4bc97231a8a5d465e19a544957febb5ac5930e7f311062dc910e7090b4",
+      "bytes": 122169,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-late-capture-preview-20261016.json",
+      "sha256": "9661dc06fbbae371f021a19e3a7ece246af47358a2fdff85233c882f1e292748",
+      "bytes": 69886,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-own-title-fields-preview-20261016.json",
+      "sha256": "d7c1fb3b651f2053898952e4ad46b917473008d73e8ca672bc228e5793327870",
+      "bytes": 13359,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-person-metadata-preview-20261016.json",
+      "sha256": "c3ec4142808728c1d621036b27a055c46374872a51e6304272a29b4a454b5dc0",
+      "bytes": 9378,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-position-source-preview-20261016.json",
+      "sha256": "ca367b590bd5ab6fe887f0bebfb1171e2205686bbfbb519a1cef52e4a77b4836",
+      "bytes": 58940,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-abagyan-capture-preview-20261016.json",
+      "sha256": "4fce7f09acee27ae2165ffafc8650b9bfec75908fa5ced3c9ca4d2261442fb7d",
+      "bytes": 25917,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-alias-capture-preview-20261016.json",
+      "sha256": "3cf88c55862061dbf52b45a07ae2bd842f990f83ee2e619290d7307d2c392be5",
+      "bytes": 18547,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-biography-capture-preview-20261016.json",
+      "sha256": "11caba68e92fff634f8891e2a2be275ca9074f1fb5863f6cead472df0082184a",
+      "bytes": 17829,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-counts-capture-preview-20261016.json",
+      "sha256": "bbba9ee075bca68604e8083ad2594efc23f421e4ed1beb449898d9b5f836daf4",
+      "bytes": 21101,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-cv-constraint-capture-preview-20261016.json",
+      "sha256": "0bb2f1932bc33670401e96be0d107f71602063cd7d6d176ec089a7a873c905b8",
+      "bytes": 19458,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-institution-capture-preview-20261016.json",
+      "sha256": "0296a0c25200d32499de1da2e25e244715e792c873d4e7839be0c8b6467197c7",
+      "bytes": 18835,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-materials-capture-preview-20261016.json",
+      "sha256": "53b34f1dcf7ef9f6230b9fad67012ecbfac9c7faa2aad07922e2729147eb26b7",
+      "bytes": 24191,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-program-capture-preview-20261016.json",
+      "sha256": "2747a5572d1427c4e03412b0c0eb9a728406d2e10badb8d5eddfaa04cbac02d2",
+      "bytes": 20430,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-storage-capture-preview-20261016.json",
+      "sha256": "d609310324413a025d69332947fd9f66942e45ff23cb389ee1b944f5d7b2d86b",
+      "bytes": 19543,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-post-unit-normalization-capture-preview-20261016.json",
+      "sha256": "3058cb82cedf03befec61a22241571beb52a8ecc1ea6569ee4caa9869cd46e7c",
+      "bytes": 26302,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-preview-refresh-20261016.json",
+      "sha256": "99f077e269f9469f76114b984b68e9acb5ee3f3e8bfa0a917f756f91a58145ec",
+      "bytes": 5285,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-profile-bindings-preview-20261016.json",
+      "sha256": "f17fea8e9269f169c6fb7dffa342eaa1224490c86f0204d93b53a73834be9b1e",
+      "bytes": 20101,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-remaining-source-capture-preview-20261016.json",
+      "sha256": "0e75d20173257b0ea5a2749ffb689d25899e997b2f210c7fd931c61089c467ac",
+      "bytes": 24734,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-shared-primary-identity-preview-20261016.json",
+      "sha256": "40aa4719967a08b2277ae8f939cf299f712846a711f4be52681b82fd04f47de3",
+      "bytes": 17913,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-source-counts-performance-20261016.json",
+      "sha256": "d3504055059d8d15a0301900b674957348740f06c058642159d5447dbcaff48b",
+      "bytes": 7160,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-source-refresh-20261016.json",
+      "sha256": "8063e73e5255551b91b7682e56b901cb4a92bd43ab39a8c5b29eb8e266b39cc4",
+      "bytes": 236815,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/faculty-unit-label-normalization-preview-20261016.json",
+      "sha256": "72e5ed5a9921f720dd66cad3dc6abc30200266fd8eb3160a278bdb77555c9eab",
+      "bytes": 15582,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/fainman-person-identity-preview-20261016.json",
+      "sha256": "9af67da1b50f41a47a028e254e3bf9b4b621dd1e5013967403914f45410731df",
+      "bytes": 14817,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/frame-source-preview-20261016.json",
+      "sha256": "0c15cf5d5c68868bebcadfdd556e833bf5323ef5442e7e7e34befe40272fc578",
+      "bytes": 19517,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/frontend-identity-review-20261016.json",
+      "sha256": "1a91da7041ac74a6b8b865871de892e733c1f0162109693d71631ad2b7aeada8",
+      "bytes": 7136,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/global-identity-contact-scope-review-20261016.json",
+      "sha256": "bad24b76106481358f093fe6feb91f71db0cc5107486e3070b68d074a6f7013a",
+      "bytes": 111426,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/heartbeat-authorization-20261016.json",
+      "sha256": "382a3827084f679708ec4998563c3824acec4332ba181082ceab35ffa837a993",
+      "bytes": 1128,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/heartbeat-execution-state-20261016.json",
+      "sha256": "4ec4e47fc2aa80c4d1aae7d21ef83733a6a4924a10a9291aed153881c96a8086",
+      "bytes": 991,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/heartbeat-receipt-20261016.json",
+      "sha256": "caec3823a40c69eb6f0caa97e26383d7d20410e6f0469c93d4da10970114c79f",
+      "bytes": 3725,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/host-scheduling-preview-20261016.json",
+      "sha256": "cddcfc652deb75b01e5527d574740987b694881f05fe3320f0a72379a549aa55",
+      "bytes": 5922,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/identity-label-discovery-preview-20261016.json",
+      "sha256": "ca50f43cef1f5cc11e39328cdd943ccdefbc0b34ad14e7c610d68faeecfda2ed",
+      "bytes": 1767,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/identity-merge-preview-20261016.json",
+      "sha256": "6e93e66f437d7fba80cfd5f40191bf8be3ae33649ca03f8d4fa76e123374b8ae",
+      "bytes": 1349,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/jacobs-qualification-preview-20261016.json",
+      "sha256": "ad493fb901ffe4466fd19054ac1cf125a86b1ceb4db9b3f3f5c7b329092487ee",
+      "bytes": 10036,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-abagyan-profile-resource-preview-20261016.json",
+      "sha256": "50f8a4804a50b9466765523a64670993e4e3da776cdfd6fb2ea521f1c8256938",
+      "bytes": 18218,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-bioarchaeology-preview-20261016.json",
+      "sha256": "4a5c6dab7ea72ea5498bfd1aa90f01346ad0a207996cb1cf90d7e2e0658d208a",
+      "bytes": 60339,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-captured-source-preview-20261016.json",
+      "sha256": "6b18bc0bf2619cd222868cd4c9198a957b857ebb1413c6275edb5fa35a15fdf4",
+      "bytes": 37675,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-climate-interest-group-preview-20261016.json",
+      "sha256": "841a9647b7a237651a0ea2ac437682bb884b7c3b7f867b5d58fd5a4f1e00753c",
+      "bytes": 37508,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-course-own-identity-preview-20261016.json",
+      "sha256": "a8037a5ed0159923e764f8da9a814188b9158af069d248969e957708ae6a179b",
+      "bytes": 15110,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-description-batch-preview-20261016.json",
+      "sha256": "0ebb11df3e245f4ee643972d156dfc3fbc90c028fbc70c4b2795a4a4fc38bc72",
+      "bytes": 90325,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-field-assembly-preview-20261016.json",
+      "sha256": "95265566edd8f93faf713822b57284a1cf495906d2281c13df394ba007afebdc",
+      "bytes": 11004,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-field-capture-preview-20261016.json",
+      "sha256": "31d2dcfb04f9883adf07cf4e51f9f70bdd97cd955d3a8abd597ea9475026e893",
+      "bytes": 1506,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-insight-research-resource-preview-20261016.json",
+      "sha256": "937a7d666f9de32de45bbb9105d4c8199f1b979e0b18096f6846ba36f0b254f2",
+      "bytes": 18107,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-literal-source-preview-20261016.json",
+      "sha256": "c9cae032840803fca5c5284ad80181bedc0ba9c08285ccf0561d15565cfadd8a",
+      "bytes": 32061,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-named-resource-preview-20261016.json",
+      "sha256": "a1b2d6ca628ea90bb55e3b44868e5e7f1c573af077a3dd99e67684261e09acd5",
+      "bytes": 27851,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-original-profile-preview-20261016.json",
+      "sha256": "a5c32d63b0f4c1ae379175eaca07560990cd704bee2a2da438b1564205244cd4",
+      "bytes": 1091574,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-own-institution-preview-20261016.json",
+      "sha256": "557b5d771d4b6dd1560355fdeb8a85267d93347c05993523dc5bab793b525d97",
+      "bytes": 16581,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-own-opportunities-preview-20261016.json",
+      "sha256": "0737fc63c56395ff68b0231bb51964fdcec42b74545dd68a49dcd87d75cedccc",
+      "bytes": 21393,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-paired-own-identity-preview-20261016.json",
+      "sha256": "36d01a57c4db063a1adcadd5f0c032e762111854ea7929ec2d4486aa31c2d239",
+      "bytes": 31546,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-positive-entity-preview-20261016.json",
+      "sha256": "45634ea6deb907db20fca55cdb710c801db5dbb899f0d370ab1259f6afd45d52",
+      "bytes": 32075,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-preferred-resource-preview-20261016.json",
+      "sha256": "912ad173bf0ae2906069562640b44edb11ceb70891661737deade36b4b1a7f2c",
+      "bytes": 22829,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-program-affiliate-preview-20261016.json",
+      "sha256": "c3fe5608f288dccc2a5d2a8b917d3b4702d235333b921c85ea76c16f6a646bc9",
+      "bytes": 16959,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-publisher-identity-preview-20261016.json",
+      "sha256": "37e5373e78a27a7145d0a5d343bdf3056f1ea1d6866eefe440f6bbe003f216d5",
+      "bytes": 20093,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-remaining-source-preview-20261016.json",
+      "sha256": "15888030568b74d726bab21ef6ff2014ef9c0cf1fca0aef92c19da1b871eb145",
+      "bytes": 31515,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-resource-association-preview-20261016.json",
+      "sha256": "5f6008156782d00e221ae1fc152b54b6daf0c876e54293a7fe0ea142df1d221f",
+      "bytes": 6065,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-scoped-statements-preview-20261016.json",
+      "sha256": "cf8b27f3627ecaedce33a25d3d05590c90f45dd07a7687533d0fd1d0c6410518",
+      "bytes": 25749,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/lab-source-resolution-preview-20261016.json",
+      "sha256": "d4434ca74c808ebd8ffbc8d96fb218c4f4f747ab32075fc80d25d66757b844b8",
+      "bytes": 45127,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/literal-endpoint-and-math-preview-20261016.json",
+      "sha256": "6c612f245c0ff57fd37899ba464557f3a8feac4619047821b933c614ca63a47f",
+      "bytes": 17434,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/literal-uri-repair-activation-20261016.json",
+      "sha256": "11fd4ab6e382220fe5987c66c6cca1fae00b62b155efad6103caef5a06228328",
+      "bytes": 1959,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/literal-uri-repair-preview-20261016.json",
+      "sha256": "535c8d74ab4b5f26cd68917a1e9261f4baa65c91ec37a043a8efe6b878281813",
+      "bytes": 2311,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/literal-uri-syntax-activation-20261016.json",
+      "sha256": "ab907da8179b080494a3538fb512acc2ad99350c734038f310be045a6d6ff543",
+      "bytes": 3446,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/math-dynamic-display-source-audit-20261016.json",
+      "sha256": "7edb6d785947bb6df8e1f45441b219c9a5c932f2fe87bd3bb13a5449fbb9d0d4",
+      "bytes": 35790,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/math-metadata-discovery-activation-20261016.json",
+      "sha256": "6a4815f8dcc37be23d42a004bd8f98db6c40dad5ac7fa54aa7fb3e0c2b0d41a9",
+      "bytes": 1863,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/math-metadata-discovery-preview-20261016.json",
+      "sha256": "56febb46c99f0af38d56ee37d8b5d9471c3930e8773e1c0d586d58468ef94e03",
+      "bytes": 2200,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/named-roster-binding-preview-20261016.json",
+      "sha256": "d551821cb83ee1cc33c1a90c95be77c7d67c0c6d9058a3adb8c76b7efb68ccf2",
+      "bytes": 8610,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/network-transition-20261016.json",
+      "sha256": "f41dffefb90dc33f8d47fe24d2e8b067412e5f09808ec3218352364131e66737",
+      "bytes": 2402,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/organization-resource-preview-20261016.json",
+      "sha256": "f5dce9159509533dfd6238743975d966dfc01c83294f954333cad662b8c5facb",
+      "bytes": 31450,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/own-labelled-research-fields-preview-20261016.json",
+      "sha256": "22a2c0ce967b110c4d06ec935c00bfe8a1097a5113f5635daff95a5c65f5c881",
+      "bytes": 20094,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/own-profile-link-preview-20261016.json",
+      "sha256": "028fa0fe78f30e659333773f3bd85039c7c7c621496689290866ed6bed9ecd3d",
+      "bytes": 7256,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/person-identity-assembly-preview-20261016.json",
+      "sha256": "1ae616f7361085e3a32b5f61f996b373616eaefc922e85f948c76c247866a279",
+      "bytes": 6852,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/person-identity-capture-preview-20261016.json",
+      "sha256": "d8f95f07e34cc0a2e8a1fcd2bd6f1bc835e719d96e5eca3711875397c730b1d9",
+      "bytes": 18282,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/person-independent-identifiers-preview-20261016.json",
+      "sha256": "69fb5aba3e62c224a450030d5bcdefd223b08b02172c6189e198877fcdc3954e",
+      "bytes": 14296,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/person-profile-chain-preview-20261016.json",
+      "sha256": "930deed314b0c9be26f5c9389df6c2c121e61114216a91a0e65163b48f4dc2fd",
+      "bytes": 27543,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/preservation-preview-20261016.json",
+      "sha256": "402a53152e9df2974b3f3820288420c8e5aa5eed20c73a77baf10b5b774edaf7",
+      "bytes": 3008,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/preview-cache-storage-maintenance-20261016.json",
+      "sha256": "c298517b17e6137e114eb09e3c1313321507ce9d50fb6aad2e4b90b0726ac58d",
+      "bytes": 59807,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/production-semantic-review-20261016.json",
+      "sha256": "73e869c0d713b2db03c5b28da19f69f8a7966f04d675bb2b2c48267459466c56",
+      "bytes": 11964,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/professor-biography-preview-20261016.json",
+      "sha256": "5cc799833e20f33defc90ae9aa103a1b5a6a76f0b51d9f6b29ac2a371f005f49",
+      "bytes": 26829,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/professor-own-fields-preview-20261016.json",
+      "sha256": "fff9b078bc1ec61ba0fccf1aa6e7160e1de6cf2cbc674dba94a6396926207488",
+      "bytes": 12762,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/professor-profile-link-preview-20261016.json",
+      "sha256": "d2cd1deaf74e23d3b78d8940e29e260249cbcc7e38851ab65cdaff77e178d4c4",
+      "bytes": 8904,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/professor-rady-own-fields-preview-20261016.json",
+      "sha256": "c9ebce9548f4f36fd8ec68eb2e9231e9bde17c23f9ce0d5eaf0909aa26a15e06",
+      "bytes": 20093,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/profile-qualification-activation-20261016.json",
+      "sha256": "6f00ee052a61142a687b5de8a16c58f3d2cbfdb7379aa8fd6de69f253288c9e1",
+      "bytes": 2907,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/profile-qualification-repair-20261016.json",
+      "sha256": "5df16298e63f4bf457f0adb7f78c42f5ae7c7aed42bd39e72926f385915bce86",
+      "bytes": 281394,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/profile-review-scheduler-repair-20261016.json",
+      "sha256": "e867d045fb1a3d50bdbefee49cb815d057734fa38f0c1f8c82ed47ace04eaa5c",
+      "bytes": 4380,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/queue-resource-key-audit-20261016.json",
+      "sha256": "c2ecb2e2fe97e672ef88cf39b416344149aab18dbf30e422ac9f76279bc2a4f7",
+      "bytes": 196067,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/recovered-request-uri-sources-20261016.json",
+      "sha256": "fa1d0aeed57eefd38ed6743bf19bdb8d0728eccb6a2e2020d957f6f82440bea8",
+      "bytes": 20167,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/remaining-research-summary-review-20261016.json",
+      "sha256": "63eceadb6baeb3bbb81788633d4460541ffef6950161671b32722d538c3afa1f",
+      "bytes": 357077,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/request-resource-key-preview-20261016.json",
+      "sha256": "c14ed079b179bc067182ec15e8f12de8ed9fcba7c6d7c797d008913ee899b701",
+      "bytes": 15548,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/research-topic-scope-review-20261016.json",
+      "sha256": "180a00ca6625e9fcb559f51b9f1170a04b5b4147439755bd3a8a32f7fb1a20ce",
+      "bytes": 11689,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/resource-label-resolution-preview-20261016.json",
+      "sha256": "0f383e3d4cc80fd8af6ae7da2d4e301fb811c75bb78ed714e8a7d73ea0375f29",
+      "bytes": 10884,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/robots-retry-activation-20261016.json",
+      "sha256": "53a1ee53c143aa1602846a3c2ceff249072e58bdc551e18a2f5a2d4012a3ec6d",
+      "bytes": 15046,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/robots-retry-repair-20261016.json",
+      "sha256": "5baea0ae6e4d0a3db71c2ba0182143868e541b8104c31dec097067a64d701891",
+      "bytes": 10875,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/scope-reassessment-activation-20261016.json",
+      "sha256": "3c4557212530c84066d03f9386c4233b63e0e9c0bf924827e00079664b4bc6b4",
+      "bytes": 2153,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/scope-reassessment-repair-20261016.json",
+      "sha256": "9070c90260955a93bc7ec565f16cd13241001bac616e87b9f134ec0a32209d95",
+      "bytes": 1791,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/scope-repair-20261016.json",
+      "sha256": "61535d4e8775237a05ed6a147bd4b7ce260cf5700b1fc7bfadad21603c4f8ed3",
+      "bytes": 20622,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/setup-20261016.json",
+      "sha256": "03c83a123bb2d751c1f8560bfdba9e2b5652b4a560f97cb9c489eea57244fe8b",
+      "bytes": 1561,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/shared-lab-entities-review-20261016.json",
+      "sha256": "b9b4b6e6cecd6f76c9faf9d9b8d886305cc0196ba8b5ae2c96b79fc12ec8dca1",
+      "bytes": 2418,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/shared-lab-resource-preview-20261016.json",
+      "sha256": "192cfe8a9375c7f2d8a75d2f97e1f95ed39ff867822da9c3223d7052d53e3e4f",
+      "bytes": 6266,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/shared-lab-site-preview-20261016.json",
+      "sha256": "284bef7c3a0330452ed4a198daf663a8b504844c2972e1a7d49d50055bf5cb54",
+      "bytes": 293354,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    },
+    {
+      "path": "docs/operations/ultrafast-owned-resource-preview-20261016.json",
+      "sha256": "5dc70b24c11ca926dfcd410c0b50eb6581d6ea964043d53e41dff06c0a295db2",
+      "bytes": 19492,
+      "reason": "Internal execution, user authorization or Library/control metadata; replaced by public project receipt."
+    }
+  ]
+}

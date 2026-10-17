@@ -85,6 +85,41 @@ Fresh cached pages do not consume the slow-host budget; later runs advance to re
 
 The lab collector also retains the complete existing output as its incremental baseline. A limited refresh or a missing local HTML cache does not erase cloud evidence for unattempted profiles. New failures update the latest check while keeping historical field evidence and its original dates. Keep `data/ucsd/lab-evidence.json` when moving a completed capture between computers.
 
+### Broad UCSD coverage queue
+
+The October 2026 expansion has a separate resumable public queue. It starts from
+the 59 saved departments, discovered official directory links, campus institute
+directories, existing lab destinations, and the prior unresolved candidates, and public person pages in the official UCSD
+Profiles sitemap. Person pages are candidates; only their explicit appointment
+table can establish a new faculty listing. The full profile pass takes roughly
+30–40 hours at the published rate, with recent verified evidence retained.
+Directory discovery follows two explicit link hops; lab identity pages and new
+faculty profile links are checked separately. This is a documented source scope,
+not a claim that every UCSD entity has a public page or has been verified.
+
+```bash
+python3 scripts/collect_ucsd_coverage.py --workers 8
+python3 scripts/review_ucsd_coverage.py
+# Review per-URL decisions in data/ucsd/coverage-20261016-decisions.json.
+python3 scripts/apply_ucsd_coverage.py
+python3 scripts/rebuild_verified_atlas.py
+python3 scripts/validate_data.py
+```
+
+The collector uses system `curl` with TLS verification and no automatic redirects.
+It checks target robots at every redirect and persists per-host request clocks;
+UCSD Profiles has a ten-second minimum. Retries are bounded and honor Retry-After.
+The ignored `.cache/coverage-20261016` directory holds responses and atomic queue
+checkpoints. Creating a `STOP` file there requests a graceful checkpoint; remove
+it before resuming. Recent identity-verified profile evidence can be retained
+with its original observation time. Counts distinguish those retained records,
+successful requests, unresolved checks, and pending work.
+
+Review output separates centers/institutes, possible lab aliases, unsupported
+personnel cards, and accepted additions. Export refuses an incomplete eligible
+queue. Accepted evidence is saved in `coverage-expansion-evidence.json`; original
+captures remain available. An unavailable website never means the lab closed.
+
 Use the commands above for v3 refreshes. The legacy scheduled workflow has not been upgraded in this branch; cloud backfill results are imported independently of GitHub Actions.
 
 ## What the data means

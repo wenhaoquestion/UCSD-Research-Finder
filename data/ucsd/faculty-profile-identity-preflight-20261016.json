@@ -1,0 +1,450 @@
+{
+  "isApplied": true,
+  "isFinalIdentityReview": false,
+  "wireRequests": 0,
+  "casesInspected": 136,
+  "states": {
+    "no_supported_positive_identifier_binding": 128,
+    "complete_verifier_accepted": 8
+  },
+  "completeBatchVerificationPassed": true,
+  "acceptedForFurtherBatchReview": [
+    {
+      "sourceCaseId": "identity-source-c457064773ea505d770a",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-kenneth-a-zeger",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/profile?id=81",
+        "originalProfessorRecordSha256": "b8f752e05d7edacc0d4daeecef319cba8a4ecd9e16de84fd3333bf8d4e2230be",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=81",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=81",
+            "observedAt": "2026-10-16T08:33:56+00:00",
+            "bodySha256": "15f8285faa68b52a08d3a0ba3bf9f615620173d5617690ba1b95942e6b93cf48",
+            "nameAsDisplayed": "Kenneth Zeger",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Kenneth.Zeger",
+            "linkUrl": "http://profiles.ucsd.edu/Kenneth.Zeger",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Kenneth.Zeger",
+            "sourceUrl": "https://profiles.ucsd.edu/Kenneth.Zeger",
+            "observedAt": "2026-10-16T16:47:09+00:00",
+            "bodySha256": "fe35e74176d2db472ab7c9730b662a0f0a82c9f31bb3e2b06f08425f798678fd",
+            "nameAsDisplayed": "Kenneth Zeger",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/kenneth.zeger",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/171390/171390.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Kenneth.Zeger",
+          "canonicalUri": "https://profiles.ucsd.edu/kenneth.zeger",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/171390/171390.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Kenneth Zeger",
+          "titleAsListed": "Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-bf14f07c49d281bec98e",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-emeritus-lawrence-e-larson",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=38",
+        "originalProfessorRecordSha256": "5dddcf20dfb3f270d837dc26132ad71c37662335aa98c50d9635276d439c73a2",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=38",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=38",
+            "observedAt": "2026-10-16T01:10:32+00:00",
+            "bodySha256": "6e8dbbbbeb6f00d7b8edfd56a58c690e441b5d1e7cc32fafc691056886f04522",
+            "nameAsDisplayed": "Lawrence Larson",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Lawrence.Larson",
+            "linkUrl": "http://profiles.ucsd.edu/Lawrence.Larson",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Lawrence.Larson",
+            "sourceUrl": "https://profiles.ucsd.edu/Lawrence.Larson",
+            "observedAt": "2026-10-16T16:47:29+00:00",
+            "bodySha256": "84667b32ed7df2bfa8289adc3fbd351044be308870bf8e9bf5b55d246bf41939",
+            "nameAsDisplayed": "Lawrence Larson",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/lawrence.larson",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/179795/179795.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Lawrence.Larson",
+          "canonicalUri": "https://profiles.ucsd.edu/lawrence.larson",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/179795/179795.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Lawrence Larson",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-98c2c0120cd861c28a6a",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-manuel-rotenberg",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=323",
+        "originalProfessorRecordSha256": "30aa68e751849a8291c19b5bed1a36ca2b63e84e2daa6c03312a43fd1526b489",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=323",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=323",
+            "observedAt": "2026-10-16T01:10:57+00:00",
+            "bodySha256": "88cb0b6a57bf7bbb6a69ac9e03784ca166a632066631d2809a871f0e107bcd37",
+            "nameAsDisplayed": "Manuel Rotenberg",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Manuel.Rotenberg",
+            "linkUrl": "http://profiles.ucsd.edu/Manuel.Rotenberg",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Manuel.Rotenberg",
+            "sourceUrl": "https://profiles.ucsd.edu/Manuel.Rotenberg",
+            "observedAt": "2026-10-16T16:47:49+00:00",
+            "bodySha256": "60e965afe9b1f6a32752de66b82188da4b06a429707c01a82ea8371f031413a0",
+            "nameAsDisplayed": "Manuel Rotenberg",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/manuel.rotenberg",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/180738/180738.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Manuel.Rotenberg",
+          "canonicalUri": "https://profiles.ucsd.edu/manuel.rotenberg",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/180738/180738.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Manuel Rotenberg",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-565772b8d8293a7f89ad",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-kenneth-y-yun",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=80",
+        "originalProfessorRecordSha256": "b7e4e7b4e324926523e8328a76c2347cfe8e4dcbdc3d7537095dacc1de57dd6a",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=80",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=80",
+            "observedAt": "2026-10-16T01:11:09+00:00",
+            "bodySha256": "6c033a898ab645049ccbc35b7c5d11530f16e8d061929e5ccb293cfcdeebd430",
+            "nameAsDisplayed": "Kenneth Yun",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Kenneth.Yun",
+            "linkUrl": "http://profiles.ucsd.edu/Kenneth.Yun",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Kenneth.Yun",
+            "sourceUrl": "https://profiles.ucsd.edu/Kenneth.Yun",
+            "observedAt": "2026-10-16T16:48:09+00:00",
+            "bodySha256": "9eeaca80d541297b4a150bc7e191dafcb57ce0b33e54b07923540fd780a3fef6",
+            "nameAsDisplayed": "Kenneth Yun",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/kenneth.yun",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/184997/184997.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Kenneth.Yun",
+          "canonicalUri": "https://profiles.ucsd.edu/kenneth.yun",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/184997/184997.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Kenneth Yun",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-6fbb8ac6297115abf607",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-anthony-s-acampora",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=23",
+        "originalProfessorRecordSha256": "be0a87d61a5cb078c380b21ef4753dbcb4527474bb59c02f9d48dd68fcb20fa1",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=23",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=23",
+            "observedAt": "2026-10-16T01:10:05+00:00",
+            "bodySha256": "cd66046479e288d4d50797a0e7162f55cfc5172eb3413d35ba85450c28db75eb",
+            "nameAsDisplayed": "Anthony Acampora",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Anthony.Acampora",
+            "linkUrl": "http://profiles.ucsd.edu/Anthony.Acampora",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Anthony.Acampora",
+            "sourceUrl": "https://profiles.ucsd.edu/Anthony.Acampora",
+            "observedAt": "2026-10-16T16:48:29+00:00",
+            "bodySha256": "766abca7e8164d00f22b10f3bad37a4349ace4e269e60245db65dc6eec20a5f3",
+            "nameAsDisplayed": "Anthony Acampora",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/anthony.acampora",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/188826/188826.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Anthony.Acampora",
+          "canonicalUri": "https://profiles.ucsd.edu/anthony.acampora",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/188826/188826.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Anthony Acampora",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-3802e279cdf2fae4f840",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-huey-lin-luo",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=44",
+        "originalProfessorRecordSha256": "a5896c31f999df7ff60b64bf7e4978e2d4ab726c30e2d8c06bf5bdcf3d76b5da",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=44",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=44",
+            "observedAt": "2026-10-16T01:10:39+00:00",
+            "bodySha256": "e3c2b712ed8eaa538d72ecfa7521a45aad7200fc8520f9cd90691ecddaa13ea2",
+            "nameAsDisplayed": "Huey-Lin Luo",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Huey-lin.Luo",
+            "linkUrl": "http://profiles.ucsd.edu/Huey-lin.Luo",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Huey-lin.Luo",
+            "sourceUrl": "https://profiles.ucsd.edu/Huey-lin.Luo",
+            "observedAt": "2026-10-16T16:48:49+00:00",
+            "bodySha256": "1efbc32b916e7924c49c5484d93bb590d496d52e055db417b9e8c74c0ad55bad",
+            "nameAsDisplayed": "Huey-lin Luo",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/huey-lin.luo",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/193624/193624.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Huey-lin.Luo",
+          "canonicalUri": "https://profiles.ucsd.edu/huey-lin.luo",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/193624/193624.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Huey-lin Luo",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-2e05cab6b081e835b2b2",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-ramesh-c-jain",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=303",
+        "originalProfessorRecordSha256": "0c4ffe4749e825cfff03b300bd6f89d34def7324bc9a065878190c25074bf2d9",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=303",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=303",
+            "observedAt": "2026-10-16T01:10:24+00:00",
+            "bodySha256": "1a867c095105c3f99c3a40eef25f2079e260109b588c43adea000020a70aa489",
+            "nameAsDisplayed": "Ramesh Jain",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Ramesh.Jain",
+            "linkUrl": "http://profiles.ucsd.edu/Ramesh.Jain",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Ramesh.Jain",
+            "sourceUrl": "https://profiles.ucsd.edu/Ramesh.Jain",
+            "observedAt": "2026-10-16T16:49:10+00:00",
+            "bodySha256": "eb8fda27591bf3a92c731cc91ccfbd0d51f4e6841566e8f8494d5ad277442949",
+            "nameAsDisplayed": "Ramesh Jain",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/ramesh.jain",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/194137/194137.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Ramesh.Jain",
+          "canonicalUri": "https://profiles.ucsd.edu/ramesh.jain",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/194137/194137.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Ramesh Jain",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    },
+    {
+      "sourceCaseId": "identity-source-456e415234de015e6b99",
+      "entry": {
+        "action": "bind_observation_to_existing_person",
+        "professorId": "ucsd-electrical-and-computer-engineering-laurence-b-milstein",
+        "originalProfileUri": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=46",
+        "originalProfessorRecordSha256": "acc56292740c59b19f705aa8e858318c92f3968b49743ed16632fe56c80754a3",
+        "reason": "The original named individual page and the independently captured qualifying Profiles subject expose matching own personal identifiers or an explicit own contact link. Preserve the original stable person ID and primary URI; appointment scope remains tied to the captured source.",
+        "captures": [
+          {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=46",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=46",
+            "observedAt": "2026-10-16T01:10:42+00:00",
+            "bodySha256": "d4dcd173af5db6fb9644902c12bd97a3b69147c1362d93b808a1dea2d96979c2",
+            "nameAsDisplayed": "Laurence Milstein",
+            "subjectTag": "h3",
+            "subjectClass": "faculty_profile_name",
+            "rawHref": "http://profiles.ucsd.edu/Laurence.Milstein",
+            "linkUrl": "http://profiles.ucsd.edu/Laurence.Milstein",
+            "linkText": "Website",
+            "linkContext": {
+              "kind": "jacobs_own_website_field",
+              "tag": "p",
+              "class": "",
+              "text": "Website",
+              "precedingHeading": null
+            }
+          },
+          {
+            "requestedUrl": "http://profiles.ucsd.edu/Laurence.Milstein",
+            "sourceUrl": "https://profiles.ucsd.edu/Laurence.Milstein",
+            "observedAt": "2026-10-16T16:49:30+00:00",
+            "bodySha256": "1c12f997633a32f63acfbc459cd9e2d5ca53176d403283824e1bdc60ec63e912",
+            "nameAsDisplayed": "Laurence Milstein",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/laurence.milstein",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/194914/194914.rdf"
+          }
+        ],
+        "identityBasis": {
+          "type": "official_own_profile_contact_link",
+          "linkedProfileUri": "http://profiles.ucsd.edu/Laurence.Milstein",
+          "canonicalUri": "https://profiles.ucsd.edu/laurence.milstein",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/194914/194914.rdf"
+        },
+        "qualificationAsListed": {
+          "nameAsDisplayed": "Laurence Milstein",
+          "titleAsListed": "Emeritus Professor, Electrical and Computer Engineering",
+          "schoolAsListed": "Vc-academic Affairs"
+        }
+      }
+    }
+  ],
+  "verificationErrors": [],
+  "limitation": "All 8 jointly verified entries have now been appended to the existing 85-entry registry. These are dated observation bindings to retained original IDs, with no scientific-person merge, preferred-name expansion, primary URI replacement or general employment inference.",
+  "at": "2026-10-16T19:32:07.847635+00:00",
+  "activeRegistryModified": true,
+  "activeRegistrySha256": "70b5ff65830cec2357269e7b75d7a2e592e80a5892c33897763079e89031a584",
+  "allExistingAndProposedBindingsJointlyVerified": true,
+  "jointlyVerifiedObservationCount": 93,
+  "selectedQueueSha256": "d9ceab7fed7a0fc4e58e144fe65bf80989bcb4991643e3104fe707a05fe10682",
+  "baselineAtlasSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "nextStep": "Validate the resulting candidate, preserve all older identity-scoped evidence and save a scoped local commit without final export, push, merge or deployment.",
+  "appliedAt": "2026-10-16T19:46:10.262280+00:00",
+  "appliedRegistrySha256": "3959ef460f22a1c67777409e24192f9af60a140d81fa565e121e282a35ae602f",
+  "applicationScope": "Append 8 exact captured observation bindings; preserve all 85 prior entries. No professor merge, preferred-name expansion, primary URI replacement or source-date change.",
+  "preApplicationAssessment": {
+    "isApplied": false,
+    "activeRegistryModified": false,
+    "activeRegistrySha256": "70b5ff65830cec2357269e7b75d7a2e592e80a5892c33897763079e89031a584",
+    "at": "2026-10-16T19:32:07.847635+00:00",
+    "limitation": "This isolated inspection does not modify the frozen candidate or active identity review registry. Exact original subject, source date, body hash, qualification and complete-batch uniqueness were verified."
+  },
+  "acceptedForFurtherBatchReviewMeaning": "The original preflight candidate list is preserved verbatim; all 8 entries are now applied as recorded by isApplied, appliedAt and appliedRegistrySha256."
+}

@@ -1,0 +1,1465 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17T18:44:55.205476+00:00",
+  "isFinalIdentityReview": false,
+  "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+  "sourceQueueSha256": "5a9d0277198a127d26b2dd69d15ad1de8101f88ea0c343702f105e0a4d13da80",
+  "policy": "Literal link targets, displayed contact labels, source ownership and personal identity are separate claims. Correct only exact reviewed named-card display/mailto discrepancies. A generic site Feedback mailbox cannot identify an individual. All previous email values and proof dates remain historical; changed independent evidence requires a new review.",
+  "entries": [
+    {
+      "professorId": "ucsd-faculty-live-rebecca-colman",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-live-rebecca-colman",
+        "name": "Rebecca Colman",
+        "department": "Medicine",
+        "officialProfileUrl": "https://profiles.ucsd.edu/rebecca.colman"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-live-rebecca-colman",
+        "name": "Rebecca Colman",
+        "department": "Medicine",
+        "officialProfileUrl": "https://profiles.ucsd.edu/rebecca.colman"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "gcheng@health.ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://pulmonary.ucsd.edu/about/faculty/index.html",
+          "observedAt": "2026-10-16T01:01:43+00:00",
+          "method": "explicit_person_card_value",
+          "evidence": "Rebecca Colman | email: gcheng@health.ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "d898d28303dfcd5b26b9c9fb849b0523047beaab96303a2490121bafb3e06a67",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://pulmonary.ucsd.edu/about/faculty/index.html",
+          "sourceUrl": "https://pulmonary.ucsd.edu/about/faculty/index.html",
+          "observedAt": "2026-10-16T01:01:43+00:00",
+          "bodySha256": "3f0e2365eb539e878a169685dc32ac86bb247b98cdd5197bdf0767c9768d1462"
+        },
+        "kind": "named_directory_card_displayed_email",
+        "nameAsDisplayed": "Rebecca Colman, PhD",
+        "headingTag": "p",
+        "headingClass": "h3",
+        "cardText": "Rebecca Colman, PhD Assistant Adjunct Professor rcolman@health.ucsd.edu Specialty: Pulmonology",
+        "emailAsDisplayed": "rcolman@health.ucsd.edu",
+        "rawMailtoHref": "mailto:gcheng@health.ucsd.edu",
+        "oldParsedMailtoValue": "gcheng@health.ucsd.edu",
+        "decodedMailtoValue": "gcheng@health.ucsd.edu",
+        "conflictKind": "display_href_conflict",
+        "sourceIdentity": {
+          "kind": "independent_retained_profiles_subject",
+          "ownProfile": {
+            "requestedUrl": "https://profiles.ucsd.edu/rebecca.colman",
+            "sourceUrl": "https://profiles.ucsd.edu/rebecca.colman",
+            "observedAt": "2026-10-16T12:20:38+00:00",
+            "bodySha256": "8d93eb0da7a68e1e64c6672713a481a4f9c7f845b24af743b97d07311b52e562",
+            "nameAsDisplayed": "Rebecca Colman",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/rebecca.colman",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/198328/198328.rdf"
+          }
+        }
+      },
+      "disposition": "correct_published_directory_email",
+      "reason": "The exact named official card literally displays this personal email while its raw mailto either points to another person or encodes a leading space. Use only the displayed literal address; preserve the old scalar, all old proofs and the raw href conflict. The named card primary link or separately captured retained own Profiles subject identifies the source scope. No person merge, name expansion, primary/dept/appointment/PI/rating/teaching/legacy-date change.",
+      "email": "rcolman@health.ucsd.edu",
+      "fieldEvidence": [
+        {
+          "requestedUrl": "https://pulmonary.ucsd.edu/about/faculty/index.html",
+          "sourceUrl": "https://pulmonary.ucsd.edu/about/faculty/index.html",
+          "observedAt": "2026-10-16T01:01:43+00:00",
+          "bodySha256": "3f0e2365eb539e878a169685dc32ac86bb247b98cdd5197bdf0767c9768d1462",
+          "status": "verified",
+          "method": "reviewed_named_directory_displayed_email",
+          "evidenceType": "main_text_quote",
+          "evidence": "Rebecca Colman, PhD Assistant Adjunct Professor rcolman@health.ucsd.edu Specialty: Pulmonology",
+          "nameAsDisplayed": "Rebecca Colman, PhD",
+          "emailAsDisplayed": "rcolman@health.ucsd.edu",
+          "rawMailtoHref": "mailto:gcheng@health.ucsd.edu",
+          "conflictKind": "display_href_conflict"
+        }
+      ]
+    },
+    {
+      "professorId": "ucsd-public-health-matthew-stone",
+      "originalPersonIdentity": {
+        "id": "ucsd-public-health-matthew-stone",
+        "name": "Matthew Stone",
+        "department": "Public Health",
+        "officialProfileUrl": "https://profiles.ucsd.edu/matthew.stone"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-public-health-matthew-stone",
+        "name": "Matthew Stone",
+        "department": "Public Health",
+        "officialProfileUrl": "https://profiles.ucsd.edu/matthew.stone"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "mstein@health.ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "method": "explicit_person_card_value",
+          "evidence": "Matthew Stone | email: mstein@health.ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "9b1f3f8b8c4cb0c9f3e47202cf22e9bf7ece548e8b96223f891ae7abe6707bcc",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a"
+        },
+        "kind": "named_directory_card_displayed_email",
+        "nameAsDisplayed": "Matthew Stone, PhD",
+        "headingTag": "h3",
+        "headingClass": "",
+        "cardText": "Matthew Stone, PhD Assistant Professor m3stone@health.ucsd.edu",
+        "emailAsDisplayed": "m3stone@health.ucsd.edu",
+        "rawMailtoHref": "mailto:mstein@health.ucsd.edu",
+        "oldParsedMailtoValue": "mstein@health.ucsd.edu",
+        "decodedMailtoValue": "mstein@health.ucsd.edu",
+        "conflictKind": "display_href_conflict",
+        "sourceIdentity": {
+          "kind": "literal_retained_primary_in_named_card",
+          "rawHref": "https://profiles.ucsd.edu/matthew.stone",
+          "profileUrl": "https://profiles.ucsd.edu/matthew.stone"
+        }
+      },
+      "disposition": "correct_published_directory_email",
+      "reason": "The exact named official card literally displays this personal email while its raw mailto either points to another person or encodes a leading space. Use only the displayed literal address; preserve the old scalar, all old proofs and the raw href conflict. The named card primary link or separately captured retained own Profiles subject identifies the source scope. No person merge, name expansion, primary/dept/appointment/PI/rating/teaching/legacy-date change.",
+      "email": "m3stone@health.ucsd.edu",
+      "fieldEvidence": [
+        {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a",
+          "status": "verified",
+          "method": "reviewed_named_directory_displayed_email",
+          "evidenceType": "main_text_quote",
+          "evidence": "Matthew Stone, PhD Assistant Professor m3stone@health.ucsd.edu",
+          "nameAsDisplayed": "Matthew Stone, PhD",
+          "emailAsDisplayed": "m3stone@health.ucsd.edu",
+          "rawMailtoHref": "mailto:mstein@health.ucsd.edu",
+          "conflictKind": "display_href_conflict"
+        }
+      ]
+    },
+    {
+      "professorId": "ucsd-anthropology-nancy-g-postero",
+      "originalPersonIdentity": {
+        "id": "ucsd-anthropology-nancy-g-postero",
+        "name": "Nancy G. Postero",
+        "department": "Anthropology",
+        "officialProfileUrl": "https://catalog.ucsd.edu/faculty/ANTH.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-anthropology-nancy-g-postero",
+        "name": "Nancy G. Postero",
+        "department": "Anthropology",
+        "officialProfileUrl": "https://profiles.ucsd.edu/nancy.postero"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "%20npostero@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "observedAt": "2026-10-16T00:57:31+00:00",
+          "method": "explicit_person_card_value",
+          "evidence": "Nancy Postero | email: %20npostero@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "03aa4ef88d3bd72c3aa0dceb94f3a307211fc81704dd15b1526bfe9c133ec474",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "http://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "sourceUrl": "https://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "observedAt": "2026-10-16T05:37:20+00:00",
+          "bodySha256": "df27e40365cb64171cfa294be661fd29e657e9e30dc7026d4d80f7276e558460"
+        },
+        "kind": "named_directory_card_displayed_email",
+        "nameAsDisplayed": "Nancy Postero",
+        "headingTag": "p",
+        "headingClass": "h3",
+        "cardText": "Nancy Postero npostero@ucsd.edu",
+        "emailAsDisplayed": "npostero@ucsd.edu",
+        "rawMailtoHref": "mailto:%20npostero@ucsd.edu",
+        "oldParsedMailtoValue": "%20npostero@ucsd.edu",
+        "decodedMailtoValue": "npostero@ucsd.edu",
+        "conflictKind": "encoded_whitespace_in_mailto",
+        "sourceIdentity": {
+          "kind": "independent_retained_profiles_subject",
+          "ownProfile": {
+            "requestedUrl": "https://profiles.ucsd.edu/nancy.postero",
+            "sourceUrl": "https://profiles.ucsd.edu/nancy.postero",
+            "observedAt": "2026-10-16T05:20:19+00:00",
+            "bodySha256": "06fa4f0c9a7cafca148ffb92fb5294b1cb269e61a58a4c923e37616ce24866f0",
+            "nameAsDisplayed": "Nancy Postero",
+            "nameMethod": "profiles_page_title_h2",
+            "canonicalUri": "https://profiles.ucsd.edu/nancy.postero",
+            "rdfAlternateUri": "https://researcherprofiles.org/profile/181212/181212.rdf"
+          }
+        }
+      },
+      "disposition": "correct_published_directory_email",
+      "reason": "The exact named official card literally displays this personal email while its raw mailto either points to another person or encodes a leading space. Use only the displayed literal address; preserve the old scalar, all old proofs and the raw href conflict. The named card primary link or separately captured retained own Profiles subject identifies the source scope. No person merge, name expansion, primary/dept/appointment/PI/rating/teaching/legacy-date change.",
+      "email": "npostero@ucsd.edu",
+      "fieldEvidence": [
+        {
+          "requestedUrl": "http://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "sourceUrl": "https://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "observedAt": "2026-10-16T05:37:20+00:00",
+          "bodySha256": "df27e40365cb64171cfa294be661fd29e657e9e30dc7026d4d80f7276e558460",
+          "status": "verified",
+          "method": "reviewed_named_directory_displayed_email",
+          "evidenceType": "main_text_quote",
+          "evidence": "Nancy Postero npostero@ucsd.edu",
+          "nameAsDisplayed": "Nancy Postero",
+          "emailAsDisplayed": "npostero@ucsd.edu",
+          "rawMailtoHref": "mailto:%20npostero@ucsd.edu",
+          "conflictKind": "encoded_whitespace_in_mailto"
+        }
+      ]
+    },
+    {
+      "professorId": "ucsd-public-health-charles-berry",
+      "originalPersonIdentity": {
+        "id": "ucsd-public-health-charles-berry",
+        "name": "Charles Berry",
+        "department": "Public Health",
+        "officialProfileUrl": "https://profiles.ucsd.edu/charles.berry"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-public-health-charles-berry",
+        "name": "Charles Berry",
+        "department": "Public Health",
+        "officialProfileUrl": "https://profiles.ucsd.edu/charles.berry"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "%20ccberry@health.ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "method": "explicit_person_card_value",
+          "evidence": "Charles Berry | email: %20ccberry@health.ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "ad1608787d5ea728b1add624a1e100361330713bca39743e5fff814ce327101e",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a"
+        },
+        "kind": "named_directory_card_displayed_email",
+        "nameAsDisplayed": "Charles Berry, PhD",
+        "headingTag": "h3",
+        "headingClass": "",
+        "cardText": "Charles Berry, PhD Professor ccberry@health.ucsd.edu Research Interests: Biostatistics ; S tatistical genomics of retroviral infection/transfection; Statistical computation",
+        "emailAsDisplayed": "ccberry@health.ucsd.edu",
+        "rawMailtoHref": "mailto:%20ccberry@health.ucsd.edu",
+        "oldParsedMailtoValue": "%20ccberry@health.ucsd.edu",
+        "decodedMailtoValue": "ccberry@health.ucsd.edu",
+        "conflictKind": "encoded_whitespace_in_mailto",
+        "sourceIdentity": {
+          "kind": "literal_retained_primary_in_named_card",
+          "rawHref": "https://profiles.ucsd.edu/charles.berry",
+          "profileUrl": "https://profiles.ucsd.edu/charles.berry"
+        }
+      },
+      "disposition": "correct_published_directory_email",
+      "reason": "The exact named official card literally displays this personal email while its raw mailto either points to another person or encodes a leading space. Use only the displayed literal address; preserve the old scalar, all old proofs and the raw href conflict. The named card primary link or separately captured retained own Profiles subject identifies the source scope. No person merge, name expansion, primary/dept/appointment/PI/rating/teaching/legacy-date change.",
+      "email": "ccberry@health.ucsd.edu",
+      "fieldEvidence": [
+        {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a",
+          "status": "verified",
+          "method": "reviewed_named_directory_displayed_email",
+          "evidenceType": "main_text_quote",
+          "evidence": "Charles Berry, PhD Professor ccberry@health.ucsd.edu Research Interests: Biostatistics ; S tatistical genomics of retroviral infection/transfection; Statistical computation",
+          "nameAsDisplayed": "Charles Berry, PhD",
+          "emailAsDisplayed": "ccberry@health.ucsd.edu",
+          "rawMailtoHref": "mailto:%20ccberry@health.ucsd.edu",
+          "conflictKind": "encoded_whitespace_in_mailto"
+        }
+      ]
+    },
+    {
+      "professorId": "ucsd-literature-alain-j-j-cohen",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-alain-j-j-cohen",
+        "name": "Alain J.-J Cohen",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-acohen.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-alain-j-j-cohen",
+        "name": "Alain J.-J Cohen",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-acohen.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-acohen.html",
+          "observedAt": "2026-10-02T22:48:20+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-acohen.html",
+          "observedAt": "2026-10-16T08:34:18+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "f7bcf9928524cd64b9fe0eb9814bec51690a4201918a56a0b9ea602fad802344",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-andrew-wright",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-andrew-wright",
+        "name": "Andrew Wright",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-awright.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-andrew-wright",
+        "name": "Andrew Wright",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-awright.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-awright.html",
+          "observedAt": "2026-10-02T22:48:28+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "f092f09556d850baa87b783b880d5fe3e83d368965eedc43bac8ae277cb3c3c4",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-bram-dijkstra",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-bram-dijkstra",
+        "name": "Bram Dijkstra",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-bdijkstra.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-bram-dijkstra",
+        "name": "Bram Dijkstra",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-bdijkstra.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-bdijkstra.html",
+          "observedAt": "2026-10-02T22:48:22+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "3299cbbbf597718ef6b9fb67e28bd1e4f16b330dc23df641d0e9bf8f49826340",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-carlos-blanco-aguinaga",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-carlos-blanco-aguinaga",
+        "name": "Carlos Blanco-Aguinaga",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-cblanco.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-carlos-blanco-aguinaga",
+        "name": "Carlos Blanco-Aguinaga",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-cblanco.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-cblanco.html",
+          "observedAt": "2026-10-02T22:48:23+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "cee0cd2c8b98ba8ffbe15673e209c9c7d610fdf33460580085a69c003db3f3de",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-charles-cooper",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-charles-cooper",
+        "name": "Charles Cooper",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-ccooper.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-charles-cooper",
+        "name": "Charles Cooper",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-ccooper.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-ccooper.html",
+          "observedAt": "2026-10-02T22:48:27+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-ccooper.html",
+          "observedAt": "2026-10-16T19:29:28+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "0a74239621ddd82679aaf191dec164f89ca208dfce2543da82e22e6a0092cfc4",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-dayna-kalleres",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-dayna-kalleres",
+        "name": "Dayna Kalleres",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-dkalleres.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-dayna-kalleres",
+        "name": "Dayna Kalleres",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-dkalleres.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-dkalleres.html",
+          "observedAt": "2026-10-02T22:48:21+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-dkalleres.html",
+          "observedAt": "2026-10-16T08:37:18+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "b3349ca6c7fee4d85ea53772c0f0dd62903b9096ea0797e275a9c567bc5604b6",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-edwin-sill-fussell",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-edwin-sill-fussell",
+        "name": "Edwin Sill Fussell",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-efussell.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-edwin-sill-fussell",
+        "name": "Edwin Sill Fussell",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-efussell.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-efussell.html",
+          "observedAt": "2026-10-02T22:48:29+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-efussell.html",
+          "observedAt": "2026-10-16T10:44:59+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "d91c4e6783478b8805fb8275341da92d23fe5f4349d219ae12ef382ef2fdbe63",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-fanny-howe",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-fanny-howe",
+        "name": "Fanny Howe",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-fhowe.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-fanny-howe",
+        "name": "Fanny Howe",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-fhowe.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-fhowe.html",
+          "observedAt": "2026-10-02T22:48:27+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-fhowe.html",
+          "observedAt": "2026-10-16T08:34:11+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "50e01be66f3d07d79e9e45a8b03267a79d98388d11a038be04825bc9bcf6b478",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-jack-behar",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-jack-behar",
+        "name": "Jack Behar",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jbehar.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-jack-behar",
+        "name": "Jack Behar",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jbehar.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jbehar.html",
+          "observedAt": "2026-10-02T22:48:25+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jbehar.html",
+          "observedAt": "2026-10-16T08:38:31+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "989e2b6b6c8467c1e78025806611ec42ffc13964170626e4a2b285d5d92a3230",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-jaime-concha",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-jaime-concha",
+        "name": "Jaime Concha",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-jconcha.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-jaime-concha",
+        "name": "Jaime Concha",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-jconcha.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-jconcha.html",
+          "observedAt": "2026-10-02T22:48:29+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-jconcha.html",
+          "observedAt": "2026-10-16T08:33:58+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "e4dc2ebe96d542fb7aa6d827d2a29afc9cbe421883a136e3782d1e85ecdb4104",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-james-k-lyon",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-james-k-lyon",
+        "name": "James K Lyon",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jlyon.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-james-k-lyon",
+        "name": "James K Lyon",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jlyon.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jlyon.html",
+          "observedAt": "2026-10-02T22:48:33+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jlyon.html",
+          "observedAt": "2026-10-16T08:34:52+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "ef4c8aaf9d7648e04eaed3e94bf81884c28d72a5e18d610aca0f606469087bdc",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-jerome-rothenberg",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-jerome-rothenberg",
+        "name": "Jerome Rothenberg",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jrothenberg.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-jerome-rothenberg",
+        "name": "Jerome Rothenberg",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jrothenberg.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jrothenberg.html",
+          "observedAt": "2026-10-02T22:48:26+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-jrothenberg.html",
+          "observedAt": "2026-10-16T08:37:48+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "93ad96dd085947a3ff269e2dcf486905ebecd39e0758ba26de46d625c93fd9f5",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-linda-brodkey",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-linda-brodkey",
+        "name": "Linda Brodkey",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-lbrodkey.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-linda-brodkey",
+        "name": "Linda Brodkey",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-lbrodkey.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-lbrodkey.html",
+          "observedAt": "2026-10-02T22:48:36+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-lbrodkey.html",
+          "observedAt": "2026-10-16T10:44:23+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "eabcf4d2b52752c18fdaaafaa6d852af6956ea3cbe84be9a64ade77238aae326",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-marcel-henaff",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-marcel-henaff",
+        "name": "Marcel Henaff",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mhenaff.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-marcel-henaff",
+        "name": "Marcel Henaff",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mhenaff.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mhenaff.html",
+          "observedAt": "2026-10-02T22:48:37+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "b66d94fa96ca2d0e7f6646757624909723a52a880e3c657783fe0357e7b8163e",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-masao-miyoshi",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-masao-miyoshi",
+        "name": "Masao Miyoshi",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mmiyoshi.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-masao-miyoshi",
+        "name": "Masao Miyoshi",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mmiyoshi.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-mmiyoshi.html",
+          "observedAt": "2026-10-02T22:48:34+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "8b6bdfb7a7e8c867b897695d5bd8d82d753372c9a04079d1d1989deea19e6f06",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-ronald-s-berman",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-ronald-s-berman",
+        "name": "Ronald S Berman",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rberman.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-ronald-s-berman",
+        "name": "Ronald S Berman",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rberman.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rberman.html",
+          "observedAt": "2026-10-02T22:48:37+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rberman.html",
+          "observedAt": "2026-10-16T08:38:35+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "087c2eb6a4872f4122839f349793de9153f5a3ed207ddf93fd7c3253c453c8c1",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-rosemary-marangoly-george",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-rosemary-marangoly-george",
+        "name": "Rosemary Marangoly George",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rgeorge.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-rosemary-marangoly-george",
+        "name": "Rosemary Marangoly George",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rgeorge.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rgeorge.html",
+          "observedAt": "2026-10-02T22:48:38+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "1c074a0df4e348849dc5bd0e3115c21e9e66e7b6ca4c5ec456756a653095fc07",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-roy-harvey-pearce",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-roy-harvey-pearce",
+        "name": "Roy Harvey Pearce",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rpearce.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-roy-harvey-pearce",
+        "name": "Roy Harvey Pearce",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rpearce.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-rpearce.html",
+          "observedAt": "2026-10-02T22:48:38+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "9a76d9d58c0c182950e9d372f4fb5602c0429755a98a502b39a1f45aead69192",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-sherley-anne-williams",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-sherley-anne-williams",
+        "name": "Sherley Anne Williams",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-swilliams.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-sherley-anne-williams",
+        "name": "Sherley Anne Williams",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-swilliams.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-swilliams.html",
+          "observedAt": "2026-10-02T22:48:35+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "94159ebf5826712881fc8214e8fede8dfb7d0b69fea677205b17583b5988b18f",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-stephanie-jed",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-stephanie-jed",
+        "name": "Stephanie Jed",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-sjed.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-stephanie-jed",
+        "name": "Stephanie Jed",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-sjed.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-sjed.html",
+          "observedAt": "2026-10-02T22:48:39+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-sjed.html",
+          "observedAt": "2026-10-16T10:44:49+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "83461a172aada66b8a528405f66f2cbfc3ae9f15546e0dd3767aab1e942765ae",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-thomas-dunseath",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-thomas-dunseath",
+        "name": "Thomas Dunseath",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-tdunseath.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-thomas-dunseath",
+        "name": "Thomas Dunseath",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/memoriam-tdunseath.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-tdunseath.html",
+          "observedAt": "2026-10-02T22:48:40+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/memoriam-tdunseath.html",
+          "observedAt": "2026-10-16T15:46:09+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "dee65f85f993d2ddc10cfc3fdb8916868ea9fd4f36e381d1eb1a21551535038b",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-literature-wai-lim-yip",
+      "originalPersonIdentity": {
+        "id": "ucsd-literature-wai-lim-yip",
+        "name": "Wai-lim Yip",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wyip.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-literature-wai-lim-yip",
+        "name": "Wai-lim Yip",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wyip.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wyip.html",
+          "observedAt": "2026-10-02T22:48:41+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wyip.html",
+          "observedAt": "2026-10-16T08:38:00+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "3a1dc2998b675cc6be2967d250afdb8f74a42690b0ea7944773a8510189d3bbc",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    },
+    {
+      "professorId": "ucsd-faculty-william-tay",
+      "originalPersonIdentity": {
+        "id": "ucsd-faculty-william-tay",
+        "name": "William Tay",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wtay.html"
+      },
+      "retainedCanonicalIdentity": {
+        "id": "ucsd-faculty-william-tay",
+        "name": "William Tay",
+        "department": "Literature",
+        "officialProfileUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wtay.html"
+      },
+      "sourceCandidateAtlasSha256": "b5726d71b5188778acaa8c6427f3c8267da28afc491f9e3d2297fdfe4a2522d1",
+      "previousEmail": "litinfo@ucsd.edu",
+      "previousEmailEvidence": [
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wtay.html",
+          "observedAt": "2026-10-02T22:48:41+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://literature.ucsd.edu/people/faculty/emeriti-wtay.html",
+          "observedAt": "2026-10-16T11:48:22+00:00",
+          "method": "identity_matched_profile_unique_contact",
+          "evidence": "litinfo@ucsd.edu",
+          "status": "verified"
+        }
+      ],
+      "previousEmailSha256": "96bc259f03586968eb0e4c219464c2702880cc850210bd03c4c29d1af046826c",
+      "sourceScope": {
+        "capture": {
+          "requestedUrl": "https://literature.ucsd.edu/people/contact.html",
+          "sourceUrl": "https://literature.ucsd.edu/people/contact.html",
+          "observedAt": "2026-10-17T18:36:27+00:00",
+          "bodySha256": "2a9652ad4441c595c35369b5545112fb88f4577b85f7c3ae7fc1e112c7a7ef45"
+        },
+        "kind": "shared_site_feedback_contact",
+        "department": "Literature",
+        "roleAsPublished": "Feedback",
+        "email": "litinfo@ucsd.edu",
+        "rawMailtoHref": "mailto:litinfo@ucsd.edu",
+        "documentHeading": "Contact",
+        "departmentContext": "Contact Faculty | Lecturer | Affiliated Faculty Office Hours Staff Directory Graduate Student Directory Division of Arts and Humanities UCSD Campus Directory (Literature Department) UCSD Campus Directory Search Maps UCSD Maps Google Maps Campus Shuttles Visitor Parking Info Mailing Address University of California San Diego 9500 Gilman Drive, Literature Department 0410 La Jolla, CA 92093-0410 Regular Hours Monday - Friday 8:00am - 4:30 pm Please refer to the Campus Academic Calendar for Campus Closure Dates. If you wish to meet with a particular person in the Literature Department, an appointment is recommended."
+      },
+      "disposition": "hold_shared_site_feedback_as_personal_email",
+      "reason": "The department website explicitly labels this shared mailbox Feedback in its footer, including on its Contact resource. Earlier unique-profile-contact extraction copied that same site mailbox into23different individual records. Retain it as a separately labelled shared site contact, with its actual role and source, and preserve every former personal-email observation. Personal email remains unknown; do not assert a new address, identity alias, person merge, current employment or global contact absence.",
+      "email": "Not found",
+      "fieldEvidence": []
+    }
+  ]
+}

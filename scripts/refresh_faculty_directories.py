@@ -12,6 +12,7 @@ unrelated personnel data is never cached or included in the output.
 from __future__ import annotations
 
 import argparse
+import copy
 import concurrent.futures
 import datetime as dt
 import functools
@@ -95,6 +96,15 @@ def text_name(raw):
     return name
 
 
+def public_email(value):
+    """Normalize a single public mailto value; never pick from multiple addresses."""
+    value = (value or '').strip()
+    if value.lower().startswith('mailto:'):
+        value = value[7:]
+    value = value.split('?', 1)[0].split('#', 1)[0].strip().removeprefix('//')
+    return value if re.fullmatch(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', value) else ''
+
+
 @functools.lru_cache(maxsize=50_000)
 def identity_name(raw):
     """Normalize display punctuation, never infer a missing given name."""
@@ -146,7 +156,7 @@ def profile_identity(url):
 
 def safe_link(url):
     parsed = urllib.parse.urlsplit(canonical_url(url))
-    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, urllib.parse.quote(parsed.path, safe="/%:@-._~"), parsed.query, "")) if parsed.scheme else ""
+    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, urllib.parse.quote(parsed.path, safe="/%:@-._~!$&'()*+,;="), parsed.query, "")) if parsed.scheme else ""
 
 
 def appointment_status(role, section=""):
@@ -215,7 +225,7 @@ def card_records(source, meta, body):
                 # Titles share a paragraph with office and email on some cards.
                 role = clean(re.split(r"\s+(?=[\w.+%-]+@|(?:[A-Z]{2,6}|Room)\s+\d)", role)[0])
             role = role or "Faculty directory listing"
-        email_links = [n.attrs.get("href", "")[7:].split("?", 1)[0] for n in children if n.tag == "a" and n.attrs.get("href", "").startswith("mailto:")]
+        email_links = [public_email(urllib.parse.unquote(n.attrs['href'])) for n in children if n.tag == 'a' and n.attrs.get('href', '').lower().startswith('mailto:')]
         email = next((e for e in email_links if e.lower().endswith("ucsd.edu")), "")
         if not email:
             email = next(iter(re.findall(r"[\w.+%-]+@(?:[\w-]+\.)*ucsd\.edu", card_text)), "")
@@ -403,7 +413,19 @@ def legacy_initials_compatible(full_name, legacy_name):
     return all(a[0] == b for a, b in zip(full_given, old_given))
 
 
+def possible_legacy_initial_alias(full_name, person):
+    """A loose review lead only; never use this to merge or expand a name."""
+    full, old = identity_name(full_name).split(), identity_name(person['name']).split()
+    if min(len(full), len(old)) < 2 or len(old[0]) != 1 or old[0] != full[0][0]:
+        return False
+    return old[-1] == full[-1] or ('catalog.ucsd.edu' in person.get('officialProfileUrl', '') and old[-1] == full[-1] + 'a')
+
+
 def match_existing(record, professors, records=()):
+    if record.get('identityProfessorId') and record.get('identityEvidence'):
+        person = next((p for p in professors if p['id'] == record['identityProfessorId']), None)
+        if person:
+            return person, record.get('identityMatchMethod', 'explicit_directory_link_to_identity_matched_official_profile')
     profile = profile_identity(record["profileUrl"])
     if profile:
         matches = [p for p in professors if profile_identity(p.get("officialProfileUrl", "")) == profile]
@@ -421,16 +443,25 @@ def match_existing(record, professors, records=()):
     if matches:
         return sorted(matches, key=lambda p: (p["department"] != record["department"], p["id"]))[0], "same_full_name"
     tokens = full.split()
+    if len(tokens) > 1 and len(''.join(tokens[:-1])) >= 4:
+        spaced = [p for p in professors if p['department'] == record['department'] and identity_name(p['name']).split()[-1:] == tokens[-1:] and ''.join(identity_name(p['name']).split()[:-1]) == ''.join(tokens[:-1])]
+        if len(spaced) == 1:
+            return spaced[0], 'same_department_full_given_name_spacing_variant'
     candidates = []
     for p in professors:
         other = identity_name(p["name"]).split()
         if len(other) >= 2 and tokens[0] == other[0] and tokens[-1] == other[-1] and len(tokens[0]) > 1:
+            if tokens[1:-1] and other[1:-1] and len(tokens[1:-1]) == len(other[1:-1]) and any(a[0] != b[0] for a, b in zip(tokens[1:-1], other[1:-1])):
+                continue
             middle = [t for t in tokens[1:-1] if len(t) > 1]
             other_middle = [t for t in other[1:-1] if len(t) > 1]
             if not middle or not other_middle or all(t in other_middle for t in middle):
                 candidates.append(p)
     if len(candidates) == 1:
         return candidates[0], "unique_full_first_last"
+    same_department = [p for p in candidates if p['department'] == record['department']]
+    if len(same_department) == 1:
+        return same_department[0], 'same_department_unique_full_first_last'
     initial_candidates = [p for p in professors if p["department"] == record["department"] and legacy_initials_compatible(record["name"], p["name"])]
     if len(initial_candidates) == 1:
         # Two different observed full names must not silently expand one H. Kim.
@@ -444,7 +475,9 @@ def build_evidence(records, professors):
     known = list(professors)
     additions, patches, uncertain = [], {}, []
     seen = set()
-    for row in records:
+    for raw in records:
+        row = copy.deepcopy(raw)
+        row['email'] = public_email(row.get('email', ''))
         key = (row["sourceUrl"], normalized(row["name"]), row["listedRole"])
         if key in seen:
             continue
@@ -457,18 +490,18 @@ def build_evidence(records, professors):
             if email_matches:
                 uncertain.append({"listing": row, "reason": "professional_email_matches_multiple_legacy_records", "candidateProfessorIds": [p["id"] for p in email_matches]})
                 continue
-            name_tokens = identity_name(row["name"]).split()
             possible = []
             for old in known:
-                old_tokens = identity_name(old["name"]).split()
-                if old["department"] != row["department"] or len(old_tokens) < 2 or len(old_tokens[0]) != 1 or old_tokens[0] != name_tokens[0][0]:
+                if row["department"] != 'Unknown' and old["department"] != row["department"]:
                     continue
-                if old_tokens[-1] == name_tokens[-1] or ("catalog.ucsd.edu" in old.get("officialProfileUrl", "") and old_tokens[-1] == name_tokens[-1] + "a"):
+                if possible_legacy_initial_alias(row['name'], old):
                     possible.append(old["id"])
             if possible:
-                uncertain.append({"listing": row, "reason": "possible_legacy_alias_requires_identity_review", "candidateProfessorIds": possible})
+                uncertain.append({"listing": row,
+                                  "reason": "unmapped_unit_legacy_initials_requires_identity_review" if row["department"] == 'Unknown' else "possible_legacy_alias_requires_identity_review",
+                                  "candidateProfessorIds": possible})
                 continue
-            person = {"id": "ucsd-faculty-live-" + normalized(row["name"]).replace(" ", "-"), "name": row["name"], "institution": "University of California San Diego", "department": row["department"],
+            person = {"id": row.get('discoveryId') or "ucsd-faculty-live-" + normalized(row["name"]).replace(" ", "-"), "name": row["name"], "institution": "University of California San Diego", "department": row["department"],
                 "officialProfileUrl": row["profileUrl"] or row["sourceUrl"], "personalWebsiteUrl": row["personalWebsiteUrl"] or MISSING, "email": row["email"] or MISSING,
                 "researchAreas": row["researchAreas"], "researchSummary": MISSING, "googleScholarUrl": row["googleScholarUrl"] or MISSING,
                 "labAffiliation": MISSING, "labAffiliationUrl": MISSING, "recruitingStatus": "Unknown", "recruitingEvidence": {"text": "", "url": ""},
@@ -478,20 +511,36 @@ def build_evidence(records, professors):
             known.append(person)
         patch = patches.setdefault(person["id"], {"directoryListings": [], "departmentAffiliations": [], "fieldEvidence": {}})
         listing = {k: row[k] for k in ["name", "department", "listedRole", "appointmentStatus", "directorySection", "sourceUrl", "observedAt", "evidence"]}
+        for field in ['nameAsListed', 'departmentAsListed', 'departmentMappingStatus', 'academicQualification']:
+            if row.get(field):
+                listing[field] = row[field]
         listing["identityMatchMethod"] = method
         listing["identityMatchConfidence"] = "medium" if "initials" in method else "high"
+        if row.get('identityEvidence'):
+            listing['identityEvidence'] = row['identityEvidence']
         if row.get("namedLinkUrl"):
             listing["namedLinkUrl"] = row["namedLinkUrl"]
         patch["directoryListings"].append(listing)
         if row["department"] not in patch["departmentAffiliations"]:
             patch["departmentAffiliations"].append(row["department"])
         e = row["evidence"]
-        patch["fieldEvidence"].setdefault("name", e)
+        if row.get('academicQualification'):
+            proof = row['academicQualification']['evidence']
+            patch['sourceUrls'] = list(dict.fromkeys(patch.get('sourceUrls', []) + [proof['requestedUrl'], proof['sourceUrl']]))
+        patch["fieldEvidence"].setdefault("name", row.get('nameEvidence') or e)
+        if row.get('identityEvidence'):
+            existing = patch['fieldEvidence']['name']
+            proofs = existing if isinstance(existing, list) else [existing]
+            patch['fieldEvidence']['name'] = proofs + ([row['identityEvidence']] if row['identityEvidence'] not in proofs else [])
         if "initials" in method or identity_name(person["name"]) != normalized(person["name"]) and identity_name(person["name"]) == identity_name(row["name"]):
             patch["name"] = row["name"]
+        if row.get('nameEvidence') and profile_identity(row.get('profileUrl', '')) == profile_identity(person.get('officialProfileUrl', '')):
+            patch['name'] = row['name']
         patch.setdefault("nameAliases", [])
-        if row["name"] != person["name"] and row["name"] not in patch["nameAliases"]:
+        if not row.get('nameEvidence') and row["name"] != person["name"] and row["name"] not in patch["nameAliases"]:
             patch["nameAliases"].append(row["name"])
+        if row.get('nameAsListed') and row['nameAsListed'] != row['name'] and row['nameAsListed'] not in patch['nameAliases']:
+            patch['nameAliases'].append(row['nameAsListed'])
         if "appointmentStatus" not in patch or row["appointmentStatus"] in {"emeritus", "former", "deceased"}:
             patch["appointmentStatus"] = row["appointmentStatus"]
             patch["fieldEvidence"]["appointmentStatus"] = e
@@ -500,6 +549,10 @@ def build_evidence(records, professors):
         if row["profileUrl"] and (person in additions or not individual_profile(person.get("officialProfileUrl", ""))):
             patch["officialProfileUrl"] = row["profileUrl"]
             patch["fieldEvidence"]["officialProfileUrl"] = {**(row.get("metadataEvidence") or e), "method": "explicit_individual_profile_link_from_directory", "evidence": f"{row['name']} → {row['profileUrl']}"}
+        if row.get('verifiedCanonicalProfileUrl') and row.get('identityProfessorId') == person['id']:
+            patch['officialProfileUrl'] = row['verifiedCanonicalProfileUrl']
+            patch['fieldEvidence']['officialProfileUrl'] = row.get('canonicalProfileEvidence') or row['identityEvidence']
+            patch['verifiedCanonicalProfile'] = True
         for field in ["email", "personalWebsiteUrl", "googleScholarUrl"]:
             # An official card fills a missing value, replaces a legacy value that
             # never had evidence, or corroborates an identical value. A value with
@@ -509,7 +562,7 @@ def build_evidence(records, professors):
             same = isinstance(current, str) and current.strip().lower() == str(row.get(field, "")).strip().lower()
             if row.get(field) and (person in additions or current in {None, "", MISSING} or unverified or same):
                 patch[field] = row[field]
-                patch["fieldEvidence"][field] = {**e, "method": "explicit_person_card_value", "evidence": f"{row['name']} | {field}: {row[field]}"}
+                patch["fieldEvidence"][field] = {**(row.get('contactEvidence', {}).get(field) or e), "method": "explicit_person_card_value" if not row.get('contactEvidence', {}).get(field) else "identity_matched_official_profile_contact", "evidence": f"{row['name']} | {field}: {row[field]}"}
         if row.get("researchAreas"):
             patch["researchAreasFromDirectory"] = row["researchAreas"]
             patch["fieldEvidence"]["researchAreasFromDirectory"] = {**(row.get("metadataEvidence") or e), "evidence": f"{row['name']} | Research Areas: {', '.join(row['researchAreas'])}"}

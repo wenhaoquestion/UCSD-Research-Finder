@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T15:21:17.524461+00:00",
+  "isRetryAuthorization": false,
+  "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+  "originalProfessorId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+  "observation": {
+    "requestedUrl": "http://emerald.ucsd.edu/index.html",
+    "status": "http_error",
+    "capture": {
+      "sourceUrl": "http://emerald.ucsd.edu/index.html",
+      "observedAt": "2026-10-17T13:52:02+00:00",
+      "status": "http_error",
+      "redirects": [
+        {
+          "from": "http://emerald.ucsd.edu/index.html",
+          "to": "https://emerald.ucsd.edu/index.html",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T13:52:01+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792245121.8190799,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 404,
+      "finalUrl": "https://emerald.ucsd.edu/index.html",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "retrievedEpoch": 1792245122.817879
+    },
+    "publishedLinkEvidence": {
+      "requestedUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+      "sourceUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+      "observedAt": "2026-10-17T13:50:24+00:00",
+      "bodySha256": "280677aea59476172b85a810dfc431727e7076a637b9d6904bc286fc1ce316da",
+      "evidenceType": "named_link",
+      "linkText": "Lab Website",
+      "linkUrl": "http://emerald.ucsd.edu/index.html",
+      "evidence": "Lab Website -> http://emerald.ucsd.edu/index.html",
+      "method": "official_named_original_faculty_published_lab_resource",
+      "status": "verified"
+    },
+    "maximumContentAttempts": 1,
+    "wireRequests": 5,
+    "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+    "liveQueueWritten": false,
+    "mainResponseCacheWritten": false
+  },
+  "constraintKind": "literal_own_faculty_lab_link_observed_redirect_then_http_404",
+  "reason": "The newly captured unchanged named faculty primary literally publishes this HTTP Lab Website link. Its actual301 reaches the exact HTTPS index.html resource,which returns404. No root/protocol/path variant,lab rename,PI binding,old-lab resource alias,absence or closure conclusion follows. Preserve the existing lab record and every earlier lab observation.",
+  "previousConstraintObservations": [
+    {
+      "schemaVersion": 1,
+      "at": "2026-10-17T14:14:31.737974+00:00",
+      "isRetryAuthorization": false,
+      "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+      "originalProfessorId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+      "observation": {
+        "requestedUrl": "http://emerald.ucsd.edu/index.html",
+        "status": "http_error",
+        "capture": {
+          "sourceUrl": "http://emerald.ucsd.edu/index.html",
+          "observedAt": "2026-10-17T13:52:02+00:00",
+          "status": "http_error",
+          "redirects": [
+            {
+              "from": "http://emerald.ucsd.edu/index.html",
+              "to": "https://emerald.ucsd.edu/index.html",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T13:52:01+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792245121.8190799,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://emerald.ucsd.edu/index.html",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "retrievedEpoch": 1792245122.817879
+        },
+        "publishedLinkEvidence": {
+          "requestedUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "sourceUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "observedAt": "2026-10-17T13:50:24+00:00",
+          "bodySha256": "280677aea59476172b85a810dfc431727e7076a637b9d6904bc286fc1ce316da",
+          "evidenceType": "named_link",
+          "linkText": "Lab Website",
+          "linkUrl": "http://emerald.ucsd.edu/index.html",
+          "evidence": "Lab Website -> http://emerald.ucsd.edu/index.html",
+          "method": "official_named_original_faculty_published_lab_resource",
+          "status": "verified"
+        },
+        "maximumContentAttempts": 1,
+        "wireRequests": 5,
+        "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+        "liveQueueWritten": false,
+        "mainResponseCacheWritten": false
+      },
+      "constraintKind": "literal_own_faculty_lab_link_observed_redirect_then_http_404",
+      "reason": "The newly captured unchanged named faculty primary literally publishes this HTTP Lab Website link. Its actual301 reaches the exact HTTPS index.html resource,which returns404. No root/protocol/path variant,lab rename,PI binding,old-lab resource alias,absence or closure conclusion follows. Preserve the existing lab record and every earlier lab observation."
+    },
+    {
+      "schemaVersion": 1,
+      "at": "2026-10-17T14:37:54.824128+00:00",
+      "isRetryAuthorization": false,
+      "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+      "originalProfessorId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+      "observation": {
+        "requestedUrl": "http://emerald.ucsd.edu/index.html",
+        "status": "http_error",
+        "capture": {
+          "sourceUrl": "http://emerald.ucsd.edu/index.html",
+          "observedAt": "2026-10-17T13:52:02+00:00",
+          "status": "http_error",
+          "redirects": [
+            {
+              "from": "http://emerald.ucsd.edu/index.html",
+              "to": "https://emerald.ucsd.edu/index.html",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T13:52:01+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792245121.8190799,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://emerald.ucsd.edu/index.html",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "retrievedEpoch": 1792245122.817879
+        },
+        "publishedLinkEvidence": {
+          "requestedUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "sourceUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "observedAt": "2026-10-17T13:50:24+00:00",
+          "bodySha256": "280677aea59476172b85a810dfc431727e7076a637b9d6904bc286fc1ce316da",
+          "evidenceType": "named_link",
+          "linkText": "Lab Website",
+          "linkUrl": "http://emerald.ucsd.edu/index.html",
+          "evidence": "Lab Website -> http://emerald.ucsd.edu/index.html",
+          "method": "official_named_original_faculty_published_lab_resource",
+          "status": "verified"
+        },
+        "maximumContentAttempts": 1,
+        "wireRequests": 5,
+        "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+        "liveQueueWritten": false,
+        "mainResponseCacheWritten": false
+      },
+      "constraintKind": "literal_own_faculty_lab_link_observed_redirect_then_http_404",
+      "reason": "The newly captured unchanged named faculty primary literally publishes this HTTP Lab Website link. Its actual301 reaches the exact HTTPS index.html resource,which returns404. No root/protocol/path variant,lab rename,PI binding,old-lab resource alias,absence or closure conclusion follows. Preserve the existing lab record and every earlier lab observation.",
+      "previousConstraintObservations": [
+        {
+          "schemaVersion": 1,
+          "at": "2026-10-17T14:14:31.737974+00:00",
+          "isRetryAuthorization": false,
+          "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+          "originalProfessorId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+          "observation": {
+            "requestedUrl": "http://emerald.ucsd.edu/index.html",
+            "status": "http_error",
+            "capture": {
+              "sourceUrl": "http://emerald.ucsd.edu/index.html",
+              "observedAt": "2026-10-17T13:52:02+00:00",
+              "status": "http_error",
+              "redirects": [
+                {
+                  "from": "http://emerald.ucsd.edu/index.html",
+                  "to": "https://emerald.ucsd.edu/index.html",
+                  "httpStatus": 301
+                }
+              ],
+              "robots": {
+                "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-17T13:52:01+00:00",
+                "httpStatus": 404,
+                "retrievedEpoch": 1792245121.8190799,
+                "error": "",
+                "redirects": [],
+                "attempts": 1,
+                "status": "not_found"
+              },
+              "httpStatus": 404,
+              "finalUrl": "https://emerald.ucsd.edu/index.html",
+              "contentType": "text/html; charset=utf-8",
+              "error": "",
+              "retrievedEpoch": 1792245122.817879
+            },
+            "publishedLinkEvidence": {
+              "requestedUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+              "sourceUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+              "observedAt": "2026-10-17T13:50:24+00:00",
+              "bodySha256": "280677aea59476172b85a810dfc431727e7076a637b9d6904bc286fc1ce316da",
+              "evidenceType": "named_link",
+              "linkText": "Lab Website",
+              "linkUrl": "http://emerald.ucsd.edu/index.html",
+              "evidence": "Lab Website -> http://emerald.ucsd.edu/index.html",
+              "method": "official_named_original_faculty_published_lab_resource",
+              "status": "verified"
+            },
+            "maximumContentAttempts": 1,
+            "wireRequests": 5,
+            "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+            "liveQueueWritten": false,
+            "mainResponseCacheWritten": false
+          },
+          "constraintKind": "literal_own_faculty_lab_link_observed_redirect_then_http_404",
+          "reason": "The newly captured unchanged named faculty primary literally publishes this HTTP Lab Website link. Its actual301 reaches the exact HTTPS index.html resource,which returns404. No root/protocol/path variant,lab rename,PI binding,old-lab resource alias,absence or closure conclusion follows. Preserve the existing lab record and every earlier lab observation."
+        }
+      ],
+      "additionalIndependentlyPublishedResources": {
+        "reviewPath": "data/ucsd/lab-ultrafast-own-resource-lead-20261016.json",
+        "reviewSha256": "7cbf4aebc7a5a1ab1c90d7e2c623f7a4316dbde19fd3ecccfe9348592ccbe8c4",
+        "positiveOwnRoot": {
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "retrievedEpoch": 1792246976.785378
+        },
+        "positiveOwnMembers": {
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/members",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "retrievedEpoch": 1792247049.36974
+        },
+        "basis": "The actual captured original Jacobs profile independently publishes the literal HTTPS root. Its own saved root then publishesMembers. These are separate resources;the previously recordedindex.htmlfailure remains unchanged.",
+        "oldCanonicalLabRecordUnchanged": true,
+        "scientificIdentityOrAliasAccepted": false
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "at": "2026-10-17T14:59:24.588236+00:00",
+      "isRetryAuthorization": false,
+      "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+      "originalProfessorId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+      "observation": {
+        "requestedUrl": "http://emerald.ucsd.edu/index.html",
+        "status": "http_error",
+        "capture": {
+          "sourceUrl": "http://emerald.ucsd.edu/index.html",
+          "observedAt": "2026-10-17T13:52:02+00:00",
+          "status": "http_error",
+          "redirects": [
+            {
+              "from": "http://emerald.ucsd.edu/index.html",
+              "to": "https://emerald.ucsd.edu/index.html",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T13:52:01+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792245121.8190799,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://emerald.ucsd.edu/index.html",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "retrievedEpoch": 1792245122.817879
+        },
+        "publishedLinkEvidence": {
+          "requestedUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "sourceUrl": "https://matsci.ucsd.edu/faculty/shaya-fainman",
+          "observedAt": "2026-10-17T13:50:24+00:00",
+          "bodySha256": "280677aea59476172b85a810dfc431727e7076a637b9d6904bc286fc1ce316da",
+          "evidenceType": "named_link",
+          "linkText": "Lab Website",
+          "linkUrl": "http://emerald.ucsd.edu/index.html",
+          "evidence": "Lab Website -> http://emerald.ucsd.edu/index.html",
+          "method": "official_named_original_faculty_published_lab_resource",
+          "status": "verified"
+        },
+        "maximumContentAttempts": 1,
+        "wireRequests": 5,
+        "sameExistingUserAgent": "ResearchAtlasEvidenceBot/2.0 (public academic directory verification)",
+        "liveQueueWritten": false,
+        "mainResponseCacheWritten": false
+      },
+      "constraintKind": "literal_own_faculty_lab_link_observed_redirect_then_http_404",
+      "reason": "The newly captured unchanged named faculty primary literally publishes this HTTP Lab Website link. Its actual301 reaches the exact HTTPS index.html resource,which returns404. No root/protocol/path variant,lab rename,PI binding,old-lab resource alias,absence or closure conclusion follows. Preserve the existing lab record and every earlier lab observation.",
+      "additionalIndependentlyPublishedResources": {
+        "reviewPath": "data/ucsd/lab-ultrafast-own-resource-lead-20261016.json",
+        "reviewSha256": "7cbf4aebc7a5a1ab1c90d7e2c623f7a4316dbde19fd3ecccfe9348592ccbe8c4",
+        "positiveOwnRoot": {
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "retrievedEpoch": 1792246976.785378
+        },
+        "positiveOwnMembers": {
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/members",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "retrievedEpoch": 1792247049.36974
+        },
+        "basis": "The actual captured original Jacobs profile independently publishes the literal HTTPS root. Its own saved root then publishesMembers. These are separate resources;the previously recordedindex.htmlfailure remains unchanged.",
+        "oldCanonicalLabRecordUnchanged": false,
+        "scientificIdentityOrAliasAccepted": true,
+        "scientificIdentityAndPiFieldsUnchanged": true,
+        "navigationResourceUpdated": true,
+        "currentPreferredUrl": "https://emerald.ucsd.edu/",
+        "newScientificRecords": 0,
+        "newCanonicalPiBindings": 0
+      },
+      "resolvedIndependentOwnResourceReview": {
+        "path": "data/ucsd/lab-ultrafast-owned-resource-review-20261016.json",
+        "sha256": "1aa47717f1fd8b8f07bb8ed836c02defaf8b1995d6c1ed52c8b6cd831a119dba",
+        "existingLabId": "ucsd-live-lab-bbf8c0855a7019",
+        "newPreferredHomepage": "https://emerald.ucsd.edu/",
+        "oldFailedPrimaryAndCheckPreserved": true,
+        "newExactOwnedResourceAliases": 1,
+        "newScientificRecords": 0,
+        "newPiCanonicalBindings": 0
+      }
+    }
+  ],
+  "additionalIndependentlyPublishedResources": {
+    "reviewPath": "data/ucsd/lab-ultrafast-own-resource-lead-20261016.json",
+    "reviewSha256": "01e4dec3a3c89cb61662d0c99025eb5989e84366400e78005359d930007d9085",
+    "positiveOwnRoot": {
+      "sourceUrl": "https://emerald.ucsd.edu/",
+      "observedAt": "2026-10-17T14:22:56+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T14:22:55+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792246975.817257,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://emerald.ucsd.edu/",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+      "retrievedEpoch": 1792246976.785378
+    },
+    "positiveOwnMembers": {
+      "sourceUrl": "https://emerald.ucsd.edu/members",
+      "observedAt": "2026-10-17T14:24:09+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T14:22:55+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792246975.817257,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://emerald.ucsd.edu/members",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+      "retrievedEpoch": 1792247049.36974
+    },
+    "basis": "The actual captured original Jacobs profile independently publishes the literal HTTPS root. Its own saved root then publishesMembers. These are separate resources;the previously recordedindex.htmlfailure remains unchanged.",
+    "oldCanonicalLabRecordUnchanged": false,
+    "scientificIdentityOrAliasAccepted": true,
+    "scientificIdentityAndPiFieldsUnchanged": true,
+    "navigationResourceUpdated": true,
+    "currentPreferredUrl": "https://emerald.ucsd.edu/",
+    "newScientificRecords": 0,
+    "newCanonicalPiBindings": 0
+  },
+  "resolvedIndependentOwnResourceReview": {
+    "path": "data/ucsd/lab-ultrafast-owned-resource-review-20261016.json",
+    "sha256": "1aa47717f1fd8b8f07bb8ed836c02defaf8b1995d6c1ed52c8b6cd831a119dba",
+    "existingLabId": "ucsd-live-lab-bbf8c0855a7019",
+    "newPreferredHomepage": "https://emerald.ucsd.edu/",
+    "oldFailedPrimaryAndCheckPreserved": true,
+    "newExactOwnedResourceAliases": 1,
+    "newScientificRecords": 0,
+    "newPiCanonicalBindings": 0
+  },
+  "resolvedSeparateScientistReview": {
+    "path": "data/ucsd/faculty-fainman-person-identity-review-20261016.json",
+    "sha256": "1e2c29d88f93b189a63923b653860182e4ce65db07e54347de8416a4f242bfae",
+    "retiredPersonId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+    "retainedPersonId": "ucsd-electrical-and-computer-engineering-y-shaya-fainman",
+    "newScientificPersonMerges": 1,
+    "newCanonicalPiBindings": 0
+  }
+}

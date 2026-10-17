@@ -17,6 +17,25 @@ def listing(name="Alice Smith", department="Physics", **fields):
 
 
 class FacultyDirectoryTests(unittest.TestCase):
+    def test_public_mailto_fragments_and_whitespace_cannot_enter_email_values(self):
+        for raw, expected in [(' chchambers@health.ucsd.edu', 'chchambers@health.ucsd.edu'),
+                              ('dsilverstein@health.ucsd.edu#dsilverstein@health.ucsd.edu', 'dsilverstein@health.ucsd.edu'),
+                              ('//ovasquez@ucsd.edu', 'ovasquez@ucsd.edu'), ('first@ucsd.edu,second@ucsd.edu', '')]:
+            with self.subTest(raw=raw):
+                self.assertEqual(faculty.public_email(raw), expected)
+        source = ('public-health', 'Public Health', 'https://hwsph.ucsd.edu/people/faculty/faculty-directory.html', 'profile-listing-card', 'cascade')
+        markup = '<main><div class="profile-listing-card"><h3>Christina Chambers</h3><p>Professor</p><a href="mailto:%20chchambers@health.ucsd.edu#contact">Email</a></div></main>'
+        rows = faculty.card_records(source, {**META, 'sourceUrl': source[2], 'finalUrl': source[2]}, markup)
+        self.assertEqual(rows[0]['email'], 'chchambers@health.ucsd.edu')
+
+    def test_old_cached_mailto_value_is_normalized_without_modifying_raw_listing(self):
+        row = listing('Christina Chambers', 'Public Health')
+        row['email'] = ' chchambers@health.ucsd.edu'
+        additions, patches, _ = faculty.build_evidence([row], [])
+        self.assertEqual(additions[0]['email'], 'chchambers@health.ucsd.edu')
+        self.assertEqual(row['email'], ' chchambers@health.ucsd.edu')
+        self.assertEqual(patches[additions[0]['id']]['email'], 'chchambers@health.ucsd.edu')
+
     def test_wrapped_chemistry_name_link_and_plain_email_are_explicit(self):
         source = ("chem", "Chemistry & Biochemistry", META["sourceUrl"], "profile-container", "chemistry")
         rows = faculty.card_records(source, META, '<main><div class="profile-container"><a href="/faculty/profiles/alice-smith"><h3>Alice Smith</h3></a><p>alice@ucsd.edu | 123</p><p>Titles Associate Professor</p></div></main>')

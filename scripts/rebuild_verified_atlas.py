@@ -12,12 +12,31 @@ import copy
 import datetime as dt
 import json
 import html
+import hashlib
 import re
 import unicodedata
 import urllib.parse
 from pathlib import Path
 
+from atlas_urls import valid_url, encode_url, url_key
+from lab_entities import LabIndex, named_lab_key, same_named_lab, reviewed_resource_mismatch
 from lab_destinations import nonlab_destination_reason
+from refresh_labs import merge_observed_fields, observation_time
+from legacy_lab_review import apply_destination_identity_reviews
+from lab_identity_merges import apply_reviewed_merges
+from lab_resource_reviews import register_resource_reviews, record_sha256
+from person_identity_reviews import apply_person_reviews
+from lab_field_reviews import apply_lab_fields
+from lab_own_metadata import apply_own_metadata
+from lab_ownership_reviews import apply_lab_ownership_reviews
+from lab_preferred_resources import apply_preferred_resources
+from professor_own_field_reviews import apply_professor_fields
+from professor_profile_link_reviews import apply_profile_link_reviews
+from faculty_department_normalizations import apply_department_normalizations
+from lab_resource_associations import apply_resource_associations
+from shared_lab_resources import apply_shared_resources
+from professor_research_scope_reviews import apply_research_scopes, preserves_reviewed_research
+from professor_contact_scope_reviews import apply_contact_scopes
 
 ROOT = Path(__file__).resolve().parents[1]
 MISSING = "Not found"
@@ -53,38 +72,6 @@ def known(x):
     return x is not None and x not in ("", "Not found", "Unknown", [])
 
 
-def valid_url(url):
-    if not isinstance(url, str) or re.search(r"\s", url):
-        return False
-    try:
-        p = urllib.parse.urlsplit(url)
-        return p.scheme in {"http", "https"} and bool(p.hostname) and not p.username and not p.password
-    except ValueError:
-        return False
-
-
-def url_key(url):
-    url = encode_url(url)
-    if not valid_url(url):
-        return ""
-    p = urllib.parse.urlsplit(html.unescape(url))
-    query = urllib.parse.urlencode([(k, v) for k, v in urllib.parse.parse_qsl(p.query, keep_blank_values=True)
-                                   if not k.lower().startswith("utm_") and k.lower() not in {"gclid", "fbclid"}])
-    path = re.sub(r"/index\.(?:html?|php)$", "", p.path.rstrip("/"))
-    return p.netloc.lower().removeprefix("www.") + path + ("?" + query if query else "")
-
-
-def encode_url(url):
-    if not isinstance(url, str):
-        return url
-    try:
-        parts = urllib.parse.urlsplit(html.unescape(url.strip()))
-        url = urllib.parse.urlunsplit(parts._replace(netloc=parts.netloc.strip()))
-    except ValueError:
-        return url
-    return urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%")
-
-
 def name_key(name):
     name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
     name = re.sub(r"\([^)]*\)", " ", name)
@@ -96,6 +83,11 @@ def write_json(path, data):
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     tmp.replace(path)
+
+
+def combine_review_archive(existing, incoming):
+    """Retain distinct dated snapshots of the same retired ID on rebuild."""
+    return list({json.dumps(row, sort_keys=True, ensure_ascii=False): row for row in existing + incoming}.values())
 
 
 def profile(data):
@@ -121,7 +113,8 @@ def profile(data):
                                  for key in ["rateMyPI", "rateMyProfessors"]},
         "verificationStatuses": dict(collections.Counter(p.get("verification", {}).get("status", "legacy_unverified") for p in professors)),
         "duplicateProfessorNameDepartmentGroups": sum(n > 1 for n in collections.Counter((name_key(p["name"]), p["department"]) for p in professors).values()),
-        "duplicateLabUrlGroups": sum(n > 1 for k, n in collections.Counter(url_key(p["labWebsiteUrl"]) for p in labs).items() if k),
+        "duplicateLabUrlGroups": len(LabIndex(labs).url_groups()[1]),
+        "reviewedSharedLabWebsiteGroups": len({group[0]['websiteSharing']['groupId'] for group in LabIndex(labs).url_groups()[0]}),
     }
 
 
@@ -132,10 +125,6 @@ def clean_legacy(data):
         return changes, quarantine
     emails = collections.defaultdict(set)
     for p in data["professors"]:
-        for f in ["officialProfileUrl", "personalWebsiteUrl", "labAffiliationUrl"]:
-            if known(p.get(f)) and valid_url(encode_url(p[f])):
-                p[f] = encode_url(p[f])
-        p["sourceUrls"] = [encode_url(u) for u in p["sourceUrls"]]
         if known(p.get("email")):
             emails[p["email"].lower()].add(name_key(p["name"]))
 
@@ -214,12 +203,10 @@ def attach_evidence(record, field, evidence):
     if isinstance(existing, dict):
         existing = record["fieldEvidence"][field] = [existing]
     for e in accepted:
-        key = (e["sourceUrl"], e.get("method"), e["evidence"])
-        same = next((i for i, old in enumerate(existing) if (old["sourceUrl"], old.get("method"), old["evidence"]) == key), None)
+        key = (e["sourceUrl"], e.get("method"), e["evidence"], e["observedAt"])
+        same = next((i for i, old in enumerate(existing) if (old["sourceUrl"], old.get("method"), old["evidence"], old["observedAt"]) == key), None)
         if same is None:
             existing.append(copy.deepcopy(e))
-        elif e["observedAt"] > existing[same]["observedAt"]:
-            existing[same] = copy.deepcopy(e)
     record["sourceUrls"] = list(dict.fromkeys(record.get("sourceUrls", []) + [e["sourceUrl"] for e in accepted]))
     return True
 
@@ -227,9 +214,25 @@ def attach_evidence(record, field, evidence):
 def derive_research_tags(record):
     """Combine evidenced directory labels and explicit phrases in research prose
     or in the person's own official profile keywords."""
+    if preserves_reviewed_research(record):
+        return
+
     def evidence_list(field):
         value = record.get("fieldEvidence", {}).get(field, [])
         return [value] if isinstance(value, dict) else value
+
+    # Explicit, capture-reviewed labels outrank the smaller phrase dictionary.
+    # Re-deriving them from prose would discard fields absent from that
+    # dictionary and create a spurious replacement/history entry on replay.
+    current = evidence_list('researchAreas')
+    for review in record.get('professorFieldReviews', []):
+        proofs = review.get('fieldEvidence', {}).get('researchAreas', [])
+        proofs = [proofs] if isinstance(proofs, dict) else proofs
+        if (review.get('captureVerified') and record.get('researchAreas')
+                and review.get('fields', {}).get('researchAreas') == record['researchAreas']
+                and proofs and all(p in current for p in proofs)
+                and observation_time(evidence_list('researchAreasFromDirectory')) <= observation_time(proofs)):
+            return
 
     def phrase_areas(text):
         return [label for label, pattern in RESEARCH_PHRASES.items() if re.search(r"\b(?:" + pattern + r")\b", text, re.I)]
@@ -252,14 +255,34 @@ def derive_research_tags(record):
             attach_evidence(record, "researchAreas", {**source, "method": "explicit_topic_phrases_in_official_profile_keywords"})
 
 
+def patch_fingerprint(patch):
+    return hashlib.sha256(json.dumps(patch, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def remember_patch(record, patch):
+    record['appliedEvidencePatches'] = list(dict.fromkeys(record.get('appliedEvidencePatches', []) + [patch_fingerprint(patch)]))
+
+
 def merge_patch(record, patch):
+    # A later explicit review may supersede a capture. Replaying those exact
+    # bytes on the next assembly must not reassert its earlier values/links.
+    if patch_fingerprint(patch) in record.get('appliedEvidencePatches', []):
+        return
     fields = patch.get("fields", patch)
+    accepted, sources = {}, []
     for field, evidence in patch.get("fieldEvidence", {}).items():
         if field in fields or field in {"name", "institution", "department"}:
-            if attach_evidence(record, field, evidence) and field in fields:
-                if field == "name" and fields[field] != record.get("name"):
-                    record["aliasNames"] = list(dict.fromkeys(record.get("aliasNames", []) + [record["name"]]))
-                record[field] = copy.deepcopy(fields[field])
+            checked = {}
+            if attach_evidence(checked, field, evidence):
+                accepted[field] = checked['fieldEvidence'][field]
+                sources.extend(checked['sourceUrls'])
+    old_name = record.get('name')
+    merged = merge_observed_fields(record, {**fields, 'fieldEvidence': accepted})
+    record.clear()
+    record.update(merged)
+    if old_name and record.get('name') != old_name:
+        record['aliasNames'] = list(dict.fromkeys(record.get('aliasNames', []) + [old_name]))
+    record['sourceUrls'] = list(dict.fromkeys(record.get('sourceUrls', []) + sources))
     if "verification" in patch:
         record["verification"] = copy.deepcopy(patch["verification"])
         v = record["verification"]
@@ -270,15 +293,60 @@ def merge_patch(record, patch):
                        "deferred_crawl_delay": "legacy_unverified",
                        "identity_not_confirmed": "needs_review", "error": "unavailable", "blocked": "unavailable", "robots_disallowed": "unavailable"}.get(v.get("status"), v.get("status", "legacy_unverified"))
     if patch.get("labAffiliations"):
-        record["labAffiliations"] = copy.deepcopy(patch["labAffiliations"])
-    for f in ["directoryListings", "appointmentStatus", "departmentAffiliations", "directorySection"]:
+        affiliations = record.setdefault("labAffiliations", [])
+        for incoming in patch["labAffiliations"]:
+            match = next((a for a in affiliations if (a.get("labId") == incoming["labId"] if incoming.get("labId") else not a.get("labId") and url_key(a.get("url", "")) == url_key(incoming.get("url", "")))), None)
+            if match is None:
+                affiliations.append(copy.deepcopy(incoming))
+            else:
+                proofs = [match.get("fieldEvidence"), incoming.get("fieldEvidence")]
+                combined = []
+                for proof in proofs:
+                    for item in proof if isinstance(proof, list) else [proof]:
+                        if item and item not in combined:
+                            combined.append(copy.deepcopy(item))
+                if combined:
+                    match["fieldEvidence"] = combined
+    for f in ["directoryListings", "appointmentStatus", "departmentAffiliations", "directorySection", "unresolvedLabLinks"]:
         if f in patch:
-            record[f] = copy.deepcopy(patch[f])
+            if f in {"directoryListings", "departmentAffiliations", "unresolvedLabLinks"}:
+                existing = record.setdefault(f, [])
+                existing += [copy.deepcopy(v) for v in patch[f] if v not in existing]
+            else:
+                record[f] = copy.deepcopy(patch[f])
     if patch.get("professorIds"):
         record["professorIds"] = list(dict.fromkeys(record.get("professorIds", []) + patch["professorIds"]))
     if patch.get("nameAliases"):
         record["aliasNames"] = list(dict.fromkeys(record.get("aliasNames", []) + patch["nameAliases"]))
+    if patch.get('previousFieldObservations'):
+        history = record.setdefault('previousFieldObservations', [])
+        history += [copy.deepcopy(v) for v in patch['previousFieldObservations'] if v not in history]
+    for alias in patch.get('candidateObservationAliases', []):
+        binding = alias.get('observationBinding', {})
+        snapshots = [row['value'] for row in record.get('previousFieldObservations', [])
+                     if row.get('field') == 'candidateSnapshot'
+                     and row.get('sourceCandidateAtlasSha256') == alias.get('sourceCandidateAtlasSha256')
+                     and row.get('value', {}).get('id') == alias.get('sourceProposedProfessorId')
+                     and record_sha256(row['value']) == alias.get('sourceRecordSha256')]
+        if (not alias.get('candidateHistoryVerified') or not alias.get('reason') or len(snapshots) != 1
+                or not binding.get('captureVerified') or binding.get('professorId') != alias.get('targetProfessorId')
+                or alias['targetProfessorId'] not in [record['id']] + record.get('aliasIds', [])
+                or alias.get('aliasIds') != [snapshots[0]['id']] + snapshots[0].get('aliasIds', [])
+                or record['id'] in alias['aliasIds']):
+            raise ValueError('A candidate alias requires its complete snapshot and applied verified observation binding')
+        record['aliasIds'] = list(dict.fromkeys(record.get('aliasIds', []) + alias['aliasIds']))
+        reviews = record.setdefault('candidateObservationAliases', [])
+        if alias not in reviews:
+            reviews.append(copy.deepcopy(alias))
+        proof = binding['captures'][1]
+        attach_evidence(record, 'aliasIds', {
+            'sourceUrl':proof['sourceUrl'],'requestedUrl':proof['requestedUrl'],
+            'observedAt':proof['observedAt'],'bodySha256':proof['bodySha256'],
+            'method':'verified_candidate_id_alias_from_captured_observation_binding',
+            'evidence':f"{alias['sourceProposedProfessorId']} → {record['id']} | {proof['nameAsDisplayed']} | {binding['identityBasis']['canonicalUri']} | {binding['identityBasis']['rdfAlternateUri']}",
+            'status':'verified','candidateObservationAlias':copy.deepcopy(alias)})
     record["sourceUrls"] = list(dict.fromkeys(record.get("sourceUrls", []) + [u for u in patch.get("sourceUrls", []) if valid_url(u)]))
+    remember_patch(record, patch)
 
 
 def consolidate_catalog_duplicates(data):
@@ -298,6 +366,7 @@ def consolidate_catalog_duplicates(data):
             aliases[old["id"]] = target["id"]
             removed.append({"reason": "Same normalized name and department: catalog duplicate consolidated into personal faculty record.", "record": old})
             target["aliasIds"] = list(dict.fromkeys(target.get("aliasIds", []) + [old["id"]]))
+            target['appliedEvidencePatches'] = list(dict.fromkeys(target.get('appliedEvidencePatches', []) + old.get('appliedEvidencePatches', [])))
             target["sourceUrls"] = list(dict.fromkeys(target["sourceUrls"] + old["sourceUrls"]))
             for f, evidence in old.get("fieldEvidence", {}).items():
                 attach_evidence(target, f, evidence)
@@ -358,27 +427,27 @@ def reject_nonlabs(data):
 
 
 def consolidate_lab_urls(data):
+    index = LabIndex(data["labs"])
+    index.validate_sharing()
+    shared_ids = {r["id"] for group in index.url_groups()[0] for r in group}
     kept, removed = {}, []
     for lab in data["labs"]:
-        # The old migrator stripped identity-bearing query strings. Restore only
-        # a unique exact-base URL already retained in that record's source list.
-        p = urllib.parse.urlsplit(lab["labWebsiteUrl"])
-        if not p.query:
-            candidates = {u for u in lab.get("sourceUrls", []) if valid_url(u) and urllib.parse.urlsplit(u).query
-                          and urllib.parse.urlsplit(u).netloc == p.netloc and urllib.parse.urlsplit(u).path.rstrip("/") == p.path.rstrip("/")
-                          and not all(k.startswith("utm_") for k, _ in urllib.parse.parse_qsl(urllib.parse.urlsplit(u).query))}
-            if len(candidates) == 1:
-                lab["labWebsiteUrl"] = next(iter(candidates))
-        key = url_key(lab["labWebsiteUrl"])
+        # Neither a nearby source URL nor sharing a resource establishes a
+        # replacement URI or a shared lab identity.
+        name = named_lab_key(lab["labName"])
+        resource = url_key(lab["labWebsiteUrl"])
+        conflicting = any(key[0] == resource and key[1] == name and not same_named_lab(other, lab) for key, other in kept.items())
+        key = (resource, name, lab["id"] if lab["id"] in shared_ids or not name or not resource or conflicting else "")
         if key not in kept:
             kept[key] = lab
             continue
         target = kept[key]
-        removed.append({"reason": "Same lab website after removing tracking parameters; canonical lab ID retained.", "record": copy.deepcopy(lab)})
+        removed.append({"reason": "Same distinctive lab name and exact resource URI; canonical lab ID retained.", "record": copy.deepcopy(lab)})
         for field, evidence in lab.get("fieldEvidence", {}).items():
             attach_evidence(target, field, evidence)
         target["sourceUrls"] = list(dict.fromkeys(target["sourceUrls"] + lab["sourceUrls"]))
         target["aliasIds"] = list(dict.fromkeys(target.get("aliasIds", []) + [lab["id"]]))
+        target['appliedEvidencePatches'] = list(dict.fromkeys(target.get('appliedEvidencePatches', []) + lab.get('appliedEvidencePatches', [])))
         target["professorIds"] = list(dict.fromkeys(target.get("professorIds", []) + lab.get("professorIds", [])))
         for f in ["principalInvestigator", "principalInvestigatorProfileUrl"]:
             if not known(target.get(f)) and known(lab.get(f)):
@@ -405,6 +474,7 @@ def apply_lab_identity_review(data, review):
         target["alternateWebsiteUrls"] = list(dict.fromkeys(target.get("alternateWebsiteUrls", []) + item.get("acceptedAliasUrls", [])))
         if source:
             removed.append({"reason": item["reason"], "record": copy.deepcopy(source)})
+            target['appliedEvidencePatches'] = list(dict.fromkeys(target.get('appliedEvidencePatches', []) + source.get('appliedEvidencePatches', [])))
             target["professorIds"] = list(dict.fromkeys(target.get("professorIds", []) + source.get("professorIds", [])))
             target["sourceUrls"] = list(dict.fromkeys(target["sourceUrls"] + source["sourceUrls"]))
             # Only same-identity name/PI evidence can transfer; a rejected website cannot.
@@ -548,7 +618,7 @@ def apply_lab_expansion(data, expansion):
         if not proof or not isinstance(relationship, str) or not relationship.strip():
             raise ValueError(f"Reviewed affiliation {link['professorId']} -> {link['labId']} lacks source evidence or relationship")
         affiliations = person.setdefault("labAffiliations", [])
-        if not any(a.get("labId") == lab["id"] or url_key(a.get("url", "")) == url_key(lab["labWebsiteUrl"]) for a in affiliations):
+        if not any(a.get("labId") == lab["id"] or (not a.get('labId') and not lab.get('websiteSharing') and url_key(a.get("url", "")) == url_key(lab["labWebsiteUrl"])) for a in affiliations):
             affiliations.append({"labId": lab["id"], "labName": lab["labName"], "url": lab["labWebsiteUrl"],
                                  "relationship": link["relationship"], "fieldEvidence": proof[0] if len(proof) == 1 else proof})
         if not known(person.get("labAffiliationUrl")):
@@ -559,46 +629,140 @@ def apply_lab_expansion(data, expansion):
     return skipped
 
 
-def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence=None, lab_review=None, lab_expansion=None):
+def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence=None, lab_review=None, lab_expansion=None, coverage_evidence=None):
     faculty_evidence = faculty_evidence or {}
     lab_review = lab_review or {}
     lab_expansion = lab_expansion or {}
+    coverage_evidence = coverage_evidence or {}
+    resource_label_reviews = [r for r in coverage_evidence.get('personIdentityReviews', [])
+                              if r.get('identityBasis', {}).get('type') == 'misparsed_research_link_in_named_faculty_card']
+    resource_label_ids = {pid for r in resource_label_reviews
+                          for pid in [r['sourceProfessorId']] + r['originalSourceRecord'].get('aliasIds', [])}
     before = profile(data)
     changes, quarantine = clean_legacy(data)
-    by_id = {p["id"]: p for p in data["professors"]}
-    for new in lab_evidence.get("professors", []) + faculty_evidence.get("professors", []):
+    original_relationships = {p['id']: {**{k: p[k] for k in ['labAffiliation', 'labAffiliationUrl'] if k in p},
+        'fieldEvidence': {k: copy.deepcopy(p.get('fieldEvidence', {}).get(k, [])) for k in ['labAffiliation', 'labAffiliationUrl']}}
+        for p in data['professors']}
+    by_id = {pid: p for p in data["professors"] for pid in [p['id']] + p.get('aliasIds', [])}
+    for new in lab_evidence.get("professors", []) + faculty_evidence.get("professors", []) + coverage_evidence.get("professors", []):
         existing = next((p for p in by_id.values() if name_key(p["name"]) == name_key(new["name"]) and p["department"] == new["department"]), None)
         if new["id"] not in by_id and existing is not None:
             by_id[new["id"]] = existing
             existing["aliasIds"] = list(dict.fromkeys(existing.get("aliasIds", []) + [new["id"]]))
         elif new["id"] not in by_id:
             new = copy.deepcopy(new)
+            remember_patch(new, new)
             data["professors"].append(new)
             by_id[new["id"]] = new
-    for capture in [lab_evidence, faculty_evidence]:
+    for capture in [lab_evidence, faculty_evidence, coverage_evidence]:
         for pid, patch in capture.get("byProfessorId", {}).items():
-            if pid in by_id:
+            if pid in by_id and not (pid in resource_label_ids and by_id[pid]['id'] != pid):
                 merge_patch(by_id[pid], patch)
-    labs_by_url = {url_key(l["labWebsiteUrl"]): l for l in data["labs"]}
-    labs_by_url.update({url_key(u): l for l in data["labs"] for u in l.get("alternateWebsiteUrls", [])})
-    for new in lab_evidence.get("labs", []):
+    apply_resource_associations(data, coverage_evidence.get('labResourceAssociationReviews', []))
+    lab_index = LabIndex(data["labs"])
+    captures = lab_evidence.get("labs", []) + coverage_evidence.get("labs", [])
+    resource_reviews = coverage_evidence.get('labResourceReviews', [])
+    register_resource_reviews(lab_index, captures, resource_reviews)
+    held_inputs = data.setdefault('unresolvedLabCaptureInputs', [])
+    bindings = {row['captureId']: row for row in resource_reviews}
+    for held in list(held_inputs):
+        review = bindings.get(held['captureId'])
+        if review and held['record'] == review['originalCaptureRecord']:
+            resolved = {'previousUnresolvedInput': copy.deepcopy(held), 'resolution': copy.deepcopy(review)}
+            if resolved not in data.setdefault('resolvedLabCaptureInputHistory', []):
+                data['resolvedLabCaptureInputHistory'].append(resolved)
+            held_inputs.remove(held)
+    for new in captures:
         key = url_key(new["labWebsiteUrl"])
-        if not key:
-            continue
-        if key in labs_by_url:
-            old = labs_by_url[key]
-            merge_patch(old, new)
-            if new.get("fieldEvidence"):
-                # Display labels and descriptions come from the freshly parsed directory row.
-                for f in ["labName", "department", "principalInvestigator", "principalInvestigatorProfileUrl"]:
-                    if known(new.get(f)) and new.get("fieldEvidence", {}).get(f):
-                        old[f] = new[f]
+        identity_owner = lab_index.by_id.get(new['id'])
+        resource_owner = lab_index.resolve(new['labWebsiteUrl']) if not new.get('websiteSharing') else None
+        if resource_owner is not None and not same_named_lab(new, resource_owner):
+            resource_owner = None
+        if identity_owner is not None or resource_owner is not None:
+            old = identity_owner if identity_owner is not None else resource_owner
+            if patch_fingerprint(new) in old.get('appliedEvidencePatches', []):
+                continue
+            incoming = copy.deepcopy(new)
+            if url_key(old['labWebsiteUrl']) != key:
+                observation = {'field': 'labWebsiteUrl', 'value': incoming['labWebsiteUrl'],
+                               'fieldEvidence': copy.deepcopy(incoming.get('fieldEvidence', {}).get('labWebsiteUrl', [])),
+                               'reason': 'Separate resource URI retained; identity ownership does not establish a website redirect or canonical replacement.'}
+                old['additionalLabResourceObservations'] = old.get('additionalLabResourceObservations', []) + ([observation] if observation not in old.get('additionalLabResourceObservations', []) else [])
+                incoming['labWebsiteUrl'] = old['labWebsiteUrl']
+                incoming.get('fieldEvidence', {}).pop('labWebsiteUrl', None)
+            merge_patch(old, incoming)
+            remember_patch(old, new)
+            if old['id'] != new['id']:
+                old['aliasIds'] = list(dict.fromkeys(old.get('aliasIds', []) + [new['id']] + new.get('aliasIds', [])))
+            lab_index.add(old)
         else:
+            possible = lab_index.possible_variants(new['labWebsiteUrl'])
+            if (possible and not new.get('websiteSharing')) or not key:
+                held = {'captureId': new['id'], 'literalUrl': new['labWebsiteUrl'],
+                        'possibleLabIds': sorted(r['id'] for r in possible),
+                        'status': 'unresolved_exact_uri_identity', 'record': copy.deepcopy(new),
+                        'reason': 'A URI spelling/transport variant or invalid source string cannot establish lab identity. Full source record retained pending explicit review.'}
+                if held not in held_inputs:
+                    held_inputs.append(held)
+                    quarantine.append({'reason': held['reason'], 'record': copy.deepcopy(new), 'possibleLabIds': held['possibleLabIds'], 'acceptanceStatus': 'unresolved_capture_identity'})
+                continue
             new = copy.deepcopy(new)
+            remember_patch(new, new)
             data["labs"].append(new)
-            labs_by_url[key] = new
-    checks = {c["sourceUrl"]: c for c in source_checks.get("checks", [])}
-    catalog_checks = {u: c for u, c in checks.items() if "catalogListings" in c}
+            lab_index.add(new)
+    for alias in coverage_evidence.get("labAliases", []):
+        target = next((lab for lab in data["labs"] if alias["labId"] in [lab["id"]] + lab.get('aliasIds', [])), None)
+        proof = alias.get("fieldEvidence")
+        if target is None or not proof:
+            raise ValueError(f"Lab alias lacks an existing identity or evidence: {alias}")
+        if 'labAliasResourceReviews' in coverage_evidence:
+            reviewed = next((row for row in coverage_evidence['labAliasResourceReviews']
+                             if row['labId'] == alias['labId'] and url_key(row['url']) == url_key(alias['url'])), None)
+            if not reviewed or not reviewed.get('captureVerified'):
+                raise ValueError('Lab resource alias lacks an actual capture review: ' + alias['url'])
+            reviews = target.setdefault('aliasResourceReviews', [])
+            if reviewed not in reviews:
+                reviews.append(copy.deepcopy(reviewed))
+            attach_evidence(target, 'alternateWebsiteUrls', reviewed['evidence'])
+        key = url_key(alias["url"])
+        owners = lab_index.candidates(alias["url"])
+        owner = next((r for r in owners if r["id"] != target["id"]), None)
+        if owner:
+            raise ValueError(f"Lab alias {alias['url']} is already owned by {owner['id']}")
+        if key != url_key(target["labWebsiteUrl"]):
+            target["alternateWebsiteUrls"] = list(dict.fromkeys(target.get("alternateWebsiteUrls", []) + [alias["url"]]))
+            attach_evidence(target, "alternateWebsiteUrls", proof)
+        lab_index.add_url(alias["url"], target)
+    for update in coverage_evidence.get("labUpdates", []):
+        target = next((lab for lab in data["labs"] if update["labId"] in [lab["id"]] + lab.get('aliasIds', [])), None)
+        if target is None or any(field not in {"labName", "recordSubtype", "principalInvestigator"} for field in update.get("fields", {})):
+            raise ValueError(f"Invalid reviewed lab update: {update}")
+        merged = merge_observed_fields(target, {**update["fields"], "fieldEvidence": update["fieldEvidence"]})
+        target.clear()
+        target.update(merged)
+    apply_own_metadata(data, coverage_evidence.get('labOwnMetadataReviews', []))
+    apply_lab_ownership_reviews(data, coverage_evidence.get('labOwnershipReviews', []))
+    # Resolve reviewed identities before collecting courses/ratings by ID, so
+    # the first assembly sees every stable alias just like subsequent replays.
+    quarantine.extend(apply_person_reviews(data, coverage_evidence.get('personIdentityReviews', [])))
+    for review in resource_label_reviews:
+        target = next(p for p in data['professors'] if p['id'] == review['targetProfessorId'])
+        for pid in [review['sourceProfessorId']] + review['originalSourceRecord'].get('aliasIds', []):
+            inputs = {label: copy.deepcopy(capture['byProfessorId'][pid])
+                      for label, capture in [('labEvidence', lab_evidence), ('facultyEvidence', faculty_evidence),
+                                              ('coverageEvidence', coverage_evidence), ('teaching', teaching), ('ratings', ratings)]
+                      if pid in capture.get('byProfessorId', {})}
+            if inputs:
+                observation = {'field': 'misparsedResourceCaptureInputs', 'sourceProfessorId': pid,
+                               'value': inputs, 'reason': review['reason']}
+                if observation not in target.setdefault('previousFieldObservations', []):
+                    target['previousFieldObservations'].append(observation)
+    all_checks = source_checks.get("checks", []) + coverage_evidence.get("checks", [])
+    checks = {c["sourceUrl"]: c for c in all_checks}
+    # Reachability and parsed catalog facts have different evidence scopes.
+    # A newer unparsed fetch must not erase an earlier dated named catalog row
+    # or relabel that old row with the new fetch date.
+    catalog_checks = {c["sourceUrl"]: c for c in all_checks if "catalogListings" in c}
     alias_lookup = collections.defaultdict(list)
     for pid, record in by_id.items():
         alias_lookup[record["id"]].append(pid)
@@ -608,7 +772,8 @@ def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence
             # An absent instructor may belong to a department not covered by these sources.
             p["teaching"] = {"status": "not_checked", "lastChecked": None, "courses": []}
             p.setdefault("fieldEvidence", {}).pop("teaching", None)
-        person_ids = list(dict.fromkeys([p["id"]] + p.get("aliasIds", []) + alias_lookup[p["id"]]))
+        person_ids = [pid for pid in dict.fromkeys([p["id"]] + p.get("aliasIds", []) + alias_lookup[p["id"]])
+                      if pid not in resource_label_ids]
         courses = []
         for pid in person_ids:
             rows = teaching.get("byProfessorId", {}).get(pid, [])
@@ -653,21 +818,46 @@ def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence
                                        "note": "Catalog content may be outdated. This does not confirm a current appointment."}
                 attach_evidence(p, "catalogListing", {"sourceUrl": u, "observedAt": c["observedAt"], "evidence": " | ".join(r["evidence"] for r in rows), "method": "exact_name_catalog_row"})
                 break
+    quarantine.extend(apply_destination_identity_reviews(data, coverage_evidence.get('destinationIdentityReviews', [])))
     quarantine.extend(consolidate_catalog_duplicates(data))
     quarantine.extend(reject_nonlabs(data))
     quarantine.extend(consolidate_lab_urls(data))
     quarantine.extend(apply_lab_identity_review(data, lab_review))
+    quarantine.extend(apply_reviewed_merges(data, coverage_evidence.get('labIdentityMerges', [])))
     apply_lab_expansion(data, lab_expansion)
-    labs_by_url = {url_key(l["labWebsiteUrl"]): l for l in data["labs"]}
-    labs_by_url.update({url_key(u): l for l in data["labs"] for u in l.get("alternateWebsiteUrls", [])})
+    apply_shared_resources(data, coverage_evidence.get('sharedLabResourceReviews', []))
+    apply_lab_fields(data, coverage_evidence.get('reviewedLabFieldUpdates', []))
+    apply_professor_fields(data, coverage_evidence.get('reviewedProfessorFieldUpdates', []))
+    apply_profile_link_reviews(data, coverage_evidence.get('professorProfileLinkReviews', []))
+    apply_preferred_resources(data, coverage_evidence.get('labPreferredResourceReviews', []))
+    apply_department_normalizations(data, coverage_evidence.get('reviewedDepartmentNormalizations', []))
+    lab_index = LabIndex(data["labs"])
+    lab_index.validate_sharing()
+    held_urls = {url_key(entry['literalUrl']) for entry in held_inputs if url_key(entry['literalUrl'])}
+    held_urls.update(url_key(row['captureUri']) for row in resource_reviews if row['resourceStatus'] == 'listed_unverified')
     canonical_ids = {pid: p["id"] for p in data["professors"] for pid in [p["id"]] + p.get("aliasIds", [])}
     for record in data["professors"] + data["labs"]:
         if "professorIds" in record:
             record["professorIds"] = list(dict.fromkeys(canonical_ids.get(pid, pid) for pid in record["professorIds"]))
         for f in ["officialProfileUrl", "personalWebsiteUrl", "labAffiliationUrl", "labWebsiteUrl", "principalInvestigatorProfileUrl", "googleScholarUrl"]:
-            if known(record.get(f)):
-                record[f] = encode_url(record[f])
-        record["sourceUrls"] = list(dict.fromkeys(encode_url(u) for u in record.get("sourceUrls", []) if valid_url(encode_url(u))))
+            if known(record.get(f)) and not valid_url(record[f]):
+                history = {'field': f, 'value': record[f], 'fieldEvidence': copy.deepcopy(record.get('fieldEvidence', {}).get(f, [])),
+                           'reason': 'Invalid URI retained as listed; no destination is inferred by repairing its spelling.'}
+                if history not in record.setdefault('previousFieldObservations', []):
+                    record['previousFieldObservations'].append(history)
+                previous = original_relationships.get(record['id'], {})
+                restore = f == 'labAffiliationUrl' and lab_index.resolve(previous.get(f, '')) is not None
+                record[f] = previous[f] if restore else MISSING
+                if restore and previous.get('fieldEvidence', {}).get(f):
+                    record.setdefault('fieldEvidence', {})[f] = copy.deepcopy(previous['fieldEvidence'][f])
+                else:
+                    record.get('fieldEvidence', {}).pop(f, None)
+        invalid_sources = [u for u in record.get('sourceUrls', []) if not valid_url(u)]
+        if invalid_sources:
+            observation = {'sourceUrls': invalid_sources, 'status': 'invalid_source_uris_as_listed'}
+            if observation not in record.setdefault('sourceUrlObservations', []):
+                record['sourceUrlObservations'].append(observation)
+        record["sourceUrls"] = list(dict.fromkeys(u for u in record.get("sourceUrls", []) if valid_url(u)))
         evidence = record.setdefault("fieldEvidence", {})
         for f, value in list(evidence.items()):
             if isinstance(value, dict):
@@ -678,38 +868,100 @@ def build(data, lab_evidence, teaching, ratings, source_checks, faculty_evidence
         if v.get("status") not in {"source_checked", "needs_review", "unavailable", "legacy_unverified"}:
             v["fetchStatus"] = v.get("status")
             v["status"] = "unavailable"
-        v["fieldsVerified"] = sorted(evidence)
+        v["fieldsVerified"] = sorted(field for field in evidence if field != 'profileLinkIdentityReview')
         dates = [e["observedAt"] for items in evidence.values() for e in (items if isinstance(items, list) else [items]) if e.get("observedAt")]
         if dates:
             v["lastEvidenceAt"] = max(dates)
-        if evidence:
+        if v['fieldsVerified']:
             v["status"] = "source_checked"
+        profile_link_review = record.get('profileLinkIdentityReview', {})
+        if (profile_link_review.get('captureVerified') and profile_link_review.get('status') == 'needs_review'
+                and profile_link_review.get('originalProfileUri') == record.get('officialProfileUrl')):
+            v['status'] = 'needs_review'
         if "labWebsiteUrl" in record and record["labWebsiteUrl"] in checks:
             c = checks[record["labWebsiteUrl"]]
-            record["websiteCheck"] = {k: c[k] for k in ["sourceUrl", "status", "observedAt", "httpStatus", "finalUrl", "title"] if k in c}
-            v["lastAttemptedAt"] = c["observedAt"]
-            if not evidence:
-                v["status"] = "needs_review" if c["status"] == "reachable" else "unavailable"
+            current_check = record.get('websiteCheck') or {}
+            if (url_key(record['labWebsiteUrl']) not in {url_key(current_check.get('sourceUrl', '')), url_key(current_check.get('finalUrl', ''))}
+                    or c['observedAt'] >= current_check.get('observedAt', '')):
+                record["websiteCheck"] = {k: c[k] for k in ["sourceUrl", "status", "observedAt", "httpStatus", "finalUrl", "title"] if k in c}
+                v["lastAttemptedAt"] = c["observedAt"]
+                if not evidence:
+                    v["status"] = "needs_review" if c["status"] == "reachable" else "unavailable"
         for correction in lab_review.get("websiteCorrections", []):
             if correction["labId"] == record["id"]:
                 observed = correction["evidence"][-1]
                 record["websiteCheck"] = {k: observed[k] for k in ["sourceUrl", "observedAt", "httpStatus", "finalUrl"] if k in observed}
                 record["websiteCheck"]["status"] = correction["value"]
                 v["issues"] = list(dict.fromkeys(v["issues"] + [correction["reason"]]))
+        assessment = record.get('destinationIdentityAssessment', {})
+        if assessment.get('identityStatus') == 'mismatch' or reviewed_resource_mismatch(record, record.get('labWebsiteUrl', '')):
+            v['status'] = 'needs_review'
+            v['destinationIdentityStatus'] = 'mismatch'
+            v['issues'] = list(dict.fromkeys(v['issues'] + ['The captured destination does not establish this lab identity; original evidence is historical.']))
         record["unverifiedFields"] = [f for f in record.get("unverifiedFields", []) if f not in evidence]
+        unresolved = []
         for affiliation in record.get("labAffiliations", []):
-            affiliation["url"] = encode_url(affiliation.get("url", ""))
-            target = labs_by_url.get(url_key(affiliation.get("url", "")))
+            affiliation.setdefault('url', '')
+            target = lab_index.resolve(affiliation.get("url", ""), lab_id=affiliation.get("labId"), name=affiliation.get("labName"))
             if target:
                 affiliation["labId"] = target["id"]
                 if affiliation.get("fieldEvidence") and record["id"] in by_id:
                     target["professorIds"] = list(dict.fromkeys(target.get("professorIds", []) + [record["id"]]))
+            else:
+                unresolved.append(affiliation)
+        if unresolved:
+            record['unresolvedLabLinks'] = list(record.get('unresolvedLabLinks', []))
+            for affiliation in unresolved:
+                observation = {**affiliation, 'reason': 'The exact resource URI has no reviewed lab identity; original source association is retained for review.'}
+                if observation not in record['unresolvedLabLinks']:
+                    record['unresolvedLabLinks'].append(observation)
+                history = {'field': 'labAffiliations', 'value': [copy.deepcopy(affiliation)], 'reason': observation['reason']}
+                if history not in record.setdefault('previousFieldObservations', []):
+                    record['previousFieldObservations'].append(history)
+            record['labAffiliations'] = [a for a in record['labAffiliations'] if a not in unresolved]
+        if url_key(record.get('labAffiliationUrl', '')) in held_urls and lab_index.resolve(record.get('labAffiliationUrl', '')) is None:
+            proofs = record.get('fieldEvidence', {})
+            observation = {'url': record['labAffiliationUrl'], 'labName': record.get('labAffiliation'),
+                           'fieldEvidence': copy.deepcopy(proofs.get('labAffiliationUrl', [])),
+                           'reason': 'Listed URI awaits exact-resource identity review'}
+            if observation not in record.setdefault('unresolvedLabLinks', []):
+                record['unresolvedLabLinks'].append(observation)
+            previous = original_relationships.get(record['id'], {})
+            restore = lab_index.resolve(previous.get('labAffiliationUrl', '')) is not None
+            for field in ['labAffiliation', 'labAffiliationUrl']:
+                history = {'field': field, 'value': record.get(field), 'fieldEvidence': copy.deepcopy(proofs.get(field, [])), 'reason': observation['reason']}
+                if history not in record.setdefault('previousFieldObservations', []):
+                    record['previousFieldObservations'].append(history)
+                record[field] = previous.get(field, MISSING) if restore else MISSING
+                if restore and previous.get('fieldEvidence', {}).get(field):
+                    proofs[field] = copy.deepcopy(previous['fieldEvidence'][field])
+                else:
+                    proofs.pop(field, None)
+        v['fieldsVerified'] = sorted(field for field in evidence if field != 'profileLinkIdentityReview')
+        dates = [proof['observedAt'] for values in evidence.values() for proof in values if proof.get('observedAt')]
+        if dates:
+            v['lastEvidenceAt'] = max(dates)
+        else:
+            v.pop('lastEvidenceAt', None)
+            if v['status'] == 'source_checked':
+                v['status'] = 'needs_review' if record.get('unresolvedLabLinks') else 'legacy_unverified'
     data["schemaVersion"] = "3.0.0"
-    stamps = [p.get("generatedAt") for p in [lab_evidence, teaching, ratings, source_checks, faculty_evidence, lab_review, lab_expansion] if p.get("generatedAt")]
+    stamps = [p.get("generatedAt") for p in [lab_evidence, teaching, ratings, source_checks, faculty_evidence, lab_review, lab_expansion, coverage_evidence] if p.get("generatedAt")]
     data["generatedAt"] = max(stamps, default=data["generatedAt"])
     data["description"] = "UCSD research discovery with field-level evidence, source checks, teaching schedules, and separate student-rating platforms."
     data["collectionPolicy"].update({"fieldEvidenceRequiredForNewClaims": True, "fetchDateIsNotWholeRecordVerification": True,
                                     "ratingsAreSubjective": True, "scheduledCoursesAreNotTeachingHistory": True})
+    current_ids = {identity for person in data['professors'] for identity in [person['id']] + person.get('aliasIds', [])}
+    for history in coverage_evidence.get('heldFacultyCandidates', []):
+        record = history.get('record', {})
+        if (not history.get('candidateHistoryVerified') or not history.get('reason')
+                or history.get('disposition') not in {'pending_peer_profile_identity_review', 'pending_unmapped_unit_legacy_alias_review', 'pending_cross_department_initial_alias_review'}
+                or history.get('recordSha256') != record_sha256(record)
+                or not record.get('id') or record['id'] in current_ids):
+            raise ValueError('A held previous faculty candidate requires verified history and cannot be published')
+        quarantine.append(copy.deepcopy(history))
+    apply_research_scopes(data, coverage_evidence.get('reviewedProfessorResearchScopes', []), RESEARCH_PHRASES)
+    apply_contact_scopes(data, coverage_evidence.get('reviewedProfessorContactScopes', []))
     after = profile(data)
     data["dataQuality"] = {"asOf": data["generatedAt"], "coverage": after,
                            "limitations": ["A source check verifies only the listed fields, not the whole record or current employment.",
@@ -765,6 +1017,7 @@ def main():
     ap.add_argument("--evidence-dir", type=Path, default=ROOT / "data/ucsd")
     ap.add_argument("--out", type=Path, default=ROOT / "data/research-atlas.json")
     ap.add_argument("--quality-dir", type=Path, default=ROOT / "data/quality")
+    ap.add_argument("--preservation-baseline", type=Path, help="Refuse to write the atlas if baseline identities, dated evidence, sources or relationships are lost")
     args = ap.parse_args()
     def read(name):
         path = args.evidence_dir / name
@@ -774,7 +1027,7 @@ def main():
         return value
     atlas, report, changes, quarantine = build(json.loads(args.atlas.read_text()), read("lab-evidence.json"),
                                               read("teaching-evidence.json"), read("ratings-evidence.json"), read("source-checks.json"), read("faculty-evidence.json"), read("lab-identity-review.json"),
-                                              read("lab-expansion-review.json"))
+                                              read("lab-expansion-review.json"), read("coverage-expansion-evidence.json"))
     from validate_data import validate_professor, validate_lab, validate_references
     ids = set()
     for kind, validate in [("professors", validate_professor), ("labs", validate_lab)]:
@@ -784,6 +1037,15 @@ def main():
                 raise SystemExit(f"Duplicate ID {record['id']}; served dataset preserved.")
             ids.add(record["id"])
     validate_references(atlas)
+    if args.preservation_baseline:
+        from audit_ucsd_preservation import audit
+        archive_path = args.quality_dir / 'quarantined-records.json'
+        archives = json.loads(archive_path.read_text()) if archive_path.exists() else []
+        preservation = audit(json.loads(args.preservation_baseline.read_text()), atlas, [archives + quarantine])
+        preservation['inputs'] = {'baseline': str(args.preservation_baseline.resolve()), 'atlasOutput': str(args.out.resolve())}
+        write_json(args.quality_dir / 'coverage-20261016-preservation.json', preservation)
+        if preservation['status'] != 'passed':
+            raise SystemExit(f"Baseline preservation audit failed: {preservation['issueCounts']}; served dataset preserved.")
     write_json(args.out, atlas)
     old_report = args.quality_dir / "refresh-report.json"
     if old_report.exists():
@@ -792,15 +1054,17 @@ def main():
     for filename, rows in [("legacy-remediation.json", changes), ("quarantined-records.json", quarantine)]:
         path = args.quality_dir / filename
         existing = json.loads(path.read_text()) if path.exists() else []
-        combined = list({(r["record"]["id"] if filename == "quarantined-records.json" else json.dumps(r, sort_keys=True)): r for r in existing + rows}.values())
+        combined = combine_review_archive(existing, rows)
         write_json(path, combined)
         if filename == "legacy-remediation.json":
             report["remediationCounts"] = dict(collections.Counter(c["field"] for c in combined))
         else:
-            report["quarantinedRecords"] = len(combined)
+            report["quarantinedRecords"] = len({row['record']['id'] for row in combined})
+            report['quarantineArchiveSnapshots'] = len(combined)
     report["captureCoverage"] = {
         "Lab/profile capture": read("lab-evidence.json").get("stats", {}),
         "Faculty directory capture": read("faculty-evidence.json").get("coverage", {}),
+        "UCSD coverage expansion": read("coverage-expansion-evidence.json").get("coverage", {}),
         "Teaching sources": read("teaching-evidence.json").get("coverage", {}),
         "Rating platforms": read("ratings-evidence.json").get("platforms", []),
         "REAL Portal records": read("real-portal-resources.json").get("importedCount", 0),

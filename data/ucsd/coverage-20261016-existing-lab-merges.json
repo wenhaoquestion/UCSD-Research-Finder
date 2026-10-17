@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T22:48:36.059826+00:00",
+  "collectionState": "reviewed_pending_final_export",
+  "servedAtlasModified": false,
+  "scope": "Eight duplicate baseline lab IDs in independently reviewed named-entity clusters. Whole original records, IDs and evidence are retained; individual-profile source artifacts are distinguished from lab-home aliases.",
+  "entries": [
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-af83b7a0d3289e",
+      "targetLabId": "ucsd-live-lab-c7aab6c5f348ec",
+      "primaryLabName": "Gymrek Lab",
+      "primaryLabWebsiteUrl": "https://gymreklab.com/",
+      "acceptedAliasUrls": [
+        "http://gymreklab.github.io/",
+        "https://gymreklab.github.io/"
+      ],
+      "reason": "The stored old Gymrek site explicitly announces its move to gymreklab.com. The destination identifies the Gymrek Lab at UC San Diego and names Melissa Gymrek as Principal Investigator; the official UCSD GPM page independently identifies this lab. Consolidate the two existing lab records and preserve the old ID and website as aliases.",
+      "evidence": [
+        {
+          "requestedUrl": "http://gymreklab.github.io/",
+          "sourceUrl": "https://gymreklab.github.io/",
+          "observedAt": "2026-10-16T01:06:51+00:00",
+          "bodySha256": "5e828152b72acb419b2de999724370c7153cd800fb88d69cda903fab1a2db72e",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Redirecting to https://gymreklab.com"
+        },
+        {
+          "requestedUrl": "https://gymreklab.com/",
+          "sourceUrl": "https://gymreklab.com/",
+          "observedAt": "2026-10-16T01:03:11+00:00",
+          "bodySha256": "88113141cce0b0786054c57087ac435245012b754d8ef43a9953443e25545d10",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "The Gymrek Lab is located at the University of California San Diego."
+        },
+        {
+          "requestedUrl": "https://gymreklab.com/people.html",
+          "sourceUrl": "https://gymreklab.com/people.html",
+          "observedAt": "2026-10-16T01:34:48+00:00",
+          "bodySha256": "3f5f02e4b229e1d4e1d66ffcfa670f8346e884309a4e688ac8f0bbc1d53c1b80",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Melissa Gymrek Principal Investigator"
+        },
+        {
+          "requestedUrl": "https://gpm.ucsd.edu/research/gymrek/index.html",
+          "sourceUrl": "https://gpm.ucsd.edu/research/gymrek/index.html",
+          "observedAt": "2026-10-16T01:03:40+00:00",
+          "bodySha256": "75b85eb17339ea7f689ca9a2aae9e0542505364c4a9e9e88dc34f5b99161de8f",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Welcome to the Gymrek Lab!"
+        }
+      ],
+      "limitations": [
+        "The old GitHub page uses an HTML move announcement; it is not an HTTP redirect to the new domain."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-af83b7a0d3289e",
+        "labName": "Gymrek Lab Homepage",
+        "institution": "Unknown",
+        "department": "Medicine",
+        "labWebsiteUrl": "http://gymreklab.github.io/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/melissa.gymrek",
+          "http://gymreklab.github.io/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/melissa.gymrek",
+              "observedAt": "2026-10-03T02:52:24+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Gymrek Lab Homepage → http://gymreklab.github.io/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/melissa.gymrek",
+              "observedAt": "2026-10-03T02:52:24+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Gymrek Lab Homepage → http://gymreklab.github.io/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-medicine-melissa-ann-gymrek"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Melissa Ann Gymrek"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": null,
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-03T02:52:24+00:00"
+        },
+        "unverifiedFields": []
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-ba4098836b71d6",
+      "targetLabId": "ucsd-bioengineering-smarr-lab",
+      "primaryLabName": "Smarr Lab",
+      "primaryLabWebsiteUrl": "https://smarr.eng.ucsd.edu/",
+      "acceptedAliasUrls": [
+        "https://smarr.ucsd.edu/",
+        "https://smarr.ucsd.edu/home"
+      ],
+      "reason": "Both stored UCSD sites explicitly identify UCSD Smarr lab and Prof. Benjamin Smarr & Lab and display the same biological-time research text. The named lab-members page corroborates Benjamin Smarr and his Bioengineering/HDSI appointments. Consolidate the two lab identities into the older Bioengineering stable ID.",
+      "evidence": [
+        {
+          "requestedUrl": "https://smarr.eng.ucsd.edu/",
+          "sourceUrl": "https://smarr.eng.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:53+00:00",
+          "bodySha256": "3e9d04e355d294b8a9a4e6ca46f7588e4fdd2832bef6edcd10ca07aae394796c",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time."
+        },
+        {
+          "requestedUrl": "https://smarr.ucsd.edu/",
+          "sourceUrl": "https://smarr.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time."
+        },
+        {
+          "requestedUrl": "https://smarr.ucsd.edu/lab-members",
+          "sourceUrl": "https://smarr.ucsd.edu/lab-members",
+          "observedAt": "2026-10-16T01:02:26+00:00",
+          "bodySha256": "a901916d036388b34b1176764ec3cc6ef63eea111e721cf6b78183673d9285ee",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Benjamin Smarr is an assistant professor in the department of Bioengineering, with a 50% appointment to the Halicioglu Data Science Institute."
+        },
+        {
+          "requestedUrl": "https://smarr.ucsd.edu/home",
+          "sourceUrl": "https://smarr.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:25+00:00",
+          "bodySha256": "a8b56db78ae61487c66f46f38fd0c1514a275a73b453d5d71d721bdfaae41899",
+          "method": "reviewed_exact_accepted_alias_resource",
+          "evidenceType": "document_title",
+          "evidence": "UCSD Smarr lab"
+        }
+      ],
+      "limitations": [
+        "Both URLs returned HTTP 200; no server redirect or recency of the undated appointment is asserted."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-ba4098836b71d6",
+        "labName": "UCSD Smarr lab",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://smarr.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "https://smarr.ucsd.edu/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+              "observedAt": "2026-10-02T22:43:17+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "UCSD Smarr lab → https://smarr.ucsd.edu/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+              "observedAt": "2026-10-02T22:43:17+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "UCSD Smarr lab → https://smarr.ucsd.edu/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-benjamin-smarr"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Benjamin Smarr"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:22+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:43:17+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://smarr.ucsd.edu/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:22+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://smarr.ucsd.edu/",
+          "title": "UCSD Smarr lab"
+        },
+        "unverifiedFields": []
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-neurosciences-lab-komiyama-lab",
+      "targetLabId": "ucsd-biology-topic-lab-komiyama-lab",
+      "primaryLabName": "Komiyama Lab",
+      "primaryLabWebsiteUrl": "https://komiyamalab.biosci.ucsd.edu/",
+      "acceptedAliasUrls": [
+        "https://labs.biology.ucsd.edu/komiyama/",
+        "https://komiyamalab.biosci.ucsd.edu/home/"
+      ],
+      "reason": "This stored Komiyama lab URL actually redirects to the other stored Komiyama lab root. Its linked home page names Komiyama Lab, its members page identifies Takaki Komiyama (PI), and its contact page identifies UC San Diego. The redirect and same named entity jointly support consolidation; retain the original Biology stable ID and all former IDs/URLs.",
+      "evidence": [
+        {
+          "requestedUrl": "https://labs.biology.ucsd.edu/komiyama/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:07+00:00",
+          "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+          "evidenceType": "redirect_chain",
+          "method": "reviewed_captured_same_lab_identity",
+          "redirects": [
+            {
+              "from": "https://labs.biology.ucsd.edu/komiyama/",
+              "to": "https://komiyamalab.biosci.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ],
+          "evidence": "HTTP 301: https://labs.biology.ucsd.edu/komiyama/ -> https://komiyamalab.biosci.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "observedAt": "2026-10-16T02:40:05+00:00",
+          "bodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Komiyama Lab The brain has many neurons."
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/members/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/members/",
+          "observedAt": "2026-10-16T03:12:58+00:00",
+          "bodySha256": "7e06aad58c215358c148fd86c5592837bf4f349ceef23beadde758b3e6c85bab",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Takaki Komiyama (PI) Professor of Neurobiology and Neurosciences"
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/contact/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/contact/",
+          "observedAt": "2026-10-16T03:13:04+00:00",
+          "bodySha256": "b822f5dd75f9c2160d320a7bf9cb6c37d1bcb2b3334b2a056e573bfd2b1de557",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "University of California, San Diego"
+        }
+      ],
+      "limitations": [
+        "The root page is image-led; lab identity and PI come from its linked home/member/contact pages, not HTTP status alone."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-neurosciences-lab-komiyama-lab",
+        "labName": "Komiyama Lab – a systems neuroscience laboratory",
+        "institution": "University of California San Diego",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "https://labs.biology.ucsd.edu/komiyama/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "http://labs.biology.ucsd.edu/komiyama/",
+          "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "https://labs.biology.ucsd.edu/komiyama/"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-02T22:42:05+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Komiyama Lab – a systems neuroscience laboratory",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-02T22:42:05+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Komiyama Lab – a systems neuroscience laboratory",
+              "status": "verified"
+            }
+          ]
+        },
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:11+00:00",
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:05+00:00"
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "https://labs.biology.ucsd.edu/komiyama/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:11+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "title": "Komiyama Lab |"
+        }
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-421d1a9d198202",
+      "targetLabId": "ucsd-biology-topic-lab-komiyama-lab",
+      "primaryLabName": "Komiyama Lab",
+      "primaryLabWebsiteUrl": "https://komiyamalab.biosci.ucsd.edu/",
+      "acceptedAliasUrls": [
+        "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "https://komiyamalab.biosci.ucsd.edu/home/"
+      ],
+      "reason": "This stored Komiyama lab URL actually redirects to the other stored Komiyama lab root. Its linked home page names Komiyama Lab, its members page identifies Takaki Komiyama (PI), and its contact page identifies UC San Diego. The redirect and same named entity jointly support consolidation; retain the original Biology stable ID and all former IDs/URLs.",
+      "evidence": [
+        {
+          "requestedUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:46+00:00",
+          "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+          "evidenceType": "redirect_chain",
+          "method": "reviewed_captured_same_lab_identity",
+          "redirects": [
+            {
+              "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "to": "https://komiyamalab.biosci.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ],
+          "evidence": "HTTP 301: https://labs.biology.ucsd.edu/komiyama/html/Home.html -> https://komiyamalab.biosci.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "observedAt": "2026-10-16T02:40:05+00:00",
+          "bodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Komiyama Lab The brain has many neurons."
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/members/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/members/",
+          "observedAt": "2026-10-16T03:12:58+00:00",
+          "bodySha256": "7e06aad58c215358c148fd86c5592837bf4f349ceef23beadde758b3e6c85bab",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Takaki Komiyama (PI) Professor of Neurobiology and Neurosciences"
+        },
+        {
+          "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/contact/",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/contact/",
+          "observedAt": "2026-10-16T03:13:04+00:00",
+          "bodySha256": "b822f5dd75f9c2160d320a7bf9cb6c37d1bcb2b3334b2a056e573bfd2b1de557",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "University of California, San Diego"
+        }
+      ],
+      "limitations": [
+        "The root page is image-led; lab identity and PI come from its linked home/member/contact pages, not HTTP status alone."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-421d1a9d198202",
+        "labName": "Takaki Komiyama — lab website",
+        "institution": "University of California San Diego",
+        "department": "Biological Sciences",
+        "labWebsiteUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/takaki.komiyama",
+          "https://labs.biology.ucsd.edu/komiyama/html/Home.html"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+              "observedAt": "2026-10-03T01:55:35+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+              "observedAt": "2026-10-07T22:15:28+00:00",
+              "method": "official_profile_generic_lab_link",
+              "evidence": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+              "observedAt": "2026-10-03T01:55:35+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+              "observedAt": "2026-10-07T22:15:28+00:00",
+              "method": "official_profile_generic_lab_link",
+              "evidence": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-takaki-komiyama"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Takaki Komiyama"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": null,
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-07T22:15:28+00:00"
+        },
+        "unverifiedFields": []
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-f3a5edc06ada6b",
+      "targetLabId": "ucsd-biology-topic-lab-suel-gurol",
+      "primaryLabName": "Süel Lab",
+      "primaryLabWebsiteUrl": "https://suellab.github.io/",
+      "acceptedAliasUrls": [
+        "http://labs.biology.ucsd.edu/suel",
+        "https://labs.biology.ucsd.edu/suel"
+      ],
+      "reason": "The stored campus Süel lab URL actually redirects to the stored suellab.github.io site. That site is titled Süel Lab; its people page names Gürol M. Süel with a UCSD email and its contact page explicitly names UC San Diego Suel Lab. Consolidate the duplicate records into the original Biology stable ID, with the observed destination as the primary website.",
+      "evidence": [
+        {
+          "requestedUrl": "https://labs.biology.ucsd.edu/suel",
+          "sourceUrl": "https://suellab.github.io/",
+          "observedAt": "2026-10-16T01:04:42+00:00",
+          "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930",
+          "evidenceType": "redirect_chain",
+          "method": "reviewed_captured_same_lab_identity",
+          "redirects": [
+            {
+              "from": "https://labs.biology.ucsd.edu/suel",
+              "to": "https://suellab.github.io/",
+              "httpStatus": 301
+            }
+          ],
+          "evidence": "HTTP 301: https://labs.biology.ucsd.edu/suel -> https://suellab.github.io/"
+        },
+        {
+          "requestedUrl": "https://suellab.github.io/",
+          "sourceUrl": "https://suellab.github.io/",
+          "observedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930",
+          "evidenceType": "document_title",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Süel Lab"
+        },
+        {
+          "requestedUrl": "https://suellab.github.io/people/",
+          "sourceUrl": "https://suellab.github.io/people/",
+          "observedAt": "2026-10-16T01:30:29+00:00",
+          "bodySha256": "069510b7cef5b40364802e748be95750e03912702130816ce673d77cf15c1e42",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "Gürol M. Süel, PhD gsuel@ucsd.edu Professor, Section of Molecular Biology"
+        },
+        {
+          "requestedUrl": "https://suellab.github.io/contact/",
+          "sourceUrl": "https://suellab.github.io/contact/",
+          "observedAt": "2026-10-16T01:30:32+00:00",
+          "bodySha256": "66061adb6ea0a17adab965f089b3b22e70b133055d89b726aab65a946ca66860",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_same_lab_identity",
+          "evidence": "UC San Diego Suel Lab MC 0347"
+        },
+        {
+          "requestedUrl": "http://labs.biology.ucsd.edu/suel",
+          "sourceUrl": "https://suellab.github.io/",
+          "observedAt": "2026-10-16T05:37:29+00:00",
+          "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930",
+          "method": "reviewed_exact_accepted_alias_resource",
+          "evidenceType": "document_title",
+          "evidence": "Süel Lab"
+        }
+      ],
+      "limitations": [
+        "No PI role is newly inferred from a Professor title; the prior PI field is retained."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-f3a5edc06ada6b",
+        "labName": "Gurol M. Suel — lab website",
+        "institution": "Unknown",
+        "department": "Biological Sciences",
+        "labWebsiteUrl": "https://suellab.github.io/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://matsci.ucsd.edu/faculty/gurol-suel",
+          "https://suellab.github.io/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://matsci.ucsd.edu/faculty/gurol-suel",
+              "observedAt": "2026-10-02T22:45:04+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://suellab.github.io/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://matsci.ucsd.edu/faculty/gurol-suel",
+              "observedAt": "2026-10-02T22:45:04+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://suellab.github.io/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-gurol-suel"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Gurol M. Suel"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:23+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:45:04+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://suellab.github.io/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:23+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://suellab.github.io/",
+          "title": "Süel Lab"
+        },
+        "unverifiedFields": []
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-b7ed8defbfbb77",
+      "targetLabId": "ucsd-hxi-lab",
+      "primaryLabName": "HXI Research Lab",
+      "primaryLabWebsiteUrl": "https://hxi.ucsd.edu",
+      "acceptedAliasUrls": [],
+      "rejectedAliasUrls": [
+        "https://hxi.ucsd.edu/weibel/"
+      ],
+      "sourceWebsiteDisposition": "Person profile retained as identity evidence, not asserted as a lab homepage alias.",
+      "reason": "The duplicate lab record uses Nadir Weibel’s personal subpage. That page explicitly names and links HXI Research Lab to the existing HXI root; the root says its team is led by Dr. Nadir Weibel and the contact page identifies the HXI Research Lab at UCSD. This proves the same named group rather than a separate lab. Preserve the original HXI stable ID and archive the mistaken personal-page lab record.",
+      "evidence": [
+        {
+          "requestedUrl": "https://hxi.ucsd.edu/weibel/",
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "observedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "62a9e2f3e1236ac22f92a817d923b908cbeced83b286b810a1b7d92656612041",
+          "method": "reviewed_named_lab_link_and_own_leadership_identity",
+          "evidenceType": "named_link",
+          "evidence": "HXI Research Lab -> https://hxi.ucsd.edu/",
+          "linkText": "HXI Research Lab",
+          "linkUrl": "https://hxi.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "https://hxi.ucsd.edu/",
+          "sourceUrl": "https://hxi.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:57+00:00",
+          "bodySha256": "fb1b0c081ea615c0ea78ae21327847650a64904b1378499b304954e6041b233a",
+          "method": "reviewed_named_lab_link_and_own_leadership_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "Our team, led by Dr. Nadir Weibel , investigates, designs, and develops new tools, techniques, and infrastructure"
+        },
+        {
+          "requestedUrl": "https://hxi.ucsd.edu/contact",
+          "sourceUrl": "https://hxi.ucsd.edu/contact/",
+          "observedAt": "2026-10-16T01:30:58+00:00",
+          "bodySha256": "e1597e7f3d7ebb0c72bd8628f52c23f7886b90c49e746570ad1984eb8fed2eb2",
+          "method": "reviewed_named_lab_link_and_own_leadership_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "You can contact the HXI Research Lab at UCSD"
+        },
+        {
+          "requestedUrl": "https://hxi.ucsd.edu/contact",
+          "sourceUrl": "https://hxi.ucsd.edu/contact/",
+          "observedAt": "2026-10-16T01:30:58+00:00",
+          "bodySha256": "e1597e7f3d7ebb0c72bd8628f52c23f7886b90c49e746570ad1984eb8fed2eb2",
+          "method": "reviewed_named_lab_link_and_own_leadership_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "The HXI Research Lab is located within the Design Lab"
+        }
+      ],
+      "limitations": [
+        "The Design Lab is a distinct broader unit; the XR Lab is separately named on the person page. Neither is merged with HXI.",
+        "A person profile link is used to correct the old lab destination; it is not published as an alternate lab homepage."
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-b7ed8defbfbb77",
+        "labName": "HXI Research Lab",
+        "institution": "University of California San Diego",
+        "department": "Computer Science and Engineering",
+        "labWebsiteUrl": "https://hxi.ucsd.edu/weibel/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Research lab identified on the personal website linked by an official UC San Diego profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://cse.ucsd.edu/people/faculty-profiles/nadir-weibel",
+          "https://weibel.ucsd.edu/",
+          "https://hxi.ucsd.edu/weibel/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+              "observedAt": "2026-10-02T23:42:59+00:00",
+              "method": "personal_site_lab_heading_and_owner_identity",
+              "evidence": "HXI Research Lab: Nadir Weibel | HXI - Human-centered eXtended Intelligence",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+              "observedAt": "2026-10-02T23:42:59+00:00",
+              "method": "personal_site_lab_heading_and_owner_identity",
+              "evidence": "HXI Research Lab: Nadir Weibel | HXI - Human-centered eXtended Intelligence",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-cse-nadir-weibel"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Nadir Weibel"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:05+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T23:42:59+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "status": "reachable",
+          "observedAt": "2026-10-03T00:04:05+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://hxi.ucsd.edu/weibel/",
+          "title": "Nadir Weibel | HXI - Human-centered eXtended Intelligence"
+        },
+        "unverifiedFields": []
+      }
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-adc33a9ea5e039",
+      "targetLabId": "ucsd-bioengineering-lab-kravets-lab",
+      "primaryLabName": "Kravets Lab",
+      "acceptedAliasUrls": [
+        "https://kravetslab.ucsd.edu/",
+        "https://kravetslab.ucsd.edu/home"
+      ],
+      "reason": "The original Google Sites resource and campus resources explicitly identify the Laboratory of Dr. Vira Kravets at UCSD. The campus home document names its exact original Google Sites publishing resource in the saved publisher attribute. The Jacobs Vira Kravets profile directly links this campus lab. Consolidate the duplicate lab ID and the person-page lab artifact into the older Bioengineering stable ID. Preserve all source records; the Jacobs individual profile is retained as a source, not promoted to a lab-home alias.",
+      "evidence": [
+        {
+          "requestedUrl": "https://sites.google.com/ucsd.edu/kravetslab/home",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/kravetslab/home",
+          "observedAt": "2026-10-16T00:57:49+00:00",
+          "bodySha256": "607bc0ba75b251ade530db0c99df2c0792b0258595d44041a9dbf3103c9b6b1d",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/",
+          "sourceUrl": "https://kravetslab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:26+00:00",
+          "bodySha256": "8db5335d76e59f4b1257fa3498e08fb34f27d5cecb5c0172f4548c42c5e3afad",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/home",
+          "sourceUrl": "https://kravetslab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:15+00:00",
+          "bodySha256": "4e1fa5a6045b81b321fc7ffd62232a8343747db5e3f5eba07f30072709d8a51f",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/home",
+          "sourceUrl": "https://kravetslab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:15+00:00",
+          "bodySha256": "4e1fa5a6045b81b321fc7ffd62232a8343747db5e3f5eba07f30072709d8a51f",
+          "status": "verified",
+          "evidenceType": "html_attribute",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "div[data-abuse-reporting-widget-proto] = %.@.null,\"https://sites.google.com/ucsd.edu/kravetslab/home\"]",
+          "elementTag": "div",
+          "attributeName": "data-abuse-reporting-widget-proto",
+          "attributeValue": "%.@.null,\"https://sites.google.com/ucsd.edu/kravetslab/home\"]"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "observedAt": "2026-10-16T01:00:34+00:00",
+          "bodySha256": "a08c7a050d55e5c47322e84cbb7f452364184d37a91350f73732371a1389a38c",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Vira Kravets | Jacobs School of Engineering"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "observedAt": "2026-10-16T01:00:34+00:00",
+          "bodySha256": "a08c7a050d55e5c47322e84cbb7f452364184d37a91350f73732371a1389a38c",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Website -> https://kravetslab.ucsd.edu/",
+          "linkText": "Website",
+          "linkUrl": "https://kravetslab.ucsd.edu/"
+        }
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-adc33a9ea5e039",
+        "labName": "Kravets Lab",
+        "institution": "University of California San Diego",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "https://kravetslab.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "https://kravetslab.ucsd.edu/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+              "observedAt": "2026-10-02T22:42:06+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Gaulton Lab Kravets Lab Shao",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+              "observedAt": "2026-10-02T22:42:06+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Gaulton Lab Kravets Lab Shao",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [],
+        "relationshipScope": "ucsd_hosted",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:11+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:06+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://kravetslab.ucsd.edu/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:11+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://kravetslab.ucsd.edu/",
+          "title": "Kravets Lab"
+        },
+        "unverifiedFields": [],
+        "appliedEvidencePatches": [
+          "d5af6590264000ebb0ca023e1648c289975f71172c5fe6ab094f76cc90dc4399"
+        ]
+      },
+      "limitations": [
+        "No person records are merged. No new PI role is inferred from a faculty profile or a surname. The original canonical Google Sites URI is retained."
+      ]
+    },
+    {
+      "action": "merge",
+      "sourceLabId": "ucsd-live-lab-730746a3af9b60",
+      "targetLabId": "ucsd-bioengineering-lab-kravets-lab",
+      "primaryLabName": "Kravets Lab",
+      "acceptedAliasUrls": [],
+      "reason": "The original Google Sites resource and campus resources explicitly identify the Laboratory of Dr. Vira Kravets at UCSD. The campus home document names its exact original Google Sites publishing resource in the saved publisher attribute. The Jacobs Vira Kravets profile directly links this campus lab. Consolidate the duplicate lab ID and the person-page lab artifact into the older Bioengineering stable ID. Preserve all source records; the Jacobs individual profile is retained as a source, not promoted to a lab-home alias.",
+      "evidence": [
+        {
+          "requestedUrl": "https://sites.google.com/ucsd.edu/kravetslab/home",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/kravetslab/home",
+          "observedAt": "2026-10-16T00:57:49+00:00",
+          "bodySha256": "607bc0ba75b251ade530db0c99df2c0792b0258595d44041a9dbf3103c9b6b1d",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/",
+          "sourceUrl": "https://kravetslab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:26+00:00",
+          "bodySha256": "8db5335d76e59f4b1257fa3498e08fb34f27d5cecb5c0172f4548c42c5e3afad",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/home",
+          "sourceUrl": "https://kravetslab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:15+00:00",
+          "bodySha256": "4e1fa5a6045b81b321fc7ffd62232a8343747db5e3f5eba07f30072709d8a51f",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Laboratory of Dr. Vira Kravets at UCSD"
+        },
+        {
+          "requestedUrl": "https://kravetslab.ucsd.edu/home",
+          "sourceUrl": "https://kravetslab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:15+00:00",
+          "bodySha256": "4e1fa5a6045b81b321fc7ffd62232a8343747db5e3f5eba07f30072709d8a51f",
+          "status": "verified",
+          "evidenceType": "html_attribute",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "div[data-abuse-reporting-widget-proto] = %.@.null,\"https://sites.google.com/ucsd.edu/kravetslab/home\"]",
+          "elementTag": "div",
+          "attributeName": "data-abuse-reporting-widget-proto",
+          "attributeValue": "%.@.null,\"https://sites.google.com/ucsd.edu/kravetslab/home\"]"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "observedAt": "2026-10-16T01:00:34+00:00",
+          "bodySha256": "a08c7a050d55e5c47322e84cbb7f452364184d37a91350f73732371a1389a38c",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Vira Kravets | Jacobs School of Engineering"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "observedAt": "2026-10-16T01:00:34+00:00",
+          "bodySha256": "a08c7a050d55e5c47322e84cbb7f452364184d37a91350f73732371a1389a38c",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "method": "reviewed_captured_lab_source_resolution",
+          "evidence": "Website -> https://kravetslab.ucsd.edu/",
+          "linkText": "Website",
+          "linkUrl": "https://kravetslab.ucsd.edu/"
+        }
+      ],
+      "originalSourceRecord": {
+        "id": "ucsd-live-lab-730746a3af9b60",
+        "labName": "Kravets Lab",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+        "principalInvestigator": "Vira Kravets",
+        "principalInvestigatorProfileUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://bioengineering.ucsd.edu/research-focus",
+          "https://jacobsschool.ucsd.edu/people/profile/vira-kravets"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Kravets Lab Principal Investigator: Vira Kravets Website | vkravets@ucsd.edu",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Kravets Lab Principal Investigator: Vira Kravets Website | vkravets@ucsd.edu",
+              "status": "verified"
+            }
+          ],
+          "principalInvestigator": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_same_record",
+              "evidence": "Kravets Lab Principal Investigator: Vira Kravets Website | vkravets@ucsd.edu",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-vira-kravets"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Vira Kravets"
+        ],
+        "relationshipType": "official_directory_same_record",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:11+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl",
+            "principalInvestigator"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:07+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:11+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+          "title": "Vira Kravets | Jacobs School of Engineering"
+        },
+        "unverifiedFields": [],
+        "appliedEvidencePatches": [
+          "7a922ba9af3c9b189e7fc8ecfb67dc0e5a73a94402293379ec03c9d264d7d6cf"
+        ]
+      },
+      "limitations": [
+        "No person records are merged. No new PI role is inferred from a faculty profile or a surname. The original canonical Google Sites URI is retained."
+      ]
+    }
+  ],
+  "unresolvedClusters": [
+    {
+      "name": "Interactive Cognition",
+      "reason": "Personal-profile root/index versus named lab page relationship needs further source review; shared PI alone is insufficient."
+    },
+    {
+      "name": "Ludwig-associated lab destinations",
+      "reason": "Generic institutional landing pages do not prove distinct named labs are one entity; do not merge."
+    }
+  ],
+  "exactResourceAuditAt": "2026-10-16T06:19:49.614997+00:00",
+  "previousReviewObservations": [
+    {
+      "schemaVersion": 1,
+      "reviewedAt": "2026-10-16T03:43:44.870148+00:00",
+      "collectionState": "reviewed_pending_final_export",
+      "servedAtlasModified": false,
+      "scope": "Six duplicate baseline lab IDs in five independently reviewed named-entity clusters; personal-page destinations are distinguished from homepage aliases.",
+      "unresolvedClusters": [
+        {
+          "name": "Interactive Cognition",
+          "reason": "Personal-profile root/index versus named lab page relationship needs further source review; shared PI alone is insufficient."
+        },
+        {
+          "name": "Ludwig-associated lab destinations",
+          "reason": "Generic institutional landing pages do not prove distinct named labs are one entity; do not merge."
+        }
+      ],
+      "exactResourceAuditAt": "2026-10-16T06:19:49.614997+00:00"
+    }
+  ],
+  "additionalReviewBatches": [
+    {
+      "at": "2026-10-16T22:48:36.059826+00:00",
+      "sourceQueueSha256": "9e41957dc088b1b655344588ca717d63271f1ea79532c266af77afb18c39649c",
+      "addedSourceLabIds": [
+        "ucsd-live-lab-adc33a9ea5e039",
+        "ucsd-live-lab-730746a3af9b60"
+      ],
+      "scope": "Kravets own publisher identity and individual-page lab artifact; all previous six reviews unchanged."
+    }
+  ]
+}

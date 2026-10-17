@@ -1,0 +1,2315 @@
+{
+  "at": "2026-10-16T17:56:31.199899+00:00",
+  "sourceReviewGeneratedAt": "2026-10-16T03:59:34+00:00",
+  "sourceReviewSnapshotSha256": "9bba034610693ca2edbfe9c0dc29576b300f797a008913cbc98ecb9617a11f38",
+  "liveSourceCheckpointAt": "2026-10-16T17:56:27+00:00",
+  "scope": "Captured-source review of 23 initially reviewable frontier candidates. Six were already exact reviewed aliases. DigiHealth now has a separately guarded lab/PI review after positive course classification of the old label; the actual Ideker final resource has a separately guarded alias review. Other cases retain explicit scope and identity limitations. No global collection completeness, scientific group merger or lab closure is inferred.",
+  "counts": {
+    "reviewed_named_lab_and_captured_own_pi_identity": 1,
+    "organized_research_unit_scope_review": 2,
+    "already_reviewed_canonical_lab_alias": 6,
+    "reviewed_final_resource_alias_to_original_named_lab": 1,
+    "archived_presentation_content_scope_review": 1,
+    "mixed_parent_group_and_child_research_names_require_review": 1,
+    "existing_lab_content_page_requires_parent_review": 3,
+    "collective_scope_review": 1,
+    "teaching_facility_scope_review": 1,
+    "shared_testing_facility_scope_review": 1,
+    "linked_lab_label_requires_parent_review": 2,
+    "multi_entity_directory_requires_scoped_cards": 3
+  },
+  "cases": [
+    {
+      "candidateId": "ucsd-live-lab-db372d05c77570",
+      "labelAsDiscovered": "Digital Health Technologies Lab",
+      "uriAsDiscovered": "https://digihealth.ucsd.edu/home",
+      "actualCapture": {
+        "requestedUrl": "https://digihealth.ucsd.edu/home",
+        "sourceUrl": "https://digihealth.ucsd.edu/home",
+        "observedAt": "2026-10-16T00:59:13+00:00",
+        "bodySha256": "93a44d2ad4a1bc436411ef9670a6cf2e60864cdd7f6f564b591e13fa625c6d2f",
+        "title": "DigiHealth Lab - UCSD",
+        "headings": [
+          "Digital Health Technologies Lab"
+        ],
+        "evidence": "Digital Health Technologies Lab"
+      },
+      "sourceObservations": [
+        {
+          "department": "Electrical and Computer Engineering",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+          "observedAt": "2026-10-16T00:59:14+00:00",
+          "label": "Digital Health Technologies Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+              "observedAt": "2026-10-16T00:59:14+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Email: ejaywang@ucsd.edu EDWARD JAY WANG Digital Health Technologies Lab Institute Affiliations: UC San Diego Design Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+              "observedAt": "2026-10-16T00:59:14+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Email: ejaywang@ucsd.edu EDWARD JAY WANG Digital Health Technologies Lab Institute Affiliations: UC San Diego Design Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Electrical and Computer Engineering",
+          "sourceUrl": "https://digihealth.ucsd.edu/members",
+          "observedAt": "2026-10-16T01:36:34+00:00",
+          "label": "DigiHealth Lab - UCSD",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://digihealth.ucsd.edu/members",
+              "observedAt": "2026-10-16T01:36:34+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "DigiHealth Lab - UCSD",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://digihealth.ucsd.edu/members",
+              "observedAt": "2026-10-16T01:36:34+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "DigiHealth Lab - UCSD",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "reviewed_named_lab_and_captured_own_pi_identity",
+      "nextRequiredReview": "Retain the verified named lab/PI link and complete course archive in the completion-gated final export; no scientific entity merge or preferred-professor identity change.",
+      "notAcceptedOrMerged": false,
+      "previousSourceReviewAssessments": [
+        {
+          "sourceReviewAssessment": "named_lab_requires_entity_review",
+          "nextRequiredReview": "Check existing entity aliases and the dated official directory link; own page explicitly names the lab."
+        }
+      ],
+      "reviewedLabId": "ucsd-live-lab-db372d05c77570",
+      "originalProfessorId": "ucsd-faculty-edward-wang",
+      "verifiedOwnPersonIdentityBasis": {
+        "type": "named_campus_self_website_and_pi_link_chain",
+        "originalProfessorRecord": {
+          "id": "ucsd-faculty-edward-wang",
+          "name": "Edward Wang",
+          "institution": "University of California San Diego",
+          "department": "Computer Science and Engineering",
+          "officialProfileUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+          "personalWebsiteUrl": "https://www.ejaywang.com/",
+          "email": "ejaywang@eng.ucsd.edu",
+          "researchAreas": [],
+          "researchSummary": "My group works this problem along three complementary lines: designing the sensing artifacts themselves, understanding how a technology is actually adopted in real-world contexts, and developing design principles that hold across diverse populations rather than only the people who happen to resemble the design team.",
+          "googleScholarUrl": "https://scholar.google.com/citations?user=W2EHn7gAAAAJ&hl=en",
+          "labAffiliation": "Biosignals Processing Lab",
+          "labAffiliationUrl": "https://www.ejaywang.com/",
+          "recruitingStatus": "Unknown",
+          "recruitingEvidence": {
+            "text": "",
+            "url": ""
+          },
+          "sourceUrls": [
+            "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+            "https://www.ejaywang.com/",
+            "https://www.ejaywang.com/#projects-section",
+            "https://digihealth.eng.ucsd.edu",
+            "https://medschool.ucsd.edu/som/psychiatry/research/MHTechCenter/Pages/default.aspx",
+            "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+            "http://www.ece.ucsd.edu/people/faculty",
+            "https://cse.ucsd.edu/research",
+            "https://cse.ucsd.edu/faculty-research/facult-awards",
+            "https://cse.ucsd.edu/faculty-research/associated-centers",
+            "https://cse.ucsd.edu/research/technical-reports",
+            "https://cse.ucsd.edu/people/faculty-profiles",
+            "https://ece.ucsd.edu/people/faculty",
+            "https://www.ece.ucsd.edu/ece-tentative-course-list",
+            "https://www.ratemyprofessors.com/search/professors/1079?q=P.%20Edward%20Parnell"
+          ],
+          "lastVerified": "2026-05-18",
+          "legacyKind": "faculty",
+          "fieldEvidence": {
+            "name": [
+              {
+                "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+                "observedAt": "2026-10-02T22:47:37+00:00",
+                "method": "official_profile_heading_identity",
+                "evidence": "Edward Wang",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://ece.ucsd.edu/people/faculty",
+                "observedAt": "2026-10-07T21:49:18+00:00",
+                "method": "official_faculty_directory_card",
+                "evidence": "Faculty | Edward Wang | Associate Professor ejaywang@ucsd.edu",
+                "status": "verified"
+              }
+            ],
+            "officialProfileUrl": [
+              {
+                "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+                "observedAt": "2026-10-02T22:47:37+00:00",
+                "method": "official_profile_heading_identity",
+                "evidence": "Edward Wang",
+                "status": "verified"
+              }
+            ],
+            "personalWebsiteUrl": [
+              {
+                "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+                "observedAt": "2026-10-02T22:47:37+00:00",
+                "method": "official_profile_main_link",
+                "evidence": "Website https://www.ejaywang.com/",
+                "status": "verified"
+              }
+            ],
+            "email": [
+              {
+                "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+                "observedAt": "2026-10-02T22:47:37+00:00",
+                "method": "identity_matched_profile_unique_contact",
+                "evidence": "ejaywang@eng.ucsd.edu",
+                "status": "verified"
+              }
+            ],
+            "googleScholarUrl": [
+              {
+                "sourceUrl": "https://www.ejaywang.com/",
+                "observedAt": "2026-10-02T23:42:57+00:00",
+                "method": "identity_matched_personal_site_link",
+                "evidence": "Full list on Google Scholar ↗ https://scholar.google.com/citations?user=W2EHn7gAAAAJ&hl=en",
+                "status": "verified"
+              }
+            ],
+            "researchSummary": [
+              {
+                "sourceUrl": "https://www.ejaywang.com/",
+                "observedAt": "2026-10-02T23:42:57+00:00",
+                "method": "identity_matched_personal_site_research_excerpt",
+                "evidence": "My group works this problem along three complementary lines: designing the sensing artifacts themselves, understanding how a technology is actually adopted in real-world contexts, and developing design principles that hold across diverse populations rather than only the people who happen to resemble the design team.",
+                "status": "verified"
+              }
+            ],
+            "labAffiliation": [
+              {
+                "sourceUrl": "https://www.ejaywang.com/",
+                "observedAt": "2026-10-02T23:42:57+00:00",
+                "method": "personal_site_lab_heading_and_owner_identity",
+                "evidence": "Biosignals Processing Lab: Edward Jay Wang",
+                "status": "verified"
+              }
+            ],
+            "labAffiliationUrl": [
+              {
+                "sourceUrl": "https://www.ejaywang.com/",
+                "observedAt": "2026-10-02T23:42:57+00:00",
+                "method": "personal_site_lab_heading_and_owner_identity",
+                "evidence": "Biosignals Processing Lab: Edward Jay Wang",
+                "status": "verified"
+              }
+            ],
+            "facultyStatus": [
+              {
+                "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles",
+                "observedAt": "2026-10-02T22:44:03+00:00",
+                "method": "official_faculty_directory_person_link",
+                "evidence": "Affiliated: Edward Wang → https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+                "status": "verified"
+              }
+            ],
+            "appointmentStatus": [
+              {
+                "sourceUrl": "https://ece.ucsd.edu/people/faculty",
+                "observedAt": "2026-10-07T21:49:18+00:00",
+                "method": "official_faculty_directory_card",
+                "evidence": "Faculty | Edward Wang | Associate Professor ejaywang@ucsd.edu",
+                "status": "verified"
+              }
+            ],
+            "teaching": [
+              {
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 116 Advanced Hardware and Software Design | Fall 2026: WANG, E."
+              },
+              {
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 150 Entrepreneurship for Engineers | Spring 2027: WANG, E."
+              },
+              {
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 284 Special Topics in Computer Engineering | Spring 2027: MAKRIS (Advanced Computer Architecture) WANG, E. (Digital Health Device Design)"
+              }
+            ],
+            "ratings.rateMyProfessors": [
+              {
+                "sourceUrl": "https://www.ratemyprofessors.com/search/professors/1079?q=P.%20Edward%20Parnell",
+                "observedAt": "2026-10-02T16:50:37-07:00",
+                "evidence": "Edward Wang; University of California San Diego; 4/5; 3 ratings",
+                "method": "name_and_ucsd_school_id_1079"
+              }
+            ]
+          },
+          "verification": {
+            "status": "source_checked",
+            "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+            "observedAt": "2026-10-02T22:47:37+00:00",
+            "identityMatched": true,
+            "identityEvidence": "Edward Wang",
+            "lastAttemptedAt": "2026-10-02T22:47:37+00:00",
+            "issues": [],
+            "fieldsVerified": [
+              "appointmentStatus",
+              "email",
+              "facultyStatus",
+              "googleScholarUrl",
+              "labAffiliation",
+              "labAffiliationUrl",
+              "name",
+              "officialProfileUrl",
+              "personalWebsiteUrl",
+              "ratings.rateMyProfessors",
+              "researchSummary",
+              "teaching"
+            ],
+            "lastEvidenceAt": "2026-10-07T21:49:18+00:00"
+          },
+          "googleScholarSearchUrl": "https://scholar.google.com/scholar?q=Edward+Wang+UC+San+Diego",
+          "unverifiedFields": [],
+          "facultyStatus": "listed_in_official_directory",
+          "labAffiliations": [
+            {
+              "labId": "ucsd-live-lab-97139595f4c472",
+              "labName": "Biosignals Processing Lab",
+              "url": "https://www.ejaywang.com/",
+              "relationship": "faculty_lab_link",
+              "fieldEvidence": {
+                "sourceUrl": "https://www.ejaywang.com/",
+                "observedAt": "2026-10-02T23:42:57+00:00",
+                "method": "personal_site_lab_heading_and_owner_identity",
+                "evidence": "Biosignals Processing Lab: Edward Jay Wang",
+                "status": "verified"
+              }
+            }
+          ],
+          "directorySection": "Affiliated",
+          "appointmentStatus": "listed_faculty",
+          "directoryListings": [
+            {
+              "name": "Edward Wang",
+              "department": "Electrical and Computer Engineering",
+              "listedRole": "Associate Professor ejaywang@ucsd.edu",
+              "appointmentStatus": "listed_faculty",
+              "directorySection": "Faculty",
+              "sourceUrl": "https://ece.ucsd.edu/people/faculty",
+              "observedAt": "2026-10-07T21:49:18+00:00",
+              "evidence": {
+                "sourceUrl": "https://ece.ucsd.edu/people/faculty",
+                "observedAt": "2026-10-07T21:49:18+00:00",
+                "method": "official_faculty_directory_card",
+                "evidence": "Faculty | Edward Wang | Associate Professor ejaywang@ucsd.edu",
+                "status": "verified"
+              },
+              "identityMatchMethod": "same_full_name",
+              "identityMatchConfidence": "high",
+              "namedLinkUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489"
+            }
+          ],
+          "departmentAffiliations": [
+            "Electrical and Computer Engineering"
+          ],
+          "teaching": {
+            "status": "verified",
+            "lastChecked": "2026-10-07T22:39:23+00:00",
+            "courses": [
+              {
+                "courseCode": "ECE 116",
+                "title": "Advanced Hardware and Software Design",
+                "titleStatus": "captured",
+                "term": "Fall 2026",
+                "status": "scheduled",
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "dataUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "sourceId": "ece-2026",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 116 Advanced Hardware and Software Design | Fall 2026: WANG, E.",
+                "instructorName": "WANG, E",
+                "department": "Electrical and Computer Engineering",
+                "assignmentBasis": "advertised_department_schedule",
+                "isTentative": true,
+                "matchMethod": "unique_first_last_same_department_documented_affiliation",
+                "matchConfidence": "high",
+                "verificationStatus": "source_matched"
+              },
+              {
+                "courseCode": "ECE 150",
+                "title": "Entrepreneurship for Engineers",
+                "titleStatus": "captured",
+                "term": "Spring 2027",
+                "status": "scheduled",
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "dataUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "sourceId": "ece-2026",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 150 Entrepreneurship for Engineers | Spring 2027: WANG, E.",
+                "instructorName": "WANG, E",
+                "department": "Electrical and Computer Engineering",
+                "assignmentBasis": "advertised_department_schedule",
+                "isTentative": true,
+                "matchMethod": "unique_first_last_same_department_documented_affiliation",
+                "matchConfidence": "high",
+                "verificationStatus": "source_matched"
+              },
+              {
+                "courseCode": "ECE 284",
+                "title": "Special Topics in Computer Engineering",
+                "titleStatus": "captured",
+                "term": "Spring 2027",
+                "status": "scheduled",
+                "sourceUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "dataUrl": "https://www.ece.ucsd.edu/ece-tentative-course-list",
+                "sourceId": "ece-2026",
+                "observedAt": "2026-10-02T22:44:05+00:00",
+                "evidence": "ECE 284 Special Topics in Computer Engineering | Spring 2027: MAKRIS (Advanced Computer Architecture) WANG, E. (Digital Health Device Design)",
+                "instructorName": "WANG, E",
+                "department": "Electrical and Computer Engineering",
+                "assignmentBasis": "advertised_department_schedule",
+                "isTentative": true,
+                "matchMethod": "unique_first_last_same_department_documented_affiliation",
+                "matchConfidence": "high",
+                "verificationStatus": "source_matched"
+              }
+            ]
+          },
+          "ratings": {
+            "rateMyPI": {
+              "platform": "PI Review",
+              "status": "no_reviews",
+              "score": null,
+              "scale": 5,
+              "reviewCount": 0,
+              "sourceUrl": "https://pi-review.com/pis/4221",
+              "observedAt": "2026-10-02T15:48:05-07:00",
+              "matchedName": "Edward J. Wang",
+              "matchedInstitution": "University of California San Diego",
+              "matchedDepartment": "Electrical And Computer Engineering",
+              "matchMethod": "name_and_ucsd_directory_158",
+              "latestReviewAt": null,
+              "evidenceUrl": "https://pi-review.com/universities/158?page=55",
+              "method": "public_directory_aggregate",
+              "note": "PI Review is a separate mentoring-review platform; it is not ratemypi.com or a teaching score."
+            },
+            "rateMyProfessors": {
+              "platform": "Rate My Professors",
+              "status": "verified",
+              "score": 4,
+              "scale": 5,
+              "reviewCount": 3,
+              "sourceUrl": "https://www.ratemyprofessors.com/professor/2670854",
+              "matchedName": "Edward Wang",
+              "matchedInstitution": "University of California San Diego",
+              "matchedDepartment": "Electrical Engineering & Computer Science",
+              "matchMethod": "name_and_ucsd_school_id_1079",
+              "difficulty": 4,
+              "wouldTakeAgainPercent": 66.7,
+              "latestReviewAt": null,
+              "observedAt": "2026-10-02T16:50:37-07:00",
+              "evidenceUrl": "https://www.ratemyprofessors.com/search/professors/1079?q=P.%20Edward%20Parnell",
+              "method": "public_search_embedded_aggregate"
+            }
+          }
+        },
+        "originalProfessorRecordSha256": "8203a311d9d25eb5099625ceaeabe93fc23d547fb0adbfad9934cdaee0ab4e4c",
+        "personalWebsiteRequestUri": "https://www.ejaywang.com/",
+        "jacobsProfileRequestUri": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+        "chain": {
+          "originalProfileCapture": {
+            "requestedUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+            "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+            "observedAt": "2026-10-16T01:00:11+00:00",
+            "bodySha256": "ed666881f9d2b41245500c67f4c118d7710f82cb9357f96e5b6b1e0924fbb019"
+          },
+          "personalCapture": {
+            "requestedUrl": "https://www.ejaywang.com/",
+            "sourceUrl": "https://www.ejaywang.com/",
+            "observedAt": "2026-10-16T01:06:29+00:00",
+            "bodySha256": "f1c23dd62b40c59e6e5ce3545da08cb43f410126fff45517d8bcf61f26d3b182"
+          },
+          "jacobsCapture": {
+            "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+            "observedAt": "2026-10-16T00:59:14+00:00",
+            "bodySha256": "330c961f2b12e9b3081cc38cf760fb047f30330fb0cdffdf84cbda12b8592a9a"
+          },
+          "originalNameAsDisplayed": "Edward Wang",
+          "jacobsNameAsDisplayed": "Edward Wang",
+          "fullOwnNameAsDisplayed": "Edward Jay Wang",
+          "sharedSelfWebsiteUri": "https://www.ejaywang.com/",
+          "originalWebsiteLink": {
+            "rawHref": "https://www.ejaywang.com/",
+            "linkText": "Website",
+            "linkUrl": "https://www.ejaywang.com/"
+          },
+          "jacobsPersonalLink": {
+            "rawHref": "https://www.ejaywang.com/",
+            "linkText": "EDWARD JAY WANG",
+            "linkUrl": "https://www.ejaywang.com/"
+          },
+          "jacobsLabLink": {
+            "rawHref": "https://digihealth.ucsd.edu/home",
+            "linkText": "Digital Health Technologies Lab",
+            "linkUrl": "https://digihealth.ucsd.edu/home"
+          },
+          "labId": "ucsd-live-lab-db372d05c77570",
+          "labWebsiteUri": "https://digihealth.ucsd.edu/home"
+        }
+      },
+      "separatelyIsolatedCourseArtifactId": "ucsd-live-lab-97139595f4c472",
+      "reviewedAction": "accept_explicit_named_lab_with_original_professor_chain",
+      "scientificEntityMergeApplied": false
+    },
+    {
+      "candidateId": "ucsd-live-lab-429e87154859ef",
+      "labelAsDiscovered": "Marine Physical Laboratory",
+      "uriAsDiscovered": "https://scripps.ucsd.edu/mpl",
+      "actualCapture": {
+        "requestedUrl": "https://scripps.ucsd.edu/mpl",
+        "sourceUrl": "https://scripps.ucsd.edu/mpl",
+        "observedAt": "2026-10-16T00:57:34+00:00",
+        "bodySha256": "6bf880a558278fc3dec9126736c55138d8d3aa065b2a48c4cf7904ffd0e217b7",
+        "title": "MPL | Scripps Institution of Oceanography",
+        "headings": [
+          "Marine Physical Laboratory",
+          "NEWS"
+        ],
+        "evidence": "Marine Physical Laboratory Established after World War II as a follow-up of wartime scientific programs, Marine Physical Laboratory maintains a strong multidisciplinary research program of sponsored exploratory and technology-based oceanographic research and scientific development. Visit the MPL website Thomas Moore NEWS VIEW ALL VIEW ALL Oct 09, 2026 The Gooier Marine Snow Is, the Better It Is at Transporting Carbon, New Study Finds Oct 08, 2026 Healthy Reef Sounds Can Boost Coral and Fish Recovery Efforts Oct 07, 2026 Scripps Student Spotlight: Tommy Stone"
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://research.ucsd.edu/ORU/index.html",
+          "observedAt": "2026-10-16T00:59:31+00:00",
+          "label": "Marine Physical Laboratory",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://research.ucsd.edu/ORU/index.html",
+              "observedAt": "2026-10-16T00:59:31+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Marine Physical Laboratory MPL maintains a strong multidisciplinary program consisting entirely of sponsored exploratory and technology-based oceanographic research and scientific development.",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://research.ucsd.edu/ORU/index.html",
+              "observedAt": "2026-10-16T00:59:31+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Marine Physical Laboratory MPL maintains a strong multidisciplinary program consisting entirely of sponsored exploratory and technology-based oceanographic research and scientific development.",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "organized_research_unit_scope_review",
+      "nextRequiredReview": "Review the linked official MPL own source, which explicitly calls MPL an organized research unit; do not count a new PI laboratory.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-037c7d4e208f02",
+      "labelAsDiscovered": "Pelham Lab @ UC San Diego",
+      "uriAsDiscovered": "https://pelham-lab.ucsd.edu/about-us",
+      "actualCapture": {
+        "requestedUrl": "https://pelham-lab.ucsd.edu/about-us",
+        "sourceUrl": "https://pelham-lab.ucsd.edu/about-us",
+        "observedAt": "2026-10-16T01:02:13+00:00",
+        "bodySha256": "588540e521f97e146605466f836d5343d85ae9e482f74b55d2b0eb27b9977b69",
+        "title": "Pelham Lab @ UC San Diego",
+        "headings": [
+          "The Pelham Lab @ UCSD"
+        ],
+        "evidence": "Search this site Embedded Files Pelham Lab @ UC San Diego The Pelham Lab @ UCSD c. 2024 The Pelham Lab has been at the UC San Diego Department of Psychiatry since 2022. The team includes postdoctoral fellows, graduate students, research coordinators, and undergraduate volunteers. The primary focus of the lab is externalizing spectrum psychopathology in children and adolescents , but we study a variety of related topics. Learn more about some current projects here . We are always seeking talented new team members and will be hiring both postdoctoral fellows and research coordinators to start in 2027. Send a c.v. to Dr. Pelham to express interest in either. Follow us on Instagram @pelhamlab_ucsd to keep up with lab events! Our work has been supported by several funders: National Institute on Child Health and Human Development ( NI CHD ) National Institute on Drug Abuse ( NIDA ) National Institute on A lcohol Abuse and Alcoholism ( NIAAA ) Brain and Behavior Research Foundation ( BBRF ) Thrasher Research Fund ( Thrasher ) California Department of Cannabis Control ( DCC ) Canadian Institute on Health Research ( CIHR ) UC San Diego Academic Senate Report abuse Page details Page updated "
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://pelham-lab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:01+00:00",
+          "label": "Pelham Lab @ UC San Diego",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/",
+              "observedAt": "2026-10-16T01:00:01+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego The Pelham Lab @ UCSD c. 2024 The Pelham Lab has been at the UC San Diego Department of Psychiatry since 2022. The team includes postdoctoral fellows, graduate students, research coordinators, and undergraduate volunteers. The primary focus of the lab is externalizing spectrum psychopathology in children and adolescents , but we study a variety of related topics. Learn more about some current projects here . We are always seeking talented new team members and will be hiring both postdoctoral fellows and research coordinators to start in 2027. Send a c.v. to Dr. Pelham to express interest in either. Follow us on Instagram @pelhamlab_ucsd to keep up with lab events! Our work has been supported by several funders: National Institute on Child Health and Human Development ( NI CHD ) National Institute on Drug Abuse ( NIDA ) National Institute on A lcohol Abuse and Al",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/",
+              "observedAt": "2026-10-16T01:00:01+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego The Pelham Lab @ UCSD c. 2024 The Pelham Lab has been at the UC San Diego Department of Psychiatry since 2022. The team includes postdoctoral fellows, graduate students, research coordinators, and undergraduate volunteers. The primary focus of the lab is externalizing spectrum psychopathology in children and adolescents , but we study a variety of related topics. Learn more about some current projects here . We are always seeking talented new team members and will be hiring both postdoctoral fellows and research coordinators to start in 2027. Send a c.v. to Dr. Pelham to express interest in either. Follow us on Instagram @pelhamlab_ucsd to keep up with lab events! Our work has been supported by several funders: National Institute on Child Health and Human Development ( NI CHD ) National Institute on Drug Abuse ( NIDA ) National Institute on A lcohol Abuse and Al",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Psychiatry",
+          "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+          "observedAt": "2026-10-16T01:33:59+00:00",
+          "label": "Pelham Lab @ UC San Diego",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:33:59+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego Contact us All inquiries may be directed to Dr. Pelham at <wpelham at ucsd dot edu>. You can also find us on Instagram! @pelhamlab_ucsd Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:33:59+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego Contact us All inquiries may be directed to Dr. Pelham at <wpelham at ucsd dot edu>. You can also find us on Instagram! @pelhamlab_ucsd Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+          "observedAt": "2026-10-16T01:33:59+00:00",
+          "label": "Pelham Lab @ UC San Diego",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:33:59+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego Contact us All inquiries may be directed to Dr. Pelham at <wpelham at ucsd dot edu>. You can also find us on Instagram! @pelhamlab_ucsd Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://pelham-lab.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:33:59+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Pelham Lab @ UC San Diego Contact us All inquiries may be directed to Dr. Pelham at <wpelham at ucsd dot edu>. You can also find us on Instagram! @pelhamlab_ucsd Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Own page explicitly names the lab and Psychiatry affiliation; verify canonical lab identity and leadership independently."
+      },
+      "existingCanonicalLabId": "ucsd-lab-from-faculty-pelham-lab-ucsd-edu",
+      "existingCanonicalLabPrimaryUri": "https://pelham-lab.ucsd.edu/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-lab-from-faculty-pelham-lab-ucsd-edu",
+          "url": "https://pelham-lab.ucsd.edu/about-us",
+          "originalAliasRecord": {
+            "labId": "ucsd-lab-from-faculty-pelham-lab-ucsd-edu",
+            "url": "https://pelham-lab.ucsd.edu/about-us",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://pelham-lab.ucsd.edu/",
+                "observedAt": "2026-10-16T01:00:01+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "Pelham Lab @ UC San Diego The Pelham Lab @ UCSD c. 2024 The Pelham Lab has been at the UC San Diego Department of Psychiatry since 2022. The team includes postdoctoral fellows, graduate students, research coordinators, and undergraduate volunteers. The primary focus of the lab is externalizing spectrum psychopathology in children and adolescents , but we study a variety of related topics. Learn more about some current projects here . We are always seeking talented new team members and will be hiring both postdoctoral fellows and research coordinators to start in 2027. Send a c.v. to Dr. Pelham to express interest in either. Follow us on Instagram @pelhamlab_ucsd to keep up with lab events! Our work has been supported by several funders: National Institute on Child Health and Human Development ( NI CHD ) National Institute on Drug Abuse ( NIDA ) National Institute on A lcohol Abuse and Al",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://pelham-lab.ucsd.edu/about-us",
+                "observedAt": "2026-10-16T01:02:13+00:00",
+                "method": "manual_source_identity_review",
+                "evidence": "Search this site Embedded Files Pelham Lab @ UC San Diego The Pelham Lab @ UCSD c. 2024 The Pelham Lab has been at the UC San Diego Department of Psychiatry since 2022. The team includes postdoctoral fellows, graduate students, research coordinators, and undergraduate volunteers. The primary focus of the lab is externalizing spectrum psychopathology in children and adolescents , but we study a variety of related topics. Learn more about some current projects here . We are always seeking talented new team members and will be hiring both postdoctoral fellows and research coordinators to start in",
+                "status": "verified"
+              }
+            ],
+            "reason": "This is the About page within the existing Pelham Lab website, not a separate lab."
+          },
+          "originalAliasRecordSha256": "c7a997b063ad77cceebbad46ecafd1d8a69153a910859400d95a2913533e2c9e",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://pelham-lab.ucsd.edu/about-us",
+              "sourceUrl": "https://pelham-lab.ucsd.edu/about-us",
+              "observedAt": "2026-10-16T01:02:13+00:00",
+              "bodySha256": "588540e521f97e146605466f836d5343d85ae9e482f74b55d2b0eb27b9977b69",
+              "evidenceType": "document_title",
+              "evidence": "Pelham Lab @ UC San Diego",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-9747273d4f91bb",
+      "labelAsDiscovered": "LSDO Lab",
+      "uriAsDiscovered": "https://lsdo.eng.ucsd.edu/home_1",
+      "actualCapture": {
+        "requestedUrl": "https://lsdo.eng.ucsd.edu/home_1",
+        "sourceUrl": "https://lsdo.eng.ucsd.edu/home_1",
+        "observedAt": "2026-10-16T01:02:15+00:00",
+        "bodySha256": "89e7f60a6ba15cd7e79aac08239a0f199ba3bd5546c609b990c21d6c09c20367",
+        "title": "LSDO Lab",
+        "headings": [
+          "LSDO Lab",
+          "Large-Scale Design Optimization Lab",
+          "Welcome"
+        ],
+        "evidence": "Search this site Embedded Files LSDO Lab LSDO Lab Large-Scale Design Optimization Lab Welcome The Large-Scale Design Optimization Lab (LSDO Lab) is a research group led by Prof. John Hwang in the Department of Mechanical and Aerospace Engineering at the University of California San Diego. Our lab focuses on research surrounding the use of numerical optimization algorithms to assist in the design and analysis of engineering systems. In particular, we specialize in large-scale design optimization (LSDO), the optimization of 100s ~ 10,000s of design variables with complex computational models that incorporate multiple engineering disciplines (see the figures below for examples). Progress from the past decade has made LSDO feasible, largely through advances in methods for computing derivatives of complex models, which is critical for high-dimensional optimization. Our lab creates mathematics, algorithms, and software at the cutting edge of this emerging field. In addition to methods-focused research, we focus on the application of LSDO to aerospace vehicle design applications, especially in the area of urban air mobility, and we work with collaborators to pioneer new applications, e.g."
+      },
+      "sourceObservations": [
+        {
+          "department": "Mechanical & Aerospace Engineering",
+          "sourceUrl": "https://lsdo.eng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:25+00:00",
+          "label": "LSDO Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:00:25+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:00:25+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Mechanical & Aerospace Engineering",
+          "sourceUrl": "https://lsdo.eng.ucsd.edu/people",
+          "observedAt": "2026-10-16T01:28:18+00:00",
+          "label": "LSDO Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:28:18+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:28:18+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Mechanical & Aerospace Engineering",
+          "sourceUrl": "https://lsdo.eng.ucsd.edu/contact",
+          "observedAt": "2026-10-16T01:34:53+00:00",
+          "label": "LSDO Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/contact",
+              "observedAt": "2026-10-16T01:34:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab Contact John Hwang Associate Professor Mechanical and Aerospace Engineering Franklin Antonio Hall 31 04 jhwang@eng.ucsd.edu Report abuse Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/contact",
+              "observedAt": "2026-10-16T01:34:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "LSDO Lab Contact John Hwang Associate Professor Mechanical and Aerospace Engineering Franklin Antonio Hall 31 04 jhwang@eng.ucsd.edu Report abuse Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Own page explicitly names Large-Scale Design Optimization Lab and John Hwang leadership; verify existing lab identity and exact person proof."
+      },
+      "existingCanonicalLabId": "ucsd-live-lab-e5bd180105d058",
+      "existingCanonicalLabPrimaryUri": "https://lsdo.eng.ucsd.edu/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-live-lab-e5bd180105d058",
+          "url": "https://lsdo.eng.ucsd.edu/home_1",
+          "originalAliasRecord": {
+            "labId": "ucsd-live-lab-e5bd180105d058",
+            "url": "https://lsdo.eng.ucsd.edu/home_1",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://lsdo.eng.ucsd.edu/",
+                "observedAt": "2026-10-16T01:00:25+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "LSDO Lab",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://lsdo.eng.ucsd.edu/home_1",
+                "observedAt": "2026-10-16T01:02:15+00:00",
+                "method": "manual_source_identity_review",
+                "evidence": "Search this site Embedded Files LSDO Lab LSDO Lab Large-Scale Design Optimization Lab Welcome The Large-Scale Design Optimization Lab (LSDO Lab) is a research group led by Prof. John Hwang in the Department of Mechanical and Aerospace Engineering at the University of California San Diego. Our lab focuses on research surrounding the use of numerical optimization algorithms to assist in the design and analysis of engineering systems. In particular, we specialize in large-scale design optimization (LSDO), the optimization of 100s ~ 10,000s of design variables with complex computational models tha",
+                "status": "verified"
+              }
+            ],
+            "reason": "The existing root and this page explicitly identify the same LSDO Lab led by John Hwang."
+          },
+          "originalAliasRecordSha256": "7e7f2cafe60a21bfe59f8f4a4db79f0390e3cb9f69ccb10c3dadb94b7f02adda",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://lsdo.eng.ucsd.edu/home_1",
+              "sourceUrl": "https://lsdo.eng.ucsd.edu/home_1",
+              "observedAt": "2026-10-16T01:02:15+00:00",
+              "bodySha256": "89e7f60a6ba15cd7e79aac08239a0f199ba3bd5546c609b990c21d6c09c20367",
+              "evidenceType": "document_title",
+              "evidence": "LSDO Lab",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-c62eb5d14adafa",
+      "labelAsDiscovered": "Jokerst Bioimaging Lab",
+      "uriAsDiscovered": "https://jjokerst.eng.ucsd.edu/home",
+      "actualCapture": {
+        "requestedUrl": "https://jjokerst.eng.ucsd.edu/home",
+        "sourceUrl": "https://jjokerst.eng.ucsd.edu/home",
+        "observedAt": "2026-10-16T01:02:30+00:00",
+        "bodySha256": "04542f9c474b4331c575d6b77c6e466594e27ac4ac075e05ee9bc3f5752969e2",
+        "title": "Jokerst Bioimaging Lab",
+        "headings": [
+          "Jokerst Bioimaging Lab",
+          "Quick Facts:"
+        ],
+        "evidence": "Search this site Embedded Files Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse"
+      },
+      "sourceObservations": [
+        {
+          "department": "NanoEngineering",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:30+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:01:30+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:01:30+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:30+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:01:30+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:01:30+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "NanoEngineering",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+          "observedAt": "2026-10-16T01:28:54+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+              "observedAt": "2026-10-16T01:28:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+              "observedAt": "2026-10-16T01:28:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+          "observedAt": "2026-10-16T01:28:54+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+              "observedAt": "2026-10-16T01:28:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/learning-center",
+              "observedAt": "2026-10-16T01:28:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/members",
+          "observedAt": "2026-10-16T01:36:37+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/members",
+              "observedAt": "2026-10-16T01:36:37+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Members 2026 2025 2024 2023 2022 2022 202 1 202 0 20 19 201 8 2017 Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/members",
+              "observedAt": "2026-10-16T01:36:37+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Members 2026 2025 2024 2023 2022 2022 202 1 202 0 20 19 201 8 2017 Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://jjokerst.eng.ucsd.edu/contact-us",
+          "observedAt": "2026-10-16T01:36:41+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:36:41+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Contact Us Recruitment I nfo Prospective lab members should email a CV that summarizes their research skills and interests to Prof. Jokerst. Dr. Jokerst's lab does not discriminate against, or grant preferential treatment to, any individual or group on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. Prof. Jokerst's E mail jjokerst@ucsd.edu Office Address Structural and Materials Engineering Building, Rm. 343G 9500 Gilman Drive La Jolla, CA 92093-0448 Office Number (858) 246-0896 Lab Location Structural and Materials Engineering Building , Rm. 307 9500 Gilman Drive La Jolla, CA 92093-0448 Lab Number (858) 534-6765 Google Maps Find local businesses, view maps and get driving directions in Google Maps. Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:36:41+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jokerst Bioimaging Lab Contact Us Recruitment I nfo Prospective lab members should email a CV that summarizes their research skills and interests to Prof. Jokerst. Dr. Jokerst's lab does not discriminate against, or grant preferential treatment to, any individual or group on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. Prof. Jokerst's E mail jjokerst@ucsd.edu Office Address Structural and Materials Engineering Building, Rm. 343G 9500 Gilman Drive La Jolla, CA 92093-0448 Office Number (858) 246-0896 Lab Location Structural and Materials Engineering Building , Rm. 307 9500 Gilman Drive La Jolla, CA 92093-0448 Lab Number (858) 534-6765 Google Maps Find local businesses, view maps and get driving directions in Google Maps. Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Two actual request paths show the named lab. Verify canonical declarations or actual own links before aliasing them or adding one entity."
+      },
+      "existingCanonicalLabId": "ucsd-live-lab-89085c8778372d",
+      "existingCanonicalLabPrimaryUri": "https://jjokerst.ucsd.edu/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-live-lab-89085c8778372d",
+          "url": "https://jjokerst.eng.ucsd.edu/home",
+          "originalAliasRecord": {
+            "labId": "ucsd-live-lab-89085c8778372d",
+            "url": "https://jjokerst.eng.ucsd.edu/home",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+                "observedAt": "2026-10-16T01:01:30+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://jjokerst.eng.ucsd.edu/home",
+                "observedAt": "2026-10-16T01:02:30+00:00",
+                "method": "manual_source_identity_review",
+                "evidence": "Search this site Embedded Files Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse",
+                "status": "verified"
+              }
+            ],
+            "reason": "The official faculty/lab source and current official group page identify the same Jokerst Bioimaging Lab associated with Jesse Jokerst; retain the prior ID."
+          },
+          "originalAliasRecordSha256": "fd05c22affcc9207f8a74420eb43a5beec5620f37c34985cb707a2f23f8bd610",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://jjokerst.eng.ucsd.edu/home",
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/home",
+              "observedAt": "2026-10-16T01:02:30+00:00",
+              "bodySha256": "04542f9c474b4331c575d6b77c6e466594e27ac4ac075e05ee9bc3f5752969e2",
+              "evidenceType": "document_title",
+              "evidence": "Jokerst Bioimaging Lab",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-27f7b50ccfeb61",
+      "labelAsDiscovered": "Carter Lab",
+      "uriAsDiscovered": "https://cartercompbio.github.io/",
+      "actualCapture": {
+        "requestedUrl": "https://cartercompbio.github.io/",
+        "sourceUrl": "https://cartercompbio.github.io/",
+        "observedAt": "2026-10-16T01:03:40+00:00",
+        "bodySha256": "3e2ba0d625cd1b353f7699d56495578f05f4d2ee15b7a5e925755e2b409ed585",
+        "title": "The Carter Lab - Computational Cancer Genomics",
+        "headings": [
+          "Computational Cancer Genomics",
+          "Latest News",
+          "Research Areas",
+          "Genetic determinants of anti-tumor immunity",
+          "Predicting the effects of genetic variants on biological systems",
+          "Uncovering interactions between the inherited genome and tumor development",
+          "Discriminating cancer drivers from passengers",
+          "People"
+        ],
+        "evidence": "Computational Cancer Genomics Welcome to the Carter Lab! We are located in the School of Medicine of UC San Diego . Latest News View All News → Research Areas Genetic determinants of anti-tumor immunity Genetic variation in immune genes creates inter-individual differences in immune traits. We are investigating the implications of these differences for cancer risk, progression and response to therapy. By jointly analyzing matched tumor and normal genomic data, we have found that individual immune genotypes can influence the evolution of tumor genomes, shape the tumor immune microenvironment and modify response to immunotherapy treatment. These studies will ultimately guide development of precision immunotherapies. Predicting the effects of genetic variants on biological systems Experimental assays to probe genetic variants at the single cell level provide new opportunities to model the effects of variants on biological processes and cellular activities. We are developing new experimental and computational approaches to investigate the context-specific consequences of genetic variation for biological systems to better understand their implications for human health. Uncovering intera"
+      },
+      "sourceObservations": [
+        {
+          "department": "Medicine",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "label": "Carter Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+              "observedAt": "2026-10-16T01:01:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Hannah Carter, PhD Professor Carter Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+              "observedAt": "2026-10-16T01:01:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Hannah Carter, PhD Professor Carter Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": [
+            "ucsd-medicine-hannah-kathryn-carter"
+          ]
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Own source explicitly names Carter Lab and UC San Diego School of Medicine; verify existing entity, leadership and linked original professor independently."
+      },
+      "existingCanonicalLabId": "ucsd-live-lab-ea11e11cc546c7",
+      "existingCanonicalLabPrimaryUri": "https://carterlab.info/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-live-lab-ea11e11cc546c7",
+          "url": "https://cartercompbio.github.io/",
+          "originalAliasRecord": {
+            "labId": "ucsd-live-lab-ea11e11cc546c7",
+            "url": "https://cartercompbio.github.io/",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+                "observedAt": "2026-10-16T01:01:40+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "Hannah Carter, PhD Professor Carter Lab",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://cartercompbio.github.io/",
+                "observedAt": "2026-10-16T01:03:40+00:00",
+                "method": "manual_source_identity_review",
+                "evidence": "Computational Cancer Genomics Welcome to the Carter Lab! We are located in the School of Medicine of UC San Diego . Latest News View All News → Research Areas Genetic determinants of anti-tumor immunity Genetic variation in immune genes creates inter-individual differences in immune traits. We are investigating the implications of these differences for cancer risk, progression and response to therapy. By jointly analyzing matched tumor and normal genomic data, we have found that individual immune genotypes can influence the evolution of tumor genomes, shape the tumor immune microenvironment an",
+                "status": "verified"
+              }
+            ],
+            "reason": "Both the retained carterlab.info site and the officially linked replacement publish Carter Lab and the same Computational Cancer Genomics research sections."
+          },
+          "originalAliasRecordSha256": "d4385cf20a69d34f027ff96a9e4fc99b157462fb3aa40dc4bdec16dc6083de73",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://cartercompbio.github.io/",
+              "sourceUrl": "https://cartercompbio.github.io/",
+              "observedAt": "2026-10-16T01:03:40+00:00",
+              "bodySha256": "3e2ba0d625cd1b353f7699d56495578f05f4d2ee15b7a5e925755e2b409ed585",
+              "evidenceType": "document_title",
+              "evidence": "The Carter Lab - Computational Cancer Genomics",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-7061028df3c0f0",
+      "labelAsDiscovered": "Ideker Lab",
+      "uriAsDiscovered": "https://idekerlab.ucsd.edu/%20",
+      "actualCapture": {
+        "requestedUrl": "https://idekerlab.ucsd.edu/%20",
+        "sourceUrl": "https://idekerlab.org/",
+        "observedAt": "2026-10-16T01:02:34+00:00",
+        "bodySha256": "a5be8455a8bc91e07cab082395e58302b6321f69f5ef1baf6014188b29433611",
+        "title": "IDEKER LAB",
+        "headings": [
+          "Ideker Laboratory",
+          "Analyze Your Genes With iQuery",
+          "You Can Also Analyze Genes With Our LLM-based Website: GSAI",
+          "Research Areas",
+          "Recent Publications",
+          "Recent News",
+          "UC San Diego Today",
+          "University of Oxford"
+        ],
+        "evidence": "Ideker Laboratory Analyze Your Genes With iQuery You Can Also Analyze Genes With Our LLM-based Website: GSAI Research Areas The long-term objective of the Ideker Lab is to create artificially intelligent, mechanistic models of cancer and neurodegenerative diseases for translation of patient data to precision diagnosis and treatment. We seek to advance this goal by addressing fundamental questions in the field: What are the genetic and molecular networks that promote disease, and how do we best chart these? How do we use knowledge of these networks in intelligent systems for predicting the effects of genotype? Mapping of subcellular networks and structures Visible machine learning for predictive oncology Network biomarkers for cancer and neuropsychiatric disease Epigenetic Aging Bioinformatics Software Recent Publications DREAM repressive activity links somatic mutation, lifespan and disease Zane Koch, et al. Nature Aging, 2026 View PDF A foundation model of cancer genotype enables precise predictions of therapeutic response JungHo Kong, et al. Cancer Discovery, 2026 View PDF Common and rare genetic variants show network convergence for a majority of human traits Sarah Wright, et al"
+      },
+      "sourceObservations": [
+        {
+          "department": "Medicine",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "label": "Ideker Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+              "observedAt": "2026-10-16T01:01:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Trey Ideker, PhD Professor Ideker Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+              "observedAt": "2026-10-16T01:01:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Trey Ideker, PhD Professor Ideker Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "reviewed_final_resource_alias_to_original_named_lab",
+      "nextRequiredReview": "Retain the original campus lab ID/primary URI and actual final resource alias in the completion-gated final export. Do not repair or promote the encoded-space discovery request by assumption.",
+      "notAcceptedOrMerged": true,
+      "previousSourceReviewAssessments": [
+        {
+          "sourceReviewAssessment": "named_lab_requires_entity_review",
+          "nextRequiredReview": "Actual encoded-space request returned a named Ideker resource. Preserve the literal request; inspect actual canonical/links instead of repairing the URL by assumption."
+        }
+      ],
+      "existingCanonicalLabId": "ucsd-medicine-lab-trey-ideker-lab",
+      "verifiedFinalResourceUri": "https://idekerlab.org/",
+      "exactCapturedAliasReview": {
+        "labId": "ucsd-medicine-lab-trey-ideker-lab",
+        "url": "https://idekerlab.org/",
+        "originalAliasRecord": {
+          "labId": "ucsd-medicine-lab-trey-ideker-lab",
+          "url": "https://idekerlab.org/",
+          "fieldEvidence": [
+            {
+              "requestedUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+              "sourceUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+              "observedAt": "2026-10-16T01:05:04+00:00",
+              "bodySha256": "320269bac704e4c1ae72fca0591c739c1c85b4824480347c78c89f283a60de22",
+              "evidenceType": "main_text_quote",
+              "evidence": "Trey Ideker Laboratory",
+              "method": "reviewed_original_lab_and_own_person_source",
+              "status": "verified"
+            },
+            {
+              "requestedUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+              "sourceUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+              "observedAt": "2026-10-16T01:05:04+00:00",
+              "bodySha256": "320269bac704e4c1ae72fca0591c739c1c85b4824480347c78c89f283a60de22",
+              "evidenceType": "named_link",
+              "evidence": "Explore -> https://idekerlab.ucsd.edu/",
+              "method": "reviewed_original_lab_and_own_person_source",
+              "status": "verified",
+              "linkText": "Explore",
+              "linkUrl": "https://idekerlab.ucsd.edu/"
+            },
+            {
+              "requestedUrl": "https://idekerlab.ucsd.edu/",
+              "sourceUrl": "https://idekerlab.org/",
+              "observedAt": "2026-10-16T01:08:24+00:00",
+              "bodySha256": "a5be8455a8bc91e07cab082395e58302b6321f69f5ef1baf6014188b29433611",
+              "evidenceType": "main_text_quote",
+              "evidence": "Ideker Laboratory",
+              "method": "reviewed_original_lab_and_own_person_source",
+              "status": "verified"
+            },
+            {
+              "requestedUrl": "https://idekerlab.ucsd.edu/",
+              "sourceUrl": "https://idekerlab.org/",
+              "observedAt": "2026-10-16T01:08:24+00:00",
+              "bodySha256": "a5be8455a8bc91e07cab082395e58302b6321f69f5ef1baf6014188b29433611",
+              "evidenceType": "redirect_chain",
+              "evidence": "HTTP 301: https://idekerlab.ucsd.edu/ -> https://idekerlab.org/",
+              "method": "reviewed_original_lab_and_own_person_source",
+              "status": "verified",
+              "redirects": [
+                {
+                  "from": "https://idekerlab.ucsd.edu/",
+                  "to": "https://idekerlab.org/",
+                  "httpStatus": 301
+                }
+              ]
+            }
+          ],
+          "reason": "The unchanged original named campus Trey Ideker Laboratory page explicitly links Explore to this exact separately captured campus root. Its actual 301 redirect reaches idekerlab.org, whose body names Ideker Laboratory. Associate only the observed final resource with the retained original lab ID and primary campus URI; the encoded-space discovery request remains retained as listed, without a guessed repair or current exclusive institutional-employment inference."
+        },
+        "originalAliasRecordSha256": "360fa021b6b13f6cee9c5b065956888eb20981577318783438369e1a524a4288",
+        "reason": "The unchanged original named campus Trey Ideker Laboratory page explicitly links Explore to this exact separately captured campus root. Its actual 301 redirect reaches idekerlab.org, whose body names Ideker Laboratory. Associate only the observed final resource with the retained original lab ID and primary campus URI; the encoded-space discovery request remains retained as listed, without a guessed repair or current exclusive institutional-employment inference.",
+        "evidence": [
+          {
+            "requestedUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+            "sourceUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+            "observedAt": "2026-10-16T01:05:04+00:00",
+            "bodySha256": "320269bac704e4c1ae72fca0591c739c1c85b4824480347c78c89f283a60de22",
+            "evidenceType": "main_text_quote",
+            "evidence": "Trey Ideker Laboratory",
+            "method": "reviewed_original_lab_and_own_person_source",
+            "status": "verified"
+          },
+          {
+            "requestedUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+            "sourceUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+            "observedAt": "2026-10-16T01:05:04+00:00",
+            "bodySha256": "320269bac704e4c1ae72fca0591c739c1c85b4824480347c78c89f283a60de22",
+            "evidenceType": "named_link",
+            "evidence": "Explore -> https://idekerlab.ucsd.edu/",
+            "method": "reviewed_original_lab_and_own_person_source",
+            "status": "verified",
+            "linkText": "Explore",
+            "linkUrl": "https://idekerlab.ucsd.edu/"
+          },
+          {
+            "requestedUrl": "https://idekerlab.ucsd.edu/",
+            "sourceUrl": "https://idekerlab.org/",
+            "observedAt": "2026-10-16T01:08:24+00:00",
+            "bodySha256": "a5be8455a8bc91e07cab082395e58302b6321f69f5ef1baf6014188b29433611",
+            "evidenceType": "main_text_quote",
+            "evidence": "Ideker Laboratory",
+            "method": "reviewed_original_lab_and_own_person_source",
+            "status": "verified"
+          },
+          {
+            "requestedUrl": "https://idekerlab.ucsd.edu/",
+            "sourceUrl": "https://idekerlab.org/",
+            "observedAt": "2026-10-16T01:08:24+00:00",
+            "bodySha256": "a5be8455a8bc91e07cab082395e58302b6321f69f5ef1baf6014188b29433611",
+            "evidenceType": "redirect_chain",
+            "evidence": "HTTP 301: https://idekerlab.ucsd.edu/ -> https://idekerlab.org/",
+            "method": "reviewed_original_lab_and_own_person_source",
+            "status": "verified",
+            "redirects": [
+              {
+                "from": "https://idekerlab.ucsd.edu/",
+                "to": "https://idekerlab.org/",
+                "httpStatus": 301
+              }
+            ]
+          }
+        ]
+      },
+      "encodedSpaceRequestRemainsAsListed": true,
+      "reviewedAction": "add_observed_final_resource_alias_to_existing_id",
+      "scientificEntityMergeApplied": false,
+      "newScientificEntityAccepted": false
+    },
+    {
+      "candidateId": "ucsd-live-lab-aba7f1f0d99fcc",
+      "labelAsDiscovered": "Relocating the Laboratory: 40 Years of Collaborative Research on Culture",
+      "uriAsDiscovered": "https://lchc.ucsd.edu/AERA_Scribner_Talk/LCHC_Scribner_slides.html",
+      "actualCapture": {
+        "requestedUrl": "https://lchc.ucsd.edu/AERA_Scribner_Talk/LCHC_Scribner_slides.html",
+        "sourceUrl": "https://lchc.ucsd.edu/AERA_Scribner_Talk/LCHC_Scribner_slides.html",
+        "observedAt": "2026-10-16T01:03:41+00:00",
+        "bodySha256": "082325fb8725fc8228adbc1f4005b8dcc9c53553bb9ae516c6e8d5ec50aa7e0c",
+        "title": "LCHC Scribner Award Talk (AERA 2010)",
+        "headings": [],
+        "evidence": "These files are maintained strictly for historical reference, research, and recordkeeping purposes, and the content has not been altered or updated since archiving. Content on this site may not meet current digital accessibility standards. If you require an alternative, accessible format of any information found on this site, please contact Bruce Jones, bjones@ucsd.edu to request an accommodation. These files are maintained strictly for historical reference, research, and recordkeeping purposes, and the content has not been altered or updated since archiving. Content on this site may not meet current digital accessibility standards. If you require an alternative, accessible format of any information found on this site, please contact Bruce Jones, bjones@ucsd.edu to request an accommodation. Relocating the Laboratory: 40 Years of Collaborative Research on Culture Sylvia Scribner Award Address AERA Denver, Colorado May 2nd, 2010 Michael Cole, Ray McDermott, Luis Moll, Denis Newman, Olga V�squez, Katherine Brown, Robert Lecusay & http://lchc.ucsd.edu Slide 1 Home Next Slide → Michael Cole: Origins of the Lab Link to text Relocating Psychology, Culture & Society Intellectual Foundation"
+      },
+      "sourceObservations": [
+        {
+          "department": "Communication",
+          "sourceUrl": "https://communication.ucsd.edu/research/groups/lchc/index.html",
+          "observedAt": "2026-10-16T01:02:47+00:00",
+          "label": "Relocating the Laboratory: 40 Years of Collaborative Research on Culture",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://communication.ucsd.edu/research/groups/lchc/index.html",
+              "observedAt": "2026-10-16T01:02:47+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "The Lab was awarded the 2010 American Educational Research Association's Sylvia Scribner Award. Several generations of members from the lab gave a collective talk for the occasion at the AERA conference in Denver, 2010. Relocating the Laboratory: 40 Years of Collaborative Research on Culture Sylvia Scribner Award Address AERA Denver, Colorado May 2nd, 2010 Michael Cole, Ray McDermott, Luis Moll, Denis Newman, Olga Vásquez, Katherine Brown, and Robert Lecusay.",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://communication.ucsd.edu/research/groups/lchc/index.html",
+              "observedAt": "2026-10-16T01:02:47+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "The Lab was awarded the 2010 American Educational Research Association's Sylvia Scribner Award. Several generations of members from the lab gave a collective talk for the occasion at the AERA conference in Denver, 2010. Relocating the Laboratory: 40 Years of Collaborative Research on Culture Sylvia Scribner Award Address AERA Denver, Colorado May 2nd, 2010 Michael Cole, Ray McDermott, Luis Moll, Denis Newman, Olga Vásquez, Katherine Brown, and Robert Lecusay.",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "archived_presentation_content_scope_review",
+      "nextRequiredReview": "Actual destination is the LCHC Scribner Award Talk archive; a talk title does not establish a new lab identity.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-87826f8b6e23a2",
+      "labelAsDiscovered": "McCarthy Lab",
+      "uriAsDiscovered": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/research/mccarthy-lab.html",
+      "actualCapture": {
+        "requestedUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/research/mccarthy-lab.html",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/research/mccarthy-lab.html",
+        "observedAt": "2026-10-16T01:03:54+00:00",
+        "bodySha256": "01f2ec1f4a295141450b69fb02165100fd808dfe34ff258a329af09af17d30c0",
+        "title": "McCarthy Lab",
+        "headings": [
+          "McCarthy Lab"
+        ],
+        "evidence": "McCarthy Lab The McCarthy laboratory is focused on the molecular genetics of mood disorders . Research areas covered include genetic, molecular, and cellular mechanisms underlying bipolar disorder, major depression, and comorbid conditions like substance abuse and metabolic disease. The laboratory has three main research areas that are currently active. Circadian mechanisms in cellular models of bipolar disorder We are using cells from human subjects (fibroblasts and iPSC derived neurons) to identify disturbances in circadian rhythms in gene expression. By understanding how the clock oscillator and/or clock outputs are affected in bipolar disorder, we hope to identify mechanisms by which neurons either malfunction, or benefit from pharmacotherapeutic interventions like lithium. Pictured below are iPSC-derived neuronal progenitor cells at 20X magnification. Circadian mechanisms of antipsychotic induced metabolic disorders Antipsychotic drugs have important uses as mood stabilizers and as augmentation of antidepressants. However, their long-term use is associated with weight gain and metabolic disorders like type 2 diabetes. Using pancreatic islet cells, we are measuring circadian rh"
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+          "observedAt": "2026-10-16T01:03:10+00:00",
+          "label": "McCarthy Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+              "observedAt": "2026-10-16T01:03:10+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Research Welsh Lab McCarthy Lab Resources",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+              "observedAt": "2026-10-16T01:03:10+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Research Welsh Lab McCarthy Lab Resources",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "mixed_parent_group_and_child_research_names_require_review",
+      "nextRequiredReview": "Keep the original parent and separate Welsh scientific IDs. The same parent page publishes mixed group names, while the independent Welsh site has no allowed body capture. Do not infer a rename, split, alias or closure from a path prefix, absent body or shared person alone.",
+      "notAcceptedOrMerged": true,
+      "previousSourceReviewAssessments": [
+        {
+          "sourceReviewAssessment": "named_lab_requires_entity_review",
+          "nextRequiredReview": "Own page explicitly names a research lab. Check reviewed shared Welsh/McCarthy resource identities and existing canonical person before adding anything."
+        }
+      ],
+      "existingPossibleParentLabId": "ucsd-psychiatry-lab-welsh-mccarthy-lab",
+      "sourceConflictAsListed": {
+        "parentH1": "UC San Diego McCarthy Lab",
+        "parentBodyGroupName": "Welsh-McCarthy Lab",
+        "parentResearchLink": "McCarthy Lab",
+        "childH1": "McCarthy Lab"
+      },
+      "independentWelshOwnSiteLimitation": {
+        "requestedUrl": "https://circadian.ucsd.edu/",
+        "selectedQueueState": "unresolved",
+        "actualSelectedFetchReceipt": {
+          "sourceUrl": "https://circadian.ucsd.edu/",
+          "observedAt": "2026-10-16T01:19:45+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://circadian.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:45+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113585.181741,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "blockedUrl": "https://circadian.ucsd.edu/",
+          "retrievedEpoch": 1792113585.2576199
+        },
+        "limitation": "No permitted positive own-body capture; do not infer closure, alias or scientific group split."
+      },
+      "scientificGroupMergeOrSeparationApplied": false,
+      "actualMixedParentSourceEvidence": [
+        {
+          "requestedUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+          "observedAt": "2026-10-16T01:03:10+00:00",
+          "bodySha256": "b28ef2c2942469aa11bc867ebdc24fadd677b03ce868b95b320cf29c43d87090",
+          "evidenceType": "main_text_quote",
+          "method": "captured_mixed_group_name_review",
+          "status": "verified",
+          "evidence": "UC San Diego McCarthy Lab"
+        },
+        {
+          "requestedUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/index.html",
+          "observedAt": "2026-10-16T01:03:10+00:00",
+          "bodySha256": "b28ef2c2942469aa11bc867ebdc24fadd677b03ce868b95b320cf29c43d87090",
+          "evidenceType": "main_text_quote",
+          "method": "captured_mixed_group_name_review",
+          "status": "verified",
+          "evidence": "The Welsh-McCarthy Lab studies cellular and molecular mechanisms of the circadian clock and its involvement in mood disorders."
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-4339197907a947",
+      "labelAsDiscovered": "Group Events",
+      "uriAsDiscovered": "https://dongwang.ucsd.edu/group-events",
+      "actualCapture": {
+        "requestedUrl": "https://dongwang.ucsd.edu/group-events",
+        "sourceUrl": "https://dongwang.ucsd.edu/group-events",
+        "observedAt": "2026-10-16T01:04:55+00:00",
+        "bodySha256": "57610361ee34121d99922cc87e86a78fb22bd27ecf3156a0e0ae04333f463ba6",
+        "title": "Wang LAB - Group Events",
+        "headings": [
+          "Group events",
+          "Gallery",
+          "Holiday Lunch 2023",
+          "Holiday Lunch 202 2",
+          "Lunar New Year 2019",
+          "Farewell Party 2018",
+          "Career & Publication Celebration 2017",
+          "Nature Celebration 2017"
+        ],
+        "evidence": "Search this site Embedded Files Wang LAB Group events Gallery Holiday Lunch 2023 Holiday lunch at Manna BBQ. Holiday Lunch 202 2 Holiday lunch at Songhak Korean BBQ . Lunar New Year 2019 Lunar New Year lunch at Jasmine Seafood Restaurant. Farewell Party 2018 Wei's farewell party at Szechuan Chef. Career & Publication Celebration 2017 Celebrated Jenny's new career and Jun's Nature publication at The Shores Restaurant in La Jolla Shores. Nature Celebration 2017 Celebrated manuscript acceptance for publication in Nature with Leschziner Lab. Birthday Celebration 2017 Celebrated Wei's birthday at Rock Bottom. Graduation 2017 Congratulations to Vi for completing pharmacy school! Farewell Party 2017 Liang's farewell party at Little Sheep Mongolian Hot Pot. Christmas Celebration 2016 Bowling at Mira Mesa Lanes. Master's Defense 2016 Celebrated Ji's successful Master's thesis defense. Birthday Celebration 2016 Celebrated Dr. Wang's birthday at Rock Bottom. Birthday Celebration 2015 Celebrated Dr. Wang's birthday at Double Happiness. Summer Research Training Poster Presentation 2014 Vi presented her summer research project. Lunar New Year Celebration 2014 Celebrated Lunar New Year and welcom"
+      },
+      "sourceObservations": [
+        {
+          "department": "Cellular & Molecular Medicine",
+          "sourceUrl": "https://dongwang.ucsd.edu/people",
+          "observedAt": "2026-10-16T01:04:53+00:00",
+          "label": "Group Events",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://dongwang.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:04:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Current Lab Members Dong Wang Principal Investigator Professor Division of Pharmaceutical Sciences, Skaggs School of Pharmacy & Pharmaceutical Sciences; Department of Cellular and Molecular Medicine, School of Medicine; University of California San Diego Affiliated Faculty Member The Molecular Biophysics Training Program Biomedical Sciences Graduate Program Cancer Biology Program, Moores Cancer Center University of California, San Diego Postdoctoral Fellow, Stanford University School of Medicine Ph.D., Massachusetts Institute of Technology B.S., Peking University Jenny Chong Lab Manager Staff Research Associate B.S., University of California, San Diego Peini Hou Postdoc Ph.D., Institute of Biophysics, Chinese Academy of Sciences B.S., Wuhan Universit y Qingrong Li Postdoc Ph.D., The University of Hong Kong & Southern University of Science and Technology B.S., Guangzhou University ",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://dongwang.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:04:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Current Lab Members Dong Wang Principal Investigator Professor Division of Pharmaceutical Sciences, Skaggs School of Pharmacy & Pharmaceutical Sciences; Department of Cellular and Molecular Medicine, School of Medicine; University of California San Diego Affiliated Faculty Member The Molecular Biophysics Training Program Biomedical Sciences Graduate Program Cancer Biology Program, Moores Cancer Center University of California, San Diego Postdoctoral Fellow, Stanford University School of Medicine Ph.D., Massachusetts Institute of Technology B.S., Peking University Jenny Chong Lab Manager Staff Research Associate B.S., University of California, San Diego Peini Hou Postdoc Ph.D., Institute of Biophysics, Chinese Academy of Sciences B.S., Wuhan Universit y Qingrong Li Postdoc Ph.D., The University of Hong Kong & Southern University of Science and Technology B.S., Guangzhou University ",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "existing_lab_content_page_requires_parent_review",
+      "nextRequiredReview": "Actual destination identifies Wang LAB and a gallery of events. Link label is page content; verify its parent lab and exact relationship.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-0c8316c1e95cb8",
+      "labelAsDiscovered": "Lab Fun",
+      "uriAsDiscovered": "https://greenspanlab.ucsd.edu/LabFun.htm",
+      "actualCapture": {
+        "requestedUrl": "https://greenspanlab.ucsd.edu/LabFun.htm",
+        "sourceUrl": "https://greenspanlab.ucsd.edu/LabFun.htm",
+        "observedAt": "2026-10-16T01:06:20+00:00",
+        "bodySha256": "2be77412af317696a7b790bd20f4c6982a8d1dc13e73ff38cf6119652cb1b946",
+        "title": "<Lab Fun>",
+        "headings": [],
+        "evidence": "Greenspan Lab Home News Projects People Publications Lab Fun Contact"
+      },
+      "sourceObservations": [
+        {
+          "department": "Biological Sciences",
+          "sourceUrl": "https://greenspanlab.ucsd.edu/people.html",
+          "observedAt": "2026-10-16T01:06:13+00:00",
+          "label": "Lab Fun",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://greenspanlab.ucsd.edu/people.html",
+              "observedAt": "2026-10-16T01:06:13+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Lab Fun",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://greenspanlab.ucsd.edu/people.html",
+              "observedAt": "2026-10-16T01:06:13+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Lab Fun",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Biological Sciences",
+          "sourceUrl": "https://greenspanlab.ucsd.edu/contact.html",
+          "observedAt": "2026-10-16T01:30:24+00:00",
+          "label": "Lab Fun",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://greenspanlab.ucsd.edu/contact.html",
+              "observedAt": "2026-10-16T01:30:24+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Lab Fun",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://greenspanlab.ucsd.edu/contact.html",
+              "observedAt": "2026-10-16T01:30:24+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Lab Fun",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "existing_lab_content_page_requires_parent_review",
+      "nextRequiredReview": "Actual page is Greenspan Lab social content. Verify own parent relationship; do not create an entity called Lab Fun.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-eb53c85dfd2ce8",
+      "labelAsDiscovered": "Jokerst Bioimaging Lab",
+      "uriAsDiscovered": "https://jjokerst.eng.ucsd.edu/",
+      "actualCapture": {
+        "requestedUrl": "https://jjokerst.eng.ucsd.edu/",
+        "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:30+00:00",
+        "bodySha256": "c501cf6d8a8d041b74a89ab5ab8c81bc04ca5695e641538ab339c8a997307bc6",
+        "title": "Jokerst Bioimaging Lab",
+        "headings": [
+          "Jokerst Bioimaging Lab",
+          "Quick Facts:"
+        ],
+        "evidence": "Search this site Embedded Files Jokerst Bioimaging Lab Jokerst Bioimaging Lab Quick Facts: Emphasis on ultrasound and photoacoustic imaging. New lab space in the Structural and Materials Engineering Building﻿ on UCSD Engineering Quad (opened in 2012). Now recruiting graduate and undergraduate students as well as postdoctoral fellows ( current open position ). Report abuse Page details Page updated Report abuse"
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://wearablesensors.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:09:44+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://wearablesensors.ucsd.edu/faculty",
+              "observedAt": "2026-10-16T01:09:44+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jesse Jokerst Professor Aiiso Yufeng Li Family Department of Chemical and Nano Engineering Use of acoustic data to create devices that monitor human health. Jokerst Bioimaging Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://wearablesensors.ucsd.edu/faculty",
+              "observedAt": "2026-10-16T01:09:44+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jesse Jokerst Professor Aiiso Yufeng Li Family Department of Chemical and Nano Engineering Use of acoustic data to create devices that monitor human health. Jokerst Bioimaging Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://cws.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:04+00:00",
+          "label": "Jokerst Bioimaging Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://cws.ucsd.edu/faculty",
+              "observedAt": "2026-10-16T01:29:04+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jesse Jokerst Professor Aiiso Yufeng Li Family Department of Chemical and Nano Engineering Use of acoustic data to create devices that monitor human health. Jokerst Bioimaging Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://cws.ucsd.edu/faculty",
+              "observedAt": "2026-10-16T01:29:04+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Jesse Jokerst Professor Aiiso Yufeng Li Family Department of Chemical and Nano Engineering Use of acoustic data to create devices that monitor human health. Jokerst Bioimaging Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Two actual request paths show the named lab. Verify canonical declarations or actual own links before aliasing them or adding one entity."
+      },
+      "existingCanonicalLabId": "ucsd-live-lab-89085c8778372d",
+      "existingCanonicalLabPrimaryUri": "https://jjokerst.ucsd.edu/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-live-lab-89085c8778372d",
+          "url": "https://jjokerst.eng.ucsd.edu/",
+          "originalAliasRecord": {
+            "labId": "ucsd-live-lab-89085c8778372d",
+            "url": "https://jjokerst.eng.ucsd.edu/",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+                "observedAt": "2026-10-16T01:01:30+00:00",
+                "method": "reviewed_lab_identity_text",
+                "evidence": "Jokerst Bioimaging Lab",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://jjokerst.eng.ucsd.edu/home",
+                "observedAt": "2026-10-16T01:02:30+00:00",
+                "method": "reviewed_lab_identity_text",
+                "evidence": "Jokerst Bioimaging Lab",
+                "status": "verified"
+              }
+            ],
+            "reason": "Same named official lab and site root as the already reviewed /home alias; no new lab."
+          },
+          "originalAliasRecordSha256": "1e1b46632e658f51ae8003e9a060173bbe8d08285e90bf14195f91265e0a72a0",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://jjokerst.eng.ucsd.edu/",
+              "sourceUrl": "https://jjokerst.eng.ucsd.edu/",
+              "observedAt": "2026-10-16T01:01:30+00:00",
+              "bodySha256": "c501cf6d8a8d041b74a89ab5ab8c81bc04ca5695e641538ab339c8a997307bc6",
+              "evidenceType": "document_title",
+              "evidence": "Jokerst Bioimaging Lab",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-ef8975eff6f74c",
+      "labelAsDiscovered": "Democracy Lab",
+      "uriAsDiscovered": "https://democracylab.ucsd.edu/home",
+      "actualCapture": {
+        "requestedUrl": "https://democracylab.ucsd.edu/home",
+        "sourceUrl": "https://democracylab.ucsd.edu/home",
+        "observedAt": "2026-10-16T01:02:25+00:00",
+        "bodySha256": "90d8fac910639395f57eb58bafb5bb8ad7ab8f3b021adaa70d213bd040b0bbd8",
+        "title": "Democracy Lab",
+        "headings": [
+          "The Democracy Lab at UC San Diego is a collective of scholars, community organizers, activists, educators, and practitioners working towards participatory democracy."
+        ],
+        "evidence": "The Democracy Lab at UC San Diego is a collective of scholars, community organizers, activists, educators, and practitioners working towards participatory democracy."
+      },
+      "sourceObservations": [
+        {
+          "department": "Communication",
+          "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+          "observedAt": "2026-10-16T01:28:49+00:00",
+          "label": "Democracy Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+              "observedAt": "2026-10-16T01:28:49+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Democracy Lab Democracy Lab The Democracy Lab (MCC 250) has eight computer stations which can seat two students each . The front of the space contains a large screen with an HDMI hookup. The back has large whiteboards and art supplies. The room can accommodate up to 25 people. Please be advised: food and drink are not permitted in the Democracy Lab. Each computer is equipped with a card reader and headphone mixer. Computers have the following software installed: VLC; FireEye Helper; GIMP; Audacity; Cinema 4D; Adobe Creative Suite (Premiere Pro, Animate, Illustrator, InDesign, Audition, Photoshop, After Effects, Media Encoder) We are working to open these up to the broader UCSD community, but they are currently only available via production classes and to Communication faculty and graduate students. Email tbenarieh@ucsd.edu to reserve Democracy Lab (MCC 250). Check the calendar below to e",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+              "observedAt": "2026-10-16T01:28:49+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Democracy Lab Democracy Lab The Democracy Lab (MCC 250) has eight computer stations which can seat two students each . The front of the space contains a large screen with an HDMI hookup. The back has large whiteboards and art supplies. The room can accommodate up to 25 people. Please be advised: food and drink are not permitted in the Democracy Lab. Each computer is equipped with a card reader and headphone mixer. Computers have the following software installed: VLC; FireEye Helper; GIMP; Audacity; Cinema 4D; Adobe Creative Suite (Premiere Pro, Animate, Illustrator, InDesign, Audition, Photoshop, After Effects, Media Encoder) We are working to open these up to the broader UCSD community, but they are currently only available via production classes and to Communication faculty and graduate students. Email tbenarieh@ucsd.edu to reserve Democracy Lab (MCC 250). Check the calendar below to e",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Communication",
+          "sourceUrl": "https://democracylab.ucsd.edu/about-us",
+          "observedAt": "2026-10-16T01:36:35+00:00",
+          "label": "Democracy Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://democracylab.ucsd.edu/about-us",
+              "observedAt": "2026-10-16T01:36:35+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Democracy Lab About Us The Democracy Lab advances community-engaged research, teaching, and practice focused on broad political participation and social justice. Anthony Harb Co-Director 20 24-2026 Megan Ybarra Co-Director 2025-2027 EXPERIMENT Democracy Lab is a space that facilitates media-making experimentation in advanced undergraduate production courses as well as in media-oriented graduate research. EXPLORE Democracy Lab events engage emerging research projects and the prototyping of ideas that explore dimensions of community-engaged, media-based, or teaching-focused research. ENVISION Democracy Lab creates opportunities for conversations, collaborations, and events that bring people together with the goal of imagining democratic possibilities. Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://democracylab.ucsd.edu/about-us",
+              "observedAt": "2026-10-16T01:36:35+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Democracy Lab About Us The Democracy Lab advances community-engaged research, teaching, and practice focused on broad political participation and social justice. Anthony Harb Co-Director 20 24-2026 Megan Ybarra Co-Director 2025-2027 EXPERIMENT Democracy Lab is a space that facilitates media-making experimentation in advanced undergraduate production courses as well as in media-oriented graduate research. EXPLORE Democracy Lab events engage emerging research projects and the prototyping of ideas that explore dimensions of community-engaged, media-based, or teaching-focused research. ENVISION Democracy Lab creates opportunities for conversations, collaborations, and events that bring people together with the goal of imagining democratic possibilities. Report abuse Page details Page updated Report abuse",
+              "status": "verified"
+            }
+          },
+          "professorIds": [
+            "ucsd-faculty-anthony-harb"
+          ]
+        }
+      ],
+      "sourceReviewAssessment": "collective_scope_review",
+      "nextRequiredReview": "Own description explicitly calls this a collective of scholars and community practitioners; review scope separately from PI labs.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-5da6bcc68360b8",
+      "labelAsDiscovered": "Media Teaching Lab",
+      "uriAsDiscovered": "https://blink.ucsd.edu/technology/media/teaching-lab/index.html",
+      "actualCapture": {
+        "requestedUrl": "https://blink.ucsd.edu/technology/media/teaching-lab/index.html",
+        "sourceUrl": "https://blink.ucsd.edu/technology/media/teaching-lab/index.html",
+        "observedAt": "2026-10-16T01:37:03+00:00",
+        "bodySha256": "41b1ce6fe822ea7dd62ef1fbaef67645c465fa6ed1547bf820a0bd9d0c14c243",
+        "title": "Media Teaching Lab",
+        "headings": [
+          "Media Teaching Lab",
+          "Equipment Checkout",
+          "Reserve Equipment / Rooms via WebCheckout",
+          "Canvas Reference Guides and Videos",
+          "News & Updates",
+          "Workshops",
+          "Services",
+          "Media Undergraduates and Graduate Researchers"
+        ],
+        "evidence": "Media Teaching Lab Last Updated: October 7, 2026 3:50:33 PM PDT Give feedback The Media Teaching Lab offers a wide variety of equipment available for use in photography, video, film, and audio production. The Media Teaching Lab at UC San Diego is dedicated to providing outstanding media production facilities, equipment, and technical assistance to undergraduate and graduate students. The Media Teaching Lab has a wide variety of equipment available for use in photography, video, film, and audio production. This includes high end cinema cameras, DSLRs, mirrorless and analog film cameras, camcorders, light kits, audio recorders, mixers and microphones, as well as the ancillary equipment and tools used in media production. Equipment Checkout Reserve Equipment / Rooms via WebCheckout See the equipment use policy for information about eligibility, how to check out media equipment, and limitations. As of Fall 2024, logins now use single sign-on for access to reserve equipment after you have registered . New users - please fill out the First Time Registration form After your registration has been processed (2 Business days, during the quarter), you may view and reserve equipment online. Ne"
+      },
+      "sourceObservations": [
+        {
+          "department": "Communication",
+          "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+          "observedAt": "2026-10-16T01:28:49+00:00",
+          "label": "Media Teaching Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+              "observedAt": "2026-10-16T01:28:49+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "To request swipe access to the Democracy Lab, please follow this link . Access will be granted within three business days. The c ommunication building is open during work hours. To get access to the building after hours, please register with the Media Teaching Lab .",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://democracylab.ucsd.edu/facilities/democracy-lab",
+              "observedAt": "2026-10-16T01:28:49+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "To request swipe access to the Democracy Lab, please follow this link . Access will be granted within three business days. The c ommunication building is open during work hours. To get access to the building after hours, please register with the Media Teaching Lab .",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "teaching_facility_scope_review",
+      "nextRequiredReview": "Own page describes equipment checkout, production facilities and assistance; review teaching facility scope separately from PI research labs.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-df6f5d29237199",
+      "labelAsDiscovered": "Bioinspired Robotics and Design Lab",
+      "uriAsDiscovered": "https://bioinspired.ucsd.edu/home",
+      "actualCapture": {
+        "requestedUrl": "https://bioinspired.ucsd.edu/home",
+        "sourceUrl": "https://bioinspired.ucsd.edu/home",
+        "observedAt": "2026-10-16T01:02:29+00:00",
+        "bodySha256": "eed5a689cd32a055d96edb77f60521482e40cbc741644b8eee6ac91012a7365a",
+        "title": "Bioinspired Robotics and Design Lab",
+        "headings": [
+          "Bioinspired Robotics and Design Lab"
+        ],
+        "evidence": "Bioinspired Robotics and Design Lab"
+      },
+      "sourceObservations": [
+        {
+          "department": "Mechanical & Aerospace Engineering",
+          "sourceUrl": "https://bioinspired.ucsd.edu/people",
+          "observedAt": "2026-10-16T01:28:53+00:00",
+          "label": "Bioinspired Robotics and Design Lab",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://bioinspired.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:28:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Bioinspired Robotics and Design Lab",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://bioinspired.ucsd.edu/people",
+              "observedAt": "2026-10-16T01:28:53+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Bioinspired Robotics and Design Lab",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "already_reviewed_canonical_lab_alias",
+      "nextRequiredReview": "Retain the existing reviewed canonical lab and its literal captured alias. This frontier candidate adds no new entity.",
+      "notAcceptedOrMerged": true,
+      "previousFrontierAssessment": {
+        "sourceReviewAssessment": "named_lab_requires_entity_review",
+        "nextRequiredReview": "Own page explicitly names a lab; verify existing canonical entity and independent official affiliation proof."
+      },
+      "existingCanonicalLabId": "ucsd-live-lab-2d61b633053fc6",
+      "existingCanonicalLabPrimaryUri": "https://bioinspired.eng.ucsd.edu/",
+      "priorVerifiedExactAliasReviews": [
+        {
+          "labId": "ucsd-live-lab-2d61b633053fc6",
+          "url": "https://bioinspired.ucsd.edu/home",
+          "originalAliasRecord": {
+            "labId": "ucsd-live-lab-2d61b633053fc6",
+            "url": "https://bioinspired.ucsd.edu/home",
+            "fieldEvidence": [
+              {
+                "sourceUrl": "https://bioinspired.eng.ucsd.edu/people",
+                "observedAt": "2026-10-16T01:28:23+00:00",
+                "method": "reviewed_lab_identity_text",
+                "evidence": "Bioinspired Robotics and Design Lab People Principal Investigator Michael T. Tolley",
+                "status": "verified"
+              },
+              {
+                "sourceUrl": "https://bioinspired.ucsd.edu/people",
+                "observedAt": "2026-10-16T01:28:53+00:00",
+                "method": "reviewed_lab_identity_text",
+                "evidence": "Bioinspired Robotics and Design Lab People Principal Investigator Michael T. Tolley",
+                "status": "verified"
+              }
+            ],
+            "reason": "Both official domains explicitly identify the same distinctively named lab and the same full principal investigator in their People pages. Preserve the existing stable lab ID."
+          },
+          "originalAliasRecordSha256": "81a793b30d931243ee01776a82f9cce131b221a832093ae176680a0620f58044",
+          "reason": "The exact alias URI has a successful dated capture that explicitly identifies the named lab. The original same-lab source review is retained in full; no scheme, host or path equivalence is inferred.",
+          "evidence": [
+            {
+              "requestedUrl": "https://bioinspired.ucsd.edu/home",
+              "sourceUrl": "https://bioinspired.ucsd.edu/home",
+              "observedAt": "2026-10-16T01:02:29+00:00",
+              "bodySha256": "eed5a689cd32a055d96edb77f60521482e40cbc741644b8eee6ac91012a7365a",
+              "evidenceType": "document_title",
+              "evidence": "Bioinspired Robotics and Design Lab",
+              "method": "reviewed_exact_lab_alias_resource_identity"
+            }
+          ],
+          "captureVerified": true
+        }
+      ]
+    },
+    {
+      "candidateId": "ucsd-live-lab-6516662688e326",
+      "labelAsDiscovered": "Marine Physical Laboratory (MPL)",
+      "uriAsDiscovered": "https://mpl.ucsd.edu/",
+      "actualCapture": {
+        "requestedUrl": "https://mpl.ucsd.edu/",
+        "sourceUrl": "https://mpl.ucsd.edu/",
+        "observedAt": "2026-10-16T01:37:16+00:00",
+        "bodySha256": "2b66e45441bb50a43bfd6ecf28255c90ceab03f28d59b77d74330b03814716ba",
+        "title": "MPL",
+        "headings": [],
+        "evidence": "The Marine Physical Laboratory (MPL) located in San Diego, is an organized research unit of the University of California, San Diego. As an integral part of the academic environment of the Scripps Institution of Oceanography and the University of California, San Diego, MPL plays an important part in the sponsorship and supervision of graduate student research in areas of ocean sciences and technology. As a Navy funded, academic laboratory of the Scripps Institution of Oceanography, UC San Diego, the Marine Physical Laboratory has a dual mission : To investigate and apply knowledge about the ocean, its boundaries and the surrounding media to the solution of the Navy's problems in undersea warfare and ocean technology; and To provide research training of students in areas of oceanography and ocean technology which have application to Navy requirements. Originally established as a Navy-orientated research laboratory in 1946, MPL has maintained a strong multidisciplinary research programconsisting entirely of sponsored projects, with a large sponsorship from the Department of Defense (DoD) and the National Science Foundation (NSF). Exploratory and technology based research and developme"
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+          "observedAt": "2026-10-16T01:29:40+00:00",
+          "label": "Marine Physical Laboratory (MPL)",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+              "observedAt": "2026-10-16T01:29:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Marine Physical Laboratory (MPL)",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+              "observedAt": "2026-10-16T01:29:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Marine Physical Laboratory (MPL)",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "organized_research_unit_scope_review",
+      "nextRequiredReview": "Own source explicitly states organized research unit; review the official Scripps relation and keep the ORU accounting separate.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-e1214d9db68d32",
+      "labelAsDiscovered": "Hydraulics Laboratory",
+      "uriAsDiscovered": "https://scripps.ucsd.edu/hlab",
+      "actualCapture": {
+        "requestedUrl": "https://scripps.ucsd.edu/hlab",
+        "sourceUrl": "https://scripps.ucsd.edu/hlab",
+        "observedAt": "2026-10-16T01:37:16+00:00",
+        "bodySha256": "003d62f85d329e66b83af0bc7dd661b118adc9121e3709ec5b14bf234ac3e8f7",
+        "title": "Hydraulics Lab | Scripps Institution of Oceanography",
+        "headings": [
+          "Facilities",
+          "Scheduling",
+          "",
+          "Daily Service Rates"
+        ],
+        "evidence": "A researcher describes the SOARS system to visitors to the Hydraulics Laboratory. The Hydraulics Laboratory offers various testing facilities. An on-site machine shop, fabrication tools and the in house expertise to use them greatly enhance the capability of the laboratory to serve a wide variety of scientific projects and research. Building dimensions are 31 m by 46 m. Adjacent is an asphalt-surfaced work yard 31 m by 40 m. Throughout the laboratory there is access to fresh and salt water (which can be chilled and filtered), drainage trenches, electric power (120V single phase and 208V three phase), and compressed air. Facilities Glass Channel Interior dimensions are 33 m long, 0.5 m wide with a normal water depth of 0.5 m. The electro-hydraulic servo-actuated wave generator will generate waves to 25 cm high. All side walls and 11 m of the tank bottom are glass to provide optical access. Different configurations of beaches can be installed. There is also a reversible flow system variable to .041 cubic meters/sec. A small tow cart runs the full length of the channel and has a variable speed range of zero to 74 cm/s. The channel also has a closed-loop air filtration system that meet"
+      },
+      "sourceObservations": [
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+          "observedAt": "2026-10-16T01:29:40+00:00",
+          "label": "Hydraulics Laboratory",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+              "observedAt": "2026-10-16T01:29:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Hydraulics Laboratory Phone: 858-534-2940 Email: rklidy@ucsd.edu",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://scripps.ucsd.edu/about/contact-us",
+              "observedAt": "2026-10-16T01:29:40+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Hydraulics Laboratory Phone: 858-534-2940 Email: rklidy@ucsd.edu",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "shared_testing_facility_scope_review",
+      "nextRequiredReview": "Actual page describes testing facilities, scheduling and daily service rates. Review shared research facility scope.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-c0950b4b64b9ff",
+      "labelAsDiscovered": "Design Lab & CSE, UC San Diego",
+      "uriAsDiscovered": "https://hxi.ucsd.edu/contact",
+      "actualCapture": {
+        "requestedUrl": "https://hxi.ucsd.edu/contact",
+        "sourceUrl": "https://hxi.ucsd.edu/contact/",
+        "observedAt": "2026-10-16T01:30:58+00:00",
+        "bodySha256": "e1597e7f3d7ebb0c72bd8628f52c23f7886b90c49e746570ad1984eb8fed2eb2",
+        "title": "| HXI - Human-centered eXtended Intelligence",
+        "headings": [
+          "Contact"
+        ],
+        "evidence": "Contact You can contact the HXI Research Lab at UCSD by either sending an email to the address below, or by contacing one of the lab members. We are also happy to host you at our lab at UC San Diego, but please let us know in advance :-) hxi@ucsd.edu 858-534-8637 Dr. Nadir Weibel, Ph.D. University of California, San Diego Computer Science and Engineering Mail Code #0404 9500 Gilman Drive La Jolla, CA 92093, USA, The HXI Research Lab is located within the Design Lab at the Design and Innovation Building (DIB), and at the Computer Science and Engineering Building (CSE), on the main UCSD Campus in La Jolla. Prof. Weibel’s Office in DIB - DIB 360 HCI Collaboratory in DIB - DIB 340+337 Prof. Weibel’s Office in CSE - CSE 3224 Ph.D. students Lab in CSE - CSE 2238 Design Lab & CSE, UC San Diego hxi@ucsd.edu Make a gift HXI@UCSD © 2026 Cite Copy Download"
+      },
+      "sourceObservations": [
+        {
+          "department": "Computer Science and Engineering",
+          "sourceUrl": "https://hxi.ucsd.edu/people/",
+          "observedAt": "2026-10-16T01:30:54+00:00",
+          "label": "Design Lab & CSE, UC San Diego",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://hxi.ucsd.edu/people/",
+              "observedAt": "2026-10-16T01:30:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Design Lab & CSE, UC San Diego hxi@ucsd.edu Make a gift HXI@UCSD © 2026",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://hxi.ucsd.edu/people/",
+              "observedAt": "2026-10-16T01:30:54+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Design Lab & CSE, UC San Diego hxi@ucsd.edu Make a gift HXI@UCSD © 2026",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "linked_lab_label_requires_parent_review",
+      "nextRequiredReview": "Contact page names HXI Research Lab. The discovered link label names host affiliations; verify the actual HXI parent identity rather than create a lab with that link label.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-b150b496eda0de",
+      "labelAsDiscovered": "Lab Alumni",
+      "uriAsDiscovered": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/profile-lab-alumni.html",
+      "actualCapture": {
+        "requestedUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/profile-lab-alumni.html",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/profile-lab-alumni.html",
+        "observedAt": "2026-10-16T01:37:22+00:00",
+        "bodySha256": "393eb6d2a4b7521437aa2f23b77625a908cc00d8e5e921c884841ccd7d2a4f42",
+        "title": "Lab Alumni",
+        "headings": [
+          "Lab Alumni",
+          "Lab Coordinators",
+          "Research Assistants"
+        ],
+        "evidence": "Lab Alumni Lab Coordinators Erin Jones Nathalie Dugas Edith Jimenez Research Assistants Isabella Mesa Kaleah Felan Brandon Guran Lucja Alarid Ryyan Khan Patrick Ngo Alice Attene Olivia Scarborough Lily Nguyen Eshika Mehta Jamila Piri Shirley Feng Javier Cuevas Jessica Ruggieri Ruiyan Hu Keri Tokuhama Nhan Quach Bryn Magee Sophia Huang Bobi Alexander"
+      },
+      "sourceObservations": [
+        {
+          "department": "Psychiatry",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+          "observedAt": "2026-10-16T01:34:17+00:00",
+          "label": "Lab Alumni",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+              "observedAt": "2026-10-16T01:34:17+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Staff Research Assistants Collaborators Pets Lab Alumni",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+              "observedAt": "2026-10-16T01:34:17+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Staff Research Assistants Collaborators Pets Lab Alumni",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        },
+        {
+          "department": "Interdisciplinary",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+          "observedAt": "2026-10-16T01:34:17+00:00",
+          "label": "Lab Alumni",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+              "observedAt": "2026-10-16T01:34:17+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Staff Research Assistants Collaborators Pets Lab Alumni",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+              "observedAt": "2026-10-16T01:34:17+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "People Staff Research Assistants Collaborators Pets Lab Alumni",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "existing_lab_content_page_requires_parent_review",
+      "nextRequiredReview": "Actual page is an alumni roster under NSTAR Lab; verify the canonical parent resource and retain roster context without making a new lab.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-10cad3c52ff254",
+      "labelAsDiscovered": "Lab Personnel",
+      "uriAsDiscovered": "https://cte.ucsd.edu/personnel",
+      "actualCapture": {
+        "requestedUrl": "https://cte.ucsd.edu/personnel",
+        "sourceUrl": "https://cte.ucsd.edu/personnel",
+        "observedAt": "2026-10-16T01:37:25+00:00",
+        "bodySha256": "8a805ec4f1762f079af7bc9a5bc11bd91e31082a64b8e067dd80cf9a802b5578",
+        "title": "Cartilage Tissue Engineering Lab - Personnel",
+        "headings": [
+          "Personnel",
+          "robert Sah, Md ScD",
+          "albert Chen, phd",
+          "Van Wong",
+          "Xueyi \"sheRry\" wan",
+          "graduate alumni by year",
+          "Graduate alumni by last name (Dissertation)"
+        ],
+        "evidence": "Search this site Embedded Files Cartilage Tissue Engineering Lab Personnel robert Sah, Md ScD Principal Investigator rsah@ucsd.edu albert Chen, phd Project Scientist acchen@ucsd.edu Van Wong Development Engineer, Lab Manager vwong@ucsd.edu Xueyi \"sheRry\" wan PhD Candidate xuwan@ucsd.edu graduate alumni by year 2023 Erica Gacasan, PhD 2023 Nasim Eshragh Nia, PhD 2023 Alborz Jelvani, PhD 2022 Caroline Bullard, MS 2022 Rebecca Drake, PhD 2022 Ismael Munoz, PhD 2020 Jason Caffrey, PhD 2020 Swetha Mohan, MS 2019 Corentin Nemoz, MS 2018 Somaye Jafari, PhD 2018 Aimee Raleigh, PhD 2018 Alexander Szewczyk, MS 2017 Felix Hsu, PhD 2017 Haoran Qiu, MS 2016 Neil Chang, PhD 2016 Alexander Hui, PhD 2016 Sungil Hwang, MS 2016 Espoir Kyubwa, PhD 2016 Arnaud Leclerc, MS 2014 Bradley Hansen, PhD 2014 Alvin Su, PhD 2013 Jerome Hollenstein, PhD 2013 Susanna Lin, MS 2013 Jesse Unger, MS 2012 Elaine Chan, PhD 2012 Yannick Devaud, MS 2012 Iliya Goldberg, MS 2012 Andrea Kichura, PhD 2012 William McCarty, PhD 2012 Quynhhoa Nguyen, PhD 2011 Jennifer Antonacci, PhD 2011 Murray Grissom, MS 2011 EunHee Han, PhD 2011 John Lee, MS 2010 Jennifer Hwang, PhD 2010 Greg Williams, PhD 2009 Nancy Hsieh-Bonassera, PhD 20"
+      },
+      "sourceObservations": [
+        {
+          "department": "Bioengineering",
+          "sourceUrl": "https://cte.ucsd.edu/contact-us",
+          "observedAt": "2026-10-16T01:35:11+00:00",
+          "label": "Lab Personnel",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://cte.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:35:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "e-mail: see the Lab Personnel page for e-mail addresses",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://cte.ucsd.edu/contact-us",
+              "observedAt": "2026-10-16T01:35:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "e-mail: see the Lab Personnel page for e-mail addresses",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "linked_lab_label_requires_parent_review",
+      "nextRequiredReview": "Actual page names Cartilage Tissue Engineering Lab and its personnel. Verify its parent lab identity; the link label is a page title.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-245b8dd36b2ace",
+      "labelAsDiscovered": "Wael Al-Delaimy Research Group",
+      "uriAsDiscovered": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+      "actualCapture": {
+        "requestedUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+        "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+        "observedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "d890e7d40134b7213cde2e50d0e519679632a9ffbb4adba8869a02c14f1aaa19",
+        "title": "Faculty Research Labs",
+        "headings": [
+          "Faculty Research Labs",
+          "Wael Al-Delaimy Research Group",
+          "Tala Al-Rousan Research Group",
+          "Cheryl Anderson Research Group",
+          "Holly Baker Research Group",
+          "Rebecca Fielding-Miller Research Group",
+          "Todd Gilmer Research Group",
+          "Sheri Hartman Research Group"
+        ],
+        "evidence": "Faculty Research Labs Wael Al-Delaimy Research Group Led by Wael Al-Delaimy, MD, PhD , the Community Health Workers for Advancing Public Health within Immigrant/Refugee and Native American Communities Programs (CHWAP) an academic-community collaborative led by the Herbert Wertheim School of Public Health and Human Longevity Science and with involvement of the UC San Diego Extended Studies, as well as the UC San Diego Altman Clinical and Translational Research Institute Center for Community Health. Led by Wael Al-Delaimy, MD, PhD , the GeoHealth Hub is an international consortium focused on the health impacts of climate change. Funded by the National Institutes for Health, this program is one of seven Global Environmental and Occupational Health (GEOHealth) hubs dedicated to high priority health research, data management, curriculum and material development, training activities and policy support. The project aims to better understand and address human health impacts of climate change. Led by Wael Al-Delaimy, MD, PhD , the mission of the Global Mental Health Initiative (GMHI) at the UC San Diego Herbert Wertheim School of Public Health and Human Longevity Science is to advance the r"
+      },
+      "sourceObservations": [
+        {
+          "department": "Public Health",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "label": "Wael Al-Delaimy Research Group",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Wael Al-Delaimy Research Group",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Wael Al-Delaimy Research Group",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "multi_entity_directory_requires_scoped_cards",
+      "nextRequiredReview": "Destination is a faculty research-lab directory with many separately named groups; verify the exact named group card and independent group identity.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-6ee1bfe17a155a",
+      "labelAsDiscovered": "Basic Science & Translational Laboratories",
+      "uriAsDiscovered": "https://obgyn.ucsd.edu/research/labs/index.html",
+      "actualCapture": {
+        "requestedUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+        "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+        "observedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+        "title": "Research Labs",
+        "headings": [
+          "Research Labs",
+          "Basic Science & Translational Laboratories",
+          "Basic Science and Translational Laboratories",
+          "Clinical Research",
+          "Clinical Research"
+        ],
+        "evidence": "Research Labs Discover basic science & translational laboratories and clinical research in the Department of Obstetrics, Gynecology, and Reproductive Sciences. Explore cutting edge clinical studies by our faculty. Basic Science & Translational Laboratories Basic Science and Translational Laboratories Alperin Lab – Dr. Alperin's laboratory uses a multi-prong approach to study the impact of pregnancy, birth injury, and aging on the structure, function, plasticity , and regenerative potential of the female pelvic soft tissues. Ultimately, we hope that this research will help reduce the epidemic of pelvic floor disorders and improve the lives of millions of women. Breen Church Lab – The Breen Church Lab focuses on: 1) Neuroendocrine mechanisms controlling reproduction and fertility; 2) Mechanisms underlying stress and stress–associated disease states on fertility; and 3) Early life programming of delayed or deficient fertility. Burnett Lab – Dr. Burnett's lab applies expertise in cellular and molecular biology to the understanding of how metabolism impacts pelvic floor disorders including pelvic organ prolapse, recurrent urinary tract infections, urinary and fecal incontinence. Cook-An"
+      },
+      "sourceObservations": [
+        {
+          "department": "Obstetrics, Gynecology & Reproductive Sciences",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "label": "Basic Science & Translational Laboratories",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Basic Science & Translational Laboratories",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Basic Science & Translational Laboratories",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "multi_entity_directory_requires_scoped_cards",
+      "nextRequiredReview": "Destination is an OBGYN labs directory with multiple named labs; this section label does not establish a single new entity.",
+      "notAcceptedOrMerged": true
+    },
+    {
+      "candidateId": "ucsd-live-lab-acd7b7bb4a82ea",
+      "labelAsDiscovered": "ECE Laboratories",
+      "uriAsDiscovered": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+      "actualCapture": {
+        "requestedUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+        "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+        "observedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+        "title": "ECE Laboratories | Electrical and Computer Engineering",
+        "headings": [
+          "ECE Laboratories"
+        ],
+        "evidence": "ECE Laboratories Advanced Robotics and Controls Lab (Associate Professor Michael Yip) Applied Electromagnetics Group (Professor Daniel Sievenpiper) BioSensors and BioElectronics Group (Professor Drew Hall) Computational Electromagnetics Group (Professor Vitaliy Lomakin) Energy-Efficient Microsystems Group (Professor Patrick Mercier) Information and Coding Lab (Professors Ken Zeger and Pamela Cosman ) Integrated Communication Circuits Lab (Assistant Professor Tzu-Chien Hsueh) Integrated Electronics and Biointerfaces Laboratory (Professor Shadi Dayeh) Integrated Power Electronics and Energy Efficient Systems (iPower3Es) Lab (Associate Professor Hanh-Phuc Le) Integrated Signal Processing Group (Professor Ian Galton) Mobile Embedded System Design and Test Laboratory (Professor Sujit Dey) Nano3 Nanofabrication Cleanroom Facility Neuroelectronics Group (Associate Professor Duygu Kuzum) NSF Center for Integrated Access Networks (Professor Shaya Fainman) Printed and Flexible Electronics (Professor Tina Ng) Signal Transmission And Recording group (STAR) (Professor Paul Siegel) Statistical Visual Computing Laboratory (Professor Nuno Vasconcelos) UCSD Lo Research Group (Professor Yu-Hwa Lo) U"
+      },
+      "sourceObservations": [
+        {
+          "department": "Electrical and Computer Engineering",
+          "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "label": "ECE Laboratories",
+          "fieldEvidence": {
+            "labName": {
+              "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "ECE Laboratories",
+              "status": "verified"
+            },
+            "labWebsiteUrl": {
+              "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+              "observedAt": "2026-10-16T00:59:12+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "ECE Laboratories",
+              "status": "verified"
+            }
+          },
+          "professorIds": []
+        }
+      ],
+      "sourceReviewAssessment": "multi_entity_directory_requires_scoped_cards",
+      "nextRequiredReview": "Destination is an ECE lab directory listing several independent groups; keep this directory separate from named lab records.",
+      "notAcceptedOrMerged": true
+    }
+  ],
+  "wireRequests": 0,
+  "liveQueueWritten": false,
+  "existingExactReviewedAliasCases": 6,
+  "existingCandidateAtlasSha256": "16a9ba5da252f271171f506760300f266ef18b220f8f606674619546f6c6ea02",
+  "previousAuditSummaries": [
+    {
+      "at": "2026-10-16T17:56:31.199899+00:00",
+      "sourceReviewGeneratedAt": "2026-10-16T03:59:34+00:00",
+      "sourceReviewSnapshotSha256": "9bba034610693ca2edbfe9c0dc29576b300f797a008913cbc98ecb9617a11f38",
+      "liveSourceCheckpointAt": "2026-10-16T17:56:27+00:00",
+      "scope": "Twenty-three automatically reviewable candidates whose exact proposed URLs are absent from the current candidate primary URLs. This is a captured-source frontier triage, not a final lab identity decision; alternate existing URLs, entity type, parent resources and department/PI identity still require review. No lab accepted, rejected, merged or scalar-updated by this audit.",
+      "counts": {
+        "named_lab_requires_entity_review": 3,
+        "organized_research_unit_scope_review": 2,
+        "already_reviewed_canonical_lab_alias": 6,
+        "archived_presentation_content_scope_review": 1,
+        "existing_lab_content_page_requires_parent_review": 3,
+        "collective_scope_review": 1,
+        "teaching_facility_scope_review": 1,
+        "shared_testing_facility_scope_review": 1,
+        "linked_lab_label_requires_parent_review": 2,
+        "multi_entity_directory_requires_scoped_cards": 3
+      },
+      "wireRequests": 0,
+      "liveQueueWritten": false,
+      "existingExactReviewedAliasCases": 6,
+      "existingCandidateAtlasSha256": "16a9ba5da252f271171f506760300f266ef18b220f8f606674619546f6c6ea02"
+    }
+  ],
+  "latestSourceReviewAt": "2026-10-16T18:40:05.708493+00:00",
+  "reviewedActionsPendingCandidateValidation": {
+    "at": "2026-10-16T18:33:38.417629+00:00",
+    "newNamedLabs": 1,
+    "newLabId": "ucsd-live-lab-db372d05c77570",
+    "isolatedMisparsedCourseIds": [
+      "ucsd-live-lab-97139595f4c472"
+    ],
+    "newFinalResourceAliases": 1,
+    "retainedIdekerLabId": "ucsd-medicine-lab-trey-ideker-lab",
+    "retainedIdekerPrimaryUri": "https://gpm.ucsd.edu/research/ideker/index.html",
+    "explicitOwnPiName": "Edward Jay Wang",
+    "linkedOriginalProfessorId": "ucsd-faculty-edward-wang",
+    "unchangedOriginalProfessorNameAndPrimaryUri": true,
+    "old16HandoffLabRecordsExact": true,
+    "handoffLabs": 17,
+    "handoffAliases": 31,
+    "labFieldReviews": 6,
+    "wireRequests": 0,
+    "liveQueueWritten": false
+  },
+  "reviewedCandidateAtlasSha256": "fb6dec75a68d8956f52987c614331ca5b2f84292c1fa451610678378d04e688b",
+  "candidateAssemblyPreservationAndBrowserValidated": true
+}

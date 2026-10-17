@@ -1,0 +1,2004 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T14:37:54.824128+00:00",
+  "isFinalExport": false,
+  "candidateAtlasSha256": "19f92bfe741bc58d9eb4d129e24e1dd8fe89cf49e6f39f5836964c4d506c7012",
+  "sourceQueueSha256": "62bcdceeeec55135159bde0c46286d170659dd31132c0e64fb16617ffbb59bb9",
+  "sourceFreeze": {
+    "at": "2026-10-17T14:26:39.876229+00:00",
+    "sourceQueuePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/chattree-fainman-source-capture-preview/source-queue.json",
+    "sourceQueueSha256": "62bcdceeeec55135159bde0c46286d170659dd31132c0e64fb16617ffbb59bb9",
+    "priorSourceQueueSha256": "fea440ae2529f7fa5d69529037b91f4c5c1dde7ed70b697a0a4c9fdb81eb976e",
+    "captureCachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/chattree-fainman-source-capture-preview/evidence-corpus",
+    "priorPositiveCapturesUnchanged": 17483,
+    "sourcePositiveCaptures": 17487,
+    "newPositiveCaptures": 4,
+    "prior38PrivateAttemptObservationsUnchanged": true,
+    "supplementalSourceAttempts": 42,
+    "allPreviousQueueItemsEntirelyUnchanged": true,
+    "facultyListingsRawLabsAndCentersUnchanged": true,
+    "facultyReviewByteIdentical": true,
+    "facultyReviewSha256": "5016b95d507e150c036a98b1fdc1c6d11d911397edff48e89e06cf58dcd26317",
+    "newPrivateLogicalSourceAttempts": 4,
+    "newPrivateWireRequests": 5,
+    "jacobsContentRequestRepeated": false,
+    "copiedNewCaptureFiles": 8,
+    "independentPriorCaptureLinks": 34989,
+    "mainQueueWritten": false,
+    "mainResponseCacheWritten": false,
+    "eligibleMainQueueRemainsDrained": true
+  },
+  "labFieldReviews": [
+    {
+      "labId": "ucsd-live-lab-f5581b3b23f1d6",
+      "originalLabRecord": {
+        "id": "ucsd-live-lab-f5581b3b23f1d6",
+        "labName": "Chattree Lab",
+        "institution": "University of California San Diego",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "https://sites.ucsd.edu/chattree-lab/",
+        "principalInvestigator": "Gaurav Chattree",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+        "contactEmail": "gchattree@health.ucsd.edu",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/gaurav.chattree",
+          "https://sites.ucsd.edu/chattree-lab/",
+          "https://sites.ucsd.edu/chattree-lab/team/"
+        ],
+        "lastVerified": "2026-10-17",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/gaurav.chattree",
+              "observedAt": "2026-10-17T13:07:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Chattree Lab Website",
+              "status": "verified",
+              "redirectEvidence": []
+            }
+          ],
+          "principalInvestigator": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "observedAt": "2026-10-17T13:07:43+00:00",
+              "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+              "evidenceType": "main_text_quote",
+              "evidence": "Gaurav Chattree, MD Principal investigator Assistant Clinical Professor Department of Neurosciences · UC San Diego",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "contactEmail": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "observedAt": "2026-10-17T13:07:43+00:00",
+              "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+              "evidenceType": "html_attribute",
+              "evidence": "a[href] = mailto:gchattree@health.ucsd.edu",
+              "method": "reviewed_own_named_pi_public_contact",
+              "status": "verified",
+              "elementTag": "a",
+              "attributeName": "href",
+              "attributeValue": "mailto:gchattree@health.ucsd.edu",
+              "selectorAttributes": {
+                "href": "mailto:gchattree@health.ucsd.edu"
+              },
+              "linkTextAsPublished": "Email Gaurav"
+            }
+          ],
+          "department": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "UC San Diego · Department of Neurosciences",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "institution": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "UC San Diego · Department of Neurosciences",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "description": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+              "method": "reviewed_own_lab_research_description",
+              "status": "verified"
+            }
+          ],
+          "recordSubtype": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [],
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record",
+        "principalInvestigatorIdentityScope": "source_reported_name_only",
+        "verification": {
+          "status": "source_checked",
+          "fieldsVerified": [
+            "contactEmail",
+            "department",
+            "description",
+            "institution",
+            "labName",
+            "labWebsiteUrl",
+            "principalInvestigator",
+            "recordSubtype"
+          ],
+          "lastEvidenceAt": "2026-10-17T13:07:43+00:00",
+          "issues": [
+            "Incremental reviewed record; unknown fields and unfinished global collection remain explicit."
+          ]
+        }
+      },
+      "originalLabRecordSha256": "2dcf0e73d258b9cf2bcfe8ffeddbaed6639bd50bde2b8c8af4b13fd1a21aff87",
+      "previousCompiledLabRecord": {
+        "id": "ucsd-live-lab-f5581b3b23f1d6",
+        "labName": "Chattree Lab",
+        "institution": "University of California San Diego",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "https://sites.ucsd.edu/chattree-lab/",
+        "principalInvestigator": "Gaurav Chattree",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+        "contactEmail": "gchattree@health.ucsd.edu",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/gaurav.chattree",
+          "https://sites.ucsd.edu/chattree-lab/",
+          "https://sites.ucsd.edu/chattree-lab/team/"
+        ],
+        "lastVerified": "2026-10-17",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/gaurav.chattree",
+              "observedAt": "2026-10-17T13:07:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Chattree Lab Website",
+              "status": "verified",
+              "redirectEvidence": []
+            }
+          ],
+          "principalInvestigator": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "observedAt": "2026-10-17T13:07:43+00:00",
+              "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+              "evidenceType": "main_text_quote",
+              "evidence": "Gaurav Chattree, MD Principal investigator Assistant Clinical Professor Department of Neurosciences · UC San Diego",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "contactEmail": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+              "observedAt": "2026-10-17T13:07:43+00:00",
+              "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+              "evidenceType": "html_attribute",
+              "evidence": "a[href] = mailto:gchattree@health.ucsd.edu",
+              "method": "reviewed_own_named_pi_public_contact",
+              "status": "verified",
+              "elementTag": "a",
+              "attributeName": "href",
+              "attributeValue": "mailto:gchattree@health.ucsd.edu",
+              "selectorAttributes": {
+                "href": "mailto:gchattree@health.ucsd.edu"
+              },
+              "linkTextAsPublished": "Email Gaurav"
+            }
+          ],
+          "department": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "UC San Diego · Department of Neurosciences",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "institution": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "UC San Diego · Department of Neurosciences",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ],
+          "description": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "main_text_quote",
+              "evidence": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+              "method": "reviewed_own_lab_research_description",
+              "status": "verified"
+            }
+          ],
+          "recordSubtype": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+              "method": "reviewed_named_chattree_lab_source_chain",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [],
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record",
+        "principalInvestigatorIdentityScope": "source_reported_name_only",
+        "verification": {
+          "status": "source_checked",
+          "fieldsVerified": [
+            "contactEmail",
+            "department",
+            "description",
+            "institution",
+            "labName",
+            "labWebsiteUrl",
+            "principalInvestigator",
+            "recordSubtype"
+          ],
+          "lastEvidenceAt": "2026-10-17T13:07:43+00:00",
+          "issues": [
+            "Incremental reviewed record; unknown fields and unfinished global collection remain explicit."
+          ],
+          "lastAttemptedAt": null
+        },
+        "appliedEvidencePatches": [
+          "2dcf0e73d258b9cf2bcfe8ffeddbaed6639bd50bde2b8c8af4b13fd1a21aff87"
+        ],
+        "unverifiedFields": []
+      },
+      "previousCompiledLabRecordSha256": "66277baff1a7ce08e632db2dccc11db1178668f0a49e08a3aaeeac5da3a8073f",
+      "sourceCandidateAtlasSha256": "e0cc861603e75a4503c58eb68840c682eaa951027d2eb33666e20ce1035b5b2a",
+      "reason": "Read only the two own research-section headings and four direct technique cards under Techniques we use on the exact Research child published by the uniquely owned Chattree Lab home. Keep each heading intact. Parent title and exact own brand,main Our research link,child Research–ChattreeLab title andarticle/section/card boundaries are all reverified. No biography or publication keywords,PI/person association,homepage child alias,recruiting,contact or affiliation change.",
+      "sourceScope": {
+        "kind": "named_lab_published_rcn_research_headings",
+        "parentSourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+        "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+        "documentLabName": "Chattree Lab",
+        "identityEvidence": [
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "html_attribute",
+            "elementTag": "a",
+            "attributeName": "title",
+            "attributeValue": "Chattree Lab",
+            "selectorAttributes": {
+              "class": "navbar-brand-sitename",
+              "rel": "home",
+              "href": "https://sites.ucsd.edu/chattree-lab/"
+            },
+            "evidence": "a[title] = Chattree Lab"
+          }
+        ],
+        "publishedLinkEvidence": {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "named_link",
+          "linkText": "Our research ↗",
+          "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+        },
+        "childDocumentTitleEvidence": {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_title",
+          "evidence": "Research – Chattree Lab"
+        },
+        "fields": {
+          "researchAreas": [
+            "Circuit-based therapies for movement disorders",
+            "Cognitive dysfunction in Parkinson’s disease",
+            "In vivo calcium imaging",
+            "Behavioral experiments",
+            "Targeted circuit manipulations",
+            "Molecular profiling and cell matching"
+          ]
+        },
+        "fieldEvidence": {
+          "researchAreas": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Circuit-based therapies for movement disorders",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Cognitive dysfunction in Parkinson’s disease",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "In vivo calcium imaging",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Behavioral experiments",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Targeted circuit manipulations",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Molecular profiling and cell matching",
+              "sourceFieldScope": "research_technique"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "html_attribute",
+            "elementTag": "a",
+            "attributeName": "title",
+            "attributeValue": "Chattree Lab",
+            "selectorAttributes": {
+              "class": "navbar-brand-sitename",
+              "rel": "home",
+              "href": "https://sites.ucsd.edu/chattree-lab/"
+            },
+            "evidence": "a[title] = Chattree Lab"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "named_link",
+            "linkText": "Our research ↗",
+            "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Research – Chattree Lab"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Circuit-based therapies for movement disorders",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Cognitive dysfunction in Parkinson’s disease",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "In vivo calcium imaging",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Behavioral experiments",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Targeted circuit manipulations",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Molecular profiling and cell matching",
+            "sourceFieldScope": "research_technique"
+          }
+        ],
+        "scope": "The two own research-section headings and four direct cards under Techniques we use only. Complete literal values;no personal biography,publications,footer mining,PI association,recruiting or child homepage alias."
+      },
+      "fields": {
+        "researchAreas": [
+          "Circuit-based therapies for movement disorders",
+          "Cognitive dysfunction in Parkinson’s disease",
+          "In vivo calcium imaging",
+          "Behavioral experiments",
+          "Targeted circuit manipulations",
+          "Molecular profiling and cell matching"
+        ]
+      },
+      "fieldEvidence": {
+        "researchAreas": [
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Circuit-based therapies for movement disorders",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Cognitive dysfunction in Parkinson’s disease",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "In vivo calcium imaging",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Behavioral experiments",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Targeted circuit manipulations",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Molecular profiling and cell matching",
+            "sourceFieldScope": "research_technique"
+          }
+        ]
+      },
+      "identityEvidence": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_title",
+          "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "html_attribute",
+          "elementTag": "a",
+          "attributeName": "title",
+          "attributeValue": "Chattree Lab",
+          "selectorAttributes": {
+            "class": "navbar-brand-sitename",
+            "rel": "home",
+            "href": "https://sites.ucsd.edu/chattree-lab/"
+          },
+          "evidence": "a[title] = Chattree Lab"
+        }
+      ],
+      "evidence": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_title",
+          "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "html_attribute",
+          "elementTag": "a",
+          "attributeName": "title",
+          "attributeValue": "Chattree Lab",
+          "selectorAttributes": {
+            "class": "navbar-brand-sitename",
+            "rel": "home",
+            "href": "https://sites.ucsd.edu/chattree-lab/"
+          },
+          "evidence": "a[title] = Chattree Lab"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "named_link",
+          "linkText": "Our research ↗",
+          "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_title",
+          "evidence": "Research – Chattree Lab"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h2",
+          "evidence": "Circuit-based therapies for movement disorders",
+          "sourceFieldScope": "research_theme"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h2",
+          "evidence": "Cognitive dysfunction in Parkinson’s disease",
+          "sourceFieldScope": "research_theme"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "In vivo calcium imaging",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Behavioral experiments",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Targeted circuit manipulations",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Molecular profiling and cell matching",
+          "sourceFieldScope": "research_technique"
+        }
+      ]
+    }
+  ],
+  "recruitingScopeReview": {
+    "labId": "ucsd-live-lab-f5581b3b23f1d6",
+    "sourceCapture": {
+      "sourceUrl": "https://sites.ucsd.edu/chattree-lab/contact/",
+      "observedAt": "2026-10-17T14:22:55+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T09:08:24+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792228104.251575,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked",
+        "attemptHistory": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9827971,
+            "error": "",
+            "status": "checked"
+          }
+        ]
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://sites.ucsd.edu/chattree-lab/contact/",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "24e213a4ac0aadf34027217ffa4675a3a32b000d9311ddb8c671aebcd5426ad1",
+      "retrievedEpoch": 1792246975.5928042
+    },
+    "sectionAsPublished": "Join the lab We welcome inquiries from undergraduate students, medical students, laboratory and research assistants, and prospective postdoctoral researchers interested in circuit neuroscience and neurodegenerative disease. Please email a CV or résumé and a brief note describing your research interests, relevant experience, the kind of role you are seeking, and your anticipated availability. Email Gaurav →",
+    "assessment": "standing_inquiry_invitation_not_explicit_vacancy",
+    "recruitingStatus": "Unknown",
+    "recruitingEvidenceUnchanged": true,
+    "reason": "The section welcomes inquiries andrequests CVs/research interests/anticipated availability. It does not explicitly publish an open position,hiring/seeking announcement or accepting-applications statement;do not turn a standing contact invitation into an active vacancy."
+  },
+  "currentCanonicalLabRecord": {
+    "id": "ucsd-live-lab-f5581b3b23f1d6",
+    "labName": "Chattree Lab",
+    "institution": "University of California San Diego",
+    "department": "Neurosciences",
+    "labWebsiteUrl": "https://sites.ucsd.edu/chattree-lab/",
+    "principalInvestigator": "Gaurav Chattree",
+    "principalInvestigatorProfileUrl": "Not found",
+    "researchAreas": [
+      "Circuit-based therapies for movement disorders",
+      "Cognitive dysfunction in Parkinson’s disease",
+      "In vivo calcium imaging",
+      "Behavioral experiments",
+      "Targeted circuit manipulations",
+      "Molecular profiling and cell matching"
+    ],
+    "description": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+    "contactEmail": "gchattree@health.ucsd.edu",
+    "recruitingStatus": "Unknown",
+    "recruitingEvidence": {
+      "text": "",
+      "url": ""
+    },
+    "sourceUrls": [
+      "https://profiles.ucsd.edu/gaurav.chattree",
+      "https://sites.ucsd.edu/chattree-lab/",
+      "https://sites.ucsd.edu/chattree-lab/team/",
+      "https://sites.ucsd.edu/chattree-lab/research/"
+    ],
+    "lastVerified": "2026-10-17",
+    "recordSubtype": "lab",
+    "fieldEvidence": {
+      "labName": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "document_title",
+          "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        }
+      ],
+      "labWebsiteUrl": [
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/gaurav.chattree",
+          "observedAt": "2026-10-17T13:07:11+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "Chattree Lab Website",
+          "status": "verified",
+          "redirectEvidence": []
+        }
+      ],
+      "principalInvestigator": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+          "observedAt": "2026-10-17T13:07:43+00:00",
+          "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+          "evidenceType": "main_text_quote",
+          "evidence": "Gaurav Chattree, MD Principal investigator Assistant Clinical Professor Department of Neurosciences · UC San Diego",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        }
+      ],
+      "contactEmail": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+          "observedAt": "2026-10-17T13:07:43+00:00",
+          "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+          "evidenceType": "html_attribute",
+          "evidence": "a[href] = mailto:gchattree@health.ucsd.edu",
+          "method": "reviewed_own_named_pi_public_contact",
+          "status": "verified",
+          "elementTag": "a",
+          "attributeName": "href",
+          "attributeValue": "mailto:gchattree@health.ucsd.edu",
+          "selectorAttributes": {
+            "href": "mailto:gchattree@health.ucsd.edu"
+          },
+          "linkTextAsPublished": "Email Gaurav"
+        }
+      ],
+      "department": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "main_text_quote",
+          "evidence": "UC San Diego · Department of Neurosciences",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        }
+      ],
+      "institution": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "document_title",
+          "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "main_text_quote",
+          "evidence": "UC San Diego · Department of Neurosciences",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        }
+      ],
+      "description": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "main_text_quote",
+          "evidence": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+          "method": "reviewed_own_lab_research_description",
+          "status": "verified"
+        }
+      ],
+      "recordSubtype": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "observedAt": "2026-10-17T13:07:12+00:00",
+          "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+          "evidenceType": "document_title",
+          "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+          "method": "reviewed_named_chattree_lab_source_chain",
+          "status": "verified"
+        }
+      ],
+      "researchAreas": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h2",
+          "evidence": "Circuit-based therapies for movement disorders",
+          "sourceFieldScope": "research_theme"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h2",
+          "evidence": "Cognitive dysfunction in Parkinson’s disease",
+          "sourceFieldScope": "research_theme"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "In vivo calcium imaging",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Behavioral experiments",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Targeted circuit manipulations",
+          "sourceFieldScope": "research_technique"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "observedAt": "2026-10-17T14:22:25+00:00",
+          "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+          "status": "verified",
+          "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Molecular profiling and cell matching",
+          "sourceFieldScope": "research_technique"
+        }
+      ]
+    },
+    "professorIds": [],
+    "relationshipScope": "reviewed_ucsd_affiliation",
+    "relationshipType": "official_directory_same_record",
+    "principalInvestigatorIdentityScope": "source_reported_name_only",
+    "verification": {
+      "status": "source_checked",
+      "fieldsVerified": [
+        "contactEmail",
+        "department",
+        "description",
+        "institution",
+        "labName",
+        "labWebsiteUrl",
+        "principalInvestigator",
+        "recordSubtype",
+        "researchAreas"
+      ],
+      "lastEvidenceAt": "2026-10-17T14:22:25+00:00",
+      "issues": [
+        "Incremental reviewed record; unknown fields and unfinished global collection remain explicit."
+      ],
+      "lastAttemptedAt": null
+    },
+    "appliedEvidencePatches": [
+      "2dcf0e73d258b9cf2bcfe8ffeddbaed6639bd50bde2b8c8af4b13fd1a21aff87"
+    ],
+    "labOwnMetadataReviews": [
+      {
+        "labId": "ucsd-live-lab-f5581b3b23f1d6",
+        "originalLabRecord": {
+          "id": "ucsd-live-lab-f5581b3b23f1d6",
+          "labName": "Chattree Lab",
+          "institution": "University of California San Diego",
+          "department": "Neurosciences",
+          "labWebsiteUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "principalInvestigator": "Gaurav Chattree",
+          "principalInvestigatorProfileUrl": "Not found",
+          "researchAreas": [],
+          "description": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+          "contactEmail": "gchattree@health.ucsd.edu",
+          "recruitingStatus": "Unknown",
+          "recruitingEvidence": {
+            "text": "",
+            "url": ""
+          },
+          "sourceUrls": [
+            "https://profiles.ucsd.edu/gaurav.chattree",
+            "https://sites.ucsd.edu/chattree-lab/",
+            "https://sites.ucsd.edu/chattree-lab/team/"
+          ],
+          "lastVerified": "2026-10-17",
+          "recordSubtype": "lab",
+          "fieldEvidence": {
+            "labName": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "labWebsiteUrl": [
+              {
+                "sourceUrl": "https://profiles.ucsd.edu/gaurav.chattree",
+                "observedAt": "2026-10-17T13:07:11+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "Chattree Lab Website",
+                "status": "verified",
+                "redirectEvidence": []
+              }
+            ],
+            "principalInvestigator": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "observedAt": "2026-10-17T13:07:43+00:00",
+                "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+                "evidenceType": "main_text_quote",
+                "evidence": "Gaurav Chattree, MD Principal investigator Assistant Clinical Professor Department of Neurosciences · UC San Diego",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "contactEmail": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "observedAt": "2026-10-17T13:07:43+00:00",
+                "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+                "evidenceType": "html_attribute",
+                "evidence": "a[href] = mailto:gchattree@health.ucsd.edu",
+                "method": "reviewed_own_named_pi_public_contact",
+                "status": "verified",
+                "elementTag": "a",
+                "attributeName": "href",
+                "attributeValue": "mailto:gchattree@health.ucsd.edu",
+                "selectorAttributes": {
+                  "href": "mailto:gchattree@health.ucsd.edu"
+                },
+                "linkTextAsPublished": "Email Gaurav"
+              }
+            ],
+            "department": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "UC San Diego · Department of Neurosciences",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "institution": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "UC San Diego · Department of Neurosciences",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "description": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+                "method": "reviewed_own_lab_research_description",
+                "status": "verified"
+              }
+            ],
+            "recordSubtype": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ]
+          },
+          "professorIds": [],
+          "relationshipScope": "reviewed_ucsd_affiliation",
+          "relationshipType": "official_directory_same_record",
+          "principalInvestigatorIdentityScope": "source_reported_name_only",
+          "verification": {
+            "status": "source_checked",
+            "fieldsVerified": [
+              "contactEmail",
+              "department",
+              "description",
+              "institution",
+              "labName",
+              "labWebsiteUrl",
+              "principalInvestigator",
+              "recordSubtype"
+            ],
+            "lastEvidenceAt": "2026-10-17T13:07:43+00:00",
+            "issues": [
+              "Incremental reviewed record; unknown fields and unfinished global collection remain explicit."
+            ]
+          }
+        },
+        "originalLabRecordSha256": "2dcf0e73d258b9cf2bcfe8ffeddbaed6639bd50bde2b8c8af4b13fd1a21aff87",
+        "previousCompiledLabRecord": {
+          "id": "ucsd-live-lab-f5581b3b23f1d6",
+          "labName": "Chattree Lab",
+          "institution": "University of California San Diego",
+          "department": "Neurosciences",
+          "labWebsiteUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "principalInvestigator": "Gaurav Chattree",
+          "principalInvestigatorProfileUrl": "Not found",
+          "researchAreas": [],
+          "description": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+          "contactEmail": "gchattree@health.ucsd.edu",
+          "recruitingStatus": "Unknown",
+          "recruitingEvidence": {
+            "text": "",
+            "url": ""
+          },
+          "sourceUrls": [
+            "https://profiles.ucsd.edu/gaurav.chattree",
+            "https://sites.ucsd.edu/chattree-lab/",
+            "https://sites.ucsd.edu/chattree-lab/team/"
+          ],
+          "lastVerified": "2026-10-17",
+          "recordSubtype": "lab",
+          "fieldEvidence": {
+            "labName": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "labWebsiteUrl": [
+              {
+                "sourceUrl": "https://profiles.ucsd.edu/gaurav.chattree",
+                "observedAt": "2026-10-17T13:07:11+00:00",
+                "method": "official_directory_main_content",
+                "evidence": "Chattree Lab Website",
+                "status": "verified",
+                "redirectEvidence": []
+              }
+            ],
+            "principalInvestigator": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "observedAt": "2026-10-17T13:07:43+00:00",
+                "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+                "evidenceType": "main_text_quote",
+                "evidence": "Gaurav Chattree, MD Principal investigator Assistant Clinical Professor Department of Neurosciences · UC San Diego",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "contactEmail": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/team/",
+                "observedAt": "2026-10-17T13:07:43+00:00",
+                "bodySha256": "b1afbbc579b4d6d2fcc7f98932806e424fad8c301a1acd64c5ca4790292fae08",
+                "evidenceType": "html_attribute",
+                "evidence": "a[href] = mailto:gchattree@health.ucsd.edu",
+                "method": "reviewed_own_named_pi_public_contact",
+                "status": "verified",
+                "elementTag": "a",
+                "attributeName": "href",
+                "attributeValue": "mailto:gchattree@health.ucsd.edu",
+                "selectorAttributes": {
+                  "href": "mailto:gchattree@health.ucsd.edu"
+                },
+                "linkTextAsPublished": "Email Gaurav"
+              }
+            ],
+            "department": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "UC San Diego · Department of Neurosciences",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "institution": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "UC San Diego · Department of Neurosciences",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ],
+            "description": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "main_text_quote",
+                "evidence": "We study how neurodegenerative disorders disrupt the brain circuits that support movement, cognition, and other functions. By identifying the cell types and neuronal ensembles involved, we aim to develop precise interventions that restore circuit function or recruit other circuits to compensate.",
+                "method": "reviewed_own_lab_research_description",
+                "status": "verified"
+              }
+            ],
+            "recordSubtype": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+                "observedAt": "2026-10-17T13:07:12+00:00",
+                "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+                "evidenceType": "document_title",
+                "evidence": "Chattree Lab – Restorative Circuit Neuroscience",
+                "method": "reviewed_named_chattree_lab_source_chain",
+                "status": "verified"
+              }
+            ]
+          },
+          "professorIds": [],
+          "relationshipScope": "reviewed_ucsd_affiliation",
+          "relationshipType": "official_directory_same_record",
+          "principalInvestigatorIdentityScope": "source_reported_name_only",
+          "verification": {
+            "status": "source_checked",
+            "fieldsVerified": [
+              "contactEmail",
+              "department",
+              "description",
+              "institution",
+              "labName",
+              "labWebsiteUrl",
+              "principalInvestigator",
+              "recordSubtype"
+            ],
+            "lastEvidenceAt": "2026-10-17T13:07:43+00:00",
+            "issues": [
+              "Incremental reviewed record; unknown fields and unfinished global collection remain explicit."
+            ],
+            "lastAttemptedAt": null
+          },
+          "appliedEvidencePatches": [
+            "2dcf0e73d258b9cf2bcfe8ffeddbaed6639bd50bde2b8c8af4b13fd1a21aff87"
+          ],
+          "unverifiedFields": []
+        },
+        "previousCompiledLabRecordSha256": "66277baff1a7ce08e632db2dccc11db1178668f0a49e08a3aaeeac5da3a8073f",
+        "sourceCandidateAtlasSha256": "e0cc861603e75a4503c58eb68840c682eaa951027d2eb33666e20ce1035b5b2a",
+        "reason": "Read only the two own research-section headings and four direct technique cards under Techniques we use on the exact Research child published by the uniquely owned Chattree Lab home. Keep each heading intact. Parent title and exact own brand,main Our research link,child Research–ChattreeLab title andarticle/section/card boundaries are all reverified. No biography or publication keywords,PI/person association,homepage child alias,recruiting,contact or affiliation change.",
+        "sourceScope": {
+          "kind": "named_lab_published_rcn_research_headings",
+          "parentSourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+          "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+          "documentLabName": "Chattree Lab",
+          "identityEvidence": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "html_attribute",
+              "elementTag": "a",
+              "attributeName": "title",
+              "attributeValue": "Chattree Lab",
+              "selectorAttributes": {
+                "class": "navbar-brand-sitename",
+                "rel": "home",
+                "href": "https://sites.ucsd.edu/chattree-lab/"
+              },
+              "evidence": "a[title] = Chattree Lab"
+            }
+          ],
+          "publishedLinkEvidence": {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "named_link",
+            "linkText": "Our research ↗",
+            "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+          },
+          "childDocumentTitleEvidence": {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Research – Chattree Lab"
+          },
+          "fields": {
+            "researchAreas": [
+              "Circuit-based therapies for movement disorders",
+              "Cognitive dysfunction in Parkinson’s disease",
+              "In vivo calcium imaging",
+              "Behavioral experiments",
+              "Targeted circuit manipulations",
+              "Molecular profiling and cell matching"
+            ]
+          },
+          "fieldEvidence": {
+            "researchAreas": [
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h2",
+                "evidence": "Circuit-based therapies for movement disorders",
+                "sourceFieldScope": "research_theme"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h2",
+                "evidence": "Cognitive dysfunction in Parkinson’s disease",
+                "sourceFieldScope": "research_theme"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h3",
+                "evidence": "In vivo calcium imaging",
+                "sourceFieldScope": "research_technique"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h3",
+                "evidence": "Behavioral experiments",
+                "sourceFieldScope": "research_technique"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h3",
+                "evidence": "Targeted circuit manipulations",
+                "sourceFieldScope": "research_technique"
+              },
+              {
+                "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+                "observedAt": "2026-10-17T14:22:25+00:00",
+                "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+                "status": "verified",
+                "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+                "evidenceType": "document_heading",
+                "headingTag": "h3",
+                "evidence": "Molecular profiling and cell matching",
+                "sourceFieldScope": "research_technique"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_title",
+              "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "html_attribute",
+              "elementTag": "a",
+              "attributeName": "title",
+              "attributeValue": "Chattree Lab",
+              "selectorAttributes": {
+                "class": "navbar-brand-sitename",
+                "rel": "home",
+                "href": "https://sites.ucsd.edu/chattree-lab/"
+              },
+              "evidence": "a[title] = Chattree Lab"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+              "observedAt": "2026-10-17T13:07:12+00:00",
+              "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "named_link",
+              "linkText": "Our research ↗",
+              "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_title",
+              "evidence": "Research – Chattree Lab"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Circuit-based therapies for movement disorders",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Cognitive dysfunction in Parkinson’s disease",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "In vivo calcium imaging",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Behavioral experiments",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Targeted circuit manipulations",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Molecular profiling and cell matching",
+              "sourceFieldScope": "research_technique"
+            }
+          ],
+          "scope": "The two own research-section headings and four direct cards under Techniques we use only. Complete literal values;no personal biography,publications,footer mining,PI association,recruiting or child homepage alias."
+        },
+        "fields": {
+          "researchAreas": [
+            "Circuit-based therapies for movement disorders",
+            "Cognitive dysfunction in Parkinson’s disease",
+            "In vivo calcium imaging",
+            "Behavioral experiments",
+            "Targeted circuit manipulations",
+            "Molecular profiling and cell matching"
+          ]
+        },
+        "fieldEvidence": {
+          "researchAreas": [
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Circuit-based therapies for movement disorders",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h2",
+              "evidence": "Cognitive dysfunction in Parkinson’s disease",
+              "sourceFieldScope": "research_theme"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "In vivo calcium imaging",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Behavioral experiments",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Targeted circuit manipulations",
+              "sourceFieldScope": "research_technique"
+            },
+            {
+              "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+              "observedAt": "2026-10-17T14:22:25+00:00",
+              "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+              "status": "verified",
+              "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+              "evidenceType": "document_heading",
+              "headingTag": "h3",
+              "evidence": "Molecular profiling and cell matching",
+              "sourceFieldScope": "research_technique"
+            }
+          ]
+        },
+        "identityEvidence": [
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "html_attribute",
+            "elementTag": "a",
+            "attributeName": "title",
+            "attributeValue": "Chattree Lab",
+            "selectorAttributes": {
+              "class": "navbar-brand-sitename",
+              "rel": "home",
+              "href": "https://sites.ucsd.edu/chattree-lab/"
+            },
+            "evidence": "a[title] = Chattree Lab"
+          }
+        ],
+        "evidence": [
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Chattree Lab – Restorative Circuit Neuroscience"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "html_attribute",
+            "elementTag": "a",
+            "attributeName": "title",
+            "attributeValue": "Chattree Lab",
+            "selectorAttributes": {
+              "class": "navbar-brand-sitename",
+              "rel": "home",
+              "href": "https://sites.ucsd.edu/chattree-lab/"
+            },
+            "evidence": "a[title] = Chattree Lab"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/",
+            "observedAt": "2026-10-17T13:07:12+00:00",
+            "bodySha256": "fd170039678f4c0de98006d2786bc21c307a0f05e0c1915e14c24cc7b5aec0af",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "named_link",
+            "linkText": "Our research ↗",
+            "linkUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "evidence": "Our research ↗ -> https://sites.ucsd.edu/chattree-lab/research/"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_title",
+            "evidence": "Research – Chattree Lab"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Circuit-based therapies for movement disorders",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h2",
+            "evidence": "Cognitive dysfunction in Parkinson’s disease",
+            "sourceFieldScope": "research_theme"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "In vivo calcium imaging",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Behavioral experiments",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Targeted circuit manipulations",
+            "sourceFieldScope": "research_technique"
+          },
+          {
+            "requestedUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "sourceUrl": "https://sites.ucsd.edu/chattree-lab/research/",
+            "observedAt": "2026-10-17T14:22:25+00:00",
+            "bodySha256": "686a0f08b6f9417555e2b6120a00aa047c1f89c336866f2fa1156e23313ed6c0",
+            "status": "verified",
+            "method": "reviewed_own_labelled_lab_research_theme_or_technique",
+            "evidenceType": "document_heading",
+            "headingTag": "h3",
+            "evidence": "Molecular profiling and cell matching",
+            "sourceFieldScope": "research_technique"
+          }
+        ],
+        "captureVerified": true
+      }
+    ],
+    "unverifiedFields": []
+  },
+  "currentCanonicalLabRecordSha256": "1b545728d154228faee145ebc3b3f3a2467fc37265e524410b7277e57a175568",
+  "all6233PeopleEntirelyUnchanged": true,
+  "allOther901LabsEntirelyUnchanged": true,
+  "newScientificPeople": 0,
+  "newLabs": 0,
+  "newAliases": 0,
+  "newPiBindings": 0,
+  "scope": "Six intact labelled own research-section/technique headings only. Preserve the root collective description,own affiliation,source-reported PI andcontact. Recruitment staysUnknown:the published child onlywelcomes inquiries andrequests aCV. Research child is not a homepage alias;no topic mining from thePI biography,publications orfooter."
+}

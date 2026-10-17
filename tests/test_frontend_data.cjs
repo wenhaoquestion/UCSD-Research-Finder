@@ -5,7 +5,8 @@ const vm = require('node:vm');
 
 const dummy = { addEventListener() {} };
 const context = vm.createContext({
-  document: { querySelector: () => dummy, querySelectorAll: () => [], addEventListener() {} },
+  document: { querySelector: () => dummy, querySelectorAll: () => [], addEventListener() {},
+    createElement: tag => ({ tag, children: [], append(...items) { this.children.push(...items); } }) },
   localStorage: { getItem: () => null },
   window: { matchMedia: () => ({ matches: true }) },
   fetch: () => new Promise(() => {}),
@@ -14,13 +15,17 @@ const context = vm.createContext({
 vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/app.js'), 'utf8'), context);
 const evaluate = expression => vm.runInContext(expression, context);
 
-assert.notEqual(
-  evaluate('professorMergeKey({ displayName: "One Professor", email: "department@ucsd.edu" })'),
-  evaluate('professorMergeKey({ displayName: "Another Professor", email: "department@ucsd.edu" })'),
-  'shared department email must not merge different people',
-);
+assert.equal(evaluate('buildRecords({professors:[{id:"one",name:"One Professor",email:"department@ucsd.edu"},{id:"two",name:"Another Professor",email:"department@ucsd.edu"}]}).length'), 2,
+  'shared department email must not merge different people');
+assert.equal(evaluate('buildRecords({professors:[{id:"one",name:"Same Name",email:"same@ucsd.edu",department:"Physics"},{id:"two",name:"Same Name",email:"same@ucsd.edu",department:"Mathematics"}]}).length'), 2,
+  'matching names and contacts cannot silently combine unreviewed department or identity claims');
+assert.equal(evaluate('makeRecordIndex([{id:"canonical",aliasIds:["retired"]}]).get("retired").id'), 'canonical',
+  'explicit retained stable IDs continue to resolve old person and lab links');
+assert.throws(() => evaluate('makeRecordIndex([{id:"one",aliasIds:["retired"]},{id:"two",aliasIds:["retired"]}])'), /Ambiguous record ID/);
 assert.equal(evaluate('sourceChecked({ sourceUrls: ["https://ucsd.edu"], lastVerified: "2026-10-02" })'), false,
   'source links and legacy timestamps do not verify a record');
+assert.equal(evaluate('sourceChecked({verification:{status:"source_checked",destinationIdentityStatus:"mismatch"},fieldEvidence:{labName:[{sourceUrl:"http://example.ucsd.edu",observedAt:"2026-10-01"}]}})'), false,
+  'historical field evidence cannot make a mismatched lab destination pass the source-checked filter');
 assert.equal(evaluate('ratedPlatforms({ ratings: { rateMyPI: { status: "no_reviews", score: 0, reviewCount: 0 } } }).length'), 0,
   'unreviewed profiles cannot become zero-star ratings');
 assert.equal(evaluate('ratingStatusLabel({status: "no_reviews"})'), 'No reviews on matched profile');
@@ -38,4 +43,45 @@ assert(evaluate('buildIndex([{displayName: "Example Professor", links: [], teach
   'compact course-code queries must be searchable');
 assert(evaluate('buildIndex([{displayName: "Example", links: [], researchKeywords: ["Zika virus"]}])[0].haystack.includes("zika")'),
   'official profile keywords must be searchable');
-console.log('PASS: shared-email identity, field verification, missing scores, and course-code indexing');
+assert.equal(evaluate('buildRecords({professors: [], labs: [{id:"a",labName:"Flow Control Lab",labWebsiteUrl:"https://example.ucsd.edu"},{id:"b",labName:"Coordinated Robotics Lab",labWebsiteUrl:"https://example.ucsd.edu"}]}).filter(r => r.recordType === "lab").length'), 2,
+  'separately named labs sharing a homepage remain separate frontend records');
+const unresolvedDetail = evaluate('JSON.stringify(labAffiliationDetails({unresolvedLabLinks:[{labName:"Lab website",url:"https://example.ucsd.edu/",fieldEvidence:{sourceUrl:"https://ucsd.edu/profile",observedAt:"2026-10-01",evidence:"Original named lab link"}}]}))');
+assert(unresolvedDetail.includes('Shared website; named lab unresolved'));
+assert(unresolvedDetail.includes('Original named lab link'), 'unresolved associations retain their original source quote in the detail view');
+assert(unresolvedDetail.includes('https://ucsd.edu/profile'));
+assert.equal(evaluate('validExternalUrl("https://sebatlab.org /")'), false, 'invalid source strings must not become repaired clickable links');
+assert.equal(evaluate('labLinks({labWebsiteUrl:"http://old.ucsd.edu/",destinationIdentityAssessment:{identityStatus:"mismatch"}})[0][0]'), 'Original listed website (identity mismatch)');
+assert.equal(evaluate('buildRecords({labs:[{id:"ngo",labName:"Example Foundation",recordSubtype:"ngo"}]}).find(r=>r.id==="ngo").displayKind'), 'NGO',
+  'an explicitly classified NGO is displayed as an organization');
+assert.equal(evaluate('labLinks({recordSubtype:"ngo",labWebsiteUrl:"https://foundation.example/"})[0][0]'), 'Organization website');
+assert.equal(evaluate('primaryAffiliationLabel({labAffiliationUrl:"https://foundation.example/",labAffiliations:[{recordSubtype:"ngo",url:"https://foundation.example/"}]})'), 'Organization affiliation');
+assert.equal(evaluate('primaryAffiliationLabel({labAffiliationUrl:"https://lab.example/",labAffiliations:[{recordSubtype:"ngo",url:"https://foundation.example/"}]})'), 'Lab affiliation');
+assert(evaluate('JSON.stringify(labAffiliationDetails({labAffiliations:[{labName:"Example Foundation",recordSubtype:"ngo",url:"https://foundation.example/",relationship:"faculty_organization_link"}]})).includes("Documented organization association")'));
+assert(evaluate('labLinks({id:"lab-a",labWebsiteUrl:"https://example.ucsd.edu/",sharedResourceReviews:[{captureVerified:true,action:"register_shared_lab_resource",resourceKind:"shared_landing_page",memberLabIds:["lab-a","lab-b"],resourceUri:"http://group.ucsd.edu/"}]}).some(link=>link[0]==="Shared landing page" && link[1]==="http://group.ucsd.edu/")'));
+assert.equal(evaluate('labLinks({id:"unrelated",labWebsiteUrl:"https://example.ucsd.edu/",sharedResourceReviews:[{captureVerified:true,action:"register_shared_lab_resource",resourceKind:"shared_landing_page",memberLabIds:["lab-a","lab-b"],resourceUri:"http://group.ucsd.edu/"}]}).length'),1);
+assert.equal(evaluate('validExternalUrl("http://example.ucsd.edu/?a=1&amp;b=2")'), true, 'valid literal query strings remain usable');
+assert.equal(evaluate('validExternalUrl("javascript:alert(1)")'), false);
+assert.equal(evaluate('validExternalUrl("https://user:secret@example.ucsd.edu/")'), false);
+
+const affiliate = {recordType:"lab",displayKind:"Lab",institution:"Partner Institute",campusProgramRelationships:[{captureVerified:true,relationship:"program_listing_and_own_rotation_guidance",programName:"Example Graduate Program",facultyNameAsListed:"Jane Example",facultyRoleAsListed:"Assistant Professor, Partner Institute",programSourceUrl:"https://program.ucsd.edu/faculty",studentAccessStatement:{text:"For UCSD graduate students, we consider rotation students.",url:"https://example.org/",observedAt:"2026-10-16T01:00:00Z"}}]};
+context.affiliate = affiliate;
+assert(evaluate('JSON.stringify(detailFields(affiliate))').includes('UCSD graduate program connections'));
+assert(evaluate('JSON.stringify(detailFields(affiliate))').includes('Assistant Professor, Partner Institute'));
+assert(evaluate('buildIndex([{...affiliate,displayName:"Example Lab",links:[]}])[0].haystack.includes("example graduate program")'));
+context.affiliate.campusProgramRelationships[0].captureVerified = false;
+assert.equal(evaluate('JSON.stringify(detailFields(affiliate))').includes('UCSD graduate program connections'),false);
+assert.equal(evaluate('buildIndex([{...affiliate,displayName:"Example Lab",links:[]}])[0].haystack.includes("example graduate program")'),false);
+
+context.ownershipLab = {recordType:"lab",displayKind:"Lab",principalInvestigator:"Daniel W. Example",
+  unverifiedFields:["principalInvestigator"],labOwnershipReviews:[{captureVerified:true,kind:"existing_lab_own_contact_institution"}]};
+assert(evaluate('JSON.stringify(detailFields(ownershipLab))').includes('Earlier PI label (unverified)'));
+assert.equal(evaluate('unverifiedOwnershipPi(ownershipLab)'),true,
+  'result rows and detail fields share the same verified ownership/unverified PI scope');
+context.ownershipLab.labOwnershipReviews[0].captureVerified = false;
+assert.equal(evaluate('JSON.stringify(detailFields(ownershipLab))').includes('Earlier PI label (unverified)'),false);
+context.ownershipLab.labOwnershipReviews[0].captureVerified = true;
+context.ownershipLab.unverifiedFields = [];
+assert.equal(evaluate('JSON.stringify(detailFields(ownershipLab))').includes('Earlier PI label (unverified)'),false,
+  'an independently verified PI is not relabeled by an institution-only review');
+
+console.log('PASS: person and lab identity, field verification, missing scores, and course-code indexing');

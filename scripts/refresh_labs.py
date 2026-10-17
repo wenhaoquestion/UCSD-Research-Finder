@@ -65,11 +65,10 @@ def canonical_url(s):
     p = urllib.parse.urlsplit(s)
     if p.scheme not in {"http", "https"}:
         return ""
-    # UCSD supports TLS; old crawls contain many obsolete http links.
-    scheme = "https" if (p.hostname or "").endswith("ucsd.edu") else p.scheme
+    # A different scheme or www host is a separate request. Only an observed
+    # redirect can establish that the server moves one URI to another.
+    scheme = p.scheme
     host = p.netloc.lower()
-    if host in {"www.cogsci.ucsd.edu", "www.jacobsschool.ucsd.edu"}:
-        host = host.removeprefix("www.")
     return urllib.parse.urlunsplit((scheme, host, p.path or "/", p.query, ""))
 
 
@@ -618,7 +617,22 @@ def parse_personal_site(person, meta, markup, profile_evidence):
         return result, {}, None
     dom = DOM(markup)
     main = dom.main()
-    headings = [n.text() for n in main.walk() if n.tag in {"h1", "h2", "h3"} and len(n.text()) <= 200]
+    def in_teaching_scope(node):
+        # Course cards can legitimately have names ending in "Lab". Their
+        # headings and prose describe teaching, not the owner's research group.
+        while node is not None:
+            markers = set(re.split(r"[\s_-]+", (node.attrs.get("id", "") + " " + node.attrs.get("class", "")).lower()))
+            if markers & {"teaching", "course", "courses"}:
+                return True
+            if node.tag in {"section", "article", "div"}:
+                local_headings = [child for child in node.children if hasattr(child, "tag") and child.tag in {"h1", "h2", "h3"}]
+                if local_headings and normalized(local_headings[0].text()) in {"teaching", "courses", "courses and teaching", "teaching and courses"}:
+                    return True
+            node = node.parent
+        return False
+
+    headings = [n.text() for n in main.walk() if n.tag in {"h1", "h2", "h3"}
+                and len(n.text()) <= 200 and not in_teaching_scope(n)]
     titles = [n.text() for n in dom.root.walk() if n.tag == "title"]
     primary = [n.text() for n in main.walk() if n.tag == "h1"] + titles
     lab_name = next((s for s in titles + headings if valid_lab_label(s) and not GENERIC_LAB.fullmatch(s) and not re.search(r"publications|news|course|members|alumni|joining|awards|graduates|students", s, re.I)), "")
@@ -634,7 +648,7 @@ def parse_personal_site(person, meta, markup, profile_evidence):
         if n.tag not in {"p", "li", "td", "div", "h1", "h2", "h3", "section"}:
             continue
         s = n.text()
-        if len(s) > 1600:
+        if len(s) > 1600 or in_teaching_scope(n):
             continue
         if pi_pattern.search(normalized(s)):
             role_candidates.append(s)
@@ -650,7 +664,7 @@ def parse_personal_site(person, meta, markup, profile_evidence):
             patch["googleScholarUrl"] = url
             patch["fieldEvidence"]["googleScholarUrl"] = evidence(meta, "identity_matched_personal_site_link", label + " " + url)
             break
-    paragraphs = [n.text() for n in main.walk() if n.tag == "p" and 100 <= len(n.text()) <= 2000]
+    paragraphs = [n.text() for n in main.walk() if n.tag == "p" and 100 <= len(n.text()) <= 2000 and not in_teaching_scope(n)]
     summary = next((s for s in paragraphs if re.search(r"\b(?:my|our) (?:research|lab|group)|research (?:focus|interests|aims)|\bwe (?:study|develop|investigate|explore)\b", s, re.I)), "")
     if summary:
         patch["researchSummary"] = summary[:1000]
