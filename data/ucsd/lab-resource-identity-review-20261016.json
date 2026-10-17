@@ -1,0 +1,1916 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:15:58.259608+00:00",
+  "isFinalUriIdentityValidation": false,
+  "policy": "Scientific capture identity bindings and exact URI validation are separate. No URL spelling heuristic is accepted as redirect or ownership proof. Original primary URIs remain unchanged. Full queue and existing explicit alias/merge audit remain required.",
+  "entries": [
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-2d735d4a69438e",
+      "targetLabId": "ucsd-pediatrics-lab-bode-lab",
+      "captureUri": "https://www.bodelab.com/",
+      "targetUri": "http://www.bodelab.com/",
+      "captureRecordSha256": "c88599e4074c2796dd62da4ea6ba4255cb44161a08684cf4d7a9a885d06a95f5",
+      "resourceStatus": "listed_unverified",
+      "reason": "The current official Pediatrics directory explicitly names Bode Lab and lists this URI, corroborating the unique retained Bode Lab directory identity. Both website transports remain robots_unavailable; no redirect, destination ownership or canonical replacement is claimed.",
+      "evidence": [
+        {
+          "requestedUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "named_link",
+          "evidence": "Bode Lab -> https://www.bodelab.com/",
+          "linkText": "Bode Lab",
+          "linkUrl": "https://www.bodelab.com/"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-2d735d4a69438e",
+        "labName": "Bode Lab",
+        "institution": "Unknown",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "https://www.bodelab.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "https://www.bodelab.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Bode Lab Leibel Lab Mestan Lab McCulley Neonatal Health Services Research Lab Nigam Lab Sajti Lab Silverman",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Bode Lab Leibel Lab Mestan Lab McCulley Neonatal Health Services Research Lab Nigam Lab Sajti Lab Silverman",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-d1603f4e5539f5",
+      "targetLabId": "ucsd-psychiatry-lab-cns-laboratory-of-memory-and-the-brain",
+      "captureUri": "https://cnsbrainlab.com/",
+      "targetUri": "http://www.cnsbrainlab.com/",
+      "captureRecordSha256": "29543aa001407ad7922cc7eaa3767d5a680c63bf3dd9481ce3aea4454606b7f6",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://www.cnsbrainlab.com/",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "observedAt": "2026-10-16T01:05:32+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "CNS Laboratory of Memory and Brain – Director, Christine N. Smith, Ph.D."
+        },
+        {
+          "requestedUrl": "http://www.cnsbrainlab.com/",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "observedAt": "2026-10-16T01:05:32+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://www.cnsbrainlab.com/ -> https://www.cnsbrainlab.com/; HTTP 301: https://www.cnsbrainlab.com/ -> https://cnsbrainlab.com/",
+          "redirects": [
+            {
+              "from": "http://www.cnsbrainlab.com/",
+              "to": "https://www.cnsbrainlab.com/",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://www.cnsbrainlab.com/",
+              "to": "https://cnsbrainlab.com/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://cnsbrainlab.com/",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "observedAt": "2026-10-16T01:03:28+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "CNS Laboratory of Memory and Brain – Director, Christine N. Smith, Ph.D."
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-d1603f4e5539f5",
+        "labName": "CNS Laboratory of Memory and the Brain",
+        "institution": "Unknown",
+        "department": "Psychiatry",
+        "labWebsiteUrl": "https://cnsbrainlab.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "https://cnsbrainlab.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+            "observedAt": "2026-10-02T22:42:11+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "CNS Laboratory of Memory and the Brain",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+            "observedAt": "2026-10-02T22:42:11+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "CNS Laboratory of Memory and the Brain",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-fce53b1e871209",
+      "targetLabId": "ucsd-pathology-lab-cole-ferguson-lab",
+      "captureUri": "https://coleferguson.com/",
+      "targetUri": "http://coleferguson.com/",
+      "captureRecordSha256": "ae9c9fbd866c2dc5021228603e5fba18e83b9bfe958268fbc01d0afecd8c034f",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://coleferguson.com/",
+          "sourceUrl": "https://coleferguson.com/",
+          "observedAt": "2026-10-16T01:05:16+00:00",
+          "bodySha256": "8edac04cc911be0229188969d21dca2403e741f98d3a00f51a009ab4f4b97969",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "Ferguson Lab at UC San Diego"
+        },
+        {
+          "requestedUrl": "http://coleferguson.com/",
+          "sourceUrl": "https://coleferguson.com/",
+          "observedAt": "2026-10-16T01:05:16+00:00",
+          "bodySha256": "8edac04cc911be0229188969d21dca2403e741f98d3a00f51a009ab4f4b97969",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 308: http://coleferguson.com/ -> https://coleferguson.com/",
+          "redirects": [
+            {
+              "from": "http://coleferguson.com/",
+              "to": "https://coleferguson.com/",
+              "httpStatus": 308
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://coleferguson.com/",
+          "sourceUrl": "https://coleferguson.com/",
+          "observedAt": "2026-10-16T01:33:17+00:00",
+          "bodySha256": "8edac04cc911be0229188969d21dca2403e741f98d3a00f51a009ab4f4b97969",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "Ferguson Lab at UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-fce53b1e871209",
+        "labName": "Cole Ferguson Lab",
+        "institution": "Unknown",
+        "department": "Pathology",
+        "labWebsiteUrl": "https://coleferguson.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pathology.ucsd.edu/research/labs/index.html",
+          "https://coleferguson.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Jack Bui Lab Aaron Carlin Lab David Cheresh Lab Hiutung Chu Lab Cole Ferguson Lab Pascal Gagneux Lab Steven Gonias Lab ​Mariko Horii Lab​​ Richard Klemke Lab Gerald Morris Lab Subhojit Roy Lab Mana Parast Lab David Pride Lab Saravanan Raju Lab Diane Shelton Lab Christina Sigurdson Lab Francesca Soncin Lab Ina Stelzer Lab Hiromi Wettersten Lab​ Dong-Er Zhang Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Jack Bui Lab Aaron Carlin Lab David Cheresh Lab Hiutung Chu Lab Cole Ferguson Lab Pascal Gagneux Lab Steven Gonias Lab ​Mariko Horii Lab​​ Richard Klemke Lab Gerald Morris Lab Subhojit Roy Lab Mana Parast Lab David Pride Lab Saravanan Raju Lab Diane Shelton Lab Christina Sigurdson Lab Francesca Soncin Lab Ina Stelzer Lab Hiromi Wettersten Lab​ Dong-Er Zhang Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-9c0e8d13b462c6",
+      "targetLabId": "ucsd-bioengineering-lab-contijoch-research-lab",
+      "captureUri": "https://contijoch.ucsd.edu/",
+      "targetUri": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+      "captureRecordSha256": "8a391bd49d90d42d33a7998ef9081103606e5b4a2c6b65876208027073af40bd",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "sourceUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "observedAt": "2026-10-16T00:57:44+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        },
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/",
+          "sourceUrl": "https://contijoch.ucsd.edu/",
+          "observedAt": "2026-10-16T06:11:50+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-9c0e8d13b462c6",
+        "labName": "Contijoch Research Lab",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://contijoch.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://be.ucsd.edu/research-groups",
+          "https://contijoch.ucsd.edu/",
+          "https://bioengineering.ucsd.edu/research-focus"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Contijoch Research Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Contijoch Research Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "ucsd_hosted"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-a743055506f316",
+      "targetLabId": "ucsd-bioengineering-lab-contijoch-research-lab",
+      "captureUri": "https://contijoch.ucsd.edu/index.html",
+      "targetUri": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+      "captureRecordSha256": "8f922f9586d2b9b75c477482b03120f38b8788d1e286229bfb0c45b714cffb1c",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "sourceUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "observedAt": "2026-10-16T00:57:44+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        },
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/index.html",
+          "sourceUrl": "https://contijoch.ucsd.edu/index.html",
+          "observedAt": "2026-10-16T02:39:59+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-a743055506f316",
+        "labName": "Contijoch research laboratory",
+        "institution": "University of California San Diego",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "https://contijoch.ucsd.edu/index.html",
+        "principalInvestigator": "Francisco Contijoch",
+        "principalInvestigatorProfileUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=451",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://radiology.ucsd.edu/research/centers-labs/index.html",
+          "https://contijoch.ucsd.edu/index.html",
+          "https://bioengineering.ucsd.edu/research-focus"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://radiology.ucsd.edu/research/centers-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Center for Multimodal Imaging Genetics (CMIG) Center for Functional MRI (CFMRI) Center for Translational Imaging (CTI) Contijoch research laboratory In Vivo Cancer and Molecular Imaging Center (ICMIC)",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://radiology.ucsd.edu/research/centers-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Center for Multimodal Imaging Genetics (CMIG) Center for Functional MRI (CFMRI) Center for Translational Imaging (CTI) Contijoch research laboratory In Vivo Cancer and Molecular Imaging Center (ICMIC)",
+            "status": "verified"
+          },
+          "principalInvestigator": {
+            "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+            "observedAt": "2026-10-02T22:42:07+00:00",
+            "method": "official_directory_same_record",
+            "evidence": "Contijoch Lab Principal Investigator: Francisco Contijoch Website | fcontijoch@ucsd.edu",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-faculty-francisco-contijoch"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relationshipType": "official_directory_same_record"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-5d2c8fabcd3613",
+      "targetLabId": "ucsd-bioengineering-lab-contijoch-research-lab",
+      "captureUri": "https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+      "targetUri": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+      "captureRecordSha256": "0100c27c7198a9e1043af8522018a5052bb10125b39cd0e62ca1b011309fca6e",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "sourceUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&utm_medium=Socila&utm_campaign=JOSE",
+          "observedAt": "2026-10-16T00:57:44+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        },
+        {
+          "requestedUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+          "sourceUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+          "observedAt": "2026-10-16T01:01:34+00:00",
+          "bodySha256": "664ee613f90ac30f5c57348e7484d197e1b9cce5c08e023cb9418865e04ebc88",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Contijoch Research Laboratory | Home"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-5d2c8fabcd3613",
+        "labName": "Francisco Contijoch — lab website",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=451",
+          "https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=451",
+            "observedAt": "2026-10-02T22:43:22+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=451",
+            "observedAt": "2026-10-02T22:43:22+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://contijoch.ucsd.edu/?utm_source=JSOE&amp;utm_medium=Socila&amp;utm_campaign=JOSE",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-faculty-francisco-contijoch"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Francisco Contijoch"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-2ed86f953b7c7f",
+      "targetLabId": "ucsd-pediatrics-lab-gaulton-lab",
+      "captureUri": "https://www.gaultonlab.org/",
+      "targetUri": "http://gaultonlab.org/",
+      "captureRecordSha256": "e14e1053aa4c4c1cc257dccfec7736949b18e7d4ff58b0eeccc5c0abfc1eaee2",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://gaultonlab.org/",
+          "sourceUrl": "https://www.gaultonlab.org/",
+          "observedAt": "2026-10-16T01:05:19+00:00",
+          "bodySha256": "8bc98ef68a1c3dece7f98f2f16c088cb637763cf462bff17ab743178a4a467fa",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "The Gaulton Lab"
+        },
+        {
+          "requestedUrl": "http://gaultonlab.org/",
+          "sourceUrl": "https://www.gaultonlab.org/",
+          "observedAt": "2026-10-16T01:05:19+00:00",
+          "bodySha256": "8bc98ef68a1c3dece7f98f2f16c088cb637763cf462bff17ab743178a4a467fa",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://gaultonlab.org/ -> https://www.gaultonlab.org/",
+          "redirects": [
+            {
+              "from": "http://gaultonlab.org/",
+              "to": "https://www.gaultonlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.gaultonlab.org/",
+          "sourceUrl": "https://www.gaultonlab.org/",
+          "observedAt": "2026-10-16T01:03:26+00:00",
+          "bodySha256": "8bc98ef68a1c3dece7f98f2f16c088cb637763cf462bff17ab743178a4a467fa",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "The Gaulton Lab"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-2ed86f953b7c7f",
+        "labName": "Gaulton Lab",
+        "institution": "Unknown",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "https://www.gaultonlab.org/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "https://www.gaultonlab.org/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Gaulton Lab Kravets Lab Shao",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Gaulton Lab Kravets Lab Shao",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-28457bdac93776",
+      "targetLabId": "ucsd-psychiatry-lab-george-lab",
+      "captureUri": "https://www.oliviergeorge.com/",
+      "targetUri": "https://oliviergeorge.com/",
+      "captureRecordSha256": "01067544d3213955ebcb97664c82f30bcd890f5c2f24f48156c90565709dc27e",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Olivier George Lab | Neurobiology of Addiction · UC San Diego"
+        },
+        {
+          "requestedUrl": "https://oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 308: https://oliviergeorge.com/ -> https://www.oliviergeorge.com/",
+          "redirects": [
+            {
+              "from": "https://oliviergeorge.com/",
+              "to": "https://www.oliviergeorge.com/",
+              "httpStatus": 308
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:03:27+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Olivier George Lab | Neurobiology of Addiction · UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-28457bdac93776",
+        "labName": "George Lab",
+        "institution": "Unknown",
+        "department": "Psychiatry",
+        "labWebsiteUrl": "https://www.oliviergeorge.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "https://www.oliviergeorge.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+            "observedAt": "2026-10-02T22:42:11+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "George Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+            "observedAt": "2026-10-02T22:42:11+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "George Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-b7d3a9effbce84",
+      "targetLabId": "ucsd-bioengineering-lab-khojah-lab",
+      "captureUri": "https://reemkhojah.com/",
+      "targetUri": "https://www.reemkhojah.com/",
+      "captureRecordSha256": "cf1716378737709d87b31be10b7e62c166df0b210a663394ff69b4e2b96cf202",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://www.reemkhojah.com/",
+          "sourceUrl": "https://reemkhojah.com/",
+          "observedAt": "2026-10-16T01:06:22+00:00",
+          "bodySha256": "5ef3d1b4e86fa101531f764738af46074e10b72d0fd4c48176e5cea50c69bffa",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "reem khojah research lab"
+        },
+        {
+          "requestedUrl": "https://www.reemkhojah.com/",
+          "sourceUrl": "https://reemkhojah.com/",
+          "observedAt": "2026-10-16T01:06:22+00:00",
+          "bodySha256": "5ef3d1b4e86fa101531f764738af46074e10b72d0fd4c48176e5cea50c69bffa",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: https://www.reemkhojah.com/ -> https://reemkhojah.com/",
+          "redirects": [
+            {
+              "from": "https://www.reemkhojah.com/",
+              "to": "https://reemkhojah.com/",
+              "httpStatus": 301
+            }
+          ]
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-b7d3a9effbce84",
+        "labName": "Khojah Lab",
+        "institution": "Unknown",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://reemkhojah.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://be.ucsd.edu/research-groups",
+          "https://reemkhojah.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Khojah Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Khojah Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-2b48a6154cc2fd",
+      "targetLabId": "ucsd-bioengineering-lab-kwon-lab",
+      "captureUri": "https://kwon.ucsd.edu/",
+      "targetUri": "https://kwon.ucsd.edu/index.html",
+      "captureRecordSha256": "c4550723ec9ba79ff7cbf4d6cfd517ff5781acf3df6a577d2caf8cdf524900b3",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://kwon.ucsd.edu/index.html",
+          "sourceUrl": "https://kwon.ucsd.edu/index.html",
+          "observedAt": "2026-10-16T00:57:50+00:00",
+          "bodySha256": "9b43f9860fc58ae70f7e0cbb35b604fe15d1e14cf1f12432b08716995242f9f1",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Kwon Lab - UCSD - Nanoscale Bioengineering"
+        },
+        {
+          "requestedUrl": "https://kwon.ucsd.edu/",
+          "sourceUrl": "https://kwon.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:34+00:00",
+          "bodySha256": "9b43f9860fc58ae70f7e0cbb35b604fe15d1e14cf1f12432b08716995242f9f1",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Kwon Lab - UCSD - Nanoscale Bioengineering"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-2b48a6154cc2fd",
+        "labName": "Kwon Lab",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://kwon.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://be.ucsd.edu/research-groups",
+          "https://kwon.ucsd.edu/",
+          "https://bioengineering.ucsd.edu/research-focus",
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=443"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Kwon Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://be.ucsd.edu/research-groups",
+            "observedAt": "2026-10-02T22:42:04+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Kwon Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-bioengineering-ester-kwon"
+        ],
+        "relationshipScope": "ucsd_hosted"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-135813db789742",
+      "targetLabId": "ucsd-pediatrics-lab-raffatellu-lab",
+      "captureUri": "https://raffatellu.com/",
+      "targetUri": "http://raffatellu.com/",
+      "captureRecordSha256": "0b0a17a7f9464ec542ae32233f45abb4959ee01564eb641a66c53100a24ff203",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:05:23+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Raffatellu Lab – UC San Diego"
+        },
+        {
+          "requestedUrl": "http://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:05:23+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://raffatellu.com/ -> https://raffatellu.com/",
+          "redirects": [
+            {
+              "from": "http://raffatellu.com/",
+              "to": "https://raffatellu.com/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:03:27+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Raffatellu Lab – UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-135813db789742",
+        "labName": "Raffatellu Lab",
+        "institution": "Unknown",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "https://raffatellu.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "https://raffatellu.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Capparelli A. Chavez Lab Gilbert Lab Knight Lab Microbiome CORE Nizet Lab Raffatellu Lab Rivera-Chavez Lab Winzeler Lab Zengler Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Capparelli A. Chavez Lab Gilbert Lab Knight Lab Microbiome CORE Nizet Lab Raffatellu Lab Rivera-Chavez Lab Winzeler Lab Zengler Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-dab74e55d839ef",
+      "targetLabId": "ucsd-neurosciences-lab-shtrahman-lab",
+      "captureUri": "http://www.shtrahmanlab.org/",
+      "targetUri": "http://shtrahmanlab.org/",
+      "captureRecordSha256": "f6f3a104f8850f5937753fd360f023ef501e64d40ec2dfed31df73a5b297f077",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES"
+        },
+        {
+          "requestedUrl": "http://shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://shtrahmanlab.org/ -> https://shtrahmanlab.org/",
+          "redirects": [
+            {
+              "from": "http://shtrahmanlab.org/",
+              "to": "https://shtrahmanlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "http://www.shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T06:11:55+00:00",
+          "bodySha256": "e68c822fab4f00bf8ce0df659a324ec32b8f46a7c1f197fa6387fd6696719b7a",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES"
+        },
+        {
+          "requestedUrl": "http://www.shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T06:11:55+00:00",
+          "bodySha256": "e68c822fab4f00bf8ce0df659a324ec32b8f46a7c1f197fa6387fd6696719b7a",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://www.shtrahmanlab.org/ -> https://www.shtrahmanlab.org/; HTTP 301: https://www.shtrahmanlab.org/ -> https://shtrahmanlab.org/",
+          "redirects": [
+            {
+              "from": "http://www.shtrahmanlab.org/",
+              "to": "https://www.shtrahmanlab.org/",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://www.shtrahmanlab.org/",
+              "to": "https://shtrahmanlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-dab74e55d839ef",
+        "labName": "Shtrahman Lab",
+        "institution": "Unknown",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "http://www.shtrahmanlab.org/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "http://www.shtrahmanlab.org/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Shtrahman Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Shtrahman Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-8afbf064bfe01c",
+      "targetLabId": "ucsd-neurosciences-lab-sternson-lab",
+      "captureUri": "https://www.sternsonlab.com/",
+      "targetUri": "https://sternsonlab.com/",
+      "captureRecordSha256": "ee9324854ee9f63796e6b9057bdfdf4eca55dc25008eef41088df2e616adcfef",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "https://sternsonlab.com/",
+          "sourceUrl": "https://sternsonlab.com/",
+          "observedAt": "2026-10-16T01:05:19+00:00",
+          "bodySha256": "830072bb65470922717e382c9267433b96ddcadf88bdb0b96cd10af28d24e90e",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "UCSD – Sternson Lab"
+        },
+        {
+          "requestedUrl": "https://www.sternsonlab.com/",
+          "sourceUrl": "https://sternsonlab.com/",
+          "observedAt": "2026-10-16T06:12:18+00:00",
+          "bodySha256": "e3b72f062c7c839bfb81a161ae37465fe0c6338af037a93ad573aad3cd3ec923",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "UCSD – Sternson Lab"
+        },
+        {
+          "requestedUrl": "https://www.sternsonlab.com/",
+          "sourceUrl": "https://sternsonlab.com/",
+          "observedAt": "2026-10-16T06:12:18+00:00",
+          "bodySha256": "e3b72f062c7c839bfb81a161ae37465fe0c6338af037a93ad573aad3cd3ec923",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: https://www.sternsonlab.com/ -> https://sternsonlab.com/",
+          "redirects": [
+            {
+              "from": "https://www.sternsonlab.com/",
+              "to": "https://sternsonlab.com/",
+              "httpStatus": 301
+            }
+          ]
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-8afbf064bfe01c",
+        "labName": "Sternson Lab",
+        "institution": "Unknown",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "https://www.sternsonlab.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "https://www.sternsonlab.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Sternson Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Sternson Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-b850f7257cfb56",
+      "targetLabId": "ucsd-public-health-lab-the-e-commerce-lab",
+      "captureUri": "https://www.ecommercelab.health/",
+      "targetUri": "http://ecommercelab.health/",
+      "captureRecordSha256": "ff1360ee74bea76d3c1ea89b8e81acaf0125f7024d67e3b18c113897f8d69244",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://ecommercelab.health/",
+          "sourceUrl": "https://ecommercelab.health/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "aaf015300661bff87c10682fbe782bc8a463d0d93f03ad7cdbe6750e84a8a8e1",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "The E-commerce Lab | UC San Diego"
+        },
+        {
+          "requestedUrl": "http://ecommercelab.health/",
+          "sourceUrl": "https://ecommercelab.health/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "aaf015300661bff87c10682fbe782bc8a463d0d93f03ad7cdbe6750e84a8a8e1",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 302: http://ecommercelab.health/ -> https://ecommercelab.health/",
+          "redirects": [
+            {
+              "from": "http://ecommercelab.health/",
+              "to": "https://ecommercelab.health/",
+              "httpStatus": 302
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.ecommercelab.health/",
+          "sourceUrl": "https://www.ecommercelab.health/",
+          "observedAt": "2026-10-16T01:03:23+00:00",
+          "bodySha256": "40ce217609ab5ff773cdf0795b27926afb8ec22e47b61a9677e2609814aa9aa9",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "The E-commerce Lab | UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-b850f7257cfb56",
+        "labName": "The E-commerce Lab",
+        "institution": "Unknown",
+        "department": "Public Health",
+        "labWebsiteUrl": "https://www.ecommercelab.health/",
+        "principalInvestigator": "Eric Leas",
+        "principalInvestigatorProfileUrl": "https://profiles.ucsd.edu/eric.leas",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+          "https://www.ecommercelab.health/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Led by Eric Leas, PhD, MPH , The E-commerce Lab studies how regulated and emerging consumer products are marketed, sold, discussed, and used in digital environments. The team generates timely, policy-relevant evidence by auditing online and app-based retail markets, conducting survey research, and analyzing social media and online communities to understand who is using new and rapidly evolving products, why they are using them, and how perceived benefits and potential adverse events are reported in real-world settings. Using digital surveillance, controlled purchase attempts and computational and qualitative methods, they examine products such as tobacco and nicotine, cannabis and hemp-derived products, alcohol, pharmaceuticals, harm-reduction supplies, microdosing practices, and other emerging consumer goods to support evidence-based public health, policy and enforcement responses.",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Led by Eric Leas, PhD, MPH , The E-commerce Lab studies how regulated and emerging consumer products are marketed, sold, discussed, and used in digital environments. The team generates timely, policy-relevant evidence by auditing online and app-based retail markets, conducting survey research, and analyzing social media and online communities to understand who is using new and rapidly evolving products, why they are using them, and how perceived benefits and potential adverse events are reported in real-world settings. Using digital surveillance, controlled purchase attempts and computational and qualitative methods, they examine products such as tobacco and nicotine, cannabis and hemp-derived products, alcohol, pharmaceuticals, harm-reduction supplies, microdosing practices, and other emerging consumer goods to support evidence-based public health, policy and enforcement responses.",
+            "status": "verified"
+          },
+          "principalInvestigator": {
+            "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "method": "official_directory_same_record",
+            "evidence": "Led by Eric Leas, PhD, MPH , The E-commerce Lab studies how regulated and emerging consumer products are marketed, sold, discussed, and used in digital environments. The team generates timely, policy-relevant evidence by auditing online and app-based retail markets, conducting survey research, and analyzing social media and online communities to understand who is using new and rapidly evolving products, why they are using them, and how perceived benefits and potential adverse events are reported in real-world settings. Using digital surveillance, controlled purchase attempts and computational and qualitative methods, they examine products such as tobacco and nicotine, cannabis and hemp-derived products, alcohol, pharmaceuticals, harm-reduction supplies, microdosing practices, and other emerging consumer goods to support evidence-based public health, policy and enforcement responses.",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-public-health-eric-leas"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Eric Leas"
+        ],
+        "relationshipType": "official_directory_same_record"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-88a4ba291c2113",
+      "targetLabId": "ucsd-cellular-molecular-medicine-lab-willert-lab",
+      "captureUri": "https://www.willertlab.org/",
+      "targetUri": "http://www.willertlab.org/",
+      "captureRecordSha256": "292fd19a557cb531072b2dbd70032a59d5c02514f96880618ee7b001fa19d880",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://www.willertlab.org/",
+          "sourceUrl": "https://www.willertlab.org/",
+          "observedAt": "2026-10-16T01:04:55+00:00",
+          "bodySha256": "69b85428a78388fce05b8dd8111c64a9ad81a9e65152a210001a59e3234a003c",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "In the Willert lab, we incorporate biochemical, genetic and cell biological approaches to study these proteins and their signaling cascades."
+        },
+        {
+          "requestedUrl": "http://www.willertlab.org/",
+          "sourceUrl": "https://www.willertlab.org/",
+          "observedAt": "2026-10-16T01:04:55+00:00",
+          "bodySha256": "69b85428a78388fce05b8dd8111c64a9ad81a9e65152a210001a59e3234a003c",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://www.willertlab.org/ -> https://www.willertlab.org/",
+          "redirects": [
+            {
+              "from": "http://www.willertlab.org/",
+              "to": "https://www.willertlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.willertlab.org/",
+          "sourceUrl": "https://www.willertlab.org/",
+          "observedAt": "2026-10-16T02:42:39+00:00",
+          "bodySha256": "69b85428a78388fce05b8dd8111c64a9ad81a9e65152a210001a59e3234a003c",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "In the Willert lab, we incorporate biochemical, genetic and cell biological approaches to study these proteins and their signaling cascades."
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-88a4ba291c2113",
+        "labName": "Willert Lab",
+        "institution": "Unknown",
+        "department": "Cellular & Molecular Medicine",
+        "labWebsiteUrl": "https://www.willertlab.org/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://cmm.ucsd.edu/research/labs/",
+          "https://www.willertlab.org/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+            "observedAt": "2026-10-02T22:42:07+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Willert Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+            "observedAt": "2026-10-02T22:42:07+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Willert Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-8388b2563a2123",
+      "targetLabId": "ucsd-pediatrics-lab-zengler-lab",
+      "captureUri": "https://www.zenglerlab.com/",
+      "targetUri": "http://www.zenglerlab.com/",
+      "captureRecordSha256": "35ed4012b1a7504eec80a1296bcac0a118fd5d83c15280fb5d9568016fc13d18",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The separately captured resources explicitly identify the same named lab. Only the observed URI is registered as an additional resource; the original primary URI and all dated observations are retained.",
+      "evidence": [
+        {
+          "requestedUrl": "http://www.zenglerlab.com/",
+          "sourceUrl": "https://www.zenglerlab.com/",
+          "observedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "893168b4594e3b857dd653588b5965aa9ed214fa2d14dffd90cb10013f862236",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Microbiology | Zengler Lab | United States"
+        },
+        {
+          "requestedUrl": "http://www.zenglerlab.com/",
+          "sourceUrl": "https://www.zenglerlab.com/",
+          "observedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "893168b4594e3b857dd653588b5965aa9ed214fa2d14dffd90cb10013f862236",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://www.zenglerlab.com/ -> https://www.zenglerlab.com/",
+          "redirects": [
+            {
+              "from": "http://www.zenglerlab.com/",
+              "to": "https://www.zenglerlab.com/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.zenglerlab.com/",
+          "sourceUrl": "https://www.zenglerlab.com/",
+          "observedAt": "2026-10-16T01:03:25+00:00",
+          "bodySha256": "893168b4594e3b857dd653588b5965aa9ed214fa2d14dffd90cb10013f862236",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Microbiology | Zengler Lab | United States"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-8388b2563a2123",
+        "labName": "Zengler Lab",
+        "institution": "Unknown",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "https://www.zenglerlab.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "https://www.zenglerlab.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Capparelli A. Chavez Lab Gilbert Lab Knight Lab Microbiome CORE Nizet Lab Raffatellu Lab Rivera-Chavez Lab Winzeler Lab Zengler Lab",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Capparelli A. Chavez Lab Gilbert Lab Knight Lab Microbiome CORE Nizet Lab Raffatellu Lab Rivera-Chavez Lab Winzeler Lab Zengler Lab",
+            "status": "verified"
+          }
+        },
+        "professorIds": [],
+        "relationshipScope": "institution_not_confirmed"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-c2a6957acb6d7e",
+      "targetLabId": "ucsd-cellular-molecular-medicine-lab-sebat-lab",
+      "captureUri": "https://sebatlab.org /",
+      "targetUri": "https://sebatlab.org/",
+      "captureRecordSha256": "75f142f3fc88672d9fee2d23520d794ebc618b7bc3db67fabf6fccf823883355",
+      "resourceStatus": "invalid_as_listed",
+      "reason": "The retained named Sebat Lab capture links Jonathan Sebat; the independently captured Sebat Lab and its people page explicitly identify Jonathan Sebat as PI, matching the canonical lab identity. The malformed source URI is preserved verbatim and never repaired, requested or accepted as an alias.",
+      "evidence": [
+        {
+          "requestedUrl": "https://sebatlab.org/",
+          "sourceUrl": "https://sebatlab.org/",
+          "observedAt": "2026-10-16T01:04:50+00:00",
+          "bodySha256": "b9558bafcf1d739ff2557198640d7d6877f691f23f808067cfb8ecbe350caf3e",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Sebat Lab"
+        },
+        {
+          "requestedUrl": "https://sebatlab.org/people",
+          "sourceUrl": "https://sebatlab.org/people",
+          "observedAt": "2026-10-16T01:30:40+00:00",
+          "bodySha256": "c478c279270759f1035343708759b31a800a76b5d89f81ac4ff7782bdf49a62e",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "Jonathan Sebat, PI"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-c2a6957acb6d7e",
+        "labName": "The Sebat Lab",
+        "institution": "Unknown",
+        "department": "Cellular & Molecular Medicine",
+        "labWebsiteUrl": "https://sebatlab.org /",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/jonathan.sebat",
+          "https://sebatlab.org /"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://profiles.ucsd.edu/jonathan.sebat",
+            "observedAt": "2026-10-03T01:48:28+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "The Sebat Lab → https://sebatlab.org /",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://profiles.ucsd.edu/jonathan.sebat",
+            "observedAt": "2026-10-03T01:48:28+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "The Sebat Lab → https://sebatlab.org /",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-faculty-jonathan-sebat"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Jonathan Sebat"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-963dbb610cc96f",
+      "targetLabId": "ucsd-lab-from-faculty-sites-ucsd-edu-aran-lab",
+      "captureUri": "https://sites.ucsd.edu/aran-lab/",
+      "targetUri": "https://sites.ucsd.edu/aran-lab/",
+      "captureRecordSha256": "0755fcd79caf9bbb5a56dc6410e34930c3896ef56cbd1047e596d0174e80710b",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The captured Aran Lab page explicitly identifies UC San Diego and its director Kiana Aran, matching the retained Kiana Aran faculty lab link and canonical Aran Lab identity; the generic capture label is an observation rather than a distinct lab name.",
+      "evidence": [
+        {
+          "requestedUrl": "https://sites.ucsd.edu/aran-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/aran-lab/",
+          "observedAt": "2026-10-16T00:58:12+00:00",
+          "bodySha256": "eaa3a49836c2c5c279fece3f3ea56ea0fc6cfa85c98314ebff4a53de4cace87e",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Aran Lab"
+        },
+        {
+          "requestedUrl": "https://sites.ucsd.edu/aran-lab/",
+          "sourceUrl": "https://sites.ucsd.edu/aran-lab/",
+          "observedAt": "2026-10-16T00:58:12+00:00",
+          "bodySha256": "eaa3a49836c2c5c279fece3f3ea56ea0fc6cfa85c98314ebff4a53de4cace87e",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "At the Aran Lab at UC San Diego, we pursue harmony at the intersection of engineering and biology. Directed by Dr. Kiana Aran, our lab reimagines how technology interacts with living systems, creating biointegrated platforms that listen to molecular whispers, interpret cellular behavior, and transform biological signals into knowledge."
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-963dbb610cc96f",
+        "labName": "Kiana Aran — lab website",
+        "institution": "University of California San Diego",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://sites.ucsd.edu/aran-lab/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/people/profile/kiana-aran",
+          "https://sites.ucsd.edu/aran-lab/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/kiana-aran",
+            "observedAt": "2026-10-02T22:43:26+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://sites.ucsd.edu/aran-lab/",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/kiana-aran",
+            "observedAt": "2026-10-02T22:43:26+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://sites.ucsd.edu/aran-lab/",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-bioengineering-kiana-aran"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Kiana Aran"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-712dd60e2027cc",
+      "targetLabId": "ucsd-lab-from-faculty-sites-google-com-ucsd-edu-chien-lab-home",
+      "captureUri": "https://sites.google.com/ucsd.edu/chien-lab/home",
+      "targetUri": "https://sites.google.com/ucsd.edu/chien-lab/home",
+      "captureRecordSha256": "55c223244f1beac8acae730eae33ebb78213a6f2de4c1832623a8c8bbd069ff8",
+      "resourceStatus": "listed_unverified",
+      "reason": "The official Shu Chien profile explicitly lists this same lab URI, corroborating the retained Shu Chien lab identity. The destination requires Google authentication; the listed URI is not a newly verified public lab resource, and the sign-in body supplies no lab evidence.",
+      "evidence": [
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+          "observedAt": "2026-10-16T00:57:46+00:00",
+          "bodySha256": "0fd99642815ddcd25578b9fbc5b00b76d85d338a05693632f85ccb25fae2acb9",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "main_text_quote",
+          "evidence": "Shu Chien Professor Emeritus, BENG"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+          "observedAt": "2026-10-16T00:57:46+00:00",
+          "bodySha256": "0fd99642815ddcd25578b9fbc5b00b76d85d338a05693632f85ccb25fae2acb9",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "named_link",
+          "evidence": "Lab Website -> https://sites.google.com/ucsd.edu/chien-lab/home",
+          "linkText": "Lab Website",
+          "linkUrl": "https://sites.google.com/ucsd.edu/chien-lab/home"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-712dd60e2027cc",
+        "labName": "Shu Chien — lab website",
+        "institution": "Unknown",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://sites.google.com/ucsd.edu/chien-lab/home",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+          "https://sites.google.com/ucsd.edu/chien-lab/home"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+            "observedAt": "2026-10-02T22:44:38+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://sites.google.com/ucsd.edu/chien-lab/home",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=11",
+            "observedAt": "2026-10-02T22:44:38+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://sites.google.com/ucsd.edu/chien-lab/home",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-faculty-shu-chien"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Shu Chien"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-e8ad4fbbc73e59",
+      "targetLabId": "ucsd-neurosciences-lab-shtrahman-lab",
+      "captureUri": "http://shtrahmanlab.org/",
+      "targetUri": "http://shtrahmanlab.org/",
+      "captureRecordSha256": "6e6f16367b4a8429d59c19655a2fa11b89be79108e1e56a3f0961b71b3325ba5",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The captured official-profile lab association names the same researcher as the existing canonical lab. The actual exact resource and observed redirect chain identify the corresponding named lab; generic profile-link wording does not create a separate lab entity. The original primary URI remains unchanged.",
+      "evidence": [
+        {
+          "requestedUrl": "http://shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES"
+        },
+        {
+          "requestedUrl": "http://shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://shtrahmanlab.org/ -> https://shtrahmanlab.org/",
+          "redirects": [
+            {
+              "from": "http://shtrahmanlab.org/",
+              "to": "https://shtrahmanlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "http://www.shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T06:11:55+00:00",
+          "bodySha256": "e68c822fab4f00bf8ce0df659a324ec32b8f46a7c1f197fa6387fd6696719b7a",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES"
+        },
+        {
+          "requestedUrl": "http://www.shtrahmanlab.org/",
+          "sourceUrl": "https://shtrahmanlab.org/",
+          "observedAt": "2026-10-16T06:11:55+00:00",
+          "bodySha256": "e68c822fab4f00bf8ce0df659a324ec32b8f46a7c1f197fa6387fd6696719b7a",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://www.shtrahmanlab.org/ -> https://www.shtrahmanlab.org/; HTTP 301: https://www.shtrahmanlab.org/ -> https://shtrahmanlab.org/",
+          "redirects": [
+            {
+              "from": "http://www.shtrahmanlab.org/",
+              "to": "https://www.shtrahmanlab.org/",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://www.shtrahmanlab.org/",
+              "to": "https://shtrahmanlab.org/",
+              "httpStatus": 301
+            }
+          ]
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-e8ad4fbbc73e59",
+        "labName": "Matthew Shtrahman — lab website",
+        "institution": "Unknown",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "http://shtrahmanlab.org/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/matthew.shtrahman",
+          "http://shtrahmanlab.org/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/matthew.shtrahman",
+              "observedAt": "2026-10-03T03:40:12+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → http://shtrahmanlab.org/",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/matthew.shtrahman",
+              "observedAt": "2026-10-07T23:34:42+00:00",
+              "method": "official_profile_generic_lab_link",
+              "evidence": "Lab Website → http://shtrahmanlab.org/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/matthew.shtrahman",
+              "observedAt": "2026-10-03T03:40:12+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → http://shtrahmanlab.org/",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/matthew.shtrahman",
+              "observedAt": "2026-10-07T23:34:42+00:00",
+              "method": "official_profile_generic_lab_link",
+              "evidence": "Lab Website → http://shtrahmanlab.org/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-neurosciences-matthew-shtrahman"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Matthew Shtrahman"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-632111bf9da216",
+      "targetLabId": "ucsd-pediatrics-lab-raffatellu-lab",
+      "captureUri": "http://raffatellu.com/",
+      "targetUri": "http://raffatellu.com/",
+      "captureRecordSha256": "0e4fff6b57c5cb2ccbce88b368b23ea6ce93b00a810f1197a97724c9690030b8",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The captured official-profile lab association names the same researcher as the existing canonical lab. The actual exact resource and observed redirect chain identify the corresponding named lab; generic profile-link wording does not create a separate lab entity. The original primary URI remains unchanged.",
+      "evidence": [
+        {
+          "requestedUrl": "http://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:05:23+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Raffatellu Lab – UC San Diego"
+        },
+        {
+          "requestedUrl": "http://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:05:23+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://raffatellu.com/ -> https://raffatellu.com/",
+          "redirects": [
+            {
+              "from": "http://raffatellu.com/",
+              "to": "https://raffatellu.com/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://raffatellu.com/",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:03:27+00:00",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Raffatellu Lab – UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-632111bf9da216",
+        "labName": "Manuela Raffatellu — lab website",
+        "institution": "Unknown",
+        "department": "Pediatrics",
+        "labWebsiteUrl": "http://raffatellu.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/manuela.raffatellu",
+          "http://raffatellu.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://profiles.ucsd.edu/manuela.raffatellu",
+            "observedAt": "2026-10-03T04:42:36+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "My lab website → http://raffatellu.com/",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://profiles.ucsd.edu/manuela.raffatellu",
+            "observedAt": "2026-10-03T04:42:36+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "My lab website → http://raffatellu.com/",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-pediatrics-manuela-raffatellu"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Manuela Raffatellu"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    },
+    {
+      "action": "bind_capture_identity",
+      "captureId": "ucsd-live-lab-9aa816c30bdd3d",
+      "targetLabId": "ucsd-psychiatry-lab-george-lab",
+      "captureUri": "https://oliviergeorge.com/",
+      "targetUri": "https://oliviergeorge.com/",
+      "captureRecordSha256": "55818a48225733ab5e67b1b048239d3755935b9f8d3a44cf0b28f6dd631d5bbf",
+      "resourceStatus": "verified_same_lab",
+      "reason": "The captured official-profile lab association names the same researcher as the existing canonical lab. The actual exact resource and observed redirect chain identify the corresponding named lab; generic profile-link wording does not create a separate lab entity. The original primary URI remains unchanged.",
+      "evidence": [
+        {
+          "requestedUrl": "https://oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Olivier George Lab | Neurobiology of Addiction · UC San Diego"
+        },
+        {
+          "requestedUrl": "https://oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 308: https://oliviergeorge.com/ -> https://www.oliviergeorge.com/",
+          "redirects": [
+            {
+              "from": "https://oliviergeorge.com/",
+              "to": "https://www.oliviergeorge.com/",
+              "httpStatus": 308
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://www.oliviergeorge.com/",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:03:27+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "method": "reviewed_named_lab_capture_and_exact_resource_identity",
+          "evidenceType": "document_title",
+          "evidence": "Olivier George Lab | Neurobiology of Addiction · UC San Diego"
+        }
+      ],
+      "originalCaptureRecord": {
+        "id": "ucsd-live-lab-9aa816c30bdd3d",
+        "labName": "Olivier George — lab website",
+        "institution": "Unknown",
+        "department": "Psychiatry",
+        "labWebsiteUrl": "https://oliviergeorge.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/olivier.george",
+          "https://oliviergeorge.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": {
+            "sourceUrl": "https://profiles.ucsd.edu/olivier.george",
+            "observedAt": "2026-10-03T05:31:49+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://oliviergeorge.com/",
+            "status": "verified"
+          },
+          "labWebsiteUrl": {
+            "sourceUrl": "https://profiles.ucsd.edu/olivier.george",
+            "observedAt": "2026-10-03T05:31:49+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Website → https://oliviergeorge.com/",
+            "status": "verified"
+          }
+        },
+        "professorIds": [
+          "ucsd-psychiatry-olivier-george"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Olivier George"
+        ],
+        "relationshipType": "faculty_lab_link"
+      }
+    }
+  ]
+}

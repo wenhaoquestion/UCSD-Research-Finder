@@ -1,0 +1,1372 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T18:33:38.417629+00:00",
+  "state": "reviewed_unapplied",
+  "counts": {
+    "review_name_and_affiliation_correction": 1,
+    "isolate_non_lab": 6,
+    "hold_destination_mismatch": 5,
+    "hold_unresolved_identity": 1,
+    "hold_entity_relationship": 1
+  },
+  "scope": "Reviewed legacy destination cases, including the literal original Sinha HTTP mismatch and the positively identified Biosignals teaching-course artifact. Incremental cache previews may apply these reviews; the served atlas remains unchanged.",
+  "entries": [
+    {
+      "labId": "ucsd-biology-topic-lab-not-in-a-biology-group",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "review_name_and_affiliation_correction",
+      "observedPageType": "lab",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-biology-topic-lab-not-in-a-biology-group",
+        "labName": "Not in a Biology group Lab",
+        "institution": "University of California San Diego",
+        "department": "Biological Sciences",
+        "labWebsiteUrl": "https://kendrick.salk.edu",
+        "principalInvestigator": "Aga A. Kendrick",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "The Kendrick lab combines cryo-EM, single-molecule imaging, and cell biology to uncover the dynamic behaviors of intracellular transport systems.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://kendrick.salk.edu/",
+          "https://biology.ucsd.edu/research/research-topics/topics/biochem-biophys-structural",
+          "https://biology.ucsd.edu/research/research-topics/index.html",
+          "https://biology.ucsd.edu/research/faculty/akendrick"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:28+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [
+          "principalInvestigator",
+          "description"
+        ],
+        "websiteCheck": {
+          "sourceUrl": "https://kendrick.salk.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:28+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://kendrick.salk.edu",
+          "title": "Home | Kendrick Lab - Salk Institute for Biological Studies"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://kendrick.salk.edu/",
+          "requestedUrl": "https://kendrick.salk.edu/",
+          "observedAt": "2026-10-16T01:04:19+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Welcome to the Kendrick lab",
+          "status": "verified",
+          "bodySha256": "9d690cb61ce9ff12d2abec9295dc35a2d6f9e7bf47c050cdf06255d61404e2b5",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "educational_resource",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+        "labName": "Lab Safety Videos",
+        "institution": "University of California San Diego",
+        "department": "Chemistry & Biochemistry",
+        "labWebsiteUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+          "https://chemistry.ucsd.edu/research/index.html"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:24+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:24+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos",
+          "title": "UCSD Lab Safety Videos | Department of Chemistry"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos",
+          "requestedUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+          "observedAt": "2026-10-16T01:04:54+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "UCSD Lab Safety Videos",
+          "status": "verified",
+          "bodySha256": "f4c360ee7e1552cf658774109f790e70509af233ad4a71ca6dc7ccbbc477e1d8",
+          "redirects": [
+            {
+              "from": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+              "to": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos",
+              "httpStatus": 302
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "isolate_non_lab"
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-malinow-lab",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_destination_mismatch",
+      "observedPageType": "domain_sale",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-neurosciences-lab-malinow-lab",
+        "labName": "Malinow Lab – Center for Neural Circuits & Behavior (CNCB)",
+        "institution": "University of California San Diego",
+        "department": "Neurosciences",
+        "labWebsiteUrl": "http://webaxon.com/index.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "http://webaxon.com/index.html",
+          "https://neurosciences.ucsd.edu/research/labs/index.html"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-02T22:42:05+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Malinow Lab – Center for Neural Circuits & Behavior (CNCB)",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+              "observedAt": "2026-10-02T22:42:05+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Malinow Lab – Center for Neural Circuits & Behavior (CNCB)",
+              "status": "verified"
+            }
+          ]
+        },
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T22:41:16+00:00",
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:05+00:00"
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "http://webaxon.com/index.html",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:16+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.hugedomains.com/domain_profile.cfm?d=webaxon.com",
+          "title": "WebAxon.com is for sale | HugeDomains"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://www.hugedomains.com/domain_profile.cfm?d=webaxon.com",
+          "requestedUrl": "http://webaxon.com/index.html",
+          "observedAt": "2026-10-16T01:05:08+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "This domain is for sale",
+          "status": "verified",
+          "bodySha256": "d7f60a11435a426e67e2cae2e32b123c5e42afab90bd3477a99b2610d1b9582f",
+          "redirects": [
+            {
+              "from": "http://webaxon.com/index.html",
+              "to": "https://www.hugedomains.com/domain_profile.cfm?d=webaxon.com",
+              "httpStatus": 302
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "departmental_division",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-pathology-lab-laboratory-genomic-medicine",
+        "labName": "Laboratory & Genomic Medicine",
+        "institution": "University of California San Diego",
+        "department": "Pathology",
+        "labWebsiteUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "https://pathology.ucsd.edu/research/labs/index.html"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:38+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:38+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "title": "Laboratory & Genomic Medicine"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "requestedUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "observedAt": "2026-10-16T00:57:27+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Division of Laboratory and Genomic Medicine",
+          "status": "verified",
+          "bodySha256": "afde4b8f799468e7f42fd0766d00083896c22b5c979c5312d5807864e50bf546",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "isolate_non_lab"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_unresolved_identity",
+      "observedPageType": "research_group_directory",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+        "labName": "Field Lab",
+        "institution": "University of California San Diego",
+        "department": "Philosophy",
+        "labWebsiteUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+        "principalInvestigator": "Faculty by Field",
+        "principalInvestigatorProfileUrl": "https://philosophy.ucsd.edu/people/faculty-by-field.html",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "mvileta@ucsd.edu",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "https://philosophy.ucsd.edu/people/faculty-by-field.html",
+          "https://philosophy.ucsd.edu/people/faculty.html",
+          "https://philosophy.ucsd.edu/research-groups/index.html",
+          "https://philosophy.ucsd.edu/research-groups/reading-research-groups.html",
+          "https://sites.google.com/site/mtfulkerson/",
+          "https://sites.google.com/view/rachelettarudolph",
+          "https://philosophy.ucsd.edu/people/our-job-market-candidates.html",
+          "https://www.philosophicateme.com",
+          "https://philosophy.ucsd.edu/people/people-overview.html"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "faculty_lab_link",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:42+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [
+          "principalInvestigator",
+          "principalInvestigatorProfileUrl",
+          "contactEmail"
+        ],
+        "websiteCheck": {
+          "sourceUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:42+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "title": "Research Groups Homepage"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "requestedUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "observedAt": "2026-10-16T01:05:20+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "History of Philosophy Roundtable",
+          "status": "verified",
+          "bodySha256": "16bdc867ebc5d3df059b88a94825f87dff67592830da27be908e4b1dc81c81b0",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-physics-biological-physics",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "research_field_directory",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-physics-biological-physics",
+        "labName": "UCSD Biological Physics Lab",
+        "institution": "University of California San Diego",
+        "department": "Physics",
+        "labWebsiteUrl": "https://biophysics.physics.ucsd.edu",
+        "principalInvestigator": "Nigel Goldenfeld",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Physics research group focused on biological physics and complex systems.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://biophysics.physics.ucsd.edu/",
+          "https://physics.ucsd.edu/research"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "curated_lab",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:18+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [
+          "principalInvestigator",
+          "description"
+        ],
+        "websiteCheck": {
+          "sourceUrl": "https://biophysics.physics.ucsd.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:18+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://biophysics.physics.ucsd.edu",
+          "title": "UCSD Biological Physics"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://biophysics.physics.ucsd.edu/",
+          "requestedUrl": "https://biophysics.physics.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:29+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Faculty Profiles Hwa Lab",
+          "status": "verified",
+          "bodySha256": "bcb848dc2e0b1d16be91465b634564aa2a9ebd98958e56488ebde0c3522b6251",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "isolate_non_lab"
+    },
+    {
+      "labId": "ucsd-live-lab-c47793a464ccdc",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "course",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-live-lab-c47793a464ccdc",
+        "labName": "CSE-198 - Directed Group Study.",
+        "institution": "University of California San Diego",
+        "department": "Computer Science and Engineering",
+        "labWebsiteUrl": "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://cse.ucsd.edu/undergraduate/undergraduate-research",
+          "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://cse.ucsd.edu/undergraduate/undergraduate-research",
+              "observedAt": "2026-10-02T22:42:09+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "You may receive course credit by enrolling into CSE-199 - Independent Study or CSE-198 - Directed Group Study. See your appropriate degree program requirements for CSE-198/199 Elective information.",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://cse.ucsd.edu/undergraduate/undergraduate-research",
+              "observedAt": "2026-10-02T22:42:09+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "You may receive course credit by enrolling into CSE-199 - Independent Study or CSE-198 - Directed Group Study. See your appropriate degree program requirements for CSE-198/199 Elective information.",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [],
+        "relationshipScope": "ucsd_hosted",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:05+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:09+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study",
+          "status": "reachable",
+          "observedAt": "2026-10-03T00:04:05+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://cse.ucsd.edu/undergraduate/cse-198-directed-group-study",
+          "title": "CSE-198 - Directed Group Study | Computer Science"
+        },
+        "unverifiedFields": []
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://cse.ucsd.edu/undergraduate/cse-198-directed-group-study",
+          "requestedUrl": "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study",
+          "observedAt": "2026-10-16T01:06:30+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "CSE-198 - Directed Group Study Units: 2-4",
+          "status": "verified",
+          "bodySha256": "f4852b14d16c54aef13b4c76c5065e32bc6ea14900961ee49de0698907a58b4f",
+          "redirects": [
+            {
+              "from": "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study",
+              "to": "https://cse.ucsd.edu/undergraduate/cse-198-directed-group-study",
+              "httpStatus": 301
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "isolate_non_lab"
+    },
+    {
+      "labId": "ucsd-live-lab-48032dc33264ea",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "clinical_trials_overview",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-live-lab-48032dc33264ea",
+        "labName": "National Cooperative Group Clinical Trials",
+        "institution": "University of California San Diego",
+        "department": "Radiation Medicine",
+        "labWebsiteUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://radonc.ucsd.edu/research/labs/",
+          "https://radonc.ucsd.edu/research/clinical-trials.html"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+              "observedAt": "2026-10-02T22:42:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Our Researchers Innovative Labs Driving Personalized Cancer Therapies UC San Diego's Department of Radiation Medicine features cutting-edge research labs that focus on precision radiation medicine, health equity in radiotherapy, and innovation in treatment. Faculty lead interdisciplinary efforts, collaborating on clinical applications and personalized cancer therapies. These labs are integral to advancing the field through research that is directly translated into patient care. Advani Lab Bojechko Lab Brown Lab Hattangadi-Gluth Lab Kim Lab Kisling Lab Mell Lab Meyers Lab Moore Lab Murphy Lab Ray Lab Rose Lab Seibert Lab Sharabi Lab Clinical Trials Faculty members are at the forefront of advancing cutting-edge National Cooperative Group Clinical Trials , ensuring rigorous development and oversight. Their expertise is instrumental in shaping groundbreaking clinical studies that aim to impr",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+              "observedAt": "2026-10-02T22:42:11+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Our Researchers Innovative Labs Driving Personalized Cancer Therapies UC San Diego's Department of Radiation Medicine features cutting-edge research labs that focus on precision radiation medicine, health equity in radiotherapy, and innovation in treatment. Faculty lead interdisciplinary efforts, collaborating on clinical applications and personalized cancer therapies. These labs are integral to advancing the field through research that is directly translated into patient care. Advani Lab Bojechko Lab Brown Lab Hattangadi-Gluth Lab Kim Lab Kisling Lab Mell Lab Meyers Lab Moore Lab Murphy Lab Ray Lab Rose Lab Seibert Lab Sharabi Lab Clinical Trials Faculty members are at the forefront of advancing cutting-edge National Cooperative Group Clinical Trials , ensuring rigorous development and oversight. Their expertise is instrumental in shaping groundbreaking clinical studies that aim to impr",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [],
+        "relationshipScope": "ucsd_hosted",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:08+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:11+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+          "status": "reachable",
+          "observedAt": "2026-10-03T00:04:08+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+          "title": "Clinical Trials"
+        },
+        "unverifiedFields": []
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+          "requestedUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+          "observedAt": "2026-10-16T01:06:36+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Our researchers are national leaders in multiple national cooperative groups",
+          "status": "verified",
+          "bodySha256": "2003de83d8396e27d43baea459da052680614d15c6d2a39a35cfd4c9f60dd870",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "isolate_non_lab"
+    },
+    {
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_entity_relationship",
+      "observedPageType": "center_or_institute",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-live-lab-d2d234fc0f3eba",
+        "labName": "Microcirculation Laboratory",
+        "institution": "Unknown",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+        "principalInvestigator": "Geert Schmid-Schoenbein",
+        "principalInvestigatorProfileUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=18",
+        "researchAreas": [],
+        "description": "Lab listed in an official UC San Diego directory.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://bioengineering.ucsd.edu/research-focus",
+          "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "https://microcirculation.eng.ucsd.edu/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Schmid-Schoenbein Lab Principal Investigator: Geert Schmid-Schoenbein Website | gschmid@ucsd.edu",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "manual_review_of_cached_official_directory_card",
+              "evidence": "One Schmid-Schoenbein Lab card names Geert Schmid-Schoenbein as principal investigator, links the lab name to microcirculation.eng.ucsd.edu, and links Website to the Google Site at microcirculation-autodigestion/home.",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+              "observedAt": "2026-10-03T00:05:51+00:00",
+              "method": "manual_public_page_identity_review",
+              "evidence": "The destination returns a public page titled Microcirculation Laboratory, without an authentication redirect.",
+              "status": "verified",
+              "httpStatus": 200,
+              "finalUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home"
+            },
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Schmid-Schoenbein Lab",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Schmid-Schoenbein Lab Principal Investigator: Geert Schmid-Schoenbein Website | gschmid@ucsd.edu",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Schmid-Schoenbein Lab",
+              "status": "verified"
+            }
+          ],
+          "principalInvestigator": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_same_record",
+              "evidence": "Schmid-Schoenbein Lab Principal Investigator: Geert Schmid-Schoenbein Website | gschmid@ucsd.edu",
+              "status": "verified"
+            }
+          ],
+          "identityReview": [
+            {
+              "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "manual_review_of_cached_official_directory_card",
+              "evidence": "One Schmid-Schoenbein Lab card names Geert Schmid-Schoenbein as principal investigator, links the lab name to microcirculation.eng.ucsd.edu, and links Website to the Google Site at microcirculation-autodigestion/home.",
+              "status": "verified"
+            },
+            {
+              "sourceUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+              "observedAt": "2026-10-03T00:05:51+00:00",
+              "method": "manual_public_page_identity_review",
+              "evidence": "The destination returns a public page titled Microcirculation Laboratory, without an authentication redirect.",
+              "status": "verified",
+              "httpStatus": 200,
+              "finalUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-bioengineering-geert-schmid-schoenbein"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Geert Schmid-Schoenbein"
+        ],
+        "relationshipType": "official_directory_same_record",
+        "identityReview": {
+          "reason": "A single official department directory card associates both URLs with Schmid-Schoenbein Lab and the same principal investigator, establishing aliases directly.",
+          "limitations": [
+            "The engineering domain was not fetched because robots.txt was unavailable; no claim is made that it redirects or returns an HTTP error."
+          ]
+        },
+        "aliasIds": [
+          "ucsd-live-lab-1dc665a0e493c5"
+        ],
+        "alternateWebsiteUrls": [
+          "https://microcirculation.eng.ucsd.edu/"
+        ],
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:19+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "identityReview",
+            "labName",
+            "labWebsiteUrl",
+            "principalInvestigator"
+          ],
+          "lastEvidenceAt": "2026-10-03T00:05:51+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:19+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "title": "Microcirculation Laboratory"
+        },
+        "unverifiedFields": []
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "requestedUrl": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+          "observedAt": "2026-10-16T01:06:40+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Center for Autodigestion Innovation",
+          "status": "verified",
+          "bodySha256": "5697df4a3a6dc5a560058b79db31da55fef0fcccec560e29a273988ab2f90ef5",
+          "redirects": []
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-live-lab-ca0f4105fff103",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_destination_mismatch",
+      "observedPageType": "institutional_homepage",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-live-lab-ca0f4105fff103",
+        "labName": "Zhou Lab",
+        "institution": "Unknown",
+        "department": "Bioengineering",
+        "labWebsiteUrl": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/huilin.zhou",
+          "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/huilin.zhou",
+              "observedAt": "2026-10-07T22:07:07+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Zhou Lab → http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/huilin.zhou",
+              "observedAt": "2026-10-07T22:07:07+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Zhou Lab → http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-huilin-zhou"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Huilin Zhou"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:04+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-07T22:07:07+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+          "status": "reachable",
+          "observedAt": "2026-10-03T00:04:04+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ludwigcancerresearch.org/",
+          "title": "Ludwig Cancer Research"
+        },
+        "unverifiedFields": []
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://www.ludwigcancerresearch.org/",
+          "requestedUrl": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+          "observedAt": "2026-10-16T01:06:44+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Our Research Programs",
+          "status": "verified",
+          "bodySha256": "54f8c1ee9598a659661b1337afea58c138682d4ebac49bbb066e4b8768d28ad6",
+          "redirects": [
+            {
+              "from": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "to": "https://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "to": "https://www.ludwigcancerresearch.org/",
+              "httpStatus": 302
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-live-lab-61e490319a4560",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_destination_mismatch",
+      "observedPageType": "institutional_homepage",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-live-lab-61e490319a4560",
+        "labName": "Oegema Lab",
+        "institution": "Unknown",
+        "department": "Biological Sciences",
+        "labWebsiteUrl": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/karen.oegema",
+          "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/karen.oegema",
+              "observedAt": "2026-10-07T22:08:37+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Oegema Lab → http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://profiles.ucsd.edu/karen.oegema",
+              "observedAt": "2026-10-07T22:08:37+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Oegema Lab → http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-karen-oegema"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Karen F. Oegema"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": null,
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-07T22:08:37+00:00"
+        },
+        "unverifiedFields": []
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://www.ludwigcancerresearch.org/",
+          "requestedUrl": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+          "observedAt": "2026-10-16T01:06:47+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Our Research Programs",
+          "status": "verified",
+          "bodySha256": "54f8c1ee9598a659661b1337afea58c138682d4ebac49bbb066e4b8768d28ad6",
+          "redirects": [
+            {
+              "from": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "to": "https://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "to": "https://www.ludwigcancerresearch.org/",
+              "httpStatus": 302
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_destination_mismatch",
+      "observedPageType": "institutional_homepage",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+        "labName": "Kolodner Lab",
+        "institution": "University of California San Diego",
+        "department": "Cellular & Molecular Medicine",
+        "labWebsiteUrl": "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+          "https://cmm.ucsd.edu/research/labs",
+          "https://cmm.ucsd.edu/research/labs/"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Kolodner Lab",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+              "observedAt": "2026-10-02T22:42:07+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Kolodner Lab",
+              "status": "verified"
+            }
+          ]
+        },
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:30+00:00",
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:07+00:00"
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:30+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ludwigcancerresearch.org/",
+          "title": "Ludwig Cancer Research"
+        }
+      },
+      "evidence": [
+        {
+          "sourceUrl": "https://www.ludwigcancerresearch.org/",
+          "requestedUrl": "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+          "observedAt": "2026-10-16T01:04:50+00:00",
+          "method": "independent_destination_body_identity_review",
+          "evidence": "Our Research Programs",
+          "status": "verified",
+          "bodySha256": "54f8c1ee9598a659661b1337afea58c138682d4ebac49bbb066e4b8768d28ad6",
+          "redirects": [
+            {
+              "from": "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+              "to": "https://www.ludwigcancerresearch.org/",
+              "httpStatus": 302
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Reachability does not confirm the laboratory entity, current affiliation, leadership, or closure.",
+        "Preserve the original ID, record values, original source observations and affected professor relationships in history before any correction or isolation."
+      ],
+      "action": "record_destination_assessment"
+    },
+    {
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "reviewState": "reviewed_unapplied",
+      "proposedAction": "hold_destination_mismatch",
+      "action": "record_destination_assessment",
+      "observedPageType": "lab",
+      "observedPageName": "Allen Lab",
+      "transportStatus": "ok",
+      "httpStatus": 200,
+      "identityStatus": "mismatch",
+      "originalRecord": {
+        "id": "ucsd-physics-research-site-sunil-k-sinha",
+        "labName": "Sunil K. Sinha Research Group",
+        "institution": "University of California San Diego",
+        "department": "Physics",
+        "labWebsiteUrl": "http://sinhagroup.ucsd.edu/",
+        "principalInvestigator": "Sunil K. Sinha",
+        "principalInvestigatorProfileUrl": "https://physics.ucsd.edu/people/profile?id=ssinha",
+        "researchAreas": [],
+        "description": "Sinha Group - Condensed Matter Physics by X-ray and Neturon Scattering Sinha Group - Condensed Matter Physics by X-ray and Neturon Scattering home contact Home People Research Facilities Scattering Publications Contact Welcome to Sinha Group Do you want to know about how the read-head inside your computer works?",
+        "contactEmail": "ssinha@ucsd.edu",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "http://sinhagroup.ucsd.edu/",
+          "https://physics.ucsd.edu/people/profile?id=ssinha",
+          "https://catalog.ucsd.edu/faculty/PHYS.html",
+          "https://physics.ucsd.edu/api/profiles/faculty/000220"
+        ],
+        "lastVerified": "2026-05-23",
+        "recordSubtype": "research_group",
+        "legacyKind": "physical_sciences_personal_site",
+        "fieldEvidence": {},
+        "verification": {
+          "status": "needs_review",
+          "lastAttemptedAt": "2026-10-02T22:41:15+00:00",
+          "fieldsVerified": [],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ]
+        },
+        "unverifiedFields": [
+          "principalInvestigator",
+          "principalInvestigatorProfileUrl",
+          "contactEmail",
+          "description"
+        ],
+        "websiteCheck": {
+          "sourceUrl": "http://sinhagroup.ucsd.edu/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://sinhagroup.ucsd.edu/",
+          "title": "Allen Lab"
+        }
+      },
+      "reason": "The literal original HTTP URI returns Allen Lab and names Monica Allen. The HTTPS variant was a separate failed request. This capture does not establish a Sinha/Allen alias, name change, move or closure; no Allen research or recruiting content is attributed to Sinha. Preserve the original ID, URL and historical evidence.",
+      "evidence": [
+        {
+          "requestedUrl": "http://sinhagroup.ucsd.edu/",
+          "sourceUrl": "http://sinhagroup.ucsd.edu/",
+          "observedAt": "2026-10-16T04:56:45+00:00",
+          "bodySha256": "35b50cf6304cafc42e6f4ccbd258eaabf7cf130e132d9541eb379740145c97eb",
+          "evidenceType": "document_title",
+          "evidence": "Allen Lab"
+        },
+        {
+          "requestedUrl": "http://sinhagroup.ucsd.edu/",
+          "sourceUrl": "http://sinhagroup.ucsd.edu/",
+          "observedAt": "2026-10-16T04:56:45+00:00",
+          "bodySha256": "35b50cf6304cafc42e6f4ccbd258eaabf7cf130e132d9541eb379740145c97eb",
+          "evidenceType": "main_text_quote",
+          "evidence": "please contact Monica Allen"
+        }
+      ],
+      "sourceCaptureOrigin": {
+        "task": "ucsd-lab-summaries-20261016",
+        "cachePath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/4519b3f718ecda4016aa3792f3920eac0f7124a5ba5f9d81a074e95c57d2d411.html",
+        "captureObservedAtPreserved": true,
+        "readOnlySource": true,
+        "wireRequestsByImporter": 0
+      }
+    },
+    {
+      "labId": "ucsd-live-lab-97139595f4c472",
+      "reviewState": "reviewed_for_incremental_preview",
+      "action": "isolate_non_lab",
+      "proposedAction": "isolate_non_lab",
+      "observedPageType": "course",
+      "identityStatus": "mismatch",
+      "transportStatus": "ok",
+      "originalRecord": {
+        "id": "ucsd-live-lab-97139595f4c472",
+        "labName": "Biosignals Processing Lab",
+        "institution": "Unknown",
+        "department": "Computer Science and Engineering",
+        "labWebsiteUrl": "https://www.ejaywang.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "My group works this problem along three complementary lines: designing the sensing artifacts themselves, understanding how a technology is actually adopted in real-world contexts, and developing design principles that hold across diverse populations rather than only the people who happen to resemble the design team.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://cse.ucsd.edu/people/faculty-profiles/edward-wang",
+          "https://www.ejaywang.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://www.ejaywang.com/",
+              "observedAt": "2026-10-02T23:42:57+00:00",
+              "method": "personal_site_lab_heading_and_owner_identity",
+              "evidence": "Biosignals Processing Lab: Edward Jay Wang",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://www.ejaywang.com/",
+              "observedAt": "2026-10-02T23:42:57+00:00",
+              "method": "personal_site_lab_heading_and_owner_identity",
+              "evidence": "Biosignals Processing Lab: Edward Jay Wang",
+              "status": "verified"
+            }
+          ],
+          "description": [
+            {
+              "sourceUrl": "https://www.ejaywang.com/",
+              "observedAt": "2026-10-02T23:42:57+00:00",
+              "method": "identity_matched_personal_site_research_excerpt",
+              "evidence": "My group works this problem along three complementary lines: designing the sensing artifacts themselves, understanding how a technology is actually adopted in real-world contexts, and developing design principles that hold across diverse populations rather than only the people who happen to resemble the design team.",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-faculty-edward-wang"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Edward Wang"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:09+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "description",
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T23:42:57+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://www.ejaywang.com/",
+          "status": "reachable",
+          "observedAt": "2026-10-03T00:04:09+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.ejaywang.com/",
+          "title": "Edward Jay Wang · Researcher · Educator · Entrepreneur"
+        },
+        "unverifiedFields": []
+      },
+      "originalRecordSha256": "a77482add9f234fc14cdb345b34e9f2b92e5730f390b5f9d4090f78379f9d25a",
+      "evidence": [
+        {
+          "requestedUrl": "https://www.ejaywang.com/",
+          "sourceUrl": "https://www.ejaywang.com/",
+          "observedAt": "2026-10-16T01:06:29+00:00",
+          "bodySha256": "f1c23dd62b40c59e6e5ce3545da08cb43f410126fff45517d8bcf61f26d3b182",
+          "evidenceType": "main_text_quote",
+          "evidence": "Lab Biosignals Processing Lab Biophysics and signal acquisition/processing through student-designed experiments with EOG, EMG, ECG, and EEG — examining electrode placement and signal-fatigue relationships.",
+          "method": "reviewed_original_lab_and_own_person_source",
+          "status": "verified"
+        },
+        {
+          "requestedUrl": "https://www.ejaywang.com/",
+          "sourceUrl": "https://www.ejaywang.com/",
+          "observedAt": "2026-10-16T01:06:29+00:00",
+          "bodySha256": "f1c23dd62b40c59e6e5ce3545da08cb43f410126fff45517d8bcf61f26d3b182",
+          "evidenceType": "main_text_quote",
+          "evidence": "Teaching Teaching statement → Undergraduate Edge AI On-device machine learning for resource-constrained hardware — model compression, quantization, and deploying ML to the edge, taught with AI-native development workflows. Graduate Mobile Health Device Design A survey of mHealth solutions paired with hands-on hardware prototyping (Arduino) and software (Python / SciPy), culminating in student-designed mHealth systems. Undergraduate Introduction to Engineering Design A hands-on design course that pairs students with peer customers — embedded programming, 3D prototyping, edge computing, signal processing, and design methods (Kano, affordance-based design). Lab Biosignals Processing Lab Biophysics and signal acquisition/processing through student-designed experiments with EOG, EMG, ECG, and EEG — examining electrode placement and signal-fatigue relationships.",
+          "method": "reviewed_original_lab_and_own_person_source",
+          "status": "verified"
+        },
+        {
+          "requestedUrl": "https://www.ejaywang.com/",
+          "sourceUrl": "https://www.ejaywang.com/",
+          "observedAt": "2026-10-16T01:06:29+00:00",
+          "bodySha256": "f1c23dd62b40c59e6e5ce3545da08cb43f410126fff45517d8bcf61f26d3b182",
+          "evidenceType": "document_title",
+          "evidence": "Edward Jay Wang · Researcher · Educator · Entrepreneur",
+          "method": "reviewed_original_lab_and_own_person_source",
+          "status": "verified"
+        }
+      ],
+      "sourceScope": {
+        "sectionId": "teaching",
+        "sectionHeading": "Teaching",
+        "cardClass": "course",
+        "cardHeading": "Biosignals Processing Lab",
+        "cardLabelAsListed": "Lab"
+      },
+      "reason": "The specifically named Biosignals Processing Lab heading belongs to a course card in the Teaching section and describes student-designed EOG/EMG/ECG/EEG experiments. Preserve the whole original misparsed lab row and all professor relationships in the archive/history. The independently linked DigiHealth research laboratory is reviewed separately; do not rename or merge the course artifact into a scientific lab.",
+      "limitations": [
+        "Classification follows explicit course structure, not missing content or failed transport. No scientific lab closure or faculty departure is inferred."
+      ]
+    }
+  ],
+  "policy": "Six conclusively non-lab resources are isolated in reviewed cache previews and remain eligible for the completion-gated final build. Full records, stable IDs, dated evidence and affected professor relationships stay archived. Other reviewed cases retain explicit destination/identity limitations; no closure or departure is inferred.",
+  "previousReviewSummaries": [
+    {
+      "schemaVersion": 1,
+      "reviewedAt": "2026-10-16T05:24:19.333793+00:00",
+      "state": "reviewed_unapplied",
+      "counts": {
+        "review_name_and_affiliation_correction": 1,
+        "isolate_non_lab": 5,
+        "hold_destination_mismatch": 5,
+        "hold_unresolved_identity": 1,
+        "hold_entity_relationship": 1
+      },
+      "scope": "Prior reviewed legacy cases plus the literal original Sinha HTTP destination mismatch; observations are preserved and no served records are changed.",
+      "policy": "Five conclusively non-lab resources will be isolated only during the completed export/build; their full records, stable IDs, evidence and affected professor relationships remain archived. Seven other cases retain their existing record and URL with a separate destination identity assessment; no closure is inferred."
+    }
+  ]
+}

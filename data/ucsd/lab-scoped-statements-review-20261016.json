@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-17T04:41:17.136771+00:00",
+  "isFinalReview": false,
+  "sourceQueuePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/faculty-continuation-capture-preview/source-queue.json",
+  "sourceQueueSha256": "d8417ea9e55a5ca5db69a274c12ff38a67df2a68a0f5ee1dff3523b86a008b95",
+  "captureCachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/faculty-continuation-capture-preview/evidence-corpus",
+  "beforeCandidateAtlasSha256": "f2030cce9851170d4f322a2ecd19eb524b99a12669f8a15576ff0a2dfd119404",
+  "cases": [
+    {
+      "labId": "ucsd-medicine-lab-leslie-crews-laboratory",
+      "originalLabRecord": {
+        "id": "ucsd-medicine-lab-leslie-crews-laboratory",
+        "labName": "Leslie Crews Laboratory",
+        "institution": "University of California San Diego",
+        "department": "Medicine",
+        "labWebsiteUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://regenmed.ucsd.edu/research/index.html",
+          "https://regenmed.ucsd.edu/research/crews-lab/index.html"
+        ],
+        "lastVerified": "2026-10-07",
+        "recordSubtype": "lab",
+        "discoveryMethod": "manual_official_source_lab_expansion_2026_10",
+        "sourceKind": "lab_website",
+        "profile_only": false,
+        "websiteCheck": {
+          "url": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "httpStatus": 200,
+          "finalUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "title": "Crews Lab",
+          "status": "ok"
+        },
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://regenmed.ucsd.edu/research/index.html",
+              "observedAt": "2026-10-07T22:55:15+00:00",
+              "evidence": "Crews Lab -> https://regenmed.ucsd.edu/research/crews-lab/index.html",
+              "method": "manual_review_official_page_links_lab_site",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://regenmed.ucsd.edu/research/index.html",
+              "observedAt": "2026-10-07T22:55:15+00:00",
+              "evidence": "Crews Lab -> https://regenmed.ucsd.edu/research/crews-lab/index.html",
+              "method": "manual_review_official_page_links_lab_site",
+              "status": "verified"
+            }
+          ]
+        },
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": null,
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-07T22:55:15+00:00"
+        },
+        "unverifiedFields": []
+      },
+      "originalLabRecordSha256": "80fd6eec5d4aba3b18307d374bcad8431f590b94a1d107d61abdc5611e7a069e",
+      "fields": {
+        "description": "The ongoing research in the Crews Lab aims to investigate the function of cancer stem cells in multiple myeloma progression and relapse. In recent work with the Jamieson Laboratory , we have identified a role for inflammation responsive pathways in the acquisition of drug resistance and stem cell-like behavior of malignant cells in multiple myeloma."
+      },
+      "fieldEvidence": {
+        "description": [
+          {
+            "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html",
+            "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html",
+            "observedAt": "2026-10-17T03:59:28+00:00",
+            "bodySha256": "57fbe98809b547cb01c1292593fb10d8dc3e9271c89dcfaffb1f808c5a29d4b8",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_own_lab_research_description",
+            "evidence": "The ongoing research in the Crews Lab aims to investigate the function of cancer stem cells in multiple myeloma progression and relapse. In recent work with the Jamieson Laboratory , we have identified a role for inflammation responsive pathways in the acquisition of drug resistance and stem cell-like behavior of malignant cells in multiple myeloma."
+          }
+        ]
+      },
+      "identityEvidence": [
+        {
+          "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "observedAt": "2026-10-16T01:07:25+00:00",
+          "bodySha256": "6fddf9df3d5247ae5b34f521b48af210ee45249fabcb5f346dbfd740c1c2c17a",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "Leslie Crews Laboratory",
+          "headingTag": "h1"
+        }
+      ],
+      "evidence": [
+        {
+          "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "observedAt": "2026-10-16T01:07:25+00:00",
+          "bodySha256": "6fddf9df3d5247ae5b34f521b48af210ee45249fabcb5f346dbfd740c1c2c17a",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "Leslie Crews Laboratory",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "observedAt": "2026-10-16T01:07:25+00:00",
+          "bodySha256": "6fddf9df3d5247ae5b34f521b48af210ee45249fabcb5f346dbfd740c1c2c17a",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "About the research -> https://regenmed.ucsd.edu/research/crews-lab/research.html",
+          "linkText": "About the research",
+          "linkUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html"
+        },
+        {
+          "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html",
+          "observedAt": "2026-10-17T03:59:28+00:00",
+          "bodySha256": "57fbe98809b547cb01c1292593fb10d8dc3e9271c89dcfaffb1f808c5a29d4b8",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "The ongoing research in the Crews Lab aims to investigate the function of cancer stem cells in multiple myeloma progression and relapse. In recent work with the Jamieson Laboratory , we have identified a role for inflammation responsive pathways in the acquisition of drug resistance and stem cell-like behavior of malignant cells in multiple myeloma."
+        }
+      ],
+      "reason": "The unchanged named departmental lab home literally publishes this research child inside its specific lab directory. The child explicitly scopes this research to Crews Lab; its generic page heading is not a new entity or a homepage alias. Preserve the original ID, URI, institution, people, unknown recruiting status, prior record and dates. The separate 2017 statistics and symposium references are not current scientific or personnel assertions.",
+      "sourceScope": {
+        "kind": "named_own_parent_published_child",
+        "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html",
+        "publishedLinkEvidence": {
+          "requestedUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/crews-lab/index.html",
+          "observedAt": "2026-10-16T01:07:25+00:00",
+          "bodySha256": "6fddf9df3d5247ae5b34f521b48af210ee45249fabcb5f346dbfd740c1c2c17a",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "About the research -> https://regenmed.ucsd.edu/research/crews-lab/research.html",
+          "linkText": "About the research",
+          "linkUrl": "https://regenmed.ucsd.edu/research/crews-lab/research.html"
+        },
+        "researchSubject": "Crews Lab",
+        "subjectStatement": "The ongoing research in the Crews Lab aims to investigate the function of cancer stem cells in multiple myeloma progression and relapse."
+      }
+    },
+    {
+      "labId": "ucsd-live-lab-c1cb41c6661a91",
+      "originalLabRecord": {
+        "id": "ucsd-live-lab-c1cb41c6661a91",
+        "labName": "Andrew Mendiola — lab website",
+        "institution": "Unknown",
+        "department": "Pharmacology",
+        "labWebsiteUrl": "https://mendiolalab.com/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://pharmacology.ucsd.edu/faculty/department-faculty1/andrew-mendiola.html",
+          "https://mendiolalab.com/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/andrew-mendiola.html",
+              "observedAt": "2026-10-02T22:49:05+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://mendiolalab.com/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/andrew-mendiola.html",
+              "observedAt": "2026-10-02T22:49:05+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://mendiolalab.com/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-pharmacology-andrew-mendiola"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Andrew Mendiola"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:12+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:49:05+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://mendiolalab.com/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:12+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://mendiolalab.com/",
+          "title": "Mendiola Lab – UC San Diego Department of Pharmacology"
+        },
+        "unverifiedFields": [],
+        "appliedEvidencePatches": [
+          "686748afcabe28e8e31e4b5237ffabd592e5d06e96dca9fbabcb8e716c82f3ef"
+        ]
+      },
+      "originalLabRecordSha256": "a44e8822fd21ce07a581326cf0c0b42289cfbe40c0bf50185331b42239835b79",
+      "fields": {
+        "labName": "Mendiola Lab",
+        "description": "We are a brain immunology research laboratory investigating how innate immune cells drive inflammation in neurological diseases. By integrating epigenetics, immunometabolism, and functional genomics with disease models, we study microglia dysfunction in multiple sclerosis and Alzheimer's disease. Our goal is to discover fundamental mechanisms of pathogenic immune responses to inform the next generation of therapeutics to improve brain health."
+      },
+      "fieldEvidence": {
+        "labName": [
+          {
+            "requestedUrl": "https://mendiolalab.com/",
+            "sourceUrl": "https://mendiolalab.com/",
+            "observedAt": "2026-10-16T01:06:28+00:00",
+            "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+            "status": "verified",
+            "evidenceType": "document_heading",
+            "method": "reviewed_own_lab_name_declaration",
+            "evidence": "Mendiola Lab",
+            "headingTag": "h1"
+          }
+        ],
+        "description": [
+          {
+            "requestedUrl": "https://mendiolalab.com/",
+            "sourceUrl": "https://mendiolalab.com/",
+            "observedAt": "2026-10-16T01:06:28+00:00",
+            "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_own_lab_research_description",
+            "evidence": "We are a brain immunology research laboratory investigating how innate immune cells drive inflammation in neurological diseases. By integrating epigenetics, immunometabolism, and functional genomics with disease models, we study microglia dysfunction in multiple sclerosis and Alzheimer's disease. Our goal is to discover fundamental mechanisms of pathogenic immune responses to inform the next generation of therapeutics to improve brain health."
+          }
+        ]
+      },
+      "identityEvidence": [
+        {
+          "requestedUrl": "https://mendiolalab.com/",
+          "sourceUrl": "https://mendiolalab.com/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "method": "reviewed_own_lab_name_declaration",
+          "evidence": "Mendiola Lab",
+          "headingTag": "h1"
+        }
+      ],
+      "evidence": [
+        {
+          "requestedUrl": "https://mendiolalab.com/",
+          "sourceUrl": "https://mendiolalab.com/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "method": "reviewed_own_lab_name_declaration",
+          "evidence": "Mendiola Lab",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "https://mendiolalab.com/",
+          "sourceUrl": "https://mendiolalab.com/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "We are a brain immunology research laboratory investigating how innate immune cells drive inflammation in neurological diseases. By integrating epigenetics, immunometabolism, and functional genomics with disease models, we study microglia dysfunction in multiple sclerosis and Alzheimer's disease. Our goal is to discover fundamental mechanisms of pathogenic immune responses to inform the next generation of therapeutics to improve brain health."
+        }
+      ],
+      "reason": "The already established exact primary resource names Mendiola Lab in its own H1 and publishes this Research Vision paragraph. Replace only the generic navigation-derived label and description. Retain stable ID, original primary URI, Pharmacology source context, institution Unknown, old professor association, original record and evidence. No homepage alias, additional entity, PI claim, or binding of the separately captured Profiles individual is inferred.",
+      "documentLabName": "Mendiola Lab"
+    },
+    {
+      "labId": "ucsd-live-lab-54f0ca446d4665",
+      "originalLabRecord": {
+        "id": "ucsd-live-lab-54f0ca446d4665",
+        "labName": "The Lipomi Research Group",
+        "institution": "Unknown",
+        "department": "NanoEngineering",
+        "labWebsiteUrl": "https://www.lipomigroup.org/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+          "https://www.lipomigroup.org/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+              "observedAt": "2026-10-02T22:49:02+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "The Lipomi Research Group → https://www.lipomigroup.org/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+              "observedAt": "2026-10-02T22:49:02+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "The Lipomi Research Group → https://www.lipomigroup.org/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-nanoengineering-darren-lipomi"
+        ],
+        "relationshipScope": "institution_not_confirmed",
+        "relatedProfessorNames": [
+          "Darren Lipomi"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-02T23:55:30+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:49:02+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://www.lipomigroup.org/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T23:55:30+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://www.lipomigroup.org/",
+          "title": "Lipomi Research Group"
+        },
+        "unverifiedFields": [],
+        "appliedEvidencePatches": [
+          "d1460aa15943b153e36d4b2c1607578f80efe2d263f334a6673931dd191313bf"
+        ]
+      },
+      "originalLabRecordSha256": "e421088ace9b36a3df1166835bf377a64462401f2c8b202e713dca95d8c321d4",
+      "fields": {
+        "description": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester. We are a team of scientists and engineers interested in the overlap between three areas: energy, biomimetic materials and devices, and green chemistry and nanomanufacturing. We are interested in fundamental and applied studies that relate molecular and nanoscale structure to function, and in devices that incorporate new physical effects to solve real-world problems. What motivates us is the potential of new materials and new forms of old materials to produce and save energy, and to improve human well-being.",
+        "institution": "University of Rochester",
+        "department": "Chemical Engineering"
+      },
+      "fieldEvidence": {
+        "description": [
+          {
+            "requestedUrl": "https://www.lipomigroup.org/",
+            "sourceUrl": "https://www.lipomigroup.org/",
+            "observedAt": "2026-10-16T01:03:15+00:00",
+            "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_own_lab_research_description",
+            "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester. We are a team of scientists and engineers interested in the overlap between three areas: energy, biomimetic materials and devices, and green chemistry and nanomanufacturing. We are interested in fundamental and applied studies that relate molecular and nanoscale structure to function, and in devices that incorporate new physical effects to solve real-world problems. What motivates us is the potential of new materials and new forms of old materials to produce and save energy, and to improve human well-being."
+          }
+        ],
+        "institution": [
+          {
+            "requestedUrl": "https://www.lipomigroup.org/",
+            "sourceUrl": "https://www.lipomigroup.org/",
+            "observedAt": "2026-10-16T01:03:15+00:00",
+            "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_own_lab_group_affiliation",
+            "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester."
+          }
+        ],
+        "department": [
+          {
+            "requestedUrl": "https://www.lipomigroup.org/",
+            "sourceUrl": "https://www.lipomigroup.org/",
+            "observedAt": "2026-10-16T01:03:15+00:00",
+            "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_own_lab_group_affiliation",
+            "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester."
+          }
+        ]
+      },
+      "identityEvidence": [
+        {
+          "requestedUrl": "https://www.lipomigroup.org/",
+          "sourceUrl": "https://www.lipomigroup.org/",
+          "observedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "Lipomi Research Group"
+        }
+      ],
+      "evidence": [
+        {
+          "requestedUrl": "https://www.lipomigroup.org/",
+          "sourceUrl": "https://www.lipomigroup.org/",
+          "observedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "Lipomi Research Group"
+        },
+        {
+          "requestedUrl": "https://www.lipomigroup.org/",
+          "sourceUrl": "https://www.lipomigroup.org/",
+          "observedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_own_lab_group_affiliation",
+          "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester."
+        },
+        {
+          "requestedUrl": "https://www.lipomigroup.org/",
+          "sourceUrl": "https://www.lipomigroup.org/",
+          "observedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "method": "reviewed_own_lab_research_description",
+          "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester. We are a team of scientists and engineers interested in the overlap between three areas: energy, biomimetic materials and devices, and green chemistry and nanomanufacturing. We are interested in fundamental and applied studies that relate molecular and nanoscale structure to function, and in devices that incorporate new physical effects to solve real-world problems. What motivates us is the potential of new materials and new forms of old materials to produce and save energy, and to improve human well-being."
+        }
+      ],
+      "reason": "Use the named group’s own explicit paired department/institution statement and exact research introduction. Replace the old NanoEngineering routing context with the Department of Chemical Engineering as published on this dated own-group page, retaining the entire prior record and source context. The UCSD original faculty page independently names the group’s move and uses the longer Chemical and Sustainability Engineering department name; preserve that separately dated source wording without inventing a department equivalence. Darren Lipomi’s retained UCSD adjunct professor record is unchanged. No lab closure, professor departure or PI role is inferred.",
+      "groupAffiliationStatement": {
+        "requestedUrl": "https://www.lipomigroup.org/",
+        "sourceUrl": "https://www.lipomigroup.org/",
+        "observedAt": "2026-10-16T01:03:15+00:00",
+        "bodySha256": "9b4b2d33685939b414fb0fc3d1fbd1bd9d2c7acffa6ee5b8524c665c00a1dcaf",
+        "status": "verified",
+        "evidenceType": "main_text_quote",
+        "method": "reviewed_own_lab_group_affiliation",
+        "evidence": "Welcome to The Lipomi Research Group in the Department of Chemical Engineering at the University of Rochester."
+      }
+    }
+  ],
+  "lipomiOriginalCampusRecordContext": {
+    "professorId": "ucsd-nanoengineering-darren-lipomi",
+    "originalProfessorRecord": {
+      "id": "ucsd-nanoengineering-darren-lipomi",
+      "name": "Darren Lipomi",
+      "institution": "University of California San Diego",
+      "department": "NanoEngineering",
+      "officialProfileUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+      "personalWebsiteUrl": "Not found",
+      "email": "dlipomi@ucsd.edu",
+      "researchAreas": [],
+      "researchSummary": "Not found",
+      "googleScholarUrl": "Not found",
+      "labAffiliation": "The Lipomi Research Group",
+      "labAffiliationUrl": "https://www.lipomigroup.org/",
+      "recruitingStatus": "Unknown",
+      "recruitingEvidence": {
+        "text": "",
+        "url": ""
+      },
+      "sourceUrls": [
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "http://ne.ucsd.edu/fac",
+        "https://jacobsschool.ucsd.edu/faculty",
+        "https://jacobsschool.ucsd.edu/research/centers-institutes",
+        "https://jacobsschool.ucsd.edu/brochures",
+        "https://www.lipomigroup.org/",
+        "https://cne.ucsd.edu/fac",
+        "https://www.ratemyprofessors.com/search/professors/1079?q=Darren%20Lipomi"
+      ],
+      "lastVerified": "2026-05-18",
+      "legacyKind": "faculty",
+      "fieldEvidence": {
+        "name": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+            "observedAt": "2026-10-02T22:49:02+00:00",
+            "method": "official_profile_heading_identity",
+            "evidence": "Darren Lipomi",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-07T21:49:19+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-16T00:57:35+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          }
+        ],
+        "officialProfileUrl": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+            "observedAt": "2026-10-02T22:49:02+00:00",
+            "method": "official_profile_heading_identity",
+            "evidence": "Darren Lipomi",
+            "status": "verified"
+          }
+        ],
+        "labAffiliation": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+            "observedAt": "2026-10-02T22:49:02+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "The Lipomi Research Group → https://www.lipomigroup.org/",
+            "status": "verified"
+          }
+        ],
+        "labAffiliationUrl": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+            "observedAt": "2026-10-02T22:49:02+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "The Lipomi Research Group → https://www.lipomigroup.org/",
+            "status": "verified"
+          }
+        ],
+        "appointmentStatus": [
+          {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-07T21:49:19+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-16T00:57:35+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          }
+        ],
+        "ratings.rateMyProfessors": [
+          {
+            "sourceUrl": "https://www.ratemyprofessors.com/search/professors/1079?q=Darren%20Lipomi",
+            "observedAt": "2026-10-02T15:41:41-07:00",
+            "evidence": "Darren Lipomi; University of California San Diego; 4.7/5; 13 ratings",
+            "method": "name_and_ucsd_school_id_1079"
+          }
+        ]
+      },
+      "verification": {
+        "status": "source_checked",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "observedAt": "2026-10-02T22:49:02+00:00",
+        "identityMatched": true,
+        "identityEvidence": "Darren Lipomi",
+        "lastAttemptedAt": "2026-10-02T22:49:02+00:00",
+        "issues": [],
+        "fieldsVerified": [
+          "appointmentStatus",
+          "labAffiliation",
+          "labAffiliationUrl",
+          "name",
+          "officialProfileUrl",
+          "ratings.rateMyProfessors"
+        ],
+        "lastEvidenceAt": "2026-10-16T00:57:35+00:00"
+      },
+      "googleScholarSearchUrl": "https://scholar.google.com/scholar?q=Darren+Lipomi+UC+San+Diego",
+      "unverifiedFields": [
+        "email"
+      ],
+      "labAffiliations": [
+        {
+          "labId": "ucsd-live-lab-54f0ca446d4665",
+          "labName": "The Lipomi Research Group",
+          "url": "https://www.lipomigroup.org/",
+          "relationship": "faculty_lab_link",
+          "relationshipScope": "institution_not_confirmed",
+          "fieldEvidence": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+              "observedAt": "2026-10-02T22:49:02+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "The Lipomi Research Group → https://www.lipomigroup.org/",
+              "status": "verified"
+            }
+          ]
+        }
+      ],
+      "appointmentStatus": "adjunct",
+      "directoryListings": [
+        {
+          "name": "Darren Lipomi",
+          "department": "NanoEngineering",
+          "listedRole": "Adjunct Professor",
+          "appointmentStatus": "adjunct",
+          "directorySection": "Faculty",
+          "sourceUrl": "https://cne.ucsd.edu/fac",
+          "observedAt": "2026-10-07T21:49:19+00:00",
+          "evidence": {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-07T21:49:19+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          },
+          "identityMatchMethod": "same_individual_profile",
+          "identityMatchConfidence": "high",
+          "namedLinkUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345"
+        },
+        {
+          "name": "Darren Lipomi",
+          "department": "NanoEngineering",
+          "listedRole": "Adjunct Professor",
+          "appointmentStatus": "adjunct",
+          "directorySection": "Faculty",
+          "sourceUrl": "https://cne.ucsd.edu/fac",
+          "observedAt": "2026-10-16T00:57:35+00:00",
+          "evidence": {
+            "sourceUrl": "https://cne.ucsd.edu/fac",
+            "observedAt": "2026-10-16T00:57:35+00:00",
+            "method": "official_faculty_directory_card",
+            "evidence": "Faculty | Darren Lipomi | Adjunct Professor",
+            "status": "verified"
+          },
+          "identityMatchMethod": "same_individual_profile",
+          "identityMatchConfidence": "high",
+          "namedLinkUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345"
+        }
+      ],
+      "departmentAffiliations": [
+        "NanoEngineering"
+      ],
+      "teaching": {
+        "status": "not_checked",
+        "lastChecked": null,
+        "courses": []
+      },
+      "ratings": {
+        "rateMyPI": {
+          "platform": "PI Review",
+          "status": "no_reviews",
+          "score": null,
+          "scale": 5,
+          "reviewCount": 0,
+          "sourceUrl": "https://pi-review.com/pis/2716",
+          "observedAt": "2026-10-02T15:48:01-07:00",
+          "matchedName": "Darren J. Lipomi",
+          "matchedInstitution": "University of California San Diego",
+          "matchedDepartment": "Nanoengineering",
+          "matchMethod": "name_and_ucsd_directory_158",
+          "latestReviewAt": null,
+          "evidenceUrl": "https://pi-review.com/universities/158?page=43",
+          "method": "public_directory_aggregate",
+          "note": "PI Review is a separate mentoring-review platform; it is not ratemypi.com or a teaching score."
+        },
+        "rateMyProfessors": {
+          "platform": "Rate My Professors",
+          "status": "verified",
+          "score": 4.7,
+          "scale": 5,
+          "reviewCount": 13,
+          "sourceUrl": "https://www.ratemyprofessors.com/professor/1942498",
+          "matchedName": "Darren Lipomi",
+          "matchedInstitution": "University of California San Diego",
+          "matchedDepartment": "Engineering",
+          "matchMethod": "name_and_ucsd_school_id_1079",
+          "difficulty": 3.5,
+          "wouldTakeAgainPercent": 90.9,
+          "latestReviewAt": null,
+          "observedAt": "2026-10-02T15:41:41-07:00",
+          "evidenceUrl": "https://www.ratemyprofessors.com/search/professors/1079?q=Darren%20Lipomi",
+          "method": "public_search_embedded_aggregate"
+        }
+      },
+      "appliedEvidencePatches": [
+        "7dadf0e921bcdc98bd2935fdf5d2a35845ea0b76d43cedee6ee3cb722313509b",
+        "51b8bbda7ac1d3e9e3b2f16e499a78c4179b892836996c7dbbac899e2ebf8d8c",
+        "68e15f989c5017f4ab4000b6bb1748df356ed1fb6cab0b77f42d6f931f8c0c21"
+      ]
+    },
+    "originalProfessorRecordSha256": "a30f60379b49cea2aaa078f8c10e3309ad8994606cb642540e5c0f9d34921e13",
+    "evidence": [
+      {
+        "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "observedAt": "2026-10-16T01:01:07+00:00",
+        "bodySha256": "0cd7fd273724c0db270d7592d78663ff9347766c69a5641e911131350d8bc56f",
+        "status": "verified",
+        "evidenceType": "main_text_quote",
+        "method": "reviewed_own_lab_research_description",
+        "evidence": "Darren Lipomi Adjunct Professor, NENG"
+      },
+      {
+        "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=345",
+        "observedAt": "2026-10-16T01:01:07+00:00",
+        "bodySha256": "0cd7fd273724c0db270d7592d78663ff9347766c69a5641e911131350d8bc56f",
+        "status": "verified",
+        "evidenceType": "main_text_quote",
+        "method": "reviewed_own_lab_research_description",
+        "evidence": "Darren Lipomi and The Lipomi Research Group have moved to the Department of Chemical and Sustainability Engineering at the University of Rochester."
+      }
+    ],
+    "departmentWordingDifference": {
+      "ownGroup": "Chemical Engineering",
+      "originalCampusGroupMove": "Chemical and Sustainability Engineering"
+    },
+    "professorAppointmentChanged": false
+  },
+  "prior114OwnMetadataRowsPreserved": true,
+  "newScientificEntities": 0,
+  "newAliases": 0,
+  "newSourceAttempts": 0,
+  "wireRequests": 0,
+  "remainingGoodBusinessReview": {
+    "labId": "ucsd-live-lab-4ca88510c88c31",
+    "actualPublishedRequest": "http://www.goodbusinesslab.org/",
+    "actualFinal": "https://goodbusinesslab.org/",
+    "observedType": "global NGO",
+    "reason": "The named NGO homepage and original personal-publisher link are captured. A separate organization/resource scope review is still required: do not convert a paper abstract into the organization description, or infer campus lab ownership from a professor co-founder."
+  }
+}

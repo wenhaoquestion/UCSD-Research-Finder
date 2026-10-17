@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-16T13:28:05.846319+00:00",
+  "isFinalIdentityReview": false,
+  "wireRequests": 2,
+  "appliedToConfiguration": true,
+  "liveQueueWritten": false,
+  "previousSourceContexts": 632,
+  "addedSourceContexts": 2,
+  "configuredSourceContexts": 634,
+  "originalPrefixUnchanged": true,
+  "scopePolicyPassed": true,
+  "attemptReceiptsAndRetryBoundsUnchanged": true,
+  "requests": [
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+      "department": "Bioengineering",
+      "kind": "profile_identity_review",
+      "professorId": "ucsd-bioengineering-kevin-king",
+      "sourceUrl": "https://be.ucsd.edu/faculty",
+      "depth": 2,
+      "identityDepth": 2,
+      "discoveryMethod": "exact_original_record_uri_for_subject_label_review",
+      "identitySourcePlan": "faculty-profile-subject-source-plan-20261016.json",
+      "scopeNote": "Exact unchanged original individual URI. Actual subject and scoped contacts must be reviewed before any alias/name/department change. No inferred URI equivalence."
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kevin.king",
+      "department": "Medicine",
+      "kind": "profile_identity_review",
+      "professorId": "ucsd-medicine-kevin-robert-king",
+      "sourceUrl": "https://be.ucsd.edu/faculty",
+      "depth": 2,
+      "identityDepth": 2,
+      "discoveryMethod": "exact_original_record_uri_for_subject_label_review",
+      "identitySourcePlan": "faculty-profile-subject-source-plan-20261016.json",
+      "scopeNote": "Exact unchanged original individual URI. Actual subject and scoped contacts must be reviewed before any alias/name/department change. No inferred URI equivalence."
+    }
+  ],
+  "sourceQueueSha256": "086729595129cafdf06705f59511d046af28964e4c4456fbf4bea9f0393eabf0",
+  "sourceCardInspection": ".cache/coverage-20261016/named-roster-binding-preview/next-source-card-inspection.json",
+  "purpose": "Retrieve actual retained individual sources for King Research/Kevin King/Kevin Robert King review. Catalog K. King remains a separate initial-only unresolved observation; no merge follows from initials.",
+  "targetedSourceCheck": {
+    "wireRequests": 2,
+    "captures": [
+      {
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+        "observedAt": "2026-10-16T13:28:28+00:00",
+        "status": "fetch_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:40+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112260.9003782,
+          "error": "",
+          "status": "checked"
+        },
+        "httpStatus": 0,
+        "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+        "contentType": "",
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+        "retryAfterEpoch": 1792157368.059457,
+        "retrievedEpoch": 1792157308.060501
+      },
+      {
+        "sourceUrl": "https://profiles.ucsd.edu/kevin.king",
+        "observedAt": "2026-10-16T13:28:33+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://profiles.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:01:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112489.452821,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://profiles.ucsd.edu/kevin.king",
+        "contentType": "text/html; charset=utf-8",
+        "error": "",
+        "sha256": "3913f2e1ae3276e150bbc50888b03fbf70617db8123faa780eb1c18cd84f7861",
+        "retrievedEpoch": 1792157313.763777
+      }
+    ],
+    "sharedGateDirectory": "/tmp/ucsd-research-network-20261016",
+    "liveQueueWritten": false,
+    "newOnlyImports": [
+      {
+        "path": ".cache/coverage-20261016/responses/1afffc6898a9414cb2aec869de2e5bdad9356a57e4e10161a8ae69c29915b8fe.json",
+        "status": "new_only_import",
+        "sha256": "a7da69fbe0d36a70121517975f409ffb40d6ac993fa7d1ae44d25613ed878026"
+      },
+      {
+        "path": ".cache/coverage-20261016/responses/1afffc6898a9414cb2aec869de2e5bdad9356a57e4e10161a8ae69c29915b8fe.html",
+        "status": "new_only_import",
+        "sha256": "3913f2e1ae3276e150bbc50888b03fbf70617db8123faa780eb1c18cd84f7861"
+      }
+    ],
+    "existingCaptureFilesOverwritten": false,
+    "failuresRetainedAt": ".cache/coverage-20261016/subject-name-review-preview/targeted-captures.json",
+    "collectorCanReuseSuccessfulExactUriCaptureAtNaturalBoundary": true
+  },
+  "planningWireRequests": 0,
+  "naturalCollectorActivation": {
+    "childPid": 24588,
+    "queueCheckpointAt": "2026-10-16T13:41:33+00:00",
+    "configuredContexts": 634,
+    "healthyChildNotRestarted": true,
+    "sourceCaptures": [
+      {
+        "requestedUrl": "https://profiles.ucsd.edu/kevin.king",
+        "state": "done",
+        "fetch": {
+          "sourceUrl": "https://profiles.ucsd.edu/kevin.king",
+          "observedAt": "2026-10-16T13:28:33+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://profiles.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:01:29+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112489.452821,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/kevin.king",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "3913f2e1ae3276e150bbc50888b03fbf70617db8123faa780eb1c18cd84f7861",
+          "retrievedEpoch": 1792157313.763777
+        }
+      },
+      {
+        "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+        "state": "done",
+        "fetch": {
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+          "observedAt": "2026-10-16T13:37:50+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9003782,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=450",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "c82068d75ddb6672298868fa1f15092d42afea4cb644ac86aa9a9d31f3a42077",
+          "retrievedEpoch": 1792157870.313845
+        }
+      }
+    ],
+    "meaning": "Both exact original source requests loaded at the next natural child boundary. These positive captures do not by themselves merge the separate Kevin Robert King or initial-only K. King records."
+  }
+}

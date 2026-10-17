@@ -93,10 +93,11 @@ class QualityTests(unittest.TestCase):
         self.assertFalse(valid_url("https://ucsd.edu/two words"))
         self.assertTrue(valid_url("https://ucsd.edu/two%20words"))
 
-    def test_url_identity_keeps_person_queries_but_removes_tracking(self):
-        self.assertEqual(url_key("https://lab.ucsd.edu/index.html?utm_source=a"), url_key("http://lab.ucsd.edu/"))
-        self.assertEqual(url_key("http://muscle.ucsd.edu /"), url_key("https://muscle.ucsd.edu/"))
-        self.assertEqual(url_key("http://ucsd.edu/two words"), url_key("http://ucsd.edu/two%20words"))
+    def test_resource_identity_preserves_protocol_path_and_query(self):
+        self.assertNotEqual(url_key("https://lab.ucsd.edu/index.html?utm_source=a"), url_key("http://lab.ucsd.edu/"))
+        self.assertEqual(url_key("http://muscle.ucsd.edu /"), '')
+        self.assertEqual(url_key("http://ucsd.edu/two words"), '')
+        self.assertNotEqual(url_key("https://lab.ucsd.edu/?utm_source=a"), url_key("https://lab.ucsd.edu/"))
         self.assertNotEqual(url_key("https://ucsd.edu/profile?id=1"), url_key("https://ucsd.edu/profile?id=2"))
 
     def test_research_tags_require_sourced_paragraph_and_whole_phrases(self):
@@ -219,9 +220,9 @@ class QualityTests(unittest.TestCase):
         self.assertEqual(p["labAffiliations"], [])
         self.assertEqual(p["labAffiliationUrl"], "Not found")
 
-    def test_full_build_normalizes_recaptured_lab_urls_before_classification(self):
-        # A normalized canonical record can be overwritten by its raw capture
-        # during merge. Exercise that complete ordering, not reject_nonlabs alone.
+    def test_full_build_retains_invalid_recaptured_urls_without_repairing_relationships(self):
+        # A source's invalid URI must not overwrite an existing valid resource,
+        # and the original association remains inspectable without a guessed link.
         urls = {
             "sebat": "https://sebatlab.org /",
             "muscle": "http://muscle.ucsd.edu /",
@@ -252,8 +253,9 @@ class QualityTests(unittest.TestCase):
         self.assertEqual(quarantine[0]["record"]["labWebsiteUrl"], urls["damaged"])
         p = result["professors"][0]
         self.assertEqual(p["labAffiliationUrl"], "https://sebatlab.org/")
-        self.assertEqual({a["labId"] for a in p["labAffiliations"]}, {"sebat", "muscle", "optics"})
-        self.assertTrue(all(a["url"] == encode_url(urls[a["labId"]]) for a in p["labAffiliations"]))
+        self.assertEqual(p["labAffiliations"], [])
+        self.assertEqual({a["labId"] for a in p["unresolvedLabLinks"]}, {"sebat", "muscle", "optics"})
+        self.assertTrue(all(a["url"] == urls[a["labId"]] for a in p["unresolvedLabLinks"]))
         self.assertEqual(capture, original_capture)
 
     def test_catalog_duplicate_merge_retains_alias_and_sources(self):
@@ -350,7 +352,7 @@ class LabExpansionTests(unittest.TestCase):
         d = atlas()
         d["labs"] = [{"id": "old", "labName": "Old Lab", "labWebsiteUrl": "https://old.ucsd.edu/", "sourceUrls": [],
                       "alternateWebsiteUrls": ["https://sites.ucsd.edu/old-lab/"]}]
-        for url in ["https://old.ucsd.edu/index.html", "https://www.sites.ucsd.edu/old-lab"]:
+        for url in ["https://old.ucsd.edu/", "https://sites.ucsd.edu/old-lab/"]:
             with self.assertRaisesRegex(ValueError, "duplicates old"):
                 apply_lab_expansion(copy.deepcopy(d), {"additions": [self.addition(url=url)]})
 

@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T15:21:17.524461+00:00",
+  "isIdentityMergeAuthorization": false,
+  "sourceQueueSha256": "62bcdceeeec55135159bde0c46286d170659dd31132c0e64fb16617ffbb59bb9",
+  "candidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e",
+  "pendingExistingResourceReviews": 0,
+  "lead": {
+    "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+    "namedOwnRootCapture": {
+      "sourceUrl": "https://emerald.ucsd.edu/",
+      "observedAt": "2026-10-17T14:22:56+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T14:22:55+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792246975.817257,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://emerald.ucsd.edu/",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+      "retrievedEpoch": 1792246976.785378
+    },
+    "ownMembersCapture": {
+      "sourceUrl": "https://emerald.ucsd.edu/members",
+      "observedAt": "2026-10-17T14:24:09+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-17T14:22:55+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792246975.817257,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://emerald.ucsd.edu/members",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+      "retrievedEpoch": 1792247049.36974
+    },
+    "groupNameAsPublished": "Ultrafast and Nanoscale Optics Group",
+    "piNameAsPublished": "Prof. Yeshaiahu Fainman",
+    "originalPublishedRootProof": {
+      "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+      "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+      "observedAt": "2026-10-16T05:39:19+00:00",
+      "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+      "evidenceType": "named_link",
+      "evidence": "Website -> https://emerald.ucsd.edu/",
+      "method": "reviewed_literal_named_own_publisher_resource",
+      "status": "verified",
+      "linkText": "Website",
+      "linkUrl": "https://emerald.ucsd.edu/"
+    },
+    "rootMembersLiteralLinkProof": {
+      "requestedUrl": "https://emerald.ucsd.edu/",
+      "sourceUrl": "https://emerald.ucsd.edu/",
+      "observedAt": "2026-10-17T14:22:56+00:00",
+      "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+      "evidenceType": "html_attribute",
+      "elementTag": "a",
+      "attributeName": "href",
+      "attributeValue": "/members",
+      "selectorAttributes": {
+        "data-url": "/members",
+        "role": "link"
+      },
+      "evidence": "a[href] = /members",
+      "linkTextAsPublished": "Members",
+      "linkUrl": "https://emerald.ucsd.edu/members",
+      "method": "literal_named_own_lab_members_navigation",
+      "status": "verified"
+    },
+    "scientificRecordOrAliasAccepted": true,
+    "next": "The original own lab homepage remains selected. The separate scientific person consolidation is now verified and applied, with the original Jacobs primary and published initial preserved. The lab PI remains source-reported only; no canonical person edge was inferred.",
+    "ownRootTitleEvidence": {
+      "requestedUrl": "https://emerald.ucsd.edu/",
+      "sourceUrl": "https://emerald.ucsd.edu/",
+      "observedAt": "2026-10-17T14:22:56+00:00",
+      "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+      "evidenceType": "document_title",
+      "evidence": "Ultrafast and Nanoscale Optics Group",
+      "method": "literal_named_ultrafast_own_resource_review_lead",
+      "status": "verified"
+    },
+    "ownGroupHeadingEvidence": {
+      "requestedUrl": "https://emerald.ucsd.edu/",
+      "sourceUrl": "https://emerald.ucsd.edu/",
+      "observedAt": "2026-10-17T14:22:56+00:00",
+      "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+      "evidenceType": "document_heading",
+      "evidence": "Ultrafast and Nanoscale Optics Group at UC San Diego",
+      "method": "literal_named_ultrafast_own_resource_review_lead",
+      "status": "verified",
+      "headingTag": "h1"
+    },
+    "ownMembersTitleEvidence": {
+      "requestedUrl": "https://emerald.ucsd.edu/members",
+      "sourceUrl": "https://emerald.ucsd.edu/members",
+      "observedAt": "2026-10-17T14:24:09+00:00",
+      "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+      "evidenceType": "document_title",
+      "evidence": "Ultrafast and Nanoscale Optics Group - Members",
+      "method": "literal_named_ultrafast_own_resource_review_lead",
+      "status": "verified"
+    },
+    "ownMemberPiStatementEvidence": {
+      "requestedUrl": "https://emerald.ucsd.edu/members",
+      "sourceUrl": "https://emerald.ucsd.edu/members",
+      "observedAt": "2026-10-17T14:24:09+00:00",
+      "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+      "evidenceType": "main_text_quote",
+      "evidence": "Principal Investigator Prof. Yeshaiahu Fainman",
+      "method": "literal_named_ultrafast_own_resource_review_lead",
+      "status": "verified"
+    },
+    "existingLabResourceAliasAccepted": true,
+    "newScientificRecords": 0
+  },
+  "reusedOriginalJacobsCapture": {
+    "capture": {
+      "sourceUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+      "observedAt": "2026-10-16T05:39:19+00:00",
+      "status": "ok",
+      "redirects": [
+        {
+          "from": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "to": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "to": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:40+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112260.9003782,
+        "error": "",
+        "status": "checked"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+      "retrievedEpoch": 1792129159.005022
+    },
+    "subjectEvidence": {
+      "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+      "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+      "observedAt": "2026-10-16T05:39:19+00:00",
+      "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+      "evidenceType": "document_heading",
+      "headingTag": "h3",
+      "evidence": "Y. Shaya Fainman",
+      "method": "reused_actual_original_jacobs_profile_capture",
+      "status": "verified"
+    },
+    "publicEmailEvidence": {
+      "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+      "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+      "observedAt": "2026-10-16T05:39:19+00:00",
+      "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+      "evidenceType": "main_text_quote",
+      "evidence": "Email: yfainman@ucsd.edu",
+      "method": "reused_actual_original_jacobs_profile_capture",
+      "status": "verified"
+    },
+    "observation": "The exact original canonical primary has no separate request key,but its successful body is already captured through the legacy Jacobs HTTP request andactual301/301 chain. The body was reused,not re-requested or re-dated."
+  },
+  "scope": "These independently published positive own group resources are a lead for the existing lab ID. Preserve the previous exactindex.html404 andthe oldcanonical lab/person records;no guessedURLrepair,automatic resource alias,PI identity expansion orscientificperson merge.",
+  "previousLeadObservations": [
+    {
+      "schemaVersion": 1,
+      "at": "2026-10-17T14:37:54.824128+00:00",
+      "isIdentityMergeAuthorization": false,
+      "sourceQueueSha256": "62bcdceeeec55135159bde0c46286d170659dd31132c0e64fb16617ffbb59bb9",
+      "candidateAtlasSha256": "19f92bfe741bc58d9eb4d129e24e1dd8fe89cf49e6f39f5836964c4d506c7012",
+      "pendingExistingResourceReviews": 1,
+      "lead": {
+        "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+        "namedOwnRootCapture": {
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "retrievedEpoch": 1792246976.785378
+        },
+        "ownMembersCapture": {
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/members",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "retrievedEpoch": 1792247049.36974
+        },
+        "groupNameAsPublished": "Ultrafast and Nanoscale Optics Group",
+        "piNameAsPublished": "Prof. Yeshaiahu Fainman",
+        "originalPublishedRootProof": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "named_link",
+          "evidence": "Website -> https://emerald.ucsd.edu/",
+          "method": "reviewed_literal_named_own_publisher_resource",
+          "status": "verified",
+          "linkText": "Website",
+          "linkUrl": "https://emerald.ucsd.edu/"
+        },
+        "rootMembersLiteralLinkProof": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "html_attribute",
+          "elementTag": "a",
+          "attributeName": "href",
+          "attributeValue": "/members",
+          "selectorAttributes": {
+            "data-url": "/members",
+            "role": "link"
+          },
+          "evidence": "a[href] = /members",
+          "linkTextAsPublished": "Members",
+          "linkUrl": "https://emerald.ucsd.edu/members",
+          "method": "literal_named_own_lab_members_navigation",
+          "status": "verified"
+        },
+        "scientificRecordOrAliasAccepted": false,
+        "next": "Review the original lab resource/campus publisher to establish continuity before upgrading the old failed ECE resource. New root is independently published by the original Jacobs faculty profile. The earlierindex.html404 remains an exact dated failure;no guessed URLrepair orautomatic lab alias.",
+        "ownRootTitleEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "document_title",
+          "evidence": "Ultrafast and Nanoscale Optics Group",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        },
+        "ownGroupHeadingEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "document_heading",
+          "evidence": "Ultrafast and Nanoscale Optics Group at UC San Diego",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified",
+          "headingTag": "h1"
+        },
+        "ownMembersTitleEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/members",
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "evidenceType": "document_title",
+          "evidence": "Ultrafast and Nanoscale Optics Group - Members",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        },
+        "ownMemberPiStatementEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/members",
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "evidenceType": "main_text_quote",
+          "evidence": "Principal Investigator Prof. Yeshaiahu Fainman",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        }
+      },
+      "reusedOriginalJacobsCapture": {
+        "capture": {
+          "sourceUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+              "to": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "httpStatus": 301
+            },
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "to": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9003782,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "retrievedEpoch": 1792129159.005022
+        },
+        "subjectEvidence": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Y. Shaya Fainman",
+          "method": "reused_actual_original_jacobs_profile_capture",
+          "status": "verified"
+        },
+        "publicEmailEvidence": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "main_text_quote",
+          "evidence": "Email: yfainman@ucsd.edu",
+          "method": "reused_actual_original_jacobs_profile_capture",
+          "status": "verified"
+        },
+        "observation": "The exact original canonical primary has no separate request key,but its successful body is already captured through the legacy Jacobs HTTP request andactual301/301 chain. The body was reused,not re-requested or re-dated."
+      },
+      "scope": "These independently published positive own group resources are a lead for the existing lab ID. Preserve the previous exactindex.html404 andthe oldcanonical lab/person records;no guessedURLrepair,automatic resource alias,PI identity expansion orscientificperson merge."
+    },
+    {
+      "schemaVersion": 1,
+      "at": "2026-10-17T14:59:24.588236+00:00",
+      "isIdentityMergeAuthorization": false,
+      "sourceQueueSha256": "62bcdceeeec55135159bde0c46286d170659dd31132c0e64fb16617ffbb59bb9",
+      "candidateAtlasSha256": "8b0e8602c0f11fb597d56e57821a6763c425e0ba0516bd7c790465da71c1e18b",
+      "pendingExistingResourceReviews": 0,
+      "lead": {
+        "existingLabIdContextOnly": "ucsd-live-lab-bbf8c0855a7019",
+        "namedOwnRootCapture": {
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "retrievedEpoch": 1792246976.785378
+        },
+        "ownMembersCapture": {
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://emerald.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-17T14:22:55+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792246975.817257,
+            "error": "",
+            "redirects": [],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://emerald.ucsd.edu/members",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "retrievedEpoch": 1792247049.36974
+        },
+        "groupNameAsPublished": "Ultrafast and Nanoscale Optics Group",
+        "piNameAsPublished": "Prof. Yeshaiahu Fainman",
+        "originalPublishedRootProof": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "named_link",
+          "evidence": "Website -> https://emerald.ucsd.edu/",
+          "method": "reviewed_literal_named_own_publisher_resource",
+          "status": "verified",
+          "linkText": "Website",
+          "linkUrl": "https://emerald.ucsd.edu/"
+        },
+        "rootMembersLiteralLinkProof": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "html_attribute",
+          "elementTag": "a",
+          "attributeName": "href",
+          "attributeValue": "/members",
+          "selectorAttributes": {
+            "data-url": "/members",
+            "role": "link"
+          },
+          "evidence": "a[href] = /members",
+          "linkTextAsPublished": "Members",
+          "linkUrl": "https://emerald.ucsd.edu/members",
+          "method": "literal_named_own_lab_members_navigation",
+          "status": "verified"
+        },
+        "scientificRecordOrAliasAccepted": true,
+        "next": "The existing lab’s own root is now selected with its original stableID. Scientist identity consolidation remains a separate pending review;no canonical PI person edge was inferred.",
+        "ownRootTitleEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "document_title",
+          "evidence": "Ultrafast and Nanoscale Optics Group",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        },
+        "ownGroupHeadingEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-17T14:22:56+00:00",
+          "bodySha256": "440106e12c297e1472129b90c99ac240f4ce6031b0f8ada1ff01a6e324c7ad80",
+          "evidenceType": "document_heading",
+          "evidence": "Ultrafast and Nanoscale Optics Group at UC San Diego",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified",
+          "headingTag": "h1"
+        },
+        "ownMembersTitleEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/members",
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "evidenceType": "document_title",
+          "evidence": "Ultrafast and Nanoscale Optics Group - Members",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        },
+        "ownMemberPiStatementEvidence": {
+          "requestedUrl": "https://emerald.ucsd.edu/members",
+          "sourceUrl": "https://emerald.ucsd.edu/members",
+          "observedAt": "2026-10-17T14:24:09+00:00",
+          "bodySha256": "48a40aa3c0a6ad87357f632a1099f5b2510d44887f710fb5d7efd9ad31c6394a",
+          "evidenceType": "main_text_quote",
+          "evidence": "Principal Investigator Prof. Yeshaiahu Fainman",
+          "method": "literal_named_ultrafast_own_resource_review_lead",
+          "status": "verified"
+        },
+        "existingLabResourceAliasAccepted": true,
+        "newScientificRecords": 0
+      },
+      "reusedOriginalJacobsCapture": {
+        "capture": {
+          "sourceUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+              "to": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "httpStatus": 301
+            },
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "to": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9003782,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "retrievedEpoch": 1792129159.005022
+        },
+        "subjectEvidence": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "document_heading",
+          "headingTag": "h3",
+          "evidence": "Y. Shaya Fainman",
+          "method": "reused_actual_original_jacobs_profile_capture",
+          "status": "verified"
+        },
+        "publicEmailEvidence": {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=32",
+          "observedAt": "2026-10-16T05:39:19+00:00",
+          "bodySha256": "abbc809bcbd8bf05461091fd5cc8c1a396a919ab3721e0e3dc4195592f441aa8",
+          "evidenceType": "main_text_quote",
+          "evidence": "Email: yfainman@ucsd.edu",
+          "method": "reused_actual_original_jacobs_profile_capture",
+          "status": "verified"
+        },
+        "observation": "The exact original canonical primary has no separate request key,but its successful body is already captured through the legacy Jacobs HTTP request andactual301/301 chain. The body was reused,not re-requested or re-dated."
+      },
+      "scope": "These independently published positive own group resources are a lead for the existing lab ID. Preserve the previous exactindex.html404 andthe oldcanonical lab/person records;no guessedURLrepair,automatic resource alias,PI identity expansion orscientificperson merge.",
+      "status": "verified_existing_own_resource_selected",
+      "resolvedResourceReview": {
+        "path": "data/ucsd/lab-ultrafast-owned-resource-review-20261016.json",
+        "sha256": "1aa47717f1fd8b8f07bb8ed836c02defaf8b1995d6c1ed52c8b6cd831a119dba",
+        "existingLabId": "ucsd-live-lab-bbf8c0855a7019",
+        "newPreferredHomepage": "https://emerald.ucsd.edu/",
+        "oldFailedPrimaryAndCheckPreserved": true,
+        "newExactOwnedResourceAliases": 1,
+        "newScientificRecords": 0,
+        "newPiCanonicalBindings": 0
+      }
+    }
+  ],
+  "status": "verified_existing_own_resource_selected",
+  "resolvedResourceReview": {
+    "path": "data/ucsd/lab-ultrafast-owned-resource-review-20261016.json",
+    "sha256": "1aa47717f1fd8b8f07bb8ed836c02defaf8b1995d6c1ed52c8b6cd831a119dba",
+    "existingLabId": "ucsd-live-lab-bbf8c0855a7019",
+    "newPreferredHomepage": "https://emerald.ucsd.edu/",
+    "oldFailedPrimaryAndCheckPreserved": true,
+    "newExactOwnedResourceAliases": 1,
+    "newScientificRecords": 0,
+    "newPiCanonicalBindings": 0
+  },
+  "resolvedSeparateScientistReview": {
+    "path": "data/ucsd/faculty-fainman-person-identity-review-20261016.json",
+    "sha256": "1e2c29d88f93b189a63923b653860182e4ce65db07e54347de8416a4f242bfae",
+    "retiredPersonId": "ucsd-electrical-and-computer-engineering-shaya-fainman",
+    "retainedPersonId": "ucsd-electrical-and-computer-engineering-y-shaya-fainman",
+    "newScientificPersonMerges": 1,
+    "newCanonicalPiBindings": 0
+  }
+}

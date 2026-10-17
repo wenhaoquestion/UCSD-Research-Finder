@@ -1,0 +1,6502 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-17T13:53:43+00:00",
+  "scope": "Resumable, public-only UCSD directory discovery and destination checks.\n\nDiscovery is an audit artifact, not permission to assert a PI or publish a lab.\nThe finite scope is the 59 saved departments, their explicitly linked faculty /\nresearch / lab directories (two discovery hops), existing lab destinations,\nprior unresolved candidates, and public person URLs in the advertised official\nProfiles sitemap. Sitemap entries are candidates, not a faculty roster. Only\nexplicit appointment-table titles qualify new faculty. No guessed URL templates,\nsearch forms, or login flows.\nAll network hops, including robots and redirects, share a host clock; Profiles\nhas a hard minimum of ten seconds. Redirects never bypass target robots.\n",
+  "counts": {
+    "done": 17201,
+    "unresolved": 873,
+    "scope_excluded": 327,
+    "retained_prior_evidence": 1528
+  },
+  "hostScheduling": {
+    "at": "2026-10-17T13:53:35+00:00",
+    "deferredHosts": {},
+    "policy": "Read-only advisory clock check; no attempt or source observation. Actual robots, redirects and wire operations still acquire the shared host gate."
+  },
+  "sourceStatuses": {
+    "ok": 17201,
+    "http_error": 569,
+    "authentication_required": 8,
+    "robots_unavailable": 216,
+    "robots_denied": 53,
+    "fetch_error": 25,
+    "retained_prior_evidence": 1528,
+    "unsupported_content": 2
+  },
+  "scopeExcludedTransportStatuses": {
+    "ok": 255,
+    "robots_unavailable": 10,
+    "robots_denied": 4,
+    "http_error": 21,
+    "fetch_error": 1,
+    "authentication_required": 1,
+    "not_requested": 35
+  },
+  "labCandidates": 846,
+  "centersAndInstitutes": 465,
+  "facultyListings": 9804,
+  "departments": {
+    "Anesthesiology": {
+      "done": 46,
+      "unresolved": 5,
+      "scope_excluded": 1
+    },
+    "Anthropology": {
+      "done": 70,
+      "unresolved": 2
+    },
+    "Astronomy and Astrophysics": {
+      "done": 33,
+      "scope_excluded": 6,
+      "unresolved": 1
+    },
+    "Biochemistry and Molecular Biophysics": {
+      "done": 146,
+      "unresolved": 21,
+      "scope_excluded": 7
+    },
+    "Bioengineering": {
+      "done": 478,
+      "unresolved": 49,
+      "scope_excluded": 31,
+      "retained_prior_evidence": 116
+    },
+    "Biological Sciences": {
+      "done": 540,
+      "unresolved": 41,
+      "scope_excluded": 62,
+      "retained_prior_evidence": 8
+    },
+    "Cardiology": {
+      "done": 30,
+      "unresolved": 1
+    },
+    "Cell and Developmental Biology": {
+      "done": 12
+    },
+    "Cellular & Molecular Medicine": {
+      "done": 48,
+      "unresolved": 14,
+      "scope_excluded": 5
+    },
+    "Chemistry": {
+      "done": 2
+    },
+    "Chemistry & Biochemistry": {
+      "done": 283,
+      "unresolved": 73,
+      "scope_excluded": 7
+    },
+    "Cognitive Science": {
+      "done": 107,
+      "unresolved": 11,
+      "scope_excluded": 1,
+      "retained_prior_evidence": 5
+    },
+    "Communication": {
+      "done": 117,
+      "unresolved": 9,
+      "retained_prior_evidence": 14,
+      "scope_excluded": 4
+    },
+    "Computer Science and Engineering": {
+      "done": 387,
+      "unresolved": 21,
+      "scope_excluded": 6,
+      "retained_prior_evidence": 244
+    },
+    "Dermatology": {
+      "done": 26,
+      "unresolved": 1,
+      "retained_prior_evidence": 9,
+      "scope_excluded": 3
+    },
+    "Ecology, Behavior and Evolution": {
+      "done": 12
+    },
+    "Economics": {
+      "done": 84
+    },
+    "Education Studies": {
+      "done": 40,
+      "unresolved": 2,
+      "retained_prior_evidence": 8,
+      "scope_excluded": 6
+    },
+    "Electrical and Computer Engineering": {
+      "done": 346,
+      "unresolved": 25,
+      "retained_prior_evidence": 42,
+      "scope_excluded": 15
+    },
+    "Emergency Medicine": {
+      "done": 24,
+      "unresolved": 3,
+      "retained_prior_evidence": 55
+    },
+    "Ethnic Studies": {
+      "done": 31,
+      "scope_excluded": 1,
+      "unresolved": 1
+    },
+    "Family Medicine": {
+      "done": 25,
+      "retained_prior_evidence": 4
+    },
+    "Global Policy and Strategy": {
+      "done": 43,
+      "unresolved": 1
+    },
+    "Halicioğlu Data Science Institute": {
+      "done": 36,
+      "unresolved": 2,
+      "scope_excluded": 3
+    },
+    "History": {
+      "done": 57,
+      "retained_prior_evidence": 10,
+      "scope_excluded": 3
+    },
+    "Interdisciplinary": {
+      "done": 963,
+      "unresolved": 115,
+      "retained_prior_evidence": 195,
+      "scope_excluded": 109
+    },
+    "Linguistics": {
+      "done": 50,
+      "unresolved": 20,
+      "scope_excluded": 1
+    },
+    "Literature": {
+      "done": 105,
+      "unresolved": 5
+    },
+    "Material Science and Engineering": {
+      "unresolved": 1
+    },
+    "Mathematics": {
+      "done": 435,
+      "unresolved": 3
+    },
+    "Mechanical & Aerospace Engineering": {
+      "done": 219,
+      "unresolved": 25,
+      "retained_prior_evidence": 8,
+      "scope_excluded": 18
+    },
+    "Mechanical and Aerospace Engineering": {
+      "done": 1
+    },
+    "Medicine": {
+      "done": 364,
+      "unresolved": 134,
+      "retained_prior_evidence": 275,
+      "scope_excluded": 15
+    },
+    "Molecular Biology": {
+      "done": 15
+    },
+    "Music": {
+      "done": 32,
+      "unresolved": 2,
+      "retained_prior_evidence": 9
+    },
+    "NanoEngineering": {
+      "done": 558,
+      "unresolved": 57,
+      "scope_excluded": 23,
+      "retained_prior_evidence": 119
+    },
+    "Neurobiology": {
+      "done": 12
+    },
+    "Neurological Surgery": {
+      "done": 7,
+      "retained_prior_evidence": 23
+    },
+    "Neurosciences": {
+      "done": 151,
+      "unresolved": 21,
+      "scope_excluded": 16,
+      "retained_prior_evidence": 91
+    },
+    "Obstetrics, Gynecology & Reproductive Sciences": {
+      "done": 71,
+      "unresolved": 8,
+      "retained_prior_evidence": 20,
+      "scope_excluded": 1
+    },
+    "Ophthalmology": {
+      "done": 15,
+      "unresolved": 38
+    },
+    "Orthopaedic Surgery": {
+      "done": 15
+    },
+    "Otolaryngology": {
+      "done": 80,
+      "unresolved": 5,
+      "retained_prior_evidence": 18,
+      "scope_excluded": 8
+    },
+    "Pathology": {
+      "done": 67,
+      "unresolved": 10,
+      "retained_prior_evidence": 20,
+      "scope_excluded": 2
+    },
+    "Pediatrics": {
+      "done": 325,
+      "unresolved": 36,
+      "retained_prior_evidence": 312,
+      "scope_excluded": 17
+    },
+    "Pharmacology": {
+      "done": 75,
+      "unresolved": 11,
+      "scope_excluded": 4
+    },
+    "Pharmacy and Pharmaceutical Sciences": {
+      "done": 34,
+      "unresolved": 81,
+      "scope_excluded": 2
+    },
+    "Philosophy": {
+      "done": 17,
+      "scope_excluded": 4,
+      "unresolved": 2
+    },
+    "Physics": {
+      "done": 171,
+      "unresolved": 16,
+      "scope_excluded": 4
+    },
+    "Political Science": {
+      "done": 165,
+      "unresolved": 11,
+      "retained_prior_evidence": 21,
+      "scope_excluded": 9
+    },
+    "Psychiatry": {
+      "done": 264,
+      "unresolved": 38,
+      "scope_excluded": 14,
+      "retained_prior_evidence": 119
+    },
+    "Psychology": {
+      "done": 111,
+      "unresolved": 3,
+      "scope_excluded": 13,
+      "retained_prior_evidence": 8
+    },
+    "Public Health": {
+      "done": 76,
+      "unresolved": 9,
+      "retained_prior_evidence": 91,
+      "scope_excluded": 4
+    },
+    "Radiation Medicine": {
+      "done": 64
+    },
+    "Radiology": {
+      "done": 26,
+      "unresolved": 53,
+      "retained_prior_evidence": 8
+    },
+    "Rady School of Management": {
+      "done": 32,
+      "unresolved": 1
+    },
+    "Scripps Institution of Oceanography": {
+      "done": 105
+    },
+    "Sociology": {
+      "done": 45,
+      "retained_prior_evidence": 5,
+      "unresolved": 1
+    },
+    "Structural Engineering": {
+      "done": 338,
+      "unresolved": 16,
+      "retained_prior_evidence": 27,
+      "scope_excluded": 10
+    },
+    "Surgery": {
+      "done": 58,
+      "unresolved": 23,
+      "scope_excluded": 8
+    },
+    "Theatre & Dance": {
+      "done": 72,
+      "unresolved": 10,
+      "retained_prior_evidence": 24
+    },
+    "Unknown": {
+      "done": 12173,
+      "unresolved": 101,
+      "scope_excluded": 46,
+      "retained_prior_evidence": 1349
+    },
+    "Unknown (Moores Cancer Center; department not stated on fetched pages)": {
+      "done": 34,
+      "scope_excluded": 8,
+      "unresolved": 2
+    },
+    "Urban Studies & Planning": {
+      "done": 219,
+      "unresolved": 10,
+      "retained_prior_evidence": 18,
+      "scope_excluded": 1
+    },
+    "Urology": {
+      "done": 15
+    },
+    "Visual Arts": {
+      "done": 53,
+      "unresolved": 3,
+      "retained_prior_evidence": 6
+    }
+  },
+  "structuredPersonDiscovery": [
+    {
+      "status": "metadata_links_discovered",
+      "sourceUrl": "https://math.ucsd.edu/export/people/faculty",
+      "observedAt": "2026-10-16T04:59:46+00:00",
+      "bodySha256": "b76886e7b34814c5016439ae9ab3a12557e31b8efc17d2b8c1ca324d47fd0d99",
+      "profileLinks": 338,
+      "invalidRows": 0,
+      "facultyAppointmentsAsserted": 0,
+      "metadataRows": 338,
+      "titlesAsListed": {
+        "": 333,
+        "Jasmine Browne": 1,
+        "Assistant Professor": 1,
+        "Visiting Asst Professor": 1,
+        "Visit Asst Prof": 1,
+        "SEW Assistant Professor": 1
+      }
+    }
+  ],
+  "profileEligibilityStatuses": {
+    "explicit_faculty_appointment_as_listed": 3752,
+    "unresolved": 15,
+    "no_explicit_faculty_title_captured": 6322,
+    "missing_identity_or_appointment_table": 1703,
+    "retained_prior_evidence": 1349,
+    "profile_identity_heading_requires_review": 23
+  },
+  "blocked": [
+    {
+      "url": "https://obgyn.ucsd.edu/faculty/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://obgyn.ucsd.edu/faculty",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/ophthalmology/Pages/faculty/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/about/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/about/leadership.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/about/annual-report/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/acute-care/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/anatomy/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/breast/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/cardiothoracic/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/colorectal/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/mis/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/pediatric/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/plastic-surgery/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/oncology/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/surgical-sciences/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/transplant/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/divisions/vascular/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/centers/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/centers/cfs/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/centers/reimagine/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/people/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://surgery.ucsd.edu/faculty/people/humans-of-surgery/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/bertrand_guy.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/bethel_neville.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/brydges_stacey_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/budin__itay.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/burkart_michael_d.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/bussey_thomas_j.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/cohen_seth_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/continetti_robert_e.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/debelouchina__galia__t.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/deshmukh__lalit.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/devaraj_neal_k.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/donoghue_daniel_j.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/ferguson_fleur.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/figueroa_joshua_s.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/ghosh_gourisankar.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/ghosh_partho.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/godula_kamil.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/grassian_vicki_h.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/hermann_thomas_c.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/herzik__mark__a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/jennings_patricia_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/jones_lisa.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/joseph_simpson.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/kim_judy_e.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/komives_elizabeth_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/komor__alexis__c.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/kubiak_clifford_p.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/kummel_andrew_c.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/li_shaowei.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/mchugh__colleen__a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/mishanina__tatiana__v.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/molinski_tadeusz_f.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/muller_ulrich_f.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/o%27connor_joseph_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/paesani_francesco.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/pomeroy_robert_s.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/prather_kimberly_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/rinehart_jeffrey_d.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/romero_erik.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/romero__nathan__a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/sailor_michael_j.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/schimpf_alina_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/schmidt_valerie_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/schoeneberg_johannes.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/sinha_amitabha.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/slade__jonathan__h.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/stauber_julia.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/tauber_michael_j.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/taylor_susan_s.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/tezcan_faik_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/theodorakis_emmanuel_a.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/toor_navtej_s.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/tor_yitzhak.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/wang_wei.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/weizman_haim.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/xiong_wei.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/yang_jerry.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/yong_haiwang.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/yuen_zhou_joel.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/zid_brian_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/abagyan",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/abdul-mutakabbir",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/alle",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/atayee",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/awdishu",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/bailey",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/bandeira",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/best",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/bounthavong",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/brandl",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/caffrey",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/capparelli",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/chang",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/daniels",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/debnath",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/dorrestein",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/evans",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/feist",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/ferguson",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/fricovsky",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/gerwick",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/gilson",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/gonzalez",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/gustafsson",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/handel",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/hernandez",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/higgins",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/hook",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/humber",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/jinich",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/kneebusch",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/kufareva",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/le",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/lee",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/lukowski",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/luli",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/ma",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/mckerrow",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/mnatzaganian",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/molinski",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/momper",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/moore",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/morello",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/namba",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/nizet",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/odonoghue",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/painter",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/patel",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/radic",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/saunders",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/sepassi",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/siegel",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/suhandynata",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/taylor",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/tsunoda",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/wang",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/willeford",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/winzeler",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/won",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/wright",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/faculty/yousif",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://anesthesia.ucsd.edu/research/basic-science/shubayev-lab/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sites.google.com/ucsd.edu/chien-lab/home",
+      "status": "authentication_required",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://lal.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://lal.eng.ucsd.edu/"
+    },
+    {
+      "url": "https://ecm.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ecm.ucsd.edu/"
+    },
+    {
+      "url": "https://sung-lab.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sung-lab.eng.ucsd.edu/"
+    },
+    {
+      "url": "https://ctleelab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ctleelab.ucsd.edu/"
+    },
+    {
+      "url": "https://www.farleylab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.farleylab.com/"
+    },
+    {
+      "url": "https://matisse.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://matisse.ucsd.edu/"
+    },
+    {
+      "url": "https://reutherlab.biosci.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://reutherlab.biosci.ucsd.edu/"
+    },
+    {
+      "url": "https://www.salk.edu/scientist/satchidananda-panda",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.biology.ucsd.edu/labs/subramani",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://traverlab.biosci.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://traverlab.biosci.ucsd.edu/"
+    },
+    {
+      "url": "https://dowdylab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://dowdylab.ucsd.edu/"
+    },
+    {
+      "url": "https://eskolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://eskolab.ucsd.edu/"
+    },
+    {
+      "url": "https://glasslab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://glasslab.ucsd.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pediatrics/research/labs/muotri-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biomedsci-db.ucsd.edu/faculty_detail?f=245",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://biomedsci-db.ucsd.edu/faculty_detail?f=245"
+    },
+    {
+      "url": "https://reck-peterson.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://reck-peterson.ucsd.edu/"
+    },
+    {
+      "url": "http://msanderlab.org/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://kemenagkabmanokwariselatan.com/"
+    },
+    {
+      "url": "http://web.mac.com/molinski_lab/Molinski_Lab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://web.mac.com/molinski_lab/Molinski_Lab"
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/molinski",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/view/mjtauber/laboratory",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sites.google.com/view/biclab/home",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/medicine/divisions/med-genetics/research/Pages/Mesirov-Lab.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/medicine/divisions/med-genetics/research/Pages/Mesirov-Lab.aspx"
+    },
+    {
+      "url": "https://www.svcl.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.svcl.ucsd.edu/"
+    },
+    {
+      "url": "https://neuro.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://neuro.eng.ucsd.edu/"
+    },
+    {
+      "url": "https://videoprocessing.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://videoprocessing.ucsd.edu/"
+    },
+    {
+      "url": "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ling.ucsd.edu/people/faculty/profiles/john-moore.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ling.ucsd.edu/people/faculty/profiles/robert-kluender.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://grammar.ucsd.edu/labs/mayberrylab/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://grammar.ucsd.edu/phoneticslab/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://raidivision.ucsd.edu/research/aceves-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://raidivision.ucsd.edu/research/aceves-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://raidivision.ucsd.edu/research/doherty-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://raidivision.ucsd.edu/research/doherty-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://regenmed.ucsd.edu/research/furnari-lab",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/regenmed/research/jamieson-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://alfe.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://alfe.ucsd.edu/"
+    },
+    {
+      "url": "https://gastro.ucsd.edu/schnabl-lab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://gastro.ucsd.edu/schnabl-lab"
+    },
+    {
+      "url": "https://lei-lab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://lei-lab.ucsd.edu/"
+    },
+    {
+      "url": "https://cmm.ucsd.edu/cleveland/donclevelandlab.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://crbs.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://crbs.ucsd.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/regenmed/research/rich-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://wulabucsd.weebly.com/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://wulabucsd.weebly.com/"
+    },
+    {
+      "url": "https://moorescancercenter.ucsd.edu/research/centers-and-labs/guo-lab/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://homer.ucsd.edu/CarlinLab/index.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://homer.ucsd.edu/CarlinLab/index.html"
+    },
+    {
+      "url": "https://pathology.ucsd.edu/research/labs/desgrosellier/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://builab.cloud.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://builab.cloud.ucsd.edu/"
+    },
+    {
+      "url": "https://sites.medschool.ucsd.edu/som/medicine/divisions/rai/research/aceves-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sites.medschool.ucsd.edu/som/medicine/divisions/rai/research/aceves-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://biochemgen.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://biochemgen.ucsd.edu/"
+    },
+    {
+      "url": "http://www.bodelab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.bodelab.com/"
+    },
+    {
+      "url": "https://www.crokerlab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.crokerlab.com/"
+    },
+    {
+      "url": "https://raidivision.ucsd.edu/research/hoffman-lab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://raidivision.ucsd.edu/research/hoffman-lab/Pages/default.aspx"
+    },
+    {
+      "url": "https://sites.medschool.ucsd.edu/som/medicine/divisions/rai/research/hoffman-lab/about/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sites.medschool.ucsd.edu/som/medicine/divisions/rai/research/hoffman-lab/about/Pages/default.aspx"
+    },
+    {
+      "url": "https://pediatrics.ucsd.edu/_archived/_old-content/index3.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ranalab.ucsd.edu/wp-content/cache/all/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pediatrics.ucsd.edu/research/faculty-labs/boolean-lab/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pediatrics.ucsd.edu/research/faculty-labs/yu-lab/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://physics.ucsd.edu/neurophysics",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://zhaoresearchgroup.com/",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://physics.ucsd.edu/research/condensed_matter/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://barreirolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://barreirolab.ucsd.edu/"
+    },
+    {
+      "url": "https://sinhagroup.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sinhagroup.ucsd.edu/"
+    },
+    {
+      "url": "https://physics.ucsd.edu/research/plasma/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/cognitive-dynamics-lab/pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://nievergeltlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://nievergeltlab.ucsd.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/fmph/research/centers/integrativehealth/Pages/Biomarker-Laboratory.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://adamslab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://adamslab.ucsd.edu/"
+    },
+    {
+      "url": "https://alexandrov.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://alexandrov.ucsd.edu/"
+    },
+    {
+      "url": "https://cseweb.ucsd.edu/~mniethammer/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/~mniethammer/"
+    },
+    {
+      "url": "https://www.metallo.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.metallo.ucsd.edu/"
+    },
+    {
+      "url": "https://twitter.com/ChristmanLab",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://twitter.com/ChristmanLab"
+    },
+    {
+      "url": "https://cem01.ucsd.edu/home.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.stephanielindseyphd.com/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.stephanielindseyphd.com/"
+    },
+    {
+      "url": "https://pharmacology.ucsd.edu/faculty/department-faculty/corina-antal.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sites.google.com/a/eng.ucsd.edu/cte/home/",
+      "status": "authentication_required",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://guava.physics.ucsd.edu/~nigel/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://guava.physics.ucsd.edu/~nigel/"
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/labs/handel/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pediatrics/research/labs/ped-pharmacology-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/best",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jjokerst.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://jjokerst.ucsd.edu/"
+    },
+    {
+      "url": "https://juchenlab.ucsd.edu/homepage.htm",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://juchenlab.ucsd.edu/homepage.htm"
+    },
+    {
+      "url": "https://kaufmanlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://kaufmanlab.ucsd.edu/"
+    },
+    {
+      "url": "https://genome-tech.ucsd.edu/ZhangLab/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://genome-tech.ucsd.edu/ZhangLab/"
+    },
+    {
+      "url": "https://frazier.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://frazier.ucsd.edu/"
+    },
+    {
+      "url": "https://shah.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://shah.ucsd.edu/"
+    },
+    {
+      "url": "https://biomedsci.ucsd.edu/faculty/faculty_descrip.aspx?id=245",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sicl.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sicl.ucsd.edu/"
+    },
+    {
+      "url": "https://cseweb.ucsd.edu/~yuxiangw/s2ml.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/~yuxiangw/s2ml.html"
+    },
+    {
+      "url": "https://pediatrics.ucsd.edu/_archived/_old-content/boolean-lab/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://dnitz.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://dnitz.com/"
+    },
+    {
+      "url": "https://sites.google.com/eng.ucsd.edu/ucsd-computational-imaging/",
+      "status": "authentication_required",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://www.walkingtools.net/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.walkingtools.net/"
+    },
+    {
+      "url": "https://flexible-electronics.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://flexible-electronics.ucsd.edu/"
+    },
+    {
+      "url": "https://lolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://lolab.ucsd.edu/"
+    },
+    {
+      "url": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20%28Professor%20Shaya%20Fainman%29",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://beweb.ucsd.edu/groups/microhem/focus.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://beweb.ucsd.edu/groups/microhem/focus.html"
+    },
+    {
+      "url": "https://muotri.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://muotri.ucsd.edu/"
+    },
+    {
+      "url": "https://cmm.ucsd.edu/odlabweb/Sites/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/cmm/research/labs/hamilton/pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/cmm/research/labs/hamilton/pages/default.aspx"
+    },
+    {
+      "url": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx"
+    },
+    {
+      "url": "https://cmm.ucsd.edu/cleveland/home.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ghoshlab.ucsd.edu/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ghoshlab.ucsd.edu/Pages/default.aspx"
+    },
+    {
+      "url": "https://homer.ucsd.edu/BennerLab/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://homer.ucsd.edu/BennerLab/"
+    },
+    {
+      "url": "https://www.asimakopouloslab.org/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://changlab.ucsd.edu/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx"
+    },
+    {
+      "url": "https://ginsberglab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ginsberglab.ucsd.edu/"
+    },
+    {
+      "url": "http://bryanlabsite.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://bryanlabsite.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://hnaskolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://hnaskolab.ucsd.edu/"
+    },
+    {
+      "url": "https://breenchurchlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://breenchurchlab.ucsd.edu/"
+    },
+    {
+      "url": "https://thackraylab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://thackraylab.ucsd.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pathology/research/labs/Francesca-Soncin/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sites.medschool.ucsd.edu/som/pathology/research/labs/wettersten/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sites.medschool.ucsd.edu/som/pathology/research/labs/wettersten/Pages/default.aspx"
+    },
+    {
+      "url": "http://stelzerlab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://stelzerlab.com/"
+    },
+    {
+      "url": "https://sites.medschool.ucsd.edu/som/pathology/research/labs/Horii/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sites.medschool.ucsd.edu/som/pathology/research/labs/Horii/Pages/default.aspx"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pediatrics/Divisions/infectious-diseases/research/liulab/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sites.medschool.ucsd.edu/som/pediatrics/divisions/infectious-diseases/research/liulab/pages/default.aspx"
+    },
+    {
+      "url": "https://cmm.ucsd.edu/goldstein/People_Current.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/pediatrics/research/labs/zage/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/pediatrics/research/labs/zage/Pages/default.aspx"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pediatrics/research/labs/joshi/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.facebook.com/mood.lab.3?fref=ts",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.facebook.com/mood.lab.3?fref=ts"
+    },
+    {
+      "url": "https://nievergelt.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://nievergelt.ucsd.edu/"
+    },
+    {
+      "url": "https://circadian.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://circadian.ucsd.edu/"
+    },
+    {
+      "url": "http://www.bipolar-aging.com/home",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.bipolar-aging.com/home"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/snl/pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/BRAIN/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://taffelab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://taffelab.com/"
+    },
+    {
+      "url": "https://starrlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://starrlab.ucsd.edu/"
+    },
+    {
+      "url": "https://sites.google.com/view/tyler-bell-phd/home",
+      "status": "authentication_required",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/physiology/research/labs/nasa/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://galileo.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://galileo.ucsd.edu/"
+    },
+    {
+      "url": "https://stauberlab.ucsd.edu/",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (63) Maximum file size exceeded",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://tezcan.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://tezcan.ucsd.edu/"
+    },
+    {
+      "url": "https://fergusonlab.ucsd.edu/",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (63) Maximum file size exceeded",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.bazhlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.bazhlab.ucsd.edu/"
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/sites/pharmacy.ucsd.edu/files/labs/hook/index.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://aceslab.org/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://aceslab.org/"
+    },
+    {
+      "url": "https://sayginlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sayginlab.ucsd.edu/"
+    },
+    {
+      "url": "https://cohenlab.ucsd.edu/",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://checont6.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://checont6.ucsd.edu/"
+    },
+    {
+      "url": "https://gghosh.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://gghosh.ucsd.edu/"
+    },
+    {
+      "url": "https://cobra.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cobra.ucsd.edu/"
+    },
+    {
+      "url": "https://pulmonary.ucsd.edu/research/labs-centers/yuan/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/achisholm",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/swasserman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/pkosuri",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/mniwa",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/jtrotter",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biology.ucsd.edu/research/faculty/nreyes",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ingridtomac.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ingridtomac.eng.ucsd.edu/"
+    },
+    {
+      "url": "https://aronlab.org/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://aronlab.org/"
+    },
+    {
+      "url": "https://mocolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://mocolab.ucsd.edu/"
+    },
+    {
+      "url": "https://hci.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://hci.ucsd.edu/"
+    },
+    {
+      "url": "https://creativity.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://creativity.ucsd.edu/"
+    },
+    {
+      "url": "https://lera.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://lera.ucsd.edu/"
+    },
+    {
+      "url": "https://www.shericeclarke.com/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.shericeclarke.com/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/cmm/faculty/Pages/Bing-Ren.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/itay.budin",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://iem.ucsd.edu/researchers/people/profiles/klaus-ley.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://iem.ucsd.edu/researchers/people/profiles/peter-chen.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/robert.weinreb",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cogsci.ucsd.edu/people/faculty/jim-hollan.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/cartwright-lisa.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cse.ucsd.edu/people/faculty-profiles/alex-snoeren",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cse.ucsd.edu/people/faculty-profiles/hao-su",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mandy.rock",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/joseph.hayek",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/richard.childers",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://gps.ucsd.edu/faculty-directory/agustina-paglayan.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/emily-clem.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/eric-bakovic.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/gabriela-caballero.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/grant-goodall.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/ivano-caponigro.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/marc-garellek.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/rachel-dudley.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/sharon-rose.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://linguistics.ucsd.edu/people/profiles/will-styler.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://literature.ucsd.edu/people/faculty/cherreravenegas.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://literature.ucsd.edu/people/faculty/cploye.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://literature.ucsd.edu/people/faculty/jjung.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://literature.ucsd.edu/people/faculty/scohen.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://literature.ucsd.edu/people/faculty/emeriti-wobrien.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/juancarlos.delalamo",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/aarya.kafi",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/abha.singh",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/aireen.gutierrez",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alfredo.tiu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/ali-farkhondehpour%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/amnon.altman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/anand.jagannath",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/angelique.richardson",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mizzell.mcdivit%20mizzell",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/drygalski.von%20drygalski",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/Pages/Arkady-Komsoukaniants%2c-MD.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/arnoldas.ceponis",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/atul.malhotra",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ayako.makino",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/benjamin.hulley",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/benjamin.heyman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/carl.stepnowsky",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/carrie.chun",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/christine.perry",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/chun.hsu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/daniel.walters",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/diana-childers%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/dorothy.sears",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/edward.cachay",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/spencer.aronoff-spencer",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/shabari.raissi%20shabari",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/fima.macheret",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/h.hammond",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/hao.tran",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/hudson.freeze",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/hui.dong",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/sefidan.wong-sefidan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/isac.thomas",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jairo.romero",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/james.randall",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jason.yuan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jay.varughese",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jeff.omens",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jeffrey.jenks",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jennifer.matro",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jessica.bazick",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/nieves.rivera-nieves",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/john.dever",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/john.griffin",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/john.carethers",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/jonathan-mnintyre%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jong.kim",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/enciso.silva%20enciso",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kelley.hagerich",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kim.barrett",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/krishnan.rangarajan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lalita.tantisira",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alexander.crotty%20alexander",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lawrence.ma",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/leslie.robertson",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/machado.ohno-machado",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kuss.chavez%20kuss",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lynette.cederquist",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/maria.marquine",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mark.gabuzda",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/maryann-ally%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/matthew.nobari",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/michael.hogan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/michael.croft",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/michel-choueiri%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mitul.patel",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mohit.jain",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/monika.kumaraswamy",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/bethell.beliakova-bethell",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/dahi.copur-dahi",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/nhan-vuong%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/casteele.vande%20casteele",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/nils.svensson",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/norris.vivatrat",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/olivia.osborn",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/olivier.harismendy",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/parambir.dulai",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/patricia.juang",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/paul.phillips",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/rebecca.sell",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/richard.schwab",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kareh.el-kareh",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/rohit.loomba",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ruicarlos.pereiradesa",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/samuel.klein",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/sanjay.shah",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/weibel.gianella%20weibel",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/shannon.reilly",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/sho.n.sendo",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/shu.kato",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/siddharth.singh",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/hospital-medicine/faculty/pages/stanislav-zayets%2c-md.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/stephan.lange",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/suzanne.sharpton",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/wosk.bordin-wosk",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/tannishtha.reya",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/toshinori.nakayama",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/cavaiola.santos%20cavaiola",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/tsung-ting.kuo",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/green.birgersdotter-green",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/unna.albers",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/william.frederick",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/william.hancock",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/yun.lee",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/yun.huang",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/sarah-hankins/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alexander.norbash",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/chengbiao.wu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/cynthia.sharpe",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/greg.lemke",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/hollis.cline",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/james.e.nelson",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/neggy.rismanchi",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mai.hoang",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/scott.harveyphen.hebert",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/radha-ayyagari",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/david.mills",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kanani.titchen",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/miguel.delcampo",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/sarah.schneider",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://polisci.ucsd.edu/people/faculty/faculty-directory/currently-active-faculty/strom-profile.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://gps.ucsd.edu/faculty-directory/weiyi-shi.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/amanda.weingarten",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/chandra.khalifian",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ekta.patel",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/erin.morgan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/helineh.mirzakhanian",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/karishma.patel",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kayla.c.knopp",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/leslie.tarver",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ming.tsuang",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/nancy.downs",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/scarlett.n.baird",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/heather.pines",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/murray.stein",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/david.karow",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/donald.hagler",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/isabel.newton",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jonas.redmond",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ksenija.marinkovic",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lewis.hahn",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/michael.hahn",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/tudor.hughes",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/vivian.lim",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://theatre.ucsd.edu/people/faculty/emeritus/frantisek-deak.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://theatre.ucsd.edu/people/faculty/design/judith-dolan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://theatre.ucsd.edu/people/faculty/performance-studies/julie-burelle.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://theatre.ucsd.edu/people/faculty/acting/robert-castro.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://theatre.ucsd.edu/people/faculty/dance/yolande-snaith",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/profiles/fields-gary.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://visarts.ucsd.edu/people/faculty/kyong-park.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://visarts.ucsd.edu/people/faculty/lisa-cartwright.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/wonkyu-ju",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://espi.ucsd.edu/make-a-gift?id=04b63aeb-4c2a-49ec-b814-3af899b60a82",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://espi.ucsd.edu/make-a-gift?id=04b63aeb-4c2a-49ec-b814-3af899b60a82"
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=441",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cmi.ucsd.edu/partner-us",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=347",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://nanomaterials.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://nanomaterials.ucsd.edu/"
+    },
+    {
+      "url": "https://newmaeweb.ucsd.edu/groups/cai_group/contactlinks.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://newmaeweb.ucsd.edu/groups/cai_group/contactlinks.html"
+    },
+    {
+      "url": "https://chen.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://chen.ucsd.edu/"
+    },
+    {
+      "url": "https://terrano.ucsd.edu/jorge/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://terrano.ucsd.edu/jorge/"
+    },
+    {
+      "url": "https://maeresearch.ucsd.edu/callafon/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://maeresearch.ucsd.edu/callafon/"
+    },
+    {
+      "url": "https://maeresearch.ucsd.edu/kleissl",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://maeresearch.ucsd.edu/kleissl"
+    },
+    {
+      "url": "https://maeresearch.ucsd.edu/mceneaney/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://maeresearch.ucsd.edu/mceneaney/"
+    },
+    {
+      "url": "https://keikonomura.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://keikonomura.ucsd.edu/"
+    },
+    {
+      "url": "https://maeresearch.ucsd.edu/seshadri/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://maeresearch.ucsd.edu/seshadri/"
+    },
+    {
+      "url": "http://aceslab.org/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://aceslab.org/"
+    },
+    {
+      "url": "https://jaguar.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://jaguar.ucsd.edu/"
+    },
+    {
+      "url": "https://mccartney.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://mccartney.eng.ucsd.edu/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/brianne.daniels%20",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/Error/Default.aspx"
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/32919/meghann-greear-audiology-la_jolla-san_diego?FreeText:Keyword=Greear",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/anesthesia/research/basic-science/yaksh-res-lab/faculty/Pages/Yaksh.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/nephrology/research/Basic%20and%20Translational%20Research/Pages/Volker-Vallon.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=31",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=148",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://materials.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://materials.ucsd.edu/"
+    },
+    {
+      "url": "https://coled.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://coled.ucsd.edu/"
+    },
+    {
+      "url": "https://cancer.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cancer.ucsd.edu/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alice.zemljic-harpf%29",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.bodelab.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.bodelab.com/"
+    },
+    {
+      "url": "https://geh.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://geh.ucsd.edu/"
+    },
+    {
+      "url": "https://students.ucsd.edu/sponsor/fmp/index.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://fmp.ucsd.edu/"
+    },
+    {
+      "url": "https://inc2.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://inc2.ucsd.edu/"
+    },
+    {
+      "url": "https://www.chd.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.chd.ucsd.edu/"
+    },
+    {
+      "url": "https://biocircuits.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://biocircuits.ucsd.edu/"
+    },
+    {
+      "url": "https://ctbp.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ctbp.ucsd.edu/"
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/fields-gary.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/hallin-dan.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/horwitz-robert.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/tanaka-stefan.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://vlsicad.ucsd.edu/AboutUs/index.html",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://vlsicad.ucsd.edu/AboutUs/index.html"
+    },
+    {
+      "url": "https://llp.ucsd.edu/language-lab/%24_EscapeTool.xml%28%24Link%29",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://stockcenter.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://stockcenter.ucsd.edu/"
+    },
+    {
+      "url": "https://qi.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://qi.ucsd.edu/"
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/robert-weinreb",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/natalie-afshari",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/dirk-uwe-bartsch",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/sallylbaxter",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/akram-belghith",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/shyamanga-borooah",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/christopher-bowd",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/stuart-brown",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/andrew-camp",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/lingyun-cheng",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/jiun-do",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/napoleone-ferrara",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/henry-ferreyra",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/william-freeman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/michael-goldbaum",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/david-granet",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/weldon-haw",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/chris-heichel",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/alex-a-huang",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/don-kikkawa",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/lanning-kline",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/bobby-korn",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/jeffrey-lee",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/johnhk-liu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/catherine-liu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/thao-nguyen",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/eric-nudleman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/shira-robbins",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/peter-savino",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/peter-shaw",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/cristiana_vasile",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/Karl-Wahlin",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/welsbie",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://shileyeye.ucsd.edu/faculty/linda-zangwill",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cncb.ucsd.edu/index.html",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cncb.ucsd.edu/index.html"
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11693/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11681/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/ahmed.elkaffas",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1679901599/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1508216128/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11725/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/12398/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1023594801/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/david.j.hall",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1255562087/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1154854581/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1467812230/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1255760822/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/12443/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1366657900/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1720516664/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1104273523/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/32475/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/thomas.liu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1679089205/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/32578/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11739/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1578799409/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1679803159/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/mitsue.miyazaki",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/32470/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11699/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1427218692/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/22320/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1639556277/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1073167126/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1932338276/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1194362745/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1134551153/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/22321/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1760888254/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1568996437/radiology",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/wearablesensors/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.ucsd.edu/catalog/curric/CCCP.html",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.ucsd.edu/catalog/curric/CCCP.html"
+    },
+    {
+      "url": "https://cilas.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cilas.ucsd.edu/"
+    },
+    {
+      "url": "https://eceweb.ucsd.edu/~smirarab/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://eceweb.ucsd.edu/~smirarab/"
+    },
+    {
+      "url": "https://inc.ucsd.edu/people/affiliated-faculty.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ccsd.eng.ucsd.edu/faculty",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/pediatrics/research/labs/zage/Pages/Research.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://psychology.ucsd.edu/people/wixtedlab.ucsd.edu/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pstp.ucsd.edu/ginsberg",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://pstp.ucsd.edu/ginsberg"
+    },
+    {
+      "url": "https://matisse.ucsd.edu/~hwa",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://matisse.ucsd.edu/~hwa"
+    },
+    {
+      "url": "https://devarajgroup.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://devarajgroup.ucsd.edu/"
+    },
+    {
+      "url": "https://mbtg.ucsd.edu/faculty/mchughlab.com",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://mishaninalab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://mishaninalab.ucsd.edu/"
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/labs/wang/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacology.ucsd.edu/faculty/adams.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/cmm/faculty/Pages/Kevin-Corbett.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/cmm/faculty/Pages/Kevin-Corbett.aspx"
+    },
+    {
+      "url": "https://drugdiscovery.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://drugdiscovery.ucsd.edu/"
+    },
+    {
+      "url": "https://yeolab.ucsd.edu/yeolab/Home.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://yeolab.ucsd.edu/yeolab/Home.html"
+    },
+    {
+      "url": "https://muro.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://muro.ucsd.edu/"
+    },
+    {
+      "url": "https://robotics.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://robotics.ucsd.edu/"
+    },
+    {
+      "url": "http://cisa3.calit2.net/arch/index.php",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cisa3.calit2.net/arch/index.php"
+    },
+    {
+      "url": "https://pages.ucsd.edu/~jhaviland/LinguisticAnthropologyLabWebSite/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/158833",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/158833"
+    },
+    {
+      "url": "https://neurograd.ucsd.edu/people/faculty.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://primelab.eng.ucsd.edu/members",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://primelab.eng.ucsd.edu/members"
+    },
+    {
+      "url": "https://seelab.ucsd.edu/research.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.isn.ucsd.edu/welcome.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.isn.ucsd.edu/welcome.html"
+    },
+    {
+      "url": "https://ucsdeparc.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ucsdeparc.ucsd.edu/"
+    },
+    {
+      "url": "https://cwphs.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cwphs.ucsd.edu/"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=58ccb9fb0aaf69f5308b963ba54b2a19&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=58ccb9fb0aaf69f5308b963ba54b2a19&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cc92720aaf69f5308b963bc560632f&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cc92720aaf69f5308b963bc560632f&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=21df24f00aaf6b3a2269778efda078f4&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=21df24f00aaf6b3a2269778efda078f4&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=221b996d0aaf6b3a59647adc4e0062ec&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=221b996d0aaf6b3a59647adc4e0062ec&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cd1a360aaf6b3a7aa445dbafd158d7&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cd1a360aaf6b3a7aa445dbafd158d7&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cddd010aaf69f5308b963bf4f8499b&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=58cddd010aaf69f5308b963bf4f8499b&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=b67dd3a50aaf69f55f1d2511230098d1&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=b67dd3a50aaf69f55f1d2511230098d1&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=715fe2e80aaf6b3a5620303b9a16e4a0&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=715fe2e80aaf6b3a5620303b9a16e4a0&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=4fa0db000aaf69f55f1d251143ab3c29&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=4fa0db000aaf69f55f1d251143ab3c29&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=dac36c3e0aaf69f565143256c9a0d757&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=dac36c3e0aaf69f565143256c9a0d757&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=8ba1e94b0aaf6b3a4050eabfd340f8a8&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=8ba1e94b0aaf6b3a4050eabfd340f8a8&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://cms.ucsd.edu/entity/open.act?type=page&id=715fd6630aaf6b3a5620303b220f4bfc&confId=50e5cc150aaf69f5308b963b86f15d92",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cms.ucsd.edu/entity/open.act?type=page&id=715fd6630aaf6b3a5620303b220f4bfc&confId=50e5cc150aaf69f5308b963b86f15d92"
+    },
+    {
+      "url": "https://neatlabs.ucsd.edu/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://biomedsci-db.ucsd.edu/faculty_index",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://biomedsci-db.ucsd.edu/faculty_index"
+    },
+    {
+      "url": "https://vac.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://vac.ucsd.edu/"
+    },
+    {
+      "url": "https://diversity.ucsd.edu/edi-centers/community-centers.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/yujuan.su",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/robin.knight",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/ext/staff?unit=student_affairs",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://soeadm.ucsd.edu/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://soeadm.ucsd.edu/"
+    },
+    {
+      "url": "https://cvil.ucsd.edu/?page_id=2801",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://wiki.amaro.ucsd.edu/mediawiki/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://wiki.amaro.ucsd.edu/mediawiki/"
+    },
+    {
+      "url": "https://catalog.ucsd.edu/faculty/index",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://obgyn.ucsd.edu/research/labs/schlaepfer/contact",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://anthropology.ucsd.edu/people/faculty/faculty-profiles/index",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://team.ucsd.edu/?page_id=70",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://philosophy.ucsd.edu/people/faculty-sites/index",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://algae.ucsd.edu/mayfield/people/mayfield/homepage/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://med.ucsd.edu/faculty-staff/faculty-affairs/mentoring/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://hsfacultyaffairs.ucsd.edu/faculty-development/index.html%C2%A0",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://proteomics.ucsd.edu/vbafna/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cseweb.ucsd.edu/~nbandeir/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/~nbandeir/"
+    },
+    {
+      "url": "https://genomes.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://genomes.ucsd.edu/"
+    },
+    {
+      "url": "https://gleesonlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://gleesonlab.ucsd.edu/"
+    },
+    {
+      "url": "https://labs.biology.ucsd.edu/ctlee/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ctleelab.ucsd.edu/"
+    },
+    {
+      "url": "https://cseweb.ucsd.edu/~a1moshir",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/~a1moshir"
+    },
+    {
+      "url": "https://cseweb.ucsd.edu/groups/guru/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/groups/guru/"
+    },
+    {
+      "url": "https://ehs.ucsd.edu/lhat/request/home",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ehs.ucsd.edu/lhat/request/home"
+    },
+    {
+      "url": "https://ehs.ucsd.edu/chua/do/Login",
+      "status": "authentication_required",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ehs.ucsd.edu/chua/do/Login"
+    },
+    {
+      "url": "https://videoprocessing.ucsd.edu/?page_id=40",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://videoprocessing.ucsd.edu/?page_id=40"
+    },
+    {
+      "url": "https://neuroelectronics.ucsd.edu/UCSD_Neuroelectronics_Group/Home.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://figueroagroup.ucsd.edu/research.htm",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://smallucsd.com/homepage",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://smallucsd.com/homepage"
+    },
+    {
+      "url": "https://sites.google.com/a/logroup.ucsd.edu/web/home",
+      "status": "authentication_required",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/logroup.ucsd.edu/web/home&followup=https://sites.google.com/a/logroup.ucsd.edu/web/home"
+    },
+    {
+      "url": "https://sites.google.com/a/eng.ucsd.edu/amps-lab/home",
+      "status": "authentication_required",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home&followup=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home"
+    },
+    {
+      "url": "https://jbae.eng.ucsd.edu/jinhye-bae",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sociology.ucsd.edu/faculty/bio/goldman.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://communication.ucsd.edu/people/faculty/daniel-c-hallin.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://nizetlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://nizetlab.ucsd.edu/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/avraham.yagil",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/robert.hoffman",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/william.sandborn",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alessandro.sette",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/stephen.stahl",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/eliezer.masliah",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/j.allen.mccutchan",
+      "status": "http_error",
+      "httpStatus": 504,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/wm.arctander.obrien",
+      "status": "http_error",
+      "httpStatus": 504,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/danielle.stein",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (56) Exceeded the maximum allowed file size (2000000) with 2000000 bytes",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ipath.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://ipath.ucsd.edu/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/obgyn/research/labs/su/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/147765",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/147765"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/151325",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/151325"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/anesthesia/research/basic-science/yaksh-res-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/168161",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/168161"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/research/centers/sleep-research/research/labs/owens/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/medicine/divisions/physiology/research/labs/powell/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/medicine/divisions/physiology/research/labs/powell/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/152734",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/152734"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/168230",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/168230"
+    },
+    {
+      "url": "https://vlsicad.ucsd.edu/index.html",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://vlsicad.ucsd.edu/index.html"
+    },
+    {
+      "url": "https://www.steinmetzlab.com/home",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.zeidanlab.com/cdn-cgi/l/email-protection",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://cancer.ucsd.edu/care-centers/pancreatic/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cancer.ucsd.edu/care-centers/pancreatic/Pages/default.aspx"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/156394",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/156394"
+    },
+    {
+      "url": "https://chem-faculty.ucsd.edu/dorrestein/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://chem-faculty.ucsd.edu/dorrestein/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/dermatology/research/labs/gallo-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/147763",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/147763"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/150217",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/150217"
+    },
+    {
+      "url": "https://cancer.ucsd.edu/coping/support-services/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cancer.ucsd.edu/coping/support-services/Pages/default.aspx"
+    },
+    {
+      "url": "https://guanlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://guanlab.ucsd.edu/"
+    },
+    {
+      "url": "https://hnrc.hivresearch.ucsd.edu/index.php/about-59/people/6-ellis",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://hnrc.hivresearch.ucsd.edu/index.php/about-59/people/6-ellis"
+    },
+    {
+      "url": "https://sleepresearch.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://sleepresearch.ucsd.edu/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/154479",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/154479"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/160310",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/160310"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/164941",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/164941"
+    },
+    {
+      "url": "https://www.montejohnson.info/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://www.montejohnson.info/"
+    },
+    {
+      "url": "https://health.ucsd.edu/specialties/hemophilia/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://sung-lab.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://sung-lab.eng.ucsd.edu/"
+    },
+    {
+      "url": "http://people.biology.ucsd.edu/firtel",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://people.biology.ucsd.edu/firtel"
+    },
+    {
+      "url": "http://www.biology.ucsd.edu/labs/subramani",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://ling.ucsd.edu/people/faculty/profiles/john-moore.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://ling.ucsd.edu/people/faculty/profiles/robert-kluender.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://gastro.ucsd.edu/schnabl-lab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://gastro.ucsd.edu/schnabl-lab"
+    },
+    {
+      "url": "http://physics.ucsd.edu/neurophysics",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://physics.ucsd.edu/research/condensed_matter/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://physics.ucsd.edu/research/plasma/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://stauberlab.ucsd.edu/",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (63) Maximum file size exceeded",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://fergusonlab.ucsd.edu/",
+      "status": "fetch_error",
+      "httpStatus": 200,
+      "error": "curl: (63) Maximum file size exceeded",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://sayginlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://sayginlab.ucsd.edu/"
+    },
+    {
+      "url": "http://checont6.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://checont6.ucsd.edu/"
+    },
+    {
+      "url": "http://gghosh.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://gghosh.ucsd.edu/"
+    },
+    {
+      "url": "http://cobra.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cobra.ucsd.edu/"
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/achisholm",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/swasserman",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/pkosuri",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/mniwa",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/jtrotter",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://biology.ucsd.edu/research/faculty/nreyes",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://ingridtomac.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://ingridtomac.eng.ucsd.edu/"
+    },
+    {
+      "url": "http://lera.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://lera.ucsd.edu/"
+    },
+    {
+      "url": "http://www.cogsci.ucsd.edu/people/faculty/jim-hollan.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/john.griffin",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://shileyeye.ucsd.edu/faculty/radha-ayyagari",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/david.karow",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/donald.hagler",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/isabel.newton",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/ksenija.marinkovic",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/michael.hahn",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://profiles.ucsd.edu/tudor.hughes",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://theatre.ucsd.edu/people/faculty/emeritus/frantisek-deak.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://theatre.ucsd.edu/people/faculty/design/judith-dolan",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://theatre.ucsd.edu/people/faculty/performance-studies/julie-burelle.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://theatre.ucsd.edu/people/faculty/acting/robert-castro.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://theatre.ucsd.edu/people/faculty/dance/yolande-snaith",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://nanomaterials.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://nanomaterials.ucsd.edu/"
+    },
+    {
+      "url": "http://frazier.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://frazier.ucsd.edu/"
+    },
+    {
+      "url": "http://profiles.ucsd.edu/arwa.kurabi",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://pharmacy.ucsd.edu/labs/handel/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://jianluo.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://jianluo.ucsd.edu/"
+    },
+    {
+      "url": "http://shah.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://shah.ucsd.edu/"
+    },
+    {
+      "url": "http://coled.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://coled.ucsd.edu/"
+    },
+    {
+      "url": "http://soeadm.ucsd.edu/",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://soeadm.ucsd.edu/"
+    },
+    {
+      "url": "http://stockcenter.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://stockcenter.ucsd.edu/"
+    },
+    {
+      "url": "http://www.metallo.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.metallo.ucsd.edu/"
+    },
+    {
+      "url": "http://qi.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://qi.ucsd.edu/"
+    },
+    {
+      "url": "http://genome-tech.ucsd.edu/ZhangLab/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://sicl.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://sicl.ucsd.edu/"
+    },
+    {
+      "url": "http://www.jacobsschool.ucsd.edu/wearablesensors/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://drugdiscovery.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://drugdiscovery.ucsd.edu/"
+    },
+    {
+      "url": "http://eceweb.ucsd.edu/~smirarab/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://eceweb.ucsd.edu/~smirarab/"
+    },
+    {
+      "url": "https://brainstorm.ucsd.edu/cndd/index.php/Main_Page",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://brainstorm.ucsd.edu/cndd/index.php/Main_Page"
+    },
+    {
+      "url": "http://cancer.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cancer.ucsd.edu/"
+    },
+    {
+      "url": "http://yeolab.ucsd.edu/yeolab/Home.html",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://yeolab.ucsd.edu/yeolab/Home.html"
+    },
+    {
+      "url": "http://nizetlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://nizetlab.ucsd.edu/"
+    },
+    {
+      "url": "http://www.chd.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.chd.ucsd.edu/"
+    },
+    {
+      "url": "http://cws.ucsd.edu/",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://ctbp.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://ctbp.ucsd.edu/"
+    },
+    {
+      "url": "http://inc2.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://inc2.ucsd.edu/"
+    },
+    {
+      "url": "http://www.ucsd.edu/catalog/curric/CCCP.html",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www.ucsd.edu/catalog/curric/CCCP.html"
+    },
+    {
+      "url": "http://pages.ucsd.edu/~jhaviland/LinguisticAnthropologyLabWebSite/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://fmri.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://fmri.ucsd.edu/"
+    },
+    {
+      "url": "http://wearablesensors.ucsd.edu/",
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://devarajgroup.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://devarajgroup.ucsd.edu/"
+    },
+    {
+      "url": "http://mishaninalab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://mishaninalab.ucsd.edu/"
+    },
+    {
+      "url": "http://pharmacy.ucsd.edu/labs/wang/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://pharmacology.ucsd.edu/faculty/adams.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://primelab.eng.ucsd.edu/members",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://primelab.eng.ucsd.edu/members"
+    },
+    {
+      "url": "http://seelab.ucsd.edu/research.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://ucsdeparc.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://ucsdeparc.ucsd.edu/"
+    },
+    {
+      "url": "http://cwphs.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cwphs.ucsd.edu/"
+    },
+    {
+      "url": "http://biomedsci-db.ucsd.edu/faculty_index",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://biomedsci-db.ucsd.edu/faculty_index"
+    },
+    {
+      "url": "http://neatlabs.ucsd.edu/index.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://jacobsweb.ucsd.edu/idea/about/espanol",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://jacobsweb.ucsd.edu/idea/about/espanol"
+    },
+    {
+      "url": "http://neuro.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://neuro.eng.ucsd.edu/"
+    },
+    {
+      "url": "http://proteomics.ucsd.edu/vbafna/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://genomes.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://genomes.ucsd.edu/"
+    },
+    {
+      "url": "http://cseweb.ucsd.edu/groups/guru/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cseweb.ucsd.edu/groups/guru/"
+    },
+    {
+      "url": "http://neuroelectronics.ucsd.edu/UCSD_Neuroelectronics_Group/Home.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://figueroagroup.ucsd.edu/research.htm",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://sociology.ucsd.edu/faculty/bio/goldman.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://communication.ucsd.edu/people/faculty/daniel-c-hallin.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://chem-faculty.ucsd.edu/dorrestein/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://chem-faculty.ucsd.edu/dorrestein/"
+    },
+    {
+      "url": "http://guanlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://guanlab.ucsd.edu/"
+    },
+    {
+      "url": "http://adamslab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://adamslab.ucsd.edu/"
+    },
+    {
+      "url": "https://isn.ucsd.edu/isn.ucsd.edu",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://gehdev.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://gehdev.ucsd.edu/"
+    },
+    {
+      "url": "http://eparc.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://eparc.ucsd.edu/"
+    },
+    {
+      "url": "https://disc.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://disc.ucsd.edu/"
+    },
+    {
+      "url": "https://datascience.ucsd.edu/faculty/name/armin-schwartzman/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://raidivision.ucsd.edu/research/terkeltaub-lab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://raidivision.ucsd.edu/research/terkeltaub-lab"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/radiation-medicine/people/faculty/pages/Hoisak-Jeremy.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/158209",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/158209"
+    },
+    {
+      "url": "http://cse.ucsd.edu/~arunkk",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://cseweb.ucsd.edu/~arunkk"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/164782",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/164782"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/168032",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/168032"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/169482",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/169482"
+    },
+    {
+      "url": "https://chemistry.ucsd.edu/faculty/groups/o'connor_joseph_m.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/caffrey",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sociology.ucsd.edu/people/faculty/faculty%20members/harvey-goldman.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/momper",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/abagyan",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/taylor",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/gilson",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/radiation-medicine/research/labs/kim-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/168274",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/168274"
+    },
+    {
+      "url": "http://www-insel.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://www-insel.ucsd.edu/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/153373",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/153373"
+    },
+    {
+      "url": "http://cancer.ucsd.edu/coping/support-services/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://cancer.ucsd.edu/coping/support-services/Pages/default.aspx"
+    },
+    {
+      "url": "https://blog.matryx.ai/inside-the-virtual-lab-nanome-power-user-zoran-radi%C4%87-523d3bd2da60",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://blog.matryx.ai/inside-the-virtual-lab-nanome-power-user-zoran-radi%C4%87-523d3bd2da60"
+    },
+    {
+      "url": "http://dsp.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://dsp.ucsd.edu/"
+    },
+    {
+      "url": "http://bioinformatics-renlab.ucsd.edu/rentrac/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://bioinformatics-renlab.ucsd.edu/rentrac/"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/loci",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://www.biology.ucsd.edu/labs/subramani/",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/debnath",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/kufareva",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://llp.ucsd.edu/language-lab/$_EscapeTool.xml($Link)",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://eceweb.ucsd.edu/~smirarab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://eceweb.ucsd.edu/~smirarab"
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/sites/pharmacy.ucsd.edu/files/labs/handel/index.shtml",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/medicine/divisions/gastro/research/labs/ghosh/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://matsci.ucsd.edu/faculty/eduard-arzt",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to matsci.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "http://kaufmanlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://kaufmanlab.ucsd.edu/"
+    },
+    {
+      "url": "https://healthsciences.ucsd.edu/som/medicine/divisions/regenmed/research/crews-lab",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://healthsciences.ucsd.edu/som/medicine/divisions/regenmed/research/crews-lab"
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/radiation-medicine/research/labs/sharabi-lab/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://ortho.ucsd.edu/research/labs/spine-neuromuscular-physiology.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/155895",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/155895"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/145824",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/145824"
+    },
+    {
+      "url": "http://aboutezhe.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://aboutezhe.com/"
+    },
+    {
+      "url": "https://cse.ucsd.edu/people/faculty-profiles/joseph-pasquale",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to cse.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/siegel",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://sociology.ucsd.edu/people/faculty/faculty%20members/martha-lampland.html",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=18",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to jacobsschool.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://pharmacy.ucsd.edu/index.php/faculty/alle",
+      "status": "http_error",
+      "httpStatus": 500,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.math.ucsd.edu/people/profiles/frederick-manners",
+      "status": "fetch_error",
+      "httpStatus": 0,
+      "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/158900",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/158900"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/142425",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/142425"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/164877",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/164877"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/145820",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/145820"
+    },
+    {
+      "url": "https://sites.google.com/a/eng.ucsd.edu/paul-yj-cao/",
+      "status": "authentication_required",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/eng.ucsd.edu/paul-yj-cao/&followup=https://sites.google.com/a/eng.ucsd.edu/paul-yj-cao/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/151710",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/151710"
+    },
+    {
+      "url": "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb",
+      "status": "unsupported_content",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tmsxxm",
+      "status": "unsupported_content",
+      "httpStatus": 200,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://medschool.ucsd.edu/som/psychiatry/research/loci/people/Pages/default.aspx",
+      "status": "http_error",
+      "httpStatus": 404,
+      "error": "",
+      "blockedUrl": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/167246",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/167246"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/148671",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/148671"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/33943649",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/33943649"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/169559",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/169559"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/167965",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/167965"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/167966",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/167966"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/142424",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/142424"
+    },
+    {
+      "url": "http://zhaoresearchgroup.com/",
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "http://zhaoresearchgroup.com/"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/159488",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/159488"
+    },
+    {
+      "url": "https://profiles.ucsd.edu/profile/33944268",
+      "status": "robots_denied",
+      "httpStatus": null,
+      "error": null,
+      "blockedUrl": "https://profiles.ucsd.edu/profile/33944268"
+    }
+  ]
+}

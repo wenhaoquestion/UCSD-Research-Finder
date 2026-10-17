@@ -18,6 +18,7 @@ import urllib.parse
 
 from lab_summary_content import ContentDOM, decode_cached_html
 from rebuild_verified_atlas import url_key as lab_url_key
+from atlas_urls import comparison_key as lab_collision_key
 from refresh_labs import DOM as LegacyDOM
 from validate_data import validate_lab, validate_references
 
@@ -302,7 +303,10 @@ def _validate_decisions(handoff, decisions, baseline):
     _require(set(accepted) == FROZEN_LAB_IDS, 'Explicit accept decisions do not match frozen IDs')
     known_ids = {r['id'] for r in baseline['labs'] + baseline['professors']}
     _require(not known_ids.intersection(ids), 'Incremental ID collides with baseline')
-    known_urls = {lab_url_key(u) for lab in baseline['labs']
+    # Conservative admission hold only: possible HTTP/www/index variants may
+    # collide, but this never asserts a redirect, ownership, alias or URI match.
+    # Exact evidence/decision checks continue to use lab_url_key below.
+    known_urls = {lab_collision_key(u) for lab in baseline['labs']
                   for u in [lab['labWebsiteUrl']] + lab.get('alternateWebsiteUrls', [])}
     new_urls = {}
     bindings = []
@@ -311,6 +315,7 @@ def _validate_decisions(handoff, decisions, baseline):
         key, decision, sharing = accepted[lid]
         _require(_url(key) and _url(lab.get('labWebsiteUrl')), 'Invalid accepted lab URL')
         canonical = lab_url_key(lab['labWebsiteUrl'])
+        collision = lab_collision_key(lab['labWebsiteUrl'])
         _require(canonical == lab_url_key(key), 'Decision URL is not the accepted lab URL')
         fields = lab.get('fieldEvidence')
         _require(isinstance(fields, dict) and fields, 'Lab fieldEvidence required')
@@ -321,8 +326,8 @@ def _validate_decisions(handoff, decisions, baseline):
                      and 'websiteSharing' not in fields, 'Unreviewed sharing metadata')
         # Baseline collisions always fail. Only the already-validated pair can
         # share a new-batch URL; a sharing-shaped object grants no exception.
-        _require(canonical not in known_urls, 'Incremental lab URL collision')
-        owners = new_urls.setdefault(canonical, set())
+        _require(collision not in known_urls, 'Incremental lab URL collision')
+        owners = new_urls.setdefault(collision, set())
         _require(not owners or (sharing and owners <= set(SHARED_LAB_NAMES)), 'Incremental lab URL collision')
         owners.add(lid)
         _require(isinstance(decision.get('reason'), str) and decision['reason'].strip(), 'Accept reason required')

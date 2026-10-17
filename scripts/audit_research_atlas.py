@@ -9,6 +9,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from rebuild_verified_atlas import url_key
+from lab_entities import LabIndex
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "data" / "research-atlas.json"
@@ -55,8 +56,11 @@ def main() -> None:
     by_url = defaultdict(list)
     for lab in labs:
         by_url[url_key(lab.get("labWebsiteUrl", ""))].append(lab)
-    duplicate_urls = [items for items in by_url.values() if len(items) > 1]
+    index = LabIndex(labs)
+    index.validate_sharing()
+    shared_urls, duplicate_urls = index.url_groups()
     print(f"Duplicate URL groups: {len(duplicate_urls)}")
+    print(f"Reviewed shared lab website groups: {len(shared_urls)}")
 
     by_pi = defaultdict(list)
     for lab in labs:

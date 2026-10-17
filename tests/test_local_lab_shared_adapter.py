@@ -1,5 +1,6 @@
 """Offline adapter integration: robots and redirect wires share one gate."""
 import contextlib
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -19,6 +20,27 @@ class FakeSlot(dict):
         return dict(self)
 
 class SharedAdapterTests(unittest.TestCase):
+    def setUp(self):
+        # Offline integration tests use the repository's immutable v2 source
+        # bytes, not whichever live receipt happens to exist on the author's Mac.
+        pins = {'collectorCodeSha256': 'baa97a1a8b71216c76a3d125a17d25058c36fb509b8a19c7bf62e97ef507c253',
+                'coordinationCodeSha256': '3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c'}
+        for stem, digest in [('collect_ucsd_coverage', pins['collectorCodeSha256']),
+                             ('network_coordination', pins['coordinationCodeSha256']),
+                             ('collection_lock', '06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056')]:
+            source = gaps.OUT / 'network-adapter-sources' / (stem + '-' + digest + '.py')
+            self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), digest)
+        original_read = gaps.read
+        process_path = gaps.CACHE / 'process.json'
+        def fixture_read(path, *args, **kwargs):
+            return {'networkCoordination': pins} if path == process_path else original_read(path, *args, **kwargs)
+        fixture = patch.object(gaps, 'read', side_effect=fixture_read)
+        fixture.start()
+        self.addCleanup(fixture.stop)
+        no_process = patch.object(gaps.subprocess, 'run', side_effect=AssertionError('offline adapter attempted a subprocess'))
+        no_process.start()
+        self.addCleanup(no_process.stop)
+
     def test_wire_uri_policy_preserves_http_www_and_public_origin_validation(self):
         module=gaps.load_fetcher()
         url='http://www.cogsci.ucsd.edu/(Lab)?topic=one#section'

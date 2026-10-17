@@ -295,7 +295,15 @@ function evidenceFields(record) {
   ));
 }
 
+function profileLinkNeedsReview(record) {
+  const review = record.profileLinkIdentityReview;
+  return review?.captureVerified === true && review.status === "needs_review"
+    && review.originalProfileUri === record.officialProfileUrl && review.captures?.length === 2;
+}
+
 function sourceChecked(record) {
+  if (profileLinkNeedsReview(record)) return false;
+  if (record.destinationIdentityAssessment?.identityStatus === "mismatch" || record.verification?.destinationIdentityStatus === "mismatch") return false;
   return record.verification?.status === "source_checked" || evidenceFields(record).length > 0;
 }
 
@@ -409,23 +417,36 @@ function academicMetrics(record) {
 
 /* ---------- Record model ---------- */
 
+function primaryAffiliationLabel(record) {
+  return (record.labAffiliations || []).some((item) => item.recordSubtype === "ngo" && item.url === record.labAffiliationUrl)
+    ? "Organization affiliation" : "Lab affiliation";
+}
+
 function professorLinks(professor) {
+  const reviewedLink = profileLinkNeedsReview(professor);
   return [
-    ["Faculty profile", professor.officialProfileUrl],
+    [reviewedLink ? "Original profile link (identity review)" : "Faculty profile", professor.officialProfileUrl],
     ["Personal website", professor.personalWebsiteUrl],
     ["Google Scholar profile", hasScholarProfile(professor) ? professor.googleScholarUrl : null],
     ["Google Scholar search", professor.googleScholarSearchUrl],
     ["OpenAlex author", professor.academicProfile?.openAlexUrl],
     ["LinkedIn search", professor.linkedinSearchUrl],
-    ["Lab affiliation", professor.labAffiliationUrl],
+    [primaryAffiliationLabel(professor), professor.labAffiliationUrl],
     ...(professor.labAffiliations || []).filter((lab) => lab.url !== professor.labAffiliationUrl).map((lab) => [lab.labName || "Related lab", lab.url]),
   ].filter(([, url]) => isKnown(url));
 }
 
+function unverifiedOwnershipPi(record) {
+  return record.unverifiedFields?.includes("principalInvestigator")
+    && (record.labOwnershipReviews || []).some((review) => review.captureVerified === true
+      && review.kind === "existing_lab_own_contact_institution");
+}
+
 function labLinks(lab) {
   return [
-    ["Lab website", lab.labWebsiteUrl],
+    [lab.destinationIdentityAssessment?.identityStatus === "mismatch" || lab.verification?.destinationIdentityStatus === "mismatch" ? "Original listed website (identity mismatch)" : lab.recordSubtype === "ngo" ? "Organization website" : "Lab website", lab.labWebsiteUrl],
     ["PI profile", lab.principalInvestigatorProfileUrl],
+    ...(lab.sharedResourceReviews || []).filter((review) => review.captureVerified && review.action === "register_shared_lab_resource" && review.resourceKind === "shared_landing_page" && review.memberLabIds?.includes(lab.id)).map((review) => ["Shared landing page", review.resourceUri]),
   ].filter(([, url]) => isKnown(url));
 }
 
@@ -467,7 +488,7 @@ function withFacts(record) {
 }
 
 function buildRecords(data, realPortalData = null) {
-  const professors = mergeProfessorDuplicates((data.professors || []).map((item) => ({
+  const professors = (data.professors || []).map((item) => ({
     ...item,
     recordType: "professor",
     displayName: knownText(item.name) || NOT_FOUND,
@@ -477,16 +498,16 @@ function buildRecords(data, realPortalData = null) {
     researchAreas: item.researchAreas || [],
     sourceUrls: item.sourceUrls || [],
     links: professorLinks(item),
-  }))).map((record) => withFacts({
+  })).map((record) => withFacts({
     ...record,
-    departments: record.mergedProfileCount > 1 ? record.departmentAffiliations : departmentNames(record),
+    departments: departmentNames(record),
   }));
 
   const labs = (data.labs || []).map((item) => withFacts({
     ...item,
     recordType: "lab",
     displayName: knownText(item.labName) || NOT_FOUND,
-    displayKind: item.recordSubtype === "research_group" ? "Research group" : "Lab",
+    displayKind: item.recordSubtype === "ngo" ? "NGO" : item.recordSubtype === "research_group" ? "Research group" : "Lab",
     departments: departmentNames(item),
     summary: knownText(item.description),
     email: knownText(item.contactEmail),
@@ -516,113 +537,22 @@ function buildRecords(data, realPortalData = null) {
   return [...professors, ...labs, ...resources];
 }
 
-function professorMergeKey(record) {
-  const name = normalize(record.displayName || record.name);
-  if (!name || !isKnown(record.displayName || record.name)) return "";
-  // Department offices and research centers share contact addresses. An email
-  // alone is not a person identity and must not collapse different professors.
-  if (isKnown(record.email)) return `name:${name}|email:${String(record.email).toLowerCase()}`;
-  if (hasScholarProfile(record)) return `name:${name}|scholar:${record.googleScholarUrl}`;
-  return "";
-}
-
-function academicScore(record) {
-  const profile = record.academicProfile || {};
-  let score = 0;
-  if (isKnown(profile.citationCount)) score += 10;
-  if (isKnown(profile.worksCount)) score += 8;
-  if (isKnown(profile.openAlexUrl)) score += 6;
-  score += Math.min((profile.recentPublications || []).length, 5);
-  return score;
-}
-
-function summaryScore(record) {
-  const text = String(record.summary || "");
-  let score = Math.min(text.length, 400);
-  if (/public .*faculty profile/i.test(text)) score -= 80;
-  if (/catalog|listing/i.test(text)) score -= 45;
-  if (/research on|research in|focus/i.test(text)) score += 80;
-  return score;
-}
-
-function bestBy(records, scorer) {
-  return [...records].sort((a, b) => scorer(b) - scorer(a))[0];
-}
-
-function mergeProfessorGroup(records) {
-  if (records.length === 1) return records[0];
-
-  const base = { ...bestBy(records, (record) => summaryScore(record) + academicScore(record)) };
-  const academicRecord = bestBy(records, academicScore);
-  const summaryRecord = bestBy(records, summaryScore);
-  const departments = uniqueByNormalized(records.map((record) => record.department));
-  const institutions = uniqueByNormalized(records.map((record) => record.institution));
-  const profileIds = records.map((record) => record.id).filter(Boolean);
-
-  base.id = profileIds[0] || base.id;
-  base.mergedProfileIds = profileIds;
-  base.mergedProfileCount = records.length;
-  base.department = departments.join(" + ");
-  base.institution = institutions[0] || base.institution;
-  base.summary = summaryRecord.summary;
-  base.researchSummary = summaryRecord.summary;
-  base.email = records.find((record) => isKnown(record.email))?.email || base.email;
-  base.personalWebsiteUrl = records.find((record) => isKnown(record.personalWebsiteUrl))?.personalWebsiteUrl || base.personalWebsiteUrl;
-  base.officialProfileUrl = records.find((record) => isKnown(record.officialProfileUrl))?.officialProfileUrl || base.officialProfileUrl;
-  base.googleScholarUrl = records.find((record) => hasScholarProfile(record))?.googleScholarUrl || base.googleScholarUrl;
-  base.googleScholarSearchUrl = records.find((record) => isKnown(record.googleScholarSearchUrl))?.googleScholarSearchUrl || base.googleScholarSearchUrl;
-  base.linkedinSearchUrl = records.find((record) => isKnown(record.linkedinSearchUrl))?.linkedinSearchUrl || base.linkedinSearchUrl;
-  base.labAffiliation = uniqueByNormalized(records.map((record) => record.labAffiliation)).join(" + ") || base.labAffiliation;
-  base.labAffiliationUrl = records.find((record) => isKnown(record.labAffiliationUrl))?.labAffiliationUrl || base.labAffiliationUrl;
-  base.labAffiliations = [...new Map(records.flatMap((record) => record.labAffiliations || []).map((lab) => [`${lab.labId}|${lab.url}`, lab])).values()];
-  base.aliasNames = uniqueByNormalized(records.flatMap((record) => record.aliasNames || []));
-  base.departmentAffiliations = uniqueByNormalized(records.flatMap(departmentNames));
-  base.directoryListings = records.flatMap((record) => Array.isArray(record.directoryListings) ? record.directoryListings : []);
-  base.researchAreas = uniqueByNormalized(records.flatMap((record) => record.researchAreas || []));
-  base.sourceUrls = unique(records.flatMap((record) => record.sourceUrls || []).filter(isKnown));
-  base.links = uniqueLinks(records.flatMap((record) => record.links || []));
-  base.academicProfile = academicRecord.academicProfile || base.academicProfile;
-  const courseMap = new Map(records.flatMap(coursesFor).map((course) => [
-    [course.courseCode, course.term, course.sourceUrl].join("|"), course,
-  ]));
-  base.teaching = { ...(base.teaching || {}), courses: [...courseMap.values()] };
-  base.teaching.candidates = [...new Map(records.flatMap((record) => record.teaching?.candidates || []).map((course) => [
-    [course.courseCode, course.term, course.sourceUrl, course.instructorName].join("|"), course,
-  ])).values()];
-  base.ratings = {};
-  for (const record of [...records].sort((a, b) => String(a.verification?.lastAttemptedAt || "").localeCompare(String(b.verification?.lastAttemptedAt || "")))) {
-    for (const [key, rating] of Object.entries(record.ratings || {})) {
-      if (!base.ratings[key] || rating.status === "verified") base.ratings[key] = rating;
+// Person identities are resolved by the source-reviewed data build. The UI
+// preserves separate records and resolves only explicitly retained stable IDs.
+function makeRecordIndex(records) {
+  const index = new Map();
+  for (const record of records) {
+    for (const id of [record.id, ...(record.aliasIds || [])]) {
+      if (!id) continue;
+      if (index.has(id) && index.get(id) !== record) throw new Error(`Ambiguous record ID: ${id}`);
+      index.set(id, record);
     }
   }
-  base.fieldEvidence = {};
-  records.forEach((record) => Object.entries(record.fieldEvidence || {}).forEach(([key, values]) => {
-    base.fieldEvidence[key] = [...(base.fieldEvidence[key] || []), ...(Array.isArray(values) ? values : [])];
-  }));
-  base.verification = records.find((record) => record.verification?.status === "needs_review")?.verification
-    || records.find((record) => record.verification?.status === "source_checked")?.verification
-    || base.verification;
-  base.recruitingStatus = records.find((record) => record.recruitingStatus === "Recruiting")?.recruitingStatus
-    || records.find((record) => record.recruitingStatus === "Not recruiting")?.recruitingStatus
-    || base.recruitingStatus;
-  base.recruitingEvidence = records.find((record) => record.recruitingEvidence?.text)?.recruitingEvidence || base.recruitingEvidence;
-  return base;
+  return index;
 }
 
-function mergeProfessorDuplicates(professors) {
-  const groups = new Map();
-  const singles = [];
-  for (const professor of professors) {
-    const key = professorMergeKey(professor);
-    if (!key) {
-      singles.push(professor);
-      continue;
-    }
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(professor);
-  }
-
-  return [...groups.values()].map(mergeProfessorGroup).concat(singles);
+function programConnections(record) {
+  return (record.campusProgramRelationships || []).filter((entry) => entry.captureVerified === true && entry.relationship === "program_listing_and_own_rotation_guidance");
 }
 
 function buildIndex(records) {
@@ -643,6 +573,7 @@ function buildIndex(records) {
       ...(record.labAffiliations || []).flatMap((lab) => [lab.labName, lab.url]),
       record.principalInvestigator,
       ...(record.relatedProfessorNames || []),
+      ...programConnections(record).map((entry) => entry.programName),
       record.organization,
       record.resourceType,
       record.applicationProcedure,
@@ -940,7 +871,9 @@ function rowTags(record) {
   const tags = record.researchAreas.filter((area) => !departments.has(normalize(area)));
   // Profile keywords fill in for records whose prose matched no controlled area.
   if (tags.length < 3) tags.push(...(record.researchKeywords || []).slice(0, 4 - tags.length));
-  if (record.recordType === "lab" && isKnown(record.principalInvestigator)) tags.unshift(`PI ${record.principalInvestigator}`);
+  if (record.recordType === "lab" && isKnown(record.principalInvestigator)) {
+    tags.unshift(`${unverifiedOwnershipPi(record) ? "Earlier PI label (unverified):" : "PI"} ${record.principalInvestigator}`);
+  }
   if (record.recordType === "professor" && record.facts.courses) {
     tags.unshift(...unique(coursesFor(record).map((course) => course.courseCode)).slice(0, 3));
   }
@@ -1154,7 +1087,7 @@ function highlightSelectedRow() {
 function showDetail(id) {
   const record = state.byId.get(id);
   if (!record) return false;
-  state.activeId = id;
+  state.activeId = record.id;
   const view = renderDetail(record);
   if (!prefersReducedMotion()) {
     view.classList.add("is-entering");
@@ -1204,13 +1137,23 @@ function evidenceItem(title, meta, excerpt, links) {
   item.append(make("strong", "", title));
   if (meta) item.append(make("span", "evidence-meta", meta));
   if (excerpt) item.append(make("p", "evidence-quote", excerpt));
-  const actions = links.filter(([, url]) => isKnown(url));
+  const actions = links.filter(([, url]) => validExternalUrl(url));
   if (actions.length) {
     const row = make("p", "evidence-links");
     row.append(...actions.map(([label, url]) => makeExternal(label, url)));
     item.append(row);
   }
   return item;
+}
+
+function validExternalUrl(value) {
+  if (typeof value !== "string" || /\s/.test(value)) return false;
+  try {
+    const url = new URL(value);
+    return ["http:", "https:"].includes(url.protocol) && !url.username && !url.password;
+  } catch {
+    return false;
+  }
 }
 
 function detailHead(record) {
@@ -1220,7 +1163,6 @@ function detailHead(record) {
   if (record.recruitingStatus === "Recruiting") kind.append(make("span", "is-recruiting", "Recruiting"));
   else if (record.recruitingStatus === "Not recruiting") kind.append(make("span", "is-muted", "Not recruiting"));
   kind.append(make("span", record.facts.needsReview ? "is-warn" : "is-muted", verificationLabel(record)));
-  if (record.mergedProfileCount > 1) kind.append(make("span", "is-muted", `${record.mergedProfileCount} profiles merged`));
 
   const affiliation = [record.departments.join(" / "), record.institution].filter(isKnown).join(" — ");
   head.append(kind, make("h2", "detail-title", record.displayName), make("p", "detail-affiliation", affiliation || NOT_FOUND));
@@ -1256,7 +1198,26 @@ function detailLinks(record) {
     item.append(makeExternal(label, url));
     list.append(item);
   }
-  return detailSection("Links", list);
+  const section = detailSection("Links", list);
+  const review = record.profileLinkIdentityReview;
+  if (record.recordType === "professor" && profileLinkNeedsReview(record)) {
+    const [destination, separate] = review.captures;
+    const issue = make("div", "profile-link-review");
+    const observations = make("ul", "evidence-list");
+    issue.append(make("p", "rating-warn", `Profile link needs review: the stored link opens a page headed ${destination.nameAsDisplayed}. Its relationship to ${record.displayName} is unresolved.`));
+    observations.append(evidenceItem(
+      `Captured destination: ${destination.nameAsDisplayed}`, `Observed ${dateLabel(destination.observedAt)}`,
+      "This is the captured destination of the stored profile link.", [["Destination source", destination.sourceUrl]],
+    ));
+    observations.append(evidenceItem(
+      `Separate named page: ${separate.nameAsDisplayed} · identity unresolved`, `Observed ${dateLabel(separate.observedAt)}`,
+      "A matching display name on a separately captured page does not establish its relationship to this record.",
+      [["Separate page for review", separate.sourceUrl]],
+    ));
+    issue.append(observations);
+    section.append(issue);
+  }
+  return section;
 }
 
 function detailOverview(record) {
@@ -1371,9 +1332,11 @@ function ratingDetails(record) {
 
 function labAffiliationDetails(record) {
   const affiliations = record.labAffiliations || [];
-  if (!affiliations.length) return detailSection("Labs & research groups", note("No lab relationship has been reverified for this professor yet."));
+  const unresolved = record.unresolvedLabLinks || [];
+  if (!affiliations.length && !unresolved.length) return detailSection("Labs & research groups", note("No lab relationship has been reverified for this professor yet."));
   const relationLabels = {
     faculty_lab_link: "Lab linked from faculty profile",
+    faculty_organization_link: "Documented organization association",
     official_directory_same_record: "Listed together in official directory",
     principal_investigator: "Listed as principal investigator",
   };
@@ -1384,13 +1347,22 @@ function labAffiliationDetails(record) {
       lab.labName || "Research group",
       `${relationLabels[lab.relationship] || "Documented lab association"} · observed ${dateLabel(evidence.observedAt)}`,
       evidence.evidence || "",
-      [["Lab website", lab.url], ["Relationship source", evidence.sourceUrl]],
+      [[lab.recordSubtype === "ngo" ? "Organization website" : "Lab website", lab.url], ["Relationship source", evidence.sourceUrl]],
+    ));
+  }
+  for (const lab of unresolved) {
+    const evidence = Array.isArray(lab.fieldEvidence) ? lab.fieldEvidence[0] || {} : (lab.fieldEvidence || {});
+    list.append(evidenceItem(
+      lab.labName || "Lab link awaiting identity review",
+      `Shared website; named lab unresolved · observed ${dateLabel(evidence.observedAt)}`,
+      evidence.evidence || "",
+      [["Shared website", lab.url], ["Relationship source", evidence.sourceUrl]],
     ));
   }
   return detailSection(
-    "Labs & research groups",
+    "Labs, groups & organizations",
     list,
-    note("An associated lab link alone does not establish that the professor leads the lab. The relationship and original wording are shown above."),
+    note("An associated lab or organization link alone does not establish a leadership role. The relationship and original wording are shown above."),
   );
 }
 
@@ -1433,6 +1405,7 @@ function facultyDirectoryDetails(record) {
   const listings = Array.isArray(record.directoryListings) ? record.directoryListings : [];
   if (listings.length) {
     const list = make("ul", "evidence-list");
+    const qualifications = new Set();
     for (const entry of listings) {
       const excerpt = typeof entry.evidence === "string" ? entry.evidence : entry.evidence?.evidence || "";
       list.append(evidenceItem(
@@ -1441,8 +1414,33 @@ function facultyDirectoryDetails(record) {
         excerpt,
         [["Directory source", entry.sourceUrl]],
       ));
+      const qualification = entry.academicQualification;
+      const proof = qualification?.evidence;
+      const key = JSON.stringify([proof?.sourceUrl, proof?.observedAt, qualification?.roleAsListed]);
+      if (isKnown(qualification?.roleAsListed) && isKnown(proof?.sourceUrl) && proof?.observedAt && !qualifications.has(key)) {
+        qualifications.add(key);
+        const item = evidenceItem(
+          `Profile academic title · ${qualification.roleAsListed}`,
+          `Observed ${dateLabel(proof.observedAt)}`,
+          proof.evidence || "",
+          [["Profile source", proof.sourceUrl]],
+        );
+        item.classList.add("academic-qualification");
+        list.append(item);
+      }
     }
     parts.push(list);
+  }
+  const normalization = record.departmentLabelNormalization;
+  if (normalization?.captureVerified) {
+    const unitList = make("ul", "evidence-list unit-label-normalization");
+    unitList.append(evidenceItem(
+      `Published unit: ${normalization.sourceUnitAsPublished}`,
+      `Appointment observed ${dateLabel(normalization.ownAppointmentObservedAt)} · Unit page observed ${dateLabel(normalization.unitObservedAt)}`,
+      `Normalized to ${normalization.canonicalDepartment} using the registered official unit page (${normalization.unitNameAsPublished}). This category may be a school, institute or umbrella unit.`,
+      [["Own appointment source", normalization.ownAppointmentSourceUrl], ["Official unit page", normalization.unitSourceUrl]],
+    ));
+    parts.push(unitList);
   }
   parts.push(note("These roles describe how official directories list this person. A directory listing alone does not confirm current employment."));
   return detailSection("Faculty roles & affiliations", ...parts);
@@ -1452,18 +1450,45 @@ function detailFields(record) {
   if (record.recordType === "professor") {
     return detailSection("Contact", fieldGrid([
       ["Email", record.email],
-      ["Lab affiliation", record.labAffiliation, record.labAffiliationUrl],
+      [primaryAffiliationLabel(record), record.labAffiliation, record.labAffiliationUrl],
       ["Legacy verification date", record.lastVerified],
     ]));
   }
   if (record.recordType === "lab") {
-    return detailSection("Lab details", fieldGrid([
-      ["Principal investigator", record.principalInvestigator, record.principalInvestigatorProfileUrl],
+    const fields = fieldGrid([
+      [unverifiedOwnershipPi(record) ? "Earlier PI label (unverified)" : "Principal investigator", record.principalInvestigator, record.principalInvestigatorProfileUrl],
       ["Associated professors", record.relatedProfessorNames || []],
       ["Contact", record.email],
+      ...(record.additionalContactEmails?.length ? [["Other published contacts", record.additionalContactEmails]] : []),
       ["Type", record.displayKind],
+      ...(record.websiteSharing?.kind === "distinct_named_labs" ? [["Website", "Shared by separately named labs"]] : []),
       ["Legacy verification date", record.lastVerified],
-    ]));
+    ]);
+    const parts = [fields];
+    const connections = programConnections(record);
+    if (connections.length) {
+      const list = make("ul", "evidence-list");
+      for (const entry of connections) {
+        list.append(evidenceItem(entry.programName,
+          `Program directory lists ${entry.facultyNameAsListed} as ${entry.facultyRoleAsListed}. Rotation guidance observed ${dateLabel(entry.studentAccessStatement?.observedAt)}.`,
+          entry.studentAccessStatement?.text || "",
+          [["UCSD program source", entry.programSourceUrl], ["Lab rotation guidance", entry.studentAccessStatement?.url]]));
+      }
+      parts.push(make("h4", "sub-heading", "UCSD graduate program connections"), list);
+    }
+    const resources = (record.campusResearchRelationships || []).filter((entry) =>
+      entry.captureVerified === true && entry.relationship === "named_directory_resource_link");
+    if (resources.length) {
+      const list = make("ul", "evidence-list");
+      for (const entry of resources) {
+        list.append(evidenceItem(entry.directoryNameAsPublished,
+          `The directory card for ${entry.listedNameAsPublished} links this group as “${entry.linkLabelAsPublished}”. Observed ${dateLabel(entry.observedAt)}.`,
+          "The directory link establishes a research resource connection. The group’s institution, department and PI remain unverified.",
+          [["UCSD directory source", entry.directorySourceUrl]]));
+      }
+      parts.push(make("h4", "sub-heading", "UCSD research resource listing"), list);
+    }
+    return detailSection(record.recordSubtype === "ngo" ? "Organization details" : "Lab details", ...parts);
   }
   const fields = [
     ["Organization", record.organization],
@@ -1756,7 +1781,8 @@ async function loadData() {
   state.data = data;
   state.records = buildRecords(data, realPortalData);
   state.index = buildIndex(state.records);
-  state.byId = new Map(state.records.map((record) => [record.id, record]));
+  state.byId = makeRecordIndex(state.records);
+  state.saved = new Set([...state.saved].map((id) => state.byId.get(id)?.id || id));
 
   renderFacets();
   syncControls();

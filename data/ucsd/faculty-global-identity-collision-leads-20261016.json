@@ -1,0 +1,2541 @@
+{
+  "at": "2026-10-17T15:30:15.635982+00:00",
+  "isFinalIdentityReview": false,
+  "candidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e",
+  "candidatePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/fainman-person-identity-preview/assembly/research-atlas.json",
+  "scope": "The original exhaustive49-group inventory and its record hashes describe the frozen6232-person discovery snapshot named by candidateAtlasSha256. Groups overlap and are not proven duplicate or unique-person counts. Latest review adds5positive original Profiles captures and27contact-field decisions, resolving3contact-only groups and partially correcting2directory-label groups. Original snapshots remain unchanged;no person merge is applied.",
+  "groupCounts": {
+    "shared_original_individual_uri": 6,
+    "normalized_published_name": 20,
+    "shared_contact_discovery_only": 23
+  },
+  "cases": [
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://chemistry.ucsd.edu/faculty/profiles/timothy-baker",
+      "records": [
+        {
+          "id": "ucsd-faculty-tim-baker",
+          "name": "Tim S. Baker",
+          "department": "Biological Sciences",
+          "primary": "https://chemistry.ucsd.edu/faculty/profiles/timothy-baker",
+          "wholeRecordSha256": "b2a603b41b06657afdfcd1b02ec27ebc63f95c9829b1c20018c56389be1451c6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-chemistry-biochemistry-timothy-s-baker",
+          "name": "Timothy S. Baker",
+          "department": "Chemistry & Biochemistry",
+          "primary": "https://chemistry.ucsd.edu/faculty/profiles/timothy-baker",
+          "wholeRecordSha256": "a404622df9c8ad7b56147e26d2f6c94b78fe1c2970604f319f1ef7d69050bcc2",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://profiles.ucsd.edu/joy.donofrio",
+      "records": [
+        {
+          "id": "ucsd-emergency-medicine-joelle-donofrio-odman",
+          "name": "Joelle Donofrio-Odman",
+          "department": "Emergency Medicine",
+          "primary": "https://profiles.ucsd.edu/joy.donofrio",
+          "wholeRecordSha256": "6cc290f2fb3d75247d50cbdc913da7685e682d6de0f2bafd9ab41222dc31d77e",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-pediatrics-joelle-donofrio-odmann",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/joy.donofrio",
+              "observedAt": "2026-10-03T01:35:17+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Joelle Donofrio Odmann | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-pediatrics-joelle-donofrio-odmann",
+          "name": "Joelle Donofrio Odmann",
+          "department": "Pediatrics",
+          "primary": "https://profiles.ucsd.edu/joy.donofrio",
+          "wholeRecordSha256": "1e6c3a385072ee8af4c55d230a459ad9f718c772827a364aedde2ce73c61345b",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-pediatrics-joelle-donofrio-odmann",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/joy.donofrio",
+              "observedAt": "2026-10-03T01:35:17+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Joelle Donofrio Odmann | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+      "additionalOriginalProfileObservation": {
+        "requestedUrl": "https://profiles.ucsd.edu/joy.donofrio",
+        "ownProfileMetadata": {
+          "requestedUrl": "https://profiles.ucsd.edu/joy.donofrio",
+          "sourceUrl": "https://profiles.ucsd.edu/joy.donofrio",
+          "observedAt": "2026-10-17T18:33:38+00:00",
+          "bodySha256": "30da9795b744f42f0a5a3474a4f6307462f53f618ccc540effcb44f2d9675fb7",
+          "nameAsDisplayed": "Joelle Donofrio Odmann",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/joy.donofrio",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/197875/197875.rdf"
+        },
+        "ownAppointmentAsListed": {
+          "nameAsDisplayed": "Joelle Donofrio Odmann",
+          "identityHeadingMethod": "profiles_page_title_h2",
+          "titleAsListed": "Professor Of Clinical, Pediatrics",
+          "schoolAsListed": "Vc-health Sciences-schools",
+          "sourceUrl": "https://profiles.ucsd.edu/joy.donofrio",
+          "observedAt": "2026-10-17T18:33:38+00:00",
+          "status": "explicit_faculty_appointment_as_listed",
+          "departmentAsListed": "Pediatrics",
+          "mappedDepartment": "Pediatrics"
+        },
+        "ownOverviewAsPublished": "Dr. J. Joelle Donofrio-Ödmann is an Associate Professor of Pediatrics and Emergency Medicine at the University of California San Diego (UCSD). She serves as the EMS medical director for Rady Children's Hospital of San Diego and as the Associate Medical Director for San Diego Fire-Rescue Department (SDFD) and the City of San Diego. After graduating cum laude from Touro University College of Osteopathic Medicine, Dr. Donofrio-Ödmann completed her pediatric residency at the University of Southern California and Los Angeles County Medical Center. She went on to complete a three-year pediatric emergency medicine fellowship at Harbor-UCLA and an emergency medical services fellowship at UC San Diego. She is board certified in pediatrics, pediatric emergency medicine, and emergency medical services. Dr. Donofrio-Ödmann's research interests and publications involve pediatric disaster and prehospital care of both adults and children. Her other interests include paramedic pediatric education and optimization of prehospital system-based care. She is involved in Free Open Access Medical Education (FOAMed) as an editor and podcaster with both the National Association of EMS Physician (NAEMSP)’s Prehospital Emergency Care Podcast and the Digital EMS California Academy of Learning (DECAL)’s California EMS Podcast series. http://pecpodcast.libsyn.com/ http://www.emdac.org/ems-podcast-series.html In her spare time, Dr. Donofrio-Ödmann enjoys painting, surfing, tennis, and most importantly time with her family.",
+        "publishedClinicalProfileLinks": [],
+        "publishedDirectoryRequestEvidence": {
+          "requestedUrl": "https://emergencymed.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://emergencymed.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T00:57:25+00:00",
+          "bodySha256": "5a65658cd5e85f50919b8c6088b806ce43f393943e37b394979db979ee03c42d",
+          "evidenceType": "named_link",
+          "evidence": "Donofrio-Odman, Joelle, DO -> https://profiles.ucsd.edu/joy.donofrio",
+          "linkText": "Donofrio-Odman, Joelle, DO",
+          "linkUrl": "https://profiles.ucsd.edu/joy.donofrio",
+          "method": "published_exact_original_profile_uri_from_captured_named_department_directory",
+          "status": "verified"
+        },
+        "adjudicationStatus": "pending_identity_chain_review",
+        "mergeApplied": false,
+        "scalarFieldsApplied": false,
+        "rawBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/global-identity-source-review/original-profile-captures/responses/6796fecb7cd3428b1ad59c1ad1887595206a6dfdd9bf007805afa19dc5a54dbb.html",
+        "scope": "Own subject, personal canonical/RDF metadata and actual appointment captured. The two original person IDs remain separate pending a complete identity-chain decision. Original record snapshots and their earlier missing-body diagnostics remain unchanged."
+      }
+    },
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://profiles.ucsd.edu/aaron.carlin",
+      "records": [
+        {
+          "id": "ucsd-medicine-aaron-foster-carlin",
+          "name": "Aaron Foster Carlin",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/aaron.carlin",
+          "wholeRecordSha256": "359e97958f4fd0dbbf8b88ee5f57245d6d1b52c7896ed0ef851ba43a96d53529",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-pathology-aaron-carlin",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+              "observedAt": "2026-10-03T01:57:55+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Aaron Carlin | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-pathology-aaron-carlin",
+          "name": "Aaron Carlin",
+          "department": "Pathology",
+          "primary": "https://profiles.ucsd.edu/aaron.carlin",
+          "wholeRecordSha256": "5add3e3f321a7ab90bbdcbe04892206f48cfda3baa222ea0c825ad8ec883c317",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-pathology-aaron-carlin",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+              "observedAt": "2026-10-03T01:57:55+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Aaron Carlin | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+      "additionalOriginalProfileObservation": {
+        "requestedUrl": "https://profiles.ucsd.edu/aaron.carlin",
+        "ownProfileMetadata": {
+          "requestedUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "observedAt": "2026-10-17T18:33:48+00:00",
+          "bodySha256": "f1c5c1c9e7502f3c0be0e9dc7f7d3a39f2bac1bfb11f302d4f446c3f235b6a41",
+          "nameAsDisplayed": "Aaron Carlin",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/aaron.carlin",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/181230/181230.rdf"
+        },
+        "ownAppointmentAsListed": {
+          "nameAsDisplayed": "Aaron Carlin",
+          "identityHeadingMethod": "profiles_page_title_h2",
+          "titleAsListed": "Associate Professor, Pathology",
+          "schoolAsListed": "Vc-health Sciences-schools",
+          "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "observedAt": "2026-10-17T18:33:48+00:00",
+          "status": "explicit_faculty_appointment_as_listed",
+          "departmentAsListed": "Pathology",
+          "mappedDepartment": "Pathology"
+        },
+        "ownOverviewAsPublished": "Dr. Aaron Carlin received his M.D. and Ph.D. at UCSD. After graduation, Dr. Carlin joined the Physician Scientist Training Program at UCSD where he completed a Residency in Internal Medicine and a Fellowship and Chief Fellowship in Infectious Diseases. He subsequently joined the UCSD Department of Medicine, Division of Infectious Diseases. In addition to attending on the Solid Organ Transplant and Hematology/Oncology Infectious Disease services, Dr. Carlin conducts basic and translational research that utilizes cutting edge molecular techniques to understand the mechanisms by which emerging and reemerging pathogens, like Zika virus, Dengue virus, SARS-CoV-2 and Coccidioides, cause disease in humans. His approach focuses on identifying mechanisms by which anti-viral transcriptional programs are regulated in myeloid cells and how pathogenic viruses subvert host responses to cause human disease. Ultimately, Dr. Carlin aims to exploit this detailed understanding of host-viral interactions to understand how and why certain microorganisms cause human disease, develop new methods for diagnosing infectious disease and identify the best targets for new antimicrobials.",
+        "publishedClinicalProfileLinks": [],
+        "publishedDirectoryRequestEvidence": {
+          "requestedUrl": "https://pathology.ucsd.edu/faculty",
+          "sourceUrl": "https://pathology.ucsd.edu/faculty/",
+          "observedAt": "2026-10-16T00:57:31+00:00",
+          "bodySha256": "ef9f38267b8f1dfc0574b84a62943b7fb888b344fc52e20165710ba5e0cc0789",
+          "evidenceType": "named_link",
+          "evidence": "CARLIN, Aaron, MD, PhD -> https://profiles.ucsd.edu/aaron.carlin",
+          "linkText": "CARLIN, Aaron, MD, PhD",
+          "linkUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "method": "published_exact_original_profile_uri_from_captured_named_department_directory",
+          "status": "verified"
+        },
+        "adjudicationStatus": "pending_identity_chain_review",
+        "mergeApplied": false,
+        "scalarFieldsApplied": false,
+        "rawBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/global-identity-source-review/original-profile-captures/responses/bad328a6be5256f8aa484b28171f84e1f968e78a45ac5c72db50c37b0cf0fa9f.html",
+        "scope": "Own subject, personal canonical/RDF metadata and actual appointment captured. The two original person IDs remain separate pending a complete identity-chain decision. Original record snapshots and their earlier missing-body diagnostics remain unchanged."
+      }
+    },
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://profiles.ucsd.edu/gene.tan",
+      "records": [
+        {
+          "id": "ucsd-medicine-gene-brian-tan",
+          "name": "Gene Brian Tan",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/gene.tan",
+          "wholeRecordSha256": "b078c1850e0d2488f851357f6033b238431898fd848a925c6b8073d4708921d2",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-gene-tan",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/gene.tan",
+              "observedAt": "2026-10-03T02:24:54+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Gene Tan | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-public-health-gene-tan",
+          "name": "Gene Tan",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/gene.tan",
+          "wholeRecordSha256": "a496565baec2e3691657d762e97df01d32ea29dc705c6a2b726e5bfee98bfed0",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-gene-tan",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/gene.tan",
+              "observedAt": "2026-10-03T02:24:54+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Gene Tan | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+      "additionalOriginalProfileObservation": {
+        "requestedUrl": "https://profiles.ucsd.edu/gene.tan",
+        "ownProfileMetadata": {
+          "requestedUrl": "https://profiles.ucsd.edu/gene.tan",
+          "sourceUrl": "https://profiles.ucsd.edu/gene.tan",
+          "observedAt": "2026-10-17T18:33:58+00:00",
+          "bodySha256": "a4ce09d0aa705cfa3182b07c9ffd63620118f48f447dcf3ada150ac8a2febc31",
+          "nameAsDisplayed": "Gene Tan",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/gene.tan",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/174023/174023.rdf"
+        },
+        "ownAppointmentAsListed": {
+          "nameAsDisplayed": "Gene Tan",
+          "identityHeadingMethod": "profiles_page_title_h2",
+          "titleAsListed": "Lecturer - Academic Year - 1/9, Herbert Wertheim School of Public Health & Human Longevity Science",
+          "schoolAsListed": "Vc-health Sciences-schools",
+          "sourceUrl": "https://profiles.ucsd.edu/gene.tan",
+          "observedAt": "2026-10-17T18:33:58+00:00",
+          "status": "explicit_faculty_appointment_as_listed",
+          "departmentAsListed": "Herbert Wertheim School of Public Health & Human Longevity Science",
+          "mappedDepartment": "Unknown"
+        },
+        "ownOverviewAsPublished": null,
+        "publishedClinicalProfileLinks": [],
+        "publishedDirectoryRequestEvidence": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-16T00:57:26+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "evidenceType": "named_link",
+          "evidence": "Tan, Gene Brian, PhD -> https://profiles.ucsd.edu/gene.tan",
+          "linkText": "Tan, Gene Brian, PhD",
+          "linkUrl": "https://profiles.ucsd.edu/gene.tan",
+          "method": "published_exact_original_profile_uri_from_captured_named_department_directory",
+          "status": "verified"
+        },
+        "adjudicationStatus": "pending_identity_chain_review",
+        "mergeApplied": false,
+        "scalarFieldsApplied": false,
+        "rawBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/global-identity-source-review/original-profile-captures/responses/7c3342d668a8e3512507afd8667a20f715f744c71e9f31d889f7d37020b53668.html",
+        "scope": "Own subject, personal canonical/RDF metadata and actual appointment captured. The two original person IDs remain separate pending a complete identity-chain decision. Original record snapshots and their earlier missing-body diagnostics remain unchanged."
+      }
+    },
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://profiles.ucsd.edu/lori.krummen",
+      "records": [
+        {
+          "id": "ucsd-medicine-lori-daniels-krummen",
+          "name": "Lori Daniels Krummen",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/lori.krummen",
+          "wholeRecordSha256": "edd5c2e2fc9977ae9acec7702b7e6d404faada324f5ac20bba4dd013794e08f7",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-lori-daniels",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/lori.krummen",
+              "observedAt": "2026-10-03T02:46:47+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Lori Daniels | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-public-health-lori-daniels",
+          "name": "Lori Daniels",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/lori.krummen",
+          "wholeRecordSha256": "aed279ef1f0c779df77c97e3276e2371f685f05d20b137f76bf1655693e1749b",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-lori-daniels",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/lori.krummen",
+              "observedAt": "2026-10-03T02:46:47+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Lori Daniels | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+      "additionalOriginalProfileObservation": {
+        "requestedUrl": "https://profiles.ucsd.edu/lori.krummen",
+        "ownProfileMetadata": {
+          "requestedUrl": "https://profiles.ucsd.edu/lori.krummen",
+          "sourceUrl": "https://profiles.ucsd.edu/lori.krummen",
+          "observedAt": "2026-10-17T18:34:08+00:00",
+          "bodySha256": "3939559da0908e33eb365549dbb203339114fc02a3d823d18d6ecb949cfc312c",
+          "nameAsDisplayed": "Lori Daniels",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/lori.krummen",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/192935/192935.rdf"
+        },
+        "ownAppointmentAsListed": {
+          "nameAsDisplayed": "Lori Daniels",
+          "identityHeadingMethod": "profiles_page_title_h2",
+          "titleAsListed": "Clinical Professor, Medicine",
+          "schoolAsListed": "Vc-health Sciences-schools",
+          "sourceUrl": "https://profiles.ucsd.edu/lori.krummen",
+          "observedAt": "2026-10-17T18:34:08+00:00",
+          "status": "explicit_faculty_appointment_as_listed",
+          "departmentAsListed": "Medicine",
+          "mappedDepartment": "Medicine"
+        },
+        "ownOverviewAsPublished": null,
+        "publishedClinicalProfileLinks": [],
+        "publishedDirectoryRequestEvidence": {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a",
+          "evidenceType": "named_link",
+          "evidence": "Lori Daniels, MD, MAS, FACC, FAHA -> https://profiles.ucsd.edu/lori.krummen",
+          "linkText": "Lori Daniels, MD, MAS, FACC, FAHA",
+          "linkUrl": "https://profiles.ucsd.edu/lori.krummen",
+          "method": "published_exact_original_profile_uri_from_captured_named_department_directory",
+          "status": "verified"
+        },
+        "adjudicationStatus": "pending_identity_chain_review",
+        "mergeApplied": false,
+        "scalarFieldsApplied": false,
+        "rawBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/global-identity-source-review/original-profile-captures/responses/cd25d2d4edd6541db617da3c6a028064e88265a96dbedf364812832bc10d6436.html",
+        "scope": "Own subject, personal canonical/RDF metadata and actual appointment captured. The two original person IDs remain separate pending a complete identity-chain decision. Original record snapshots and their earlier missing-body diagnostics remain unchanged."
+      }
+    },
+    {
+      "kind": "shared_original_individual_uri",
+      "value": "https://profiles.ucsd.edu/ryan.moran",
+      "records": [
+        {
+          "id": "ucsd-medicine-ryan-james-moran",
+          "name": "Ryan James Moran",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/ryan.moran",
+          "wholeRecordSha256": "da0eb5f878c7494a83bd4b938bc71bac725bdfb4e241e4c6414631d4acadfe01",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-ryan-moran",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/ryan.moran",
+              "observedAt": "2026-10-03T03:07:39+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Ryan Moran | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-public-health-ryan-moran",
+          "name": "Ryan Moran",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/ryan.moran",
+          "wholeRecordSha256": "862469f058012add6c23f390c7138453cab9571c819691f6d8723748c717ef9e",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-ryan-moran",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/ryan.moran",
+              "observedAt": "2026-10-03T03:07:39+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Ryan Moran | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+      "additionalOriginalProfileObservation": {
+        "requestedUrl": "https://profiles.ucsd.edu/ryan.moran",
+        "ownProfileMetadata": {
+          "requestedUrl": "https://profiles.ucsd.edu/ryan.moran",
+          "sourceUrl": "https://profiles.ucsd.edu/ryan.moran",
+          "observedAt": "2026-10-17T18:34:18+00:00",
+          "bodySha256": "478178803fc6c26b5543685df2966c4b4571fca1a791cd5b9f4c7ee80d3c27fd",
+          "nameAsDisplayed": "Ryan Moran",
+          "nameMethod": "profiles_page_title_h2",
+          "canonicalUri": "https://profiles.ucsd.edu/ryan.moran",
+          "rdfAlternateUri": "https://researcherprofiles.org/profile/180672/180672.rdf"
+        },
+        "ownAppointmentAsListed": {
+          "nameAsDisplayed": "Ryan Moran",
+          "identityHeadingMethod": "profiles_page_title_h2",
+          "titleAsListed": "Clinical Professor, Medicine",
+          "schoolAsListed": "Vc-health Sciences-schools",
+          "sourceUrl": "https://profiles.ucsd.edu/ryan.moran",
+          "observedAt": "2026-10-17T18:34:18+00:00",
+          "status": "explicit_faculty_appointment_as_listed",
+          "departmentAsListed": "Medicine",
+          "mappedDepartment": "Medicine"
+        },
+        "ownOverviewAsPublished": null,
+        "publishedClinicalProfileLinks": [
+          {
+            "label": "Clinical Profile",
+            "rawHref": "http://providers.ucsd.edu/details/32761/ryan-moran"
+          }
+        ],
+        "publishedDirectoryRequestEvidence": {
+          "requestedUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "sourceUrl": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "c6998832fe7d674f51dbab6d89510fd25151d26f849c44acad027b76e7d5cd3a",
+          "evidenceType": "named_link",
+          "evidence": "Ryan Moran, MD, MPH -> https://profiles.ucsd.edu/ryan.moran",
+          "linkText": "Ryan Moran, MD, MPH",
+          "linkUrl": "https://profiles.ucsd.edu/ryan.moran",
+          "method": "published_exact_original_profile_uri_from_captured_named_department_directory",
+          "status": "verified"
+        },
+        "adjudicationStatus": "pending_identity_chain_review",
+        "mergeApplied": false,
+        "scalarFieldsApplied": false,
+        "rawBodyPath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/global-identity-source-review/original-profile-captures/responses/7ff5f95c0e16c608b38f13fb2ba64c64028f7154f542c60f9d769417c467ef99.html",
+        "scope": "Own subject, personal canonical/RDF metadata and actual appointment captured. The two original person IDs remain separate pending a complete identity-chain decision. Original record snapshots and their earlier missing-body diagnostics remain unchanged."
+      }
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "brian keating",
+      "records": [
+        {
+          "id": "ucsd-faculty-brian-keating",
+          "name": "Brian Keating",
+          "department": "Astronomy and Astrophysics",
+          "primary": "https://catalog.ucsd.edu/faculty/PHYS.html",
+          "wholeRecordSha256": "166d93a742a0bb15536366a8c215d077d41f090cd7ffe3883a32ffe38eec8fbc",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-brian-keating",
+          "name": "Brian Keating",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=bkeating",
+          "wholeRecordSha256": "9326387485e6a1fc6c54cfbfeb2e46ae91af9e309ce49bb3a31a9a7862d6f3c3",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "george fuller",
+      "records": [
+        {
+          "id": "ucsd-faculty-george-fuller",
+          "name": "George Fuller",
+          "department": "Astronomy and Astrophysics",
+          "primary": "https://catalog.ucsd.edu/faculty/PHYS.html",
+          "wholeRecordSha256": "294cb46636a46f9e759ca9bbea90945d0a47849e2009dc8f22fad49fdb0adcd0",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-george-fuller",
+          "name": "George Fuller",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=gfuller",
+          "wholeRecordSha256": "3bab9919f65976cf6a8207838476e1b951a660ad4a0da9dbb75690a7673b9795",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "xuong nguyen huu",
+      "records": [
+        {
+          "id": "ucsd-faculty-xuong-nguyen-huu",
+          "name": "Xuong Nguyen-Huu",
+          "department": "Biological Sciences",
+          "primary": "https://catalog.ucsd.edu/faculty/BIOL.html",
+          "wholeRecordSha256": "f10150b375c09d62f4a970f35a825593f512fc2c48db0bcababf60164f0279b7",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-xuong-nguyen-huu",
+          "name": "Xuong Nguyen-Huu",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=nxuong",
+          "wholeRecordSha256": "904d936e6cdc3196af7565dae6ddcc56b1d4f361a22ea19bb105385fa0631ded",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "seungeun oh",
+      "records": [
+        {
+          "id": "ucsd-faculty-seungeun-oh",
+          "name": "Seungeun Oh",
+          "department": "Cellular & Molecular Medicine",
+          "primary": "https://profiles.ucsd.edu/seungeun.oh",
+          "wholeRecordSha256": "312339c1a59fe520e472476ead5416170a24bb918334c5a55b1375b4c3a35194",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-faculty-seungeun-oh",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/seungeun.oh",
+              "observedAt": "2026-10-07T22:13:57+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Seungeun Oh | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-seungeun-oh",
+          "name": "Seungeun Oh",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=seo008",
+          "wholeRecordSha256": "65e5142c9a141628da2c93c72679228d06611f01a5201484991d250a39d25d76",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "hongbo zhao",
+      "records": [
+        {
+          "id": "ucsd-chemistry-biochemistry-hongbo-zhao",
+          "name": "Hongbo Zhao",
+          "department": "Chemistry & Biochemistry",
+          "primary": "https://chemistry.ucsd.edu/faculty/profiles/zhao_hongbo.html",
+          "wholeRecordSha256": "91d1ef830fdad3475bc395cf67af32a7a2d05e178b2301f1aa2534bf751a7ef6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-physics-hongbo-zhao",
+          "name": "Hongbo Zhao",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=hoz031",
+          "wholeRecordSha256": "13b22546ec21627271be75c474b0c03ea5177908c3fa1aea4f3744ee7e8864d5",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "lisa cartwright",
+      "records": [
+        {
+          "id": "ucsd-communication-lisa-cartwright-affiliated",
+          "name": "Lisa Cartwright (Affiliated)",
+          "department": "Communication",
+          "primary": "https://communication.ucsd.edu/people/faculty-emeriti/cartwright-lisa.html",
+          "wholeRecordSha256": "e0d6a1d1bd45986002f5db4d22f9e4f1da49887ff786f8a28ab6b80c2c8e7779",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-lisa-cartwright",
+          "name": "Lisa Cartwright",
+          "department": "Visual Arts",
+          "primary": "https://visarts.ucsd.edu/people/emeriti-faculty/lisa-cartwright.html",
+          "wholeRecordSha256": "13eebdb78aeaea2d28eca4b08f539337d549b3343a8e955f592ef268361d0c03",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "glenn tesler",
+      "records": [
+        {
+          "id": "ucsd-faculty-glenn-tesler",
+          "name": "Glenn Tesler",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/glenn-tesler",
+          "wholeRecordSha256": "5f7c2e5fa98e877c041bb8fe3e895808628f971bf2d71f522da16eb558147ca6",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-mathematics-glenn-tesler",
+          "name": "Glenn Tesler",
+          "department": "Mathematics",
+          "primary": "https://www.math.ucsd.edu/people/profiles/glenn-tesler",
+          "wholeRecordSha256": "788248c5d480b5f1c6962813971b40f0e1eeea5d0117e74c8322378ed7b0000c",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "rajesh k gupta",
+      "records": [
+        {
+          "id": "ucsd-faculty-rajesh-gupta",
+          "name": "Rajesh K. Gupta",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/rajesh-k-gupta",
+          "wholeRecordSha256": "6ad2255d1dd0f654fb39f2428957fe86d20a761b84149dac718ea14ff12e95e3",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-distinguished-professor-rajesh-gupta",
+          "name": "Distinguished Professor Rajesh K. Gupta",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/rajesh-gupta/",
+          "wholeRecordSha256": "4dee0b403ae503908825fbdec07d7b287eb20496ad7d852d2d7b0df1e1c2e4a9",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "shankar subramaniam",
+      "records": [
+        {
+          "id": "ucsd-faculty-shankar-subramaniam",
+          "name": "Shankar Subramaniam",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/shankar-subramaniam",
+          "wholeRecordSha256": "889f710f708ca28914f9efae2af5a0a4ac0b936dbced03bbfc60c72a1c294921",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-distinguished-professor-shankar-subramaniam",
+          "name": "Shankar Subramaniam",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://jacobsschool.ucsd.edu/faculty/profile?id=19",
+          "wholeRecordSha256": "0e09d832535fddeca85b26d4f243a65785918429530189e1104747950dc15d04",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "siavash mirarab",
+      "records": [
+        {
+          "id": "ucsd-faculty-siavash-mirarab",
+          "name": "Siavash Mirarab",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/siavash-mirarab",
+          "wholeRecordSha256": "b232de2dba6aebe25914340261aef842202f5d6e42e165da83e9abaaf6bd4984",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-electrical-and-computer-engineering-siavash-mirarab-mir-arabbaygi",
+          "name": "Siavash Mirarab (Mir arabbaygi)",
+          "department": "Electrical and Computer Engineering",
+          "primary": "https://jacobsschool.ucsd.edu/faculty/profile?id=392",
+          "wholeRecordSha256": "abb6b12a6217279459295ff23e672a549e5437f3ec5c6f8bb895b1ad7bcc7798",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "guershon harel",
+      "records": [
+        {
+          "id": "ucsd-faculty-guershon-harel",
+          "name": "Guershon Harel",
+          "department": "Education Studies",
+          "primary": "https://catalog.ucsd.edu/faculty/EDS.html",
+          "wholeRecordSha256": "dd3262c69d9e71c22c174deb92b4715be5943dc0a6c195591145f9efe6ed8332",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-mathematics-guershon-harel",
+          "name": "Guershon Harel",
+          "department": "Mathematics",
+          "primary": "https://www.math.ucsd.edu/people/profiles/guershon-harel",
+          "wholeRecordSha256": "fd00246ede94227e47ac35c27a24916e58454f7ec403ffadb43b6980847078a0",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "john d blanco",
+      "records": [
+        {
+          "id": "ucsd-ethnic-studies-john-d-jody-blanco",
+          "name": "John D. (Jody) Blanco",
+          "department": "Ethnic Studies",
+          "primary": "https://catalog.ucsd.edu/faculty/ETHN.html",
+          "wholeRecordSha256": "14068bdb69d3e5c921f72e8794ddbf0d7ff8a1787277d9ed13eaf2340ebab752",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-john-d-blanco",
+          "name": "John D. Blanco",
+          "department": "Literature",
+          "primary": "https://profiles.ucsd.edu/john.blanco",
+          "wholeRecordSha256": "08c90f8ca229747c54f58a2cb971a73ef1276a17e159e367edf6d5d0d8293cd3",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "louis j hock",
+      "records": [
+        {
+          "id": "ucsd-ethnic-studies-louis-j-hock",
+          "name": "Louis J. Hock",
+          "department": "Ethnic Studies",
+          "primary": "https://catalog.ucsd.edu/faculty/ETHN.html",
+          "wholeRecordSha256": "9f264a58ed40a6db94e67473afe7d324a1698fa57f38df77b24a4bd9fffd3425",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-visual-arts-emeritus-louis-j-hock",
+          "name": "Emeritus Louis J. Hock",
+          "department": "Visual Arts",
+          "primary": "https://profiles.ucsd.edu/louis.hock",
+          "wholeRecordSha256": "a69ca2252cd02f194cc4c2af139dfa957e7576b7cec3ff981c8cfa0bedcd2ff0",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "dimitris politis",
+      "records": [
+        {
+          "id": "ucsd-faculty-dimitris-politis",
+          "name": "Dimitris Politis",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/dimitris-politis/",
+          "wholeRecordSha256": "eb25d93345887eb7124b0fcc14ceac0ae7a448d80fa38d7e4c4bec3bd33eb6cf",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-distinguished-professor-dimitris-politis",
+          "name": "Distinguished Professor Dimitris Politis",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://catalog.ucsd.edu/faculty/DSC.html",
+          "wholeRecordSha256": "76ece25bdcc5eccba6948083778e42ee74d569147817a9a1e3d4cf03196aa6c6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "george sugihara",
+      "records": [
+        {
+          "id": "ucsd-faculty-distinguished-professor-george-sugihara",
+          "name": "Distinguished Professor George Sugihara",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://catalog.ucsd.edu/faculty/DSC.html",
+          "wholeRecordSha256": "82cd52724b247646f2d33a3428ff910395f18d6788d19d8004e121091817a49f",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-george-sugihara",
+          "name": "George Sugihara",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/george-sugihara/",
+          "wholeRecordSha256": "f9e001740af1acf76eaceda797c388dccacfb8303c039e2881d5c860d12ddfc8",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "michael holst",
+      "records": [
+        {
+          "id": "ucsd-faculty-distinguished-professor-michael-holst",
+          "name": "Michael Holst",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/mike-holst/",
+          "wholeRecordSha256": "3a4ae5757686f598fb226e9969d1bdcc0a9085bbe4a144f6ddd6ea8cd4800e77",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-physics-michael-holst",
+          "name": "Michael Holst",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=mholst",
+          "wholeRecordSha256": "ad36971abd8698166f1b0a01e0592030786a148ef44cb17eab9f4155708edcc2",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "nigel goldenfeld",
+      "records": [
+        {
+          "id": "ucsd-faculty-distinguished-professor-nigel-goldenfeld",
+          "name": "Nigel Goldenfeld",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://catalog.ucsd.edu/faculty/DSC.html",
+          "wholeRecordSha256": "c200a7e9c9d3086d4c62bd22ab3e73ed9c4a3d04be3bbb4f396c1fbe318c06ac",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-physics-nigel-goldenfeld",
+          "name": "Nigel Goldenfeld",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=ngoldenfeld",
+          "wholeRecordSha256": "a9dfff616d8b533fcdc5ce820b2ac6f798cdf0595fc1c87e7c984e12662615b7",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "ronghui xu",
+      "records": [
+        {
+          "id": "ucsd-mathematics-ronghui-xu",
+          "name": "Ronghui Xu",
+          "department": "Mathematics",
+          "primary": "https://www.math.ucsd.edu/people/profiles/ronghui-lily-xu",
+          "wholeRecordSha256": "0e2b45b3aed32628e395d3ca28eef91ee1fb160ba3d6927e5dcdba7afdf591b4",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-ronghui-lily-xu",
+          "name": "Ronghui (Lily) Xu",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/ronghui.xu",
+          "wholeRecordSha256": "e90db741b1f78f37515428e7e9e69779509d56a69ffbcde81ed58512f50b7cf7",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-faculty-ronghui-lily-xu",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/ronghui.xu",
+              "observedAt": "2026-10-07T22:12:58+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Ronghui Xu | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "alison odaniel",
+      "records": [
+        {
+          "id": "ucsd-visual-arts-alison-o-daniel",
+          "name": "Alison O'Daniel",
+          "department": "Visual Arts",
+          "primary": "https://visarts.ucsd.edu/people/faculty/alison-odaniel.html",
+          "wholeRecordSha256": "0ff59b346cc40bf10e9f4767f6a5c887dfae09ba75851778017e7ba0687217b7",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-visual-arts-alison-o-daniel",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://visarts.ucsd.edu/people/faculty/alison-odaniel.html",
+              "observedAt": "2026-10-02T22:50:28+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Alison O'Daniel"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-visual-arts-alison-odaniel",
+          "name": "Alison O’Daniel",
+          "department": "Visual Arts",
+          "primary": "https://catalog.ucsd.edu/faculty/VIS.html",
+          "wholeRecordSha256": "df1487be24c10c73497f092e29caad917c6552df67ea48da2b90d05d7f0331de",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "normalized_published_name",
+      "value": "jessica delena tweed",
+      "records": [
+        {
+          "id": "ucsd-visual-arts-jessica-d-elena-tweed",
+          "name": "Jessica D'Elena-Tweed",
+          "department": "Visual Arts",
+          "primary": "https://visarts.ucsd.edu/people/faculty/jessica-delena-tweed.html",
+          "wholeRecordSha256": "3d2800fc681015d8d2ad3dd8b053d440f4941ae1fecd3666abce2b2d45a42b19",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-visual-arts-jessica-delena-tweed",
+          "name": "Jessica D’Elena-Tweed",
+          "department": "Visual Arts",
+          "primary": "https://catalog.ucsd.edu/faculty/VIS.html",
+          "wholeRecordSha256": "00f2a205cd2519cfbd3ee5b10e2937c0e91376925bbc13e95c84f7749a2ee8bd",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "%20npostero@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-anthropology-emeritus-profile",
+          "name": "Emeritus Profile",
+          "department": "Anthropology",
+          "primary": "http://anthropology.ucsd.edu/people/faculty/emeritus-profiles/index.html",
+          "wholeRecordSha256": "56ea932a80b678c2e841b16f8395566afc3d1992a3f3b71db50aa4429102d345",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-anthropology-nancy-g-postero",
+          "name": "Nancy G. Postero",
+          "department": "Anthropology",
+          "primary": "https://profiles.ucsd.edu/nancy.postero",
+          "wholeRecordSha256": "378345cdf66e547d07a3e3fd85437b12ee2612cebec264f8e71e56a468da75fe",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "named_contact_corrected_resource_label_review_pending",
+      "mergeApplied": false,
+      "reason": "The exact scoped contact review resolves the mailbox parsing/attribution issue. It is not a person identity merge. A non-person directory-label record, where present, still requires its own archive/classification review.",
+      "nextSafeAction": "Review the malformed directory-label record separately; preserve it whole until a source-scoped non-person decision is verified.",
+      "previousReviewAssessments": [
+        {
+          "status": "requires_scoped_identity_review",
+          "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+          "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+          "originalDiscoveryCandidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e"
+        }
+      ],
+      "currentContactScopeReview": {
+        "reviewPath": "data/ucsd/professor-contact-scope-review-20261016.json",
+        "reviewSha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058",
+        "professorIds": [
+          "ucsd-anthropology-nancy-g-postero"
+        ],
+        "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+        "noPersonMergeApplied": true
+      }
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "s2wright@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-visiting-scholars",
+          "name": "Visiting Scholars",
+          "department": "Astronomy and Astrophysics",
+          "primary": "https://astro.ucsd.edu/people/visiting-scholars/index.html",
+          "wholeRecordSha256": "191f2714ffddba74d9458f1eab9c1253d22062dd8b40293a1b2f2382bb7f867f",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-shelley-wright",
+          "name": "Shelley Wright",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=s2wright",
+          "wholeRecordSha256": "0e620f0df20eb23f1edd947ecc5095cbbbb2409c9f2d89abc327755608191400",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 3
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "tsharpee@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-biology-tatyanna-o-sharpee",
+          "name": "Tatyanna O. Sharpee",
+          "department": "Biological Sciences",
+          "primary": "https://biology.ucsd.edu/research/faculty/tsharpee",
+          "wholeRecordSha256": "5b3477d234ce59c3ddcfe5e9bfabb384fbc923d92546ac25abe762a151fb51ef",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-tatyanna-sharpee",
+          "name": "Tatyanna Sharpee",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=tsharpee",
+          "wholeRecordSha256": "94079e6f13df18b36d45570ef526997465d7ad4b4d1240c1f37658f7f66a0452",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "thwa@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-biology-terry-t-hwa",
+          "name": "Terry T. Hwa",
+          "department": "Biological Sciences",
+          "primary": "https://biology.ucsd.edu/research/faculty/thwa",
+          "wholeRecordSha256": "f0968fef9e69ab370d1c09550cff7481d32c07d9a789aa7cadb2b8cedbee25d6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-physics-terence-t-l-hwa",
+          "name": "Terence T-L. Hwa",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=thwa",
+          "wholeRecordSha256": "1367425e05aa1a40ed86c5e5b0b7c304076c01ce7763a11cc1c5eefaf52ad0d4",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "tgentner@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-biology-tim-q-gentner",
+          "name": "Tim Q. Gentner",
+          "department": "Biological Sciences",
+          "primary": "https://biology.ucsd.edu/research/faculty/tgentner",
+          "wholeRecordSha256": "23812f1ef8bd2a2a7a12efd6caf35ac11eb807c614ffe78d2c4a1b68359aadeb",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-timothy-gentner",
+          "name": "Timothy Gentner",
+          "department": "Psychology",
+          "primary": "https://psychology.ucsd.edu/people/profiles/tgentner.html",
+          "wholeRecordSha256": "48fb7ef5b7b88235be32268b0b1b1045b7f38b907085730fda03ed6ae0e95472",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "tsb@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-tim-baker",
+          "name": "Tim S. Baker",
+          "department": "Biological Sciences",
+          "primary": "https://chemistry.ucsd.edu/faculty/profiles/timothy-baker",
+          "wholeRecordSha256": "b2a603b41b06657afdfcd1b02ec27ebc63f95c9829b1c20018c56389be1451c6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-chemistry-biochemistry-timothy-s-baker",
+          "name": "Timothy S. Baker",
+          "department": "Chemistry & Biochemistry",
+          "primary": "https://chemistry.ucsd.edu/faculty/profiles/timothy-baker",
+          "wholeRecordSha256": "a404622df9c8ad7b56147e26d2f6c94b78fe1c2970604f319f1ef7d69050bcc2",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "hollan@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-cognitive-science-jim-hollan",
+          "name": "Jim Hollan",
+          "department": "Cognitive Science",
+          "primary": "https://cogsci.ucsd.edu/people/emeritus/jim-hollan.html",
+          "wholeRecordSha256": "029f4887848b92c60c9ef72b7abd736b37d1e17559110252d49730925d7e8ca9",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-james-hollan",
+          "name": "James D. Hollan",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/james-d-hollan",
+          "wholeRecordSha256": "7fe0d38604cd0954a1be055a8e2e4189273b613081ce9c98f4c77bf6c6474b13",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "cmukerji@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-communication-chandra-mukerji",
+          "name": "Chandra Mukerji",
+          "department": "Communication",
+          "primary": "https://profiles.ucsd.edu/chandra.mukerji",
+          "wholeRecordSha256": "0fefa8b3d31755e542aef989f00738b33bab5170a78d2cbded2c481a8dfbbd7f",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-communication-faculty-emeriti",
+          "name": "Faculty Emeriti",
+          "department": "Communication",
+          "primary": "https://communication.ucsd.edu/people/faculty-emeriti/index.html",
+          "wholeRecordSha256": "9c7ae2a4497fab7bddd8bac965a77a5f437d7494474f7abeb7c1efdf9971beb3",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "sgeiger@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-stuart-geiger",
+          "name": "Stuart Geiger",
+          "department": "Computer Science and Engineering",
+          "primary": "https://cse.ucsd.edu/people/faculty-profiles/stuart-geiger",
+          "wholeRecordSha256": "d2344c0f516f82713386283c026dae1c94879a04008e746f01f0040f0ffd0126",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 3
+        },
+        {
+          "id": "ucsd-faculty-r-stuart-geiger",
+          "name": "R Stuart Geiger",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/r-stuart-geiger/",
+          "wholeRecordSha256": "4a016130b865016c2c0b6a6938ab3a9f582f37f2ceccd922ee1295a0d84acfe6",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "lhock@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-ethnic-studies-louis-j-hock",
+          "name": "Louis J. Hock",
+          "department": "Ethnic Studies",
+          "primary": "https://catalog.ucsd.edu/faculty/ETHN.html",
+          "wholeRecordSha256": "9f264a58ed40a6db94e67473afe7d324a1698fa57f38df77b24a4bd9fffd3425",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-visual-arts-emeritus-louis-j-hock",
+          "name": "Emeritus Louis J. Hock",
+          "department": "Visual Arts",
+          "primary": "https://profiles.ucsd.edu/louis.hock",
+          "wholeRecordSha256": "a69ca2252cd02f194cc4c2af139dfa957e7576b7cec3ff981c8cfa0bedcd2ff0",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "jgraffzivin@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-global-policy-and-strategy-josh-graff-zivin",
+          "name": "Josh Graff Zivin",
+          "department": "Global Policy and Strategy",
+          "primary": "https://economics.ucsd.edu/faculty-and-research/faculty-profiles/graff-zivin.html",
+          "wholeRecordSha256": "7f1bb4dc5d22fee8c0d902b992fe9cb45a8b2de072c8269dbcffc9ac023dbf78",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-faculty-joshua-graff-zivin",
+          "name": "Joshua Graff Zivin",
+          "department": "Global Policy and Strategy",
+          "primary": "https://gps.ucsd.edu/faculty-directory/joshua-graff-zivin.html",
+          "wholeRecordSha256": "80327d75a8cebed4941df80a9d5123220b6521d04fdea6b7ecd32f47d1cf8aec",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "kricke@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-global-policy-and-strategy-kate-ricke",
+          "name": "Kate Ricke",
+          "department": "Global Policy and Strategy",
+          "primary": "https://gps.ucsd.edu/faculty-directory/kate-ricke.html",
+          "wholeRecordSha256": "b0f48bb461354d0299e1fa8a63a6060c21b88da3730b6e0b13944851de6f6ec6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-katharine-ricke",
+          "name": "Katharine Ricke",
+          "department": "Scripps Institution of Oceanography",
+          "primary": "https://scripps.ucsd.edu/profiles/kricke",
+          "wholeRecordSha256": "b87a998035857ddbe592fce2ff8f17c7d3896da4fc26b021cd677cd1df8b9a43",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "dpolitis@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-dimitris-politis",
+          "name": "Dimitris Politis",
+          "department": "Halicioğlu Data Science Institute",
+          "primary": "https://datascience.ucsd.edu/people/dimitris-politis/",
+          "wholeRecordSha256": "eb25d93345887eb7124b0fcc14ceac0ae7a448d80fa38d7e4c4bec3bd33eb6cf",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-live-dimitri-politis",
+          "name": "Dimitri Politis",
+          "department": "Economics",
+          "primary": "https://economics.ucsd.edu/faculty-and-research/faculty-profiles/politis.html",
+          "wholeRecordSha256": "309e7601a200363bd5d5c24e05977bb0c4ae6e49b5c1b73c704805135616a2e6",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "litinfo@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-literature-alain-j-j-cohen",
+          "name": "Alain J.-J Cohen",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-acohen.html",
+          "wholeRecordSha256": "b630d78f604fe0b09ee1d2f3331f307ba0fceb199833fa5145a7112b7591733e",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-andrew-wright",
+          "name": "Andrew Wright",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-awright.html",
+          "wholeRecordSha256": "39e39ee3ccf3e3e72aaa6445073703becca41db1e5308a3d220419b09e54439c",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-bram-dijkstra",
+          "name": "Bram Dijkstra",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/emeriti-bdijkstra.html",
+          "wholeRecordSha256": "23774f00b4248fdcad15828409227417788b654400529defc6964ab8417e78d7",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-carlos-blanco-aguinaga",
+          "name": "Carlos Blanco-Aguinaga",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-cblanco.html",
+          "wholeRecordSha256": "41ebd1d6a54dc84d4ed561dac560cebc81f6c74289352676c15fc3c267e76e5d",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-charles-cooper",
+          "name": "Charles Cooper",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-ccooper.html",
+          "wholeRecordSha256": "e224ba1c47632e7055d5a5a9ef3ebd7d5bc256c35bdebaf7bbf2baf958c4bb89",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-dayna-kalleres",
+          "name": "Dayna Kalleres",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-dkalleres.html",
+          "wholeRecordSha256": "ad88647c7eadbdf1c025c575ae78e3cd95fb6d48a63d6f6de9321fc961147a9d",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-edwin-sill-fussell",
+          "name": "Edwin Sill Fussell",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-efussell.html",
+          "wholeRecordSha256": "a44ca89b567623d9b76c9dce2cf418ffb9daa9cce814ac204c29701913a4500b",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-fanny-howe",
+          "name": "Fanny Howe",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-fhowe.html",
+          "wholeRecordSha256": "5cb61e11e8a3c5b543672335d61e825226f4f9307d38d7336aa9d7bf3fce2bbd",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-jack-behar",
+          "name": "Jack Behar",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-jbehar.html",
+          "wholeRecordSha256": "6eb0ae934e04cd4bdcd0d315e7386cea3ad0cf1cc6d7631e39714597bdd0ab3c",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-jaime-concha",
+          "name": "Jaime Concha",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/emeriti-jconcha.html",
+          "wholeRecordSha256": "c96d7248650615a91957b5b35135e9e98de39fc34d409daeef0d4ae397950535",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-james-k-lyon",
+          "name": "James K Lyon",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-jlyon.html",
+          "wholeRecordSha256": "d6b7595b355d61bc081392282a5d809f764c5e8f45836e042a2df85d73e9e950",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-jerome-rothenberg",
+          "name": "Jerome Rothenberg",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-jrothenberg.html",
+          "wholeRecordSha256": "ea4627a01578c04573c7482dbefd5117d0f71abcf3146825f7f29901929f1ca9",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-linda-brodkey",
+          "name": "Linda Brodkey",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-lbrodkey.html",
+          "wholeRecordSha256": "c2bb0a06d322be579785ae3f0f1cb13d5d81816afcd5e6a05b7def0a00be528d",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-marcel-henaff",
+          "name": "Marcel Henaff",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-mhenaff.html",
+          "wholeRecordSha256": "8ba7dd9903193fa78e7f7811067d49b8ba8383c2096b8623feb41b65985b195a",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-masao-miyoshi",
+          "name": "Masao Miyoshi",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-mmiyoshi.html",
+          "wholeRecordSha256": "b05852d15c794d41d1865611d646f95652d0778ed17cc36f1a4951e83cd5db4f",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-ronald-s-berman",
+          "name": "Ronald S Berman",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-rberman.html",
+          "wholeRecordSha256": "ccd0a93b688ae0322ce25d69e489ab4af5b90a31d4066427030727e4fe6e3292",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-rosemary-marangoly-george",
+          "name": "Rosemary Marangoly George",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-rgeorge.html",
+          "wholeRecordSha256": "5ae4b2fc29a10789e097edf66289295029876cb4fd920ae1c4766b771909c2be",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-roy-harvey-pearce",
+          "name": "Roy Harvey Pearce",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-rpearce.html",
+          "wholeRecordSha256": "372db092e6d5cd3ee1ebb15aeb728f30f4b1ee3a67971d94e09cdedea82585be",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-sherley-anne-williams",
+          "name": "Sherley Anne Williams",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-swilliams.html",
+          "wholeRecordSha256": "d329a01f1f2e58831347001bc563e52f6d465777b8ddf0a0e88713dbe30170f8",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-stephanie-jed",
+          "name": "Stephanie Jed",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/emeriti-sjed.html",
+          "wholeRecordSha256": "8b16addfa2c8b86db5ef22cd27d4005960699af93c137031529a567aa005e867",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-thomas-dunseath",
+          "name": "Thomas Dunseath",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/memoriam-tdunseath.html",
+          "wholeRecordSha256": "9b276a697ea0912845014594c56f5a1b386808f3e63aa9e270219f2827fdf3ec",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-literature-wai-lim-yip",
+          "name": "Wai-lim Yip",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/emeriti-wyip.html",
+          "wholeRecordSha256": "94ed71adb66106876f0cfaf0a2a763444f15213b08be262eda39c99790be95db",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-william-tay",
+          "name": "William Tay",
+          "department": "Literature",
+          "primary": "https://literature.ucsd.edu/people/faculty/emeriti-wtay.html",
+          "wholeRecordSha256": "da9952763c08b90f6c36c141377c506fdd475642d823a5c4dec89666e8a78020",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "resolved_shared_site_feedback_not_personal_identity",
+      "mergeApplied": false,
+      "reason": "The exact scoped contact review resolves the mailbox parsing/attribution issue. It is not a person identity merge. A non-person directory-label record, where present, still requires its own archive/classification review.",
+      "nextSafeAction": "No person consolidation is justified by this contact collision. Retain all original individual IDs and dated observations.",
+      "previousReviewAssessments": [
+        {
+          "status": "shared_department_contact_not_person_identifier",
+          "reason": "This is a departmental contact shared by23names;not an individual identity identifier.",
+          "nextSafeAction": "Retain as shared contact;never merge these records bythisaddress.",
+          "originalDiscoveryCandidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e"
+        }
+      ],
+      "currentContactScopeReview": {
+        "reviewPath": "data/ucsd/professor-contact-scope-review-20261016.json",
+        "reviewSha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058",
+        "professorIds": [
+          "ucsd-literature-alain-j-j-cohen",
+          "ucsd-literature-andrew-wright",
+          "ucsd-literature-bram-dijkstra",
+          "ucsd-literature-carlos-blanco-aguinaga",
+          "ucsd-faculty-charles-cooper",
+          "ucsd-literature-dayna-kalleres",
+          "ucsd-literature-edwin-sill-fussell",
+          "ucsd-faculty-fanny-howe",
+          "ucsd-literature-jack-behar",
+          "ucsd-literature-jaime-concha",
+          "ucsd-literature-james-k-lyon",
+          "ucsd-faculty-jerome-rothenberg",
+          "ucsd-faculty-linda-brodkey",
+          "ucsd-literature-marcel-henaff",
+          "ucsd-literature-masao-miyoshi",
+          "ucsd-literature-ronald-s-berman",
+          "ucsd-literature-rosemary-marangoly-george",
+          "ucsd-literature-roy-harvey-pearce",
+          "ucsd-literature-sherley-anne-williams",
+          "ucsd-faculty-stephanie-jed",
+          "ucsd-faculty-thomas-dunseath",
+          "ucsd-literature-wai-lim-yip",
+          "ucsd-faculty-william-tay"
+        ],
+        "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+        "noPersonMergeApplied": true
+      }
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "mholst@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-michael-holst",
+          "name": "Michael J. Holst",
+          "department": "Mathematics",
+          "primary": "https://www.math.ucsd.edu/people/profiles/michael-holst",
+          "wholeRecordSha256": "5786e5de6df0eeb371de8b376a990ea11265d3380c4fb156602496ad439e08ed",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-physics-michael-holst",
+          "name": "Michael Holst",
+          "department": "Physics",
+          "primary": "https://physics.ucsd.edu/people/profile?id=mholst",
+          "wholeRecordSha256": "ad36971abd8698166f1b0a01e0592030786a148ef44cb17eab9f4155708edcc2",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "ajlucas@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-faculty-andrew-lucas",
+          "name": "Andrew Lucas",
+          "department": "Mechanical & Aerospace Engineering",
+          "primary": "https://jacobsschool.ucsd.edu/faculty/profile?id=431",
+          "wholeRecordSha256": "3f565df96911e7bdbb729cb8c0e7b5d756257631ffd8a7d797b910b5ce17118c",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-scripps-institution-of-oceanography-drew-lucas",
+          "name": "Drew Lucas",
+          "department": "Scripps Institution of Oceanography",
+          "primary": "https://scripps.ucsd.edu/profiles/ajlucas",
+          "wholeRecordSha256": "09e1d3726fc285018b555427aac42226a0fcc1e26427ad6ba1aba2b7d865ae76",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "gcheng@health.ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-medicine-george-zhi-cheng",
+          "name": "George Zhi Cheng",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/george.cheng",
+          "wholeRecordSha256": "d2b015897ef563227d8af2aa2cca918f133d99c817b8a96472ef0b5e677cf47c",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-medicine-george-zhi-cheng",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/george.cheng",
+              "observedAt": "2026-10-07T22:38:09+00:00",
+              "identityMatched": true,
+              "identityEvidence": "George Cheng | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-live-rebecca-colman",
+          "name": "Rebecca Colman",
+          "department": "Medicine",
+          "primary": "https://profiles.ucsd.edu/rebecca.colman",
+          "wholeRecordSha256": "8e9a24b6195f81c6b15f9998caf15192b10e663c2e34a74a3b21e6c362a30cfb",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "resolved_published_mailto_conflict_not_personal_identity",
+      "mergeApplied": false,
+      "reason": "The exact scoped contact review resolves the mailbox parsing/attribution issue. It is not a person identity merge. A non-person directory-label record, where present, still requires its own archive/classification review.",
+      "nextSafeAction": "No person consolidation is justified by this contact collision. Retain all original individual IDs and dated observations.",
+      "previousReviewAssessments": [
+        {
+          "status": "requires_scoped_identity_review",
+          "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+          "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+          "originalDiscoveryCandidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e"
+        }
+      ],
+      "currentContactScopeReview": {
+        "reviewPath": "data/ucsd/professor-contact-scope-review-20261016.json",
+        "reviewSha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058",
+        "professorIds": [
+          "ucsd-faculty-live-rebecca-colman"
+        ],
+        "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+        "noPersonMergeApplied": true
+      }
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "aburr@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-music-anthony-burr",
+          "name": "Anthony Burr",
+          "department": "Music",
+          "primary": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/anthony-burr/index.html",
+          "wholeRecordSha256": "fa305f47d9e6d40b4ac8684e84b2ede3b34460eff49c8cbfdee0d6fa067fb043",
+          "exactPrimaryRequestState": null,
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-music-university-professor",
+          "name": "University Professor",
+          "department": "Music",
+          "primary": "https://music-cms.ucsd.edu/people/faculty/index.html",
+          "wholeRecordSha256": "bddbb1ad1737609da3075003b28fcc6efaff333d6c80cb64213c2a6e16896fe9",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "dwiens@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-philosophy-faculty-affiliates",
+          "name": "Faculty Affiliates",
+          "department": "Philosophy",
+          "primary": "https://philosophy.ucsd.edu/people/faculty-affiliates.html",
+          "wholeRecordSha256": "2af567b1a1b66eb4c0b82bc98d6d8fd45a37710a6303161fe7bb7da87cc93bf9",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-faculty-david-wiens",
+          "name": "David Wiens",
+          "department": "Political Science",
+          "primary": "https://polisci.ucsd.edu/people/faculty/faculty-directory/currently-active-faculty/wiens-profile.html",
+          "wholeRecordSha256": "37d788a7897544925dcb02013e08c0011350916c63eac2590b8b210cddb25b69",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 3
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "cjschneider@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-political-science-christina-j-s",
+          "name": "Christina J. S",
+          "department": "Political Science",
+          "primary": "https://polisci.ucsd.edu/people/faculty/faculty-directory/currently-active-faculty/schneider-profile.html",
+          "wholeRecordSha256": "aaade0917b2127d0651080d874363d800f83992659cdf3dd3370088564928c78",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        },
+        {
+          "id": "ucsd-political-science-christina-j-schneider",
+          "name": "Christina J. Schneider",
+          "department": "Political Science",
+          "primary": "https://profiles.ucsd.edu/christina.schneider",
+          "wholeRecordSha256": "76b3b9c65a141c2e202df7bb51dabfa2cbb27291dea727756cf205c12bc26db4",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "%20ccberry@health.ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-public-health-charles-berry",
+          "name": "Charles Berry",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/charles.berry",
+          "wholeRecordSha256": "fb3f55d1092baf7aec926e4e94b38baf85fc456ea1e3696e2729bafb496d85f5",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-charles-berry",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/charles.berry",
+              "observedAt": "2026-10-03T05:44:44+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Charles Berry | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-emeritus-faculty",
+          "name": "Emeritus Faculty",
+          "department": "Public Health",
+          "primary": "https://hwsph.ucsd.edu/people/faculty/faculty-directory.html",
+          "wholeRecordSha256": "fffe83eac207552398aa193daa02f50506d9f3dab3c813398744f1fdf14d1964",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "named_contact_corrected_resource_label_review_pending",
+      "mergeApplied": false,
+      "reason": "The exact scoped contact review resolves the mailbox parsing/attribution issue. It is not a person identity merge. A non-person directory-label record, where present, still requires its own archive/classification review.",
+      "nextSafeAction": "Review the malformed directory-label record separately; preserve it whole until a source-scoped non-person decision is verified.",
+      "previousReviewAssessments": [
+        {
+          "status": "requires_scoped_identity_review",
+          "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+          "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+          "originalDiscoveryCandidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e"
+        }
+      ],
+      "currentContactScopeReview": {
+        "reviewPath": "data/ucsd/professor-contact-scope-review-20261016.json",
+        "reviewSha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058",
+        "professorIds": [
+          "ucsd-public-health-charles-berry"
+        ],
+        "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+        "noPersonMergeApplied": true
+      }
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "mstein@health.ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-public-health-matthew-stone",
+          "name": "Matthew Stone",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/matthew.stone",
+          "wholeRecordSha256": "ebec813909a22417b8e2dced60b87a656527daac34288c0c79641e83769ed2ad",
+          "exactPrimaryRequestState": "retained_prior_evidence",
+          "exactPrimaryFetchStatus": null,
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": {
+            "professorId": "ucsd-public-health-matthew-stone",
+            "verification": {
+              "status": "verified",
+              "sourceUrl": "https://profiles.ucsd.edu/matthew.stone",
+              "observedAt": "2026-10-03T05:52:56+00:00",
+              "identityMatched": true,
+              "identityEvidence": "Matthew Stone | UCSD Profiles"
+            }
+          },
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        },
+        {
+          "id": "ucsd-faculty-murray-stein",
+          "name": "Murray Stein",
+          "department": "Public Health",
+          "primary": "https://profiles.ucsd.edu/murray.stein",
+          "wholeRecordSha256": "62ae12d2d5c0265321742c3bfd0472533cc0d3be2e101826799ff44ce6ae5b05",
+          "exactPrimaryRequestState": "unresolved",
+          "exactPrimaryFetchStatus": "fetch_error",
+          "exactPrimaryCapturedBodyExists": false,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 1
+        }
+      ],
+      "status": "resolved_published_mailto_conflict_not_personal_identity",
+      "mergeApplied": false,
+      "reason": "The exact scoped contact review resolves the mailbox parsing/attribution issue. It is not a person identity merge. A non-person directory-label record, where present, still requires its own archive/classification review.",
+      "nextSafeAction": "No person consolidation is justified by this contact collision. Retain all original individual IDs and dated observations.",
+      "previousReviewAssessments": [
+        {
+          "status": "requires_scoped_identity_review",
+          "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+          "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone.",
+          "originalDiscoveryCandidateAtlasSha256": "0c8cf85c34f76a402252c8ccff409b1edfcc47df10fab76eec75b81daf532a2e"
+        }
+      ],
+      "currentContactScopeReview": {
+        "reviewPath": "data/ucsd/professor-contact-scope-review-20261016.json",
+        "reviewSha256": "8fa98e4ba43d93f8da0cfd501bf0a98276dfd9b95244ad6fa0d0a8f60bd8f058",
+        "professorIds": [
+          "ucsd-public-health-matthew-stone"
+        ],
+        "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+        "noPersonMergeApplied": true
+      }
+    },
+    {
+      "kind": "shared_contact_discovery_only",
+      "value": "agallaccio@ucsd.edu",
+      "records": [
+        {
+          "id": "ucsd-visual-arts-anya-gallaccio",
+          "name": "Anya Gallaccio",
+          "department": "Visual Arts",
+          "primary": "https://profiles.ucsd.edu/anya.gallaccio",
+          "wholeRecordSha256": "032b6834662298c1da0e0b79ceb8e4c9be204c00535ece19babb471a9c71d532",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 2
+        },
+        {
+          "id": "ucsd-faculty-emeriti-faculty",
+          "name": "Emeriti Faculty",
+          "department": "Visual Arts",
+          "primary": "https://visarts.ucsd.edu/people/emeriti-faculty/index.html",
+          "wholeRecordSha256": "d1847b7b31b73ad9eb88ad3ab2b28153cbdbdcb99f6d4c01a77a4afa0db6827d",
+          "exactPrimaryRequestState": "done",
+          "exactPrimaryFetchStatus": "ok",
+          "exactPrimaryCapturedBodyExists": true,
+          "retainedEvidence": null,
+          "ownSourceMustAlsoBeCheckedAcrossActualLegacyRedirectCaptures": true,
+          "directoryObservationCount": 0
+        }
+      ],
+      "status": "requires_scoped_identity_review",
+      "mergeApplied": false,
+      "reason": "Discovery collision only. Need the original named official roster/own subject and explicit personal identifier chain, including any actual legacy redirects or retained earlier raw capture. Keep all stable IDs and full observations until separately verified.",
+      "nextSafeAction": "Inspect actual source ownership and capture availability for every original record. Reuse earlier raw bodies if present;only request an independently published exact own URI if a bounded authorized identity check remains necessary. Do not infer aliases from names,shared URI or shared contact alone."
+    }
+  ],
+  "sharedNamedRosterPrimarySeparatelyClassified": "shared-roster-primary-observations.json",
+  "completionImplication": "Full semantic dedup completion is not yet proven. Source-backed identity decisions or concrete dated capture constraints are still needed for the unresolved discovery cases.",
+  "recordHashMethod": "lab_resource_reviews.record_sha256 over the complete current reviewed canonical record",
+  "latestReviewCheckpoint": {
+    "at": "2026-10-17T19:04:00.514949+00:00",
+    "candidateAtlasSha256": "bc8a194951ea69607131bb531300e24135482037a2a59ff1db9b5f1d7cf2487d",
+    "sourceQueueSha256": "5a9d0277198a127d26b2dd69d15ad1de8101f88ea0c343702f105e0a4d13da80",
+    "originalDiscoveryGroups": 49,
+    "originalRecordSnapshotsPreserved": true,
+    "fullyResolvedContactOnlyGroups": 3,
+    "partiallyResolvedContactAndNonPersonLabelGroups": 2,
+    "remainingOriginalDiscoveryGroups": 46,
+    "newPositiveOriginalProfileCaptureObservations": 5,
+    "newProfileSubjectsPendingIdentityDecision": 5,
+    "contactFieldDecisions": 27,
+    "personMergesApplied": 0,
+    "isFinalIdentityReview": false
+  },
+  "originalDiscoveryScope": "Exhaustive discovery collision inventory over all6232current canonical professor records. Separate groups overlap;group totals are not unique people or proven duplicate counts. No identity decision,extra request or changed record."
+}

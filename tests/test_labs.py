@@ -144,6 +144,25 @@ class EvidenceExtractionTests(unittest.TestCase):
         self.assertEqual(check["status"], "verified_personal_site_not_lab")
         self.assertIsNone(lab)
 
+    def test_named_course_heading_cannot_turn_a_personal_homepage_into_a_lab(self):
+        meta = {**self.meta, "sourceUrl": "https://example.org/"}
+        proof = {"sourceUrl": self.person["officialProfileUrl"]}
+        for context in ['<section id="teaching"><h2>Teaching</h2>{}</section>',
+                        '<div class="course">{}</div>',
+                        '<section><h2>Courses and teaching</h2>{}</section>']:
+            with self.subTest(context=context):
+                markup = '<title>Ada Example</title><main><h1>Ada Example</h1>' + context.format('<h3>Biosignals Processing Lab</h3><p>Student-designed experiments.</p>') + '</main>'
+                check, _, lab = LABS.parse_personal_site(self.person, meta, markup, proof)
+                self.assertIsNone(lab)
+                self.assertEqual(check['status'], 'verified_personal_site_not_lab')
+
+    def test_genuine_lab_heading_outside_teaching_stays_available(self):
+        meta = {**self.meta, "sourceUrl": "https://example.org/"}
+        proof = {"sourceUrl": self.person["officialProfileUrl"]}
+        markup = '<title>Ada Example</title><main><h1>Ada Example</h1><section id="research"><h2>Research</h2><h3>Example Research Lab</h3></section><section id="teaching"><h3>Biosignals Processing Lab</h3></section></main>'
+        _, _, lab = LABS.parse_personal_site(self.person, meta, markup, proof)
+        self.assertEqual(lab['labName'], 'Example Research Lab')
+
     def test_papers_and_publication_sections_cannot_become_labs(self):
         markup = '<main><h1>Ada Example</h1><a href="https://urldefense.com/v3/https://doi.org/10.1/x">On Body-Environment Continuities from a Laboratory Commensalism</a><a href="/paper.pdf">Reputation from the Field to the Lab</a><a href="https://lab.ucsd.edu/publications.html">Jiang Lab Publications</a><a href="https://profiles.ucsd.edu/search/default.aspx?searchfor=lab">Research in my laboratory focuses on the structure</a></main>'
         patch, labs = LABS.parse_profile(self.person, self.meta, markup)

@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T03:22:28.551541+00:00",
+  "isFinalReview": false,
+  "sourceQueueSha256": "5e0c7090911d20d926c84ed947fb5b8e6b4876642c0ded4e74ec2dc02662d1e3",
+  "newVerifiedAliases": 2,
+  "newSourcePurposeClassifications": 2,
+  "newLabs": 0,
+  "scientificPersonOrLabMerges": 0,
+  "newLabNameDeclaration": 1,
+  "sourceAttemptsForLabChains": 0,
+  "wireRequests": 0,
+  "cases": [
+    {
+      "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+      "action": "alias",
+      "reason": "The exact unchanged original Tse Nga Ng Jacobs person resource literally publishes this HTTP Lab Website. Its independent positive response names the Ng Lab and Tse Nga (Tina) Ng. This closes the original person/publisher/owned-resource chain without HTTP/HTTPS spelling assumptions. Replace only the old generic lab display label with its own named declaration; preserve the scientific ID and original record. The separately retained Tina Ng professor record is not merged or renamed, and no PI, recruitment or appointment field is inferred.",
+      "evidence": [
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "observedAt": "2026-10-16T01:01:09+00:00",
+          "bodySha256": "6b44b2e28d2ac6e117986552518d900ed65c8e9f782640deb518c212ec686c4c",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Tse Nga (Tina) Ng",
+          "headingTag": "h3"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "observedAt": "2026-10-16T01:01:09+00:00",
+          "bodySha256": "6b44b2e28d2ac6e117986552518d900ed65c8e9f782640deb518c212ec686c4c",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "evidence": "Lab Website -> http://flexible-electronics.ucsd.edu/",
+          "linkText": "Lab Website",
+          "linkUrl": "http://flexible-electronics.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+          "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+          "observedAt": "2026-10-16T05:32:31+00:00",
+          "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "evidence": "Tse Nga (Tina) Ng UCSD"
+        },
+        {
+          "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+          "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+          "observedAt": "2026-10-16T05:32:31+00:00",
+          "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Welcome to the Ng Lab!",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+          "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+          "observedAt": "2026-10-16T05:32:31+00:00",
+          "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Tse Nga (Tina) Ng",
+          "headingTag": "h2"
+        },
+        {
+          "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+          "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+          "observedAt": "2026-10-16T05:32:31+00:00",
+          "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "evidence": "We engineer flexible electronics and novel processing methodologies to advance free-form fabrication for innovative electronics."
+        }
+      ],
+      "previousDecision": {
+        "action": "unresolved",
+        "reason": "The HTTP Ng lab page is positive, but the existing HTTPS preferred resource has robots_unavailable status. Verify a named own person/lab source chain without assuming HTTP/HTTPS ownership equivalence.",
+        "evidence": [
+          {
+            "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+            "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+            "observedAt": "2026-10-16T05:32:31+00:00",
+            "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_captured_lab_source_resolution",
+            "evidence": "Welcome to the Ng Lab! We engineer flexible electronics and novel processing methodologies to advance free-form fabrication for innovative electronics. Scientific Reports , 5, (2015) 13457 Research: Flexible Electronics via Additive Manufacturing Scientific Reports , 2, (2012) 585 My vision for flexible electronics is not only to create new stretchable objects and applications, but also to increase design and process versatility by taking advantage of digital fabrication techniques. Printing is currently at the mesoscale regime that bridges the gap between nanoscale patterning and macroscale machining. Engineering the compatibility of multiple materials will be advantageous for integration of different components. Today, commercial and open-source digital printers have created many 3D structural parts that have intricate geometric shapes not possible by make any other method. Currently 3D printing is concentrated on structural form, and very little consideration is placed on other functionalities. If flexible electronic devices such as sensors, indicators, and power sources can be embedded and are integral with structural supports, many more new system designs and functions will become available. I want to solve this device and material issue to expand design freedom and advance fabrication capabilites. A Skin Inspired Digital Touch Sensor Science , 350, (2015) 313 In collabora"
+          }
+        ],
+        "reviewState": "further_source_or_identity_work_required",
+        "absenceDepartureClosureInferred": false
+      },
+      "labId": "ucsd-live-lab-bf194dbf29f17f",
+      "name": "Ng Lab",
+      "nameEvidence": [
+        {
+          "requestedUrl": "http://flexible-electronics.ucsd.edu/",
+          "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+          "observedAt": "2026-10-16T05:32:31+00:00",
+          "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Welcome to the Ng Lab!",
+          "headingTag": "h1"
+        }
+      ],
+      "originalPersonResource": "https://jacobsschool.ucsd.edu/faculty/profile?id=394"
+    },
+    {
+      "sourceUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+      "action": "alias",
+      "reason": "The exact MICS faculty card names Truong Nguyen and separately links his personal Jacobs URI and Nguyen’s Video Processing Lab. The saved personal request has an actual301/301 chain to the unchanged original modern Jacobs professor URI. The separately saved lab request has an actual302 chain to the named UCSD Video Processing Lab document. The existing scientific record already names Video Processing Lab (Professor Truong Nguyen) in its original directory evidence. Preserve its ID/name/old HTTPS URI evidence; register only the actually visited final lab resource, without repairing a URL spelling, merging a person, or inferring PI/recruitment/contact information. The current final document exposes only the lab/university headings.",
+      "evidence": [
+        {
+          "requestedUrl": "https://mics.ucsd.edu/faculty",
+          "sourceUrl": "https://mics.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:01+00:00",
+          "bodySha256": "3176564420ed11c88b7a1d2d8569f61e5976b63ccd3d8fe163a78a766e6050c0",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "evidence": "Truong Nguyen Professor Electrical and Computer Engineering Image and Video Processing on Low-power Low-cost Systems Nguyen's Video Processing Lab"
+        },
+        {
+          "requestedUrl": "https://mics.ucsd.edu/faculty",
+          "sourceUrl": "https://mics.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:01+00:00",
+          "bodySha256": "3176564420ed11c88b7a1d2d8569f61e5976b63ccd3d8fe163a78a766e6050c0",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "evidence": "Truong Nguyen -> http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+          "linkText": "Truong Nguyen",
+          "linkUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48"
+        },
+        {
+          "requestedUrl": "https://mics.ucsd.edu/faculty",
+          "sourceUrl": "https://mics.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:01+00:00",
+          "bodySha256": "3176564420ed11c88b7a1d2d8569f61e5976b63ccd3d8fe163a78a766e6050c0",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "evidence": "Nguyen's Video Processing Lab -> http://videoprocessing.ucsd.edu/?page_id=40",
+          "linkText": "Nguyen's Video Processing Lab",
+          "linkUrl": "http://videoprocessing.ucsd.edu/?page_id=40"
+        },
+        {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+          "observedAt": "2026-10-16T05:40:22+00:00",
+          "bodySha256": "f998382864981033ac448b30812df0aedb02d9fdd09be3cf394dd27a8144c53a",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48 -> http://jacobsschool.ucsd.edu/faculty/profile?id=48; HTTP 301: http://jacobsschool.ucsd.edu/faculty/profile?id=48 -> https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+          "redirects": [
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+              "to": "http://jacobsschool.ucsd.edu/faculty/profile?id=48",
+              "httpStatus": 301
+            },
+            {
+              "from": "http://jacobsschool.ucsd.edu/faculty/profile?id=48",
+              "to": "https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+          "observedAt": "2026-10-16T05:40:22+00:00",
+          "bodySha256": "f998382864981033ac448b30812df0aedb02d9fdd09be3cf394dd27a8144c53a",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Truong Nguyen",
+          "headingTag": "h3"
+        },
+        {
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=48",
+          "observedAt": "2026-10-16T08:37:36+00:00",
+          "bodySha256": "f998382864981033ac448b30812df0aedb02d9fdd09be3cf394dd27a8144c53a",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Truong Nguyen",
+          "headingTag": "h3"
+        },
+        {
+          "requestedUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+          "sourceUrl": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+          "observedAt": "2026-10-16T05:35:04+00:00",
+          "bodySha256": "42662ec4bca891775d40ab2859506fe74cbfa0a74b24b481992c11fbbf87a097",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 302: http://videoprocessing.ucsd.edu/?page_id=40 -> https://sites.google.com/view/ucsdvpl/?page_id=40",
+          "redirects": [
+            {
+              "from": "http://videoprocessing.ucsd.edu/?page_id=40",
+              "to": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+              "httpStatus": 302
+            }
+          ]
+        },
+        {
+          "requestedUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+          "sourceUrl": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+          "observedAt": "2026-10-16T05:35:04+00:00",
+          "bodySha256": "42662ec4bca891775d40ab2859506fe74cbfa0a74b24b481992c11fbbf87a097",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "evidence": "VPL@UCSD"
+        },
+        {
+          "requestedUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+          "sourceUrl": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+          "observedAt": "2026-10-16T05:35:04+00:00",
+          "bodySha256": "42662ec4bca891775d40ab2859506fe74cbfa0a74b24b481992c11fbbf87a097",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Video Processing Lab",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+          "sourceUrl": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+          "observedAt": "2026-10-16T05:35:04+00:00",
+          "bodySha256": "42662ec4bca891775d40ab2859506fe74cbfa0a74b24b481992c11fbbf87a097",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "@UC San Diego",
+          "headingTag": "h1"
+        }
+      ],
+      "previousDecision": {
+        "action": "unresolved",
+        "reason": "The named Video Processing Lab request with a page query is positive, while the original preferred HTTPS root is robots_unavailable. The exact source/resource association requires a named campus link chain rather than dropping the query or changing the scheme.",
+        "evidence": [
+          {
+            "requestedUrl": "http://videoprocessing.ucsd.edu/?page_id=40",
+            "sourceUrl": "https://sites.google.com/view/ucsdvpl/?page_id=40",
+            "observedAt": "2026-10-16T05:35:04+00:00",
+            "bodySha256": "42662ec4bca891775d40ab2859506fe74cbfa0a74b24b481992c11fbbf87a097",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_captured_lab_source_resolution",
+            "evidence": "Video Processing Lab @UC San Diego"
+          }
+        ],
+        "reviewState": "further_source_or_identity_work_required",
+        "absenceDepartureClosureInferred": false
+      },
+      "labId": "ucsd-electrical-and-computer-engineering-lab-video-processing-lab",
+      "scopedFacultyCard": {
+        "tag": "div",
+        "class": "item",
+        "text": "Truong Nguyen Professor Electrical and Computer Engineering Image and Video Processing on Low-power Low-cost Systems Nguyen's Video Processing Lab",
+        "namedPersonUri": "http://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+        "namedLabUri": "http://videoprocessing.ucsd.edu/?page_id=40"
+      },
+      "capturedContentLimitation": "Only the lab and university headings were captured; no PI, contact, recruiting or detailed research statement."
+    },
+    {
+      "sourceUrl": "https://web.eng.ucsd.edu/~dineshb/",
+      "action": "exclude_link",
+      "reason": "The exact saved request redirects to a document headed Dinesh Bharadia. That individual profile explicitly labels Our group WCSNG and literally links the already known WCSNG home. Retain this as a related named person/publisher resource rather than another scientific lab or a lab website alias. The two actual requests retain their separate dates and redirect histories. No person, department, PI or recruiting scalar is changed.",
+      "evidence": [
+        {
+          "requestedUrl": "https://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:47+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: https://web.eng.ucsd.edu/~dineshb/ -> https://dineshb.ucsd.edu/",
+          "redirects": [
+            {
+              "from": "https://web.eng.ucsd.edu/~dineshb/",
+              "to": "https://dineshb.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "https://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:47+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Dinesh Bharadia",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "https://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:47+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "evidence": "WCSNG -> https://wcsng.ucsd.edu/",
+          "linkText": "WCSNG",
+          "linkUrl": "https://wcsng.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "https://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:47+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "evidence": "Our group WCSNG designs systems for wireless communication, computing, sensing, and networking at UC San Diego."
+        },
+        {
+          "requestedUrl": "https://wcsng.ucsd.edu/",
+          "sourceUrl": "https://wcsng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:37+00:00",
+          "bodySha256": "6582d66eda9f81d159b9f3a3f8aa1de1955aea48bd76a0a310cd46a3f3ceb3ca",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "evidence": "Wireless Communications Sensing and Networking - WCSNG @ UC San Diego"
+        }
+      ],
+      "previousDecision": {
+        "action": "unresolved",
+        "reason": "This is a named individual Dinesh Bharadia page advertising WCSNG. Check the explicitly named group and existing WCSNG/PI resource chain before adding a lab resource or another group record.",
+        "evidence": [
+          {
+            "requestedUrl": "https://web.eng.ucsd.edu/~dineshb/",
+            "sourceUrl": "https://dineshb.ucsd.edu/",
+            "observedAt": "2026-10-16T01:09:47+00:00",
+            "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_captured_lab_source_resolution",
+            "evidence": "Dinesh Bharadia UC San Diego | Electrical and Computer Engineering | CSE affiliate I am Associate Professor in the ECE department with an affiliate appointment with the CSE department at UC San Diego. Our group WCSNG designs systems for wireless communication, computing, sensing, and networking at UC San Diego. The vision for our research is to design and prototype performant systems for communicating, sensing, computing, and securing information in our connected world, solving real-world problems. Our research has aimed to solve fundamental questions, which has often led to new areas of research and commercialization. Our broad impact areas are vision and perception systems, sensing systems, wireless communications, computing systems, and wireless networking. WCSNG has curated and created open-source datasets and tools that enable reproducible research and lower the barrier to entry in communication, computing, and sensing. Research areas Publications Datasets & tools Associate Professor, Electrical and Computer Engineering Affiliate Faculty, Computer Science and Engineering Franklin Antonio Hall 2303, UC San Diego Office hours: Monday 2 pm to 3 pm except holidays, otherwise by appointment Openings Apply to WCSNG Group If you are an exceptional student, researcher, or postdoc interested in working with WCSNG, email dineshb at ucsd dot edu and review the current group openings."
+          }
+        ],
+        "reviewState": "further_source_or_identity_work_required",
+        "absenceDepartureClosureInferred": false
+      },
+      "sourceResourceRole": "named_individual_profile_publishing_existing_lab_link",
+      "relatedLabId": "ucsd-electrical-and-computer-engineering-lab-wireless-communications-sensing-and-networking-group-wcsng",
+      "websiteAliasApproved": false
+    },
+    {
+      "sourceUrl": "http://web.eng.ucsd.edu/~dineshb/",
+      "action": "exclude_link",
+      "reason": "The exact saved request redirects to a document headed Dinesh Bharadia. That individual profile explicitly labels Our group WCSNG and literally links the already known WCSNG home. Retain this as a related named person/publisher resource rather than another scientific lab or a lab website alias. The two actual requests retain their separate dates and redirect histories. No person, department, PI or recruiting scalar is changed.",
+      "evidence": [
+        {
+          "requestedUrl": "http://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T05:33:31+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "redirect_chain",
+          "evidence": "HTTP 301: http://web.eng.ucsd.edu/~dineshb/ -> https://dineshb.ucsd.edu/",
+          "redirects": [
+            {
+              "from": "http://web.eng.ucsd.edu/~dineshb/",
+              "to": "https://dineshb.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ]
+        },
+        {
+          "requestedUrl": "http://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T05:33:31+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_heading",
+          "evidence": "Dinesh Bharadia",
+          "headingTag": "h1"
+        },
+        {
+          "requestedUrl": "http://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T05:33:31+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "named_link",
+          "evidence": "WCSNG -> https://wcsng.ucsd.edu/",
+          "linkText": "WCSNG",
+          "linkUrl": "https://wcsng.ucsd.edu/"
+        },
+        {
+          "requestedUrl": "http://web.eng.ucsd.edu/~dineshb/",
+          "sourceUrl": "https://dineshb.ucsd.edu/",
+          "observedAt": "2026-10-16T05:33:31+00:00",
+          "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "main_text_quote",
+          "evidence": "Our group WCSNG designs systems for wireless communication, computing, sensing, and networking at UC San Diego."
+        },
+        {
+          "requestedUrl": "https://wcsng.ucsd.edu/",
+          "sourceUrl": "https://wcsng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:37+00:00",
+          "bodySha256": "6582d66eda9f81d159b9f3a3f8aa1de1955aea48bd76a0a310cd46a3f3ceb3ca",
+          "method": "reviewed_original_publisher_named_lab_or_person_resource",
+          "status": "verified",
+          "evidenceType": "document_title",
+          "evidence": "Wireless Communications Sensing and Networking - WCSNG @ UC San Diego"
+        }
+      ],
+      "previousDecision": {
+        "action": "unresolved",
+        "reason": "The HTTP Dinesh Bharadia source is another observation of the WCSNG lead; resolve the explicit named group and existing campus resources first.",
+        "evidence": [
+          {
+            "requestedUrl": "http://web.eng.ucsd.edu/~dineshb/",
+            "sourceUrl": "https://dineshb.ucsd.edu/",
+            "observedAt": "2026-10-16T05:33:31+00:00",
+            "bodySha256": "5ac6b47207463110609dd91fd2affceceb7ce55a8b6260f7fbb401149f97616b",
+            "status": "verified",
+            "evidenceType": "main_text_quote",
+            "method": "reviewed_captured_lab_source_resolution",
+            "evidence": "Dinesh Bharadia UC San Diego | Electrical and Computer Engineering | CSE affiliate I am Associate Professor in the ECE department with an affiliate appointment with the CSE department at UC San Diego. Our group WCSNG designs systems for wireless communication, computing, sensing, and networking at UC San Diego. The vision for our research is to design and prototype performant systems for communicating, sensing, computing, and securing information in our connected world, solving real-world problems. Our research has aimed to solve fundamental questions, which has often led to new areas of research and commercialization. Our broad impact areas are vision and perception systems, sensing systems, wireless communications, computing systems, and wireless networking. WCSNG has curated and created open-source datasets and tools that enable reproducible research and lower the barrier to entry in communication, computing, and sensing. Research areas Publications Datasets & tools Associate Professor, Electrical and Computer Engineering Affiliate Faculty, Computer Science and Engineering Franklin Antonio Hall 2303, UC San Diego Office hours: Monday 2 pm to 3 pm except holidays, otherwise by appointment Openings Apply to WCSNG Group If you are an exceptional student, researcher, or postdoc interested in working with WCSNG, email dineshb at ucsd dot edu and review the current group openings."
+          }
+        ],
+        "reviewState": "further_source_or_identity_work_required",
+        "absenceDepartureClosureInferred": false
+      },
+      "sourceResourceRole": "named_individual_profile_publishing_existing_lab_link",
+      "relatedLabId": "ucsd-electrical-and-computer-engineering-lab-wireless-communications-sensing-and-networking-group-wcsng",
+      "websiteAliasApproved": false
+    }
+  ],
+  "originalLabRecords": {
+    "ucsd-live-lab-bf194dbf29f17f": {
+      "record": {
+        "id": "ucsd-live-lab-bf194dbf29f17f",
+        "labName": "Tse Nga Ng — lab website",
+        "institution": "University of California San Diego",
+        "department": "Electrical and Computer Engineering",
+        "labWebsiteUrl": "https://flexible-electronics.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Lab website linked from an official UC San Diego faculty profile.",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "https://flexible-electronics.ucsd.edu/"
+        ],
+        "lastVerified": "2026-10-02",
+        "recordSubtype": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+              "observedAt": "2026-10-02T22:48:03+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://flexible-electronics.ucsd.edu/",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+              "observedAt": "2026-10-02T22:48:03+00:00",
+              "method": "official_profile_explicit_lab_link",
+              "evidence": "Lab Website → https://flexible-electronics.ucsd.edu/",
+              "status": "verified"
+            }
+          ]
+        },
+        "professorIds": [
+          "ucsd-electrical-and-computer-engineering-tse-nga-ng"
+        ],
+        "relationshipScope": "ucsd_hosted",
+        "relatedProfessorNames": [
+          "Tse Nga Ng"
+        ],
+        "relationshipType": "faculty_lab_link",
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:05+00:00",
+          "issues": [],
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "lastEvidenceAt": "2026-10-02T22:48:03+00:00"
+        },
+        "websiteCheck": {
+          "sourceUrl": "https://flexible-electronics.ucsd.edu/",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:05+00:00"
+        },
+        "unverifiedFields": [],
+        "appliedEvidencePatches": [
+          "e6b622f7ebf8551c8f15f36e074ea86d3a8fdda5b00b0c57abc4d12863855cfd"
+        ]
+      },
+      "sha256": "402ebe43e4cb2baf9dc72597c71a54874c3bd4f48b3e672fc2d34e43a0de202c"
+    },
+    "ucsd-electrical-and-computer-engineering-lab-video-processing-lab": {
+      "record": {
+        "id": "ucsd-electrical-and-computer-engineering-lab-video-processing-lab",
+        "labName": "Video Processing Lab",
+        "institution": "University of California San Diego",
+        "department": "Electrical and Computer Engineering",
+        "labWebsiteUrl": "https://videoprocessing.ucsd.edu/",
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "researchAreas": [],
+        "description": "Not found",
+        "contactEmail": "Not found",
+        "recruitingStatus": "Unknown",
+        "recruitingEvidence": {
+          "text": "",
+          "url": ""
+        },
+        "sourceUrls": [
+          "http://videoprocessing.ucsd.edu/",
+          "http://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+          "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+          "https://videoprocessing.ucsd.edu/"
+        ],
+        "lastVerified": "2026-05-18",
+        "recordSubtype": "lab",
+        "legacyKind": "lab",
+        "fieldEvidence": {
+          "labName": [
+            {
+              "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+              "observedAt": "2026-10-02T22:42:04+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Video Processing Lab (Professor Truong Nguyen)",
+              "status": "verified"
+            }
+          ],
+          "labWebsiteUrl": [
+            {
+              "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+              "observedAt": "2026-10-02T22:42:04+00:00",
+              "method": "official_directory_main_content",
+              "evidence": "Video Processing Lab (Professor Truong Nguyen)",
+              "status": "verified"
+            }
+          ]
+        },
+        "verification": {
+          "status": "source_checked",
+          "lastAttemptedAt": "2026-10-03T00:04:09+00:00",
+          "fieldsVerified": [
+            "labName",
+            "labWebsiteUrl"
+          ],
+          "issues": [
+            "Lab identity and affiliation await refreshed evidence."
+          ],
+          "lastEvidenceAt": "2026-10-02T22:42:04+00:00"
+        },
+        "unverifiedFields": [],
+        "websiteCheck": {
+          "sourceUrl": "https://videoprocessing.ucsd.edu/",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:09+00:00"
+        },
+        "appliedEvidencePatches": [
+          "b8f434c9018890e839913dd29bac1425be0cbdcea05a1cebfab655ebc3615eb7"
+        ],
+        "aliasIds": [
+          "ucsd-live-lab-316e336562d7f3"
+        ]
+      },
+      "sha256": "d4c6597992a8ef89be460500d3b678bc9894f096e7858f46fb640aa10df70840"
+    }
+  },
+  "scope": "Close actual original publisher/person/resource chains and classify individual profile links. Preserve all stable IDs, old records/evidence and unavailable resources as dated observations; no leadership, recruitment, current employment, departure or absence is inferred."
+}
