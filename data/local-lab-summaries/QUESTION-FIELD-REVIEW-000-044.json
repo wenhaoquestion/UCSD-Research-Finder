@@ -1,0 +1,2115 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:48:17.461353+00:00",
+  "verdict": "45 individual source-explicit research-question draft reviews complete; no production edits.",
+  "inputInventory": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/SOURCE-EXPLICIT-QUESTION-CANDIDATES.json",
+    "sha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24",
+    "inventoriedAt": "2026-10-16T07:34:40+00:00",
+    "baseCommit": "19be64adac1cb5cb463637e745a5bb59261923f6",
+    "totalCandidates": 177
+  },
+  "range": {
+    "startIndex": 0,
+    "endIndexInclusive": 44,
+    "reviewedCount": 45
+  },
+  "counts": {
+    "add_source_explicit_questions": 45,
+    "unchanged": 0,
+    "questions": 65,
+    "questionEvidence": 65,
+    "exactQuoteAndFrozenHashFailures": 0
+  },
+  "boundaryItemsForCrossQA": [
+    {
+      "index": 10,
+      "labId": "ucsd-biology-topic-lab-hunter",
+      "reasonZh": "仅使用his lab明确归属的研究从句；其后Hunter个人技术/叙事不外推为整个lab问题，保留来源历史语气。"
+    },
+    {
+      "index": 13,
+      "labId": "ucsd-biology-topic-lab-jill-wildonger",
+      "reasonZh": "官方具名faculty研究区的Our goal/We是已接受实验室的集体研究语境，直接elucidate how；不引用个人履历。"
+    },
+    {
+      "index": 14,
+      "labId": "ucsd-biology-topic-lab-julie-law",
+      "reasonZh": "具名Law实验室站点研究Problem/Approach连续语境将三项未明how问题列为表观遗传调控研究对象，不从个人履历补问题。"
+    },
+    {
+      "index": 40,
+      "labId": "ucsd-biology-topic-lab-wolfgang-busch",
+      "reasonZh": "PI官方页虽用第三人称，但后文The lab has also...明确承接同一根系遗传研究；只补该how问题，不借行政职务或个人成就扩展lab范围。"
+    },
+    {
+      "index": 42,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ghosh-lab",
+      "reasonZh": "About the Ghosh Laboratory/Our Research Focus及my group明确团队范围；保留历史研究叙述，不声称2026新增项目或药物有效。"
+    }
+  ],
+  "items": [
+    {
+      "index": 0,
+      "labId": "ucsd-biology-topic-lab-brenda-bloodgood",
+      "ordinal": 39,
+      "labName": "Brenda Bloodgood Lab",
+      "reviewedAt": "2026-10-16T07:48:17.440270+00:00",
+      "rawSha256": "01215925183427724cb85ac71778ef4d130029508dcc78e292c7168def01d22a",
+      "packetSha256": "3f367755e6b262ed744587c6c6eacf25ec38d395cff4bcd6066b7dc82e2dbf5f",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "经验如何通过活动依赖性基因表达调节抑制性与兴奋性神经元的连接？",
+        "这些过程如何与动物行为及疾病状态相关联？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-019208420df96792",
+          "quote": "Our lab is interested in understanding how experience, via the execution of activity­-dependent gene expression, regulates the connectivity of inhibitory and excitatory neurons and how these processes relate to animal behavior and disease states.",
+          "sourceUrl": "https://bloodgoodlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "bc0e3c8e86cdbcf1dcdd930c1d8217bd47da1ceb3f4fc7bc30c96ed5195a3dfa"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-019208420df96792",
+          "quote": "Our lab is interested in understanding how experience, via the execution of activity­-dependent gene expression, regulates the connectivity of inhibitory and excitatory neurons and how these processes relate to animal behavior and disease states.",
+          "sourceUrl": "https://bloodgoodlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "bc0e3c8e86cdbcf1dcdd930c1d8217bd47da1ceb3f4fc7bc30c96ed5195a3dfa"
+        }
+      ],
+      "reasonZh": "具名实验室的Our lab整体研究陈述直接提出两项how问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-019208420df96792",
+          "sourceUrl": "https://bloodgoodlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 410,
+          "localContextSha256": "058ac5bad3d81cafc0a1536e714d1b38b51390e939a1680dc3f052f40ae334ac",
+          "localContextExcerpt": ". Our Research Overview From the moment an animal is born, its brain is working to extract information from its surroundings and initiate appropriate behavioral responses. This is done through the activity of excitatory and inhibitory neurons that are organized into synaptically connected circuits. Our lab is interested in understanding how experience, via the execution of activity­-dependent gene expression, regulates the connectivity of inhibitory and excitatory neurons and how these processes relate to animal behavior and disease states. About Dr. Bloodgood Dr. Brenda Bloodgood was a postdoctoral fellow and received her Ph.D. in Neurobiology (2006) from Harvard Medical School. She completed her BS Animal Physiology and Neuroscience at UCSD (2001). Brenda is a Searle and Pew scholar and the recipient of an NIH New Innovator Award. A",
+          "wholeLabScopeReasonZh": "具名实验室的Our lab整体研究陈述直接提出两项how问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 1,
+      "labId": "ucsd-biology-topic-lab-chistina-hueschen",
+      "ordinal": 42,
+      "labName": "Chistina Hueschen Lab",
+      "reviewedAt": "2026-10-16T07:48:17.441218+00:00",
+      "rawSha256": "968858054bb224d205605b11700fd21691e73409e1af2c802751f67ff61fd158",
+      "packetSha256": "d570ff6dba077b472d57ac1bf51be1a9cfbf8f80a25af7d1d32bbcc43da7441c",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "寄生细胞和动物如何运动、穿透组织并改变形态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-b65927e5d71c3392",
+          "quote": "The Hueschen Lab studies how parasitic cells and animals move, penetrate through tissue, and change shape. We use microscopy, experimental approaches from cell and parasite biology, and physical and mathematical thinking.",
+          "sourceUrl": "https://hueschenlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:56+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "1ec8d7b97b4d51f58f76e0618fbbf61cd6749b351c5abb652d9a003160928b5e"
+        }
+      ],
+      "reasonZh": "Hueschen Lab被明确列为研究主体，how后逐项列出运动、组织穿透及形态变化。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-b65927e5d71c3392",
+          "sourceUrl": "https://hueschenlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:56+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 226,
+          "localContextSha256": "460fb6f2c73352440a35d7b97092a0c7a5244b9e2267aaf5dc901679fe29cd71",
+          "localContextExcerpt": "Welcome to the Hueschen Lab! Our goal is to understand the physical biology of parasites . We focus on three key phenomena in the lives of parasitic organisms: motility, penetration of host tissue, and morphogenesis. Overview The Hueschen Lab studies how parasitic cells and animals move, penetrate through tissue, and change shape. We use microscopy, experimental approaches from cell and parasite biology, and physical and mathematical thinking. Current topics of interest include the dynamics and patterning of cytoskeletal proteins inside the parasitic cells that cause toxoplasmosis and malaria, mechanisms of cell gliding motility, the mechanics of tissue penetration by parasites, and the mechanics of morphogenesis (shape change) in parasi",
+          "wholeLabScopeReasonZh": "Hueschen Lab被明确列为研究主体，how后逐项列出运动、组织穿透及形态变化。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 2,
+      "labId": "ucsd-biology-topic-lab-christian-metallo",
+      "ordinal": 44,
+      "labName": "Christian Metallo Lab",
+      "reviewedAt": "2026-10-16T07:48:17.441791+00:00",
+      "rawSha256": "e3470f94bda3d529898e70ab2fcb7142b400f4c9811a2937eebd22f499d7f271",
+      "packetSha256": "15ec4f17a4f2f49d2c93599cc52577aaf590e6f2f937ba068b41cb337f41cd0e",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "代谢如何驱动疾病状态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-e0459d385a3c01a4",
+          "quote": "The Metallo laboratory at the Salk Institute for Biological Studies applies a multi-disciplinary approach to understand how metabolism drives disease states",
+          "sourceUrl": "https://metallo.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:58+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "11c46dfda7e0a7e4c0e32427179112186fb69ac7c057c4c13c3b36f4d392390b"
+        }
+      ],
+      "reasonZh": "原文明确以Metallo laboratory为主体提出理解代谢如何驱动疾病；不扩展治疗效果。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-e0459d385a3c01a4",
+          "sourceUrl": "https://metallo.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:58+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 27,
+          "localContextSha256": "83fa49c4a999385b4c95920c762edd11da917407907295c2a32e8c35de3b84ef",
+          "localContextExcerpt": "Welcome to the Metallo Lab The Metallo laboratory at the Salk Institute for Biological Studies applies a multi-disciplinary approach to understand how metabolism drives disease states and uses this information to improve people’s health and wellness. We incorporate analytical chemistry, mass spectrometry, cell biology, and systems-based modeling to study metabolic regulation in cells, tissues, animals, and people. We integrate the use of stable isotope tracers and engineering pr",
+          "wholeLabScopeReasonZh": "原文明确以Metallo laboratory为主体提出理解代谢如何驱动疾病；不扩展治疗效果。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 3,
+      "labId": "ucsd-biology-topic-lab-cory-root",
+      "ordinal": 47,
+      "labName": "Cory Root Lab",
+      "reviewedAt": "2026-10-16T07:48:17.442536+00:00",
+      "rawSha256": "f14162f5328d70c69087c4d1164e485737aead53ff77ee2fca36176b36c3ac81",
+      "packetSha256": "9ff265ec7caefdd759252d7294bcadae0aa53468fb1a12284b6ffb4f936c42ea",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "第三级嗅觉区域向下游结构输出时，感觉表征如何转变？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-b1b7e575b957443e",
+          "quote": "Our research focuses on understanding olfactory processing in these third order areas and how sensory representation transforms in their outputs to downstream structures.",
+          "sourceUrl": "https://rootlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:57+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "78ce67d6d0674aba03e32433c593d84ced4468294d9ed1263ae19dd6bfb59572"
+        }
+      ],
+      "reasonZh": "局部正文先讨论嗅觉平行输出，随后Our research直接提出感觉表征输出转变的how问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-b1b7e575b957443e",
+          "sourceUrl": "https://rootlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:57+00:00",
+          "sourceRole": "related_destination_variant",
+          "quoteStart": 1275,
+          "localContextSha256": "66f258634aa1801ba2759b7ad893acbd15492b0be34bcd1392606721d6951621",
+          "localContextExcerpt": "teral entorhinal cortex, olfactory tubercle, and piriform cortex. It remains largely unclear what function is served by these parallel outputs, however, in previous work, we demonstrated that the OB projection to the cortical amygdala plays a critical role in innate attraction and aversion to odor. Our research focuses on understanding olfactory processing in these third order areas and how sensory representation transforms in their outputs to downstream structures. Meet Our Team Latest News The lab gets it’s first major funding by bcslocal | Nov 19, 2020 | news In June 2020, we received our first R01 funded by the NIDCD! The grant is for work on the innate olfactory circuitry. Cory wins 2019 Hellman fellowship by bcslocal | Nov 19, 2020 | event Cory was selec",
+          "wholeLabScopeReasonZh": "局部正文先讨论嗅觉平行输出，随后Our research直接提出感觉表征输出转变的how问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 4,
+      "labId": "ucsd-biology-topic-lab-cressida-madigan",
+      "ordinal": 48,
+      "labName": "Cressida Madigan Lab",
+      "reviewedAt": "2026-10-16T07:48:17.443383+00:00",
+      "rawSha256": "7806dbbf4ece909c76358d60fda6e3b6ba2429a65d6637f39d8707c0c85b6e57",
+      "packetSha256": "307d3bc42b19fb852cdca743643ae4c5adb8c8c4600119d10cff503451e8029c",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "微生物如何改变神经系统功能？",
+        "炎症在微生物与神经系统的相互作用中起什么作用？",
+        "神经系统如何改变感染进程？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-73e19312f9033d49",
+          "quote": "Our lab uses the transparent zebrafish to directly observe microbes as they infect neurological tissue. We look to: define the mechanisms by which microbes alter nervous system functions; determine the roles of inflammation in microbe-nervous system interactions; explore how the nervous system can change the course of infection.",
+          "sourceUrl": "https://www.themadiganlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-73e19312f9033d49",
+          "quote": "Our lab uses the transparent zebrafish to directly observe microbes as they infect neurological tissue. We look to: define the mechanisms by which microbes alter nervous system functions; determine the roles of inflammation in microbe-nervous system interactions; explore how the nervous system can change the course of infection.",
+          "sourceUrl": "https://www.themadiganlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-73e19312f9033d49",
+          "quote": "Our lab uses the transparent zebrafish to directly observe microbes as they infect neurological tissue. We look to: define the mechanisms by which microbes alter nervous system functions; determine the roles of inflammation in microbe-nervous system interactions; explore how the nervous system can change the course of infection.",
+          "sourceUrl": "https://www.themadiganlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875"
+        }
+      ],
+      "reasonZh": "Our goals/Our lab明确列出机制、炎症作用与神经系统改变感染进程三项目标；非新闻或个人背景。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-73e19312f9033d49",
+          "sourceUrl": "https://www.themadiganlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 412,
+          "localContextSha256": "802750c12b3ddb8330380d3a31d3a745d33e28840cfce9af905cc0c1ec388c8f",
+          "localContextExcerpt": "tions can change functions of the nervous system. How do pathogens cause these neurological responses? That’s often challenging to determine, because microbes and neurological tissue can occur deep within organs - like the brain - that are difficult to directly examine in a living animal. OUr goals Our lab uses the transparent zebrafish to directly observe microbes as they infect neurological tissue. We look to: define the mechanisms by which microbes alter nervous system functions; determine the roles of inflammation in microbe-nervous system interactions; explore how the nervous system can change the course of infection. PEOPLE PUBLICATIONS CONTACT LINKS CURRENT NEWS Katilynne Croom joins the lab! Welcome Kati! Presenting DOCTOR Sumedha Ravishankar!!!! Congratulations! Tariq Qayum joins the lab! Welcome Tariq! Sumedha is awarded the excellence in DEI award! Sumedha becomes a Summer Graduate Teaching Scholar! Liam M",
+          "wholeLabScopeReasonZh": "Our goals/Our lab明确列出机制、炎症作用与神经系统改变感染进程三项目标；非新闻或个人背景。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:52:51+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 5,
+      "labId": "ucsd-biology-topic-lab-daniel-bayless",
+      "ordinal": 49,
+      "labName": "Daniel Bayless Lab",
+      "reviewedAt": "2026-10-16T07:48:17.443812+00:00",
+      "rawSha256": "2f3dd02b966069505d99328077eb5d5a28447ffbfc6e9a828b20541462b10064",
+      "packetSha256": "445a1d702847165ef90c7ced4e542b3693cd090da1bde1659651dc6ff2e7a2ee",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "性激素、与人类疾病相关的基因及衰老如何塑造和调节社会行为相关的神经回路？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-945a0f7e2593c6e1",
+          "quote": "The research mission of the Bayless Lab is to increase our understanding of the neural circuits that underlie social behavior and the factors that alter these neural circuits. Our experiments currently focus on how sex hormones, genes associated with human disorders, and aging shape and modulate these neural circuits.",
+          "sourceUrl": "https://bayless.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:01+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "e8f7ae35359a7b6cf1e2b86fd40946304f5d852163379caf069f26b9178980b5"
+        }
+      ],
+      "reasonZh": "Bayless Lab研究使命和Our experiments把how问题限定在社会行为神经回路。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-945a0f7e2593c6e1",
+          "sourceUrl": "https://bayless.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:01+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 27,
+          "localContextSha256": "ead29c751b27bb3d563644cd280556450cebbdb77bf02895c779ec56cc577408",
+          "localContextExcerpt": "Welcome to the Bayless Lab The research mission of the Bayless Lab is to increase our understanding of the neural circuits that underlie social behavior and the factors that alter these neural circuits. Our experiments currently focus on how sex hormones, genes associated with human disorders, and aging shape and modulate these neural circuits. The neural circuits that underlie social behaviors are intermingled among circuits that regulate unrelated neural processes and behaviors. To isolate and selectively study neural circuits that encode and generate fundamental elements of social behaviors, we use advanced molecular genetic techniques",
+          "wholeLabScopeReasonZh": "Bayless Lab研究使命和Our experiments把how问题限定在社会行为神经回路。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 6,
+      "labId": "ucsd-biology-topic-lab-diana-hargreaves",
+      "ordinal": 53,
+      "labName": "Diana Hargreaves Lab",
+      "reviewedAt": "2026-10-16T07:48:17.444259+00:00",
+      "rawSha256": "4cae90c02e9b00c85f56be5efb21d2bf12bff72be1595d343651291df03263fd",
+      "packetSha256": "b83f6b518fb84ccd21ff55b1e4fcee397c958a380c17ae712c42ca486859eed8",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "BAF复合体亚基中的癌症相关突变如何影响治疗响应，尤其是免疫治疗响应？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-a56654d1ca4a4041",
+          "quote": "We also have a strong interest in understanding how cancer-associated mutations in BAF complex subunits impact therapeutic responses, particularly to immunotherapy.",
+          "sourceUrl": "https://hargreaves.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:02+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "54c0ec3760faea0d7036c3c56d2601b6c209a4d46959f78c9f854108700dc2aa"
+        }
+      ],
+      "reasonZh": "Our goal/We also语境为实验室研究计划，问题直接由understanding how从句给出。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-a56654d1ca4a4041",
+          "sourceUrl": "https://hargreaves.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:02+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 695,
+          "localContextSha256": "00126d4ca09ecab937a59e0ef6af205093bc71fa41410c37e682536c401c072e",
+          "localContextExcerpt": "ancers. But how BAF complexes instruct cell fate through complex targeting, engagement of transcription factors, and regulation of gene expression is not fully understood. Our goal is to use biochemical and epigenomic assays to understand BAF complex regulation of immune cell activation in disease. We also have a strong interest in understanding how cancer-associated mutations in BAF complex subunits impact therapeutic responses, particularly to immunotherapy. Our work has converged on the potential use of BAF complex inhibitors for cancer therapy and therapeutic control of inflammation.",
+          "wholeLabScopeReasonZh": "Our goal/We also语境为实验室研究计划，问题直接由understanding how从句给出。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 7,
+      "labId": "ucsd-biology-topic-lab-enfu-hui",
+      "ordinal": 57,
+      "labName": "Enfu Hui Lab",
+      "reviewedAt": "2026-10-16T07:48:17.444766+00:00",
+      "rawSha256": "0b8ac48b092fe031af213a8ebb84609354c1d461927cd9dda0c2d7f42f5dbb00",
+      "packetSha256": "50bcc5cb7cf355ad9bea74234f3acd8370657f3a3a26a232dc3f12d5302cd519",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "免疫检查点在分子和细胞层面如何运作？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-e950d18b39630648",
+          "quote": "we combine cell-free reconstitution, live-cell imaging, and cell-based assays to define how immune checkpoints operate at the molecular and cellular levels.",
+          "sourceUrl": "https://www.huilab-ucsd.org/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "1ed3ec137d94197b1bb41924617e706827e4ed5b9894cbdcafad364d31805fc9"
+        }
+      ],
+      "reasonZh": "实验室To address this challenge/we combine/define how连贯陈述直接支持该研究问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-e950d18b39630648",
+          "sourceUrl": "https://www.huilab-ucsd.org/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1791,
+          "localContextSha256": "94f35cdd88207bc14ae1c0d0d8d90f35315a3fba389eba4ffa8b9d48fbf55c9d",
+          "localContextExcerpt": "ed checkpoint blockade has led to remarkable clinical successes, these therapies benefit only a fraction of patients and tumor types. We believe that a deeper mechanistic understanding of checkpoint regulation is essential for broadening the reach of cancer immunotherapy. To address this challenge, we combine cell-free reconstitution, live-cell imaging, and cell-based assays to define how immune checkpoints operate at the molecular and cellular levels. Read More Image by Graham Johnson Cell free reconstitution: We reconstitute signaling networks on model membranes to gain quantitative, in-depth insights into T cell signaling that are invisible to traditional approaches. Read More Signaling dynamics: We probe the spatiotemporal dynamics of signali",
+          "wholeLabScopeReasonZh": "实验室To address this challenge/we combine/define how连贯陈述直接支持该研究问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:52:51+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 8,
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "ordinal": 62,
+      "labName": "Goldrath Lab",
+      "reviewedAt": "2026-10-16T07:48:17.445384+00:00",
+      "rawSha256": "108d2a96eb62610ee67056e703d44d051c77115a22649568ad815a36a977d62e",
+      "packetSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "T细胞免疫记忆如何形成和维持？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-acffd3486037cd5c",
+          "quote": "The goal of our research is to understand how T cell memory is generated and maintained by identifying the transcriptional and signaling events that regulate the survival and differentiation of T cells as they navigate the immune response and become long-lived memory T cells.",
+          "sourceUrl": "https://goldrathlab.com/",
+          "sourceObservedAt": "2026-10-16T00:59:53+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46"
+        }
+      ],
+      "reasonZh": "The goal of our research直接提出how T cell memory is generated and maintained。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "sourceUrl": "https://goldrathlab.com/",
+          "sourceObservedAt": "2026-10-16T00:59:53+00:00",
+          "sourceRole": "related_destination_variant",
+          "quoteStart": 426,
+          "localContextSha256": "ef2bd83c47007aa6505fa17e639210317b0a637278defb57124b42b86127d59f",
+          "localContextExcerpt": " second encounter with that same pathogen. This ability of lymphocytes to “remember” is the basis for protection following vaccination. Little is known about the signaling pathways and molecular mechanisms that regulate the formation and maintenance of memory T cell numbers and functional capacity. The goal of our research is to understand how T cell memory is generated and maintained by identifying the transcriptional and signaling events that regulate the survival and differentiation of T cells as they navigate the immune response and become long-lived memory T cells. Vaccines have been the most effective medical intervention of our time. Eradication of small pox and the near hope for successful global elimination of polio are two clear such examples. However, there are many diseases for which conventional strategies for vaccine design have not been successful a",
+          "wholeLabScopeReasonZh": "The goal of our research直接提出how T cell memory is generated and maintained。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 9,
+      "labId": "ucsd-biology-topic-lab-holway",
+      "ordinal": 67,
+      "labName": "Holway Lab",
+      "reviewedAt": "2026-10-16T07:48:17.445844+00:00",
+      "rawSha256": "28ed575d9ca0dbfb916a425db7f7bd6d41bfe8517af9784df1091d13c364ec6c",
+      "packetSha256": "fc5ab3c2050de14838a5e2cba6087ea2b859e66760f9c311448dda5667299ab0",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "实验性清除入侵物种后，原生物种群落能恢复到何种程度？",
+        "土地利用强化如何威胁传粉者种群？",
+        "外来物种如何与本地传粉者相互作用，这些相互作用何时会损害传粉服务？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-547ac3538543a086",
+          "quote": "To what extent can native species assemblages recover following experimental invader removal?",
+          "sourceUrl": "https://holwaylab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-547ac3538543a086",
+          "quote": "How does land-use intensification threaten pollinator populations? (ii) How do changing environmental conditions affect interactions between plants and pollinators? (iii) How do non-native species interact with native pollinators, and when do these interactions negatively impact pollination services?",
+          "sourceUrl": "https://holwaylab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-547ac3538543a086",
+          "quote": "How does land-use intensification threaten pollinator populations? (ii) How do changing environmental conditions affect interactions between plants and pollinators? (iii) How do non-native species interact with native pollinators, and when do these interactions negatively impact pollination services?",
+          "sourceUrl": "https://holwaylab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469"
+        }
+      ],
+      "reasonZh": "正文明确标为Our research questions/perspectives，选取原文三项具体问题，未从一般生态主题扩写。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-547ac3538543a086",
+          "sourceUrl": "https://holwaylab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 421,
+          "localContextSha256": "3c8b636260cc003dc519f2699070db538faad20a94894c5731d1dae7d7ca55f0",
+          "localContextExcerpt": "onments has increasingly become an economically costly and environmentally destructive phenomenon. Our research on invasions primarily encompasses the following questions. (i) What factors control susceptibility to invasion? (ii) When and why do invasion impacts change in magnitude over time? (iii) To what extent can native species assemblages recover following experimental invader removal? Plant-Pollinator Interactions: Declining pollinator populations threaten to compromise the integrity of pollination services in both agricultural and non-managed systems. Our research addresses this general issue from three perspectives. (i) How does land-use intensification threaten pollinator pop",
+          "wholeLabScopeReasonZh": "正文明确标为Our research questions/perspectives，选取原文三项具体问题，未从一般生态主题扩写。"
+        },
+        {
+          "sourceId": "src-547ac3538543a086",
+          "sourceUrl": "https://holwaylab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 757,
+          "localContextSha256": "ef6b127d5ab3606f7da5b335def175cc5d221281bd346876e762b6e45dc055f1",
+          "localContextExcerpt": "semblages recover following experimental invader removal? Plant-Pollinator Interactions: Declining pollinator populations threaten to compromise the integrity of pollination services in both agricultural and non-managed systems. Our research addresses this general issue from three perspectives. (i) How does land-use intensification threaten pollinator populations? (ii) How do changing environmental conditions affect interactions between plants and pollinators? (iii) How do non-native species interact with native pollinators, and when do these interactions negatively impact pollination services?",
+          "wholeLabScopeReasonZh": "正文明确标为Our research questions/perspectives，选取原文三项具体问题，未从一般生态主题扩写。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 10,
+      "labId": "ucsd-biology-topic-lab-hunter",
+      "ordinal": 68,
+      "labName": "Hunter Lab",
+      "reviewedAt": "2026-10-16T07:48:17.446221+00:00",
+      "rawSha256": "40a31c6aded1440b5314876d312bd7f6124e4007720f6c816ebfb950bc993d07",
+      "packetSha256": "9301c9fcd94ef969354eff75c059245a9b5c7d43d09e59ae9ae6f45a2a92842b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "蛋白质的化学修饰如何控制细胞周期和细胞生长？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-38655a738d757fbf",
+          "quote": "his lab has led the field in understanding how chemical additions to proteins control the cell cycle and growth. Hunter uses cutting-edge molecular, genetic, and cell biology techniques to probe how these programs interact with each other, what effect they have on cells, and how cancers disrupt them to encourage uninhibited growth.",
+          "sourceUrl": "https://www.salk.edu/scientist/tony-hunter/",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "dc020616faa5086df07a7ca48dcd15952ce259abfa4e9ab3ff4dad7959c1a65b"
+        }
+      ],
+      "reasonZh": "仅使用his lab明确归属的研究从句；其后Hunter个人技术/叙事不外推为整个lab问题，保留来源历史语气。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-38655a738d757fbf",
+          "sourceUrl": "https://www.salk.edu/scientist/tony-hunter/",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1354,
+          "localContextSha256": "a723db153eb79edcc78aa47f84e6a8f907111620c29fab06a3c666d653b49057",
+          "localContextExcerpt": "ubtraction of phosphate molecules to proteins on tyrosine, one of the 20 amino acids, allows cells to control when key proteins are on standby and when they are active. He went on to show that, in cancers, growth was switched to an always-on mode by the malfunctions of these phosphates. Since then, his lab has led the field in understanding how chemical additions to proteins control the cell cycle and growth. Hunter uses cutting-edge molecular, genetic, and cell biology techniques to probe how these programs interact with each other, what effect they have on cells, and how cancers disrupt them to encourage uninhibited growth. Already, cancer drugs—such as the leukemia therapy Gleevec™—have been designed based on Hunter’s discoveries. Gleevec turns off an enzyme that normally adds phosphates to tyrosines in proteins, thus preventing cancers from growing. As Hunter continues to discover other ways in which cells use chemi",
+          "wholeLabScopeReasonZh": "仅使用his lab明确归属的研究从句；其后Hunter个人技术/叙事不外推为整个lab问题，保留来源历史语气。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 11,
+      "labId": "ucsd-biology-topic-lab-jazz-dickinson",
+      "ordinal": 71,
+      "labName": "Jazz Dickinson Lab",
+      "reviewedAt": "2026-10-16T07:48:17.446649+00:00",
+      "rawSha256": "d1c34922290e29c1286909d245c5431383f19a2873656c942ab5f1b6a91fa22e",
+      "packetSha256": "fbbc6ff7a8d5aa515bb978262aab543c07d72002055a5415cfec1e11ddd9389b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "小分子如何塑造发育决策？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3cf2c191e070cb26",
+          "quote": "The Dickinson Lab works at the intersection of plant biology and chemistry to understand how small molecules pattern developmental decisions.",
+          "sourceUrl": "https://dickinsonlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "203c4801b7f3ee703df7d57120add9481161d3f2e16a1a9c729f8d430b7d9a94"
+        }
+      ],
+      "reasonZh": "The Dickinson Lab为明确主体，understand how直接给出研究问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-3cf2c191e070cb26",
+          "sourceUrl": "https://dickinsonlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 0,
+          "localContextSha256": "f82bc66c5ca1af4da2f4ad84ab755caa48ff24d3ebd4620d6f714145eddf9ac9",
+          "localContextExcerpt": "The Dickinson Lab works at the intersection of plant biology and chemistry to understand how small molecules pattern developmental decisions. Discovering small molecules that regulate root development In this image, a new root with active stem cells is emerging from mature root tissue. GFP is illuminating the nuclei in each cell, including the elongated root hairs. Small molecules are known to regulate virtually every developmental decis",
+          "wholeLabScopeReasonZh": "The Dickinson Lab为明确主体，understand how直接给出研究问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 12,
+      "labId": "ucsd-biology-topic-lab-jesse-dixon",
+      "ordinal": 72,
+      "labName": "Jesse Dixon Lab",
+      "reviewedAt": "2026-10-16T07:48:17.447144+00:00",
+      "rawSha256": "2802ac6259230249b29dd31e1cc70d6049bb4c8832e9ac07342c3eaaf1ddfcf5",
+      "packetSha256": "6249f235b606ce6d8cbc45681c94c0957febff862b173b3ad7e6c899a8b93549",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "基因表达程序如何受到调控？",
+        "序列变异，尤其是癌症基因组突变，如何改变三维基因组组织并促成人类疾病？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-780c158e81570bd3",
+          "quote": "Our lab uses both molecular and computational biology approaches to study this problem. We rely on novel genomics tools to study higher order chromatin structure to better understand how gene expression programs are regulated.",
+          "sourceUrl": "https://dixon.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "1090a14cc811af8ecb0e360d99b50f9f2a33465a5981435f6ff4278fa82b6bb3"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-780c158e81570bd3",
+          "quote": "a key aspect of our work is to understand how sequence variation, in particular mutations in cancer genomes, alters 3D genome organization and contributes to human disease.",
+          "sourceUrl": "https://dixon.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "1090a14cc811af8ecb0e360d99b50f9f2a33465a5981435f6ff4278fa82b6bb3"
+        }
+      ],
+      "reasonZh": "Our lab/our work两个局部研究段落直接提出调控和序列变异的how问题；不另造基因组技术问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-780c158e81570bd3",
+          "sourceUrl": "https://dixon.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 480,
+          "localContextSha256": "abe56c551d7eebc8e6db18da942c7facfa9e1cd5e26e6bed2dcd44e072a3a063",
+          "localContextExcerpt": " how our genomes establish and maintain cellular patterns of gene expression. While a variety of cellular processes contribute to gene regulation, our work has suggested that how our genomes are organized in 3-dimensional space inside of the nucleus plays a critical role for proper gene regulation. Our lab uses both molecular and computational biology approaches to study this problem. We rely on novel genomics tools to study higher order chromatin structure to better understand how gene expression programs are regulated. We focus on understanding the fundamental molecular mechanisms that govern 3D genome structure and how 3D genome structure controls gene regulation. Further, we are involved in the ongoing development of novel technologies, including computational and single cell methods, for studying 3D genome arc",
+          "wholeLabScopeReasonZh": "Our lab/our work两个局部研究段落直接提出调控和序列变异的how问题；不另造基因组技术问题。"
+        },
+        {
+          "sourceId": "src-780c158e81570bd3",
+          "sourceUrl": "https://dixon.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1026,
+          "localContextSha256": "d444ce913c25842bc86903cb95dc5bd02e38564aadfc25d71d5ac433892f7ec1",
+          "localContextExcerpt": "anding the fundamental molecular mechanisms that govern 3D genome structure and how 3D genome structure controls gene regulation. Further, we are involved in the ongoing development of novel technologies, including computational and single cell methods, for studying 3D genome architecture. Finally, a key aspect of our work is to understand how sequence variation, in particular mutations in cancer genomes, alters 3D genome organization and contributes to human disease.",
+          "wholeLabScopeReasonZh": "Our lab/our work两个局部研究段落直接提出调控和序列变异的how问题；不另造基因组技术问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 13,
+      "labId": "ucsd-biology-topic-lab-jill-wildonger",
+      "ordinal": 73,
+      "labName": "Wildonger Lab",
+      "reviewedAt": "2026-10-16T07:48:17.447478+00:00",
+      "rawSha256": "932059119ac3fdddaba577ed474caf53809b4f2a9721bed5a147ff5c3aa50788",
+      "packetSha256": "b9b7d0b823d0822f9b96004f022b8d06425526f64675b8cc3baeb39187bb0696",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "分子马达和微管的活动如何形成分别负责发送与接收信号的轴突、树突区室？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1f15ebe82c671383",
+          "quote": "We leverage an innovative combination of cell biology, genetics, and biochemistry to elucidate how the activity of molecular motors and microtubules create distinct signal-sending (axon) and signal-receiving (dendrite) compartments. We capitalize on the strengths of a fruit fly model system to precisely manipulate protein activity in vivo and to image neurons live in intact animals.",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jwildonger",
+          "sourceObservedAt": "2026-10-16T01:02:53+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "7b233647bf4dc3cdbd5df41c87b1e37a48fbbdbad80df550d9583b366447a6a2"
+        }
+      ],
+      "reasonZh": "官方具名faculty研究区的Our goal/We是已接受实验室的集体研究语境，直接elucidate how；不引用个人履历。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-1f15ebe82c671383",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jwildonger",
+          "sourceObservedAt": "2026-10-16T01:02:53+00:00",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "quoteStart": 404,
+          "localContextSha256": "21bd0e69b6d8ee982c48ea4c2b3806cd81e90358e4fa177aeb5bc8b84a44b3c1",
+          "localContextExcerpt": "he nervous system, the ability of a neuron to receive and send signals depends on the proper localization of proteins and organelles within the neuron. Our goal is to elucidate the mechanisms that govern the internal organization and structure of neurons that is essential to neuronal communication. We leverage an innovative combination of cell biology, genetics, and biochemistry to elucidate how the activity of molecular motors and microtubules create distinct signal-sending (axon) and signal-receiving (dendrite) compartments. We capitalize on the strengths of a fruit fly model system to precisely manipulate protein activity in vivo and to image neurons live in intact animals. We seek to obtain a molecules-to-cells understanding of how neuronal structure and function arise from the activity of molecular motors and microtubules. How are the proteins and organelles important to neuronal function properly localized? Sensory neurons perceive environmental stimuli via their d",
+          "wholeLabScopeReasonZh": "官方具名faculty研究区的Our goal/We是已接受实验室的集体研究语境，直接elucidate how；不引用个人履历。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:52:51+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 14,
+      "labId": "ucsd-biology-topic-lab-julie-law",
+      "ordinal": 75,
+      "labName": "Julie Law Lab",
+      "reviewedAt": "2026-10-16T07:48:17.447903+00:00",
+      "rawSha256": "3003843b746fafadd2564571f4cedb6d5d32aa621813032d5f45c16dd460b8c1",
+      "packetSha256": "0b8d8af7d6e8c7032ccffea40002b12c24e937ad53d3d1364e7d8564c8194e57",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "特定的表观遗传修饰模式如何建立？",
+        "相关细胞系统如何识别这些修饰模式？",
+        "这些修饰模式如何被解读以指导细胞功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-98ab5e76a89f782f",
+          "quote": "it remains unclear how specific patterns of epigenetic modifications are established, how they are recognized by the relevant cellular machineries, and how they are decoded to instruct cellular function.",
+          "sourceUrl": "https://law.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-98ab5e76a89f782f",
+          "quote": "it remains unclear how specific patterns of epigenetic modifications are established, how they are recognized by the relevant cellular machineries, and how they are decoded to instruct cellular function.",
+          "sourceUrl": "https://law.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-98ab5e76a89f782f",
+          "quote": "it remains unclear how specific patterns of epigenetic modifications are established, how they are recognized by the relevant cellular machineries, and how they are decoded to instruct cellular function.",
+          "sourceUrl": "https://law.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0"
+        }
+      ],
+      "reasonZh": "具名Law实验室站点研究Problem/Approach连续语境将三项未明how问题列为表观遗传调控研究对象，不从个人履历补问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-98ab5e76a89f782f",
+          "sourceUrl": "https://law.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 484,
+          "localContextSha256": "2f0d92d1ee692d6e2a92e97a6f56210209cc488263c1fc5da9065845720e3e0d",
+          "localContextExcerpt": "versity is the presence of chemical tags, called epigenetic modifications, which decorate the genome. The patterns of these tags can differ between cell types, helping to instruct the function of cells by, for example, indicating which genes should be turned on and which should be ignored. However, it remains unclear how specific patterns of epigenetic modifications are established, how they are recognized by the relevant cellular machineries, and how they are decoded to instruct cellular function. Addressing these aspects of epigenetic-based regulation are critical for understanding their roles during normal development as well as in connection with developmental defects and the progression of diseases, including cancer. The Approach Rather than using animal cells to study epigenetic modific",
+          "wholeLabScopeReasonZh": "具名Law实验室站点研究Problem/Approach连续语境将三项未明how问题列为表观遗传调控研究对象，不从个人履历补问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 15,
+      "labId": "ucsd-biology-topic-lab-justin-meyer",
+      "ordinal": 76,
+      "labName": "Justin Meyer Lab",
+      "reviewedAt": "2026-10-16T07:48:17.448497+00:00",
+      "rawSha256": "2552a1edcf503700ef5b8c250c10ff6ca5844dd866c0652c11bb0a8d1b0a8c43",
+      "packetSha256": "acd76e03740fd649901d57c1af734488a3e9ae02f9884a3d20517d806c3d06fc",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "哪些环境压力影响λ噬菌体的物种形成？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-2c3ee75e8e6deb68",
+          "quote": "Coevolution High order biological interactions that influence the evolution of multiple species Viral Speciation Evolution experiments that help determine what environmental pressures impact speciation in bacteriophage lambda Protein Novelty and Evolvability Understanding and manipulating the molecular mechanism underlying the evolution of bacteriophage lambda to use a new receptor Phage Therapy Applying knowledge gained on phage-bacterial coevolution to develop more robust bacteriophage therapeutics.",
+          "sourceUrl": "https://labs.biology.ucsd.edu/meyer/",
+          "sourceObservedAt": "2026-10-16T01:04:07+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "ba7cd997d08e14d535903fccef252a549ae4c4fddce7bcb474e94631acded47f"
+        }
+      ],
+      "reasonZh": "Our Research/what we study at Meyer Lab下Viral Speciation明确提出what environmental pressures，未将相邻应用主题扩写成问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-2c3ee75e8e6deb68",
+          "sourceUrl": "https://labs.biology.ucsd.edu/meyer/",
+          "sourceObservedAt": "2026-10-16T01:04:07+00:00",
+          "sourceRole": "related_destination_variant",
+          "quoteStart": 411,
+          "localContextSha256": "d5ddb57f7cdcb672f6bd2e34b2981b8ddfb2c7e537d0fdab39525ff1ac6edf03",
+          "localContextExcerpt": "a team of researchers based at UC San Diego studying Fundamental Questions on the Ecology and Evolution of Life using Microbial Experimental Systems Find our more about the talented scientists that work with us by clicking the button below Lab Team Our Research Here's what we study at the Meyer Lab Coevolution High order biological interactions that influence the evolution of multiple species Viral Speciation Evolution experiments that help determine what environmental pressures impact speciation in bacteriophage lambda Protein Novelty and Evolvability Understanding and manipulating the molecular mechanism underlying the evolution of bacteriophage lambda to use a new receptor Phage Therapy Applying knowledge gained on phage-bacterial coevolution to develop more robust bacteriophage therapeutics. Learn More Latest Publications Gerbino et al (2024) Bacteriophage Φ21s receptor-binding protein evolves new functions through destabilizing mutations that generate non-genetic phenotypic heterogeneity Read More Here! Strobel et al (2024) Viral receptor-binding protein evolves new function through m",
+          "wholeLabScopeReasonZh": "Our Research/what we study at Meyer Lab下Viral Speciation明确提出what environmental pressures，未将相邻应用主题扩写成问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 16,
+      "labId": "ucsd-biology-topic-lab-kaech-lab",
+      "ordinal": 77,
+      "labName": "Kaech Lab",
+      "reviewedAt": "2026-10-16T07:48:17.448941+00:00",
+      "rawSha256": "8007500acf47a541e61cdfa6c7838c13e0626b216be1548f93a45972569edf79",
+      "packetSha256": "f78f16dbbd377cc40c3e34ba30a8aee8180672e8aa75d80ea16ff2efddbf74cb",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "肿瘤代谢的关键特征如何影响免疫细胞功能？",
+        "T细胞在耗竭过程中如何应对持续性信号？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-52db6cd56264e921",
+          "quote": "We are focused on understanding how key characteristics of tumor metabolism (e.g. hypoxia, fatty acid synthesis, eicosanoids) influence immune cell function.",
+          "sourceUrl": "https://kaech.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "8306d7b6a1514f9343d264e5126f50e16bad3671d6816bc4e1567fed9e77b158"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-52db6cd56264e921",
+          "quote": "What is still unknown are the particular dynamics of exhaustion, especially how T cells resolve chronic signals, and the metabolic regulation of exhaustion.",
+          "sourceUrl": "https://kaech.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "8306d7b6a1514f9343d264e5126f50e16bad3671d6816bc4e1567fed9e77b158"
+        }
+      ],
+      "reasonZh": "实验室We are focused与T cell Exhaustion段直接给出how目标和未知问题；不把免疫治疗希望写成结果。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-52db6cd56264e921",
+          "sourceUrl": "https://kaech.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1002,
+          "localContextSha256": "a33e6feca9d5bf98197cfcc6aeef51cf6a3abd89e7a39da4efa0f80780d02621",
+          "localContextExcerpt": "by tumor cells to adapt to a rapidly changing metabolic environment created by their own overconsumption. It is unclear how immune cells can adapt in the same environment without sacrificing its own effector function. In this way, tumors can suppress an immune response through metabolic regulation. We are focused on understanding how key characteristics of tumor metabolism (e.g. hypoxia, fatty acid synthesis, eicosanoids) influence immune cell function. By identifying the key metabolic regulators of immune function in tumors, we hope to reveal novel targets to turn immunologically “cold” tumors into “hot” ones that are susceptible to immunotherapy. T cell Exhaustion T cells become dysfunctional or ‘exhausted’ in chronic viral infections and cancer",
+          "wholeLabScopeReasonZh": "实验室We are focused与T cell Exhaustion段直接给出how目标和未知问题；不把免疫治疗希望写成结果。"
+        },
+        {
+          "sourceId": "src-52db6cd56264e921",
+          "sourceUrl": "https://kaech.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1778,
+          "localContextSha256": "479eaab1aa4018faf9112df444b81b24c8d6545b9acde6c807933a65b5cdf836",
+          "localContextExcerpt": "re marked by reduced cytokine production and profound epigenetic change that limits their ability to be rejuvenated with immune checkpoint blockade. We understand exhaustion to be a result of chronic antigen exposure, and epigenetic change is seen early and mediated by the transcription factor TOX. What is still unknown are the particular dynamics of exhaustion, especially how T cells resolve chronic signals, and the metabolic regulation of exhaustion. These studies will help us to better understand how T cells become exhausted in chronic infections. Immune Cells in Neurological Disease Microglia are the resident macrophages of the central nervous system. While their major function is to maintain tissue homeostasis, their dysfunction is linked to",
+          "wholeLabScopeReasonZh": "实验室We are focused与T cell Exhaustion段直接给出how目标和未知问题；不把免疫治疗希望写成结果。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 17,
+      "labId": "ucsd-biology-topic-lab-kay-tye",
+      "ordinal": 78,
+      "labName": "Kay Tye Lab",
+      "reviewedAt": "2026-10-16T07:48:17.449264+00:00",
+      "rawSha256": "171b8913bd8294e67d11c917c9e175e7c812e5aac3737f0ce2e31a96beaf0d6a",
+      "packetSha256": "2535dafd7b18c17486e98dcc211489e4d020f1ae1b493e52512512858e361421",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "在健康和疾病状态下，情绪与动机状态如何影响行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-673eeff226ae02d4",
+          "quote": "The Tye Lab employs a multi-disciplinary approach including optogenetic, in vivo and ex vivo electrophysiological, pharmacological and imaging techniques to find mechanistic explanations for how emotional and motivational states influence behavior, in health and disease.",
+          "sourceUrl": "https://tyelab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "45eb17b4a497fe00061155a60b39cf82473a2bea8b4e95a5fd3681513097b3db"
+        }
+      ],
+      "reasonZh": "The Tye Lab具名整体研究陈述直接提出该how机制问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-673eeff226ae02d4",
+          "sourceUrl": "https://tyelab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 0,
+          "localContextSha256": "80e987d1b16e0963fbf00253aa85cfa2fb7261d8ddb0a91177cc46368e9799a6",
+          "localContextExcerpt": "The Tye Lab employs a multi-disciplinary approach including optogenetic, in vivo and ex vivo electrophysiological, pharmacological and imaging techniques to find mechanistic explanations for how emotional and motivational states influence behavior, in health and disease. The Tye Lab employs a multi-disciplinary approach including optogenetic, in vivo and ex vivo electrophysiological, pharmacological and imaging techniques to find mechanistic explanations for how emotional and motivational states influence behavior, in health and disease. The Tye Lab is located at t",
+          "wholeLabScopeReasonZh": "The Tye Lab具名整体研究陈述直接提出该how机制问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 18,
+      "labId": "ucsd-biology-topic-lab-kenta-asahina",
+      "ordinal": 80,
+      "labName": "Kenta Asahina Lab",
+      "reviewedAt": "2026-10-16T07:48:17.449795+00:00",
+      "rawSha256": "263c77543636618c59dba9cf8c974adab1975b199ce36cabd65fc304388695b1",
+      "packetSha256": "85877e4c2a7f1cd5b8c4fd2fbfb657de28dac4c8d4650ef2526022a105a04a04",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "大脑如何解读社会经历，并在后续互动中调整行为选择？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-08f3e7923914dcc7",
+          "quote": "How the brain interprets social experiences and adjusts behavioral choices during subsequent interactions is a major question in neuroscience.",
+          "sourceUrl": "https://asahina.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "4db4e3e53dd854840ac1eca96958ca962efc06788f05e1d7743b2814f5921326"
+        }
+      ],
+      "reasonZh": "下句Our laboratory aims to answer this question明确承接给定问题；不采用Why do we begin from genes的方法修辞。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-08f3e7923914dcc7",
+          "sourceUrl": "https://asahina.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 877,
+          "localContextSha256": "83ab943c4901277d7b629df3ab7dcc05052543f66897d6ca02ee6745377c355d",
+          "localContextExcerpt": "ge of sociality, where cooperation, division of labor, and hierarchy strongly impact behavioral patterns. Importantly, if one individual within a group changes their behavior it can dramatically alter the dynamics of group interactions, and by extension, the social experiences of other individuals. How the brain interprets social experiences and adjusts behavioral choices during subsequent interactions is a major question in neuroscience. Our laboratory aims to answer this question by deconstructing the nervous system into fundamental building blocks – genes, cells, and elementary circuits. Why do we begin from genes? It is because genes are ultimately responsible for defining the anatomical and physiological properties of a neuron.",
+          "wholeLabScopeReasonZh": "下句Our laboratory aims to answer this question明确承接给定问题；不采用Why do we begin from genes的方法修辞。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 19,
+      "labId": "ucsd-biology-topic-lab-kimberly-cooper",
+      "ordinal": 83,
+      "labName": "Kimberly Cooper Lab",
+      "reviewedAt": "2026-10-16T07:48:17.450229+00:00",
+      "rawSha256": "4d3dde69c66dcb23c85976cc301ff57587290252ef4127d4e717a1aac0b5c5ad",
+      "packetSha256": "afa1b9b9baea2142496bb6724d5af8d2a5e34a4c13f3862cdfd364542c486b11",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "发育中的各个骨骼结构如何以不同速率延长，并在适当时机停止以形成合适比例？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d56b7efbc87a50db",
+          "quote": "How does each developing skeletal element elongate at a different rate and know when to stop to achieve the appropriate proportions?",
+          "sourceUrl": "https://cooperlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:11+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "74a58c0d447c6293667cd8882e660696e867473308fdc605667268d92beada16"
+        }
+      ],
+      "reasonZh": "实验室QUESTIONS THAT EXCITE US下字面研究问句，未推导发育机制或结果。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-d56b7efbc87a50db",
+          "sourceUrl": "https://cooperlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:11+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 562,
+          "localContextSha256": "bdaed983bbc0299efc7fbda924dad99957cf35693b7aba9d5bc1495ac9ac4817",
+          "localContextExcerpt": "ticipated ways... QUESTIONS THAT EXCITE US Our long femur and tibia give us our stride length, and our comparably short fingers allow us to grasp and manipulate objects with extraordinary manual dexterity. Yet each of the bones of our arms and legs formed in the embryo as tiny rods of similar size. How does each developing skeletal element elongate at a different rate and know when to stop to achieve the appropriate proportions? Most of the genes required for limb development are needed by both the arms and legs. However many animals have very different fore and hindlimbs, and 95% of human congenital limb defects specifically affect the arms or legs but not both. How are shared genes deployed differently in the two pairs o",
+          "wholeLabScopeReasonZh": "实验室QUESTIONS THAT EXCITE US下字面研究问句，未推导发育机制或结果。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 20,
+      "labId": "ucsd-biology-topic-lab-kronenberg",
+      "ordinal": 85,
+      "labName": "Kronenberg Lab",
+      "reviewedAt": "2026-10-16T07:48:17.450698+00:00",
+      "rawSha256": "493ab2e1d40ebd15d6a679b047c72dd296b8c025a508a6d1cc91ae09314d8706",
+      "packetSha256": "fdda0fb2246b6d87fa78ac20cc3c8a06ffb3d2850455f4b577a106fffd238e2b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "先天样T细胞如何适应不同组织环境？",
+        "抗原刺激后，这些细胞会发生哪些长期变化或记忆反应？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-da59981531717742",
+          "quote": "The laboratory is studying how innate-like T cells adapt to different tissue environments and the long-term changes or memory response in these cells after antigenic stimulation.",
+          "sourceUrl": "https://www.lji.org/labs/kronenberg-lab/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "eb10a605e2169aa124357aa9dbdb7947dbafb7d02848adff441e4e0faccca6a0"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-da59981531717742",
+          "quote": "The laboratory is studying how innate-like T cells adapt to different tissue environments and the long-term changes or memory response in these cells after antigenic stimulation.",
+          "sourceUrl": "https://www.lji.org/labs/kronenberg-lab/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "eb10a605e2169aa124357aa9dbdb7947dbafb7d02848adff441e4e0faccca6a0"
+        }
+      ],
+      "reasonZh": "The laboratory is studying明确给出组织适应与抗原刺激后长期变化/记忆反应两项研究对象。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-da59981531717742",
+          "sourceUrl": "https://www.lji.org/labs/kronenberg-lab/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 924,
+          "localContextSha256": "9657fe37d7a1a9d8a6b12768496cafae5d9e29651af8ff47dd98b752e3fb6d0c",
+          "localContextExcerpt": "variant T (MAIT) cells, and gd T cells, as well as innate lymphoid cells (ILC). These lymphocytes tend to reside in nonlymphoid tissues, such as the lung, liver, and skin, rather than recirculating. In addition to making rapid responses to pathogenic microbes, they play roles in tissue homeostasis. The laboratory is studying how innate-like T cells adapt to different tissue environments and the long-term changes or memory response in these cells after antigenic stimulation. Because innate-like T cell responses are not limited by recognition of highly polymorphic antigen-presenting molecules, each of these cell types is being tested by other groups as potential cell therapies for cancer and other diseases. We are also interested in mucosal immunology and the developmen",
+          "wholeLabScopeReasonZh": "The laboratory is studying明确给出组织适应与抗原刺激后长期变化/记忆反应两项研究对象。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 21,
+      "labId": "ucsd-biology-topic-lab-leutgeb",
+      "ordinal": 88,
+      "labName": "Leutgeb Lab",
+      "reviewedAt": "2026-10-16T07:48:17.451110+00:00",
+      "rawSha256": "e1e7d04e4c072110299a7f3c52630ca295cd39f5420ccb7ce71a351889a1f52f",
+      "packetSha256": "339338e3c2fe55c1d94ab34d8f341f517a72f31ab5221f3056d22d73d8263303",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "多个脑区如何协同参与记忆相关功能？",
+        "抑郁、癫痫和阿尔茨海默病等疾病中，哪些脑回路变化限制记忆能力，如何恢复脑功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1bc1f8be726ece99",
+          "quote": "Our laboratories focus on identifying these biological computations and we are also interested in how multiple brain regions cooperatively engage in memory-related function.",
+          "sourceUrl": "https://www.leutgeblabs.com/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-1bc1f8be726ece99",
+          "quote": "What are the critical changes in brain circuits that limit these capabilities in brain diseases, such as depression, epilepsy, and Alzheimer’s diseases, and how can we restore brain function in disease?",
+          "sourceUrl": "https://www.leutgeblabs.com/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b"
+        }
+      ],
+      "reasonZh": "Our laboratories明确研究这些问题；保留多实验室集体来源范围，不合并实体或推断疗效。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-1bc1f8be726ece99",
+          "sourceUrl": "https://www.leutgeblabs.com/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1361,
+          "localContextSha256": "9492ff453acafe598d0bd24a6d9e1a9ac1880684c1e16155f166fca2b64963fd",
+          "localContextExcerpt": "or navigating in familiar and new environments. While tremendous progress has been made in identifying cellular, molecular, and neural circuits for learning, memory, and navigation, our understanding of the computations that the brain performs to support these functions are incompletely understood. Our laboratories focus on identifying these biological computations and we are also interested in how multiple brain regions cooperatively engage in memory-related function. news & events What’s New? 10/30/2025 Congratulations Sunandha and colleagues for your recent publication in Frontiers Behavioral Neuroscience! 08/12/2025 Congratulations Li and colleagues for your recent publication in Nature Communications! 05/26/2025 Congratulations May and Henry for successfully",
+          "wholeLabScopeReasonZh": "Our laboratories明确研究这些问题；保留多实验室集体来源范围，不合并实体或推断疗效。"
+        },
+        {
+          "sourceId": "src-1bc1f8be726ece99",
+          "sourceUrl": "https://www.leutgeblabs.com/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 437,
+          "localContextSha256": "112dc514d53fa113fc517d5029bd12ea52d3de7e9f6b68fce6c7bb89842758fb",
+          "localContextExcerpt": "s briefly as a few seconds or as long as a lifetime. What is the biological foundation for memory over such diverse time scales? What endows the brain with the capacity to not just generate an exact recollection of past events but store information in a way that can be flexibly and creatively used? What are the critical changes in brain circuits that limit these capabilities in brain diseases, such as depression, epilepsy, and Alzheimer’s diseases, and how can we restore brain function in disease? Our laboratories study these questions with an emphasis on one of the core systems for memory, which includes the hippocampus and entorhinal cortex. In humans, these brain regions are known to be the basis for declarative memory – the form of memory that we are aware of and can recollect when being",
+          "wholeLabScopeReasonZh": "Our laboratories明确研究这些问题；保留多实验室集体来源范围，不合并实体或推断疗效。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 22,
+      "labId": "ucsd-biology-topic-lab-marcus-benna",
+      "ordinal": 91,
+      "labName": "Marcus Benna Lab",
+      "reviewedAt": "2026-10-16T07:48:17.451719+00:00",
+      "rawSha256": "287e497fac0c7b7d10aa09c8f5ded0c7cb4e09e528368ef175123df7964612c1",
+      "packetSha256": "7f5d44bf8721fcee22cbb1d522aca8bc426fb6ef8c924dfad22be8451a7cae0b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "大脑如何克服资源限制以实现学习和记忆？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-52bb2f0125f2c113",
+          "quote": "By constructing normative mathematical models of brain circuits, which can be tested on experimental data, we attempt to clarify how these limitations are overcome and uncover the underlying computational principles.",
+          "sourceUrl": "https://bennalab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "0c2ff33e83d54ffe3933a6abcba00081848ccd8831ccb0dcbf42c538b26a4bca"
+        }
+      ],
+      "reasonZh": "前句明确学习记忆受噪声和有限神经元/突触资源约束，后句how these limitations are overcome直接承接；不从建模方法发明新机制。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-52bb2f0125f2c113",
+          "sourceUrl": "https://bennalab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 700,
+          "localContextSha256": "3daa149335d42aba00c34024f7025f39d0773ff0d7636091474e807dc228462e",
+          "localContextExcerpt": "rks to shed light on the mechanisms of biological computation. The main goal of our research is to understand learning and memory under resource constraints in the biological brain, which performs highly non-trivial functions using noisy and severely limited components such as neurons and synapses. By constructing normative mathematical models of brain circuits, which can be tested on experimental data, we attempt to clarify how these limitations are overcome and uncover the underlying computational principles.",
+          "wholeLabScopeReasonZh": "前句明确学习记忆受噪声和有限神经元/突触资源约束，后句how these limitations are overcome直接承接；不从建模方法发明新机制。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 23,
+      "labId": "ucsd-biology-topic-lab-matt-banghart",
+      "ordinal": 93,
+      "labName": "Matt Banghart Lab",
+      "reviewedAt": "2026-10-16T07:48:17.452109+00:00",
+      "rawSha256": "b191f9d1c1611e703407ae55b6544a010d1b1ead4a022fce638043ea7a79e052",
+      "packetSha256": "c9e833db12a9992af5896eae23da9418a40d8e2b0fa24401e40787b6923e3477",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "神经调质如何参与哺乳动物中枢神经系统的痛觉调节？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-57fb68e07aedc515",
+          "quote": "The Banghart Lab seeks to understand how neuromodulators contribute to pain modulation in the mammalian central nervous system, with an focus on mechanisms governing neuropeptide signaling. Our multidisciplinary approach relies on electrophysiological, optical, and behavioral methods along with in-house development of molecular tools for manipulating neurochemical signaling in the brain.",
+          "sourceUrl": "https://www.banghartlab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "c4bf7e3b4cb0ee0e7845eae1df31dbec7855c2322837b3041c601a66490576a0"
+        }
+      ],
+      "reasonZh": "The Banghart Lab seeks to understand how直接限定该问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-57fb68e07aedc515",
+          "sourceUrl": "https://www.banghartlab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 36,
+          "localContextSha256": "a1259cbf6fc7e516e39b4f5bd21c15ea9cce9de29fcd94444b4acc5111c256f7",
+          "localContextExcerpt": "Welcome to the Banghart Lab at UCSD The Banghart Lab seeks to understand how neuromodulators contribute to pain modulation in the mammalian central nervous system, with an focus on mechanisms governing neuropeptide signaling. Our multidisciplinary approach relies on electrophysiological, optical, and behavioral methods along with in-house development of molecular tools for manipulating neurochemical signaling in the brain.",
+          "wholeLabScopeReasonZh": "The Banghart Lab seeks to understand how直接限定该问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:52:51+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 24,
+      "labId": "ucsd-biology-topic-lab-matthew-daugherty",
+      "ordinal": 94,
+      "labName": "Matthew Daugherty Lab",
+      "reviewedAt": "2026-10-16T07:48:17.452624+00:00",
+      "rawSha256": "093d70ba2414e6df5963cbba6ddf379b0e232b4c931e112e334547c5c1c476e2",
+      "packetSha256": "fa13563d2124acb9f31457c97506b6c018cc582c21daf095e5cea4340fd46684",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "宿主免疫基因如何演化以抵御病原体？",
+        "病原体如何通过反向演化突破宿主免疫？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-65bb541a0c9a1683",
+          "quote": "The Daugherty lab in the Division of Biological Sciences at UCSD uses comparative genomics, biochemistry and virology to understand how host immunity genes evolve to defend against pathogens and how pathogens counter-evolve to defeat host immunity.",
+          "sourceUrl": "https://www.daughertylab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a20c19e1fd9a718b6ab66d62c192cc19ac102ab793c02c823cd362618d51a4e3"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-65bb541a0c9a1683",
+          "quote": "The Daugherty lab in the Division of Biological Sciences at UCSD uses comparative genomics, biochemistry and virology to understand how host immunity genes evolve to defend against pathogens and how pathogens counter-evolve to defeat host immunity.",
+          "sourceUrl": "https://www.daughertylab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a20c19e1fd9a718b6ab66d62c192cc19ac102ab793c02c823cd362618d51a4e3"
+        }
+      ],
+      "reasonZh": "具名Daugherty lab整体陈述含两个直接how从句，分别针对宿主与病原体的演化。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-65bb541a0c9a1683",
+          "sourceUrl": "https://www.daughertylab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 0,
+          "localContextSha256": "de671e443dd4804367655f737124da7456f6e5e3672afe61e4d0405f8d8f7019",
+          "localContextExcerpt": "The Daugherty lab in the Division of Biological Sciences at UCSD uses comparative genomics, biochemistry and virology to understand how host immunity genes evolve to defend against pathogens and how pathogens counter-evolve to defeat host immunity.",
+          "wholeLabScopeReasonZh": "具名Daugherty lab整体陈述含两个直接how从句，分别针对宿主与病原体的演化。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 25,
+      "labId": "ucsd-biology-topic-lab-mikio-aoi",
+      "ordinal": 97,
+      "labName": "Mikio Aoi Lab",
+      "reviewedAt": "2026-10-16T07:48:17.452963+00:00",
+      "rawSha256": "d44a8915a1813403e5690841cd0ef1b3ee6beac544408dac952fafe24ca44495",
+      "packetSha256": "b03acbcf3e10f7d453600f2b2be7a970a9450ec1a84465dc62ae667abd831c96",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "神经元群体如何协调活动以执行计算？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-646dbfc850d48e1f",
+          "quote": "We are a computational neuroscience lab that is focused on understanding how populations of neurons coordinate their activity to perform computations.",
+          "sourceUrl": "https://aoilab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "f2616ac63826ea48c71a656017009f04f61e023c8f7e16a3fcd187512dea2c9d"
+        }
+      ],
+      "reasonZh": "We are a computational neuroscience lab明确研究主体，understanding how直接支持。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-646dbfc850d48e1f",
+          "sourceUrl": "https://aoilab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 5,
+          "localContextSha256": "46fd680a74df65576ced41b91d00df94a035d9fb854a57b8efe6043a5abc699b",
+          "localContextExcerpt": "Home We are a computational neuroscience lab that is focused on understanding how populations of neurons coordinate their activity to perform computations. The guiding question we are interested in is “What are the features of neural population activity that are important for understanding the dynamics of behavior?” We answer this question with two, parallel approaches: 1 – New data analysis tools for useful, compact descriptions of neural activity vi",
+          "wholeLabScopeReasonZh": "We are a computational neuroscience lab明确研究主体，understanding how直接支持。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 26,
+      "labId": "ucsd-biology-topic-lab-nan-hao",
+      "ordinal": 100,
+      "labName": "Nan Hao Lab",
+      "reviewedAt": "2026-10-16T07:48:17.453491+00:00",
+      "rawSha256": "2a5d6b2e12bc23c95e0b01e11b8dc235bbccf43829ac5601d2f075d19a7e3579",
+      "packetSha256": "901acbe51ba40240110500c53bb7617069bcbb7720385795cb57705decab9326",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "分子网络如何在应激、衰老或疾病背景下调控应答反应？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d7a34e0783d2f428",
+          "quote": "The Hao laboratory combines quantitative single-cell imaging, microfluidic technology and computational modeling to study how molecular networks govern regulatory responses in the context of stresses , aging , or diseases . In particular, our current work focuses on:(1) decoding the dynamics of stress responses; (2) probing the causes of cellular aging; and (3) quantifying the heterogeneity in cancer cells.",
+          "sourceUrl": "https://haolab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "70c2f2ee0480fdd6f88a936384bfc2d269db3ddd59a9537879ba517fbfc51e75"
+        }
+      ],
+      "reasonZh": "The Hao laboratory整体研究句直接提出study how；相邻列举的主题不另造因果问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-d7a34e0783d2f428",
+          "sourceUrl": "https://haolab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceRole": "related_destination_variant",
+          "quoteStart": 18,
+          "localContextSha256": "cdd15eaf916a4e1f48327bcae5ebfaeafc3d15c0caacc899aec3b29bffa50d47",
+          "localContextExcerpt": "About the Hao Lab The Hao laboratory combines quantitative single-cell imaging, microfluidic technology and computational modeling to study how molecular networks govern regulatory responses in the context of stresses , aging , or diseases . In particular, our current work focuses on:(1) decoding the dynamics of stress responses; (2) probing the causes of cellular aging; and (3) quantifying the heterogeneity in cancer cells. We aim at building a research environment that enables a close coupling between experiment and theory and fosters the expansion of scientific expertise of each member in the laboratory. Positions Available The laboratory currently has positions available for graduate students and postdoctoral fello",
+          "wholeLabScopeReasonZh": "The Hao laboratory整体研究句直接提出study how；相邻列举的主题不另造因果问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 27,
+      "labId": "ucsd-biology-topic-lab-nguyenqvu",
+      "ordinal": 101,
+      "labName": "NguyenQVu Lab",
+      "reviewedAt": "2026-10-16T07:48:17.453871+00:00",
+      "rawSha256": "3e621e645c0197102d9dcc6913704885d023ddd41d6c592ae730a948dd413bca",
+      "packetSha256": "0ba0436e14b5bab78a7f0905fc55f5c66cdf0ba0c39e8f24b44d47910695fff3",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "在高度拥挤且动态变化的细胞核中，基因组调节因子如何在正确时机找到正确的基因？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-52483458ca14d48b",
+          "quote": "In the highly crowded and dynamic nucleus, how do genome regulators find the right genes at the right time?",
+          "sourceUrl": "https://nguyenlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "1a51be508375be763ed260de317280cf1abeb365d3bfe3b93646a57938788970"
+        }
+      ],
+      "reasonZh": "Nguyen实验室核内交通研究区直接提出字面问句，不是导航或个人履历。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-52483458ca14d48b",
+          "sourceUrl": "https://nguyenlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 261,
+          "localContextSha256": "08775d85bb7ff038710abce0613ca0cb43e9c014ef08cfc2eb4ed967d815f81d",
+          "localContextExcerpt": "LIVE TRAFFIC INSIDE THE CELL NUCLEUS The cell must express proper levels of the right genes at the right time to maintain its state and type. This specificity demands constant and coordinated actions by numerous factors that organize and transcribe the genome. In the highly crowded and dynamic nucleus, how do genome regulators find the right genes at the right time? LEARN MORE MEET OUR TEAM JOIN US NEWS 3/1/2023 – Nguyen Lab opens in Bonner Hall! 7/5/2023 – Nguyen Lab assemble! Gavin, Edwin, Anetzy, Taújay, Helen, Rachel, and Sinclair join. Contact vuqnguyen@ucsd.edu 1 858 534 9110 9500 Gilman Dr, MC 0322 La Jolla, CA 92093 Site link Research Tools Papers Memb",
+          "wholeLabScopeReasonZh": "Nguyen实验室核内交通研究区直接提出字面问句，不是导航或个人履历。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 28,
+      "labId": "ucsd-biology-topic-lab-nicola-allen",
+      "ordinal": 102,
+      "labName": "Nicola Allen Lab",
+      "reviewedAt": "2026-10-16T07:48:17.454215+00:00",
+      "rawSha256": "4589d65386e058f804cb1b97473ce79d5ca11b3ca61187dad0278ea0e20a5648",
+      "packetSha256": "92a8bc83d9b116432f6e2d52003c79bac65905a4d296afa349c619080e586f94",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "星形胶质细胞如何调控神经元突触的形成、功能与稳定性？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-c68fced39a71fbf9",
+          "quote": "The goal of our work is to identify how non-neuronal glial cells, specifically astrocytes, regulate the formation, function and stability of neuronal synapses.",
+          "sourceUrl": "https://allen.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "9b3a414a1f78b868515e3613b9c7f3a2a706c72d92dee9690d89c2127b34fea9"
+        }
+      ],
+      "reasonZh": "The goal of our work明确how目标，限定星形胶质细胞对突触的调控。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-c68fced39a71fbf9",
+          "sourceUrl": "https://allen.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 25,
+          "localContextSha256": "4f0be55ceff3c232f86d3a6c0993cecc611fdb769a57f9eb77dc695193e83090",
+          "localContextExcerpt": "Welcome to the Allen lab The goal of our work is to identify how non-neuronal glial cells, specifically astrocytes, regulate the formation, function and stability of neuronal synapses. Synapses are essential points of information transfer within neuronal circuits, and the correct formation and maturation of synapses is necessary for the brain to function throughout life. This is evident by the numerous neurological disorders where synaptic dysfunction is a key component, includin",
+          "wholeLabScopeReasonZh": "The goal of our work明确how目标，限定星形胶质细胞对突触的调控。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 29,
+      "labId": "ucsd-biology-topic-lab-nieh",
+      "ordinal": 103,
+      "labName": "Nieh Lab",
+      "reviewedAt": "2026-10-16T07:48:17.454692+00:00",
+      "rawSha256": "811749519fc05998fa834f144e5d2dffba31f511284842f8e81ef476732e514e",
+      "packetSha256": "7e3b7a5ed349614e37e391efc6c0bc537fc805cd670c9eb511b01254dd18c373",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "社会性蜂类的交流如何运作，为什么可能演化出来？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-aaeb76d3bcab87fc",
+          "quote": "Our lab studies multiple bee groups: honey bees, stingless bees, and bumble bees to learn how this communication works and why it may have evolved.",
+          "sourceUrl": "https://labs.biology.ucsd.edu/nieh/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:50+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "aaf5335b1a0b041a1f5b1fc0585cb8c0d3ad8975d0e2e0792d194e4d8bc2be52"
+        }
+      ],
+      "reasonZh": "Our lab及前句social bee communication给出明确范围；保留why may have evolved的未决语气。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-aaeb76d3bcab87fc",
+          "sourceUrl": "https://labs.biology.ucsd.edu/nieh/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:50+00:00",
+          "sourceRole": "related_destination_variant",
+          "quoteStart": 281,
+          "localContextSha256": "9dc5b1c85bfb079a8b6cb0445dcf766b0f2cf18b2592c687ebb70479ac25187c",
+          "localContextExcerpt": "Home People Publications What's New? Outreach The Teaching Bee Pictures Contact For Lab Members Welcome to the Nieh Lab Natural and man-made stressors of social bees Evolution of communication Selective pressures from competitors and predators has shaped social bee communication. Our lab studies multiple bee groups: honey bees, stingless bees, and bumble bees to learn how this communication works and why it may have evolved. read more » Honey bee health Concern is growing over pollinator declines. Our lab examines the effects of natural stressors, such as pathogens ( Nosema ceranae ), and man-made stressors, such as pesticides, on honey bee health, foraging, flight, and orientation. read more » Superorganism inhibitory",
+          "wholeLabScopeReasonZh": "Our lab及前句social bee communication给出明确范围；保留why may have evolved的未决语气。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 30,
+      "labId": "ucsd-biology-topic-lab-noah-rose",
+      "ordinal": 104,
+      "labName": "Noah Rose Lab",
+      "reviewedAt": "2026-10-16T07:48:17.455097+00:00",
+      "rawSha256": "7315d288d045b898d07cad139761c5810dad66ffcab091e104e9f43a78de9158",
+      "packetSha256": "e80ec7edc0b3fed6d49ade32754ba571b3cd5edc80e50de759737fb51cd3a81c",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "蚊子如何在人类生态位中繁盛？",
+        "这一过程如何影响人类疾病的传播？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-9e0ef837ab5e8c6c",
+          "quote": "We use a combination of population genomics and field ecology, supplemented with behavioral, physiological, and developmental work in a controlled laboratory environment to study how mosquitoes have come to thrive in the human niche, and how this shapes the spread of human disease .",
+          "sourceUrl": "https://roselab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:20+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "89a41c88043d46452148880b616c0214a62b75ecefd5f0fe74fd3cef2596bf7f"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-9e0ef837ab5e8c6c",
+          "quote": "We use a combination of population genomics and field ecology, supplemented with behavioral, physiological, and developmental work in a controlled laboratory environment to study how mosquitoes have come to thrive in the human niche, and how this shapes the spread of human disease .",
+          "sourceUrl": "https://roselab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:20+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "89a41c88043d46452148880b616c0214a62b75ecefd5f0fe74fd3cef2596bf7f"
+        }
+      ],
+      "reasonZh": "实验室We use...to study后明确两个how从句；不从疾病背景推导控制策略。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-9e0ef837ab5e8c6c",
+          "sourceUrl": "https://roselab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:20+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 240,
+          "localContextSha256": "c376125eec02c3e7e1cefee87540a777aa000c8ad63fde2acc1160666f3cb768",
+          "localContextExcerpt": "Mosquitoes are the deadliest animals on Earth , but out of thousands of species, just a few are responsible for the vast majority of human disease – those species that have recently adapted to specialize in biting and living around humans. We use a combination of population genomics and field ecology, supplemented with behavioral, physiological, and developmental work in a controlled laboratory environment to study how mosquitoes have come to thrive in the human niche, and how this shapes the spread of human disease . Our work spans multiple timescales, ranging from evolutionary responses of mosquitoes to the development of human societies over millennia, to rapid adaptation to growing urban environments in the present day, up to ecological and evolutionary shifts taking place across months. Similarly, we work a",
+          "wholeLabScopeReasonZh": "实验室We use...to study后明确两个how从句；不从疾病背景推导控制策略。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 31,
+      "labId": "ucsd-biology-topic-lab-pasquinelli",
+      "ordinal": 108,
+      "labName": "Pasquinelli Lab",
+      "reviewedAt": "2026-10-16T07:48:17.455529+00:00",
+      "rawSha256": "2b893154e997694d1413d9b641fc165c2cf1d90084be1839796874237acffe61",
+      "packetSha256": "4a74bb615c68ed96eff2a9140df629385ac24471a1b05698432e00e8f2b045e2",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "miRNA介导的基因表达调控如何影响生物体的发育和存活？",
+        "miRNA如何在内源性条件下表达并调控基因表达？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-91a1a50e887375f6",
+          "quote": "The overall goal of the Pasquinelli Lab research program is to understand how miRNA-mediated regulation of gene expression contributes to organismal development and viability. We have primarily used C. elegans as a model animal system to investigate how miRNAs are expressed and regulate gene expression in an endogenous context.",
+          "sourceUrl": "https://pasquinellilab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:19+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "8bf3ccb6e6c191a6221a668343bf569f2472307d9d049da65ed3260410e73418"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-91a1a50e887375f6",
+          "quote": "The overall goal of the Pasquinelli Lab research program is to understand how miRNA-mediated regulation of gene expression contributes to organismal development and viability. We have primarily used C. elegans as a model animal system to investigate how miRNAs are expressed and regulate gene expression in an endogenous context.",
+          "sourceUrl": "https://pasquinellilab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:19+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "8bf3ccb6e6c191a6221a668343bf569f2472307d9d049da65ed3260410e73418"
+        }
+      ],
+      "reasonZh": "Pasquinelli Lab研究项目的overall goal与We investigate各直接给出how研究目标。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-91a1a50e887375f6",
+          "sourceUrl": "https://pasquinellilab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:19+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 607,
+          "localContextSha256": "325b63caa038f6a0605fc91186290172523b69195a5b9504f583fc9336daffdf",
+          "localContextExcerpt": "n to be an abundant and essential class of RNA molecules in plants and animals. The numerous examples of defects in specific miRNA pathways contributing to complex diseases, including cancer, heart ailments and neuronal pathologies highlight the importance of these regulatory RNAs in human biology. The overall goal of the Pasquinelli Lab research program is to understand how miRNA-mediated regulation of gene expression contributes to organismal development and viability. We have primarily used C. elegans as a model animal system to investigate how miRNAs are expressed and regulate gene expression in an endogenous context. The pathways we study are broadly conserved throughout animal phylogeny and relevant to understanding the role of miRNAs in human development and disease. Meet Our Team",
+          "wholeLabScopeReasonZh": "Pasquinelli Lab研究项目的overall goal与We investigate各直接给出how研究目标。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 32,
+      "labId": "ucsd-biology-topic-lab-patrick-rohner",
+      "ordinal": 109,
+      "labName": "Patrick Rohner Lab",
+      "reviewedAt": "2026-10-16T07:48:17.455890+00:00",
+      "rawSha256": "b717c763a93305eceed5e1b8f5de6056d468b4c1b46498b4b447262043307f5e",
+      "packetSha256": "76e62dffe708d67929a3ed95d0e537005dd6c6fcff72abd873e03dc7133a05a3",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "生物多样性如何产生并演化？",
+        "在昆虫中，可塑性、发育偏向及生物与环境的相互作用如何塑造表型及其演化？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-81d426a858c0f8ab",
+          "quote": "Our group integrates concepts and approaches from evolutionary developmental biology, evolutionary ecology, and genetics to better understand how biological diversity arises and evolves. Focusing on insects, we are especially interested in how plasticity, developmental bias, and organism-environment interactions shape phenotypes and their evolution.",
+          "sourceUrl": "https://rohnerlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "acbbf2e73b93fa11cb73cc5c3e255545c7feedae48f926014d04243a3c1ac25c"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-81d426a858c0f8ab",
+          "quote": "Our group integrates concepts and approaches from evolutionary developmental biology, evolutionary ecology, and genetics to better understand how biological diversity arises and evolves. Focusing on insects, we are especially interested in how plasticity, developmental bias, and organism-environment interactions shape phenotypes and their evolution.",
+          "sourceUrl": "https://rohnerlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "acbbf2e73b93fa11cb73cc5c3e255545c7feedae48f926014d04243a3c1ac25c"
+        }
+      ],
+      "reasonZh": "Our group与Focusing on insects两句明确给出整体及昆虫限定的how问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-81d426a858c0f8ab",
+          "sourceUrl": "https://rohnerlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 604,
+          "localContextSha256": "a593bed8327626a8186bfe43280c2ff7668c5324127160f53bfc55f62f73a091",
+          "localContextExcerpt": " better understand how traits arise and diversify. The way organisms develop and how they respond to and manipulate their environment has major effects on phenotypes visible to selection. Yet, we are only beginning to understand the intricate role of organismal development in ecology and evolution. Our group integrates concepts and approaches from evolutionary developmental biology, evolutionary ecology, and genetics to better understand how biological diversity arises and evolves. Focusing on insects, we are especially interested in how plasticity, developmental bias, and organism-environment interactions shape phenotypes and their evolution. Learn more about our research Meet our team",
+          "wholeLabScopeReasonZh": "Our group与Focusing on insects两句明确给出整体及昆虫限定的how问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 33,
+      "labId": "ucsd-biology-topic-lab-rifkin",
+      "ordinal": 114,
+      "labName": "Rifkin Lab",
+      "reviewedAt": "2026-10-16T07:48:17.456434+00:00",
+      "rawSha256": "eb2c6bcaf55b9b5204aa11022e081c68754315deb21adb1500434466500eda9f",
+      "packetSha256": "1068429e041c2dd38266a0b473c515596a0d423f9f7524891c9666389fe21c2f",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "发育和生理过程的结构与机制如何减弱或放大遗传、环境及随机变异，并引导其影响？",
+        "潜在的变异来源如何映射为表型变异？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-aab55feea8e267b0",
+          "quote": "We study how the structure and mechanics of developmental and physiological processes dampen or amplify genetic, environmental, and stochastic variation and channel their effects. We mechanistically trace how underlying sources of variation map to phenotypic variation. The lab works with several model systems including embryogenesis in nematodes and signaling and regulatory networks in yeast.",
+          "sourceUrl": "https://labs.biology.ucsd.edu/rifkin/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-aab55feea8e267b0",
+          "quote": "We study how the structure and mechanics of developmental and physiological processes dampen or amplify genetic, environmental, and stochastic variation and channel their effects. We mechanistically trace how underlying sources of variation map to phenotypic variation. The lab works with several model systems including embryogenesis in nematodes and signaling and regulatory networks in yeast.",
+          "sourceUrl": "https://labs.biology.ucsd.edu/rifkin/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9"
+        }
+      ],
+      "reasonZh": "We study/We mechanistically trace直接提出两项how目标，随后The lab明确研究主体。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-aab55feea8e267b0",
+          "sourceUrl": "https://labs.biology.ucsd.edu/rifkin/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 532,
+          "localContextSha256": "29e4c4a201edb9f4d38496e1fe6a15a7f015a47d1f44cb438c021d32a6fb5aff",
+          "localContextExcerpt": "ant focus of population genetics. The twentieth-century was filled with advances in understanding their dynamics and interplay. However, all of these forces act on pre-existing variation. Any process that biases what variation is produced - the first phase - will also shape the course of evolution. We study how the structure and mechanics of developmental and physiological processes dampen or amplify genetic, environmental, and stochastic variation and channel their effects. We mechanistically trace how underlying sources of variation map to phenotypic variation. The lab works with several model systems including embryogenesis in nematodes and signaling and regulatory networks in yeast.",
+          "wholeLabScopeReasonZh": "We study/We mechanistically trace直接提出两项how目标，随后The lab明确研究主体。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 34,
+      "labId": "ucsd-biology-topic-lab-ryan-hibbs",
+      "ordinal": 118,
+      "labName": "Ryan E. Hibbs — lab website",
+      "reviewedAt": "2026-10-16T07:48:17.456840+00:00",
+      "rawSha256": "ef45d58b6d9ab9e4fed9296e2e137f0530c31b2e3cf5bd9e4ed45d8fa3f30c11",
+      "packetSha256": "a089770d00b3ebe3a7ea6fae2bdca1cec5aa07bc488884c80cfdb677dd7065f1",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "神经系统中的快速信号传递在疾病中如何失常？",
+        "药物如何改变这种信号传递？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-e8353a013d147c01",
+          "quote": "We are investigating the fine details of fast communication in the nervous system, how this signaling goes awry in disease, and how drugs alter it. Ongoing projects span basic biophysics and structural biology to neuropharmacology, mechanisms underlying autoimmune diseases of the nervous system, and the evolution of neurotransmitter receptors.",
+          "sourceUrl": "https://sites.google.com/view/hibbslab/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "81d5a4163106000196b56f37e32a3fa61869af953e329e90230b8adfb5a7a538"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-e8353a013d147c01",
+          "quote": "We are investigating the fine details of fast communication in the nervous system, how this signaling goes awry in disease, and how drugs alter it. Ongoing projects span basic biophysics and structural biology to neuropharmacology, mechanisms underlying autoimmune diseases of the nervous system, and the evolution of neurotransmitter receptors.",
+          "sourceUrl": "https://sites.google.com/view/hibbslab/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "81d5a4163106000196b56f37e32a3fa61869af953e329e90230b8adfb5a7a538"
+        }
+      ],
+      "reasonZh": "Welcome to Hibbs Lab后We are investigating直接提出疾病及药物的how问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-e8353a013d147c01",
+          "sourceUrl": "https://sites.google.com/view/hibbslab/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 25,
+          "localContextSha256": "17ad11e1b59a583f3ad8ec28e05fa8683f6c1085bb4da86a3bddefc62d660338",
+          "localContextExcerpt": "Welcome to the Hibbs Lab We are investigating the fine details of fast communication in the nervous system, how this signaling goes awry in disease, and how drugs alter it. Ongoing projects span basic biophysics and structural biology to neuropharmacology, mechanisms underlying autoimmune diseases of the nervous system, and the evolution of neurotransmitter receptors.",
+          "wholeLabScopeReasonZh": "Welcome to Hibbs Lab后We are investigating直接提出疾病及药物的how问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:49:16+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 35,
+      "labId": "ucsd-biology-topic-lab-shermin-de-silva",
+      "ordinal": 123,
+      "labName": "Shermin de Silva Lab",
+      "reviewedAt": "2026-10-16T07:48:17.457257+00:00",
+      "rawSha256": "9652c4a72e31c0359c58e6fdea9ccf616f0d12dab6e7e0e2aa25a8de85ad0963",
+      "packetSha256": "7068e797290b5808c007082311bcdb97885a3b8a42af095665b8ce1b764ff222",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "社会系统与生态系统如何相互作用？",
+        "在人为变化背景下，如何安全、公平地维持社会—生态系统的完整性与功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-12cadc916ea5ba0f",
+          "quote": "We use multi-disciplinary approaches to understand how social and ecological systems interact, and ways to safely and equitably maintain the integrity and functionality of socioecological systems in the context of anthropogenic change.",
+          "sourceUrl": "https://www.elephantresearch.net/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-12cadc916ea5ba0f",
+          "quote": "We use multi-disciplinary approaches to understand how social and ecological systems interact, and ways to safely and equitably maintain the integrity and functionality of socioecological systems in the context of anthropogenic change.",
+          "sourceUrl": "https://www.elephantresearch.net/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7"
+        }
+      ],
+      "reasonZh": "实验室We use明确研究交互及维持社会生态系统的途径；不从保护愿景臆造具体干预或疗效。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-12cadc916ea5ba0f",
+          "sourceUrl": "https://www.elephantresearch.net/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1008,
+          "localContextSha256": "c4510c8bb7ef0bc9d233e843604a2aed1ef16872fa980123a101718b04a7e7a8",
+          "localContextExcerpt": "on and habitat fragmentation. Living with elephants presents economic hardship to often-marginalized people. Achieving sustainable approaches to sharing and connecting the large landscapes elephants inhabit therefore requires attention to the integrated nature of ecological and human communities. ​ We use multi-disciplinary approaches to understand how social and ecological systems interact, and ways to safely and equitably maintain the integrity and functionality of socioecological systems in the context of anthropogenic change. We work with partners and collaborators in both academic and non-academic settings to conduct meaningful science that has both basic and applied dimensions centered around concepts of sustainability and resilience . Lab News We're pleased to be part of the California Global Biodiversity Alliance ! ",
+          "wholeLabScopeReasonZh": "实验室We use明确研究交互及维持社会生态系统的途径；不从保护愿景臆造具体干预或疗效。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:52:51+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 36,
+      "labId": "ucsd-biology-topic-lab-sreekanth-chalasani",
+      "ordinal": 127,
+      "labName": "Sreekanth Chalasani Lab",
+      "reviewedAt": "2026-10-16T07:48:17.457905+00:00",
+      "rawSha256": "e9c6f8b602904cf03e467e40ef5a66cde5bf58be09ab4a0b9cd6ec820d514f25",
+      "packetSha256": "85320bbd6e13055ff138bbc412195ef2f0a670879926dee49f3f58d3fc82308d",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "神经系统如何整合环境信号以驱动行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-0f39710362420600",
+          "quote": "We explore how the nervous system integrates environmental signals to drive behavior using C. elegans and M. musculus . As pioneers in Sonogenetics, we are expanding our toolkit, from early work in worms to the optimization of human channels like hsTRPA1, for precise, non-invasive control of mammalian circuits. By pairing biophysical modeling of nanoscale membrane deflections with systems neuroscience, we aim to uncover universal principles of brain function",
+          "sourceUrl": "https://chalasani.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:45+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "44a17fa97a18863a9fdd8aa32a4d27a3cf95a349e9d4449c313036d8acd1fc9c"
+        }
+      ],
+      "reasonZh": "Chalasani Lab欢迎语后We explore how直接给出问题，sonogenetics方法及治疗愿景不另扩题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-0f39710362420600",
+          "sourceUrl": "https://chalasani.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:45+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 30,
+          "localContextSha256": "c4eae222a086089f75bcb11afd4436ceacea99da3687eb1a19fced57292dc2ec",
+          "localContextExcerpt": "Welcome to the Chalasani Lab! We explore how the nervous system integrates environmental signals to drive behavior using C. elegans and M. musculus . As pioneers in Sonogenetics, we are expanding our toolkit, from early work in worms to the optimization of human channels like hsTRPA1, for precise, non-invasive control of mammalian circuits. By pairing biophysical modeling of nanoscale membrane deflections with systems neuroscience, we aim to uncover universal principles of brain function and develop the next generation of human therapeutics. We’re always looking for motivated undergraduate volunteers to join our team. If you’re eager to get hands-on experience in the lab, apply here . Recent Publications Rusu, I., Cecere, Z.T., How, J.J., Quach, K.T., Yemini, E., Sharpee, T.O., Cha",
+          "wholeLabScopeReasonZh": "Chalasani Lab欢迎语后We explore how直接给出问题，sonogenetics方法及治疗愿景不另扩题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:49:16+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 37,
+      "labId": "ucsd-biology-topic-lab-stacey-glasgow",
+      "ordinal": 128,
+      "labName": "Stacey Glasgow Lab",
+      "reviewedAt": "2026-10-16T07:48:17.458256+00:00",
+      "rawSha256": "eadc572f16271dc060231c540d546215be109f20eebb38a0c1c217efe63c1cb2",
+      "packetSha256": "05cc4daf6f8debd9d41fb2248c3bcee47f5ffed43d706a861a4dd8271b4070b1",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "基因调控如何通过染色质构象、远程增强子相互作用和位点特异性转录因子得到协调，并影响生物过程？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-cab0e267e1af42e7",
+          "quote": "Understanding how gene regulation is coordinated through chromatin conformations, long-range enhancer interactions, and site-specific transcription factors to influence biological phenomena remains a fundamental question",
+          "sourceUrl": "https://www.theglasgowlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:40+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "a972302ac2ad1c1c28dd818e4708b36954277b82b65c1d91f6491f322be66ac6"
+        }
+      ],
+      "reasonZh": "前句The laboratory/后句We are focused将字面fundamental question置于实验室研究语境。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-cab0e267e1af42e7",
+          "sourceUrl": "https://www.theglasgowlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:40+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 765,
+          "localContextSha256": "c870249b05178eeea74238df548a3c0b86543bcd7893a3d5ad787e64275efe93",
+          "localContextExcerpt": "brain malignancies. Yet our understanding of the development of glial cells and their functions remains to be fully explored. The laboratory is interested in dissecting the transcriptional regulatory mechanisms controlling glial cell specification during CNS development and during glioma formation. Understanding how gene regulation is coordinated through chromatin conformations, long-range enhancer interactions, and site-specific transcription factors to influence biological phenomena remains a fundamental question that has critical implications for development, physiology, and disease. We are focused on exploring these relationships and how these processes intersect with glioma tumorigenesis. featured Research NFIA Function in Motor Neurons Gliogenesis and Gliomagenesis Developmental Gliogenesis View all Res",
+          "wholeLabScopeReasonZh": "前句The laboratory/后句We are focused将字面fundamental question置于实验室研究语境。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:49:16+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 38,
+      "labId": "ucsd-biology-topic-lab-vineet-augustine",
+      "ordinal": 138,
+      "labName": "Vineet Augustine Lab",
+      "reviewedAt": "2026-10-16T07:48:17.458575+00:00",
+      "rawSha256": "cbee289a9683a09772fc7ae5fae346358fa2b21eb5abbdefc54ba557ce2c5d14",
+      "packetSha256": "ff189d980162afe222031a3c5c537aab561d81b8de5b9638743098a6a79ab11b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "各类外周神经元如何控制基本心脏生理活动？",
+        "来自心脏的信号如何影响大脑，并在循环反馈中产生健康和疾病状态下的相应行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-4a1b5db329b22a10",
+          "quote": "The overarching theme of our research is to understand in unprecedented detail how various peripheral neurons control basic cardiac physiology and how signals from the heart also influence the brain in a recurrent loop to give rise to appropriate behavior in health and disease.",
+          "sourceUrl": "https://theaugustinelab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "6d66bb448f7be701dbcccdca79fd6a80490e85dba54fa182bab2fd43fabd5002"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-4a1b5db329b22a10",
+          "quote": "The overarching theme of our research is to understand in unprecedented detail how various peripheral neurons control basic cardiac physiology and how signals from the heart also influence the brain in a recurrent loop to give rise to appropriate behavior in health and disease.",
+          "sourceUrl": "https://theaugustinelab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "6d66bb448f7be701dbcccdca79fd6a80490e85dba54fa182bab2fd43fabd5002"
+        }
+      ],
+      "reasonZh": "The overarching theme of our research直接列出心脏控制及心脑循环的两个how问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-4a1b5db329b22a10",
+          "sourceUrl": "https://theaugustinelab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 540,
+          "localContextSha256": "d13ec8130109711b5ede7c5402585df2016b389d2ef636c0825139d3b0aa6caf",
+          "localContextExcerpt": "r system. Cardiac processes and their neurological substrates are critical for homeostatic management of internal body condition as well as psychological and behavioral expression. Unfortunately, how communication between the heart and brain is maintained at beat-to-beat continuity is understudied. The overarching theme of our research is to understand in unprecedented detail how various peripheral neurons control basic cardiac physiology and how signals from the heart also influence the brain in a recurrent loop to give rise to appropriate behavior in health and disease. Even though cardiology is an old discipline, lack of genetic technologies has limited neuroscience research in this area. We develop and employ neuroscience tools to address the following specific challenges a) Genetic and functional characterization of cardiac sensory neurons b) Assessment of the ",
+          "wholeLabScopeReasonZh": "The overarching theme of our research直接列出心脏控制及心脑循环的两个how问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 39,
+      "labId": "ucsd-biology-topic-lab-wilhelm-lab",
+      "ordinal": 139,
+      "labName": "Wilhelm Lab",
+      "reviewedAt": "2026-10-16T07:48:17.459038+00:00",
+      "rawSha256": "297e008e883cb0db7dd5650965760b0602e73af82ab870e8a858f7c4c6e72c77",
+      "packetSha256": "f5f8e1f00d7734bf7f63fced08a46c308b86d0973459871937bf82133e7f40ea",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "形成亚细胞组织的机制如何在发育、代谢和神经系统中发挥作用？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-03e7fdc1b17c2270",
+          "quote": "My laboratory is focused on identifying and characterizing novel mechanisms for generating subcellular organization and studying how those mechanisms are used in development, metabolism, and the nervous system. As part of this effort, we use a multidisciplinary approach that applies techniques from biochemistry, genetics, microscopy, and systems biology.",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jwilhelm",
+          "sourceObservedAt": "2026-10-16T01:07:58+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "5c7e4a36c5f33b0c30cb965f389d9407963a7e1a831fa747426f715e908f69e9"
+        }
+      ],
+      "reasonZh": "My laboratory明确实验室主体，studying how those mechanisms...直接支持；不使用前面一般性修辞问题扩题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-03e7fdc1b17c2270",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jwilhelm",
+          "sourceObservedAt": "2026-10-16T01:07:58+00:00",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "quoteStart": 520,
+          "localContextSha256": "0f2f671a285a67230e1c15c0dd13854078104f16b8f93171dff2428866209388",
+          "localContextExcerpt": "rengthened or weakened in response to experience? Why don’t incompatible chemical reactions that are necessary for life interfere with each other? The solution to these seemingly unconnected questions lies in the ability of cells to target proteins and nucleic acids to specific subcellular domains. My laboratory is focused on identifying and characterizing novel mechanisms for generating subcellular organization and studying how those mechanisms are used in development, metabolism, and the nervous system. As part of this effort, we use a multidisciplinary approach that applies techniques from biochemistry, genetics, microscopy, and systems biology. A systems biology approach to identifying novel principles of subcellular organization In order to identify novel types of intracellular organization, we are conducting a visual screen of the yeast GFP strain collection to identify proteins that assemble into previously unidentified intracellular s",
+          "wholeLabScopeReasonZh": "My laboratory明确实验室主体，studying how those mechanisms...直接支持；不使用前面一般性修辞问题扩题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 40,
+      "labId": "ucsd-biology-topic-lab-wolfgang-busch",
+      "ordinal": 140,
+      "labName": "Wolfgang Busch Lab",
+      "reviewedAt": "2026-10-16T07:48:17.459358+00:00",
+      "rawSha256": "511ad5661893150e5000f830b2a64a8bbbe552e196691c9abc412b9764ddde25",
+      "packetSha256": "a21cd8c681a9514ee7255aeaecf355bc79292f395e7458c3ff880d2a6087767b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "在特定环境中，植物基因如何决定根的生长？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-b0613bbf42d72aac",
+          "quote": "Wolfgang Busch uses a systems genetics approach, combining techniques from genetics, genomics, and other science fields to understand how root growth in given environments is determined by a plant’s genes. Genome-wide association studies correlate genetic variation with physical characteristics",
+          "sourceUrl": "https://www.salk.edu/scientist/wolfgang-busch/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "2c4a2013145e45aff5f5353704f50d0474878d7263dd09029163546e8944680c"
+        }
+      ],
+      "reasonZh": "PI官方页虽用第三人称，但后文The lab has also...明确承接同一根系遗传研究；只补该how问题，不借行政职务或个人成就扩展lab范围。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-b0613bbf42d72aac",
+          "sourceUrl": "https://www.salk.edu/scientist/wolfgang-busch/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 1731,
+          "localContextSha256": "7223b7128650b6dfe496623111057640fb31eb310a550db31ca42e65d3ceeccc",
+          "localContextExcerpt": "psis thaliana is an easy-to-grow weed, popular for plant biology research. Different strains, all with very similar genomes, grow all over the world, making the plant especially useful for studying which genes and genetic variants make plants respond to different environments and help them survive. Wolfgang Busch uses a systems genetics approach, combining techniques from genetics, genomics, and other science fields to understand how root growth in given environments is determined by a plant’s genes. Genome-wide association studies correlate genetic variation with physical characteristics, such as having long or short roots. But to be meaningful, studies have to measure the physical characteristic of interest in significant quantities. Because it is difficult to measure roots accurately and in large numbers, Busch has employed a number of cutting-edge technologies and computational ",
+          "wholeLabScopeReasonZh": "PI官方页虽用第三人称，但后文The lab has also...明确承接同一根系遗传研究；只补该how问题，不借行政职务或个人成就扩展lab范围。"
+        },
+        {
+          "sourceId": "src-b0613bbf42d72aac",
+          "sourceUrl": "https://www.salk.edu/scientist/wolfgang-busch/",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "additionalLiteralLabScopeQuote": "The lab has also recently expanded its work to some of the most globally relevant crop species with the aim of identifying mechanisms conserved across species that can be engineered to create more resilient crop varieties."
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:57:44+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 41,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ferro-novick-lab",
+      "ordinal": 151,
+      "labName": "Ferro-Novick Lab",
+      "reviewedAt": "2026-10-16T07:48:17.459803+00:00",
+      "rawSha256": "0eb8af2b7fd084809ef2ac92183691422c03f2d7a8b9a9453342b8dd8ac3ad82",
+      "packetSha256": "88e966b4ec03327f86576e61167290d2607af32a5bc0b71a08cb3820abc64a4d",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "内质网如何维持稳态？",
+        "哺乳动物内质网自噬机制如何识别这类错误折叠蛋白，并将其送往溶酶体降解？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-b16a10555171132b",
+          "quote": "The goal of our research program is to understand how homeostasis is maintained in the endoplasmic reticulum",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-b16a10555171132b",
+          "quote": "Recent studies in the lab have focused on understanding how the mammalian ER auto phagy (called ER-phagy) machinery recognizes this class of misfolded proteins and targets them to the lysosome for degradation.",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c"
+        }
+      ],
+      "reasonZh": "Our research program与Recent studies in the lab均明确实验室整体范围；第二题的这类蛋白按局部正文指易聚集且致病、不能逆向转运出ER者。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-b16a10555171132b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 39,
+          "localContextSha256": "45c337785efc3c80a78e2b2025ff4410159eaa7f4d4c4b1f203389db9782a623",
+          "localContextExcerpt": "About Us Autophagy and quality control The goal of our research program is to understand how homeostasis is maintained in the endoplasmic reticulum The endoplasmic reticulum (ER) is a major site of protein biogenesis in the cell. When errors in protein assembly occur, misfolded proteins are extruded from the ER and degraded in the cytosol. Many aggregation-prone, disease-causing proteins, however, cannot be retrotranslocated across the ER memb",
+          "wholeLabScopeReasonZh": "Our research program与Recent studies in the lab均明确实验室整体范围；第二题的这类蛋白按局部正文指易聚集且致病、不能逆向转运出ER者。"
+        },
+        {
+          "sourceId": "src-b16a10555171132b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 498,
+          "localContextSha256": "a6d69a757a26721cb0b44a317d1b008fd4c85847c2ae7c087974708a91334b62",
+          "localContextExcerpt": "protein biogenesis in the cell. When errors in protein assembly occur, misfolded proteins are extruded from the ER and degraded in the cytosol. Many aggregation-prone, disease-causing proteins, however, cannot be retrotranslocated across the ER membrane and must be cleared from the ER by autophagy. Recent studies in the lab have focused on understanding how the mammalian ER auto phagy (called ER-phagy) machinery recognizes this class of misfolded proteins and targets them to the lysosome for degradation. These studies have uncovered novel machinery that packages ER subdomains, that contain misfolded cargos, into autophagosomes (Cui et al. 2019 Science 365:53-60; Parashar et al. eLife 2021 doi:10.7554/eLife.71642). Autophagosomes are distinct organelles that deliver deleterious or damaged cellular c",
+          "wholeLabScopeReasonZh": "Our research program与Recent studies in the lab均明确实验室整体范围；第二题的这类蛋白按局部正文指易聚集且致病、不能逆向转运出ER者。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 42,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ghosh-lab",
+      "ordinal": 152,
+      "labName": "Ghosh Lab",
+      "reviewedAt": "2026-10-16T07:48:17.460288+00:00",
+      "rawSha256": "60bec901c6eef540f9389d90b50be4da9fb7b132fd680c69bf1f5b7d39a8acf3",
+      "packetSha256": "93dbe2e7c678a85902575fd0379ab1c9add857bcb69c25b43d1edf5ff2fe2a74",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "GEM系统的异常为何以及如何促发癌症进展、纤维化和胰岛素抵抗等病理状况？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-49330b50d0ee372a",
+          "quote": "why/how aberrations in the GEM system spur pathogenic conditions such as cancer progression, fibrosis and insulin resistance",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ghosh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:30:43+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "23f410b7fbd6bbb9e7242e440db04b4d63c0076e2f14f8514cd702458fd21a91"
+        }
+      ],
+      "reasonZh": "About the Ghosh Laboratory/Our Research Focus及my group明确团队范围；保留历史研究叙述，不声称2026新增项目或药物有效。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-49330b50d0ee372a",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ghosh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:30:43+00:00",
+          "sourceRole": "explicit_linked_research_subpage",
+          "quoteStart": 1480,
+          "localContextSha256": "6a0bf83faa32ef59bab9b95dbe36c960c9789dcfdadf576cf5fefa1747a866e7",
+          "localContextExcerpt": "ell, molecular and structural biology, molecular imaging, systems biology and bioinformatics, we showed the crucial importance of the GEM system in coordinating diverse cellular processes and revealed the mechanistic basis of their GEM action. As a physician-scientist, my group relentlessly pursued why/how aberrations in the GEM system spur pathogenic conditions such as cancer progression, fibrosis and insulin resistance, and provided the impetus to develop drugs targeting GEMs in these and other disease states. Although modulation of trimeric-GTPases by GPCRs remains a core target of modern medicine, our discoveries have revealed that trimeric-GTPase signaling via GEMs is just as important, if not more, for coordi",
+          "wholeLabScopeReasonZh": "About the Ghosh Laboratory/Our Research Focus及my group明确团队范围；保留历史研究叙述，不声称2026新增项目或药物有效。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:50:53+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 43,
+      "labId": "ucsd-cellular-molecular-medicine-lab-zhou-lab",
+      "ordinal": 170,
+      "labName": "Zhou Lab",
+      "reviewedAt": "2026-10-16T07:48:17.460709+00:00",
+      "rawSha256": "6c04b43fc10ae824c191c3ec119641c68531264b0e865116e3b269258bd7b023",
+      "packetSha256": "290b538448b10e7715f19c12e9b205ff0a8a016d746a266af5dee8c1de64aaa8",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "基因组维护如何运作？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-c5a7f699c7b0650c",
+          "quote": "cellular controls of DNA replication and chromosome segregation remain incompletely understood. The overarching goals of our research are to understand how genome maintenance works and to develop quantitative proteomics for biological studies.",
+          "sourceUrl": "https://www.huilinzhoulab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:53+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "4cc704c51223714b100ca42a15ce2e7dc626678a1b0bb9d439721dfaabaff79b"
+        }
+      ],
+      "reasonZh": "The overarching goals of our research明确how目标；邻近CASA/Find Out How导航不采纳，定量蛋白组学开发目标不另造问句。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-c5a7f699c7b0650c",
+          "sourceUrl": "https://www.huilinzhoulab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:53+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 484,
+          "localContextSha256": "1f388f71e4ce2a4e060486aba86d44df388e17aaa08ce316ab8b04239a355b1b",
+          "localContextExcerpt": "replication, each daughter cell must receive a full complement of the genome through accurate chromosome segregation. Defects in these processes lead to genome instabilities, including chromosomal rearrangements and aneuploidy that are prevalent in many diseases. Despite all that have been learned, cellular controls of DNA replication and chromosome segregation remain incompletely understood. The overarching goals of our research are to understand how genome maintenance works and to develop quantitative proteomics for biological studies. About our research Learn More → What is CASA? Learn More → Join OUR TEAM Find Out How →",
+          "wholeLabScopeReasonZh": "The overarching goals of our research明确how目标；邻近CASA/Find Out How导航不采纳，定量蛋白组学开发目标不另造问句。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    },
+    {
+      "index": 44,
+      "labId": "ucsd-lab-from-faculty-bethel-lab-org",
+      "ordinal": 171,
+      "labName": "Bethel Lab",
+      "reviewedAt": "2026-10-16T07:48:17.461329+00:00",
+      "rawSha256": "51ed3672ae046215d28a68e68a6f016683f58ecd0bc1ecb7f30434c77109e51b",
+      "packetSha256": "78fa5e98b89ad35e3df3654d66273f7a9d3edff8fe5316c985752df235716e00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "蛋白质的能量性质如何影响其功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-0f229c7c67a66b00",
+          "quote": "The Bethel Lab uses a variety of computational and experimental techniques to explore how the energetics of proteins influences their functions.",
+          "sourceUrl": "https://www.bethel-lab.org/",
+          "sourceObservedAt": "2026-10-16T01:36:52+00:00",
+          "quoteLocation": "body",
+          "sourceBodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47"
+        }
+      ],
+      "reasonZh": "The Bethel Lab具名主体直接explore how；不从后文蛋白质设计愿景推导新问题。",
+      "localSourceContextReviews": [
+        {
+          "sourceId": "src-0f229c7c67a66b00",
+          "sourceUrl": "https://www.bethel-lab.org/",
+          "sourceObservedAt": "2026-10-16T01:36:52+00:00",
+          "sourceRole": "listed_lab_destination",
+          "quoteStart": 52,
+          "localContextSha256": "e27f9a4bdb2a05d49325d94c0cbc59e29383ac610e4da872321feb16817aa343",
+          "localContextExcerpt": "Exploring the hidden energetics of protein function The Bethel Lab uses a variety of computational and experimental techniques to explore how the energetics of proteins influences their functions. Proteins are responsible for nearly every process in biology, and we model proteins as context dependent, dynamic machines to better understand how they accomplish these processes. Using this understanding, we develop methods to design and validate new proteins with functions not observed in nature",
+          "wholeLabScopeReasonZh": "The Bethel Lab具名主体直接explore how；不从后文蛋白质设计愿景推导新问题。"
+        }
+      ],
+      "priorResearchReviewedAtPreserved": "2026-10-16T02:35:14+00:00",
+      "rawPacketEdited": false,
+      "summaryMethodsIdentityPIAffiliationURLUnchanged": true
+    }
+  ],
+  "networkRequestsMade": 0,
+  "productionEdits": 0,
+  "allowedWrites": [
+    "QUESTION-FIELD-REVIEW-000-044.json",
+    "QUESTION-FIELD-REVIEW-000-044.md"
+  ]
+}

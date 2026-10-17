@@ -1,0 +1,228 @@
+{
+  "labId": "ucsd-neurosciences-lab-devor-lab",
+  "status": "supported",
+  "summaryZh": "Devor 的神经血管成像实验室研究微观神经活动如何对应人类无创脑成像信号，以建立从 fMRI/MEG 推断神经网络活动的统一框架。团队结合双光子成像、电生理、光遗传学、小鼠 fMRI 与系统建模，测量神经活动、血流和氧代谢。",
+  "researchQuestions": [
+    "微观脑活动的特定模式及其病理偏离如何转化为fMRI和MEG可测的宏观信号？",
+    "特定类型神经元的活动如何影响脑血流、脑氧代谢率与电流偶极子？"
+  ],
+  "topics": [
+    "神经血管耦合",
+    "脑活动成像",
+    "神经网络推断"
+  ],
+  "methods": [
+    "双光子成像",
+    "电生理",
+    "光遗传学",
+    "小鼠 fMRI",
+    "系统建模"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-f4e934e1e4e3f80c",
+      "quote": "Our overarching goal is to develop a single estimation framework for inference of neuronal network activity from multimodal human fMRI/MEG imaging data.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-f4e934e1e4e3f80c",
+      "quote": "we combine multimodal measurements and system-level analysis/modeling",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-f4e934e1e4e3f80c",
+      "quote": "Neurovascular Imaging Laboratory (NIL)",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-096cd759f2b22167",
+      "quote": "Devor Lab – Neurovascular Imaging Laboratory (NIL)",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-c07022cfa4321947",
+      "quote": "These measurements are combined with laminar and surface electrophysiological recordings (IIii). Selective stimulation of specific neuronal cell types is achieved using optogenetics (IIIiii), both in optical and fMRI experiments (IIIiv). Mouse fMRI provides a translational bridge",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-c07022cfa4321947",
+      "quote": "We apply a suite of 2-photon imaging methods",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-f4e934e1e4e3f80c",
+      "quote": "Then, we combine multimodal measurements and system-level analysis/modeling, commonly used in engineering disciplines, to understand how specific patterns of microscopic brain activity (and their pathological departures) translate into noninvasive macroscopic observables obtained with functional Magnetic Resonance Imaging (fMRI) and magnetoencephalography (MEG).",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-c07022cfa4321947",
+      "quote": "The goal of these experiments is to determine how activity of a particular type of neurons affects CBF, CMRO2, and current dipole.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "正文或匹配官方目录明确报告 UCSD 关联。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:14.188078+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:14.188078+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:07+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "NIL具名Research Focus及Research Agenda直接含to understand how/determine how，不把估计框架工程目标当已实现推断结果。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-f4e934e1e4e3f80c",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/index.html",
+        "sourceObservedAt": "2026-10-16T01:05:07+00:00",
+        "bodySha256": "e9e1a7f226b970c67a2ebfd96a7c01f056b643ab200a2f09dffe1f1ec0672938",
+        "textSha256": "478908f1c5c7778285db3f0a9f6cc003d48c298ff6785b4f99137e5386964c05",
+        "textCharacters": 1577,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            1577
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-c07022cfa4321947",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/research/index.html",
+        "sourceObservedAt": "2026-10-16T01:05:08+00:00",
+        "bodySha256": "46f56ba105f2acdccb50bcb0c688b7ec2585fc309fa1e732ef0b30d4b2140fc2",
+        "textSha256": "29af3125a762f06677640b1bac350660626c722f3f3cb9fd39b560154334d5c8",
+        "textCharacters": 2504,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            2504
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-d3ec2709e6800aa8",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/people.html",
+        "sourceObservedAt": "2026-10-16T02:42:13+00:00",
+        "bodySha256": "a795a637b2f08632df6b5208abfb083da733d57fcb23848ccf065be820d8904d",
+        "textSha256": "2b7ffc6885bd8fbe04a035609d4f5387cdbcedaccb168906abd83ef822bab61c",
+        "textCharacters": 243,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            243
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-fd151f104c65b5a2",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/contact.html",
+        "sourceObservedAt": "2026-10-16T02:42:18+00:00",
+        "bodySha256": "5e3e34f2cd9c6c3dbd242cfe6c0d61eaed5cf56e631b396cc97c46fa92ce289a",
+        "textSha256": "e67e193d7d52cca32ed72cc16fbe2944651a4184ad5cfb46a6f7b0cb30e39d30",
+        "textCharacters": 369,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            369
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-096cd759f2b22167",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+        "bodySha256": null,
+        "textSha256": "9bc6394101de9eb552075182c97aba43d31c2023c4a4dd6ec1f0bc089762b937",
+        "textCharacters": 50,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            50
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-d81f1215c84293b2",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+        "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644",
+        "textSha256": "422d7750b7bf3eb5003fe0c76b9eb2848a75d0bb519b126034597bcce148b6e2",
+        "textCharacters": 1242,
+        "disposition": "previous_exact_source_context_reused",
+        "rangesActuallyRead": [],
+        "reasonZh": "同sourceId及textSHA的Neurosciences Research Labs目录已在reviewIndex103完整读取；名单不是目标团队科研，不重复借用邻lab研究。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-f4e934e1e4e3f80c",
+        "quote": "Then, we combine multimodal measurements and system-level analysis/modeling, commonly used in engineering disciplines, to understand how specific patterns of microscopic brain activity (and their pathological departures) translate into noninvasive macroscopic observables obtained with functional Magnetic Resonance Imaging (fMRI) and magnetoencephalography (MEG).",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:05:07+00:00",
+        "bodySha256": "e9e1a7f226b970c67a2ebfd96a7c01f056b643ab200a2f09dffe1f1ec0672938",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/index.html"
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-c07022cfa4321947",
+        "quote": "The goal of these experiments is to determine how activity of a particular type of neurons affects CBF, CMRO2, and current dipole.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:05:08+00:00",
+        "bodySha256": "46f56ba105f2acdccb50bcb0c688b7ec2585fc309fa1e732ef0b30d4b2140fc2",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/neurovascular-imaging/research/index.html"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

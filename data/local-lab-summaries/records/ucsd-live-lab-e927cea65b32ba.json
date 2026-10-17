@@ -1,0 +1,119 @@
+{
+  "labId": "ucsd-live-lab-e927cea65b32ba",
+  "status": "supported",
+  "summaryZh": "Serra Group 开发数据驱动数学方法与物理模型，理解非线性、多尺度及混沌系统中的动态模式与生成原理。近期关注胚胎自组织、形态发生控制、活性物质、流体动力学及相干结构。",
+  "researchQuestions": [
+    "早期胚胎如何自组织形成形态与功能分化？"
+  ],
+  "topics": [
+    "胚胎自组织",
+    "形态发生",
+    "活性物质",
+    "流体动力学"
+  ],
+  "methods": [
+    "数据驱动数学方法",
+    "物理模型"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-44b61760caaace64",
+      "quote": "Serra Group Mattia earned his Ph.D.",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-84e3c939880fbea2",
+      "quote": "We develop data-driven mathematical methods and physical models to study biological and physical systems defined through equations or experiments.",
+      "supports": [
+        "research",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-84e3c939880fbea2",
+      "quote": "Recent research interests include self-organization in embryonic development, control of morphogenesis and active matter, fluid dynamics and coherent structures.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-44b61760caaace64",
+      "quote": "We are primarily interested in understanding i) how early embryos self-organize their form (morphogenesis) and function (differentiation)",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "research_group",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:11:24.775147+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:11:24.775147+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:45:00+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "官方历史Serra Group条目以We明确胚胎自组织的how问题；保留历史来源，不把新闻题目或数学建模工具另造问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-84e3c939880fbea2",
+        "sourceUrl": "https://www.mattiaserra.com/",
+        "sourceObservedAt": "2026-10-16T01:06:41+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1800
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-44b61760caaace64",
+        "sourceUrl": "https://biophysics.ucsd.edu/",
+        "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            566
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-44b61760caaace64",
+        "quote": "We are primarily interested in understanding i) how early embryos self-organize their form (morphogenesis) and function (differentiation)",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+        "bodySha256": null,
+        "bodySha256UnavailableReason": "当前packet仅保留历史官方字段文字摘录，未提供独立HTML bodySHA；不伪造body hash，不宣称原始HTML已复核。"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

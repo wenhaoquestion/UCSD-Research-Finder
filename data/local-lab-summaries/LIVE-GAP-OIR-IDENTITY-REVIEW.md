@@ -1,0 +1,11 @@
+# OIR identity source-delta review
+
+Reviewed 2026-10-16T03:26:20+00:00 UTC. The new [OIR team page](https://oirlab.ucsd.edu/team1.php), originally observed 2026-10-16T03:24:31+00:00, explicitly places “Shelley Wright” under Current Members / UCSD OIR Laboratory and states: “Shelley is the Principal Investigator of the UCSD Optical and Infrared Laboratory.” The exact cached body SHA-256 is `c29dac638ff0e010ac31382336c43d50b6a7fe94e12340a750e01f3ecc39e562`; sourceId `src-c7697d765924e293`. The original actual request comprises one wire, with liveCheckedAt 03:24:31 UTC, belonging only to this team URL.
+
+This resolves the missing owner/laboratory relationship for stable ID `ucsd-physics-research-site-shelley-wright`. The raw record moves partial → supported and identity uncertain → confirmed lab. Its whole-lab research and methods remain from the previously reviewed [OIR overview](https://oirlab.ucsd.edu/index.php), original observedAt 2026-10-16T03:18:29+00:00, SHA-256 `58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44`. No other member’s interests, past experience, partner-lab research or outreach activity was added. Topics, methods and questions are unchanged; only the summary/identity/affiliation explanation and evidence resolve the prior blocker.
+
+The explicit overview and team statements support a source-reported UCSD laboratory affiliation. The undated Current Members heading is not a dated current personnel assertion; source observation time does not establish an appointment or affiliation effective date.
+
+The original root URL, its observedAt 2026-10-16T01:05:27+00:00, original HTTP chain and HTML meta refresh remain separate from the new team-page request. No canonical URL migration, accepted alias, ID rename/merge or root liveCheckedAt update was made. The earlier LIVE-GAP-REVIEW-000 Markdown/JSON files are unchanged and remain truthful records of the earlier partial decision.
+
+Hydration passed. Only the owned raw record and these new review files were written; no packet, code, aggregate, collector or identity-decision edit and no reviewer network request. The matching JSON contains exact evidence/provenance and before/after semantic fingerprints.

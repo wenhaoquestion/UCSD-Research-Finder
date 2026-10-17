@@ -1,0 +1,122 @@
+{
+  "labId": "ucsd-radiation-medicine-lab-mell-lab",
+  "status": "supported",
+  "summaryZh": "Mell 实验室使用应用数学发展和测试个体化放射治疗。团队主要采用机器学习和计算放射组学，分析高维影像、临床和结局数据。",
+  "researchQuestions": [],
+  "topics": [
+    "个体化放疗",
+    "放射组学"
+  ],
+  "methods": [
+    "应用数学",
+    "机器学习",
+    "计算放射组学"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-8f20f45fd8f767ff",
+      "quote": "Dr. Loren Mell Dr. Mell's research focuses on development and testing of personalized radiation therapy using applied mathematics. Our dry lab primarily implements machine learning and in silico radiomics techniques using high-dimensional imaging, outcomes, and clinical data sets, with some crossover into tissue microarray, virology, and translational pre-clinical animal models. Members of our lab apply skills in statistical programming in MATLAB, R, Python, and SAS, and collaborate with investigators in radiochemistry, virology, immunology, pathology, and clinical research. Dr. Mell: Key Editor Dr. Mell is the lead editor of a top textbook in the field called Principles of Clinical Cancer Research. Explore the Lab People Publications Projects Opportunities Media Featured Articles Prognostic Role of p16 in Nonoropharyngeal Head and Neck Cancer Phase I Trial of Intravenous Oncolytic Vaccinia Virus (GL-ONC1) with Cisplatin and Radiotherapy in Patients with Locoregionally Advanced Head and Neck Carcinoma Bone Marrow-sparing Intensity Modulated Radiation Therapy With Concurrent Cisplatin For Stage IB-IVA Cervical Cancer: An International Multicenter Phase II Clinical Trial (INTERTECC-2) Sponsors",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-686030f8d7b124d8",
+      "quote": "Mell Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究问题待核（限本轮已审阅材料）：整体dry lab描述个体化放疗开发/测试和实际分析方法，个人页列临床试验和职务；没有明确具体待解关系，不从免疫治疗试验或文章标题推造整组问题。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:24+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "整体dry lab描述个体化放疗开发/测试和实际分析方法，个人页列临床试验和职务；没有明确具体待解关系，不从免疫治疗试验或文章标题推造整组问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-8f20f45fd8f767ff",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/mell/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+        "bodySha256": "ac6edf4de6022e370081ecb2030bc2ad47837fa5733f0765853921aa7387fc72",
+        "textSha256": "e965c27e0a40d54c07665ad752ffcacf71b85301480e2a22f74304dd4df1f223",
+        "textCharacters": 1210,
+        "readRanges": [
+          [
+            0,
+            1210
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-e7c056caf1535d85",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/mell/people.html",
+        "sourceObservedAt": "2026-10-16T01:03:43+00:00",
+        "bodySha256": "a272d924a7a9eeb3c4c771213f9e0adbd0305ffac0f3606872852d2700667892",
+        "textSha256": "6c01ee9ccc814d0d20450ff75726adfe417557d9640f43efe8a11b123a4f5921",
+        "textCharacters": 2315,
+        "readRanges": [
+          [
+            0,
+            900
+          ]
+        ],
+        "coverage": "local_research_context_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-686030f8d7b124d8",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+        "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+        "bodySha256": null,
+        "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+        "textCharacters": 156,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 192,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-021d5071e439a0b2",
+        "sourceUrl": "https://radonc.ucsd.edu/faculty/radiation-oncology/mell-loren.html",
+        "sourceObservedAt": "2026-10-16T01:00:02+00:00",
+        "bodySha256": "b4fccf55749876b3198d051ef3f3eb18cd3532246de1170e0716740ecf02f748",
+        "textSha256": "09d5056c04fa7508b4e1407a6e12ce920c6b7a53f48f3769114f326b746cb339",
+        "textCharacters": 2446,
+        "readRanges": [
+          [
+            0,
+            2446
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

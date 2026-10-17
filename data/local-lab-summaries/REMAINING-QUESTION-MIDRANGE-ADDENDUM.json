@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "reviewedAt": "2026-10-16T08:47:07+00:00",
+  "inputDraft": {
+    "path": "data/local-lab-summaries/REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "sha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8"
+  },
+  "inputInventory": {
+    "path": "data/local-lab-summaries/REMAINING-QUESTION-FIELD-INVENTORY.json",
+    "sha256": "3800eb1f2b2f86e175ada0a1f735238771f54b07bcf0f8bdd01433178fd94e44",
+    "inventoriedAt": "2026-10-16T08:06:55+00:00",
+    "baseCommit": "b548801880efa8e28db1d4b469518a96ac51430d"
+  },
+  "scope": "Explicit question-field-only proposed effective replacements for reviewIndex154,160,161,213. Original bd716 draft remains byte-for-byte unchanged. No raw/packet application.",
+  "effectiveItems": [
+    {
+      "labId": "ucsd-pediatrics-lab-lewis-lab",
+      "reviewIndex": 154,
+      "ordinal": 333,
+      "labName": "Lewis Lab",
+      "entityType": "lab",
+      "rawSha256": "2ae2ce8c7c03af2e422bc93c322880f6bc37597dd5cabdac0e0c19b5e41da9a2",
+      "packetSha256": "fc6451fca253c6b3ff4992866fa84838cd6e18f9131ae367648c08e6796b57a9",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "代谢、蛋白质合成与分泌及糖基化等复杂通路如何受到调控？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-8e700a83e994fd49",
+          "quote": "The Lewis lab uses systems biology approaches to make sense of these complex pathways to develop network-based diagnostics for childhood disorders and to understand the regulation and activity of complex pathways, such as metabolism, protein synthesis/secretion, and glycosylation",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "134b533b19f1053c510f95a06e9b09dea8c2222ab8a6afacc5bb3efb5e290aea"
+        }
+      ],
+      "reasonZh": "官方具名Lewis lab明确to understand the regulation目标；与261采用同一既有源、字面引文及原捕获时间，在各独立稳定ID分别补充，不迁移URL或合并实体。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-76f1783f5a12bddd",
+          "sourceUrl": "https://lewis.uga.edu/lab-members/",
+          "sourceObservedAt": "2026-10-16T00:59:59+00:00",
+          "bodySha256": "93868c9661805b77a2ab924d7d2d075f6fe8f8c080dcfd56b18ef7ea4a097c3d",
+          "textSha256": "4d239c68e592d97b4c1696823bb059b375ab1e504e3556b493d9669cd3c7df79",
+          "textCharacters": 7282,
+          "readRanges": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "coverage": "local_research_context_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+          "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+          "textCharacters": 1659,
+          "readRanges": [],
+          "coverage": "reused_exact_generic_directory_or_link_read",
+          "reusedFromReviewIndex": 143,
+          "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+        },
+        {
+          "sourceId": "src-9c52bd60a9cbf930",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=445",
+          "sourceObservedAt": "2026-10-02T22:43:56+00:00",
+          "bodySha256": null,
+          "textSha256": "26e41017be57a4cbd0357e8242f3005865d07ebef885c895575d60195ce3a1e9",
+          "textCharacters": 40,
+          "readRanges": [
+            [
+              0,
+              40
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-8e700a83e994fd49",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=445",
+          "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "134b533b19f1053c510f95a06e9b09dea8c2222ab8a6afacc5bb3efb5e290aea",
+          "textSha256": "f3a72b449d72b3006f4f97f358ab2c6c847c0d948756cf434de4a917a7af3d82",
+          "textCharacters": 977,
+          "readRanges": [
+            [
+              0,
+              977
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        }
+      ],
+      "priorScientificReviewedAt": "2026-10-16T01:57:53+00:00",
+      "previousDraftReviewedAt": "2026-10-16T08:15:30+00:00",
+      "addendumReview": {
+        "reviewedAt": "2026-10-16T08:47:07+00:00",
+        "sourceDraftSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+        "originalItemCanonicalSha256": "740a47f885563305f6f2934f00f67af879ab02280fc14d70b1ca48a7d760d1d2",
+        "scope": "question_field_only_proposal",
+        "oldDecision": "unchanged",
+        "oldQuestions": [],
+        "newDecision": "add_source_explicit_questions",
+        "reasonZh": "官方具名Lewis lab明确to understand the regulation目标；与261采用同一既有源、字面引文及原捕获时间，在各独立稳定ID分别补充，不迁移URL或合并实体。"
+      }
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-quinton-lab",
+      "reviewIndex": 160,
+      "ordinal": 342,
+      "labName": "Quinton Lab",
+      "entityType": "lab",
+      "rawSha256": "e51905ee3572cfb7c86bf6cb8a9cacb32ba9dd6c6a9f0391535c66f8fc7c618a",
+      "packetSha256": "49ef3b74639523f9b72ea2731848a5b188a74ab1046bdb542cbe2d78bc16b843",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "上皮上的液体、电解质与黏液运动在囊性纤维化和其他阻塞性肺病中起什么作用？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3076ddd2e721c1d8",
+          "quote": "Research in the Quinton Laboratory is focused to better understand the roles of fluid, electrolyte, and mucus movements over epithelia affected in Cystic Fibrosis and other obstructive lung diseases.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "7dcd0687380dacd354829669e5993fb7d1cb036189a5ce613e8cd7825a202c3c"
+        }
+      ],
+      "reasonZh": "将over epithelia收窄为上皮上的运动，不增加跨上皮屏障运输含义；疾病、对象及作用关系不变。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-3076ddd2e721c1d8",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/quinton-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "7dcd0687380dacd354829669e5993fb7d1cb036189a5ce613e8cd7825a202c3c",
+          "textSha256": "acbd2d257f1c4df5a8e62eefe04d77cb8e77974e310024da49adf97d34659bdd",
+          "textCharacters": 1283,
+          "readRanges": [
+            [
+              0,
+              1283
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-687261fac7d94c36",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/quinton-lab/about-the-lab.html",
+          "sourceObservedAt": "2026-10-16T01:34:04+00:00",
+          "bodySha256": "552562b72e0b237b062a11395d74d07f8c93916d01aa4346ca3031ac581dfc98",
+          "textSha256": "02a7d6bbda854658a76da34f46f947dcba50b281f79330c35c522d7906862f08",
+          "textCharacters": 1807,
+          "readRanges": [
+            [
+              0,
+              1807
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-1fddb74dce0b067e",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/quinton-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:07+00:00",
+          "bodySha256": "b73ac46afd64c0bb28629613b92073f38d0acf615beb88cd9baa323408805f43",
+          "textSha256": "545cb07d5242ed7bcb10e8712e1502fb580a3a578929ee048e4f7aaa9c504cd4",
+          "textCharacters": 407,
+          "readRanges": [
+            [
+              0,
+              407
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+        },
+        {
+          "sourceId": "src-739189ba52c0d835",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "8eac5ec982621aaf3540a8bc8461d2bcf0f251bb44201551a2ca5acf9b7f69f9",
+          "textCharacters": 54,
+          "readRanges": [],
+          "coverage": "reused_exact_generic_directory_or_link_read",
+          "reusedFromReviewIndex": 148,
+          "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+          "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+          "textCharacters": 1659,
+          "readRanges": [],
+          "coverage": "reused_exact_generic_directory_or_link_read",
+          "reusedFromReviewIndex": 143,
+          "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+        },
+        {
+          "sourceId": "src-a25cd127cd87a0d3",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/quinton-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "7dcd0687380dacd354829669e5993fb7d1cb036189a5ce613e8cd7825a202c3c",
+          "textSha256": "0aec485c8ac4f7dbafe4271485126f2f15aab3e5cf1a432ebfa73c11cd0debd1",
+          "textCharacters": 2450,
+          "readRanges": [],
+          "coverage": "excluded_duplicate_extraction",
+          "duplicateOf": "src-3076ddd2e721c1d8",
+          "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+        },
+        {
+          "sourceId": "src-9f2f8207ad88807f",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/quinton-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:07+00:00",
+          "bodySha256": "b73ac46afd64c0bb28629613b92073f38d0acf615beb88cd9baa323408805f43",
+          "textSha256": "7a5f2c0a4689526d2ef63828d29cc9918584773de8651c95988ce3ca63bacf98",
+          "textCharacters": 1574,
+          "readRanges": [],
+          "coverage": "excluded_duplicate_extraction",
+          "duplicateOf": "src-1fddb74dce0b067e",
+          "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+        }
+      ],
+      "priorScientificReviewedAt": "2026-10-16T01:55:29+00:00",
+      "previousDraftReviewedAt": "2026-10-16T08:16:44+00:00",
+      "addendumReview": {
+        "reviewedAt": "2026-10-16T08:47:07+00:00",
+        "sourceDraftSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+        "originalItemCanonicalSha256": "fab857a78782b664d40c5ae57b75d0ef1f5a7dfc086db9599a0c2c3d506dc0fe",
+        "scope": "question_field_only_proposal",
+        "oldDecision": "add_source_explicit_questions",
+        "oldQuestions": [
+          "液体、电解质及黏液跨上皮移动在囊性纤维化和其他阻塞性肺病中起什么作用？"
+        ],
+        "newDecision": "add_source_explicit_questions",
+        "reasonZh": "将over epithelia收窄为上皮上的运动，不增加跨上皮屏障运输含义；疾病、对象及作用关系不变。"
+      }
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-sajti-lab",
+      "reviewIndex": 161,
+      "ordinal": 347,
+      "labName": "Sajti Lab",
+      "entityType": "lab",
+      "rawSha256": "e62f1cca4323bad707b69d9b5c6489acd6924e9a72025607eb23ef39a7c68814",
+      "packetSha256": "9eebb0fb317dbe31cbc36ebc9e74e79393916c943ca80ba85a2903865cefa3d2",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "新生儿高氧暴露通过哪些机制引起炎症并改变肺发育？",
+        "发育来源与组织环境通过哪些机制决定肺巨噬细胞和单核细胞的分子身份及功能潜力？",
+        "基因与环境的相互作用通过哪些机制促成早产儿支气管肺发育不良严重程度的差异？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are defining mechanisms by which neonatal hyperoxia exposure causes inflammation and alters lung development.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are defining mechanisms by which developmental origin and tissue environment determine the molecular identities and functional potential of these cells in the mouse and human lung.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are using inbred mouse strains with different susceptibility to hyperoxia induced lung injury to determine mechanisms by which gene-environment interactions contribute to variable levels of BPD severity in premature infants.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        }
+      ],
+      "reasonZh": "仅将Q3 contribute to译为促成，保留贡献关系；同项Q1原文causes仍可译引起。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-850e43e98cc69a38",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/sajti-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f",
+          "textSha256": "588ff62d1aa0675d8a76963ad3a63de4b64e51a71a3a2c09bd2500bed7bb435e",
+          "textCharacters": 2952,
+          "readRanges": [
+            [
+              0,
+              2952
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+          "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+          "textCharacters": 1659,
+          "readRanges": [],
+          "coverage": "reused_exact_generic_directory_or_link_read",
+          "reusedFromReviewIndex": 143,
+          "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+        }
+      ],
+      "priorScientificReviewedAt": "2026-10-16T01:55:29+00:00",
+      "previousDraftReviewedAt": "2026-10-16T08:16:44+00:00",
+      "addendumReview": {
+        "reviewedAt": "2026-10-16T08:47:07+00:00",
+        "sourceDraftSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+        "originalItemCanonicalSha256": "76c450ef997bc614a85d240a3a6d22f027677216b73054d25c08128d4cf93beb",
+        "scope": "question_field_only_proposal",
+        "oldDecision": "add_source_explicit_questions",
+        "oldQuestions": [
+          "新生儿高氧暴露通过哪些机制引起炎症并改变肺发育？",
+          "发育来源与组织环境通过哪些机制决定肺巨噬细胞和单核细胞的分子身份及功能潜力？",
+          "基因与环境的相互作用通过哪些机制导致早产儿支气管肺发育不良严重程度的差异？"
+        ],
+        "newDecision": "add_source_explicit_questions",
+        "reasonZh": "仅将Q3 contribute to译为促成，保留贡献关系；同项Q1原文causes仍可译引起。"
+      }
+    },
+    {
+      "labId": "ucsd-live-lab-e882a22f6f0b13",
+      "reviewIndex": 213,
+      "ordinal": 446,
+      "labName": "Air-Sea Interaction Laboratory",
+      "entityType": "research_group",
+      "rawSha256": "a388f8ecd68834fb909a86ec15348659d0ba09ff9b51efde0a85ebc1e334b4df",
+      "packetSha256": "30789040dcd28557809f01415f76e34745e326e4f824bec6d22ce5e4c248aede",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "以往研究关注：非线性与风力作用在海面精细结构中起什么作用？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d87bf35564b10aaa",
+          "quote": "Previous work in these areas has been concerned with the combined effects of nonlinearity and Coriolis forces on long internal waves which propagate on the thermocline, and understanding the role of nonlinearity and wind-forcing on the fine-scale structure of the ocean surface.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:06:26+00:00",
+          "bodySha256": "8465de05377fa1fddd43b6890345cff6459d98b26104eb0af47c37dc036b419d"
+        }
+      ],
+      "reasonZh": "原文Previous work明确以往研究，在问题字段中也保留历史限定；不推断当前仍开展该项目。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-d87bf35564b10aaa",
+          "sourceUrl": "https://airsea.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:26+00:00",
+          "bodySha256": "8465de05377fa1fddd43b6890345cff6459d98b26104eb0af47c37dc036b419d",
+          "textSha256": "e77fb4901325a84e628c6ba241984e168eabf666a8fbe786b96e729f2fd4272b",
+          "textCharacters": 3493,
+          "readRanges": [
+            [
+              0,
+              3493
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        },
+        {
+          "sourceId": "src-842a3c4cf0ca39bf",
+          "sourceUrl": "https://scripps.ucsd.edu/profiles/llenain",
+          "sourceObservedAt": "2026-10-02T22:49:54+00:00",
+          "bodySha256": null,
+          "textSha256": "0d36caea87690c0eb83ef90ca53b875b89c377f62309b5dc840e785705e69c41",
+          "textCharacters": 57,
+          "readRanges": [
+            [
+              0,
+              57
+            ]
+          ],
+          "coverage": "full_packet_text_read",
+          "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+        }
+      ],
+      "priorScientificReviewedAt": "2026-10-16T01:55:29+00:00",
+      "previousDraftReviewedAt": "2026-10-16T08:24:55+00:00",
+      "addendumReview": {
+        "reviewedAt": "2026-10-16T08:47:07+00:00",
+        "sourceDraftSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+        "originalItemCanonicalSha256": "2e4249ceb0c93e1fbad3bd16ec0956568caac3cab6c8baf7133ac7bd766c8061",
+        "scope": "question_field_only_proposal",
+        "oldDecision": "add_source_explicit_questions",
+        "oldQuestions": [
+          "非线性与风力作用在海面精细结构中起什么作用？"
+        ],
+        "newDecision": "add_source_explicit_questions",
+        "reasonZh": "原文Previous work明确以往研究，在问题字段中也保留历史限定；不推断当前仍开展该项目。"
+      }
+    }
+  ],
+  "originalCounts": {
+    "reviewed": 135,
+    "pending": 0,
+    "add_source_explicit_questions": 44,
+    "unchanged": 91,
+    "questions": 57,
+    "separateFieldFindings": 2
+  },
+  "effectiveAggregate": {
+    "reviewed": 135,
+    "add_source_explicit_questions": 45,
+    "unchanged": 90,
+    "questions": 58,
+    "replacedItemCount": 4,
+    "addedQuestionCount": 1
+  },
+  "resolvedRecommendations": [
+    "quinton_over_epithelia",
+    "sajti_contribute",
+    "airsea_previous_work",
+    "lewis_same_source_consistency"
+  ],
+  "preservedFieldsZh": "所有原科学summary/methods/topics、实体/PI/affiliation/URL、raw及packet原字节和捕获日期保持不变；仅草案问题字段语义修订。154新增proof来自其当前packet自身已存在的同sourceId。",
+  "validation": {
+    "allFourFrozenRawAndPacketHashesMatch": true,
+    "allReplacementQuestionsHaveLiteralPacketEvidence": true,
+    "originalQuoteCaptureDatesAndBodyHashesUnchanged": true,
+    "154And261SameSourceAndSameQuestion": true,
+    "optional164And165Unchanged": true
+  },
+  "networkRequestsMade": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorSharedWrites": 0,
+  "inputDraftSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+  "revisions": [
+    {
+      "reviewIndex": 154,
+      "labId": "ucsd-pediatrics-lab-lewis-lab",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "oldQuestions": [],
+      "newQuestions": [
+        "代谢、蛋白质合成与分泌及糖基化等复杂通路如何受到调控？"
+      ],
+      "newQuestionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-8e700a83e994fd49",
+          "quote": "The Lewis lab uses systems biology approaches to make sense of these complex pathways to develop network-based diagnostics for childhood disorders and to understand the regulation and activity of complex pathways, such as metabolism, protein synthesis/secretion, and glycosylation",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "134b533b19f1053c510f95a06e9b09dea8c2222ab8a6afacc5bb3efb5e290aea"
+        }
+      ],
+      "reasonZh": "官方具名Lewis lab明确to understand the regulation目标；与261采用同一既有源、字面引文及原捕获时间，在各独立稳定ID分别补充，不迁移URL或合并实体。"
+    },
+    {
+      "reviewIndex": 160,
+      "labId": "ucsd-pediatrics-lab-quinton-lab",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "oldQuestions": [
+        "液体、电解质及黏液跨上皮移动在囊性纤维化和其他阻塞性肺病中起什么作用？"
+      ],
+      "newQuestions": [
+        "上皮上的液体、电解质与黏液运动在囊性纤维化和其他阻塞性肺病中起什么作用？"
+      ],
+      "newQuestionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3076ddd2e721c1d8",
+          "quote": "Research in the Quinton Laboratory is focused to better understand the roles of fluid, electrolyte, and mucus movements over epithelia affected in Cystic Fibrosis and other obstructive lung diseases.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "7dcd0687380dacd354829669e5993fb7d1cb036189a5ce613e8cd7825a202c3c"
+        }
+      ],
+      "reasonZh": "将over epithelia收窄为上皮上的运动，不增加跨上皮屏障运输含义；疾病、对象及作用关系不变。"
+    },
+    {
+      "reviewIndex": 161,
+      "labId": "ucsd-pediatrics-lab-sajti-lab",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "oldQuestions": [
+        "新生儿高氧暴露通过哪些机制引起炎症并改变肺发育？",
+        "发育来源与组织环境通过哪些机制决定肺巨噬细胞和单核细胞的分子身份及功能潜力？",
+        "基因与环境的相互作用通过哪些机制导致早产儿支气管肺发育不良严重程度的差异？"
+      ],
+      "newQuestions": [
+        "新生儿高氧暴露通过哪些机制引起炎症并改变肺发育？",
+        "发育来源与组织环境通过哪些机制决定肺巨噬细胞和单核细胞的分子身份及功能潜力？",
+        "基因与环境的相互作用通过哪些机制促成早产儿支气管肺发育不良严重程度的差异？"
+      ],
+      "newQuestionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are defining mechanisms by which neonatal hyperoxia exposure causes inflammation and alters lung development.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are defining mechanisms by which developmental origin and tissue environment determine the molecular identities and functional potential of these cells in the mouse and human lung.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-850e43e98cc69a38",
+          "quote": "We are using inbred mouse strains with different susceptibility to hyperoxia induced lung injury to determine mechanisms by which gene-environment interactions contribute to variable levels of BPD severity in premature infants.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "778377a607cbcb0fca5c021f3bb97303ae48c371085a05f5ab13ce6b289dad1f"
+        }
+      ],
+      "reasonZh": "仅将Q3 contribute to译为促成，保留贡献关系；同项Q1原文causes仍可译引起。"
+    },
+    {
+      "reviewIndex": 213,
+      "labId": "ucsd-live-lab-e882a22f6f0b13",
+      "reviewedAt": "2026-10-16T08:47:07+00:00",
+      "oldQuestions": [
+        "非线性与风力作用在海面精细结构中起什么作用？"
+      ],
+      "newQuestions": [
+        "以往研究关注：非线性与风力作用在海面精细结构中起什么作用？"
+      ],
+      "newQuestionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d87bf35564b10aaa",
+          "quote": "Previous work in these areas has been concerned with the combined effects of nonlinearity and Coriolis forces on long internal waves which propagate on the thermocline, and understanding the role of nonlinearity and wind-forcing on the fine-scale structure of the ocean surface.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:06:26+00:00",
+          "bodySha256": "8465de05377fa1fddd43b6890345cff6459d98b26104eb0af47c37dc036b419d"
+        }
+      ],
+      "reasonZh": "原文Previous work明确以往研究，在问题字段中也保留历史限定；不推断当前仍开展该项目。"
+    }
+  ],
+  "patchViewPreparedAt": "2026-10-16T08:48:02+00:00"
+}

@@ -1,0 +1,1014 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:27:36+00:00",
+  "startedAt": "2026-10-16T04:27:36+00:00",
+  "scope": {
+    "gapItemsIndices": [
+      30,
+      47
+    ],
+    "records": 18,
+    "newNetworkRequestsByReviewer": 0,
+    "packetOrProjectionWritesByReviewer": 0,
+    "scientificFieldsChanged": false,
+    "identityAcceptanceChanged": false,
+    "aliasesApplied": false
+  },
+  "counts": {
+    "reviewed": 18,
+    "metadataAndCacheHashMatched": 18,
+    "hydratePassed": 18,
+    "canCountRestored": 18,
+    "finalHTTP": 18,
+    "finalHTTPS": 0,
+    "recordsWithActualHTTPRedirects": 0,
+    "newSourcesWithSameSHAAsPrior": 17,
+    "newSourcesWithSameFullTextTitleAsPrior": 17,
+    "openBlockers": 0
+  },
+  "unresolvedMismatchIdsTouched": [],
+  "guardNotes": [
+    "The 13 unresolved mismatch acceptance gates were not edited or reinterpreted.",
+    "All eighteen new actual destinations in this assignment remain HTTP with no redirect chain; no HTTPS redirect was inferred.",
+    "Original raw.reviewedAt and all scientific/affiliation/identity acceptance fields were retained; identityBindingReviewedAt is a separate review clock.",
+    "Title evidence is explicitly marked quoteLocation=title; departmental faculty pages additionally require explicit my/our/her lab body scope."
+  ],
+  "items": [
+    {
+      "index": 30,
+      "ordinal": 711,
+      "labId": "ucsd-chemistry-biochemistry-lab-tor-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-4ff55423c2b5fa89",
+      "listedUrl": "http://torgroup.ucsd.edu",
+      "actualRequestedUrl": "http://torgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:31+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:31+00:00",
+      "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://torgroup.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-4ff55423c2b5fa89",
+          "quote": "Welcome to the Tor Lab Home.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "具名Tor Lab欢迎语与具名Tor Group正文相互一致。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-61dc67c7eacda35e",
+          "sourceUrl": "https://torgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:49:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "4603fe666b0e67301e234b724e1be657ceb228150e47b1a29110a8d5d1f7b845",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "a8528cd95cb4864404ad1d3810369919699526188bb2ba00d2f6ed7540a2dc0e",
+      "blockers": []
+    },
+    {
+      "index": 31,
+      "ordinal": 713,
+      "labId": "ucsd-chemistry-biochemistry-lab-yang-research-group-jerry-yang",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-600adb3d83e83c74",
+      "listedUrl": "http://yanglab.ucsd.edu",
+      "actualRequestedUrl": "http://yanglab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:33+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:33+00:00",
+      "bodySha256": "b9a06236cb24647384bacb2621f18d33fa51523a54de143cce74c3a3fa975508",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://yanglab.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-600adb3d83e83c74",
+          "quote": "© Yang Research Group",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "具名Yang Research Group页脚与Yang lab新闻上下文一致；新闻原日期不作为当前成员证明。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-590567ddd5d224f3",
+          "sourceUrl": "https://yanglab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "b9a06236cb24647384bacb2621f18d33fa51523a54de143cce74c3a3fa975508",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T02:21:55+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "ccde926e928ba72ad3157f4d16edde2f33578dc94083a990bb5612e81734bef9",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "6373582b2a91be4886985fa85e27cbc2ccd451fc516e7baa5ca5a16888ff0f13",
+      "blockers": []
+    },
+    {
+      "index": 32,
+      "ordinal": 715,
+      "labId": "ucsd-chemistry-biochemistry-lab-yuen-zhou-group",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-8f4b0bcbe54014dc",
+      "listedUrl": "http://yuenzhougroup.ucsd.edu/",
+      "actualRequestedUrl": "http://yuenzhougroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:35+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:35+00:00",
+      "bodySha256": "b2193df8ca453d1afa766ebdd5cd56a9ac6af80e45bc47611f7a687fe833e10b",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://yuenzhougroup.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-8f4b0bcbe54014dc",
+          "quote": "Welcome to the Yuen Zhou Group",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "根页直接欢迎Yuen Zhou Group，名称与既有实体一致。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-88f78b8886230e7d",
+          "sourceUrl": "https://yuenzhougroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:17+00:00",
+          "bodySha256": "b2193df8ca453d1afa766ebdd5cd56a9ac6af80e45bc47611f7a687fe833e10b",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T02:19:16+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "a144864d6a312ee0d6b138514c58b84bec5200c0db3830411e1792af03dc6793",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "754bff82cad3aea90fc1e4ab436e49d9a2780b14c12a6b59699077b855b98a56",
+      "blockers": []
+    },
+    {
+      "index": 33,
+      "ordinal": 724,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-joseph-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-e177ca77f7906e58",
+      "listedUrl": "http://josephgroup.ucsd.edu/",
+      "actualRequestedUrl": "http://josephgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:37+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:37+00:00",
+      "bodySha256": "840b278ced95c4d48d9320ae340ac2d1bc55d1dae406983b7a3251ebaf3b1b9d",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://josephgroup.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-e177ca77f7906e58",
+          "quote": "Welcome to the Joseph Lab",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        }
+      ],
+      "identityReason": "标题明确Welcome to the Joseph Lab，正文招募信息具名Dr. Simpson Joseph。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-2138cbb72c206404",
+          "sourceUrl": "https://josephgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:15+00:00",
+          "bodySha256": "840b278ced95c4d48d9320ae340ac2d1bc55d1dae406983b7a3251ebaf3b1b9d",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:49:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "f3818caefdff64e18e6fae3e7a6eb51600eb7263e79c5c0ad2b2ebc31ce38a23",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "abaecc0922aaf3a34e2aaba7e486892f15b90c4475b779834807518d29daed68",
+      "blockers": []
+    },
+    {
+      "index": 34,
+      "ordinal": 726,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-komor-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-239aafc0f490bcff",
+      "listedUrl": "http://komorlab.ucsd.edu",
+      "actualRequestedUrl": "http://komorlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:38+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:38+00:00",
+      "bodySha256": "24c5afa6a2c7680a58e07de9728643698a66263e5bc5bbc5312b356d2edbcdc8",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://komorlab.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-239aafc0f490bcff",
+          "quote": "The Komor Lab",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文直接标识The Komor Lab，随后是同一实验室的研究说明。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-883854c66b939959",
+          "sourceUrl": "https://komorlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:15+00:00",
+          "bodySha256": "24c5afa6a2c7680a58e07de9728643698a66263e5bc5bbc5312b356d2edbcdc8",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:49:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "93de5fd1bb63f69807d3d58fa950d402adb44a432705c81117c8881e387d2f7f",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "0d48a0e46004afe8b1424ca5210db3aaefa09e677acd0e8d211c203c0101f5c7",
+      "blockers": []
+    },
+    {
+      "index": 35,
+      "ordinal": 732,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-toor-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-63a8a61dea803852",
+      "listedUrl": "http://rna.ucsd.edu/",
+      "actualRequestedUrl": "http://rna.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:40+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:40+00:00",
+      "bodySha256": "4447365309ee9c4c9d665fb8dd3722452eddfe7610b08dcd08689a428b495c76",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://rna.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-63a8a61dea803852",
+          "quote": "Welcome to the Toor Lab!",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文直接欢迎Toor Lab，并继续用We描述同一团队。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-0e9ac488b86bbd8d",
+          "sourceUrl": "https://rna.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:22+00:00",
+          "bodySha256": "4447365309ee9c4c9d665fb8dd3722452eddfe7610b08dcd08689a428b495c76",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:50:12+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "265a44fd21aa69d2b375fe69bbe7d6a5333763467bfa7e7dd87a424b9b994c30",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "211686fb73867ee2efff0d0b18248f1e2e1741ddfe4a08a96a59ed3f5714545b",
+      "blockers": []
+    },
+    {
+      "index": 36,
+      "ordinal": 733,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-zid-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-48c0d91aedf817a4",
+      "listedUrl": "http://zidlab.ucsd.edu",
+      "actualRequestedUrl": "http://zidlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:42+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:42+00:00",
+      "bodySha256": "1da49bd884a8fcd0d48820c9587f42a29f55dfc64624a4c8aed236e57d6837e6",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://zidlab.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-48c0d91aedf817a4",
+          "quote": "The Zid Lab at UC San Diego",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文直接标识The Zid Lab at UC San Diego。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-eb99cdce3c82573c",
+          "sourceUrl": "https://zidlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:18+00:00",
+          "bodySha256": "1da49bd884a8fcd0d48820c9587f42a29f55dfc64624a4c8aed236e57d6837e6",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:50:12+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "1b3bd8f09f45e045d2f10caeb2384470b49b487d73d82dd5c6fc264d3b20904f",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "4a48a03c0935aef14755efb7c8c9a5360e33865e750e4c6686cf136421e144e8",
+      "blockers": []
+    },
+    {
+      "index": 37,
+      "ordinal": 807,
+      "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-2705f44bd0668fde",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+      "observedAt": "2026-10-16T04:23:43+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:43+00:00",
+      "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-2705f44bd0668fde",
+          "quote": "James T. Kadonaga",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-2705f44bd0668fde",
+          "quote": "In my lab, we study the regulation of transcription by RNA polymerase II.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "James T. Kadonaga具名标题与正文In my lab范围共同确认其实验室；个人姓名本身未单独当作实验室证明。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-4cdf2e8fbc6dcb8c",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+          "observedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": false
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:52:41+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "46ba9e5e3a9a342b6a382638b0d2a1554ebb27f200565207976dbe764cb3ae40",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "7de31ee8050817505ea3e7ee981db43b113f7da28fc8390aaea9e10ce3150645",
+      "blockers": []
+    },
+    {
+      "index": 38,
+      "ordinal": 808,
+      "labId": "ucsd-biological-sciences-lab-yelon-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-f453e78376250534",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/dyelon",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/dyelon",
+      "observedAt": "2026-10-16T04:23:44+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:44+00:00",
+      "bodySha256": "17c11774a5c71811d1991c03d25864e46fcefd029d6376adec9e857f7f9f12ec",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/dyelon",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-f453e78376250534",
+          "quote": "Deborah Yelon",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-f453e78376250534",
+          "quote": "The goal of our laboratory's research is to understand the molecular mechanisms that specify the size, shape, and attributes of each cardiac chamber.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "Deborah Yelon具名标题与our laboratory正文共同确认实验室作用域。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-413a97ec229e1fc0",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/dyelon",
+          "observedAt": "2026-10-16T01:07:33+00:00",
+          "bodySha256": "17c11774a5c71811d1991c03d25864e46fcefd029d6376adec9e857f7f9f12ec",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:52:41+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "d42e7b3d26eb85711ffd5ac80e7a8a4bfe281fc37a2555c536ce3ea9e97c6656",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "a3ca01495ce340d279c680178c73f0c36317d2dc8492c7df5b5c98c71705eb72",
+      "blockers": []
+    },
+    {
+      "index": 39,
+      "ordinal": 809,
+      "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-11b4f50c5487577f",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+      "observedAt": "2026-10-16T04:23:45+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:45+00:00",
+      "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-11b4f50c5487577f",
+          "quote": "Jens Lykke-Andersen",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-11b4f50c5487577f",
+          "quote": "Our laboratory studies the mechanisms of regulation of translation and mRNA turnover in human gene expression.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "Jens Lykke-Andersen具名标题与Our laboratory研究正文共同确认实验室作用域。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-322a2ca2584566c6",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:52:41+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "ed898e8ef86bd6e221e002a7b880036eba98de6fadfa011320b070ddefabf4f8",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "b3aec9b2490ea40f527e575349a13fd1c08a4d8fdffbb2fa8cf3b57910eef356",
+      "blockers": []
+    },
+    {
+      "index": 40,
+      "ordinal": 810,
+      "labId": "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-73d585e359a77307",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/skryazhimskiy",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/skryazhimskiy",
+      "observedAt": "2026-10-16T04:23:46+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:46+00:00",
+      "bodySha256": "034ec901b57297103a367c071ddb059ef4c825a41ab132f451dc09594318a3e0",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/skryazhimskiy",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-73d585e359a77307",
+          "quote": "Sergey Kryazhimskiy",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-73d585e359a77307",
+          "quote": "Our lab has three complementary themes.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "Sergey Kryazhimskiy具名标题与Our lab正文共同确认实验室作用域；旧传记日期未提升为当前任职证明。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-a9e2cce5f55b42cf",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/skryazhimskiy",
+          "observedAt": "2026-10-16T01:07:35+00:00",
+          "bodySha256": "034ec901b57297103a367c071ddb059ef4c825a41ab132f451dc09594318a3e0",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:53:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "c5ab4685db2b8f85a90ba37b9918e6e5c852e7b8e5eb08dfd04c123c715fc80d",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "401f98883739009d9e53da1a412dfe51465eeff5514f07839ede2c9a88c9cedb",
+      "blockers": []
+    },
+    {
+      "index": 41,
+      "ordinal": 811,
+      "labId": "ucsd-biological-sciences-lab-jackrel-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-a79d5b12162bf295",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/sjackrel",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/sjackrel",
+      "observedAt": "2026-10-16T04:23:47+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:47+00:00",
+      "bodySha256": "92189ecf4dd2764710c54fe1396f6b4bdcf6a80467807a90967728835962d0e7",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/sjackrel",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-a79d5b12162bf295",
+          "quote": "Research in the Jackrel lab focuses on understanding when and how biological diversity at multiple scales regulates ecosystem functions.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文明确命名Jackrel lab，非仅凭faculty页姓名。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-544b5d38b78800fb",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/sjackrel",
+          "observedAt": "2026-10-16T01:07:37+00:00",
+          "bodySha256": "92189ecf4dd2764710c54fe1396f6b4bdcf6a80467807a90967728835962d0e7",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:53:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "bb43918429533ad55ca0997db962d4152e3c05e8ff439db970e106a6d081ae78",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "ae626138463a2e04be5d03f7198db1ee03284de7b0e2e6385e255675e46e1e10",
+      "blockers": []
+    },
+    {
+      "index": 42,
+      "ordinal": 812,
+      "labId": "ucsd-biological-sciences-lab-halpain-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-e0f7e4468c2b4014",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/shalpain",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/shalpain",
+      "observedAt": "2026-10-16T04:23:48+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:48+00:00",
+      "bodySha256": "bce0f4059a773d4f9bcbc32304e82d4ca592d450298fe919f22c60d57a888719",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/shalpain",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-e0f7e4468c2b4014",
+          "quote": "Shelley Halpain",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-e0f7e4468c2b4014",
+          "quote": "Dr. Halpain’s research concerns the molecular basis for neural development. Her laboratory uses advanced light microscopy and quantitative cellular imaging methods to investigate neurite outgrowth and synapse formation.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "Shelley Halpain具名标题与Dr. Halpain/Her laboratory段落共同确认实验室作用域。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-a76f19d10cdb5236",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/shalpain",
+          "observedAt": "2026-10-16T01:07:38+00:00",
+          "bodySha256": "bce0f4059a773d4f9bcbc32304e82d4ca592d450298fe919f22c60d57a888719",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:53:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "37b76b1ee7933cffb33254d9998e74fac2420c8e333e60623f46fb4c6b57a5d6",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "93c4f4dfa298e1a71270b865d85cb6bdbf31020bf40e898811bb0dc4e9083985",
+      "blockers": []
+    },
+    {
+      "index": 43,
+      "ordinal": 813,
+      "labId": "ucsd-biological-sciences-lab-posakony-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-3ddd44182e682269",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/jposakony",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/jposakony",
+      "observedAt": "2026-10-16T04:23:49+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:49+00:00",
+      "bodySha256": "566bbad5d570de13e4fe9ec3ae30dac04c0fd8c735c4d2479a7ae6745cec8c94",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/jposakony",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-3ddd44182e682269",
+          "quote": "James W. Posakony",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-3ddd44182e682269",
+          "quote": "The driving interest of our lab is in the mechanisms by which cell-cell signaling pathways and transcriptional regulatory networks act to specify cell fates during animal development.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "James W. Posakony标题、Jim Posakony正文姓名与our lab段落共同确认同一实验室。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-900c1b5e62983021",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jposakony",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "566bbad5d570de13e4fe9ec3ae30dac04c0fd8c735c4d2479a7ae6745cec8c94",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:53:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "eaa9f7e58be6e0cabdac6a146e187031893e4a77fb093d698de920f79843526e",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "197762c18fdb3c1d167cadef9aee5c6dbffa4c461e51ddc8e3afbef22e0f48cb",
+      "blockers": []
+    },
+    {
+      "index": 44,
+      "ordinal": 814,
+      "labId": "ucsd-biological-sciences-lab-reinagel-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-df39d9c8aa84eee7",
+      "listedUrl": "http://biology.ucsd.edu/research/faculty/preinagel",
+      "actualRequestedUrl": "http://biology.ucsd.edu/research/faculty/preinagel",
+      "observedAt": "2026-10-16T04:23:50+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:50+00:00",
+      "bodySha256": "d914a30ba9c9208b910655d648dc5dea8ee4aecc2a2059d87754b61fa6407e26",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://biology.ucsd.edu/research/faculty/preinagel",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-df39d9c8aa84eee7",
+          "quote": "The Reinagel lab studies perceptually guided selection of action in the visually behaving rat.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文明确命名Reinagel lab，非仅凭faculty页姓名。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-2a37e9a7f413e90d",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/preinagel",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "d914a30ba9c9208b910655d648dc5dea8ee4aecc2a2059d87754b61fa6407e26",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:53:25+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "440679dc882b331e7333b3bf551311b1fe562796939f96f50fe52f32845f00e0",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "59e24495249b44db249ba3061790c25399b720a55a8247d18537bc09110c6904",
+      "blockers": []
+    },
+    {
+      "index": 45,
+      "ordinal": 820,
+      "labId": "ucsd-electrical-and-computer-engineering-lab-ndao-lab",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-05e3439d91255ff8",
+      "listedUrl": "http://ndao.ucsd.edu/",
+      "actualRequestedUrl": "http://ndao.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:52+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:52+00:00",
+      "bodySha256": "8e9d750bc17e80588c4ed968650d6082543008a149a47a0655d80991d25b487d",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://ndao.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-05e3439d91255ff8",
+          "quote": "UCSD Ndao Lab",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        }
+      ],
+      "identityReason": "实际根页HTML标题字面为UCSD Ndao Lab，与既有已核验同站研究/成员证据一致；根正文出版简介不用于扩展科研内容。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-1a3908f4fa43a1a8",
+          "sourceUrl": "https://ndao.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "8e9d750bc17e80588c4ed968650d6082543008a149a47a0655d80991d25b487d",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T03:21:31+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "ec6afc420758d07f20f79ebfbd6f35e31c8925a43c8fdab344e9ff594ee52637",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "53b82aee91d166fa620bb47cab8e977daf1607c088e7279dd9b04268eff8be82",
+      "blockers": []
+    },
+    {
+      "index": 46,
+      "ordinal": 826,
+      "labId": "ucsd-structural-engineering-lab-m2do-multiscale-multiphysics-design-optimization-laboratory",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-e7c58d10633a3d09",
+      "listedUrl": "http://m2do.ucsd.edu/",
+      "actualRequestedUrl": "http://m2do.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:54+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:54+00:00",
+      "bodySha256": "36c10b6dd4a7e4cd58ef0399d2242a26b9a8f5cf5e749976bcbc8e498a5f2b86",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://m2do.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-e7c58d10633a3d09",
+          "quote": "Homepage | M2DO - Multiscale, Multiphysics Design Optimization",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-e7c58d10633a3d09",
+          "quote": "Welcome to M2DO! We are a team of interdisciplinary scientists and engineers with enthusiasm for computational modeling and optimization of engineering designs.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "标题具名M2DO及正文Welcome to M2DO/We are a team共同确认目的页；只绑定已有实体，未改变实体类型。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-2f593178d7ed58f7",
+          "sourceUrl": "https://m2do.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:49+00:00",
+          "bodySha256": "b549bd5fb28d188aa2e2d302007163257642db970eb739980cfd5449c2e19fe4",
+          "sameBodySHA256": false,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:54:02+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "7e2c682849e7254cdfb439fb7b759c1e4dca21deab280541887a3b1e100b5622",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "0bd2fd68d086dbd447e4a8986c493dc261256bf3c5c5c12f5e1f183f620d9375",
+      "blockers": []
+    },
+    {
+      "index": 47,
+      "ordinal": 833,
+      "labId": "ucsd-structural-engineering-lab-fluid-effects-on-structural-systems-research-group-fessrg",
+      "decision": "identity_binding_added",
+      "reviewedAt": "2026-10-16T04:27:36+00:00",
+      "sourceId": "src-787541b8969257d3",
+      "listedUrl": "http://fessrg.ucsd.edu/",
+      "actualRequestedUrl": "http://fessrg.ucsd.edu/",
+      "observedAt": "2026-10-16T04:23:56+00:00",
+      "liveCheckedAt": "2026-10-16T04:23:55+00:00",
+      "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+      "actualCacheSHA256Verified": true,
+      "sourceMatchesFetch": true,
+      "fetchEqualsOriginalGapReceipt": true,
+      "finalUrl": "http://fessrg.ucsd.edu/",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-787541b8969257d3",
+          "quote": "Welcome to the research site of the Fluid Effects on Structural Systems Research Group from the University of California, San Diego.",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "identityReason": "正文完整命名Fluid Effects on Structural Systems Research Group并以同一group连续描述。",
+      "priorEquivalentSourceIdsActuallyReadOrCompared": [
+        {
+          "sourceId": "src-be62b6c92d27644c",
+          "sourceUrl": "https://fessrg.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:51+00:00",
+          "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "reviewScope": "literal title and named lab/group body context; prior semantics reused only after exact bodySHA or full text/title equality",
+      "beforeCanCountAsVerifiedLabGroupURL": false,
+      "afterCanCountAsVerifiedLabGroupURL": true,
+      "statusBefore": "supported",
+      "statusAfter": "supported",
+      "scientificReviewedAtPreserved": "2026-10-16T01:54:02+00:00",
+      "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+      "allOldRawFieldsAndEvidencePreserved": true,
+      "newEvidenceSupportsIdentityOnly": true,
+      "scientificAndIdentityAcceptanceFieldsFingerprint": "bf9caec83d11d9f66f4fb6a2e6fd23bb9816fac3b3828e8411e8f3653b585cc9",
+      "hydrate": "passed_before_and_after_and_saved_reload",
+      "packetSha256UnchangedDuringWrite": "fa63521f95ddb54e9d1d572f8ad29f152b9018da9f3ec7f8617f7c60d3c27c06",
+      "blockers": []
+    }
+  ]
+}

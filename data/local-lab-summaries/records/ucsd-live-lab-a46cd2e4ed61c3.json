@@ -1,0 +1,118 @@
+{
+  "labId": "ucsd-live-lab-a46cd2e4ed61c3",
+  "status": "supported",
+  "summaryZh": "Existential Robotics Lab 研究不确定动态环境中的机器人感知、定位建图、运动规划和多机器人决策。团队使用机器学习、控制理论、优化和计算机视觉。",
+  "researchQuestions": [],
+  "topics": [
+    "机器人自主性",
+    "定位建图",
+    "多机器人决策"
+  ],
+  "methods": [
+    "机器学习",
+    "控制理论",
+    "优化",
+    "计算机视觉"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-f920135e0d37890b",
+      "quote": "Existential Robotics Lab We use principles from machine learning, control theory, optimization, and computer vision to develop intelligent, reliable, efficient robot systems operating in dynamic environments under uncertainty. Team Research Publications Research Areas Our research lies at the intersection of simultaneous localization and mapping (SLAM), motion planning, and reinforcement learning applied to robotics with emphasis on online execution, safety, and robustness. Robot Perception and Mapping We develop environment models that unify geometric, semantic, and temporal reasoning to achieve understanding of space, objects, and dynamics from onboard robot sensing. Mobile Robot Autonomy We develop algorithms for robot task planning and autonomous robot navigation that enable adaptive and safe behaviors in novel operational conditions. Distributed Intelligence We develop principles for collaborative inference and decision making in heterogeneous robot teams to achieve distributed intelligence. Sponsors We are grateful to the generous sponsors who make our research possible!",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-f920135e0d37890b",
+      "quote": "Existential Robotics Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-a04c63dab2f96230",
+      "quote": "Nikolay Atanasov is a Professor in the Department of Electrical and Computer Engineering at the University of California San Diego",
+      "supports": [
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究问题待核（限本轮已审阅材料）：根文为自主机器人模型、算法和原则开发领域；how具体问句只在官方负责人个人His work段落，没有明确由实验室整体提出。按严格whole-lab边界不把个人问题自动归为实验室。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:24:55+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:24:55+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "根文为自主机器人模型、算法和原则开发领域；how具体问句只在官方负责人个人His work段落，没有明确由实验室整体提出。按严格whole-lab边界不把个人问题自动归为实验室。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-f920135e0d37890b",
+        "sourceUrl": "https://existentialrobotics.org/",
+        "sourceObservedAt": "2026-10-16T01:03:05+00:00",
+        "bodySha256": "b53d5e914defe0ef04a61067fdd4d3fdc158bd15cca77c275f9a19c1828f8bc7",
+        "textSha256": "b283ddf22bc71a281bfe18187e85d678009cf5ef38865e982943e2c1826894f2",
+        "textCharacters": 1093,
+        "readRanges": [
+          [
+            0,
+            1093
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-9379a1aebbed2643",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=409",
+        "sourceObservedAt": "2026-10-02T22:47:57+00:00",
+        "bodySha256": null,
+        "textSha256": "4c1d6e1ce67b0c8408e49574a16128540c069b5f68678537ca6482ac1e185719",
+        "textCharacters": 55,
+        "readRanges": [
+          [
+            0,
+            55
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-a04c63dab2f96230",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=409",
+        "sourceObservedAt": "2026-10-16T01:00:09+00:00",
+        "bodySha256": "2cd5c653774ccfefe983bec404af812459fb520946292da98418f5acef5a041b",
+        "textSha256": "1ea2819ebb12203499d38f088a53091e1c8972ff460b48a9bcadde37825de1cf",
+        "textCharacters": 2450,
+        "readRanges": [
+          [
+            0,
+            2450
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

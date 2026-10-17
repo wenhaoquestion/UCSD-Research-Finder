@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:10:51+00:00",
+  "sourceRefreshManifest": "data/local-lab-summaries/cache-delta-packet-refresh-20261016-0405.json",
+  "sourceRefreshManifestSha256": "a3d75f8566fd8211cac83732ca841c6ff4922d58fea9794cb2523cb9653fe7ce",
+  "scope": "Only ordinals 116,117,119,121; recovered roots only; no collector/network/packet/projection/code changes",
+  "networkRequestsMade": 0,
+  "reviewedCount": 4,
+  "supportedUpgradeCount": 4,
+  "hydrationPassedCount": 4,
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-roy",
+      "ordinal": 116,
+      "reviewedAt": "2026-10-16T04:10:51+00:00",
+      "decision": "changed",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "sourceIdsRead": [
+        "src-ef21a4f6fd81f0a6"
+      ],
+      "sourceReadScope": "full recovered scientific body plus title/headings and existing raw record; cache exact extraction and queue provenance verified",
+      "source": {
+        "sourceId": "src-ef21a4f6fd81f0a6",
+        "sourceUrl": "https://roylab.biology.ucsd.edu/",
+        "requestedUrl": "https://roylab.biosci.ucsd.edu/",
+        "checkedUrl": "https://roylab.biosci.ucsd.edu/",
+        "queueUrl": "https://roylab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+        "collectorSha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e4e2430a6a981732911ba6112ebe3138b68bb391c022870a56305ab61565a0ba.html",
+        "title": "Roy Lab | Macroecology, Marine Microbiomes, Global Change Biology",
+        "headings": [
+          "Welcome",
+          "Welcome to Kaustuv Roy’s research group at the University of California San Diego. Our research is focused on better understanding: (i) the processes that generate and maintain large scale spatial gradients in biodiversity (ii) how such gradients are being impacted by climate change and other anthropogenic impacts (e.g. human harvesting) and (iii) the ecological and evolutionary consequences of such changes. The research in the lab is interdisciplinary and we address these questions using data for coastal marine invertebrates as well as the microbial taxa associated with them (i.e. their microbiomes).",
+          "More about the projects we are working on …….",
+          "Origin and maintenance of the Latitudinal Diversity gradient",
+          "Molluscan microbiomes",
+          "Biotic effects of climate change",
+          "Dynamics of extinctions – past and future",
+          "Conservation of coastal ecosystems"
+        ],
+        "role": "listed_lab_destination",
+        "textExtractionVersion": "summary-visible-content-v2"
+      },
+      "rawCacheSha256Verified": true,
+      "originalQueueCaptureVerified": true,
+      "fullExtractionMatchesPacket": true,
+      "sourceBodyCharactersRead": 5530,
+      "listedWebsitePreserved": "https://roylab.biosci.ucsd.edu",
+      "observedRedirects": [
+        {
+          "from": "https://roylab.biosci.ucsd.edu/",
+          "to": "https://roylab.biology.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "before": {
+        "status": "unresolved",
+        "summaryZh": null,
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet has no sources."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "after": {
+        "status": "supported",
+        "summaryZh": "Roy 研究组关注大尺度生物多样性梯度的形成与维持，以及气候变化和人类活动对这些格局的生态与演化影响。研究以沿岸海洋无脊椎动物及其微生物组为对象，结合更新世与全新世记录、分子标记、地球化学和表型数据，并用模拟模型研究灭绝造成的多样性损失。",
+        "researchQuestions": [
+          "哪些过程形成并维持大尺度生物多样性梯度，气候变化和人类活动又如何改变这些格局？",
+          "海洋软体动物的微生物组如何随空间和环境梯度变化，这些格局如何演化并受到人类活动影响？",
+          "人类导致的灭绝如何损耗表型多样性与类群的演化历史？"
+        ],
+        "topics": [
+          "纬度多样性梯度",
+          "海洋软体动物微生物组",
+          "气候变化的生态与演化效应",
+          "灭绝与多样性损失"
+        ],
+        "methods": [
+          "综合更新世与全新世记录、分子标记、地球化学数据及表型测量",
+          "模拟模型"
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "根页标题为 Roy Lab，正文明确说明这是 Kaustuv Roy 在 University of California San Diego 的研究组，并以 our research 和 research in the lab 说明整体研究。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "根页正文明确写明 Kaustuv Roy 的研究组位于 University of California San Diego；该声明未附当前任职日期。"
+        },
+        "uncertainty": [
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+          "页面科研正文没有整体更新时间；缓存抓取时间不等同于研究内容或任职声明日期。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T04:10:51+00:00"
+      },
+      "addedEvidence": [
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "Welcome to Kaustuv Roy’s research group at the University of California San Diego.",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "Our research is focused on better understanding: (i) the processes that generate and maintain large scale spatial gradients in biodiversity (ii) how such gradients are being impacted by climate change and other anthropogenic impacts (e.g. human harvesting) and (iii) the ecological and evolutionary consequences of such changes.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "The research in the lab is interdisciplinary and we address these questions using data for coastal marine invertebrates as well as the microbial taxa associated with them (i.e. their microbiomes).",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "We have recently initiated research projects that will quantify (i) how the microbiomes of marine mollusks vary across large spatial and environmental gradients and the functional consequences of such variation (ii) how such patterns have evolved and (iii) how they are affected by anthropogenic impacts such as coastal eutrophication and climate change.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "Using a combination of the Pleistocene and Holocene record of living species, molecular markers, geochemical data and phenotypic measurements we are investigating how marine molluscan species responded to past changes in climate.",
+          "supports": [
+            "research",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "But we still know little about how human-caused extinctions erode phenotypic diversity and evolutionary histories of clades and how such losses compare to those in the past. We are exploring this issue using simulation models as well as empirical data for marine and terrestrial mollusks.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-ef21a4f6fd81f0a6",
+          "quote": "Origin and maintenance of the Latitudinal Diversity gradient",
+          "supports": [
+            "topics"
+          ]
+        }
+      ],
+      "oldEvidencePreserved": true,
+      "oldReviewUncertaintyAndBlockersPreservedIn": "regainedRootReviews[].previousReviewPreserved",
+      "reason": "新根页提供明确研究组身份、机构句和多段整体研究说明；研究问题与方法均有字面支持。此前 robots 不可用仅为历史访问结果，不能代表本次成功取得的正文。",
+      "literalResearchAnchorsOnly": [],
+      "candidateLinksFetched": false,
+      "gapPlanChanged": false,
+      "hydration": {
+        "passed": true,
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request"
+      },
+      "networkRequestsMade": 0,
+      "assessmentFingerprint": "613cb2c959038a6aac98730a6c9f1b4729007c57999c35762fca5da7cb1d9c2b"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-russell-lab-com",
+      "ordinal": 117,
+      "reviewedAt": "2026-10-16T04:10:21+00:00",
+      "decision": "changed",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "sourceIdsRead": [
+        "src-5e3a018cefd1f8a7"
+      ],
+      "sourceReadScope": "full recovered scientific body plus title/headings and existing raw record; cache exact extraction and queue provenance verified",
+      "source": {
+        "sourceId": "src-5e3a018cefd1f8a7",
+        "sourceUrl": "https://www.russell-lab.com/",
+        "requestedUrl": "https://www.russell-lab.com/",
+        "checkedUrl": "https://www.russell-lab.com/",
+        "queueUrl": "https://www.russell-lab.com/",
+        "observedAt": "2026-10-16T03:47:26+00:00",
+        "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+        "collectorSha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8f8d1da4503bd362a2a9783c8a06e7ca547f9c35ffb222919e9ce0a7f85b0675.html",
+        "title": "Russell laboratory",
+        "headings": [
+          "How are viral populations detected by our body?"
+        ],
+        "role": "listed_lab_destination",
+        "textExtractionVersion": "summary-visible-content-v2"
+      },
+      "rawCacheSha256Verified": true,
+      "originalQueueCaptureVerified": true,
+      "fullExtractionMatchesPacket": true,
+      "sourceBodyCharactersRead": 1096,
+      "listedWebsitePreserved": "https://www.russell-lab.com/",
+      "observedRedirects": [],
+      "before": {
+        "status": "unresolved",
+        "summaryZh": "UCSD 生物科学官方教师名录列出 Alistair Russell，但未提供 Russell Lab 的研究或网页身份说明。目的网址 robots 获取不可用，实验室身份与研究仍待核实。",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "教师名录能确认个人姓名，不能单独确认实验室实体。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "未确认研究内容或实验室与该个人的映射。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet only contains a faculty catalogue listing."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "after": {
+        "status": "supported",
+        "summaryZh": "Russell 实验室研究病毒群体变异如何驱动先天免疫应答，以及哪些细胞特征决定干扰素诱导的罕见性及其随感染进程的变化，重点关注流感。研究结合单细胞转录组学与基因组学、流式细胞术、群体水平测序和精细遗传分析，并探索这些认识对治疗干预与候选疫苗的意义。",
+        "researchQuestions": [
+          "病毒群体的变异如何驱动先天免疫应答？",
+          "哪些细胞特征决定干扰素诱导的罕见性，这些特征如何随感染进程变化？",
+          "这些过程的认识能否用于改进治疗干预和候选疫苗？"
+        ],
+        "topics": [
+          "流感",
+          "病毒群体变异",
+          "先天抗病毒免疫",
+          "干扰素诱导"
+        ],
+        "methods": [
+          "单细胞转录组学与基因组学",
+          "流式细胞术",
+          "群体水平测序",
+          "精细遗传分析"
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "本次原列表目的页标题明确为 Russell laboratory，正文以 My lab studies 和 We use 说明实验室整体研究；旧教师目录仅用于保留个人姓名历史证据。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "当前实验室首页正文没有实体局部机构声明；旧 UCSD 教师目录中的 Alistair Russell 姓名不能独立证明实验室隶属。"
+        },
+        "uncertainty": [
+          "实验室首页正文未列出负责人姓名；旧教师目录确认 Alistair Russell 个人，但本次不据此单独核实负责人映射或现时任职。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T04:10:21+00:00"
+      },
+      "addedEvidence": [
+        {
+          "sourceId": "src-5e3a018cefd1f8a7",
+          "quote": "Russell laboratory",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-5e3a018cefd1f8a7",
+          "quote": "My lab studies these rare events that define the subsequent immune response, particularly in the context of an important human pathogen, influenza.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-5e3a018cefd1f8a7",
+          "quote": "We use a multidisciplinary approach, leveraging single cell transcriptomics/genomics, flow cytometry, population-level sequencing, and fine-grained genetic analysis to explore the following concepts:",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-5e3a018cefd1f8a7",
+          "quote": "How does variation in viral populations drive the resultant innate immune response? What cellular features control the rarity of interferon induction? How do they change as infection progresses? Can we leverage our knowledge of these processes to develop improved therapeutic interventions and vaccine candidates?",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldEvidencePreserved": true,
+      "oldReviewUncertaintyAndBlockersPreservedIn": "regainedRootReviews[].previousReviewPreserved",
+      "reason": "原列表主页标题明确为实验室，正文 My lab 对整体研究及方法有清楚说明，可确认实体与研究；机构和负责人映射未靠域名或个人名录推断。",
+      "literalResearchAnchorsOnly": [],
+      "candidateLinksFetched": false,
+      "gapPlanChanged": false,
+      "hydration": {
+        "passed": true,
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request"
+      },
+      "networkRequestsMade": 0,
+      "assessmentFingerprint": "fd257493428a5b041c1d26d9d53779a067cd3eecdc9d7866a5e432f0b32e82e1"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-saier",
+      "ordinal": 119,
+      "reviewedAt": "2026-10-16T04:10:21+00:00",
+      "decision": "changed",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "sourceIdsRead": [
+        "src-a122b7ee4c4707e9"
+      ],
+      "sourceReadScope": "full recovered scientific body plus title/headings and existing raw record; cache exact extraction and queue provenance verified",
+      "source": {
+        "sourceId": "src-a122b7ee4c4707e9",
+        "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+        "requestedUrl": "https://saierlab.biosci.ucsd.edu/",
+        "checkedUrl": "https://saierlab.biosci.ucsd.edu/",
+        "queueUrl": "https://saierlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:27+00:00",
+        "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+        "collectorSha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/72587ea607aea5c0cfb5f665ddf2c56e588e8cc7c55fa783d7b3f02e2c7083d8.html",
+        "title": "Saier Lab |",
+        "headings": [
+          "Welcome to the Saier Lab",
+          "About us",
+          "Latest News",
+          "Hot off the press",
+          "Hot off the press",
+          "Hot off the press"
+        ],
+        "role": "listed_lab_destination",
+        "textExtractionVersion": "summary-visible-content-v2"
+      },
+      "rawCacheSha256Verified": true,
+      "originalQueueCaptureVerified": true,
+      "fullExtractionMatchesPacket": true,
+      "sourceBodyCharactersRead": 2436,
+      "listedWebsitePreserved": "https://saierlab.biosci.ucsd.edu",
+      "observedRedirects": [],
+      "before": {
+        "status": "unresolved",
+        "summaryZh": null,
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet has no sources."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "after": {
+        "status": "supported",
+        "summaryZh": "Saier 实验室研究细菌的转录与代谢调控、转运蛋白演化，以及转座子介导的定向突变。实验室采用生化、分子遗传学、生理学和生物信息学方法，并创建和维护转运蛋白分类数据库 TCDB。",
+        "researchQuestions": [
+          "细菌的转录与代谢如何受到调控？",
+          "转运蛋白如何演化？",
+          "转座子介导的定向突变如何发生？"
+        ],
+        "topics": [
+          "细菌转录与代谢调控",
+          "转运蛋白演化",
+          "转座子介导的定向突变",
+          "转运蛋白分类数据库 TCDB"
+        ],
+        "methods": [
+          "生化方法",
+          "分子遗传学方法",
+          "生理学方法",
+          "生物信息学方法"
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "根页明确写有 Welcome to the Saier Lab，并说明 Milton Saier 是实验室负责人；our laboratory 与 three primary research interests 限定为实验室整体研究。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "当前 packet 的实验室科研正文未包含实体局部机构隶属声明；未把网页通用校院导航或 UCSD 域名当作该声明。"
+        },
+        "uncertainty": [
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+          "科研段落未标明整体更新时间；新闻条目的日期不用于推断整个实验室科研说明的更新时间。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T04:10:21+00:00"
+      },
+      "addedEvidence": [
+        {
+          "sourceId": "src-a122b7ee4c4707e9",
+          "quote": "Welcome to the Saier Lab",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-a122b7ee4c4707e9",
+          "quote": "Dr. Milton Saier is the head of the laboratory.",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-a122b7ee4c4707e9",
+          "quote": "Our laboratory takes a multidisciplinary approach to science, using biochemical, molecular genetic, physiological, and bioinformatic approaches.",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-a122b7ee4c4707e9",
+          "quote": "We have three primary research interests, one concerned with transcriptional and metabolic regulation in bacteria, a second with transport protein evolution, and a third with the recently identified process of transposon-mediated directed mutation.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-a122b7ee4c4707e9",
+          "quote": "We also created and now maintain the Transporter Classification DataBase ( TCDB ), which was adopted by the International Union of Biochemistry and Molecular Biology ( IUBMB ) as the primary source of information relating to molecular transport.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldEvidencePreserved": true,
+      "oldReviewUncertaintyAndBlockersPreservedIn": "regainedRootReviews[].previousReviewPreserved",
+      "reason": "欢迎语、负责人句及 three primary research interests 清楚限定同一实验室；摘要仅采用该整体科研段落，未用后续论文新闻外推方向。",
+      "literalResearchAnchorsOnly": [
+        {
+          "label": "Our Research",
+          "href": "https://saierlab.biosci.ucsd.edu/research/"
+        },
+        {
+          "label": "Research",
+          "href": "https://saierlab.biosci.ucsd.edu/research/"
+        }
+      ],
+      "candidateLinksFetched": false,
+      "gapPlanChanged": false,
+      "hydration": {
+        "passed": true,
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request"
+      },
+      "networkRequestsMade": 0,
+      "assessmentFingerprint": "8b3b4cb8a422bf91d2115cb4351677ec5871fd6036617ae752a55a3e28aa0542"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "ordinal": 121,
+      "reviewedAt": "2026-10-16T04:10:21+00:00",
+      "decision": "changed",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "sourceIdsRead": [
+        "src-7f324059177c4a9a"
+      ],
+      "sourceReadScope": "full recovered scientific body plus title/headings and existing raw record; cache exact extraction and queue provenance verified",
+      "source": {
+        "sourceId": "src-7f324059177c4a9a",
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "requestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "checkedUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "queueUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:57:30+00:00",
+        "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "collectorSha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/48b33698b55f664271c111a4149e82063a89569ec8b056585609ade8852734d8.html",
+        "title": "Biering Lab |",
+        "headings": [
+          "Welcome to the Biering Virology Lab",
+          ""
+        ],
+        "role": "listed_lab_destination",
+        "textExtractionVersion": "summary-visible-content-v2"
+      },
+      "rawCacheSha256Verified": true,
+      "originalQueueCaptureVerified": true,
+      "fullExtractionMatchesPacket": true,
+      "sourceBodyCharactersRead": 556,
+      "listedWebsitePreserved": "https://bieringlab.biosci.ucsd.edu",
+      "observedRedirects": [],
+      "before": {
+        "status": "unresolved",
+        "summaryZh": null,
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet has no sources."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "after": {
+        "status": "supported",
+        "summaryZh": "Biering 病毒学实验室位于 UCSD 生物科学学院分子生物学系，研究病毒与宿主之间的相互作用，旨在发现驱动病毒致病的机制。首页未明确具体病毒对象或研究方法。",
+        "researchQuestions": [
+          "病毒如何与宿主相互作用？",
+          "哪些机制驱动病毒致病？"
+        ],
+        "topics": [
+          "病毒与宿主互作",
+          "病毒致病机制"
+        ],
+        "methods": [],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "本次原列表根页以 Welcome to the Biering Virology Lab 明确命名实验室，紧接着以 We are a virology research lab 说明自身身份和所在系院。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "根页正文明确说明该病毒学实验室位于 UCSD School of Biological Sciences 的 department of Molecular Biology；未附带日期的现时任职证明。"
+        },
+        "uncertainty": [
+          "所审阅来源未明确说明研究方法。",
+          "首页未明确具体病毒研究对象；不把新兴病毒、疫苗与治疗开发的背景说明推断为已开展的具体项目或技术。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T04:10:21+00:00"
+      },
+      "addedEvidence": [
+        {
+          "sourceId": "src-7f324059177c4a9a",
+          "quote": "Welcome to the Biering Virology Lab",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-7f324059177c4a9a",
+          "quote": "We are a virology research lab located in the department of Molecular Biology in the School of Biological Sciences at UCSD.",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-7f324059177c4a9a",
+          "quote": "We are fascinated by the interactions between viruses and their hosts. We aim to discover the mechanisms that drive viral pathogenesis.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldEvidencePreserved": true,
+      "oldReviewUncertaintyAndBlockersPreservedIn": "regainedRootReviews[].previousReviewPreserved",
+      "reason": "首页正文虽短，但明确包含实验室自身身份、机构以及整体研究问题，因此可支持一般层面的研究摘要；没有把疫苗背景说明或导航当作方法证据。",
+      "literalResearchAnchorsOnly": [],
+      "candidateLinksFetched": false,
+      "gapPlanChanged": false,
+      "hydration": {
+        "passed": true,
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request"
+      },
+      "networkRequestsMade": 0,
+      "assessmentFingerprint": "1045dca76f69d8ff0715d7fe5da5fe567155a52168c631331a994847898e0572"
+    }
+  ],
+  "finalHydrationVerifiedAt": "2026-10-16T04:10:51+00:00"
+}

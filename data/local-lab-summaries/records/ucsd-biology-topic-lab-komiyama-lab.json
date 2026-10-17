@@ -1,0 +1,78 @@
+{
+  "labId": "ucsd-biology-topic-lab-komiyama-lab",
+  "status": "supported",
+  "summaryZh": "Komiyama 实验室研究大量神经元如何协同控制动物行为，以及这些神经元群体在环境经验、技能学习、记忆形成和疾病状态中如何改变。研究结合行为、遗传、成像与电生理技术。",
+  "researchQuestions": [
+    "大量神经元如何协同控制动物行为？",
+    "神经元群体如何随环境经验、技能学习和记忆形成而改变？",
+    "这些活动在疾病状态中如何受损？"
+  ],
+  "topics": [
+    "神经元群体与行为控制",
+    "经验、学习与记忆",
+    "疾病状态下的神经活动"
+  ],
+  "methods": [
+    "行为学技术",
+    "遗传技术",
+    "成像",
+    "电生理"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-ed1a3b9e0c08c68e",
+      "quote": "Komiyama Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-ed1a3b9e0c08c68e",
+      "quote": "We want to know how this large ensemble of neurons works coherently to control an animal’s behavior. We want to know how it might change when animals experience the environment, learn new skills and form new memories. We want to know how it might be compromised in diseased states.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-ed1a3b9e0c08c68e",
+      "quote": "We are combining behavioral, genetic, imaging and electrophysiological techniques to tackle these questions.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-1f3f2b4080bb6ebe",
+      "quote": "Komiyama Lab |",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "当前正确选择的实际请求是原列出Komiyama根网址，原观测01:04:11、HTTP200且没有重定向。该捕获的HTML title逐字为Komiyama Lab |，并直接锚链已确认同一具名实验室整体研究的/home/页面；在此明确同站身份关系下，标题可作为实际目的页的身份引证。它不承载研究问题、方法或机构声明，也不借用旧Home.html的01:06:46相关请求冒充根请求。",
+    "silentIdMigrationAllowed": false,
+    "firstTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00",
+    "titleIdentityRefinementReviewedAt": "2026-10-16T03:47:48+00:00"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "新复用/home/研究正文没有明确实验室机构隶属声明；历史Profiles实验室链接与UCSD域名仅作身份关联，不据此确认带日期的当前隶属。"
+  },
+  "uncertainty": [
+    "根页可见正文仍为空；精确标题只在已核对同一具名实验室与同站/home/关系后作为目的页身份引证，研究问题与方法仍完全来自/home/正文。",
+    "/home/研究来源原observedAt为2026-10-16T02:40:05+00:00；本轮只补原根捕获的title位置身份引证和人工审核时间，没有新增网络观察。",
+    "来源未提供带日期的当前隶属或人员声明；不据实验室名、历史PI关联或域名确认当前机构/任职。",
+    "本目标实际请求原时间为2026-10-16T01:04:11+00:00，已观测HTTP链保持；稳定ID和原列出URL不变，未采纳收集器别名或迁移规范网址。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T03:47:48+00:00",
+  "previousReviewedAt": "2026-10-16T03:34:40+00:00",
+  "researchContentSupport": {
+    "status": "reviewed_target_binding_to_explicit_lab_research",
+    "scope": "Existing Komiyama /home/ capture reused after target-specific direct-root/official historical-link identity review. Research support is distinct from title-only listed-root page identity."
+  }
+}

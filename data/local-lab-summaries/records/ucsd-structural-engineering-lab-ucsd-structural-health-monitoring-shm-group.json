@@ -1,0 +1,224 @@
+{
+  "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+  "status": "supported",
+  "summaryZh": "UCSD SHM 研究组的页面介绍结构健康监测与损伤预测：用原位测量评估结构状态，结合未来载荷、失效模式及不确定性预测剩余寿命。研究涵盖智能结构的SHM/DP方案与能量采集等使能技术，并介绍传感、特征提取和统计建模的通用框架。",
+  "researchQuestions": [
+    "如何依据原位测量与分析评估结构组件或系统能否完成设计功能？",
+    "如何结合监测、概率载荷与失效模式模型预测剩余使用寿命并支持风险决策？"
+  ],
+  "topics": [
+    "结构健康监测（SHM）",
+    "损伤预测（DP）与剩余寿命",
+    "智能结构及能量采集"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-4097577e6b7a099b",
+      "quote": "Professor Mike Todd, Director",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "Welcome to the Structural Health Monitoring (SHM) laboratory in the Department of Structural Engineering at the University of California San Diego.",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "Our research group is primarily involved in developing novel SHM/DP solutions and SHM-enabling technologies (such as energy harvesting)",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "probabilistic future loading and failure mode models with relevant sources of uncertainty adequately quantified",
+      "supports": [
+        "general_field_context"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "elements of data acquisition/sensing, data mining and feature extraction from acquired data, and statistical modeling and classification of features",
+      "supports": [
+        "general_field_context"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "an assessment, based on appropriate analyses of in-situ measured data",
+      "supports": [
+        "general_field_context"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "the current ability of a structural component or system to perform its intended design function(s) successfully.",
+      "supports": [
+        "general_field_context"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "forecast remaining useful life (RUL) or similar performance-level variables",
+      "supports": [
+        "general_field_context"
+      ]
+    },
+    {
+      "sourceId": "src-0de7802df1ac58fb",
+      "quote": "in a way that facilitates risk-informed decision-making.",
+      "supports": [
+        "general_field_context"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "research_group",
+    "reason": "根页字面meta目标的实际正文明确Structural Health Monitoring laboratory及Our research group；保留原稳定ID，不把meta当作HTTP跳转。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "目标正文明确Department of Structural Engineering at the University of California San Diego；只记录来源自述。"
+  },
+  "uncertainty": [
+    "页面含2011—2013年新闻及2014年获奖叙述，没有完整研究页更新时间；不能据2026年采集时间确认当前项目、人员或负责人。",
+    "页面把数据采集、数据挖掘、特征提取及统计建模表述为any SHM/DP strategy的一般流程，尚未明确说明该组实际实施的具体方法，methods保持空。",
+    "原始HTTP根页仍为空白meta导航，其页面身份尚不能据目标正文自动确认为已核验；目标身份与原始页面核验分开保存。",
+    "研究方法待核（限本轮已审阅材料）：已读SHM Home全文与目录/历史字段。传感、数据挖掘、特征提取、统计建模明确是any SHM/DP strategy的通用框架；团队描述仅开发SHM/DP方案，不足证明实际实施具体方法。2011–2014新闻不作当前项目证明。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:12:21.293Z",
+  "previousReviewedAt": "2026-10-16T01:53:25+00:00",
+  "previousScientificFindings": {
+    "reviewedAt": "2026-10-16T01:53:25+00:00",
+    "status": "partial",
+    "summaryZh": "历史资料将 Mike Todd 记为该研究组主任；当前目标正文为空，无法核实实验室身份与研究内容。",
+    "researchQuestions": [],
+    "topics": [],
+    "methods": [],
+    "uncertainty": [
+      "方法未明确。",
+      "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+    ],
+    "blockers": [
+      "目标HTTP200但提取正文为空；缺少研究组研究内容。"
+    ]
+  },
+  "researchContentSupport": {
+    "status": "explicit_named_lab_research_supported",
+    "scope": "Named SHM group body reached by literal meta; general methodology framework explicitly scoped, datednews not a current-page update. General any-SHM/DP strategy prose is context only; methods[] remains empty."
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:12:21.293Z",
+    "previousRecordReviewedAt": "2026-10-16T05:17:49+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读SHM Home全文与目录/历史字段。传感、数据挖掘、特征提取、统计建模明确是any SHM/DP strategy的通用框架；团队描述仅开发SHM/DP方案，不足证明实际实施具体方法。2011–2014新闻不作当前项目证明。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-a7325ccd6938272b",
+        "sourceUrl": "https://shm.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+        "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "rangesActuallyRead": [
+          [
+            0,
+            0
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-0a3e3120209350f7",
+        "sourceUrl": "https://se.ucsd.edu/people/faculty",
+        "sourceObservedAt": "2026-10-07T23:05:35+00:00",
+        "bodySha256": null,
+        "textSha256": "3ef55ba271b1095304089883cf39be6236969acd9ebfc4aa50134f2ef261a260",
+        "textCharacters": 34,
+        "rangesActuallyRead": [
+          [
+            0,
+            34
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-4097577e6b7a099b",
+        "sourceUrl": "http://shm.ucsd.edu/Site/Home.html",
+        "sourceObservedAt": "2026-10-07T23:06:45+00:00",
+        "bodySha256": null,
+        "textSha256": "64c691993bc50da916c3db599cdd2afa7a6ad6c15453ff2c477d5d30ce9ac75f",
+        "textCharacters": 29,
+        "rangesActuallyRead": [
+          [
+            0,
+            29
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-bad3a88fb4607788",
+        "sourceUrl": "https://se.ucsd.edu/people/faculty",
+        "sourceObservedAt": "2026-10-16T00:57:24+00:00",
+        "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+        "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+        "textCharacters": 1978,
+        "rangesActuallyRead": [
+          [
+            0,
+            1978
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-78fc5f4fd64950d0",
+        "sourceUrl": "http://shm.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T04:57:37+00:00",
+        "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "rangesActuallyRead": [
+          [
+            0,
+            0
+          ]
+        ],
+        "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+        "reuseReviewIndex": 151,
+        "reuseSourceId": "src-a7325ccd6938272b"
+      },
+      {
+        "sourceId": "src-0de7802df1ac58fb",
+        "sourceUrl": "http://shm.ucsd.edu/Site/Home.html",
+        "sourceObservedAt": "2026-10-16T05:16:24+00:00",
+        "bodySha256": "1b4e9cbb73cfab12830a535e4ed0948125ec7987651de148c696e8a7d05a2843",
+        "textSha256": "692bcb30ac575757a3ff3002de9737d717c506aba52d6b554b0c1761ed60c891",
+        "textCharacters": 4882,
+        "rangesActuallyRead": [
+          [
+            0,
+            4882
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

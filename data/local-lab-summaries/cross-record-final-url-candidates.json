@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "scannedAt": "2026-10-16T03:33:30+00:00",
+  "matchBasis": "same actually observed HTTP final URL, not names or domain similarity",
+  "networkRequestsMade": 0,
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-komiyama-lab",
+      "ordinal": 84,
+      "status": "unresolved",
+      "identity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "listedWebsite": "https://komiyamalab.biosci.ucsd.edu",
+      "actualFinalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:46+00:00",
+      "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+      "candidatePriorReviewedRecords": [
+        {
+          "labId": "ucsd-neurosciences-lab-komiyama-lab",
+          "ordinal": 253,
+          "listedWebsite": "https://labs.biology.ucsd.edu/komiyama/",
+          "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "researchSourceIds": [
+            "src-ed1a3b9e0c08c68e"
+          ]
+        }
+      ],
+      "notAnAliasOrMergeDecision": true
+    },
+    {
+      "labId": "ucsd-live-lab-421d1a9d198202",
+      "ordinal": 627,
+      "status": "partial",
+      "identity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "HTTP200但正文为空，不构成身份确认。"
+      },
+      "listedWebsite": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+      "actualFinalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:46+00:00",
+      "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+      "candidatePriorReviewedRecords": [
+        {
+          "labId": "ucsd-neurosciences-lab-komiyama-lab",
+          "ordinal": 253,
+          "listedWebsite": "https://labs.biology.ucsd.edu/komiyama/",
+          "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "researchSourceIds": [
+            "src-ed1a3b9e0c08c68e"
+          ]
+        }
+      ],
+      "notAnAliasOrMergeDecision": true
+    }
+  ],
+  "policy": "Target-specific manual identity and research evidence binding is required; stable IDs and actual transport observations remain separate. No alias/update admission."
+}

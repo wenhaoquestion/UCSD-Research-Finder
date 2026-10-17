@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T02:22:21+00:00",
+  "reviewedCount": 19,
+  "fullCitedSourceCount": 44,
+  "reviewType": "read_only_semantic_QA_against_complete_packet_source_texts",
+  "scope": {
+    "noNetworkRequests": true,
+    "recordsScriptsAndAggregatesEdited": false,
+    "all44CitedSourceTextsReadInFull": true,
+    "allCitedSourceTextsUntruncated": true
+  },
+  "conclusionZh": "19条摘要、主题和方法按现有明确范围均可接受：18 supported、1 partial。Kubiak光电催化支持及逐引文supports标签问题均由父代理修正并经本次只读复核；无未解决语义问题。",
+  "checks": {
+    "allPrimaryObservedAtMatchReceiptAndActualGapFetch": true,
+    "allEvidenceQuotesAreExactSubstrings": true,
+    "sourceDatedness": "observedAt为抓取时间而非正文更新日期；Crews 2017、CNDD旧背景和Guseman 2024开设关系的限制保留。",
+    "affiliationWrites": "author-gap-review-parent.py未赋值identity或affiliation；当前研究页未被用于提升现有机构状态。未有运行前原始快照，故这是对写入路径与当前证据的审查，不是前后字节比较。",
+    "methodsScope": "未发现从论文标题或招聘文本推导具体技术；Yang的分析/生物方法仅以研究计划内训练描述支持，宽泛表述可接受，不等于具体已执行流程。",
+    "all19AuthoredQuoteSupportMapsMatchCurrentRaw": true
+  },
+  "findings": [
+    {
+      "id": "quote_supports_overlabelled_methods",
+      "severity": "medium",
+      "status": "resolved_by_parent_and_verified",
+      "file": "data/local-lab-summaries/author-gap-review-parent.py",
+      "cause": "新增引文统一按methods列表非空决定是否加methods，而非按该段引文实际支持内容。",
+      "impactZh": "某些仅身份、背景或研究目标引文被标成支持方法；其他明确原文仍支持相应方法列表，不需要因此降级研究状态。",
+      "recommendedActionZh": "父代理按每个引文语义指定supports；保留真正方法句的methods标签，删除下列例子中不支持的methods。Figueroa工具标题只支持identity。",
+      "examples": [
+        {
+          "labId": "ucsd-live-lab-532117ac26bd8c",
+          "sourceId": "src-4ec314072baf36b2",
+          "quote": "The Jiang Laboratory studies the molecular mechanisms of RNA modifications in normal and cancer stem cells",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-figueroa-lab",
+          "sourceId": "src-2df59d3e712a8cdb",
+          "quote": "The Figueroa Lab ScanBury",
+          "suggestedSupports": [
+            "identity"
+          ],
+          "correctedSupports": [
+            "identity"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-kubiak-research-group",
+          "sourceId": "src-c509c3475ea6834e",
+          "quote": "For these reasons our laboratory has undertaken significant investigations regarding these Re(I) bipyridine-based catalysts.",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-kubiak-research-group",
+          "sourceId": "src-c509c3475ea6834e",
+          "quote": "Our most recent work involves the investigation of mixed valency in supramolecular systems and molecular electronics.",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-yang-research-group-jerry-yang",
+          "sourceId": "src-eea5c22ef8fede93",
+          "quote": "new biocompatible polymeric and lipid-based materials",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-medicine-lab-wei-ying-lab",
+          "sourceId": "src-9c503c19e7d9ead6",
+          "quote": "How do Kupffer cells communicate with neighboring liver cells?",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-medicine-lab-wei-ying-lab",
+          "sourceId": "src-9c503c19e7d9ead6",
+          "quote": "Iron deficiency enhances hepatocyte lipogenesis and insulin resistance",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-medicine-lab-leslie-crews-laboratory",
+          "sourceId": "src-8ac6ad1076a9e6b6",
+          "quote": "The ongoing research in the Crews Lab aims to investigate the function of cancer stem cells in multiple myeloma progression and relapse.",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-structural-engineering-lab-lanza-di-scalea-s-group-experimental-mechanics-nde-shm-laboratory",
+          "sourceId": "src-d60cc3b997fdce94",
+          "quote": "Impact detection and identification in aerospace structures",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-structural-engineering-lab-armor-lab-active-responsive-multifunctional-and-ordered-materials-research",
+          "sourceId": "src-a1cc4e0b7600d2d4",
+          "quote": "The ARMOR Lab focuses on developing technologies and algorithms that support the realization of Digital Twins of Physical Assets and the Human Digital Twin.",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-psychology-lab-psi-lab-pedagogy-science-of-instruction-laboratory",
+          "sourceId": "src-3bf10adf05fa2265",
+          "quote": "The PSI Lab investigates how instructional design relates to learning",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        },
+        {
+          "labId": "ucsd-cognitive-science-lab-computational-neural-dna-dynamics-lab-cndd",
+          "sourceId": "src-3a839cc2f5d543b0",
+          "quote": "Epigenetic processes which modulate gene expression are critical for the development, plasticity, and degeneration of neural circuits",
+          "suggestedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctedSupports": [
+            "research",
+            "topics"
+          ],
+          "correctionVerified": true
+        }
+      ],
+      "resolutionZh": "父代理对19个specs明确维护METHOD_QUOTE_INDEXES与IDENTITY_ONLY_QUOTE_INDEXES；已只读比对19条当前raw的全部新增引文，均与逐引文映射一致，12个列举问题亦全部修正。有效方法列表和研究状态保持。",
+      "correctionVerifiedAt": "2026-10-16T02:22:42+00:00"
+    },
+    {
+      "id": "kubiak_photoelectrocatalysis_scope",
+      "severity": "medium",
+      "status": "resolved_during_review",
+      "labId": "ucsd-chemistry-biochemistry-lab-kubiak-research-group",
+      "originalIssueZh": "仅research.html的光化学段属于混合价电子转移，不能直接证明二氧化碳光电催化。",
+      "resolutionSourceId": "src-c198ac2fbffa0819",
+      "resolutionSourceUrl": "https://kubiak.ucsd.edu/interests.html",
+      "resolutionObservedAt": "2026-10-16T02:17:24+00:00",
+      "resolutionQuote": "Photoelectrocatalytic Reduction of CO 2",
+      "resolutionZh": "当前raw已增加该研究兴趣页标题和实验室连接分子催化剂与光电极的明确自述，现有摘要得到支持。"
+    }
+  ],
+  "items": [
+    {
+      "index": 1,
+      "labId": "ucsd-live-lab-532117ac26bd8c",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-e881b73bad437cb9",
+        "src-4ec314072baf36b2"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-4ec314072baf36b2",
+      "sourceObservedAt": "2026-10-16T02:17:03+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:03+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "正常/癌症干细胞总述、T-ALL异构体与RNA编辑项目、工具与模型均在研究正文明确；计划与临床前范围已保留。",
+      "recordSha256AtReview": "253c5e665263c473630823d326b808a50a46fa6dea17160c8b365052e07bb9a5",
+      "recordSha256AfterCorrection": "253c5e665263c473630823d326b808a50a46fa6dea17160c8b365052e07bb9a5"
+    },
+    {
+      "index": 2,
+      "labId": "ucsd-chemistry-biochemistry-lab-figueroa-lab",
+      "status": "partial",
+      "contentVerdict": "appropriate_partial_tool_only",
+      "fullCitedSourceIdsRead": [
+        "src-621e88a131d66f27",
+        "src-8d6daeb96eca748b",
+        "src-2df59d3e712a8cdb"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-2df59d3e712a8cdb",
+      "sourceObservedAt": "2026-10-16T02:17:23+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:22+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "仅工具页支持ScanBury用途；partial、整体研究范围缺口及超时阻碍均适当，未由工具扩展全组研究。",
+      "recordSha256AtReview": "21f45f5aab141203073aa4b10c03f3d663019dafc956d5442dc58cca6cc9b17f",
+      "recordSha256AfterCorrection": "21f45f5aab141203073aa4b10c03f3d663019dafc956d5442dc58cca6cc9b17f"
+    },
+    {
+      "index": 3,
+      "labId": "ucsd-chemistry-biochemistry-lab-kubiak-research-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-cbc387933d63790b",
+        "src-c509c3475ea6834e",
+        "src-c198ac2fbffa0819"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-c509c3475ea6834e",
+      "sourceObservedAt": "2026-10-16T02:17:25+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:25+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "research.html支持电催化与混合价研究；父代理补引interests.html后，光电催化亦有明确组级自述支持，早期缺口已解决。",
+      "recordSha256AtReview": "693bb2901fc3b64e6c415f0b9a3b5cefe258199cab759a24978156c9bd8bbb2c",
+      "recordSha256AfterCorrection": "693bb2901fc3b64e6c415f0b9a3b5cefe258199cab759a24978156c9bd8bbb2c"
+    },
+    {
+      "index": 4,
+      "labId": "ucsd-chemistry-biochemistry-lab-o-connor-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-153913b75924b041",
+        "src-80dd499f543531cc"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-80dd499f543531cc",
+      "sourceObservedAt": "2026-10-16T02:17:25+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:25+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "正文三个代表性研究方向均属该组；合成及机理方法有明确自述，未声称临床应用验证。",
+      "recordSha256AtReview": "0ccb25bcc3add38f7f8385e6f740e255c466fb4f8c62a03f1b0208dc9a339787",
+      "recordSha256AfterCorrection": "0ccb25bcc3add38f7f8385e6f740e255c466fb4f8c62a03f1b0208dc9a339787"
+    },
+    {
+      "index": 5,
+      "labId": "ucsd-chemistry-biochemistry-lab-rinehart-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-07112bdc7fa0ddba",
+        "src-1bb81a0914e32c76"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-1bb81a0914e32c76",
+      "sourceObservedAt": "2026-10-16T02:17:27+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:26+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "三方向及合成、物理、计算、理论和磁强测量来自正文，不是从链接论文题目推断。",
+      "recordSha256AtReview": "2fc58f6e054bbf6382b15ae7cb056b5aff70ae18002abb33339f71ca42c8ef71",
+      "recordSha256AfterCorrection": "2fc58f6e054bbf6382b15ae7cb056b5aff70ae18002abb33339f71ca42c8ef71"
+    },
+    {
+      "index": 6,
+      "labId": "ucsd-chemistry-biochemistry-lab-schmidt-research-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-253cc07f453908b8",
+        "src-943e42ca292998dc"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-943e42ca292998dc",
+      "sourceObservedAt": "2026-10-16T02:17:28+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:27+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "自由基和金属配体协同方向直接支持；高丰度元素与减废降耗保留为目标。",
+      "recordSha256AtReview": "605417b1493b10c494aac9d8fbef427f90febca84e4d876ba06d7ec58fb58369",
+      "recordSha256AfterCorrection": "605417b1493b10c494aac9d8fbef427f90febca84e4d876ba06d7ec58fb58369"
+    },
+    {
+      "index": 7,
+      "labId": "ucsd-chemistry-biochemistry-lab-yang-research-group-jerry-yang",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-590567ddd5d224f3",
+        "src-7336de2dd2ec4e1f",
+        "src-eea5c22ef8fede93"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-eea5c22ef8fede93",
+      "sourceObservedAt": "2026-10-16T02:17:28+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:28+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "三项研究方向直接支持；分析及生物学方法只保留宽泛层级，原文是该研究计划的学生训练描述，未补推仪器或流程。",
+      "recordSha256AtReview": "2c18e870d7b824dbed458bea882be2a52acf31f30b42fb86a8f9ea31643a0c1c",
+      "recordSha256AfterCorrection": "2c18e870d7b824dbed458bea882be2a52acf31f30b42fb86a8f9ea31643a0c1c"
+    },
+    {
+      "index": 8,
+      "labId": "ucsd-chemistry-biochemistry-lab-yuen-zhou-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-88f78b8886230e7d",
+        "src-181eaad00360ea56"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-181eaad00360ea56",
+      "sourceObservedAt": "2026-10-16T02:17:29+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:29+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "三个主题及理论、计算、非绝热模拟和非线性光谱开发有组级自述；未将光学探针兴趣扩成设备使用。",
+      "recordSha256AtReview": "4a7307dace8f299af25c60edc78098177909a6ece3367b276b3607ba638e52ff",
+      "recordSha256AfterCorrection": "4a7307dace8f299af25c60edc78098177909a6ece3367b276b3607ba638e52ff"
+    },
+    {
+      "index": 9,
+      "labId": "ucsd-chemistry-biochemistry-lab-prather-research-group",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-5a1c151ca6d693e4",
+        "src-158683e2d9a5a27e",
+        "src-a1185b2175bfff0f"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-a1185b2175bfff0f",
+      "sourceObservedAt": "2026-10-16T02:17:30+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:29+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "项目名只支持有限主题；methods与questions为空，正文明确限制，未借合作中心全部范围。",
+      "recordSha256AtReview": "e9d6d50c8e606f5c86ddf1171ad2d1c86d6ca58b4394719141b8e97788743c08",
+      "recordSha256AfterCorrection": "e9d6d50c8e606f5c86ddf1171ad2d1c86d6ca58b4394719141b8e97788743c08"
+    },
+    {
+      "index": 10,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-guseman-lab",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-28031fe9e6ed6ba5",
+        "src-bd6945ac317e75df"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-bd6945ac317e75df",
+      "sourceObservedAt": "2026-10-16T02:17:31+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:30+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "原文包含个人背景但后续明确The Guseman lab与We方法自述；未把受训NMR背景单独充当方法证据。2024开设机构的旧时间范围在affiliation.reason保留。",
+      "recordSha256AtReview": "84847bba864f011b8635a9ab68dc0d4f3ac5d8efbc1a21bb9f15bdf337ae4274",
+      "recordSha256AfterCorrection": "84847bba864f011b8635a9ab68dc0d4f3ac5d8efbc1a21bb9f15bdf337ae4274"
+    },
+    {
+      "index": 11,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-schoeneberg-lab-4d-cell-biology-lab",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-d47d264c67dec33d",
+        "src-adb12bae50dedef6",
+        "src-474fa265295e9d9a"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-474fa265295e9d9a",
+      "sourceObservedAt": "2026-10-16T02:17:32+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:31+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "机器学习、类器官、晶格光片与分析均来自研究概述明确陈述；论文只作邻接参考，未由标题补推方法。",
+      "recordSha256AtReview": "243f09320ecfab539f12fce0efe0ca5013559e34c073cb2a3bab3eabc4fe5d03",
+      "recordSha256AfterCorrection": "243f09320ecfab539f12fce0efe0ca5013559e34c073cb2a3bab3eabc4fe5d03"
+    },
+    {
+      "index": 12,
+      "labId": "ucsd-medicine-lab-wei-ying-lab",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-bacd1f451c781e02",
+        "src-9c503c19e7d9ead6"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-9c503c19e7d9ead6",
+      "sourceObservedAt": "2026-10-16T02:17:33+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:32+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "铁分布、Kupffer细胞、EV与miRNA机制直接支持；小鼠体内干预与细胞特异敲除为正文明确实验，不是论文标题推断。",
+      "recordSha256AtReview": "8040bea7d9bf0b67718cbf9e2f1d804d9138982e840c9cae531d8e41c5329632",
+      "recordSha256AfterCorrection": "8040bea7d9bf0b67718cbf9e2f1d804d9138982e840c9cae531d8e41c5329632"
+    },
+    {
+      "index": 13,
+      "labId": "ucsd-medicine-lab-leslie-crews-laboratory",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-89b964549f885b2e",
+        "src-8ac6ad1076a9e6b6"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-8ac6ad1076a9e6b6",
+      "sourceObservedAt": "2026-10-16T02:17:35+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:35+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "骨髓瘤癌症干细胞、炎症通路、RNA工具及靶向测试直接支持；2017背景与当前进度未确认已明确披露。",
+      "recordSha256AtReview": "0150e7f47d86cc66819eb2974bc40179c950c385e9191342889fe22eadb2d276",
+      "recordSha256AfterCorrection": "0150e7f47d86cc66819eb2974bc40179c950c385e9191342889fe22eadb2d276"
+    },
+    {
+      "index": 14,
+      "labId": "ucsd-structural-engineering-lab-lanza-di-scalea-s-group-experimental-mechanics-nde-shm-laboratory",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-933cdcdb286a6c93",
+        "src-d60cc3b997fdce94"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-d60cc3b997fdce94",
+      "sourceObservedAt": "2026-10-16T02:17:38+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:38+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "只有226字符的声发射项目正文；摘要限定该项目，三项题目仅支持相应主题及明确AE/PZT工具，不扩为全组完整范围。PZT阵列未加入阵元数、结构或性能。",
+      "recordSha256AtReview": "0c5fb56a167cbf3a056ec96341a88f2e281b7a3b2ffa22cadea412f2292355f6",
+      "recordSha256AfterCorrection": "0c5fb56a167cbf3a056ec96341a88f2e281b7a3b2ffa22cadea412f2292355f6"
+    },
+    {
+      "index": 15,
+      "labId": "ucsd-structural-engineering-lab-armor-lab-active-responsive-multifunctional-and-ordered-materials-research",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-414ab92b9c29ebc9",
+        "src-6d25c9a25f9e6f37",
+        "src-a1cc4e0b7600d2d4"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-a1cc4e0b7600d2d4",
+      "sourceObservedAt": "2026-10-16T02:17:39+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:39+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "数字孪生、两项核心能力与应用域为正文自述；未把能力或目标改写为已完成部署。",
+      "recordSha256AtReview": "4bcc0706833833d46faba9d93c7e7fb594c5810ea0ef9f2ec65f9eaded8738af",
+      "recordSha256AfterCorrection": "4bcc0706833833d46faba9d93c7e7fb594c5810ea0ef9f2ec65f9eaded8738af"
+    },
+    {
+      "index": 16,
+      "labId": "ucsd-psychology-lab-brain-decision-making-laboratory-gremel-lab",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-66def34c8ea7f11e",
+        "src-cb7cebf6041d8357"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-cb7cebf6041d8357",
+      "sourceObservedAt": "2026-10-16T02:17:40+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:40+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "酒精依赖小鼠、自由活动鼠/狨猴觅食和体内及计算方法均为明确We employ自述，无设备或技术补推。",
+      "recordSha256AtReview": "c83ebcb23a9682ebedacbbc7c836d0d1eac190c039665666c94dd56cfbe6b070",
+      "recordSha256AfterCorrection": "c83ebcb23a9682ebedacbbc7c836d0d1eac190c039665666c94dd56cfbe6b070"
+    },
+    {
+      "index": 17,
+      "labId": "ucsd-psychology-lab-sciminds-social-computations-interacting-minds-research-studio",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-703be7803125c398",
+        "src-57beca3a233018aa"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-57beca3a233018aa",
+      "sourceObservedAt": "2026-10-16T02:17:41+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:40+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "uncertain",
+      "scopeAssessmentZh": "研究问题与自然情境心智互动直接支持；跨学科灵感未转成实验方法，methods为空适当。",
+      "recordSha256AtReview": "6351d93a4818f879fd9bdd011ba0072006f3a8b1e0c06eb73cdaae5b2c042bc6",
+      "recordSha256AfterCorrection": "6351d93a4818f879fd9bdd011ba0072006f3a8b1e0c06eb73cdaae5b2c042bc6"
+    },
+    {
+      "index": 18,
+      "labId": "ucsd-psychology-lab-psi-lab-pedagogy-science-of-instruction-laboratory",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-85bb3c63839bfd91",
+        "src-3bf10adf05fa2265"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-3bf10adf05fa2265",
+      "sourceObservedAt": "2026-10-16T02:17:42+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:41+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "教学设计相关过程、大学生、实验室与课堂情境均来自About the Lab；论文标题未被转成实验设计或效果。",
+      "recordSha256AtReview": "7bb589d5e554f6e39d2f10b86e4a010d1a168a818d02d1b8d097ffc1f78d2869",
+      "recordSha256AfterCorrection": "7bb589d5e554f6e39d2f10b86e4a010d1a168a818d02d1b8d097ffc1f78d2869"
+    },
+    {
+      "index": 19,
+      "labId": "ucsd-cognitive-science-lab-computational-neural-dna-dynamics-lab-cndd",
+      "status": "supported",
+      "contentVerdict": "supported_with_stated_scope",
+      "fullCitedSourceIdsRead": [
+        "src-fa5a0c961f8f2db5",
+        "src-3a839cc2f5d543b0"
+      ],
+      "allCitedPacketTextsUntruncated": true,
+      "allEvidenceQuotesExact": true,
+      "primarySourceId": "src-3a839cc2f5d543b0",
+      "sourceObservedAt": "2026-10-16T02:17:42+00:00",
+      "receiptObservedAtMatches": true,
+      "gapFetchObservedAtMatches": true,
+      "gapLiveCheckedAt": "2026-10-16T02:17:42+00:00",
+      "actualPageRequestMade": true,
+      "affiliationStatus": "source_reported",
+      "scopeAssessmentZh": "神经表观遗传与计算/理论工具来自Our lab概述；旧背景和未注明更新时间已披露，未将其声称为2026进度。",
+      "recordSha256AtReview": "34510b046df68a7ce084fb341a4abe09570d091939c12a1725f3d7119288717b",
+      "recordSha256AfterCorrection": "34510b046df68a7ce084fb341a4abe09570d091939c12a1725f3d7119288717b"
+    }
+  ],
+  "openActionableFindingCount": 0,
+  "followupVerifiedAt": "2026-10-16T02:22:42+00:00"
+}

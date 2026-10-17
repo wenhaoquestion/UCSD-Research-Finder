@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-16T07:33:35+00:00",
+  "queueSnapshot": {
+    "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+    "updatedAt": "2026-10-16T07:33:27+00:00",
+    "sha256": "70e840cea1ed510944d23d971faf51e0bccd7a36b6ed3ca04e17aea1c1b449d2",
+    "bytes": 44552786,
+    "itemCount": 19257,
+    "counts": {
+      "done": 6167,
+      "unresolved": 814,
+      "scope_excluded": 288,
+      "retained_prior_evidence": 1858,
+      "pending": 10130
+    },
+    "readExactlyOnce": true
+  },
+  "baseCommit": "19be64a",
+  "identityDecisionsSha256": "d03f63cfc224974df2951ebbc152619fc05289431dbcb69781c888df5874362a",
+  "identityDecisionBytesMatchBase": true,
+  "identityDecisionCount": 14,
+  "acceptedCount": 0,
+  "priorInventory": {
+    "path": "INDEPENDENT-DATE-FINAL-CACHE-DELTA.json",
+    "sha256": "c59e387dfa4b24bdc0ce246b8f7b018a3f936b841cfbb8e87a4f4028217e2ebe",
+    "tupleCount": 438
+  },
+  "targets": [
+    {
+      "labId": "ucsd-biology-topic-lab-not-in-a-biology-group",
+      "decision": "旧名称是错误类别标签；目的页明确为 Kendrick lab。仅保留该目的页的候选研究描述，旧ID与该实验室的身份映射未接受。",
+      "acceptanceStatus": "needs_name_correction",
+      "professorIds": [],
+      "explicitURLBindingCount": 6,
+      "captureTupleCount": 3,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+      "decision": "正文与标题均为实验室安全教学视频资源；明确排除为独立研究lab或group。",
+      "acceptanceStatus": "rejected_non_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 3,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-malinow-lab",
+      "decision": "历史官方目录列出 Malinow Lab；当前地址转为域名出售页面，不能核实原实验室官网，更不能据此推断实验室关闭。",
+      "acceptanceStatus": "provisional_historical_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 3,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+      "decision": "页面明确为由 Division Chief 负责、包含多位教师及临床检验服务的院系分部，不是单一研究实验室。",
+      "acceptanceStatus": "rejected_non_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 2,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+      "decision": "目的页为多组研究活动总览；完整捕获正文未见 Field Lab。保持该旧ID身份未解决，不把别的小组或整个目录迁移为此ID。",
+      "acceptanceStatus": "unresolved_identity",
+      "professorIds": [],
+      "explicitURLBindingCount": 10,
+      "captureTupleCount": 4,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-physics-biological-physics",
+      "decision": "页面是 Physics of Life 研究领域及多个教师实验室的目录，列有 Hwa、Jun、Kleinfeld 等组；不接受为一个独立 UCSD Biological Physics Lab。",
+      "acceptanceStatus": "rejected_non_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 3,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-c47793a464ccdc",
+      "decision": "正文明确列出课程编号、学分、先修要求与选课安排；小组学习课程不构成固定研究lab/group。",
+      "acceptanceStatus": "rejected_non_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 3,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-48032dc33264ea",
+      "decision": "页面概述多个全国合作组及多位研究者的临床试验活动，未定义名为 National Cooperative Group Clinical Trials 的独立实验室。",
+      "acceptanceStatus": "rejected_non_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 2,
+      "captureTupleCount": 1,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "decision": "当前正文为 Center for Autodigestion Innovation，HTML标题仍为 Microcirculation Laboratory；历史目录关联 Schmid-Schoenbein Lab。缺少解释更名/继承/共同实体关系的正文，禁止把旧ID静默迁移到中心。",
+      "acceptanceStatus": "unresolved_entity_relationship",
+      "professorIds": [
+        "ucsd-bioengineering-geert-schmid-schoenbein"
+      ],
+      "explicitURLBindingCount": 9,
+      "captureTupleCount": 4,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-ca0f4105fff103",
+      "decision": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+      "acceptanceStatus": "provisional_historical_lab",
+      "professorIds": [
+        "ucsd-faculty-huilin-zhou"
+      ],
+      "explicitURLBindingCount": 6,
+      "captureTupleCount": 9,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-61e490319a4560",
+      "decision": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+      "acceptanceStatus": "provisional_historical_lab",
+      "professorIds": [
+        "ucsd-faculty-karen-oegema"
+      ],
+      "explicitURLBindingCount": 7,
+      "captureTupleCount": 7,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+      "decision": "此前 entityIdentity 为 mismatch、pageIdentity 为 uncertain；当前主抓取标题和内容明确为 Ludwig 机构主页。另列审核，不能用机构癌症研究方向补作 Kolodner lab 研究或当前身份。",
+      "acceptanceStatus": "provisional_historical_lab",
+      "professorIds": [],
+      "explicitURLBindingCount": 6,
+      "captureTupleCount": 6,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-d38261da50a200",
+      "decision": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+      "acceptanceStatus": "provisional_historical_lab",
+      "professorIds": [
+        "ucsd-cellular-molecular-medicine-richard-kolodner"
+      ],
+      "explicitURLBindingCount": 4,
+      "captureTupleCount": 6,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    },
+    {
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "decision": "原始HTTP地址实际页面明确为Allen Lab并联系Monica Allen；与Sinha目标未对应。保留稳定ID/URL，未接受别名、更名或科研迁移。",
+      "acceptanceStatus": "provisional_or_unresolved",
+      "professorIds": [],
+      "explicitURLBindingCount": 6,
+      "captureTupleCount": 5,
+      "newRelationships": 0,
+      "oldAcceptedGatePreserved": true
+    }
+  ],
+  "newRelationships": [],
+  "networkRequestsMade": 0,
+  "psChecksMade": 0,
+  "semanticReviews": [],
+  "scope": {
+    "identityMismatchTargets": 14,
+    "accepted": 0,
+    "explicitBaselineAssociatedProfessors": 4,
+    "targetURLBindingRelationships": 70,
+    "currentActualCaptureTuples": 30,
+    "currentCaptureTargetRelationships": 50,
+    "newActualCaptureTuples": 0,
+    "newTargetBindings": 0,
+    "newScientificOrIdentityBodiesRead": 0,
+    "oldBodiesReread": 0,
+    "changedScientificOrIdentityDecisions": 0
+  },
+  "reviewedAt": "2026-10-16T07:35:23+00:00",
+  "result": "no_new_source_evidence_keep_all_14_gates",
+  "scientificBodiesRead": 0,
+  "identityBodiesRead": 0,
+  "sourceComparisonMethod": {
+    "tupleFields": [
+      "actual requestedUrl",
+      "finalUrl",
+      "original observedAt",
+      "fetchStatus",
+      "httpStatus",
+      "bodySha256"
+    ],
+    "requestIdentity": "request_key preserves scheme, www host, nonroot trailing slash and query; actual tuples retain literal URI strings. No content-key HTTP/HTTPS or host/path alias substitution.",
+    "sourceScopes": [
+      "all decision.priorityFollowups",
+      "baseline listed/source/explicit PI profile URLs",
+      "saved decision evidence and packet source actual URLs",
+      "packet root/related/followup actual request and final URLs",
+      "official profile/official field-evidence source URLs of explicitly baseline-linked professor IDs",
+      "actual collector contexts carrying those same professor IDs"
+    ],
+    "knownExclusion": "Tuple already bound to target in prior438 inventory, or same exact packet source final URI/time/bodySHA already bound to target.",
+    "personalScope": "Professor context/field source provides discovery scope only; personal titles/grants do not establish a lab rename or entity relationship.",
+    "captureProof": "Robots-only/status failures are retained as metadata, never accepted as page observations.",
+    "readOnceQueue": "Frozen queue bytes parsed once for this review; no subsequent queue read/PS/network/plan."
+  },
+  "comparisonFingerprints": {
+    "current30TuplesWithTargetBindingsSha256": "557bbd774b1780e59e291cf301138b911d088c82848414021ae70b052fcf9642",
+    "currentExplicitTargetURLBindingsSha256": "8b4c42639fb4d691259d0a3337fb646ca8d3c2a6d76744b1eb6c7de7d02fa664"
+  },
+  "all14RawBytesMatchBase": true,
+  "targetRawHashes": [
+    {
+      "labId": "ucsd-biology-topic-lab-not-in-a-biology-group",
+      "rawSha256": "725798d5438b55490f568eca66a69bfaf85fe5d19dacb553e85ddaca2c4d2d12"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+      "rawSha256": "84d7f82096e64e89cb0781a36ee0d8dac22cad2565931f8bb12e1e0e22f1189c"
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-malinow-lab",
+      "rawSha256": "25a96b8588474929ab13f034ac383dc7a06f36b87ef704c2569a98c0ef781031"
+    },
+    {
+      "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+      "rawSha256": "3e510c6239b1a553e5c8ebec424f50dfaba1df4cd600e2ea5832f18b271a36b9"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+      "rawSha256": "a011e99422568a78d0580d1373ebda8e416accb895b1cfaa863f1672873ebaf1"
+    },
+    {
+      "labId": "ucsd-physics-biological-physics",
+      "rawSha256": "2de1a7f4f978920436051b53eeb837d9eab5d5ff073034689a3bb35d9aea9978"
+    },
+    {
+      "labId": "ucsd-live-lab-c47793a464ccdc",
+      "rawSha256": "3a910d9b5ceb3b03c3a370f9281d1ee3ce5869560ef23e8fed1de594f491b7ba"
+    },
+    {
+      "labId": "ucsd-live-lab-48032dc33264ea",
+      "rawSha256": "f02bbced19854c07a6e131c10313ab328456529bc89908f87b887f5cf479dcd1"
+    },
+    {
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "rawSha256": "32c335369a2c9104acfac2859d55e958a1e36000f9a2fcc8fcc49fb9cf9b5819"
+    },
+    {
+      "labId": "ucsd-live-lab-ca0f4105fff103",
+      "rawSha256": "ce6766b736257803608ca05971017466f18d8f9f0b7e461e6afaed295644c948"
+    },
+    {
+      "labId": "ucsd-live-lab-61e490319a4560",
+      "rawSha256": "1ccd5b150140cbf7f72bb72ca677945e7333ac8047bc29c64a8fed44a4ad9865"
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+      "rawSha256": "95cc581d6a228f1448baa0e2c58a56b9c6b819669200a15f03801124a30554e4"
+    },
+    {
+      "labId": "ucsd-live-lab-d38261da50a200",
+      "rawSha256": "3ea5537e4b1a9f8e66ea0341e8f12ab8cdaa05909f976b4939226d0caeb9ad77"
+    },
+    {
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "rawSha256": "8878d67f0a93a53ba422cbcb08c3883ff8c303e5b1d31cd6ff7c76a7c9404c73"
+    }
+  ],
+  "gateConclusions": {
+    "ucsd-biology-topic-lab-not-in-a-biology-group": "旧名称是错误类别标签；目的页明确为 Kendrick lab。仅保留该目的页的候选研究描述，旧ID与该实验室的身份映射未接受。",
+    "ucsd-chemistry-biochemistry-lab-lab-safety-videos": "正文与标题均为实验室安全教学视频资源；明确排除为独立研究lab或group。",
+    "ucsd-neurosciences-lab-malinow-lab": "历史官方目录列出 Malinow Lab；当前地址转为域名出售页面，不能核实原实验室官网，更不能据此推断实验室关闭。",
+    "ucsd-pathology-lab-laboratory-genomic-medicine": "页面明确为由 Division Chief 负责、包含多位教师及临床检验服务的院系分部，不是单一研究实验室。",
+    "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html": "目的页为多组研究活动总览；完整捕获正文未见 Field Lab。保持该旧ID身份未解决，不把别的小组或整个目录迁移为此ID。",
+    "ucsd-physics-biological-physics": "页面是 Physics of Life 研究领域及多个教师实验室的目录，列有 Hwa、Jun、Kleinfeld 等组；不接受为一个独立 UCSD Biological Physics Lab。",
+    "ucsd-live-lab-c47793a464ccdc": "正文明确列出课程编号、学分、先修要求与选课安排；小组学习课程不构成固定研究lab/group。",
+    "ucsd-live-lab-48032dc33264ea": "页面概述多个全国合作组及多位研究者的临床试验活动，未定义名为 National Cooperative Group Clinical Trials 的独立实验室。",
+    "ucsd-live-lab-d2d234fc0f3eba": "当前正文为 Center for Autodigestion Innovation，HTML标题仍为 Microcirculation Laboratory；历史目录关联 Schmid-Schoenbein Lab。缺少解释更名/继承/共同实体关系的正文，禁止把旧ID静默迁移到中心。",
+    "ucsd-live-lab-ca0f4105fff103": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+    "ucsd-live-lab-61e490319a4560": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+    "ucsd-cellular-molecular-medicine-lab-kolodner-lab": "此前 entityIdentity 为 mismatch、pageIdentity 为 uncertain；当前主抓取标题和内容明确为 Ludwig 机构主页。另列审核，不能用机构癌症研究方向补作 Kolodner lab 研究或当前身份。",
+    "ucsd-live-lab-d38261da50a200": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。",
+    "ucsd-physics-research-site-sunil-k-sinha": "原始HTTP地址实际页面明确为Allen Lab并联系Monica Allen；与Sinha目标未对应。保留稳定ID/URL，未接受别名、更名或科研迁移。"
+  },
+  "usefulCandidates": [],
+  "limitations": [
+    "Snapshot-specific result, not a statement that the externally updating collector is idle or complete.",
+    "No new matching successful body/tuple/binding was found, so unchanged scientific bodies were not reread.",
+    "The four baseline professor IDs are the entire explicit ID relation scope for these14; no names/slugs were guessed for the other10.",
+    "No alias, rename, ID merge, root verification or automatic personal-to-lab mapping was accepted.",
+    "Saved prior inventory and actual packet sources define already-reviewed evidence; a later genuine new capture would need another explicitly requested review."
+  ],
+  "planCalls": 0,
+  "recordsPacketsCodeIdentityDecisionsActiveCollectorSharedWrites": 0
+}

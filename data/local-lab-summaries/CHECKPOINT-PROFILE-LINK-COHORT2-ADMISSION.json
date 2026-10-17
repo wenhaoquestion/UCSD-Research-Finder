@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "checkpointedAt": "2026-10-16T07:11:01+00:00",
+  "baseCommit": "920f81f085ea8cf6d01e19fbb4eb3557c4550df5",
+  "turnOutcome": "primary_source_review_and_three_finite_admissions_runtime_gate_not_started",
+  "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "eligibleCount": 884,
+  "processedCount": 884,
+  "counts": {
+    "supported": 738,
+    "partial": 56,
+    "unresolved": 90
+  },
+  "supportedLabOrGroupSummaries": 724,
+  "verifiedAcceptedLabGroupURLCount": 569,
+  "remainingPartialOrUnresolved": 146,
+  "all884RecordsAndPacketsByteExact": true,
+  "unchangedSummaryAndURLProjectionBytesFromBase": true,
+  "importsRemain16": true,
+  "all14MismatchDecisionsByteExact": true,
+  "mismatchAccepted": 0,
+  "manifestStaleSourceCountEntries": 0,
+  "referencedEvidenceCacheFiles": 1058,
+  "validationErrors": [],
+  "validationWarnings": [],
+  "projectionSha256": {
+    "summaries.jsonl": "fc26ed5e25844751f6f8c09707ae6fe78143aaaaf0d1fefe939bb4e628fddcd8",
+    "url-verification.jsonl": "9f67f08960db72ba5204fc96c09067837cf337361e1b4b884488bb37537ab4e4",
+    "queue.json": "25211fa1937750e3bce7cb6984e796f5c75d46f2488d3dc8a028ae424c46174e",
+    "checkpoint.json": "760265adb0aa04da327805c121f81333f2c4951ff042b73b5bb1603d1e609fbc"
+  },
+  "reportSha256": {
+    "COHORT2-DATA-ADMISSION-QA.json": "45cbf58d01f3812437325988cf860f61675d540bcd15bbe16a3bbd2df7c2a02d",
+    "COHORT2-PRE-TRANSPORT-INDEPENDENT-QA.json": "6329a92705cd62682f9b0ab2a6ae8bfec3eb332a67c8cd2925c0625fbd81756b",
+    "PROFILE-LINK-COHORT2-ADMISSION-REVIEW.json": "a2d5cd079f550ce0266b9675701736be71c61ca7e6a58a7efa291a4a9767f36c",
+    "PROFILE-LINK-COHORT2-DRAFT.json": "a55c5350efe1339edb3aa493bea3f6b981d42b71e9d684700b76217ed73c2b67",
+    "PROFILE-LINK-COHORT2-PRE-TRANSPORT-NOT-STARTED.json": "03839625a73447ec78da6b7f4cc685226c80dcded79c0e528d34c9dcb8d637fa",
+    "COHORT2-APPEND-VALIDATION-INVARIANTS.json": "619fb4e382b6934b2e14bfe9f9d8ce93b0fa33140b2248b77fc3e326f989b6cd",
+    "COHORT2-SUSPENDED-FINITE-PLAN.json": "de98b7a74b0048b7c808aa1ddb0ff58a0201b8c270bfdb35bd9a00232bb587dd",
+    "COHORT2-FINAL-RUNTIME-OBSERVATION.json": "99dc291bba8b5e21ca1cd2bc28a2d420a8684359c8f67c5ebcb2ae17fc1742ba",
+    "DIFFERENT-TIME-PROFILE-PRIMARY-REVIEW.json": "c9ebcf87352c0e28279b7bdf7e5f44a2e88bc46870458015289a7ba3a90d5138",
+    "DIFFERENT-TIME-PROFILE-ROUTE-BOUNDARIES.json": "af65dcdecf8eb7df8094f9dfcb3e074683274d1b0916fc77776823d556f10d18",
+    "PROFILE-LINK-ACTUAL-FULL-TEST-RUN.json": "df62a6dc11a38e4100ceeec56a1b5137c32d6f2edd5be19508ad3574de0b1ea9",
+    "reviewed-profile-lab-links.json": "60f8917c3216e47c6441c5ee945d926c8a46138f89745d9f436964d387daf140",
+    "manifest.json": "befccd15d0c87dba93f0ede454dd1653dab973a3cd02f832428b6cc2dbb082e8",
+    "validation.json": "7bd23f7b3d77a6b5190751c3e5f9b18c2ff39eb434ea575903122bf9a27e628d",
+    "checkpoint.json": "760265adb0aa04da327805c121f81333f2c4951ff042b73b5bb1603d1e609fbc",
+    "gap-plan.json": "fa83aa7c3a5569c7b2196880cf389ef7f4bb9668973b4ca8db0abe427789aaee"
+  },
+  "ownLedgerSha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+  "ownWireRequests": 353,
+  "ownReceipts": 205,
+  "newWireRequests": 0,
+  "newReceipts": 0,
+  "newJournals": 0,
+  "newActualPageRequests": 0,
+  "newScientificRecords": 0,
+  "oldActiveThreeObjectsPreserved": true,
+  "newAdmittedPendingRelatedProfileLinks": [
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-esko-lab",
+      "literalURL": "http://eskolab.ucsd.edu/",
+      "actualHistoricalProfileObservedAt": "2026-10-07T21:45:57+00:00"
+    },
+    {
+      "labId": "ucsd-live-lab-ebefe055ae9fce",
+      "literalURL": "http://kaufmanlab.ucsd.edu",
+      "actualHistoricalProfileObservedAt": "2026-10-07T21:44:17+00:00"
+    },
+    {
+      "labId": "ucsd-live-lab-eb8a5809f8da0f",
+      "literalURL": "http://ghoshlab.ucsd.edu/Pages/default.aspx",
+      "actualHistoricalProfileObservedAt": "2026-10-07T22:11:28+00:00"
+    }
+  ],
+  "differentDatePrimaryReview": {
+    "oldFieldCount": 10,
+    "actualDistinctProfiles": 9,
+    "newFullMainAndOverviewReads": 8,
+    "previousExactClevelandFullReadReused": 1,
+    "newWholeLabScientificEvidence": 0,
+    "onlyHistoricalInstitutionStatement": "Ginsberg lab moved to UCSD Medicine in July2004; no current2026 affiliation promotion.",
+    "unadmittedNewLiteralHTTPRoutes": 2,
+    "unadmittedNames": [
+      "Chang",
+      "Ginsberg"
+    ],
+    "oldFieldDatesNotRewritten": true
+  },
+  "runtimeObservation": {
+    "observedAt": "2026-10-16T07:08:17+00:00",
+    "processReceipt": {
+      "pid": 55354,
+      "startedAt": "2026-10-16T07:05:22+00:00",
+      "networkCoordination": {
+        "protocolVersion": "fcntl-host-clock-v2",
+        "directory": "/tmp/ucsd-research-network-20261016",
+        "legacyClocksImported": 936,
+        "legacyCooldownsImported": 1,
+        "cacheObservationTimestampsModified": false,
+        "state": "active",
+        "activatedAt": "2026-10-16T07:05:22+00:00",
+        "robotsAndRedirectsIncluded": true,
+        "profilesMinimumSeconds": 10,
+        "collectorCodeSha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+        "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+        "scopePolicyCodeSha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+        "requiredSourceFiles": {
+          "collect_ucsd_coverage.py": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+          "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+          "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+          "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+          "refresh_labs.py": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+          "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+          "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+        }
+      }
+    },
+    "actualPidProbe": {
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "matchingActualCollectorProcessRows": [],
+    "queueUpdatedAt": "2026-10-16T07:05:22+00:00",
+    "queueCounts": {
+      "done": 6021,
+      "unresolved": 814,
+      "scope_excluded": 288,
+      "retained_prior_evidence": 1859,
+      "pending": 10273
+    },
+    "newNetworkRequests": 0,
+    "notEvidenceThatGlobalCollectionIsComplete": true
+  },
+  "globalCollectionNotInferredComplete": true,
+  "testReuse": {
+    "testsPassed": 409,
+    "actualFinishedAt": "2026-10-16T06:42:42+00:00",
+    "all44SourceHashesMatch": true,
+    "testsRerunThisTurn": false,
+    "noCodeOrTestsChanged": true
+  },
+  "writesToCollectorAndMain": 0,
+  "outputsAreComplete": false,
+  "goalStatus": "active",
+  "resume": [
+    "Read actual process state and verify its PID live; never restart or alter collector from this task.",
+    "Before network refresh all7 loaded/current audited source pins and unchanged44 source/test hashes; bind current data admission and adapter receipts.",
+    "Replan fresh exact pending/once/access boundaries and execute only the3 still eligible Esko/Kaufman/Ghosh links through normal shared gate/robots/TLS/redirect/default2M caps. Current failed preflight created no journal or page proof.",
+    "Review Chang/Ginsberg as independent10/07 source-date contracts separately; do not rewrite10/03 field evidence or relax old same-capture contract.",
+    "Review only genuinely new collector captures/additions, keep14 mismatches and per-record blockers."
+  ]
+}

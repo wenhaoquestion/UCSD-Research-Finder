@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:22:45+00:00",
+  "reviewType": "bounded_offline_exact_source_compatibility",
+  "previousVersions": {
+    "collector": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+    "faculty": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8"
+  },
+  "currentVersions": {
+    "collector": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "faculty": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896"
+  },
+  "requiredSourceProof": [
+    {
+      "file": "collect_ucsd_coverage.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+      "sha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82"
+    },
+    {
+      "file": "network_coordination.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+    },
+    {
+      "file": "collection_lock.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056"
+    },
+    {
+      "file": "collection_scope.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+      "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029"
+    },
+    {
+      "file": "refresh_labs.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead.py",
+      "sha256": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead"
+    },
+    {
+      "file": "refresh_faculty_directories.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+      "sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896"
+    },
+    {
+      "file": "lab_destinations.py",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+      "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    }
+  ],
+  "recordedProcessReceipt": {
+    "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/collector-current-revision-before-http-batch.json",
+    "observedAt": "2026-10-16T04:19:23+00:00",
+    "pid": 5224,
+    "startedAt": "2026-10-16T04:07:36+00:00",
+    "guardedBatchNetworkRequestsMade": 0,
+    "freshProcessProbeByReviewer": false,
+    "mutableWorkingCollectorHashNotReviewed": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c"
+  },
+  "astComparison": {
+    "ignoreSourceCoordinates": true,
+    "unchangedDefinitions": {
+      "safe_url": {
+        "oldLines": [
+          68,
+          78
+        ],
+        "newLines": [
+          68,
+          78
+        ]
+      },
+      "url_key": {
+        "oldLines": [
+          81,
+          83
+        ],
+        "newLines": [
+          81,
+          83
+        ]
+      },
+      "authentication_target": {
+        "oldLines": [
+          86,
+          88
+        ],
+        "newLines": [
+          86,
+          88
+        ]
+      },
+      "transient_response": {
+        "oldLines": [
+          91,
+          100
+        ],
+        "newLines": [
+          91,
+          100
+        ]
+      },
+      "retryable_fetch": {
+        "oldLines": [
+          103,
+          109
+        ],
+        "newLines": [
+          103,
+          109
+        ]
+      },
+      "robots_retry_at": {
+        "oldLines": [
+          112,
+          113
+        ],
+        "newLines": [
+          112,
+          113
+        ]
+      },
+      "reusable_robots": {
+        "oldLines": [
+          116,
+          122
+        ],
+        "newLines": [
+          116,
+          122
+        ]
+      },
+      "PublicFetcher": {
+        "oldLines": [
+          219,
+          411
+        ],
+        "newLines": [
+          233,
+          425
+        ]
+      }
+    },
+    "collectorChangedDefinitions": [
+      {
+        "name": "analyze",
+        "newLines": [
+          661,
+          724
+        ]
+      },
+      {
+        "name": "analyze_profile_appointment",
+        "newLines": [
+          619,
+          639
+        ]
+      },
+      {
+        "name": "collect",
+        "newLines": [
+          777,
+          900
+        ]
+      },
+      {
+        "name": "profiles_appointment",
+        "newLines": [
+          181,
+          220
+        ]
+      },
+      {
+        "name": "profiles_identity_heading",
+        "newLines": [
+          169,
+          178
+        ]
+      },
+      {
+        "name": "replay_profile_qualifications",
+        "newLines": [
+          642,
+          658
+        ]
+      }
+    ],
+    "facultyChangedDefinitions": [
+      {
+        "name": "build_evidence",
+        "newLines": [
+          466,
+          566
+        ]
+      },
+      {
+        "name": "card_records",
+        "newLines": [
+          172,
+          247
+        ]
+      },
+      {
+        "name": "public_email",
+        "newLines": [
+          99,
+          105
+        ]
+      }
+    ]
+  },
+  "compatibility": {
+    "newNetworkRegressionFound": false,
+    "publicFetcherEntireClassUnchanged": true,
+    "sharedV2HostSlotPreserved": true,
+    "robotsAndRedirectsStillUseWire": true,
+    "accessBoundariesUnchangedExceptExistingD1Compensation": true,
+    "perTransportByteLimitUnchanged": true,
+    "cacheOriginalObservationTimesPreserved": true,
+    "safeUrlOverrideCompatible": true,
+    "safeUrlOverrideReference": {
+      "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "definition": "load_fetcher/preserve_wire_uri",
+      "lines": [
+        195,
+        234
+      ]
+    },
+    "facultyClassificationAccuracyReviewed": false,
+    "cachedReplayIsNotNewObservation": true
+  },
+  "upstreamLimitations": [
+    {
+      "id": "D1",
+      "state": "unchanged_upstream_defect_locally_compensated",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+      "definition": "PublicFetcher._rules",
+      "lines": [
+        332,
+        337
+      ],
+      "finding": "404/410 challenge error can still receive not_found instead of unavailable.",
+      "localCompensation": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+        "definition": "instrumented_fetcher.TrackedFetcher._rules",
+        "lines": [
+          257,
+          264
+        ],
+        "preservesOriginalRobotsCacheStatusAndTime": true
+      }
+    },
+    {
+      "id": "D2",
+      "state": "unchanged_upstream_bounded_retry_limitation_no_task_fix",
+      "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+      "definition": "transient_response",
+      "lines": [
+        91,
+        100
+      ],
+      "finding": "Transient HTTP test precedes terminal curl/size exclusions; hypothetical 503 plus curl63 is retryable.",
+      "actualResponseObserved": false,
+      "perInvocationByteLimitChanged": false
+    }
+  ],
+  "validation": {
+    "allSevenOwnSnapshotHashesVerified": true,
+    "previousCollectorAndFacultyHashesVerified": true,
+    "independentAstComparisonPerformed": true,
+    "testRunsByReviewer": 0,
+    "parentTestStatusAtReport": "130-test suite reported running; no pass result claimed here",
+    "testClassReference": {
+      "path": "/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_shared_cooldown.py",
+      "name": "Collector6A5DSharedCooldownAdapterTests",
+      "lines": [
+        433,
+        437
+      ]
+    },
+    "reviewerNetworkRequestsMade": 0,
+    "collectorSharedWritesByReviewer": 0,
+    "scienceBodiesRead": 0
+  },
+  "conclusion": "No new network compatibility regression found in the exact 6a5d/297 delta. Existing task D1 compensation remains necessary and compatible; D2 remains documented and unfixed upstream.",
+  "scopeExclusions": [
+    "faculty classification accuracy",
+    "fresh process or activation proof",
+    "scientific-body review",
+    "live request execution"
+  ]
+}

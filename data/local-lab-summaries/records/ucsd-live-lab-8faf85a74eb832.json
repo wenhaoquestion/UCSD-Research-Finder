@@ -1,0 +1,117 @@
+{
+  "labId": "ucsd-live-lab-8faf85a74eb832",
+  "status": "supported",
+  "summaryZh": "Benner 实验室开发计算和实验技术，研究调控 DNA、转录、表观遗传及三维基因组之间的关系。它以 csRNA-seq、TSS-MPRA 等方法测量转录起始，分析炎症刺激和非编码变异对转录网络的影响。",
+  "researchQuestions": [
+    "调控 DNA、转录、表观遗传与三维基因组结构如何相互影响？"
+  ],
+  "topics": [
+    "转录调控",
+    "调控DNA与三维基因组",
+    "炎症与遗传变异"
+  ],
+  "methods": [
+    "计算与实验技术",
+    "csRNA-seq",
+    "TSS-MPRA"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-55ebf5f3995f6473",
+      "quote": "Benner Lab Website → https://homer.ucsd.edu/BennerLab/",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-35726394fd9646e5",
+      "quote": "The laboratory develops computational and experimental technologies to study how transcription is regulated, analyzing how regulatory DNA, transcription, epigenetics, and 3D genome structure exert influence on one another.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-35726394fd9646e5",
+      "quote": "The laboratory leverages experimental methods to profile transcription initiation in the genome (e.g. csRNA-seq, TSS-MPRA)",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-35726394fd9646e5",
+      "quote": "model how transcriptional networks respond to inflammatory stimuli or other pathological conditions and monitor the impact that non-coding genetic variation plays in perturbing transcriptional responses.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-5632a25f1ab0502f",
+      "quote": "The Benner Lab is located at the UCSD School of Medicine, in La Jolla, CA.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-35726394fd9646e5",
+      "quote": "The laboratory develops computational and experimental technologies to study how transcription is regulated, analyzing how regulatory DNA, transcription, epigenetics, and 3D genome structure exert influence on one another.",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "关联官方研究摘要明确以 The laboratory 描述研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "新HTTP首页直接陈述The Benner Lab is located at the UCSD School of Medicine；来源无更新时间，不确认带日期的当前任职或2026年机构状态。",
+    "reviewedAt": "2026-10-16T06:12:07+00:00"
+  },
+  "uncertainty": [
+    "原列HTTPS的robots证书失败仍保留；独立HTTP首页成功不证明原HTTPS恢复。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "新增机构地址陈述没有内容更新时间，不能将论文、新闻或页脚日期当作当前任职及完整研究总览更新时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T07:41:11+00:00",
+  "affiliationReviewHistory": [
+    {
+      "reviewedAt": "2026-10-16T06:12:07+00:00",
+      "previousAffiliation": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "previousUncertainty": [
+        "目标robots获取失败；研究依据保存的官方摘要，末尾截断。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "scientificReviewedAtRetained": "2026-10-16T01:55:10+00:00",
+      "sourceId": "src-5632a25f1ab0502f"
+    }
+  ],
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:10+00:00",
+    "candidateIndex": 151,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-35726394fd9646e5",
+        "quote": "The laboratory develops computational and experimental technologies to study how transcription is regulated, analyzing how regulatory DNA, transcription, epigenetics, and 3D genome structure exert influence on one another.",
+        "sourceUrl": "https://profiles.ucsd.edu/christopher.benner",
+        "observedAt": "2026-10-07T22:28:18+00:00",
+        "bodySha256": null
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  }
+}

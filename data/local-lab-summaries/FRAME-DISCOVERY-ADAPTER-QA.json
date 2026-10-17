@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:11:51+00:00",
+  "verdict": "PASS",
+  "actionableIssues": [],
+  "adapterPath": "scripts/local_lab_summary_gaps.py",
+  "adapterSha256": "2e691409cab7ec3dff70b9876bc98b9260c2c4af19d9532b65cb4944433a4aea",
+  "frameTestsPath": "tests/test_local_lab_frame_discovery.py",
+  "frameTestsSha256": "5e4090edf2ade8dd77e81f90401ce8836a681662c82ee10a3529c369e6693b34",
+  "priorReceiptAdapterSha256": "34ebac1ceaf1ba5eae5773b59099b34d993d40aa0135b9698c360a766f3ff02c",
+  "priorAdapterReconstructedOnlyInMemory": true,
+  "framePlanLinesAdded": 18,
+  "onlyChangedFunctionAST": [
+    "plan"
+  ],
+  "allOtherNetworkDefinitionsUnchanged": true,
+  "checks": [
+    {
+      "area": "actual HTML frame syntax",
+      "result": "PASS",
+      "details": "Only parsed frame/iframe elements with src qualify; anchors/images, script string content and HTML comments do not. Empty display text is allowed."
+    },
+    {
+      "area": "reviewed provenance and exact request target",
+      "result": "PASS",
+      "details": "sourceId, aware original observedAt/review time, declared64-hex source body SHA, packet source SHA and actual saved raw SHA are required. The target must equal urljoin(sourceURL, literal src) under strict request_key, with same exact hostname; supplied originalHtmlAttribute must match literally. Scheme/query/trailing-path/explicit-port substitutions against unchanged src fail."
+    },
+    {
+      "area": "access and identity boundary",
+      "result": "PASS",
+      "details": "Current root must be ok and no explicit root/robots/history 401/403/denial/authentication/challenge boundary may be bypassed. Cached target robots denial or existing target capture uses existing controls. Discovery never accepts entity/science or rewrites root canonical/HTTP redirect proof."
+    },
+    {
+      "area": "network policy unchanged",
+      "result": "PASS",
+      "details": "Removing exactly18 new plan lines recreates the prior receipt adapter bytes SHA. Only plan AST changed; public safe_url validation and actual HTTP/www preservation, pinned dependency compilation, TLS transport, shared gate, retry/cooldown, durable one-shot journal and individually reviewed8M cap logic are byte/AST unchanged."
+    }
+  ],
+  "independentOfflineTests": [
+    {
+      "file": "tests/test_local_lab_frame_discovery.py",
+      "run": 13,
+      "passed": 13
+    },
+    {
+      "file": "tests/test_local_lab_shared_adapter.py",
+      "run": 11,
+      "passed": 11
+    },
+    {
+      "file": "tests/test_local_lab_original_uri_scope.py",
+      "run": 30,
+      "passed": 30
+    }
+  ],
+  "totalTestsRun": 54,
+  "totalPassed": 54,
+  "parentReported199Local321FullNotIndependentlyRerun": true,
+  "productionNetworkReceiptSha256AtReview": "5b51eb2bf2eb0a7363132056a825b88a417fdf476bd2125b61355a5e4677f5b1",
+  "existingReceiptRequiresReenable": true,
+  "reenableReason": "Current adapter hash differs from pre-frame network receipt; existing execute guard correctly refuses until parent issues its new verified receipt. QA did not update that receipt.",
+  "networkRequestsMade": 0,
+  "productionPlanRuns": 0,
+  "productionReceiptChanged": false,
+  "codeChanged": false,
+  "recordsOrPacketsChanged": false,
+  "collectorOrSharedWrites": 0
+}

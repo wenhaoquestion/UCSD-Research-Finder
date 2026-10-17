@@ -1,0 +1,223 @@
+{
+  "labId": "ucsd-pathology-lab-mana-parast-lab",
+  "status": "supported",
+  "summaryZh": "Parast 实验室研究胎盘相关妊娠疾病的病理生理，包括子痫前期、胎儿生长受限和死胎，并寻找治疗靶点。团队使用转基因小鼠、胎盘原代细胞和基于干细胞的培养系统。",
+  "researchQuestions": [
+    "p63在人细胞滋养层干细胞的维持与分化中起什么作用？",
+    "低氧及相关信号通路通过哪些机制诱导绒毛外滋养层细胞的分化和成熟？",
+    "BMP信号下游的哪些机制参与滋养层谱系决定与滋养层干细胞维持？"
+  ],
+  "topics": [
+    "胎盘疾病",
+    "子痫前期",
+    "胎儿生长受限与死胎"
+  ],
+  "methods": [
+    "转基因小鼠",
+    "胎盘原代细胞",
+    "干细胞培养系统"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-a09301c51fc41364",
+      "quote": "About Dr. Parast Dr. Parast is a physician-scientist with clinical and research expertise in placental development and pathology. She is the Director of the Perinatal Pathology Service and Co-Director of the Center for Perinatal Discovery at UC San Diego. She is also a member of the UC San Diego Stem Cell Program as well as the Institute of Engineering in Medicine . More About Dr. Parast About the Lab Our lab explores the pathophysiology of placenta-based pregnancy disorders, including preeclampsia, fetal growth restriction, and stillbirth. We use a variety of model systems, including transgenic mouse models, primary placental cells, as well as stem cell-based culture systems in order to unravel the underlying pathophysiology, as well as identification of therapeutic targets, for the above pregnancy complications. Learn more about (1) the placenta and (2) how our lab uses stem cells to model placental development: 1: What is the Placenta? 2: Modeling Placental Development Evolution of the Lab October 2021 October 2019 July 2018 August 2017 May 2016 November 2015 Summer 2013 November 2012 June 2011 September 2010",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a09301c51fc41364",
+      "quote": "Co-Director of the Center for Perinatal Discovery at UC San Diego",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-9959ff0c5b89627c",
+      "quote": "We are now using human primary trophoblast stem cells (TSC) to identify the role of p63 in CTB maintenance and differentiation.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-9959ff0c5b89627c",
+      "quote": "We are now exploring the mechanisms through which hypoxia, and other related signaling pathways, induce both differentiation and maturation of EVT.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    },
+    {
+      "sourceId": "src-9959ff0c5b89627c",
+      "quote": "We are currently exploring the underlying mechanisms downstream of BMP signaling in trophoblast lineage specification and trophoblast stem cell maintenance, using both mouse and human PSC's and TSC's.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        2
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:25:13+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:25:13+00:00",
+    "previousRecordReviewedAt": "2026-10-16T02:33:16+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "原FAQ/how our lab uses链接仍排除；实际Projects页以our group/We明确提出p63角色、低氧机制与BMP下游机制，三问直接来自这些目标，不宣称再生疗法有效。",
+    "reviewComponent": "PRIOR29-QUESTION-FIELD-REVIEW.json",
+    "reviewComponentSha256": "8eff973cc745e4f1539900e309d8740d61bd5e09574a474f4e7774b7c939393c",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-a09301c51fc41364",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/index.html",
+        "sourceObservedAt": "2026-10-16T01:05:20+00:00",
+        "bodySha256": "94ba00cf9e79d2c7a47b32595119417a29673e30a37ce97af94ba883be01d91f",
+        "textSha256": "c65c8bfcba588bf2b9d5c7c0e0ba8cee4ffeccb65d04bcf3a26b377f2d08eb02",
+        "textCharacters": 1129,
+        "readRanges": [
+          [
+            0,
+            1129
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      },
+      {
+        "sourceId": "src-ac7e84fda90bb588",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/about.html",
+        "sourceObservedAt": "2026-10-16T01:33:38+00:00",
+        "bodySha256": "6d3d7cdac7340717da3186292151862b604aa8c8a0d303bdd0e6052c744dcdd0",
+        "textSha256": "ac9458b2cd740b1e5986f829a9f3a19a84a8ca402de16d1adefcb6a97c0b25b0",
+        "textCharacters": 1509,
+        "readRanges": [
+          [
+            0,
+            1509
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      },
+      {
+        "sourceId": "src-9959ff0c5b89627c",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html",
+        "sourceObservedAt": "2026-10-16T01:37:21+00:00",
+        "bodySha256": "796acb2868de89dba7921343b2b10184612baa5943ced3dae0078612319c6c7e",
+        "textSha256": "5e92341227a35c674c9e756f2959c68e5f8d28a3a876c5a8f559f6683724f69f",
+        "textCharacters": 6951,
+        "readRanges": [
+          [
+            0,
+            6951
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      },
+      {
+        "sourceId": "src-20dfaec029f5ab97",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/people.html",
+        "sourceObservedAt": "2026-10-16T01:33:41+00:00",
+        "bodySha256": "6319cfc73c1fa9dd53fa1e7fe551ad2e02f5d0c787a0684423588817ab095c70",
+        "textSha256": "c83c77ad7588b50849ab9f797edb54f7db9e9cf9391bcf3db36b859fc8c74bfa",
+        "textCharacters": 595,
+        "readRanges": [
+          [
+            0,
+            595
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      },
+      {
+        "sourceId": "src-fe66b0f07f0363c3",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+        "bodySha256": null,
+        "textSha256": "557b6ee17fbcc056c25ad89be8a05e91a75a55cc3b2c69e85d2b670c952c3889",
+        "textCharacters": 363,
+        "readRanges": [
+          [
+            0,
+            363
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      },
+      {
+        "sourceId": "src-54b85a5b2e50244f",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/people.html",
+        "sourceObservedAt": "2026-10-16T01:33:41+00:00",
+        "bodySha256": "6319cfc73c1fa9dd53fa1e7fe551ad2e02f5d0c787a0684423588817ab095c70",
+        "textSha256": "c7ee0c68419d76e1b851972809767cb7d9fbc0dd126954cb0df8588c39409c6a",
+        "textCharacters": 1386,
+        "readRanges": [
+          [
+            0,
+            1386
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "已读该来源整段实体研究/介绍主文或短历史字段。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-9959ff0c5b89627c",
+        "quote": "We are now using human primary trophoblast stem cells (TSC) to identify the role of p63 in CTB maintenance and differentiation.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:37:21+00:00",
+        "bodySha256": "796acb2868de89dba7921343b2b10184612baa5943ced3dae0078612319c6c7e",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html"
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-9959ff0c5b89627c",
+        "quote": "We are now exploring the mechanisms through which hypoxia, and other related signaling pathways, induce both differentiation and maturation of EVT.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:37:21+00:00",
+        "bodySha256": "796acb2868de89dba7921343b2b10184612baa5943ced3dae0078612319c6c7e",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html"
+      },
+      {
+        "questionIndex": 2,
+        "sourceId": "src-9959ff0c5b89627c",
+        "quote": "We are currently exploring the underlying mechanisms downstream of BMP signaling in trophoblast lineage specification and trophoblast stem cell maintenance, using both mouse and human PSC's and TSC's.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:37:21+00:00",
+        "bodySha256": "796acb2868de89dba7921343b2b10184612baa5943ced3dae0078612319c6c7e",
+        "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

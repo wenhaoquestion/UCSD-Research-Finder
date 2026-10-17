@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "state": "complete",
+  "passed": true,
+  "reviewedAt": "2026-10-16T08:58:40+00:00",
+  "helperReviewedAt": "2026-10-16T08:53:28+00:00",
+  "helperSha256": "02d1244346a7044ab607e741ae61cc36ac3296c89a5baa9f3b8632e65288729e",
+  "helperReviewPassed": true,
+  "planSha256": "a00853c9513b21ee8c6a51f7f12dc017494f6ad7dfe71d84c8bdf21087fb2c0b",
+  "planReviewPending": false,
+  "sharedHelperFunctionsReviewedSha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+  "scopeProposalSha256": "3248021953a5483a17d1afc9189e626ffa0278209f6a5fb7462b6769d4cc2980",
+  "scopeTerminologyAddendumSha256": "7c2aabb5262160c10b4fcd4c5e8e2cea9a4ee741f29206123315d1d10a6ee9af",
+  "checks": [
+    {
+      "check": "field_rebase",
+      "passed": true,
+      "reasonZh": "plan只在question journal complete后读取question plan的newRecord/newSha，与实际当前raw逐字对象及hash匹配；proposal.oldRecord仅作old-base hash核验，不覆盖当前raw。"
+    },
+    {
+      "check": "new_question_preservation",
+      "passed": true,
+      "reasonZh": "deepcopy(current raw)，methods/summary/uncertainty/evidence/reviewedAt/methodFieldReview以外逐key相等；researchQuestions与questionFieldReview全对象及root绑定保留。"
+    },
+    {
+      "check": "uncertainty_tail",
+      "passed": true,
+      "reasonZh": "先要求current uncertainty以proposal旧uncertainty为前缀，再用proposedUncertainty加原剩余尾部，保留问题字段待核尾部。"
+    },
+    {
+      "check": "evidence_prefix_scope",
+      "passed": true,
+      "reasonZh": "仅3个提案指定supports按索引、sourceId、完整quote、quoteLocation及旧supports核验后改写；旧证据其他键逐项相等，新方法proof仅追加。"
+    },
+    {
+      "check": "source_binding",
+      "passed": true,
+      "reasonZh": "新方法quote、sourceURL、原observedAt/bodySHA和methodIndices覆盖严格核验；最终all packets hash固定，不改URI或来源日期。"
+    },
+    {
+      "check": "url_projection",
+      "passed": true,
+      "reasonZh": "pure hydrate(old,new)要求URL投影除reviewedAt/evidence外所有字段相等；限制方法改动不得提升根身份或verified计数。"
+    },
+    {
+      "check": "immutable_plan_and_gate",
+      "passed": true,
+      "reasonZh": "plan只建一次，保存全部884 record/packet hashes和8完整old/new快照；apply严格绑定passed QA、plan、自己/共享helper、proposal/addendum/scopeQA/questionPlan哈希。"
+    },
+    {
+      "check": "atomic_resume",
+      "passed": true,
+      "reasonZh": "apply要求每raw为批准oldSha或newSha；atomic写raw后若journal未写，下次current==newSha仍补journal并标recoveredAfterRecordWrite。全部8项后才complete。"
+    },
+    {
+      "check": "other_record_guard",
+      "passed": true,
+      "reasonZh": "apply核全部非8目标raw哈希与all packet hashes；不会误改434外记录或packet。"
+    },
+    {
+      "check": "review_times",
+      "passed": true,
+      "reasonZh": "方法字段reviewAt取plan实际验证时间；scopeReviewAt单独保留提案时间、previousRecordReviewedAt保留434后时间，不替换source原capture时间。"
+    },
+    {
+      "check": "final_actual_plan_records",
+      "passed": true,
+      "reasonZh": "8条current old raw及其question plan newRecord完全一致；独立按scope提案/addendum、3处supports重分类和9方法proof重建所有newRecord，字段、证据、元数据与digest逐字匹配。"
+    }
+  ],
+  "actionableIssues": [],
+  "limitationsZh": [
+    "最终QA批准此固定待应用plan；不是落盘后复核，实际method raw尚未写。",
+    "复核方法helper及8actual newRecords，434问helper整体及434落盘由另一个独立QA负责；此处核8目标完整匹配其已应用newRecord。",
+    "纯内存模拟替换全部read/atomic/digest/snapshot写入接口，未运行CLI plan/apply且未产生真实记录/journal写。",
+    "原source日期与请求/最终URI由未变packet SHA及scopeQA约束；方法reviewedAt为实际计划验证时间，不能当研究发生日期。"
+  ],
+  "networkRequests": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorSharedWrites": 0,
+  "actualPlanValidationResults": [
+    {
+      "reviewIndex": 120,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-breen-church-lab",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "bbe48e4e1c5e56acf3e5224574083ecf138d173d925b20332e035e0babaa6dbc",
+      "newSha256": "5d270a654da093971892a10ab990445a59a97e3bb09e3e342ae4728baaa90a66",
+      "packetSha256": "5641c7ad11882c8d87c310a1d132234dce26e5e83bc7b52e9200d4c9c90beee8",
+      "questionCountPreserved": 1,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "小鼠模型（负责人研究项目）",
+        "遗传学操作（负责人研究项目）",
+        "神经解剖学操作（负责人研究项目）"
+      ],
+      "oldEvidenceCount": 5,
+      "newEvidenceCount": 6,
+      "newMethodsOnlyProofCount": 1,
+      "reclassificationIndices": [
+        3
+      ],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:25:05.829057+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 190,
+      "labId": "ucsd-psychiatry-lab-de-guglielmo-lab",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "04534a7f66ca8c165f627375640224fd69559ac28c90c8fd941f5a67fccd04ac",
+      "newSha256": "daeede97a948855e0f5685849d62f86dccd789737e7c3c689b81e2cbf6e8a825",
+      "packetSha256": "cf52c6c453fa6e1c18e06f1ecc1e24c892c5125c9eff3eec489a26061d3d5b46",
+      "questionCountPreserved": 1,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [
+        "光遗传学",
+        "药理学",
+        "生理学",
+        "动物模型"
+      ],
+      "methodsAfter": [],
+      "oldEvidenceCount": 4,
+      "newEvidenceCount": 4,
+      "newMethodsOnlyProofCount": 0,
+      "reclassificationIndices": [
+        0
+      ],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:21:53+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 225,
+      "labId": "ucsd-live-lab-c8c17d1c3b0cd2",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "1a23b5dc91cbbaa40be2ee06f88ec17136619bf18b840f5ac98c8a5a364647f9",
+      "newSha256": "7004309ada1f3a75f83c7ae33dd0f05b9f09fbbe959f89f986f2844c1b32bf2b",
+      "packetSha256": "d36175b6a28ba6f72b864299e79d514a6e0ce8f9877ca2552705a79bf45f1ad6",
+      "questionCountPreserved": 0,
+      "questionAvailabilityPreserved": "not_explicit_in_reviewed_entity_local_prose",
+      "uncertaintyTailPreserved": [
+        "研究问题待核（限本轮已审阅材料）：团队研究主题、气候减缓及方法兴趣列表未明示待解问题；不将气候方向或预测开发机械转成how。"
+      ],
+      "methodsBefore": [
+        "随机建模",
+        "实时预测",
+        "变阶方法"
+      ],
+      "methodsAfter": [],
+      "oldEvidenceCount": 5,
+      "newEvidenceCount": 5,
+      "newMethodsOnlyProofCount": 0,
+      "reclassificationIndices": [
+        1
+      ],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:29:19+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 349,
+      "labId": "ucsd-medicine-lab-zuraw-lab",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "66ee35563b37e4530afac07bbf2e8d1a2d5936d569ddca1037b9b2b5ff78c10c",
+      "newSha256": "5f76f602db214480776f4c8e261b912208b8ef1e66c6d5ea62afd96177519a90",
+      "packetSha256": "20272778e0758e46bb770749fe621a533381e817b7899232b361c1679ce8067f",
+      "questionCountPreserved": 2,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "人类研究",
+        "动物模型（按需使用）"
+      ],
+      "oldEvidenceCount": 5,
+      "newEvidenceCount": 6,
+      "newMethodsOnlyProofCount": 1,
+      "reclassificationIndices": [],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:19:47.650657+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 364,
+      "labId": "ucsd-astronomy-and-astrophysics-lab-experimental-cosmology-laboratory",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "f0eec0075e78b487ddf934c3b2dc0ed777e4c4581eb8dd11cde62da82385108f",
+      "newSha256": "2ec3e4907ed6e1ecfcdd2e4ab9e4f26277de4cf4008db1e6a1c40318c0ebb74d",
+      "packetSha256": "0f29151f6ce091dfe19991982e2e1d2a9ecdd72c2324e1b75b2a0f87dce12999",
+      "questionCountPreserved": 0,
+      "questionAvailabilityPreserved": "not_explicit_in_reviewed_entity_local_prose",
+      "uncertaintyTailPreserved": [
+        "研究问题待核（限本轮已审阅材料）：首页与Projects完整读，列宇宙背景研究及参与仪器项目，没有具体待解问题；其他教授目录/空profile不代替团队研究。"
+      ],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "宇宙微波背景偏振测量（BICEP1：2006–2008；BICEP2：2010–2012）",
+        "火箭载近红外背景测量（CIBER项目；观测年份未明）"
+      ],
+      "oldEvidenceCount": 1,
+      "newEvidenceCount": 2,
+      "newMethodsOnlyProofCount": 1,
+      "reclassificationIndices": [],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:21:10.092827+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 377,
+      "labId": "ucsd-pharmacology-lab-jin-zhang-lab",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "102c486cff9df9650d89375d7e8e90e97407871174d0be31e1c842db8775f841",
+      "newSha256": "ad2bc4e47c3ad21460c1a55d5025d50a2b90b7549980724a44c98bee6f6f8e76",
+      "packetSha256": "d8a141e69b690e30e064fc1156be4f8bcebe1b5c8e82eff8743516125eae3adf",
+      "questionCountPreserved": 1,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "遗传编码荧光生物传感器",
+        "超分辨率成像",
+        "靶向生化扰动",
+        "数学建模"
+      ],
+      "oldEvidenceCount": 4,
+      "newEvidenceCount": 5,
+      "newMethodsOnlyProofCount": 1,
+      "reclassificationIndices": [],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:22:02.178403+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 379,
+      "labId": "ucsd-public-health-lab-tala-al-rousan-lab-displacement-and-health-research-center",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "afd99385612a8c35c37eb6a7036ad4b73ebc64844d942ac8760a7cf83c265677",
+      "newSha256": "3990e738286d60d077cb76365f8c3cc1e1c3d9bcb009de051d0ae6df7a5a9853",
+      "packetSha256": "736599e03418e53d3500f749e7b692d8b45cac3c16468a9edab976f7a1a91f08",
+      "questionCountPreserved": 3,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "Google Earth Engine回溯暴露量化（气候暴露与心血管健康项目）",
+        "随机对照试验（BPCARE难民高血压自我管理项目）",
+        "社区参与的定性研究（加州痴呆移民照护项目）"
+      ],
+      "oldEvidenceCount": 7,
+      "newEvidenceCount": 10,
+      "newMethodsOnlyProofCount": 3,
+      "reclassificationIndices": [],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": false,
+      "newRootVerified": false,
+      "oldReviewedAt": "2026-10-16T08:22:02.179436+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    },
+    {
+      "reviewIndex": 382,
+      "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+      "changedKeys": [
+        "evidence",
+        "methodFieldReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "oldSha256": "164adc98633c21c81613e55eb8e8930c694cece0804326155753fc51544fe66a",
+      "newSha256": "84c3e0447d80398719ad6e5883103f9f843367886822462fb7254cfcd5b0a977",
+      "packetSha256": "11654f42061634497ee7fe4d47311928daf8437c8b89f25a70cbb5bcaa0aec8c",
+      "questionCountPreserved": 1,
+      "questionAvailabilityPreserved": "source_explicit_research_goal",
+      "uncertaintyTailPreserved": [],
+      "methodsBefore": [],
+      "methodsAfter": [
+        "支持向量回归（SVR）建模（已报告的人类DPR和TATA盒研究）"
+      ],
+      "oldEvidenceCount": 7,
+      "newEvidenceCount": 9,
+      "newMethodsOnlyProofCount": 2,
+      "reclassificationIndices": [],
+      "urlProjectionChangedKeys": [
+        "evidence",
+        "reviewedAt"
+      ],
+      "oldRootVerified": true,
+      "newRootVerified": true,
+      "oldReviewedAt": "2026-10-16T08:22:54.477425+00:00",
+      "newReviewedAt": "2026-10-16T08:55:24+00:00",
+      "passed": true
+    }
+  ],
+  "actualPlanSnapshotValidatedAt": "2026-10-16T08:56:43+00:00",
+  "global884RecordAndPacketHashesMatchPlan": true,
+  "planQuestionJournalCompleteVerified": true,
+  "pureInMemoryRecoveryChecks": [
+    {
+      "case": "clean_all_old",
+      "passed": true,
+      "simulatedRecordWrites": 8,
+      "simulatedJournalEntries": 8,
+      "simulatedJournalState": "complete"
+    },
+    {
+      "case": "resume_first_record_written_journal_missing",
+      "passed": true,
+      "simulatedRecordWrites": 7,
+      "simulatedJournalEntries": 8,
+      "simulatedJournalState": "complete"
+    },
+    {
+      "case": "reject_unapproved_first_record",
+      "passed": true,
+      "rejectedBeforeAnySimulatedWrite": true
+    }
+  ],
+  "simulationHarnessNote": "第一次模拟仅因QA内存digest适配漏处理journal而停止；补齐适配后3例全部通过，未改helper或产生任何真实数据写。",
+  "planReviewedAt": "2026-10-16T08:58:40+00:00",
+  "planCreatedAt": "2026-10-16T08:55:24+00:00",
+  "proposalSha256": "3248021953a5483a17d1afc9189e626ffa0278209f6a5fb7462b6769d4cc2980",
+  "terminologyAddendumSha256": "7c2aabb5262160c10b4fcd4c5e8e2cea9a4ee741f29206123315d1d10a6ee9af",
+  "scopeQaSha256": "ee2971c67d4f5ebf3761ed0f44617891f9e678fc356892f1fe01f7d2e5cf70d5",
+  "questionApplicationPlanSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+  "questionApplicationJournalSha256": "2ee52a3981367bd7fd0515c5350235516d0b1b66cc1b4b9105b00d5eaf377c05",
+  "planNotAppliedAtQa": true,
+  "all884RawAndPacketHashesStillEqualPlanBeforeAtFinalQa": true,
+  "aggregate": {
+    "plannedRecords": 8,
+    "actualOldRecordsMatchCurrentPostQuestionRaw": 8,
+    "newRecordsReconstructedExactly": 8,
+    "preservedExistingQuestions": 9,
+    "preservedNegativeAvailabilityRecords": 2,
+    "preservedNegativeUncertaintyTailEntries": 2,
+    "newMethodsOnlyEvidence": 9,
+    "exactSupportsReclassifications": 3,
+    "unchangedRootVerificationRecords": 8,
+    "pureMemoryRecoveryAndRefusalCasesPassed": 3,
+    "unresolvedIssues": 0
+  }
+}

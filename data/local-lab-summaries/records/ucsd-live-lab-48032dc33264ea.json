@@ -1,0 +1,82 @@
+{
+  "labId": "ucsd-live-lab-48032dc33264ea",
+  "status": "partial",
+  "summaryZh": "目标页面介绍放射医学的全国协作组临床试验活动与研究者参与，不是单独实验室。具体固定研究实体边界未明确。",
+  "researchQuestions": [],
+  "topics": [],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-9abb679b0bba7da8",
+      "quote": "Our researchers are national leaders in multiple national cooperative groups, including the NRG and Alliance Groups",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-9abb679b0bba7da8",
+      "quote": "Clinical Trials",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "mismatch",
+    "entityType": "clinical_trials_overview",
+    "reason": "页面概述多个全国合作组及多位研究者的临床试验活动，未定义名为 National Cooperative Group Clinical Trials 的独立实验室。 后续来源复核：复读已存临床试验总览，它描述多个全国合作组和研究者；没有独立同名实验室，本轮无新请求。",
+    "acceptanceStatus": "rejected_non_lab",
+    "hasUnresolvedMismatch": true,
+    "observedPageName": "Clinical Trials",
+    "observedPageType": "clinical_trials_overview",
+    "silentIdMigrationAllowed": false,
+    "proposedCorrections": [
+      {
+        "field": "entityClassification",
+        "value": "clinical_trials_overview",
+        "status": "candidate_only_not_applied"
+      }
+    ],
+    "requiresLiveIdentityFollowup": false,
+    "followupReviewedAt": "2026-10-16T02:17:52+00:00",
+    "followupFindings": [
+      {
+        "targetUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+        "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+        "reviewedAt": "2026-10-16T02:17:52+00:00",
+        "actualPageRequestMade": false,
+        "liveCheckedAt": null,
+        "sourceObservedAt": "2026-10-16T01:06:36+00:00",
+        "sourceId": "src-9abb679b0bba7da8",
+        "checkOrigin": "reused_collection_capture",
+        "originalDestinationRechecked": false,
+        "identityAccepted": false,
+        "findingZh": "复读已存临床试验总览，它描述多个全国合作组和研究者；没有独立同名实验室，本轮无新请求。"
+      }
+    ],
+    "followupConclusion": "复读已存临床试验总览，它描述多个全国合作组和研究者；没有独立同名实验室，本轮无新请求。",
+    "liveCheckedAt": null,
+    "liveCheckedAtScope": null,
+    "originalDestinationRechecked": false
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "临床试验活动页面不能单独确认实验室归属。"
+  },
+  "uncertainty": [
+    "不能把列举论文作为整个实验室研究说明。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "复读已存临床试验总览，它描述多个全国合作组和研究者；没有独立同名实验室，本轮无新请求。"
+  ],
+  "blockers": [
+    "destination_is_clinical_trials_overview_not_lab",
+    "页面概述多个全国合作组及多位研究者的临床试验活动，未定义名为 National Cooperative Group Clinical Trials 的独立实验室。"
+  ],
+  "reviewedAt": "2026-10-16T02:17:52+00:00",
+  "researchContentSupport": {
+    "status": "not_applicable_to_lab",
+    "scope": "The observed resource is explicitly not an independent lab/group."
+  },
+  "previousReviewedAt": "2026-10-16T02:08:49+00:00"
+}

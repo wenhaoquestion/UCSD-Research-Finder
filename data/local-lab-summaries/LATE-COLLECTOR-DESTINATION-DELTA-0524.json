@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:25:18+00:00",
+  "verdict": "NO_ACTIONABLE_DESTINATION_DELTA",
+  "snapshotAt": "2026-10-16T05:24:10+00:00",
+  "sourceQueuePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+  "sourceQueueSha256": "116aa5c13164f54a4475afff44e830992c7304458815dddf48b90f260e5a2f16",
+  "sourceQueueUpdatedAt": "2026-10-16T05:23:59+00:00",
+  "sourceQueueItemCount": 18174,
+  "sourceQueueCounts": {
+    "done": 4643,
+    "unresolved": 712,
+    "scope_excluded": 284,
+    "retained_prior_evidence": 1859,
+    "pending": 10676
+  },
+  "baseCommit": "641fd9abbcdc2cc3382847acb241695384a0faec",
+  "packetCount": 884,
+  "scope": "Exact request-key scan of literal listed roots, current root actual request/final URLs, existing explicitly reviewed followup checks and reviewed source request/final URLs. No new link discovery or faculty/general-directory expansion.",
+  "requestKeyPolicy": "scheme + hostname including www + port + exact escaped effective path + query; no HTTP/HTTPS, www or path/query folding. Root-only absent path is normal request '/'. Actual fetch.sourceUrl is the request binding, not the normalized queue URL or final URL.",
+  "associationTargetKeys": 1168,
+  "uniqueTargetKeys": 1140,
+  "comparisonCounts": {
+    "notNewerThanImportedActualRequest": 893,
+    "noActualQueueRequestForExactTarget": 260,
+    "sameBodyHashAlreadyRetained": 13,
+    "differentHtmlHashSameCompleteVisibleText": 1,
+    "exactCaptureAlreadyScopeReviewedAndRejected": 1,
+    "materialAccessResultDeltas": 0,
+    "newUsefulScientificBodies": 0
+  },
+  "candidateBindings": [
+    {
+      "labId": "ucsd-biology-topic-lab-cleland",
+      "labName": "Cleland Lab",
+      "ordinal": 46,
+      "packetSha256": "d44cae6070c4972e310de78208f1c5d144243d5459a3b36b64816ddc986deca5",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://clelandlab.biosci.ucsd.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://clelandlab.biosci.ucsd.edu/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://clelandlab.biosci.ucsd.edu/",
+        "finalUrl": "https://clelandlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T02:42:36+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "50fb74710a9aa02093616357ca3891df7f7844dc9d7eac3216827a1df7e45ae8",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/675e264e68eed7eb2d8db408c60d40e7b0db47d0093b41839324545093495469.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "http://labs.biology.ucsd.edu/cleland",
+        "finalUrl": "https://clelandlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T04:21:33+00:00",
+        "status": "ok",
+        "bodySha256": "50fb74710a9aa02093616357ca3891df7f7844dc9d7eac3216827a1df7e45ae8"
+      },
+      "knownSameBodySourceIds": [
+        "src-b00455d6200e1dd2",
+        "src-91ad0a7276042f4b"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "adafce997aa399687f397aa7c4f0e9dea3a1b5fa08ab4688c9ee7f2765aac64d",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "labName": "Goldrath Lab",
+      "ordinal": 62,
+      "packetSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://goldrathlab.com/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://goldrathlab.com/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://goldrathlab.com/",
+        "finalUrl": "https://goldrathlab.com/",
+        "observedAt": "2026-10-16T01:30:05+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b0bc68c570e4ce215bb3bd5c5bb9d10614a86678ab649c7e350165f6c4324a85.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "http://biology.ucsd.edu/labs/goldrath",
+        "finalUrl": "https://goldrathlab.com/",
+        "observedAt": "2026-10-16T04:56:17+00:00",
+        "status": "ok",
+        "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46"
+      },
+      "knownSameBodySourceIds": [
+        "src-acffd3486037cd5c",
+        "src-6cf67ff1ffd79d15"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "094e7cfca8ccb8c2ac5bd234f8a74220d645183311febc1ecab57696db39ccb1",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-hasty-lab",
+      "labName": "Hasty Lab",
+      "ordinal": 65,
+      "packetSha256": "ecedf61cfb8d4c0d719ca362f6bd047d3cdc8bde7e1ac013cf99ceaf94a74377",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://synbio.ucsd.edu/biodynamics/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://synbio.ucsd.edu/biodynamics",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://synbio.ucsd.edu/biodynamics/",
+        "finalUrl": "https://synbio.ucsd.edu/biodynamics/",
+        "observedAt": "2026-10-16T02:41:55+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "683e1d440333dd52e867bb783a8ae1f02439a4a1f9916850c6c345df4f8402c2",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3d084f206e18be21cfb4e8b706728dae8fbb93a753e4c72cbd8ac5b3c5744e29.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://biodynamics.ucsd.edu/",
+        "finalUrl": "https://synbio.ucsd.edu/biodynamics/",
+        "observedAt": "2026-10-16T00:59:36+00:00",
+        "status": "ok",
+        "bodySha256": "683e1d440333dd52e867bb783a8ae1f02439a4a1f9916850c6c345df4f8402c2"
+      },
+      "knownSameBodySourceIds": [
+        "src-75f8a69b799e18d8"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "d87d4bfe972014dec03938c44863dddfa6eb17f9c27be99913f57a7fdd2bf3d5",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-mikio-aoi",
+      "labName": "Mikio Aoi Lab",
+      "ordinal": 97,
+      "packetSha256": "b03acbcf3e10f7d453600f2b2be7a970a9450ec1a84465dc62ae667abd831c96",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://aoilab.biosci.ucsd.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://aoilab.biosci.ucsd.edu/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://aoilab.biosci.ucsd.edu/",
+        "finalUrl": "https://aoilab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T02:42:33+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "f2616ac63826ea48c71a656017009f04f61e023c8f7e16a3fcd187512dea2c9d",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fe390ee486aeddf6c36e43df1057d4253d861cfbc19a9098f69cf3eb4b0b43a7.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://aoilab.biology.ucsd.edu/",
+        "finalUrl": "https://aoilab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:17+00:00",
+        "status": "ok",
+        "bodySha256": "f2616ac63826ea48c71a656017009f04f61e023c8f7e16a3fcd187512dea2c9d"
+      },
+      "knownSameBodySourceIds": [
+        "src-646dbfc850d48e1f"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "37bdfee51b6e8528808d976ec9f6d5a6ee1d44776e5daed2412f6c1181e6e4b8",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-suel-gurol",
+      "labName": "Suel, Gurol Lab",
+      "ordinal": 131,
+      "packetSha256": "ea21f745ee72908c39e34d65b60bbced23ad1602c973d0a5b63bf72c340669be",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://suellab.github.io/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://suellab.github.io/",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://suellab.github.io/",
+        "finalUrl": "https://suellab.github.io/",
+        "observedAt": "2026-10-16T01:06:31+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f3a5edc06ada6ba1a182687ccf891f6c913bd99fea41afea885c018022694db1.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "http://labs.biology.ucsd.edu/suel",
+        "finalUrl": "https://suellab.github.io/",
+        "observedAt": "2026-10-16T04:22:13+00:00",
+        "status": "ok",
+        "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930"
+      },
+      "knownSameBodySourceIds": [
+        "src-f9939fa33bedba63",
+        "src-b66282b9e19af8e6"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "bcab1f5461e8cd445af1fcde7a7f0194875d785b01bc4758e055093a5bad4d8f",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-hdsi-es-bioinformatics-ai-lab",
+      "labName": "ES Bioinformatics & AI Lab",
+      "ordinal": 209,
+      "packetSha256": "1626ec0e333d7446403c9703de1f765eb477cdfe6fea37232bfb30777f024393",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "http://esbailab.org/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "http://esbailab.org/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "http://esbailab.org/",
+        "finalUrl": "http://esbailab.org/",
+        "observedAt": "2026-10-16T02:42:37+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "58683db199b32d498106bd96962c9352267ab023a00ccb394fb1ff86607757fd",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e3765c1530107a60d846c32bdd46ab65e58b0e6fefb3835292376d0810648a5d.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://esb-ai-lab.github.io/",
+        "finalUrl": "http://esbailab.org/",
+        "observedAt": "2026-10-16T01:05:00+00:00",
+        "status": "ok",
+        "bodySha256": "58683db199b32d498106bd96962c9352267ab023a00ccb394fb1ff86607757fd"
+      },
+      "knownSameBodySourceIds": [
+        "src-875d9a8a1534238b"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "2ff46e76f2cd7e40f05fe3101ad9e3acbeefd59cb3b081aa9e984a10e21d8002",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-live-lab-421d1a9d198202",
+      "labName": "Takaki Komiyama — lab website",
+      "ordinal": 627,
+      "packetSha256": "a3b26c438bc849fa5a7aee639e9018d6b7cbfd44a683dd3551833d13dbd5b76f",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://komiyamalab.biosci.ucsd.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://komiyamalab.biosci.ucsd.edu/",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:11+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/150d0b69b57c8feb170a3d15500106e8adeaa205edbf1bc2cc9ebc2a5aaec5dc.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:46+00:00",
+        "status": "ok",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7"
+      },
+      "knownSameBodySourceIds": [
+        "src-19163a4c45db52fd"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "867b5af2e83ac128a4518739c2e0a39221061006055880b303f9c9e64042a1df",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-live-lab-86c289fa737e94",
+      "labName": "Mental Health in Design Lab",
+      "ordinal": 684,
+      "packetSha256": "716ce5c03084a2b823effeb8fb6a1d3cf85bcbad9656be29207553b82874b5be",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://mentalhealthindesign.weebly.com/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://mentalhealthindesign.weebly.com/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://mentalhealthindesign.weebly.com/",
+        "finalUrl": "https://mentalhealthindesign.weebly.com/",
+        "observedAt": "2026-10-16T02:42:50+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "6002052376282caa4606c57687ddc0cfa46b756031dd232f481433cee63a51c7",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2d5e02c626662b6fd1e1e34a44df63badf7efb4efa9a96a996f0113a4f38c047.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "http://mentalhealthindesign.com/",
+        "finalUrl": "https://mentalhealthindesign.weebly.com/",
+        "observedAt": "2026-10-16T01:07:06+00:00",
+        "status": "ok",
+        "bodySha256": "6002052376282caa4606c57687ddc0cfa46b756031dd232f481433cee63a51c7"
+      },
+      "knownSameBodySourceIds": [
+        "src-0869aa97b8c3dbba"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "391ced37933263566376465c117b9de7d8baeca90e2d1b0cb5d9441fa65e06b4",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-live-lab-b8a6c47fb14087",
+      "labName": "Nathan Lewis — lab website",
+      "ordinal": 552,
+      "packetSha256": "88570b265753b4e4b03a19269fcb0fa1054569644a85e067a25e333f821b375b",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://lewis.uga.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://lewis.uga.edu/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://lewis.uga.edu/",
+        "finalUrl": "https://lewis.uga.edu/",
+        "observedAt": "2026-10-16T02:40:31+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "38af023f44373e0ec5659f3d67635232293c4e236e0f57e5893f355f0c71bfc1",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bdd282e5b4d3625ac96e185a25314a644fe1c6e20931c7f4b68605f6b817437b.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://lewislab.ucsd.edu/",
+        "finalUrl": "https://lewis.uga.edu/",
+        "observedAt": "2026-10-16T01:00:48+00:00",
+        "status": "ok",
+        "bodySha256": "38af023f44373e0ec5659f3d67635232293c4e236e0f57e5893f355f0c71bfc1"
+      },
+      "knownSameBodySourceIds": [
+        "src-ef3b480fe2847ffb"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "b281a55f74c73f18c78597c15e1f90d6847bd571dc9c34fdbe542a6b5a1c404d",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-live-lab-ce0b313a22d83d",
+      "labName": "Hanh-Phuc Le — lab website",
+      "ordinal": 502,
+      "packetSha256": "04cede91736b0cff8576e488045e639d93ac6659ddf73f16bf1bc1384eb33769",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://ipower3es.eng.ucsd.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://ipower3es.eng.ucsd.edu/",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://ipower3es.eng.ucsd.edu/",
+        "finalUrl": "https://ipower3es.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T01:02:16+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "9d9d540d6e643b77668377929bbfc93086ed35a0ba4788eb74f49f2eef866b98",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/29a23f7e7c22c12e7f2c05716a31339d8cce9fe17eb6c8c39ba085f751f9ef5e.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://ipower3es.ucsd.edu/",
+        "finalUrl": "https://ipower3es.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:27+00:00",
+        "status": "ok",
+        "bodySha256": "15c721683da6faa37cbd4d55c02627d40f8f877f120459457eea6312441d01f6"
+      },
+      "knownSameBodySourceIds": [],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_complete_visible_text_different_html_hash",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "8319c42cd9948283e8e0c5ec70cdf87bb0a4dfa158f161dbebd853c6f91813e5",
+      "htmlContentRead": true,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false,
+      "sameCompleteVisibleTextSource": {
+        "sourceId": "src-254ea865b6464cde",
+        "observedAt": "2026-10-16T01:00:27+00:00",
+        "requestedUrl": "https://ipower3es.ucsd.edu/",
+        "finalUrl": "https://ipower3es.eng.ucsd.edu/",
+        "bodySha256": "15c721683da6faa37cbd4d55c02627d40f8f877f120459457eea6312441d01f6"
+      },
+      "completeVisibleTextCharacters": 2486,
+      "sameTitle": true,
+      "sameCompleteVisibleText": true,
+      "scopeProof": "Our research mission is to address challenges in co-optimizing efficiency and size with performance in different electronic systems and applications",
+      "reason": "Different HTML bytes at an independently requested final host; complete ContentDOM text and title exactly match the already retained destination capture. No new research or method claim. News/publication snippets are unchanged and not newly apportioned to the lab programme."
+    },
+    {
+      "labId": "ucsd-live-lab-ed45a5a6e04fae",
+      "labName": "Natural Computation Lab",
+      "ordinal": 554,
+      "packetSha256": "73f0ccf7b6a5ec573fcd50c3aaaa9cd03e1d2c373bc55f84f91c9995857e9ddb",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://pages.ucsd.edu/~desa/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://pages.ucsd.edu/~desa",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://pages.ucsd.edu/~desa/",
+        "finalUrl": "https://pages.ucsd.edu/~desa/",
+        "observedAt": "2026-10-16T01:29:29+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "34092a9b57a19de84f1cc97f757cd0e75cfdd16dcdb77ee64e0503d9ce871d73",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/017dd19750b0f0f005c412a725f681645c3c7c9d1be2f3528a84033568c636f9.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://cogsci.ucsd.edu/~desa/",
+        "finalUrl": "https://pages.ucsd.edu/~desa/",
+        "observedAt": "2026-10-16T01:06:38+00:00",
+        "status": "ok",
+        "bodySha256": "34092a9b57a19de84f1cc97f757cd0e75cfdd16dcdb77ee64e0503d9ce871d73"
+      },
+      "knownSameBodySourceIds": [
+        "src-3ca14da59a811c64"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "a7598ce0b72b63d6950c507eaafd6f5e1920d7c3502f961b0d2033c8e56cf0cc",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-komiyama-lab",
+      "labName": "Komiyama Lab – a systems neuroscience laboratory",
+      "ordinal": 253,
+      "packetSha256": "063b510c07f7c01e9e150d8cbbf16d47484eb26b9109d6c3ea35f724f94d75f1",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://komiyamalab.biosci.ucsd.edu/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://komiyamalab.biosci.ucsd.edu/",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:11+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/150d0b69b57c8feb170a3d15500106e8adeaa205edbf1bc2cc9ebc2a5aaec5dc.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://labs.biology.ucsd.edu/komiyama/",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:05:07+00:00",
+        "status": "ok",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7"
+      },
+      "knownSameBodySourceIds": [
+        "src-6e5c0330ba1ee206"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "9e481a02c0ad00bab0e2e16c732b312d2ed816dbc0f429785e4db812bfa8223d",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-lewis-lab",
+      "labName": "Lewis Lab",
+      "ordinal": 333,
+      "packetSha256": "fc6451fca253c6b3ff4992866fa84838cd6e18f9131ae367648c08e6796b57a9",
+      "rawStatus": "supported",
+      "targetBindings": [
+        {
+          "url": "https://lewis.uga.edu/lab-members/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://lewis.uga.edu/lab-members",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://lewis.uga.edu/lab-members/",
+        "finalUrl": "https://lewis.uga.edu/lab-members/",
+        "observedAt": "2026-10-16T02:41:07+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "93868c9661805b77a2ab924d7d2d075f6fe8f8c080dcfd56b18ef7ea4a097c3d",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e85fceaa4edfe411c18b3e35f4a7a80c62b70a3630ba0fc73119c2579ba3ebe1.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://lewislab.ucsd.edu/lab-members",
+        "finalUrl": "https://lewis.uga.edu/lab-members/",
+        "observedAt": "2026-10-16T00:59:59+00:00",
+        "status": "ok",
+        "bodySha256": "93868c9661805b77a2ab924d7d2d075f6fe8f8c080dcfd56b18ef7ea4a097c3d"
+      },
+      "knownSameBodySourceIds": [
+        "src-76f1783f5a12bddd"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "948ea373d8d32fe5305ec6a4f5ffcca0df7d770d7881a0ceaeb560c2a805fab0",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-neurocognition-and-movement-lab",
+      "labName": "Neurocognition and Movement Lab",
+      "ordinal": 400,
+      "packetSha256": "7bf787b8d9f5f7edc6d92c113800a5d0bd64e4b2f19fbc4b94a5a311d47f2f4d",
+      "rawStatus": "partial",
+      "targetBindings": [
+        {
+          "url": "https://psychiatry.ucsd.edu/index.html",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://psychiatry.ucsd.edu/index.html",
+      "queueState": "done",
+      "capture": {
+        "requestedUrl": "https://psychiatry.ucsd.edu/index.html",
+        "finalUrl": "https://psychiatry.ucsd.edu/index.html",
+        "observedAt": "2026-10-16T00:57:19+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "85a381cdfb173b4d195ffe6b3e295619f2c9c1c4ab6c8fc9020018fcf990bc29",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/89d354d8896f7de9bce67a28f4a8366cc25d5308ef0af2c73b25ccfb6b96bea1.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://psychiatry.ucsd.edu/research/programs-centers/ncml/index.html",
+        "finalUrl": "https://psychiatry.ucsd.edu/index.html",
+        "observedAt": "2026-10-16T01:03:03+00:00",
+        "status": "ok",
+        "bodySha256": "85a381cdfb173b4d195ffe6b3e295619f2c9c1c4ab6c8fc9020018fcf990bc29"
+      },
+      "knownSameBodySourceIds": [
+        "src-763de3e38870b0e8"
+      ],
+      "priorImportedSameActualRequest": null,
+      "decision": "same_body_hash_already_retained",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "c6f31e850cc8b1a54deaae7cb0a2e97740d7da3c66b8d5b795d6178b6cbcaa4b",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false
+    },
+    {
+      "labId": "ucsd-public-health-lab-visit-the-sallis-lab-website",
+      "labName": "Visit the Sallis lab website.",
+      "ordinal": 417,
+      "packetSha256": "92c50b15bb33c3f7c8fa9c315dfca19cfec979e3e2c9fbae4c23f4caa5efe84c",
+      "rawStatus": "partial",
+      "targetBindings": [
+        {
+          "url": "https://www.drjimsallis.com/",
+          "role": "latest_root_observed_final"
+        }
+      ],
+      "queueItemKey": "https://www.drjimsallis.com/",
+      "queueState": "scope_excluded",
+      "capture": {
+        "requestedUrl": "https://www.drjimsallis.com/",
+        "finalUrl": "https://www.drjimsallis.com/",
+        "observedAt": "2026-10-16T02:42:44+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "bodySha256": "82c069840f63473662b9f8686746d2a93dee49feacd41455f26d5e4c54bef555",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/17d03b6541c013ca941c1466866c720e3c39dc390daf7e7185c9647d2fe56a15.html",
+        "redirects": []
+      },
+      "currentPrimaryRoot": {
+        "requestedUrl": "https://drjimsallis.org/",
+        "finalUrl": "https://www.drjimsallis.com/",
+        "observedAt": "2026-10-16T01:03:04+00:00",
+        "status": "ok",
+        "bodySha256": "e8091f0e63abb660168e867cffe2decbb700d2ed047de922d690047c29f8d7b2"
+      },
+      "knownSameBodySourceIds": [],
+      "priorImportedSameActualRequest": null,
+      "decision": "reuse_exact_previous_scope_rejection",
+      "actualCaptureVerified": true,
+      "bindingFingerprint": "b342786d1f941b6ab6e19e85c8a063594f8956c18f973b42f7553740219d5a81",
+      "htmlContentRead": false,
+      "researchChangeRecommended": false,
+      "primaryRootReplacementRecommended": false,
+      "priorExactAssessment": {
+        "report": "data/local-lab-summaries/DELTA-ASSOCIATION-SCOPE-REVIEW.json",
+        "decisionAt": "2026-10-16T03:34:56+00:00",
+        "semanticKey": "8c7a06708223fb1c1c1bdef5069478f6910d24ca381b529c9261170621f5523b",
+        "assessment": "scope_assessed_not_admitted",
+        "tupleExactlyMatches": true
+      },
+      "priorExactBodyContentReviewReused": true,
+      "reason": "The exact requested URL, 02:42:44 observation and 82c06984... body were already individually reviewed. Personal career, publications, advocacy and blog material do not establish an independent Sallis lab/group programme. Reuse that finite scoped decision without another HTML read."
+    }
+  ],
+  "candidateAssociationCount": 15,
+  "distinctActualCaptureCount": 14,
+  "actualCacheHashAndOriginalSidecarTupleChecks": 15,
+  "allCandidateMetadataChecksPass": true,
+  "newContentBodiesRead": 1,
+  "reusedPriorExactBodyScopeReviewsWithoutReread": 1,
+  "sameBodyHashesNotScientificallyReread": 13,
+  "concreteNextActions": [
+    {
+      "action": "keep_current_packets_records_and_primary_HTTP_checks",
+      "reason": "No useful scientific body or material access-result delta exists within this finite queue snapshot. All unmatched actual request tuples collapse to already retained same bytes, identical complete visible text, or an exact prior scope rejection."
+    },
+    {
+      "action": "do_not_refresh_for_queue_updatedAt_or_capture_time_alone",
+      "reason": "The newest unmatched tuples here are old captures from 00:57–02:42 UTC; queue activity at 05:23:59 does not make those sources new."
+    }
+  ],
+  "frozenHandoff": {
+    "recordCount": 16,
+    "sha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "unchanged": true
+  },
+  "boundaries": {
+    "networkRequests": 0,
+    "sourcePacketRawCollectorCodeWrites": 0,
+    "automaticallyAdmittedSources": 0,
+    "primaryHTTPBindingsReplaced": 0,
+    "scientificClaimsChanged": 0,
+    "collectionCompleteClaimed": false
+  },
+  "actionableIssues": []
+}

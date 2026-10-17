@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T02:14:41+00:00",
+  "scope": "Read-only semantic QA of the 13 identity decisions, their raw records, source packets, and the separately referenced candidate source packets. No network, record, code, or aggregate changes.",
+  "result": "pass",
+  "reviewedCount": 13,
+  "blockingFindingCount": 0,
+  "minorFindingCount": 0,
+  "exactQuoteValidationErrors": [],
+  "acceptedCount": 0,
+  "silentIdMigrationsObserved": 0,
+  "candidateUrlAcceptanceCount": 0,
+  "findings": [
+    {
+      "severity": "low",
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "issue": "决策和record正文提到历史目录关联Schmid-Schoenbein Lab，但所选evidence未包括该关联的原始历史字段片段。材料在packet中充分，谨慎结论本身成立。",
+      "suggestedEvidence": {
+        "sourceId": "src-82cd7df3217a1d38",
+        "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+        "quote": "One Schmid-Schoenbein Lab card names Geert Schmid-Schoenbein as principal investigator, links the lab name to microcirculation.eng.ucsd.edu, and links Website to the Google Site at microcirculation-autodigestion/home.",
+        "evidenceLocation": "body"
+      },
+      "recommendedAction": "可补入该历史链接映射片段并标明preserved historical field evidence；继续保持旧lab与新center关系未证实，不改变候选或接受状态。",
+      "status": "resolved",
+      "resolution": "已补src-3452708d1c4c2ebf官方目录逐字片段；src-82cd7df3217a1d38和src-2bee57f20ead184e明确标为保存的人工审阅记录，非官方页面逐字原文。身份关系仍未接受。"
+    }
+  ],
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-not-in-a-biology-group",
+      "semanticResult": "pass",
+      "observedClassification": "lab",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "旧类别标签与目的页 Kendrick lab 分开，候选名称未采纳，研究只归候选实体。"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+      "semanticResult": "pass",
+      "observedClassification": "educational_resource",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "安全视频教学资源分类适当，不能按名称中的 Lab 接受为科研实体。"
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-malinow-lab",
+      "semanticResult": "pass",
+      "observedClassification": "domain_sale",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "域名出售页与历史 Malinow Lab 分开，未推断实验室关闭。"
+    },
+    {
+      "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+      "semanticResult": "pass",
+      "observedClassification": "departmental_division",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "正文的 Division Chief、临床服务和多位教师支持院系分部分类。"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+      "semanticResult": "pass",
+      "observedClassification": "research_group_directory",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "unresolved",
+      "note": "完整捕获正文是多个哲学小组目录，未定位 Field Lab，维持未解决适当。"
+    },
+    {
+      "labId": "ucsd-physics-biological-physics",
+      "semanticResult": "pass",
+      "observedClassification": "research_field_directory",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "领域与多实验室目录分类适当，没有把整页或其他实验室研究归给单一实体。"
+    },
+    {
+      "labId": "ucsd-live-lab-c47793a464ccdc",
+      "semanticResult": "pass",
+      "observedClassification": "course",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "课程编号、学分、先修和选课信息支持 course 分类。"
+    },
+    {
+      "labId": "ucsd-live-lab-48032dc33264ea",
+      "semanticResult": "pass",
+      "observedClassification": "clinical_trials_overview",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "多合作组及研究者临床试验总览分类适当，未误接受固定研究团队。"
+    },
+    {
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "semanticResult": "pass",
+      "observedClassification": "center_or_institute",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "旧lab与新center关系保持未证实；历史目录原文和人工链接审阅记录已区分标注。"
+    },
+    {
+      "labId": "ucsd-live-lab-ca0f4105fff103",
+      "semanticResult": "pass",
+      "observedClassification": "institutional_homepage",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "历史 lab 研究与 Ludwig 主页身份分开；新 Zhou 网站只作候选URL，未合并ID。"
+    },
+    {
+      "labId": "ucsd-live-lab-61e490319a4560",
+      "semanticResult": "pass",
+      "observedClassification": "institutional_homepage",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "历史 Oegema lab 研究与 Ludwig 主页身份分开；Oegema/Desai网站只作候选URL。"
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+      "semanticResult": "pass",
+      "observedClassification": "institutional_homepage",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "具名 Kolodner 历史实体错配独立列示，没有用机构主页的癌症方向补实验室研究。"
+    },
+    {
+      "labId": "ucsd-live-lab-d38261da50a200",
+      "semanticResult": "pass",
+      "observedClassification": "institutional_homepage",
+      "stableIdPreserved": true,
+      "entityAccepted": false,
+      "excludedFromAcceptedSummaryAndUrlCounts": true,
+      "candidateCorrectionsRemainUnaccepted": true,
+      "recordStatus": "partial",
+      "note": "第二个 Kolodner ID已降partial；历史lab研究保留与当前身份接受独立，两个ID未合并。"
+    }
+  ],
+  "quoteValidationLocationFields": {
+    "decision": "evidenceLocation",
+    "record": "quoteLocation"
+  },
+  "resolvedFindingCount": 1,
+  "authoringScriptValidation": {
+    "pythonAstParse": "pass",
+    "pureEvidenceHelperSecondApplicationUnchanged": true,
+    "fullAuthoringScriptExecuted": false,
+    "checkpointOrPrepareExecuted": false,
+    "reason": "Parent owns concurrent summary/network adapter changes; full authoring rerun left to parent."
+  }
+}

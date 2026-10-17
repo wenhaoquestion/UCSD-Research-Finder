@@ -1,0 +1,1154 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:37:36+00:00",
+  "networkRequestsMade": 0,
+  "onlyOwnReportPairWritten": true,
+  "counts": {
+    "stagedSourcesFullHtmlAndVisibleTextRead": 6,
+    "sourceHashTimeUriChecksPassed": 6,
+    "wholeGroupResearchSources": 1,
+    "imagesOrNavigationSources": 5,
+    "nextFiniteCandidates": 3,
+    "existingNextTargetCaptures": 0,
+    "knownNextTargetRefusals": 0
+  },
+  "scope": "Full actual staged HTML/body/attribute review for6sources; metadata/discovery-only review for3uncaptured targets. No raw/packet/code/receipt edits.",
+  "snapshot": {
+    "queueUpdatedAt": "2026-10-16T05:37:35+00:00",
+    "queueSha256": "019db7834d55ee5d3c460ad796744c59786fd7caf39659eada2ca215caa4a345",
+    "gapResultsSha256": "72aaf04d00b5ffedd215930b8c288c77a4d83cbcb403d8ae702043bb56f443fc",
+    "gapItemCount": 193,
+    "gapWireEvents": 335,
+    "queueChronology": "Earlier read saw labs.biology otherURI work including running pillus/contact.htm. Final queue updated05:37:35/read05:37:36 has0 pending/running on labs.biology and ips. No exact target queue/capture/attempt found. Do not infer live lock/process absence."
+  },
+  "sources": [
+    {
+      "sourceId": "src-e3240871c3f7fc37",
+      "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+      "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+      "observedAt": "2026-10-16T05:33:13+00:00",
+      "bodySha256": "637b82273d5e53c1b9e97f52906e03042b418f1a2eb82227476d34a769ccb2aa",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c54ac862deab42b211e5c21e08237acf45e10d71d178aeacdd39860d7a7f4a6b.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "content",
+      "headings": [],
+      "sourceContentDates": [],
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 708,
+      "fullVisibleTextRead": "",
+      "visibleTextCharacters": 0,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "observedAt": "2026-10-16T05:33:13+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "637b82273d5e53c1b9e97f52906e03042b418f1a2eb82227476d34a769ccb2aa",
+        "retrievedEpoch": 1792128793.60959
+      },
+      "gapFetch": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "observedAt": "2026-10-16T05:33:13+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "637b82273d5e53c1b9e97f52906e03042b418f1a2eb82227476d34a769ccb2aa",
+        "retrievedEpoch": 1792128793.60959,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:13+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:13+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:13+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_frame_source"
+      },
+      "wireEventRange": [
+        329,
+        330
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "Named lab identity and institution only in raw image alt; no research prose.",
+      "scope": "image_only_lab_branding",
+      "evidence": [
+        {
+          "quote": "Yanofsky Lab, University of California San Diego, La Jolla, CA",
+          "location": "body img alt",
+          "packetTextContainsQuote": false
+        }
+      ],
+      "researchSupported": false,
+      "methodsSupported": [],
+      "dateBoundary": "No explicit page-update date. FrontPage3.0 is software/version, not a date."
+    },
+    {
+      "sourceId": "src-f6ada626aa6f3a8d",
+      "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "observedAt": "2026-10-16T05:33:14+00:00",
+      "bodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/51b0633ecdcf58b8a179b1cbfb046d7438bbdef1c480f6037c89fb758001353c.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "Main Navigation",
+      "headings": [],
+      "sourceContentDates": [],
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 1476,
+      "fullVisibleTextRead": "",
+      "visibleTextCharacters": 0,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "observedAt": "2026-10-16T05:33:14+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+        "retrievedEpoch": 1792128794.5724359
+      },
+      "gapFetch": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "observedAt": "2026-10-16T05:33:14+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+        "retrievedEpoch": 1792128794.5724359,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:14+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:14+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:14+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_frame_source"
+      },
+      "wireEventRange": [
+        330,
+        331
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "Navigation page within explicitly named Yanofsky frame chain; no self-contained research prose.",
+      "scope": "navigation_and_client_side_image_map",
+      "evidence": [
+        {
+          "quote": "Main Navigation",
+          "location": "HTML title"
+        },
+        {
+          "quote": "FrontPageMap",
+          "location": "actual map name and img usemap"
+        }
+      ],
+      "researchSupported": false,
+      "methodsSupported": [],
+      "dateBoundary": "No explicit page-update date; webbot/FrontPage metadata is not current research evidence."
+    },
+    {
+      "sourceId": "src-1f9cf909b9d3c41e",
+      "sourceUrl": "https://ips.ucsd.edu/splash_v_n.html",
+      "requestedUrl": "https://ips.ucsd.edu/splash_v_n.html",
+      "checkedUrl": "https://ips.ucsd.edu/splash_v_n.html",
+      "observedAt": "2026-10-16T05:33:15+00:00",
+      "bodySha256": "a0eb32d3305d219f6787ea65e47a2621b17ae4852a9ec1ff01027c7e260d3d20",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a86928dd1f13ece92c20d858d905b9c8e186f2c7eff2839d6141b0e11e772f44.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "A&A/ISEE IPS Forecast Project Splash Page",
+      "headings": [],
+      "sourceContentDates": [],
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 1052,
+      "fullVisibleTextRead": "",
+      "visibleTextCharacters": 0,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "observedAt": "2026-10-16T05:33:15+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "a0eb32d3305d219f6787ea65e47a2621b17ae4852a9ec1ff01027c7e260d3d20",
+        "retrievedEpoch": 1792128795.5723672
+      },
+      "gapFetch": {
+        "sourceUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "observedAt": "2026-10-16T05:33:15+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "a0eb32d3305d219f6787ea65e47a2621b17ae4852a9ec1ff01027c7e260d3d20",
+        "retrievedEpoch": 1792128795.5723672,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:15+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "checkedUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "requestedUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "https://ips.ucsd.edu/splash_v_n.html",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:15+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:15+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_frame_source"
+      },
+      "wireEventRange": [
+        331,
+        332
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "IPS forecast project branding/menu; does not independently establish a named Space Weather Laboratory, PI or current institutional appointment.",
+      "scope": "images_and_navigation_only",
+      "researchSupported": false,
+      "methodsSupported": [],
+      "dateBoundary": "HTML comment generated by forecast_html.pro on2004/08/27 17:57:51.000 is a generation marker, not a visible page-update/current-research date.",
+      "htmlGenerationComment": "generated by ~/pro/tool/forecast_html.pro on 2004/08/27 17:57:51.000",
+      "evidence": [
+        {
+          "quote": "A&A/ISEE IPS Forecast Project Splash Page",
+          "location": "title",
+          "supports": "project branding only"
+        }
+      ]
+    },
+    {
+      "sourceId": "src-93dbcd3100362768",
+      "sourceUrl": "https://ips.ucsd.edu/banner.html",
+      "requestedUrl": "https://ips.ucsd.edu/banner.html",
+      "checkedUrl": "https://ips.ucsd.edu/banner.html",
+      "observedAt": "2026-10-16T05:33:16+00:00",
+      "bodySha256": "8b59917c52782bbc6a4d1076c8da862f3d262d337b4ab626466172c6cc2c52a6",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/af3895df8cc1a6654fe3a0bd1050ac5a98ab64b4817fc2c4a655c474ea68cf7d.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "A&A/ISEE IPS Forecast Project Banner",
+      "headings": [],
+      "sourceContentDates": [],
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 942,
+      "fullVisibleTextRead": "",
+      "visibleTextCharacters": 0,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "https://ips.ucsd.edu/banner.html",
+        "observedAt": "2026-10-16T05:33:16+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/banner.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "8b59917c52782bbc6a4d1076c8da862f3d262d337b4ab626466172c6cc2c52a6",
+        "retrievedEpoch": 1792128796.6432672
+      },
+      "gapFetch": {
+        "sourceUrl": "https://ips.ucsd.edu/banner.html",
+        "observedAt": "2026-10-16T05:33:16+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/banner.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "8b59917c52782bbc6a4d1076c8da862f3d262d337b4ab626466172c6cc2c52a6",
+        "retrievedEpoch": 1792128796.6432672,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:16+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "https://ips.ucsd.edu/banner.html",
+        "checkedUrl": "https://ips.ucsd.edu/banner.html",
+        "requestedUrl": "https://ips.ucsd.edu/banner.html",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "https://ips.ucsd.edu/banner.html",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:16+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:16+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_frame_source"
+      },
+      "wireEventRange": [
+        332,
+        333
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "IPS forecast project branding/menu; does not independently establish a named Space Weather Laboratory, PI or current institutional appointment.",
+      "scope": "images_and_navigation_only",
+      "researchSupported": false,
+      "methodsSupported": [],
+      "dateBoundary": "HTML comment generated by forecast_html.pro on2004/08/27 17:57:51.000 is a generation marker, not a visible page-update/current-research date.",
+      "htmlGenerationComment": "generated by ~/pro/tool/forecast_html.pro on 2004/08/27 17:57:51.000",
+      "evidence": [
+        {
+          "quote": "Center for Astrophysics & Space Sciences",
+          "location": "image alt on external cass.ucsd.edu partner link",
+          "packetTextContainsQuote": false
+        },
+        {
+          "quote": "Institute for Space-Earth Environmental Research",
+          "location": "image alt on external Nagoya partner link",
+          "packetTextContainsQuote": false
+        }
+      ]
+    },
+    {
+      "sourceId": "src-21d6b18a1b9c8915",
+      "sourceUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "requestedUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "checkedUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "observedAt": "2026-10-16T05:33:17+00:00",
+      "bodySha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/2d12574da74924237fda433e700d086d1776870639922ea5968660fddb72e4a0.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "A&A/ISEE IPS Forecast Project Main Menu",
+      "headings": [
+        "High Resolution Predictions",
+        "IPS-Driven ENLIL",
+        "ENLIL Predictions",
+        "Archival 3D Imagery",
+        "Experimental Forecasts",
+        "Additional Information",
+        "STEREO",
+        "PUNCH"
+      ],
+      "sourceContentDates": [],
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 7310,
+      "fullVisibleTextRead": "``` ``` ``` High Resolution Predictions IPS-Driven ENLIL ENLIL Predictions Archival 3D Imagery Experimental Forecasts Additional Information STEREO PUNCH ``` ``` ```",
+      "visibleTextCharacters": 165,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "observedAt": "2026-10-16T05:33:17+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303",
+        "retrievedEpoch": 1792128797.5428648
+      },
+      "gapFetch": {
+        "sourceUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "observedAt": "2026-10-16T05:33:17+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303",
+        "retrievedEpoch": 1792128797.5428648,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:17+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "checkedUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "requestedUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "https://ips.ucsd.edu/leftmenu_v_n.html",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:17+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:17+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_frame_source"
+      },
+      "wireEventRange": [
+        333,
+        334
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "IPS forecast project branding/menu; does not independently establish a named Space Weather Laboratory, PI or current institutional appointment.",
+      "scope": "images_and_navigation_only",
+      "researchSupported": false,
+      "methodsSupported": [],
+      "dateBoundary": "HTML comment generated by forecast_html.pro on2004/08/27 17:57:51.000 is a generation marker, not a visible page-update/current-research date.",
+      "htmlGenerationComment": "generated by ~/pro/tool/forecast_html.pro on 2004/08/27 17:57:51.000",
+      "evidence": [
+        {
+          "quote": "Additional Information",
+          "location": "active a/h3 menu label",
+          "supports": "discovery only"
+        }
+      ]
+    },
+    {
+      "sourceId": "src-dc602ab7d0c8db68",
+      "sourceUrl": "http://r2g.ucsd.edu/home.html",
+      "requestedUrl": "http://r2g.ucsd.edu/home.html",
+      "checkedUrl": "http://r2g.ucsd.edu/home.html",
+      "observedAt": "2026-10-16T05:33:18+00:00",
+      "bodySha256": "545c0997c8d6dfd3c15dbc9b9add1eafa91690be14b7768c9aea8fab1081ba41",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/82f80e2008796d82b19e4333892aee3a5f8e843815a155ca8e112309f5c0e5ce.html",
+      "role": "reviewed_followup_requires_entity_match",
+      "title": "Home",
+      "headings": [
+        "R omero R esearch G roup (R2G)",
+        "@ UC San Diego",
+        "Research Overview",
+        "Looking to join our team?"
+      ],
+      "sourceContentDates": [
+        {
+          "value": "October 2025",
+          "kind": "visible_carousel_date",
+          "evidence": "October 2025"
+        },
+        {
+          "value": "January 2024",
+          "kind": "visible_carousel_date",
+          "evidence": "January 2024"
+        },
+        {
+          "value": "January 2022",
+          "kind": "visible_carousel_date",
+          "evidence": "January 2022"
+        }
+      ],
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 19780,
+      "fullVisibleTextRead": "R omero R esearch G roup (R2G) @ UC San Diego Reaction Design - Mechanism Investigation - Green Chemistry Research Interests R2G Group Members Research Overview The Romero group at UC San Diego develops new catalytic reactivity that expands what organic synthesis can achieve under mild, practical conditions. Our work spans visible-light photochemistry, ground-state catalysis, and hybrid strategies that combine both, guided by rigorous mechanistic insight. The result is a toolbox of selective, functional group tolerant transformations that open access to valuable chemical space for medicines and materials. October 2025 January 2024 January 2022 Previous Next Recent Publications B2pin2 is air stable they said... Empirical observations find that commercial bottles of B2pin2 sporadically degrade to a brown mess under air. We show that a trace volatile component plus O2 and OH--containing contaminants are required for this autocatalytic process. Great job Wes and Satheesh! Bona Fide Copy-Paste Chemistry Visible light drives “cut-and-paste” functional group transposition in chalcones (against thermodynamics!) to reach transposed 1,2-diaryl enones. Uphill chemistry, made easy. Congrats Carlos and Jon! Aminosilanes Today, Tomorrow, and Forever A simple copper catalyst enables the multicomponent assembly of a range of amines, aldehydes, and silanes into a single molecule under mild conditions. Congrats Leo! All the Arylations, None of the Fluorinations The use of Selectfluor unlocks C-H arylation between aryl amides and aryl boronic acids, giving rise to a range of biaryl products via an electrophilic Pd pathway. Congrats Delphine and Nick! Looking to join our team? We are on the lookout for future group members that will help us take our research endeavors to new heights. We want team members who are positive, intrinsically motivated, and interested in discovering cool new reactions and mechanisms. Having previous experience in photochemistry or catalysis is not required, but a willingness to gain new expertise is. If this sounds good to you, check out our research interests and our group members pages! We look forward to meeting and working with you. The Romero Research Group earomero@ucsd.edu How to set up a free site - Check this",
+      "visibleTextCharacters": 2264,
+      "metadataChecks": {
+        "bodyHash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "actualPageProof": true,
+        "fullExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "http://r2g.ucsd.edu/home.html",
+        "observedAt": "2026-10-16T05:33:18+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:57:06+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792126626.590121,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://r2g.ucsd.edu/home.html",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "545c0997c8d6dfd3c15dbc9b9add1eafa91690be14b7768c9aea8fab1081ba41",
+        "retrievedEpoch": 1792128798.543696
+      },
+      "gapFetch": {
+        "sourceUrl": "http://r2g.ucsd.edu/home.html",
+        "observedAt": "2026-10-16T05:33:18+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:57:06+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792126626.590121,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://r2g.ucsd.edu/home.html",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "545c0997c8d6dfd3c15dbc9b9add1eafa91690be14b7768c9aea8fab1081ba41",
+        "retrievedEpoch": 1792128798.543696,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T05:33:18+00:00",
+        "actualPageRequestMade": true
+      },
+      "followupCheck": {
+        "discoveryUrl": "http://r2g.ucsd.edu/home.html",
+        "checkedUrl": "http://r2g.ucsd.edu/home.html",
+        "requestedUrl": "http://r2g.ucsd.edu/home.html",
+        "pageRequestProven": true,
+        "checkMatchesDiscoveryUrl": true,
+        "finalUrl": "http://r2g.ucsd.edu/home.html",
+        "redirectChain": [],
+        "transportStatus": "ok",
+        "observedAt": "2026-10-16T05:33:18+00:00",
+        "liveCheckedAt": "2026-10-16T05:33:18+00:00",
+        "checkOrigin": "summary_task_live_request",
+        "notAnAcceptedCanonicalLabUrl": true,
+        "discoveryMechanism": "html_document_preload"
+      },
+      "wireEventRange": [
+        334,
+        335
+      ],
+      "protocolVersion": "fcntl-host-clock-v2",
+      "decodingMethod": "utf8_replacement",
+      "rootPreserved": true,
+      "identityAssessment": "Confirmed named research_group; Research Overview explicitly says The Romero group at UC San Diego and Our work.",
+      "scope": "named_whole_group_research_overview",
+      "researchSupported": true,
+      "methodsSupported": [
+        "visible-light photochemistry",
+        "ground-state catalysis",
+        "hybrid strategies that combine both",
+        "mechanistic investigation at category level only"
+      ],
+      "evidence": [
+        {
+          "quote": "The Romero group at UC San Diego develops new catalytic reactivity that expands what organic synthesis can achieve under mild, practical conditions. Our work spans visible-light photochemistry, ground-state catalysis, and hybrid strategies that combine both, guided by rigorous mechanistic insight. The result is a toolbox of selective, functional group tolerant transformations that open access to valuable chemical space for medicines and materials.",
+          "location": "section#content1-3t / Research Overview h4",
+          "packetTextContainsQuote": true,
+          "supports": [
+            "identity",
+            "affiliation",
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "quote": "Reaction Design - Mechanism Investigation - Green Chemistry",
+          "location": "section#header1-3s p",
+          "packetTextContainsQuote": true,
+          "supports": [
+            "topics",
+            "methods_at_category_level"
+          ]
+        }
+      ],
+      "affiliationAssessment": "source_reported UC San Diego from entity-local overview; not a dated current PI-appointment claim.",
+      "dateBoundary": "October2025/January2024/January2022 are carousel photograph captions, not Research Overview update dates. Publication blurbs and asset filename dates are not generalized to whole-group methods/status.",
+      "summaryZhSuggestion": "Romero研究组开发温和、实用条件下的新催化反应，结合可见光光化学、基态催化与机理认识，追求选择性和官能团兼容性，拓展药物与材料相关的有机合成化学空间。",
+      "additionalResearchFetchNeededForBasicSummary": false
+    }
+  ],
+  "rootPreservationChecks": [
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "preparedAtUnchanged": true,
+      "latestDestinationFetchUnchanged": true,
+      "oldRootSourceMetadataUnchanged": true
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "preparedAtUnchanged": true,
+      "latestDestinationFetchUnchanged": true,
+      "oldRootSourceMetadataUnchanged": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "preparedAtUnchanged": true,
+      "latestDestinationFetchUnchanged": true,
+      "oldRootSourceMetadataUnchanged": true
+    }
+  ],
+  "nextTargets": [
+    {
+      "url": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ],
+      "sourceId": "src-f6ada626aa6f3a8d",
+      "linkedFrom": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "label": "Actual client-side navigation image-map area",
+      "sourceObservedAt": "2026-10-16T05:33:14+00:00",
+      "sourceBodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_image_map_area",
+      "originalHtmlAttribute": "mads/mads-new.htm",
+      "exactMarkup": "<AREA SHAPE=\"RECT\" COORDS=\"213, 0, 318, 22\" HREF=\"mads/mads-new.htm\" TARGET=\"Yanofsky _ Main\">",
+      "sourceLine": 11,
+      "markupProof": {
+        "targetTag": {
+          "tag": "area",
+          "attrs": {
+            "shape": "RECT",
+            "coords": "213, 0, 318, 22",
+            "href": "mads/mads-new.htm",
+            "target": "Yanofsky _ Main"
+          },
+          "markup": "<AREA SHAPE=\"RECT\" COORDS=\"213, 0, 318, 22\" HREF=\"mads/mads-new.htm\" TARGET=\"Yanofsky _ Main\">",
+          "line": 11
+        },
+        "mapName": "FrontPageMap",
+        "actualMapTag": {
+          "tag": "map",
+          "attrs": {
+            "name": "FrontPageMap"
+          },
+          "markup": "<MAP NAME=\"FrontPageMap\">",
+          "line": 11
+        },
+        "matchingImageUsemap": [
+          {
+            "tag": "img",
+            "attrs": {
+              "ismap": null,
+              "usemap": "#FrontPageMap",
+              "height": "23",
+              "alt": "Navigation Bar",
+              "src": "images/misc/new_navigation_bar.gif",
+              "width": "439"
+            },
+            "markup": "<img ismap usemap=\"#FrontPageMap\" height=\"23\" alt=\"Navigation Bar\" src=\"images/misc/new_navigation_bar.gif\" width=\"439\">",
+            "line": 11
+          }
+        ],
+        "mapAreaLocatedInActualMap": true,
+        "webbotCommentNotUsed": true
+      },
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Literal active same-site target in observed navigation; purpose/entity/research scope remains unknown until full captured body read. No prior target request/capture/refusal found; use fresh exacttarget/pins/robots/TLS/cooldown/shared-v2 checks.",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "queueMatches": [],
+      "gapMatches": [],
+      "wireMatches": [],
+      "cachedMetadataMatches": [],
+      "priorInventoryMentions": [
+        {
+          "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-gap-additions.json",
+          "sha256": "cdb616ee23a32879bddc0e3953594843e6d4de3ab98e5bd5d105bb316d27b6a6"
+        }
+      ],
+      "cachedRobotsBoundary": null,
+      "latestSourceRobots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "gapHostRetryAfter": null,
+      "sameHostPendingOrRunningQueueItems": [],
+      "sharedClockReadOnlySnapshot": {
+        "path": "/tmp/ucsd-research-network-20261016/host-870dc0ec9aaae2dc8ed1162e4b67c4049a065ccab2b4a96e58f6e33f272c20cf.json",
+        "sha256": "ccdd77c4513ddbafbec3aa4491a75197fc18b940496caa2dddf719b08e32955f",
+        "state": {
+          "consecutiveTransientFailures": 0,
+          "host": "labs.biology.ucsd.edu",
+          "lastRequestAt": 1792129051.333087,
+          "lastRequestMonotonic": 304291.896754083,
+          "lastResponseAt": 1792129051.446959,
+          "lastResponseStatus": 200,
+          "minimumIntervalSeconds": 1.0,
+          "ownerPid": 32559,
+          "protocolVersion": "fcntl-host-clock-v2",
+          "responseCooldownSet": false
+        },
+        "readAt": "2026-10-16T05:37:36+00:00",
+        "notLockAcquisition": true
+      },
+      "networkRequestsMade": 0,
+      "noTargetResearchInferred": true,
+      "priorInventoryConclusion": "Only parent newly imported reviewed-gap-additions item from this continuation; not historical exclusion/refusal or capture."
+    },
+    {
+      "url": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ],
+      "sourceId": "src-f6ada626aa6f3a8d",
+      "linkedFrom": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "label": "Actual client-side navigation image-map area",
+      "sourceObservedAt": "2026-10-16T05:33:14+00:00",
+      "sourceBodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_image_map_area",
+      "originalHtmlAttribute": "flower/intro_to_flower_dev.htm",
+      "exactMarkup": "<AREA SHAPE=\"RECT\" COORDS=\"6, 0, 126, 22\" HREF=\"flower/intro_to_flower_dev.htm\" TARGET=\"Yanofsky _ Main\">",
+      "sourceLine": 11,
+      "markupProof": {
+        "targetTag": {
+          "tag": "area",
+          "attrs": {
+            "shape": "RECT",
+            "coords": "6, 0, 126, 22",
+            "href": "flower/intro_to_flower_dev.htm",
+            "target": "Yanofsky _ Main"
+          },
+          "markup": "<AREA SHAPE=\"RECT\" COORDS=\"6, 0, 126, 22\" HREF=\"flower/intro_to_flower_dev.htm\" TARGET=\"Yanofsky _ Main\">",
+          "line": 11
+        },
+        "mapName": "FrontPageMap",
+        "actualMapTag": {
+          "tag": "map",
+          "attrs": {
+            "name": "FrontPageMap"
+          },
+          "markup": "<MAP NAME=\"FrontPageMap\">",
+          "line": 11
+        },
+        "matchingImageUsemap": [
+          {
+            "tag": "img",
+            "attrs": {
+              "ismap": null,
+              "usemap": "#FrontPageMap",
+              "height": "23",
+              "alt": "Navigation Bar",
+              "src": "images/misc/new_navigation_bar.gif",
+              "width": "439"
+            },
+            "markup": "<img ismap usemap=\"#FrontPageMap\" height=\"23\" alt=\"Navigation Bar\" src=\"images/misc/new_navigation_bar.gif\" width=\"439\">",
+            "line": 11
+          }
+        ],
+        "mapAreaLocatedInActualMap": true,
+        "webbotCommentNotUsed": true
+      },
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Literal active same-site target in observed navigation; purpose/entity/research scope remains unknown until full captured body read. No prior target request/capture/refusal found; use fresh exacttarget/pins/robots/TLS/cooldown/shared-v2 checks.",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "queueMatches": [],
+      "gapMatches": [],
+      "wireMatches": [],
+      "cachedMetadataMatches": [],
+      "priorInventoryMentions": [
+        {
+          "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-gap-additions.json",
+          "sha256": "cdb616ee23a32879bddc0e3953594843e6d4de3ab98e5bd5d105bb316d27b6a6"
+        }
+      ],
+      "cachedRobotsBoundary": null,
+      "latestSourceRobots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "gapHostRetryAfter": null,
+      "sameHostPendingOrRunningQueueItems": [],
+      "sharedClockReadOnlySnapshot": {
+        "path": "/tmp/ucsd-research-network-20261016/host-870dc0ec9aaae2dc8ed1162e4b67c4049a065ccab2b4a96e58f6e33f272c20cf.json",
+        "sha256": "ccdd77c4513ddbafbec3aa4491a75197fc18b940496caa2dddf719b08e32955f",
+        "state": {
+          "consecutiveTransientFailures": 0,
+          "host": "labs.biology.ucsd.edu",
+          "lastRequestAt": 1792129051.333087,
+          "lastRequestMonotonic": 304291.896754083,
+          "lastResponseAt": 1792129051.446959,
+          "lastResponseStatus": 200,
+          "minimumIntervalSeconds": 1.0,
+          "ownerPid": 32559,
+          "protocolVersion": "fcntl-host-clock-v2",
+          "responseCooldownSet": false
+        },
+        "readAt": "2026-10-16T05:37:36+00:00",
+        "notLockAcquisition": true
+      },
+      "networkRequestsMade": 0,
+      "noTargetResearchInferred": true,
+      "priorInventoryConclusion": "Only parent newly imported reviewed-gap-additions item from this continuation; not historical exclusion/refusal or capture."
+    },
+    {
+      "url": "https://ips.ucsd.edu/additional_information",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "sourceId": "src-21d6b18a1b9c8915",
+      "linkedFrom": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "label": "Additional Information",
+      "sourceObservedAt": "2026-10-16T05:33:17+00:00",
+      "sourceBodySha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_anchor",
+      "originalHtmlAttribute": "./additional_information",
+      "exactMarkup": "<a target=\"_blank\" href=\"./additional_information\">",
+      "sourceLine": 99,
+      "markupProof": {
+        "targetTag": {
+          "tag": "a",
+          "attrs": {
+            "target": "_blank",
+            "href": "./additional_information"
+          },
+          "markup": "<a target=\"_blank\" href=\"./additional_information\">",
+          "line": 99
+        }
+      },
+      "reviewedAt": "2026-10-16T05:37:36+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Literal active same-site target in observed navigation; purpose/entity/research scope remains unknown until full captured body read. No prior target request/capture/refusal found; use fresh exacttarget/pins/robots/TLS/cooldown/shared-v2 checks.",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "queueMatches": [],
+      "gapMatches": [],
+      "wireMatches": [],
+      "cachedMetadataMatches": [],
+      "priorInventoryMentions": [
+        {
+          "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-gap-additions.json",
+          "sha256": "cdb616ee23a32879bddc0e3953594843e6d4de3ab98e5bd5d105bb316d27b6a6"
+        }
+      ],
+      "cachedRobotsBoundary": null,
+      "latestSourceRobots": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "gapHostRetryAfter": null,
+      "sameHostPendingOrRunningQueueItems": [],
+      "sharedClockReadOnlySnapshot": {
+        "path": "/tmp/ucsd-research-network-20261016/host-feb92da4befdb02fbaafaa53416627f98fc66e91bf6b30efe3bcb9d0499621f9.json",
+        "sha256": "0b145153609f530bf53b1dbeaef7937b286672290ae3af170293b8e791ce7242",
+        "state": {
+          "consecutiveTransientFailures": 0,
+          "host": "ips.ucsd.edu",
+          "lastRequestAt": 1792128797.0612538,
+          "lastRequestMonotonic": 304037.627288583,
+          "lastResponseAt": 1792128797.54202,
+          "lastResponseStatus": 200,
+          "minimumIntervalSeconds": 1.0,
+          "ownerPid": 31267,
+          "protocolVersion": "fcntl-host-clock-v2",
+          "responseCooldownSet": false
+        },
+        "readAt": "2026-10-16T05:37:36+00:00",
+        "notLockAcquisition": true
+      },
+      "networkRequestsMade": 0,
+      "noTargetResearchInferred": true,
+      "priorInventoryConclusion": "Only parent newly imported reviewed-gap-additions item from this continuation; not historical exclusion/refusal or capture."
+    }
+  ],
+  "parentRomeroRawQA": {
+    "rawPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json",
+    "sha256": "5187bd78342260205bcbac81f811a35930758bb978d83cf69bf489468ac6fe1c",
+    "reviewedAt": "2026-10-16T05:35:14+00:00",
+    "status": "supported",
+    "summaryZh": "Romero 研究组开发温和、实用条件下的新催化反应，研究可见光光化学、基态催化及两者结合，以反应机理认识指导选择性、官能团兼容的有机合成，拓展药物与材料相关的化学空间。",
+    "methods": [
+      "可见光光化学",
+      "基态催化及光化学—催化结合策略",
+      "反应机理研究（概述未列具体仪器）"
+    ],
+    "newSourceEvidenceLiteralChecks": [
+      {
+        "quote": "The Romero group at UC San Diego develops new catalytic reactivity that expands what organic synthesis can achieve under mild, practical conditions.",
+        "supports": [
+          "identity",
+          "affiliation",
+          "research"
+        ],
+        "exactSourceTextSubstring": true
+      },
+      {
+        "quote": "Our work spans visible-light photochemistry, ground-state catalysis, and hybrid strategies that combine both, guided by rigorous mechanistic insight.",
+        "supports": [
+          "research",
+          "methods",
+          "topics"
+        ],
+        "exactSourceTextSubstring": true
+      },
+      {
+        "quote": "selective, functional group tolerant transformations that open access to valuable chemical space for medicines and materials.",
+        "supports": [
+          "research",
+          "topics"
+        ],
+        "exactSourceTextSubstring": true
+      },
+      {
+        "quote": "Mechanism Investigation",
+        "supports": [
+          "methods",
+          "topics"
+        ],
+        "exactSourceTextSubstring": true
+      }
+    ],
+    "conclusion": "Current parent supported summary/questions/topics/method categories stay within named whole-group Overview; no publication-only mechanism/instrument results generalized. Mechanistic investigation is a category, reinforced by literal header Mechanism Investigation, not a named measurement technique. Current affiliation/PI-date and carousel boundaries preserved.",
+    "actionableConcerns": []
+  },
+  "exclusions": [
+    {
+      "target": "http://count.jinko.com/cgi-stat/aapinyopich.cgi",
+      "reason": "External tracking counter, not research."
+    },
+    {
+      "target": "_vti_bin/shtml.exe/navigation.htm/map",
+      "reason": "FrontPage server-side coordinate image-map handler. Actual client-side area targets are present; do not request handler/click coordinates."
+    },
+    {
+      "target": "people/people.htm,links/links.htm,publications/selected_publications.htm",
+      "reason": "People/link directory/publications-only; no further research discovery needed from these navigation items."
+    },
+    {
+      "target": "IPS predictions/3D archival imagery/timeConverter,STEREO,PUNCH,partner banner links",
+      "reason": "Forecast outputs/tools or other project/entity links; not admitted for this finite purpose/identity gap."
+    },
+    {
+      "target": "IPS commented intro/space-weather links",
+      "reason": "Inside HTML comments, not active anchors."
+    },
+    {
+      "target": "http://r2g.ucsd.edu/research.html",
+      "reason": "Real active link but not needed for basic summary: whole-group Overview already sufficient; no automatic additional request."
+    }
+  ],
+  "dateAndEvidenceBoundaries": [
+    "All05:33 times are original transport observations, not page-update/current-research dates.",
+    "IPS2004 generated-comment dates are not page-update/affiliation claims; Romero carousel dates are photo captions.",
+    "Yanofsky content img alt identity/UCSD is raw HTML attribute evidence; current packet.text is empty. Do not cite it as a substring of existing visible source.text without explicit source extraction preserving provenance.",
+    "No source changes original root fetch/canonical fields; sources are reviewed_followup_requires_entity_match.",
+    "All14 mismatch gates and stable IDs remain unchanged."
+  ],
+  "futureExecutionConstraints": [
+    "Actual map+matched img usemap+actual area only; exclude comments,unbound maps,server-side CGI and script-derived targets.",
+    "Fresh exacttarget queue/capture/attempt/refusal and current pins/process/cooldown checks before execution; every robots/page/redirect uses shared v2 gate through response.",
+    "Pending/running differentURI work is disclosed and coordinated by sharedgate; clock ownerPid is historical metadata, not proof of active lock ownership.",
+    "No network, protocolswitch, JSexecution, TLS/robots/challenge/login bypass; default page2MB/robots300KB unchanged."
+  ],
+  "inputHashes": {
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json": "63cb0cd36da58483d23afdbeb089fe6d1dc33b5f1e2ad046900e8e597fc69eaa",
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": "019db7834d55ee5d3c460ad796744c59786fd7caf39659eada2ca215caa4a345",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json": "72aaf04d00b5ffedd215930b8c288c77a4d83cbcb403d8ae702043bb56f443fc",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-yanofsky.json": "27025c0869a36110f2af354d0b411a9671cde33f50a10ad17034e32e11f49a51",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c54ac862deab42b211e5c21e08237acf45e10d71d178aeacdd39860d7a7f4a6b.json": "2bd9d6d665b08be9244827805d4ad2f84320400f3ef8cd01ef3f91836ad2ef28",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/51b0633ecdcf58b8a179b1cbfb046d7438bbdef1c480f6037c89fb758001353c.json": "ebb6276e30ade863d18265e7fff84b4a0ebe3d92ec6b73449b0ca696c64d1816",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory.json": "5cf79209e0fce2f6f90c44e601855101390fcbc686ad5e68677f862635af0c46",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a86928dd1f13ece92c20d858d905b9c8e186f2c7eff2839d6141b0e11e772f44.json": "832952674c2f04240d0a70c14d4ff5897e14800812a64e51c3f6b5d1fdc285a4",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/af3895df8cc1a6654fe3a0bd1050ac5a98ab64b4817fc2c4a655c474ea68cf7d.json": "99f6539a0bbf29010613a0e71ae976ab47a2ce91fc7fe808741b31864d8a34c9",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/2d12574da74924237fda433e700d086d1776870639922ea5968660fddb72e4a0.json": "44b5bd3de63a837e764b7d79d9a1bcd40e11c2aaf9a18a4c446d3841632780db",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json": "f0d9a91317640ff10e7d3b70f0534f0acbf6345cc53efdefe2b551e2f443884c",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/82f80e2008796d82b19e4333892aee3a5f8e843815a155ca8e112309f5c0e5ce.json": "6cd46e03edb2227373bfbf5087bd1473d8c3d7112fb1a5c772a9d336088d7eb3"
+  },
+  "errors": []
+}

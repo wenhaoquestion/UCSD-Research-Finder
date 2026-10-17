@@ -1,0 +1,28 @@
+# Eligible884 completion boundary audit
+
+Conditional PASS · audited 2026-10-16T09:38:54+00:00.
+
+当前168方法计划已实际应用（09:32:46 UTC），884项验证及父preservation通过。最终独立postapply QA与本地可审阅提交仍待完成；本报告不设置Goal状态。完成这两步后，当前884项可认定为已完成或有逐记录具体阻碍。
+
+范围严格为868 baseline +16单独审核追加。baseline SHA ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e；批准及当前mutable handoff同为49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776，决定原件780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1。16项均已处理；28个来源原body哈希实际核验，未应用30 aliases或8 updates。
+
+现有738 supported、56 partial、90 unresolved；724 lab/group summaries，577原URL实体核验。498条有问题字段，240条留有逐记录限定范围理由；591条有方法，147条留有专项来源范围理由。14项mismatch仍全部不接受。146条非supported的具体blockers及240/147逐ID字段理由、来源/日期绑定在JSON中保留。
+
+完成判断有逐项语义审阅依据：问题审阅排除了主题机械转问句、个人/修辞/论文标题；方法审阅区分实际采用、兴趣/训练、成员/项目和历史范围，补充40方法并撤回2项旧兴趣记录的3个方法。240条问题理由覆盖946个source关联；147条方法理由覆盖522个实际审阅source关联及明确排除项。部分旧coverage省bodySHA字段，通过冻结packet SHA和source ID/原时间绑定；不将缺字段误报为内容变化，也不声称所有未读HTML都无问题/方法。
+
+最新缓存元数据pass冻结于 2026-10-16T09:33:42+00:00，SHA 70f362dbad7f152f7e9eb08cbabe33e4871892484d8535acb7fc27a6f0427ca3。09:21:52后72个成功tuple与原146目标的已知root/source/field及67个明确教授关系无关联，新相关body为0。此时9479 pending、1 running是全局队列状态，不能自动扩大884 eligibility。
+
+09:20:17 McCammon HTTP→HTTPS的实际302观察，与旧01:07:20 HTTPS来源原HTML同字节。父报告仅审prefix18000及两个尾段/结构线索，并未声称102267字符全读；保持partial和原来源日期。本次审计只核同byte/日期绑定，无新科学结论。前5个tuple已有NEW-FOUR-PROFILE-CAPTURE-REVIEW，个人档案与同byte新观察不提升lab科学或覆写旧采集时间。
+
+Finite URL plan仍为0 live：33项中29复用、3明确边界、1既有未解尝试。8条当前literal-profile路线均有once journal及receipt：2ok、1http_error、5robots_unavailable；后5条明确无page请求。Firestein/Schnabl与different-time Corr/Bryan/Hnasko等knownblocked排除另列原报告，未把它们当允许绕过边界的新请求。
+
+checkpoint.outputsAreComplete=false还取决于上游全局pending；该显示与本目标当前eligible完成边界不是同一判断。它不要求继续爬取所有上游发现。若之后产生新的单独审核并批准的追加，须独立审查新版本再扩eligible；目前没有此缺口。
+
+当前剩余必做步骤：
+
+- 最终独立postapply QA通过并绑定实际应用journal、884结果与原始日期/URL。
+- 保存本阶段本地可审阅commit；不push。
+
+方法计划SHA 7b56fd88e283ddd395e5a769508e8d1eaef844c0adc72403defe8c2bc8bbdd29；应用journal SHA 7ee6e4ebf822a7c044877585ace693a2b113f545a284a4da6a09fdbe32df0a67；884 validation SHA 887e92d42d9c90da4127f06cd6c623097acf5bace36c7c1090deb51296919006；父preservation SHA a9d651c1f2c0defab6f4f8781a9320deabec97602fd26729266e90e9c38cb873。
+
+0网络、0PS、未执行collector代码，未改raw/packet/projection/code/collector/shared；仅新增本报告pair。

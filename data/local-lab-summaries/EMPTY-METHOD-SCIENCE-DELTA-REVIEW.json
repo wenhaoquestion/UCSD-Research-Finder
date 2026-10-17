@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T09:24:28+00:00",
+  "scope": "Metadata delta for 146 partial/unresolved science/identity records; not a new live request or automatic source admission.",
+  "metadataSnapshotSha256": "3abfcaf2b15e082d9fcb3d6d5301aa9cf4d36f198347d022e43ae25b8d609ce9",
+  "currentTargetCaptureTuples": 444,
+  "priorPhaseTargetCaptureTuples": 443,
+  "alreadyReviewedFiveTuples": {
+    "count": 5,
+    "reviewPath": "NEW-FOUR-PROFILE-CAPTURE-REVIEW.json",
+    "reviewSha256": "f01f9b2876c4783e404cc51b0881966e7a4cc3d6ac1a5bebb2de8bc47ff99f5b"
+  },
+  "newTupleReview": {
+    "capture": {
+      "queueKey": "http://mccammon.ucsd.edu/",
+      "queueUrl": "http://mccammon.ucsd.edu/",
+      "queueState": "done",
+      "requestedUrl": "http://mccammon.ucsd.edu/",
+      "finalUrl": "https://mccammon.ucsd.edu/",
+      "observedAt": "2026-10-16T09:20:17+00:00",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "bodySha256": "ce50657ee5ce63fee0ed39c8776d4ee4417c2b1708c8968be12b8ad1ef737372",
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-biochemistry-and-molecular-biophysics-lab-mccammon-group"
+      ]
+    },
+    "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-mccammon-group",
+    "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5927d263a7aa3b25cc837bffe92436e9464f25859726f167269a08b9707e2cc8.html",
+    "cacheBodySha256": "ce50657ee5ce63fee0ed39c8776d4ee4417c2b1708c8968be12b8ad1ef737372",
+    "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5927d263a7aa3b25cc837bffe92436e9464f25859726f167269a08b9707e2cc8.json",
+    "sidecarSha256": "d7a3c99d073d934988816e1e1fb8cb8ec5d1832b3cd0c813b1404d0c1c3f38b6",
+    "sourceMetadata": {
+      "sourceUrl": "http://mccammon.ucsd.edu/",
+      "observedAt": "2026-10-16T09:20:17+00:00",
+      "status": "ok",
+      "redirects": [
+        {
+          "from": "http://mccammon.ucsd.edu/",
+          "to": "https://mccammon.ucsd.edu/",
+          "httpStatus": 302
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://mccammon.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:19+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112839.274428,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://mccammon.ucsd.edu/",
+      "contentType": "text/html",
+      "error": "",
+      "sha256": "ce50657ee5ce63fee0ed39c8776d4ee4417c2b1708c8968be12b8ad1ef737372",
+      "retrievedEpoch": 1792142417.125227
+    },
+    "oldPacketSourceId": "src-669c03a4ab347122",
+    "oldSourceObservedAt": "2026-10-16T01:07:20+00:00",
+    "sameBodyBytesAsOldHttpsCapture": true,
+    "sameFirst18000TextAsOldPacket": true,
+    "fullExtractedTextCharacters": 102267,
+    "rangesActuallyRead": [
+      [
+        0,
+        18000
+      ],
+      [
+        61785,
+        62550
+      ],
+      [
+        101467,
+        102267
+      ]
+    ],
+    "additionalStructuralScreen": {
+      "mainHeadings": [],
+      "regexDiscoveryOnly": "our research|our group.{0,140}(develop|use|working)|we (use|develop|study|investigate)|research.{0,30}focus",
+      "after18000Matches": 1,
+      "allBodyProseClaimedRead": false
+    },
+    "decision": "retain_existing_partial_record_and_original_source_dates",
+    "reasonZh": "新HTTP请求经302到HTTPS成功，字节与原HTTPS缓存完全相同；旧保存科研段仍以新闻和论文条目为主。限定尾段与结构抽样没有带来可接受的全组概述/方法增补，不将新闻题目或校友去向泛化为全组方法，不声称所有102267字符逐字审完。原HTTPS来源日期和partial具体阻碍保留，新增HTTP观察仅单独记录。",
+    "newIdentityOrAffiliationAcceptance": false,
+    "newScientificFieldsAccepted": false,
+    "listedHttpsStartWasNotSubstitutedForActualHttpStart": true
+  },
+  "newOrChangedAcceptedHandoff": false,
+  "mutableHandoffSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+  "networkRequests": 0,
+  "recordsPacketsProjectionsCollectorWrites": 0
+}

@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:18:06+00:00",
+  "result": "passed",
+  "findings": [],
+  "scope": "Independent source-code and offline test review against 92d5377; programmatic binding of separate-date registry and saved finite plan, not primary scientific acceptance or real transport proof.",
+  "baseCommit": "92d5377",
+  "adapterSha256": "bb120e073854ce2b18230cf1b7cf0861dec61c2fd4953bb91b9aa59bd244c7b2",
+  "definitionDiff": {
+    "changedExisting": [
+      "plan",
+      "reviewed_historical_profile_links"
+    ],
+    "added": [
+      "independent_profile_date_review",
+      "reviewed_independently_dated_profile_links",
+      "reviewed_profile_link_entries"
+    ],
+    "unchangedNetworkGateTransportAndLimits": true
+  },
+  "sourceReferences": {
+    "independent_profile_date_review": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 248,
+      "endLine": 292
+    },
+    "reviewed_historical_profile_links": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 295,
+      "endLine": 297
+    },
+    "reviewed_independently_dated_profile_links": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 300,
+      "endLine": 302
+    },
+    "reviewed_profile_link_entries": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 305,
+      "endLine": 390
+    },
+    "plan": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 438,
+      "endLine": 593
+    },
+    "coordination_snapshot": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 596,
+      "endLine": 622
+    },
+    "instrumented_fetcher": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 690,
+      "endLine": 738
+    },
+    "execute": {
+      "path": "scripts/local_lab_summary_gaps.py",
+      "line": 741,
+      "endLine": 820
+    }
+  },
+  "conclusions": [
+    "Original wrapper still enforces exact string equality between baseline field observedAt and actual profile capture observedAt; independent registry and purpose cannot enter the old contract.",
+    "Independent contract binds the historical complete proof and original date separately from the actual profile body/sidecar/observedAt; equal instants with distinct timezone spellings are rejected.",
+    "Both own-path SHA-bound reports require unique target rows, exact source tuple/full-main SHA, professor relationship, frozen raw/packet/root metadata, and explicit route-boundary declarations.",
+    "Fresh common admission still checks current capture pending/history/refusal, orphan wire and once journal, current robots cache and mismatch gates; clean old reports cannot override those guards.",
+    "Both contracts admit exactly 2000000-byte observation-only routes; scheme remains part of exact request key, and effective empty root slash is not an HTTP redirect.",
+    "No production changes to shared coordination, source loading, PublicFetcher instrumenter, robots cap, page-size validation, execute journal or page-proof logic compared with 92d5377.",
+    "No lab identity, canonical URL, listed-root verification, scientific acceptance, source retiming or real request follows from admission or mocked execution."
+  ],
+  "focusedTests": {
+    "executedByThisQA": true,
+    "networkRequests": 0,
+    "runs": [
+      {
+        "file": "tests/test_local_lab_independent_profile_dates.py",
+        "count": 11,
+        "durationSeconds": 0.21,
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "file": "tests/test_local_lab_profile_link_gaps.py",
+        "count": 35,
+        "durationSeconds": 0.428,
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "file": "tests/test_local_lab_independent_profile_dates_qa.py",
+        "count": 10,
+        "durationSeconds": 0.104,
+        "exitCode": 0,
+        "passed": true
+      }
+    ],
+    "total": 56,
+    "independentNewCases": 10,
+    "caseBoundaries": [
+      "current projected auth/challenge/robots refusal despite rehashed report",
+      "current legacy HTTP200 login history",
+      "orphan page wire and robots-only once journal",
+      "challenge dominates later no-refusal robots state",
+      "8MB and already supported entity rejection",
+      "registry purpose isolation",
+      "same instant in negative-offset timezone",
+      "actual original sidecar date change with incomplete rebind",
+      "report stale bytes and symlink outside owned OUT",
+      "hard interruption journal, finally reset and no page proof"
+    ]
+  },
+  "testFileSha256": {
+    "tests/test_local_lab_profile_link_gaps.py": "09961c30ebe701640877bb842b35438ab00c507ce6c062fb7b90d681f857773a",
+    "tests/test_local_lab_independent_profile_dates.py": "dae9b907608c7f2de32b6d73a23edd5c0ca36767c015def0cf5b8c497b5a1b05",
+    "tests/test_local_lab_independent_profile_dates_qa.py": "a9d93a2b7bbea2ab0f52fa6f000d449c2f3992dc29748562daaefef81adc370c"
+  },
+  "actualFullSuiteBinding": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/INDEPENDENT-DATE-ACTUAL-FULL-TEST-RUN.json",
+    "sha256": "00cb842405e759e7620638f7a00e8898c74e9b6057fd22a673f86cabba12ab04",
+    "startedAt": "2026-10-16T07:16:45+00:00",
+    "finishedAt": "2026-10-16T07:16:48+00:00",
+    "testsRun": 430,
+    "passed": true,
+    "networkRequestsDuringTests": 0,
+    "all46CurrentSourceHashesMatch": true,
+    "beforeAfterIdenticalClaimInReceipt": true,
+    "testedSourcesSha256": {
+      "scripts/audit_research_atlas.py": "abdfdad23e96a4c98cdba509c10356979f9554f46908f5644a6340453969874e",
+      "scripts/build_ucsd_coverage_report.py": "526c5d0316e24cc14c94acf56086f071136da0619c8b4f1570623e551e75f877",
+      "scripts/build_ucsd_index.py": "c1e69c86fa73d6971b99c2536ceb062a608b3da7135dbb42f6de1c46cab0ad75",
+      "scripts/collect_research_data.py": "526802a6f32407f7e6be937cc2ea09bd22b82add53264d9b670fe9a878fd375e",
+      "scripts/discover_ucsd_departments.py": "7d6e3a0d84f2fdaeeefd84f06c96b8a07af5d4aaa27ff823452ab605a920985e",
+      "scripts/enrich_physical_sciences_sites.py": "6be48dd300b683689702b9a88c4d02764706279079246b02806c488ea8319025",
+      "scripts/enrich_professor_metadata.py": "12cb99cebeb44dcb4e9c44de78ca8b0ff03b3b0c1d5b2351bfd667dfccfbac96",
+      "scripts/lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "scripts/lab_summary_content.py": "002bdd9c87071ba62b18d0a1d5daeeba567e84f58efdb1bfb51f08bf27427ba0",
+      "scripts/lab_summary_handoff.py": "37c90df72de6e632462322376435bd918aecd0ed0c7dd298ec8536a1317eada8",
+      "scripts/local_lab_cache_candidates.py": "0ed7cad926d51b180ab0b9652adfacf17a3541a16a0bc01553b8dc08ffc0c455",
+      "scripts/local_lab_summaries.py": "e0a254c2c749f4cceb69b0ebc307380e69427542760a43e72562ff2404326c6b",
+      "scripts/local_lab_summary_gaps.py": "bb120e073854ce2b18230cf1b7cf0861dec61c2fd4953bb91b9aa59bd244c7b2",
+      "scripts/migrate_ucsd_index.py": "5f4743a90fae9d41ab7e527b864c52934b9dfa121df2daa267a44f3721daee44",
+      "scripts/optimize_index.py": "cee486b4d65dfad1a585fed2725bd6f98760f4ac092906b8f0424c3ea52e4d98",
+      "scripts/rebuild_verified_atlas.py": "28cd7859ededbe0c6195412b53951bec2d6726bd493aa620d1d7fae6a10a9df3",
+      "scripts/refresh_faculty_directories.py": "92377056ce4c99e8d4579e6c0bd1f7a6a9837db55146affbbdb5f0ca5fb381e5",
+      "scripts/refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "scripts/refresh_ratings.py": "56d5e51374d38205f03831d73ece8841bb33eb71b43d192fa0fa15ffb2949e8a",
+      "scripts/refresh_real_portal.py": "5b17973309804026c793403c93b127772939547bc089c1a1b1ba41d11aaf3836",
+      "scripts/refresh_source_checks.py": "619e30c2ac12a9101b58d20f11d82aa5a931e9a202a93dcb2f6df1141b010ff5",
+      "scripts/refresh_teaching.py": "8005213615ab378d648a9f544ffbf58604988cf52e006f306061c0e68efa9aec",
+      "scripts/run_profile_backfill.py": "a3f38544bc6ffb87d0cfd1138148945ecaad0f1d07b6bfba884ad090c00c2dea",
+      "scripts/upgrade_research_atlas_schema.py": "d0751ab5d81a887eb249c868d30d32db888f96b9a3ba1f5f31136a905bcc4e0d",
+      "scripts/validate_data.py": "cb8baba3e43a2682bb28549d7f598c93176e247b372b47a59abb46170f16d060",
+      "tests/test_atlas_quality.py": "0e718be07079337616fc628ec2ffdb943115c4f38d2ae39b135762d506573e94",
+      "tests/test_faculty_directories.py": "89d5bdc3b072c43e75f68d3e43ba2509ac94e22a8152570c68b9fed5ef01c90d",
+      "tests/test_labs.py": "b247f784530b0585f55b8c831f6b0b11e07824570c2ff4ac4d4e2a2006177956",
+      "tests/test_local_lab_cache_candidates.py": "d5730a50eb7d6830b141394d57718191bda5f2147061701c04fbe0ed4b5d5292",
+      "tests/test_local_lab_content.py": "0117bfb405296ba7f07b9dc78f81638284b2063a10675e4d7adbd2beb42ec66b",
+      "tests/test_local_lab_document_preload.py": "9dbcb51c64d594bd02797128d8f5154f1de7910a5281d68856a1971231753280",
+      "tests/test_local_lab_frame_discovery.py": "5e4090edf2ade8dd77e81f90401ce8836a681662c82ee10a3529c369e6693b34",
+      "tests/test_local_lab_handoff.py": "8166867f3e34a64ade90a13942128281d25e187be326a9db4935219e467d86eb",
+      "tests/test_local_lab_image_map.py": "c7b8999fb61e2cb275b68d7a808d0b305c433bc37e74e021af95f918a8fc3662",
+      "tests/test_local_lab_independent_profile_dates.py": "dae9b907608c7f2de32b6d73a23edd5c0ca36767c015def0cf5b8c497b5a1b05",
+      "tests/test_local_lab_independent_profile_dates_qa.py": "a9d93a2b7bbea2ab0f52fa6f000d449c2f3992dc29748562daaefef81adc370c",
+      "tests/test_local_lab_official_source_gaps.py": "b79b982371862850ddc36f9a5f9205d562aacc1257dde10d2337724a4c552f5b",
+      "tests/test_local_lab_original_uri_scope.py": "a74ff8b91cb26be2d5cbe69b2927369d0aa58537efc27299908e6635d18b1856",
+      "tests/test_local_lab_profile_link_gaps.py": "09961c30ebe701640877bb842b35438ab00c507ce6c062fb7b90d681f857773a",
+      "tests/test_local_lab_shared_adapter.py": "d95ae9170ff1b27271d67f3d19bf4f4c26b4d5fbaf89dfaa3045f9e26ac354ea",
+      "tests/test_local_lab_shared_cooldown.py": "d1f19459499a279461de220997e30aa8175b265b2d331d7885f687a4e9437c8a",
+      "tests/test_local_lab_summaries.py": "ea3ad7112ef26188e9ccb1ea9c513e10a06a6c93bdfcc54261056c5120a77f27",
+      "tests/test_profile_backfill.py": "b12476edc3b410f1d91cad4edf155b633b7d747c3cc675d75a1bea1015d4661c",
+      "tests/test_reference_integrity.py": "df17179a6c30a65b3441a29e3cfcd764c961fbf453e27391b16c0181e6b6250a",
+      "tests/test_refresh_ratings.py": "c63462465b74868ed559e63139af32cfc122955b32c9e5e62f502d9c07770e1e",
+      "tests/test_teaching.py": "533c97ca3f0844ca99fd3b93b7a59e221481fb268ae14b96cda9630fbe1307a7"
+    },
+    "fullLogPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/INDEPENDENT-DATE-ACTUAL-FULL-TEST-RUN.log",
+    "fullLogSha256": "b3c06f0a3b94b6951cce3cc1587cf64af1d07c5fd55947fe59a29e5acf828ca1",
+    "fullLogHashIndependentlyMatched": true,
+    "suiteRunByParentNotRerunByThisQA": true
+  },
+  "registryBinding": {
+    "checkedAt": "2026-10-16T07:16:49+00:00",
+    "newPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-independent-date-profile-links.json",
+    "newSha256": "3d266f783982f82d6475791700f76e82d812a9acc99ca74a9a80f0bd32193c17",
+    "newCount": 2,
+    "items": [
+      {
+        "labId": "ucsd-live-lab-c0c0ce3c3b0e1e",
+        "url": "http://changlab.ucsd.edu/Pages/default.aspx",
+        "historicalFieldObservedAt": "2026-10-03T02:36:03+00:00",
+        "actualProfileObservedAt": "2026-10-07T22:45:38+00:00",
+        "profileBodySha256": "52896352079b1c406e800c7f12baf42c6148e72df3eb6aa4de26e94c858eea95",
+        "profileMetadataSha256": "9a1fc557c209dd4b02f974e2321bbc65468787dab66a64fa119996dc4e311be3",
+        "primaryReviewPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIFFERENT-TIME-PROFILE-PRIMARY-REVIEW.json",
+        "primaryReviewSha256": "c9ebcf87352c0e28279b7bdf7e5f44a2e88bc46870458015289a7ba3a90d5138",
+        "routeBoundaryReviewPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIFFERENT-TIME-PROFILE-ROUTE-BOUNDARIES.json",
+        "routeBoundaryReviewSha256": "af65dcdecf8eb7df8094f9dfcb3e074683274d1b0916fc77776823d556f10d18"
+      },
+      {
+        "labId": "ucsd-live-lab-7c03bec7416f6a",
+        "url": "http://ginsberglab.ucsd.edu",
+        "historicalFieldObservedAt": "2026-10-03T02:49:37+00:00",
+        "actualProfileObservedAt": "2026-10-07T22:56:09+00:00",
+        "profileBodySha256": "797aab74a21038675a7a363324554be24bfc88d7fa8c0393800b9333060b882a",
+        "profileMetadataSha256": "9a894945cd4b1cb55d129d3d42d7bf3d16b90c7c18c0368c4263ed3da0e1bdac",
+        "primaryReviewPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIFFERENT-TIME-PROFILE-PRIMARY-REVIEW.json",
+        "primaryReviewSha256": "c9ebcf87352c0e28279b7bdf7e5f44a2e88bc46870458015289a7ba3a90d5138",
+        "routeBoundaryReviewPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIFFERENT-TIME-PROFILE-ROUTE-BOUNDARIES.json",
+        "routeBoundaryReviewSha256": "af65dcdecf8eb7df8094f9dfcb3e074683274d1b0916fc77776823d556f10d18"
+      }
+    ],
+    "oldRegistrySha256": "60f8917c3216e47c6441c5ee945d926c8a46138f89745d9f436964d387daf140",
+    "oldSixEntryRegistryUnchanged": true,
+    "actualCommonHelperNewAdmittedCount": 2,
+    "actualOldHelperStillAdmittedCount": 3,
+    "newEntriesWithOldPurposeRejected": true,
+    "helperReadParsedQueueUpdatedAt": "2026-10-16T07:16:37+00:00",
+    "noCollectorProcessInferenceFromQueueUpdate": true
+  },
+  "savedOfflinePlanBinding": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-plan.json",
+    "sha256AtRead": "5c612c9981b4611a964e99d4ea260f08efdabf53dfc0f251b6cc4fab3f4843a6",
+    "plannedAt": "2026-10-16T07:16:17+00:00",
+    "status": "awaiting_verified_shared_coordinator",
+    "urlCount": 38,
+    "finiteCandidateCount": 5,
+    "oldSameCaptureKind": 3,
+    "independentDateKind": 2,
+    "allFiveOnlyObservationAt2MB": true,
+    "isNotExecutionEvidence": true
+  },
+  "ownLedgerAtDataCheck": {
+    "sha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+    "wireEvents": 353,
+    "receipts": 205
+  },
+  "qaNetworkRequests": 0,
+  "productionWrites": 0,
+  "rawPacketCollectorSharedWrites": 0,
+  "limitations": [
+    "Programmatic registry/report consistency is not a new independent full scientific/profile narrative review.",
+    "All execution tests use temporary fixtures and mocks; no real gate/robots/TLS/HTTP outcome was established.",
+    "No actual PS probe was made. Queue updates cannot establish a live process. New collector revision safety review belongs to the separate audit.",
+    "Saved plan counts and queue parsing are timestamped snapshots, not a claim that external collector files remain unchanged."
+  ]
+}

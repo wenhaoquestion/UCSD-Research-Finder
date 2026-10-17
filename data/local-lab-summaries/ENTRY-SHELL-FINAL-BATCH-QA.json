@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:55:54+00:00",
+  "result": "PASS",
+  "baseCommit": "641fd9abbcdc2cc3382847acb241695384a0faec",
+  "scope": "Metadata/provenance of15newcaptures;884manifest sourceCounts and packet-hash proof; limited scientific/raw review of3changed records including full actual IPS new bodies. No broad crawl/880science reread.",
+  "networkRequestsByThisQA": 0,
+  "codeRawPacketPlanReceiptCollectorSharedWrites": 0,
+  "onlyOwnReportPairWritten": true,
+  "batch": {
+    "priorWires": 329,
+    "currentWires": 344,
+    "deltaWires": 15,
+    "priorReceipts": 187,
+    "currentReceipts": 202,
+    "deltaReceipts": 15,
+    "wireRange": [
+      329,
+      344
+    ],
+    "all15ActualHttp200Pages": true,
+    "all15NoRedirects": true,
+    "all15Cap": 2000000,
+    "protocol": "fcntl-host-clock-v2",
+    "httpTargets": 6,
+    "httpsTargets": 9,
+    "discoveryCounts": {
+      "html_frame_source": 8,
+      "html_document_preload": 1,
+      "html_image_map_area": 2,
+      "html_anchor": 3,
+      "reviewed_historical_field_source": 1
+    },
+    "old329WireEventsAnd187ReceiptsExactlyPreserved": true,
+    "noNewRobotsWires": "Old cached robots reused with original observation time; no retiming."
+  },
+  "all7PinProof": {
+    "currentProcessRequiredPinsEqualEveryNewReceipt": true,
+    "pins": {
+      "collect_ucsd_coverage.py": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "refresh_labs.py": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    },
+    "ownSnapshots": [
+      {
+        "name": "collect_ucsd_coverage.py",
+        "sha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "network_coordination.py",
+        "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "collection_lock.py",
+        "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "collection_scope.py",
+        "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "refresh_labs.py",
+        "sha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "refresh_faculty_directories.py",
+        "sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      },
+      {
+        "name": "lab_destinations.py",
+        "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+        "ownSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+        "ownSnapshotMatches": true,
+        "currentCollectorWorkingMatches": true
+      }
+    ],
+    "coordinationReceiptMatches": true,
+    "scopePolicyPinMatches": true,
+    "sourceIsRecordedLoadedProofNotANewPidProbe": true
+  },
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "sourceId": "src-e3240871c3f7fc37",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+      "observedAt": "2026-10-16T05:33:13+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:13+00:00",
+      "bodySha256": "637b82273d5e53c1b9e97f52906e03042b418f1a2eb82227476d34a769ccb2aa",
+      "bytes": 708,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-89f0f296045c7f5f",
+        "observedAt": "2026-10-16T04:56:28+00:00",
+        "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912"
+      },
+      "wireEventRange": [
+        329,
+        330
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "sourceId": "src-f6ada626aa6f3a8d",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "observedAt": "2026-10-16T05:33:14+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:14+00:00",
+      "bodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc",
+      "bytes": 1476,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-89f0f296045c7f5f",
+        "observedAt": "2026-10-16T04:56:28+00:00",
+        "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912"
+      },
+      "wireEventRange": [
+        330,
+        331
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-1f9cf909b9d3c41e",
+      "url": "https://ips.ucsd.edu/splash_v_n.html",
+      "observedAt": "2026-10-16T05:33:15+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:15+00:00",
+      "bodySha256": "a0eb32d3305d219f6787ea65e47a2621b17ae4852a9ec1ff01027c7e260d3d20",
+      "bytes": 1052,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-6e7a68c11632c48b",
+        "observedAt": "2026-10-16T01:07:30+00:00",
+        "bodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279"
+      },
+      "wireEventRange": [
+        331,
+        332
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-93dbcd3100362768",
+      "url": "https://ips.ucsd.edu/banner.html",
+      "observedAt": "2026-10-16T05:33:16+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:16+00:00",
+      "bodySha256": "8b59917c52782bbc6a4d1076c8da862f3d262d337b4ab626466172c6cc2c52a6",
+      "bytes": 942,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-6e7a68c11632c48b",
+        "observedAt": "2026-10-16T01:07:30+00:00",
+        "bodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279"
+      },
+      "wireEventRange": [
+        332,
+        333
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-21d6b18a1b9c8915",
+      "url": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "observedAt": "2026-10-16T05:33:17+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:17+00:00",
+      "bodySha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303",
+      "bytes": 7310,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-6e7a68c11632c48b",
+        "observedAt": "2026-10-16T01:07:30+00:00",
+        "bodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279"
+      },
+      "wireEventRange": [
+        333,
+        334
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "sourceId": "src-dc602ab7d0c8db68",
+      "url": "http://r2g.ucsd.edu/home.html",
+      "observedAt": "2026-10-16T05:33:18+00:00",
+      "liveCheckedAt": "2026-10-16T05:33:18+00:00",
+      "bodySha256": "545c0997c8d6dfd3c15dbc9b9add1eafa91690be14b7768c9aea8fab1081ba41",
+      "bytes": 19788,
+      "stagingFile": "ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_document_preload",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-04a051aebaebcc7c",
+        "observedAt": "2026-10-16T04:57:07+00:00",
+        "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707"
+      },
+      "wireEventRange": [
+        334,
+        335
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:06+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126626.590121,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "sourceContentDates": [
+        {
+          "value": "October 2025",
+          "kind": "visible_carousel_date",
+          "evidence": "October 2025"
+        },
+        {
+          "value": "January 2024",
+          "kind": "visible_carousel_date",
+          "evidence": "January 2024"
+        },
+        {
+          "value": "January 2022",
+          "kind": "visible_carousel_date",
+          "evidence": "January 2022"
+        }
+      ]
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "sourceId": "src-47c4378ad78606e4",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "observedAt": "2026-10-16T05:39:10+00:00",
+      "liveCheckedAt": "2026-10-16T05:39:10+00:00",
+      "bodySha256": "c7bfbc637538c4cc30f53777d0dd9b44f299f9037d431f2506533d2225150a0d",
+      "bytes": 483,
+      "stagingFile": "IMAGE-MAP-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_image_map_area",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-f6ada626aa6f3a8d",
+        "observedAt": "2026-10-16T05:33:14+00:00",
+        "bodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc"
+      },
+      "wireEventRange": [
+        335,
+        336
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "sourceId": "src-eb29b982b9a7a3ad",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+      "observedAt": "2026-10-16T05:39:11+00:00",
+      "liveCheckedAt": "2026-10-16T05:39:11+00:00",
+      "bodySha256": "3e105ec43e0ac5cea5f0817c0efc408a771baedcb56564819c442a78ac47dbac",
+      "bytes": 6967,
+      "stagingFile": "IMAGE-MAP-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_image_map_area",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-f6ada626aa6f3a8d",
+        "observedAt": "2026-10-16T05:33:14+00:00",
+        "bodySha256": "318119d65279e45e8712b2d32ba3516b278eacae2ed34517e40e699903c2ebdc"
+      },
+      "wireEventRange": [
+        336,
+        337
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-3f2c607d66ea81b9",
+      "url": "https://ips.ucsd.edu/additional_information",
+      "observedAt": "2026-10-16T05:39:12+00:00",
+      "liveCheckedAt": "2026-10-16T05:39:12+00:00",
+      "bodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574",
+      "bytes": 972,
+      "stagingFile": "IMAGE-MAP-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_anchor",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-21d6b18a1b9c8915",
+        "observedAt": "2026-10-16T05:33:17+00:00",
+        "bodySha256": "0a693c7aedf00696c9f35908b18e352359c55cf2a8e097573428c4a28618d303"
+      },
+      "wireEventRange": [
+        337,
+        338
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "sourceId": "src-23378ce087edaefa",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-intro.htm",
+      "observedAt": "2026-10-16T05:40:45+00:00",
+      "liveCheckedAt": "2026-10-16T05:40:45+00:00",
+      "bodySha256": "2f12701a4b969f0fab5118165cf5f99ece395e59e5b54d2acff045e5f25ed868",
+      "bytes": 2667,
+      "stagingFile": "NESTED-FRAME-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-47c4378ad78606e4",
+        "observedAt": "2026-10-16T05:39:10+00:00",
+        "bodySha256": "c7bfbc637538c4cc30f53777d0dd9b44f299f9037d431f2506533d2225150a0d"
+      },
+      "wireEventRange": [
+        338,
+        339
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-e30a925f03616ca8",
+      "url": "https://ips.ucsd.edu/additional_info/leftmenu_3_n.html",
+      "observedAt": "2026-10-16T05:40:46+00:00",
+      "liveCheckedAt": "2026-10-16T05:40:46+00:00",
+      "bodySha256": "b862c4d2ca88326bfbdeeec92951b9f900b22892722b7b1809ec74bf2f9729f9",
+      "bytes": 5705,
+      "stagingFile": "NESTED-FRAME-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-3f2c607d66ea81b9",
+        "observedAt": "2026-10-16T05:39:12+00:00",
+        "bodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574"
+      },
+      "wireEventRange": [
+        339,
+        340
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-755a0c02871e9f95",
+      "url": "https://ips.ucsd.edu/highres/splash_2.html",
+      "observedAt": "2026-10-16T05:40:47+00:00",
+      "liveCheckedAt": "2026-10-16T05:40:47+00:00",
+      "bodySha256": "90aef445565867808e1c78b899105002ae0716d312885a4644104c0a092f6c0d",
+      "bytes": 1002,
+      "stagingFile": "NESTED-FRAME-FOLLOWUP-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_frame_source",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-3f2c607d66ea81b9",
+        "observedAt": "2026-10-16T05:39:12+00:00",
+        "bodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574"
+      },
+      "wireEventRange": [
+        340,
+        341
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-e33801eceaf7ffc2",
+      "url": "https://ips.ucsd.edu/additional_info/intro/intro_gen.html",
+      "observedAt": "2026-10-16T05:42:54+00:00",
+      "liveCheckedAt": "2026-10-16T05:42:54+00:00",
+      "bodySha256": "66f9d1a4e89b4d6dd270d293878d00a43e9b5e9ee388ddafc468de957d9d1769",
+      "bytes": 2383,
+      "stagingFile": "IPS-INTRODUCTION-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_anchor",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-e30a925f03616ca8",
+        "observedAt": "2026-10-16T05:40:46+00:00",
+        "bodySha256": "b862c4d2ca88326bfbdeeec92951b9f900b22892722b7b1809ec74bf2f9729f9"
+      },
+      "wireEventRange": [
+        341,
+        342
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-04c9b7bf1a842574",
+      "url": "https://ips.ucsd.edu/additional_info/intro/intro_tech.html",
+      "observedAt": "2026-10-16T05:42:55+00:00",
+      "liveCheckedAt": "2026-10-16T05:42:55+00:00",
+      "bodySha256": "b131c3938453273d17faafbc79235576965a933abb5031f4885c13a5d214a291",
+      "bytes": 24398,
+      "stagingFile": "IPS-INTRODUCTION-SOURCE-STAGING.json",
+      "role": "reviewed_followup_requires_entity_match",
+      "discoveryMechanism": "html_anchor",
+      "sourceDiscoveryProof": {
+        "sourceId": "src-e30a925f03616ca8",
+        "observedAt": "2026-10-16T05:40:46+00:00",
+        "bodySha256": "b862c4d2ca88326bfbdeeec92951b9f900b22892722b7b1809ec74bf2f9729f9"
+      },
+      "wireEventRange": [
+        342,
+        343
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "sourceId": "src-f8c7e9c911ee6b44",
+      "url": "https://astro.ucsd.edu/research/labs/index.html",
+      "observedAt": "2026-10-16T05:51:14+00:00",
+      "liveCheckedAt": "2026-10-16T05:51:13+00:00",
+      "bodySha256": "235c204c6646373969a01f380d06014a9863f284ef9fbd24f6f3f6113414197c",
+      "bytes": 74295,
+      "stagingFile": "IPS-OFFICIAL-DIRECTORY-SOURCE-STAGING.json",
+      "role": "reviewed_official_identity_source",
+      "discoveryMechanism": "reviewed_historical_field_source",
+      "sourceDiscoveryProof": {
+        "field": "labName",
+        "sourceUrl": "https://astro.ucsd.edu/research/labs/index.html",
+        "observedAt": "2026-10-07T22:55:23+00:00",
+        "fieldProofSha256": "74e71f60f921a0af88fc88e317f93a36dd967f4d122b021817dc673f57fb7d9d"
+      },
+      "wireEventRange": [
+        343,
+        344
+      ],
+      "checks": {
+        "hash": true,
+        "originalTime": true,
+        "actualURI": true,
+        "noRedirect": true,
+        "http200": true,
+        "sourceMatchesFetch": true,
+        "sourceTextMatchesFullExtraction": true,
+        "pins7": true,
+        "mainPins": true,
+        "ownCacheOnly": true,
+        "singleActualPageWire": true,
+        "liveStart": true,
+        "notCanonicalFollowup": true
+      },
+      "robotsOriginalObservation": {
+        "sourceUrl": "https://astro.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:20+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792112240.036148,
+        "error": "",
+        "status": "not_found"
+      },
+      "sourceContentDates": []
+    }
+  ],
+  "preservation": [
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "oldSourceCount": 2,
+      "currentSourceCount": 7,
+      "oldSourceExactPrefix": true,
+      "preparedAtExact": true,
+      "rootFetchExact": true,
+      "oldCacheBytesCheckedSourceIds": [
+        "src-947ef86bf1f53a64",
+        "src-89f0f296045c7f5f"
+      ],
+      "originalEvidencePreserved": true,
+      "evidenceHandling": "exact current evidence prefix",
+      "rootCanonical": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "rootRedirects": [],
+      "rootPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+      },
+      "rootVerified": false,
+      "listedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html"
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "oldSourceCount": 3,
+      "currentSourceCount": 12,
+      "oldSourceExactPrefix": true,
+      "preparedAtExact": true,
+      "rootFetchExact": true,
+      "oldCacheBytesCheckedSourceIds": [
+        "src-6e7a68c11632c48b"
+      ],
+      "originalEvidencePreserved": true,
+      "evidenceHandling": "Explicit root-label support correction retained full old evidence copy",
+      "rootCanonical": "https://ips.ucsd.edu/",
+      "rootRedirects": [],
+      "rootPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "rootVerified": false,
+      "listedUrl": "https://ips.ucsd.edu/"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "oldSourceCount": 5,
+      "currentSourceCount": 6,
+      "oldSourceExactPrefix": true,
+      "preparedAtExact": true,
+      "rootFetchExact": true,
+      "oldCacheBytesCheckedSourceIds": [
+        "src-16348f4142c7262a",
+        "src-ad1952dbe19fb7d8",
+        "src-d5f2a1b1b127ea34",
+        "src-04a051aebaebcc7c"
+      ],
+      "originalEvidencePreserved": true,
+      "evidenceHandling": "exact current evidence prefix",
+      "rootCanonical": "http://r2g.ucsd.edu/",
+      "rootRedirects": [],
+      "rootPageIdentity": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "原开场页明确Romero Research Group；其真实document preload目标的Research Overview再次以The Romero group at UC San Diego描述整体研究。"
+      },
+      "rootVerified": true,
+      "listedUrl": "http://r2g.ucsd.edu"
+    }
+  ],
+  "rawScientificQA": [
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "rawSha256": "e498d21a9ac45d658d2527424620323385cbd7b07100b94b32c22bfff52ae0cf",
+      "rawReviewedAt": "2026-10-16T05:46:33+00:00",
+      "status": "partial",
+      "hydratePass": true,
+      "currentEvidenceLiteralCount": 6,
+      "newEvidence": [
+        {
+          "sourceId": "src-eb29b982b9a7a3ad",
+          "quote": "Flower Development",
+          "supports": [
+            "general_field_context"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-eb29b982b9a7a3ad",
+          "quote": "There are numerous genes required for the initiation and development of flowers",
+          "supports": [
+            "general_field_context"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-23378ce087edaefa",
+          "quote": "Introduction to MADS-box genes",
+          "supports": [
+            "general_field_context"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-23378ce087edaefa",
+          "quote": "many of these play important roles in flower development.",
+          "supports": [
+            "general_field_context"
+          ],
+          "literal": true
+        }
+      ],
+      "sourceScope": "General Flower/MADS primers only; partial research/method gap explicit; no generic biology assigned as lab topics/methods.",
+      "scientificQA": "PASS"
+    },
+    {
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "rawSha256": "ab7772d930fb3ca3a2424b829be5920196f369ff3ba2bd8a3b9f8312095ffca7",
+      "rawReviewedAt": "2026-10-16T05:53:31+00:00",
+      "status": "supported",
+      "hydratePass": true,
+      "currentEvidenceLiteralCount": 12,
+      "newEvidence": [
+        {
+          "sourceId": "src-f8c7e9c911ee6b44",
+          "quote": "Space Weather Laboratory UC San Diego researchers contribute to space, balloon, and ground-based instrumentation to study solar physics and space weather",
+          "supports": [
+            "identity",
+            "affiliation",
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-f8c7e9c911ee6b44",
+          "quote": "PI: Dr. Bernard Jackson",
+          "supports": [
+            "identity"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "The results presented on this site represent the current status of an ongoing project in the Solar Group at A&A of a reconstruction of the global structure of the solar wind in near-real-time using interplanetary scintillation (IPS) observations received daily from the Institute for Space-Earth Environmental Research (ISEE), Nagoya University, Japan.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "Our goal is to forecast solar wind conditions in the near-Earth environment, and predict the arrival of solar wind structures at Earth.",
+          "supports": [
+            "research",
+            "research_questions"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "The reconstructions of the solar wind are based on a kinematic model of the solar wind.",
+          "supports": [
+            "methods"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "An iterative least-squares algorithm is employed to obtain a 'best model' of the solar wind.",
+          "supports": [
+            "methods"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "hence we call our technique 'heliospheric tomography'.",
+          "supports": [
+            "methods"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "We use observations from spacecraft instruments to provide corraborative space weather data.",
+          "supports": [
+            "methods"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "Our reconstruction of the solar wind aims at deriving the density and the outflow velocity in the inner heliosphere where the data coverage by the IPS observations is sufficiently high to obtain reliable results.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-04c9b7bf1a842574",
+          "quote": "the Advanced Composition Explorer ( ACE ) spacecraft provides in situ velocity and density observations at the L1 Lagrange point, which can be compared with the values from our kinematic 'best model'.",
+          "supports": [
+            "methods"
+          ],
+          "literal": true
+        }
+      ],
+      "sourceScope": "Official named Space Weather Laboratory card links IPS within same card; lab solar physics/space weather separate from self-described Solar Group IPS-project research/methods. External ISEE instruments/data not lab ownership; undated ongoing/current/unique-system language not generalized to2026.",
+      "scientificQA": "PASS",
+      "ipsFinalFullSourcesActuallyRead": [
+        "src-e33801eceaf7ffc2",
+        "src-04c9b7bf1a842574",
+        "src-f8c7e9c911ee6b44"
+      ],
+      "coverageRepair": {
+        "requested": [
+          "Our reconstruction of the solar wind aims at deriving the density and the outflow velocity in the inner heliosphere where the data coverage by the IPS observations is sufficiently high to obtain reliable results.",
+          "the Advanced Composition Explorer ( ACE ) spacecraft provides in situ velocity and density observations at the L1 Lagrange point, which can be compared with the values from our kinematic 'best model'."
+        ],
+        "finalLiteralCoveragePass": true,
+        "scientificFieldsOrOriginalSourceTimesChangedByQuoteRepair": false
+      },
+      "officialCardMarkupProof": "<h2>Space Weather Laboratory</h2> ... <a href=\"https://ips.ucsd.edu\">space weather</a> ... PI: Dr. Bernard Jackson",
+      "rootLabelCurrentSupport": "destination_project_context"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "rawSha256": "5187bd78342260205bcbac81f811a35930758bb978d83cf69bf489468ac6fe1c",
+      "rawReviewedAt": "2026-10-16T05:35:14+00:00",
+      "status": "supported",
+      "hydratePass": true,
+      "currentEvidenceLiteralCount": 8,
+      "newEvidence": [
+        {
+          "sourceId": "src-dc602ab7d0c8db68",
+          "quote": "The Romero group at UC San Diego develops new catalytic reactivity that expands what organic synthesis can achieve under mild, practical conditions.",
+          "supports": [
+            "identity",
+            "affiliation",
+            "research"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-dc602ab7d0c8db68",
+          "quote": "Our work spans visible-light photochemistry, ground-state catalysis, and hybrid strategies that combine both, guided by rigorous mechanistic insight.",
+          "supports": [
+            "research",
+            "methods",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-dc602ab7d0c8db68",
+          "quote": "selective, functional group tolerant transformations that open access to valuable chemical space for medicines and materials.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-dc602ab7d0c8db68",
+          "quote": "Mechanism Investigation",
+          "supports": [
+            "methods",
+            "topics"
+          ],
+          "literal": true
+        }
+      ],
+      "sourceScope": "Named whole-group Research Overview; broad stated photochemistry/catalysis/mechanistic investigation only. No individual-publication generalization; carousel dates not research-update dates.",
+      "scientificQA": "PASS"
+    }
+  ],
+  "manifestCountQA": {
+    "items": 884,
+    "currentSourceCountMatchesPackets": 884,
+    "currentPacketHashesMatchRefreshReceipt": 884,
+    "packetHashMapSha256": "0d3e6b6091049c40c6d8b3372c1c44bf4bb0d8756ad4aead9ebb66f319ad6ade",
+    "refreshCheckedAt": "2026-10-16T05:52:18+00:00",
+    "refreshNetworkRequests": 0,
+    "receiptSaysBeforeAfterAllPacketBytesIdentical": true,
+    "independentCurrent884HashesMatchRecordedProof": true,
+    "sourceCountRowsChangedVs641": 83,
+    "changedIdsMatchRefreshReceipt": true,
+    "allOtherItemFieldsOrderIdsUrlsAndImportsEqual641": true,
+    "staleSourceCountsNow": 0,
+    "onlyChangedPacketPathsVs641": [
+      "data/local-lab-summaries/packets/ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory.json",
+      "data/local-lab-summaries/packets/ucsd-biology-topic-lab-yanofsky.json",
+      "data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json"
+    ]
+  },
+  "identityDecisionQA": {
+    "count": 14,
+    "objectsExactlyEqual641": true,
+    "automaticAcceptanceFromBatch": 0
+  },
+  "inputHashes": {
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json": "af7c4da100b9d831b691f65c5109024fb16b8e0b7b229f6e1c420f77b459bf23",
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/process.json": "2991852603c4e2536a8692cfcee0a0bb9986ca99ac9c64d20b1bdefd97cf7757",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-coordination.json": "dd18abac341a8c57e76951abc275c456ed2d788714a41be8631175487850ebef",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ENTRY-SHELL-FOLLOWUP-SOURCE-STAGING.json": "63cb0cd36da58483d23afdbeb089fe6d1dc33b5f1e2ad046900e8e597fc69eaa",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/IMAGE-MAP-FOLLOWUP-SOURCE-STAGING.json": "6c60d5dc3b11f99d1d95e82eb592d5ef9b7d55cc95befb161d51f81e87e68a45",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/NESTED-FRAME-FOLLOWUP-SOURCE-STAGING.json": "fcca950fccc51ba65b0c83497c470a26daafff093ed9275102580c23af25ee33",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/IPS-INTRODUCTION-SOURCE-STAGING.json": "e056cbd0bda552cf31a87b126b1d509b7f86ec59399c2afe546b19b7473eb9da",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/IPS-OFFICIAL-DIRECTORY-SOURCE-STAGING.json": "194beb698e148e1344ea4846f9224c51e60fefa4738732449d32569545728b5c",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/manifest.json": "1c1959ad028f0a077af6a21d41b75659aecffffc2f90905a52f7a044c7154b6d",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/MANIFEST-SOURCE-COUNT-REFRESH-QA.json": "696c072cb9ccb1c07607d7e8adaf2e035626d22e07e65cf259115c85e7a7d556",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/identity-decisions.json": "d03f63cfc224974df2951ebbc152619fc05289431dbcb69781c888df5874362a"
+  },
+  "errors": [],
+  "limits": [
+    "Metadata matching is not scientific review of every existing source. This QA freshly read only IPS3 finalbody sources, reused prior documented actual reading for Romero/Yan and assessed final raw evidence.",
+    "HTTP200 is transport proof only; official directory fetch is a separate200, not an HTTPredirect/rootcanonical change. IPS root remains uncertain/notverified despite supported lab+linked-project research.",
+    "No new collector/process probe or network test; actual receipt loaded pins and preserved own source snapshots independently matched."
+  ]
+}

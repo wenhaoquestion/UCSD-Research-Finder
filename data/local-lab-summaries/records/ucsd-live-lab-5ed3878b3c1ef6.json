@@ -1,0 +1,101 @@
+{
+  "labId": "ucsd-live-lab-5ed3878b3c1ef6",
+  "status": "supported",
+  "summaryZh": "Voytek 神经与数据分析实验室研究神经元在人类认知、衰老和疾病中的功能与计算作用。团队结合人类认知实验、EEG 与术中电活动记录，以及大规模数据挖掘和机器学习。",
+  "researchQuestions": [
+    "神经元在人类认知、衰老和疾病中发挥哪些功能与计算作用？",
+    "神经系统如何相互作用而产生注意和工作记忆等认知现象，这些系统的生物学约束带来哪些行为与认知限制？"
+  ],
+  "topics": [
+    "认知神经科学",
+    "衰老与疾病",
+    "脑数据科学"
+  ],
+  "methods": [
+    "认知实验",
+    "EEG",
+    "侵入性脑记录",
+    "数据挖掘",
+    "机器学习"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-f80eee9184c416a6",
+      "quote": "About Us Our lab sits at the intersection of theory and experimentation, combining Cognitive Science, Neuroscience, and Data Science approaches: Cognitive Science: The study of intelligences, biological and artificial. Neuroscience: The study of the rules of biological neural networks and how they give rise to behavior and cognition. Data Science: The study of how we can combine many large, hetereogeneous, noisy datasets to derive knowledge about our world. We care deeply about how we use data to learn about how the brain “works”: what are the functional/computational roles that neurons play in human cognition, aging, and disease? We do this from two complementary angles. From the experimental side, we conduct human cognitive experiments while recording either non-invasive electrical brain activity using EEG, or invasively by working with patients undergoing brain surgery (usually for epilepsy). We also collaborate extensively with researchers in a variety or other domains, and make considerable use of publicly available brain data (which we help catalog here ). We combine these experimental approaches with large scale data-mining, data science approaches, and AI/machine learning techniques to discover biological signals that are informative of cognitive and disease states. From the computational side, we develop new methods for measuring and quantifying neural oscillations in both the time- and frequency domains (see our publications for our latest research). We also build models of neural circuitry to probe the computational capabilities of neural populations to investigate how oscillations impact computation and communication. Additionally, we model how these circuits contribute to the electrical brain signals we record. We validate these models by comparing to a wide range of electrophysiological data, including single-unit recordings and intracranial field potentials from humans and animals. Ultimately, our research goal is to bridge these two approaches and construct an understanding of cognition built on the first principles of neurophysiology. Rather than asking questions like, “What brain regions correlate with working memory or attentional load?” we ask, “Given what we know about the computational properties of neurons and neural systems, how can those systems interact to give rise to cognitive phenomena we equate with ‘attention’ and ‘working memory’, and what are the behavioral and cognitive limitations and consequences of these biological constraints?” In collaboration with his wife, Jessica Bolger Voytek, Voytek built and published brainSCANr, an algorithmic approach to aggregating information from more than 2 million peer-reviewed neuroscience articles. This project was his first attempt at automated science: using machine-learning tools to algorithmically generate novel hypotheses from the text of peer-reviewed publicaitons alone. This is well before the days of large language models (LLMs). Our philosophy with regards to the role of data-driven approaches to neuroscience is that large scale data analytics can complement and guide in-lab experimental research, but should not replace it.",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-cd21786e247a4519",
+      "quote": "Neural and Data Analytics Laboratory",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-cd21786e247a4519",
+      "quote": "Neural and Data Analytics Laboratory Principal Investigator: Bradley Voytek",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-f80eee9184c416a6",
+      "quote": "We care deeply about how we use data to learn about how the brain “works”: what are the functional/computational roles that neurons play in human cognition, aging, and disease?",
+      "supports": [
+        "researchQuestions"
+      ]
+    },
+    {
+      "sourceId": "src-f80eee9184c416a6",
+      "quote": "Rather than asking questions like, “What brain regions correlate with working memory or attentional load?” we ask, “Given what we know about the computational properties of neurons and neural systems, how can those systems interact to give rise to cognitive phenomena we equate with ‘attention’ and ‘working memory’, and what are the behavioral and cognitive limitations and consequences of these biological constraints?”",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T07:41:11+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "candidateIndex": 140,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-f80eee9184c416a6",
+        "quote": "We care deeply about how we use data to learn about how the brain “works”: what are the functional/computational roles that neurons play in human cognition, aging, and disease?",
+        "sourceUrl": "https://voyteklab.com/about",
+        "observedAt": "2026-10-16T01:35:04+00:00",
+        "bodySha256": "1fc13f30a394dd02a5b4c81e0033b5bc6725bf92a8f5f24232006b79aa0e98f6"
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-f80eee9184c416a6",
+        "quote": "Rather than asking questions like, “What brain regions correlate with working memory or attentional load?” we ask, “Given what we know about the computational properties of neurons and neural systems, how can those systems interact to give rise to cognitive phenomena we equate with ‘attention’ and ‘working memory’, and what are the behavioral and cognitive limitations and consequences of these biological constraints?”",
+        "sourceUrl": "https://voyteklab.com/about",
+        "observedAt": "2026-10-16T01:35:04+00:00",
+        "bodySha256": "1fc13f30a394dd02a5b4c81e0033b5bc6725bf92a8f5f24232006b79aa0e98f6"
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  }
+}

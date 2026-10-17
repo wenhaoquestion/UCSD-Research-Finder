@@ -1,0 +1,180 @@
+{
+  "labId": "ucsd-live-lab-61e490319a4560",
+  "status": "partial",
+  "summaryZh": "新取得的UCSD教师档案仍明确描述Oegema lab研究细胞分裂与胚胎发育，平行使用哺乳动物细胞和秀丽隐杆线虫胚胎模型。档案的实验室链接仍指向旧Ludwig具名路径；既有目的页捕获为机构主页，联合候选站与旧ID的关系仍未接受。",
+  "researchQuestions": [],
+  "topics": [
+    "细胞分裂",
+    "胚胎发育"
+  ],
+  "methods": [
+    "哺乳动物细胞",
+    "秀丽隐杆线虫胚胎模型"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-56e7a31a22f01677",
+      "quote": "Oegema Lab → http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-b1de4d3cc067dab0",
+      "quote": "The Oegema lab takes parallel approaches in mammalian cells and using the C. elegans embryo as a metazoan model system to study cell division and embryonic development.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-2bc4157f5c5a555f",
+      "quote": "Our Research Programs Tumor biology Tumor microenvironment",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-2bc4157f5c5a555f",
+      "quote": "Ludwig Cancer Research",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-f037133527069fcc",
+      "quote": "Oegema and Desai Labs",
+      "supports": [
+        "identity"
+      ],
+      "quoteLocation": "title"
+    },
+    {
+      "sourceId": "src-f037133527069fcc",
+      "quote": "Chromosome Segregation Learn More Cytokinesis Learn More CentrosomeS & SPindle Assembly Learn More Targeting Mitosis in Cancer Learn More High-content functional screening",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a117e246013e032e",
+      "quote": "The Oegema lab takes parallel approaches in mammalian cells and using the C. elegans embryo as a metazoan model system to study cell division and embryonic development.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a117e246013e032e",
+      "quote": "Featured Content webpage Department of Cellular and Molecular Medicine Oegema Lab",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "mismatch",
+    "entityType": "lab",
+    "reason": "原具名Ludwig实验室路径在既有捕获中跳到机构主页，网址身份仍不匹配。 后续来源复核：共享适配器于2026-10-16T02:22:10+00:00取得Karen Oegema的UCSD Profiles完整正文，直接描述The Oegema lab以哺乳动物细胞和C. elegans胚胎平行研究细胞分裂与胚胎发育。HTML中Oegema Lab仍链接旧Ludwig的karen-oegema-lab路径，而非oegemadesailab.org；没有明确说明联合候选站是旧ID的别名或继承实体。旧目的页本轮未重取，mismatch保留，Desai/Oegema稳定ID不合并。",
+    "acceptanceStatus": "provisional_historical_lab",
+    "hasUnresolvedMismatch": true,
+    "observedPageName": "Ludwig Cancer Research",
+    "observedPageType": "institutional_homepage",
+    "silentIdMigrationAllowed": false,
+    "proposedCorrections": [
+      {
+        "field": "labWebsiteUrl",
+        "value": "http://www.oegemadesailab.org/",
+        "status": "candidate_only_not_applied",
+        "sourceRecordLabId": "ucsd-biology-topic-lab-arshad-desai",
+        "sourceUrl": "http://www.oegemadesailab.org/",
+        "sourceObservedAt": "2026-10-16T00:57:54+00:00",
+        "sourceEvidence": "Oegema and Desai Labs",
+        "evidenceLocation": "title",
+        "reason": "A separately stored named lab website is a correction candidate. Do not merge IDs or assume the old path has this identity without an explicit alias/full-person match review."
+      }
+    ],
+    "requiresLiveIdentityFollowup": true,
+    "followupReviewedAt": "2026-10-16T02:24:35+00:00",
+    "followupFindings": [
+      {
+        "targetUrl": "https://profiles.ucsd.edu/karen.oegema",
+        "state": "reviewed_live_profile_old_link_identity_unresolved",
+        "reviewedAt": "2026-10-16T02:24:35+00:00",
+        "actualPageRequestMade": true,
+        "liveCheckedAt": "2026-10-16T02:22:09+00:00",
+        "sourceObservedAt": "2026-10-16T02:22:10+00:00",
+        "sourceId": "src-a117e246013e032e",
+        "sourceRole": "listed_official_source_requires_entity_localization",
+        "checkOrigin": "summary_gap_live_fetch",
+        "originalDestinationRechecked": false,
+        "identityAccepted": false,
+        "notAnAcceptedCanonicalLabUrl": true,
+        "findingZh": "共享适配器于2026-10-16T02:22:10+00:00取得Karen Oegema的UCSD Profiles完整正文，直接描述The Oegema lab以哺乳动物细胞和C. elegans胚胎平行研究细胞分裂与胚胎发育。HTML中Oegema Lab仍链接旧Ludwig的karen-oegema-lab路径，而非oegemadesailab.org；没有明确说明联合候选站是旧ID的别名或继承实体。旧目的页本轮未重取，mismatch保留，Desai/Oegema稳定ID不合并。",
+        "wireEventRange": [
+          69,
+          70
+        ],
+        "observedLinks": [
+          {
+            "anchorText": "Oegema Lab",
+            "href": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+            "sourceId": "src-a117e246013e032e",
+            "sourceObservedAt": "2026-10-16T02:22:10+00:00",
+            "evidenceNature": "parsed_cached_html_anchor_attribute",
+            "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ad5f4b3c6f541282dbf2b2299c59d3fa11c58ad690fd9030663fd8f0251db7c0.html",
+            "bodySha256": "d9b8c9ae0e4e952c70f8709c4f9822b8da95fabe519cb9be961e65e5dab9d409"
+          }
+        ],
+        "researchEvidenceScope": "fresh_official_profile_explicit_lab_scope; URL/entity mapping remains provisional; no accepted alias or ID migration"
+      },
+      {
+        "targetUrl": "http://www.oegemadesailab.org/",
+        "state": "reviewed_reused_candidate_identity_unaccepted",
+        "reviewedAt": "2026-10-16T02:24:35+00:00",
+        "actualPageRequestMade": false,
+        "liveCheckedAt": null,
+        "sourceObservedAt": "2026-10-16T00:57:54+00:00",
+        "sourceId": "src-f037133527069fcc",
+        "sourceRole": "reviewed_followup_requires_entity_match",
+        "checkOrigin": "reused_collection_capture",
+        "originalDestinationRechecked": false,
+        "identityAccepted": false,
+        "notAnAcceptedCanonicalLabUrl": true,
+        "findingZh": "候选http://www.oegemadesailab.org/仍只使用2026-10-16T00:57:54+00:00的复用捕获，支持联合候选实体的细胞分裂相关研究；新官方Profiles仍链接旧Ludwig路径，不能据共同姓名或研究方向将联合站接受为旧Oegema ID别名，也不合并Desai/Oegema稳定ID。",
+        "researchEvidenceScope": "candidate_entity_only; no accepted alias, replacement URL or stable-ID migration",
+        "candidateResearchSummaryZh": "联合候选页列染色体分离、胞质分裂、中心体与纺锤体组装、癌症有丝分裂靶向及高内涵功能筛选。"
+      }
+    ],
+    "followupConclusion": "共享适配器于2026-10-16T02:22:10+00:00取得Karen Oegema的UCSD Profiles完整正文，直接描述The Oegema lab以哺乳动物细胞和C. elegans胚胎平行研究细胞分裂与胚胎发育。HTML中Oegema Lab仍链接旧Ludwig的karen-oegema-lab路径，而非oegemadesailab.org；没有明确说明联合候选站是旧ID的别名或继承实体。旧目的页本轮未重取，mismatch保留，Desai/Oegema稳定ID不合并。",
+    "liveCheckedAt": "2026-10-16T02:22:09+00:00",
+    "liveCheckedAtScope": "identity_followup_source_only",
+    "originalDestinationRechecked": false
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "新Profiles采集时间不等于研究正文更新时间；档案正文未标注完整更新时间，也不据教师职位或域名确认实验室当前隶属。",
+    "官方Profiles仍链接旧Ludwig具名路径；原目的页本轮未重取，既有mismatch保持，partial/provisional不等于实体或网址接受。",
+    "候选http://www.oegemadesailab.org/仍只使用2026-10-16T00:57:54+00:00的复用捕获，支持联合候选实体的细胞分裂相关研究；新官方Profiles仍链接旧Ludwig路径，不能据共同姓名或研究方向将联合站接受为旧Oegema ID别名，也不合并Desai/Oegema稳定ID。"
+  ],
+  "blockers": [
+    "原实验室具名路径的既有目的页是Ludwig机构主页；新官方档案仍给出同一旧链接，未解决独立实验室网址与实体映射。",
+    "候选实验室网站与旧ID之间缺少明确别名或继承说明，候选纠正尚未接受。"
+  ],
+  "reviewedAt": "2026-10-16T02:24:35+00:00",
+  "researchContentSupport": {
+    "status": "fresh_official_lab_content_supported",
+    "scope": "Fresh UCSD Profile explicitly describes the named laboratory; research content is supported provisionally while old lab URL/entity mapping remains unaccepted. Candidate sites remain candidate-only."
+  },
+  "previousReviewedAt": "2026-10-16T02:17:52+00:00"
+}

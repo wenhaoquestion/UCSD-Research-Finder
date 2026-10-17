@@ -1,0 +1,1782 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:17:36+00:00",
+  "reviewOnly": true,
+  "networkRequestsMade": 0,
+  "rawPacketReceiptWrites": 0,
+  "reviewedCount": 10,
+  "inventoryIndices": [
+    24,
+    33
+  ],
+  "captureStatusCounts": {
+    "ok": 10
+  },
+  "pageIdentityMatchCounts": {
+    "uncertain": 3,
+    "confirmed": 7
+  },
+  "newSourceBodiesRead": 10,
+  "sameFullVisibleTextCount": 6,
+  "newRootWholeLabResearchCount": 3,
+  "separateTezcanResearchFollowupAlreadyApplied": true,
+  "actualBindingsApplied": 0,
+  "currentReadOnlyVerifiedAcceptedLabGroupURLCount": 4,
+  "mismatchGateIDsChanged": 0,
+  "inputHashes": {
+    "data/local-lab-summaries/reviewed-original-uri-observations.json": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f",
+    "data/local-lab-summaries/original-url-packet-refresh.json": "7ec6df0bcb9c6ab59718b58d475bc38a8f5bd0920dddaa99d7be98d2eb2cbbe8"
+  },
+  "refreshSnapshotAtRead": "2026-10-16T05:12:25+00:00",
+  "boundaries": [
+    "No new network, root retries, record/packet/receipt/code edits, ID merge/rename/alias or acceptance changes.",
+    "All ten direct root captures have empty actual HTTP redirect chains; frame/meta directives remain discovery only.",
+    "Original observedAt/liveCheckedAt/body hashes are not review dates or content publication dates.",
+    "Jennings title is named-site evidence but current record identity remains provisional pending lab-scope body; Theodorakis/SHM roots remain unbound.",
+    "Current scientific records were already updated by parent; this is independent read-only scope/provenance review."
+  ],
+  "items": [
+    {
+      "inventoryIndex": 24,
+      "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-28f455c9c1ad8216",
+      "literalListedURL": "http://jenningslab.ucsd.edu",
+      "actualURL": "http://jenningslab.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://jenningslab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:02+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:01+00:00",
+      "finalURL": "http://jenningslab.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://jenningslab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:01+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792126621.139092,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/aba815ffc937e0231c1221be0501a61d2f170a74d37d75a8005f1bf6051c24a8.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Jennings Lab",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-5d1996b644f76fc1",
+          "sourceUrl": "https://jenningslab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:09+00:00",
+          "bodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "uncertain",
+      "decision": "title_name_only_pending_whole_lab_scope",
+      "reasons": [
+        "原HTTP根页只有 Jennings Lab 标题与图像导航，没有可见研究正文。标题可记录具名站点，但尚无本页具名负责人/whole-lab科研段落来解除既有身份范围不确定性；保留partial，等待已单独审阅的research.html后续捕获。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-28f455c9c1ad8216",
+          "quote": "Jennings Lab",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [
+        {
+          "discoveryMechanism": "html_anchor",
+          "element": "a",
+          "originalHtmlAttribute": "research.html",
+          "literalElement": "<a class=\"research_button\" href=\"research.html\" >",
+          "imageSrc": "Images/flask.png",
+          "imageAltAttributePresent": false,
+          "anchorText": "",
+          "targetUrl": "http://jenningslab.ucsd.edu/research.html",
+          "isObservedHTTPRedirect": false,
+          "supportsResearchOrIdentity": false
+        }
+      ],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "目标页面正文为空；官方资料列 Patricia Jennings 的无机化学领域。现有证据不足以总结 Jennings Lab 的具体研究问题和方法。",
+        "researchQuestions": [],
+        "topics": [
+          "无机化学"
+        ],
+        "methods": []
+      },
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "官方资料确认研究者，但实验室目标正文为空。"
+      },
+      "affiliationUnchanged": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:48:38+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-d61dc51abf7103aa",
+          "quote": "Patricia Jennings Education",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-d61dc51abf7103aa",
+          "quote": "Primary Research Area Inorganic Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "oldBlockersRetained": [
+        "目标提取正文为空；仅负责人宽泛研究领域。"
+      ],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "partial",
+        "pageIdentityStatus": "uncertain",
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "66261ab75d735bd691870c38982e71a473aa90c1bdd52927fc07dd4ed96a07e5",
+      "rawSha256ReadOnly": "c4a70c7af749d5f6190ac115340c70e39300f3b6a6814d7246b09a0a73efaea7",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 25,
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-8958d5c5bb90cf1a",
+      "literalListedURL": "http://galileo.ucsd.edu",
+      "actualURL": "http://galileo.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://galileo.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:03+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:03+00:00",
+      "finalURL": "http://galileo.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://galileo.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:02+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126622.922412,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "2d25977b236521d7f2e695c1fe32c06c22a26304f7d0ae2f166cece6afa3a208",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/14719dcae73f408b0b2683d57816be73b78ddfa16bff13478058c3e0350b08ed.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 788,
+      "fullVisibleTextSha256": "3024c753f103faa7954bc2b5051624b9db05012f278d6995f56cb74a22267b81",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Kim Group Home - UCSD Chemistry and Biochemistry",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": false,
+      "sameFullVisibleText": false,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "retain_already_applied_root_science_and_identity",
+      "reasons": [
+        "根页明确 The Kim group 与 Judy Kim 联系信息；整组段落直接列蛋白动态、膜蛋白折叠、抗菌肽扰膜、自由基中间体及光谱/显微工具。当前raw已采用这些真实新正文，未发现需再改科学字段；正文使用Current projects但无完整内容发布日期。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "Kim Group Home - UCSD Chemistry and Biochemistry",
+          "quoteLocation": "title",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "The Kim group is a diverse group of students, postdocs, and research staff with a strong interest in spectroscopic studies of protein dynamics.",
+          "quoteLocation": "body",
+          "supports": [
+            "identity",
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "Current projects include investigations of membrane protein folding, membrane disruption by antimicrobial peptides, and structure and dynamics of radical intermediates.",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "We utilize a host of powerful optical tools, including UV resonance Raman spectroscopy, transient absorption/emission spectroscopy, and microscopy.",
+          "quoteLocation": "body",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "Judy Kim",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": true,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Kim 研究组以光谱学研究蛋白质动态，涉及膜蛋白折叠、抗菌肽引起的膜扰动及自由基中间体的结构与动态。方法包括紫外共振拉曼光谱、瞬态吸收/发射光谱和显微成像。",
+        "researchQuestions": [
+          "如何用光谱学刻画蛋白质动态与膜蛋白折叠？",
+          "抗菌肽如何扰动膜，自由基中间体具有怎样的结构与动态？"
+        ],
+        "topics": [
+          "蛋白质动态与膜蛋白折叠",
+          "抗菌肽与膜扰动",
+          "自由基中间体结构与动态"
+        ],
+        "methods": [
+          "紫外共振拉曼光谱",
+          "瞬态吸收/发射光谱",
+          "显微成像"
+        ]
+      },
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "原HTTP页面明确The Kim group整体研究，并列Judy Kim联系信息；与原记录的具名组对应，不另推任职日期。"
+      },
+      "affiliationUnchanged": {
+        "status": "source_reported",
+        "reason": "目的页标题明确Kim Group及UCSD Chemistry and Biochemistry；只记录来源自述。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T05:11:05+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-b450c00934a69427",
+          "quote": "Judy Kim Education",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-b450c00934a69427",
+          "quote": "Primary Research Area Physical Chemistry Analytical & Atmospheric Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "Kim Group Home - UCSD Chemistry and Biochemistry",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "spectroscopic studies of protein dynamics",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "UV resonance Raman spectroscopy",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "transient absorption/emission spectroscopy",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "microscopy",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-8958d5c5bb90cf1a",
+          "quote": "Judy Kim",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于内容更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "Parent has already applied supported recoveries; this report verifies scope and exact root provenance without editing raw.",
+      "currentReadOnlyHydrate": {
+        "status": "supported",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "c5c0f24793816b32a7a8db0b1df25241bd2ccd01c69f74c729a55629a447780f",
+      "rawSha256ReadOnly": "44cd3847a76a43b371e253e0ebb8e8af01d6804380df2c72853a124f9312a6c4",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 26,
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-4eed6cd432ff1acd",
+      "literalListedURL": "http://kummelgroup.ucsd.edu",
+      "actualURL": "http://kummelgroup.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://kummelgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:05+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:05+00:00",
+      "finalURL": "http://kummelgroup.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://kummelgroup.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:04+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792126624.635534,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d532e27f6094214f3c0a3d11c9cf6c6269b372e1c3bf27c7b380ea7d9a4f4648.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 70,
+      "fullVisibleTextSha256": "20d2ab923a1193ef3868eadb8a9db17f9458704f480b4afb419fc1e437f69061",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Welcome to the Kummel Lab Web Page!!!",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-2ebd0459514d0d6f",
+          "sourceUrl": "https://kummelgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:10+00:00",
+          "bodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "confirmed",
+      "decision": "identity_only_frames_are_separate_documents",
+      "reasons": [
+        "具名Kummel Lab字面标题足以匹配既有confirmed实验室身份；根页只有欢迎标题和frameset/空fallback，没有整组研究。home.htm与side.htm是独立frame src发现，不是HTTP跳转、canonical或研究证据；保留原partial科学字段。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-4eed6cd432ff1acd",
+          "quote": "Welcome to the Kummel Lab Web Page!!!",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [
+        {
+          "discoveryMechanism": "html_frame_source",
+          "element": "frame",
+          "originalHtmlAttribute": "side.htm",
+          "name": "side",
+          "targetUrl": "http://kummelgroup.ucsd.edu/side.htm",
+          "isObservedHTTPRedirect": false,
+          "supportsResearchOrIdentity": false
+        },
+        {
+          "discoveryMechanism": "html_frame_source",
+          "element": "frame",
+          "originalHtmlAttribute": "home.htm",
+          "name": "main",
+          "targetUrl": "http://kummelgroup.ucsd.edu/home.htm",
+          "isObservedHTTPRedirect": false,
+          "supportsResearchOrIdentity": false
+        }
+      ],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Kummel Lab 首页确认实验室名称；官方教师资料仅列物理化学与材料化学领域。现有证据没有具体研究问题和方法。",
+        "researchQuestions": [],
+        "topics": [
+          "物理化学",
+          "材料化学"
+        ],
+        "methods": []
+      },
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "来源明确标识此实体。"
+      },
+      "affiliationUnchanged": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:48:38+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-2ebd0459514d0d6f",
+          "quote": "Welcome to the Kummel Lab Web Page!!!",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-fcbfb4f8ab44f47c",
+          "quote": "Primary Research Area Physical Chemistry Materials Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-4eed6cd432ff1acd",
+          "quote": "Welcome to the Kummel Lab Web Page!!!",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "oldBlockersRetained": [
+        "实验室首页只有欢迎语；负责人资料仅列宽泛领域。"
+      ],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "partial",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "ee6a440d29b0920274749244cc6d153d783532efcc1880c4831f35b5f61edc2d",
+      "rawSha256ReadOnly": "c62cbcd2c1dc53d3678c09569dda5e729cf0d10b7cdea2774091fbad42dc2b3f",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 27,
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-04a051aebaebcc7c",
+      "literalListedURL": "http://r2g.ucsd.edu",
+      "actualURL": "http://r2g.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://r2g.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:07+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:07+00:00",
+      "finalURL": "http://r2g.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:06+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126626.590121,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ece64ff7df4e7d06ed971e975bd1a4a83b081453a9dce7069f5739b737860777.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 43,
+      "fullVisibleTextSha256": "7bb5ee07a14b12fc00f1eefdc8007c46de2e4ede938610e015c90454bed3e343",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Intro Animation",
+      "headings": [
+        "The R omero R esearch G roup",
+        "@ UC San Diego"
+      ],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-16348f4142c7262a",
+          "sourceUrl": "https://r2g.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:13+00:00",
+          "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "confirmed",
+      "decision": "identity_only_named_group_body",
+      "reasons": [
+        "正文与heading拼字呈现 The R omero R esearch G roup 与 @ UC San Diego，明确实验室组名及自述机构。现根页没有具体研究或方法；保留partial和旧负责人领域引用，不把Intro Animation标题当实验室名称或科研。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-04a051aebaebcc7c",
+          "quote": "The R omero R esearch G roup @ UC San Diego",
+          "quoteLocation": "body",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Romero Research Group 首页确认其位于 UC San Diego；对应 Erik Romero 的官方教师资料列出有机化学与无机化学。没有具体研究问题和方法的正文。",
+        "researchQuestions": [],
+        "topics": [
+          "有机化学",
+          "无机化学"
+        ],
+        "methods": []
+      },
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "来源明确标识此实体。"
+      },
+      "affiliationUnchanged": {
+        "status": "source_reported",
+        "reason": "首页明确列出 UC San Diego。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:48:38+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-16348f4142c7262a",
+          "quote": "The R omero R esearch G roup @ UC San Diego",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-d5f2a1b1b127ea34",
+          "quote": "Erik Romero Education",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-d5f2a1b1b127ea34",
+          "quote": "Primary Research Area Organic Chemistry Inorganic Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-04a051aebaebcc7c",
+          "quote": "The R omero R esearch G roup",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "oldBlockersRetained": [
+        "首页只有名称；教师资料只有宽泛研究领域。"
+      ],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "partial",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "f3663821108984038cf43dea1b18108444b9d2da459343e7eb9c29702bf78068",
+      "rawSha256ReadOnly": "acaf430429504fa58aa92769ed940869fa849e665d9f17f72ba0f108d86358fc",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 28,
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-f01bfbff3e573fae",
+      "literalListedURL": "http://tezcan.ucsd.edu",
+      "actualURL": "http://tezcan.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://tezcan.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:09+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:09+00:00",
+      "finalURL": "http://tezcan.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://tezcan.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:08+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126628.1518662,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "987fe31b27c95551726edb9c0cb799b8151c7a66a9372e072b678f79345ca78a",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/920ca986cff6aa2c5df04f1748edf0a33681c06288e1631c48954608d6e804d5.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 231,
+      "fullVisibleTextSha256": "efb720d9d1a8aad7c55d08db078302c123c9f4ce75531f2b03d3b245019deb9c",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Tezcan Lab – Exploring, Expanding, and Evolving the Roles of Metals in Biology",
+      "headings": [
+        "WE ARE CREATIVE RESEARCHERS LOCATED IN SAN DIEGO",
+        "Publications",
+        "Life in Tezcan Lab",
+        "Contact"
+      ],
+      "sourceContentDates": [],
+      "sameByteBody": false,
+      "sameFullVisibleText": false,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "root_identity_separate_from_captured_research_followup",
+      "reasons": [
+        "根标题明确Tezcan Lab，正文只有金属生物学主题、欢迎语及导航。当前raw的具体主题/方法来自另行实际捕获Research页src-fd1ab018e68b72e8（observedAt05:00:15），不能归给04:57:09根页；该followup已具名Work by the Tezcan Group，当前完整科学字段可保留。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-f01bfbff3e573fae",
+          "quote": "Tezcan Lab",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-f01bfbff3e573fae",
+          "quote": "Exploring, Expanding, and Evolving the Roles of Metals in Biology",
+          "quoteLocation": "body",
+          "supports": [
+            "topics"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Tezcan 研究组研究金属蛋白设计、固氮酶结构与功能，以及功能蛋白材料的化学设计。结合分子生物学、化学合成和计算化学，并使用X射线晶体学、电子显微镜、光谱及材料表征方法。",
+        "researchQuestions": [
+          "如何设计具有功能的金属蛋白与蛋白基材料？",
+          "如何理解固氮酶的结构与功能？"
+        ],
+        "topics": [
+          "金属蛋白设计",
+          "固氮酶结构与功能",
+          "功能蛋白基材料"
+        ],
+        "methods": [
+          "分子生物学与化学合成",
+          "计算化学",
+          "X射线晶体学、电子显微镜、光谱及材料表征"
+        ]
+      },
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原HTTP根页标题Tezcan Lab，其真实Research链接的新正文明确Work by the Tezcan Group；同站Team页具名F. Akif Tezcan，不借个人兴趣替代整体研究。"
+      },
+      "affiliationUnchanged": {
+        "status": "uncertain",
+        "reason": "所审阅研究正文未明确陈述研究组机构隶属；未以域名或成员学位代替机构声明。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T05:11:05+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-5c5dd0d24f1cdf53",
+          "quote": "Akif Tezcan Education",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-5c5dd0d24f1cdf53",
+          "quote": "Primary Research Area Inorganic Chemistry Materials Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-f01bfbff3e573fae",
+          "quote": "Tezcan Lab",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "Work by the Tezcan Group",
+          "supports": [
+            "identity",
+            "research"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "molecular biology, chemical synthesis",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "computational chemistry",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "X-ray crystallography, electron microscopy",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "spectroscopy and advanced materials characterization techniques",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "Metalloprotein Design",
+          "supports": [
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-fd1ab018e68b72e8",
+          "quote": "Nitrogenase Structure",
+          "supports": [
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于内容更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+        "Research与原标注About Us的目标实际Team页均作为独立请求保存，未改写根页HTTP跳转或规范网址。"
+      ],
+      "oldBlockersRetained": [],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "Parent has already applied supported recoveries; this report verifies scope and exact root provenance without editing raw.",
+      "currentReadOnlyHydrate": {
+        "status": "supported",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "dee27cb526e7eabb559f8c8fe3513428479bb2ed0cc3da74d6a11346ec4d0908",
+      "rawSha256ReadOnly": "accbdbdfa9329c96393edf46db996d9360411f712647cbe22a5347f936c7ac96",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true,
+      "separateAlreadyCapturedScienceFollowup": {
+        "sourceId": "src-fd1ab018e68b72e8",
+        "sourceUrl": "http://tezcan.ucsd.edu/index.php/research-2/",
+        "checkedUrl": "http://tezcan.ucsd.edu/?page_id=867",
+        "requestedUrl": "http://tezcan.ucsd.edu/?page_id=867",
+        "observedAt": "2026-10-16T05:00:15+00:00",
+        "bodySha256": "f522f38819b86654df8d9c707299c40dd6f6b11dd56146a14d4f4a1c148138b1",
+        "redirectChain": [
+          {
+            "from": "http://tezcan.ucsd.edu/?page_id=867",
+            "to": "http://tezcan.ucsd.edu/index.php/research-2/",
+            "httpStatus": 301
+          }
+        ],
+        "title": "Research – Tezcan Lab",
+        "rootObservationUnchanged": true,
+        "reviewedEvidence": [
+          {
+            "sourceId": "src-fd1ab018e68b72e8",
+            "quote": "Work by the Tezcan Group spans all areas of chemistry and utilizes a diverse array of tools ranging from molecular biology, chemical synthesis, polymer science, and computational chemistry to X-ray crystallography, electron microscopy, spectroscopy and advanced materials characterization techniques.",
+            "quoteLocation": "body",
+            "supports": [
+              "identity",
+              "research",
+              "methods"
+            ]
+          },
+          {
+            "sourceId": "src-fd1ab018e68b72e8",
+            "quote": "Metalloprotein Design Nitrogenase Structure and Function Chemical Design of Functional Protein-Based Materials",
+            "quoteLocation": "body",
+            "supports": [
+              "topics"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "inventoryIndex": 29,
+      "labId": "ucsd-chemistry-biochemistry-lab-theodorakis-group",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-3372ef1abcf939e2",
+      "literalListedURL": "http://theodorakisgroup.ucsd.edu",
+      "actualURL": "http://theodorakisgroup.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://theodorakisgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:13+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:12+00:00",
+      "finalURL": "http://theodorakisgroup.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://theodorakisgroup.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:10+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126630.478494,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "c68cda4ff35c8c0f979ca06faff6004917a86f963ad92ca4484b9e07e5654a23",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/fb661b749ed158df9511a9bb84b94cb6cf8485da4d47450f9af25160f7e2643a.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 27,
+      "fullVisibleTextSha256": "5ce3a69c5c52e80f1725b2d980778727d08ff81aa17e89a5c2c34f871f5fbadc",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Index",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-c6710d54f8990201",
+          "sourceUrl": "https://theodorakisgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:15+00:00",
+          "bodySha256": "c68cda4ff35c8c0f979ca06faff6004917a86f963ad92ca4484b9e07e5654a23",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "uncertain",
+      "decision": "retain_supported_science_root_identity_unbound",
+      "reasons": [
+        "根标题仅Index，提取正文仅css templates Previous Next；nav中的Theodorakis Group及Research链接是站点发现上下文，未进入本source可引用body/title/headings。既有supported科学由独立具名研究页支持，但本次原HTTP根还没有可匹配本schema引文的位置；不为根页伪造科研/身份quote，不迁移URL。"
+      ],
+      "reviewedRootEvidence": [],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Theodorakis研究组以有机合成研究生物学和医学问题，开展天然产物合成与药物发现，以及用于成像和传感的荧光探针设计。研究关注小分子如何调控细胞功能，以及探针如何报告纳米尺度环境和淀粉样蛋白的变化。",
+        "researchQuestions": [
+          "如何通过天然产物合成和结构改造理解其生物作用？",
+          "如何设计荧光探针以感知细胞环境及区分不同疾病的淀粉样蛋白？"
+        ],
+        "topics": [
+          "有机合成",
+          "天然产物与药物发现",
+          "荧光成像和传感",
+          "淀粉样蛋白探针"
+        ],
+        "methods": [
+          "小分子与天然产物合成",
+          "环境响应荧光探针设计"
+        ]
+      },
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "研究页反复明确The Theodorakis group；与同站根页实际Research锚点及既有具名教师身份相接。"
+      },
+      "affiliationUnchanged": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T03:21:31+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-84b83b389c2bcb59",
+          "quote": "The Theodorakis group is engaged in the synthesis and study of small molecules that can be used as biological tools to control cellular function and as lead structures for the discovery of new therapeutic agents.",
+          "supports": [
+            "identity",
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-84b83b389c2bcb59",
+          "quote": "Our current research activities are focused on two topics: (a) the natural products-driven synthesis and drug discovery and (b) the development of fluorescent probes for imaging and sensing.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-84b83b389c2bcb59",
+          "quote": "The Theodorakis group strives to design innovative methods and divergent strategies that generate structural complexity and allow chemical functionalization. Moreover, efforts to translate chemical reactivity of the target molecules to biological properties yield important insights regarding natural products-based biology, mode of action and drug discovery.",
+          "supports": [
+            "researchQuestions",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-84b83b389c2bcb59",
+          "quote": "The Theodorakis group is engaged in the design of fluorescent probes whose emission profile changes as a function of their environment. Thus, these probes can sense and measure variations of properties such as viscosity and polarity at a nanoscale level.",
+          "supports": [
+            "researchQuestions",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-84b83b389c2bcb59",
+          "quote": "the Theodorakis group designs probes that target, monitor and colorimetrically discriminate between amyloids of various diseases.",
+          "supports": [
+            "topics",
+            "researchQuestions"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "页面列出UCSD合作者，但不把合作者所属单位单独当作本组当前隶属证明。",
+        "页面捕获时间仅说明可取得该正文；未独立核实带日期的当前隶属、人员或项目状态。"
+      ],
+      "oldBlockersRetained": [],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "supported",
+        "pageIdentityStatus": "uncertain",
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "08e3ba9a946e4b660e40e4f40d435cd8cf66220d96f00ce80c5df44d5c721c35",
+      "rawSha256ReadOnly": "51e5fe69ac1d5d5ffafa060dc947c2e80b2f290ac66aaea9951bdac5b4c73805",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 30,
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-78fc5f4fd64950d0",
+      "literalListedURL": "http://shm.ucsd.edu/",
+      "actualURL": "http://shm.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://shm.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:37+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:37+00:00",
+      "finalURL": "http://shm.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://shm.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:36+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126656.491849,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/fd895e0b0eb6b0440a3842d6c5492a2977cdef977b87d9c89c483f2f37b53275.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-a7325ccd6938272b",
+          "sourceUrl": "https://shm.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "uncertain",
+      "decision": "blank_root_meta_target_discovery_only",
+      "reasons": [
+        "根页title和body均空；只有指向Site/Home.html的literal HTML meta refresh。该指令不是HTTP跳转或实体/科研证据；实际fetch.redirects为空，继续partial与具体正文障碍，等已审后续独立捕获。"
+      ],
+      "reviewedRootEvidence": [],
+      "literalDiscoveryOnly": [
+        {
+          "discoveryMechanism": "html_meta_refresh",
+          "content": "0;url= http://shm.ucsd.edu/Site/Home.html",
+          "targetUrl": "http://shm.ucsd.edu/Site/Home.html",
+          "isObservedHTTPRedirect": false,
+          "supportsResearchOrIdentity": false
+        }
+      ],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "历史资料将 Mike Todd 记为该研究组主任；当前目标正文为空，无法核实实验室身份与研究内容。",
+        "researchQuestions": [],
+        "topics": [],
+        "methods": []
+      },
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "uncertain",
+        "entityType": "research_group",
+        "reason": "负责人仅来自历史证据，目标正文为空。"
+      },
+      "affiliationUnchanged": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:53:25+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-4097577e6b7a099b",
+          "quote": "Professor Mike Todd, Director",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "oldBlockersRetained": [
+        "目标HTTP200但提取正文为空；缺少研究组研究内容。"
+      ],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "partial",
+        "pageIdentityStatus": "uncertain",
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "5dd891f7486628e4a1e8e0caf6fa116e713ff18a188ef6f41744a5cc6527595c",
+      "rawSha256ReadOnly": "581ac0f1424edaf9579ca7dcb2373dd027e8ce45b2f97353d8433700ea42aecc",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 31,
+      "labId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-3bf96383b726f054",
+      "literalListedURL": "http://mmrl.ucsd.edu/",
+      "actualURL": "http://mmrl.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://mmrl.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:39+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:39+00:00",
+      "finalURL": "http://mmrl.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://mmrl.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:38+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126658.338778,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/25e78b3153eac87044c42352c812b730bb2fb50e91a0710df5d004a3432b71fd.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 2842,
+      "fullVisibleTextSha256": "c485cfaf57780046c7fbfa2e2d53c3b747722601936b64f7c00515bafdac1458",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "Prof. Yu Qiao's Homepage",
+      "headings": [],
+      "sourceContentDates": [],
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-dce22ffee9c6fa41",
+          "sourceUrl": "https://mmrl.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:48+00:00",
+          "bodySha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+          "cachedBodySha256Verified": true,
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "visibleTextComparedFrom": "actual_cached_html"
+        }
+      ],
+      "pageIdentityMatch": "confirmed",
+      "decision": "identity_only_personal_style_page_with_lab_name",
+      "reasons": [
+        "正文明确Multifunctional Materials Research Laboratory及Yu Qiao，身份足以对上既有lab；页面主体是负责人履历、宽泛Research Interests和Selected Publications。领域列表可保留为有限兴趣，不能把论文标题或个人任职表转换成整组研究问题/方法或带日期的当前隶属；保留partial。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-3bf96383b726f054",
+          "quote": "Multifunctional Materials Research Laboratory Yu Qiao",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": false,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Multifunctional Materials Research Laboratory 页面列出热力学、统计力学、能源材料、复合材料、智能与防护结构及失效分析等兴趣。当前内容偏向负责人履历与领域列表，缺少具体研究问题和方法概述。",
+        "researchQuestions": [],
+        "topics": [
+          "热力学与统计力学",
+          "能源与复合材料",
+          "智能防护结构"
+        ],
+        "methods": []
+      },
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "来源明确标识此实体。"
+      },
+      "affiliationUnchanged": {
+        "status": "source_reported",
+        "reason": "实验室联系信息明确列出 UC San Diego。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:54:02+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-dce22ffee9c6fa41",
+          "quote": "Multifunctional Materials Research Laboratory Yu Qiao",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-dce22ffee9c6fa41",
+          "quote": "Research Interests Thermodynamics and statistical mechanics Energy-related materials Advanced infrastructural and composite materials In-situ resource utilization Smart materials and structures Protective materials and structures",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-dce22ffee9c6fa41",
+          "quote": "University of California, San Diego",
+          "supports": [
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-3bf96383b726f054",
+          "quote": "Multifunctional Materials Research Laboratory",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "oldBlockersRetained": [
+        "页面只有领域列表及履历，具体实验室研究问题未展开。"
+      ],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "No sufficient new root science to expand existing fields.",
+      "currentReadOnlyHydrate": {
+        "status": "partial",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "9bb311a18d4c26a37a74a1616366def15c95cabf97910d68acf265b3b08870fc",
+      "rawSha256ReadOnly": "8651a24b4070667dc372383235062df5ce54af217690780e3018cad212691c6f",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 32,
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-27301218356c2999",
+      "literalListedURL": "http://stauberlab.ucsd.edu/",
+      "actualURL": "http://stauberlab.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://stauberlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:41+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:41+00:00",
+      "finalURL": "http://stauberlab.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://stauberlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:40+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126660.291272,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "5b62ea538e3ccb4e1638756fa37a7ddacc241d9f05efe1fa2816fe5396454915",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/8cb64445c9de711e8adf5ece9e318db41315e06f0141524a0c9dabc091235ce4.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 1182,
+      "fullVisibleTextSha256": "a5a36b8c9c903cb8a420608926282506cba8962b46c248dcd02c2e8bf18d4cc0",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "stauber lab",
+      "headings": [
+        "STAUBER LAB",
+        "UC San Diego",
+        "RESEARCH INTERESTS",
+        "CONTACT INFORMATION"
+      ],
+      "sourceContentDates": [],
+      "sameByteBody": false,
+      "sameFullVisibleText": false,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "retain_already_applied_root_science_with_future_scope",
+      "reasons": [
+        "STAUBER LAB及UC San Diego与Our research program整体段落直接相连，支持仿生无机/有机金属化学、蛋白识别、活性物种和仿生催化方向。Synthetic inorganic chemistry will guide与potential to lead为计划/潜力措辞，当前raw已保留此限制；方法仅合成无机化学，不能推仪器方法。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "STAUBER LAB",
+          "quoteLocation": "headings",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "UC San Diego",
+          "quoteLocation": "headings",
+          "supports": [
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "Our research program is focused on a bioinspired approach to fundamental inorganic and organometallic chemistry that is motivated by addressing current challenges in chemistry and chemical biology.",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "Synthetic inorganic chemistry will guide the development of new well-defined molecular systems designed to interact with complex biological targets by engaging in important protein-protein and protein-saccharide recognition processes.",
+          "quoteLocation": "body",
+          "supports": [
+            "methods",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "Other research efforts are dedicated to building new bioinspired synthetic platforms by merging organic, inorganic, and biological architectures that have the potential to lead to the isolation and stabilization of interesting and new highly reactive species as well as the discovery of new biomimetic catalysts.",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [
+        {
+          "discoveryMechanism": "html_frame_source",
+          "element": "iframe",
+          "originalHtmlAttribute": "https://maps-api-ssl.google.com/maps?hl=en&ll=32.87612,-117.241925&output=embed&q=32.876506,-117.241877+(Untitled+Location)&z=17",
+          "name": null,
+          "targetUrl": "https://maps-api-ssl.google.com/maps?hl=en&ll=32.87612,-117.241925&output=embed&q=32.876506,-117.241877+(Untitled+Location)&z=17",
+          "isObservedHTTPRedirect": false,
+          "supportsResearchOrIdentity": false
+        }
+      ],
+      "rootContainsExplicitWholeLabResearch": true,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Stauber 实验室以仿生思路研究基础无机与有机金属化学，利用合成无机化学设计参与蛋白质和糖类识别的分子体系，并探索仿生合成平台、活性物种稳定化与仿生催化剂。",
+        "researchQuestions": [
+          "如何设计能参与蛋白质与糖类识别的分子体系？",
+          "如何通过仿生合成平台稳定高活性物种并发展仿生催化剂？"
+        ],
+        "topics": [
+          "仿生无机与有机金属化学",
+          "蛋白质与糖类分子识别",
+          "活性物种与仿生催化"
+        ],
+        "methods": [
+          "合成无机化学"
+        ]
+      },
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "新原HTTP正文明确STAUBER LAB与Our research program，整体研究段落支持具名实验室。"
+      },
+      "affiliationUnchanged": {
+        "status": "source_reported",
+        "reason": "实验室首页直接标识UC San Diego；未推断隶属生效日期。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T05:11:05+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-cd23f174d5146eda",
+          "quote": "Julia Stauber Education",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-cd23f174d5146eda",
+          "quote": "Primary Research Area Organic Chemistry Inorganic Chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "STAUBER LAB",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "UC San Diego",
+          "supports": [
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "fundamental inorganic and organometallic chemistry",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "Synthetic inorganic chemistry",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "protein-protein and protein-saccharide recognition",
+          "supports": [
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "bioinspired synthetic platforms",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "highly reactive species",
+          "supports": [
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-27301218356c2999",
+          "quote": "biomimetic catalysts",
+          "supports": [
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于内容更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+        "部分正文采用未来计划措辞，未将拟开展方向表述为已完成成果。"
+      ],
+      "oldBlockersRetained": [],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "Parent has already applied supported recoveries; this report verifies scope and exact root provenance without editing raw.",
+      "currentReadOnlyHydrate": {
+        "status": "supported",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "673ec7ad72f6b0d55fd66ff92a0251988dac38e692e96daede80e3b416e3ed13",
+      "rawSha256ReadOnly": "1bd73e66d5386fbf5df56c4a399ad2f0af5acce28e023622066dd79938dbd3d6",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    },
+    {
+      "inventoryIndex": 33,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "reviewedAt": "2026-10-16T05:17:36+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "httpStatus": 200,
+      "sourceId": "src-989b7fedff9fa338",
+      "literalListedURL": "http://fergusonlab.ucsd.edu",
+      "actualURL": "http://fergusonlab.ucsd.edu/",
+      "actualPageRequestMade": true,
+      "sourceURL": "http://fergusonlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:44+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:43+00:00",
+      "finalURL": "http://fergusonlab.ucsd.edu/",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://fergusonlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:42+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126662.5619662,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "599359907591ac6336bd3c0363d04a3914e80f58b3b96a3bbfe4a1e9617499c5",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/04f4922b1050942332630d6d54767091e828a5e9cac7d534b126044d98d18968.html",
+      "cachedBodySha256Verified": true,
+      "sourceMatchesFetch": true,
+      "fullSourceBodyRead": true,
+      "fullVisibleTextCharactersRead": 995,
+      "fullVisibleTextSha256": "f6ccd9c76e999fc72755bf8954a4f92984e0b4c0a66d57a3ff85e3611df4cce9",
+      "visibleTextDefinition": "Complete ContentDOM.main().text() from original cached HTML; title/headings recorded separately; navigation discovery is not research.",
+      "title": "FERGUSON LAB",
+      "headings": [
+        "Welcome to the Ferguson Lab"
+      ],
+      "sourceContentDates": [],
+      "sameByteBody": false,
+      "sameFullVisibleText": false,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "retain_already_applied_root_science_and_identity",
+      "reasons": [
+        "具名Ferguson laboratory整体段落直接列有机合成、药物化学、质谱和细胞生物学，以及化学诱导近邻工具化合物与疾病信号网络。肿瘤/神经退行性疾病治疗策略是目标，不能写已证临床疗效；当前raw表述和限制可保留。页面part of与affiliated with须保持区别，不由域名推现时任职。"
+      ],
+      "reviewedRootEvidence": [
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "FERGUSON LAB",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "Research in the Ferguson laboratory applies organic synthesis, medicinal chemistry , mass spectrome try and cell biology towards the goal of developing new therapeutic strategies in oncology and neurodegenerative disorders.",
+          "quoteLocation": "body",
+          "supports": [
+            "identity",
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "Our research seeks to enable dissection of the cellular signaling networks underlying disease, through development of selective tool compounds that act via chemically induced proximity .",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "The Ferguson lab is part of: The Department of Chemistry and Biochemistry The Skaggs School of Pharmacy and Pharmaceutical Sciences",
+          "quoteLocation": "body",
+          "supports": [
+            "affiliation"
+          ]
+        }
+      ],
+      "literalDiscoveryOnly": [],
+      "rootContainsExplicitWholeLabResearch": true,
+      "currentScientificFieldsReviewed": {
+        "summaryZh": "Ferguson 实验室结合有机合成、药物化学、质谱与细胞生物学，开发利用化学诱导近邻作用的选择性工具化合物，以解析疾病相关细胞信号网络。其应用目标包括肿瘤和神经退行性疾病的新治疗策略。",
+        "researchQuestions": [
+          "如何利用化学诱导近邻的选择性工具化合物解析疾病相关细胞信号网络？"
+        ],
+        "topics": [
+          "化学诱导近邻与工具化合物",
+          "疾病相关细胞信号",
+          "肿瘤与神经退行性疾病"
+        ],
+        "methods": [
+          "有机合成与药物化学",
+          "质谱",
+          "细胞生物学"
+        ]
+      },
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "新原HTTP正文具名FERGUSON LAB并明确Research in the Ferguson laboratory；整体研究与方法属于该实验室。"
+      },
+      "affiliationUnchanged": {
+        "status": "source_reported",
+        "reason": "实验室主页列明其affiliated with UCSD Moores Cancer Center等单位；仅记录网页关系，未扩大为带日期的现任任职证明。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T05:11:05+00:00",
+      "existingIdentityBindingReviewedAt": null,
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "quote": "Fleur Ferguson fmferguson@ucsd.edu",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "quote": "Assistant Professor, Skaggs School of Pharmacy and Pharmaceutical Sciences Research Areas Multiscale Structure and Imaging",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "FERGUSON LAB",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "organic synthesis, medicinal chemistry",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "mass spectrome try and cell biology",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "chemically induced proximity",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "cellular signaling networks underlying disease",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-989b7fedff9fa338",
+          "quote": "UCSD Moores Cancer Center",
+          "supports": [
+            "affiliation"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于内容更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+        "治疗策略是研究目标，未据此声称已证明临床疗效。"
+      ],
+      "oldBlockersRetained": [],
+      "scientificRevisionRecommended": false,
+      "scientificRevisionReason": "Parent has already applied supported recoveries; this report verifies scope and exact root provenance without editing raw.",
+      "currentReadOnlyHydrate": {
+        "status": "supported",
+        "pageIdentityStatus": "confirmed",
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true
+      },
+      "packetSha256ReadOnly": "045a165e809fe1be2eb24a62c23a40cf7f4c109bb11792625f53427e10040b36",
+      "rawSha256ReadOnly": "9200ad811d967069840a01f9fb0eb1b6febb4ed7f4b38581e60e4a3abd7f6bf7",
+      "rawUnchangedByThisReview": true,
+      "packetUnchangedByThisReview": true
+    }
+  ]
+}

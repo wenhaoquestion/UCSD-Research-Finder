@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-16T08:03:27+00:00",
+  "phase": "bind_existing_exact_root_identity_evidence",
+  "baseCommit": "190c445",
+  "recordsApplied": 8,
+  "identityOnly": true,
+  "independentPostApplyQa": {
+    "path": "data/local-lab-summaries/ROOT-IDENTITY-BINDING-POSTAPPLY-INDEPENDENT-QA.json",
+    "sha256": "1bf53fa7c280012b75476d4e2c6da9af033a664fd62e931a38f68a2ec80d2337",
+    "passed": true
+  },
+  "eligibleCount": 884,
+  "processedCount": 884,
+  "counts": {
+    "supported": 738,
+    "partial": 56,
+    "unresolved": 90
+  },
+  "supportedLabOrGroupSummaries": 724,
+  "verifiedAcceptedLabGroupURLCount": 577,
+  "previousVerifiedAcceptedLabGroupURLCount": 569,
+  "researchQuestionsAddedInPriorPhase": 207,
+  "priorQuestionCheckpoint": "CHECKPOINT-SOURCE-EXPLICIT-QUESTIONS.json",
+  "scienceQuestionsMethodsAndEntityDecisionsUnchangedThisPhase": true,
+  "allRootCaptureDatesRequestsCanonicalAndRedirectsPreserved": true,
+  "packetsChanged": 0,
+  "networkRequestsThisPhase": 0,
+  "ownWireRequestsTotal": 358,
+  "ownReceiptsTotal": 210,
+  "identityMismatchDecisions": 14,
+  "unresolvedMismatchAccepted": 0,
+  "pendingFromReviewedEightUrlCandidates": 0,
+  "currentCollectorSnapshotAt": "2026-10-16T08:01:19+00:00",
+  "currentCollectorCounts": {
+    "done": 6341,
+    "unresolved": 815,
+    "scope_excluded": 291,
+    "retained_prior_evidence": 1858,
+    "pending": 9963
+  },
+  "preservation": {
+    "schemaVersion": 1,
+    "verifiedAt": "2026-10-16T08:02:29+00:00",
+    "passed": true,
+    "rawChanged": 8,
+    "rawByteIdentical": 876,
+    "packetByteIdentical": 884,
+    "all8EvidencePrefixesExact": true,
+    "scientificFieldsAndQuestionsUnchanged": true,
+    "rootActualRequestCanonicalRedirectTimeUnchanged": true,
+    "sourceCaptureTimesNotRetimed": true,
+    "existingRootDatesMayBeAddedToEvidenceDateUnion": true,
+    "verifiedLabGroupURLCountBefore": 569,
+    "verifiedLabGroupURLCountAfter": 577,
+    "ownWireRequestsTotal": 358,
+    "ownReceiptsTotal": 210,
+    "networkRequestsThisPhase": 0,
+    "identityMismatchDecisionsUnchanged": 14,
+    "unresolvedMismatchAccepted": 0,
+    "current430TestReceipt46SourceHashesMatch": true,
+    "regressionTestsRerun": false,
+    "journalSha256": "a7d683d48b4a972abbb3ecf7e025b0857bdcb49458c32a36ea4b7cdcc96a7edf",
+    "validationSha256": "66808d1a5728171c227c7ead2d0eb528211a48a60e04f8b2509d5cd5f924a1f8"
+  },
+  "validationSnapshot": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-16T08:01:30+00:00",
+    "eligibleCount": 884,
+    "processedSnapshotCount": 884,
+    "uniqueEvidenceCacheFilesChecked": 1061,
+    "projectionSha256": {
+      "summaries.jsonl": "e782b1ff9bf1b7a35fd771dfe562e95c50f5e7919f911644898ce61d4758d1ad",
+      "url-verification.jsonl": "b1510bd71608b50f329ee2061da6a8411de0d8c75ebe2e7cb4e506ef320bffe1",
+      "queue.json": "f9fd26d23d13958489a000d5972b326889e5d37a9e1fabcc526f5fdd0749f96c",
+      "checkpoint.json": "61b7f8a37c11da0bd9ee6c7e942cfaab27f722a57ff16a51239fc79be520019a"
+    },
+    "errors": [],
+    "sourceCacheDigestWarnings": [],
+    "integrityPassed": true,
+    "extractionReview": {
+      "affectedRecordCount": 214,
+      "reviewedRecordCount": 214,
+      "pendingRecordCount": 0,
+      "pendingLabIds": [],
+      "reviewErrors": [],
+      "extractionVersion": "summary-visible-content-v2"
+    },
+    "passed": true,
+    "identityDecisionsReviewed": 14,
+    "unresolvedMismatchAcceptedCount": 0
+  },
+  "projectionSha256": {
+    "summaries.jsonl": "e782b1ff9bf1b7a35fd771dfe562e95c50f5e7919f911644898ce61d4758d1ad",
+    "url-verification.jsonl": "b1510bd71608b50f329ee2061da6a8411de0d8c75ebe2e7cb4e506ef320bffe1",
+    "queue.json": "f9fd26d23d13958489a000d5972b326889e5d37a9e1fabcc526f5fdd0749f96c",
+    "checkpoint.json": "61b7f8a37c11da0bd9ee6c7e942cfaab27f722a57ff16a51239fc79be520019a"
+  },
+  "artifactSha256": {
+    "FULL884-ROOT-IDENTITY-BINDING-PLAN.json": "a2e7524f675df41620c02966f661269996fb16657a7ae0e1db23f34a484c119f",
+    "FULL884-ROOT-IDENTITY-BINDING-INDEPENDENT-QA.json": "fb1dce83a4710d144a1c301773cac26bdbbbe7abc0d99df677f51edc0ccef3a2",
+    "ROOT-IDENTITY-BINDING-PREAPPLY-INVARIANTS.json": "36379901912350c0065f1ee12bf0e923ce615ccc0be088d781af67e52e63eee3",
+    "ROOT-IDENTITY-BINDING-APPLICATION-JOURNAL.json": "a7d683d48b4a972abbb3ecf7e025b0857bdcb49458c32a36ea4b7cdcc96a7edf",
+    "ROOT-IDENTITY-BINDING-POSTAPPLY-INTEGRITY.json": "6cd87392a87abdda34085774c97dc86ed9a2dd1eade9ae8605c3e65857714bd7",
+    "apply_existing_root_identity_bindings.py": "71beaf7deaaa534554ecfd59d87b8b72e7429c9f48c15f518e8d7df3623a74fc"
+  },
+  "livePlanningStatus": "No new live requests admitted; prior finite request plan exhausted. This phase reuses existing exact root captures only.",
+  "outputsAreComplete": false,
+  "goalStatus": "active",
+  "openWork": {
+    "supportedQuestionFieldStillEmpty": 434,
+    "explicitCandidateUnchangedWithReviewedReasons": 29,
+    "otherEmptyQuestionsNotYetSemanticallyReviewedInThisFieldPass": 405,
+    "partialRecords": 56,
+    "unresolvedRecords": 90,
+    "collectorStillPending": 9963
+  },
+  "finalizedAt": "2026-10-16T08:04:19+00:00"
+}

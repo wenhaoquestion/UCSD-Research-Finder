@@ -1,0 +1,130 @@
+{
+  "labId": "ucsd-biology-topic-lab-ecker",
+  "status": "supported",
+  "summaryZh": "Ecker 实验室研究植物、小鼠和人细胞发育及疾病中的表观遗传过程。团队结合基因组与甲基化组测序等方法，研究表观基因组变化及其与基因表达调控的联系，其中小鼠和人类工作大量聚焦脑。",
+  "researchQuestions": [
+    "在DNA上添加甲基或羟甲基等基团如何帮助细胞精细调控基因表达？",
+    "基因组与表观基因组如何相互通信？"
+  ],
+  "topics": [
+    "表观遗传",
+    "发育与疾病",
+    "基因表达",
+    "脑"
+  ],
+  "methods": [
+    "基因组测序",
+    "甲基化组测序"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-a22f130b2d4fd0de",
+      "quote": "The Ecker lab studies plant, mouse, and human cells to decipher epigenetic processes during development and disease. Combining newly developed methods with genome- and methylome-sequencing, Ecker’s lab group examines changes in the epigenome",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a22f130b2d4fd0de",
+      "quote": "Much of the team’s work on mouse and human epigenomics is focused on the brain.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a22f130b2d4fd0de",
+      "quote": "Welcome to the Ecker lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-a22f130b2d4fd0de",
+      "quote": "Combining newly developed methods with genome- and methylome-sequencing, Ecker’s lab group examines changes in the epigenome, exploring, for example, how adding molecules such as methyl or hydroxy-methyl groups to the backbone of DNA can help cells fine-tune gene expression.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-a22f130b2d4fd0de",
+      "quote": "By understanding how the genome and epigenome communicate with one another, they aim to untangle the complexity of regulatory processes that underlie both normal development and disease.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:47:04+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Ecker lab开头研究主文明示团队how目标，新闻引语和论文报道不用于问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-a22f130b2d4fd0de",
+        "sourceUrl": "https://ecker.salk.edu/",
+        "sourceObservedAt": "2026-10-16T01:04:03+00:00",
+        "bodySha256": "f52384f9892a5515fc49936e585a793c951836a9f5af9198f7f2a7038efed986",
+        "textSha256": "9b5c79ef8839e76248f752357cc6dd0f369633407ca321b3da8ed5a9c1fb4c28",
+        "textCharacters": 8856,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            6200
+          ]
+        ],
+        "reasonZh": "读取前述范围；后续未读部分不声称已审阅，当前已读科研介绍与后续新闻/论文/成员边界另列。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-a22f130b2d4fd0de",
+        "quote": "Combining newly developed methods with genome- and methylome-sequencing, Ecker’s lab group examines changes in the epigenome, exploring, for example, how adding molecules such as methyl or hydroxy-methyl groups to the backbone of DNA can help cells fine-tune gene expression.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:04:03+00:00",
+        "bodySha256": "f52384f9892a5515fc49936e585a793c951836a9f5af9198f7f2a7038efed986",
+        "sourceUrl": "https://ecker.salk.edu/"
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-a22f130b2d4fd0de",
+        "quote": "By understanding how the genome and epigenome communicate with one another, they aim to untangle the complexity of regulatory processes that underlie both normal development and disease.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:04:03+00:00",
+        "bodySha256": "f52384f9892a5515fc49936e585a793c951836a9f5af9198f7f2a7038efed986",
+        "sourceUrl": "https://ecker.salk.edu/"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

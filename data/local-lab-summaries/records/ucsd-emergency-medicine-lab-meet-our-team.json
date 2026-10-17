@@ -1,0 +1,155 @@
+{
+  "labId": "ucsd-emergency-medicine-lab-meet-our-team",
+  "status": "supported",
+  "summaryZh": "该条目实际对应 Lindholm 高压与潜水医学实验室，研究水环境中的病理生理，包括溺水预防、潜水相关肺水肿、气压伤和高压氧治疗。团队参与临床试验，并采集、标注历史潜水人体实验数据以支持 AI 和机器学习研究。",
+  "researchQuestions": [
+    "自由潜水诱发肺部症状的病理生理机制，以及其与肺水肿或肺气压伤的关系是什么？"
+  ],
+  "topics": [
+    "潜水与水环境病理生理",
+    "溺水预防",
+    "高压氧治疗"
+  ],
+  "methods": [
+    "临床试验",
+    "历史潜水人体实验数据采集与标注"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-194eee199861215a",
+      "quote": "As a PhD student with the Lindholm Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-194eee199861215a",
+      "quote": "Department of Emergency Medicine at the University of California, San Diego, School of Medicine.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "Lindholm Hyperbaric & Diving Medicine Research Lab About The Lab Pathophysiology in the aquatic environment, from diving to maritime conditions.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "Our Current Projects: Water Safety and Drowning Prevention",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "This project study swimming induced pulmonary edema, immersion pulmonary edema and barotrauma of descent in divers, swimmers and freedivers.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "These projects relate to emerging /new indications and the efforts to validate new diagnoses via clinical trials.",
+      "supports": [
+        "research",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "We are collecting and annotating data from 50+ years of diving experiments with human volunteers from the USA, Great Britain and France, to enable studies using AI/machine learning.",
+      "supports": [
+        "research",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-80af9c34a55fb8d3",
+      "quote": "One of the aims is to further understand the pathophysiological mechanisms of Freediving Induced Pulmonary Symptoms (FIPS) and how they relate to pulmonary edema and/or pulmonary barotrauma.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "原团队页明确提 Lindholm Lab，新官网主页明确命名 Lindholm Hyperbaric & Diving Medicine Research Lab 并给出本实验室当前项目；不是将其他成员兴趣拼接成整体研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "页面说明团队负责人位于 UCSD 急诊医学系。"
+  },
+  "uncertainty": [
+    "稳定 ID 和原条目名保留；“Meet Our Team”是团队导航标签，实际实验室名称由新主页明确确认。",
+    "来源未提供带日期的当前任职或隶属生效声明，采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+    "previousRecordReviewedAt": "2026-10-16T02:18:44+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Lindholm lab Our Current Projects中明确aim/mechanism/how目标；不借Scientists页负责人个人why humans drown或论文标题，保留现稳定ID/实体名。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-194eee199861215a",
+        "sourceUrl": "https://emergencymed.ucsd.edu/research/lindholm-lab/the-scientists.html",
+        "sourceObservedAt": "2026-10-16T01:04:58+00:00",
+        "bodySha256": "f031e16974206c09790052235341f8c6e44c475226974382c548b931a19f3ead",
+        "textSha256": "276fe6124e53293fb3f3eb381264d87c40b42cb782e5494bd7323090d671dee9",
+        "textCharacters": 4016,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            4000
+          ]
+        ],
+        "reasonZh": "读取前述范围；后续未读部分不声称已审阅，当前已读科研介绍与后续新闻/论文/成员边界另列。"
+      },
+      {
+        "sourceId": "src-80af9c34a55fb8d3",
+        "sourceUrl": "https://emergencymed.ucsd.edu/research/lindholm-lab/index.html",
+        "sourceObservedAt": "2026-10-16T02:15:21+00:00",
+        "bodySha256": "3d032f6b4115ac96967527735d42d3f69ad2abb2184d7c6b8f461cbc52240234",
+        "textSha256": "2d46366d02f15a6e136dae41bfa84a22d3a5fc036129cb01bdad9e86d7cc0f76",
+        "textCharacters": 5155,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            4000
+          ]
+        ],
+        "reasonZh": "读取前述范围；后续未读部分不声称已审阅，当前已读科研介绍与后续新闻/论文/成员边界另列。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-80af9c34a55fb8d3",
+        "quote": "One of the aims is to further understand the pathophysiological mechanisms of Freediving Induced Pulmonary Symptoms (FIPS) and how they relate to pulmonary edema and/or pulmonary barotrauma.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T02:15:21+00:00",
+        "bodySha256": "3d032f6b4115ac96967527735d42d3f69ad2abb2184d7c6b8f461cbc52240234",
+        "sourceUrl": "https://emergencymed.ucsd.edu/research/lindholm-lab/index.html"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

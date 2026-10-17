@@ -1,0 +1,103 @@
+{
+  "labId": "ucsd-psychology-lab-lime-lab-learning-and-instruction-in-multimedia-environments",
+  "status": "supported",
+  "summaryZh": "LIME实验室研究可改善学习与教学的工具和技术，尤其关注帮助学生理解和应用数学、科学知识的项目。已捕获介绍未说明具体研究方法。",
+  "researchQuestions": [
+    "哪些工具与技术能改善数学和科学知识的学习与应用？"
+  ],
+  "topics": [
+    "学习与教学",
+    "数学教育",
+    "科学教育"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-2a8bd8f55ddd2f99",
+      "quote": "The LIME lab at UCSD studies tools and techniques that can be used to improve learning and instruction. Directed by Dr. Emma H. Geller, we are especially interested in projects that help students understand and apply important topics in math and science.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "匹配官网正文、页面标题或有明确关联的官方实验室目录；未将HTTP成功作为身份依据。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "来源明确提及该实体与UCSD的关系；介绍未注明内容日期，当前隶属仍待确认。"
+  },
+  "uncertainty": [
+    "页面研究介绍未标明内容日期，不能据此确认目前隶属或持续运营。",
+    "已捕获资料未明确研究方法。",
+    "研究方法待核（限本轮已审阅材料）：已读LIME首页及目录：研究教学工具/技术和数学科学学习项目是研究目标，不是已实施的实验设计；没有具体方法，不由Find Out How导航生成。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:12:46.944Z",
+  "previousReviewedAt": "2026-10-16T01:44:28+00:00",
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:12:46.944Z",
+    "previousRecordReviewedAt": "2026-10-16T01:52:53+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读LIME首页及目录：研究教学工具/技术和数学科学学习项目是研究目标，不是已实施的实验设计；没有具体方法，不由Find Out How导航生成。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-2a8bd8f55ddd2f99",
+        "sourceUrl": "https://www.lime-lab-ucsd.com/",
+        "sourceObservedAt": "2026-10-16T01:07:39+00:00",
+        "bodySha256": "7281944b2687dadef9c427bd8d913323b4e03d889c7529fa58b989d51c683c1d",
+        "textSha256": "4852f0739ef5858a74b1ab4c85b5d86d5751c6e836427e9f3f3a3914a4ef5eb2",
+        "textCharacters": 598,
+        "rangesActuallyRead": [
+          [
+            0,
+            598
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-bc52ff9f34572eb2",
+        "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+        "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+        "bodySha256": null,
+        "textSha256": "497d19379346d7cd9de4725360cfd7e53f7dc239d60518b1543ec29f3cf2f6b0",
+        "textCharacters": 41,
+        "rangesActuallyRead": [
+          [
+            0,
+            41
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-c04548c23c83144f",
+        "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+        "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+        "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+        "textCharacters": 6411,
+        "rangesActuallyRead": [
+          [
+            0,
+            6411
+          ]
+        ],
+        "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:55:21+00:00",
+  "networkRequestsMade": 0,
+  "collectorOrSharedStateWrites": 0,
+  "materialNetworkingDifferenceFound": false,
+  "status": "exact22ad_network_AST_unchanged_and_offline_integration_passed",
+  "processObservation": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/collector-process-observation-remaining34-verified.json",
+    "sha256": "f7800bf87236d0e56b427ae4982ffec538dd2378e09ef2028faff456cfae12b3",
+    "checkedAt": "2026-10-16T04:51:16+00:00",
+    "collectorPid": 16324,
+    "collectorStartedAt": "2026-10-16T04:46:34+00:00",
+    "protocolVersion": "fcntl-host-clock-v2",
+    "pidProbe": "16324 04:47 /opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /private/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py --cache /private/tmp/ucsd-research-20261016/.cache/coverage-20261016 --workers 8 --max-pages 250",
+    "reviewerDidNotReprobePID": true
+  },
+  "oldCollector": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+    "sha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82"
+  },
+  "newCollector": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c.py",
+    "sha256": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c"
+  },
+  "allSevenPinnedSources": [
+    {
+      "compileOrder": 0,
+      "name": "lab_destinations.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+      "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "import re",
+        "import urllib.parse"
+      ]
+    },
+    {
+      "compileOrder": 1,
+      "name": "refresh_labs.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead.py",
+      "sha256": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "from __future__ import annotations",
+        "import argparse",
+        "import concurrent.futures",
+        "import copy",
+        "import datetime as dt",
+        "import hashlib",
+        "import json",
+        "import os",
+        "import re",
+        "import tempfile",
+        "import threading",
+        "import time",
+        "import unicodedata",
+        "import urllib.error",
+        "import urllib.parse",
+        "import urllib.request",
+        "import urllib.robotparser",
+        "from collections import Counter",
+        "from html.parser import HTMLParser",
+        "from pathlib import Path",
+        "from zoneinfo import ZoneInfo",
+        "from lab_destinations import nonlab_destination_reason"
+      ]
+    },
+    {
+      "compileOrder": 2,
+      "name": "refresh_faculty_directories.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+      "sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "from __future__ import annotations",
+        "import argparse",
+        "import copy",
+        "import concurrent.futures",
+        "import datetime as dt",
+        "import functools",
+        "import hashlib",
+        "import json",
+        "import re",
+        "import ssl",
+        "import subprocess",
+        "import tempfile",
+        "import urllib.error",
+        "import urllib.parse",
+        "import urllib.request",
+        "from collections import Counter, defaultdict",
+        "from pathlib import Path",
+        "from refresh_labs import DOM, Fetcher, canonical_url, clean, evidence, links, normalized, now"
+      ]
+    },
+    {
+      "compileOrder": 3,
+      "name": "collection_lock.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "import fcntl"
+      ]
+    },
+    {
+      "compileOrder": 4,
+      "name": "collection_scope.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+      "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "from __future__ import annotations",
+        "import re",
+        "import unicodedata",
+        "import urllib.parse"
+      ]
+    },
+    {
+      "compileOrder": 5,
+      "name": "network_coordination.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": true,
+      "imports": [
+        "from __future__ import annotations",
+        "import contextlib",
+        "import datetime as dt",
+        "import email.utils",
+        "import fcntl",
+        "import hashlib",
+        "import json",
+        "import math",
+        "import os",
+        "import tempfile",
+        "import time",
+        "import urllib.parse",
+        "import urllib.robotparser",
+        "from pathlib import Path"
+      ]
+    },
+    {
+      "compileOrder": 6,
+      "name": "collect_ucsd_coverage.py",
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c.py",
+      "sha256": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c",
+      "matchesReceipt": true,
+      "dependencyUnchangedFrom6A5D": false,
+      "imports": [
+        "from __future__ import annotations",
+        "import argparse",
+        "import concurrent.futures",
+        "import datetime as dt",
+        "import hashlib",
+        "import json",
+        "import os",
+        "import re",
+        "import signal",
+        "import subprocess",
+        "import tempfile",
+        "import threading",
+        "import time",
+        "import urllib.parse",
+        "import urllib.robotparser",
+        "from collections import Counter, defaultdict",
+        "from pathlib import Path",
+        "from refresh_labs import DOM, canonical_url, clean, evidence, links, now, parse_directory, every_node",
+        "from refresh_faculty_directories import SOURCES, card_records, valid_person_name, text_name, individual_profile, appointment_status",
+        "from network_coordination import HostRequestGate, migrate_legacy_clocks, PROTOCOL_VERSION",
+        "from collection_lock import task_lease",
+        "from collection_scope import ScopePolicy"
+      ]
+    }
+  ],
+  "ASTComparison": {
+    "importsIdentical": true,
+    "changedCommonDefinitions": [
+      "audit_queue_scope",
+      "collect"
+    ],
+    "addedDefinitions": [
+      "reassess_scope"
+    ],
+    "removedDefinitions": [],
+    "unchangedOldDefinitionCount": 26,
+    "moduleASTIdenticalExcludingOnlyThoseThreeQueueDefinitions": true,
+    "networkDefinitions": [
+      {
+        "name": "atomic_json",
+        "line": 47,
+        "endLine": 60,
+        "astSha256": "0bfecc5332a8f715246c67b88a3ebbc2be066c12d9a0d2529e196db1c6a68253",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "official",
+        "line": 63,
+        "endLine": 65,
+        "astSha256": "ab7a786752ca82f39c81a586f79180e4971a3315d1cb0b16fa6e56a3f0bda084",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "safe_url",
+        "line": 68,
+        "endLine": 78,
+        "astSha256": "772ad335e344a9c1b14eccd53373ad01c744711794b23ebd4c2753b6fc5dd706",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "url_key",
+        "line": 81,
+        "endLine": 83,
+        "astSha256": "3a1eecf428c1b02d255ddb467c4823c8dc649cee6ebb312135fcce83da7e54c6",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "authentication_target",
+        "line": 86,
+        "endLine": 88,
+        "astSha256": "f9fd6b01825a29a9073b784e275dac84b650ffece3660daded25ee2e19661a28",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "transient_response",
+        "line": 91,
+        "endLine": 100,
+        "astSha256": "81c13ceac48fbfd5aeb496548a35c5102282ea5a6d7b183fcb87137c0448824f",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "retryable_fetch",
+        "line": 103,
+        "endLine": 109,
+        "astSha256": "60ba315cbf309660646c7312647334f575ab759c5eb06fd621dc57b449c2fee1",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "robots_retry_at",
+        "line": 112,
+        "endLine": 113,
+        "astSha256": "3440a471900d2ab0060de5c369a50e5edfe1ba5d42fd980a25e98f2c5696c95b",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "reusable_robots",
+        "line": 116,
+        "endLine": 122,
+        "astSha256": "b4949773f8eccbec463ee3a9b3b35443b06699d8822f5587e683cbf5f511f439",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "WireHeaders",
+        "line": 227,
+        "endLine": 230,
+        "astSha256": "ec3a31f258369be246024b30ad68d2bae2ac22132315af1000c9c573796f7fa9",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "PublicFetcher",
+        "line": 233,
+        "endLine": 425,
+        "astSha256": "017925d2abe1467f00b43506fa8e4d130590f98ce1a2cd507e0cbcc7f41a7774",
+        "identicalTo6A5D": true
+      }
+    ],
+    "publicFetcherMethods": [
+      {
+        "name": "__init__",
+        "line": 235,
+        "endLine": 245,
+        "astSha256": "5bdb5423544c159f17adaf889d60d24459a85e0d6fc45eea39b1268b9cb8a627",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "_paths",
+        "line": 247,
+        "endLine": 249,
+        "astSha256": "d01a428df7d3829668dc2195f45a34380f83213fbe2e87953c45b8c08173cd82",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "_load",
+        "line": 251,
+        "endLine": 255,
+        "astSha256": "a97964fa5a40a07a8e7261879291b50c4c659303725e391404b39faab6e2bdd2",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "_wire",
+        "line": 257,
+        "endLine": 273,
+        "astSha256": "f1560707a02b15b5563541e7887343b653b77738b02bf4ad56eb13cb6b87b925",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "_transport",
+        "line": 275,
+        "endLine": 298,
+        "astSha256": "18d2e24923aa344c00b1e52a45c485e9aabff278002bcd5b44c59d5bad49b9fc",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "_rules",
+        "line": 300,
+        "endLine": 349,
+        "astSha256": "f4db7fe4d02af3ccb17cb2f0f2a2cbbe04748a7107a6eb7d019564dfc084aa1f",
+        "identicalTo6A5D": true
+      },
+      {
+        "name": "fetch",
+        "line": 351,
+        "endLine": 425,
+        "astSha256": "a652ef43fbade7736e4bc9df850022d050087b3b6833c06afdf87b7417bc3ede",
+        "identicalTo6A5D": true
+      }
+    ],
+    "mainDefinitionUnchanged": true
+  },
+  "semanticReview": {
+    "audit_queue_scope": "Optional save=False, returns restored items; original scope assessment retained.",
+    "reassess_scope": "Only reads saved successful response HTML, calls unchanged bounded discover_lab_identity_pages and saves reassessment/queue history. No transport/fetch call.",
+    "collect": "Uses reassess_scope at runner start/end; may restore eligible queue items and discover cached navigation. PublicFetcher network policy unchanged. Summary adapter imports but does not invoke collector collect/main/Queue.",
+    "importedDependencies": "All six dependencies match the6a5d pins exactly: DOM/canonical_url/clean/now and other imported refresh helpers, faculty functions, task_lease, ScopePolicy and real3cec HostRequestGate/RequestSlot. No new dependency code.",
+    "normalization": "Discovery safe_url/canonical_url behavior remains unchanged; summary preserve-wire-URI wrapper remains necessary and was not modified in this review.",
+    "networkProperties": "Public-origin/auth checks, normal system-curl TLS, origin robots and300KB robots cap, default2MB page cap, real redirect target checks/defer, v2 host flock/cooldown/error recording and Profiles>=10s remain identical."
+  },
+  "tests": {
+    "newFixtureClass": "Collector22ADSharedCooldownAdapterTests",
+    "sourcePinsExact": true,
+    "historicalFixtureDefinitionsUnchangedAST": true,
+    "testPath": "/private/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_shared_cooldown.py",
+    "testSha256": "6919115a1e9b11e59ab9719f10c2f33cb8bad07415c9d21e7b9833da451a322a",
+    "runs": [
+      {
+        "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=tests:scripts python3 -m unittest test_local_lab_shared_cooldown.Collector22ADSharedCooldownAdapterTests -v",
+        "testsRun": 12,
+        "seconds": 0.18,
+        "passed": true
+      },
+      {
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_local_lab_*.py'",
+        "testsRun": 173,
+        "seconds": 1.932,
+        "passed": true
+      },
+      {
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests",
+        "testsRun": 295,
+        "seconds": 1.856,
+        "passed": true
+      }
+    ],
+    "isolation": "Only transport/time are fake; exact seven-source PublicFetcher and real v2 HostRequestGate operate inside private test temporary directories. Cooldown fixture forbids subprocess transport.",
+    "coverage": [
+      "429 Retry-After independent consumer",
+      "all5xx incl501/599 shared cooldown",
+      "returned/raised transport error persistence",
+      "robots HTTP-date Retry-After without page wire",
+      "page/robots redirect Retry-After before target robots/page",
+      "Profiles>=10s",
+      "robots recovery with history and three-attempt daily stop",
+      "404/410 challenge and other challenges preserve refusal",
+      "all seven exact pins loaded in required compilation order"
+    ]
+  },
+  "adapterSha256ReadOnly": "34ebac1ceaf1ba5eae5773b59099b34d993d40aa0135b9698c360a766f3ff02c",
+  "limitations": [
+    "Conclusion is tied to these exact seven source hashes; no claim about a future revision.",
+    "Actual PS observation is from04:51:16 UTC. Parent performs fresh process/hash verification and ready-receipt update before live execution; reviewer did not modify receipts.",
+    "No live34 observations or records/packets/identity/science gates were changed."
+  ]
+}

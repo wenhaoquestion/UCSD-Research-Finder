@@ -1,0 +1,1466 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:52:31+00:00",
+  "status": "pass",
+  "passedForApplication": true,
+  "scope": "000_044_draft_plus_exact_pinned_024_translation_revision",
+  "networkRequests": 0,
+  "recordsPacketsCodeCollectorWrites": 0,
+  "inputs": {
+    "draftJson": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-000-044.json",
+      "sha256": "0da6eb777da0bbe7ee94318b9c53d76df87f843ddb86446ffa281b37a09ec604"
+    },
+    "draftMarkdown": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-000-044.md",
+      "sha256": "b0cb40af713171079baf622a140d8dc0a351e90f53c31a362d33f8d9e0494399"
+    },
+    "candidateInventory": {
+      "path": "data/local-lab-summaries/SOURCE-EXPLICIT-QUESTION-CANDIDATES.json",
+      "sha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24"
+    },
+    "requiredTranslationRevision": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-TRANSLATION-REVISION-024.json",
+      "sha256": "bb6db737310bbacadbc90f5efa4aaaa33a3b9ce8afd9ea1787463618b2b43be2"
+    }
+  },
+  "aggregate": {
+    "itemsIndividuallyReviewed": 45,
+    "effectiveAddDecisionsPassed": 45,
+    "questionsIndividuallyChecked": 65,
+    "rawHashMatches": 45,
+    "packetHashMatches": 45,
+    "sourceQuoteDateAndBodyHashChecks": 65,
+    "resolvedIssues": 1,
+    "openIssues": 0
+  },
+  "applicationCondition": "必须同时使用冻结的024修订；单独未修订原草案中的反向演化仍不获通过。原草案及raw/packet未修改。",
+  "resolvedIssues": [
+    {
+      "candidateIndex": 24,
+      "questionIndex": 1,
+      "term": "counter-evolve",
+      "originalTranslation": "反向演化",
+      "acceptedQuestion": "病原体如何演化以对抗并突破宿主免疫？",
+      "resolution": "confirmed_in_exact_pinned_separate_revision",
+      "revisionSha256": "bb6db737310bbacadbc90f5efa4aaaa33a3b9ce8afd9ea1787463618b2b43be2"
+    }
+  ],
+  "items": [
+    {
+      "candidateIndex": 0,
+      "ordinal": 39,
+      "labId": "ucsd-biology-topic-lab-brenda-bloodgood",
+      "labName": "Brenda Bloodgood Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "01215925183427724cb85ac71778ef4d130029508dcc78e292c7168def01d22a",
+      "packetSha256": "3f367755e6b262ed744587c6c6eacf25ec38d395cff4bcd6066b7dc82e2dbf5f",
+      "qaDecision": "pass",
+      "reasonZh": "Our lab 明确两项 how；活动依赖性表达、连接、行为疾病关系均在同句。",
+      "effectiveQuestions": [
+        "经验如何通过活动依赖性基因表达调节抑制性与兴奋性神经元的连接？",
+        "这些过程如何与动物行为及疾病状态相关联？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-019208420df96792",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "sourceBodySha256": "bc0e3c8e86cdbcf1dcdd930c1d8217bd47da1ceb3f4fc7bc30c96ed5195a3dfa",
+          "quoteSha256": "33e23c4603ddd4fdfd6f6f45997c50797c74151be90cadeb5034315170f79ded",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-019208420df96792",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "sourceBodySha256": "bc0e3c8e86cdbcf1dcdd930c1d8217bd47da1ceb3f4fc7bc30c96ed5195a3dfa",
+          "quoteSha256": "33e23c4603ddd4fdfd6f6f45997c50797c74151be90cadeb5034315170f79ded",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 1,
+      "ordinal": 42,
+      "labId": "ucsd-biology-topic-lab-chistina-hueschen",
+      "labName": "Chistina Hueschen Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "968858054bb224d205605b11700fd21691e73409e1af2c802751f67ff61fd158",
+      "packetSha256": "d570ff6dba077b472d57ac1bf51be1a9cfbf8f80a25af7d1d32bbcc43da7441c",
+      "qaDecision": "pass",
+      "reasonZh": "具名 Hueschen Lab 明确运动、组织穿透和形态变化问题。",
+      "effectiveQuestions": [
+        "寄生细胞和动物如何运动、穿透组织并改变形态？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-b65927e5d71c3392",
+          "sourceObservedAt": "2026-10-16T01:03:56+00:00",
+          "sourceBodySha256": "1ec8d7b97b4d51f58f76e0618fbbf61cd6749b351c5abb652d9a003160928b5e",
+          "quoteSha256": "08527629c084ffad13693c40228909486be4e7e9a592d18d15c6dd9633e8c35e",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 2,
+      "ordinal": 44,
+      "labId": "ucsd-biology-topic-lab-christian-metallo",
+      "labName": "Christian Metallo Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "e3470f94bda3d529898e70ab2fcb7142b400f4c9811a2937eebd22f499d7f271",
+      "packetSha256": "15ec4f17a4f2f49d2c93599cc52577aaf590e6f2f937ba068b41cb337f41cd0e",
+      "qaDecision": "pass",
+      "reasonZh": "Metallo laboratory 是明确主体；只翻译代谢与疾病关系，不更动Salk/UCSD隶属。",
+      "effectiveQuestions": [
+        "代谢如何驱动疾病状态？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-e0459d385a3c01a4",
+          "sourceObservedAt": "2026-10-16T01:03:58+00:00",
+          "sourceBodySha256": "11c46dfda7e0a7e4c0e32427179112186fb69ac7c057c4c13c3b36f4d392390b",
+          "quoteSha256": "f3bf76f74d3b2e1673c89268e244fab54f885dfe516ace22397d763df36e36ea",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 3,
+      "ordinal": 47,
+      "labId": "ucsd-biology-topic-lab-cory-root",
+      "labName": "Cory Root Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "f14162f5328d70c69087c4d1164e485737aead53ff77ee2fca36176b36c3ac81",
+      "packetSha256": "9ff265ec7caefdd759252d7294bcadae0aa53468fb1a12284b6ffb4f936c42ea",
+      "qaDecision": "pass",
+      "reasonZh": "Our research 的 these third order areas 由相邻嗅觉平行输出段限定。",
+      "effectiveQuestions": [
+        "第三级嗅觉区域向下游结构输出时，感觉表征如何转变？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-b1b7e575b957443e",
+          "sourceObservedAt": "2026-10-16T01:03:57+00:00",
+          "sourceBodySha256": "78ce67d6d0674aba03e32433c593d84ced4468294d9ed1263ae19dd6bfb59572",
+          "quoteSha256": "594f183aa1265a62d2723db7ec8ea8dcccbe112629a29f92add3e65520dfa799",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 4,
+      "ordinal": 48,
+      "labId": "ucsd-biology-topic-lab-cressida-madigan",
+      "labName": "Cressida Madigan Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "7806dbbf4ece909c76358d60fda6e3b6ba2429a65d6637f39d8707c0c85b6e57",
+      "packetSha256": "307d3bc42b19fb852cdca743643ae4c5adb8c8c4600119d10cff503451e8029c",
+      "qaDecision": "pass",
+      "reasonZh": "Our lab / We look to 逐项明确机制、炎症作用及神经系统改变感染三项目标。",
+      "effectiveQuestions": [
+        "微生物如何改变神经系统功能？",
+        "炎症在微生物与神经系统的相互作用中起什么作用？",
+        "神经系统如何改变感染进程？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-73e19312f9033d49",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875",
+          "quoteSha256": "2cbcb4827cb9239c6d67b2dba034235e618a57e0a185247f506862a9fb7fa057",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-73e19312f9033d49",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875",
+          "quoteSha256": "2cbcb4827cb9239c6d67b2dba034235e618a57e0a185247f506862a9fb7fa057",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-73e19312f9033d49",
+          "sourceObservedAt": "2026-10-16T01:04:00+00:00",
+          "sourceBodySha256": "a9f9b3aec95be2fdb36ec7e35d2b332cd2602abe9e9562a1aea27bb801eb2875",
+          "quoteSha256": "2cbcb4827cb9239c6d67b2dba034235e618a57e0a185247f506862a9fb7fa057",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 5,
+      "ordinal": 49,
+      "labId": "ucsd-biology-topic-lab-daniel-bayless",
+      "labName": "Daniel Bayless Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "2f3dd02b966069505d99328077eb5d5a28447ffbfc6e9a828b20541462b10064",
+      "packetSha256": "445a1d702847165ef90c7ced4e542b3693cd090da1bde1659651dc6ff2e7a2ee",
+      "qaDecision": "pass",
+      "reasonZh": "Bayless Lab mission 与 Our experiments 明确列出全部影响因素及社会行为神经回路。",
+      "effectiveQuestions": [
+        "性激素、与人类疾病相关的基因及衰老如何塑造和调节社会行为相关的神经回路？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-945a0f7e2593c6e1",
+          "sourceObservedAt": "2026-10-16T01:04:01+00:00",
+          "sourceBodySha256": "e8f7ae35359a7b6cf1e2b86fd40946304f5d852163379caf069f26b9178980b5",
+          "quoteSha256": "732beb46442a9d55ea27869e19d9a17c3a62f745860b0479db2940cef54325b1",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 6,
+      "ordinal": 53,
+      "labId": "ucsd-biology-topic-lab-diana-hargreaves",
+      "labName": "Diana Hargreaves Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "4cae90c02e9b00c85f56be5efb21d2bf12bff72be1595d343651291df03263fd",
+      "packetSha256": "b83f6b518fb84ccd21ff55b1e4fcee397c958a380c17ae712c42ca486859eed8",
+      "qaDecision": "pass",
+      "reasonZh": "We have a strong interest 明确 BAF 突变与治疗响应，不扩展免疫治疗结果。",
+      "effectiveQuestions": [
+        "BAF复合体亚基中的癌症相关突变如何影响治疗响应，尤其是免疫治疗响应？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-a56654d1ca4a4041",
+          "sourceObservedAt": "2026-10-16T01:04:02+00:00",
+          "sourceBodySha256": "54c0ec3760faea0d7036c3c56d2601b6c209a4d46959f78c9f854108700dc2aa",
+          "quoteSha256": "5ae7947572988581cd0f63e87c4cbcbb78e78ae92543502f9f818ad4236c2b3c",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 7,
+      "ordinal": 57,
+      "labId": "ucsd-biology-topic-lab-enfu-hui",
+      "labName": "Enfu Hui Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "0b8ac48b092fe031af213a8ebb84609354c1d461927cd9dda0c2d7f42f5dbb00",
+      "packetSha256": "50bcc5cb7cf355ad9bea74234f3acd8370657f3a3a26a232dc3f12d5302cd519",
+      "qaDecision": "pass",
+      "reasonZh": "To address this challenge / we define how 明确实验室目标，不另增治疗结论。",
+      "effectiveQuestions": [
+        "免疫检查点在分子和细胞层面如何运作？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-e950d18b39630648",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceBodySha256": "1ed3ec137d94197b1bb41924617e706827e4ed5b9894cbdcafad364d31805fc9",
+          "quoteSha256": "78097c626edd6139aa0280c682eee06a9266ac76dccaf2c4c928793648c4814f",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 8,
+      "ordinal": 62,
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "labName": "Goldrath Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "108d2a96eb62610ee67056e703d44d051c77115a22649568ad815a36a977d62e",
+      "packetSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "qaDecision": "pass",
+      "reasonZh": "The goal of our research 明确T细胞记忆形成与维持。",
+      "effectiveQuestions": [
+        "T细胞免疫记忆如何形成和维持？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-acffd3486037cd5c",
+          "sourceObservedAt": "2026-10-16T00:59:53+00:00",
+          "sourceBodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "quoteSha256": "d500e89ad9cbe58e9454a9be1d6008fd9b916dd04f31a04d6ce42d090dd52064",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 9,
+      "ordinal": 67,
+      "labId": "ucsd-biology-topic-lab-holway",
+      "labName": "Holway Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "28ed575d9ca0dbfb916a425db7f7bd6d41bfe8517af9784df1091d13c364ec6c",
+      "packetSha256": "fc5ab3c2050de14838a5e2cba6087ea2b859e66760f9c311448dda5667299ab0",
+      "qaDecision": "pass",
+      "reasonZh": "Our research questions 与 perspectives 明确三个所选问题，未从生态主题推断。",
+      "effectiveQuestions": [
+        "实验性清除入侵物种后，原生物种群落能恢复到何种程度？",
+        "土地利用强化如何威胁传粉者种群？",
+        "外来物种如何与本地传粉者相互作用，这些相互作用何时会损害传粉服务？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-547ac3538543a086",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469",
+          "quoteSha256": "f4a9715741659c9df29d852ff78febe79a9b6257892b3974f64038169bb13269",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-547ac3538543a086",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469",
+          "quoteSha256": "618f8e70b3ce581bd872224a6c919456076cc9b0993c5b37edb561bc0b4b8b9e",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-547ac3538543a086",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "sourceBodySha256": "0286c4030d32a7cd2622befd6074af3d9bbd2abb7dfce61ddcebb4757c727469",
+          "quoteSha256": "618f8e70b3ce581bd872224a6c919456076cc9b0993c5b37edb561bc0b4b8b9e",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 10,
+      "ordinal": 68,
+      "labId": "ucsd-biology-topic-lab-hunter",
+      "labName": "Hunter Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "40a31c6aded1440b5314876d312bd7f6124e4007720f6c816ebfb950bc993d07",
+      "packetSha256": "9301c9fcd94ef969354eff75c059245a9b5c7d43d09e59ae9ae6f45a2a92842b",
+      "qaDecision": "pass",
+      "reasonZh": "只使用 his lab 的 how 从句；不把随后 Hunter uses 个人技术叙述扩展为额外问题。",
+      "effectiveQuestions": [
+        "蛋白质的化学修饰如何控制细胞周期和细胞生长？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-38655a738d757fbf",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "sourceBodySha256": "dc020616faa5086df07a7ca48dcd15952ce259abfa4e9ab3ff4dad7959c1a65b",
+          "quoteSha256": "bb5cdbfe99464ba48b777690482a174e2203036c3070e65372d70bd676a54f9c",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 11,
+      "ordinal": 71,
+      "labId": "ucsd-biology-topic-lab-jazz-dickinson",
+      "labName": "Jazz Dickinson Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "d1c34922290e29c1286909d245c5431383f19a2873656c942ab5f1b6a91fa22e",
+      "packetSha256": "fbbc6ff7a8d5aa515bb978262aab543c07d72002055a5415cfec1e11ddd9389b",
+      "qaDecision": "pass",
+      "reasonZh": "The Dickinson Lab 明确小分子与发育决策研究。",
+      "effectiveQuestions": [
+        "小分子如何塑造发育决策？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-3cf2c191e070cb26",
+          "sourceObservedAt": "2026-10-16T01:04:06+00:00",
+          "sourceBodySha256": "203c4801b7f3ee703df7d57120add9481161d3f2e16a1a9c729f8d430b7d9a94",
+          "quoteSha256": "a7afd7b51cc32f78ad126bde8781da569de77efb41218c01d0627e1edb471bd6",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 12,
+      "ordinal": 72,
+      "labId": "ucsd-biology-topic-lab-jesse-dixon",
+      "labName": "Jesse Dixon Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "2802ac6259230249b29dd31e1cc70d6049bb4c8832e9ac07342c3eaaf1ddfcf5",
+      "packetSha256": "6249f235b606ce6d8cbc45681c94c0957febff862b173b3ad7e6c899a8b93549",
+      "qaDecision": "pass",
+      "reasonZh": "Our lab / our work 明确两项基因表达和序列变异问题。",
+      "effectiveQuestions": [
+        "基因表达程序如何受到调控？",
+        "序列变异，尤其是癌症基因组突变，如何改变三维基因组组织并促成人类疾病？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-780c158e81570bd3",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "sourceBodySha256": "1090a14cc811af8ecb0e360d99b50f9f2a33465a5981435f6ff4278fa82b6bb3",
+          "quoteSha256": "7e2f7547d0648c5da19a97d26bcbf54ab1cb3600381f88a9df2a64aeb5154e7d",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-780c158e81570bd3",
+          "sourceObservedAt": "2026-10-16T01:04:08+00:00",
+          "sourceBodySha256": "1090a14cc811af8ecb0e360d99b50f9f2a33465a5981435f6ff4278fa82b6bb3",
+          "quoteSha256": "116951d8b79db430a38e038af9033c977f4a981ed1bd4563084fadede004d063",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 13,
+      "ordinal": 73,
+      "labId": "ucsd-biology-topic-lab-jill-wildonger",
+      "labName": "Wildonger Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "932059119ac3fdddaba577ed474caf53809b4f2a9721bed5a147ff5c3aa50788",
+      "packetSha256": "b9b7d0b823d0822f9b96004f022b8d06425526f64675b8cc3baeb39187bb0696",
+      "qaDecision": "pass",
+      "reasonZh": "官方 Research 区 Our goal / We 明确团队主体，轴突/树突功能均为原文。",
+      "effectiveQuestions": [
+        "分子马达和微管的活动如何形成分别负责发送与接收信号的轴突、树突区室？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-1f15ebe82c671383",
+          "sourceObservedAt": "2026-10-16T01:02:53+00:00",
+          "sourceBodySha256": "7b233647bf4dc3cdbd5df41c87b1e37a48fbbdbad80df550d9583b366447a6a2",
+          "quoteSha256": "0de85f58b38688c1d2c043c9b3e42be4ae3c17aac66c6ed544b7c8fcc7fb18bf",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 14,
+      "ordinal": 75,
+      "labId": "ucsd-biology-topic-lab-julie-law",
+      "labName": "Julie Law Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "3003843b746fafadd2564571f4cedb6d5d32aa621813032d5f45c16dd460b8c1",
+      "packetSha256": "0b8d8af7d6e8c7032ccffea40002b12c24e937ad53d3d1364e7d8564c8194e57",
+      "qaDecision": "pass",
+      "reasonZh": "具名 Law 实验室 Problem/Approach 连续研究语境明确三个尚未理解的how；不是履历或FAQ。",
+      "effectiveQuestions": [
+        "特定的表观遗传修饰模式如何建立？",
+        "相关细胞系统如何识别这些修饰模式？",
+        "这些修饰模式如何被解读以指导细胞功能？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-98ab5e76a89f782f",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0",
+          "quoteSha256": "373cb48a27e56645ea6460a8a7a2b230f7364bcd241c1d1bc27eccab1b31fa60",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-98ab5e76a89f782f",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0",
+          "quoteSha256": "373cb48a27e56645ea6460a8a7a2b230f7364bcd241c1d1bc27eccab1b31fa60",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-98ab5e76a89f782f",
+          "sourceObservedAt": "2026-10-16T01:04:09+00:00",
+          "sourceBodySha256": "a7ebabde220ca4188313b14932e54f21e3ecbfd584f3d7d73269363e4b6d18a0",
+          "quoteSha256": "373cb48a27e56645ea6460a8a7a2b230f7364bcd241c1d1bc27eccab1b31fa60",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 15,
+      "ordinal": 76,
+      "labId": "ucsd-biology-topic-lab-justin-meyer",
+      "labName": "Justin Meyer Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "2552a1edcf503700ef5b8c250c10ff6ca5844dd866c0652c11bb0a8d1b0a8c43",
+      "packetSha256": "acd76e03740fd649901d57c1af734488a3e9ae02f9884a3d20517d806c3d06fc",
+      "qaDecision": "pass",
+      "reasonZh": "Meyer Lab Our Research 的 Viral Speciation 明确环境压力对λ噬菌体物种形成的检验目的。",
+      "effectiveQuestions": [
+        "哪些环境压力影响λ噬菌体的物种形成？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-2c3ee75e8e6deb68",
+          "sourceObservedAt": "2026-10-16T01:04:07+00:00",
+          "sourceBodySha256": "ba7cd997d08e14d535903fccef252a549ae4c4fddce7bcb474e94631acded47f",
+          "quoteSha256": "7312ee431a82a8e76c5cf1f5eb0d44db9d0cc86cd8b78991089ab9ea529e3306",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 16,
+      "ordinal": 77,
+      "labId": "ucsd-biology-topic-lab-kaech-lab",
+      "labName": "Kaech Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "8007500acf47a541e61cdfa6c7838c13e0626b216be1548f93a45972569edf79",
+      "packetSha256": "f78f16dbbd377cc40c3e34ba30a8aee8180672e8aa75d80ea16ff2efddbf74cb",
+      "qaDecision": "pass",
+      "reasonZh": "We are focused / T cell Exhaustion 未解问题明确；未把潜在免疫治疗结果写成事实。",
+      "effectiveQuestions": [
+        "肿瘤代谢的关键特征如何影响免疫细胞功能？",
+        "T细胞在耗竭过程中如何应对持续性信号？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-52db6cd56264e921",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "sourceBodySha256": "8306d7b6a1514f9343d264e5126f50e16bad3671d6816bc4e1567fed9e77b158",
+          "quoteSha256": "812bae3e0bcc8a396e8691524c3c5dd78dcba1a251ddc22d20be271cdb7a6e03",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-52db6cd56264e921",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "sourceBodySha256": "8306d7b6a1514f9343d264e5126f50e16bad3671d6816bc4e1567fed9e77b158",
+          "quoteSha256": "d20f4d404f93ef90b3192d6df431b9eb6faf41a788aa4538d7faea97c336051e",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 17,
+      "ordinal": 78,
+      "labId": "ucsd-biology-topic-lab-kay-tye",
+      "labName": "Kay Tye Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "171b8913bd8294e67d11c917c9e175e7c812e5aac3737f0ce2e31a96beaf0d6a",
+      "packetSha256": "2535dafd7b18c17486e98dcc211489e4d020f1ae1b493e52512512858e361421",
+      "qaDecision": "pass",
+      "reasonZh": "The Tye Lab 明确情绪、动机、行为及健康疾病范围。",
+      "effectiveQuestions": [
+        "在健康和疾病状态下，情绪与动机状态如何影响行为？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-673eeff226ae02d4",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceBodySha256": "45eb17b4a497fe00061155a60b39cf82473a2bea8b4e95a5fd3681513097b3db",
+          "quoteSha256": "9e08a9b11e072c4a55de6f4562eae1e516c75fc3244c221a133a8c1aa91c2696",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 18,
+      "ordinal": 80,
+      "labId": "ucsd-biology-topic-lab-kenta-asahina",
+      "labName": "Kenta Asahina Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "263c77543636618c59dba9cf8c974adab1975b199ce36cabd65fc304388695b1",
+      "packetSha256": "85877e4c2a7f1cd5b8c4fd2fbfb657de28dac4c8d4650ef2526022a105a04a04",
+      "qaDecision": "pass",
+      "reasonZh": "Our laboratory aims to answer this question 明确承接前一 neuroscience 问题；排除了 Why do we begin from genes 的方法修辞。",
+      "effectiveQuestions": [
+        "大脑如何解读社会经历，并在后续互动中调整行为选择？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-08f3e7923914dcc7",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "sourceBodySha256": "4db4e3e53dd854840ac1eca96958ca962efc06788f05e1d7743b2814f5921326",
+          "quoteSha256": "c303acaec22223fa00894c686dc5504c20157b5fc8bff9b22f712a6cc7cd330f",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 19,
+      "ordinal": 83,
+      "labId": "ucsd-biology-topic-lab-kimberly-cooper",
+      "labName": "Kimberly Cooper Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "4d3dde69c66dcb23c85976cc301ff57587290252ef4127d4e717a1aac0b5c5ad",
+      "packetSha256": "afa1b9b9baea2142496bb6724d5af8d2a5e34a4c13f3862cdfd364542c486b11",
+      "qaDecision": "pass",
+      "reasonZh": "QUESTIONS THAT EXCITE US 明确骨骼生长速率及停止时机的问题。",
+      "effectiveQuestions": [
+        "发育中的各个骨骼结构如何以不同速率延长，并在适当时机停止以形成合适比例？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d56b7efbc87a50db",
+          "sourceObservedAt": "2026-10-16T01:04:11+00:00",
+          "sourceBodySha256": "74a58c0d447c6293667cd8882e660696e867473308fdc605667268d92beada16",
+          "quoteSha256": "f88244bcd6d962b4b23af955e9d6afa80be16feec027d483a83246d0a2a6600a",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 20,
+      "ordinal": 85,
+      "labId": "ucsd-biology-topic-lab-kronenberg",
+      "labName": "Kronenberg Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "493ab2e1d40ebd15d6a679b047c72dd296b8c025a508a6d1cc91ae09314d8706",
+      "packetSha256": "fdda0fb2246b6d87fa78ac20cc3c8a06ffb3d2850455f4b577a106fffd238e2b",
+      "qaDecision": "pass",
+      "reasonZh": "The laboratory is studying 明确先天样T细胞组织适应和刺激后长期改变；没有借用 other groups 的治疗研究。",
+      "effectiveQuestions": [
+        "先天样T细胞如何适应不同组织环境？",
+        "抗原刺激后，这些细胞会发生哪些长期变化或记忆反应？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-da59981531717742",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceBodySha256": "eb10a605e2169aa124357aa9dbdb7947dbafb7d02848adff441e4e0faccca6a0",
+          "quoteSha256": "f263609a1a396fd2a2a9aa6a98a4177b0799afae78b2e9457cda296a51f34676",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-da59981531717742",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceBodySha256": "eb10a605e2169aa124357aa9dbdb7947dbafb7d02848adff441e4e0faccca6a0",
+          "quoteSha256": "f263609a1a396fd2a2a9aa6a98a4177b0799afae78b2e9457cda296a51f34676",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 21,
+      "ordinal": 88,
+      "labId": "ucsd-biology-topic-lab-leutgeb",
+      "labName": "Leutgeb Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "e1e7d04e4c072110299a7f3c52630ca295cd39f5420ccb7ce71a351889a1f52f",
+      "packetSha256": "339338e3c2fe55c1d94ab34d8f341f517a72f31ab5221f3056d22d73d8263303",
+      "qaDecision": "pass",
+      "reasonZh": "Our laboratories study these questions 明确联合实验室范围；记忆和疾病问题保持探索语气，不暗示恢复功能已实现。",
+      "effectiveQuestions": [
+        "多个脑区如何协同参与记忆相关功能？",
+        "抑郁、癫痫和阿尔茨海默病等疾病中，哪些脑回路变化限制记忆能力，如何恢复脑功能？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-1bc1f8be726ece99",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceBodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+          "quoteSha256": "79e0db3feefecf5f06fa88e47da502eb965b05302af024c14120025c86a7f8a5",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-1bc1f8be726ece99",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "sourceBodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+          "quoteSha256": "b9a0203727960d4b60ad282feb670dca25b5a45da9b2855f090ee5a3a8568edf",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 22,
+      "ordinal": 91,
+      "labId": "ucsd-biology-topic-lab-marcus-benna",
+      "labName": "Marcus Benna Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "287e497fac0c7b7d10aa09c8f5ded0c7cb4e09e528368ef175123df7964612c1",
+      "packetSha256": "7f5d44bf8721fcee22cbb1d522aca8bc426fb6ef8c924dfad22be8451a7cae0b",
+      "qaDecision": "pass",
+      "reasonZh": "The main goal of our research 及 we clarify how these limitations are overcome 明确资源约束下学习记忆问题。",
+      "effectiveQuestions": [
+        "大脑如何克服资源限制以实现学习和记忆？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-52bb2f0125f2c113",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "sourceBodySha256": "0c2ff33e83d54ffe3933a6abcba00081848ccd8831ccb0dcbf42c538b26a4bca",
+          "quoteSha256": "62cbf2c800b85bf772282cdfab1cff84b966b81190968d236e30d2a7279e1f35",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 23,
+      "ordinal": 93,
+      "labId": "ucsd-biology-topic-lab-matt-banghart",
+      "labName": "Matt Banghart Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "b191f9d1c1611e703407ae55b6544a010d1b1ead4a022fce638043ea7a79e052",
+      "packetSha256": "c9e833db12a9992af5896eae23da9418a40d8e2b0fa24401e40787b6923e3477",
+      "qaDecision": "pass",
+      "reasonZh": "The Banghart Lab seeks to understand how 明确神经调质与痛觉调节。",
+      "effectiveQuestions": [
+        "神经调质如何参与哺乳动物中枢神经系统的痛觉调节？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-57fb68e07aedc515",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceBodySha256": "c4bf7e3b4cb0ee0e7845eae1df31dbec7855c2322837b3041c601a66490576a0",
+          "quoteSha256": "f2ca75118b5c0d253c67205ebaf84b55694b098ab926fc4a1b18fdce6685cc7c",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 24,
+      "ordinal": 94,
+      "labId": "ucsd-biology-topic-lab-matthew-daugherty",
+      "labName": "Matthew Daugherty Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "093d70ba2414e6df5963cbba6ddf379b0e232b4c931e112e334547c5c1c476e2",
+      "packetSha256": "fa13563d2124acb9f31457c97506b6c018cc582c21daf095e5cea4340fd46684",
+      "qaDecision": "pass_after_pinned_revision",
+      "reasonZh": "whole-lab证据成立；counter-evolve原译反向演化有误，已由单独冻结修订改为演化以对抗并突破，不再有逆向演化歧义。",
+      "effectiveQuestions": [
+        "宿主免疫基因如何演化以抵御病原体？",
+        "病原体如何演化以对抗并突破宿主免疫？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-65bb541a0c9a1683",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceBodySha256": "a20c19e1fd9a718b6ab66d62c192cc19ac102ab793c02c823cd362618d51a4e3",
+          "quoteSha256": "de671e443dd4804367655f737124da7456f6e5e3672afe61e4d0405f8d8f7019",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass_after_pinned_revision",
+          "sourceId": "src-65bb541a0c9a1683",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceBodySha256": "a20c19e1fd9a718b6ab66d62c192cc19ac102ab793c02c823cd362618d51a4e3",
+          "quoteSha256": "de671e443dd4804367655f737124da7456f6e5e3672afe61e4d0405f8d8f7019",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": "bb6db737310bbacadbc90f5efa4aaaa33a3b9ce8afd9ea1787463618b2b43be2"
+    },
+    {
+      "candidateIndex": 25,
+      "ordinal": 97,
+      "labId": "ucsd-biology-topic-lab-mikio-aoi",
+      "labName": "Mikio Aoi Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "d44a8915a1813403e5690841cd0ef1b3ee6beac544408dac952fafe24ca44495",
+      "packetSha256": "b03acbcf3e10f7d453600f2b2be7a970a9450ec1a84465dc62ae667abd831c96",
+      "qaDecision": "pass",
+      "reasonZh": "We are a computational neuroscience lab 明确神经元群体协调与计算。",
+      "effectiveQuestions": [
+        "神经元群体如何协调活动以执行计算？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-646dbfc850d48e1f",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceBodySha256": "f2616ac63826ea48c71a656017009f04f61e023c8f7e16a3fcd187512dea2c9d",
+          "quoteSha256": "0e813a414e21df8d1e6ebf90a6192b6612e75d1177f024da303b2c0e3223d42e",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 26,
+      "ordinal": 100,
+      "labId": "ucsd-biology-topic-lab-nan-hao",
+      "labName": "Nan Hao Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "2a5d6b2e12bc23c95e0b01e11b8dc235bbccf43829ac5601d2f075d19a7e3579",
+      "packetSha256": "901acbe51ba40240110500c53bb7617069bcbb7720385795cb57705decab9326",
+      "qaDecision": "pass",
+      "reasonZh": "The Hao laboratory study how 明确分子网络应答；压力、衰老和疾病全部原文限定。",
+      "effectiveQuestions": [
+        "分子网络如何在应激、衰老或疾病背景下调控应答反应？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d7a34e0783d2f428",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "sourceBodySha256": "70c2f2ee0480fdd6f88a936384bfc2d269db3ddd59a9537879ba517fbfc51e75",
+          "quoteSha256": "b0e350fc022422048285112f9394ef44c59c7c4eda1d6a51b6ba5e0ef0d58da9",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 27,
+      "ordinal": 101,
+      "labId": "ucsd-biology-topic-lab-nguyenqvu",
+      "labName": "NguyenQVu Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "3e621e645c0197102d9dcc6913704885d023ddd41d6c592ae730a948dd413bca",
+      "packetSha256": "0ba0436e14b5bab78a7f0905fc55f5c66cdf0ba0c39e8f24b44d47910695fff3",
+      "qaDecision": "pass",
+      "reasonZh": "Nguyen实验室核内交通研究区直接提问，时机、目标基因和核拥挤条件都为原文。",
+      "effectiveQuestions": [
+        "在高度拥挤且动态变化的细胞核中，基因组调节因子如何在正确时机找到正确的基因？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-52483458ca14d48b",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceBodySha256": "1a51be508375be763ed260de317280cf1abeb365d3bfe3b93646a57938788970",
+          "quoteSha256": "e5c1e5294bcfda0daa783d104bee58d87455a719a3978c400dd1bb69ff86c49d",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 28,
+      "ordinal": 102,
+      "labId": "ucsd-biology-topic-lab-nicola-allen",
+      "labName": "Nicola Allen Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "4589d65386e058f804cb1b97473ce79d5ca11b3ca61187dad0278ea0e20a5648",
+      "packetSha256": "92a8bc83d9b116432f6e2d52003c79bac65905a4d296afa349c619080e586f94",
+      "qaDecision": "pass",
+      "reasonZh": "The goal of our work 明确星形胶质细胞对突触形成、功能和稳定性的作用。",
+      "effectiveQuestions": [
+        "星形胶质细胞如何调控神经元突触的形成、功能与稳定性？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-c68fced39a71fbf9",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "sourceBodySha256": "9b3a414a1f78b868515e3613b9c7f3a2a706c72d92dee9690d89c2127b34fea9",
+          "quoteSha256": "b7c202734ae3e47623fd467049fa2228cfc5a0cc573590f67b45cd3e3173c7b3",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 29,
+      "ordinal": 103,
+      "labId": "ucsd-biology-topic-lab-nieh",
+      "labName": "Nieh Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "811749519fc05998fa834f144e5d2dffba31f511284842f8e81ef476732e514e",
+      "packetSha256": "7e3b7a5ed349614e37e391efc6c0bc537fc805cd670c9eb511b01254dd18c373",
+      "qaDecision": "pass",
+      "reasonZh": "Our lab 与前文social bee communication明确交流指代；保留may的可能性。",
+      "effectiveQuestions": [
+        "社会性蜂类的交流如何运作，为什么可能演化出来？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-aaeb76d3bcab87fc",
+          "sourceObservedAt": "2026-10-16T00:59:50+00:00",
+          "sourceBodySha256": "aaf5335b1a0b041a1f5b1fc0585cb8c0d3ad8975d0e2e0792d194e4d8bc2be52",
+          "quoteSha256": "578dd88b1c6e609f8a72e599ad64286804ec17c3b5a469a0ae72cbad6ab45a7f",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 30,
+      "ordinal": 104,
+      "labId": "ucsd-biology-topic-lab-noah-rose",
+      "labName": "Noah Rose Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "7315d288d045b898d07cad139761c5810dad66ffcab091e104e9f43a78de9158",
+      "packetSha256": "e80ec7edc0b3fed6d49ade32754ba571b3cd5edc80e50de759737fb51cd3a81c",
+      "qaDecision": "pass",
+      "reasonZh": "We study how...and how 明确人类生态位与疾病传播，没有外加控制措施。",
+      "effectiveQuestions": [
+        "蚊子如何在人类生态位中繁盛？",
+        "这一过程如何影响人类疾病的传播？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-9e0ef837ab5e8c6c",
+          "sourceObservedAt": "2026-10-16T01:04:20+00:00",
+          "sourceBodySha256": "89a41c88043d46452148880b616c0214a62b75ecefd5f0fe74fd3cef2596bf7f",
+          "quoteSha256": "fae9a0c36fc99f1c788264fdff95d72baa83e35d165c40d0d6dbb4f078ff0fce",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-9e0ef837ab5e8c6c",
+          "sourceObservedAt": "2026-10-16T01:04:20+00:00",
+          "sourceBodySha256": "89a41c88043d46452148880b616c0214a62b75ecefd5f0fe74fd3cef2596bf7f",
+          "quoteSha256": "fae9a0c36fc99f1c788264fdff95d72baa83e35d165c40d0d6dbb4f078ff0fce",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 31,
+      "ordinal": 108,
+      "labId": "ucsd-biology-topic-lab-pasquinelli",
+      "labName": "Pasquinelli Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "2b893154e997694d1413d9b641fc165c2cf1d90084be1839796874237acffe61",
+      "packetSha256": "4a74bb615c68ed96eff2a9140df629385ac24471a1b05698432e00e8f2b045e2",
+      "qaDecision": "pass",
+      "reasonZh": "Pasquinelli Lab research program / We investigate明确miRNA两个目标。",
+      "effectiveQuestions": [
+        "miRNA介导的基因表达调控如何影响生物体的发育和存活？",
+        "miRNA如何在内源性条件下表达并调控基因表达？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-91a1a50e887375f6",
+          "sourceObservedAt": "2026-10-16T01:04:19+00:00",
+          "sourceBodySha256": "8bf3ccb6e6c191a6221a668343bf569f2472307d9d049da65ed3260410e73418",
+          "quoteSha256": "f588a9a56f9519b7ce3b2678277103a5099cc70d6e4b1fb45226934385c49fbc",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-91a1a50e887375f6",
+          "sourceObservedAt": "2026-10-16T01:04:19+00:00",
+          "sourceBodySha256": "8bf3ccb6e6c191a6221a668343bf569f2472307d9d049da65ed3260410e73418",
+          "quoteSha256": "f588a9a56f9519b7ce3b2678277103a5099cc70d6e4b1fb45226934385c49fbc",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 32,
+      "ordinal": 109,
+      "labId": "ucsd-biology-topic-lab-patrick-rohner",
+      "labName": "Patrick Rohner Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "b717c763a93305eceed5e1b8f5de6056d468b4c1b46498b4b447262043307f5e",
+      "packetSha256": "76e62dffe708d67929a3ed95d0e537005dd6c6fcff72abd873e03dc7133a05a3",
+      "qaDecision": "pass",
+      "reasonZh": "Our group / Focusing on insects明确整体及昆虫限定的问题。",
+      "effectiveQuestions": [
+        "生物多样性如何产生并演化？",
+        "在昆虫中，可塑性、发育偏向及生物与环境的相互作用如何塑造表型及其演化？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-81d426a858c0f8ab",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceBodySha256": "acbbf2e73b93fa11cb73cc5c3e255545c7feedae48f926014d04243a3c1ac25c",
+          "quoteSha256": "80c34add13faa7b19cba25ad1bc5cc16f267d869b57bbb025576cf891cf67903",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-81d426a858c0f8ab",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceBodySha256": "acbbf2e73b93fa11cb73cc5c3e255545c7feedae48f926014d04243a3c1ac25c",
+          "quoteSha256": "80c34add13faa7b19cba25ad1bc5cc16f267d869b57bbb025576cf891cf67903",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 33,
+      "ordinal": 114,
+      "labId": "ucsd-biology-topic-lab-rifkin",
+      "labName": "Rifkin Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "eb2c6bcaf55b9b5204aa11022e081c68754315deb21adb1500434466500eda9f",
+      "packetSha256": "1068429e041c2dd38266a0b473c515596a0d423f9f7524891c9666389fe21c2f",
+      "qaDecision": "pass",
+      "reasonZh": "We study / We mechanistically trace及The lab明确两问，未增加进化机制。",
+      "effectiveQuestions": [
+        "发育和生理过程的结构与机制如何减弱或放大遗传、环境及随机变异，并引导其影响？",
+        "潜在的变异来源如何映射为表型变异？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-aab55feea8e267b0",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "sourceBodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9",
+          "quoteSha256": "e60f24db0dafb071f49eaa3fd8d2bffb4ec3626250fc868fbb912308275b2aaa",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-aab55feea8e267b0",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "sourceBodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9",
+          "quoteSha256": "e60f24db0dafb071f49eaa3fd8d2bffb4ec3626250fc868fbb912308275b2aaa",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 34,
+      "ordinal": 118,
+      "labId": "ucsd-biology-topic-lab-ryan-hibbs",
+      "labName": "Ryan E. Hibbs — lab website",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "ef45d58b6d9ab9e4fed9296e2e137f0530c31b2e3cf5bd9e4ed45d8fa3f30c11",
+      "packetSha256": "a089770d00b3ebe3a7ea6fae2bdca1cec5aa07bc488884c80cfdb677dd7065f1",
+      "qaDecision": "pass",
+      "reasonZh": "Hibbs Lab / We investigating明确疾病失常与药物改变两个问题，无疗效断言。",
+      "effectiveQuestions": [
+        "神经系统中的快速信号传递在疾病中如何失常？",
+        "药物如何改变这种信号传递？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-e8353a013d147c01",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceBodySha256": "81d5a4163106000196b56f37e32a3fa61869af953e329e90230b8adfb5a7a538",
+          "quoteSha256": "554b72f44ff2535ec0896f43689ac2b933743d094787250c86369400736c1730",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-e8353a013d147c01",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "sourceBodySha256": "81d5a4163106000196b56f37e32a3fa61869af953e329e90230b8adfb5a7a538",
+          "quoteSha256": "554b72f44ff2535ec0896f43689ac2b933743d094787250c86369400736c1730",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 35,
+      "ordinal": 123,
+      "labId": "ucsd-biology-topic-lab-shermin-de-silva",
+      "labName": "Shermin de Silva Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "9652c4a72e31c0359c58e6fdea9ccf616f0d12dab6e7e0e2aa25a8de85ad0963",
+      "packetSha256": "7068e797290b5808c007082311bcdb97885a3b8a42af095665b8ce1b764ff222",
+      "qaDecision": "pass",
+      "reasonZh": "We understand how / ways to maintain 明确社会生态交互及人为变化下维持目标。",
+      "effectiveQuestions": [
+        "社会系统与生态系统如何相互作用？",
+        "在人为变化背景下，如何安全、公平地维持社会—生态系统的完整性与功能？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-12cadc916ea5ba0f",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "sourceBodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7",
+          "quoteSha256": "64fe66b853e8aef916844ed49db9c69e17539009655fa0dff013f22ac2a9f3ca",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-12cadc916ea5ba0f",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "sourceBodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7",
+          "quoteSha256": "64fe66b853e8aef916844ed49db9c69e17539009655fa0dff013f22ac2a9f3ca",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 36,
+      "ordinal": 127,
+      "labId": "ucsd-biology-topic-lab-sreekanth-chalasani",
+      "labName": "Sreekanth Chalasani Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "e9c6f8b602904cf03e467e40ef5a66cde5bf58be09ab4a0b9cd6ec820d514f25",
+      "packetSha256": "85320bbd6e13055ff138bbc412195ef2f0a670879926dee49f3f58d3fc82308d",
+      "qaDecision": "pass",
+      "reasonZh": "Chalasani Lab / We explore how明确环境信号整合与行为；未将声遗传学愿景扩为问题。",
+      "effectiveQuestions": [
+        "神经系统如何整合环境信号以驱动行为？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-0f39710362420600",
+          "sourceObservedAt": "2026-10-16T01:04:45+00:00",
+          "sourceBodySha256": "44a17fa97a18863a9fdd8aa32a4d27a3cf95a349e9d4449c313036d8acd1fc9c",
+          "quoteSha256": "f15ee7c6607743bf1006ee291f9a3e849b7968bc5a6e3da3a2f5c934267af038",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 37,
+      "ordinal": 128,
+      "labId": "ucsd-biology-topic-lab-stacey-glasgow",
+      "labName": "Stacey Glasgow Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "eadc572f16271dc060231c540d546215be109f20eebb38a0c1c217efe63c1cb2",
+      "packetSha256": "05cc4daf6f8debd9d41fb2248c3bcee47f5ffed43d706a861a4dd8271b4070b1",
+      "qaDecision": "pass",
+      "reasonZh": "The laboratory is interested / fundamental question / We focused三处互相限定，非个人泛兴趣。",
+      "effectiveQuestions": [
+        "基因调控如何通过染色质构象、远程增强子相互作用和位点特异性转录因子得到协调，并影响生物过程？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-cab0e267e1af42e7",
+          "sourceObservedAt": "2026-10-16T01:04:40+00:00",
+          "sourceBodySha256": "a972302ac2ad1c1c28dd818e4708b36954277b82b65c1d91f6491f322be66ac6",
+          "quoteSha256": "972902b3492c0131c3c0f2bf011bd3a7ebbbda033b1f6db1df7b46e5a9da51e6",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 38,
+      "ordinal": 138,
+      "labId": "ucsd-biology-topic-lab-vineet-augustine",
+      "labName": "Vineet Augustine Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "cbee289a9683a09772fc7ae5fae346358fa2b21eb5abbdefc54ba557ce2c5d14",
+      "packetSha256": "ff189d980162afe222031a3c5c537aab561d81b8de5b9638743098a6a79ab11b",
+      "qaDecision": "pass",
+      "reasonZh": "The overarching theme of our research明确外周神经元、心脏信号与循环反馈关系。",
+      "effectiveQuestions": [
+        "各类外周神经元如何控制基本心脏生理活动？",
+        "来自心脏的信号如何影响大脑，并在循环反馈中产生健康和疾病状态下的相应行为？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-4a1b5db329b22a10",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "sourceBodySha256": "6d66bb448f7be701dbcccdca79fd6a80490e85dba54fa182bab2fd43fabd5002",
+          "quoteSha256": "844600fe92113089066d7ebc181b108b1108a7470c0ef83b724ba15a42fcb882",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-4a1b5db329b22a10",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "sourceBodySha256": "6d66bb448f7be701dbcccdca79fd6a80490e85dba54fa182bab2fd43fabd5002",
+          "quoteSha256": "844600fe92113089066d7ebc181b108b1108a7470c0ef83b724ba15a42fcb882",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 39,
+      "ordinal": 139,
+      "labId": "ucsd-biology-topic-lab-wilhelm-lab",
+      "labName": "Wilhelm Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "297e008e883cb0db7dd5650965760b0602e73af82ab870e8a858f7c4c6e72c77",
+      "packetSha256": "f5f8e1f00d7734bf7f63fced08a46c308b86d0973459871937bf82133e7f40ea",
+      "qaDecision": "pass",
+      "reasonZh": "My laboratory studying how 明确亚细胞机制在发育、代谢和神经系统中的作用。",
+      "effectiveQuestions": [
+        "形成亚细胞组织的机制如何在发育、代谢和神经系统中发挥作用？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-03e7fdc1b17c2270",
+          "sourceObservedAt": "2026-10-16T01:07:58+00:00",
+          "sourceBodySha256": "5c7e4a36c5f33b0c30cb965f389d9407963a7e1a831fa747426f715e908f69e9",
+          "quoteSha256": "a4a4e4bf413621ce40b6b7be15ef3b2123f337a65fa4e8feb4fce684d5d9679b",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 40,
+      "ordinal": 140,
+      "labId": "ucsd-biology-topic-lab-wolfgang-busch",
+      "labName": "Wolfgang Busch Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "511ad5661893150e5000f830b2a64a8bbbe552e196691c9abc412b9764ddde25",
+      "packetSha256": "a21cd8c681a9514ee7255aeaecf355bc79292f395e7458c3ff880d2a6087767b",
+      "qaDecision": "pass",
+      "reasonZh": "同一Approach段后文The lab has also recently expanded its work明确承接根系遗传课题，足以绑定第三人称how目标；不含行政职务或当前项目推断。",
+      "effectiveQuestions": [
+        "在特定环境中，植物基因如何决定根的生长？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-b0613bbf42d72aac",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "sourceBodySha256": "2c4a2013145e45aff5f5353704f50d0474878d7263dd09029163546e8944680c",
+          "quoteSha256": "31ef136c17b81957a0984076eb280d1ff7dd38020ef64da689df3d78ebd0a983",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 41,
+      "ordinal": 151,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ferro-novick-lab",
+      "labName": "Ferro-Novick Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "0eb8af2b7fd084809ef2ac92183691422c03f2d7a8b9a9453342b8dd8ac3ad82",
+      "packetSha256": "88e966b4ec03327f86576e61167290d2607af32a5bc0b71a08cb3820abc64a4d",
+      "qaDecision": "pass",
+      "reasonZh": "Our research program / Recent studies in the lab明确内质网稳态和这类蛋白的识别；相邻段限定易聚集、致病、无法逆向转运的错误折叠蛋白。",
+      "effectiveQuestions": [
+        "内质网如何维持稳态？",
+        "哺乳动物内质网自噬机制如何识别这类错误折叠蛋白，并将其送往溶酶体降解？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-b16a10555171132b",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "sourceBodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+          "quoteSha256": "8e10d6f7186e1bb3868f62d99d5f066d07586a58dfca64166c5b37d1c8279faa",
+          "literalInPacketAndAcceptedEvidence": true
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-b16a10555171132b",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "sourceBodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+          "quoteSha256": "1efd5bbe30873abe750b7385142e6b3d029ac384c8f60166f34104eae92e9fb8",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 42,
+      "ordinal": 152,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ghosh-lab",
+      "labName": "Ghosh Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "60bec901c6eef540f9389d90b50be4da9fb7b132fd680c69bf1f5b7d39a8acf3",
+      "packetSha256": "93dbe2e7c678a85902575fd0379ab1c9add857bcb69c25b43d1edf5ff2fe2a74",
+      "qaDecision": "pass",
+      "reasonZh": "About the Ghosh Laboratory / Our Research Focus与my group明确历史科研主体，未将药物开发动机写成已有效。",
+      "effectiveQuestions": [
+        "GEM系统的异常为何以及如何促发癌症进展、纤维化和胰岛素抵抗等病理状况？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-49330b50d0ee372a",
+          "sourceObservedAt": "2026-10-16T01:30:43+00:00",
+          "sourceBodySha256": "23f410b7fbd6bbb9e7242e440db04b4d63c0076e2f14f8514cd702458fd21a91",
+          "quoteSha256": "659b8d2978741bac77620927776910c8918f812bf6879606f010e6c8677cd689",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 43,
+      "ordinal": 170,
+      "labId": "ucsd-cellular-molecular-medicine-lab-zhou-lab",
+      "labName": "Zhou Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "6c04b43fc10ae824c191c3ec119641c68531264b0e865116e3b269258bd7b023",
+      "packetSha256": "290b538448b10e7715f19c12e9b205ff0a8a016d746a266af5dee8c1de64aaa8",
+      "qaDecision": "pass",
+      "reasonZh": "The overarching goals of our research明确基因组维护问题，未采纳CASA或加入团队导航。",
+      "effectiveQuestions": [
+        "基因组维护如何运作？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-c5a7f699c7b0650c",
+          "sourceObservedAt": "2026-10-16T01:04:53+00:00",
+          "sourceBodySha256": "4cc704c51223714b100ca42a15ce2e7dc626678a1b0bb9d439721dfaabaff79b",
+          "quoteSha256": "ffc66c821bc718d9dd9969b2c78a4985fc6ec1dd36022b091eab2bcdafbe912c",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    },
+    {
+      "candidateIndex": 44,
+      "ordinal": 171,
+      "labId": "ucsd-lab-from-faculty-bethel-lab-org",
+      "labName": "Bethel Lab",
+      "reviewedAt": "2026-10-16T07:52:31+00:00",
+      "rawSha256": "51ed3672ae046215d28a68e68a6f016683f58ecd0bc1ecb7f30434c77109e51b",
+      "packetSha256": "78fa5e98b89ad35e3df3654d66273f7a9d3edff8fe5316c985752df235716e00",
+      "qaDecision": "pass",
+      "reasonZh": "The Bethel Lab explore how 明确蛋白质能量性质与功能，未从设计愿景另造问题。",
+      "effectiveQuestions": [
+        "蛋白质的能量性质如何影响其功能？"
+      ],
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-0f229c7c67a66b00",
+          "sourceObservedAt": "2026-10-16T01:36:52+00:00",
+          "sourceBodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+          "quoteSha256": "ddf204c57c12253bfe5e3ca24e1c3fb22778c3db056ebe0c2eab9231286d6ad5",
+          "literalInPacketAndAcceptedEvidence": true
+        }
+      ],
+      "requiredChanges": [],
+      "resolvedRevisionSha256": null
+    }
+  ]
+}

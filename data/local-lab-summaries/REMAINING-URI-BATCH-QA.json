@@ -1,0 +1,2627 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:17:28+00:00",
+  "verdict": "PASS",
+  "snapshotAt": "2026-10-16T05:15:50+00:00",
+  "snapshotFinishedAt": "2026-10-16T05:15:52+00:00",
+  "scope": "Exactly 34 original-literal-HTTP root lifecycles plus six scientific applications already present at this raw/packet snapshot. Four later frame/anchor followups and subsequent raw/checkpoint changes are excluded.",
+  "networkRequestsByThisQA": 0,
+  "codeRawPacketCollectorWrites": 0,
+  "inputSnapshot": {
+    "head": "a63a20802708fffd1004346761e20e96dd72dfc7",
+    "ledgerUpdatedAt": "2026-10-16T05:03:38+00:00",
+    "ledgerSha256": "c4cd91703d583da167b4bac241db629920db3aa66a3857a8acfd6eef560ad755",
+    "beforeObservationFile": "remaining-uri-before-observation.json",
+    "beforeObservationSha256": "9220961ce2c1c8fd866c40fa000c0ead00485fd70faa9fecf4ea603ac3a486e5",
+    "admittedFile": "reviewed-original-uri-observations.json",
+    "admittedSha256": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f"
+  },
+  "lifecycle": {
+    "roots": 34,
+    "pageAttempts": 32,
+    "successfulBodies": 27,
+    "httpErrors": 5,
+    "robotsOnly": 2,
+    "wireEventRange": [
+      241,
+      320
+    ],
+    "wireCount": 79,
+    "robotsWires": 24,
+    "pageAndRedirectWires": 55,
+    "wireRangesContiguous": true,
+    "originalPageWireExactlyOnceForEachOf32": true,
+    "originalRequestKeyAndLiveTimeMatchesAll": true,
+    "completeOneShotJournals": 34,
+    "journalOnlyNotCountedAsPageProof": true,
+    "oneShotClosedForAll34": true,
+    "protocol": "fcntl-host-clock-v2",
+    "normalPageWiresWith2MCap": 53,
+    "reviewedPageWiresWith8MCap": 2,
+    "allRobotsWiresCap": 300000,
+    "successfulRootOriginalMetadataTimeHashRequestedFinalMatches": 27,
+    "transportSuccessNotEntityAcceptance": true
+  },
+  "sizeExceptions": [
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "originalURL": "http://stauberlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:41+00:00",
+      "bodySha256": "5b62ea538e3ccb4e1638756fa37a7ddacc241d9f05efe1fa2816fe5396454915",
+      "actualBodyBytes": 2299410,
+      "maxPageBytes": 8000000,
+      "journalAndActualWireCapAgree": true,
+      "hashBoundSizeReviewHelperReturns": 8000000
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "originalURL": "http://fergusonlab.ucsd.edu",
+      "observedAt": "2026-10-16T04:57:44+00:00",
+      "bodySha256": "599359907591ac6336bd3c0363d04a3914e80f58b3b96a3bbfe4a1e9617499c5",
+      "actualBodyBytes": 2042994,
+      "maxPageBytes": 8000000,
+      "journalAndActualWireCapAgree": true,
+      "hashBoundSizeReviewHelperReturns": 8000000
+    }
+  ],
+  "preservation": {
+    "oldSourceObjectExactPrefix": 34,
+    "oldEvidenceObjectExactPrefix": 34,
+    "allBeforeObservationSourceIdsRetained": 34,
+    "allNewRawQuotesLiteral": 34,
+    "allHydrationsPass": 34,
+    "scienceChangedExactly": [
+      "ucsd-biology-topic-lab-hampton",
+      "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "ucsd-chemistry-biochemistry-lab-hermann-lab"
+    ],
+    "otherScientificValuesUnchanged": 28,
+    "unchangedScienceAndSameReviewAt": 27,
+    "additionalIdentityMismatchReview": "Sinha science remains null/empty; new identity review time 05:05:34 retains priorScientificReviewedAt 01:47:27.",
+    "dateContentBoundaryPreserved": "All old source objects are exact prefixes, so original observedAt/hash/text provenance is unchanged."
+  },
+  "mismatch": {
+    "old13ExactObjectsPreserved": true,
+    "total": 14,
+    "accepted": 0,
+    "silentAliasOrIdMigration": 0,
+    "sinha": {
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "sourceId": "src-7da5f97add4fcfac",
+      "observedAt": "2026-10-16T04:56:45+00:00",
+      "bodySha256": "35b50cf6304cafc42e6f4ccbd258eaabf7cf130e132d9541eb379740145c97eb",
+      "actualTitle": "Allen Lab",
+      "localizedQuote": "If you are interested, please contact Monica Allen .",
+      "summaryZh": null,
+      "researchQuestions": [],
+      "topics": [],
+      "methods": [],
+      "acceptance": "provisional_or_unresolved",
+      "canCountAsVerifiedLabGroupURL": false
+    }
+  },
+  "scientificReview": [
+    {
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-079b069f7c694d83",
+        "src-61468db9b28284b9"
+      ],
+      "scope": "New named Hampton home prose adds regulated HMGR/ER degradation and an explicitly stated budding-yeast model. Preserved official overview explicitly says Our group and Hampton lab; its older topics remain attributable.",
+      "proof": [
+        "Our research interests lie in the regulated degradation of HMGCoA-reductase (HMGR) and in ER protein degradation in general.",
+        "Our model organism is Saccharomyces cerevisiae , or budding yeast."
+      ],
+      "methodsBoundary": "Only the stated model organism; no unmentioned assay or imaging technique."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-8958d5c5bb90cf1a"
+      ],
+      "scope": "The Kim group paragraph itself describes the whole group's protein-dynamics research, the three topics and optical tools; Judy Kim contact plus literal title connects the entity.",
+      "proof": [
+        "The Kim group is a diverse group of students, postdocs, and research staff with a strong interest in spectroscopic studies of protein dynamics.",
+        "We utilize a host of powerful optical tools, including UV resonance Raman spectroscopy, transient absorption/emission spectroscopy, and microscopy."
+      ],
+      "methodsBoundary": "All three listed optical methods appear literally; no faculty-wide fields are used to synthesize the new research claims."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-f01bfbff3e573fae",
+        "src-fd1ab018e68b72e8"
+      ],
+      "scope": "Actual HTTP root title binds Tezcan Lab; the independent Research request redirects to its research page. Work by the Tezcan Group and the three named research headings support the Chinese summary.",
+      "proof": [
+        "Work by the Tezcan Group spans all areas of chemistry and utilizes a diverse array of tools ranging from molecular biology, chemical synthesis, polymer science, and computational chemistry to X-ray crystallography, electron microscopy, spectroscopy and advanced materials characterization techniques.",
+        "Metalloprotein Design Nitrogenase Structure and Function Chemical Design of Functional Protein-Based Materials"
+      ],
+      "methodsBoundary": "Named toolbox is literal. Affiliation remains uncertain. Research-page redirect is separate from root canonical provenance."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-27301218356c2999"
+      ],
+      "scope": "STAUBER LAB and Our research program explicitly scope bioinspired inorganic/organometallic chemistry, recognition, reactive species and catalysts to the named lab.",
+      "proof": [
+        "Our research program is focused on a bioinspired approach to fundamental inorganic and organometallic chemistry",
+        "Synthetic inorganic chemistry will guide the development of new well-defined molecular systems"
+      ],
+      "methodsBoundary": "Only synthetic inorganic chemistry is represented as a method. The record retains the prospective-language caveat; no completed biological or catalytic outcome is asserted."
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-989b7fedff9fa338"
+      ],
+      "scope": "Research in the Ferguson laboratory explicitly describes its techniques, chemically induced proximity tool compounds, disease signaling and therapeutic goals. It is Fleur Ferguson's lab rather than another Ferguson entity.",
+      "proof": [
+        "Research in the Ferguson laboratory applies organic synthesis, medicinal chemistry , mass spectrome try and cell biology",
+        "through development of selective tool compounds that act via chemically induced proximity ."
+      ],
+      "methodsBoundary": "No unstated protein-degradation technique or clinical efficacy; oncology/neurodegeneration are goals, not established treatment outcomes."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "result": "PASS",
+      "sourceIdsRead": [
+        "src-6b3d477e4eb8109d",
+        "src-0875538465f67dd8"
+      ],
+      "scope": "Hermann Lab Home, its real Research.html anchor, Hermann Lab Research title and Our lab/We prose establish whole-lab scope. The 2/2019 statement is preserved as history in summary, uncertainty and sourceContentDates.",
+      "proof": [
+        "We are exploring structured RNA as (1) a drug target and (2) a material for self-assembling nano-architectures .",
+        "We use molecular biology and biochemistry approaches to discover and validate RNA targets",
+        "We use X-ray crystallography to investigate the three-dimensional architecture of RNA targets",
+        "(updated 2/2019)"
+      ],
+      "methodsBoundary": "Biophysical, synthetic organic, crystallographic, structure-guided design/screening and additive/subtractive methods all appear in the full body. No 2026-current project, PI appointment or institutional affiliation inferred."
+    }
+  ],
+  "scientificPrimarySourceByteTextMetadataChecks": [
+    {
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "sourceId": "src-61468db9b28284b9",
+      "sourceUrl": "https://biology.ucsd.edu/research/faculty/rhampton",
+      "requestedUrl": "https://biology.ucsd.edu/research/faculty/rhampton",
+      "observedAt": "2026-10-16T01:08:04+00:00",
+      "bodySha256": "4e91fcdf7caba1193ccd41bcf08ff14eb00ec9ae43637f1746bfc4e33288b045",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "sourceId": "src-079b069f7c694d83",
+      "sourceUrl": "http://hamptonlab.ucsd.edu/",
+      "requestedUrl": "http://hamptonlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:18+00:00",
+      "bodySha256": "33cc226c71a0d2ef77d4f07910a7c1b72e6e81d14e3bff5c2f4af16323345342",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "sourceId": "src-b450c00934a69427",
+      "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/judy-kim",
+      "requestedUrl": "https://chemistry.ucsd.edu/faculty/profiles/judy-kim",
+      "observedAt": "2026-10-16T01:01:39+00:00",
+      "bodySha256": "cb24c05daed1c14f0145c299b477280056834708cc14a129d7436994a42fa27c",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "sourceId": "src-8958d5c5bb90cf1a",
+      "sourceUrl": "http://galileo.ucsd.edu/",
+      "requestedUrl": "http://galileo.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:03+00:00",
+      "bodySha256": "2d25977b236521d7f2e695c1fe32c06c22a26304f7d0ae2f166cece6afa3a208",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "sourceId": "src-5c5dd0d24f1cdf53",
+      "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/akif-tezcan",
+      "requestedUrl": "https://chemistry.ucsd.edu/faculty/profiles/akif-tezcan",
+      "observedAt": "2026-10-16T01:01:55+00:00",
+      "bodySha256": "236ac9a85d65bbb275482027033bdab9529b4960030d5d1454516ef3a3f49598",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "sourceId": "src-f01bfbff3e573fae",
+      "sourceUrl": "http://tezcan.ucsd.edu/",
+      "requestedUrl": "http://tezcan.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:09+00:00",
+      "bodySha256": "987fe31b27c95551726edb9c0cb799b8151c7a66a9372e072b678f79345ca78a",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "sourceId": "src-fd1ab018e68b72e8",
+      "sourceUrl": "http://tezcan.ucsd.edu/index.php/research-2/",
+      "requestedUrl": "http://tezcan.ucsd.edu/?page_id=867",
+      "observedAt": "2026-10-16T05:00:15+00:00",
+      "bodySha256": "f522f38819b86654df8d9c707299c40dd6f6b11dd56146a14d4f4a1c148138b1",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "sourceId": "src-cd23f174d5146eda",
+      "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/julia-stauber",
+      "requestedUrl": "https://chemistry.ucsd.edu/faculty/profiles/julia-stauber",
+      "observedAt": "2026-10-16T01:01:55+00:00",
+      "bodySha256": "34dfb17d1fdddcce50ed6d4d2dd199cae4678827a35002f6eb7b2bab6d1efda4",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "sourceId": "src-27301218356c2999",
+      "sourceUrl": "http://stauberlab.ucsd.edu/",
+      "requestedUrl": "http://stauberlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:41+00:00",
+      "bodySha256": "5b62ea538e3ccb4e1638756fa37a7ddacc241d9f05efe1fa2816fe5396454915",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "sourceId": "src-adb12bae50dedef6",
+      "sourceUrl": "https://bmb.ucsd.edu/faculty",
+      "requestedUrl": "https://bmb.ucsd.edu/faculty",
+      "observedAt": "2026-10-16T00:59:03+00:00",
+      "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "sourceId": "src-989b7fedff9fa338",
+      "sourceUrl": "http://fergusonlab.ucsd.edu/",
+      "requestedUrl": "http://fergusonlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:44+00:00",
+      "bodySha256": "599359907591ac6336bd3c0363d04a3914e80f58b3b96a3bbfe4a1e9617499c5",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "sourceId": "src-5caf0ba8c39ed8b0",
+      "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/thomas-hermann",
+      "requestedUrl": "https://chemistry.ucsd.edu/faculty/profiles/thomas-hermann",
+      "observedAt": "2026-10-16T01:01:36+00:00",
+      "bodySha256": "a973985ac947c1fc72988e18ac2a6419149227302512b45007eef0008cb4d648",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "sourceId": "src-6b3d477e4eb8109d",
+      "sourceUrl": "http://tch.ucsd.edu/",
+      "requestedUrl": "http://tch.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:00+00:00",
+      "bodySha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": []
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "sourceId": "src-0875538465f67dd8",
+      "sourceUrl": "http://tch.ucsd.edu/Research.html",
+      "requestedUrl": "http://tch.ucsd.edu/Research.html",
+      "observedAt": "2026-10-16T05:03:38+00:00",
+      "bodySha256": "6c5739720383fd75c2e0e056cb53bcb9689755741b1d7db6cb8176a9c1838afa",
+      "rawHashMatches": true,
+      "fullTextMatchesActualExtraction": true,
+      "originalMetadataObservedAtMatches": true,
+      "originalMetadataBodyHashMatches": true,
+      "sourceContentDates": [
+        {
+          "value": "2/2019",
+          "kind": "visible_page_update_statement",
+          "evidence": "(updated 2/2019)"
+        }
+      ]
+    }
+  ],
+  "roots": [
+    {
+      "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+      "url": "http://sung-lab.eng.ucsd.edu/",
+      "baselineLiteralUrl": "http://sung-lab.eng.ucsd.edu/",
+      "requestedUrl": "http://sung-lab.eng.ucsd.edu/",
+      "finalUrl": null,
+      "observedAt": "2026-10-16T04:56:09+00:00",
+      "liveCheckedAt": null,
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "actualPageRequestMade": false,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        241,
+        243
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:45:38+00:00",
+      "currentReviewedAt": "2026-10-16T01:45:38+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "research_group",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "c2e05b2c3d77d9532ca55fdeb40cc6e60a483672563d102657346005e2bc7a10",
+      "snapshotRawSha256": "0cb8e21d465b7cecf28a99fd048165b3ae6af959291e06e2e89f08818a6e40a5",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:07+00:00",
+        "finishedAt": "2026-10-16T04:56:09+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          241,
+          243
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 2
+      },
+      "actualWireCaps": [
+        "robots:300000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-bennett-lab",
+      "url": "http://labs.biology.ucsd.edu/bennett",
+      "baselineLiteralUrl": "http://labs.biology.ucsd.edu/bennett",
+      "requestedUrl": "http://labs.biology.ucsd.edu/bennett",
+      "finalUrl": "http://labs.biology.ucsd.edu/bennett/",
+      "observedAt": "2026-10-16T04:56:11+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:10+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+      "maxBytes": 2000000,
+      "bodyBytes": 183,
+      "sourceIds": [
+        "src-cebe2dbe044b27a0"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        243,
+        245
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:23:19+00:00",
+      "currentReviewedAt": "2026-10-16T03:23:19+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "d4aad98426844aaaa93cbfff0d0c2641141e0a39a12867eeee4ab6f9aa3fbe74",
+      "snapshotRawSha256": "32ba3a9196500a3532c09e4d2a5a0f1666109d85f3c71837f553c90d40a9f2c7",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:10+00:00",
+        "finishedAt": "2026-10-16T04:56:11+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          243,
+          245
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-bier",
+      "url": "http://bierlab.ucsd.edu",
+      "baselineLiteralUrl": "http://bierlab.ucsd.edu",
+      "requestedUrl": "http://bierlab.ucsd.edu/",
+      "finalUrl": "http://bierlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:13+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:13+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+      "maxBytes": 2000000,
+      "bodyBytes": 72,
+      "sourceIds": [
+        "src-c5baf2d450d79f22"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        245,
+        247
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:23:19+00:00",
+      "currentReviewedAt": "2026-10-16T03:23:19+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "7dd73f342981641459a1c6ddbd4f482794ebed303d211233e288522499b7ae79",
+      "snapshotRawSha256": "ae4c8d8b147c854ea493ec1784d2f34e4b10cc37c85b9c5762ae10d2f2e74a6d",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:11+00:00",
+        "finishedAt": "2026-10-16T04:56:13+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          245,
+          247
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-firtel",
+      "url": "http://people.biology.ucsd.edu/firtel",
+      "baselineLiteralUrl": "http://people.biology.ucsd.edu/firtel",
+      "requestedUrl": "http://people.biology.ucsd.edu/firtel",
+      "finalUrl": null,
+      "observedAt": "2026-10-16T04:56:14+00:00",
+      "liveCheckedAt": null,
+      "status": "robots_unavailable",
+      "httpStatus": null,
+      "actualPageRequestMade": false,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        247,
+        248
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:47:04+00:00",
+      "currentReviewedAt": "2026-10-16T01:47:04+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "34d79f946ad51651f282145bfb0fbca7b4c5876f0e1c8e6ffe3db5afbb8dd347",
+      "snapshotRawSha256": "3e482a3d5577cb942e99d27576eae4630fd44ef805eab598243dd151750e03fa",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:13+00:00",
+        "finishedAt": "2026-10-16T04:56:14+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          247,
+          248
+        ]
+      },
+      "wireCount": 1,
+      "wireKinds": {
+        "robots": 1
+      },
+      "actualWireCaps": [
+        "robots:300000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "url": "http://biology.ucsd.edu/labs/goldrath",
+      "baselineLiteralUrl": "http://biology.ucsd.edu/labs/goldrath",
+      "requestedUrl": "http://biology.ucsd.edu/labs/goldrath",
+      "finalUrl": "https://goldrathlab.com/",
+      "observedAt": "2026-10-16T04:56:17+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:14+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+      "maxBytes": 2000000,
+      "bodyBytes": 80166,
+      "sourceIds": [
+        "src-6cf67ff1ffd79d15"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        248,
+        252
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:47:04+00:00",
+      "currentReviewedAt": "2026-10-16T01:47:04+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "snapshotRawSha256": "108d2a96eb62610ee67056e703d44d051c77115a22649568ad815a36a977d62e",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:14+00:00",
+        "finishedAt": "2026-10-16T04:56:17+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          248,
+          252
+        ]
+      },
+      "wireCount": 4,
+      "wireKinds": {
+        "page_or_redirect": 4
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "url": "http://hamptonlab.ucsd.edu",
+      "baselineLiteralUrl": "http://hamptonlab.ucsd.edu",
+      "requestedUrl": "http://hamptonlab.ucsd.edu/",
+      "finalUrl": "http://hamptonlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:18+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:18+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "33cc226c71a0d2ef77d4f07910a7c1b72e6e81d14e3bff5c2f4af16323345342",
+      "maxBytes": 2000000,
+      "bodyBytes": 7637,
+      "sourceIds": [
+        "src-079b069f7c694d83"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        252,
+        254
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:47:04+00:00",
+      "currentReviewedAt": "2026-10-16T05:04:32+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "research_group",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "44334a7bcc5a5ac3a38a638f6edbe44d6de5e4f9eed44d3d5664d7cabe51cd3c",
+      "snapshotRawSha256": "4d07da057bab4aa83de31d13bebb2878eb276e30c68df3cd84ea1f2052ae9774",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:17+00:00",
+        "finishedAt": "2026-10-16T04:56:18+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          252,
+          254
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-kiger",
+      "url": "http://www.biology.ucsd.edu/labs/kiger",
+      "baselineLiteralUrl": "http://www.biology.ucsd.edu/labs/kiger",
+      "requestedUrl": "http://www.biology.ucsd.edu/labs/kiger",
+      "finalUrl": "http://labs.biology.ucsd.edu/kiger/",
+      "observedAt": "2026-10-16T04:56:21+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:19+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+      "maxBytes": 2000000,
+      "bodyBytes": 328,
+      "sourceIds": [
+        "src-76abe8c329b73470"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        254,
+        258
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:23:19+00:00",
+      "currentReviewedAt": "2026-10-16T03:23:19+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "c05fa98af9f43519174cce31b77c5e98f09124f18153d2a42894175ebe170dec",
+      "snapshotRawSha256": "0ab55c17af5466d3eb840d9bdc22aa33f687659118e71eb532eebbb9b89c66d1",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:19+00:00",
+        "finishedAt": "2026-10-16T04:56:21+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          254,
+          258
+        ]
+      },
+      "wireCount": 4,
+      "wireKinds": {
+        "page_or_redirect": 4
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-murre",
+      "url": "http://labs.biology.ucsd.edu/murre",
+      "baselineLiteralUrl": "http://labs.biology.ucsd.edu/murre",
+      "requestedUrl": "http://labs.biology.ucsd.edu/murre",
+      "finalUrl": "http://labs.biology.ucsd.edu/murre/",
+      "observedAt": "2026-10-16T04:56:23+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:22+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+      "maxBytes": 2000000,
+      "bodyBytes": 3074,
+      "sourceIds": [
+        "src-1e9370a1c7cac8eb"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        258,
+        260
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:48:34+00:00",
+      "currentReviewedAt": "2026-10-16T01:48:34+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "37e4c14ebef80c1cb2f178352b5d7976bd92570d9734cc43264abbca7081a49f",
+      "snapshotRawSha256": "c8e90867d5694a324430ccff6d8e2e226b0f394103f098b5f5729aa9b1c19c43",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:21+00:00",
+        "finishedAt": "2026-10-16T04:56:23+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          258,
+          260
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "url": "http://www.biology.ucsd.edu/labs/spitzer",
+      "baselineLiteralUrl": "http://www.biology.ucsd.edu/labs/spitzer",
+      "requestedUrl": "http://www.biology.ucsd.edu/labs/spitzer",
+      "finalUrl": "http://labs.biology.ucsd.edu/spitzer/",
+      "observedAt": "2026-10-16T04:56:26+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:24+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+      "maxBytes": 2000000,
+      "bodyBytes": 78,
+      "sourceIds": [
+        "src-e0224176cdecd4ab"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        260,
+        264
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:23:19+00:00",
+      "currentReviewedAt": "2026-10-16T03:23:19+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "8f2317ff3931b6ba503e7e8bfa0ba350e601e02472996f208058139ed3c1b920",
+      "snapshotRawSha256": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:23+00:00",
+        "finishedAt": "2026-10-16T04:56:26+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          260,
+          264
+        ]
+      },
+      "wireCount": 4,
+      "wireKinds": {
+        "page_or_redirect": 4
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-subramani",
+      "url": "http://www.biology.ucsd.edu/labs/subramani",
+      "baselineLiteralUrl": "http://www.biology.ucsd.edu/labs/subramani",
+      "requestedUrl": "http://www.biology.ucsd.edu/labs/subramani",
+      "finalUrl": "http://labs.biology.ucsd.edu/subramani",
+      "observedAt": "2026-10-16T04:56:27+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:26+00:00",
+      "status": "http_error",
+      "httpStatus": 404,
+      "actualPageRequestMade": true,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        264,
+        267
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:49:16+00:00",
+      "currentReviewedAt": "2026-10-16T01:49:16+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "8a0ff9d37666b3f273fa0a51007a95d56e3250db98e591b44897101de55943dc",
+      "snapshotRawSha256": "593061fbef3cef37b5c4f0229f93cdf677640e46cb77ec82daad18462672ec04",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:26+00:00",
+        "finishedAt": "2026-10-16T04:56:27+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          264,
+          267
+        ]
+      },
+      "wireCount": 3,
+      "wireKinds": {
+        "page_or_redirect": 3
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "url": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "baselineLiteralUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "observedAt": "2026-10-16T04:56:28+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:28+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+      "maxBytes": 2000000,
+      "bodyBytes": 611,
+      "sourceIds": [
+        "src-89f0f296045c7f5f"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        267,
+        268
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:50:04+00:00",
+      "currentReviewedAt": "2026-10-16T01:50:04+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "182e6512b21cfc8bb5393fdb3bde101b0e522279b77d99bc36f2362085f22018",
+      "snapshotRawSha256": "d5a1ca19ad5c0dffccda21a24b4e4cef1675c441f6cc57effb3b2a48e79e0c49",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:28+00:00",
+        "finishedAt": "2026-10-16T04:56:28+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          267,
+          268
+        ]
+      },
+      "wireCount": 1,
+      "wireKinds": {
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-physics-research-site-david-kleinfeld",
+      "url": "http://physics.ucsd.edu/neurophysics",
+      "baselineLiteralUrl": "http://physics.ucsd.edu/neurophysics",
+      "requestedUrl": "http://physics.ucsd.edu/neurophysics",
+      "finalUrl": "https://physics.ucsd.edu/neurophysics",
+      "observedAt": "2026-10-16T04:56:31+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:30+00:00",
+      "status": "http_error",
+      "httpStatus": 404,
+      "actualPageRequestMade": true,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        268,
+        271
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:46:40+00:00",
+      "currentReviewedAt": "2026-10-16T01:46:40+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "8c4055eb2afcb5f15a44b2df0f6d7b5d414e4726b75df5f6ed1bf0968c6bc51a",
+      "snapshotRawSha256": "811f9059bc10263537f3fef1260488f1459baf13ce455e76e8719d33ce88b726",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:29+00:00",
+        "finishedAt": "2026-10-16T04:56:31+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          268,
+          271
+        ]
+      },
+      "wireCount": 3,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-physics-research-site-frank-wuerthwein",
+      "url": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "baselineLiteralUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "requestedUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "finalUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "observedAt": "2026-10-16T04:56:33+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:33+00:00",
+      "status": "http_error",
+      "httpStatus": 404,
+      "actualPageRequestMade": true,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        271,
+        273
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:47:27+00:00",
+      "currentReviewedAt": "2026-10-16T01:47:27+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "cf02b9604efad60b9ce4a43768f9c1078175bbeb30cd448a9c4b4e92b509fe47",
+      "snapshotRawSha256": "80bd24e773f1534a890444f310b20beb9c15ec1a883900eb037f710de731db31",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:32+00:00",
+        "finishedAt": "2026-10-16T04:56:33+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          271,
+          273
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-physics-research-site-john-m-goodkind",
+      "url": "http://physics.ucsd.edu/research/condensed_matter/",
+      "baselineLiteralUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+      "requestedUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+      "finalUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+      "observedAt": "2026-10-16T04:56:35+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:34+00:00",
+      "status": "http_error",
+      "httpStatus": 404,
+      "actualPageRequestMade": true,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        273,
+        275
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:47:27+00:00",
+      "currentReviewedAt": "2026-10-16T01:47:27+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "2d2fac710278e4799650244f03cadf5c2d574049650db64f78732f817192f379",
+      "snapshotRawSha256": "d69afefd1405786e3eda408435788080da627a9c6516820e60ec26c2e50f1fd2",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:34+00:00",
+        "finishedAt": "2026-10-16T04:56:35+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          273,
+          275
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-physics-research-site-lu-j-sham",
+      "url": "http://ljssst.physics.ucsd.edu",
+      "baselineLiteralUrl": "http://ljssst.physics.ucsd.edu",
+      "requestedUrl": "http://ljssst.physics.ucsd.edu/",
+      "finalUrl": "https://ljssst.physics.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:39+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:38+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+      "maxBytes": 2000000,
+      "bodyBytes": 6440,
+      "sourceIds": [
+        "src-5254714b0005f61c"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        275,
+        279
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentReviewedAt": "2026-10-16T01:55:29+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "personal_research_site",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "0f0ee9449bf0025da7cfed75494e8aa13ae09fec2ce6033d5a55f4d1787d2046",
+      "snapshotRawSha256": "e107a218c3411da9e080323e98e42d9abaa1062a5c76d8c48047b3660e2c0bd4",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:36+00:00",
+        "finishedAt": "2026-10-16T04:56:39+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          275,
+          279
+        ]
+      },
+      "wireCount": 4,
+      "wireKinds": {
+        "robots": 2,
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-physics-research-site-shelley-wright",
+      "url": "http://oirlab.ucsd.edu",
+      "baselineLiteralUrl": "http://oirlab.ucsd.edu",
+      "requestedUrl": "http://oirlab.ucsd.edu/",
+      "finalUrl": "https://oirlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:43+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:42+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+      "maxBytes": 2000000,
+      "bodyBytes": 420,
+      "sourceIds": [
+        "src-23b5d4ff05200932"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        279,
+        283
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:26:20+00:00",
+      "currentReviewedAt": "2026-10-16T03:26:20+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "86aeda446ed481537c38984dfbb2b078035ddcea51c6399def8624ee0ecb0473",
+      "snapshotRawSha256": "2337c53e434bac6b0b64ffb9948da4d1a21b3768a57a5d61c85c5b981e1b1d87",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:40+00:00",
+        "finishedAt": "2026-10-16T04:56:43+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          279,
+          283
+        ]
+      },
+      "wireCount": 4,
+      "wireKinds": {
+        "robots": 2,
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "url": "http://sinhagroup.ucsd.edu/",
+      "baselineLiteralUrl": "http://sinhagroup.ucsd.edu/",
+      "requestedUrl": "http://sinhagroup.ucsd.edu/",
+      "finalUrl": "http://sinhagroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:45+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:45+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "35b50cf6304cafc42e6f4ccbd258eaabf7cf130e132d9541eb379740145c97eb",
+      "maxBytes": 2000000,
+      "bodyBytes": 7681,
+      "sourceIds": [
+        "src-7da5f97add4fcfac"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        283,
+        285
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:47:27+00:00",
+      "currentReviewedAt": "2026-10-16T05:05:34+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "mismatch",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "9c3ce1f9b82a8360aa0b36a2e72b50169fdf218d8b23fcb1a318a07deae9452b",
+      "snapshotRawSha256": "8878d67f0a93a53ba422cbcb08c3883ff8c303e5b1d31cd6ff7c76a7c9404c73",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:43+00:00",
+        "finishedAt": "2026-10-16T04:56:45+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          283,
+          285
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "New identity-mismatch review supersedes prior access-only uncertainty; old scientific timestamp separately retained."
+    },
+    {
+      "labId": "ucsd-physics-research-site-thomas-m-o-neil",
+      "url": "http://physics.ucsd.edu/research/plasma/",
+      "baselineLiteralUrl": "http://physics.ucsd.edu/research/plasma/",
+      "requestedUrl": "http://physics.ucsd.edu/research/plasma/",
+      "finalUrl": "https://physics.ucsd.edu/research/plasma/",
+      "observedAt": "2026-10-16T04:56:47+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:45+00:00",
+      "status": "http_error",
+      "httpStatus": 404,
+      "actualPageRequestMade": true,
+      "sha256": null,
+      "maxBytes": 2000000,
+      "bodyBytes": null,
+      "sourceIds": [],
+      "allSourceCacheHashesMatch": null,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        285,
+        287
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:48:07+00:00",
+      "currentReviewedAt": "2026-10-16T01:48:07+00:00",
+      "rawStatus": "unresolved",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "unconfirmed",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "cf82b54f883ac18ce1c3dfaad3d9fe7728c3e1393b37a444bb2e6b754320ab58",
+      "snapshotRawSha256": "938cd4953d00a05e045de65002980a20f8e8f5274a74a378f1a2cd086edf753a",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:45+00:00",
+        "finishedAt": "2026-10-16T04:56:47+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          285,
+          287
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain.",
+      "bodyAvailability": "No successful body retained; no body-size or identity inference."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-composite-structures-laboratory",
+      "url": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "baselineLiteralUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "requestedUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "finalUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "observedAt": "2026-10-16T04:56:50+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:49+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+      "maxBytes": 2000000,
+      "bodyBytes": 34570,
+      "sourceIds": [
+        "src-4d8d0952c44bd2c8"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        287,
+        290
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:49:24+00:00",
+      "currentReviewedAt": "2026-10-16T01:49:24+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "facility",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "f4166349264499a981828bd7df70c1e356b0e36abc24c12cad23e13f410799c7",
+      "snapshotRawSha256": "27d234217ba17a27b409a1f59cf7925a76b090cc8c1f50df0e2be60578bc8ba1",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:47+00:00",
+        "finishedAt": "2026-10-16T04:56:50+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          287,
+          290
+        ]
+      },
+      "wireCount": 3,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-geotechnical-laboratories",
+      "url": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "baselineLiteralUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "requestedUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "finalUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+      "observedAt": "2026-10-16T04:56:52+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:51+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+      "maxBytes": 2000000,
+      "bodyBytes": 46171,
+      "sourceIds": [
+        "src-25ef0d806015bf06"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        290,
+        292
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentReviewedAt": "2026-10-16T01:55:29+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "facility",
+        "acceptance": "source_supported_other_entity",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "4b13350ce2bbd7c956e05d355fa533dff2811ec2cdb112429a4ad6527885108a",
+      "snapshotRawSha256": "14a8d5ee0c9deb7991bf6070c664c3583bcda4cb7571b93a87405a6f5ba10a9e",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:50+00:00",
+        "finishedAt": "2026-10-16T04:56:52+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          290,
+          292
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-srmd-laboratory",
+      "url": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "baselineLiteralUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "requestedUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "finalUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "observedAt": "2026-10-16T04:56:54+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:53+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+      "maxBytes": 2000000,
+      "bodyBytes": 38726,
+      "sourceIds": [
+        "src-9abf6474a6335d0a"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        292,
+        294
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentReviewedAt": "2026-10-16T01:55:29+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "facility",
+        "acceptance": "source_supported_other_entity",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "2c9d14d18020b9d9a33238b4c2194eb30f00cec1e5fb36302acacb63edb76b31",
+      "snapshotRawSha256": "fa90d74d9bdd400b8468d0b68e8a73029a6d863c181254bb03f0c900f9141ba7",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:52+00:00",
+        "finishedAt": "2026-10-16T04:56:54+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          292,
+          294
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-structural-components-laboratory",
+      "url": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "baselineLiteralUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "requestedUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "finalUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+      "observedAt": "2026-10-16T04:56:56+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:55+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+      "maxBytes": 2000000,
+      "bodyBytes": 35239,
+      "sourceIds": [
+        "src-a5fc160a948272fd"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        294,
+        296
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentReviewedAt": "2026-10-16T01:55:29+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "facility",
+        "acceptance": "source_supported_other_entity",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "d39bf4f212d9254c9805eba667c1ab21de3b611a5dc9376b4a47ac406f8d0ad5",
+      "snapshotRawSha256": "0f524cd2ca68a88a79e1499627129d1afb6339072e082ccbf7591798d5a89e19",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:54+00:00",
+        "finishedAt": "2026-10-16T04:56:56+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          294,
+          296
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-se-ucsd-edu-facilities-structural-systems-laboratory",
+      "url": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "baselineLiteralUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "requestedUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "finalUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "observedAt": "2026-10-16T04:56:58+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:57+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+      "maxBytes": 2000000,
+      "bodyBytes": 36840,
+      "sourceIds": [
+        "src-55982eaf3e74e880"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        296,
+        298
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentReviewedAt": "2026-10-16T01:55:29+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "facility",
+        "acceptance": "source_supported_other_entity",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "ac83daf467815d4c9493ecff9ce441cb46cd32170f37481ebdd982e5a3a28495",
+      "snapshotRawSha256": "c7407aad069e07efc4dfe9412884f12f8b08ae5beedf6f4b4ee46c1b0a5ed6de",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:56+00:00",
+        "finishedAt": "2026-10-16T04:56:58+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          296,
+          298
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "page_or_redirect": 2
+      },
+      "actualWireCaps": [
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "url": "http://tch.ucsd.edu",
+      "baselineLiteralUrl": "http://tch.ucsd.edu",
+      "requestedUrl": "http://tch.ucsd.edu/",
+      "finalUrl": "http://tch.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:00+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:00+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+      "maxBytes": 2000000,
+      "bodyBytes": 3147,
+      "sourceIds": [
+        "src-6b3d477e4eb8109d"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        298,
+        300
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T05:12:25+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "cc7572a029cce0f250afdea5f95d9e2dac92bc83f361539e064e35f1d4dd0dcf",
+      "snapshotRawSha256": "23d533768580c57ec1f96b9c0c265cbae5afb6d4d39cafbaa089e79a62da815c",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:56:58+00:00",
+        "finishedAt": "2026-10-16T04:57:00+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          298,
+          300
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+      "url": "http://jenningslab.ucsd.edu",
+      "baselineLiteralUrl": "http://jenningslab.ucsd.edu",
+      "requestedUrl": "http://jenningslab.ucsd.edu/",
+      "finalUrl": "http://jenningslab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:02+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:01+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+      "maxBytes": 2000000,
+      "bodyBytes": 2276,
+      "sourceIds": [
+        "src-28f455c9c1ad8216"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        300,
+        302
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T01:48:38+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "lab",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "9cf62ce067294c573b59b5ae603fe69e1728f34e1a85c823d53bd1c5b6ea7607",
+      "snapshotRawSha256": "c4a70c7af749d5f6190ac115340c70e39300f3b6a6814d7246b09a0a73efaea7",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:00+00:00",
+        "finishedAt": "2026-10-16T04:57:02+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          300,
+          302
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "url": "http://galileo.ucsd.edu",
+      "baselineLiteralUrl": "http://galileo.ucsd.edu",
+      "requestedUrl": "http://galileo.ucsd.edu/",
+      "finalUrl": "http://galileo.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:03+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:03+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "2d25977b236521d7f2e695c1fe32c06c22a26304f7d0ae2f166cece6afa3a208",
+      "maxBytes": 2000000,
+      "bodyBytes": 8378,
+      "sourceIds": [
+        "src-8958d5c5bb90cf1a"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        302,
+        304
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T05:11:05+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "research_group",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "c5c0f24793816b32a7a8db0b1df25241bd2ccd01c69f74c729a55629a447780f",
+      "snapshotRawSha256": "44cd3847a76a43b371e253e0ebb8e8af01d6804380df2c72853a124f9312a6c4",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:02+00:00",
+        "finishedAt": "2026-10-16T04:57:03+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          302,
+          304
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "url": "http://kummelgroup.ucsd.edu",
+      "baselineLiteralUrl": "http://kummelgroup.ucsd.edu",
+      "requestedUrl": "http://kummelgroup.ucsd.edu/",
+      "finalUrl": "http://kummelgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:05+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:05+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+      "maxBytes": 2000000,
+      "bodyBytes": 406,
+      "sourceIds": [
+        "src-4eed6cd432ff1acd"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        304,
+        306
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T01:48:38+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "b196bc807940e5ff7590a09e79122baf2f84e102818fc33badcdbfd67c548311",
+      "snapshotRawSha256": "c62cbcd2c1dc53d3678c09569dda5e729cf0d10b7cdea2774091fbad42dc2b3f",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:04+00:00",
+        "finishedAt": "2026-10-16T04:57:05+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          304,
+          306
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "url": "http://r2g.ucsd.edu",
+      "baselineLiteralUrl": "http://r2g.ucsd.edu",
+      "requestedUrl": "http://r2g.ucsd.edu/",
+      "finalUrl": "http://r2g.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:07+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:07+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "maxBytes": 2000000,
+      "bodyBytes": 3850,
+      "sourceIds": [
+        "src-04a051aebaebcc7c"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        306,
+        308
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T01:48:38+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "research_group",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "f3663821108984038cf43dea1b18108444b9d2da459343e7eb9c29702bf78068",
+      "snapshotRawSha256": "acaf430429504fa58aa92769ed940869fa849e665d9f17f72ba0f108d86358fc",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:05+00:00",
+        "finishedAt": "2026-10-16T04:57:07+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          306,
+          308
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "url": "http://tezcan.ucsd.edu",
+      "baselineLiteralUrl": "http://tezcan.ucsd.edu",
+      "requestedUrl": "http://tezcan.ucsd.edu/",
+      "finalUrl": "http://tezcan.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:09+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:09+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "987fe31b27c95551726edb9c0cb799b8151c7a66a9372e072b678f79345ca78a",
+      "maxBytes": 2000000,
+      "bodyBytes": 65634,
+      "sourceIds": [
+        "src-f01bfbff3e573fae"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        308,
+        310
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T05:11:05+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "dee27cb526e7eabb559f8c8fe3513428479bb2ed0cc3da74d6a11346ec4d0908",
+      "snapshotRawSha256": "accbdbdfa9329c96393edf46db996d9360411f712647cbe22a5347f936c7ac96",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:07+00:00",
+        "finishedAt": "2026-10-16T04:57:09+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          308,
+          310
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-theodorakis-group",
+      "url": "http://theodorakisgroup.ucsd.edu",
+      "baselineLiteralUrl": "http://theodorakisgroup.ucsd.edu",
+      "requestedUrl": "http://theodorakisgroup.ucsd.edu/",
+      "finalUrl": "http://theodorakisgroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:13+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:12+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "c68cda4ff35c8c0f979ca06faff6004917a86f963ad92ca4484b9e07e5654a23",
+      "maxBytes": 2000000,
+      "bodyBytes": 8229,
+      "sourceIds": [
+        "src-3372ef1abcf939e2"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        310,
+        312
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T03:21:31+00:00",
+      "currentReviewedAt": "2026-10-16T03:21:31+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "research_group",
+        "acceptance": "accepted_lab_group",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "08e3ba9a946e4b660e40e4f40d435cd8cf66220d96f00ce80c5df44d5c721c35",
+      "snapshotRawSha256": "51e5fe69ac1d5d5ffafa060dc947c2e80b2f290ac66aaea9951bdac5b4c73805",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:10+00:00",
+        "finishedAt": "2026-10-16T04:57:13+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          310,
+          312
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "url": "http://shm.ucsd.edu/",
+      "baselineLiteralUrl": "http://shm.ucsd.edu/",
+      "requestedUrl": "http://shm.ucsd.edu/",
+      "finalUrl": "http://shm.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:37+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:37+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+      "maxBytes": 2000000,
+      "bodyBytes": 332,
+      "sourceIds": [
+        "src-78fc5f4fd64950d0"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        312,
+        314
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:53:25+00:00",
+      "currentReviewedAt": "2026-10-16T01:53:25+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "uncertain",
+        "entityType": "research_group",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "06e04dbe6ace3d9ddfbc561e437eb626b59f5e14f3bf9fcdabbacc377d3d3336",
+      "snapshotRawSha256": "581ac0f1424edaf9579ca7dcb2373dd027e8ce45b2f97353d8433700ea42aecc",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:35+00:00",
+        "finishedAt": "2026-10-16T04:57:37+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          312,
+          314
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+      "url": "http://mmrl.ucsd.edu/",
+      "baselineLiteralUrl": "http://mmrl.ucsd.edu/",
+      "requestedUrl": "http://mmrl.ucsd.edu/",
+      "finalUrl": "http://mmrl.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:39+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:39+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+      "maxBytes": 2000000,
+      "bodyBytes": 88895,
+      "sourceIds": [
+        "src-3bf96383b726f054"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        314,
+        316
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [],
+      "oldReviewedAt": "2026-10-16T01:54:02+00:00",
+      "currentReviewedAt": "2026-10-16T01:54:02+00:00",
+      "rawStatus": "partial",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "provisional_or_unresolved",
+        "canCount": false
+      },
+      "snapshotPacketSha256": "9bb311a18d4c26a37a74a1616366def15c95cabf97910d68acf265b3b08870fc",
+      "snapshotRawSha256": "8651a24b4070667dc372383235062df5ce54af217690780e3018cad212691c6f",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:37+00:00",
+        "finishedAt": "2026-10-16T04:57:39+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          314,
+          316
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:2000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "scientific values unchanged",
+      "oldUncertaintyHistoryNote": "Old uncertainties remain."
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "url": "http://stauberlab.ucsd.edu/",
+      "baselineLiteralUrl": "http://stauberlab.ucsd.edu/",
+      "requestedUrl": "http://stauberlab.ucsd.edu/",
+      "finalUrl": "http://stauberlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:41+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:41+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "5b62ea538e3ccb4e1638756fa37a7ddacc241d9f05efe1fa2816fe5396454915",
+      "maxBytes": 8000000,
+      "bodyBytes": 2299410,
+      "sourceIds": [
+        "src-27301218356c2999"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        316,
+        318
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:48:38+00:00",
+      "currentReviewedAt": "2026-10-16T05:11:05+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "673ec7ad72f6b0d55fd66ff92a0251988dac38e692e96daede80e3b416e3ed13",
+      "snapshotRawSha256": "1bd73e66d5386fbf5df56c4a399ad2f0af5acce28e023622066dd79938dbd3d6",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:39+00:00",
+        "finishedAt": "2026-10-16T04:57:41+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          316,
+          318
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:8000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "url": "http://fergusonlab.ucsd.edu",
+      "baselineLiteralUrl": "http://fergusonlab.ucsd.edu",
+      "requestedUrl": "http://fergusonlab.ucsd.edu/",
+      "finalUrl": "http://fergusonlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:44+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:43+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "actualPageRequestMade": true,
+      "sha256": "599359907591ac6336bd3c0363d04a3914e80f58b3b96a3bbfe4a1e9617499c5",
+      "maxBytes": 8000000,
+      "bodyBytes": 2042994,
+      "sourceIds": [
+        "src-989b7fedff9fa338"
+      ],
+      "allSourceCacheHashesMatch": true,
+      "packetFetchEquals": true,
+      "wireEventRange": [
+        318,
+        320
+      ],
+      "priorSourceIDsRetained": true,
+      "headSourcesExactPrefix": true,
+      "oldEvidenceExactPrefix": true,
+      "scientificFieldsChanged": [
+        "summaryZh",
+        "researchQuestions",
+        "topics",
+        "methods"
+      ],
+      "oldReviewedAt": "2026-10-16T01:49:25+00:00",
+      "currentReviewedAt": "2026-10-16T05:11:05+00:00",
+      "rawStatus": "supported",
+      "quoteErrors": [],
+      "hydrate": {
+        "pass": true,
+        "pageIdentityStatus": "confirmed",
+        "entityType": "lab",
+        "acceptance": "accepted_lab_group",
+        "canCount": true
+      },
+      "snapshotPacketSha256": "045a165e809fe1be2eb24a62c23a40cf7f4c109bb11792625f53427e10040b36",
+      "snapshotRawSha256": "9200ad811d967069840a01f9fb0eb1b6febb4ed7f4b38581e60e4a3abd7f6bf7",
+      "originalLiteralURIExistingInBaseline": true,
+      "journal": {
+        "state": "receipt_saved",
+        "startedAt": "2026-10-16T04:57:42+00:00",
+        "finishedAt": "2026-10-16T04:57:44+00:00",
+        "journalIsNotPageRequestProof": true,
+        "wireEventRange": [
+          318,
+          320
+        ]
+      },
+      "wireCount": 2,
+      "wireKinds": {
+        "robots": 1,
+        "page_or_redirect": 1
+      },
+      "actualWireCaps": [
+        "robots:300000",
+        "page_or_redirect:8000000"
+      ],
+      "sharedProtocolAllWires": true,
+      "originalObservationUrlAllWires": true,
+      "transportAllReturned": true,
+      "identityOnlySciencePreservation": "explicit new scientific review",
+      "oldUncertaintyHistoryNote": "Preserved in previousScientificFindings; actual full-record read confirmed."
+    }
+  ],
+  "exclusions": [
+    "The 4 later frame/anchor requests beginning at 05:16:21 UTC, their applications and later checkpoint totals are outside this snapshot.",
+    "Existing 241 wires before this batch are not new original-URI batch wires.",
+    "Separate earlier Tezcan Research/Team and Hermann Research followups occupy [320,325); they are checked only as scientific source provenance, not added to the 34 root request count.",
+    "Saygin remained the single deferred DNS-blocked candidate outside the admitted 34."
+  ],
+  "actionableIssues": []
+}

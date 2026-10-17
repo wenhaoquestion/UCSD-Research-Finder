@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:34:53+00:00",
+  "reviewState": "complete",
+  "networkRequestsMade": 0,
+  "psChecksMade": 0,
+  "recordsPacketsCodeActiveCollectorMainWrites": 0,
+  "baseCommit": "19be64a",
+  "inputSnapshots": [
+    {
+      "path": "data/local-lab-summaries/INDEPENDENT-DATE-FINAL-CACHE-DELTA.json",
+      "sha256": "c59e387dfa4b24bdc0ce246b8f7b018a3f936b841cfbb8e87a4f4028217e2ebe",
+      "queueSnapshot": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "sha256": "fb5b6394913e87e36d7c9c4dbd97f69a5df00e7373ee4bae89b8f8a3117a3284",
+        "bytes": 44330590,
+        "updatedAt": "2026-10-16T07:22:37+00:00",
+        "itemCount": 19257,
+        "counts": {
+          "done": 6102,
+          "unresolved": 814,
+          "scope_excluded": 288,
+          "retained_prior_evidence": 1858,
+          "pending": 10195
+        },
+        "readAt": "2026-10-16T07:22:45+00:00",
+        "readExactlyOnce": true
+      }
+    },
+    {
+      "path": "data/local-lab-summaries/INDEPENDENT-DATE-PROFESSOR-CONTEXT-DELTA.json",
+      "sha256": "3d60399df33fca83a12e4adf5897815fbcef78e3255532715ce3e4f1dadf21b5",
+      "queueSnapshot": {
+        "updatedAt": "2026-10-16T07:27:07+00:00",
+        "sha256": "08034ac5f41db4270d6f8944f9628dcbfc62ea15cb18f5250a9e9779b1986db3",
+        "itemCount": 19257,
+        "counts": {
+          "done": 6129,
+          "unresolved": 814,
+          "scope_excluded": 288,
+          "retained_prior_evidence": 1858,
+          "pending": 10168
+        }
+      }
+    },
+    {
+      "path": "data/research-atlas.json",
+      "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e"
+    }
+  ],
+  "queueSnapshot": {
+    "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+    "readAt": "2026-10-16T07:34:53+00:00",
+    "updatedAt": "2026-10-16T07:34:47+00:00",
+    "sha256": "515553459fdca3e51f3d1ab00bcd42af0c7f1724efee28cb9cfb9e631034f353",
+    "bytes": 44581986,
+    "itemCount": 19257,
+    "counts": {
+      "done": 6175,
+      "unresolved": 814,
+      "scope_excluded": 288,
+      "retained_prior_evidence": 1858,
+      "pending": 10122
+    },
+    "readExactlyOnce": true
+  },
+  "aggregate": {
+    "fixedTargetCount": 146,
+    "currentTargetStateCounts": {
+      "unresolved": 90,
+      "partial": 56
+    },
+    "baseExplicitPageAndAccessLookupKeys": 603,
+    "baselineAssociatedProfessorIDs": 67,
+    "officialProfessorFieldSourceKeys": 81,
+    "base438CurrentAssociatedTuples": 438,
+    "allCurrentSourceAndProfessorAssociatedTuples": 438,
+    "previousFrozenTuples": 438,
+    "unchangedExactTuples": 438,
+    "changedOrNewTuples": 0,
+    "newTargetBindingsForPriorTuple": 0,
+    "successfulProfessorCaptureTuples": 35,
+    "successfulProfessorTargetRelationships": 58,
+    "successfulProfessorTargetRelationshipsAlreadyInExactOld438": 58,
+    "successfulProfessorTargetRelationshipsNotInOld438": 0,
+    "newSuccessfulBodiesNeedingPrimaryRead": 0,
+    "newScientificBodyReads": 0,
+    "priorProfessorReportDeclaredSuccessfulRelationshipCount": 33
+  },
+  "targetSnapshotSemanticSha256": "55960a88cbf4ce896899dd3d3711032940365e36518f6e130e28d364e30a4499",
+  "changedTuples": [],
+  "newTargetBindings": [],
+  "professorSuccessfulRelationshipsNotInOld438": [],
+  "mutableReviewedHandoff": {
+    "path": "/private/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-reviewed-lab-handoff.json",
+    "sha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "previousSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "changed": false,
+    "newAdditionIdsPendingIndividualReviewOnly": [],
+    "importPerformed": false,
+    "sameFrozen16Bytes": true,
+    "recordCountUnchanged": 16,
+    "sourceManifestCountUnchanged": 28,
+    "noRepeatedFullSemanticReview": true
+  },
+  "semanticReviews": [],
+  "newCandidates": [],
+  "priorProfessorAggregateComparisonNote": "Prior context report stores counts only, no tuple inventory. Current successful professor-target pairs are therefore tested against exact old438 tuple/target pairs; equal count alone is not used as identity or freshness proof.",
+  "finalizedAt": "2026-10-16T07:36:01+00:00",
+  "verdict": "All438 actual tuples and all professor-bound target relationships already present in frozen old scope; no new wholelab/identity/affiliation candidate; handoff unchanged16.",
+  "professorCountDefinition": "Current35 successful capture tuples include fetch and retained attemptHistory;58 counts tuple-target pairs. Previous report gives aggregate33 without tuple inventory. Counts are not treated as changes: all58 current pairs match exact old438 tuple/target inventory.",
+  "boundaries": [
+    "Only actual frozen146 target relationships and baseline67 professorIDs/81 officialUCSD field-sourceURL keys; no guessed names/slugs.",
+    "Current queue bytes read once; unchanged438 body/title scientific interpretations not reread.",
+    "All58 professor-target success pairs directly checked against exact old438 tuple/target pairs, not inferred from equal aggregate counts.",
+    "Original requested/finalURI,time,SHA and access status preserved; content lookup folding never substitutes HTTPS for originalHTTP.",
+    "No handoff full-source rereview or import because actualSHA unchanged49c5...; no alias/update application.",
+    "Only aggregate,input hashes and actual changed-difference arrays stored; no unchanged438tuple duplication.",
+    "No network,PS,plan,collector/main/code/raw/packet/activeentry writes."
+  ]
+}

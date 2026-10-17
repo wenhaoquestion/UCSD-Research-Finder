@@ -1,0 +1,75 @@
+{
+  "labId": "ucsd-chemistry-biochemistry-lab-figueroa-lab",
+  "status": "partial",
+  "summaryZh": "Figueroa Lab公开的ScanBury工具可自动计算多个半径下的埋藏体积及半球埋藏体积。该工具页提供了一个具体计算项目，但研究总览页本次请求超时，尚不能据此概括整个实验室的研究方向。",
+  "researchQuestions": [],
+  "topics": [
+    "埋藏体积计算",
+    "ScanBury科研软件"
+  ],
+  "methods": [
+    "自动化埋藏体积与半球埋藏体积计算"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-621e88a131d66f27",
+      "quote": "The Figueroa Lab Welcome to the Figueroa Lab!",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-621e88a131d66f27",
+      "quote": "Department of Chemistry and Biochemistry at the University of California, San Diego.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-8d6daeb96eca748b",
+      "quote": "Primary Research Area Inorganic Chemistry Materials Chemistry",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-2df59d3e712a8cdb",
+      "quote": "The Figueroa Lab ScanBury",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-2df59d3e712a8cdb",
+      "quote": "ScanBury allows users to automate the calculation of buried volume and hemisphere buried volume calculations across several radii.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "实验室首页明确列出 UC San Diego 化学与生物化学系。"
+  },
+  "uncertainty": [
+    "工具页仅支持该工具的用途；研究总览页本次为fetch_error（超时），保留实验室研究范围缺口。",
+    "网页正文未明确提供完整更新时间；observedAt是采集时间，reviewedAt是本次阅读时间。"
+  ],
+  "blockers": [
+    "研究总览页本次超时，仅取得ScanBury工具描述，整体实验室研究范围仍缺少说明。"
+  ],
+  "reviewedAt": "2026-10-16T02:21:55+00:00",
+  "previousReviewedAt": "2026-10-16T02:19:16+00:00",
+  "researchContentSupport": {
+    "status": "limited_tool_description",
+    "scope": "explicitly linked same-site research capture; no ID or affiliation migration"
+  }
+}

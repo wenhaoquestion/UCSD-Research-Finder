@@ -1,0 +1,1679 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T02:52:30+00:00",
+  "result": "passed_no_concrete_integration_issues",
+  "scope": "Read-only integration QA of strict12 incremental handoff admission, repeated load_labs, original868 baseline objects, final880 manifest and final12 prepared packets. Only this new report written; no prepare/checkpoint/network or collector mutation.",
+  "networkRequestsMade": 0,
+  "sourceCodeReviewed": {
+    "loader": "scripts/local_lab_summaries.py:load_labs and prepare imported packet boundary projection",
+    "strictModule": "scripts/lab_summary_handoff.py",
+    "strictModuleSha256": "e359b2b81d507c0309049baba7c46dc640f6afa3bba7e91b2d7dbfb417d28b6f",
+    "guardsRead": [
+      "exact handoff/decision/baseline hashes",
+      "duplicate JSON keys",
+      "exact frozen12 ID set and explicit accept bindings",
+      "baseline ID/URL collision rejection",
+      "lab schema and professor references",
+      "verified field quotes with original URL/time/hash and actual queue captures",
+      "unknown PI/department and identity-scope guards",
+      "non-final incremental flags",
+      "aliases and updates ignored"
+    ]
+  },
+  "pins": {
+    "baseline": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "handoff": "4e67f9bb4e7f4272932a22d262f36fc5818721fa51321c49c4bbb25080b1f726",
+    "decisions": "823f5b7c2f144e0906e31a69296f35b09f3e6e9ebbe9a4f88f220ccd1c6327d6"
+  },
+  "loadChecks": {
+    "actualCountsAcrossThreeCalls": [
+      880,
+      880,
+      880
+    ],
+    "importsAcrossThreeCalls": [
+      12,
+      12,
+      12
+    ],
+    "firstTwoResultsDeepEqual": true,
+    "returnMutationIsolationVerified": true,
+    "callerBaselineUnmutated": true,
+    "alteredCallerBaselineRejected": true,
+    "allOriginal868ObjectsDeepEqualAndOrderPreserved": true,
+    "original868CanonicalObjectSha256": "015f0e3626910c30eb2016fd756ac36fbd734409c5b9430a4c6e8c77d1f140f3",
+    "loadedFirst868CanonicalObjectSha256": "015f0e3626910c30eb2016fd756ac36fbd734409c5b9430a4c6e8c77d1f140f3",
+    "onlyExactFrozen12Appended": true,
+    "uniqueEligibleIDs": 880,
+    "manifestEligibleCount": 880,
+    "manifestImportsCount": 12
+  },
+  "unappliedChangeInventories": {
+    "ignoredAliases": 30,
+    "ignoredUpdates": 8,
+    "aliasInventorySha256": "1af0fc384fec38ceb5f6a30ba5cec00c781c734abb1b3fa19e3b59be650fc8b3",
+    "updateInventorySha256": "d752642a00cf4b86c1c0d6cfea3ff5ab55f9417064f41d61d3f72bb14c109548",
+    "baselineLabAlternateURLsAndAllOtherFieldsUnchanged": true,
+    "newObjectsExactlyMatchHandoffNoAliasOrUpdateApplication": true,
+    "facultySourceObjectsUnchanged": true,
+    "sourceArtifactBytesAndMtimesUnchanged": true
+  },
+  "sourceProvenanceChecks": {
+    "pinnedHandoffManifestOriginalCaptures": 17,
+    "originalFieldQuotesIndependentlyLocatedInFinalPackets": 68,
+    "fullCachedPacketSourceRelationshipsChecked": 25,
+    "distinctFullCachedSourceIdsChecked": 24,
+    "historicalFieldPacketSources": 13,
+    "allFullCachedSourcesHashAndActualQueueCaptureTimesMatch": true,
+    "originalObservationRange": [
+      "2026-10-16T00:57:22+00:00",
+      "2026-10-16T01:37:18+00:00"
+    ],
+    "handoffGeneratedAt": "2026-10-16T02:35:08+00:00",
+    "newPacketPreparationTimeIsSeparateFromSourceObservation": true,
+    "all12ImportProvenanceSourceManifestsExactlyEqualStrictReceipt": true,
+    "originalSourceManifest": [
+      {
+        "sourceUrl": "https://communication.ucsd.edu/",
+        "requestedUrl": "https://communication.ucsd.edu/",
+        "observedAt": "2026-10-16T00:57:22+00:00",
+        "bodySha256": "1e0af6c1395260d5b159d81d449b2bad4895e9bc0864e51fbe38482e023946f2",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8908f7e80603e83c47d387fc71ffa6e434ef77fce99a7463b3615f5f5a86050b.html",
+        "byteCount": 62535
+      },
+      {
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+        "requestedUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+        "observedAt": "2026-10-16T00:59:03+00:00",
+        "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ca50f94d04816cb3c91ccbbb502164ed47ab96b1ac62f50aa5bcfb5c121e1c4a.html",
+        "byteCount": 71960
+      },
+      {
+        "sourceUrl": "https://efdlab.ucsd.edu/",
+        "requestedUrl": "https://efdlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:24+00:00",
+        "bodySha256": "3eaebeab7dd1501745b4309af2b7da0617eed6b129df0c0464e6a92334b7fa83",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a5d92c46a214bdc8d5f547809d81ad8d97cda8cf211aaccc6eb06cca735451a6.html",
+        "byteCount": 127908
+      },
+      {
+        "sourceUrl": "https://efdlab.ucsd.edu/home",
+        "requestedUrl": "https://efdlab.ucsd.edu/home",
+        "observedAt": "2026-10-16T01:02:28+00:00",
+        "bodySha256": "bf1fb520197ffd6f1b673bc94a925d43f2af34ce6a0f90d6675349c3c11465a7",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8627bc69d4ee7d1c29d9fe208d5905355e264ae1572192614f38853ae03fc6a2.html",
+        "byteCount": 127847
+      },
+      {
+        "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+        "requestedUrl": "https://gpm.ucsd.edu/about/faculty.html",
+        "observedAt": "2026-10-16T01:01:40+00:00",
+        "bodySha256": "31f5cb03f876e86b90ab7a83911bdb1a68870d19f1d04b7235404f155a5df4ee",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c3dfee275b437022e1af86cc200f0c3e23e25f4252dbbe06fcf4134be5fd97b9.html",
+        "byteCount": 59768
+      },
+      {
+        "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+        "requestedUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-16T01:06:12+00:00",
+        "bodySha256": "9fa0831d981fbedc7397c620c5843837c169f91bea37452bdf30a6b8923e1665",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f6713c6233b0e0061440919a41be54887330c590b7a3176848de9334b0a20cec.html",
+        "byteCount": 50291
+      },
+      {
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "bodySha256": "61f8a3a21ba4ec267eacfd5deb6e83004425451c0006a2a194e5301e49b16ad8",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/67fbe13ad93ca0e0dbb2ffd21af6ea310e2490f0f241463da3f2260e9d600df1.html",
+        "byteCount": 44657
+      },
+      {
+        "sourceUrl": "https://sites.ucsd.edu/compphon/",
+        "requestedUrl": "https://sites.ucsd.edu/compphon/",
+        "observedAt": "2026-10-16T01:10:52+00:00",
+        "bodySha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/da307b4f0f98b5d76cc250156b08bc862a4c4f8860a38123dc81c256aca02489.html",
+        "byteCount": 67558
+      },
+      {
+        "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+        "requestedUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+        "observedAt": "2026-10-16T01:09:12+00:00",
+        "bodySha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8c4e2e4c2883b7579d08687fc53c9782721a20a19a6d162974c7d79eaba6aa75.html",
+        "byteCount": 73036
+      },
+      {
+        "sourceUrl": "https://www.pokorskilab.com/",
+        "requestedUrl": "https://www.pokorskilab.com/",
+        "observedAt": "2026-10-16T01:37:07+00:00",
+        "bodySha256": "7fff7e19656d86760f00c44b5f3e59114c82b247ced0be5d0aabe0129ca147ec",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f2a96ed0a666372b617ad7edd72fce10345e3958140cce3478af942641280099.html",
+        "byteCount": 364013
+      },
+      {
+        "sourceUrl": "https://biomanufacturing.ucsd.edu/people",
+        "requestedUrl": "https://biomanufacturing.ucsd.edu/people",
+        "observedAt": "2026-10-16T01:29:05+00:00",
+        "bodySha256": "f6d2664d4f159af80a185dcc0dfd20b332d13596c98cf59a16e6f97f3a750c12",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4dd83af863d418e52d223d1dac16c7f070a50adb057da8bb3964560731ce2de2.html",
+        "byteCount": 25603
+      },
+      {
+        "sourceUrl": "https://graeve.ucsd.edu/",
+        "requestedUrl": "https://graeve.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:21+00:00",
+        "bodySha256": "bad8b604a63c667331eccde839afac6dbacf750813a2fc61b32ca0d4ee406a39",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/27d33fcd1710ce4620dfd3d00fd28f7747f7e5ca17d057ffdfc7f8dd4f4702ad.html",
+        "byteCount": 15303
+      },
+      {
+        "sourceUrl": "https://imdd.ucsd.edu/faculty",
+        "requestedUrl": "https://imdd.ucsd.edu/faculty",
+        "observedAt": "2026-10-16T01:29:07+00:00",
+        "bodySha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5c8670b3657ac0046d2e1b27c09b52b43a18f2a460d0a85db3bd0f67708e4097.html",
+        "byteCount": 62085
+      },
+      {
+        "sourceUrl": "http://www.theduttonlab.com/",
+        "requestedUrl": "http://www.theduttonlab.com/",
+        "observedAt": "2026-10-16T01:37:10+00:00",
+        "bodySha256": "8575d36e818620a018c0beaa5aa5b4b65a5b30bedee78e05f4139a8e5eb5fb0a",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f78bf84fc19eefa1216a08eb1ce634b536767bd074ac4b6337a0f54b8997552f.html",
+        "byteCount": 94280
+      },
+      {
+        "sourceUrl": "https://kitpogliano.ucsd.edu/",
+        "requestedUrl": "https://kitpogliano.ucsd.edu/",
+        "observedAt": "2026-10-16T01:37:18+00:00",
+        "bodySha256": "14ae3848858bd04ce7d56c0ab022e4fbe13f8a22a262f94e5dd504d6f73acfc5",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/848c82d9aba60edbe5a73c6e4d4f257937e6579a639b1094c11dca8bd45cc82a.html",
+        "byteCount": 52391
+      },
+      {
+        "sourceUrl": "https://joepogliano.ucsd.edu/people/",
+        "requestedUrl": "https://joepogliano.ucsd.edu/people/",
+        "observedAt": "2026-10-16T01:30:23+00:00",
+        "bodySha256": "d60a6b96968a54c98e288f8ef596a2bd7d2d9961bf577b331e8b62e655661096",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4fd4536e52c0dcb46dae9da4fb34c71c5224095717077d403cad4b52cfe5d9e8.html",
+        "byteCount": 64686
+      },
+      {
+        "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+        "requestedUrl": "https://thiemensgroup.ucsd.edu/",
+        "observedAt": "2026-10-16T00:59:03+00:00",
+        "bodySha256": "67015d450ceea3b3172f53126ee5016fb2658f7baaca4a28370c1e21cb27a6b7",
+        "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/176619ff4af12d73d6457cb31e5e1d6382e2c583235634fbb3cb9ff7f3d2c357.html",
+        "byteCount": 2625
+      }
+    ],
+    "cachedPacketSources": [
+      {
+        "labId": "ucsd-live-lab-a8e8602372ef78",
+        "sourceId": "src-194c4e08ee3ab8b0",
+        "sourceUrl": "https://democracylab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:13+00:00",
+        "bodySha256": "a652744b18a41537530d217c90f82431bf0da3643a6dc71a86969607f4992db2",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-a8e8602372ef78",
+        "sourceId": "src-257e378dabafb207",
+        "sourceUrl": "https://democracylab.ucsd.edu/about-us",
+        "observedAt": "2026-10-16T01:36:35+00:00",
+        "bodySha256": "8459efcc9544c73e21514ba17ad827898f9c4e979dcfde5fc090761d52d563e5",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-a8e8602372ef78",
+        "sourceId": "src-09937586c0fc6284",
+        "sourceUrl": "https://communication.ucsd.edu/",
+        "observedAt": "2026-10-16T00:57:22+00:00",
+        "bodySha256": "1e0af6c1395260d5b159d81d449b2bad4895e9bc0864e51fbe38482e023946f2",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-2982fe38ebc5a0",
+        "sourceId": "src-ee7d62383e96b278",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/howell-lab/index.html",
+        "observedAt": "2026-10-16T00:59:04+00:00",
+        "bodySha256": "db4a47efc3bba8095e2e4b5b9555536ea1af35db19ca22fbb314174a4eb4c0cc",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-2982fe38ebc5a0",
+        "sourceId": "src-c1d3e54bcab133f6",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+        "observedAt": "2026-10-16T00:59:03+00:00",
+        "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-8627bc69d4ee7d",
+        "sourceId": "src-0a2f264cd2fe20e9",
+        "sourceUrl": "https://efdlab.ucsd.edu/home",
+        "observedAt": "2026-10-16T01:02:28+00:00",
+        "bodySha256": "bf1fb520197ffd6f1b673bc94a925d43f2af34ce6a0f90d6675349c3c11465a7",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-8627bc69d4ee7d",
+        "sourceId": "src-2b157ec0c4992dbe",
+        "sourceUrl": "https://efdlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:24+00:00",
+        "bodySha256": "3eaebeab7dd1501745b4309af2b7da0617eed6b129df0c0464e6a92334b7fa83",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-33e60c6bf35e2b",
+        "sourceId": "src-e50753ed0f2cb8fe",
+        "sourceUrl": "https://www.nematilab.info/",
+        "observedAt": "2026-10-16T01:03:40+00:00",
+        "bodySha256": "4b9eb0911b416a79b1dbab4a4e16577fb9333482d8a5b0f15ac51e5bf8d5876e",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-33e60c6bf35e2b",
+        "sourceId": "src-ad96daafae952d99",
+        "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+        "observedAt": "2026-10-16T01:01:40+00:00",
+        "bodySha256": "31f5cb03f876e86b90ab7a83911bdb1a68870d19f1d04b7235404f155a5df4ee",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-d4a949e47ec3f3",
+        "sourceId": "src-bfd7403c7a9fc608",
+        "sourceUrl": "https://herziklab.com/",
+        "observedAt": "2026-10-16T00:59:04+00:00",
+        "bodySha256": "106d35b540dbe91448b295215f845f9af50d52ec1db7e99e0128134fd17b4ff9",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-d4a949e47ec3f3",
+        "sourceId": "src-424fe841134ec490",
+        "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-16T01:06:12+00:00",
+        "bodySha256": "9fa0831d981fbedc7397c620c5843837c169f91bea37452bdf30a6b8923e1665",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-d4a949e47ec3f3",
+        "sourceId": "src-0cfd5b4aade15c19",
+        "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/herzik__mark__a",
+        "observedAt": "2026-10-16T01:10:09+00:00",
+        "bodySha256": "da5828c6087b95ff9d4f5e9d761ab53a7f06433d43ddece0514aad07315808f0",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-6244ff07b175a9",
+        "sourceId": "src-d19ee9649cff6cd7",
+        "sourceUrl": "http://sylviaherbert.com/",
+        "observedAt": "2026-10-16T01:08:36+00:00",
+        "bodySha256": "6ed9c7cfaa0ed980f0f0fc594869110e9657667b7410243664ff46a3010210fa",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-6244ff07b175a9",
+        "sourceId": "src-f207105946aa933e",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "bodySha256": "61f8a3a21ba4ec267eacfd5deb6e83004425451c0006a2a194e5301e49b16ad8",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-da307b4f0f98b5",
+        "sourceId": "src-85edebb1b547501a",
+        "sourceUrl": "https://sites.ucsd.edu/compphon/",
+        "observedAt": "2026-10-16T01:10:52+00:00",
+        "bodySha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-da307b4f0f98b5",
+        "sourceId": "src-5f4195e0c64192e1",
+        "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+        "observedAt": "2026-10-16T01:09:12+00:00",
+        "bodySha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-f2a96ed0a66637",
+        "sourceId": "src-1f6b9416bbf79ac5",
+        "sourceUrl": "https://www.pokorskilab.com/",
+        "observedAt": "2026-10-16T01:37:07+00:00",
+        "bodySha256": "7fff7e19656d86760f00c44b5f3e59114c82b247ced0be5d0aabe0129ca147ec",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-f2a96ed0a66637",
+        "sourceId": "src-bc9e406a6a9b1c0d",
+        "sourceUrl": "https://biomanufacturing.ucsd.edu/people",
+        "observedAt": "2026-10-16T01:29:05+00:00",
+        "bodySha256": "f6d2664d4f159af80a185dcc0dfd20b332d13596c98cf59a16e6f97f3a750c12",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-27d33fcd1710ce",
+        "sourceId": "src-c06cfb1e8b4cddbd",
+        "sourceUrl": "https://graeve.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:21+00:00",
+        "bodySha256": "bad8b604a63c667331eccde839afac6dbacf750813a2fc61b32ca0d4ee406a39",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-27d33fcd1710ce",
+        "sourceId": "src-5419a720a3f9e583",
+        "sourceUrl": "https://imdd.ucsd.edu/faculty",
+        "observedAt": "2026-10-16T01:29:07+00:00",
+        "bodySha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-f78bf84fc19eef",
+        "sourceId": "src-ca52541166bfe295",
+        "sourceUrl": "http://www.theduttonlab.com/",
+        "observedAt": "2026-10-16T01:37:10+00:00",
+        "bodySha256": "8575d36e818620a018c0beaa5aa5b4b65a5b30bedee78e05f4139a8e5eb5fb0a",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-f78bf84fc19eef",
+        "sourceId": "src-5419a720a3f9e583",
+        "sourceUrl": "https://imdd.ucsd.edu/faculty",
+        "observedAt": "2026-10-16T01:29:07+00:00",
+        "bodySha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-848c82d9aba60e",
+        "sourceId": "src-5613da7b2ddfe5ba",
+        "sourceUrl": "https://kitpogliano.ucsd.edu/",
+        "observedAt": "2026-10-16T01:37:18+00:00",
+        "bodySha256": "14ae3848858bd04ce7d56c0ab022e4fbe13f8a22a262f94e5dd504d6f73acfc5",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-848c82d9aba60e",
+        "sourceId": "src-c293a4f99427294e",
+        "sourceUrl": "https://joepogliano.ucsd.edu/people/",
+        "observedAt": "2026-10-16T01:30:23+00:00",
+        "bodySha256": "d60a6b96968a54c98e288f8ef596a2bd7d2d9961bf577b331e8b62e655661096",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      },
+      {
+        "labId": "ucsd-live-lab-176619ff4af12d",
+        "sourceId": "src-d2f343b09f7f3c78",
+        "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+        "observedAt": "2026-10-16T00:59:03+00:00",
+        "bodySha256": "67015d450ceea3b3172f53126ee5016fb2658f7baaca4a28370c1e21cb27a6b7",
+        "actualQueueCaptureMatched": true,
+        "captureOrigin": "collection_cache_reuse"
+      }
+    ],
+    "historicalPacketSources": [
+      {
+        "labId": "ucsd-live-lab-a8e8602372ef78",
+        "sourceId": "src-9f1015f078084eb8",
+        "sourceUrl": "https://communication.ucsd.edu/",
+        "observedAt": "2026-10-16T00:57:22+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-2982fe38ebc5a0",
+        "sourceId": "src-34d14835102786a1",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+        "observedAt": "2026-10-16T00:59:03+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-8627bc69d4ee7d",
+        "sourceId": "src-8f7db7f1d61d759f",
+        "sourceUrl": "https://efdlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:24+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-33e60c6bf35e2b",
+        "sourceId": "src-4aaf0b19e86045da",
+        "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+        "observedAt": "2026-10-16T01:01:40+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-d4a949e47ec3f3",
+        "sourceId": "src-3e8032e342e198ca",
+        "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-16T01:06:12+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-6244ff07b175a9",
+        "sourceId": "src-6b159407acc3eb1a",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "role": "historical_field_labName"
+      },
+      {
+        "labId": "ucsd-live-lab-6244ff07b175a9",
+        "sourceId": "src-216bdf6c37dfa884",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      },
+      {
+        "labId": "ucsd-live-lab-6244ff07b175a9",
+        "sourceId": "src-72bc665f138257cf",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "role": "historical_field_department"
+      },
+      {
+        "labId": "ucsd-live-lab-da307b4f0f98b5",
+        "sourceId": "src-d326d70a0edc3d85",
+        "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+        "observedAt": "2026-10-16T01:09:12+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      },
+      {
+        "labId": "ucsd-live-lab-f2a96ed0a66637",
+        "sourceId": "src-e1fbc4f88d239867",
+        "sourceUrl": "https://biomanufacturing.ucsd.edu/people",
+        "observedAt": "2026-10-16T01:29:05+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      },
+      {
+        "labId": "ucsd-live-lab-27d33fcd1710ce",
+        "sourceId": "src-7b4e55d5e4532fbb",
+        "sourceUrl": "https://imdd.ucsd.edu/faculty",
+        "observedAt": "2026-10-16T01:29:07+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      },
+      {
+        "labId": "ucsd-live-lab-f78bf84fc19eef",
+        "sourceId": "src-ac3eb46d615b54e0",
+        "sourceUrl": "https://imdd.ucsd.edu/faculty",
+        "observedAt": "2026-10-16T01:29:07+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      },
+      {
+        "labId": "ucsd-live-lab-848c82d9aba60e",
+        "sourceId": "src-56a045f92bdc5983",
+        "sourceUrl": "https://joepogliano.ucsd.edu/people/",
+        "observedAt": "2026-10-16T01:30:23+00:00",
+        "role": "historical_field_labWebsiteUrl"
+      }
+    ]
+  },
+  "boundaryChecks": {
+    "all12FinalBoundaryDictionariesExactlyEqualFrozenHandoff": true,
+    "knownProjectionFixVerified": "principalInvestigatorIdentityScope and unverifiedFields are included wherever present in the handoff; the earlier in-flight omission is fixed.",
+    "PIsNotFoundPreserved": 11,
+    "explicitInitialsOnlyPI": {
+      "labId": "ucsd-live-lab-8627bc69d4ee7d",
+      "principalInvestigator": "G. Pawlak Tejada",
+      "identityScope": "initials_as_published; full-person identity unresolved",
+      "noFullNameExpansion": true
+    },
+    "HerzikExistingProfessorReferenceDoesNotFillUnknownPI": true,
+    "KitPoglianoDepartmentUnknownAndUnverifiedPreserved": true,
+    "HowellUnknownDepartmentTextPreserved": true,
+    "Thiemens2019PageContentDateAnd2026ObservationBoundaryPreserved": true,
+    "noAutomaticResearchSummarySupportOrGlobalCompletionClaim": true
+  },
+  "items": [
+    {
+      "labId": "ucsd-live-lab-a8e8602372ef78",
+      "ordinal": 868,
+      "labName": "Democracy Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 5,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://communication.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:22+00:00",
+          "packetSourceIds": [
+            "src-9f1015f078084eb8",
+            "src-09937586c0fc6284"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://communication.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:22+00:00",
+          "packetSourceIds": [
+            "src-9f1015f078084eb8",
+            "src-09937586c0fc6284"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://communication.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:22+00:00",
+          "packetSourceIds": [
+            "src-9f1015f078084eb8",
+            "src-09937586c0fc6284"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://communication.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:22+00:00",
+          "packetSourceIds": [
+            "src-9f1015f078084eb8",
+            "src-09937586c0fc6284"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://communication.ucsd.edu/",
+          "observedAt": "2026-10-16T00:57:22+00:00",
+          "packetSourceIds": [
+            "src-9f1015f078084eb8",
+            "src-09937586c0fc6284"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Communication",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:01:13+00:00",
+      "sourceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-2982fe38ebc5a0",
+      "ordinal": 869,
+      "labName": "Howell Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 5,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-34d14835102786a1",
+            "src-c1d3e54bcab133f6"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-34d14835102786a1",
+            "src-c1d3e54bcab133f6"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-34d14835102786a1",
+            "src-c1d3e54bcab133f6"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-34d14835102786a1",
+            "src-c1d3e54bcab133f6"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-34d14835102786a1",
+            "src-c1d3e54bcab133f6"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Unknown (Moores Cancer Center; department not stated on fetched pages)",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T00:59:04+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-8627bc69d4ee7d",
+      "ordinal": 870,
+      "labName": "Environmental Fluid Dynamics Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://efdlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:24+00:00",
+          "packetSourceIds": [
+            "src-8f7db7f1d61d759f",
+            "src-2b157ec0c4992dbe"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://efdlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:24+00:00",
+          "packetSourceIds": [
+            "src-8f7db7f1d61d759f",
+            "src-2b157ec0c4992dbe"
+          ]
+        },
+        {
+          "field": "principalInvestigator",
+          "sourceUrl": "https://efdlab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:02:28+00:00",
+          "packetSourceIds": [
+            "src-0a2f264cd2fe20e9"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://efdlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:24+00:00",
+          "packetSourceIds": [
+            "src-8f7db7f1d61d759f",
+            "src-2b157ec0c4992dbe"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://efdlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:24+00:00",
+          "packetSourceIds": [
+            "src-8f7db7f1d61d759f",
+            "src-2b157ec0c4992dbe"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://efdlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:24+00:00",
+          "packetSourceIds": [
+            "src-8f7db7f1d61d759f",
+            "src-2b157ec0c4992dbe"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "G. Pawlak Tejada",
+        "principalInvestigatorProfileUrl": "Not found",
+        "principalInvestigatorIdentityScope": "initials_as_published; full-person identity unresolved",
+        "department": "Mechanical & Aerospace Engineering",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:02:28+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-33e60c6bf35e2b",
+      "ordinal": 871,
+      "labName": "Nemati Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 5,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "packetSourceIds": [
+            "src-4aaf0b19e86045da",
+            "src-ad96daafae952d99"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "packetSourceIds": [
+            "src-4aaf0b19e86045da",
+            "src-ad96daafae952d99"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "packetSourceIds": [
+            "src-4aaf0b19e86045da",
+            "src-ad96daafae952d99"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "packetSourceIds": [
+            "src-4aaf0b19e86045da",
+            "src-ad96daafae952d99"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://gpm.ucsd.edu/about/faculty.html",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "packetSourceIds": [
+            "src-4aaf0b19e86045da",
+            "src-ad96daafae952d99"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Medicine",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:03:40+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-d4a949e47ec3f3",
+      "ordinal": 872,
+      "labName": "The Herzik Research Group",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://mbtg.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "packetSourceIds": [
+            "src-3e8032e342e198ca",
+            "src-424fe841134ec490"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Chemistry & Biochemistry",
+        "relatedProfessorNames": [
+          "Mark Herzik"
+        ],
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T00:59:04+00:00",
+      "sourceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-6244ff07b175a9",
+      "ordinal": 873,
+      "labName": "The Safe Autonomous Systems Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-6b159407acc3eb1a",
+            "src-f207105946aa933e"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-216bdf6c37dfa884",
+            "src-f207105946aa933e"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-72bc665f138257cf",
+            "src-f207105946aa933e"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-72bc665f138257cf",
+            "src-f207105946aa933e"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-6b159407acc3eb1a",
+            "src-f207105946aa933e"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+          "observedAt": "2026-10-16T01:08:34+00:00",
+          "packetSourceIds": [
+            "src-6b159407acc3eb1a",
+            "src-f207105946aa933e"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Mechanical & Aerospace Engineering",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:08:36+00:00",
+      "sourceCount": 5
+    },
+    {
+      "labId": "ucsd-live-lab-da307b4f0f98b5",
+      "ordinal": 874,
+      "labName": "Computational Phonology Research Group",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "packetSourceIds": [
+            "src-85edebb1b547501a"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+          "observedAt": "2026-10-16T01:09:12+00:00",
+          "packetSourceIds": [
+            "src-d326d70a0edc3d85",
+            "src-5f4195e0c64192e1"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "packetSourceIds": [
+            "src-85edebb1b547501a"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "packetSourceIds": [
+            "src-85edebb1b547501a"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "packetSourceIds": [
+            "src-85edebb1b547501a"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "packetSourceIds": [
+            "src-85edebb1b547501a"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Linguistics",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:10:52+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-f2a96ed0a66637",
+      "ordinal": 875,
+      "labName": "Pokorski Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://www.pokorskilab.com/",
+          "observedAt": "2026-10-16T01:37:07+00:00",
+          "packetSourceIds": [
+            "src-1f6b9416bbf79ac5"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://biomanufacturing.ucsd.edu/people",
+          "observedAt": "2026-10-16T01:29:05+00:00",
+          "packetSourceIds": [
+            "src-e1fbc4f88d239867",
+            "src-bc9e406a6a9b1c0d"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://www.pokorskilab.com/",
+          "observedAt": "2026-10-16T01:37:07+00:00",
+          "packetSourceIds": [
+            "src-1f6b9416bbf79ac5"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://www.pokorskilab.com/",
+          "observedAt": "2026-10-16T01:37:07+00:00",
+          "packetSourceIds": [
+            "src-1f6b9416bbf79ac5"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://www.pokorskilab.com/",
+          "observedAt": "2026-10-16T01:37:07+00:00",
+          "packetSourceIds": [
+            "src-1f6b9416bbf79ac5"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://www.pokorskilab.com/",
+          "observedAt": "2026-10-16T01:37:07+00:00",
+          "packetSourceIds": [
+            "src-1f6b9416bbf79ac5"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "NanoEngineering",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:37:07+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-27d33fcd1710ce",
+      "ordinal": 876,
+      "labName": "Xtreme Materials Laboratory",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://graeve.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:21+00:00",
+          "packetSourceIds": [
+            "src-c06cfb1e8b4cddbd"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://imdd.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:07+00:00",
+          "packetSourceIds": [
+            "src-7b4e55d5e4532fbb",
+            "src-5419a720a3f9e583"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://graeve.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:21+00:00",
+          "packetSourceIds": [
+            "src-c06cfb1e8b4cddbd"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://graeve.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:21+00:00",
+          "packetSourceIds": [
+            "src-c06cfb1e8b4cddbd"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://graeve.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:21+00:00",
+          "packetSourceIds": [
+            "src-c06cfb1e8b4cddbd"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://graeve.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:21+00:00",
+          "packetSourceIds": [
+            "src-c06cfb1e8b4cddbd"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Mechanical & Aerospace Engineering",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:01:21+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-f78bf84fc19eef",
+      "ordinal": 877,
+      "labName": "The Dutton Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "http://www.theduttonlab.com/",
+          "observedAt": "2026-10-16T01:37:10+00:00",
+          "packetSourceIds": [
+            "src-ca52541166bfe295"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://imdd.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T01:29:07+00:00",
+          "packetSourceIds": [
+            "src-ac3eb46d615b54e0",
+            "src-5419a720a3f9e583"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "http://www.theduttonlab.com/",
+          "observedAt": "2026-10-16T01:37:10+00:00",
+          "packetSourceIds": [
+            "src-ca52541166bfe295"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "http://www.theduttonlab.com/",
+          "observedAt": "2026-10-16T01:37:10+00:00",
+          "packetSourceIds": [
+            "src-ca52541166bfe295"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "http://www.theduttonlab.com/",
+          "observedAt": "2026-10-16T01:37:10+00:00",
+          "packetSourceIds": [
+            "src-ca52541166bfe295"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "http://www.theduttonlab.com/",
+          "observedAt": "2026-10-16T01:37:10+00:00",
+          "packetSourceIds": [
+            "src-ca52541166bfe295"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Biological Sciences",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:37:10+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-848c82d9aba60e",
+      "ordinal": 878,
+      "labName": "The Kit Pogliano Lab",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 5,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://kitpogliano.ucsd.edu/",
+          "observedAt": "2026-10-16T01:37:18+00:00",
+          "packetSourceIds": [
+            "src-5613da7b2ddfe5ba"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://joepogliano.ucsd.edu/people/",
+          "observedAt": "2026-10-16T01:30:23+00:00",
+          "packetSourceIds": [
+            "src-56a045f92bdc5983",
+            "src-c293a4f99427294e"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://kitpogliano.ucsd.edu/",
+          "observedAt": "2026-10-16T01:37:18+00:00",
+          "packetSourceIds": [
+            "src-5613da7b2ddfe5ba"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://kitpogliano.ucsd.edu/",
+          "observedAt": "2026-10-16T01:37:18+00:00",
+          "packetSourceIds": [
+            "src-5613da7b2ddfe5ba"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://kitpogliano.ucsd.edu/",
+          "observedAt": "2026-10-16T01:37:18+00:00",
+          "packetSourceIds": [
+            "src-5613da7b2ddfe5ba"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Unknown",
+        "departmentAssessment": {
+          "status": "unresolved",
+          "reason": "The official lab homepage explicitly names the laboratory and UC San Diego but does not state its academic department. The discovery parent department is not copied as a verified affiliation.",
+          "sourceObservedAt": "2026-10-16T01:37:18+00:00"
+        },
+        "unverifiedFields": [
+          "department"
+        ],
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T01:37:18+00:00",
+      "sourceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-176619ff4af12d",
+      "ordinal": 879,
+      "labName": "Mark H. Thiemens Research Group",
+      "packetPreparedAt": "2026-10-16T02:49:32+00:00",
+      "listedWebsiteUnchanged": true,
+      "importProvenanceMatchesPinnedHandoff": true,
+      "isFinalExport": false,
+      "globalCollectionDeclaredComplete": false,
+      "originalFieldEvidenceCount": 6,
+      "allOriginalFieldQuotesMatchURLTimeAndText": true,
+      "originalFieldEvidenceMapping": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://thiemensgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "packetSourceIds": [
+            "src-d2f343b09f7f3c78"
+          ]
+        }
+      ],
+      "unknownsAndDateBoundaries": {
+        "principalInvestigator": "Not found",
+        "principalInvestigatorProfileUrl": "Not found",
+        "department": "Chemistry & Biochemistry",
+        "contentDateNote": "The page states Last updated: 01/05/2019. The October 2026 observation verifies availability and the displayed identity, not current personnel or employment.",
+        "relationshipScope": "reviewed_ucsd_affiliation"
+      },
+      "boundariesExactlyEqualHandoff": true,
+      "rootObservedAt": "2026-10-16T00:59:03+00:00",
+      "sourceCount": 1
+    }
+  ],
+  "inputFilesBeforeAndAfter": {
+    "unchanged": true,
+    "files": {
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4fd4536e52c0dcb46dae9da4fb34c71c5224095717077d403cad4b52cfe5d9e8.html": {
+        "sha256": "d60a6b96968a54c98e288f8ef596a2bd7d2d9961bf577b331e8b62e655661096",
+        "bytes": 64686,
+        "mtimeNs": 1792114223772873743
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d4a949e47ec3f3df580503c245a8496b72496e3470a494d8864eb8f8b05d968b.html": {
+        "sha256": "106d35b540dbe91448b295215f845f9af50d52ec1db7e99e0128134fd17b4ff9",
+        "bytes": 7339,
+        "mtimeNs": 1792112344248608784
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/176619ff4af12d73d6457cb31e5e1d6382e2c583235634fbb3cb9ff7f3d2c357.html": {
+        "sha256": "67015d450ceea3b3172f53126ee5016fb2658f7baaca4a28370c1e21cb27a6b7",
+        "bytes": 2625,
+        "mtimeNs": 1792112343162855629
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a5d92c46a214bdc8d5f547809d81ad8d97cda8cf211aaccc6eb06cca735451a6.html": {
+        "sha256": "3eaebeab7dd1501745b4309af2b7da0617eed6b129df0c0464e6a92334b7fa83",
+        "bytes": 127908,
+        "mtimeNs": 1792112484898241524
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8627bc69d4ee7d1c29d9fe208d5905355e264ae1572192614f38853ae03fc6a2.html": {
+        "sha256": "bf1fb520197ffd6f1b673bc94a925d43f2af34ce6a0f90d6675349c3c11465a7",
+        "bytes": 127847,
+        "mtimeNs": 1792112548476677322
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/da307b4f0f98b5d76cc250156b08bc862a4c4f8860a38123dc81c256aca02489.html": {
+        "sha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+        "bytes": 67558,
+        "mtimeNs": 1792113052660001445
+      },
+      "/tmp/ucsd-research-20261016/data/research-atlas.json": {
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "bytes": 30757997,
+        "mtimeNs": 1792112006784192058
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/848c82d9aba60edbe5a73c6e4d4f257937e6579a639b1094c11dca8bd45cc82a.html": {
+        "sha256": "14ae3848858bd04ce7d56c0ab022e4fbe13f8a22a262f94e5dd504d6f73acfc5",
+        "bytes": 52391,
+        "mtimeNs": 1792114638955104204
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/67fbe13ad93ca0e0dbb2ffd21af6ea310e2490f0f241463da3f2260e9d600df1.html": {
+        "sha256": "61f8a3a21ba4ec267eacfd5deb6e83004425451c0006a2a194e5301e49b16ad8",
+        "bytes": 44657,
+        "mtimeNs": 1792112914634997057
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f6713c6233b0e0061440919a41be54887330c590b7a3176848de9334b0a20cec.html": {
+        "sha256": "9fa0831d981fbedc7397c620c5843837c169f91bea37452bdf30a6b8923e1665",
+        "bytes": 50291,
+        "mtimeNs": 1792112772935972255
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8c4e2e4c2883b7579d08687fc53c9782721a20a19a6d162974c7d79eaba6aa75.html": {
+        "sha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+        "bytes": 73036,
+        "mtimeNs": 1792112952147015887
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4fd4536e52c0dcb46dae9da4fb34c71c5224095717077d403cad4b52cfe5d9e8.html": {
+        "sha256": "d60a6b96968a54c98e288f8ef596a2bd7d2d9961bf577b331e8b62e655661096",
+        "bytes": 64686,
+        "mtimeNs": 1792114223772873743
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ddb56e0a0d42ed9419dba319e83207798112a7508d8090bbf25db5fed66701e8.html": {
+        "sha256": "da5828c6087b95ff9d4f5e9d761ab53a7f06433d43ddece0514aad07315808f0",
+        "bytes": 63928,
+        "mtimeNs": 1792113009530945169
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c3dfee275b437022e1af86cc200f0c3e23e25f4252dbbe06fcf4134be5fd97b9.html": {
+        "sha256": "31f5cb03f876e86b90ab7a83911bdb1a68870d19f1d04b7235404f155a5df4ee",
+        "bytes": 59768,
+        "mtimeNs": 1792112501000941260
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4dd83af863d418e52d223d1dac16c7f070a50adb057da8bb3964560731ce2de2.html": {
+        "sha256": "f6d2664d4f159af80a185dcc0dfd20b332d13596c98cf59a16e6f97f3a750c12",
+        "bytes": 25603,
+        "mtimeNs": 1792114145507349187
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/176619ff4af12d73d6457cb31e5e1d6382e2c583235634fbb3cb9ff7f3d2c357.html": {
+        "sha256": "67015d450ceea3b3172f53126ee5016fb2658f7baaca4a28370c1e21cb27a6b7",
+        "bytes": 2625,
+        "mtimeNs": 1792112343162855629
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a8e8602372ef7873f6c0774e693e26e6ac7b7c956c8c9457b6b5cb66b59318f2.html": {
+        "sha256": "a652744b18a41537530d217c90f82431bf0da3643a6dc71a86969607f4992db2",
+        "bytes": 140317,
+        "mtimeNs": 1792112473391211123
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ca50f94d04816cb3c91ccbbb502164ed47ab96b1ac62f50aa5bcfb5c121e1c4a.html": {
+        "sha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+        "bytes": 71960,
+        "mtimeNs": 1792112343576365912
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f78bf84fc19eefa1216a08eb1ce634b536767bd074ac4b6337a0f54b8997552f.html": {
+        "sha256": "8575d36e818620a018c0beaa5aa5b4b65a5b30bedee78e05f4139a8e5eb5fb0a",
+        "bytes": 94280,
+        "mtimeNs": 1792114630581118217
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ca50f94d04816cb3c91ccbbb502164ed47ab96b1ac62f50aa5bcfb5c121e1c4a.html": {
+        "sha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+        "bytes": 71960,
+        "mtimeNs": 1792112343576365912
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2982fe38ebc5a075be8c7c8e8063ba0c65fef523f95533de0b488f0ac66919ad.html": {
+        "sha256": "db4a47efc3bba8095e2e4b5b9555536ea1af35db19ca22fbb314174a4eb4c0cc",
+        "bytes": 74343,
+        "mtimeNs": 1792112345025914679
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f2a96ed0a666372b617ad7edd72fce10345e3958140cce3478af942641280099.html": {
+        "sha256": "7fff7e19656d86760f00c44b5f3e59114c82b247ced0be5d0aabe0129ca147ec",
+        "bytes": 364013,
+        "mtimeNs": 1792114627720487846
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/27d33fcd1710ce4620dfd3d00fd28f7747f7e5ca17d057ffdfc7f8dd4f4702ad.html": {
+        "sha256": "bad8b604a63c667331eccde839afac6dbacf750813a2fc61b32ca0d4ee406a39",
+        "bytes": 15303,
+        "mtimeNs": 1792112481462943942
+      },
+      "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json": {
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "bytes": 30757997,
+        "mtimeNs": 1792114757842139859
+      },
+      "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-reviewed-lab-handoff.json": {
+        "sha256": "4e67f9bb4e7f4272932a22d262f36fc5818721fa51321c49c4bbb25080b1f726",
+        "bytes": 105874,
+        "mtimeNs": 1792118108876589012
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/27d33fcd1710ce4620dfd3d00fd28f7747f7e5ca17d057ffdfc7f8dd4f4702ad.html": {
+        "sha256": "bad8b604a63c667331eccde839afac6dbacf750813a2fc61b32ca0d4ee406a39",
+        "bytes": 15303,
+        "mtimeNs": 1792112481462943942
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f2a96ed0a666372b617ad7edd72fce10345e3958140cce3478af942641280099.html": {
+        "sha256": "7fff7e19656d86760f00c44b5f3e59114c82b247ced0be5d0aabe0129ca147ec",
+        "bytes": 364013,
+        "mtimeNs": 1792114627720487846
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/33e60c6bf35e2b305156c40d6a976b35175a545fee52ae5108b6017ce0670fa2.html": {
+        "sha256": "4b9eb0911b416a79b1dbab4a4e16577fb9333482d8a5b0f15ac51e5bf8d5876e",
+        "bytes": 12742,
+        "mtimeNs": 1792112620939197483
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/848c82d9aba60edbe5a73c6e4d4f257937e6579a639b1094c11dca8bd45cc82a.html": {
+        "sha256": "14ae3848858bd04ce7d56c0ab022e4fbe13f8a22a262f94e5dd504d6f73acfc5",
+        "bytes": 52391,
+        "mtimeNs": 1792114638955104204
+      },
+      "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-decisions.json": {
+        "sha256": "823f5b7c2f144e0906e31a69296f35b09f3e6e9ebbe9a4f88f220ccd1c6327d6",
+        "bytes": 217190,
+        "mtimeNs": 1792117824953797902
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5c8670b3657ac0046d2e1b27c09b52b43a18f2a460d0a85db3bd0f67708e4097.html": {
+        "sha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+        "bytes": 62085,
+        "mtimeNs": 1792114147737364689
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f78bf84fc19eefa1216a08eb1ce634b536767bd074ac4b6337a0f54b8997552f.html": {
+        "sha256": "8575d36e818620a018c0beaa5aa5b4b65a5b30bedee78e05f4139a8e5eb5fb0a",
+        "bytes": 94280,
+        "mtimeNs": 1792114630581118217
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c3dfee275b437022e1af86cc200f0c3e23e25f4252dbbe06fcf4134be5fd97b9.html": {
+        "sha256": "31f5cb03f876e86b90ab7a83911bdb1a68870d19f1d04b7235404f155a5df4ee",
+        "bytes": 59768,
+        "mtimeNs": 1792112501000941260
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8627bc69d4ee7d1c29d9fe208d5905355e264ae1572192614f38853ae03fc6a2.html": {
+        "sha256": "bf1fb520197ffd6f1b673bc94a925d43f2af34ce6a0f90d6675349c3c11465a7",
+        "bytes": 127847,
+        "mtimeNs": 1792112548476677322
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5c8670b3657ac0046d2e1b27c09b52b43a18f2a460d0a85db3bd0f67708e4097.html": {
+        "sha256": "001ade6ee24529794147507d201a5b29c89c887017740b560f3a85a2cea26dd6",
+        "bytes": 62085,
+        "mtimeNs": 1792114147737364689
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6d97c04a147fabfef25216d16d645f0c63a38ffdb465a04b497d3df3d659efec.html": {
+        "sha256": "8459efcc9544c73e21514ba17ad827898f9c4e979dcfde5fc090761d52d563e5",
+        "bytes": 151997,
+        "mtimeNs": 1792114595806654052
+      },
+      "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summaries.py": {
+        "sha256": "68758d24853a63067c58f779bc41ad4395da88aa04d76af24065338208d34f42",
+        "bytes": 45476,
+        "mtimeNs": 1792118960922854484
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": {
+        "sha256": "221d0d6aacfdb98615680aa4cf26d13c6ff413262fe6d1371f865099d25f69b6",
+        "bytes": 32327785,
+        "mtimeNs": 1792118610175902173
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4dd83af863d418e52d223d1dac16c7f070a50adb057da8bb3964560731ce2de2.html": {
+        "sha256": "f6d2664d4f159af80a185dcc0dfd20b332d13596c98cf59a16e6f97f3a750c12",
+        "bytes": 25603,
+        "mtimeNs": 1792114145507349187
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8908f7e80603e83c47d387fc71ffa6e434ef77fce99a7463b3615f5f5a86050b.html": {
+        "sha256": "1e0af6c1395260d5b159d81d449b2bad4895e9bc0864e51fbe38482e023946f2",
+        "bytes": 62535,
+        "mtimeNs": 1792112242522190646
+      },
+      "/private/tmp/ucsd-lab-summaries-20261016/scripts/lab_summary_handoff.py": {
+        "sha256": "e359b2b81d507c0309049baba7c46dc640f6afa3bba7e91b2d7dbfb417d28b6f",
+        "bytes": 17530,
+        "mtimeNs": 1792118945970538513
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8c4e2e4c2883b7579d08687fc53c9782721a20a19a6d162974c7d79eaba6aa75.html": {
+        "sha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+        "bytes": 73036,
+        "mtimeNs": 1792112952147015887
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f6713c6233b0e0061440919a41be54887330c590b7a3176848de9334b0a20cec.html": {
+        "sha256": "9fa0831d981fbedc7397c620c5843837c169f91bea37452bdf30a6b8923e1665",
+        "bytes": 50291,
+        "mtimeNs": 1792112772935972255
+      },
+      "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/da307b4f0f98b5d76cc250156b08bc862a4c4f8860a38123dc81c256aca02489.html": {
+        "sha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+        "bytes": 67558,
+        "mtimeNs": 1792113052660001445
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a5d92c46a214bdc8d5f547809d81ad8d97cda8cf211aaccc6eb06cca735451a6.html": {
+        "sha256": "3eaebeab7dd1501745b4309af2b7da0617eed6b129df0c0464e6a92334b7fa83",
+        "bytes": 127908,
+        "mtimeNs": 1792112484898241524
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8908f7e80603e83c47d387fc71ffa6e434ef77fce99a7463b3615f5f5a86050b.html": {
+        "sha256": "1e0af6c1395260d5b159d81d449b2bad4895e9bc0864e51fbe38482e023946f2",
+        "bytes": 62535,
+        "mtimeNs": 1792112242522190646
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6244ff07b175a94f557e24b096250e9f103dd75ca7cd93dba50211485194fc3f.html": {
+        "sha256": "6ed9c7cfaa0ed980f0f0fc594869110e9657667b7410243664ff46a3010210fa",
+        "bytes": 166758,
+        "mtimeNs": 1792112916970120741
+      },
+      "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/67fbe13ad93ca0e0dbb2ffd21af6ea310e2490f0f241463da3f2260e9d600df1.html": {
+        "sha256": "61f8a3a21ba4ec267eacfd5deb6e83004425451c0006a2a194e5301e49b16ad8",
+        "bytes": 44657,
+        "mtimeNs": 1792112914634997057
+      }
+    }
+  },
+  "issues": []
+}

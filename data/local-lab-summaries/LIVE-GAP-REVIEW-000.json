@@ -1,0 +1,795 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T03:23:19+00:00",
+  "scope": "Only seven fresh 03:18 source deltas plus necessary existing identity context; no packets/code/aggregates/network/collector writes.",
+  "networkRequestsMadeByReviewer": 0,
+  "fingerprintDefinition": {
+    "sourceSemanticFingerprintSha256": "SHA256 of canonical JSON {sourceUrl,title,headings,whitespace-normalized visible main text}; excludes observation time, sourceId and raw HTML dynamic bytes.",
+    "recordSemanticFingerprintSha256": "SHA256 of canonical JSON final status/summary/questions/topics/methods/identity/affiliation/uncertainty/blockers; excludes review timestamp and evidence source IDs."
+  },
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-bennett-lab",
+      "ordinal": 37,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "supported_upgrade",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "beforeIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Bennett根页的实际HTML meta refresh明确指向本次抓取的ebennettlab.com；新页正文明确The Bennett Lab和The Bennett research group及整体研究计划，具名主体对应。HTML跳转提示只用于来源关联，不改写为原根页HTTP重定向或接受规范网址迁移。"
+      },
+      "sourceIdsRead": [
+        "src-4af9ae6784e45a88"
+      ],
+      "existingContextSourceIds": [
+        "src-9e979d00395b0a70"
+      ],
+      "newSource": {
+        "sourceId": "src-4af9ae6784e45a88",
+        "sourceUrl": "https://ebennettlab.com/",
+        "requestedUrl": "http://ebennettlab.com/",
+        "observedAt": "2026-10-16T03:18:12+00:00",
+        "bodySha256": "6b65dde8fa6ac6ff46843482d00310221215f599e96322a7fd7d79bde3400a34",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d3354e3f481ee883c190b082111f4b18f36901e609888f76b087073e290b2979.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:09+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          85,
+          89
+        ],
+        "targetRequestHttpRedirectChain": [
+          {
+            "from": "http://ebennettlab.com/",
+            "to": "https://ebennettlab.com/",
+            "httpStatus": 301
+          }
+        ],
+        "targetHtmlCanonicalLinkUrls": [
+          "https://ebennettlab.com/"
+        ]
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_meta_refresh",
+        "sourceId": "src-9e979d00395b0a70",
+        "sourceUrl": "https://labs.biology.ucsd.edu/bennett/",
+        "observedAt": "2026-10-16T01:03:53+00:00",
+        "bodySha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+        "originalHtmlAttribute": "0; url=http://ebennettlab.com/",
+        "label": "HTML meta refresh",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": true
+      },
+      "listedWebsitePreserved": "http://labs.biology.ucsd.edu/bennett",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "The Bennett Lab studies the fundamental principles of how cells build, maintain, and destroy proteins . Our research aims to define mechanisms that can be leveraged to promote healthy aging and combat human aging-associated disorders.",
+          "supports": [
+            "identity",
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://ebennettlab.com/",
+          "observedAt": "2026-10-16T03:18:12+00:00",
+          "bodySha256": "6b65dde8fa6ac6ff46843482d00310221215f599e96322a7fd7d79bde3400a34"
+        },
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "The research group utilizes integrated molecular, genetic, and systems-level approaches to examine mechanisms that catalyze proteome remodeling. We employ global and quantitative proteomic platforms that enable systematic analyses of protein homeostasis. These platforms enable studies aimed at detailing how the proteome responds to both genetic and environmental challenges to proteostasis.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://ebennettlab.com/",
+          "observedAt": "2026-10-16T03:18:12+00:00",
+          "bodySha256": "6b65dde8fa6ac6ff46843482d00310221215f599e96322a7fd7d79bde3400a34"
+        },
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "Ubiquitin Biology Identifying and characterizing ubiquitin-dependent mechanisms that regulate cellular quality control pathways",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://ebennettlab.com/",
+          "observedAt": "2026-10-16T03:18:12+00:00",
+          "bodySha256": "6b65dde8fa6ac6ff46843482d00310221215f599e96322a7fd7d79bde3400a34"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "935db4d1f08d089e776f85632ffbf27e6f00c50b09ff92a225583dda633e1218",
+      "recordSemanticFingerprintSha256": "7ebe8b07013722e83a98dc59955ae01db1c0fa2397877ea9c38537735e4c72c9",
+      "researchTopicsMethodsChanged": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-bier",
+      "ordinal": 38,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "supported_upgrade",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "beforeIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Bier根页HTML meta refresh实际指向bierlab.weebly.com；新正文明确Bier Lab、UCSD与we的三个研究方向，支持具名实验室身份。原根页HTTP记录保持，未把HTML meta当成HTTP链。"
+      },
+      "sourceIdsRead": [
+        "src-87ae919da497986b"
+      ],
+      "existingContextSourceIds": [
+        "src-fcd2a788e03afab1"
+      ],
+      "newSource": {
+        "sourceId": "src-87ae919da497986b",
+        "sourceUrl": "http://bierlab.weebly.com/",
+        "requestedUrl": "http://bierlab.weebly.com/",
+        "observedAt": "2026-10-16T03:18:14+00:00",
+        "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/1a5000d36c951e68e4c3347b999fbb323b2dc8574caad5ddd7efb65cf39d77ed.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:13+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          89,
+          91
+        ],
+        "targetRequestHttpRedirectChain": [],
+        "targetHtmlCanonicalLinkUrls": []
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_meta_refresh",
+        "sourceId": "src-fcd2a788e03afab1",
+        "sourceUrl": "https://bierlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:03:54+00:00",
+        "bodySha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+        "originalHtmlAttribute": "0; url=http://bierlab.weebly.com/",
+        "label": "HTML meta refresh",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": true
+      },
+      "listedWebsitePreserved": "http://bierlab.ucsd.edu",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "BIER LAB University of California San Diego",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "sourceUrl": "http://bierlab.weebly.com/",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df"
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "We have been forging ahead with great energy on our research, focusing on three integrated areas: 1) Active Genetics , a new CRISPR based methodology developed in the lab that can be used to create gene-drive elements to combat vector borne diseases and to aid in large-scale combinatorial genome engineering, 2 ) Developmental Patterning , analyzing the mechanisms by which morphogen gradients that initiate patterning are linked to morphogenesis of embryonic and adult structures in fruit flies, and 3) Human Disease Mechanisms , using fruit flies to model human disease",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "http://bierlab.weebly.com/",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df"
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "The overarching theme of our developmental studies is to understand how secreted factors in the Bone Morphogenetic Protein (BMP) pathway contribute to developmental patterning",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "http://bierlab.weebly.com/",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df"
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "We have led efforts to develop Drosophila as a model system for analyzing the function of human disease genes and then validating these results in vertebrate models",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "http://bierlab.weebly.com/",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "ad2a0713586f95e90d2929a10e0f80a7482f978e4ccd4b7999b433e56dcde25e",
+      "recordSemanticFingerprintSha256": "09c91bcf600dbae7bdaaa96bcc46e88e462631410ee1d42eeb7ad5145be909dd",
+      "researchTopicsMethodsChanged": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-kiger",
+      "ordinal": 82,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "supported_upgrade",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "beforeIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD /kiger/根页实际HTML meta refresh指向同站Amy_Kiger_Lab_at_UCSD/Home.html；本次新正文明确The Kiger Laboratory @ UCSD及Our laboratory研究范围，与原具名记录对应。HTML属性不是HTTP重定向记录。"
+      },
+      "sourceIdsRead": [
+        "src-861631518cfad575"
+      ],
+      "existingContextSourceIds": [
+        "src-f56ebff58b7e8a49"
+      ],
+      "newSource": {
+        "sourceId": "src-861631518cfad575",
+        "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+        "requestedUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+        "observedAt": "2026-10-16T03:18:14+00:00",
+        "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/bbc3b7cae6d1cb58b98fed6f708be1ee416d69543aeb729560a00cb28641fce0.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:14+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          91,
+          92
+        ],
+        "targetRequestHttpRedirectChain": [],
+        "targetHtmlCanonicalLinkUrls": []
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_meta_refresh",
+        "sourceId": "src-f56ebff58b7e8a49",
+        "sourceUrl": "https://labs.biology.ucsd.edu/kiger/",
+        "observedAt": "2026-10-16T00:59:45+00:00",
+        "bodySha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+        "originalHtmlAttribute": "0;url= Amy_Kiger_Lab_at_UCSD/Home.html",
+        "label": "HTML meta refresh",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": true
+      },
+      "listedWebsitePreserved": "http://www.biology.ucsd.edu/labs/kiger",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "The Kiger Laboratory @ UCSD",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0"
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "Our laboratory is studying central roles for novel membrane trafficking processes, under control of spatiotemporal lipid regulation, that coordinate dynamic cell structure. Using a foundation in genetic and cell biology experiments in the fruit fly, Drosophila, we are linking specific lipid kinase and phosphatase activities to cell remodeling.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0"
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "Our research is currently focused in three major areas: (1) roles for phosphoinositide lipid regulation in cellular remodeling, (2) roles for autophagy in cellular remodeling, and (3) systems-biology approaches to understand cellular remodeling.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0"
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "To address these problems, we are investigating questions specific to the dynamic organization of two distinct cell types, immune cells and muscle cells.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "cdb141681ee69b02a6704b6e99572956bcb232d1b655bc973c339d054013172e",
+      "recordSemanticFingerprintSha256": "3ae11b9ceef9b002f6ca66ffea4fa118155c07fb81bbad4ae573fa9bb88f18dd",
+      "researchTopicsMethodsChanged": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-ralph-greenspan",
+      "ordinal": 113,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "supported_upgrade",
+      "beforeStatus": "partial",
+      "afterStatus": "supported",
+      "beforeIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原Greenspan具名实验室根页实际Projects锚点指向同站projects.html；新页以Greenspan Lab及Our research定义具名实验室研究。摘要和方法只取完整研究段，不把页面末尾项目标题扩展为未解释的技术或范围。"
+      },
+      "sourceIdsRead": [
+        "src-fa7a184d7a0cf5d4"
+      ],
+      "existingContextSourceIds": [
+        "src-4e637dc9baddae1f"
+      ],
+      "newSource": {
+        "sourceId": "src-fa7a184d7a0cf5d4",
+        "sourceUrl": "https://greenspanlab.ucsd.edu/projects.html",
+        "requestedUrl": "https://greenspanlab.ucsd.edu/projects.html",
+        "observedAt": "2026-10-16T03:18:15+00:00",
+        "bodySha256": "9eb98d02cfd80ce7ec04a789a8f069651ef81c898889ff148bbf220157dce947",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/37d96e9c1f89e8bed239eb2f81aca70309c50829c7ee45048af685f61af99711.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:15+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          92,
+          93
+        ],
+        "targetRequestHttpRedirectChain": [],
+        "targetHtmlCanonicalLinkUrls": []
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_anchor",
+        "sourceId": "src-4e637dc9baddae1f",
+        "sourceUrl": "https://greenspanlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:21+00:00",
+        "bodySha256": "230c9049ee1ba88ba86300d5aa2fa1e4b17f1cdd1821692b0290f39f07e256f6",
+        "originalHtmlAttribute": "projects.html",
+        "label": "Projects",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": false
+      },
+      "listedWebsitePreserved": "http://greenspanlab.ucsd.edu",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-4e637dc9baddae1f",
+          "quote": "Greenspan Laboratory of Genetics and Neurobiology",
+          "supports": [
+            "identity"
+          ],
+          "sourceUrl": "https://greenspanlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:21+00:00",
+          "bodySha256": "230c9049ee1ba88ba86300d5aa2fa1e4b17f1cdd1821692b0290f39f07e256f6"
+        },
+        {
+          "sourceId": "src-fa7a184d7a0cf5d4",
+          "quote": "Our research focuses on genes and how they influence behavior.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://greenspanlab.ucsd.edu/projects.html",
+          "observedAt": "2026-10-16T03:18:15+00:00",
+          "bodySha256": "9eb98d02cfd80ce7ec04a789a8f069651ef81c898889ff148bbf220157dce947"
+        },
+        {
+          "sourceId": "src-fa7a184d7a0cf5d4",
+          "quote": "the use of highly localized genetic alterations in the nervous system to manipulate behavior",
+          "supports": [
+            "methods"
+          ],
+          "sourceUrl": "https://greenspanlab.ucsd.edu/projects.html",
+          "observedAt": "2026-10-16T03:18:15+00:00",
+          "bodySha256": "9eb98d02cfd80ce7ec04a789a8f069651ef81c898889ff148bbf220157dce947"
+        },
+        {
+          "sourceId": "src-fa7a184d7a0cf5d4",
+          "quote": "For neuronal networks, we are using optical imaging of whole nervous systems in small jellyfish medusa, and for gene networks we are analyzing whole-genome scale expression patterns in response to manipulations in Paramecium and cyanobacteria.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://greenspanlab.ucsd.edu/projects.html",
+          "observedAt": "2026-10-16T03:18:15+00:00",
+          "bodySha256": "9eb98d02cfd80ce7ec04a789a8f069651ef81c898889ff148bbf220157dce947"
+        },
+        {
+          "sourceId": "src-fa7a184d7a0cf5d4",
+          "quote": "In all of the network studies, we use behavioral outputs (e.g., phototaxis, chemotaxis, and circadian rhythms) as the phenotype to monitor, in conjunction with analysis of network states.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://greenspanlab.ucsd.edu/projects.html",
+          "observedAt": "2026-10-16T03:18:15+00:00",
+          "bodySha256": "9eb98d02cfd80ce7ec04a789a8f069651ef81c898889ff148bbf220157dce947"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "2bb2e7e1d9004674f0c3147f9ce58e4de77afbd3ac05be63429e803f451990e4",
+      "recordSemanticFingerprintSha256": "75106ab79bead10a38e5d9a00dfab050c9c3d26f794c85fb4e371f67ba86239a",
+      "researchTopicsMethodsChanged": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "ordinal": 126,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "supported_upgrade",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "beforeIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Spitzer根页实际HTML meta refresh指向www.nickspitzerlab.org；新站明确Nick Spitzer Lab，并在Why do we do the research及Research Team框架下介绍整体研究，支持具名实验室研究。个人滑雪登山经历不作研究依据；本次目标请求的独立HTTP301链不补入原根页HTTP记录。"
+      },
+      "sourceIdsRead": [
+        "src-f79eb7d2691acb9e"
+      ],
+      "existingContextSourceIds": [
+        "src-d064f0b5261fc28f"
+      ],
+      "newSource": {
+        "sourceId": "src-f79eb7d2691acb9e",
+        "sourceUrl": "https://nickspitzerlab.org/",
+        "requestedUrl": "http://www.nickspitzerlab.org/",
+        "observedAt": "2026-10-16T03:18:26+00:00",
+        "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a5394a13483c581ddf1403fc677fd9377b4896ef0bbd09a45b41e22c55377df3.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:20+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          93,
+          102
+        ],
+        "targetRequestHttpRedirectChain": [
+          {
+            "from": "http://www.nickspitzerlab.org/",
+            "to": "https://www.nickspitzerlab.org/",
+            "httpStatus": 301
+          },
+          {
+            "from": "https://www.nickspitzerlab.org/",
+            "to": "https://nickspitzerlab.org/",
+            "httpStatus": 301
+          }
+        ],
+        "targetHtmlCanonicalLinkUrls": [
+          "https://nickspitzerlab.org/"
+        ]
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_meta_refresh",
+        "sourceId": "src-d064f0b5261fc28f",
+        "sourceUrl": "https://labs.biology.ucsd.edu/spitzer/",
+        "observedAt": "2026-10-16T00:59:54+00:00",
+        "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+        "originalHtmlAttribute": "0; url=http://www.nickspitzerlab.org/",
+        "label": "HTML meta refresh",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": true
+      },
+      "listedWebsitePreserved": "http://www.biology.ucsd.edu/labs/spitzer",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Nick Spitzer Lab | Brain Plasticity | Learn More Here",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title",
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Why do we do the research?",
+          "supports": [
+            "identity"
+          ],
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Investigation of the development of neuronal excitability led to the discovery that calcium-dependent embryonic electrical activity rapidly and reversibly reconfigures the transmitters and matching postsynaptic transmitter receptors that neurons express.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Both sensory and motor stimuli reprogram neurotransmitter identity, resulting in transmitter switches in young and adult nervous systems.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "The changes in brain biochemistry during transmitter switching cause changes in behavior that can be beneficial, enhancing learning, or detrimental, contributing to neurological and psychiatric disorders.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "fcbc439bba561760e77df9009eee4be674f3497c506d1af38a5fa65cec6e3287",
+      "recordSemanticFingerprintSha256": "930e5116102217e15dccbad056e0e7751647c5c1922f4834f4f0be7f944753a3",
+      "researchTopicsMethodsChanged": true
+    },
+    {
+      "labId": "ucsd-hdsi-lab-3",
+      "ordinal": 210,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "research_scope_unchanged_educational_facility",
+      "beforeStatus": "partial",
+      "afterStatus": "partial",
+      "beforeIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+      },
+      "afterIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "根页明确体验式学习与K–12 STEM推广；新Projects页继续列课堂活动、教学阶段与课时，支持教育学习设施范围，没有独立研究团队计划。"
+      },
+      "sourceIdsRead": [
+        "src-107a282c0259e7a5"
+      ],
+      "existingContextSourceIds": [
+        "src-91b6960617dbd9f9",
+        "src-2bf5661b707ce8d0"
+      ],
+      "newSource": {
+        "sourceId": "src-107a282c0259e7a5",
+        "sourceUrl": "https://lab3.ucsd.edu/projects/",
+        "requestedUrl": "https://lab3.ucsd.edu/projects",
+        "observedAt": "2026-10-16T03:18:28+00:00",
+        "bodySha256": "f50dfcfa0dfcfa8bbf27e3edbcd4828a6337d376ea189757ae1f976199861ec0",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/06647bb9ab66dfb968c70c1114be29eecbecad91ed7d134d0530e10f3464cb63.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:27+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          102,
+          104
+        ],
+        "targetRequestHttpRedirectChain": [
+          {
+            "from": "https://lab3.ucsd.edu/projects",
+            "to": "https://lab3.ucsd.edu/projects/",
+            "httpStatus": 301
+          }
+        ],
+        "targetHtmlCanonicalLinkUrls": [
+          "https://hdsi-lab-3-0.github.io/projects/"
+        ]
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_anchor",
+        "sourceId": "src-91b6960617dbd9f9",
+        "sourceUrl": "https://lab3.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:59+00:00",
+        "bodySha256": "5ddd3e5f7bce313c4826fd5453a417b618a98d265db6762f2f48e61b0cc89d8c",
+        "originalHtmlAttribute": "/projects",
+        "label": "Explore Our Projects",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": false
+      },
+      "listedWebsitePreserved": "https://lab3.ucsd.edu/",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-91b6960617dbd9f9",
+          "quote": "HDSI Lab 3.0 is a hands-on experiential learning lab where undergraduate students design, build, and deploy interactive projects in robotics, circuits, and data science.",
+          "supports": [
+            "identity"
+          ],
+          "sourceUrl": "https://lab3.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:59+00:00",
+          "bodySha256": "5ddd3e5f7bce313c4826fd5453a417b618a98d265db6762f2f48e61b0cc89d8c"
+        },
+        {
+          "sourceId": "src-91b6960617dbd9f9",
+          "quote": "Located at UC San Diego within the Halıcıoğlu Data Science Institute",
+          "supports": [
+            "affiliation"
+          ],
+          "sourceUrl": "https://lab3.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:59+00:00",
+          "bodySha256": "5ddd3e5f7bce313c4826fd5453a417b618a98d265db6762f2f48e61b0cc89d8c"
+        },
+        {
+          "sourceId": "src-107a282c0259e7a5",
+          "quote": "Data-Driven Robotic Art Students use math to find patterns in a dataset and drive servo motors to create an artistic representation of relationships in the data. Middle School High School",
+          "supports": [
+            "identity"
+          ],
+          "sourceUrl": "https://lab3.ucsd.edu/projects/",
+          "observedAt": "2026-10-16T03:18:28+00:00",
+          "bodySha256": "f50dfcfa0dfcfa8bbf27e3edbcd4828a6337d376ea189757ae1f976199861ec0"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "545d1f8ff9af07c11c6726fbb49ec3f9dd785ef4b5557e79456a35646b32cf82",
+      "recordSemanticFingerprintSha256": "bef60cedf05f4a9f7d776717eb5942aa74846677ec483c8a4156026aed670732",
+      "researchTopicsMethodsChanged": false
+    },
+    {
+      "labId": "ucsd-physics-research-site-shelley-wright",
+      "ordinal": 376,
+      "reviewedAt": "2026-10-16T03:23:19+00:00",
+      "decision": "partial_research_mapping_unresolved",
+      "beforeStatus": "unresolved",
+      "afterStatus": "partial",
+      "beforeIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "页面仅提示已移至 index.php，未提供研究组正文。"
+      },
+      "afterIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "新页明确为UCSD Optical Infrared Laboratory，支持实际OIR实验室研究；原记录名为Shelley Wright Research Group，而新页未具名Shelley或说明其领导/对应关系。实际同站meta指针不自动证明该个人研究组映射，暂不接受更名、别名或实体迁移。",
+        "observedPageName": "UCSD Optical Infrared Laboratory",
+        "silentIdMigrationAllowed": false
+      },
+      "sourceIdsRead": [
+        "src-292d0d6505c11a18"
+      ],
+      "existingContextSourceIds": [
+        "src-6c0a5af04a439d91",
+        "src-0fafdfdd12e72c15",
+        "src-ee586d8b3c6d52ca",
+        "src-56e56df479d5870a"
+      ],
+      "newSource": {
+        "sourceId": "src-292d0d6505c11a18",
+        "sourceUrl": "https://oirlab.ucsd.edu/index.php",
+        "requestedUrl": "https://oirlab.ucsd.edu/index.php",
+        "observedAt": "2026-10-16T03:18:29+00:00",
+        "bodySha256": "58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/3fbe4097ab4af692906c3132bced86fc7d782a1bd848bb46f90edb6d6eff31e1.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "textTruncated": false,
+        "liveCheckedAt": "2026-10-16T03:18:29+00:00",
+        "actualPageRequestMade": true,
+        "wireEventRange": [
+          104,
+          105
+        ],
+        "targetRequestHttpRedirectChain": [],
+        "targetHtmlCanonicalLinkUrls": []
+      },
+      "sourceDiscovery": {
+        "mechanism": "html_meta_refresh",
+        "sourceId": "src-6c0a5af04a439d91",
+        "sourceUrl": "https://oirlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:05:27+00:00",
+        "bodySha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+        "originalHtmlAttribute": "0; url=index.php",
+        "label": "HTML meta refresh",
+        "evidenceNature": "parsed_cached_html_attribute",
+        "notAnOriginalRootHttpRedirect": true
+      },
+      "listedWebsitePreserved": "http://oirlab.ucsd.edu",
+      "originalRootCheckPreserved": true,
+      "notAnAcceptedCanonicalLabUrl": true,
+      "evidence": [
+        {
+          "sourceId": "src-292d0d6505c11a18",
+          "quote": "Optical and InfraRed Laboratory Center for Astrophysics and Space Sciences University of California San Diego",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "sourceUrl": "https://oirlab.ucsd.edu/index.php",
+          "observedAt": "2026-10-16T03:18:29+00:00",
+          "bodySha256": "58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44"
+        },
+        {
+          "sourceId": "src-292d0d6505c11a18",
+          "quote": "The UCSD Optical Infrared Laboratory (UCSD OIR lab) specializes in optical and infrared astronomical instrumentation that uses innovative techniques to answer a range of astrophysical questions. Our team makes use of these instruments to conduct cutting-edge observational programs to study distant galaxies, supermassive black holes, stellar astrophysics, and the Search for Extraterrestrial Intelligence (SETI).",
+          "supports": [
+            "identity",
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://oirlab.ucsd.edu/index.php",
+          "observedAt": "2026-10-16T03:18:29+00:00",
+          "bodySha256": "58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44"
+        },
+        {
+          "sourceId": "src-292d0d6505c11a18",
+          "quote": "Our lab designs and develops instrumentation for Lick Observatory, W.M. Keck Observatory, the Thirty Meter Telescope (TMT). The lab particularly focuses on astronomical instruments that work with adaptive optics systems, near-infrared integral field spectrographs, advanced data reduction pipelines, and optical and near-infrared SETI instrumentation.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://oirlab.ucsd.edu/index.php",
+          "observedAt": "2026-10-16T03:18:29+00:00",
+          "bodySha256": "58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44"
+        }
+      ],
+      "sourceSemanticFingerprintSha256": "01741a971ab68e17961832f67f14bdd87d0d5bf0615a671e61f731b3adae8628",
+      "recordSemanticFingerprintSha256": "73eb379293dd9195d394913c92057f555906f35a9a320102e3f94e6943195978",
+      "researchTopicsMethodsChanged": true,
+      "priorityFollowups": [
+        {
+          "url": "https://oirlab.ucsd.edu/team1.php",
+          "purpose": "identity_relation_of_Shelley_Wright_to_OIR_Laboratory",
+          "discoveryMechanism": "html_anchor",
+          "label": "Read more",
+          "originalHtmlAttribute": "team1.php",
+          "sourceId": "src-292d0d6505c11a18",
+          "sourceUrl": "https://oirlab.ucsd.edu/index.php",
+          "sourceObservedAt": "2026-10-16T03:18:29+00:00",
+          "sourceBodySha256": "58f6f53ca7c400249655416526de70223205652763b2638a70dea1589e305b44",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/3fbe4097ab4af692906c3132bced86fc7d782a1bd848bb46f90edb6d6eff31e1.html",
+          "evidenceNature": "parsed_cached_html_anchor_attribute",
+          "contextQuote": "About us Our team is made-up of UC San Diego undergraduates, graduate students, postdoctoral fellows, and research scientists. Read more",
+          "requiresLiveFetch": true,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "identityAccepted": false
+        }
+      ]
+    }
+  ]
+}

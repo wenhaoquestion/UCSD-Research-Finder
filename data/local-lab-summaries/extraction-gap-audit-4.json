@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T02:30:01+00:00",
+  "auditedLabs": 4,
+  "genuineExtractionGaps": 4,
+  "networkRequestsByThisAgent": 0,
+  "findings": [
+    {
+      "ordinal": 296,
+      "labId": "ucsd-pathology-lab-cole-ferguson-lab",
+      "name": "Cole Ferguson Lab",
+      "genuineLabResearchProseMissed": true,
+      "diagnosis": "DOM.main() accepts a GoDaddy header widget marked role=main; it returns only repeated branding and omits sibling content widgets. Node.excluded is not responsible for the research paragraphs.",
+      "pages": [
+        {
+          "sourceIdCurrentlyInPacket": "src-18dcd05b55da0887",
+          "sourceUrl": "https://coleferguson.com/",
+          "observedAt": "2026-10-16T01:33:17+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fce53b1e871209c8e2188fa508b4226c74ad0fe3e6d5722cc32f4b1f85531396.html",
+          "bodySha256": "8edac04cc911be0229188969d21dca2403e741f98d3a00f51a009ab4f4b97969",
+          "cacheHashVerified": true,
+          "byteCount": 137806,
+          "currentPacketTextLength": 231,
+          "wholePageNormalizedTextLength": 1770,
+          "selectedNodeDuringDiagnosis": "div[data-ux=\"Header\"][role=\"main\"][data-aid=\"HEADER_WIDGET\"]#n-86263",
+          "filteredTextLengthDuringDiagnosis": 231,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://coleferguson.com/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        },
+        {
+          "sourceIdCurrentlyInPacket": "src-6177f7038407a005",
+          "sourceUrl": "https://coleferguson.com/research",
+          "observedAt": "2026-10-16T02:15:43+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/9e7523c69b4d45a72f6b98de6914ddcf7936c99a635fc648e41527812dabcc39.html",
+          "bodySha256": "2ab501d2378d3bba76046e23f69a0813be7b9191f20c4d2a7fcb6a047b2c6c9b",
+          "cacheHashVerified": true,
+          "byteCount": 157403,
+          "currentPacketTextLength": 231,
+          "wholePageNormalizedTextLength": 13916,
+          "selectedNodeDuringDiagnosis": "div[data-ux=\"Header\"][role=\"main\"][data-aid=\"HEADER_WIDGET\"]#n-8263",
+          "filteredTextLengthDuringDiagnosis": 231,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://coleferguson.com/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "Team",
+              "url": "https://coleferguson.com/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "More",
+              "url": "https://coleferguson.com/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        }
+      ],
+      "missedProse": [
+        {
+          "sourceUrl": "https://coleferguson.com/",
+          "observedAt": "2026-10-16T01:33:17+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fce53b1e871209c8e2188fa508b4226c74ad0fe3e6d5722cc32f4b1f85531396.html",
+          "nodeSelector": "p within div[data-ux=\"ContentText\"][data-aid=\"CONTENT_MEDIA_DESCRIPTION1_RENDERED\"]",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+          "quote": "Our lab is breaking new ground in understanding the epigenetic mechanisms that control neurodevelopment, and we have opened a new (if so far very small) field of study on the unexpected role of ubiquitin signaling in shaping chromatin. In other lines of investigation, we are studying neuroinflammation in the context of neurodegeneration (in the brain and the eye).",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        },
+        {
+          "sourceUrl": "https://coleferguson.com/research",
+          "observedAt": "2026-10-16T02:15:43+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/9e7523c69b4d45a72f6b98de6914ddcf7936c99a635fc648e41527812dabcc39.html",
+          "nodeSelector": "p in sibling widget-content section outside Header[role=main]",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[4]/div[1]/p[9]",
+          "quote": "Because complete loss of BAP1 is embryonic-lethal, we recently generated conditional mouse models removing BAP1 from excitatory neurons of the forebrain or cerebellum, and paired behavioral analyses with CUT&RUN, ATAC-seq, and transcriptomics.",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        }
+      ],
+      "explicitAdditionalResearchAboutSourceBeyondAlreadyCaptured": [],
+      "otherLinksNotRecommendedAsLabOverview": [],
+      "recommendedExtractionDirection": "Validate main landmarks against substantive body content; skip header-only GoDaddy landmarks or include sibling widget-content sections. Cached body re-extraction is sufficient.",
+      "accessBoundary": "Offline diagnosis only. All inspected bodies were already captured. No live request, new robots check, record edit, packet edit, script edit, or collector edit was made."
+    },
+    {
+      "ordinal": 343,
+      "labId": "ucsd-pediatrics-lab-raffatellu-lab",
+      "name": "Raffatellu Lab",
+      "genuineLabResearchProseMissed": true,
+      "diagnosis": "Node.excluded() matches sidebar-right on div#primary.content-area.sidebar-right.no-sidebar.container-normal. This is the primary content wrapper, not an aside/sidebar; excluding it hides main#main and all article research prose. DOM.main() then falls back to body with branding only.",
+      "pages": [
+        {
+          "sourceIdCurrentlyInPacket": "src-d4a49d41fe6920e9",
+          "sourceUrl": "https://raffatellu.com/",
+          "observedAt": "2026-10-16T01:05:23+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/632111bf9da21605a7e3e1ae77ad971def97596c1cba29f603edc7fbe9102fa5.html",
+          "bodySha256": "ba6dc4b91655806f82a22c054d91938b38ce56d6d3df8e9c489553d17fcf4b9b",
+          "cacheHashVerified": true,
+          "byteCount": 66702,
+          "currentPacketTextLength": 110,
+          "wholePageNormalizedTextLength": 658,
+          "selectedNodeDuringDiagnosis": "body.home.wp-singular",
+          "filteredTextLengthDuringDiagnosis": 110,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "Researchers",
+              "url": "https://raffatellu.com/people/researchers/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": false
+            },
+            {
+              "label": "Primary Research",
+              "url": "https://raffatellu.com/pubs/primary/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": false
+            },
+            {
+              "label": "research",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        },
+        {
+          "sourceIdCurrentlyInPacket": "src-bdd890ab40cacb59",
+          "sourceUrl": "https://raffatellu.com/research/",
+          "observedAt": "2026-10-16T02:15:45+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/edbcffd0c4335ecba3c989cbaf256971e90ba006fa07ea94bf2f9afef88ee559.html",
+          "bodySha256": "4abc1534e43f2f36d34cd8691c0cea45a3d040d2397fdc5f52d279bf85a757e4",
+          "cacheHashVerified": true,
+          "byteCount": 72043,
+          "currentPacketTextLength": 110,
+          "wholePageNormalizedTextLength": 6149,
+          "selectedNodeDuringDiagnosis": "body.wp-singular",
+          "filteredTextLengthDuringDiagnosis": 110,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Skip to content",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "Research",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "Researchers",
+              "url": "https://raffatellu.com/people/researchers/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": false
+            },
+            {
+              "label": "Primary Research",
+              "url": "https://raffatellu.com/pubs/primary/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": false
+            },
+            {
+              "label": "Close menu",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            },
+            {
+              "label": "Toggle menu",
+              "url": "https://raffatellu.com/research/",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        }
+      ],
+      "missedProse": [
+        {
+          "sourceUrl": "https://raffatellu.com/research/",
+          "observedAt": "2026-10-16T02:15:45+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/edbcffd0c4335ecba3c989cbaf256971e90ba006fa07ea94bf2f9afef88ee559.html",
+          "nodeSelector": "main#main[role=\"main\"] > article#post-135 > div.content-inner > div.entry-content > p.wp-block-paragraph",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/p[2]",
+          "quote": "The Raffatellu Lab’s primary research focus is to understand the complex interplays between gut pathogens, mucosal immunity, and the gut microbiota, with the long-term goal of discovering novel and effective therapeutic targets for controlling infection.",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        },
+        {
+          "sourceUrl": "https://raffatellu.com/research/",
+          "observedAt": "2026-10-16T02:15:45+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/edbcffd0c4335ecba3c989cbaf256971e90ba006fa07ea94bf2f9afef88ee559.html",
+          "nodeSelector": "p.wp-block-paragraph under div#primary.content-area.sidebar-right.no-sidebar.container-normal",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/p[4]",
+          "quote": "A main focus of our lab is to investigate the mechanisms by which STm evades nutritional immunity and acquires metal ions in the inflamed gut, thus allowing the pathogen to successfully compete with the microbiota for these essential nutrients.",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        }
+      ],
+      "explicitAdditionalResearchAboutSourceBeyondAlreadyCaptured": [],
+      "otherLinksNotRecommendedAsLabOverview": [
+        "Researchers is a people listing; Primary Research is a publication list."
+      ],
+      "recommendedExtractionDirection": "Do not discard primary content-area wrappers merely for sidebar placement classes; the existing main#main[role=main] contains the complete research prose once its ancestor survives.",
+      "accessBoundary": "Offline diagnosis only. All inspected bodies were already captured. No live request, new robots check, record edit, packet edit, script edit, or collector edit was made."
+    },
+    {
+      "ordinal": 462,
+      "labId": "ucsd-live-lab-f33233139aa2f3",
+      "name": "Bring Ocean and Atmosphere Together (BOAT) Lab",
+      "genuineLabResearchProseMissed": true,
+      "diagnosis": "DOM.main() selects a Google Sites title-only div.tyJCtd.mGzaTb.Depvyb.baZpAe.lkHyyc[role=main] (46 characters). The substantive research paragraph is in a separate section.yaqOZd sibling, with no excluded ancestor.",
+      "pages": [
+        {
+          "sourceIdCurrentlyInPacket": "src-1a7e69dc3826960d",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/boat/home",
+          "observedAt": "2026-10-16T01:03:07+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f33233139aa2f3a8ccf8a6c770a52a5562797ed3acabcafb40570b12bcf3df82.html",
+          "bodySha256": "499a26ef7499c3e56a3eebb122178dff5d986c06412f5bb68fc5da16d8b305c1",
+          "cacheHashVerified": true,
+          "byteCount": 124881,
+          "currentPacketTextLength": 46,
+          "wholePageNormalizedTextLength": 1624,
+          "selectedNodeDuringDiagnosis": "div.tyJCtd.mGzaTb.Depvyb.baZpAe.lkHyyc[role=\"main\"]",
+          "filteredTextLengthDuringDiagnosis": 46,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://sites.google.com/ucsd.edu/boat/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        },
+        {
+          "sourceIdCurrentlyInPacket": "src-b9ea0404606e1259",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/boat/research",
+          "observedAt": "2026-10-16T02:15:52+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/08ab1a4c028b02dbfa77d650b0ee8d9f6ce25865887cc69097357a82aa5a7023.html",
+          "bodySha256": "1e80243d5e49461f9579cc6747262a8545af180a2f8987ac19058f9ffdfde64a",
+          "cacheHashVerified": true,
+          "byteCount": 130632,
+          "currentPacketTextLength": 46,
+          "wholePageNormalizedTextLength": 945,
+          "selectedNodeDuringDiagnosis": "div.tyJCtd.mGzaTb.Depvyb.baZpAe.lkHyyc[role=\"main\"]",
+          "filteredTextLengthDuringDiagnosis": 46,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://sites.google.com/ucsd.edu/boat/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        }
+      ],
+      "missedProse": [
+        {
+          "sourceUrl": "https://sites.google.com/ucsd.edu/boat/home",
+          "observedAt": "2026-10-16T01:03:07+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f33233139aa2f3a8ccf8a6c770a52a5562797ed3acabcafb40570b12bcf3df82.html",
+          "nodeSelector": "section#h.6218474871c89e9c_5.yaqOZd p.zfr3Q.CDt4Ke",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/section[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/p[1]",
+          "quote": "The main theme of t he BOAT group is to understand the small-scale physical processes at the atmosphere–ocean interface. With the help of modern high-performance computers, we develop physics-based and data-driven models to gain insights into the lively air–sea processes. Our studies not only focus on the fundamental scientific problems in fluid mechanics, physical oceanography, and boundary layer meteorology, but also have great implications in engineering applications including weather forecasting, renewable energy harvesting, and marine infrastructure protection .",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        }
+      ],
+      "explicitAdditionalResearchAboutSourceBeyondAlreadyCaptured": [],
+      "otherLinksNotRecommendedAsLabOverview": [],
+      "recommendedExtractionDirection": "For Google Sites, include the non-navigation content sections outside the title-only role=main node; homepage body already supplies a lab-scoped overview. Research-page captions are supporting topics, not a substitute for the overview.",
+      "accessBoundary": "Offline diagnosis only. All inspected bodies were already captured. No live request, new robots check, record edit, packet edit, script edit, or collector edit was made."
+    },
+    {
+      "ordinal": 397,
+      "labId": "ucsd-psychiatry-lab-mood-anxiety-and-substance-use-computational-lab",
+      "name": "Mood, Anxiety, and Substance Use Computational (MASU) Lab",
+      "genuineLabResearchProseMissed": true,
+      "diagnosis": "DOM.main() selects the Google Sites title/PI-only div.tyJCtd.mGzaTb.Depvyb.baZpAe.lkHyyc[role=main] (71 characters). Several sibling section h2 nodes contain long, genuine lab-scoped research prose and are not excluded. The separately captured research page already retains its topic headings because its title landmark is under the 30-character threshold.",
+      "pages": [
+        {
+          "sourceIdCurrentlyInPacket": "src-8be9463a01e0eef5",
+          "sourceUrl": "https://sites.google.com/view/masulab/",
+          "observedAt": "2026-10-16T01:02:59+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c9765028cc4a335ebe62a5ed484e2953f0b0cb32710814c7d51fad4235b3a374.html",
+          "bodySha256": "10b260af1b4aca19b6f319e3c435e63d750b4115642ed4f1445841eea00e78ea",
+          "cacheHashVerified": true,
+          "byteCount": 123452,
+          "currentPacketTextLength": 71,
+          "wholePageNormalizedTextLength": 1460,
+          "selectedNodeDuringDiagnosis": "div.tyJCtd.mGzaTb.Depvyb.baZpAe.lkHyyc[role=\"main\"]",
+          "filteredTextLengthDuringDiagnosis": 71,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://sites.google.com/view/masulab/home/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        },
+        {
+          "sourceIdCurrentlyInPacket": "src-aa3d22a35d937148",
+          "sourceUrl": "https://sites.google.com/view/masulab/home/research",
+          "observedAt": "2026-10-16T02:15:48+00:00",
+          "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/80ef8820950c0c16f15db17192a20b2634d1cda4e576844e67eff5429a9a56c4.html",
+          "bodySha256": "8c93358ee959a286b7c4a34ba41636ca74576fcb3fd0fa937891676d0737b648",
+          "cacheHashVerified": true,
+          "byteCount": 125684,
+          "currentPacketTextLength": 329,
+          "wholePageNormalizedTextLength": 482,
+          "selectedNodeDuringDiagnosis": "body#yDmH0d",
+          "filteredTextLengthDuringDiagnosis": 329,
+          "explicitSameSiteLinks": [
+            {
+              "label": "Research",
+              "url": "https://sites.google.com/view/masulab/home/research",
+              "role": "discovery_only_navigation_not_research_evidence",
+              "alreadyCaptured": true
+            }
+          ]
+        }
+      ],
+      "missedProse": [
+        {
+          "sourceUrl": "https://sites.google.com/view/masulab/",
+          "observedAt": "2026-10-16T01:02:59+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c9765028cc4a335ebe62a5ed484e2953f0b0cb32710814c7d51fad4235b3a374.html",
+          "nodeSelector": "h2#h.50b01ss4rwyu_l.zfr3Q.JYVBee.CDt4Ke",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[2]",
+          "quote": "We are a regulatory systems lab focused on identifying instability signatures of disease vulnerability using population-scale longitudinal datasets. Our work is grounded in the idea that disruptions in biological timing and behavioral regulatory systems—such as sleep, activity, and impulse control—represent a core, transdiagnostic pathway to both psychiatric and metabolic disease.",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        },
+        {
+          "sourceUrl": "https://sites.google.com/view/masulab/",
+          "observedAt": "2026-10-16T01:02:59+00:00",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c9765028cc4a335ebe62a5ed484e2953f0b0cb32710814c7d51fad4235b3a374.html",
+          "nodeSelector": "h2#h.34jwmuk8uo7z_l.zfr3Q.JYVBee.CDt4Ke",
+          "nodePathInParsedCache": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/section[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[3]",
+          "quote": "As a physician-scientist–led group, we integrate multimodal data—including neuroimaging, digital phenotyping, and behavioral measures—to quantify regulatory instability over time. By moving beyond static, cross-sectional markers, we aim to develop prospective, mechanistic predictors of disease risk that can inform early identification and targeted intervention.",
+          "quoteBasis": "exact substring of whitespace-normalized non-script/style body subtree",
+          "presentInCurrentPacketText": false,
+          "explicitHiddenAncestors": [],
+          "isNavigationText": false
+        }
+      ],
+      "explicitAdditionalResearchAboutSourceBeyondAlreadyCaptured": [],
+      "otherLinksNotRecommendedAsLabOverview": [],
+      "recommendedExtractionDirection": "Include substantive Google Sites content sections rather than accepting the title-only landmark; no extra fetch is needed. Homepage explicitly states lab identity, UC San Diego, longitudinal datasets, and multimodal analysis.",
+      "accessBoundary": "Offline diagnosis only. All inspected bodies were already captured. No live request, new robots check, record edit, packet edit, script edit, or collector edit was made."
+    }
+  ],
+  "conclusion": "All four missing summaries have substantive entity-scoped research prose in already-cached HTML. Three are landmark-selection omissions and one is an overbroad sidebar-class exclusion. No concrete additional uncaptured same-site research/about URL was found; repair extraction and reuse cached bodies before considering any new access.",
+  "provenanceRequirement": "The missing prose is not in the current packet text. Re-extract from the existing cached body, preserve sourceUrl/observedAt/bodySha256 and derive the normal text-dependent sourceId before citing these quotes in a raw record. Do not attach them to an old sourceId whose text lacks the quote.",
+  "visibilityLimit": "Text occurs in ordinary p/h2 content nodes with no explicit hidden or aria-hidden ancestor and outside script/style. CSS/browser rendering was not executed, so this is cached-body extraction evidence, not a fresh rendered-page observation.",
+  "scope": "Only this diagnostic report is written."
+}

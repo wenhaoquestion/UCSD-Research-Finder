@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-16T09:03:11+00:00",
+  "phase": "complete_remaining_434_question_fields_and_eight_scoped_method_corrections",
+  "baseCommit": "b548801880efa8e28db1d4b469518a96ac51430d",
+  "goalTurnClass": "progress",
+  "goalStatus": "active",
+  "eligibleCount": 884,
+  "processedCount": 884,
+  "baselineCount": 868,
+  "reviewedAdditionsCount": 16,
+  "questionFieldsReviewed": 434,
+  "questionRecordsAdded": 194,
+  "researchQuestionsAdded": 273,
+  "explicitQuestionFieldUnknowns": 240,
+  "supportedRecordsWithQuestions": 498,
+  "scopedMethodCorrections": 8,
+  "methodEntriesAdded": 15,
+  "interestOnlyMethodEntriesWithdrawn": 7,
+  "counts": {
+    "supported": 738,
+    "partial": 56,
+    "unresolved": 90
+  },
+  "supportedLabOrGroupSummaries": 724,
+  "verifiedAcceptedLabGroupURLCount": 577,
+  "rawChanged": 434,
+  "rawByteIdentical": 450,
+  "packetByteIdentical": 884,
+  "allProjectionHydrationsVerified": 884,
+  "sourceCaptureDatesNotRetimed": true,
+  "sourceDateUnionsMayGrowFromExistingCaptures": true,
+  "networkRequestsThisPhase": 0,
+  "ownWireRequestsTotal": 358,
+  "ownReceiptsTotal": 210,
+  "identityMismatchDecisions": 14,
+  "unresolvedMismatchAccepted": 0,
+  "validation": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-16T08:59:27+00:00",
+    "eligibleCount": 884,
+    "processedSnapshotCount": 884,
+    "uniqueEvidenceCacheFilesChecked": 1075,
+    "projectionSha256": {
+      "summaries.jsonl": "4b4982a367bde59271ec1dc1bf07aacd9c35b8c1897d18b46dea52f0c068036c",
+      "url-verification.jsonl": "77a8507fa811878236f5525303c952f8d8b74ea1ad43ebd6ebcbc37a60ec885b",
+      "queue.json": "e2530a6f179f8aa1e04f44fcdab54de493ab68bffe2035cafcb67084cd6b6260",
+      "checkpoint.json": "53db94e0810a74fa2904e307d0cb1bbaad6734ec5f04d91c9e5d9acf9b2d3214"
+    },
+    "errors": [],
+    "sourceCacheDigestWarnings": [],
+    "integrityPassed": true,
+    "extractionReview": {
+      "affectedRecordCount": 214,
+      "reviewedRecordCount": 214,
+      "pendingRecordCount": 0,
+      "pendingLabIds": [],
+      "reviewErrors": [],
+      "extractionVersion": "summary-visible-content-v2"
+    },
+    "passed": true,
+    "identityDecisionsReviewed": 14,
+    "unresolvedMismatchAcceptedCount": 0
+  },
+  "independentFinalQa": {
+    "path": "QUESTION-METHOD-FINAL-INDEPENDENT-QA.json",
+    "sha256": "704fbaeb172f48dcd2882483e79f289b509ed05f7e65d2fcf4c056ca9787426e",
+    "passed": true
+  },
+  "preservationAuditSha256": "2e8761a2fa2a036be9580db2d54c600f669a70bee1387e2ba1b86c75fbd5076e",
+  "currentCoreTestReceipt": {
+    "actualTestsRun": 430,
+    "actualStartedAt": "2026-10-16T07:16:45+00:00",
+    "actualFinishedAt": "2026-10-16T07:16:48+00:00",
+    "testedFilesStillMatch": 46,
+    "rerunThisPhase": false,
+    "oneOffHelpersCoveredBy430": false,
+    "separateDataPlanRecoverySemanticAndPostapplyQaPassed": true
+  },
+  "sourceDelta": {
+    "schemaVersion": 1,
+    "reviewedAt": "2026-10-16T08:55:39+00:00",
+    "baseCommit": "b548801",
+    "previousGoalTurnClass": "progress",
+    "scope": {
+      "scientificGapTargets": 146,
+      "baselineAssociatedProfessorIDs": 67,
+      "officialProfessorFieldKeys": 81,
+      "combinedContentLookupKeys": 603,
+      "priorCaptureTuples": 438,
+      "currentCaptureTuples": 443,
+      "unchangedExactTuples": 438
+    },
+    "queueSnapshot": {
+      "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+      "readAt": "2026-10-16T08:55:39+00:00",
+      "readExactlyOnce": true,
+      "bytes": 47447424,
+      "sha256": "c93267b6d0fd6bbaa6c3174f8b6eec52834cd42e11daa59ecd70039a78321d6e",
+      "updatedAt": "2026-10-16T08:55:31+00:00",
+      "itemCount": 19506,
+      "counts": {
+        "done": 6976,
+        "unresolved": 822,
+        "scope_excluded": 291,
+        "retained_prior_evidence": 1734,
+        "pending": 9682,
+        "running": 1
+      }
+    },
+    "priorCaptureInventorySha256": "c59e387dfa4b24bdc0ce246b8f7b018a3f936b841cfbb8e87a4f4028217e2ebe",
+    "newOrChangedTuples": [
+      {
+        "queueKey": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "queueUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "queueState": "done",
+        "requestedUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "finalUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "observedAt": "2026-10-16T08:32:12+00:00",
+        "fetchStatus": "ok",
+        "httpStatus": 200,
+        "bodySha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7",
+        "positions": [
+          "attemptHistory[0]",
+          "fetch"
+        ],
+        "currentTargetLabIds": [
+          "ucsd-live-lab-5dba8659c4ddd7"
+        ]
+      },
+      {
+        "queueKey": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "queueUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "queueState": "unresolved",
+        "requestedUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "finalUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "observedAt": "2026-10-16T08:38:00+00:00",
+        "fetchStatus": "http_error",
+        "httpStatus": 404,
+        "bodySha256": null,
+        "positions": [
+          "attemptHistory[0]",
+          "fetch"
+        ],
+        "currentTargetLabIds": [
+          "ucsd-live-lab-bbf8c0855a7019"
+        ]
+      },
+      {
+        "queueKey": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "queueUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "queueState": "done",
+        "requestedUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "observedAt": "2026-10-16T08:34:12+00:00",
+        "fetchStatus": "ok",
+        "httpStatus": 200,
+        "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+        "positions": [
+          "attemptHistory[0]",
+          "fetch"
+        ],
+        "currentTargetLabIds": [
+          "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab"
+        ]
+      },
+      {
+        "queueKey": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "queueUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "queueState": "done",
+        "requestedUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "finalUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "observedAt": "2026-10-16T08:34:06+00:00",
+        "fetchStatus": "ok",
+        "httpStatus": 200,
+        "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030",
+        "positions": [
+          "attemptHistory[0]",
+          "fetch"
+        ],
+        "currentTargetLabIds": [
+          "ucsd-live-lab-8e21407776c12e"
+        ]
+      },
+      {
+        "queueKey": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "queueUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "queueState": "done",
+        "requestedUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "observedAt": "2026-10-16T08:34:18+00:00",
+        "fetchStatus": "ok",
+        "httpStatus": 200,
+        "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+        "positions": [
+          "attemptHistory[0]",
+          "fetch"
+        ],
+        "currentTargetLabIds": [
+          "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab"
+        ]
+      }
+    ],
+    "missingPriorTuples": [],
+    "newTargetBindings": [],
+    "successfulChangedCaptures": 4,
+    "handoff": {
+      "path": "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-reviewed-lab-handoff.json",
+      "sha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+      "changed": false,
+      "imported": false
+    },
+    "networkRequests": 0,
+    "bodyReadsDuringMetadataPass": 0,
+    "recordsPacketsCollectorSharedCodeWrites": 0,
+    "requestFidelity": "Content lookup folding is association only; every actual request/final URI, capture time and body SHA remains separate. No identity or science autoacceptance."
+  },
+  "newFourProfileReview": {
+    "path": "NEW-FOUR-PROFILE-CAPTURE-REVIEW.json",
+    "sha256": "f01f9b2876c4783e404cc51b0881966e7a4cc3d6ac1a5bebb2de8bc47ff99f5b",
+    "teamScienceOrIdentityAcceptanceCandidates": 0,
+    "oldCaptureDatesPreserved": true
+  },
+  "collectorRuntimeBoundary": {
+    "receipt": "QUESTION-FIELD-CURRENT-COLLECTOR-RUNTIME.json",
+    "loadedMapWasPreviouslyReviewed": true,
+    "workingC73SourceSeparatelyStaticallyReviewed": true,
+    "noRuntimeOrFutureLivePermissionInferredFromStaticReview": true,
+    "noNewNetworkAdmissionOrRegistryChanges": true
+  },
+  "outputsAreComplete": false,
+  "openWork": [
+    {
+      "kind": "method_field_review",
+      "count": 166,
+      "inventory": "REMAINING-METHOD-FIELD-INVENTORY.json",
+      "inventorySha256": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+      "status": "inventory_only_not_semantically_reviewed"
+    },
+    {
+      "kind": "concrete_partial_unresolved_science_or_identity_gaps",
+      "count": 146,
+      "status": "per_record_blockers_preserved; five newly associated capture tuples individually reviewed without team-science or identity acceptance"
+    },
+    {
+      "kind": "collection_and_approved_additions",
+      "status": "collector remains active; append only newly individually reviewed and approved additions, never arbitrary queue rows"
+    }
+  ],
+  "artifactSha256": {
+    "COLLECTOR-C73-INPUT-PROVENANCE-SOURCE-REVIEW.json": "8cd7ade4e7666f5faba64b47e03c000382990fd168501b367b325c81181ef95c",
+    "COLLECTOR-C73-INPUT-PROVENANCE-SOURCE-REVIEW.md": "143c087aa4556f2528ed4945325edd2fc648ea19ca818f9462b9988269f23a06",
+    "METHOD-FIELD-APPLICATION-JOURNAL.json": "901440f2a06d580670e8fe6197ee729b9967581976e48cfa85e77b15604a5720",
+    "METHOD-FIELD-APPLICATION-PLAN-QA.json": "063bf50582711449bd00fe9477dc66b328de0282f74b4a7dea3b24686bfc276c",
+    "METHOD-FIELD-APPLICATION-PLAN-QA.md": "a58a953f0fe575baa7de1c11016fcc1629d462f46e2bdea60e175e6fe5b0b9a8",
+    "METHOD-FIELD-APPLICATION-PLAN.json": "a00853c9513b21ee8c6a51f7f12dc017494f6ad7dfe71d84c8bdf21087fb2c0b",
+    "METHOD-FIELD-SCOPE-INDEPENDENT-QA.json": "ee2971c67d4f5ebf3761ed0f44617891f9e678fc356892f1fe01f7d2e5cf70d5",
+    "METHOD-FIELD-SCOPE-INDEPENDENT-QA.md": "f0b4388820926ae1c7b186873bd8ee0e5cddc90a07b50b0d0c7c194fa856dc8e",
+    "METHOD-FIELD-SCOPE-REVIEW.json": "3248021953a5483a17d1afc9189e626ffa0278209f6a5fb7462b6769d4cc2980",
+    "METHOD-FIELD-SCOPE-REVIEW.md": "5f4b1a209e0c9870d290acf1cbe64d24b1fca1fdfea5612d0ad99a52c4ce8dd7",
+    "METHOD-FIELD-TERMINOLOGY-ADDENDUM.json": "7c2aabb5262160c10b4fcd4c5e8e2cea9a4ee741f29206123315d1d10a6ee9af",
+    "NEW-FOUR-PROFILE-CAPTURE-REVIEW.json": "f01f9b2876c4783e404cc51b0881966e7a4cc3d6ac1a5bebb2de8bc47ff99f5b",
+    "NEW-FOUR-PROFILE-CAPTURE-REVIEW.md": "71d26e6d34216b0dd3262726a805e274451f321cc390120ab16dcf0ba8718ed9",
+    "PRIOR29-QUESTION-FIELD-CROSS-QA-000-008.json": "f20c4aefa5d3677b3fae930f7fb72391cc1b27445ccb0a8066e9483974bf4aa2",
+    "PRIOR29-QUESTION-FIELD-CROSS-QA-000-008.md": "dae7aa03b3ef50544fb552a04232661469dae69419d5e8f47b55db72f26be8c7",
+    "PRIOR29-QUESTION-FIELD-CROSS-QA-009-028.json": "66949086d4fe60a69639dc0c9c6419761af2990b314366ca729e04d2205a61e1",
+    "PRIOR29-QUESTION-FIELD-CROSS-QA-009-028.md": "596786faae68a36fa3cd914014307df9605f62006cdcddbbb91c5fe82f9e540b",
+    "PRIOR29-QUESTION-FIELD-RECHECK-INVENTORY.json": "d9c7ca4fb9fa09c29460d4c9549fc6f8296bf3ab1932cc730d43fa3ad2858e94",
+    "PRIOR29-QUESTION-FIELD-REVIEW-009-028.json": "82ba1f2dd6d8dfcdc1fe0f1f8d7dce51a86fbb20030cdf79778a3008d37b9c6a",
+    "PRIOR29-QUESTION-FIELD-REVIEW-009-028.md": "7e4ce43807708a05b0510f469261217b82f0f6c271b0ea261c8ce3ea72afef4a",
+    "PRIOR29-QUESTION-FIELD-REVIEW.json": "8eff973cc745e4f1539900e309d8740d61bd5e09574a474f4e7774b7c939393c",
+    "PRIOR29-QUESTION-FIELD-REVIEW.md": "4db643b2d42d977ac8a2714a85c749e57f22b0f1e8415f1c960fc4c83e26ca11",
+    "QUESTION-FIELD-CURRENT-COLLECTOR-RUNTIME.json": "7b519fcc8cb84f2e508a13c8f4a6a423415df79ade5323737e162383c5d24578",
+    "QUESTION-FIELD-POSTAPPLY-INDEPENDENT-QA.json": "fa2d4121ed30d821ddfdf670dbd3e242af6b43a8002598a0665bbdb8deba3a43",
+    "QUESTION-FIELD-POSTAPPLY-INDEPENDENT-QA.md": "a5f3add6294d1fa10179878784ffb8b8f46782362122be2b1b30a524cd8a6b6c",
+    "QUESTION-METHOD-CORE-TEST-RECEIPT-BINDING.json": "9c2c1057edb9a3955c29ef0a4ca8abe8fd6672640c9dce13df87cfa446deacdb",
+    "QUESTION-METHOD-FIELD-PRESERVATION-AUDIT.json": "2e8761a2fa2a036be9580db2d54c600f669a70bee1387e2ba1b86c75fbd5076e",
+    "QUESTION-METHOD-FINAL-INDEPENDENT-QA.json": "704fbaeb172f48dcd2882483e79f289b509ed05f7e65d2fcf4c056ca9787426e",
+    "QUESTION-METHOD-FINAL-INDEPENDENT-QA.md": "73bb8e7f41b60757fef8374a37a66b42ad4819d6601d2ee5a310cdfa5015b9e2",
+    "QUESTION-METHOD-FINAL-SCIENCE-CACHE-DELTA.json": "32e3cfad55fcc5683503ebb7759eb8cb5d49a3c08146e35ad92819e6f67e3c8c",
+    "QUESTION-PHASE-SCIENCE-CACHE-DELTA.json": "c35f76f4a9e0c4afb8c5ed77cd64f1b05a6a5097e415400c690c9fcc7fc4a9ed",
+    "REMAINING-METHOD-FIELD-INVENTORY.json": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+    "REMAINING-QUESTION-FIELD-APPLICATION-JOURNAL.json": "2ee52a3981367bd7fd0515c5350235516d0b1b66cc1b4b9105b00d5eaf377c05",
+    "REMAINING-QUESTION-FIELD-APPLICATION-PLAN-QA.json": "18badff5cdcd52fa7bea4f311bd2964dbe08c12281693c1f8f580aa0d3d98ed2",
+    "REMAINING-QUESTION-FIELD-APPLICATION-PLAN-QA.md": "84d72aacc7ea87e003fdd0bb6e1cea861251f9dda53edac5a2a24babcfbf509a",
+    "REMAINING-QUESTION-FIELD-APPLICATION-PLAN.json": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-000-134.json": "0e3c8d6418220862f8418eb9b8407c70c2cf045eb4786311ed81a85c1f3af934",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-000-134.md": "7b5b11cf72623753ea22c064ba1957f1728324ce7b1ebc2d1f693e5836a4d8c9",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-135-269.json": "eb48a6b4566a9cb9e3b2486e0a79dd03b808c4b12de3f3bb7452b0e678546101",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-135-269.md": "0c4ac9e6a86a641fc6b110635687df877ccfdbf08472ff87383fceacedea4bb0",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-270-404.json": "8f0f90f08344910ae12a86d891bf9039389cd259579c28692813df4a68f54f71",
+    "REMAINING-QUESTION-FIELD-CROSS-QA-270-404.md": "8db465091e01b57f91b1ccbe47cafd62b14b592ab61f748f88b9334982e1f56f",
+    "REMAINING-QUESTION-FIELD-DRAFT-INTEGRITY.json": "bb11565493866b728d0f627a0148ee263f6d1c38fd68d1bb38ced9290b77860d",
+    "REMAINING-QUESTION-FIELD-INVENTORY.json": "3800eb1f2b2f86e175ada0a1f735238771f54b07bcf0f8bdd01433178fd94e44",
+    "REMAINING-QUESTION-FIELD-REVIEW-000-134.json": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "REMAINING-QUESTION-FIELD-REVIEW-000-134.md": "b62387e381e92234629defd289420ff986bf8dc9847f826f4127cc3d03aa001d",
+    "REMAINING-QUESTION-FIELD-REVIEW-135-269.json": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "REMAINING-QUESTION-FIELD-REVIEW-135-269.md": "211fd52ac683ccd3bbb41034db7adb830c1d2acac6e630008c67fde503cdaac1",
+    "REMAINING-QUESTION-FIELD-REVIEW-270-404.json": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "REMAINING-QUESTION-FIELD-REVIEW-270-404.md": "a74a7bfa5c3c8c82b0c12ae8900aabc5a967cd897273c210526b87077999a392",
+    "REMAINING-QUESTION-MESIROV-ADDENDUM.json": "3aa7f78aeb9bc9464074969524e4beb5cd3828558004ee360655e16a9d4cb50e",
+    "REMAINING-QUESTION-MIDRANGE-ADDENDUM.json": "74e1d8890204e9c83c57be5e49bd113839ee40bee895d61ce02b9d7dab2149cb",
+    "REMAINING-QUESTION-MIDRANGE-ADDENDUM.md": "ceafdb8c042e1b38ced8dd68b4d100244f1184aeaaefed923591a8498d798038",
+    "REMAINING-QUESTION-MIGRATION-HELPER-INDEPENDENT-QA.json": "d3f50a188008f00a0236752c2bd4a9bffc2470c47e2f201f0fea7e7baf60966a",
+    "REMAINING-QUESTION-MIGRATION-HELPER-INDEPENDENT-QA.md": "f9e8c233f771935e80a176f1a558a6aef19d398c576608ad393ada601d8a6685",
+    "REMAINING-QUESTION-SCOPE-REVISIONS.json": "df38a162df6e98571d914706d8f0a8207345ae320b609a1b8933dd42285131d4",
+    "apply_remaining_question_fields.py": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+    "apply_scoped_method_fields.py": "02d1244346a7044ab607e741ae61cc36ac3296c89a5baa9f3b8632e65288729e",
+    "audit_question_method_fields.py": "4be7e8a438ce0f9ddd1d41d9a38a2e93b0cf6d306083179d87f31a280a4e5738",
+    "author_prior29_question_recheck.py": "844a7ddefa070fb152a76ab674f2e58a178d87428d688f15d35d486e47951f5a",
+    "network-adapter-sources/collect_ucsd_coverage-c73f213ec1877851f6fd8aa44d2b11a03f2fd37b3f0808984a31829ade785085.py": "c73f213ec1877851f6fd8aa44d2b11a03f2fd37b3f0808984a31829ade785085",
+    "scan_question_phase_cache_delta.py": "f4a5a4e378575b40b466b720fd0d4710fe140183c9ead87c841c4f8bf2cbe310",
+    "verify_remaining_question_drafts.py": "392c33798d06920a1e4e887a334a40e5c26fea3d989cfac435a76d8da57a87fe"
+  },
+  "projectionSha256": {
+    "summaries.jsonl": "4b4982a367bde59271ec1dc1bf07aacd9c35b8c1897d18b46dea52f0c068036c",
+    "url-verification.jsonl": "77a8507fa811878236f5525303c952f8d8b74ea1ad43ebd6ebcbc37a60ec885b",
+    "checkpoint.json": "53db94e0810a74fa2904e307d0cb1bbaad6734ec5f04d91c9e5d9acf9b2d3214",
+    "manifest.json": "f1f608d0dc78463cfc41c900398a29dc7a3ad3550c011b54114da602488e9ff6"
+  }
+}

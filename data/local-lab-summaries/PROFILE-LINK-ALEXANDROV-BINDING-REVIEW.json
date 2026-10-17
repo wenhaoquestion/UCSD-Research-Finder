@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:49:15+00:00",
+  "networkRequestsMade": 0,
+  "recordsPacketsCodeCollectorWrites": 0,
+  "labId": "ucsd-live-lab-c53a46a8ac4496",
+  "ordinal": 447,
+  "verdict": "new actual related-HTTP redirect plus literal same-site anchors support binding existing reviewed lab research bodies to stable447 without merging IDs or changing failed originalHTTPS root",
+  "rootRelatedCapture": {
+    "sourceIdIfAdmitted": "src-7e288f2d49761026",
+    "sourceUrl": "https://alexandrov.cloud.ucsd.edu/",
+    "requestedUrl": "http://alexandrov.ucsd.edu/",
+    "observedAt": "2026-10-16T06:45:54+00:00",
+    "bodySha256": "467c341ec63369592130bc93d81c9baaca617cb9ad3be0ab8a0ef1a9ee4e07f5",
+    "metadataSha256": "bf59d772fc61648f8bc9d3eb28f41d8cef6dd25857301d0af6a976b6097d73d5",
+    "cachePath": "data/local-lab-summaries/gap-cache/261db7591b3f18c86e6aad1721f99cf5d9e4ff4bdf93cda55442031bdb8b2929.html",
+    "metadataPath": "data/local-lab-summaries/gap-cache/261db7591b3f18c86e6aad1721f99cf5d9e4ff4bdf93cda55442031bdb8b2929.json",
+    "captureMetadata": {
+      "sourceUrl": "http://alexandrov.ucsd.edu/",
+      "observedAt": "2026-10-16T06:45:54+00:00",
+      "status": "ok",
+      "redirects": [
+        {
+          "from": "http://alexandrov.ucsd.edu/",
+          "to": "https://alexandrov.cloud.ucsd.edu/",
+          "httpStatus": 302
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://alexandrov.cloud.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:40+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792112260.8795252,
+        "error": "",
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://alexandrov.cloud.ucsd.edu/",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "sha256": "467c341ec63369592130bc93d81c9baaca617cb9ad3be0ab8a0ef1a9ee4e07f5",
+      "retrievedEpoch": 1792133154.451985
+    },
+    "title": "The Alexandrov Lab",
+    "primaryTextCharacters": 53,
+    "primaryTextSha256": "df3f7458408a80119bdd5bcbc2f8ad0cbe8238e3c4e204b486fcf6810bf45ca2",
+    "wireEventRange": [
+      345,
+      349
+    ],
+    "originalContexts": {
+      "labId": "ucsd-live-lab-c53a46a8ac4496",
+      "url": "http://alexandrov.ucsd.edu/",
+      "listedWebsite": "https://alexandrov.ucsd.edu/",
+      "purpose": "observe_literal_historical_profile_lab_link",
+      "observationOnly": true,
+      "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+      "reviewedAt": "2026-10-16T06:39:38+00:00",
+      "maxPageBytes": 2000000,
+      "packetSha256": "cf57ead3d10affb30b5d4969d3432e43e1ae7fb2d625c9edf990f25673051463",
+      "rawSha256": "77bf2a6f2c460b7e1f8eaf542c7594cade7e8cc4493f27f6020344c547bab025",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://alexandrov.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:25+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://alexandrov.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:06:25+00:00",
+          "httpStatus": 0,
+          "retrievedEpoch": 1792112785.418936,
+          "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'alexandrov.ucsd.edu' More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefor",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://alexandrov.ucsd.edu/",
+        "retrievedEpoch": 1792112785.430876
+      },
+      "professorId": "ucsd-faculty-ludmil-alexandrov",
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+        "observedAt": "2026-10-07T22:09:38+00:00",
+        "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38.html",
+        "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38.original.json",
+        "bodySha256": "9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38",
+        "metadataSha256": "667f20ab0602d97be5cc50f9a7cfa363364ba08d0c737f96d8b056a8924dc3a7"
+      },
+      "literalAnchor": {
+        "label": "Alexandrov Lab",
+        "href": "http://alexandrov.ucsd.edu/"
+      },
+      "fieldProofSha256": "b397097c29947997da5b54906adef4b1ab8936ddd0c828c4aefa6f47914cd9c5",
+      "reason": "Individually reviewed literal same-host/path/query HTTP anchor in preserved official profile; baseline discovery had normalized its protocol to HTTPS. Related route only, never root identity, canonical URL, alias or science acceptance.",
+      "labIds": [
+        "ucsd-live-lab-c53a46a8ac4496"
+      ],
+      "kind": "reviewed_profile_lab_link_gap",
+      "priority": 2,
+      "discoveryMechanism": "historical_profile_literal_lab_anchor",
+      "label": "reviewed literal historical profile lab link",
+      "notAnAcceptedCanonicalLabUrl": true,
+      "notAnOriginalListedURLCheck": true,
+      "observationScope": "related_historical_profile_link_only",
+      "availability": "not_captured",
+      "requiresLiveFetch": true
+    }
+  },
+  "profileLiteralProof": {
+    "profileCapture": {
+      "sourceUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+      "observedAt": "2026-10-07T22:09:38+00:00",
+      "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38.html",
+      "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38.original.json",
+      "bodySha256": "9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38",
+      "metadataSha256": "667f20ab0602d97be5cc50f9a7cfa363364ba08d0c737f96d8b056a8924dc3a7"
+    },
+    "rawAnchorFragment": "<a href=\"http://alexandrov.ucsd.edu/\">Alexandrov Lab</a>",
+    "verbatimVerified": true
+  },
+  "actualRootAnchors": [
+    {
+      "label": "Research",
+      "href": "/research",
+      "resolved": "https://alexandrov.cloud.ucsd.edu/research"
+    },
+    {
+      "label": "Research Focus",
+      "href": "/research/research-focus",
+      "resolved": "https://alexandrov.cloud.ucsd.edu/research/research-focus"
+    }
+  ],
+  "reusedScientificCaptures": [
+    {
+      "sourceIdIfAdmitted": "src-ba617541487c7584",
+      "sourceUrl": "https://alexandrov.cloud.ucsd.edu/research",
+      "requestedUrl": "https://alexandrov.cloud.ucsd.edu/research",
+      "observedAt": "2026-10-16T02:15:08+00:00",
+      "bodySha256": "13de8e0fc17c848bda09b003e12f7d86c996a32d936d84a4bf87748480c4b464",
+      "metadataSha256": "ac87509159becea1ce8b926756dc74900da07dc876a00429b6a6fc08ddae2b8b",
+      "cachePath": "data/local-lab-summaries/gap-cache/b8694f5975d684dd6e8bfc4bdb63a1f6d52a0d102e0de193b100a1acea419b96.html",
+      "metadataPath": "data/local-lab-summaries/gap-cache/b8694f5975d684dd6e8bfc4bdb63a1f6d52a0d102e0de193b100a1acea419b96.json",
+      "captureMetadata": {
+        "sourceUrl": "https://alexandrov.cloud.ucsd.edu/research",
+        "observedAt": "2026-10-16T02:15:08+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://alexandrov.cloud.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:40+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112260.8795252,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://alexandrov.cloud.ucsd.edu/research",
+        "contentType": "text/html; charset=utf-8",
+        "error": "",
+        "sha256": "13de8e0fc17c848bda09b003e12f7d86c996a32d936d84a4bf87748480c4b464",
+        "retrievedEpoch": 1792116908.7302139
+      },
+      "title": "The Alexandrov Lab - Research",
+      "primaryTextCharacters": 961,
+      "primaryTextSha256": "ef62c68565cc2e72c9c26f6613105fabe1e5653b5ee269c42d2186251d246e1b",
+      "wireEventRange": [
+        7,
+        8
+      ],
+      "originalContexts": {
+        "url": "https://alexandrov.cloud.ucsd.edu/research",
+        "labIds": [
+          "ucsd-bioengineering-lab-alexandrov-lab"
+        ],
+        "label": "Research",
+        "linkedFrom": "https://alexandrov.cloud.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T00:57:41+00:00",
+        "priority": 3,
+        "reason": "Individually reviewed record lacks sufficient research text; explicit same-site research/about link.",
+        "availability": "not_captured",
+        "requiresLiveFetch": true
+      }
+    },
+    {
+      "sourceIdIfAdmitted": "src-9d02dfeba70a3fd7",
+      "sourceUrl": "https://alexandrov.cloud.ucsd.edu/research/research-focus",
+      "requestedUrl": "https://alexandrov.cloud.ucsd.edu/research/research-focus",
+      "observedAt": "2026-10-16T02:15:09+00:00",
+      "bodySha256": "15584eac4081d9308b4a6d23a85e2a5e734de08112f086e42457bcf3b3f29afb",
+      "metadataSha256": "3f122ab8190e491eac47eb8ea6a0bb3239bb7f5a0e29c3f456400c1d41d7c7ed",
+      "cachePath": "data/local-lab-summaries/gap-cache/d67a6c009d2ce3c087d1696c7fd5e2b6025390ed70715305aa8a803c3195ea18.html",
+      "metadataPath": "data/local-lab-summaries/gap-cache/d67a6c009d2ce3c087d1696c7fd5e2b6025390ed70715305aa8a803c3195ea18.json",
+      "captureMetadata": {
+        "sourceUrl": "https://alexandrov.cloud.ucsd.edu/research/research-focus",
+        "observedAt": "2026-10-16T02:15:09+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://alexandrov.cloud.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:40+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112260.8795252,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://alexandrov.cloud.ucsd.edu/research/research-focus",
+        "contentType": "text/html; charset=utf-8",
+        "error": "",
+        "sha256": "15584eac4081d9308b4a6d23a85e2a5e734de08112f086e42457bcf3b3f29afb",
+        "retrievedEpoch": 1792116909.6308448
+      },
+      "title": "The Alexandrov Lab - Research Focus",
+      "primaryTextCharacters": 2087,
+      "primaryTextSha256": "a729a3f1c5ca4872e6ad46cf4351a36d3a6130fd285119e0f978a5e123a5e574",
+      "wireEventRange": [
+        8,
+        9
+      ],
+      "originalContexts": {
+        "url": "https://alexandrov.cloud.ucsd.edu/research/research-focus",
+        "labIds": [
+          "ucsd-bioengineering-lab-alexandrov-lab"
+        ],
+        "label": "Research Focus",
+        "linkedFrom": "https://alexandrov.cloud.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T00:57:41+00:00",
+        "priority": 3,
+        "reason": "Individually reviewed record lacks sufficient research text; explicit same-site research/about link.",
+        "availability": "not_captured",
+        "requiresLiveFetch": true
+      }
+    }
+  ],
+  "samePreviouslyAcceptedBodyProofs": [
+    {
+      "sourceId": "src-ba617541487c7584",
+      "sameExistingPacketSource": true,
+      "existingLabId": "ucsd-bioengineering-lab-alexandrov-lab",
+      "observedAtUnchanged": "2026-10-16T02:15:08+00:00",
+      "bodySha256Unchanged": "13de8e0fc17c848bda09b003e12f7d86c996a32d936d84a4bf87748480c4b464"
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "sameExistingPacketSource": true,
+      "existingLabId": "ucsd-bioengineering-lab-alexandrov-lab",
+      "observedAtUnchanged": "2026-10-16T02:15:09+00:00",
+      "bodySha256Unchanged": "15584eac4081d9308b4a6d23a85e2a5e734de08112f086e42457bcf3b3f29afb"
+    }
+  ],
+  "fullBodiesReadThisBindingReview": [
+    {
+      "sourceId": "src-ba617541487c7584",
+      "characters": 961
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "characters": 2087
+    }
+  ],
+  "recommendation": {
+    "status": "supported",
+    "summaryZh": "Alexandrov 实验室结合实验与计算研究癌症发生机制，关注突变特征如何帮助理解癌症，并以此探索癌症预防与治疗靶向的研究策略。实验室开发和维护 SigProfiler 机器学习工具套件，用于癌症测序数据和相关分子过程的计算分析。",
+    "researchQuestions": [
+      "哪些分子过程促成癌症发生？",
+      "突变特征如何帮助理解人类癌症？"
+    ],
+    "topics": [
+      "癌症发生机制",
+      "突变特征",
+      "癌症基因组数据分析",
+      "癌症预防与治疗靶向研究目标"
+    ],
+    "methods": [
+      "实验与计算研究",
+      "突变特征分析",
+      "SigProfiler机器学习计算分析"
+    ],
+    "identity": {
+      "status": "confirmed",
+      "entityType": "lab",
+      "reason": "具名官方profile的实际HTTP Lab锚点经真实302到具名cloud站；该页实际Research及Research Focus锚点精确对应既有整体实验室正文。"
+    },
+    "affiliation": {
+      "status": "source_reported",
+      "reason": "新实际cloud首页字面The Alexandrov Lab University of California San Diego；不推定日期明确的当前任职。"
+    },
+    "evidence": [
+      {
+        "sourceId": "src-7e288f2d49761026",
+        "quote": "The Alexandrov Lab University of California San Diego",
+        "supports": [
+          "identity",
+          "affiliation"
+        ]
+      },
+      {
+        "sourceId": "src-ba617541487c7584",
+        "quote": "Our research focuses on utilizing experimental and computational approaches to elucidate the mechanisms by which cancers develop and in leveraging this knowledge for the development of better cancer prevention strategies and the improved targeting of existing cancer treatments.",
+        "supports": [
+          "research",
+          "topics",
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-ba617541487c7584",
+        "quote": "Throughout the past five years, our work has predominately focused on creating the concept of mutational signatures, on demonstrating the utility of mutational signatures in understanding human cancer, and on identifying mutational signatures in a plethora of diverse cancer types.",
+        "supports": [
+          "research",
+          "topics",
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-9d02dfeba70a3fd7",
+        "quote": "Our Lab has developed and maintains the SigProfiler suite of computational machine learning tools for analysis of next-generation generation cancer sequencing data.",
+        "supports": [
+          "methods",
+          "topics"
+        ]
+      }
+    ]
+  },
+  "boundaries": [
+    "保留稳定447与已有ucsd-bioengineering-lab-alexandrov-lab两个ID，不merge/alias或重命名",
+    "原列https://alexandrov.ucsd.edu/ robots TLS证书失败及原时间独立保留；06:45:54的302只属于related HTTP URL",
+    "旧Research02:15:08及Research Focus02:15:09 capture时间/SHA/sourceId不变，不改为本次绑定或HTTP观察时间",
+    "Our consortium collecting5000样本为联合项目描述，不是本实验室已完成成果或当前规模",
+    "2561样本属于In this proposal，不能作本实验室已完成样本量/结果或当前数字",
+    "Throughout the past five years是未注明基准日期的原文相对时间，不换算为当前五年",
+    "实验技术未具体列明；不猜测测序平台、模型系统或实验流程",
+    "癌症预防/更好治疗是研究目标，不保证临床疗效"
+  ],
+  "originalRootProjection": {
+    "listedWebsite": "https://alexandrov.ucsd.edu/",
+    "originalFetch": {
+      "sourceUrl": "https://alexandrov.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:25+00:00",
+      "status": "robots_unavailable",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://alexandrov.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:06:25+00:00",
+        "httpStatus": 0,
+        "retrievedEpoch": 1792112785.418936,
+        "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'alexandrov.ucsd.edu' More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefor",
+        "redirects": [],
+        "status": "unavailable"
+      },
+      "blockedUrl": "https://alexandrov.ucsd.edu/",
+      "retrievedEpoch": 1792112785.430876
+    },
+    "relatedHTTPSourceMatchesOriginalHTTPSFetch": false,
+    "promoteOriginalRootIdentity": false,
+    "increaseVerifiedURLCount": false
+  },
+  "snapshotAtReview": {
+    "rawStatus": "supported",
+    "rawSha256": "e6fa68fbf8f97ff58ec81b642cd5c33aa093430f1b5fdcdc7e9175dcd4364e6b",
+    "packetSha256": "ceb4e14be4706ca62b22083584f1be296ad9732b7c79eacd7f57b3ba487e10fe",
+    "existingOtherIDPacketSha256": "1c66ad7369a1f0064365e7b3349868aa4e2ec2d6f8c738b33f13a005d31f7588",
+    "gapResultsSha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b"
+  },
+  "assessmentFingerprint": "57443a76c16036a25320dffd8a76d045b4f684e4df6e377902894a6fa1eb3e87"
+}

@@ -1,0 +1,140 @@
+{
+  "labId": "ucsd-biology-topic-lab-spitzer",
+  "status": "supported",
+  "summaryZh": "Spitzer 实验室研究神经递质身份的可塑性，关注神经活动及感觉、运动刺激如何触发递质切换，并改变神经系统功能与行为。研究讨论这种可塑性与学习、神经和精神疾病的关系；新页面未明确说明具体实验方法。",
+  "researchQuestions": [
+    "神经活动和感觉、运动刺激如何改变神经递质身份，并影响行为？"
+  ],
+  "topics": [
+    "神经递质切换与脑可塑性",
+    "神经活动与行为",
+    "学习及神经精神疾病"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-f79eb7d2691acb9e",
+      "quote": "Nick Spitzer Lab | Brain Plasticity | Learn More Here",
+      "supports": [
+        "identity"
+      ],
+      "quoteLocation": "title"
+    },
+    {
+      "sourceId": "src-f79eb7d2691acb9e",
+      "quote": "Why do we do the research?",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-f79eb7d2691acb9e",
+      "quote": "Investigation of the development of neuronal excitability led to the discovery that calcium-dependent embryonic electrical activity rapidly and reversibly reconfigures the transmitters and matching postsynaptic transmitter receptors that neurons express.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-f79eb7d2691acb9e",
+      "quote": "Both sensory and motor stimuli reprogram neurotransmitter identity, resulting in transmitter switches in young and adult nervous systems.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-f79eb7d2691acb9e",
+      "quote": "The changes in brain biochemistry during transmitter switching cause changes in behavior that can be beneficial, enhancing learning, or detrimental, contributing to neurological and psychiatric disorders.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "原UCSD Spitzer根页实际HTML meta refresh指向www.nickspitzerlab.org；新站明确Nick Spitzer Lab，并在Why do we do the research及Research Team框架下介绍整体研究，支持具名实验室研究。个人滑雪登山经历不作研究依据；本次目标请求的独立HTTP301链不补入原根页HTTP记录。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "新实验室页没有明确机构隶属正文；不以UCSD域名、邮箱或资助者代替实验室隶属声明。"
+  },
+  "uncertainty": [
+    "新页面研究正文未明确列出具体实验方法；不从神经兴奋性、钙活动或项目标题推断电生理等技术。",
+    "新站有Nick个人介绍，但摘要只使用实验室研究与团队框架中的研究段。",
+    "旧根页的HTML meta提示与本次目标URL的HTTP跳转分别记录；未采纳新规范网址或别名。",
+    "正文未标注完整研究计划更新时间；来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+    "研究方法待核（限本轮已审阅材料）：已读新站全部研究正文与项目短标签；神经兴奋性/钙活动为过程与发现，Drugs of Abuse等短项目标题中的暴露描述不足以确认方法采用的完整范围，不推断电生理、药物处理或模型技术。旧空根页无正文可补。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:12:59+00:00",
+  "researchContentSupport": {
+    "status": "explicit_named_lab_research_supported",
+    "scope": "Only the named laboratory research prose in the new capture; original root checks and listed URL are unchanged."
+  },
+  "previousReviewedAt": "2026-10-16T01:49:16+00:00",
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:12:59+00:00",
+    "previousRecordReviewedAt": "2026-10-16T03:23:19+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读新站全部研究正文与项目短标签；神经兴奋性/钙活动为过程与发现，Drugs of Abuse等短项目标题中的暴露描述不足以确认方法采用的完整范围，不推断电生理、药物处理或模型技术。旧空根页无正文可补。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-000-054.json",
+    "reviewComponentSha256": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-d064f0b5261fc28f",
+        "sourceUrl": "https://labs.biology.ucsd.edu/spitzer/",
+        "sourceObservedAt": "2026-10-16T00:59:54+00:00",
+        "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "role": "related_destination_variant",
+        "title": "",
+        "readRanges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "coverage": "entity_local_prose_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      },
+      {
+        "sourceId": "src-f79eb7d2691acb9e",
+        "sourceUrl": "https://nickspitzerlab.org/",
+        "sourceObservedAt": "2026-10-16T03:18:26+00:00",
+        "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835",
+        "textSha256": "3867fe5cd7b58fd1260f9df344998717cbf95b1fdc615aaf182dca84d15d1c70",
+        "textCharacters": 1954,
+        "role": "reviewed_followup_requires_entity_match",
+        "title": "Nick Spitzer Lab | Brain Plasticity | Learn More Here",
+        "readRanges": [
+          [
+            0,
+            1954
+          ]
+        ],
+        "coverage": "entity_local_prose_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      },
+      {
+        "sourceId": "src-e0224176cdecd4ab",
+        "sourceUrl": "http://labs.biology.ucsd.edu/spitzer/",
+        "sourceObservedAt": "2026-10-16T04:56:26+00:00",
+        "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "textCharacters": 0,
+        "role": "listed_lab_destination",
+        "title": "",
+        "readRanges": [],
+        "coverage": "exact_text_reuse",
+        "reasonZh": "Exact text identical to src-d064f0b5261fc28f in this same packet; source capture tuple remains separate."
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "labId": "ucsd-electrical-and-computer-engineering-lab-vlsi-cad-lab",
+  "status": "partial",
+  "summaryZh": "主页和官方目录确认 UCSD VLSI CAD Laboratory；可见正文主要是新闻、演讲与导航，尚不足以概括整体研究。研究路径的访问预检被 robots 拒绝，具体研究问题与方法仍待核实。",
+  "researchQuestions": [],
+  "topics": [],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-e019db031a5d2f86",
+      "quote": "UCSD VLSI CAD LABORATORY",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "UCSD VLSI CAD Laboratory 主页标题与 ECE 官方实验室列表确认实体；受限研究页未提供正文。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "正文直接标识 UCSD VLSI CAD Laboratory。"
+  },
+  "uncertainty": [
+    "被拒绝路径没有发出页面网络请求，也没有研究页正文。",
+    "首页文本在 18,000 字符处截断；不由论文和演讲标题推断实验室研究范围。",
+    "方法未明确。",
+    "来源未提供带日期的当前任职或隶属生效声明，采集时间不等于任职生效时间。"
+  ],
+  "blockers": [
+    "followup_robots_denied:https://vlsicad.ucsd.edu/Research/Advice/index.html",
+    "no_page_request_after_robots_denial",
+    "captured_homepage_is_news_and_navigation_no_lab_research_overview"
+  ],
+  "reviewedAt": "2026-10-16T02:18:44+00:00"
+}

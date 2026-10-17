@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:49:15+00:00",
+  "networkRequestsMade": 0,
+  "recordsPacketsCodeCollectorWrites": 0,
+  "labId": "ucsd-pathology-lab-aaron-carlin-lab",
+  "ordinal": 294,
+  "verdict": "supports named whole-lab science independently of failed original HTTPS root",
+  "fullPrimaryTextRead": true,
+  "capture": {
+    "sourceIdIfAdmitted": "src-81dbfc5311a1ccab",
+    "sourceUrl": "http://homer.ucsd.edu/CarlinLab/index.html",
+    "requestedUrl": "http://homer.ucsd.edu/CarlinLab/index.html",
+    "observedAt": "2026-10-16T06:45:51+00:00",
+    "bodySha256": "d095bcfe69a5a1bfcdbd177138d0172dcf756446fd6e62d973761c64f67f793b",
+    "metadataSha256": "e318c08c3b7816fe6f27e8a4221b0a4b5f7a8a91b373dc330bf6e8b1a25cc1d3",
+    "cachePath": "data/local-lab-summaries/gap-cache/b8ef202d1e5e58b2bbbfc3bfe067c29b6ded9b94ab6dcb7d6e3d41556e8846c5.html",
+    "metadataPath": "data/local-lab-summaries/gap-cache/b8ef202d1e5e58b2bbbfc3bfe067c29b6ded9b94ab6dcb7d6e3d41556e8846c5.json",
+    "captureMetadata": {
+      "sourceUrl": "http://homer.ucsd.edu/CarlinLab/index.html",
+      "observedAt": "2026-10-16T06:45:51+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://homer.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:33:45+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128825.8386261,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "http://homer.ucsd.edu/CarlinLab/index.html",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "d095bcfe69a5a1bfcdbd177138d0172dcf756446fd6e62d973761c64f67f793b",
+      "retrievedEpoch": 1792133151.266144
+    },
+    "title": "Carlin Lab, UCSD",
+    "primaryTextCharacters": 19474,
+    "primaryTextSha256": "da0d63e45af0fa7f9523ce32dbabba33825cbaef135b6c2da1b3f7376a75efcf",
+    "wireEventRange": [
+      344,
+      345
+    ],
+    "originalContexts": {
+      "labId": "ucsd-pathology-lab-aaron-carlin-lab",
+      "url": "http://homer.ucsd.edu/CarlinLab/index.html",
+      "listedWebsite": "https://homer.ucsd.edu/CarlinLab/index.html",
+      "purpose": "observe_literal_historical_profile_lab_link",
+      "observationOnly": true,
+      "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+      "reviewedAt": "2026-10-16T06:39:38+00:00",
+      "maxPageBytes": 2000000,
+      "packetSha256": "6f204a5e1e32f4319840a47946c8fd69ecd24c621d75d7b26141cb2aa7a2885c",
+      "rawSha256": "a4e280a585483c5c71a0129e97f13226c66e3aa05d04b39eb92d74e87fcf7f4c",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+        "observedAt": "2026-10-16T01:05:11+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://homer.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "httpStatus": 0,
+          "retrievedEpoch": 1792112711.2098749,
+          "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secu",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+        "retrievedEpoch": 1792112711.2242482
+      },
+      "professorId": "ucsd-medicine-aaron-foster-carlin",
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+        "observedAt": "2026-10-07T22:17:28+00:00",
+        "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc.html",
+        "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc.original.json",
+        "bodySha256": "7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc",
+        "metadataSha256": "ff236a6a55d38647a78622e2ac6cea5ab082f8e9ac74942665a75f19bad477f3"
+      },
+      "literalAnchor": {
+        "label": "Carlin Lab Website",
+        "href": "http://homer.ucsd.edu/CarlinLab/index.html"
+      },
+      "fieldProofSha256": "c2ee6b2eaa7362ca6dafbc8d2e57597d3cdb0b08cc840038a5ed4b9dda3819bb",
+      "reason": "Individually reviewed literal same-host/path/query HTTP anchor in preserved official profile; baseline discovery had normalized its protocol to HTTPS. Related route only, never root identity, canonical URL, alias or science acceptance.",
+      "labIds": [
+        "ucsd-pathology-lab-aaron-carlin-lab"
+      ],
+      "kind": "reviewed_profile_lab_link_gap",
+      "priority": 2,
+      "discoveryMechanism": "historical_profile_literal_lab_anchor",
+      "label": "reviewed literal historical profile lab link",
+      "notAnAcceptedCanonicalLabUrl": true,
+      "notAnOriginalListedURLCheck": true,
+      "observationScope": "related_historical_profile_link_only",
+      "availability": "not_captured",
+      "requiresLiveFetch": true
+    }
+  },
+  "profileLiteralLinkBinding": {
+    "profileCapture": {
+      "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+      "observedAt": "2026-10-07T22:17:28+00:00",
+      "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc.html",
+      "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc.original.json",
+      "bodySha256": "7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc",
+      "metadataSha256": "ff236a6a55d38647a78622e2ac6cea5ab082f8e9ac74942665a75f19bad477f3"
+    },
+    "profileOriginalMetadata": {
+      "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+      "observedAt": "2026-10-07T22:17:28+00:00",
+      "status": "ok",
+      "robotsStatus": "checked",
+      "httpStatus": 200,
+      "finalUrl": "https://profiles.ucsd.edu/aaron.carlin",
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc"
+    },
+    "rawAnchorFragment": "<a href=\"http://homer.ucsd.edu/CarlinLab/index.html\">Carlin Lab Website</a>",
+    "anchorVerbatimInOriginalBytes": true,
+    "baselineListedWebsite": "https://homer.ucsd.edu/CarlinLab/index.html",
+    "observedHTTPRelatedURL": "http://homer.ucsd.edu/CarlinLab/index.html",
+    "sameNamedLabDecision": "官方Aaron Carlin个人profile具名Carlin Lab Website字面指向实际HTTP新正文；新正文title Carlin Lab, UCSD及Dr. Carlin's lab、UCSD School of Medicine说明实体一致。",
+    "notAnOriginalListedURLCheck": true,
+    "aliasOrIDMergeAllowed": false
+  },
+  "recommendation": {
+    "status": "supported",
+    "summaryZh": "Carlin 实验室研究宿主与病原体互作中的转录调控，关注病毒如何影响免疫防御、抗病毒转录网络，以及 Siglec 互作和遗传差异与感染易感性的关系。实验室开展全基因组方法及实验、计算工具开发，涉及 CRISPR、转录组学、表观基因组学、NGS 方案和生物信息学，并合作探索新兴感染病的抗微生物药物。",
+    "researchQuestions": [
+      "病毒如何通过转录、剪接和RNA稳定性调控影响宿主防御，这些作用是否具有细胞类型特异性？",
+      "抗病毒转录网络如何受干扰素调节因子等炎症转录因子及细胞类型调控因子的共同影响？",
+      "病原体与Siglec的互作以及人群Siglec遗传多样性如何影响发病与感染易感性？"
+    ],
+    "topics": [
+      "宿主与病原体互作的转录调控",
+      "病毒对免疫防御的调控",
+      "抗病毒转录网络",
+      "Siglec介导的识别与感染易感性",
+      "新兴感染病的抗微生物药物研究"
+    ],
+    "methods": [
+      "全基因组CRISPR方法",
+      "转录组学",
+      "表观基因组学",
+      "NGS实验方案开发",
+      "生物信息学分析",
+      "实验和计算工具开发"
+    ],
+    "identity": {
+      "status": "confirmed",
+      "entityType": "lab",
+      "reason": "实际完整正文具名Carlin Laboratory，并明确Dr. Carlin's lab及Research各节We的整体研究。"
+    },
+    "affiliation": {
+      "status": "source_reported",
+      "reason": "The Carlin Lab is located at the UCSD School of Medicine, in La Jolla, CA."
+    },
+    "evidence": [
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "Dr. Carlin's lab investigates transcriptional mechanisms that determine the outcome of host-pathogen interactions.",
+        "supports": [
+          "identity",
+          "research",
+          "topics"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "The Carlin Lab is located at the UCSD School of Medicine, in La Jolla, CA.",
+        "supports": [
+          "identity",
+          "affiliation"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We are very interested in how viruses influence regulatory mechanisms to subvert cellular defenses. This includes effects that are gene-specific, transcription factor specific as well as global effects on transcription, splicing, and RNA stability. We aim to determine if specific interactions occur universally or in a cell-type specific manner and how they contribute to virulence.",
+        "supports": [
+          "research",
+          "topics"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We study innate immune responses, leveraging genome-wide technologies and bioinformatics analysis to better understand transcriptional networks regulated by interferon regulatory factors (IRFs) and anti-viral pathways.",
+        "supports": [
+          "research",
+          "topics",
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We are interested in understanding how pathogen interactions with Siglecs modulate disease pathogenesis as well as how human genetic diversity of Siglecs alters susceptibility to microorganisms.",
+        "supports": [
+          "research",
+          "topics"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "Complementary, genome-wide methods, including CRISPR, transcriptomics and epigenomics, provide an unbiased and comprehensive way of expanding our understanding of host–viral interactions.",
+        "supports": [
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We are developing experimental and computational tools that improve sample processing and data integration to provide biologically meaningful conclusions.",
+        "supports": [
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We work closely with the Heinz, Benner and Glass Laboratories at UCSD to develop optimized or innovative NGS protocols to more specifically interrogate host-viral interactions in humans.",
+        "supports": [
+          "methods"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We collaborate with chemists, microbiologists and infectious disease physicians to develop and optimize new therapeutics for emerging infectious diseases.",
+        "supports": [
+          "research",
+          "topics"
+        ]
+      },
+      {
+        "sourceId": "src-81dbfc5311a1ccab",
+        "quote": "We study how the interplay between key inflammatory transcription factors, such as IRFs, NF-kB, and STATs, and cell-type specific master regulators (e.g. PU.1, C/EBP) induce specific target genes and antiviral transcriptional programs.",
+        "supports": [
+          "research",
+          "topics"
+        ]
+      }
+    ],
+    "uncertainty": [
+      "整体正文没有内容更新时间，06:45:51是实际捕获时间，不是研究/任职生效时间。",
+      "研究目标与药物开发不证明诊断或治疗临床有效性。",
+      "方法只限实验室Research段；不从PI训练、研究员high-containment兴趣或论文题名推断额外实验技术。",
+      "CRISPR不扩写为筛选、Cas9或特定编辑流程；未列RNA-seq/ATAC-seq等未明示NGS方案。",
+      "in vivo或ex vivo仅为方法可适配的表述，不证明已经开展人体/体内实验。",
+      "原列HTTPS的robots TLS失败、原时间及pageIdentity/verified限制独立保留；HTTP成功只属于related source。",
+      "PI团队页的任职字样未注明内容更新日期，不据此确认2026当前任职/招生。"
+    ]
+  },
+  "excludedScopes": [
+    "Publications段的类器官、小鼠、临床试验、特定药物或病原体论文方法，不泛化为整个实验室方法",
+    "Aaron个人教育/博士后Siglec历史，不作为独立实验室整体方法",
+    "Researchers个人high-containment研究兴趣，不推定lab BSL等级或能力",
+    "Collaborators的单位/研究不转为本实验室归属或科学"
+  ],
+  "rootProjectionBoundary": {
+    "originalListedWebsite": "https://homer.ucsd.edu/CarlinLab/index.html",
+    "originalRootFetch": {
+      "sourceUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+      "observedAt": "2026-10-16T01:05:11+00:00",
+      "status": "robots_unavailable",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://homer.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:05:11+00:00",
+        "httpStatus": 0,
+        "retrievedEpoch": 1792112711.2098749,
+        "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secu",
+        "redirects": [],
+        "status": "unavailable"
+      },
+      "blockedUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+      "retrievedEpoch": 1792112711.2242482
+    },
+    "newHTTPSourceMatchesActualHTTPFetch": true,
+    "newHTTPSourceMatchesOriginalHTTPSFetch": false,
+    "recommendedOriginalRootIdentityPromotion": false,
+    "recommendedVerifiedURLIncrease": 0,
+    "preserveStableID": true,
+    "preservePriorQuotesAndOriginalDates": true
+  },
+  "snapshotAtReview": {
+    "rawStatus": "supported",
+    "rawSha256": "b780ec419406ba2ec8ce73822c1314fc07994096db5ac138686e7950b8450404",
+    "packetSha256": "af10853a26093478965027e4c9ed9f2d532606f088695deb1fd53f2c7282057b",
+    "gapResultsSha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+    "wireRequestsTotal": 353,
+    "receiptCount": 205
+  },
+  "assessmentFingerprint": "41d8a1f66ecc1cf4dde5b2884f25d3837375e4f933fac695d4b876387708bf36",
+  "additionalLiteralFactorProofAt": "2026-10-16T06:49:35+00:00"
+}

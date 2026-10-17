@@ -1,0 +1,111 @@
+{
+  "labId": "ucsd-live-lab-c05106027bd3f6",
+  "status": "supported",
+  "summaryZh": "Computational Electromagnetics & Multiphysics Lab 开发计算技术与解析模型，研究电磁学、微磁学、第一性原理模拟及成像中的多物理问题。应用对象包括磁性、光学和微波材料与器件。",
+  "researchQuestions": [],
+  "topics": [
+    "计算电磁学",
+    "多物理问题",
+    "磁性光学与微波器件"
+  ],
+  "methods": [
+    "计算技术",
+    "解析模型",
+    "第一性原理模拟"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-d85486590da9f7cc",
+      "quote": "The lab is led by Prof. Vitaliy Lomakin in the Department of Electrical and Computer Engineering at UC San Diego and is affiliated with the Center for Memory and Recording Research.",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-d85486590da9f7cc",
+      "quote": "His research develops efficient computational techniques and analytical models for multiphysics problems involving electromagnetics, micromagnetics, first-principles simulations, and imaging, and applies these methods to magnetic, optical, and microwave materials and devices.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "成员页明确说明该实验室由 UC San Diego ECE 的 Lomakin 领导。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "研究问题待核（限本轮已审阅材料）：实验室成员页及关联PI正文说明计算方法、材料和器件方向，未明示具体待解问题；不把个人兴趣或工具开发转换为问题。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:32:14+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:32:14+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:44:09+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "实验室成员页及关联PI正文说明计算方法、材料和器件方向，未明示具体待解问题；不把个人兴趣或工具开发转换为问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-d85486590da9f7cc",
+        "sourceUrl": "https://cem01.ucsd.edu/people.html",
+        "sourceObservedAt": "2026-10-16T01:00:33+00:00",
+        "bodySha256": "7310f4b76dc30d56e80056fa2cf0e676d07fb5a64995960c56735cafe68c5152",
+        "textSha256": "68676b17da37de76a42511643c29cddc0a3789726477294c3f3d4a42d82b92de",
+        "textCharacters": 3985,
+        "readRanges": [
+          [
+            0,
+            3985
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-1432e0d26f6ecef6",
+        "sourceUrl": "https://cem01.ucsd.edu/people.html",
+        "sourceObservedAt": "2026-10-02T23:43:04+00:00",
+        "bodySha256": null,
+        "textSha256": "b3b089da7e65cd625f0ec7b21599efe81794e3dbeab5a2c1ea8ecd484abd87c3",
+        "textCharacters": 241,
+        "readRanges": [
+          [
+            0,
+            241
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-84cd802822a2705a",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=240",
+        "sourceObservedAt": "2026-10-16T01:00:53+00:00",
+        "bodySha256": "c1ce86be141e1a0bf4fc274f9916093e9aa60d3f91702f05595dc06ff433eefe",
+        "textSha256": "290c760f634501429fa7e1a1205bc73c2b4b1a7e5dc882a81c321de794d172a4",
+        "textCharacters": 3042,
+        "readRanges": [
+          [
+            0,
+            3042
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

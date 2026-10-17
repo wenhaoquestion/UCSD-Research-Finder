@@ -1,0 +1,1681 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+  "status": "complete",
+  "inputInventory": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/PRIOR29-QUESTION-FIELD-RECHECK-INVENTORY.json",
+    "sha256": "d9c7ca4fb9fa09c29460d4c9549fc6f8296bf3ab1932cc730d43fa3ad2858e94",
+    "inventoriedAt": "2026-10-16T08:21:08+00:00",
+    "baseCommit": "b548801"
+  },
+  "assignedRange": {
+    "startInclusive": 9,
+    "endInclusive": 28,
+    "expectedCount": 20
+  },
+  "counts": {
+    "reviewed": 20,
+    "add_source_explicit_questions": 4,
+    "unchanged": 16,
+    "questions": 4,
+    "sourceCoverageEntries": 78,
+    "rawPacketHashFailures": 0,
+    "exactQuoteAndReadRangeFailures": 0
+  },
+  "items": [
+    {
+      "recheckIndex": 9,
+      "labId": "ucsd-physics-duarte-lab",
+      "priorCandidateIndex": 85,
+      "ordinal": 359,
+      "labName": "Duarte Lab",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "fc60a709efa877c6b32d3ca7b86e601e316171885dc20e95805dd45f2d98a297",
+      "packetSha256": "31a2ea5eb55743ead0f2c0fd296f907371dffc1200df0282cd01f24569f5d221",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "补读团队Research directions/PI团队简介，仍只有Higgs测量、新物理搜索和AI方法方向；Why Attention Sparse是会议报告题目，未找到独立whole-group明确问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-bc7cebc72a743f37",
+          "sourceUrl": "https://jduarte.physics.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "5964c214c70cc9ea64e7be9a9437c5f55f0de56d518d87c5a9afb742364a66f8",
+          "textSha256": "0b48ee7ea8f81a37ed570cb4daae70f8eddd88f8c8abc272d12438c1139caed4",
+          "textCharacters": 13744,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-41acda4f9baf63d0",
+          "sourceUrl": "https://physics.ucsd.edu/people/profile?id=jduarte",
+          "sourceObservedAt": "2026-10-16T01:00:04+00:00",
+          "bodySha256": "f8b6e630674be9bf5a66be0818eed880a6c749e92bd41e4d842005f724a8c5e1",
+          "textSha256": "e9655bbc47a055c8e3b51ac0ec5977bc1657770a5bfc26e4a132a29e9f07a06c",
+          "textCharacters": 42,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-ee586d8b3c6d52ca",
+          "sourceUrl": "https://catalog.ucsd.edu/faculty/PHYS.html",
+          "sourceObservedAt": "2026-10-16T01:00:00+00:00",
+          "bodySha256": "c92930e5468965af2092aeba1ac58c7c491e4a7346ee95580255b0742057d703",
+          "textSha256": "05c1e7ab180331169c081a4c6f97ebbd2a4a961e6baf471289bfa70300f6db75",
+          "textCharacters": 3382,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              150
+            ]
+          ],
+          "reasonZh": "Broad faculty/center catalog; header structure sufficient for exclusion, individual fields not borrowed."
+        },
+        {
+          "sourceId": "src-56e56df479d5870a",
+          "sourceUrl": "https://physics.ucsd.edu/api/profiles/faculty",
+          "sourceObservedAt": "2026-10-16T01:00:01+00:00",
+          "bodySha256": "d080dc62b17b63ad9ef52f81573336ab066dda9b73059fefb10ed6ccb900613e",
+          "textSha256": "10b1e76740dd4c1fad1ab013adbb4c7400dc94274d9b0c9e91afd2b8b337a0ec",
+          "textCharacters": 18000,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              200
+            ]
+          ],
+          "reasonZh": "Broad official physics source/list header only; no neighboring researcher evidence borrowed."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 10,
+      "labId": "ucsd-physics-research-site-m-brian-maple",
+      "priorCandidateIndex": 89,
+      "ordinal": 372,
+      "labName": "M. Brian Maple Research Group",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "da75b92107c411b42d182974cf0d3e4c5b539079e2f61e0ded9361ce6b1d2793",
+      "packetSha256": "298609727f7da0cc3b8d0d2bc206b93fb5b8e334e44689b9406508ad843910ce",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "Maple根页全文是关联电子材料/极端条件实验方向及制样测量反馈；what further samples为工作流程概述，不是具体待解物理问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f6b3c9f0b426abc3",
+          "sourceUrl": "https://mbmlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:05:26+00:00",
+          "bodySha256": "b59af6bf8908725401ad022705cca1ae4d55f47c6c88bfec8218a0c438b87e9b",
+          "textSha256": "09cb44a72bff957cfe53307614762d1ab4a59f6123853761a58df7c8011c431f",
+          "textCharacters": 1087,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1087
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-60aa6f023aabdf3a",
+          "sourceUrl": "https://physics.ucsd.edu/people/profile?id=mbmaple",
+          "sourceObservedAt": "2026-10-16T01:00:14+00:00",
+          "bodySha256": "ff6c39edd345c264906eff7bde725230b65e74662277b07057aad9684be94ca3",
+          "textSha256": "e9655bbc47a055c8e3b51ac0ec5977bc1657770a5bfc26e4a132a29e9f07a06c",
+          "textCharacters": 42,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-ee586d8b3c6d52ca",
+          "sourceUrl": "https://catalog.ucsd.edu/faculty/PHYS.html",
+          "sourceObservedAt": "2026-10-16T01:00:00+00:00",
+          "bodySha256": "c92930e5468965af2092aeba1ac58c7c491e4a7346ee95580255b0742057d703",
+          "textSha256": "05c1e7ab180331169c081a4c6f97ebbd2a4a961e6baf471289bfa70300f6db75",
+          "textCharacters": 3382,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              150
+            ]
+          ],
+          "reasonZh": "Broad faculty/center catalog; header structure sufficient for exclusion, individual fields not borrowed."
+        },
+        {
+          "sourceId": "src-56e56df479d5870a",
+          "sourceUrl": "https://physics.ucsd.edu/api/profiles/faculty",
+          "sourceObservedAt": "2026-10-16T01:00:01+00:00",
+          "bodySha256": "d080dc62b17b63ad9ef52f81573336ab066dda9b73059fefb10ed6ccb900613e",
+          "textSha256": "10b1e76740dd4c1fad1ab013adbb4c7400dc94274d9b0c9e91afd2b8b337a0ec",
+          "textCharacters": 18000,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              200
+            ]
+          ],
+          "reasonZh": "Broad official physics source/list header only; no neighboring researcher evidence borrowed."
+        },
+        {
+          "sourceId": "src-05a835d51cc41caf",
+          "sourceUrl": "https://mbmlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T04:22:35+00:00",
+          "bodySha256": "c00156b1024f6cc075abafa0c161bc26a7a90925346343ccfbc15c4f68d1d337",
+          "textSha256": "09cb44a72bff957cfe53307614762d1ab4a59f6123853761a58df7c8011c431f",
+          "textCharacters": 1087,
+          "disposition": "duplicate_text_reused",
+          "rangesActuallyRead": [],
+          "reasonZh": "same entire text as src-f6b3c9f0b426abc3"
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 11,
+      "labId": "ucsd-psychiatry-lab-cns-laboratory-of-memory-and-the-brain",
+      "priorCandidateIndex": 92,
+      "ordinal": 386,
+      "labName": "CNS Laboratory of Memory and Brain",
+      "entityTypePreserved": "lab",
+      "rawSha256": "7e2654242f5fe731a3ca33712e5dc2cad493eb8390609e802f79240607db3308",
+      "packetSha256": "8bd17924f544da2d167fa267eba67fd02d4271132c4d67e6a0d58a211441563a",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "可用root全文只有My focus/I use/My goal的个人认知神经科学介绍；目录仅确认lab名字，未将个人how明确绑定whole-lab问题，保持原范围。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-d66fe22a377da180",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "sourceObservedAt": "2026-10-16T01:05:32+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "textSha256": "b81979e6819757987b2dcdf8124520a2ecefc8ad6a157e2f5b745dace1824581",
+          "textCharacters": 257,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              257
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-9cfdae134e9b08b3",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "3cd1996bf6142bac5e477663ff652873bcc3feeff5ed12afd6921a900a3a65f0",
+          "textCharacters": 38,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-7426416cad443039",
+          "sourceUrl": "https://profiles.ucsd.edu/christine.smith",
+          "sourceObservedAt": "2026-10-03T05:04:55+00:00",
+          "bodySha256": null,
+          "textSha256": "e935180ca0624da8f087a55367137981ec9982810bae420fd4678f04a3f35d77",
+          "textCharacters": 64,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              64
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              3626,
+              4526
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 12,
+      "labId": "ucsd-psychiatry-lab-functional-neuroscience-lab",
+      "priorCandidateIndex": 95,
+      "ordinal": 390,
+      "labName": "Functional Neuroscience Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "d92862ab3e1f5bdbd9da8d6f6489fe0d06e437ac774cea709403eb42acdad15e",
+      "packetSha256": "eae2aa1fbb258821aade70b33e618b7c4d96856f6aed86484566dcfaa6ab010e",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "EEG神经反馈对轻度认知障碍及轻度创伤性脑损伤者的工作记忆有何影响？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-12de66987ff4c2b8",
+          "quote": "In our current studies, we are studying the effects of EEG-Neurofeedback on working memory in individuals with mild cognitive impairment (MCI) and mild traumatic brain injury (mTBI).",
+          "quoteLocation": "body",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "75e541a72f9c958881a877769564c7c6c394001e69e2c4b209c1586e3f9f9373"
+        }
+      ],
+      "reasonZh": "补读whole-lab当前研究主文，studying effects明确评价对象、干预与人群；问题不取What is Neurofeedback教学FAQ，不把试验状态/效果写为已证。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-12de66987ff4c2b8",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "75e541a72f9c958881a877769564c7c6c394001e69e2c4b209c1586e3f9f9373",
+          "textSha256": "079178081e329d9007fabb52d6e582ff42a7fc9bdc0556b9c799e28e743f435b",
+          "textCharacters": 1325,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1325
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-d6c53588ee10a4cd",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/team.html",
+          "sourceObservedAt": "2026-10-16T01:03:44+00:00",
+          "bodySha256": "a2278c0b0673dc3b24aae8cf54b57ebf66d62b4904103e2018ef3f3560756bcc",
+          "textSha256": "7becc435bef52152ab3dc8412351c6e8535d1a3cb1cfce653f25a99ab136c551",
+          "textCharacters": 12708,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-06eda8074a4b621a",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:12+00:00",
+          "bodySha256": "fbbc7f5371670802e49dbb69e10b8d42a363d4c9b6d70a3759b02344f4799c6f",
+          "textSha256": "567440ccebb84907883b9fbfb2c513cf71e84283015046e5fa9832b26c5358c0",
+          "textCharacters": 356,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              356
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-ac6b4a3c34807760",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "acb64a6ee73d76dc4c4dc10a487517890d9dfce95b19deb18da05188948f615b",
+          "textCharacters": 27,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              27
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              2903,
+              3803
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        },
+        {
+          "sourceId": "src-ed0266383d3f115f",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:12+00:00",
+          "bodySha256": "fbbc7f5371670802e49dbb69e10b8d42a363d4c9b6d70a3759b02344f4799c6f",
+          "textSha256": "19d8f5c8ca27d5168894f8e1774561c082b4b2ad8859ec108300a7ff81efbb5f",
+          "textCharacters": 1179,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1179
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 13,
+      "labId": "ucsd-psychiatry-lab-george-lab",
+      "priorCandidateIndex": 96,
+      "ordinal": 391,
+      "labName": "Olivier George — lab website",
+      "entityTypePreserved": "lab",
+      "rawSha256": "e85e77e4ec42175fe3e4daea285203f0f0667ca799fe7c7e86f5d3b5c67b7488",
+      "packetSha256": "d6db9b0236e82ea52cc8ccd5ce13a37fd624d4b1e7de0a47f6aa1d5f9dcb651a",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "药物成瘾的神经生物学机制是什么？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-bae3fbfd44e4a777",
+          "quote": "We identify the neurobiological mechanisms underlying drug addiction and develop novel pharmacological and non-pharmacological treatments to help people with substance use disorders.",
+          "quoteLocation": "body",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "sourceObservedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354"
+        }
+      ],
+      "reasonZh": "补读George团队root开头明确We identify mechanisms目标，可忠实表达该机制问题；不采用下方新闻why、历史时间线how或将治疗开发写为有效。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-bae3fbfd44e4a777",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "sourceObservedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "textSha256": "b02414daed9860aea08a9d356a63292ea50b1f2c8858f47703d2c8ea56d9de1d",
+          "textCharacters": 2907,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2907
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-28516647b834c581",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "ed85678cc6ed927d0b71af6be5b1b5070841147692a1d634f143c4bc73112458",
+          "textCharacters": 10,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              10
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-ee84f74a681ea209",
+          "sourceUrl": "https://profiles.ucsd.edu/olivier.george",
+          "sourceObservedAt": "2026-10-03T05:31:49+00:00",
+          "bodySha256": null,
+          "textSha256": "c5bf6f7ff0fd28b487c2bff06ba48682d5628760c75b7348ec1d906e1ae0b088",
+          "textCharacters": 40,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              40
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              3913,
+              4813
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 14,
+      "labId": "ucsd-psychiatry-lab-nstar-lab",
+      "priorCandidateIndex": 98,
+      "ordinal": 399,
+      "labName": "NSTAR Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "78b6dd9a3bce304b164ea4f44ee5ba353b48f6b0ef3ac826b58585f2da79c58a",
+      "packetSha256": "5d8f012146fa9eb9399976eee46088c8c2de8b52276a97ea9d8aa0ca143d7c8d",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "NSTAR root/People/contact全文与目录局部仍为临床试验/治疗转化目标及重复负性思维研究主题，未列具体待解关系；how to join为参与说明，不创造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-635d416ac418638c",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:01+00:00",
+          "bodySha256": "a322b431b532c9daaa69c8039fccc4a141a711e9a6ad6009dada78550f480178",
+          "textSha256": "6a17b51f27e7e176eea3fc648e36ed2690ca80ced0fc4b1be9ee6ab2426c195f",
+          "textCharacters": 761,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              761
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-fd3cf8e37c00f8fd",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/contact-bomyea/index.html",
+          "sourceObservedAt": "2026-10-16T01:34:15+00:00",
+          "bodySha256": "5209cbf21bd57d12ee1133ea72627f69e399d73f030b58276ec9b11d877a49e3",
+          "textSha256": "07054556289aa486b571ccaa134c9046b6814b753c14f8dc6c5bb804b9b0b215",
+          "textCharacters": 586,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              586
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-5fcfbb220956984c",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+          "sourceObservedAt": "2026-10-16T01:34:17+00:00",
+          "bodySha256": "0ac0275a7c6461c818cba044f3f48b1a59895a677ec5b05106aa74db44f91284",
+          "textSha256": "cb49fc29b8f8ab25bd8afc97e12b3148c0ebf6fb1ec05954de8aec21f5bed075",
+          "textCharacters": 62,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              62
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-2b3ee38a0db8d212",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "f478773d9717f4cef248d05ecfd2d9eacf5214846cd4f81dc0ad36b9bbd53a19",
+          "textCharacters": 9,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              9
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              3521,
+              4421
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        },
+        {
+          "sourceId": "src-5df8205eeef7321f",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:01+00:00",
+          "bodySha256": "a322b431b532c9daaa69c8039fccc4a141a711e9a6ad6009dada78550f480178",
+          "textSha256": "8923d81796c8168fc44bbfd0ba9498f284ef9e4b99faeb603635369466905d08",
+          "textCharacters": 1584,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1584
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-53d95998c48fd96a",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/contact-bomyea/index.html",
+          "sourceObservedAt": "2026-10-16T01:34:15+00:00",
+          "bodySha256": "5209cbf21bd57d12ee1133ea72627f69e399d73f030b58276ec9b11d877a49e3",
+          "textSha256": "6df95391e57409c262613d9191a9ed54afed3adf172048c992eb22b5661ad5f7",
+          "textCharacters": 1409,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1409
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f65f787eb451eaca",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/people-bomyea/index.html",
+          "sourceObservedAt": "2026-10-16T01:34:17+00:00",
+          "bodySha256": "0ac0275a7c6461c818cba044f3f48b1a59895a677ec5b05106aa74db44f91284",
+          "textSha256": "388d4d9460f0652a103e00ff5462b249fa5806063299b33f526e262731024e77",
+          "textCharacters": 885,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              885
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 15,
+      "labId": "ucsd-psychiatry-lab-telese-lab",
+      "priorCandidateIndex": 99,
+      "ordinal": 408,
+      "labName": "Telese Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "4f73a6a946e1e739e3a53f4a06e04fbd329011ececf3bc05b8e67b48a1a44613",
+      "packetSha256": "32dab3aff670d0c0f9e3e920bbe1759d82f152a77b01ddf9979c126acb166db4",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "哪些组织和细胞类型特异性的基因调控机制支撑物质使用障碍的神经生物学？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-bf0d3d4d9d0da7c0",
+          "quote": "Through these methods, we aim to dissect the tissue- and cell type-specific gene regulatory mechanisms that underlie the neurobiology of substance use disorders.",
+          "quoteLocation": "body",
+          "sourceUrl": "https://profiles.ucsd.edu/francesca.telese",
+          "sourceObservedAt": "2026-10-07T22:05:47+00:00",
+          "bodySha256": null
+        }
+      ],
+      "reasonZh": "补读官方关联profile明确Our laboratory/Our interdisciplinary approach、aim to dissect具体机制；不取Highlights新闻或Whether招募修辞。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-381eceae2efd414b",
+          "sourceUrl": "https://www.teleselab.com/",
+          "sourceObservedAt": "2026-10-16T01:03:02+00:00",
+          "bodySha256": "697412b9e27f0c3078fe29e7bb0f6ca18519d0add8aafc6b785bce9a5792e87f",
+          "textSha256": "5966bbadc2a9f9e864cc55d62cf6ac7fed83f10f797b06822733efd5252a7bc1",
+          "textCharacters": 1344,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1344
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-a8702ddced7a5d44",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "0ef95c7c65aa4d41f99cd75d17c31c7c9c601125e1d333d310defd77aa40e6ca",
+          "textCharacters": 10,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              10
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-0e40e6eca916bdc6",
+          "sourceUrl": "https://profiles.ucsd.edu/francesca.telese",
+          "sourceObservedAt": "2026-10-07T22:05:47+00:00",
+          "bodySha256": null,
+          "textSha256": "aea26ba99b5f2af52e75ac4089d9509509687fea49a47bc62497b7928acb899d",
+          "textCharacters": 47,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              47
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              4488,
+              5234
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        },
+        {
+          "sourceId": "src-bf0d3d4d9d0da7c0",
+          "sourceUrl": "https://profiles.ucsd.edu/francesca.telese",
+          "sourceObservedAt": "2026-10-07T22:05:47+00:00",
+          "bodySha256": null,
+          "textSha256": "0eb8bb13f0325804f9404926b0641306691fd115b538666e8ba205351dbf61f1",
+          "textCharacters": 900,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              900
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 16,
+      "labId": "ucsd-psychiatry-lab-twamley-smart-lab",
+      "priorCandidateIndex": 100,
+      "ordinal": 409,
+      "labName": "Twamley SMART Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "2c7cfa79c3830055f625bc093fdb3933aa033a83f20d737ab5bc87dd0c7e18a3",
+      "packetSha256": "010fba3b7825a182cf5408363273538be2d24af72c014e6ea7fedc85525d34fe",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "补读SMART全文后，how仍是教受试者运用认知策略的流程；正文阐述干预开发/评价和改善目标及已报告成功，未明确具体待解假设，不由疗法方向创造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-8287085519d64d68",
+          "sourceUrl": "https://smartlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:02+00:00",
+          "bodySha256": "1b891f463faa83ec16e557b18c3fd437ce01d87541b3074d0ebc50dcd28aca17",
+          "textSha256": "7e17641ca6c8202ec452ed9455ecd9609a3be35a8bbd912800d72df6df0dc6cd",
+          "textCharacters": 3335,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              3335
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f350ce043087f331",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "95f73200dc8e5f6d2ff8b9c45d140ec70fd8c5ea77a0167ff358f3b12d112312",
+          "textCharacters": 17,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              17
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-65130a066ed09ef8",
+          "sourceUrl": "https://profiles.ucsd.edu/Elizabeth.Twamley",
+          "sourceObservedAt": "2026-10-03T05:09:55+00:00",
+          "bodySha256": null,
+          "textSha256": "d3efc85bcc511a99c85e0d9db0a694bd2d682f7daafe6a41acb23147c1b62b22",
+          "textCharacters": 46,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              46
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-f716f1397d8309e2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+          "bodySha256": "5be9163b0d291dd8a9d1defe4625c654d05a88ab450e22b9a7a4e8d93b5b9d3e",
+          "textSha256": "5ee820356448e4d41c488cb3bf6f9331cc1da623b8efb877c61eacafb0b568d5",
+          "textCharacters": 5234,
+          "disposition": "department_directory_local_entry_only",
+          "rangesActuallyRead": [
+            [
+              3340,
+              4240
+            ]
+          ],
+          "reasonZh": "Only target-local lab entry and list context; other centers not borrowed."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 17,
+      "labId": "ucsd-radiation-medicine-lab-moore-lab",
+      "priorCandidateIndex": 103,
+      "ordinal": 426,
+      "labName": "Moore Lab",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "27c93dd8ec400c9b3217552f8fd124dba09bdef8904311c92eb6c38f46dc2f79",
+      "packetSha256": "3e603cd60247f85f29d389621648b8467d511a6477378507a5eeb6dc32a79cf3",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "Moore全root/People补读后how仍为教临床医生安全采用knowledge-based planning的教育说明；Featured Articles只有预测/风险标签，未给具体科学未知问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-7e3746036e45c778",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/index.html",
+          "sourceObservedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "ac0d7d78fe760786a485d01d2f10f7f8f0bd07c3ec34f2d542c4d0690f963072",
+          "textSha256": "ef2483fa61f1828698aacd92cee9fa0bca91f13c87bae7a7c3f9e6a4e99198da",
+          "textCharacters": 832,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              832
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-a715ba96b58026c4",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/people.html",
+          "sourceObservedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "34bda8b8db6b976ee0f5054c284d0418c99868b5328faadccc52a6025f0ecd0c",
+          "textSha256": "7a9e471c65a646ab877ce5c1a39f829bd72c9f77a52b415a4d8de604a586cf14",
+          "textCharacters": 797,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              797
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-686030f8d7b124d8",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+          "textCharacters": 156,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              156
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-4f52ee345cb2500a",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/index.html",
+          "sourceObservedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "ac0d7d78fe760786a485d01d2f10f7f8f0bd07c3ec34f2d542c4d0690f963072",
+          "textSha256": "9f5aec09606ad084004e5eeac78b5a808ed70c52a3201716f7891fe436e47fed",
+          "textCharacters": 1553,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1553
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-b359e3d9923fe7d4",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/people.html",
+          "sourceObservedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "34bda8b8db6b976ee0f5054c284d0418c99868b5328faadccc52a6025f0ecd0c",
+          "textSha256": "b51caa0e0b41deea814abe617b4bc79e2bad7b7d02d43629e3e7c09154fbf0a9",
+          "textCharacters": 1502,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1502
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 18,
+      "labId": "ucsd-radiation-medicine-lab-sharabi-lab",
+      "priorCandidateIndex": 104,
+      "ordinal": 431,
+      "labName": "Sharabi Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "fba476f8b0a7819a7bb3659973f387f0dd51d03f68f999cdcc74674683489f85",
+      "packetSha256": "82b6856a3cf2dedbb75002eaa286401bb0598e4f62fd51baf935ef9df729be5c",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "Sharabi root及faculty页的机制/试验目标均以Dr. Sharabi或he个人研究/PI身份叙述，People只是名录；未见明确whole-lab问题语句，不把“published on how”或招聘Whether改问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-ac782442f231ae2e",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/sharabi/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:07+00:00",
+          "bodySha256": "f54106232378e385ec72fbf7d237def1010cfa1ce2a5590aaf82eb81e7f7230f",
+          "textSha256": "c736b0201016022d20ad422f3462a77e15b8c50bb78f0daaa94e8139810f199c",
+          "textCharacters": 1308,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1308
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-2f4a2f8cbebba6b3",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/sharabi/people.html",
+          "sourceObservedAt": "2026-10-16T01:34:41+00:00",
+          "bodySha256": "383f4a22198f882793cf6b5ddc2d3faf6177098ac5804d7712f9dc70bc02f7b1",
+          "textSha256": "ecca0c4e19cf187fd1201623ab99ab900f56daf9fccde5ddeb381176ff6dd8dc",
+          "textCharacters": 525,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              525
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-686030f8d7b124d8",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+          "bodySha256": null,
+          "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+          "textCharacters": 156,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              156
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-d643032f4d9832f1",
+          "sourceUrl": "https://radonc.ucsd.edu/faculty/radiation-oncology/sharabi-andrew.html",
+          "sourceObservedAt": "2026-10-16T01:00:05+00:00",
+          "bodySha256": "39488e6ace2a2f393faf69ebbd79ec8b159ba2e6583a6fd626c6dec99d81a71a",
+          "textSha256": "e679d950773c00f6dedc0749ddd1ef0d42e4e5ef34eab5b6cb927e942b2cb0fd",
+          "textCharacters": 2165,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2165
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-06380cc2b57041a6",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/sharabi/people.html",
+          "sourceObservedAt": "2026-10-16T01:34:41+00:00",
+          "bodySha256": "383f4a22198f882793cf6b5ddc2d3faf6177098ac5804d7712f9dc70bc02f7b1",
+          "textSha256": "faa7b631c119d33c1c6cef25816a3f19bd9cea38b70cb726ecb7151debeaa806",
+          "textCharacters": 1230,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1230
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 19,
+      "labId": "ucsd-live-lab-7a564d19924e8f",
+      "priorCandidateIndex": 120,
+      "ordinal": 491,
+      "labName": "Front Page | Mobile Systems Design Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "3bab696965b9221ee4829acd4670a5b8ca49cb56dedea55ace59c8e37d9f13fb",
+      "packetSha256": "2125012ac386df9550c21174b81a9afe36b96609311f9a85984222950a151fb3",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "补读同一Mobile Systems团队根页与Jacobs简介，仍为工程创新/应用目标；What future Wi-Fi是采访新闻标题，没有具体whole-lab待解问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-d9506eb2f0ecc5df",
+          "sourceUrl": "https://esdat.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "b712fd01916cb1438f88a5d817f0bf69a189a2814aa17c1b44748c58564caed0",
+          "textSha256": "7b3aa51b31fd34b48df114e95a684af58782be1ba78b655e132598ec4d9d1512",
+          "textCharacters": 2512,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2512
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-01324b1c4a6f824d",
+          "sourceUrl": "https://esdat.ucsd.edu/",
+          "sourceObservedAt": "2026-10-02T23:43:04+00:00",
+          "bodySha256": null,
+          "textSha256": "72ed46e9437bc5876af4b897b8cb3e15595dcfbf4a3be36415bc6d65f290c53a",
+          "textCharacters": 559,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              559
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-dd9639f5a61611da",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=30",
+          "sourceObservedAt": "2026-10-16T01:00:24+00:00",
+          "bodySha256": "2bfc2bae68064c5bfa990b4a3bd122cb1bf0e440c9f51931f76d0937dd179a35",
+          "textSha256": "30328000c2dfd4f69b7406c400b949eb11135752670e696cfa7d86784537fac1",
+          "textCharacters": 2285,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2285
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 20,
+      "labId": "ucsd-live-lab-30d5277524f91a",
+      "priorCandidateIndex": 121,
+      "ordinal": 493,
+      "labName": "Goldenfeld Group",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "ed875655b36fd6b471266062626359e7969d50b5e8a691b840255c5df08872b1",
+      "packetSha256": "1766b1f54fa3a3d932d6313a69fbb90e2b6ee3255940c72fbb0228834d292269",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "仅历史官方字段，how patterns evolve明确主语Nigel is interested，不能从Group标题将个人兴趣提升为团队问题；缺少另外局部主文，保持原历史时间范围。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-4c5bff2df58cdc1b",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "a80fabaf49c8c0945927e711020de1e8892c051af619dad7217d54b73567da23",
+          "textCharacters": 480,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              480
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 21,
+      "labId": "ucsd-live-lab-b7ed8defbfbb77",
+      "priorCandidateIndex": 126,
+      "ordinal": 508,
+      "labName": "HXI Research Lab",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "9e38216e9b2dd0ace3ad74aedbd77e8f92c81e9c743a2c0e0023def273e91fa1",
+      "packetSha256": "a1abcdc48fe8e17cd04a785093b6f2c5145ae7c2b4bba0d5de40da5c70d9f97f",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "补读Weibel团队简介与Research Projects，仍以设计/评价XR、AI交互系统和应用为主，未给具体待解问题；how位于后面论文题目，不把个人兴趣、项目名或教学标签转换成whole-lab问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-513bed47157bf7d4",
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "sourceObservedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "62a9e2f3e1236ac22f92a817d923b908cbeced83b286b810a1b7d92656612041",
+          "textSha256": "1ad4a90fb509ecbce8e9d90f50e6b15a2a6346f5ec5d76d4b14bd0f90f1ec0ea",
+          "textCharacters": 5713,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-2f87fd57a7e45bf1",
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "sourceObservedAt": "2026-10-02T23:42:59+00:00",
+          "bodySha256": null,
+          "textSha256": "bbca7e0fe9313f277b0c59b092f01668f8a4d85c440cedae12cf4c421c015cce",
+          "textCharacters": 75,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              75
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-7d85992f6cf749b9",
+          "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/nadir-weibel",
+          "sourceObservedAt": "2026-10-16T01:00:21+00:00",
+          "bodySha256": "ea01f8c1b053459f14df7086a09e3db8fb225e69a4b13ebc6e0ba0a852f7caa3",
+          "textSha256": "3ef34842602ae9d0f415bc461ad2d0919f9520627a5f3e52fbfb1cb067d742b0",
+          "textCharacters": 59,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              59
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 22,
+      "labId": "ucsd-live-lab-087593d9bb69c5",
+      "priorCandidateIndex": 129,
+      "ordinal": 519,
+      "labName": "Kate Ricke ☁️ Ricke Lab @ UCSD",
+      "entityTypePreserved": "lab",
+      "rawSha256": "ee41f91f53671e848ab3cb5a409da05667438b040d9e97f5dc4c1bf8eef90745",
+      "packetSha256": "c54482e90bc1a183ec08b8f5266d271b6780e434ec60d83ce2fbe57c16cac1db",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "Ricke root与官方profile科研介绍均主要归属Kate本人方向；how climate geoengineering条目是论文题目，其他how为政策偏好关系从句，未找到明确whole-lab待解问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f03b49961631dba4",
+          "sourceUrl": "https://katericke.com/",
+          "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "9cbb4ec267622f591497b75b7e4b285c7e8d01f861daff42cbebde7d45f68131",
+          "textSha256": "5804b587166fe0fb42650fa989c0cafa3930b9968d1f5d275c02419d735d979f",
+          "textCharacters": 9799,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-b5223c36a96baf77",
+          "sourceUrl": "https://katericke.com/",
+          "sourceObservedAt": "2026-10-02T23:43:05+00:00",
+          "bodySha256": null,
+          "textSha256": "9722f0bdab75f70642ac089fe7a23b27013238dda75750fee2dc97ed14f843b0",
+          "textCharacters": 62,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              62
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-9ce8677713a2e7b6",
+          "sourceUrl": "https://gps.ucsd.edu/faculty-directory/kate-ricke.html",
+          "sourceObservedAt": "2026-10-16T01:00:25+00:00",
+          "bodySha256": "aa4bf60c76396660872652b9c5270771fa748ad243031ab97d311a1d56fd86d4",
+          "textSha256": "0561c31304395958226883656629500caab1c770953cad1fd08ab571b9f72c4e",
+          "textCharacters": 1428,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1428
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-62cb4cfa13050672",
+          "sourceUrl": "https://gps.ucsd.edu/faculty-directory/kate-ricke.html",
+          "sourceObservedAt": "2026-10-16T01:00:25+00:00",
+          "bodySha256": "aa4bf60c76396660872652b9c5270771fa748ad243031ab97d311a1d56fd86d4",
+          "textSha256": "4edf33eb1e526ae3d30513490a35f55e320a9d008a011480cbb8fc0764e636bf",
+          "textCharacters": 2801,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2801
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 23,
+      "labId": "ucsd-live-lab-4f6cbd2289cdd6",
+      "priorCandidateIndex": 131,
+      "ordinal": 528,
+      "labName": "Laboratory for Energy Storage and Conversion",
+      "entityTypePreserved": "lab",
+      "rawSha256": "9f37b6178d61f2f2fc6bf7edef586757e69b0c408828f7c8203950b175b0a1b9",
+      "packetSha256": "655a885fb2bd3ded6657e54c0b35371334a7566c082377358ab99fbc4dd75db7",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "LESC完整已读科研开头为材料设计/开发与表征方法，后面是论文/视频新闻；未列具体待解机制问题，how新闻链接/教材科普不作为研究问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-44011791806126dd",
+          "sourceUrl": "https://smeng.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:31+00:00",
+          "bodySha256": "905d8182af6f33ac25cd574218d84d2fb60fd9aa6939e542e700d97c1e1c659f",
+          "textSha256": "f27acc83e983c49abe7e47868aa74f94b92e89e70b9efb7214ae7bd4ba161eff",
+          "textCharacters": 4628,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-8a553fa774a682d8",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=284",
+          "sourceObservedAt": "2026-10-02T22:49:06+00:00",
+          "bodySha256": null,
+          "textSha256": "a41777e9d7fa0ba43291ef48d017b3f0469b7f2fa78fbcbcc32ae5266d37acfd",
+          "textCharacters": 70,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              70
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-140a18be4b453c08",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=284",
+          "sourceObservedAt": "2026-10-16T01:00:37+00:00",
+          "bodySha256": "924bf11e82ec828442ca849325493a2d2207ef504e4914ad0357eb476c337196",
+          "textSha256": "0d985fbbbe211b0aa16fe7004a9cc212c7e0be99807c46606712da47f7c6c1f6",
+          "textCharacters": 1900,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1900
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 24,
+      "labId": "ucsd-live-lab-caa34ae32a8126",
+      "priorCandidateIndex": 132,
+      "ordinal": 529,
+      "labName": "Lagrangian Drifter Laboratory",
+      "entityTypePreserved": "lab",
+      "rawSha256": "6c0806f7af0a6266d05f2ffeb22dde4e39394296e332f796a1b0a1bcb450305c",
+      "packetSha256": "6c3b8bf8a85c124e13c202d4b8d2277ca684db8ee6d36af63bb96bd73fe5ddc2",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "LDL全文为观测仪器、传感器设计与数据产品/服务；What are drifters and drogues是仪器介绍FAQ，不是科研未知；未发现其他具体问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f27bb4ca25fc9578",
+          "sourceUrl": "https://gdp.ucsd.edu/ldl/",
+          "sourceObservedAt": "2026-10-16T01:06:35+00:00",
+          "bodySha256": "1c89fcf2c9312074b2a0775e735697a87efe64108097f7f82ca6422f6a28eeb5",
+          "textSha256": "aa68ea500c44a16337edb658e1c1c54522102c953314fcb027100f686368c78e",
+          "textCharacters": 2786,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2786
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-ccd14c02bac55233",
+          "sourceUrl": "https://scripps.ucsd.edu/profiles/vhormann",
+          "sourceObservedAt": "2026-10-02T22:50:11+00:00",
+          "bodySha256": null,
+          "textSha256": "cdafadecd8bf4f3d1e237ebeae627d989065481f30ac56330cb511168f47704a",
+          "textCharacters": 57,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              57
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 25,
+      "labId": "ucsd-live-lab-a4f6662f2b69d3",
+      "priorCandidateIndex": 133,
+      "ordinal": 534,
+      "labName": "Lisa Poulikakos — lab website",
+      "entityTypePreserved": "lab",
+      "rawSha256": "2798d32e122e72105108ee55cae388dd7473f65002a4c9f45f14baaaed822828",
+      "packetSha256": "1ccb26a7abc8d586e4422749a99e40a51e170524056fc355aeee091b013937bc",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "机械、化学与热效应可以如何改变生物系统的光学性质？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-7155d9961b04df89",
+          "quote": "Fascinated by transdisciplinary challenges, the Poulikakos Lab explores how mechanical, chemical and thermal effects can transform the optical properties of biological systems.",
+          "quoteLocation": "body",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=520",
+          "sourceObservedAt": "2026-10-16T01:00:39+00:00",
+          "bodySha256": "33ccd9a7d1570e6876ad99e288f78a1f8410dbf5e3caa231df2678c795f07c8d"
+        }
+      ],
+      "reasonZh": "补读Jacobs官方profile中的具名Poulikakos Lab/how明确团队问题，与root具体光学研究一致；非原被拒蝶翼癌症新闻题目，不外推诊断疗效。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-56b2be5253a57c52",
+          "sourceUrl": "https://poulikakos.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:30+00:00",
+          "bodySha256": "682317208cc26d2d8d3e907e0722ebc44a06f3ddb8acce428d4ad3aaaa5ef3ee",
+          "textSha256": "3cf119348fbc6ed8057dd0067e7d0da9b84ea70bc27b09c8278db527986edc33",
+          "textCharacters": 3296,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              3296
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-423db7d25cd14870",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=520",
+          "sourceObservedAt": "2026-10-02T22:48:51+00:00",
+          "bodySha256": null,
+          "textSha256": "f2939d5433bd1757ddafc161dd39c3d988bf36026bdefc28c1cb1a50aac05aef",
+          "textCharacters": 42,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-7155d9961b04df89",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=520",
+          "sourceObservedAt": "2026-10-16T01:00:39+00:00",
+          "bodySha256": "33ccd9a7d1570e6876ad99e288f78a1f8410dbf5e3caa231df2678c795f07c8d",
+          "textSha256": "fad22e61979629c7037425cbc4509f9db238c650c7dced47427422bd4a24e896",
+          "textCharacters": 2149,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2149
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 26,
+      "labId": "ucsd-live-lab-c03b2edf0c268b",
+      "priorCandidateIndex": 134,
+      "ordinal": 536,
+      "labName": "Machine Learning, Perception, and Cognition Lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "59ae8f30c04851bb17563b32ed913777e75f0d167421b59eb744ab5635353a94",
+      "packetSha256": "d35bea0f79947fde37b252b7526be1c13c60a13f8d0a374464db813aae1779d6",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "mlPC完整root只有统计学习模型/多模态预测方向、论文消息与招募；What’s new是新闻标题，无新增具体研究疑问。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-576f360a5fe62cbf",
+          "sourceUrl": "https://pages.ucsd.edu/~ztu/",
+          "sourceObservedAt": "2026-10-16T01:06:37+00:00",
+          "bodySha256": "94201296f9fa6acc488808105499dc715df6cb77ceaa84585364ec8bcedaf80f",
+          "textSha256": "77e4f853e30910d57c0c5ed72b80a0dcc485da916c56cd5926f71b14355de1ea",
+          "textCharacters": 2454,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2454
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-07876798c0d0eb0e",
+          "sourceUrl": "https://cogsci.ucsd.edu/research/research-labs.html",
+          "sourceObservedAt": "2026-10-02T22:42:09+00:00",
+          "bodySha256": null,
+          "textSha256": "f2158e5bf54009c7173368b78845965b948c0e10e2970fcc6be8f440a834da39",
+          "textCharacters": 107,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              107
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 27,
+      "labId": "ucsd-live-lab-c6c7976154bf05",
+      "priorCandidateIndex": 144,
+      "ordinal": 579,
+      "labName": "S2ML lab",
+      "entityTypePreserved": "lab",
+      "rawSha256": "219a384b59a00176d42a6f7cd0f243cde4f12c3a9c3d61c8d4f91a054adc3368",
+      "packetSha256": "9b34248a74b913792ac8d846fc627416c20981ad2d8c21a0c7812d95daf76b69",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "S2ML官方介绍“What do we do”是团队简介标题，列高效ML工具及隐私/生成AI等方向；没有具体待解关系/假设，不从方向造问题，个人应用偏好排除。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-bd50aa59775a873a",
+          "sourceUrl": "https://datascience.ucsd.edu/people/yu-xiang-wang/",
+          "sourceObservedAt": "2026-10-02T22:48:20+00:00",
+          "bodySha256": null,
+          "textSha256": "fb3e0bb27f68b03e6ab78d96b0f234e8bd70b537846e9d8cc6c186b2e5722528",
+          "textCharacters": 54,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              54
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-9268aa461d54bb9f",
+          "sourceUrl": "https://datascience.ucsd.edu/people/yu-xiang-wang/",
+          "sourceObservedAt": "2026-10-16T01:00:40+00:00",
+          "bodySha256": "35c7f082d2649bcde9c39c0fafd8eaca613b66d0e9d117e0bdc96482130d7192",
+          "textSha256": "a5e657c3cd90164f51825058545ade7858bbfd0dbb79def02e95e5576dddde82",
+          "textCharacters": 1601,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              1601
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    },
+    {
+      "recheckIndex": 28,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ribozymes",
+      "priorCandidateIndex": 159,
+      "ordinal": 729,
+      "labName": "Ribozymes",
+      "entityTypePreserved": "research_group",
+      "rawSha256": "89759d81ecef180860f158e860c2441ed2f9339e71354cfa9127aa21d3359694",
+      "packetSha256": "0c7fdf5635a893672a8282e05090ed07715f8f014c05e05165699279e27b4092",
+      "reviewedAt": "2026-10-16T08:32:44.450984+00:00",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "完整team正文已重读：How did Life Start/I believe及地球化学/宇宙生物问题属于PI个人设想；We段仅治疗性转剪接核酶开发/定向进化方法与临床未来期望，未明示科学疑问，不将工程目标造问题或恢复已收窄个人范围。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-2195ff63baec4806",
+          "sourceUrl": "https://ribozymes.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:21+00:00",
+          "bodySha256": "1ff7175dacbe933970fd70683964121191bd9d658a812dd9d968d278f0c975a0",
+          "textSha256": "c887f134c26ea8310e1fb4bd6fbab7b640393bd1b556e62691c7a442be92ec2a",
+          "textCharacters": 20,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              20
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-29954894ec77765f",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-07T22:53:34+00:00",
+          "bodySha256": null,
+          "textSha256": "6e616c1fe5a9f78205d4f855d82e040f22b79ae5643f18a5d8f73ee54cd562aa",
+          "textCharacters": 38,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "reasonZh": "Broad faculty/center catalog; header structure sufficient for exclusion, individual fields not borrowed."
+        },
+        {
+          "sourceId": "src-53d84edb3dabe8ae",
+          "sourceUrl": "https://ribozymes.ucsd.edu/team",
+          "sourceObservedAt": "2026-10-07T23:01:50+00:00",
+          "bodySha256": null,
+          "textSha256": "751040062554412e5d1cca11be6c8accac77f8c724ff1c2416e220362ae60bc0",
+          "textCharacters": 119,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              119
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+          "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563",
+          "textCharacters": 5256,
+          "disposition": "non_entity_local_directory_excluded",
+          "rangesActuallyRead": [
+            [
+              0,
+              150
+            ]
+          ],
+          "reasonZh": "Broad faculty/center catalog; header structure sufficient for exclusion, individual fields not borrowed."
+        },
+        {
+          "sourceId": "src-dbfcbf37f71e5279",
+          "sourceUrl": "https://ribozymes.ucsd.edu/team",
+          "sourceObservedAt": "2026-10-16T01:35:48+00:00",
+          "bodySha256": "e59985f457ee6297aa0e3e0b8990e5cc1334ff8c198333995e005ee46434f8e0",
+          "textSha256": "97d24dd777ee33aa067b50408bde52f2495c7aa92213c0a09d4e4856d33fdb4c",
+          "textCharacters": 2358,
+          "disposition": "entity_local_prose_read",
+          "rangesActuallyRead": [
+            [
+              0,
+              2358
+            ]
+          ],
+          "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+        }
+      ],
+      "fieldFindings": []
+    }
+  ],
+  "scopePolicyZh": "重新审阅现有实体局部科研主文；原候选标题/个人引文被拒不代表全文空白。本次仅采明确团队/实体问题目标，不把方向或工具机械转how，不恢复Ribozymes个人I believe范围。",
+  "networkRequestsMade": 0,
+  "productionEdits": 0
+}

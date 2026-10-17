@@ -1,0 +1,117 @@
+{
+  "labId": "ucsd-radiation-medicine-lab-ray-lab",
+  "status": "supported",
+  "summaryZh": "Ray 实验室发展算法，根据每日锥形束 CT 的变化判断何时需要自动重新制定放疗计划。团队也开发回顾性临床大数据的自动分析工具。",
+  "researchQuestions": [],
+  "topics": [
+    "适应性放疗",
+    "自动重计划"
+  ],
+  "methods": [
+    "锥形束 CT 分析",
+    "自动重计划算法"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-869bc15dbf260402",
+      "quote": "Dr. Xenia Ray Dr. Ray’s research is focused on the development of algorithms to help determine when automated re-planning should be performed in patients undergoing radiotherapy based on changes detected on daily cone-beam CT images. Such algorithms are vital to the optimal clinical implementation of adaptive radiotherapy. She is also working to develop automated tools to facilitate big-data analyses of retrospective clinical data included batch automated replanning via RapidPlan, plan comparison, DVH extraction, and timing data. Explore the Lab People Learn more about the dedicated team in Dr. Xenia Ray's lab. Meet Our Team Publications Explore the latest publications from Dr. Xenia Ray's lab. See Publications Featured Articles Predicting Adaptive Radiotherapy Benefit for Cervical Cancer Patients Evaluating a Physics-Led Adaptive Workflow for Cervical Cancer Commissioning the Adaptive Process for an O-Ring Linac",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-686030f8d7b124d8",
+      "quote": "Ray Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究问题待核（限本轮已审阅材料）：正文以负责人研究描述自动重计划及数据分析工具开发；when是算法决策用途，缺少whole-lab明确科学问题，不机械改为如何开发工具。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:24+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "正文以负责人研究描述自动重计划及数据分析工具开发；when是算法决策用途，缺少whole-lab明确科学问题，不机械改为如何开发工具。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-869bc15dbf260402",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/ray/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:32+00:00",
+        "bodySha256": "18edac51fc141d153c5b9ec61a994788e13a5e4b5d7e716a5e6663575378e319",
+        "textSha256": "5caa9c340118d19cb55dc28fde1f5b6364a4b1e6a9bbc950827f8257362939e5",
+        "textCharacters": 926,
+        "readRanges": [
+          [
+            0,
+            926
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-b8a55bbb05efbe9e",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/ray/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:33+00:00",
+        "bodySha256": "19a654b7618ae532ff557dd3ef2690e89665e5a07f66b1c2ac6402c9f86af62b",
+        "textSha256": "86686c99002572100afbd7c1c85bc588e96b5161fe9c1f55f13d6535329b9f44",
+        "textCharacters": 228,
+        "readRanges": [
+          [
+            0,
+            228
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-686030f8d7b124d8",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+        "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+        "bodySha256": null,
+        "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+        "textCharacters": 156,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 192,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-8d9d8f110b04a7dd",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/ray/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:33+00:00",
+        "bodySha256": "19a654b7618ae532ff557dd3ef2690e89665e5a07f66b1c2ac6402c9f86af62b",
+        "textSha256": "b5d35e5d9f3db73ff1013a311e1737a2f7ac80bef3f09917148f103e846fb514",
+        "textCharacters": 933,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-b8a55bbb05efbe9e",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

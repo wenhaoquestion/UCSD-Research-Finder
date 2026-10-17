@@ -1,0 +1,1619 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:27:32+00:00",
+  "scope": "reviewed-listed-url-gaps.json item indexes 0..14 only; target-specific identity evidence for actual original HTTP captures",
+  "reviewerNetworkRequestsMade": 0,
+  "parentObservedHTTPURLChecksReviewed": 15,
+  "reviewedCount": 15,
+  "identityBoundCount": 15,
+  "sameByteBodyPriorCitedSourceCount": 15,
+  "sameFullVisibleTextPriorSourceCount": 15,
+  "sameFullVisibleTextPriorCitedSourceCount": 14,
+  "verifiedLabGroupURLCountBeforeIdentityBinding": 0,
+  "verifiedLabGroupURLCountAfterIdentityBinding": 15,
+  "verifiedLabGroupURLCountRestored": 15,
+  "newIdentityQuoteCount": 19,
+  "realRedirectedHTTPCheckCount": 14,
+  "realHTTP200WithoutRedirectCount": 1,
+  "inputHashes": {
+    "reviewed-listed-url-gaps.json": "925071c8b924cd27bd7d2045747efd24d229a90b4014d1e1ed77819a82addc6a",
+    "original-url-packet-refresh.json": "1bb6d8e89adb1b0bd8ecf20293e18058d6ef615beb3756f30b3528cecd3198df",
+    "scripts/local_lab_summaries.py": "09716e20b4d686696c6dc744d915502e44e66ccf713062f04beb7725c05d4b7f"
+  },
+  "boundaries": [
+    "Only 15 owned raw records and these two new reports were written. No packet, projection, code, collector, shared coordination or network changes.",
+    "Identity quotes were manually selected after each full new visible text and title was read; status=ok alone never admits identity.",
+    "All 15 new cached bodies equal at least one previously cited source; all also have identical full visible text/title to a preserved old source. Rifkin cited old extraction has same bytes but shorter text; its preserved v2 counterpart independently has the same full text.",
+    "Research questions, summary, topics, methods, existing quotes, identity/affiliation conclusions, uncertainty/blockers and raw.reviewedAt are unchanged; identityBindingReviewedAt is separate.",
+    "All prior observations keep their original times; new observedAt and liveCheckedAt are distinct from later identity binding review time.",
+    "Prior original-HTTP-unrequested report remains truthful as a historical review; current owned raw explicitly records its supersession by actual HTTP request evidence.",
+    "Verified count is the independently hydrated result; shared projections were not rewritten.",
+    "No aliases, ID migrations, new canonical site admissions or current affiliation claims were made.",
+    "Final reread saw external packet metadata refresh after the initial review hashes were recorded. Both initial and final packet SHA are retained; all 15 sourceIds, actual HTTP/source tuple, identity quotes and hydrate outcomes were reverified unchanged. This reviewer never wrote packets."
+  ],
+  "items": [
+    {
+      "inventoryIndex": 0,
+      "labId": "ucsd-biology-topic-lab-cleland",
+      "ordinal": 46,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:46:13+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://labs.biology.ucsd.edu/cleland",
+      "actualRequestedUrl": "http://labs.biology.ucsd.edu/cleland",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-91ad0a7276042f4b",
+      "observedAt": "2026-10-16T04:21:33+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:31+00:00",
+      "finalUrl": "https://clelandlab.biosci.ucsd.edu/",
+      "title": "Cleland Lab |",
+      "bodySha256": "50fb74710a9aa02093616357ca3891df7f7844dc9d7eac3216827a1df7e45ae8",
+      "fullVisibleTextSha256": "dc29e453626bd81a1210a74357e830d2e03d30096a03142e6c83314201e854bd",
+      "fullVisibleTextCharactersRead": 1986,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d15cecba016c76f3cd627502d650d1a1ed98c80da7c6b301bad638e8382f7c2c.html",
+      "redirects": [
+        {
+          "from": "http://labs.biology.ucsd.edu/cleland",
+          "to": "https://clelandlab.biosci.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-91ad0a7276042f4b",
+          "quote": "Cleland Lab |",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-91ad0a7276042f4b",
+          "quote": "by Elsa Cleland",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-b00455d6200e1dd2",
+          "sourceUrl": "https://clelandlab.biosci.ucsd.edu/",
+          "requestedUrl": "https://labs.biology.ucsd.edu/cleland",
+          "observedAt": "2026-10-16T01:03:57+00:00",
+          "bodySha256": "50fb74710a9aa02093616357ca3891df7f7844dc9d7eac3216827a1df7e45ae8",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "dc29e453626bd81a1210a74357e830d2e03d30096a03142e6c83314201e854bd",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-b00455d6200e1dd2"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-b00455d6200e1dd2"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-b00455d6200e1dd2"
+      ],
+      "reasonZh": "标题明确 Cleland Lab，正文为 our lab 研究总览并署 Elsa Cleland；实际新目的页与先前已审整页字节及完整可见正文相同。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:33+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:31+00:00"
+      },
+      "recordBeforeSha256": "699b75ebc47e225fafce95c51d557c44fb080720f1aeacbdf9ed1e17748c696c",
+      "recordAfterSha256": "ad15f99826242a4390359c5ddb1eaf4ee82381df8d05bcea28ddb7d1ec46458c",
+      "packetSha256ReadOnly": "c6096895044c6257ef92c981661092ebe5c952528e2ebd47005fa0d6e6558e71",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "d44cae6070c4972e310de78208f1c5d144243d5459a3b36b64816ddc986deca5",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 1,
+      "labId": "ucsd-biology-topic-lab-cory-root",
+      "ordinal": 47,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:46:13+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:46:13+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://rootlab.biosci.ucsd.edu",
+      "actualRequestedUrl": "http://rootlab.biosci.ucsd.edu/",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-c8762e9bcace4bf5",
+      "observedAt": "2026-10-16T04:21:38+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:36+00:00",
+      "finalUrl": "https://rootlab.biosci.ucsd.edu/",
+      "title": "Root Lab |",
+      "bodySha256": "78ce67d6d0674aba03e32433c593d84ced4468294d9ed1263ae19dd6bfb59572",
+      "fullVisibleTextSha256": "37d7108885ec16df97de8360d0d0093a4d60f86fe67249301a15d90bcb4c2420",
+      "fullVisibleTextCharactersRead": 2002,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/009614d4ec933a910ca5d253500126af047f9324bc38ff38c94f3215ac114463.html",
+      "redirects": [
+        {
+          "from": "http://rootlab.biosci.ucsd.edu/",
+          "to": "https://rootlab.biosci.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-c8762e9bcace4bf5",
+          "quote": "The Root Lab",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-b1b7e575b957443e",
+          "sourceUrl": "https://rootlab.biosci.ucsd.edu/",
+          "requestedUrl": "https://rootlab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:03:57+00:00",
+          "bodySha256": "78ce67d6d0674aba03e32433c593d84ced4468294d9ed1263ae19dd6bfb59572",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "37d7108885ec16df97de8360d0d0093a4d60f86fe67249301a15d90bcb4c2420",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-b1b7e575b957443e"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-b1b7e575b957443e"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-b1b7e575b957443e"
+      ],
+      "reasonZh": "正文明确 The Root Lab，并以本实验室叙述嗅觉神经环路研究及团队；与原已审实验室整页一致。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:38+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:36+00:00"
+      },
+      "recordBeforeSha256": "83cb4a3c3299d11c130e66cbea4e4a8cd8f37316ccb58de382cc4ebbb59e9e1a",
+      "recordAfterSha256": "f14162f5328d70c69087c4d1164e485737aead53ff77ee2fca36176b36c3ac81",
+      "packetSha256ReadOnly": "a50a49166bc215a92792c1e3643b336c4ce4acc036560dc51b4193f8da79ea59",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "9ff265ec7caefdd759252d7294bcadae0aa53468fb1a12284b6ffb4f936c42ea",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 2,
+      "labId": "ucsd-biology-topic-lab-david",
+      "ordinal": 52,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:47:04+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "priorUncertainty": [
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www.biology.ucsd.edu/labs/david",
+      "actualRequestedUrl": "http://www.biology.ucsd.edu/labs/david",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-43dc19aabde0173f",
+      "observedAt": "2026-10-16T04:21:41+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:39+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/david/",
+      "title": "David-Lab Home Page",
+      "bodySha256": "c0cb07cef6a1901725705189190848ad7e3137df765d5ea0e113798f95e43b38",
+      "fullVisibleTextSha256": "9ecf349eb95b3fc1829e069d0bd934533e990eca921ab44e4579032311abc913",
+      "fullVisibleTextCharactersRead": 1446,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/8f85b8ddac1bf65d7ceaf47783a50a10f7b0397b4a9b4eb164913c4116b96b7b.html",
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/david",
+          "to": "https://biology.ucsd.edu/labs/david",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/david",
+          "to": "http://labs.biology.ucsd.edu/david",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/david",
+          "to": "http://labs.biology.ucsd.edu/david/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-43dc19aabde0173f",
+          "quote": "David-Lab Home Page",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-43dc19aabde0173f",
+          "quote": "Michael David, Ph.D.",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-7cd7f2ac19b736e9",
+          "sourceUrl": "https://labs.biology.ucsd.edu/david/",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/david",
+          "observedAt": "2026-10-16T00:59:39+00:00",
+          "bodySha256": "c0cb07cef6a1901725705189190848ad7e3137df765d5ea0e113798f95e43b38",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "9ecf349eb95b3fc1829e069d0bd934533e990eca921ab44e4579032311abc913",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-7cd7f2ac19b736e9"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-7cd7f2ac19b736e9"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-7cd7f2ac19b736e9"
+      ],
+      "reasonZh": "标题明确 David-Lab，正文署 Michael David 并明确 our laboratory 的研究主体；不是仅凭个人经历认定实验室。新页整页与既有已审来源相同。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:41+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:39+00:00"
+      },
+      "recordBeforeSha256": "44efdc6e9ddcc1d2463e0185a8da2d7e996f81beb6c887c5d17bed259e44b94c",
+      "recordAfterSha256": "cdfd007b430c3271c1c07cc5d73e611038a4c810002cac72d4f2373f4afdff00",
+      "packetSha256ReadOnly": "fd92a66452836ba8de94c2c8db43d70d6a4418d1aa54fc4a4ca50af7fda6a646",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "f687f10fc4c6a466dc6bdb5162f0841ba54c3f3ef9b40a59df77c7dcf91580d2",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 3,
+      "labId": "ucsd-biology-topic-lab-estelle",
+      "ordinal": 58,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:47:04+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "priorUncertainty": [
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www-biology.ucsd.edu/labs/estelle",
+      "actualRequestedUrl": "http://www-biology.ucsd.edu/labs/estelle",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-9b3c265e2a6b5017",
+      "observedAt": "2026-10-16T04:21:45+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:43+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/estelle/",
+      "title": "Estelle Laboratory",
+      "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+      "fullVisibleTextSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+      "fullVisibleTextCharactersRead": 913,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d3aa8899fb34dccb2cf3600acc4f12060be108c3147b3f56a8a46db3c394e2e5.html",
+      "redirects": [
+        {
+          "from": "http://www-biology.ucsd.edu/labs/estelle",
+          "to": "https://biology.ucsd.edu/labs/estelle",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/estelle",
+          "to": "http://labs.biology.ucsd.edu/estelle",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/estelle",
+          "to": "http://labs.biology.ucsd.edu/estelle/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-9b3c265e2a6b5017",
+          "quote": "Welcome to the website of the Mark Estelle laboratory",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-5acec1022ba6b995",
+          "sourceUrl": "https://labs.biology.ucsd.edu/estelle/",
+          "requestedUrl": "https://www-biology.ucsd.edu/labs/estelle",
+          "observedAt": "2026-10-16T00:59:37+00:00",
+          "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        },
+        {
+          "sourceId": "src-a5b1b3198825310e",
+          "sourceUrl": "https://labs.biology.ucsd.edu/estelle/index.html",
+          "requestedUrl": "https://labs.biology.ucsd.edu/estelle/index.html",
+          "observedAt": "2026-10-16T01:02:03+00:00",
+          "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": false
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-5acec1022ba6b995"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-5acec1022ba6b995",
+        "src-a5b1b3198825310e"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-5acec1022ba6b995"
+      ],
+      "reasonZh": "正文直接声明是 Mark Estelle laboratory 网站并称 We are a plant research group；与原已审整页一致。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:45+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:43+00:00"
+      },
+      "recordBeforeSha256": "eddcfea8c7f14551d220f7554183dfc4a9206312371865878f4a51a4ee6493a4",
+      "recordAfterSha256": "0045c39decd2b53e1764846c85665eac65d98e90680725029421c1abd1ab3f95",
+      "packetSha256ReadOnly": "23bad121bf1e4405aa397e2ece8d7b6728890bda27dbeb12a58b824b9166f84e",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "094ee733981053cdd433544c1bb9edba7a0418b34af2008a1bdaf347956ae7ea",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 4,
+      "labId": "ucsd-biology-topic-lab-forbes",
+      "ordinal": 61,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:47:04+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:47:04+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www.biology.ucsd.edu/labs/forbes",
+      "actualRequestedUrl": "http://www.biology.ucsd.edu/labs/forbes",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-bba7b5b8abec1ae4",
+      "observedAt": "2026-10-16T04:21:48+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:46+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/forbes/",
+      "title": "Forbes Lab - UCSD",
+      "bodySha256": "28796f12a2a47b65085a70e0d9acd9279c855c86e57317340f42651ea3f55de3",
+      "fullVisibleTextSha256": "c2c0c9f6abf34ec9d28488b555415940409f0951cfd60cb6da4d51ee2d45e785",
+      "fullVisibleTextCharactersRead": 1044,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/24f4a51cd9f93e5df42b1ae9ea75dcdac383c28f55f0b9f5bcf7d0ccbec1528e.html",
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/forbes",
+          "to": "https://biology.ucsd.edu/labs/forbes",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/forbes",
+          "to": "http://labs.biology.ucsd.edu/forbes",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/forbes",
+          "to": "http://labs.biology.ucsd.edu/forbes/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-bba7b5b8abec1ae4",
+          "quote": "Forbes Lab",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-01aaa42f2d8074b0",
+          "sourceUrl": "https://labs.biology.ucsd.edu/forbes/",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/forbes",
+          "observedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "28796f12a2a47b65085a70e0d9acd9279c855c86e57317340f42651ea3f55de3",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "c2c0c9f6abf34ec9d28488b555415940409f0951cfd60cb6da4d51ee2d45e785",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-01aaa42f2d8074b0"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-01aaa42f2d8074b0"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-01aaa42f2d8074b0"
+      ],
+      "reasonZh": "正文具名 Forbes Lab，紧接研究概述及实验室联系信息；与原已审整页一致。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:48+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:46+00:00"
+      },
+      "recordBeforeSha256": "da3bd0da413c83e16885a81ab3dbca9f498cb6379b4331ab4581e9bbd567fa4f",
+      "recordAfterSha256": "d153c0dbe78bff1afde65b1421aa39cd228cf7404c94741871d1397d004f8efd",
+      "packetSha256ReadOnly": "6d7b236c1bb848421efd07b1dff2abd07cfa528e04e74dfa14750912d2ec66b6",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "015bf80817fcb8b10825290fdd7a8d9dae8b7c7719bee50a44cc23abf3114a4f",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 5,
+      "labId": "ucsd-biology-topic-lab-justin-meyer",
+      "ordinal": 76,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:47:47+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://labs.biology.ucsd.edu/meyer",
+      "actualRequestedUrl": "http://labs.biology.ucsd.edu/meyer",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-e8f7c14ee626f5da",
+      "observedAt": "2026-10-16T04:21:50+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:49+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/meyer/",
+      "title": "Meyer Lab at UCSD",
+      "bodySha256": "ba7cd997d08e14d535903fccef252a549ae4c4fddce7bcb474e94631acded47f",
+      "fullVisibleTextSha256": "c1f51dc544d27fdafb2114f4294f925a91f38f5893c382df70dc0af4baf2d0e6",
+      "fullVisibleTextCharactersRead": 1452,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/45c2d2adfa500817af14aef0399d7b57f68e3cbbeaf238fe082737b9170c6187.html",
+      "redirects": [
+        {
+          "from": "http://labs.biology.ucsd.edu/meyer",
+          "to": "http://labs.biology.ucsd.edu/meyer/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-e8f7c14ee626f5da",
+          "quote": "Meyer Lab",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-2c3ee75e8e6deb68",
+          "sourceUrl": "https://labs.biology.ucsd.edu/meyer/",
+          "requestedUrl": "https://labs.biology.ucsd.edu/meyer",
+          "observedAt": "2026-10-16T01:04:07+00:00",
+          "bodySha256": "ba7cd997d08e14d535903fccef252a549ae4c4fddce7bcb474e94631acded47f",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "c1f51dc544d27fdafb2114f4294f925a91f38f5893c382df70dc0af4baf2d0e6",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-2c3ee75e8e6deb68"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-2c3ee75e8e6deb68"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-2c3ee75e8e6deb68"
+      ],
+      "reasonZh": "正文具名 Meyer Lab，以 We are a team 与本实验室 research 栏目定义团队；与既有已审整页一致。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:50+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:49+00:00"
+      },
+      "recordBeforeSha256": "0442f6cbe05c933b0b9bb65d264ff122c2dc46211f5882022f89389b3796cedb",
+      "recordAfterSha256": "2552a1edcf503700ef5b8c250c10ff6ca5844dd866c0652c11bb0a8d1b0a8c43",
+      "packetSha256ReadOnly": "86350ffd3c55c7bb2cfca48d493f4dbd4b66db70c9b251c07a59a53e867ffed1",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "acd76e03740fd649901d57c1af734488a3e9ae02f9884a3d20517d806c3d06fc",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 6,
+      "labId": "ucsd-biology-topic-lab-lin-chao",
+      "ordinal": 89,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:47:47+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:47:47+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www.biology.ucsd.edu/labs/chao",
+      "actualRequestedUrl": "http://www.biology.ucsd.edu/labs/chao",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-ac3055a1029465f0",
+      "observedAt": "2026-10-16T04:21:52+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:50+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/chao/",
+      "title": "Chao Lab Webpage",
+      "bodySha256": "69a14c114cba81c27c0c989f030762438aa97e2fa64f6256b880f28a32b4f4f7",
+      "fullVisibleTextSha256": "8ddec9f0833885c0f6990d0b11072cdf938b268151363ace18305ea97cf89418",
+      "fullVisibleTextCharactersRead": 829,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/17f6fda60434fbbec012978c6b585c93eb65e9059adec783db549d181f7039a8.html",
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/chao",
+          "to": "https://biology.ucsd.edu/labs/chao",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/chao",
+          "to": "http://labs.biology.ucsd.edu/chao",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/chao",
+          "to": "http://labs.biology.ucsd.edu/chao/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-ac3055a1029465f0",
+          "quote": "We are graduate students and postdoctoral scholars at the Chao lab in the Section of Ecology, Behavior and Evolution at UCSD .",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-4c5ed53beabbfddf",
+          "sourceUrl": "https://labs.biology.ucsd.edu/chao/",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/chao",
+          "observedAt": "2026-10-16T00:59:48+00:00",
+          "bodySha256": "69a14c114cba81c27c0c989f030762438aa97e2fa64f6256b880f28a32b4f4f7",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "8ddec9f0833885c0f6990d0b11072cdf938b268151363ace18305ea97cf89418",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-4c5ed53beabbfddf"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-4c5ed53beabbfddf"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-4c5ed53beabbfddf"
+      ],
+      "reasonZh": "正文明确自称 Chao lab 的研究生和博士后团队；整页与既有来源相同。旧版权年份及观察时间不等于当前隶属生效日期。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:52+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:50+00:00"
+      },
+      "recordBeforeSha256": "56b77cfd3db72c7804ac7f3117e762335246c4526178395c39d102c4f7fe31dd",
+      "recordAfterSha256": "7e8ccb2180ee16848899bdfe4acea3df42b7ea14e7037e1d330951fabeca8c41",
+      "packetSha256ReadOnly": "866b255ef64f98054256f7874c8de8f48483d4ee5d08ced3c02c0cc17b345a4c",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "60a2d4a6ee84c519ee60d4150643a6cc4ef4bc6fe0f81841245596ae78359f53",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 7,
+      "labId": "ucsd-biology-topic-lab-markow",
+      "ordinal": 92,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:48:34+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://biology.ucsd.edu/labs/markow",
+      "actualRequestedUrl": "http://biology.ucsd.edu/labs/markow",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-80675027fb84f2c9",
+      "observedAt": "2026-10-16T04:21:55+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:54+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/markow/",
+      "title": "Markow Lab",
+      "bodySha256": "64c9b412729199c5b0d46ad7d872c2785840d7e4c3e370062d5bb785f1e22780",
+      "fullVisibleTextSha256": "207b0445f5b917e7ccda641dca76bfd5bc207da73f8c648e2833909ec08c2ab2",
+      "fullVisibleTextCharactersRead": 535,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/f310ad78154bff04ac679f1157ec5e7245d7a6ba311cee4b0dd9c752c738345d.html",
+      "redirects": [
+        {
+          "from": "http://biology.ucsd.edu/labs/markow",
+          "to": "http://labs.biology.ucsd.edu/markow",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/markow",
+          "to": "http://labs.biology.ucsd.edu/markow/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-80675027fb84f2c9",
+          "quote": "Markow Lab",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-c6c5c195cef5db08",
+          "sourceUrl": "https://labs.biology.ucsd.edu/markow/",
+          "requestedUrl": "https://biology.ucsd.edu/labs/markow",
+          "observedAt": "2026-10-16T00:59:57+00:00",
+          "bodySha256": "64c9b412729199c5b0d46ad7d872c2785840d7e4c3e370062d5bb785f1e22780",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "207b0445f5b917e7ccda641dca76bfd5bc207da73f8c648e2833909ec08c2ab2",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-c6c5c195cef5db08"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-c6c5c195cef5db08"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-c6c5c195cef5db08"
+      ],
+      "reasonZh": "HTML title 字面为 Markow Lab，正文包含 Markow 版权、tmarkow 联系方式及实验室联系方式；整页字节和完整可见文本与已接受的旧来源相同。根页主要为导航/联系资料，仅绑定身份，不由此新增研究主题或当前日期。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:55+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:54+00:00"
+      },
+      "recordBeforeSha256": "daacd9f7cd7cf9c3f5bd1fbdd4a34783afd1902a6221c7ed8617ba41457277a4",
+      "recordAfterSha256": "4fc463979ac75b952b5e928959861c2a2b3a210d184bfa8ff894eb06c997e4e1",
+      "packetSha256ReadOnly": "68c9fed3d5bf8ac3e6de72008422722bd5de28154b68f3ca95ec7c84bd4202ac",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "ceb083d1ddbccce464ac16fdae1ab8dd39a085841a4405d956175966cd3ed57f",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 8,
+      "labId": "ucsd-biology-topic-lab-mayfield",
+      "ordinal": 95,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:48:34+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "priorUncertainty": [
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://algae.ucsd.edu/mayfield/index.html",
+      "actualRequestedUrl": "http://algae.ucsd.edu/mayfield/index.html",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-c168f23baafbc1ee",
+      "observedAt": "2026-10-16T04:21:59+00:00",
+      "liveCheckedAt": "2026-10-16T04:21:58+00:00",
+      "finalUrl": "https://algae.ucsd.edu/mayfield/index.html",
+      "title": "Mayfield Lab Homepage",
+      "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+      "fullVisibleTextSha256": "71eb583c52c795456534d34f471275740e65b4a5555776cfd53d06dedf97fc83",
+      "fullVisibleTextCharactersRead": 307,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/b48e268d6a653c3eb8cc34a7e7e9f71c14c9480cfce73076f3a3d1709f300a7c.html",
+      "redirects": [
+        {
+          "from": "http://algae.ucsd.edu/mayfield/index.html",
+          "to": "https://algae.ucsd.edu/mayfield/index.html",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-c168f23baafbc1ee",
+          "quote": "Welcome to the lab of Dr. Stephen Mayfield at UC San Diego!",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-611ef351583a53d2",
+          "sourceUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "requestedUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "observedAt": "2026-10-16T01:02:04+00:00",
+          "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "71eb583c52c795456534d34f471275740e65b4a5555776cfd53d06dedf97fc83",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        },
+        {
+          "sourceId": "src-a62b5b169b3e0c76",
+          "sourceUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "requestedUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "observedAt": "2026-10-16T01:02:04+00:00",
+          "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "dd901c7401f5c7ac91061f664392c34ece6633674b0fa1a94ab0bf4d9cfb246d",
+          "sameByteBody": true,
+          "sameFullVisibleText": false,
+          "sameTitle": true,
+          "priorRecordCited": false
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-611ef351583a53d2"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-611ef351583a53d2"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-611ef351583a53d2"
+      ],
+      "reasonZh": "正文直接声明 Stephen Mayfield 的实验室，并有具名 lab 研究介绍；与旧已审整页一致。仅追加 identity，不新增 affiliation 结论。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:21:59+00:00",
+        "liveCheckedAt": "2026-10-16T04:21:58+00:00"
+      },
+      "recordBeforeSha256": "125280e993d9686b49a7cac6d40fb3dd8946c16a3562df5c3a2d9685db9d9e71",
+      "recordAfterSha256": "08ea92f191bc3915c56718efa40c47d774aa28aa2c664d0a14b410c8780d99a7",
+      "packetSha256ReadOnly": "a3f707607262939225a10ddb91999c92453f2f7d3ddf0bcdee3d75db3bb3e3c5",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "924f2211062485d240699a578a294e2a0ab826ad901ea2a21c9fe74cec3943dd",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 9,
+      "labId": "ucsd-biology-topic-lab-nan-hao",
+      "ordinal": 100,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:48:34+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://haolab.ucsd.edu",
+      "actualRequestedUrl": "http://haolab.ucsd.edu/",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-fca53ee58416ea54",
+      "observedAt": "2026-10-16T04:22:01+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:01+00:00",
+      "finalUrl": "http://haolab.ucsd.edu/",
+      "title": "Hao Lab at UCSD",
+      "bodySha256": "70c2f2ee0480fdd6f88a936384bfc2d269db3ddd59a9537879ba517fbfc51e75",
+      "fullVisibleTextSha256": "7f076614f25d8f5d9e301f09df670005d6dbaa510e5dcb4e3d37789ad9af499e",
+      "fullVisibleTextCharactersRead": 7077,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/aa00b63ba3726482bb227d1dad35765eb0dbeaae2280ee1ecaeda52b41c76483.html",
+      "redirects": [],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-fca53ee58416ea54",
+          "quote": "About the Hao Lab",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-d7a34e0783d2f428",
+          "sourceUrl": "https://haolab.ucsd.edu/",
+          "requestedUrl": "https://haolab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:17+00:00",
+          "bodySha256": "70c2f2ee0480fdd6f88a936384bfc2d269db3ddd59a9537879ba517fbfc51e75",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "7f076614f25d8f5d9e301f09df670005d6dbaa510e5dcb4e3d37789ad9af499e",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-d7a34e0783d2f428"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-d7a34e0783d2f428"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-d7a34e0783d2f428"
+      ],
+      "reasonZh": "正文具名 Hao Lab 和 Hao laboratory，并以本团队定义研究；整页与既有来源一致。新闻日期/职位广告不用于新增方法、当前性或隶属结论。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:01+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:01+00:00"
+      },
+      "recordBeforeSha256": "956602cc37e3c7494505a373ade12db861583ace38e02e9af03180505781a1f6",
+      "recordAfterSha256": "f1fc9a9c61b14bc26f442c427b0ac6ccf6438235b7d6674496e4357199baf8b7",
+      "packetSha256ReadOnly": "0505b671c35b40eb4f0cfcd256bac6b8f98af620106f308f8a8c21aa012c53f8",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "a7d93ff520a44ded8cfb7f7bf2c80ad86988ea7e1fbb29cd3d2ad680d7f8015d",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 10,
+      "labId": "ucsd-biology-topic-lab-nieh",
+      "ordinal": 103,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:48:34+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:48:34+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www.biology.ucsd.edu/labs/nieh/index.html",
+      "actualRequestedUrl": "http://www.biology.ucsd.edu/labs/nieh/index.html",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-33cedd6ac97b6f6c",
+      "observedAt": "2026-10-16T04:22:03+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:02+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/nieh/index.html",
+      "title": "UC San Diego Nieh Lab",
+      "bodySha256": "aaf5335b1a0b041a1f5b1fc0585cb8c0d3ad8975d0e2e0792d194e4d8bc2be52",
+      "fullVisibleTextSha256": "f3253b36f9128e56764a82dd97bf7cec9410e1a32ce177271d29bbe8982c939f",
+      "fullVisibleTextCharactersRead": 2255,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a4ace3e83fbaa782b3acff82dd74bb8bcab077348959ea76930e9dffc6686b84.html",
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/nieh/index.html",
+          "to": "https://biology.ucsd.edu/labs/nieh/index.html",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/nieh/index.html",
+          "to": "http://labs.biology.ucsd.edu/nieh/index.html",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-33cedd6ac97b6f6c",
+          "quote": "Welcome to the Nieh Lab",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-aaeb76d3bcab87fc",
+          "sourceUrl": "https://labs.biology.ucsd.edu/nieh/index.html",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/nieh/index.html",
+          "observedAt": "2026-10-16T00:59:50+00:00",
+          "bodySha256": "aaf5335b1a0b041a1f5b1fc0585cb8c0d3ad8975d0e2e0792d194e4d8bc2be52",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "f3253b36f9128e56764a82dd97bf7cec9410e1a32ce177271d29bbe8982c939f",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-aaeb76d3bcab87fc"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-aaeb76d3bcab87fc"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-aaeb76d3bcab87fc"
+      ],
+      "reasonZh": "正文直接欢迎进入 Nieh Lab，多个段落明确 Our lab；新整页与既有来源一致。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:03+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:02+00:00"
+      },
+      "recordBeforeSha256": "1eadff80220d4160cafc2d16ec5a9ae5cfb35f2b726f3521061f9c733e70a3c0",
+      "recordAfterSha256": "811749519fc05998fa834f144e5d2dffba31f511284842f8e81ef476732e514e",
+      "packetSha256ReadOnly": "a302e6cf16ebb04b880a9901f6ae8f123f6fdf12f1c4e98d195c3d8ad953004a",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "7e3b7a5ed349614e37e391efc6c0bc537fc805cd670c9eb511b01254dd18c373",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 11,
+      "labId": "ucsd-biology-topic-lab-pillus",
+      "ordinal": 110,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:59:35+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://biology.ucsd.edu/labs/pillus",
+      "actualRequestedUrl": "http://biology.ucsd.edu/labs/pillus",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-f5dfde8ff62ffb17",
+      "observedAt": "2026-10-16T04:22:05+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:03+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/pillus/",
+      "title": "Pillus Lab | Division of Biological Sciences | Section of Molecular Biology",
+      "bodySha256": "b738f8c6b7a70b65ce7ad5f0d3b86b99d80a595b36dd44f883c0429c2d98580c",
+      "fullVisibleTextSha256": "74a08e34532d60c07dedb891eb5ca40b0dc24d29bfbdc988042fc1b79d8794c7",
+      "fullVisibleTextCharactersRead": 1550,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/3ae2f1842cc341bc33e4600a158e5de4a00ac0cafa56dd13e1cafdab52fb1085.html",
+      "redirects": [
+        {
+          "from": "http://biology.ucsd.edu/labs/pillus",
+          "to": "http://labs.biology.ucsd.edu/pillus",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/pillus",
+          "to": "http://labs.biology.ucsd.edu/pillus/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-f5dfde8ff62ffb17",
+          "quote": "Pillus Lab | Division of Biological Sciences | Section of Molecular Biology",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-ff3840d53a8f4f8c",
+          "sourceUrl": "https://labs.biology.ucsd.edu/pillus/",
+          "requestedUrl": "https://biology.ucsd.edu/labs/pillus",
+          "observedAt": "2026-10-16T01:00:01+00:00",
+          "bodySha256": "b738f8c6b7a70b65ce7ad5f0d3b86b99d80a595b36dd44f883c0429c2d98580c",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "74a08e34532d60c07dedb891eb5ca40b0dc24d29bfbdc988042fc1b79d8794c7",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-ff3840d53a8f4f8c"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-ff3840d53a8f4f8c"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-ff3840d53a8f4f8c"
+      ],
+      "reasonZh": "HTML title 具名 Pillus Lab，正文以 We 陈述研究并含实验室导航及 UCSD 页脚；整页与已接受旧来源完全一致。标题仅支持身份，保留原研究引用与隶属边界。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:05+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:03+00:00"
+      },
+      "recordBeforeSha256": "c952b7f315dd24a04b906b30a542985f556e8741b4ccbe5ab74f5501b39e31dd",
+      "recordAfterSha256": "6d47f6c05b7071fb07b62308594102f261a085e32c67917cd6c5f2f0e26b25fa",
+      "packetSha256ReadOnly": "a494f91418a43b70db837d4fef0cbc3116a9fc1e792531134362a89136d9ce1b",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "cc566ddcbb05eef5122bd45e8fc74ef979e845c16c43fbc68a592fd975e9a69d",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 12,
+      "labId": "ucsd-biology-topic-lab-ralph-greenspan",
+      "ordinal": 113,
+      "identityBindingReviewedAt": "2026-10-16T04:26:15+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T03:23:19+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T03:23:19+00:00",
+      "priorUncertainty": [
+        "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://greenspanlab.ucsd.edu",
+      "actualRequestedUrl": "http://greenspanlab.ucsd.edu/",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-a3ce329fcf7e5b1d",
+      "observedAt": "2026-10-16T04:22:09+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:07+00:00",
+      "finalUrl": "https://greenspanlab.ucsd.edu/",
+      "title": "Greenspan Lab",
+      "bodySha256": "230c9049ee1ba88ba86300d5aa2fa1e4b17f1cdd1821692b0290f39f07e256f6",
+      "fullVisibleTextSha256": "5704bcef311b557e80475036a31f5e96cbac580cfc909d1bc8bcd12f0d918310",
+      "fullVisibleTextCharactersRead": 281,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ffb7756a5ae3f8ec5985ca99d24d186c50e956078a85f101f57ecc4efa50ee0f.html",
+      "redirects": [
+        {
+          "from": "http://greenspanlab.ucsd.edu/",
+          "to": "https://greenspanlab.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-a3ce329fcf7e5b1d",
+          "quote": "Greenspan Laboratory of Genetics and Neurobiology",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-4e637dc9baddae1f",
+          "sourceUrl": "https://greenspanlab.ucsd.edu/",
+          "requestedUrl": "https://greenspanlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:21+00:00",
+          "bodySha256": "230c9049ee1ba88ba86300d5aa2fa1e4b17f1cdd1821692b0290f39f07e256f6",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "5704bcef311b557e80475036a31f5e96cbac580cfc909d1bc8bcd12f0d918310",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-4e637dc9baddae1f"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-4e637dc9baddae1f"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-4e637dc9baddae1f"
+      ],
+      "reasonZh": "根页正文直接具名 Greenspan Laboratory of Genetics and Neurobiology，与先前已审根页字节/可见正文一致。简短根页仅承担身份；科研概述仍来自此前已审 projects 页，不把资助机构当隶属。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:09+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:07+00:00"
+      },
+      "recordBeforeSha256": "a69d56e7db0597eeef3064266851aa87eb78c86ece2f57ede6cf7388984a47b6",
+      "recordAfterSha256": "f67f31d44bf5849e346a128929526e2182962f6a7cbe3ac996557911da8e7d51",
+      "packetSha256ReadOnly": "c853a79a98c274d443388ff589391c08aa7d14b8ac742d9cbc47eadce9dc93d3",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "3b1b8257d8dc55b3f03bcf4019598f0112812217c9220aaf6481a611194c071d",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 13,
+      "labId": "ucsd-biology-topic-lab-rifkin",
+      "ordinal": 114,
+      "identityBindingReviewedAt": "2026-10-16T04:27:32+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T01:59:35+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T01:59:35+00:00",
+      "priorUncertainty": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www.biology.ucsd.edu/labs/rifkin/index.html",
+      "actualRequestedUrl": "http://www.biology.ucsd.edu/labs/rifkin/index.html",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-f24c277da55eff42",
+      "observedAt": "2026-10-16T04:22:10+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:09+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/rifkin/index.html",
+      "title": "Rifkin Lab: On the Origin of Variation",
+      "bodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9",
+      "fullVisibleTextSha256": "45376112b767228abe42dff68231c715f9439a6e76d99a14bc092f841abe1837",
+      "fullVisibleTextCharactersRead": 4990,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/f47e9a537bd2471fe2089f28bd951ae693f4ab787c234c9987487bb2b7c42071.html",
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/rifkin/index.html",
+          "to": "https://biology.ucsd.edu/labs/rifkin/index.html",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/rifkin/index.html",
+          "to": "http://labs.biology.ucsd.edu/rifkin/index.html",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-f24c277da55eff42",
+          "quote": "Rifkin Lab: On the Origin of Variation",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-f24c277da55eff42",
+          "quote": "RIFKIN LAB",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-1582cbc06798be65",
+          "sourceUrl": "https://labs.biology.ucsd.edu/rifkin/index.html",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/rifkin/index.html",
+          "observedAt": "2026-10-16T00:59:52+00:00",
+          "bodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "45376112b767228abe42dff68231c715f9439a6e76d99a14bc092f841abe1837",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": false
+        },
+        {
+          "sourceId": "src-aab55feea8e267b0",
+          "sourceUrl": "https://labs.biology.ucsd.edu/rifkin/index.html",
+          "requestedUrl": "https://www.biology.ucsd.edu/labs/rifkin/index.html",
+          "observedAt": "2026-10-16T00:59:52+00:00",
+          "bodySha256": "09fa2821574c4f0b1418ce392deac834eff278bcdbd336f90a0b07c970eb74c9",
+          "textExtractionVersion": null,
+          "fullVisibleTextSha256": "3e3b8ed37c9cc3f9bdb8c94bb0c2e9da080480bb9dae03422f12a1d9d761c25c",
+          "sameByteBody": true,
+          "sameFullVisibleText": false,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-aab55feea8e267b0"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-1582cbc06798be65"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [],
+      "reasonZh": "title 与正文同时具名 Rifkin Lab；正文包含团队历史和本实验室研究概述。新捕获字节与已引用旧 extraction 来源相同，完整 v2 文本亦与包内另一旧 v2 来源相同；旧新闻/建组日期不作现时隶属证明。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:10+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:09+00:00"
+      },
+      "recordBeforeSha256": "61696bf81a994999a9acfde9e73dabd1b9d6ae5701bacf729b6f7e2cd89798c3",
+      "recordAfterSha256": "eb2c6bcaf55b9b5204aa11022e081c68754315deb21adb1500434466500eda9f",
+      "packetSha256ReadOnly": "e152bc875b428688ce4d70ea07c2cafbc9f22babb99671a1d84629d689861a7f",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "1068429e041c2dd38266a0b473c515596a0d423f9f7524891c9666389fe21c2f",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    },
+    {
+      "inventoryIndex": 14,
+      "labId": "ucsd-biology-topic-lab-schroeder",
+      "ordinal": 120,
+      "identityBindingReviewedAt": "2026-10-16T04:27:32+00:00",
+      "finalStaticCheckedAt": "2026-10-16T04:27:32+00:00",
+      "priorResearchReviewAt": "2026-10-16T02:19:07+00:00",
+      "rawReviewedAtPreserved": "2026-10-16T02:19:07+00:00",
+      "priorUncertainty": [
+        "研究页包内文本在 18,000 字符处截断，但完整研究总览与所引方法段落已保存。",
+        "来源未提供带日期的当前任职或隶属生效声明，采集时间不等于任职生效时间。"
+      ],
+      "priorBlockers": [],
+      "decision": "identity_bound_to_actual_original_HTTP_capture",
+      "literalListedUrl": "http://www-biology.ucsd.edu/labs/schroeder/index.html",
+      "actualRequestedUrl": "http://www-biology.ucsd.edu/labs/schroeder/index.html",
+      "requestKeyMatchesListed": true,
+      "newSourceId": "src-1d4010cad8845f6e",
+      "observedAt": "2026-10-16T04:22:12+00:00",
+      "liveCheckedAt": "2026-10-16T04:22:11+00:00",
+      "finalUrl": "http://labs.biology.ucsd.edu/schroeder/index.html",
+      "title": "Schroeder Lab Home",
+      "bodySha256": "5861c8d92dc12c616813f13f4a1e4bfaeb64e3eba5932a181d6e76e7d14d34c1",
+      "fullVisibleTextSha256": "bf346a645fd88b99cd265a5dd0d33b0e7075ee39817b9f66a709387ad8c6aa56",
+      "fullVisibleTextCharactersRead": 331,
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/f8d7189776a24b61bbc04bd0861354bf16aeb4e0ac1a8e09c067f1fdff7ef2eb.html",
+      "redirects": [
+        {
+          "from": "http://www-biology.ucsd.edu/labs/schroeder/index.html",
+          "to": "https://biology.ucsd.edu/labs/schroeder/index.html",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/schroeder/index.html",
+          "to": "http://labs.biology.ucsd.edu/schroeder/index.html",
+          "httpStatus": 301
+        }
+      ],
+      "identityQuotesAdded": [
+        {
+          "sourceId": "src-1d4010cad8845f6e",
+          "quote": "Schroeder Lab Home",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-1d4010cad8845f6e",
+          "quote": "Julian I. Schroeder Professor of Biology, UCSD",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "sourceMatchesFetch": true,
+      "sameByteBodyPriorSources": [
+        {
+          "sourceId": "src-75e20f2c297b7d5f",
+          "sourceUrl": "https://labs.biology.ucsd.edu/schroeder/index.html",
+          "requestedUrl": "https://www-biology.ucsd.edu/labs/schroeder/index.html",
+          "observedAt": "2026-10-16T00:59:40+00:00",
+          "bodySha256": "5861c8d92dc12c616813f13f4a1e4bfaeb64e3eba5932a181d6e76e7d14d34c1",
+          "textExtractionVersion": "summary-visible-content-v2",
+          "fullVisibleTextSha256": "bf346a645fd88b99cd265a5dd0d33b0e7075ee39817b9f66a709387ad8c6aa56",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRecordCited": true
+        }
+      ],
+      "sameByteBodyPriorCitedSourceIds": [
+        "src-75e20f2c297b7d5f"
+      ],
+      "sameFullVisibleTextPriorSourceIds": [
+        "src-75e20f2c297b7d5f"
+      ],
+      "sameFullVisibleTextPriorCitedSourceIds": [
+        "src-75e20f2c297b7d5f"
+      ],
+      "reasonZh": "HTML title 字面明确 Schroeder Lab Home，正文具名 Julian I. Schroeder、Lab Phone 和通信地址；整页与已审根页相同。科研仍引用原 focus 页，不由联系人简介扩展本实验室研究。",
+      "scienceSummaryMethodsTopicsQuestionsUnchanged": true,
+      "oldEvidenceAndSourceDatesPreserved": true,
+      "identityAndAffiliationConclusionUnchanged": true,
+      "oldUncertaintyAndBlockersPreserved": true,
+      "oldUnrequestedHTTPLimitationSupersededByActualCapture": true,
+      "beforeHydrate": {
+        "pageIdentity": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "listedUrlDirectlyChecked": true
+      },
+      "afterHydrate": {
+        "pageIdentity": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "listedUrlDirectlyChecked": true,
+        "checkScope": "listed_url_direct_request",
+        "lastCheckedAt": "2026-10-16T04:22:12+00:00",
+        "liveCheckedAt": "2026-10-16T04:22:11+00:00"
+      },
+      "recordBeforeSha256": "33f047a9bba064221c4dfd5d014acb284b3dea979365eb45a1b082974c482edf",
+      "recordAfterSha256": "f3da3fed963f60a75b1489e36e2516c408f54bce2d7a9e97dcdcb0aa3fbcfd97",
+      "packetSha256ReadOnly": "e3a276635bb3dba06d24c79056e713703d7c11447bb9f6398fb2566b79e25164",
+      "reviewerNetworkRequestsMade": 0,
+      "finalHydratePacketSha256ReadOnly": "33be149f6b26f35788230fc8d57ca1530ca3c0e9d2eff760f763095a1786e7ec",
+      "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+      "packetChangedExternallyAfterOriginalReview": true,
+      "finalHydrateVerifiedOnCurrentPacket": true,
+      "finalPacketUrlPolicy": "preserve_wire_uri_after_pinned_public_origin_validation"
+    }
+  ],
+  "finalHydrateCheckedAt": "2026-10-16T04:28:11+00:00",
+  "packetsChangedExternallyAfterInitialReviewCount": 15,
+  "externalPacketRefreshExplanation": {
+    "changedField": "latestDestinationUrlPolicy",
+    "value": "preserve_wire_uri_after_pinned_public_origin_validation",
+    "parentConfirmedOnlyNewField": true,
+    "bodySourcesFetchAndOriginalTimesUnchanged": true,
+    "initialAndFinalPacketSha256BothPreserved": true
+  }
+}

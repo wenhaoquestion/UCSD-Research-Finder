@@ -1,0 +1,898 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:41:34+00:00",
+  "observedChange": true,
+  "comparisonReference": {
+    "oldMutableSha256": "0be0542448638fbb64c785b67440b0fcb739c80e14a23d392ca43abe7481c0d9",
+    "oldSnapshotPath": "data/local-lab-summaries/handoff-revision-snapshots/coverage-20261016-reviewed-lab-handoff-0be0542448638fbb64c785b67440b0fcb739c80e14a23d392ca43abe7481c0d9.json",
+    "oldGeneratedAt": "2026-10-16T03:16:38+00:00",
+    "oldRecordCount": 12
+  },
+  "currentMutableHandoff": {
+    "path": "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-reviewed-lab-handoff.json",
+    "sha256": "60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155",
+    "byteCount": 119930,
+    "generatedAt": "2026-10-16T04:34:52+00:00",
+    "collectionState": "reviewed_incremental",
+    "isFinalExport": false,
+    "recordCount": 14,
+    "decisionArtifactPath": "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-decisions.json",
+    "decisionArtifactSha256": "f472eafcf8619c081550b37ba22a39f38d19972cfe6d23369322f5e3a922ab83",
+    "declaredDecisionHashMatchesActual": true,
+    "decisionGeneratedAtUnchangedAndNotNewReviewTime": "2026-10-16T02:28:26.215010+00:00",
+    "queueCheckpointAt": "2026-10-16T04:34:37+00:00",
+    "queueStates": {
+      "done": 4325,
+      "unresolved": 706,
+      "scope_excluded": 303,
+      "retained_prior_evidence": 1859,
+      "pending": 10968
+    },
+    "servedAtlasModified": false,
+    "servedAtlasSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e"
+  },
+  "semanticDelta": {
+    "newStableIdCount": 2,
+    "newStableIds": [
+      "ucsd-live-lab-9c13d3e2e45efe",
+      "ucsd-live-lab-eb3be693359889"
+    ],
+    "removedFrozenStableIds": [],
+    "allFrozen12LabObjectsUnchanged": true,
+    "changedExistingLabObjects": [],
+    "newAcceptDecisionCount": 2,
+    "allPreviousDecisionsUnchanged": true,
+    "labAliasesUnchanged": true,
+    "labUpdatesUnchanged": true,
+    "labAliasesIgnoredCount": 30,
+    "labUpdatesIgnoredCount": 8,
+    "newManifestCaptureCount": 9,
+    "existingManifestCapturesUnchanged": true,
+    "flowMultiEntityBoundaryNewThisRevision": false
+  },
+  "localImporter": {
+    "module": "scripts/lab_summary_handoff.py",
+    "entrypoint": "load_reviewed_handoff",
+    "approvedSnapshotPath": "data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-reviewed-lab-handoff-4e67f9bb4e7f4272932a22d262f36fc5818721fa51321c49c4bbb25080b1f726.json",
+    "approvedSnapshotSha256": "4e67f9bb4e7f4272932a22d262f36fc5818721fa51321c49c4bbb25080b1f726",
+    "approvedDecisionsPath": "data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-decisions-823f5b7c2f144e0906e31a69296f35b09f3e6e9ebbe9a4f88f220ccd1c6327d6.json",
+    "approvedDecisionsSha256": "823f5b7c2f144e0906e31a69296f35b09f3e6e9ebbe9a4f88f220ccd1c6327d6",
+    "approvedStableIds": [
+      "ucsd-live-lab-176619ff4af12d",
+      "ucsd-live-lab-27d33fcd1710ce",
+      "ucsd-live-lab-2982fe38ebc5a0",
+      "ucsd-live-lab-33e60c6bf35e2b",
+      "ucsd-live-lab-6244ff07b175a9",
+      "ucsd-live-lab-848c82d9aba60e",
+      "ucsd-live-lab-8627bc69d4ee7d",
+      "ucsd-live-lab-a8e8602372ef78",
+      "ucsd-live-lab-d4a949e47ec3f3",
+      "ucsd-live-lab-da307b4f0f98b5",
+      "ucsd-live-lab-f2a96ed0a66637",
+      "ucsd-live-lab-f78bf84fc19eef"
+    ],
+    "approvedIdCount": 12,
+    "approvedSnapshotBytesHashesVerified": true,
+    "usesFrozenApprovedSnapshotForProduction": true,
+    "changedMutableAutoAdmission": false,
+    "currentMutableWouldMatchFrozenHash": false,
+    "guardRequiresExactFrozenIdSetAnd12Count": true,
+    "aliasesAndUpdatesIgnored": true,
+    "completedExportGateUnchanged": true,
+    "loadOrPrepareNotRun": true,
+    "codeHashesAtReview": {
+      "scripts/lab_summary_handoff.py": "eae6270918e7f975e5f93a8bde7f1774e2e281475477ee8dbae4c748d2da6272",
+      "scripts/local_lab_summaries.py": "8bdd916f67022e4c0c22d0efb27467b9ba013eb1d07e793d29f80eed99c81762",
+      "/tmp/ucsd-research-20261016/scripts/apply_ucsd_coverage.py": "601e0d63c2caa908421fbb1043e74b38101bdc225b05964d4cb726213484e2d3"
+    },
+    "recommendation": "Keep the existing frozen12 admission unchanged. The two primary-source-supported new IDs require a separately authorized finite delta review and explicit new snapshot/decision pins before any import. Flow Control/Coordinated Robotics remain unresolved as two named units sharing one URL; do not silently collapse or duplicate them."
+  },
+  "newRecords": [
+    {
+      "labId": "ucsd-live-lab-eb3be693359889",
+      "labName": "Healthcare Robotics Lab",
+      "labWebsiteUrl": "https://healthrobotics.ucsd.edu/",
+      "recordSubtype": "lab",
+      "institution": "University of California San Diego",
+      "department": "Computer Science and Engineering",
+      "principalInvestigator": "Laurel Riek",
+      "principalInvestigatorIdentityScope": "source_reported_name_only",
+      "professorIdsPreserved": [],
+      "decisionUrlKey": "https://healthrobotics.ucsd.edu/",
+      "decision": {
+        "action": "accept",
+        "stableLabId": "ucsd-live-lab-eb3be693359889",
+        "name": "Healthcare Robotics Lab",
+        "recordSubtype": "lab",
+        "reason": "The lab self-identifies at UC San Diego and explicitly names Laurel Riek as its leader. Its own contact page supplies the CSE mailing unit and public contact email; the members page separately lists her Computer Science/Emergency Medicine affiliations. No existing atlas lab name, PI or URL matches this group.",
+        "identityEvidence": [
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/",
+            "observedAt": "2026-10-16T02:12:42+00:00",
+            "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+            "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+            "status": "verified"
+          }
+        ],
+        "institutionEvidence": [
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/",
+            "observedAt": "2026-10-16T02:12:42+00:00",
+            "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+            "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+            "status": "verified"
+          }
+        ],
+        "department": "Computer Science and Engineering",
+        "departmentEvidence": [
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+            "observedAt": "2026-10-16T02:12:44+00:00",
+            "method": "reviewed_own_lab_contact_department_unit",
+            "evidence": "Mailing Address Prof. Laurel Riek Computer Science and Engineering",
+            "status": "verified"
+          }
+        ],
+        "principalInvestigator": "Laurel Riek",
+        "piEvidence": [
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/",
+            "observedAt": "2026-10-16T02:12:42+00:00",
+            "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+            "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/people/",
+            "observedAt": "2026-10-16T02:12:43+00:00",
+            "method": "reviewed_lab_people_explicit_pi_role",
+            "evidence": "Laurel Riek Principal Investigator Computer Science, Emergency Medicine",
+            "status": "verified"
+          }
+        ],
+        "contactEmail": "lriek@eng.ucsd.edu",
+        "contactEvidence": [
+          {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+            "observedAt": "2026-10-16T02:12:44+00:00",
+            "method": "reviewed_own_lab_contact_email",
+            "evidence": "Email Address lriek@eng.ucsd.edu",
+            "status": "verified"
+          }
+        ]
+      },
+      "decisionStableIdMatchesRecord": true,
+      "baselineOrFrozenIdCollision": false,
+      "baselineOrFrozenURLCollisions": [],
+      "officialProfileLiteralLabAnchors": [
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "observedAt": "2026-10-16T02:12:39+00:00",
+          "label": "Healthcare Robotics Lab",
+          "literalHref": "https://healthrobotics.ucsd.edu"
+        }
+      ],
+      "fieldEvidenceProofCount": 9,
+      "fieldEvidenceChecks": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+          "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+          "status": "verified",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "observedAt": "2026-10-16T02:12:39+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "Healthcare Robotics Lab",
+          "status": "verified",
+          "redirectEvidence": [],
+          "bodySha256": "c3406ea1704d3954a9b541308626f13d38498914e4b67259a98da96959ba8bf3",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "principalInvestigator",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+          "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+          "status": "verified",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "principalInvestigator",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/people/",
+          "observedAt": "2026-10-16T02:12:43+00:00",
+          "method": "reviewed_lab_people_explicit_pi_role",
+          "evidence": "Laurel Riek Principal Investigator Computer Science, Emergency Medicine",
+          "status": "verified",
+          "bodySha256": "033030f3511a4e9466034dc2b9b984864d01547b213f595c48df12349edf3b1a",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "contactEmail",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "observedAt": "2026-10-16T02:12:44+00:00",
+          "method": "reviewed_own_lab_contact_email",
+          "evidence": "Email Address lriek@eng.ucsd.edu",
+          "status": "verified",
+          "bodySha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "observedAt": "2026-10-16T02:12:44+00:00",
+          "method": "reviewed_own_lab_contact_department_unit",
+          "evidence": "Mailing Address Prof. Laurel Riek Computer Science and Engineering",
+          "status": "verified",
+          "bodySha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+          "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+          "status": "verified",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+          "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+          "status": "verified",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "method": "reviewed_lab_own_name_institution_and_explicit_leadership",
+          "evidence": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+          "status": "verified",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        }
+      ],
+      "identityProof": "The Healthcare Robotics Lab at UC San Diego is led by Dr. Laurel Riek .",
+      "labScopedResearchProof": "Our research areas include human robot interaction , health informatics , and assistive technology , which we explore in close collaboration with disabled people, healthcare workers, and community members.",
+      "independentSourceAssessment": "named lab identity, explicit UCSD/PI relationship and own-site scientific prose supported; no automatic importer admission",
+      "researchScopeNote": "实验室首页明确列出人机交互、健康信息学、辅助技术及参与式社区研究；联系人单位是 CSE，成员个人的其他学科不合并为新的实验室。",
+      "boundaries": [
+        "Source-reported PI name only; no professor-ID linkage or appointment-date inference.",
+        "Capture observedAt is preserved and is not a current-appointment/content-update date.",
+        "Identity/field-evidence acceptance in mutable collector artifact is not approval to widen the frozen summary importer."
+      ],
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "labId": "ucsd-live-lab-9c13d3e2e45efe",
+      "labName": "MILPAS Lab",
+      "labWebsiteUrl": "https://sites.ucsd.edu/milpas-lab/",
+      "recordSubtype": "lab",
+      "institution": "University of California San Diego",
+      "department": "Neurosciences",
+      "principalInvestigator": "Alejandra Morlett Paredes",
+      "principalInvestigatorIdentityScope": "source_reported_name_only",
+      "professorIdsPreserved": [],
+      "decisionUrlKey": "https://sites.ucsd.edu/milpas-lab",
+      "decision": {
+        "action": "accept",
+        "stableLabId": "ucsd-live-lab-9c13d3e2e45efe",
+        "name": "MILPAS Lab",
+        "recordSubtype": "lab",
+        "reason": "The named MILPAS Lab has its own UCSD site, explicit PI section and UCSD contact address. The PI biography explicitly names the Department of Neurosciences at UC San Diego. No existing atlas lab, URL or PI entry matches this group.",
+        "identityEvidence": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+            "observedAt": "2026-10-16T02:13:51+00:00",
+            "method": "reviewed_lab_own_heading",
+            "evidence": "WELCOME TO THE MILPAS LAB",
+            "status": "verified"
+          }
+        ],
+        "institutionEvidence": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+            "observedAt": "2026-10-16T02:13:51+00:00",
+            "method": "reviewed_own_lab_pi_campus_affiliation",
+            "evidence": "Assistant Adjunct Professor, UC San Diego, Neurosciences",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+            "observedAt": "2026-10-16T03:19:09+00:00",
+            "method": "reviewed_lab_own_ucsd_contact_location",
+            "evidence": "Physical Address UC San Diego Health East Campus Office Building (ECOB)",
+            "status": "verified"
+          }
+        ],
+        "department": "Neurosciences",
+        "departmentEvidence": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+            "observedAt": "2026-10-16T03:18:09+00:00",
+            "method": "reviewed_named_lab_pi_explicit_department_affiliation",
+            "evidence": "Dr. Alejandra Morlett Paredes is an Assistant Adjunct Professor in the Department of Neurosciences at the University of California, San Diego (UCSD).",
+            "status": "verified"
+          }
+        ],
+        "principalInvestigator": "Alejandra Morlett Paredes",
+        "piEvidence": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+            "observedAt": "2026-10-16T03:17:39+00:00",
+            "method": "reviewed_lab_people_explicit_pi_role",
+            "evidence": "Principal Investigator Alejandra Morlett Paredes, PhD.",
+            "status": "verified"
+          }
+        ],
+        "contactEmail": "amorlett@ucsd.edu",
+        "contactEvidence": [
+          {
+            "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+            "observedAt": "2026-10-16T03:19:09+00:00",
+            "method": "reviewed_own_lab_contact_email",
+            "evidence": "contact: Alejandra Morlett Paredes, Ph.D. Email: amorlett@ucsd.edu",
+            "status": "verified"
+          }
+        ]
+      },
+      "decisionStableIdMatchesRecord": true,
+      "baselineOrFrozenIdCollision": false,
+      "baselineOrFrozenURLCollisions": [],
+      "officialProfileLiteralLabAnchors": [
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "observedAt": "2026-10-16T02:13:49+00:00",
+          "label": "MILPAS lab",
+          "literalHref": "https://sites.ucsd.edu/milpas-lab/"
+        }
+      ],
+      "fieldEvidenceProofCount": 9,
+      "fieldEvidenceChecks": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "method": "reviewed_lab_own_heading",
+          "evidence": "WELCOME TO THE MILPAS LAB",
+          "status": "verified",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "observedAt": "2026-10-16T02:13:49+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "MILPAS lab",
+          "status": "verified",
+          "redirectEvidence": [],
+          "bodySha256": "5e510be31f7c8d5a297b216847c4eb93d954297ba4bc9889dbe15a249d60172c",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "principalInvestigator",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+          "observedAt": "2026-10-16T03:17:39+00:00",
+          "method": "reviewed_lab_people_explicit_pi_role",
+          "evidence": "Principal Investigator Alejandra Morlett Paredes, PhD.",
+          "status": "verified",
+          "bodySha256": "213ec368f7b65515ce0b4372be86fc59570a613795689871ec93e433e0f2c662",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "contactEmail",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "observedAt": "2026-10-16T03:19:09+00:00",
+          "method": "reviewed_own_lab_contact_email",
+          "evidence": "contact: Alejandra Morlett Paredes, Ph.D. Email: amorlett@ucsd.edu",
+          "status": "verified",
+          "bodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+          "observedAt": "2026-10-16T03:18:09+00:00",
+          "method": "reviewed_named_lab_pi_explicit_department_affiliation",
+          "evidence": "Dr. Alejandra Morlett Paredes is an Assistant Adjunct Professor in the Department of Neurosciences at the University of California, San Diego (UCSD).",
+          "status": "verified",
+          "bodySha256": "74de819e2ce5d5ae703a7eb02523bdf13c1995f1f09449c6efda2a6e6a75e7e0",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "method": "reviewed_own_lab_pi_campus_affiliation",
+          "evidence": "Assistant Adjunct Professor, UC San Diego, Neurosciences",
+          "status": "verified",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "observedAt": "2026-10-16T03:19:09+00:00",
+          "method": "reviewed_lab_own_ucsd_contact_location",
+          "evidence": "Physical Address UC San Diego Health East Campus Office Building (ECOB)",
+          "status": "verified",
+          "bodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "method": "reviewed_lab_own_heading",
+          "evidence": "WELCOME TO THE MILPAS LAB",
+          "status": "verified",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "method": "reviewed_lab_own_heading",
+          "evidence": "WELCOME TO THE MILPAS LAB",
+          "status": "verified",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactVisibleTextMatch": true,
+          "legacyOnlyRequired": false
+        }
+      ],
+      "identityProof": "WELCOME TO THE MILPAS LAB",
+      "labScopedResearchProof": "The MILPAS Lab is dedicated to understanding the factors that influence older Latinos’ participation in Alzheimer’s Disease research, especially in studies that involve biomarker procedures such as lumbar punctures, brain imaging, and brain donation.",
+      "independentSourceAssessment": "named lab identity, explicit UCSD/PI relationship and own-site scientific prose supported; no automatic importer admission",
+      "researchScopeNote": "首页明确研究年长拉丁裔群体参与阿尔茨海默病研究的障碍与动机、神经心理测试常模。腰椎穿刺、脑成像、脑捐献是参与研究的场景，不能由该句推断实验室自己执行这些技术。",
+      "boundaries": [
+        "Source-reported PI name only; no professor-ID linkage or appointment-date inference.",
+        "Capture observedAt is preserved and is not a current-appointment/content-update date.",
+        "Identity/field-evidence acceptance in mutable collector artifact is not approval to widen the frozen summary importer."
+      ],
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    }
+  ],
+  "primaryDeltaCaptures": [
+    {
+      "sourceUrl": "https://healthrobotics.ucsd.edu/",
+      "requestedUrl": "https://healthrobotics.ucsd.edu/",
+      "observedAt": "2026-10-16T02:12:42+00:00",
+      "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/eb3be69335988910bbb20d93aeb3afdeeacd23a94edffe24690dde44c963dfc4.html",
+      "actualRawBodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+      "byteCount": 19436,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://healthrobotics.ucsd.edu/",
+        "fetch": {
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T02:12:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792116760.400206,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://healthrobotics.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "retrievedEpoch": 1792116762.563549
+        }
+      },
+      "visibleTextCharacters": 4747,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://profiles.ucsd.edu/laurel.riek",
+      "requestedUrl": "https://profiles.ucsd.edu/laurel.riek",
+      "observedAt": "2026-10-16T02:12:39+00:00",
+      "bodySha256": "c3406ea1704d3954a9b541308626f13d38498914e4b67259a98da96959ba8bf3",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f6af3a1d1c0e5b875685f926ced799033d4b71be4efbe50724b7cb4154019b6c.html",
+      "actualRawBodySha256": "c3406ea1704d3954a9b541308626f13d38498914e4b67259a98da96959ba8bf3",
+      "byteCount": 77299,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://profiles.ucsd.edu/laurel.riek",
+        "fetch": {
+          "sourceUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "observedAt": "2026-10-16T02:12:39+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://profiles.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:01:29+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112489.452821,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "c3406ea1704d3954a9b541308626f13d38498914e4b67259a98da96959ba8bf3",
+          "retrievedEpoch": 1792116759.524876
+        }
+      },
+      "visibleTextCharacters": 2125,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://healthrobotics.ucsd.edu/people/",
+      "requestedUrl": "https://healthrobotics.ucsd.edu/people/",
+      "observedAt": "2026-10-16T02:12:43+00:00",
+      "bodySha256": "033030f3511a4e9466034dc2b9b984864d01547b213f595c48df12349edf3b1a",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/008b1dfbdd389414091b0d88dcdb01ec7235a6b87f42b847d262fb5b8d56f42c.html",
+      "actualRawBodySha256": "033030f3511a4e9466034dc2b9b984864d01547b213f595c48df12349edf3b1a",
+      "byteCount": 34255,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://healthrobotics.ucsd.edu/people",
+        "fetch": {
+          "sourceUrl": "https://healthrobotics.ucsd.edu/people/",
+          "observedAt": "2026-10-16T02:12:43+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T02:12:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792116760.400206,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://healthrobotics.ucsd.edu/people/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "033030f3511a4e9466034dc2b9b984864d01547b213f595c48df12349edf3b1a",
+          "retrievedEpoch": 1792116763.32034
+        }
+      },
+      "visibleTextCharacters": 4366,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+      "requestedUrl": "https://healthrobotics.ucsd.edu/about.html",
+      "observedAt": "2026-10-16T02:12:44+00:00",
+      "bodySha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/355f1092a053990720530804674ce48a85aa5207e454cfccc129e91335adfb20.html",
+      "actualRawBodySha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+      "byteCount": 7123,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://healthrobotics.ucsd.edu/about.html",
+        "fetch": {
+          "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "observedAt": "2026-10-16T02:12:44+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://healthrobotics.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T02:12:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792116760.400206,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+          "retrievedEpoch": 1792116764.400623
+        }
+      },
+      "visibleTextCharacters": 331,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+      "requestedUrl": "https://sites.ucsd.edu/milpas-lab/",
+      "observedAt": "2026-10-16T02:13:51+00:00",
+      "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9c13d3e2e45efe85ee20ca83e27cadf414ec629af0198eabe27ca134a7f733a9.html",
+      "actualRawBodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+      "byteCount": 83589,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://sites.ucsd.edu/milpas-lab",
+        "fetch": {
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9827971,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "retrievedEpoch": 1792116831.461785
+        }
+      },
+      "visibleTextCharacters": 1391,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+      "requestedUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+      "observedAt": "2026-10-16T02:13:49+00:00",
+      "bodySha256": "5e510be31f7c8d5a297b216847c4eb93d954297ba4bc9889dbe15a249d60172c",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0dba84559a6a192e3d0f96839b4eeb082a485e08672958f39e48a549e95bcba3.html",
+      "actualRawBodySha256": "5e510be31f7c8d5a297b216847c4eb93d954297ba4bc9889dbe15a249d60172c",
+      "byteCount": 170517,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+        "fetch": {
+          "sourceUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "observedAt": "2026-10-16T02:13:49+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://profiles.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:01:29+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112489.452821,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "contentType": "text/html; charset=utf-8",
+          "error": "",
+          "sha256": "5e510be31f7c8d5a297b216847c4eb93d954297ba4bc9889dbe15a249d60172c",
+          "retrievedEpoch": 1792116829.671425
+        }
+      },
+      "visibleTextCharacters": 903,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+      "requestedUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+      "observedAt": "2026-10-16T03:17:39+00:00",
+      "bodySha256": "213ec368f7b65515ce0b4372be86fc59570a613795689871ec93e433e0f2c662",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/72392ed233981575fa835fa134d2c5637145bae85c4eb2b4b1980a87b61ac496.html",
+      "actualRawBodySha256": "213ec368f7b65515ce0b4372be86fc59570a613795689871ec93e433e0f2c662",
+      "byteCount": 66119,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://sites.ucsd.edu/milpas-lab/people-2",
+        "fetch": {
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+          "observedAt": "2026-10-16T03:17:39+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9827971,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "213ec368f7b65515ce0b4372be86fc59570a613795689871ec93e433e0f2c662",
+          "retrievedEpoch": 1792120659.5180402
+        }
+      },
+      "visibleTextCharacters": 158,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+      "requestedUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+      "observedAt": "2026-10-16T03:19:09+00:00",
+      "bodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/123d2223641d57697bd05357073f203fdcb091437fdc5b610615786cc2eefb8a.html",
+      "actualRawBodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+      "byteCount": 61431,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://sites.ucsd.edu/milpas-lab/contact-us",
+        "fetch": {
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "observedAt": "2026-10-16T03:19:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9827971,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+          "retrievedEpoch": 1792120749.43842
+        }
+      },
+      "visibleTextCharacters": 392,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    },
+    {
+      "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+      "requestedUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+      "observedAt": "2026-10-16T03:18:09+00:00",
+      "bodySha256": "74de819e2ce5d5ae703a7eb02523bdf13c1995f1f09449c6efda2a6e6a75e7e0",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0eebea80dc267d245bc542fc62d68eafff183582c4fe97a37af959c0e1c2a89d.html",
+      "actualRawBodySha256": "74de819e2ce5d5ae703a7eb02523bdf13c1995f1f09449c6efda2a6e6a75e7e0",
+      "byteCount": 84344,
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://sites.ucsd.edu/milpas-lab/people",
+        "fetch": {
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+          "observedAt": "2026-10-16T03:18:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sites.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9827971,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "74de819e2ce5d5ae703a7eb02523bdf13c1995f1f09449c6efda2a6e6a75e7e0",
+          "retrievedEpoch": 1792120689.452338
+        }
+      },
+      "visibleTextCharacters": 3122,
+      "sourceReadScope": "complete lab home/contact/PI bio; localized PI section on membership page; explicit lab anchor and localized profile context for profiles",
+      "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+    }
+  ],
+  "flowControlCoordinatedRobotics": {
+    "url": "https://www.ucsdrobotics.org/",
+    "sourceUrl": "https://www.ucsdrobotics.org/",
+    "actualRequestedUrl": "https://www.ucsdrobotics.org/",
+    "observedAt": "2026-10-16T01:08:35+00:00",
+    "bodySha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+    "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/802bc4f0642435fe5934c1d2786f67195d160535e91b8588289696c85f8375c4.html",
+    "rawHashVerified": true,
+    "actualQueueCapture": {
+      "sourceUrl": "https://www.ucsdrobotics.org/",
+      "observedAt": "2026-10-16T01:08:35+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://www.ucsdrobotics.org/robots.txt",
+        "observedAt": "2026-10-16T01:08:34+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112914.107121,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://www.ucsdrobotics.org/",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "retrievedEpoch": 1792112915.162933
+    },
+    "exactQuotes": [
+      {
+        "scope": "shared_homepage",
+        "quote": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA."
+      },
+      {
+        "scope": "Flow Control Lab",
+        "quote": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems."
+      },
+      {
+        "scope": "Coordinated Robotics Lab",
+        "quote": "The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing."
+      },
+      {
+        "scope": "two_entities_not_one",
+        "quote": "The two labs collaborate closely on a variety of interdisciplinary projects, including the deployment of robotic sensor vehicle swarms for both real-time hurricane measurement and real-time contaminant plume detection, estimation, & forecasting."
+      }
+    ],
+    "namedEntities": [
+      "UCSD Flow Control Lab",
+      "UCSD Coordinated Robotics Lab"
+    ],
+    "currentlyAssignedAcceptedStableIds": [],
+    "currentDecision": {
+      "action": "unresolved",
+      "reason": "The homepage explicitly describes two collaborating labs, Flow Control Lab and Coordinated Robotics Lab, sharing one homepage. Preserve the two named entities in discovery; do not silently collapse them or create duplicate-URL records."
+    },
+    "decisionUnchangedFromFrozen12Artifact": true,
+    "sameURLBoundary": "Two explicitly distinct collaborating labs share one homepage. Preserve both discovery entities; do not collapse into a single lab or manufacture duplicate-URL accepted records. Existing URL-keyed decision/import rules do not encode two accepted entities for this single URL.",
+    "researchScopeBoundary": "Fluid-system analysis/numerical methods belong to Flow Control Lab; mobility/coordination and dynamic feedback prototypes belong to Coordinated Robotics Lab; shared swarm collaborations do not merge the entities.",
+    "accessBoundary": "The public home page was already captured. The final text says publication PDFs require sign-up/login; this review did not access PDFs or any login.",
+    "actualReviewedAt": "2026-10-16T04:41:34+00:00"
+  },
+  "validation": {
+    "newRecordsSchemaAndCombinedReferencesPassed": 2,
+    "newFieldProofsChecked": 18,
+    "newFieldProofsExactVisibleMatches": 18,
+    "manifestRawBodiesAndQueueOriginalTimeVerified": 9,
+    "additionalFlowRawBodyAndOriginalTimeVerified": 1,
+    "newIdCollisions": 0,
+    "newURLCollisions": 0
+  },
+  "networkRequestsMade": 0,
+  "automaticAdmissionPerformed": false,
+  "recordsChanged": 0,
+  "packetsChanged": 0,
+  "collectorChanged": 0,
+  "importerChanged": 0,
+  "sourceArtifactHashesStillMatchAtCompletion": true,
+  "globalCollectionCompleteClaimed": false
+}

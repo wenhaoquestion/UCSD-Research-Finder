@@ -1,0 +1,813 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T03:44:21+00:00",
+  "impactReference": {
+    "path": "data/local-lab-summaries/REQUEST-PROVENANCE-IMPACT.json",
+    "sha256": "e452bdd7a625b6cdcfaeab6af6783aab015021a3f1fee04600931809c30ca192"
+  },
+  "networkRequestsMade": 0,
+  "scientificBodyRereads": 0,
+  "scope": "Only six listed_url_direct_request lost bindings; 48 related_url_request_only cases are excluded and untouched.",
+  "items": [
+    {
+      "labId": "ucsd-anesthesiology-lab-case-lab",
+      "ordinal": 1,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "new_selected_direct_capture_identity_review",
+      "reasonZh": "当前直接HTTPS请求的文档标题明确CASE LAB，副标题展开Case Affective and Somatosensory Experience Lab；只读标题/副标题与请求元数据，没有重读科学正文。与旧HTTP采集的字节hash不同，不标记same-body复用。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "https://www.caselaboratory.org/",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:59:37+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-df754f83c86b2328",
+        "sourceUrl": "https://www.caselaboratory.org/",
+        "requestedUrl": "https://www.caselaboratory.org/",
+        "checkedUrl": "https://www.caselaboratory.org/",
+        "queueUrl": "https://www.caselaboratory.org/",
+        "observedAt": "2026-10-16T00:57:39+00:00",
+        "bodySha256": "a07cb1647f924f14249fa1b57d76505aabcd457a5d5dba613e867df37df095e0",
+        "title": "CASE LAB",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-b7e6ceb5616c77de",
+            "quote": "CASE LAB Our Team Principal Investigator Laura Case PhD",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-b7e6ceb5616c77de",
+            "sourceUrl": "https://www.caselaboratory.org/research",
+            "requestedUrl": "https://www.caselaboratory.org/research",
+            "checkedUrl": "https://www.caselaboratory.org/research",
+            "queueUrl": "https://www.caselaboratory.org/research",
+            "observedAt": "2026-10-16T01:29:36+00:00",
+            "bodySha256": "770a7faa0e4d8d8f6671598fdd12e065fc87ce456b2a9245f94b5684ffd21cc9",
+            "title": "CASE LAB - PEOPLE",
+            "role": "explicit_linked_research_subpage"
+          }
+        },
+        {
+          "evidence": {
+            "sourceId": "src-d393129a59206b29",
+            "quote": "CASE Lab is located in the Department of Anesthesiology at UC San Diego.",
+            "supports": [
+              "identity",
+              "affiliation"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-d393129a59206b29",
+            "sourceUrl": "https://www.caselaboratory.org/",
+            "requestedUrl": "http://www.caselaboratory.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:59:37+00:00",
+            "bodySha256": "4dca64fe34350fa48326b2398caa5f38ac7b34261d04b226f277486212f08020",
+            "title": "CASE LAB",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-df754f83c86b2328",
+        "quote": "CASE LAB",
+        "supports": [
+          "identity"
+        ],
+        "quoteLocation": "title"
+      },
+      "bindingFingerprint": "674bdbd22e560fd0c554680b628428dc01f2827188788f4875a04cff8705d703",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-anesthesiology-lab-case-lab",
+        "actualRequestedUrl": "https://www.caselaboratory.org/",
+        "sourceUrl": "https://www.caselaboratory.org/",
+        "observedAt": "2026-10-16T00:57:39+00:00",
+        "bodySha256": "a07cb1647f924f14249fa1b57d76505aabcd457a5d5dba613e867df37df095e0",
+        "quote": "CASE LAB",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T02:33:20+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "http://www.caselaboratory.org/",
+        "actualRequestedUrl": "http://www.caselaboratory.org/",
+        "sourceUrl": "https://www.caselaboratory.org/",
+        "observedAt": "2026-10-16T01:59:37+00:00",
+        "bodySha256": "4dca64fe34350fa48326b2398caa5f38ac7b34261d04b226f277486212f08020",
+        "status": "ok",
+        "redirectChain": [
+          {
+            "from": "http://www.caselaboratory.org/",
+            "to": "https://www.caselaboratory.org/",
+            "httpStatus": 301
+          }
+        ],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-bethel-lab-org",
+      "ordinal": 171,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "same_body_direct_request_identity_binding",
+      "reasonZh": "当前精确HTTP列表请求与先前已读Bethel首页具有同一原始字节SHA；The Bethel Lab为整体实验室自述主体，复用原内容审阅并绑定实际直接请求。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "http://bethel-lab.org/",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:36:52+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-ef9f2a5dbcb66f26",
+        "sourceUrl": "https://www.bethel-lab.org/",
+        "requestedUrl": "http://bethel-lab.org/",
+        "checkedUrl": "http://bethel-lab.org/",
+        "queueUrl": "http://bethel-lab.org/",
+        "observedAt": "2026-10-16T01:04:58+00:00",
+        "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+        "title": "Bethel Lab | Home",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-0f229c7c67a66b00",
+            "quote": "The Bethel Lab",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-0f229c7c67a66b00",
+            "sourceUrl": "https://www.bethel-lab.org/",
+            "requestedUrl": "https://www.bethel-lab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:52+00:00",
+            "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+            "title": "Bethel Lab | Home",
+            "role": "listed_lab_destination"
+          }
+        },
+        {
+          "evidence": {
+            "sourceId": "src-87e58aca4ae0d9b4",
+            "quote": "Bethel Lab @ UCSD",
+            "supports": [
+              "identity",
+              "affiliation"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-87e58aca4ae0d9b4",
+            "sourceUrl": "https://www.bethel-lab.org/",
+            "requestedUrl": "https://www.bethel-lab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:52+00:00",
+            "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+            "title": "Bethel Lab | Home",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [
+        {
+          "evidence": {
+            "sourceId": "src-0f229c7c67a66b00",
+            "quote": "The Bethel Lab",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-0f229c7c67a66b00",
+            "sourceUrl": "https://www.bethel-lab.org/",
+            "requestedUrl": "https://www.bethel-lab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:52+00:00",
+            "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+            "title": "Bethel Lab | Home",
+            "role": "listed_lab_destination"
+          }
+        },
+        {
+          "evidence": {
+            "sourceId": "src-87e58aca4ae0d9b4",
+            "quote": "Bethel Lab @ UCSD",
+            "supports": [
+              "identity",
+              "affiliation"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-87e58aca4ae0d9b4",
+            "sourceUrl": "https://www.bethel-lab.org/",
+            "requestedUrl": "https://www.bethel-lab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:52+00:00",
+            "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+            "title": "Bethel Lab | Home",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-ef9f2a5dbcb66f26",
+        "quote": "The Bethel Lab",
+        "supports": [
+          "identity"
+        ]
+      },
+      "bindingFingerprint": "09d16056151b5d49a304163c011544e3663037e39ca50c459c7ad8ecdd4ea6f9",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-lab-from-faculty-bethel-lab-org",
+        "actualRequestedUrl": "http://bethel-lab.org/",
+        "sourceUrl": "https://www.bethel-lab.org/",
+        "observedAt": "2026-10-16T01:04:58+00:00",
+        "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+        "quote": "The Bethel Lab",
+        "quoteLocation": "body",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T02:35:14+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "https://www.bethel-lab.org/",
+        "actualRequestedUrl": "https://www.bethel-lab.org/",
+        "sourceUrl": "https://www.bethel-lab.org/",
+        "observedAt": "2026-10-16T01:36:52+00:00",
+        "bodySha256": "01d2495ed8b8f67645617f4bf7718b9ad7690be5612f2642ac867c8a492b8d47",
+        "status": "ok",
+        "redirectChain": [],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-goren-lab-github-io",
+      "ordinal": 225,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "same_body_direct_request_identity_binding",
+      "reasonZh": "当前精确HTTP列表请求与先前已读Goren首页字节SHA一致；正文Welcome to the Goren Lab明确指认整个实验室。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "http://goren-lab.github.io/",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:36:53+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-6ca06e88db59ef2a",
+        "sourceUrl": "https://goren-lab.github.io/",
+        "requestedUrl": "http://goren-lab.github.io/",
+        "checkedUrl": "http://goren-lab.github.io/",
+        "queueUrl": "http://goren-lab.github.io/",
+        "observedAt": "2026-10-16T01:05:04+00:00",
+        "bodySha256": "206fd9fea8f03aa0cf62d635a8ae1a38e883185c3a7cafa7aeff7ca8643b2aea",
+        "title": "Goren Lab Homepage - Goren Lab",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-d05a40b81f52b5cf",
+            "quote": "Welcome to the Goren Lab",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-d05a40b81f52b5cf",
+            "sourceUrl": "https://goren-lab.github.io/",
+            "requestedUrl": "https://goren-lab.github.io/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:53+00:00",
+            "bodySha256": "206fd9fea8f03aa0cf62d635a8ae1a38e883185c3a7cafa7aeff7ca8643b2aea",
+            "title": "Goren Lab Homepage - Goren Lab",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [
+        {
+          "evidence": {
+            "sourceId": "src-d05a40b81f52b5cf",
+            "quote": "Welcome to the Goren Lab",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-d05a40b81f52b5cf",
+            "sourceUrl": "https://goren-lab.github.io/",
+            "requestedUrl": "https://goren-lab.github.io/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:53+00:00",
+            "bodySha256": "206fd9fea8f03aa0cf62d635a8ae1a38e883185c3a7cafa7aeff7ca8643b2aea",
+            "title": "Goren Lab Homepage - Goren Lab",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-6ca06e88db59ef2a",
+        "quote": "Welcome to the Goren Lab",
+        "supports": [
+          "identity"
+        ]
+      },
+      "bindingFingerprint": "de609bd60dd3e160dbb559e16bc258a7927bc41f5abfdf36430d45cf73a7073f",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-lab-from-faculty-goren-lab-github-io",
+        "actualRequestedUrl": "http://goren-lab.github.io/",
+        "sourceUrl": "https://goren-lab.github.io/",
+        "observedAt": "2026-10-16T01:05:04+00:00",
+        "bodySha256": "206fd9fea8f03aa0cf62d635a8ae1a38e883185c3a7cafa7aeff7ca8643b2aea",
+        "quote": "Welcome to the Goren Lab",
+        "quoteLocation": "body",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T01:53:40+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "https://goren-lab.github.io/",
+        "actualRequestedUrl": "https://goren-lab.github.io/",
+        "sourceUrl": "https://goren-lab.github.io/",
+        "observedAt": "2026-10-16T01:36:53+00:00",
+        "bodySha256": "206fd9fea8f03aa0cf62d635a8ae1a38e883185c3a7cafa7aeff7ca8643b2aea",
+        "status": "ok",
+        "redirectChain": [],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-shtrahman-lab",
+      "ordinal": 261,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "same_body_direct_request_identity_binding",
+      "reasonZh": "与先前已读首页为同一字节SHA；采用明确命名Shtrahman Lab的文档标题，而不是Matthew Shtrahman Principal Investigator个人/成员单句。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "Shtrahman 官网两个明确 Research 子页以 We 陈述本团队神经发生、模式分离与 rAAV 毒性研究；原 PI 与官方名录身份引证保留。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "http://shtrahmanlab.org/",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:31:15+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-c59a46b5436884fb",
+        "sourceUrl": "https://shtrahmanlab.org/",
+        "requestedUrl": "http://shtrahmanlab.org/",
+        "checkedUrl": "http://shtrahmanlab.org/",
+        "queueUrl": "http://shtrahmanlab.org/",
+        "observedAt": "2026-10-16T01:05:11+00:00",
+        "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+        "title": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-1e3cf0e9e2af3854",
+            "quote": "Shtrahman Lab",
+            "supports": [
+              "identity",
+              "affiliation"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-1e3cf0e9e2af3854",
+            "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+            "requestedUrl": null,
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-02T22:42:05+00:00",
+            "bodySha256": null,
+            "title": "Historical field evidence: labName",
+            "role": "historical_field_labName"
+          }
+        },
+        {
+          "evidence": {
+            "sourceId": "src-aa032c493a0901ef",
+            "quote": "Matthew Shtrahman Principal Investigator",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-aa032c493a0901ef",
+            "sourceUrl": "https://shtrahmanlab.org/",
+            "requestedUrl": "https://shtrahmanlab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:31:15+00:00",
+            "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+            "title": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [
+        {
+          "evidence": {
+            "sourceId": "src-aa032c493a0901ef",
+            "quote": "Matthew Shtrahman Principal Investigator",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-aa032c493a0901ef",
+            "sourceUrl": "https://shtrahmanlab.org/",
+            "requestedUrl": "https://shtrahmanlab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:31:15+00:00",
+            "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+            "title": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-c59a46b5436884fb",
+        "quote": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES",
+        "supports": [
+          "identity"
+        ],
+        "quoteLocation": "title"
+      },
+      "bindingFingerprint": "d90cda36fa531a86e349cf4a7196ce42e54305c1652ba9b188212fc769bb86ae",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-neurosciences-lab-shtrahman-lab",
+        "actualRequestedUrl": "http://shtrahmanlab.org/",
+        "sourceUrl": "https://shtrahmanlab.org/",
+        "observedAt": "2026-10-16T01:05:11+00:00",
+        "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+        "quote": "Shtrahman Lab – UCSD DEPARTMENT OF NEUROSCIENCES",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T02:18:44+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "https://shtrahmanlab.org/",
+        "actualRequestedUrl": "https://shtrahmanlab.org/",
+        "sourceUrl": "https://shtrahmanlab.org/",
+        "observedAt": "2026-10-16T01:31:15+00:00",
+        "bodySha256": "e521b4ab9962cd9b02563cdbc87ee38a135dafc03fc80fd3b204425060624388",
+        "status": "ok",
+        "redirectChain": [],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    },
+    {
+      "labId": "ucsd-live-lab-572dea7b979dc2",
+      "ordinal": 467,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "same_body_direct_request_identity_binding",
+      "reasonZh": "与先前已读ISN正文为同一字节SHA；局部正文完整命名Integrated Systems Neuroengineering (ISN) Laboratory。新绑定只归入实际直接请求index.php，不把另一根路径请求视为同一请求。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "https://isn.ucsd.edu/index.php",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:29:28+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-3210249fd8c39620",
+        "sourceUrl": "https://isn.ucsd.edu/index.php",
+        "requestedUrl": "https://isn.ucsd.edu/index.php",
+        "checkedUrl": "https://isn.ucsd.edu/index.php",
+        "queueUrl": "https://isn.ucsd.edu/index.php",
+        "observedAt": "2026-10-16T01:03:09+00:00",
+        "bodySha256": "5c6c8fd62a5212f90ef10a6ceb914b25e5cd5642b8bc19a03befbb35a6aaf7e3",
+        "title": "Integrated Systems Neuroengineering",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-f029f54724b51868",
+            "quote": "Integrated Systems Neuroengineering (ISN) Laboratory",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-f029f54724b51868",
+            "sourceUrl": "https://isn.ucsd.edu/index.php",
+            "requestedUrl": "https://isn.ucsd.edu/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:29:28+00:00",
+            "bodySha256": "5c6c8fd62a5212f90ef10a6ceb914b25e5cd5642b8bc19a03befbb35a6aaf7e3",
+            "title": "Integrated Systems Neuroengineering",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [
+        {
+          "evidence": {
+            "sourceId": "src-f029f54724b51868",
+            "quote": "Integrated Systems Neuroengineering (ISN) Laboratory",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-f029f54724b51868",
+            "sourceUrl": "https://isn.ucsd.edu/index.php",
+            "requestedUrl": "https://isn.ucsd.edu/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:29:28+00:00",
+            "bodySha256": "5c6c8fd62a5212f90ef10a6ceb914b25e5cd5642b8bc19a03befbb35a6aaf7e3",
+            "title": "Integrated Systems Neuroengineering",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-3210249fd8c39620",
+        "quote": "Integrated Systems Neuroengineering (ISN) Laboratory",
+        "supports": [
+          "identity"
+        ]
+      },
+      "bindingFingerprint": "96ee133da8c8a6233d26ba2aa3671c55d704e7e17effd2cb152f8ed554d9aabc",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-live-lab-572dea7b979dc2",
+        "actualRequestedUrl": "https://isn.ucsd.edu/index.php",
+        "sourceUrl": "https://isn.ucsd.edu/index.php",
+        "observedAt": "2026-10-16T01:03:09+00:00",
+        "bodySha256": "5c6c8fd62a5212f90ef10a6ceb914b25e5cd5642b8bc19a03befbb35a6aaf7e3",
+        "quote": "Integrated Systems Neuroengineering (ISN) Laboratory",
+        "quoteLocation": "body",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T01:55:29+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "https://isn.ucsd.edu/",
+        "actualRequestedUrl": "https://isn.ucsd.edu/",
+        "sourceUrl": "https://isn.ucsd.edu/index.php",
+        "observedAt": "2026-10-16T01:29:28+00:00",
+        "bodySha256": "5c6c8fd62a5212f90ef10a6ceb914b25e5cd5642b8bc19a03befbb35a6aaf7e3",
+        "status": "ok",
+        "redirectChain": [
+          {
+            "from": "https://isn.ucsd.edu/",
+            "to": "https://isn.ucsd.edu/index.php",
+            "httpStatus": 302
+          }
+        ],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    },
+    {
+      "labId": "ucsd-live-lab-f426b74f514b6d",
+      "ordinal": 668,
+      "decisionAt": "2026-10-16T03:44:21+00:00",
+      "decision": "same_body_direct_request_identity_binding",
+      "reasonZh": "与先前已读Palmer首页为同一字节SHA；文档标题明确标识PalmerLab.org，结合原具名官方链接和同正文身份审阅绑定整体实验室首页，不单独用新成员加入新闻作实验室身份。",
+      "oldPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "newPageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "恢复同站正文反复明确Palmer Lab及成员，与保留的该站研究使命和历史官方链接相符。"
+      },
+      "oldCanCountAsVerifiedLabGroupURL": false,
+      "newCanCountAsVerifiedLabGroupURL": true,
+      "listedUrl": "http://www.palmerlab.org/",
+      "oldSelectedCaptureObservedAt": "2026-10-16T01:36:56+00:00",
+      "newSelectedActualCapture": {
+        "sourceId": "src-0fd0a962aaa5a375",
+        "sourceUrl": "https://palmerlab.org/",
+        "requestedUrl": "http://www.palmerlab.org/",
+        "checkedUrl": "http://www.palmerlab.org/",
+        "queueUrl": "http://www.palmerlab.org/",
+        "observedAt": "2026-10-16T01:07:02+00:00",
+        "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+        "title": "PalmerLab.org -",
+        "role": "listed_lab_destination"
+      },
+      "oldIdentityEvidenceCapturesAsRecorded": [
+        {
+          "evidence": {
+            "sourceId": "src-a6d146e136ec2ff3",
+            "quote": "Palmer Lab Website → http://www.palmerlab.org/",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-a6d146e136ec2ff3",
+            "sourceUrl": "https://profiles.ucsd.edu/Abraham.Palmer",
+            "requestedUrl": null,
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-03T04:57:54+00:00",
+            "bodySha256": null,
+            "title": "Historical field evidence: labName",
+            "role": "historical_field_labName"
+          }
+        },
+        {
+          "evidence": {
+            "sourceId": "src-614d734b64f23151",
+            "quote": "Arya Massarat joined the Palmer Lab in September 2026 as a Postdoctoral Scholar.",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-614d734b64f23151",
+            "sourceUrl": "https://palmerlab.org/",
+            "requestedUrl": "https://palmerlab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:56+00:00",
+            "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+            "title": "PalmerLab.org -",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sameBodyPriorIdentityProofs": [
+        {
+          "evidence": {
+            "sourceId": "src-614d734b64f23151",
+            "quote": "Arya Massarat joined the Palmer Lab in September 2026 as a Postdoctoral Scholar.",
+            "supports": [
+              "identity"
+            ]
+          },
+          "captureAsRecorded": {
+            "sourceId": "src-614d734b64f23151",
+            "sourceUrl": "https://palmerlab.org/",
+            "requestedUrl": "https://palmerlab.org/",
+            "checkedUrl": null,
+            "queueUrl": null,
+            "observedAt": "2026-10-16T01:36:56+00:00",
+            "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+            "title": "PalmerLab.org -",
+            "role": "listed_lab_destination"
+          }
+        }
+      ],
+      "sourceRequestTimeHashMatchedFetch": true,
+      "rawByteHashAndQueueTupleVerified": true,
+      "identityTitleOrLocalizedQuoteReadOnly": true,
+      "scientificBodyReread": false,
+      "addedExactEvidence": {
+        "sourceId": "src-0fd0a962aaa5a375",
+        "quote": "PalmerLab.org -",
+        "supports": [
+          "identity"
+        ],
+        "quoteLocation": "title"
+      },
+      "bindingFingerprint": "2ae4405ea19fe8c67e93edd5483fd6ae7b46d2b42d4a8dceeb2db48c7baf7368",
+      "bindingFingerprintComponents": {
+        "labId": "ucsd-live-lab-f426b74f514b6d",
+        "actualRequestedUrl": "http://www.palmerlab.org/",
+        "sourceUrl": "https://palmerlab.org/",
+        "observedAt": "2026-10-16T01:07:02+00:00",
+        "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+        "quote": "PalmerLab.org -",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "originalScienceReviewedAtPreserved": "2026-10-16T02:37:26+00:00",
+      "oldQuotesPreservedAsExactPrefix": true,
+      "scienceFieldsAndResearchDatesUnchanged": true,
+      "hydratePassed": true,
+      "remainingBlockers": [],
+      "previousSelectedCaptureActual": {
+        "queueUrl": "https://palmerlab.org/",
+        "actualRequestedUrl": "https://palmerlab.org/",
+        "sourceUrl": "https://palmerlab.org/",
+        "observedAt": "2026-10-16T01:36:56+00:00",
+        "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+        "status": "ok",
+        "redirectChain": [],
+        "originalQueueOrGapMetadataMatched": true
+      }
+    }
+  ],
+  "counts": {
+    "targetBindings": 6,
+    "restoredVerifiedDirectLabGroupUrls": 6,
+    "sameBodyReviewReused": 5,
+    "newSelectedCaptureTitleOnlyReview": 1,
+    "scientificBodyRereads": 0,
+    "hydratePassed": 6,
+    "remainingBlockers": 0,
+    "relatedUrlOnlyCasesRestored": 0,
+    "previousActualCaptureMetadataRecovered": 6
+  },
+  "coverageComplete": true
+}

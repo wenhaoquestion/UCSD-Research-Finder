@@ -1,0 +1,1695 @@
+{
+  "schemaVersion": 1,
+  "status": "draft_not_applied",
+  "reviewedAt": "2026-10-16T08:46:04.756Z",
+  "reviewedCount": 8,
+  "scopeZh": "8条指定方法候选的primary缓存字段作用域复核；不是新科研、新URL或当前任职接受。",
+  "counts": {
+    "addExplicitScopedMethods": 6,
+    "removeInterestOnlyMethods": 2,
+    "proposedMethodEntries": 15,
+    "methodEvidenceQuotes": 9,
+    "evidenceSupportReclassifications": 3
+  },
+  "items": [
+    {
+      "reviewIndex": 120,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-breen-church-lab",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "12a0d12d1426c8ced0d85e394228a248907a9e065d80c82a32c7965a8296b9cf",
+      "packetSha256": "5641c7ad11882c8d87c310a1d132234dce26e5e83bc7b52e9200d4c9c90beee8",
+      "decision": "add_explicit_project_methods_and_reclassify_topic_proof",
+      "currentMethods": [],
+      "proposedMethods": [
+        "小鼠模型（负责人研究项目）",
+        "遗传学操作（负责人研究项目）",
+        "神经解剖学操作（负责人研究项目）"
+      ],
+      "currentSummaryZh": "Breen Church 实验室研究控制男女生殖神经内分泌激素活动的神经回路如何发育、组织和激活。团队关注正常生理与应激状态，以及早期经历如何影响后续生育能力；研究方法未明确。",
+      "proposedSummaryZh": "Breen Church 实验室研究调控生殖神经内分泌激素活动的神经回路的发育、组织与激活，涵盖正常生理与应激状态及早期生命经历对生育能力的影响。负责人所述研究项目采用小鼠模型、遗传学和神经解剖学操作。",
+      "currentUncertainty": [
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "proposedUncertainty": [
+        "负责人所述研究项目明示上述方法；原文的“chemogenic”未释义，不据此擅改为其他技术名称。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1,
+            2
+          ],
+          "sourceId": "src-aa57c545809ceb23",
+          "quote": "Applying the fundamentals of hypothesis-driven science, my current research program employs state-of-the-art chemogenic, genetic, and neuroanatomical manipulations using mouse models to understand of how stress-activated neural circuits elicit disrupted reproduction and fertility.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T02:40:25+00:00",
+          "bodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/people.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 296,
+            "end": 577
+          },
+          "scopeZh": "Breen Church Lab Members的Current Lab Members段，明确标作Kellie Breen Church Professor的本人研究项目；不扩张为所有成员均采用。",
+          "timeScopeZh": "页面使用my current research program，但未给该项目声明的生效日期；仅按原采集时页面自述。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [
+        {
+          "sourceId": "src-aa57c545809ceb23",
+          "quote": "Breen Church Lab Members Current Lab Members Kellie Breen Church Professor",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T02:40:25+00:00",
+          "bodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+          "purpose": "负责人项目的lab-local作用域绑定，不新增任职日期。"
+        }
+      ],
+      "evidenceReclassifications": [
+        {
+          "evidenceIndex": 3,
+          "sourceId": "src-6f1d4c3f56b320f4",
+          "quote": "Early life programming of delayed or deficient fertility.",
+          "quoteLocation": "body",
+          "previousSupports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "proposedSupports": [
+            "research",
+            "topics"
+          ],
+          "reasonZh": "早期生命编程研究主题未叙述实际方法。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-aa57c545809ceb23",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/people.html",
+          "sourceObservedAt": "2026-10-16T02:40:25+00:00",
+          "bodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+          "readScopeZh": "全文",
+          "textLength": 5095,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 5095
+          }
+        },
+        {
+          "sourceId": "src-577b1f0f8ab7d2af",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:48+00:00",
+          "bodySha256": "3cb2d8cf0faa08d456eb3bdad8dfc6e57253b5a7ddbeb809ec6105941942beeb",
+          "readScopeZh": "原accepted研究与具名实验室上下文；非重复全读",
+          "textLength": 1081
+        },
+        {
+          "sourceId": "src-6f1d4c3f56b320f4",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "readScopeZh": "仅原accepted Early life programming条目及记录证据",
+          "textLength": 268
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-ffb4e789d1159341",
+        "src-475a525364a71297",
+        "src-b60592330bdb8b8a",
+        "src-4509941d58dd3c8a"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "具名实验室成员页明确负责人研究项目employs遗传与神经解剖操作及小鼠模型，足以补全实际方法。早期生命编程是研究主题，不能支持methods。保留原拼写chemogenic但不翻译成未证实的chemogenetic。摘要将原“男女”改为中性生殖表述，避免把跨模型来源限定为人类。",
+      "oldRecord": {
+        "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-breen-church-lab",
+        "status": "supported",
+        "summaryZh": "Breen Church 实验室研究控制男女生殖神经内分泌激素活动的神经回路如何发育、组织和激活。团队关注正常生理与应激状态，以及早期经历如何影响后续生育能力；研究方法未明确。",
+        "researchQuestions": [],
+        "topics": [
+          "生殖神经内分泌",
+          "生育能力",
+          "应激",
+          "早期生命编程"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-577b1f0f8ab7d2af",
+            "quote": "The overarching goal of the Breen Church Laboratory is to understand the development, organization and activation of neural circuits that control reproductive neuroendocrine hormone activity in males and females in both normal physiologic conditions and in conditions of disrupted homeostasis, also known as stress.",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-577b1f0f8ab7d2af",
+            "quote": "Breen Church Laboratory",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-ffb4e789d1159341",
+            "quote": "The Breen Church Lab is Located on the third floor of the Leichtag Family Biomedical Research Building in the School of Medicine, on the La Jolla campus of UCSD.",
+            "supports": [
+              "affiliation"
+            ]
+          },
+          {
+            "sourceId": "src-6f1d4c3f56b320f4",
+            "quote": "Early life programming of delayed or deficient fertility.",
+            "supports": [
+              "research",
+              "topics",
+              "methods"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "正文或匹配官方目录明确报告 UCSD 关联。"
+        },
+        "uncertainty": [
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:55:33+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:55:33+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 190,
+      "labId": "ucsd-psychiatry-lab-de-guglielmo-lab",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "dd739e5b7965c7f8d0e802abea3f257cdb488d40b925109adde0a9ea93085be3",
+      "packetSha256": "cf52c6c453fa6e1c18e06f1ecc1e24c892c5125c9eff3eec489a26061d3d5b46",
+      "decision": "remove_interest_only_methods_and_reclassify_proof",
+      "currentMethods": [
+        "光遗传学",
+        "药理学",
+        "生理学",
+        "动物模型"
+      ],
+      "proposedMethods": [],
+      "currentSummaryZh": "de Guglielmo 实验室研究成瘾神经回路，关注物质滥用与依赖相关不良行为的分子和细胞机制。页面列出光遗传学、药理学、生理学及动物模型等研究取向。",
+      "proposedSummaryZh": "de Guglielmo 实验室研究成瘾神经回路，关注物质滥用与依赖相关不良行为的分子和细胞机制。页面列出光遗传学、药理学、生理学及动物模型等研究兴趣，但未明确这些方法的实际采用。",
+      "currentUncertainty": [
+        "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+      ],
+      "proposedUncertainty": [
+        "方法兴趣清单并未明确实际采用情况；未以新闻摘要补全实验步骤。",
+        "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+      ],
+      "methodEvidence": [],
+      "scopeOrRejectionEvidence": [
+        {
+          "sourceId": "src-61dd53e008e3f7b0",
+          "quote": "Interests Drug addiction, Neuropeptides, Dependence, Optogenetics, Pharmacology, Physiology, Neuronal Ensembles, Animal Models, Cellular and Behavioral Pharmacology",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "47b6987c4398ec8264aef4ca8fb0bbe15fa69cb45d31bf3d7ff773b0071b37ae",
+          "purpose": "原4方法只见于兴趣清单。"
+        }
+      ],
+      "evidenceReclassifications": [
+        {
+          "evidenceIndex": 0,
+          "sourceId": "src-61dd53e008e3f7b0",
+          "quote": "Welcome to the de Guglielmo Lab! Overview Our program focuses on the neural circuits of addiction, with an emphasis on critical molecular and cellular mechanisms that are responsible for adverse behavioral outcomes that are associated with substance abuse and dependence. The de Guglielmo Lab is located in the department of Psychiatry at the UC San Diego School of Medicine and is part of the Preclinical Addiction Research Consortium (PARC) of UC San Diego Interests Drug addiction, Neuropeptides, Dependence, Optogenetics, Pharmacology, Physiology, Neuronal Ensembles, Animal Models, Cellular and Behavioral Pharmacology In the News Opioid Dependence Found to Permanently Change Brains of Rats Science Daily January 24, 2020 Approximately one-quarter of patients who are prescribed opioids for chronic pain misuse them, with five to ten percent developing an opioid use disorder or addiction. In a new study, researchers found that opioid dependence produced permanent changes in the brains of rats. Article Publication Cellular Atlas of Amygdala Reveals New Treatment Target for Cocaine Addiction University of California News October 12, 2023 Researchers at the University of California San Diego School of Medicine and the Salk Institute for Biological Studies have created a unique, cell-by-cell atlas of the amygdala, a small structure deep within the brain that plays a crucial role in controlling emotional responses to drugs. Article Publication UCSD’s Center for Medicinal Cannabis Research Awards Grants for Five Novel Studies UC San Diego Health Press Release October 10, 2019 The Center for Medicinal Cannabis Research (CMCR) at the University of California San Diego School of Medicine, the nation’s oldest research center for scientific inquiry into the safety and efficacy of cannabis, has announced $3 million in research grants to explore new applications of cannabis for a number of novel medical applications. Article Advancing AUD Research: Our Biobank Highlighted in eNeuro eNeuro News January 22, 2026 Dr. Giordano de Guglielmo and Dr. Michelle Doyle highlight the Preclinical Alcohol Biobank in eNeuro ’s “Beyond the Paper” interview. Built from 700+ genetically diverse rats, this FAIR-compliant resource links behavioral data, a DSM-5–aligned addiction index, and genome sequencing to advance alcohol use disorder research. Learn more at https://pubmed.ncbi.nlm.nih.gov/40940169/ Full Interview eNeuro Investigating the Neural Circuits of Addiction",
+          "quoteLocation": "body",
+          "previousSupports": [
+            "methods",
+            "research",
+            "topics"
+          ],
+          "proposedSupports": [
+            "research",
+            "topics"
+          ],
+          "reasonZh": "兴趣/方向清单不是实际采用方法的证据；完整literal quote保留。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-61dd53e008e3f7b0",
+          "sourceUrl": "https://www.deguglielmolab.com/",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "47b6987c4398ec8264aef4ca8fb0bbe15fa69cb45d31bf3d7ff773b0071b37ae",
+          "readScopeZh": "全文（Overview、Interests及全部In the News）",
+          "textLength": 2476,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 2476
+          }
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-31d73bc2ea0258cf",
+        "src-f716f1397d8309e2"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "原4方法仅见Interests清单；Overview明确问题范围，但不叙述这4方法的采用。已读同页新闻段，报道和生物库资源简介不被机械转换为原4方法的采用证据。保留整段旧literal quote，只移除其methods标签。",
+      "oldRecord": {
+        "labId": "ucsd-psychiatry-lab-de-guglielmo-lab",
+        "status": "supported",
+        "summaryZh": "de Guglielmo 实验室研究成瘾神经回路，关注物质滥用与依赖相关不良行为的分子和细胞机制。页面列出光遗传学、药理学、生理学及动物模型等研究取向。",
+        "researchQuestions": [],
+        "topics": [
+          "成瘾神经回路",
+          "物质依赖"
+        ],
+        "methods": [
+          "光遗传学",
+          "药理学",
+          "生理学",
+          "动物模型"
+        ],
+        "evidence": [
+          {
+            "sourceId": "src-61dd53e008e3f7b0",
+            "quote": "Welcome to the de Guglielmo Lab! Overview Our program focuses on the neural circuits of addiction, with an emphasis on critical molecular and cellular mechanisms that are responsible for adverse behavioral outcomes that are associated with substance abuse and dependence. The de Guglielmo Lab is located in the department of Psychiatry at the UC San Diego School of Medicine and is part of the Preclinical Addiction Research Consortium (PARC) of UC San Diego Interests Drug addiction, Neuropeptides, Dependence, Optogenetics, Pharmacology, Physiology, Neuronal Ensembles, Animal Models, Cellular and Behavioral Pharmacology In the News Opioid Dependence Found to Permanently Change Brains of Rats Science Daily January 24, 2020 Approximately one-quarter of patients who are prescribed opioids for chronic pain misuse them, with five to ten percent developing an opioid use disorder or addiction. In a new study, researchers found that opioid dependence produced permanent changes in the brains of rats. Article Publication Cellular Atlas of Amygdala Reveals New Treatment Target for Cocaine Addiction University of California News October 12, 2023 Researchers at the University of California San Diego School of Medicine and the Salk Institute for Biological Studies have created a unique, cell-by-cell atlas of the amygdala, a small structure deep within the brain that plays a crucial role in controlling emotional responses to drugs. Article Publication UCSD’s Center for Medicinal Cannabis Research Awards Grants for Five Novel Studies UC San Diego Health Press Release October 10, 2019 The Center for Medicinal Cannabis Research (CMCR) at the University of California San Diego School of Medicine, the nation’s oldest research center for scientific inquiry into the safety and efficacy of cannabis, has announced $3 million in research grants to explore new applications of cannabis for a number of novel medical applications. Article Advancing AUD Research: Our Biobank Highlighted in eNeuro eNeuro News January 22, 2026 Dr. Giordano de Guglielmo and Dr. Michelle Doyle highlight the Preclinical Alcohol Biobank in eNeuro ’s “Beyond the Paper” interview. Built from 700+ genetically diverse rats, this FAIR-compliant resource links behavioral data, a DSM-5–aligned addiction index, and genome sequencing to advance alcohol use disorder research. Learn more at https://pubmed.ncbi.nlm.nih.gov/40940169/ Full Interview eNeuro Investigating the Neural Circuits of Addiction",
+            "supports": [
+              "methods",
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-61dd53e008e3f7b0",
+            "quote": "de Guglielmo Lab",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-61dd53e008e3f7b0",
+            "quote": "The de Guglielmo Lab is located in the department of Psychiatry at the UC San Diego School of Medicine",
+            "supports": [
+              "affiliation"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+        },
+        "uncertainty": [
+          "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:55:29+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 225,
+      "labId": "ucsd-live-lab-c8c17d1c3b0cd2",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "455d2653b9a69cd570d15b2cfcd4beff399791bf5a7c4d66436c9818f39ab37e",
+      "packetSha256": "d36175b6a28ba6f72b864299e79d514a6e0ce8f9877ca2552705a79bf45f1ad6",
+      "decision": "remove_interest_only_methods_after_full_about_review",
+      "currentMethods": [
+        "随机建模",
+        "实时预测",
+        "变阶方法"
+      ],
+      "proposedMethods": [],
+      "currentSummaryZh": "Coimbra 研究组研究突变气候变化的科学技术问题，重点是可再生能源与大气过程。官方介绍还列出随机建模、实时预测和变阶方法。",
+      "proposedSummaryZh": "Coimbra 研究组研究突变气候变化的科学技术问题，重点是可再生能源与大气过程。官方简介将随机建模、实时预测和变阶方法列为研究兴趣；所审来源未明确具体采用方法。",
+      "currentUncertainty": [
+        "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+      ],
+      "proposedUncertainty": [
+        "上述技术仅见于研究兴趣清单，所审实体介绍未明确实际采用情况。",
+        "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+      ],
+      "methodEvidence": [],
+      "scopeOrRejectionEvidence": [
+        {
+          "sourceId": "src-c568ff8ba8100d18",
+          "quote": "Interests for Coimbra’s research group include: heat and mass transfer; energy meteorology; atmospheric radiation; cloud physics; optical properties; multiphase flows; real-time forecasting; stochastic learning and variable order methods.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:00:15+00:00",
+          "bodySha256": "ab3823a85d96745b078ca1a388ed3d88847b812f2f59cd063faf2bd7f9983162",
+          "purpose": "研究组兴趣语境，不能单独证明方法采用。"
+        }
+      ],
+      "evidenceReclassifications": [
+        {
+          "evidenceIndex": 1,
+          "sourceId": "src-c568ff8ba8100d18",
+          "quote": "Faculty Profiles Back to Faculty Profiles Carlos Coimbra Professor, MAE Center for Energy Research Heat and mass transfer, stochastic modeling and forecasting, variable order methods, longwave and shortwave radiation, cloud physics; concentrated solar power. Interests for Coimbra’s research group include: heat and mass transfer; energy meteorology; atmospheric radiation; cloud physics; optical properties; multiphase flows; real-time forecasting; stochastic learning and variable order methods. Visit the Carlos Coimbra research page at UC San Diego . Capsule Bio: Professor Coimbra received his Ph.D. in Mechanical and Aerospace Engineering from the University of California, Irvine. He joined the Jacobs School of Engineering at UC San Diego in July of 2011, and is now a Co-Director of the UCSD Center for Excellence in Renewable Resource Integration (CERRI) and the Chairman of the Department of Mechanical and Aerospace Engineering. Selected Publications: Google Scholar Publications Update your profile Email: ccoimbra@ucsd.edu Office Phone: 858-534-4285 Lab Website",
+          "quoteLocation": "body",
+          "previousSupports": [
+            "methods"
+          ],
+          "proposedSupports": [
+            "topics"
+          ],
+          "reasonZh": "兴趣/方向清单不是实际采用方法的证据；完整literal quote保留。"
+        }
+      ],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-6ab28acf9bedce69",
+          "sourceUrl": "https://coimbra.ucsd.edu/about",
+          "sourceObservedAt": "2026-10-16T01:34:35+00:00",
+          "bodySha256": "18eaf65f8a9f7718a15bc8d503aa7c3da7963275969624d9f1277044c1ddc691",
+          "readScopeZh": "About全文",
+          "textLength": 3704,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 3704
+          }
+        },
+        {
+          "sourceId": "src-c568ff8ba8100d18",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=324",
+          "sourceObservedAt": "2026-10-16T01:00:15+00:00",
+          "bodySha256": "ab3823a85d96745b078ca1a388ed3d88847b812f2f59cd063faf2bd7f9983162",
+          "readScopeZh": "Faculty profile全文",
+          "textLength": 1075,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 1075
+          }
+        },
+        {
+          "sourceId": "src-8d8c600e7abe1be8",
+          "sourceUrl": "https://coimbra.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:13+00:00",
+          "bodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+          "readScopeZh": "首页全文",
+          "textLength": 881,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 881
+          }
+        },
+        {
+          "sourceId": "src-d224beb31d37555c",
+          "sourceUrl": "https://coimbra.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:13+00:00",
+          "bodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+          "readScopeZh": "已接受首页摘录全文；同capture的短摘要",
+          "textLength": 389,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 389
+          }
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-0dbf2a1baa04461b"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "已完整读3704字About：组/PI介绍、出版主题、履历、编辑经历和成员名单，没有补足3方法的实际采用。Faculty profile明确Interests for Coimbra’s research group，不以出版主题或兴趣清单认定实际方法；旧引文保留并由methods改topics。",
+      "oldRecord": {
+        "labId": "ucsd-live-lab-c8c17d1c3b0cd2",
+        "status": "supported",
+        "summaryZh": "Coimbra 研究组研究突变气候变化的科学技术问题，重点是可再生能源与大气过程。官方介绍还列出随机建模、实时预测和变阶方法。",
+        "researchQuestions": [],
+        "topics": [
+          "气候变化缓解",
+          "可再生能源",
+          "大气过程"
+        ],
+        "methods": [
+          "随机建模",
+          "实时预测",
+          "变阶方法"
+        ],
+        "evidence": [
+          {
+            "sourceId": "src-d224beb31d37555c",
+            "quote": "Science and Technology for Climate Change Mitigation We study scientific and technological aspects of ongoing Abrupt Climate Change (ACC) , with a particular focus on renewable energy and atmospheric processes. Carlos F. M. Coimbra John Dove Isaacs Endowed Chair in Natural Philosophy Department of Mechanical and Aerospace Engineering (also Affiliated with the Center for Energy Research)",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-c568ff8ba8100d18",
+            "quote": "Faculty Profiles Back to Faculty Profiles Carlos Coimbra Professor, MAE Center for Energy Research Heat and mass transfer, stochastic modeling and forecasting, variable order methods, longwave and shortwave radiation, cloud physics; concentrated solar power. Interests for Coimbra’s research group include: heat and mass transfer; energy meteorology; atmospheric radiation; cloud physics; optical properties; multiphase flows; real-time forecasting; stochastic learning and variable order methods. Visit the Carlos Coimbra research page at UC San Diego . Capsule Bio: Professor Coimbra received his Ph.D. in Mechanical and Aerospace Engineering from the University of California, Irvine. He joined the Jacobs School of Engineering at UC San Diego in July of 2011, and is now a Co-Director of the UCSD Center for Excellence in Renewable Resource Integration (CERRI) and the Chairman of the Department of Mechanical and Aerospace Engineering. Selected Publications: Google Scholar Publications Update your profile Email: ccoimbra@ucsd.edu Office Phone: 858-534-4285 Lab Website",
+            "supports": [
+              "methods"
+            ]
+          },
+          {
+            "sourceId": "src-c568ff8ba8100d18",
+            "quote": "Coimbra’s research group",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-c568ff8ba8100d18",
+            "quote": "Visit the Carlos Coimbra research page at UC San Diego",
+            "supports": [
+              "affiliation"
+            ]
+          },
+          {
+            "sourceId": "src-8d8c600e7abe1be8",
+            "quote": "Coimbra Research Group",
+            "quoteLocation": "title",
+            "supports": [
+              "identity"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+        },
+        "uncertainty": [
+          "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T07:59:14+00:00",
+        "rootIdentityBindingReview": {
+          "reviewedAt": "2026-10-16T07:59:14+00:00",
+          "reviewScope": "existing_exact_listed_https_root_identity_only",
+          "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+          "sourceId": "src-8d8c600e7abe1be8",
+          "sourceActualObservedAt": "2026-10-16T01:00:13+00:00",
+          "sourceActualRequestedUrl": "https://coimbra.ucsd.edu/",
+          "sourceActualFinalUrl": "https://coimbra.ucsd.edu/",
+          "rootCaptureBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+          "rootFetchMetadataSha256": "3c697b73d317cf9ca3d2ae1dc038f946e948b6a91af9afd52bdddc2fed312a38",
+          "originalMetadataSha256": "afc41c4acb4c3a8ce20d3ecd03ce6c3d109575d0a266fa2cf67e4b7e5dd1c32c",
+          "quoteLocation": "title",
+          "identityQuote": "Coimbra Research Group",
+          "noNewPageRequest": true,
+          "scientificFieldsUnchanged": true,
+          "planSha256": "a2e7524f675df41620c02966f661269996fb16657a7ae0e1db23f34a484c119f"
+        }
+      },
+      "previousRecordReviewedAt": "2026-10-16T07:59:14+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 349,
+      "labId": "ucsd-medicine-lab-zuraw-lab",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "2fb243fac9caeef8e283c20577e0017a06211be4dbaa91d75e48828ecafcb5a6",
+      "packetSha256": "20272778e0758e46bb770749fe621a533381e817b7899232b361c1679ce8067f",
+      "decision": "add_explicit_basic_method_categories",
+      "currentMethods": [],
+      "proposedMethods": [
+        "人类研究",
+        "动物模型（按需使用）"
+      ],
+      "currentSummaryZh": "Zuraw lab 研究血管性水肿和哮喘。研究涉及缓激肽相关肿胀、严重程度的遗传因素和诊断检测，以及气道上皮、GILZ 与相关受体通道在炎症中的作用。",
+      "proposedSummaryZh": "Zuraw lab 研究血管性水肿和哮喘。研究涉及缓激肽相关肿胀、严重程度的遗传因素和诊断检测，以及气道上皮、GILZ 与相关受体通道在炎症中的作用。页面介绍以人类研究为主要研究方式，并按需使用动物模型。",
+      "currentUncertainty": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "proposedUncertainty": [
+        "来源仅提供人类研究及按需动物模型的基本类别，未细化实验设计、技术或物种。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1
+          ],
+          "sourceId": "src-2c7cc431b7bd43c2",
+          "quote": "The focus of the laboratory is to study diseases relevant to Allergy & Immunology. The primary model of investigation has involved human studies, however, animal models are also used when appropriate.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+          "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 6,
+            "end": 206
+          },
+          "scopeZh": "Zuraw实验室自身About页直接描述the laboratory的主要研究方式及按需采用的动物模型。",
+          "timeScopeZh": "原文has involved/are also used；无研究期具体日期，不推断2026年某项目状态。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [],
+      "evidenceReclassifications": [],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-2c7cc431b7bd43c2",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+          "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+          "readScopeZh": "About全文",
+          "textLength": 1554,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 1554
+          }
+        },
+        {
+          "sourceId": "src-d4e2b36d2c21e75e",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:17+00:00",
+          "bodySha256": "e87fa3e2fdd24b90f0a16c4ddf89a74db881c01d56f1e16d6369584abca2a0a1",
+          "readScopeZh": "原accepted研究段及实验室名；非重复全读",
+          "textLength": 1455
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-c77eceecd9ad8abb",
+        "src-3c9d8d303ad562da",
+        "src-9e7d115314568c24",
+        "src-ac8a32a974af42b4"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "About页直接描述实际研究模式；仅采基本类别，不添加临床试验设计、动物种属或技术。",
+      "oldRecord": {
+        "labId": "ucsd-medicine-lab-zuraw-lab",
+        "status": "supported",
+        "summaryZh": "Zuraw lab 研究血管性水肿和哮喘。研究涉及缓激肽相关肿胀、严重程度的遗传因素和诊断检测，以及气道上皮、GILZ 与相关受体通道在炎症中的作用。",
+        "researchQuestions": [],
+        "topics": [
+          "血管性水肿",
+          "哮喘",
+          "缓激肽与气道炎症"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-d4e2b36d2c21e75e",
+            "quote": "The Zuraw lab conducts research in angioedema and asthma. Angioedema studies explore bradykinin-mediated swelling, genetic determinants of angioedema severity, and the role of bradykinin receptors, alongside investigating improved diagnostic assays.",
+            "supports": [
+              "identity",
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-d4e2b36d2c21e75e",
+            "quote": "Asthma studies focus on the airway epithelial cell's role in inflammatory airway disease, examining glucocorticoid-induced leucine zipper (GILZ) impact on airway inflammation",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-d4e2b36d2c21e75e",
+            "quote": "in the Department of Medicine, UC San Diego.",
+            "supports": [
+              "affiliation"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "来源明确标识此实体。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "页面明确列出负责人 UC San Diego 医学系任职。"
+        },
+        "uncertainty": [
+          "方法未明确。",
+          "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:51:02+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:51:02+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 364,
+      "labId": "ucsd-astronomy-and-astrophysics-lab-experimental-cosmology-laboratory",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "b0cc3acf2ca3d35c3cfe5e88dbe9f06ffc28b572e9d6f709a64b6d562dbc63d6",
+      "packetSha256": "0f29151f6ce091dfe19991982e2e1d2a9ecdd72c2324e1b75b2a0f87dce12999",
+      "decision": "add_dated_project_methods",
+      "currentMethods": [],
+      "proposedMethods": [
+        "宇宙微波背景偏振测量（BICEP1：2006–2008；BICEP2：2010–2012）",
+        "火箭载近红外背景测量（CIBER项目；观测年份未明）"
+      ],
+      "currentSummaryZh": "UCSD cosmology research group 研究宇宙微波背景与近红外背景。历史实验室目录还描述低温探测器测试，但当前首页没有进一步说明具体项目和方法。",
+      "proposedSummaryZh": "UCSD cosmology research group 研究宇宙微波背景与近红外背景。项目页列出组成员参与的宇宙微波背景偏振测量（BICEP1于2006–2008年、BICEP2于2010–2012年观测）及CIBER火箭载近红外背景测量；该页未注明整体更新日期。",
+      "currentUncertainty": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "proposedUncertainty": [
+        "项目页混列已完成观测和计划部署项目；BICEP1/2年份仅为历史观测期，不据此认定2026年正在使用这些仪器。",
+        "CIBER条目未提供观测日期，方法仅按该项目明示用途描述。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1
+          ],
+          "sourceId": "src-f6888c5fa8e5266d",
+          "quote": "Current Projects The members of our group participate in a wide range of projects throughout the world. BICEP1 A CMB polarimeter that observed from 2006 to 2008 BICEP2 A CMB polarimeter that observed from 2010 to 2012 CIBER A rocket that is used to measure the near-IR background",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T02:41:45+00:00",
+          "bodySha256": "42bd8780571762f78f6325977aae7fc3a0c6ab232e5a0fd1d6a3b158a5402307",
+          "sourceUrl": "https://cosmology.ucsd.edu/projects.php",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 0,
+            "end": 279
+          },
+          "scopeZh": "组成员参与项目页明示BICEP1/2偏振仪及CIBER火箭测量；方法只限所列项目。",
+          "timeScopeZh": "BICEP1已观测2006–2008，BICEP2已观测2010–2012；CIBER无观测年份。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [],
+      "evidenceReclassifications": [],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f6888c5fa8e5266d",
+          "sourceUrl": "https://cosmology.ucsd.edu/projects.php",
+          "sourceObservedAt": "2026-10-16T02:41:45+00:00",
+          "bodySha256": "42bd8780571762f78f6325977aae7fc3a0c6ab232e5a0fd1d6a3b158a5402307",
+          "readScopeZh": "项目页全文",
+          "textLength": 599,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 599
+          }
+        },
+        {
+          "sourceId": "src-b5227ee77ba0d251",
+          "sourceUrl": "https://cosmology.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:30+00:00",
+          "bodySha256": "54bb89ce88ca0cae2528bf0727d81bf08c3741638cfaafc973a61f8660244f51",
+          "readScopeZh": "首页全文",
+          "textLength": 292,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 292
+          }
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-54befd6ddd84cd65",
+        "src-dca6a901ffcc05d9",
+        "src-5ea8d0b5eb0d1e0e",
+        "src-1633b507b7143843",
+        "src-7274e44db5a04040",
+        "src-ee586d8b3c6d52ca"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "实际项目仪器与测量用途可补基本方法；历史年份必须进入方法和摘要，不把Current Projects标题当2026在用证明。Simons拟部署描述未转为已采用方法。",
+      "oldRecord": {
+        "labId": "ucsd-astronomy-and-astrophysics-lab-experimental-cosmology-laboratory",
+        "status": "supported",
+        "summaryZh": "UCSD cosmology research group 研究宇宙微波背景与近红外背景。历史实验室目录还描述低温探测器测试，但当前首页没有进一步说明具体项目和方法。",
+        "researchQuestions": [],
+        "topics": [
+          "宇宙微波背景",
+          "近红外背景"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-b5227ee77ba0d251",
+            "quote": "This is the home of the UCSD cosmology research group. We currently do research on the cosmic microwave background (CMB) and the near-infrared background (NIRB).",
+            "supports": [
+              "identity",
+              "affiliation",
+              "research",
+              "topics"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "来源明确标识此实体。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "首页明确标为 UCSD cosmology research group。"
+        },
+        "uncertainty": [
+          "方法未明确。",
+          "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:52:00+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:52:00+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 377,
+      "labId": "ucsd-pharmacology-lab-jin-zhang-lab",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "4282fd87b205cc7cba93dde75649964fa864a0454b561d59ff6fb92a675a747d",
+      "packetSha256": "d8a141e69b690e30e064fc1156be4f8bcebe1b5c8e82eff8743516125eae3adf",
+      "decision": "add_explicit_lab_methods",
+      "currentMethods": [],
+      "proposedMethods": [
+        "遗传编码荧光生物传感器",
+        "超分辨率成像",
+        "靶向生化扰动",
+        "数学建模"
+      ],
+      "currentSummaryZh": "Jin Zhang lab 研究蛋白激酶和磷酸酶等信号酶的分子机制及功能，关注细胞信号的时空调控。当前首页没有具体方法说明。",
+      "proposedSummaryZh": "Jin Zhang lab 研究蛋白激酶和磷酸酶等信号酶的分子机制及功能，关注细胞信号的时空调控。官方研究介绍明确结合遗传编码荧光生物传感器、超分辨率成像、靶向生化扰动和数学建模。",
+      "currentUncertainty": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "proposedUncertainty": [
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sourceId": "src-271c791f9dc5e0fe",
+          "quote": "Combing genetically encoded fluorescent biosensors, superresolution imaging, targeted biochemical perturbations and mathematic modeling, the Zhang laboratory is investigating the spatiotemporal regulation of GPCR, cAMP/PKA, Ca 2+ /calcineurin, PI3K/Akt/mTOR, Ras/ERK and AMPK pathways, in the context of energy metabolism, neuronal activity, cardiovascular homeostasis, insulin secretion by β cells as well as tumorigenesis.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:00:45+00:00",
+          "bodySha256": "56d60abbaea584529bd25bf348430080f7bda830564b54634845ce636469c61d",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/jin-zhang.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 1228,
+            "end": 1652
+          },
+          "scopeZh": "虽位于faculty的Research Interests栏，正文明确the Zhang laboratory is investigating并列出组合采用的方法，具备实验室作用域；不只是PI兴趣清单。",
+          "timeScopeZh": "研究介绍无带日期现任/项目持续声明，不以采集日确认当前实施。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [],
+      "evidenceReclassifications": [],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-271c791f9dc5e0fe",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/jin-zhang.html",
+          "sourceObservedAt": "2026-10-16T01:00:45+00:00",
+          "bodySha256": "56d60abbaea584529bd25bf348430080f7bda830564b54634845ce636469c61d",
+          "readScopeZh": "Research Interests完整研究段及紧邻标题（前1800字符）；未系统审阅出版列表",
+          "textLength": 3322,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 1800
+          }
+        },
+        {
+          "sourceId": "src-e10374cbca2487d1",
+          "sourceUrl": "https://jinzhanglab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "011521bc09bd1bf66229c995068b9ac343a50825a2c3a44083fc13ffc2a605da",
+          "readScopeZh": "原accepted首页实验室研究与身份段；非重复全读",
+          "textLength": 984
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-2c638348ef744a4d",
+        "src-03e9a43b91893370"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "正文具名Zhang laboratory与实际结合的4方法直接绑定，应补方法并移除摘要中方法未知说明。保留原文Combing拼写，不作为术语新增。",
+      "oldRecord": {
+        "labId": "ucsd-pharmacology-lab-jin-zhang-lab",
+        "status": "supported",
+        "summaryZh": "Jin Zhang lab 研究蛋白激酶和磷酸酶等信号酶的分子机制及功能，关注细胞信号的时空调控。当前首页没有具体方法说明。",
+        "researchQuestions": [],
+        "topics": [
+          "信号酶",
+          "蛋白激酶与磷酸酶",
+          "细胞信号时空调控"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-e10374cbca2487d1",
+            "quote": "Jin Zhang lab.",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-e10374cbca2487d1",
+            "quote": "Dr. Zhang’s laboratory is interested in understanding the molecular mechanisms and functional roles of signaling enzymes such as protein kinases and phosphatases. We seek a fundamental understanding of spatiotemporal regulation of cell signaling.",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-e10374cbca2487d1",
+            "quote": "Dr. Jin Zhang Affiliation Dept. of Pharmacology , UCSD",
+            "supports": [
+              "affiliation"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "来源明确标识此实体。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "首页明确列出负责人在 UCSD 药理学等部门的隶属。"
+        },
+        "uncertainty": [
+          "方法未明确。",
+          "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:52:41+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 379,
+      "labId": "ucsd-public-health-lab-tala-al-rousan-lab-displacement-and-health-research-center",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "1f66909b00a38ebc6d53b9aa8c623f265b0f5c2195d0b69df726661caa5f826f",
+      "packetSha256": "736599e03418e53d3500f749e7b692d8b45cac3c16468a9edab976f7a1a91f08",
+      "decision": "add_project_scoped_methods",
+      "currentMethods": [],
+      "proposedMethods": [
+        "Google Earth Engine回溯暴露量化（气候暴露与心血管健康项目）",
+        "随机对照试验（BPCARE难民高血压自我管理项目）",
+        "社区参与的定性研究（加州痴呆移民照护项目）"
+      ],
+      "currentSummaryZh": "Displacement and Health Research Center 研究流离失所作为健康社会决定因素的影响。中心旨在生成证据支持临床照护、公共卫生干预和政策，并让有亲身经历的社区参与问题、方法和方案的形成。",
+      "proposedSummaryZh": "Displacement and Health Research Center 研究流离失所作为健康社会决定因素的影响。中心旨在生成证据支持临床照护、公共卫生干预和政策，并让有亲身经历的社区参与问题、方法和方案的形成。在具体项目中，团队分别采用Google Earth Engine回溯环境暴露量化、BPCARE随机对照试验及社区参与的定性研究。",
+      "currentUncertainty": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "proposedUncertainty": [
+        "方法分别对应气候暴露、BPCARE和加州痴呆移民照护项目，不表示中心全部研究统一采用；BPCARE正文同时提到未来更大规模试验，不将当前试点称为已证疗效。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-d2c5472cd723bb1f",
+          "quote": "This study examines how climate-related exposures influence cardiovascular health among Syrian refugees resettled in San Diego. Because many refugees traveled through multiple countries before arrival, the team uses Google Earth Engine to retrospectively quantify exposure to dust, pollutants, drought severity, and environmental hazards across their migration trajectories.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 10458,
+            "end": 10832
+          },
+          "scopeZh": "中心项目Climate-Related Exposures and Cardiovascular Health的team使用Google Earth Engine回溯迁移轨迹暴露。",
+          "timeScopeZh": "项目页未提供此段方法采用的独立日期；不声明结果。"
+        },
+        {
+          "methodIndices": [
+            1
+          ],
+          "sourceId": "src-d2c5472cd723bb1f",
+          "quote": "BPCARE is the first randomized controlled trial ever conducted exclusively among refugee populations and is funded by the National Heart, Lung and Blood Institute. The project is carried out in partnership with a Federally Qualified Health Center and numerous community organizations. It evaluates the feasibility of at-home blood pressure monitoring and patient-centered education as tools to improve hypertension control.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 11520,
+            "end": 11943
+          },
+          "scopeZh": "仅BPCARE项目随机对照试验和可行性评价；不采first ever为新颖性结论，不声称降压疗效已证实。",
+          "timeScopeZh": "同页提及未来扩大试验；原文当前试验与未来计划分开。"
+        },
+        {
+          "methodIndices": [
+            2
+          ],
+          "sourceId": "src-d2c5472cd723bb1f",
+          "quote": "Funded through the California Department of Public Health, this project is part of a statewide consortium dedicated to improving dementia care for migrant communities. It examines the health service experiences, long-term support needs and care pathways used by migrants living with dementia and their families. The project uses a qualitative, community-engaged approach to identify gaps and to develop community-informed strategies that can guide future health policies and create more equitable systems of dementia support across California.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 14802,
+            "end": 15345
+          },
+          "scopeZh": "仅California Department of Public Health支持的移民痴呆照护项目采用qualitative, community-engaged approach。",
+          "timeScopeZh": "无独立方法日期或完成结果声明。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [],
+      "evidenceReclassifications": [],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-d2c5472cd723bb1f",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+          "readScopeZh": "中心身份/目标开头及相关3个项目完整局部上下文；不声称读全文18000字",
+          "textLength": 18000,
+          "packetTextRangeActuallyRead": {
+            "start": 0,
+            "end": 1780
+          }
+        },
+        {
+          "sourceId": "src-d2c5472cd723bb1f",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+          "readScopeZh": "3项目所在局部连续正文",
+          "textLength": 18000,
+          "packetTextRangeActuallyRead": {
+            "start": 9800,
+            "end": 15500
+          }
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-581bb22ef7b4f30e",
+        "src-3e3a5e3a1bce395a"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "中心完整项目语境分别明示实际采用方法，按项目收录而不把它们推广到中心所有研究。保留现center_or_institute类型，未改为lab。",
+      "oldRecord": {
+        "labId": "ucsd-public-health-lab-tala-al-rousan-lab-displacement-and-health-research-center",
+        "status": "supported",
+        "summaryZh": "Displacement and Health Research Center 研究流离失所作为健康社会决定因素的影响。中心旨在生成证据支持临床照护、公共卫生干预和政策，并让有亲身经历的社区参与问题、方法和方案的形成。",
+        "researchQuestions": [],
+        "topics": [
+          "流离失所与健康",
+          "强迫迁移",
+          "健康社会决定因素"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-d2c5472cd723bb1f",
+            "quote": "The Displacement and Health Research Center",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-d2c5472cd723bb1f",
+            "quote": "We focus on studying displacement as a social determinant of health",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-d2c5472cd723bb1f",
+            "quote": "The center is a one of a kind at UC San Diego",
+            "supports": [
+              "affiliation"
+            ]
+          },
+          {
+            "sourceId": "src-d2c5472cd723bb1f",
+            "quote": "ensuring that those most affected by displacement help shape the questions, methods and solutions.",
+            "supports": [
+              "research"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "center_or_institute",
+          "reason": "来源明确标识此实体。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "当前正文明确说明中心位于 UC San Diego。"
+        },
+        "uncertainty": [
+          "方法未明确。",
+          "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:52:41+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    },
+    {
+      "reviewIndex": 382,
+      "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+      "reviewedAt": "2026-10-16T08:46:04.756Z",
+      "rawSha256": "ec40c49d33d23148f127254b640955ab2d96f5c25e6edbe5578e39841fa48575",
+      "packetSha256": "11654f42061634497ee7fe4d47311928daf8437c8b89f25a70cbb5bcaa0aec8c",
+      "decision": "add_reported_historical_method",
+      "currentMethods": [],
+      "proposedMethods": [
+        "支持向量回归（SVR）建模（已报告的人类DPR和TATA盒研究）"
+      ],
+      "currentSummaryZh": "Kadonaga 实验室研究 RNA 聚合酶 II 转录调控和染色质功能。其核心启动子研究覆盖 DNA 元件、转录因子和生物网络三个层次。",
+      "proposedSummaryZh": "Kadonaga 实验室研究 RNA 聚合酶 II 转录调控和染色质功能。其核心启动子研究覆盖 DNA 元件、转录因子和生物网络三个层次。页面还介绍了已报告的工作：使用SVR机器学习模型研究人类下游核心启动子区（DPR）及TATA盒。",
+      "currentUncertainty": [
+        "方法未明确。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "proposedUncertainty": [
+        "SVR方法由页面所述既有研究支持，关联2020年文献；不据此宣称该技术是当前唯一方法或新发现。",
+        "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-4cdf2e8fbc6dcb8c",
+          "quote": "This puzzle was ultimately solved by using machine learning (Vo ngoc et al., 2020) (Fig. 2). In this work, we generated a machine learning (support vector regression, SVR) model for the human downstream core promoter region (DPR), which encompasses the positions of the Drosophila MTE and DPE (Fig. 1).",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 3469,
+            "end": 3771
+          },
+          "scopeZh": "In my lab所述核心启动子研究的已报告工作，we generated明确实际建模。",
+          "timeScopeZh": "同段引Vo ngoc et al.,2020；属于既有工作，不宣称2026新发现。"
+        },
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-4cdf2e8fbc6dcb8c",
+          "quote": "We also generated an SVR model for the human TATA box.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "packetTextRange": {
+            "start": 4015,
+            "end": 4069
+          },
+          "scopeZh": "同一实验室已报告工作中的TATA盒SVR模型。",
+          "timeScopeZh": "承接同段既有研究，不新增日期推断。"
+        }
+      ],
+      "scopeOrRejectionEvidence": [],
+      "evidenceReclassifications": [],
+      "sourceCoverage": [
+        {
+          "sourceId": "src-4cdf2e8fbc6dcb8c",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+          "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+          "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+          "readScopeZh": "实验室研究引言、核心启动子段及SVR局部完整上下文；非18000字全文",
+          "textLength": 18000,
+          "packetTextRangeActuallyRead": {
+            "start": 1400,
+            "end": 4600
+          }
+        },
+        {
+          "sourceId": "src-2705f44bd0668fde",
+          "sourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+          "sourceObservedAt": "2026-10-16T04:23:43+00:00",
+          "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+          "readScopeZh": "仅元数据同body关系（不借较晚HTTP时间给HTTPS科研源）",
+          "textLength": 30133
+        }
+      ],
+      "notReviewedSourceIds": [
+        "src-7ffd17e4391e38d4"
+      ],
+      "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+      "reasonZh": "明确we generated的既有SVR工作足以支持方法，必须限定已报告项目。采用原已接受HTTPS科研source及原时间，不借同body较晚HTTP来源重计日期。",
+      "oldRecord": {
+        "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+        "status": "supported",
+        "summaryZh": "Kadonaga 实验室研究 RNA 聚合酶 II 转录调控和染色质功能。其核心启动子研究覆盖 DNA 元件、转录因子和生物网络三个层次。",
+        "researchQuestions": [],
+        "topics": [
+          "转录调控",
+          "染色质动态",
+          "核心启动子"
+        ],
+        "methods": [],
+        "evidence": [
+          {
+            "sourceId": "src-4cdf2e8fbc6dcb8c",
+            "quote": "James T. Kadonaga",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-4cdf2e8fbc6dcb8c",
+            "quote": "In my lab, we study the regulation of transcription by RNA polymerase II.",
+            "supports": [
+              "identity",
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-4cdf2e8fbc6dcb8c",
+            "quote": "We are also interested in the biological functions of chromatin",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-4cdf2e8fbc6dcb8c",
+            "quote": "We study core promoters at three levels: DNA elements, transcription factors, and biological networks.",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-2705f44bd0668fde",
+            "quote": "James T. Kadonaga",
+            "supports": [
+              "identity"
+            ],
+            "quoteLocation": "title"
+          },
+          {
+            "sourceId": "src-2705f44bd0668fde",
+            "quote": "In my lab, we study the regulation of transcription by RNA polymerase II.",
+            "supports": [
+              "identity"
+            ]
+          }
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "官方教师页明确以 In my lab 描述实验室作用域。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源不足以确认机构隶属。"
+        },
+        "uncertainty": [
+          "方法未明确。",
+          "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+        ],
+        "blockers": [],
+        "reviewedAt": "2026-10-16T01:52:41+00:00",
+        "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00"
+      },
+      "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+      "applicationMode": "field_scoped_proposal_only",
+      "preservedFields": [
+        "labId",
+        "status",
+        "identity",
+        "affiliation",
+        "researchQuestions",
+        "topics",
+        "blockers",
+        "PI/baseline fields",
+        "all URL/root/fetch/canonical/identity bindings",
+        "source IDs/quotes/observedAt/body hashes"
+      ],
+      "applicationNotesZh": "未应用。应用时先保存完整旧raw与SHA，保留所有旧literal quotes及source IDs；只替换methods、必要summaryZh/uncertainty，追加上述methodEvidence，并只对明确列出的旧evidence supports重分类。若问题批次已改raw，按字段重基并保留新问题，禁止以oldRecord整条覆盖。新的科学字段审阅时间另取实际应用/复核时间，不改来源日期。"
+    }
+  ],
+  "verification": {
+    "frozenFilesChanged": [],
+    "checks": [
+      {
+        "sourceId": "src-577b1f0f8ab7d2af",
+        "sourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/index.html",
+        "observedAt": "2026-10-16T01:02:48+00:00",
+        "expectedBodySha256": "3cb2d8cf0faa08d456eb3bdad8dfc6e57253b5a7ddbeb809ec6105941942beeb",
+        "actualBodySha256": "3cb2d8cf0faa08d456eb3bdad8dfc6e57253b5a7ddbeb809ec6105941942beeb",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/58ea5a26b4296c5a741cbc095b8a633a05b6776dc3abb6681d3c2524d4ee9bfb.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/58ea5a26b4296c5a741cbc095b8a633a05b6776dc3abb6681d3c2524d4ee9bfb.json",
+        "metadataSha256": "907a46f21bf7a4c367da22c066c1acf3dc294fbdcf96702548c5d1111ca62bee",
+        "metadataSourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/index.html",
+        "metadataFinalUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/index.html",
+        "metadataObservedAt": "2026-10-16T01:02:48+00:00",
+        "metadataBodySha256": "3cb2d8cf0faa08d456eb3bdad8dfc6e57253b5a7ddbeb809ec6105941942beeb",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-aa57c545809ceb23",
+        "sourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/people.html",
+        "observedAt": "2026-10-16T02:40:25+00:00",
+        "expectedBodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+        "actualBodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/62ca517c7023b6804f458c958737243941e60d3edd3aff2e25f351cef5c597d7.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/62ca517c7023b6804f458c958737243941e60d3edd3aff2e25f351cef5c597d7.json",
+        "metadataSha256": "cebd4951e0413a8f19c0b1ccdcec139d382b1e5c2872ce36b80c48de737008f7",
+        "metadataSourceUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/people.html",
+        "metadataFinalUrl": "https://obgyn.ucsd.edu/research/labs/breen-church/people.html",
+        "metadataObservedAt": "2026-10-16T02:40:25+00:00",
+        "metadataBodySha256": "016841c4c50431edd0bcf05d1859cd3f1f88332fa65b7e071d78748914f50acb",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-6f1d4c3f56b320f4",
+        "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+        "observedAt": "2026-10-02T22:42:05+00:00",
+        "expectedBodySha256": null,
+        "unavailableReason": "历史提取源未保存原始HTML或bodySHA；只审既有literal quote标签，不给新方法证明。"
+      },
+      {
+        "sourceId": "src-61dd53e008e3f7b0",
+        "sourceUrl": "https://www.deguglielmolab.com/",
+        "observedAt": "2026-10-16T01:03:03+00:00",
+        "expectedBodySha256": "47b6987c4398ec8264aef4ca8fb0bbe15fa69cb45d31bf3d7ff773b0071b37ae",
+        "actualBodySha256": "47b6987c4398ec8264aef4ca8fb0bbe15fa69cb45d31bf3d7ff773b0071b37ae",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/28cc8ec9530ac20be8c68d5b720776ff318404f9434cb27b4fbab34dfa88de25.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/28cc8ec9530ac20be8c68d5b720776ff318404f9434cb27b4fbab34dfa88de25.json",
+        "metadataSha256": "8918a2dd2979d01ad79fbc435c6245e62faf9db20a979c4b9951739ada53a24d",
+        "metadataSourceUrl": "https://www.deguglielmolab.com/",
+        "metadataFinalUrl": "https://www.deguglielmolab.com/",
+        "metadataObservedAt": "2026-10-16T01:03:03+00:00",
+        "metadataBodySha256": "47b6987c4398ec8264aef4ca8fb0bbe15fa69cb45d31bf3d7ff773b0071b37ae",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-8d8c600e7abe1be8",
+        "sourceUrl": "https://coimbra.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:13+00:00",
+        "expectedBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "actualBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.json",
+        "metadataSha256": "afc41c4acb4c3a8ce20d3ecd03ce6c3d109575d0a266fa2cf67e4b7e5dd1c32c",
+        "metadataSourceUrl": "https://coimbra.ucsd.edu/",
+        "metadataFinalUrl": "https://coimbra.ucsd.edu/",
+        "metadataObservedAt": "2026-10-16T01:00:13+00:00",
+        "metadataBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-6ab28acf9bedce69",
+        "sourceUrl": "https://coimbra.ucsd.edu/about",
+        "observedAt": "2026-10-16T01:34:35+00:00",
+        "expectedBodySha256": "18eaf65f8a9f7718a15bc8d503aa7c3da7963275969624d9f1277044c1ddc691",
+        "actualBodySha256": "18eaf65f8a9f7718a15bc8d503aa7c3da7963275969624d9f1277044c1ddc691",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d89b4bd483a8750274dcaffd930b32af6a3d697141023094a63b1143704172d7.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d89b4bd483a8750274dcaffd930b32af6a3d697141023094a63b1143704172d7.json",
+        "metadataSha256": "50b4272fd4871035b7389888910c5ca6f1c7c36b07ae137ca7f511385d721f12",
+        "metadataSourceUrl": "https://coimbra.ucsd.edu/about",
+        "metadataFinalUrl": "https://coimbra.ucsd.edu/about",
+        "metadataObservedAt": "2026-10-16T01:34:35+00:00",
+        "metadataBodySha256": "18eaf65f8a9f7718a15bc8d503aa7c3da7963275969624d9f1277044c1ddc691",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-c568ff8ba8100d18",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=324",
+        "observedAt": "2026-10-16T01:00:15+00:00",
+        "expectedBodySha256": "ab3823a85d96745b078ca1a388ed3d88847b812f2f59cd063faf2bd7f9983162",
+        "actualBodySha256": "ab3823a85d96745b078ca1a388ed3d88847b812f2f59cd063faf2bd7f9983162",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/735d3d9fb8394524aeb7271400a154b78f080afb4da5be03f0f19e9a7c13637a.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/735d3d9fb8394524aeb7271400a154b78f080afb4da5be03f0f19e9a7c13637a.json",
+        "metadataSha256": "c4a41c234b959f7bfa9b4c5a2ed00ed022fc0e986b0ec2c093f4fe3e6d42fc93",
+        "metadataSourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=324",
+        "metadataFinalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=324",
+        "metadataObservedAt": "2026-10-16T01:00:15+00:00",
+        "metadataBodySha256": "ab3823a85d96745b078ca1a388ed3d88847b812f2f59cd063faf2bd7f9983162",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-d224beb31d37555c",
+        "sourceUrl": "https://coimbra.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:13+00:00",
+        "expectedBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "actualBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.json",
+        "metadataSha256": "afc41c4acb4c3a8ce20d3ecd03ce6c3d109575d0a266fa2cf67e4b7e5dd1c32c",
+        "metadataSourceUrl": "https://coimbra.ucsd.edu/",
+        "metadataFinalUrl": "https://coimbra.ucsd.edu/",
+        "metadataObservedAt": "2026-10-16T01:00:13+00:00",
+        "metadataBodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-d4e2b36d2c21e75e",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+        "observedAt": "2026-10-16T01:03:17+00:00",
+        "expectedBodySha256": "e87fa3e2fdd24b90f0a16c4ddf89a74db881c01d56f1e16d6369584abca2a0a1",
+        "actualBodySha256": "e87fa3e2fdd24b90f0a16c4ddf89a74db881c01d56f1e16d6369584abca2a0a1",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c0a1684886c6a5f3f89080813f90079ebb76defbd8cd5363ca00d026e86e24b.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c0a1684886c6a5f3f89080813f90079ebb76defbd8cd5363ca00d026e86e24b.json",
+        "metadataSha256": "1e7a0fc30daf6c1aa57e4019cc30cfde1acda6f2e28c66d25f7718746f7cbbfb",
+        "metadataSourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+        "metadataFinalUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+        "metadataObservedAt": "2026-10-16T01:03:17+00:00",
+        "metadataBodySha256": "e87fa3e2fdd24b90f0a16c4ddf89a74db881c01d56f1e16d6369584abca2a0a1",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "observedAt": "2026-10-16T01:36:01+00:00",
+        "expectedBodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "actualBodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c982d24b5f316ad7810793f1c03c6f3fe35bdb866a32f3f186c0920d001daa21.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c982d24b5f316ad7810793f1c03c6f3fe35bdb866a32f3f186c0920d001daa21.json",
+        "metadataSha256": "4b973b1be97017205478c465622eec23eff56ec071282c9f5c9002fcdfb86ddf",
+        "metadataSourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "metadataFinalUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "metadataObservedAt": "2026-10-16T01:36:01+00:00",
+        "metadataBodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-b5227ee77ba0d251",
+        "sourceUrl": "https://cosmology.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:30+00:00",
+        "expectedBodySha256": "54bb89ce88ca0cae2528bf0727d81bf08c3741638cfaafc973a61f8660244f51",
+        "actualBodySha256": "54bb89ce88ca0cae2528bf0727d81bf08c3741638cfaafc973a61f8660244f51",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f9179888a013776b1df42e056f375f5ad9f0e7c1d71ce3f2efff54bfdc87939e.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f9179888a013776b1df42e056f375f5ad9f0e7c1d71ce3f2efff54bfdc87939e.json",
+        "metadataSha256": "b7fdfa964f608704c5a9f702f250309dd5be31cdcfc85cce8441cbd641379324",
+        "metadataSourceUrl": "https://cosmology.ucsd.edu/",
+        "metadataFinalUrl": "https://cosmology.ucsd.edu/",
+        "metadataObservedAt": "2026-10-16T01:07:30+00:00",
+        "metadataBodySha256": "54bb89ce88ca0cae2528bf0727d81bf08c3741638cfaafc973a61f8660244f51",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-f6888c5fa8e5266d",
+        "sourceUrl": "https://cosmology.ucsd.edu/projects.php",
+        "observedAt": "2026-10-16T02:41:45+00:00",
+        "expectedBodySha256": "42bd8780571762f78f6325977aae7fc3a0c6ab232e5a0fd1d6a3b158a5402307",
+        "actualBodySha256": "42bd8780571762f78f6325977aae7fc3a0c6ab232e5a0fd1d6a3b158a5402307",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/93826dd7b644db605621bcadc4fe4147055ae7f287fa4c2d835509ed496e3245.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/93826dd7b644db605621bcadc4fe4147055ae7f287fa4c2d835509ed496e3245.json",
+        "metadataSha256": "87c7a05f6dd3d2cca2effc45dcd413ef248720454c1a470694a15eb94621c7f9",
+        "metadataSourceUrl": "https://cosmology.ucsd.edu/projects.php",
+        "metadataFinalUrl": "https://cosmology.ucsd.edu/projects.php",
+        "metadataObservedAt": "2026-10-16T02:41:45+00:00",
+        "metadataBodySha256": "42bd8780571762f78f6325977aae7fc3a0c6ab232e5a0fd1d6a3b158a5402307",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-e10374cbca2487d1",
+        "sourceUrl": "https://jinzhanglab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:47+00:00",
+        "expectedBodySha256": "011521bc09bd1bf66229c995068b9ac343a50825a2c3a44083fc13ffc2a605da",
+        "actualBodySha256": "011521bc09bd1bf66229c995068b9ac343a50825a2c3a44083fc13ffc2a605da",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/155d89c782b903ed48122fc9af197d7f1da44aa6a324bc5c2b4770d88647b576.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/155d89c782b903ed48122fc9af197d7f1da44aa6a324bc5c2b4770d88647b576.json",
+        "metadataSha256": "3bb406397caff3b90f9d423cf55c83350b8f0c0e64bb0d4b15ab4f4a7cab6b08",
+        "metadataSourceUrl": "https://jinzhanglab.ucsd.edu/",
+        "metadataFinalUrl": "https://jinzhanglab.ucsd.edu/",
+        "metadataObservedAt": "2026-10-16T01:00:47+00:00",
+        "metadataBodySha256": "011521bc09bd1bf66229c995068b9ac343a50825a2c3a44083fc13ffc2a605da",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-271c791f9dc5e0fe",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/jin-zhang.html",
+        "observedAt": "2026-10-16T01:00:45+00:00",
+        "expectedBodySha256": "56d60abbaea584529bd25bf348430080f7bda830564b54634845ce636469c61d",
+        "actualBodySha256": "56d60abbaea584529bd25bf348430080f7bda830564b54634845ce636469c61d",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0222035855bad0c323630d38fbc5ea98275b29dac64aa54b56c93db439c0695c.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0222035855bad0c323630d38fbc5ea98275b29dac64aa54b56c93db439c0695c.json",
+        "metadataSha256": "1712fe8c3c798080d53c4d847593b657af6939bddc8fff15bc4d7ed91e9d5a4b",
+        "metadataSourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/jin-zhang.html",
+        "metadataFinalUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/jin-zhang.html",
+        "metadataObservedAt": "2026-10-16T01:00:45+00:00",
+        "metadataBodySha256": "56d60abbaea584529bd25bf348430080f7bda830564b54634845ce636469c61d",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-d2c5472cd723bb1f",
+        "sourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+        "observedAt": "2026-10-16T01:07:32+00:00",
+        "expectedBodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+        "actualBodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6b603b342ae4057132b9cbc001a8780246e3092a28a66970ce33401a04d1eb95.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6b603b342ae4057132b9cbc001a8780246e3092a28a66970ce33401a04d1eb95.json",
+        "metadataSha256": "353ae9540b42e6961546f1194155be85c5bcf368043978bed0967c9139372cbb",
+        "metadataSourceUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+        "metadataFinalUrl": "https://hwsph.ucsd.edu/research/programs-groups/al-rousan-lab.html",
+        "metadataObservedAt": "2026-10-16T01:07:32+00:00",
+        "metadataBodySha256": "aefc55d6fb55f481fd18d881212332346d8519b5eea3058e87196b7cc3b9ff37",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "observedAt": "2026-10-16T01:07:32+00:00",
+        "expectedBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "actualBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "bodyHashMatches": true,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02a6bfed89e74a315d69be9ca3104a8969f348b8d000eb094cecb3ae06c90ab6.html",
+        "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02a6bfed89e74a315d69be9ca3104a8969f348b8d000eb094cecb3ae06c90ab6.json",
+        "metadataSha256": "85c8a04d2c78c2887dedaa5f0920b7d10aaacf74d822f08508c8c705a2f74a84",
+        "metadataSourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "metadataFinalUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "metadataObservedAt": "2026-10-16T01:07:32+00:00",
+        "metadataBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      },
+      {
+        "sourceId": "src-2705f44bd0668fde",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "observedAt": "2026-10-16T04:23:43+00:00",
+        "expectedBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "actualBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "bodyHashMatches": true,
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/fab72a9b6bb21a5ff53a4f925d64a36135d9d2ed403caaa711947c9196722f56.html",
+        "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/fab72a9b6bb21a5ff53a4f925d64a36135d9d2ed403caaa711947c9196722f56.json",
+        "metadataSha256": "393daa00635e3078dfed7d3cf92d627eb469e6980cdb26b140ca6258e10cfca8",
+        "metadataSourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "metadataFinalUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "metadataObservedAt": "2026-10-16T04:23:43+00:00",
+        "metadataBodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "metadataTimeMatches": true,
+        "metadataHashMatches": true,
+        "metadataUrlMatches": true
+      }
+    ],
+    "frozenRawCount": 8,
+    "frozenPacketCount": 8,
+    "allMethodQuotesExact": true,
+    "distinctHtmlFilesVerified": 15
+  },
+  "unchangedWriteScope": {
+    "networkRequests": 0,
+    "psCalls": 0,
+    "rawWrites": 0,
+    "packetWrites": 0,
+    "codeWrites": 0,
+    "collectorOrSharedWrites": 0,
+    "onlyOutputs": [
+      "METHOD-FIELD-SCOPE-REVIEW.json",
+      "METHOD-FIELD-SCOPE-REVIEW.md"
+    ]
+  },
+  "limitationsZh": [
+    "没有全面重审8个packet的每个source；sourceCoverage明确实际全文/局部/重复证据范围。",
+    "6条新方法证据均有当前packet字面正文及原始HTML/sidecar哈希、原时间和URI匹配；历史Breen目录摘录缺原HTML仅用于撤销methods标签，不作新方法证据。",
+    "提案不扩大实体类型、PI、隶属、root identity或原始URL验证。"
+  ],
+  "inputInventory": {
+    "path": "data/local-lab-summaries/REMAINING-QUESTION-FIELD-INVENTORY.json",
+    "sha256": "3800eb1f2b2f86e175ada0a1f735238771f54b07bcf0f8bdd01433178fd94e44"
+  }
+}

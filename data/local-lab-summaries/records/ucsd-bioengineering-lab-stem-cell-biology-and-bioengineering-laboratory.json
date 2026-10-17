@@ -1,0 +1,69 @@
+{
+  "labId": "ucsd-bioengineering-lab-stem-cell-biology-and-bioengineering-laboratory",
+  "status": "supported",
+  "summaryZh": "该记录的官方负责人页面将 Engler 实验室研究描述为细胞外基质如何引导细胞行为。研究关注基质的机械与生化性质对干细胞分化、心肌老化及癌变转移的影响，并制作天然和合成基质模拟细胞生态位，用于体外及体内研究。",
+  "researchQuestions": [
+    "细胞外基质的机械和生化性质如何决定细胞功能与疾病？"
+  ],
+  "topics": [
+    "机械生物学",
+    "细胞外基质",
+    "干细胞",
+    "心血管与癌症"
+  ],
+  "methods": [
+    "天然与合成基质构建",
+    "体外细胞研究",
+    "体内研究"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-aa0ad8d536015cce",
+      "quote": "Stem Cell Biology and Bioengineering Laboratory",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-31167b84c71f16df",
+      "quote": "The Engler lab's research is focused on how cell behavior is directed by the extracellular matrix (ECM)",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-31167b84c71f16df",
+      "quote": "his lab makes natural and synthetic matrices with unique spatiotemporal properties to mimic niche conditions, improve stem cell behavior and commitment in vitro, or direct them for therapeutic use in vivo.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-31167b84c71f16df",
+      "quote": "ECM mechanics can regulate the differentiation of stem cells into specific adult cell types, cause heart cells to contract better/worse with age, and cause cells to transform into cancer and metastasize.",
+      "supports": [
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "官方研究目录列出实验室，配套负责人页面明确描述 Engler lab。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "UCSD 官方研究目录历史证据列出该实验室。"
+  },
+  "uncertainty": [
+    "实验室目的地 robots 获取因证书错误失败；研究依据官方负责人页面。",
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [
+    "Destination robots_unavailable: SSL certificate name mismatch for ecm.ucsd.edu."
+  ],
+  "reviewedAt": "2026-10-16T01:45:38+00:00"
+}

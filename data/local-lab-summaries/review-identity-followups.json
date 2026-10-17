@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T02:24:35+00:00",
+  "scope": "13 identity decisions; read shared-adapter gap results and cached packet/HTML only; no reviewer network, scripts, tests, checkpoint or prepare execution.",
+  "result": "all_13_nonaccepted_identity_relationships_preserved",
+  "reviewedCount": 13,
+  "acceptedCount": 0,
+  "reviewerNetworkRequests": 0,
+  "sharedAdapterActualIdentitySourceRequests": 6,
+  "sharedAdapterIdentityWireEvents": 7,
+  "originalMismatchDestinationsRechecked": 0,
+  "timestampRule": "liveCheckedAt copied only from gap-results fetch.liveCheckedAt when actualPageRequestMade is true; source observedAt and originalLastCheckedAt unchanged.",
+  "manualReviewNotesRemainExplicit": true,
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-not-in-a-biology-group",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:04:19+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://biology.ucsd.edu/research/faculty/akendrick",
+          "state": "reviewed_reused_capture_insufficient_entity_text",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:07:45+00:00",
+          "sourceId": "src-e81f02cf99116722",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "复用的UCSD教师页于2026-10-16T01:07:45+00:00捕获，正文仅导航及“Aga Kendrick”，没有实验室映射说明。Kendrick目的页研究只支持候选实体，旧类别标签的更名仍未接受；本轮无新页面请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-lab-safety-videos",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:04:54+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://chemistry.ucsd.edu/safety/Lab-Safety-Videos.html",
+          "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:04:54+00:00",
+          "sourceId": "src-3f4dfd9fb63755ec",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "findingZh": "复读已存正文与标题，仍明确是实验室安全教学视频资源，没有独立研究实体；没有为此资源发起新的身份请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-malinow-lab",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:05:08+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:14:27+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "state": "reviewed_live_directory_old_link_unresolved",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:14:27+00:00",
+          "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+          "sourceId": "src-d81f1215c84293b2",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器实际重取的神经科学目录于2026-10-16T02:14:28+00:00仍列Malinow Lab，并在HTML中仍链接http://webaxon.com/index.html。这补强官方目录条目存在的证据，但没有修复旧网址的域名出售错配；旧目的网址本轮未重新请求。",
+          "wireEventRange": [
+            0,
+            1
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Malinow Lab – Center for Neural Circuits & Behavior (CNCB)",
+              "href": "http://webaxon.com/index.html",
+              "sourceId": "src-d81f1215c84293b2",
+              "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/944b0ab687e30252c33b63f21aac3c2f3bb54b5dac139d55095fbaea90becf7a.html",
+              "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644"
+            }
+          ]
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T00:57:27+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+          "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T00:57:27+00:00",
+          "sourceId": "src-2cdd416c55f40272",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "findingZh": "复读已存分部页面，Division Chief、临床服务和多位教师仍支持院系分部分类；不能作为单一lab接受，本轮无新请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-philosophy-ucsd-edu-research-groups-research-groups-overview-html",
+      "recordStatus": "unresolved",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:05:20+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://philosophy.ucsd.edu/research-groups/research-groups-overview.html",
+          "state": "reviewed_reused_directory_no_entity_match",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:05:20+00:00",
+          "sourceId": "src-af099770c4a46a21",
+          "sourceRole": "listed_lab_destination",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "复用的完整研究小组目录捕获仍未出现Field Lab，其他小组内容不能替代该旧ID；本轮未重新请求此目录。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-physics-biological-physics",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:05:29+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://biophysics.physics.ucsd.edu",
+          "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:05:29+00:00",
+          "sourceId": "src-0985a993b50f1d47",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "findingZh": "复读已存Physics of Life页面，它列出多个教师实验室；领域目录分类不变，本轮无新请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-c47793a464ccdc",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:30+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://cse.ucsd.edu/undergraduate/courses/course-descriptions/cse198-directed-group-study",
+          "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:06:30+00:00",
+          "sourceId": "src-0a873ed8661a47dd",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "findingZh": "复读已存CSE-198页面，课程编号、学分、先修与选课规则明确；课程不能作为固定科研团队接受，本轮无新请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-48032dc33264ea",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 0,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:36+00:00",
+      "followupLiveCheckedAt": null,
+      "findings": [
+        {
+          "targetUrl": "https://radonc.ucsd.edu/research/clinical-trials.html",
+          "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:06:36+00:00",
+          "sourceId": "src-9abb679b0bba7da8",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "findingZh": "复读已存临床试验总览，它描述多个全国合作组和研究者；没有独立同名实验室，本轮无新请求。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-d2d234fc0f3eba",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:40+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:14:29+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "state": "reviewed_live_directory_entity_relationship_unresolved",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:14:29+00:00",
+          "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+          "sourceId": "src-619879218642aac1",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器于2026-10-16T02:14:30+00:00取得的生物工程目录正文仍列Schmid-Schoenbein Lab及Geert Schmid-Schoenbein；缓存HTML的Website锚点仍指向同一Google Site。目录关联因此有新证据，但没有解释旧Microcirculation Laboratory与Center for Autodigestion Innovation的更名、继承或共同实体关系；Google目的页本轮未重取。",
+          "wireEventRange": [
+            1,
+            3
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Schmid-Schoenbein Lab",
+              "href": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+              "sourceId": "src-619879218642aac1",
+              "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/2f3d26a5bf8b94d5997455b4ec438ba68724d243be8811cc3a10d20b51fa06a9.html",
+              "bodySha256": "d3d93da81ca169354da9049aa878ba00e2fe4e57c3f77215a80954bad5408957"
+            },
+            {
+              "anchorText": "Website",
+              "href": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/home",
+              "sourceId": "src-619879218642aac1",
+              "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/2f3d26a5bf8b94d5997455b4ec438ba68724d243be8811cc3a10d20b51fa06a9.html",
+              "bodySha256": "d3d93da81ca169354da9049aa878ba00e2fe4e57c3f77215a80954bad5408957"
+            },
+            {
+              "anchorText": "Schmid-Schoenbein Lab",
+              "href": "https://microcirculation.eng.ucsd.edu/",
+              "sourceId": "src-619879218642aac1",
+              "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/2f3d26a5bf8b94d5997455b4ec438ba68724d243be8811cc3a10d20b51fa06a9.html",
+              "bodySha256": "d3d93da81ca169354da9049aa878ba00e2fe4e57c3f77215a80954bad5408957"
+            }
+          ]
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-ca0f4105fff103",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:44+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:21:49+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://profiles.ucsd.edu/huilin.zhou",
+          "state": "reviewed_live_profile_old_link_identity_unresolved",
+          "reviewedAt": "2026-10-16T02:24:35+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:21:49+00:00",
+          "sourceObservedAt": "2026-10-16T02:21:50+00:00",
+          "sourceId": "src-0365d23bdcef412b",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器于2026-10-16T02:21:50+00:00取得Huilin Zhou的UCSD Profiles完整正文，仍明确描述my laboratory的基因组完整性、DNA损伤检查点、SUMO化/泛素化及酵母与遗传、生化、蛋白质组方法。HTML中Zhou Lab仍链接旧Ludwig的huilin-zhou-lab路径，没有链接或说明huilinzhoulab.org候选站与旧ID的别名或继承关系；旧目的页本轮未重取，mismatch与候选未接受状态不变。",
+          "wireEventRange": [
+            68,
+            69
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Zhou Lab",
+              "href": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab",
+              "sourceId": "src-0365d23bdcef412b",
+              "sourceObservedAt": "2026-10-16T02:21:50+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/5a9e88c4e1ea040d146916e32600587ab5f48ddc8ae02e811ad45abd2ca62a89.html",
+              "bodySha256": "1a42156b83bcdaaa016624576eb1fcc3055080c1de7e6f44ba8b7d4ccf90e762"
+            }
+          ],
+          "researchEvidenceScope": "fresh_official_profile_explicit_lab_scope; URL/entity mapping remains provisional; no accepted alias or ID migration"
+        },
+        {
+          "targetUrl": "https://www.huilinzhoulab.org/",
+          "state": "reviewed_reused_candidate_identity_unaccepted",
+          "reviewedAt": "2026-10-16T02:24:35+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T01:04:53+00:00",
+          "sourceId": "src-c5a7f699c7b0650c",
+          "sourceRole": "reviewed_followup_requires_entity_match",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "候选https://www.huilinzhoulab.org/仍只使用2026-10-16T01:04:53+00:00的复用捕获，支持候选实体的基因组维护与定量蛋白质组研究；新官方Profiles仍链接旧Ludwig路径，没有证明该候选站为旧ID的别名或继承站。候选网址不替换旧网址、不合并ID。",
+          "researchEvidenceScope": "candidate_entity_only; no accepted alias, replacement URL or stable-ID migration",
+          "candidateResearchSummaryZh": "候选页明确研究基因组维护并开发定量蛋白质组学。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-61e490319a4560",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:47+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:22:09+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://profiles.ucsd.edu/karen.oegema",
+          "state": "reviewed_live_profile_old_link_identity_unresolved",
+          "reviewedAt": "2026-10-16T02:24:35+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:22:09+00:00",
+          "sourceObservedAt": "2026-10-16T02:22:10+00:00",
+          "sourceId": "src-a117e246013e032e",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器于2026-10-16T02:22:10+00:00取得Karen Oegema的UCSD Profiles完整正文，直接描述The Oegema lab以哺乳动物细胞和C. elegans胚胎平行研究细胞分裂与胚胎发育。HTML中Oegema Lab仍链接旧Ludwig的karen-oegema-lab路径，而非oegemadesailab.org；没有明确说明联合候选站是旧ID的别名或继承实体。旧目的页本轮未重取，mismatch保留，Desai/Oegema稳定ID不合并。",
+          "wireEventRange": [
+            69,
+            70
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Oegema Lab",
+              "href": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab",
+              "sourceId": "src-a117e246013e032e",
+              "sourceObservedAt": "2026-10-16T02:22:10+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ad5f4b3c6f541282dbf2b2299c59d3fa11c58ad690fd9030663fd8f0251db7c0.html",
+              "bodySha256": "d9b8c9ae0e4e952c70f8709c4f9822b8da95fabe519cb9be961e65e5dab9d409"
+            }
+          ],
+          "researchEvidenceScope": "fresh_official_profile_explicit_lab_scope; URL/entity mapping remains provisional; no accepted alias or ID migration"
+        },
+        {
+          "targetUrl": "http://www.oegemadesailab.org/",
+          "state": "reviewed_reused_candidate_identity_unaccepted",
+          "reviewedAt": "2026-10-16T02:24:35+00:00",
+          "actualPageRequestMade": false,
+          "liveCheckedAt": null,
+          "sourceObservedAt": "2026-10-16T00:57:54+00:00",
+          "sourceId": "src-f037133527069fcc",
+          "sourceRole": "reviewed_followup_requires_entity_match",
+          "checkOrigin": "reused_collection_capture",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "候选http://www.oegemadesailab.org/仍只使用2026-10-16T00:57:54+00:00的复用捕获，支持联合候选实体的细胞分裂相关研究；新官方Profiles仍链接旧Ludwig路径，不能据共同姓名或研究方向将联合站接受为旧Oegema ID别名，也不合并Desai/Oegema稳定ID。",
+          "researchEvidenceScope": "candidate_entity_only; no accepted alias, replacement URL or stable-ID migration",
+          "candidateResearchSummaryZh": "联合候选页列染色体分离、胞质分裂、中心体与纺锤体组装、癌症有丝分裂靶向及高内涵功能筛选。"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-kolodner-lab",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:04:50+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:14:30+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://cmm.ucsd.edu/research/labs/",
+          "state": "reviewed_live_directory_old_link_unresolved",
+          "reviewedAt": "2026-10-16T02:17:52+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:14:30+00:00",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "sourceId": "src-1c6df0a57807721b",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器于2026-10-16T02:14:31+00:00取得的CMM目录仍列Kolodner Lab，HTML链接仍为原Ludwig scientist/richard-d-kolodner路径。该目录只确认官方条目及旧链接，未提供专属研究或修复机构主页跳转；原Ludwig网址本轮未重取。",
+          "wireEventRange": [
+            3,
+            4
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Kolodner Lab",
+              "href": "https://www.ludwigcancerresearch.org/scientist/richard-d-kolodner/",
+              "sourceId": "src-1c6df0a57807721b",
+              "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/156ba84bf1abdcfaadb83c25247dfb222a763831ef755bc3ba72fb642dc981e9.html",
+              "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8"
+            }
+          ]
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    },
+    {
+      "labId": "ucsd-live-lab-d38261da50a200",
+      "recordStatus": "partial",
+      "entityAccepted": false,
+      "sourceFollowupActualPageRequests": 1,
+      "originalDestinationRechecked": false,
+      "originalDestinationObservedAtPreserved": "2026-10-16T01:06:36+00:00",
+      "followupLiveCheckedAt": "2026-10-16T02:22:30+00:00",
+      "findings": [
+        {
+          "targetUrl": "https://profiles.ucsd.edu/richard.kolodner",
+          "state": "reviewed_live_profile_old_link_identity_unresolved",
+          "reviewedAt": "2026-10-16T02:24:35+00:00",
+          "actualPageRequestMade": true,
+          "liveCheckedAt": "2026-10-16T02:22:30+00:00",
+          "sourceObservedAt": "2026-10-16T02:22:30+00:00",
+          "sourceId": "src-8b07c4927ae2b0ce",
+          "sourceRole": "listed_official_source_requires_entity_localization",
+          "checkOrigin": "summary_gap_live_fetch",
+          "originalDestinationRechecked": false,
+          "identityAccepted": false,
+          "notAnAcceptedCanonicalLabUrl": true,
+          "findingZh": "共享适配器于2026-10-16T02:22:30+00:00取得Richard Kolodner的UCSD Profiles完整正文，明确提供Our laboratory与The Kolodner lab的DNA修复、重组、突变抑制、染色体重排及癌症易感性研究，并明确酿酒酵母模型。HTML中的Kolodner Lab仍链接旧Ludwig的richard-kolodner-lab路径；本次取得的是官方教师档案，不是该旧目的页的重取。研究支持得到刷新，但Ludwig机构主页错配不变，第二个Kolodner稳定ID仍partial/provisional且不与具名ID合并。",
+          "wireEventRange": [
+            70,
+            71
+          ],
+          "observedLinks": [
+            {
+              "anchorText": "Kolodner Lab",
+              "href": "http://www.ludwigcancerresearch.org/location/san-diego-branch/richard-kolodner-lab",
+              "sourceId": "src-8b07c4927ae2b0ce",
+              "sourceObservedAt": "2026-10-16T02:22:30+00:00",
+              "evidenceNature": "parsed_cached_html_anchor_attribute",
+              "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c198eb9714224ae98de85ada70952e55a54c9f0db463a53a7219aa2b25c8dca7.html",
+              "bodySha256": "6f6931e3f32295747c6602877e338475536144ee9ef01752f2c44afe690a70af"
+            }
+          ],
+          "researchEvidenceScope": "fresh_official_profile_explicit_lab_scope; URL/entity mapping remains provisional; no accepted alias or ID migration"
+        }
+      ],
+      "candidateCorrectionsStillUnaccepted": true
+    }
+  ],
+  "latestProfilesReview": {
+    "reviewedAt": "2026-10-16T02:24:35+00:00",
+    "reviewedCount": 3,
+    "freshSourceResults": [
+      {
+        "labId": "ucsd-live-lab-ca0f4105fff103",
+        "sourceId": "src-0365d23bdcef412b",
+        "observedAt": "2026-10-16T02:21:50+00:00",
+        "liveCheckedAt": "2026-10-16T02:21:49+00:00",
+        "oldLink": "http://www.ludwigcancerresearch.org/location/san-diego-branch/huilin-zhou-lab"
+      },
+      {
+        "labId": "ucsd-live-lab-61e490319a4560",
+        "sourceId": "src-a117e246013e032e",
+        "observedAt": "2026-10-16T02:22:10+00:00",
+        "liveCheckedAt": "2026-10-16T02:22:09+00:00",
+        "oldLink": "http://www.ludwigcancerresearch.org/location/san-diego-branch/karen-oegema-lab"
+      },
+      {
+        "labId": "ucsd-live-lab-d38261da50a200",
+        "sourceId": "src-8b07c4927ae2b0ce",
+        "observedAt": "2026-10-16T02:22:30+00:00",
+        "liveCheckedAt": "2026-10-16T02:22:30+00:00",
+        "oldLink": "http://www.ludwigcancerresearch.org/location/san-diego-branch/richard-kolodner-lab"
+      }
+    ],
+    "actualProfilePageRequests": 3,
+    "actualProfileWireEvents": 3,
+    "originalDestinationsRechecked": 0,
+    "candidateCorrectionsAccepted": 0,
+    "sourceBodyHashesVerified": true,
+    "fullProfileTextAndExplicitHtmlLabAnchorsRead": true,
+    "consistencyValidation": {
+      "validatedAt": "2026-10-16T02:25:09+00:00",
+      "allThreeRawDecisionAuditFindingsMatch": true,
+      "allFreshEvidenceQuotesExact": true,
+      "allLiveAndObservedTimesMatchGapResults": true,
+      "firstThreeDirectoryLiveTimesPreserved": true,
+      "oldDestinationObservationsPreserved": true,
+      "all13EntitiesStillUnaccepted": true,
+      "manualReviewNatureMarkersPreserved": true,
+      "newCandidateHostsAbsentFromFreshProfilesHtml": true,
+      "noScriptsPrepareOrCheckpointRun": true
+    }
+  }
+}

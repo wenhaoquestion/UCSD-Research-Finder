@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:59:57+00:00",
+  "verdict": "ONE_EXISTING_PARTIAL_LAB_SUPPORTED_BY_LOCALIZED_OFFICIAL_CARD",
+  "networkRequests": 0,
+  "rawPacketSupplementalCodeCollectorSharedWrites": 0,
+  "target": {
+    "ordinal": 782,
+    "labId": "ucsd-astronomy-and-astrophysics-lab-high-energy-astrophysics-laboratory",
+    "baselineName": "High-Energy Astrophysics Laboratory",
+    "baselinePi": "Steven Boggs",
+    "baselineWebsite": "https://stevenboggs.github.io/",
+    "baselineSourceKind": "personal_site",
+    "baselineIndependentLabWebsiteVerified": false,
+    "baselineFieldEvidence": {
+      "officialDirectoryUrl": "https://astro.ucsd.edu/research/labs/index.html",
+      "observedAt": "2026-10-07T22:55:23+00:00",
+      "labNameScope": "Historical official named laboratory card; partial excerpt has preceding Shelley Wright text that must not be transferred.",
+      "piExactQuote": "PI: Professor Steve Boggs",
+      "websiteProofScope": "lab_entity_source_not_independent_lab_website",
+      "baselineIdentityCaveat": "PI personal site is used with caveat; no independent lab website verified."
+    },
+    "currentRawStatus": "partial",
+    "currentRawEntityType": "personal_research_site",
+    "rawSha256AtReview": "554da73ed57730bdfbf69fef19924da2ea47cec9dd72eab00ced013d81f288cb",
+    "packetSha256AtReview": "97be246bda1428aa3bc72768edf8d1fa3a2d8445176903d59fb7358879215255",
+    "existingMismatchDecisions": [],
+    "stableIdRenameMergeAliasRecommended": false
+  },
+  "officialCard": {
+    "sourceId": "src-f8c7e9c911ee6b44",
+    "sourceUrl": "https://astro.ucsd.edu/research/labs/index.html",
+    "actualRequestedUrl": "https://astro.ucsd.edu/research/labs/index.html",
+    "observedAt": "2026-10-16T05:51:14+00:00",
+    "bodySha256": "235c204c6646373969a01f380d06014a9863f284ef9fbd24f6f3f6113414197c",
+    "sameCapturedBodyAsIpsAssociation": true,
+    "cacheHashVerified": true,
+    "headingTag": "h2",
+    "heading": "High-Energy Astrophysics Laboratory",
+    "parentTag": "div",
+    "parentClass": "col-md-6",
+    "piQuote": "PI: Professor Steve Boggs",
+    "onlyCardLink": {
+      "text": "Compton Spectrometer and Imager (COSI)",
+      "href": "https://science.nasa.gov/mission/cosi/"
+    },
+    "cardDoesNotLinkPersonalRoot": true,
+    "localizedFullText": "High-Energy Astrophysics Laboratory UC San Diego has a long-history of designing X-ray satellites and Gamma-ray instrumentation. Today, active balloon-borne gamma-ray satellites are being designed and built at UCSD with detector testing and instrument development. Gamma-ray programs are active in Compton Spectrometer and Imager (COSI) , GAP experiment, and NuStar. PI: Professor Steve Boggs"
+  },
+  "conclusion": {
+    "entityType": "lab",
+    "identityConfirmedFromCurrentOfficialCard": true,
+    "affiliation": "source_reported",
+    "supportsStableLabIdIndependentlyOfPersonalRoot": true,
+    "reason": "The named current official card exactly matches the baseline lab name and its retained PI proof. This resolves laboratory entity scope independently of the personal website; it does not verify that website as a lab root.",
+    "proposedStatus": "supported",
+    "proposedSummaryZh": "官方目录中的 High-Energy Astrophysics Laboratory 卡片介绍 X 射线与伽马射线天文仪器研究，列出探测器测试、仪器开发及 COSI、GAP、NuStar 相关项目。目录没有标注研究更新时间，不能据采集日期确认这些项目当前的运行状态。",
+    "proposedResearchQuestionsZh": [],
+    "proposedTopicsZh": [
+      "X射线与伽马射线天文仪器",
+      "探测器测试与仪器开发",
+      "目录列出的COSI、GAP与NuStar相关项目"
+    ],
+    "proposedMethodsZh": [
+      "探测器测试",
+      "仪器开发"
+    ],
+    "candidateEvidence": [
+      {
+        "sourceId": "src-f8c7e9c911ee6b44",
+        "quote": "High-Energy Astrophysics Laboratory",
+        "quoteLocation": "headings",
+        "supports": [
+          "identity"
+        ],
+        "scope": "Only this exact card heading."
+      },
+      {
+        "sourceId": "src-f8c7e9c911ee6b44",
+        "quote": "PI: Professor Steve Boggs",
+        "quoteLocation": "body",
+        "supports": [
+          "identity"
+        ],
+        "scope": "PI label in the same div.col-md-6; matches the baseline's retained exact official PI proof, not a new alias."
+      },
+      {
+        "sourceId": "src-f8c7e9c911ee6b44",
+        "quote": "UC San Diego has a long-history of designing X-ray satellites and Gamma-ray instrumentation.",
+        "quoteLocation": "body",
+        "supports": [
+          "research",
+          "topics",
+          "affiliation"
+        ],
+        "scope": "Named-card research description; historical framing retained."
+      },
+      {
+        "sourceId": "src-f8c7e9c911ee6b44",
+        "quote": "with detector testing and instrument development.",
+        "quoteLocation": "body",
+        "supports": [
+          "methods"
+        ],
+        "scope": "Explicit broad laboratory methods; no inferred detector type or instrument."
+      },
+      {
+        "sourceId": "src-f8c7e9c911ee6b44",
+        "quote": "Gamma-ray programs are active in Compton Spectrometer and Imager (COSI) , GAP experiment, and NuStar.",
+        "quoteLocation": "body",
+        "supports": [
+          "topics"
+        ],
+        "scope": "Directory-listed project context only; undated active does not verify present-year operation."
+      }
+    ]
+  },
+  "sourceAssociationProposal": {
+    "copyCompleteSourceFromPacket": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+    "copySourceId": "src-f8c7e9c911ee6b44",
+    "role": "reviewed_cross_record_official_capture",
+    "preserveSourceIdUrlTextTitleHeadingsObservedAtHashCachePathExactly": true,
+    "identityReview": {
+      "reason": "The separate High-Energy Astrophysics Laboratory card matches the exact baseline lab name and the old official PI proof (Steve Boggs). The source independently supports this existing laboratory. Personal GitHub site is not linked or renamed; no shared URL merge or professor inference.",
+      "quotes": [
+        "High-Energy Astrophysics Laboratory",
+        "PI: Professor Steve Boggs"
+      ],
+      "scopeBoundary": "Only this div.col-md-6. Adjacent OIR/Cosmology/Space Weather cards and shared facilities are not assigned to this lab."
+    },
+    "persistentSupplementalAndPacketAppendForParentOnly": true
+  },
+  "dataOnlyScopeCorrection": {
+    "preserveFullOldRawAndOldEvidenceHistory": true,
+    "headerEvidence": {
+      "sourceId": "src-4c5dc71cb8d06d47",
+      "quote": "Steven E. Boggs Astronomy & Astrophysics UC San Diego High Energy Astrophysics",
+      "beforeSupports": [
+        "identity",
+        "affiliation"
+      ],
+      "proposedActiveSupports": [
+        "personal_site_context",
+        "affiliation"
+      ],
+      "rationale": "The source proves personal-site context and literal institution text, not the named laboratory root. New card supplies laboratory identity/affiliation."
+    },
+    "oldPersonalResearchEvidence": {
+      "sourceId": "src-4c5dc71cb8d06d47",
+      "beforeSupports": [
+        "research",
+        "topics",
+        "methods"
+      ],
+      "recommendedActiveSupports": [
+        "personal_research_context"
+      ],
+      "rationale": "For the minimal directory-only lab synthesis, retain broad personal-page research/method claims as explicitly scoped history/context rather than silently generalizing them to the laboratory. The existing exact quote and original supports remain intact in full history."
+    },
+    "logActualMetadataCorrectionReviewTime": true,
+    "doNotClaimActiveOldEvidenceExactPrefixAfterSupportRetagging": true,
+    "keepRootFetchCanonicalSourceBytesDatesAndPreparedAt": true
+  },
+  "inMemoryVerification": {
+    "status": "supported",
+    "entityAcceptance": "accepted_lab_group",
+    "pageIdentity": "uncertain",
+    "canCountAsVerifiedLabGroupURL": false,
+    "canonicalUrl": "https://stevenboggs.github.io/",
+    "rootFetchUnchanged": true,
+    "preparedAtUnchanged": true,
+    "oldSourceObjectsExactPrefix": true,
+    "oldRawAndEvidenceHistoriesExact": true,
+    "actualRawAndPacketFilesUnchanged": true,
+    "actualPrepareOrCheckpointCalled": false
+  },
+  "limits": [
+    "Do not import cryogenic testing below0.1K from neighboring Experimental Cosmology card.",
+    "Do not import shared clean rooms, wirebonding or high-bay use as this lab's specific methods.",
+    "Do not use the COSI outbound link as the laboratory website or follow it.",
+    "Do not infer current2026 project operation, PI appointment effective date, flight status or an instrument specification from undated today/active language.",
+    "Do not infer laboratory-wide supernova/nucleosynthesis/black-hole research from old personal-site material in this directory-only candidate."
+  ],
+  "otherExistingCardsScreened": [
+    {
+      "card": "Experimental Cosmology Laboratory",
+      "labId": "ucsd-astronomy-and-astrophysics-lab-experimental-cosmology-laboratory",
+      "ordinal": 781,
+      "status": "supported",
+      "additionalReviewNeeded": false
+    },
+    {
+      "card": "Optical and Infrared Laboratory",
+      "labId": "ucsd-physics-research-site-shelley-wright",
+      "ordinal": 376,
+      "status": "supported",
+      "additionalReviewNeeded": false
+    },
+    {
+      "card": "Space Weather Laboratory",
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "ordinal": 783,
+      "status": "supported",
+      "additionalReviewNeeded": false
+    }
+  ],
+  "additionalExistingPartialCandidates": 0,
+  "automaticallyAppliedChanges": 0,
+  "actualAppliedResultQA": {
+    "reviewedAt": "2026-10-16T06:02:30+00:00",
+    "applicationAt": "2026-10-16T06:02:01+00:00",
+    "verdict": "PASS",
+    "baseCommit": "5f9a28e3cd523c3bd69e84f8de4e45b13622dff5",
+    "applicationReceipt": "HIGH-ENERGY-OFFICIAL-DIRECTORY-APPLICATION.json",
+    "rawSha256": "bd9c3d8d097e0bd7e043a3624a0c43f156671fb782bf0c0ecca0dfc66d4d603a",
+    "packetSha256": "7d6ec89373759cddd90e4bb06c3a7b0f0f408c1bb03a3bd5e875bcd36468660c",
+    "sourceCopiedExactlyExceptRoleAndIdentityReview": true,
+    "actualCacheOriginalMetadataAndFullExtractionMatch": true,
+    "sourceId": "src-f8c7e9c911ee6b44",
+    "sourceObservedAt": "2026-10-16T05:51:14+00:00",
+    "sourceBodySha256": "235c204c6646373969a01f380d06014a9863f284ef9fbd24f6f3f6113414197c",
+    "completePreviousRecordExactlyEqualsBase": true,
+    "rootFetchPreparedAtFollowupsUnchanged": true,
+    "oldSourceObjectsExactPrefix": true,
+    "allSixActiveQuotesLiteral": true,
+    "oldRootScopes": [
+      "personal_site_context",
+      "personal_research_context"
+    ],
+    "summaryAndTwoMethodsConfinedToOwnOfficialCard": true,
+    "researchQuestions": [],
+    "cryogenicsSharedFacilityPersonalResearchOrCurrent2026ClaimsInferred": false,
+    "hydrateStatus": "supported",
+    "entityAcceptance": "accepted_lab_group",
+    "rootPageIdentity": "uncertain",
+    "canCountAsVerifiedLabGroupURL": false,
+    "rootCanonicalUrl": "https://stevenboggs.github.io/",
+    "redirects": [],
+    "reviewerRawPacketCodeCollectorWrites": false,
+    "networkRequests": 0,
+    "actionableIssues": []
+  }
+}

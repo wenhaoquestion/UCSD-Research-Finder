@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "comparedAt": "2026-10-16T03:57:25+00:00",
+  "loadedCollectorSha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+  "sourceSnapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+  "sourceOrigin": "collector Git HEAD:scripts/collect_ucsd_coverage.py",
+  "previousCollectorSha256": "aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c",
+  "publicFetcherDefinitionIdentical": false,
+  "changedTopLevelDefinitions": [
+    "PublicFetcher",
+    "Queue",
+    "collect",
+    "retryable_fetch",
+    "reusable_robots",
+    "robots_retry_at",
+    "transient_response"
+  ],
+  "requiredDependencyHashes": {
+    "collect_ucsd_coverage.py": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+    "refresh_faculty_directories.py": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8",
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+  },
+  "networkRequestsMade": 0,
+  "activationPolicy": "Snapshot exact loaded bytes. New live requests remain disabled until the current complete adapter receipt is explicitly verified; current immediate live gaps are zero.",
+  "offlineVerificationCompletedAt": "2026-10-16T04:03:52+00:00",
+  "testsPassed": 113,
+  "localRobotsChallengeCompensationVerified": true,
+  "upstreamFindingsRemainOpen": true
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:51:55+00:00",
+  "result": "pass_no_actionable_findings",
+  "networkRequestsMade": 0,
+  "actualPlanExecutedByAudit": false,
+  "onlyOwnReportPairWritten": true,
+  "scope": "Independent read-only review of official historical-field helper/invocation, actual curated entry+saved plan, and13focused offline tests. No research-body or new identity acceptance review.",
+  "baselineGitRevision": "641fd9abbcdc2cc3382847acb241695384a0faec",
+  "adapterSha256": "dfb07eda989ff223884a112af882586b9e506c6047984bda0cbde93f54e5c8fe",
+  "baselineAdapterSha256": "2e691409cab7ec3dff70b9876bc98b9260c2c4af19d9532b65cb4944433a4aea",
+  "fileHashes": {
+    "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py": "dfb07eda989ff223884a112af882586b9e506c6047984bda0cbde93f54e5c8fe",
+    "/private/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_official_source_gaps.py": "b79b982371862850ddc36f9a5f9205d562aacc1257dde10d2337724a4c552f5b",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-official-source-gaps.json": "b236b68b7b803cae4617dca7a692b8def2f40a8dfb0092539a86dae939cbcb25",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-plan.json": "d7e5bd2bfcff41f8941ad946d70b79a70d18aa23f1e4fe25af99ca9f60b92800"
+  },
+  "definitionComparison": {
+    "method": "AST without source coordinates",
+    "unchangedDefinitions": [
+      "verified_source",
+      "cached_robots_boundary",
+      "explicit_access_boundary",
+      "same_fetch_metadata",
+      "original_uri_attempt_keys",
+      "original_uri_page_limit",
+      "reviewed_original_uri_observations",
+      "coordination_snapshot",
+      "coordination_ready",
+      "load_fetcher",
+      "RetryAfterDeferred",
+      "page_live_event",
+      "retry_pauses",
+      "instrumented_fetcher",
+      "execute"
+    ],
+    "changedExistingDefinitions": [
+      "plan"
+    ],
+    "newDefinitions": [
+      "reviewed_official_source_gaps"
+    ],
+    "note": "Plan also includes separately reviewed preload/image-map admission changes since641; no network definition changed."
+  },
+  "exactActualEntry": {
+    "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+    "url": "https://astro.ucsd.edu/research/labs/index.html",
+    "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "field": "labName",
+    "fieldObservedAt": "2026-10-07T22:55:23+00:00",
+    "fieldProofSha256": "74e71f60f921a0af88fc88e317f93a36dd967f4d122b021817dc673f57fb7d9d",
+    "reviewedAt": "2026-10-16T05:46:12+00:00",
+    "purpose": "verify_historical_lab_identity",
+    "reason": "The historical official directory card names Space Weather Laboratory and links ips.ucsd.edu. The new IPS scientific page describes the Solar Group at A&A. Check the exact directory reference to assess this relationship and affiliation. Preserve the historical field time and keep identity acceptance pending the actual response review."
+  },
+  "fullHistoricalProof": {
+    "sourceUrl": "https://astro.ucsd.edu/research/labs/index.html",
+    "observedAt": "2026-10-07T22:55:23+00:00",
+    "evidence": "..., and NuStar. PI: Professor Steve Boggs Space Weather Laboratory UC San Diego researchers contribute to space, balloon, and ground-based instrumentation to study solar physics and space weather. This includes radio observatories operated by Nag... | link: space weather -> https://ips.ucsd.edu",
+    "method": "manual_review_official_page_names_lab",
+    "status": "verified"
+  },
+  "actualBindingChecks": {
+    "baselineBytesMatch": true,
+    "fullProofCanonicalHashMatch": true,
+    "literalUrlAndOriginalTimeMatch": true,
+    "pureHelperAdmittedCount": 1,
+    "savedPlanLiveCandidateCount": 1,
+    "savedOfficialCandidateCount": 1,
+    "savedPlanAt": "2026-10-16T05:51:12+00:00",
+    "savedPlanNotExecutedByAudit": true
+  },
+  "actualPlannedCandidate": {
+    "url": "https://astro.ucsd.edu/research/labs/index.html",
+    "labIds": [
+      "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+    ],
+    "kind": "reviewed_official_identity_source_gap",
+    "priority": 2,
+    "purpose": "verify_historical_lab_identity",
+    "reviewedAt": "2026-10-16T05:46:12+00:00",
+    "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "historicalReferenceOnly": true,
+    "notAnAcceptedCanonicalLabUrl": true,
+    "discoveryMechanism": "reviewed_historical_field_source",
+    "maxPageBytes": 2000000,
+    "historicalFieldReference": {
+      "field": "labName",
+      "sourceUrl": "https://astro.ucsd.edu/research/labs/index.html",
+      "observedAt": "2026-10-07T22:55:23+00:00",
+      "fieldProofSha256": "74e71f60f921a0af88fc88e317f93a36dd967f4d122b021817dc673f57fb7d9d"
+    },
+    "label": "reviewed historical official identity source",
+    "reason": "The historical official directory card names Space Weather Laboratory and links ips.ucsd.edu. The new IPS scientific page describes the Solar Group at A&A. Check the exact directory reference to assess this relationship and affiliation. Preserve the historical field time and keep identity acceptance pending the actual response review.",
+    "availability": "not_captured",
+    "requiresLiveFetch": true
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_local_lab_official_source_gaps.py -v",
+    "actualRun": true,
+    "testsRun": 13,
+    "failures": 0,
+    "errors": 0,
+    "durationSeconds": 0.108,
+    "exitCode": 0,
+    "networkRequests": 0,
+    "fixtureIsolation": "Temporary test OUT/CACHE/ROOT; coordination_ready mocked false; fixtures cleaned. No actual worktree plan/receipt/raw/packet or collector/shared state writes."
+  },
+  "sourceReferences": [
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 172,
+      "definition": "reviewed_official_source_gaps",
+      "finding": "Curated-only admission; actual baseline bytes pinned before evidence lookup."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 181,
+      "definition": "reviewed_official_source_gaps.refused",
+      "finding": "Checks exact target and same-origin robots prior explicit refusal, including top-level attemptHistory; cached robot rules are also applied in plan."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 190,
+      "definition": "reviewed_official_source_gaps.validation",
+      "finding": "Binds baseline/lab/allowed field/purpose/review timestamp and literal HTTPS official URL; rejects userinfo/nonstandardport/fragments/auth paths."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 203,
+      "definition": "reviewed_official_source_gaps.proof",
+      "finding": "Exact sourceUrl+original observedAt+canonical SHA256 of complete original proof; no partial proof substitute."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 207,
+      "definition": "reviewed_official_source_gaps.result",
+      "finding": "Constructs a new historical-reference-only candidate; fixed2MB cap, no inheritedsourceId/pageproof/cap override or identity acceptance."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 269,
+      "definition": "plan",
+      "finding": "Adds reviewed official candidates through existing dedupe/availability/robots logic; no direct fetch."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 361,
+      "definition": "plan.availability",
+      "finding": "Existing success reused/pending waits; only uncaptured or genuinely metadata-only retained historical reference can request later."
+    },
+    {
+      "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "line": 518,
+      "definition": "execute",
+      "finding": "AST unchanged vs641: exact pins/process/sharedgate guards and fetch lifecycle preserved."
+    }
+  ],
+  "findings": [],
+  "limits": [
+    "This admits only one reviewed historical official URL as a finite public check; original2026-10-07 evidence remains historical. It does not claim the page was newly requested or its modern identity/science accepted.",
+    "No network verification performed; future actual request must pass current exactpins/process/shared-v2/robots/TLS/Retry-After checks.",
+    "Only13focused tests run here; parent owns full suite."
+  ],
+  "preservedBoundaries": [
+    "Defaultpage2000000/robots300000 cap; reviewed entry cannot inject8MB or observationOnly.",
+    "No source retiming/current sourceId or pageRequest proof synthesized.",
+    "Explicit target/robots auth/challenge/refusal and cached robots rules retained.",
+    "Raw/packet/hydrate identity gates unchanged; no canonical/root rewrite or alias."
+  ]
+}

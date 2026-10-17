@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:58:03+00:00",
+  "verdict": "primary_evidence_supports_two_distinct_labs_requires_finite_pair_aware_guard",
+  "currentHandoff": {
+    "path": "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-reviewed-lab-handoff.json",
+    "sha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "generatedAt": "2026-10-16T04:46:40+00:00",
+    "schemaVersion": 1,
+    "recordCount": 16,
+    "sourceManifestCount": 28,
+    "fieldProofInventoryCount": 100,
+    "collectionState": "reviewed_incremental",
+    "isFinalExport": false,
+    "queueCheckpointAt": "2026-10-16T04:46:28+00:00",
+    "queueStates": {
+      "done": 4396,
+      "unresolved": 708,
+      "scope_excluded": 303,
+      "retained_prior_evidence": 1859,
+      "pending": 10899
+    },
+    "servedAtlasModified": false,
+    "servedAtlasSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e"
+  },
+  "decisions": {
+    "path": "/tmp/ucsd-research-20261016/data/ucsd/coverage-20261016-decisions.json",
+    "sha256": "780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1",
+    "hashBindingMatches": true,
+    "schemaVersion": 1,
+    "topLevelEntityKeys": "labs keyed by URL; sharedEntities child objects explicitly keyed by stableLabId",
+    "changedURLKeys": [
+      "https://www.ucsdrobotics.org/"
+    ],
+    "newAction": "accept_shared_entities",
+    "parentSharedDecision": {
+      "action": "accept_shared_entities",
+      "reason": "Actual official profile says he directs two distinct research laboratories; the homepage names and separately describes both, then states that the two labs collaborate. Separate source-confirmed entities share this resource. No unsupported PI or professor-ID match is introduced.",
+      "sharingGroupId": "ucsd-shared-homepage-802bc4f0642435",
+      "sharingEvidence": [
+        {
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "reviewed_distinct_named_labs_in_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+          "status": "verified"
+        }
+      ],
+      "sharedEntities": [
+        {
+          "stableLabId": "ucsd-live-lab-802bc4f0642435",
+          "name": "Flow Control Lab",
+          "reason": "The official Jacobs profile names this lab and the shared homepage describes it separately from its collaborating lab. Keep separate identities; an identical homepage is not an identity merge. PI identity remains unresolved pending an explicit reviewed leadership association.",
+          "identityEvidence": [
+            {
+              "sourceUrl": "https://www.ucsdrobotics.org/",
+              "observedAt": "2026-10-16T01:08:35+00:00",
+              "method": "separately_named_lab_on_shared_homepage",
+              "evidence": "The UCSD Flow Control Lab , founded in 1998",
+              "status": "verified"
+            }
+          ],
+          "institutionEvidence": [
+            {
+              "sourceUrl": "https://www.ucsdrobotics.org/",
+              "observedAt": "2026-10-16T01:08:35+00:00",
+              "method": "explicit_ucsd_affiliation_on_shared_homepage",
+              "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+              "status": "verified"
+            }
+          ],
+          "department": "Mechanical & Aerospace Engineering",
+          "departmentEvidence": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+              "observedAt": "2026-10-16T01:08:32+00:00",
+              "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+              "evidence": "Thomas Bewley Professor, MAE",
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "stableLabId": "ucsd-live-lab-7df54236890322",
+          "name": "Coordinated Robotics Lab",
+          "reason": "The official Jacobs profile names this lab and the shared homepage describes it separately from its collaborating lab. Keep separate identities; an identical homepage is not an identity merge. PI identity remains unresolved pending an explicit reviewed leadership association.",
+          "identityEvidence": [
+            {
+              "sourceUrl": "https://www.ucsdrobotics.org/",
+              "observedAt": "2026-10-16T01:08:35+00:00",
+              "method": "separately_named_lab_on_shared_homepage",
+              "evidence": "The UCSD Coordinated Robotics Lab , founded in 2004",
+              "status": "verified"
+            }
+          ],
+          "institutionEvidence": [
+            {
+              "sourceUrl": "https://www.ucsdrobotics.org/",
+              "observedAt": "2026-10-16T01:08:35+00:00",
+              "method": "explicit_ucsd_affiliation_on_shared_homepage",
+              "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+              "status": "verified"
+            }
+          ],
+          "department": "Mechanical & Aerospace Engineering",
+          "departmentEvidence": [
+            {
+              "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+              "observedAt": "2026-10-16T01:08:32+00:00",
+              "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+              "evidence": "Thomas Bewley Professor, MAE",
+              "status": "verified"
+            }
+          ]
+        }
+      ]
+    },
+    "generatedAtUnchangedNotNewReviewDate": "2026-10-16T02:28:26.215010+00:00"
+  },
+  "comparisonFrozen14": {
+    "path": "data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-reviewed-lab-handoff-60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155.json",
+    "sha256": "60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155",
+    "old14RecordsExactlyUnchanged": true,
+    "old26SourceEntriesExactlyUnchanged": true,
+    "old26RawHashesAndQueueTimesRechecked": true,
+    "aliasesExactlyUnchanged": true,
+    "updatesExactlyUnchanged": true,
+    "ignoredAliases": 30,
+    "ignoredUpdates": 8,
+    "newStableIds": [
+      "ucsd-live-lab-7df54236890322",
+      "ucsd-live-lab-802bc4f0642435"
+    ],
+    "removedOldIds": [],
+    "newManifestCaptures": 2,
+    "allOtherDecisionsExactlyUnchanged": true
+  },
+  "newEntities": [
+    {
+      "labId": "ucsd-live-lab-802bc4f0642435",
+      "labName": "Flow Control Lab",
+      "labWebsiteUrl": "https://www.ucsdrobotics.org/",
+      "entityBindingKey": {
+        "parentDecisionURL": "https://www.ucsdrobotics.org/",
+        "stableLabId": "ucsd-live-lab-802bc4f0642435"
+      },
+      "explicitNestedDecision": {
+        "stableLabId": "ucsd-live-lab-802bc4f0642435",
+        "name": "Flow Control Lab",
+        "reason": "The official Jacobs profile names this lab and the shared homepage describes it separately from its collaborating lab. Keep separate identities; an identical homepage is not an identity merge. PI identity remains unresolved pending an explicit reviewed leadership association.",
+        "identityEvidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "separately_named_lab_on_shared_homepage",
+            "evidence": "The UCSD Flow Control Lab , founded in 1998",
+            "status": "verified"
+          }
+        ],
+        "institutionEvidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "explicit_ucsd_affiliation_on_shared_homepage",
+            "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+            "status": "verified"
+          }
+        ],
+        "department": "Mechanical & Aerospace Engineering",
+        "departmentEvidence": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+            "observedAt": "2026-10-16T01:08:32+00:00",
+            "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+            "evidence": "Thomas Bewley Professor, MAE",
+            "status": "verified"
+          }
+        ]
+      },
+      "websiteSharing": {
+        "kind": "distinct_named_labs",
+        "groupId": "ucsd-shared-homepage-802bc4f0642435",
+        "memberLabIds": [
+          "ucsd-live-lab-7df54236890322",
+          "ucsd-live-lab-802bc4f0642435"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "reviewed_distinct_named_labs_in_shared_homepage",
+            "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+            "status": "verified"
+          }
+        ]
+      },
+      "fieldProofChecks": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "observedAt": "2026-10-16T01:08:32+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "Flow Control Lab Stabilization, forecasting, and optimization of multiscale PDE systems. Applications include unsteady aerodynamics, electronics cooling, contaminant plumes, hurricanes, and ocean currents. Adaptive observation with UAVs and AUVs. Search and Rescue. Derivative-free optimization and computational interconnect design leveraging n-dimensional sphere packings. Coordinated Robotics Lab Design and stabilization of highly agile mobile robots.",
+          "status": "verified",
+          "redirectEvidence": [],
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "websiteSharing",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "reviewed_distinct_named_labs_in_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "observedAt": "2026-10-16T01:08:32+00:00",
+          "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+          "evidence": "Thomas Bewley Professor, MAE",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "explicit_ucsd_affiliation_on_shared_homepage",
+          "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        }
+      ],
+      "wholeLabResearchExactQuote": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems.",
+      "researchScopeZh": "流体系统分析、估计、预测、优化与控制；原文明示高级分析工具和数值方法。不能将另一个实验室的机器人制作技术并入。",
+      "baselineOrOld14IdCollision": false,
+      "baselineOrOld14URLCollisions": [],
+      "principalInvestigatorPreserved": "Not found",
+      "principalInvestigatorProfileUrlPreserved": "Not found",
+      "professorIdsPreserved": [],
+      "schemaValidationPassed": true,
+      "reviewedAt": "2026-10-16T04:58:03+00:00"
+    },
+    {
+      "labId": "ucsd-live-lab-7df54236890322",
+      "labName": "Coordinated Robotics Lab",
+      "labWebsiteUrl": "https://www.ucsdrobotics.org/",
+      "entityBindingKey": {
+        "parentDecisionURL": "https://www.ucsdrobotics.org/",
+        "stableLabId": "ucsd-live-lab-7df54236890322"
+      },
+      "explicitNestedDecision": {
+        "stableLabId": "ucsd-live-lab-7df54236890322",
+        "name": "Coordinated Robotics Lab",
+        "reason": "The official Jacobs profile names this lab and the shared homepage describes it separately from its collaborating lab. Keep separate identities; an identical homepage is not an identity merge. PI identity remains unresolved pending an explicit reviewed leadership association.",
+        "identityEvidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "separately_named_lab_on_shared_homepage",
+            "evidence": "The UCSD Coordinated Robotics Lab , founded in 2004",
+            "status": "verified"
+          }
+        ],
+        "institutionEvidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "explicit_ucsd_affiliation_on_shared_homepage",
+            "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+            "status": "verified"
+          }
+        ],
+        "department": "Mechanical & Aerospace Engineering",
+        "departmentEvidence": [
+          {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+            "observedAt": "2026-10-16T01:08:32+00:00",
+            "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+            "evidence": "Thomas Bewley Professor, MAE",
+            "status": "verified"
+          }
+        ]
+      },
+      "websiteSharing": {
+        "kind": "distinct_named_labs",
+        "groupId": "ucsd-shared-homepage-802bc4f0642435",
+        "memberLabIds": [
+          "ucsd-live-lab-7df54236890322",
+          "ucsd-live-lab-802bc4f0642435"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "reviewed_distinct_named_labs_in_shared_homepage",
+            "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+            "status": "verified"
+          }
+        ]
+      },
+      "fieldProofChecks": [
+        {
+          "field": "labName",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Coordinated Robotics Lab , founded in 2004",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "labWebsiteUrl",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "observedAt": "2026-10-16T01:08:32+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "Flow Control Lab Stabilization, forecasting, and optimization of multiscale PDE systems. Applications include unsteady aerodynamics, electronics cooling, contaminant plumes, hurricanes, and ocean currents. Adaptive observation with UAVs and AUVs. Search and Rescue. Derivative-free optimization and computational interconnect design leveraging n-dimensional sphere packings. Coordinated Robotics Lab Design and stabilization of highly agile mobile robots.",
+          "status": "verified",
+          "redirectEvidence": [],
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "websiteSharing",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "reviewed_distinct_named_labs_in_shared_homepage",
+          "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "department",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "observedAt": "2026-10-16T01:08:32+00:00",
+          "method": "explicit_MAE_unit_in_official_Jacobs_profile",
+          "evidence": "Thomas Bewley Professor, MAE",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "institution",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "explicit_ucsd_affiliation_on_shared_homepage",
+          "evidence": "Welcome to the Flow Control & Coordinated Robotics Labs in the Jacobs School of Engineering at UC San Diego in sunny La Jolla, CA.",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Coordinated Robotics Lab , founded in 2004",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        },
+        {
+          "field": "recordSubtype",
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "method": "separately_named_lab_on_shared_homepage",
+          "evidence": "The UCSD Coordinated Robotics Lab , founded in 2004",
+          "status": "verified",
+          "exactPrimaryVisibleTextMatch": true
+        }
+      ],
+      "wholeLabResearchExactQuote": "The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing.",
+      "researchScopeZh": "低成本机器人车辆的机动性与协调；原文明示动力学模型、反馈控制及手机级/IoT、定制PCB、3D打印原型。不能将流体系统目标并入。",
+      "baselineOrOld14IdCollision": false,
+      "baselineOrOld14URLCollisions": [],
+      "principalInvestigatorPreserved": "Not found",
+      "principalInvestigatorProfileUrlPreserved": "Not found",
+      "professorIdsPreserved": [],
+      "schemaValidationPassed": true,
+      "reviewedAt": "2026-10-16T04:58:03+00:00"
+    }
+  ],
+  "newPrimarySources": [
+    {
+      "sourceUrl": "https://www.ucsdrobotics.org/",
+      "requestedUrl": "https://www.ucsdrobotics.org/",
+      "observedAt": "2026-10-16T01:08:35+00:00",
+      "bodySha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/802bc4f0642435fe5934c1d2786f67195d160535e91b8588289696c85f8375c4.html",
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://www.ucsdrobotics.org/",
+        "fetch": {
+          "sourceUrl": "https://www.ucsdrobotics.org/",
+          "observedAt": "2026-10-16T01:08:35+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://www.ucsdrobotics.org/robots.txt",
+            "observedAt": "2026-10-16T01:08:34+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112914.107121,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://www.ucsdrobotics.org/",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+          "retrievedEpoch": 1792112915.162933
+        }
+      },
+      "byteCount": 370279,
+      "fullPrimaryVisibleTextRead": true,
+      "visibleTextCharacters": 2783,
+      "literalLabAnchors": [
+        {
+          "label": "UCSD Flow Control & Coordinated Robotics Labs",
+          "href": "https://www.ucsdrobotics.org"
+        },
+        {
+          "label": "",
+          "href": "https://www.ucsdrobotics.org"
+        },
+        {
+          "label": "UCSD Flow Control Lab",
+          "href": "https://www.ucsdrobotics.org/flow-control-lab"
+        },
+        {
+          "label": "UCSD Coordinated Robotics Lab",
+          "href": "https://www.ucsdrobotics.org/coordinated-robotics-lab"
+        },
+        {
+          "label": "Click here for publications",
+          "href": "https://www.ucsdrobotics.org/publications"
+        },
+        {
+          "label": "teaching and outreach",
+          "href": "https://www.ucsdrobotics.org/teaching"
+        },
+        {
+          "label": "Numerical Renaissance: simulation, optimization, & control",
+          "href": "https://www.ucsdrobotics.org/numerical-renaissance"
+        },
+        {
+          "label": "Renaissance Robotics: agile design, coordinated response, & multithreaded behavior",
+          "href": "https://www.ucsdrobotics.org/renaissance-robotics"
+        }
+      ],
+      "actualReviewedAt": "2026-10-16T04:58:03+00:00"
+    },
+    {
+      "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+      "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+      "observedAt": "2026-10-16T01:08:32+00:00",
+      "bodySha256": "7e99fe9808e5db5c8a352d65482a160fc147d24510dce430b35fd21a4f38d1bd",
+      "cachePath": "/private/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2d6a8b61096a1e3b4460cc170587db660e56f3a1e416afc121f02fc5889b7e2f.html",
+      "rawHashVerified": true,
+      "actualQueueCapture": {
+        "queueItemKey": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+        "fetch": {
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "observedAt": "2026-10-16T01:08:32+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://jacobsschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:40+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112260.9003782,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=64",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "sha256": "7e99fe9808e5db5c8a352d65482a160fc147d24510dce430b35fd21a4f38d1bd",
+          "retrievedEpoch": 1792112912.827729
+        }
+      },
+      "byteCount": 46233,
+      "fullPrimaryVisibleTextRead": true,
+      "visibleTextCharacters": 1677,
+      "literalLabAnchors": [
+        {
+          "label": "Flow Control Lab",
+          "href": "https://www.ucsdrobotics.org"
+        },
+        {
+          "label": "Coordinated Robotics Lab",
+          "href": "https://www.ucsdrobotics.org"
+        },
+        {
+          "label": "research laboratories",
+          "href": "https://www.ucsdrobotics.org"
+        },
+        {
+          "label": "Website",
+          "href": "https://www.ucsdrobotics.org/"
+        }
+      ],
+      "actualReviewedAt": "2026-10-16T04:58:03+00:00"
+    }
+  ],
+  "sharingBoundary": {
+    "exactURL": "https://www.ucsdrobotics.org/",
+    "groupId": "ucsd-shared-homepage-802bc4f0642435",
+    "memberIds": [
+      "ucsd-live-lab-7df54236890322",
+      "ucsd-live-lab-802bc4f0642435"
+    ],
+    "batchEntityCount": 16,
+    "batchUniqueNormalizedURLCount": 15,
+    "onlyDuplicateWithinBatchIsThisPair": true,
+    "bothSharingObjectsAndFieldsExactlyEqualParentEvidence": true,
+    "sharedResearch": "The two labs collaborate on robotic sensor swarms for hurricane measurement and contaminant plume detection/estimation/forecasting; retain the separately described individual lab scopes.",
+    "primaryExplicitTwoLabQuote": "He directs two distinct research laboratories .",
+    "sourceLocality": "Both named anchors and the two-labs sentence occur in the same official Thomas Bewley Jacobs profile, while the lab root separately names and describes both.",
+    "separateNamedAnchorsNotFetched": [
+      "https://www.ucsdrobotics.org/flow-control-lab",
+      "https://www.ucsdrobotics.org/coordinated-robotics-lab"
+    ],
+    "accessBoundary": "Public homepage only; its publication PDFs require signup/login, neither accessed."
+  },
+  "baselineAndProfessorBoundary": {
+    "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "newIdOrBaselineLabURLCollisions": [],
+    "schemaAndCombinedReferenceValidationPassed": true,
+    "possibleExistingProfessorRowsNotLinked": [
+      {
+        "id": "ucsd-faculty-thomas-bewley",
+        "name": "Thomas Bewley",
+        "department": "Computer Science and Engineering",
+        "officialProfileUrl": "https://cse.ucsd.edu/people/faculty-profiles/thomas-bewley"
+      },
+      {
+        "id": "ucsd-mechanical-aerospace-engineering-t-bewley",
+        "name": "T. Bewley",
+        "department": "Mechanical & Aerospace Engineering",
+        "officialProfileUrl": "https://catalog.ucsd.edu/faculty/MAE.html"
+      }
+    ],
+    "reason": "Primary Jacobs profile explicitly states Professor, MAE and links/directs two labs, supporting reviewed MAE association. Baseline full-name Bewley row is CSE-labelled and another row is T. Bewley/MAE. No professor ID is inferred or people data overwritten; PI/profile intentionally Not found."
+  },
+  "validation": {
+    "allCachedRawHashesAndOriginalQueueTuplesVerified": 28,
+    "newFullPrimaryVisibleBodiesRead": 2,
+    "newExactFieldProofInstancesVerified": 14,
+    "old86SemanticProofsReusedAfterIdenticalRecordsAndHashes": "REVIEWED-14-ADMISSION-QA.json",
+    "fieldProofInventoryCount100NotClaimedAs16ImporterLoad": true,
+    "no16ImporterLoadOrAdmissionPerformed": true
+  },
+  "minimumGuardRecommendations": [
+    {
+      "gate": "Exact frozen16 artifact scope",
+      "requirement": "Pin the reviewed 49c5aa... handoff and 780a47... decisions in new approved snapshots. Require exact16 IDs/count, schema1, baseline868/hash, reviewed_incremental/non-final/servedAtlasModified=false; retain old snapshots and completed-export gate."
+    },
+    {
+      "gate": "Explicit nested entity bindings",
+      "requirement": "Keep ordinary accept processing unchanged. Recognize accept_shared_entities only at the exact reviewed URL/groupId. Flatten sharedEntities with (parent URL, stableLabId), require exact two IDs/names/reasons and nonempty unique per-entity identityEvidence, and require accepted ID set exactly frozen16. No synthetic source URLs or fragment identities."
+    },
+    {
+      "gate": "Finite URL collision exception",
+      "requirement": "Continue rejecting every baseline URL collision unconditionally. Allow only the duplicate among these two exact new-batch IDs at https://www.ucsdrobotics.org/ and fixed groupId after all pair checks. No unrelated pair, third member, alternate alias or other URL gets an exception."
+    },
+    {
+      "gate": "Complete identical websiteSharing",
+      "requirement": "Both records must carry identical fixed kind/groupId/exact unique two-member set/evidence. Require parent sharingEvidence == each websiteSharing.evidence == each fieldEvidence.websiteSharing; each own distinct named identityEvidence must equal that record fieldEvidence.labName. Reject one-sided/incomplete sharing, swapped ID/name or broad shared prose used instead of own identity."
+    },
+    {
+      "gate": "Keep actual source validation",
+      "requirement": "Keep safe cache paths/filename, actual requested/final URL, original observedAt, body SHA and exact quotes for all28 sources/100 field-proof instances. Validate the extra parent/top-level sharing proof arrays too. Shared-root tuple is 01:08:35/a961af... and Jacobs tuple 01:08:32/7e99fe...; these are old captures newly included, not new wire observations."
+    },
+    {
+      "gate": "No person, alias or acceptance inference",
+      "requirement": "For this pair preserve PI/profile Not found and professorIds=[]; do not adopt the inconsistent baseline professor CSE department. Retain primary-source MAE/UCSD statements, ignore30 aliases/8 updates and preserve all13 mismatch gates."
+    },
+    {
+      "gate": "Append only2 after explicit authorization",
+      "requirement": "After guard/tests approval append only these2 IDs with existing append-only prepare. Preserve old882 raw/packet bytes, order, IDs, dates and provenance. Baseline868+16 means884 records. Shared source provenance may match in both packets, but each identity/scientific summary must remain separately named and scoped."
+    },
+    {
+      "gate": "Entity count distinct from URL count",
+      "requirement": "Reviewed batch contains16 entities but15 unique normalized lab URLs. Two labs share one web resource; do not claim16 unique endpoints or resolve a URL-only faculty link to an arbitrary member."
+    }
+  ],
+  "requiredFocusedTests": [
+    "Positive exact frozen pair accepted; all other duplicate URL groups rejected.",
+    "Wrong pins/count/ID, missing or extra member, third member or wrong URL/groupId fails closed.",
+    "Missing own identity, swapped ID/name, different sharing evidence, incomplete membership or unilateral websiteSharing fails.",
+    "Stale source time/hash, altered raw body, missing actual queue capture or nonliteral parent sharing proof fails.",
+    "Baseline URL collision remains a hard failure, including with a sharing object.",
+    "PI/professor links silently added or alias/update application fails.",
+    "Append-only old882 order/bytes/dates preserved and exactly2 appended."
+  ],
+  "currentStable14ImporterObserved": {
+    "handoffPin": "60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155",
+    "decisionPin": "f472eafcf8619c081550b37ba22a39f38d19972cfe6d23369322f5e3a922ab83",
+    "frozenIds": 14,
+    "changedByThisReview": false
+  },
+  "materialSourceDefects": [],
+  "networkRequestsMade": 0,
+  "recordsChanged": 0,
+  "packetsChanged": 0,
+  "importerChanged": 0,
+  "collectorChanged": 0,
+  "sourceArtifactHashesStableAtCompletion": true
+}

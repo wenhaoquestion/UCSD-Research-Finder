@@ -1,0 +1,89 @@
+{
+  "labId": "ucsd-physics-biological-physics",
+  "status": "partial",
+  "summaryZh": "目标页面为 UCSD 生物物理研究领域与多个教师实验室的总览，研究生命系统组织和功能的物理原理；它未确认一个独立的 UCSD Biological Physics Lab。",
+  "researchQuestions": [],
+  "topics": [],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-0985a993b50f1d47",
+      "quote": "UCSD Biological Physics Physics of Life",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-0985a993b50f1d47",
+      "quote": "At UCSD Biophysics",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-0985a993b50f1d47",
+      "quote": "UCSD Biological Physics",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "mismatch",
+    "entityType": "research_field_directory",
+    "reason": "页面是 Physics of Life 研究领域及多个教师实验室的目录，列有 Hwa、Jun、Kleinfeld 等组；不接受为一个独立 UCSD Biological Physics Lab。 后续来源复核：复读已存Physics of Life页面，它列出多个教师实验室；领域目录分类不变，本轮无新请求。",
+    "acceptanceStatus": "rejected_non_lab",
+    "hasUnresolvedMismatch": true,
+    "observedPageName": "UCSD Biological Physics",
+    "observedPageType": "research_field_directory",
+    "silentIdMigrationAllowed": false,
+    "proposedCorrections": [
+      {
+        "field": "entityClassification",
+        "value": "research_field_directory",
+        "status": "candidate_only_not_applied"
+      }
+    ],
+    "requiresLiveIdentityFollowup": false,
+    "followupReviewedAt": "2026-10-16T02:17:52+00:00",
+    "followupFindings": [
+      {
+        "targetUrl": "https://biophysics.physics.ucsd.edu",
+        "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+        "reviewedAt": "2026-10-16T02:17:52+00:00",
+        "actualPageRequestMade": false,
+        "liveCheckedAt": null,
+        "sourceObservedAt": "2026-10-16T01:05:29+00:00",
+        "sourceId": "src-0985a993b50f1d47",
+        "checkOrigin": "reused_collection_capture",
+        "originalDestinationRechecked": false,
+        "identityAccepted": false,
+        "findingZh": "复读已存Physics of Life页面，它列出多个教师实验室；领域目录分类不变，本轮无新请求。"
+      }
+    ],
+    "followupConclusion": "复读已存Physics of Life页面，它列出多个教师实验室；领域目录分类不变，本轮无新请求。",
+    "liveCheckedAt": null,
+    "liveCheckedAtScope": null,
+    "originalDestinationRechecked": false
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "不能将目录中其他实验室的研究合并为本条目。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "复读已存Physics of Life页面，它列出多个教师实验室；领域目录分类不变，本轮无新请求。"
+  ],
+  "blockers": [
+    "destination_is_field_directory_not_lab",
+    "页面是 Physics of Life 研究领域及多个教师实验室的目录，列有 Hwa、Jun、Kleinfeld 等组；不接受为一个独立 UCSD Biological Physics Lab。"
+  ],
+  "reviewedAt": "2026-10-16T02:17:52+00:00",
+  "researchContentSupport": {
+    "status": "not_applicable_to_lab",
+    "scope": "The observed resource is explicitly not an independent lab/group."
+  },
+  "previousReviewedAt": "2026-10-16T02:08:49+00:00"
+}

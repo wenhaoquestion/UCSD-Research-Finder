@@ -1,0 +1,99 @@
+{
+  "labId": "ucsd-kastner-group",
+  "status": "supported",
+  "summaryZh": "Kastner 研究组已捕获的新闻介绍了将退役手机主板组成通用云计算集群的研究，以提供低成本、低碳算力。该项目由 Ryan Kastner 和 Pat Pannuto 在 UCSD 共同领导；此总结限于该直接描述的项目，未据新闻标题推断整个研究组的全部方向。",
+  "researchQuestions": [],
+  "topics": [
+    "可持续计算",
+    "手机再利用",
+    "云计算"
+  ],
+  "methods": [
+    "手机主板集群构建"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-ab6dbbc216ee46a6",
+      "quote": "The phone’s motherboards are removed, connected into clusters, and redeployed as a general-purpose computing platform.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-ab6dbbc216ee46a6",
+      "quote": "At UC San Diego, the project is led by computer science faculty members Ryan Kastner and Pat Pannuto",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-ab6dbbc216ee46a6",
+      "quote": "At UC San Diego, the project is led by computer science faculty members Ryan Kastner and Pat Pannuto",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-ab6dbbc216ee46a6",
+      "quote": "Kastner Research Group | KRG @ UC San Diego",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "research_group",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "正文或匹配官方目录明确报告 UCSD 关联。"
+  },
+  "uncertainty": [
+    "研究概述依据首页一项项目新闻，缺少完整研究组总览。",
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+    "研究问题待核（限本轮已审阅材料）：当前packet是按日期排列的研究组新闻/毕业与项目报道；已读开头与尾段均是新闻语境，没有局部整体科研疑问可明示翻译，不从学生论文/报道创造问题。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+  "previousReviewedAt": "2026-10-16T01:51:49+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:59:35+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "当前packet是按日期排列的研究组新闻/毕业与项目报道；已读开头与尾段均是新闻语境，没有局部整体科研疑问可明示翻译，不从学生论文/报道创造问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-ab6dbbc216ee46a6",
+        "sourceUrl": "https://kastner.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:04:58+00:00",
+        "bodySha256": "021948941ed5a56233056815a4ee5414b34d49a1331861c43fbc8df6bf9cbd04",
+        "textSha256": "ca49c79d18699f3509a1fe0ec90ae0805b1e6af750d83ba3885a09b8b16dc7e8",
+        "textCharacters": 18000,
+        "disposition": "news_index_local_scope_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            6200
+          ],
+          [
+            16200,
+            18000
+          ]
+        ],
+        "reasonZh": "读取新闻索引前6200及尾1800字符；中段未读，不声称全文科学审阅。已读条目为项目/成员新闻，无整体研究问题。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

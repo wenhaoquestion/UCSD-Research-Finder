@@ -1,0 +1,2143 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:37:28+00:00",
+  "metadataOnly": true,
+  "scope": "remaining-related-request-provenance-review-inventory.json indexes0..11 only; original listed HTTP route-scope review, no entity/research admission",
+  "networkRequestsMade": 0,
+  "reviewedCount": 12,
+  "candidateCount": 12,
+  "uniqueOriginalURICount": 12,
+  "pageFetchPermissionsGrantedWithoutRobots": 0,
+  "hardAdmissionBlockerCount": 0,
+  "existingRelatedHTTPSStateCounts": {
+    "robots_unavailable": 1,
+    "ok": 9,
+    "http_error": 2
+  },
+  "existingEntityAcceptanceCounts": {
+    "accepted_lab_group": 8,
+    "provisional_or_unresolved": 4
+  },
+  "originalHTTPRequestsFoundInCurrentLedgers": 0,
+  "originalHTTPPrechecksFoundInCurrentLedgers": 0,
+  "mismatchDecisionCount": 13,
+  "mismatchIntersection": [],
+  "inputHashes": {
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/remaining-related-request-provenance-review-inventory.json": "c27b6f1d7953813c9e5a2b9fb78032000c5ff0a52a6ecfb041f3413a054d51d4",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/manifest.json": "8147d9a62f051fa1f0e836932f7d5bb5ae78eb0d5af78ab6ab74357563608eaf",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/identity-decisions.json": "4679d8fdce45060b170e47a821e1ea1f4b6ffebffbb9815e82c9d5c97c369ee1",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/url-verification.jsonl": "30e0eff881a0eefe9dbfb29b559cb19ffef2b8d8408a0275b1694e98867970ac",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/summaries.jsonl": "40a526e4890f193228133f2cd73d90cdaac26364ffede6ac216ec515cdd8ac04",
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": "0916e261075f0102f8a504667e7299969d2249d9ff3f431c8008bab3c3d5c27d",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json": "1daeca1e92e076a394d7e10b8e3a88c3c77c84b2d38ed3af1d22f10b6e9387f0",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu.json": "c0e555ff2f56362b0ce230d5bd4d5d5a2693ecdf053283b8b8fd501adc08678f",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu.json": "0cb8e21d465b7cecf28a99fd048165b3ae6af959291e06e2e89f08818a6e40a5",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-bennett-lab.json": "86f13db982b3c09932c5b936af573c8c6e789b77e1062c9dea533fef3d8bb6a4",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-bennett-lab.json": "fa93e9d259830ee980d5067405163144563db60e90985259d79ff6c4519bc774",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-bier.json": "4cdfa68778a8c199f22049a0706ffee9cc788829a8fdb751b19601007c382a5e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-bier.json": "ae4c8d8b147c854ea493ec1784d2f34e4b10cc37c85b9c5762ae10d2f2e74a6d",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-firtel.json": "960ff1183096e07a5496f763d0e133e9d478d714cf02f55a1c7aece068fa4542",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-firtel.json": "3e482a3d5577cb942e99d27576eae4630fd44ef805eab598243dd151750e03fa",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-goldrath.json": "2bc33d95e34b40107491363d7b51d870d4fa469d1919cce85c3928e41f08f2a8",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-goldrath.json": "860014e284947c14a6b83a260b823cbf9a0cab747fea9c37a73ab49d5f23cdb4",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-hampton.json": "f43025975f5ba6318e44d0cebd21d397b105a4d38e7e86a590b81dd210f108f2",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-hampton.json": "416fde01d5e662acabfaeca998913d6d45a41dceffdd653cf0988668d461166e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-kiger.json": "a955591373a1028890b4181cdaee530e4640b15ba4e14d2ec331012ee5b415b1",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-kiger.json": "0ab55c17af5466d3eb840d9bdc22aa33f687659118e71eb532eebbb9b89c66d1",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-murre.json": "028a6f31b86e28d211dae9cd1f17540e4e920e6b4aec47d3945196ca5578b125",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-murre.json": "c8e90867d5694a324430ccff6d8e2e226b0f394103f098b5f5729aa9b1c19c43",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-spitzer.json": "431dbee13223e4d0c66479ee1b19e2a2718e46361c04c48803d225b515b6aa0f",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-spitzer.json": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-subramani.json": "e53c447d42859a6f71c718c8b29fe4651ee5739576ed333b289aaea46cdc8dcd",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-subramani.json": "593061fbef3cef37b5c4f0229f93cdf677640e46cb77ec82daad18462672ec04",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-yanofsky.json": "d6c57e878097d634cb60c738b31d0e6dd12bf38d7fc6d1c66fe6ecc93a245d39",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-yanofsky.json": "ef4778f8272245e964dbfdf32b57f4ccff205a20b688d4c7decd3adf30e58594",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-physics-research-site-david-kleinfeld.json": "e1a4f82842e17e0161e12629de460f8bcb922a9985fa7617e04f683afb88fd2a",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-physics-research-site-david-kleinfeld.json": "811f9059bc10263537f3fef1260488f1459baf13ce455e76e8719d33ce88b726"
+  },
+  "scopeDecisionZh": "12 条均可列为一次原 baseline literal HTTP 的正常公共只读路由核验 candidate；这不是原页面读取许可或实体接受。HTTP-origin robots 必须先满足现有策略。Sung 的 HTTPS robots TLS35 三次失败属于保留的既有阻塞，不允许禁用TLS、重置计数或借HTTP绕过后续HTTPS失败；若HTTP原点的robots也不能满足则只记录前置结果并停止。其余已见404、占位、meta/frames或身份不足不禁止观察既存原地址，但均继续约束后续身份/科学接受。",
+  "safetyScope": {
+    "initialURIsOnly": [
+      "http://sung-lab.eng.ucsd.edu/",
+      "http://labs.biology.ucsd.edu/bennett",
+      "http://bierlab.ucsd.edu",
+      "http://people.biology.ucsd.edu/firtel",
+      "http://biology.ucsd.edu/labs/goldrath",
+      "http://hamptonlab.ucsd.edu",
+      "http://www.biology.ucsd.edu/labs/kiger",
+      "http://labs.biology.ucsd.edu/murre",
+      "http://www.biology.ucsd.edu/labs/spitzer",
+      "http://www.biology.ucsd.edu/labs/subramani",
+      "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "http://physics.ucsd.edu/neurophysics"
+    ],
+    "boundedRootFetchLifecyclePerURI": 1,
+    "initialOriginalURICount": 12,
+    "notA12WirePromise": "robots and real HTTP redirect hops may create additional gated wires, each under existing caps; no auto-discovery or HTML meta/frame requests.",
+    "preserveHTTPOriginRobots": true,
+    "preserveTLSEveryHTTPSHop": true,
+    "preserveSharedV2Gate": true,
+    "preserve2MBcap": true,
+    "preserveRetryCooldownAndRedirectBudgets": true,
+    "preserve13MismatchAcceptanceGates": true,
+    "acceptIdentityFromHTTP200": false,
+    "assumeHTTPRedirect": false
+  },
+  "uniqueOriginalURIs": [
+    {
+      "uri": "http://sung-lab.eng.ucsd.edu/",
+      "strictRequestKey": [
+        "http",
+        "sung-lab.eng.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "labIds": [
+        "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu"
+      ]
+    },
+    {
+      "uri": "http://labs.biology.ucsd.edu/bennett",
+      "strictRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/bennett",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-bennett-lab"
+      ]
+    },
+    {
+      "uri": "http://bierlab.ucsd.edu",
+      "strictRequestKey": [
+        "http",
+        "bierlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-bier"
+      ]
+    },
+    {
+      "uri": "http://people.biology.ucsd.edu/firtel",
+      "strictRequestKey": [
+        "http",
+        "people.biology.ucsd.edu",
+        null,
+        "/firtel",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-firtel"
+      ]
+    },
+    {
+      "uri": "http://biology.ucsd.edu/labs/goldrath",
+      "strictRequestKey": [
+        "http",
+        "biology.ucsd.edu",
+        null,
+        "/labs/goldrath",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-goldrath"
+      ]
+    },
+    {
+      "uri": "http://hamptonlab.ucsd.edu",
+      "strictRequestKey": [
+        "http",
+        "hamptonlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-hampton"
+      ]
+    },
+    {
+      "uri": "http://www.biology.ucsd.edu/labs/kiger",
+      "strictRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/kiger",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-kiger"
+      ]
+    },
+    {
+      "uri": "http://labs.biology.ucsd.edu/murre",
+      "strictRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/murre",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-murre"
+      ]
+    },
+    {
+      "uri": "http://www.biology.ucsd.edu/labs/spitzer",
+      "strictRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/spitzer",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-spitzer"
+      ]
+    },
+    {
+      "uri": "http://www.biology.ucsd.edu/labs/subramani",
+      "strictRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/subramani",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-subramani"
+      ]
+    },
+    {
+      "uri": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "strictRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/yanofsky/home.html",
+        ""
+      ],
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ]
+    },
+    {
+      "uri": "http://physics.ucsd.edu/neurophysics",
+      "strictRequestKey": [
+        "http",
+        "physics.ucsd.edu",
+        null,
+        "/neurophysics",
+        ""
+      ],
+      "labIds": [
+        "ucsd-physics-research-site-david-kleinfeld"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "inventoryIndex": 0,
+      "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+      "ordinal": 32,
+      "reviewedAt": "2026-10-16T04:37:27+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://sung-lab.eng.ucsd.edu/",
+      "actualRelatedHTTPSRequestURI": "https://sung-lab.eng.ucsd.edu/",
+      "originalHTTPOriginRobotsURI": "http://sung-lab.eng.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "sung-lab.eng.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "sung-lab.eng.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://sung-lab.eng.ucsd.edu/"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu.json",
+        "packetSha256": "c0e555ff2f56362b0ce230d5bd4d5d5a2693ecdf053283b8b8fd501adc08678f",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://sung-lab.eng.ucsd.edu/",
+        "fetch": {
+          "sourceUrl": "https://sung-lab.eng.ucsd.edu/",
+          "observedAt": "2026-10-16T03:49:32+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sung-lab.eng.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:32+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122572.9384031,
+            "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to sung-lab.eng.ucsd.edu:443",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "https://sung-lab.eng.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T00:57:52+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112272.502059,
+                "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to sung-lab.eng.ucsd.edu:443",
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "https://sung-lab.eng.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:22+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122442.594368,
+                "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to sung-lab.eng.ucsd.edu:443",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122502.585554
+              }
+            ],
+            "retryAfterEpoch": 1792122692.931626
+          },
+          "blockedUrl": "https://sung-lab.eng.ucsd.edu/",
+          "retrievedEpoch": 1792122572.9497962
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_access_precheck_only",
+        "matchingCachedSourceMetadata": [],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://sung-lab.eng.ucsd.edu/",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu.json",
+        "recordSha256": "0cb8e21d465b7cecf28a99fd048165b3ae6af959291e06e2e89f08818a6e40a5",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "官方个人页面明确描述其研究并标明 Molecular Bioengineering Laboratory 负责人；Sung Lab 的目的页未捕获。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "UCSD 生物工程官方教师目录列出 Amy Sung 荣休教授。"
+        },
+        "reviewedAt": "2026-10-16T01:45:38+00:00",
+        "uncertainty": [
+          "目的地 robots 获取出现 TLS 错误；实验室别名及现时网站身份尚待直接核实。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable: SSL_ERROR_SYSCALL for sung-lab.eng.ucsd.edu."
+        ]
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "research_group",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_access_precheck_only",
+        "transportStatus": "robots_unavailable",
+        "failureCategory": "tls_error",
+        "blockedUrl": "https://sung-lab.eng.ucsd.edu/",
+        "verificationLimitations": [
+          "仅有访问前置检查，未证明实际请求过页面。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Sung HTTP 根地址。相关 HTTPS 尚未请求页面：robots.txt 三次尝试均为 curl 35 TLS 错误。仅可按原 HTTP 原点执行正常 robots 前置检查；前置规则不满足即停，不重置/抹除 HTTPS 三次失败，不禁用 TLS。后续真实页面若跳 HTTPS 仍正常验证 TLS，失败即保留失败。路由核验不等于接受 Sung 别名或现时网站身份。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "existing_related_HTTPS_origin_robots",
+          "code": "robots_unavailable_tls_error_35",
+          "attempts": 3,
+          "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to sung-lab.eng.ucsd.edu:443",
+          "observedAt": "2026-10-16T03:49:32+00:00",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "HTTP-origin robots must independently satisfy unchanged fetcher policy; otherwise no page request. Existing HTTPS failures/cooldowns/counters stay intact."
+        },
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 1,
+      "labId": "ucsd-biology-topic-lab-bennett-lab",
+      "ordinal": 37,
+      "reviewedAt": "2026-10-16T04:37:27+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://labs.biology.ucsd.edu/bennett",
+      "actualRelatedHTTPSRequestURI": "https://labs.biology.ucsd.edu/bennett",
+      "originalHTTPOriginRobotsURI": "http://labs.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/bennett",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "labs.biology.ucsd.edu",
+        null,
+        "/bennett",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-bennett-lab",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://labs.biology.ucsd.edu/bennett"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-bennett-lab.json",
+        "packetSha256": "86f13db982b3c09932c5b936af573c8c6e789b77e1062c9dea533fef3d8bb6a4",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://labs.biology.ucsd.edu/bennett",
+        "fetch": {
+          "sourceUrl": "https://labs.biology.ucsd.edu/bennett",
+          "observedAt": "2026-10-16T01:03:53+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://labs.biology.ucsd.edu/bennett",
+              "to": "https://labs.biology.ucsd.edu/bennett/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://labs.biology.ucsd.edu/bennett/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+          "retrievedEpoch": 1792112633.900465
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-9e979d00395b0a70",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://labs.biology.ucsd.edu/bennett/",
+            "checkedUrl": "https://labs.biology.ucsd.edu/bennett",
+            "requestedUrl": "https://labs.biology.ucsd.edu/bennett",
+            "queueUrl": "https://labs.biology.ucsd.edu/bennett",
+            "observedAt": "2026-10-16T01:03:53+00:00",
+            "bodySha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/41a8ca51287d04ebd5635566a53c84b687c3378f8aafd4fce0ec39d255360e0b.html",
+            "title": "Bennett Lab",
+            "htmlMetaRefreshes": [
+              {
+                "content": "0; url=http://ebennettlab.com/",
+                "targetUrl": "http://ebennettlab.com/",
+                "isObservedHTTPRedirect": false
+              }
+            ],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/bennett",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:12+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://labs.biology.ucsd.edu/bennett/",
+          "title": "Bennett Lab"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-bennett-lab.json",
+        "recordSha256": "fa93e9d259830ee980d5067405163144563db60e90985259d79ff6c4519bc774",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "原UCSD Bennett根页的实际HTML meta refresh明确指向本次抓取的ebennettlab.com；新页正文明确The Bennett Lab和The Bennett research group及整体研究计划，具名主体对应。HTML跳转提示只用于来源关联，不改写为原根页HTTP重定向或接受规范网址迁移。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "新实验室页没有明确机构隶属正文；不以UCSD域名、邮箱或资助者代替实验室隶属声明。"
+        },
+        "reviewedAt": "2026-10-16T03:23:19+00:00",
+        "uncertainty": [
+          "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Bennett HTTP 地址。相关 HTTPS 根页成功，但根页主要为 HTML meta refresh，既有实验室研究来自已分别审阅的目标页。可独立核验原 HTTP，不能自动执行 HTML meta refresh、补写成 HTTP redirect 或接受规范网址迁移；新根目的页身份仍须另审。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 2,
+      "labId": "ucsd-biology-topic-lab-bier",
+      "ordinal": 38,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://bierlab.ucsd.edu",
+      "actualRelatedHTTPSRequestURI": "https://bierlab.ucsd.edu/",
+      "originalHTTPOriginRobotsURI": "http://bierlab.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "bierlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "bierlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": true,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-bier",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://bierlab.ucsd.edu"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-bier.json",
+        "packetSha256": "4cdfa68778a8c199f22049a0706ffee9cc788829a8fdb751b19601007c382a5e",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://bierlab.ucsd.edu/",
+        "fetch": {
+          "sourceUrl": "https://bierlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:03:54+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://bierlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:03:53+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112633.195907,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://bierlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+          "retrievedEpoch": 1792112634.2062058
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-fcd2a788e03afab1",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://bierlab.ucsd.edu/",
+            "checkedUrl": "https://bierlab.ucsd.edu/",
+            "requestedUrl": "https://bierlab.ucsd.edu/",
+            "queueUrl": "https://bierlab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:03:54+00:00",
+            "bodySha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2a489bcf6af68b151315c71b4fe60f1fb27fed26be088b33328f8a2500a6bbe3.html",
+            "title": "",
+            "htmlMetaRefreshes": [
+              {
+                "content": "0; url=http://bierlab.weebly.com/",
+                "targetUrl": "http://bierlab.weebly.com/",
+                "isObservedHTTPRedirect": false
+              }
+            ],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://bierlab.ucsd.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:11+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://bierlab.ucsd.edu",
+          "title": ""
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-bier.json",
+        "recordSha256": "ae4c8d8b147c854ea493ec1784d2f34e4b10cc37c85b9c5762ae10d2f2e74a6d",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "原UCSD Bier根页HTML meta refresh实际指向bierlab.weebly.com；新正文明确Bier Lab、UCSD与we的三个研究方向，支持具名实验室身份。原根页HTTP记录保持，未把HTML meta当成HTTP链。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "新正文明确标识BIER LAB University of California San Diego；仅记录来源声明，不据采集时间确认现任隶属。"
+        },
+        "reviewedAt": "2026-10-16T03:23:19+00:00",
+        "uncertainty": [
+          "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Bier HTTP 根地址（空 path 的有效请求目标为 /）。相关 HTTPS 为 HTML meta refresh 壳页，已审研究来自另一个独立跟进来源。可做原 HTTP 路由观察；不把 meta 当服务器跳转，不预先接受目的页身份。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 3,
+      "labId": "ucsd-biology-topic-lab-firtel",
+      "ordinal": 60,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://people.biology.ucsd.edu/firtel",
+      "actualRelatedHTTPSRequestURI": "https://people.biology.ucsd.edu/firtel",
+      "originalHTTPOriginRobotsURI": "http://people.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "people.biology.ucsd.edu",
+        null,
+        "/firtel",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "people.biology.ucsd.edu",
+        null,
+        "/firtel",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-firtel",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://people.biology.ucsd.edu/firtel"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-firtel.json",
+        "packetSha256": "960ff1183096e07a5496f763d0e133e9d478d714cf02f55a1c7aece068fa4542",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://people.biology.ucsd.edu/firtel",
+        "fetch": {
+          "sourceUrl": "https://people.biology.ucsd.edu/firtel",
+          "observedAt": "2026-10-16T01:04:03+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://people.biology.ucsd.edu/firtel",
+              "to": "https://people.biology.ucsd.edu/firtel/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://people.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:04:02+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112642.022895,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://people.biology.ucsd.edu/firtel/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "6a155ef37533803be61b9ac5d99a1d71d36920f265692d932a6de2cf12124fa3",
+          "retrievedEpoch": 1792112643.946429
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-9b86ac2d934b1eb9",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://people.biology.ucsd.edu/firtel/",
+            "checkedUrl": "https://people.biology.ucsd.edu/firtel",
+            "requestedUrl": "https://people.biology.ucsd.edu/firtel",
+            "queueUrl": "https://people.biology.ucsd.edu/firtel",
+            "observedAt": "2026-10-16T01:04:03+00:00",
+            "bodySha256": "6a155ef37533803be61b9ac5d99a1d71d36920f265692d932a6de2cf12124fa3",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/08ee4a287d115f836a4f99db31431441a3b15cead30686b21ba69829b46f6ce4.html",
+            "title": "Lab Members | Firtel Lab | Division of Biological Sciences | University of California, San Diego",
+            "htmlMetaRefreshes": [],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://people.biology.ucsd.edu/firtel",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-firtel.json",
+        "recordSha256": "3e482a3d5577cb942e99d27576eae4630fd44ef805eab598243dd151750e03fa",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+        },
+        "reviewedAt": "2026-10-16T01:47:04+00:00",
+        "uncertainty": [
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Firtel HTTP 地址。相关 HTTPS 是可访问的 Lab Members 页面，当前 pageIdentity 仍 uncertain；身份/研究既有结论不等于这次目的页已绑定。可检查原 HTTP，之后依据真实来源另审，不在本元数据审阅追加 title 身份引文。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 4,
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "ordinal": 62,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://biology.ucsd.edu/labs/goldrath",
+      "actualRelatedHTTPSRequestURI": "https://biology.ucsd.edu/labs/goldrath",
+      "originalHTTPOriginRobotsURI": "http://biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "biology.ucsd.edu",
+        null,
+        "/labs/goldrath",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "biology.ucsd.edu",
+        null,
+        "/labs/goldrath",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-goldrath",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://biology.ucsd.edu/labs/goldrath"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-goldrath.json",
+        "packetSha256": "2bc33d95e34b40107491363d7b51d870d4fa469d1919cce85c3928e41f08f2a8",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://biology.ucsd.edu/labs/goldrath",
+        "fetch": {
+          "sourceUrl": "https://biology.ucsd.edu/labs/goldrath",
+          "observedAt": "2026-10-16T00:59:53+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://biology.ucsd.edu/labs/goldrath",
+              "to": "https://labs.biology.ucsd.edu/goldrath",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://labs.biology.ucsd.edu/goldrath",
+              "to": "https://labs.biology.ucsd.edu/goldrath/",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://labs.biology.ucsd.edu/goldrath/",
+              "to": "https://goldrathlab.com/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://goldrathlab.com/robots.txt",
+            "observedAt": "2026-10-16T00:59:51+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112391.733088,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://goldrathlab.com/",
+          "contentType": "text/html;charset=utf-8",
+          "error": "",
+          "sha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "retrievedEpoch": 1792112393.261475
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-acffd3486037cd5c",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://goldrathlab.com/",
+            "checkedUrl": "https://biology.ucsd.edu/labs/goldrath",
+            "requestedUrl": "https://biology.ucsd.edu/labs/goldrath",
+            "queueUrl": "https://biology.ucsd.edu/labs/goldrath",
+            "observedAt": "2026-10-16T00:59:53+00:00",
+            "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6ff6e5743c9947cc2fec8e93395b747cf504ce5d1dcd803ac527355a4926c6a3.html",
+            "title": "The Goldrath Lab, UCSD",
+            "htmlMetaRefreshes": [],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://biology.ucsd.edu/labs/goldrath",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:11+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://goldrathlab.com/",
+          "title": "The Goldrath Lab, UCSD"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-goldrath.json",
+        "recordSha256": "860014e284947c14a6b83a260b823cbf9a0cab747fea9c37a73ab49d5f23cdb4",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+        },
+        "reviewedAt": "2026-10-16T01:47:04+00:00",
+        "uncertainty": [
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Goldrath HTTP 地址。相关 HTTPS 已观测到一条后续实际请求目标链，最终页面虽成功，当前 root pageIdentity 未具备匹配引用。可核验原 HTTP；旧 collector 未留原始 Location 头，不把旧 normalized to 值当 HTTP 原地址服务器跳转证明。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 5,
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "ordinal": 64,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://hamptonlab.ucsd.edu",
+      "actualRelatedHTTPSRequestURI": "https://hamptonlab.ucsd.edu/",
+      "originalHTTPOriginRobotsURI": "http://hamptonlab.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "hamptonlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "hamptonlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": true,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-hampton",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://hamptonlab.ucsd.edu"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-hampton.json",
+        "packetSha256": "f43025975f5ba6318e44d0cebd21d397b105a4d38e7e86a590b81dd210f108f2",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://hamptonlab.ucsd.edu/",
+        "fetch": {
+          "sourceUrl": "https://hamptonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:03+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://hamptonlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:04:02+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112642.667734,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://hamptonlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "77577392096e95ed59fc52e869fefe6bae2de31a0429efcac0d983b3a6be985d",
+          "retrievedEpoch": 1792112643.639379
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-80588a08554f0ac8",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://hamptonlab.ucsd.edu/",
+            "checkedUrl": "https://hamptonlab.ucsd.edu/",
+            "requestedUrl": "https://hamptonlab.ucsd.edu/",
+            "queueUrl": "https://hamptonlab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:04:03+00:00",
+            "bodySha256": "77577392096e95ed59fc52e869fefe6bae2de31a0429efcac0d983b3a6be985d",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4b5c0920a7927413ac2e92851a2b6aab246cce2afada2b6310589d69c6ada848.html",
+            "title": "Gadsby Website",
+            "htmlMetaRefreshes": [],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://hamptonlab.ucsd.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:12+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://hamptonlab.ucsd.edu",
+          "title": "Hampton/home"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-hampton.json",
+        "recordSha256": "416fde01d5e662acabfaeca998913d6d45a41dceffdd653cf0988668d461166e",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+        },
+        "reviewedAt": "2026-10-16T01:47:04+00:00",
+        "uncertainty": [
+          "实验室目的页为 Gadsby 占位内容；研究来自官方 Randy Hampton 介绍。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "research_group",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Hampton HTTP 根地址。相关 HTTPS 返回 Gadsby Website 占位页，实验室研究取自独立官方资料，不能以该占位页接受原网址身份。可做原 HTTP 公共路由观察；若仍为占位/无关内容，应保留身份未知，不扩展研究结论。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 6,
+      "labId": "ucsd-biology-topic-lab-kiger",
+      "ordinal": 82,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://www.biology.ucsd.edu/labs/kiger",
+      "actualRelatedHTTPSRequestURI": "https://www.biology.ucsd.edu/labs/kiger",
+      "originalHTTPOriginRobotsURI": "http://www.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/kiger",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/kiger",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-kiger",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://www.biology.ucsd.edu/labs/kiger"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-kiger.json",
+        "packetSha256": "a955591373a1028890b4181cdaee530e4640b15ba4e14d2ec331012ee5b415b1",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://www.biology.ucsd.edu/labs/kiger",
+        "fetch": {
+          "sourceUrl": "https://www.biology.ucsd.edu/labs/kiger",
+          "observedAt": "2026-10-16T00:59:45+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://www.biology.ucsd.edu/labs/kiger",
+              "to": "https://biology.ucsd.edu/labs/kiger",
+              "httpStatus": 302
+            },
+            {
+              "from": "https://biology.ucsd.edu/labs/kiger",
+              "to": "https://labs.biology.ucsd.edu/kiger",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://labs.biology.ucsd.edu/kiger",
+              "to": "https://labs.biology.ucsd.edu/kiger/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://labs.biology.ucsd.edu/kiger/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+          "retrievedEpoch": 1792112385.694509
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-f56ebff58b7e8a49",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://labs.biology.ucsd.edu/kiger/",
+            "checkedUrl": "https://www.biology.ucsd.edu/labs/kiger",
+            "requestedUrl": "https://www.biology.ucsd.edu/labs/kiger",
+            "queueUrl": "https://www.biology.ucsd.edu/labs/kiger",
+            "observedAt": "2026-10-16T00:59:45+00:00",
+            "bodySha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/839c3aca21781f0f4b3f8ff9cd9e9588d60adf33f80cfe8474dc60b3b2da717c.html",
+            "title": "",
+            "htmlMetaRefreshes": [
+              {
+                "content": "0;url= Amy_Kiger_Lab_at_UCSD/Home.html",
+                "targetUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+                "isObservedHTTPRedirect": false
+              }
+            ],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://www.biology.ucsd.edu/labs/kiger",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-kiger.json",
+        "recordSha256": "0ab55c17af5466d3eb840d9bdc22aa33f687659118e71eb532eebbb9b89c66d1",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "原UCSD /kiger/根页实际HTML meta refresh指向同站Amy_Kiger_Lab_at_UCSD/Home.html；本次新正文明确The Kiger Laboratory @ UCSD及Our laboratory研究范围，与原具名记录对应。HTML属性不是HTTP重定向记录。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "新正文明确The Kiger Laboratory @ UCSD；不以抓取时间推断其任职或计划更新日期。"
+        },
+        "reviewedAt": "2026-10-16T03:23:19+00:00",
+        "uncertainty": [
+          "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Kiger HTTP 地址。相关 HTTPS 原根页是 HTML meta refresh 壳页，同站目标已独立审阅，但不等于原根 URI 已请求或 HTTP 重定向得到证明。可核验原 HTTP；不自动跟随 HTML meta、改 path 或接受别名。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 7,
+      "labId": "ucsd-biology-topic-lab-murre",
+      "ordinal": 99,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://labs.biology.ucsd.edu/murre",
+      "actualRelatedHTTPSRequestURI": "https://labs.biology.ucsd.edu/murre",
+      "originalHTTPOriginRobotsURI": "http://labs.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/murre",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "labs.biology.ucsd.edu",
+        null,
+        "/murre",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-murre",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://labs.biology.ucsd.edu/murre"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-murre.json",
+        "packetSha256": "028a6f31b86e28d211dae9cd1f17540e4e920e6b4aec47d3945196ca5578b125",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://labs.biology.ucsd.edu/murre",
+        "fetch": {
+          "sourceUrl": "https://labs.biology.ucsd.edu/murre",
+          "observedAt": "2026-10-16T01:04:16+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://labs.biology.ucsd.edu/murre",
+              "to": "https://labs.biology.ucsd.edu/murre/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://labs.biology.ucsd.edu/murre/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+          "retrievedEpoch": 1792112656.184182
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-ab1d2cf36e0d7eb8",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://labs.biology.ucsd.edu/murre/",
+            "checkedUrl": "https://labs.biology.ucsd.edu/murre",
+            "requestedUrl": "https://labs.biology.ucsd.edu/murre",
+            "queueUrl": "https://labs.biology.ucsd.edu/murre",
+            "observedAt": "2026-10-16T01:04:16+00:00",
+            "bodySha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a820c48d6fd913d1f5f5408c943251582c94058caff9cc63025449c39a5795b0.html",
+            "title": "Welcome to murre lab!",
+            "htmlMetaRefreshes": [],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/murre",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:12+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://labs.biology.ucsd.edu/murre/",
+          "title": "Welcome to murre lab!"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-murre.json",
+        "recordSha256": "c8e90867d5694a324430ccff6d8e2e226b0f394103f098b5f5729aa9b1c19c43",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "reviewedAt": "2026-10-16T01:48:34+00:00",
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination HTTP 200 but main text only says updated 8th Apr, 2020 Arthur He; no relevant identity or research text."
+        ]
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Murre HTTP 地址。相关 HTTPS 200 可见正文不足，现有实体仍 unresolved/unconfirmed。原地址核验是独立的可观测路由问题，不要求预先接受实体；不能把成功请求或页面 title 自动升级为 lab 身份/科研。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        },
+        {
+          "appliesTo": "existing_scientific_record",
+          "code": "unresolved",
+          "blockers": [
+            "Destination HTTP 200 but main text only says updated 8th Apr, 2020 Arthur He; no relevant identity or research text."
+          ],
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Keep provisional/unresolved science and identity state regardless of transport success until separately reviewed."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 8,
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "ordinal": 126,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://www.biology.ucsd.edu/labs/spitzer",
+      "actualRelatedHTTPSRequestURI": "https://www.biology.ucsd.edu/labs/spitzer",
+      "originalHTTPOriginRobotsURI": "http://www.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/spitzer",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/spitzer",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-spitzer",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://www.biology.ucsd.edu/labs/spitzer"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-spitzer.json",
+        "packetSha256": "431dbee13223e4d0c66479ee1b19e2a2718e46361c04c48803d225b515b6aa0f",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://www.biology.ucsd.edu/labs/spitzer",
+        "fetch": {
+          "sourceUrl": "https://www.biology.ucsd.edu/labs/spitzer",
+          "observedAt": "2026-10-16T00:59:54+00:00",
+          "status": "ok",
+          "redirects": [
+            {
+              "from": "https://www.biology.ucsd.edu/labs/spitzer",
+              "to": "https://biology.ucsd.edu/labs/spitzer",
+              "httpStatus": 302
+            },
+            {
+              "from": "https://biology.ucsd.edu/labs/spitzer",
+              "to": "https://labs.biology.ucsd.edu/spitzer",
+              "httpStatus": 301
+            },
+            {
+              "from": "https://labs.biology.ucsd.edu/spitzer",
+              "to": "https://labs.biology.ucsd.edu/spitzer/",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://labs.biology.ucsd.edu/spitzer/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+          "retrievedEpoch": 1792112394.643189
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-d064f0b5261fc28f",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://labs.biology.ucsd.edu/spitzer/",
+            "checkedUrl": "https://www.biology.ucsd.edu/labs/spitzer",
+            "requestedUrl": "https://www.biology.ucsd.edu/labs/spitzer",
+            "queueUrl": "https://www.biology.ucsd.edu/labs/spitzer",
+            "observedAt": "2026-10-16T00:59:54+00:00",
+            "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/278e69ae3a5d30985fa59b826aecd1383ae417a0ce962305d7530bbfbd417fd4.html",
+            "title": "",
+            "htmlMetaRefreshes": [
+              {
+                "content": "0; url=http://www.nickspitzerlab.org/",
+                "targetUrl": "http://www.nickspitzerlab.org/",
+                "isObservedHTTPRedirect": false
+              }
+            ],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://www.biology.ucsd.edu/labs/spitzer",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-spitzer.json",
+        "recordSha256": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "原UCSD Spitzer根页实际HTML meta refresh指向www.nickspitzerlab.org；新站明确Nick Spitzer Lab，并在Why do we do the research及Research Team框架下介绍整体研究，支持具名实验室研究。个人滑雪登山经历不作研究依据；本次目标请求的独立HTTP301链不补入原根页HTTP记录。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "新实验室页没有明确机构隶属正文；不以UCSD域名、邮箱或资助者代替实验室隶属声明。"
+        },
+        "reviewedAt": "2026-10-16T03:23:19+00:00",
+        "uncertainty": [
+          "新页面研究正文未明确列出具体实验方法；不从神经兴奋性、钙活动或项目标题推断电生理等技术。",
+          "新站有Nick个人介绍，但摘要只使用实验室研究与团队框架中的研究段。",
+          "旧根页的HTML meta提示与本次目标URL的HTTP跳转分别记录；未采纳新规范网址或别名。",
+          "正文未标注完整研究计划更新时间；来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": []
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "accepted_lab_group",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Spitzer HTTP 地址。相关 HTTPS 根页 meta refresh 与后来独立跟进站点的真实 HTTP 链分开保存；当前 root pageIdentity 未绑定。可检查原 HTTP，不把已知外站替换成本轮原 URI，不自动跟 meta 或接受迁移。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 9,
+      "labId": "ucsd-biology-topic-lab-subramani",
+      "ordinal": 129,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://www.biology.ucsd.edu/labs/subramani",
+      "actualRelatedHTTPSRequestURI": "https://www.biology.ucsd.edu/labs/subramani",
+      "originalHTTPOriginRobotsURI": "http://www.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/subramani",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "www.biology.ucsd.edu",
+        null,
+        "/labs/subramani",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-subramani",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://www.biology.ucsd.edu/labs/subramani"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-subramani.json",
+        "packetSha256": "e53c447d42859a6f71c718c8b29fe4651ee5739576ed333b289aaea46cdc8dcd",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://www.biology.ucsd.edu/labs/subramani",
+        "fetch": {
+          "sourceUrl": "https://www.biology.ucsd.edu/labs/subramani",
+          "observedAt": "2026-10-16T00:59:56+00:00",
+          "status": "http_error",
+          "redirects": [
+            {
+              "from": "https://www.biology.ucsd.edu/labs/subramani",
+              "to": "https://biology.ucsd.edu/labs/subramani",
+              "httpStatus": 302
+            },
+            {
+              "from": "https://biology.ucsd.edu/labs/subramani",
+              "to": "https://labs.biology.ucsd.edu/subramani",
+              "httpStatus": 301
+            }
+          ],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://labs.biology.ucsd.edu/subramani",
+          "contentType": "text/html; charset=iso-8859-1",
+          "error": "",
+          "retrievedEpoch": 1792112396.500322
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://www.biology.ucsd.edu/labs/subramani",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-subramani.json",
+        "recordSha256": "593061fbef3cef37b5c4f0229f93cdf677640e46cb77ec82daad18462672ec04",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "reviewedAt": "2026-10-16T01:49:16+00:00",
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination fetch http_error; HTTP 404; packet has no sources."
+        ]
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "http_error",
+        "failureCategory": "http_error",
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。",
+          "旧采集器对跳转目标执行发现用URL规范化，且未保留原始Location头；to表示后续实际请求目标，不能完整证明服务器原始跳转指令。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Subramani HTTP 地址；相关 HTTPS 经旧记录链到目的路径返回 404，且没有研究来源。404 是已有相关地址结果，不是 robots/认证拒绝；可核验原 HTTP，若仍 404 就保留失败，不猜新 path、不据此判实验室关闭。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "existing_related_HTTPS_destination",
+          "code": "http_404",
+          "observedAt": "2026-10-16T00:59:56+00:00",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Only observe literal baseline HTTP URI with gates; preserve actual failure if it persists, no alternate paths."
+        },
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        },
+        {
+          "appliesTo": "existing_scientific_record",
+          "code": "unresolved",
+          "blockers": [
+            "Destination fetch http_error; HTTP 404; packet has no sources."
+          ],
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Keep provisional/unresolved science and identity state regardless of transport success until separately reviewed."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 10,
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "ordinal": 142,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "actualRelatedHTTPSRequestURI": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+      "originalHTTPOriginRobotsURI": "http://labs.biology.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "labs.biology.ucsd.edu",
+        null,
+        "/yanofsky/home.html",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "labs.biology.ucsd.edu",
+        null,
+        "/yanofsky/home.html",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-biology-topic-lab-yanofsky",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://labs.biology.ucsd.edu/yanofsky/home.html"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-yanofsky.json",
+        "packetSha256": "d6c57e878097d634cb60c738b31d0e6dd12bf38d7fc6d1c66fe6ecc93a245d39",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+        "fetch": {
+          "sourceUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "observedAt": "2026-10-16T01:04:45+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://labs.biology.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:59:35+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112375.317494,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+          "retrievedEpoch": 1792112685.5277498
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [
+          {
+            "sourceId": "src-947ef86bf1f53a64",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+            "checkedUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+            "requestedUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+            "queueUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+            "observedAt": "2026-10-16T01:04:45+00:00",
+            "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8a277a37029a8867fda9774828a4d93239e539829e4c87c531c19a21928ec832.html",
+            "title": "Yanofsky Lab - Welcome",
+            "htmlMetaRefreshes": [],
+            "httpStatus": 200
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:13+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "title": "Yanofsky Lab - Welcome"
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-yanofsky.json",
+        "recordSha256": "ef4778f8272245e964dbfdf32b57f4ccff205a20b688d4c7decd3adf30e58594",
+        "status": "partial",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "可用正文未明确陈述该实体机构隶属。"
+        },
+        "reviewedAt": "2026-10-16T01:50:04+00:00",
+        "uncertainty": [
+          "研究正文不足，不能从导航、新闻或名称扩展推断具体研究。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Captured destination is a frames fallback page; research content unavailable."
+        ]
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "pageIdentity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "ok",
+        "failureCategory": null,
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Yanofsky HTTP home.html。相关 HTTPS 是 frames fallback，既有身份 limited/partial 且研究正文不足。可核验同一原 HTTP 文件路由，不自动跟 frame 子页，不借传输成功扩展研究或实体接受。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "existing_scientific_record",
+          "code": "partial",
+          "blockers": [
+            "Captured destination is a frames fallback page; research content unavailable."
+          ],
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Keep provisional/unresolved science and identity state regardless of transport success until separately reviewed."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    },
+    {
+      "inventoryIndex": 11,
+      "labId": "ucsd-physics-research-site-david-kleinfeld",
+      "ordinal": 358,
+      "reviewedAt": "2026-10-16T04:37:28+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "eligible_original_literal_HTTP_route_check_with_unchanged_access_gates",
+      "candidate": true,
+      "canScheduleOneOriginalURICheck": true,
+      "pageFetchPermissionGranted": false,
+      "literalOriginalURI": "http://physics.ucsd.edu/neurophysics",
+      "actualRelatedHTTPSRequestURI": "https://physics.ucsd.edu/neurophysics",
+      "originalHTTPOriginRobotsURI": "http://physics.ucsd.edu/robots.txt",
+      "strictOriginalRequestKey": [
+        "http",
+        "physics.ucsd.edu",
+        null,
+        "/neurophysics",
+        ""
+      ],
+      "strictRelatedRequestKey": [
+        "https",
+        "physics.ucsd.edu",
+        null,
+        "/neurophysics",
+        ""
+      ],
+      "sameHostnameAndEffectivePath": true,
+      "literalEmptyRootPathEquivalentToSlash": false,
+      "noOriginalHTTPRequestOrPrecheckInCurrentLedgers": true,
+      "baselineSource": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "labId": "ucsd-physics-research-site-david-kleinfeld",
+        "field": "labWebsiteUrl",
+        "literalValue": "http://physics.ucsd.edu/neurophysics"
+      },
+      "existingActualMetadataProvenance": {
+        "packetPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-physics-research-site-david-kleinfeld.json",
+        "packetSha256": "e1a4f82842e17e0161e12629de460f8bcb922a9985fa7617e04f683afb88fd2a",
+        "jsonPointer": "/latestDestinationFetch",
+        "actualRequestedURI": "https://physics.ucsd.edu/neurophysics",
+        "fetch": {
+          "sourceUrl": "https://physics.ucsd.edu/neurophysics",
+          "observedAt": "2026-10-16T01:05:22+00:00",
+          "status": "http_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:20+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112240.2613912,
+            "error": "",
+            "status": "checked"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://physics.ucsd.edu/neurophysics",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "retrievedEpoch": 1792112722.510391
+        },
+        "checkOrigin": "reused_collection_capture",
+        "checkScope": "related_url_request_only",
+        "matchingCachedSourceMetadata": [],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://physics.ucsd.edu/neurophysics",
+          "status": "http_error",
+          "observedAt": "2026-10-03T00:04:04+00:00",
+          "httpStatus": 404
+        }
+      },
+      "existingRawStatePreserved": {
+        "recordPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-physics-research-site-david-kleinfeld.json",
+        "recordSha256": "811f9059bc10263537f3fef1260488f1459baf13ce455e76e8719d33ce88b726",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "目标 404；可用资料为加载占位及教师 API，未确认研究组正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "教师 API 不能单独证明实验室当前归属。"
+        },
+        "reviewedAt": "2026-10-16T01:46:40+00:00",
+        "uncertainty": [
+          "研究主题与方法未知；抓取失败不表示实验室关闭。",
+          "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+        ],
+        "blockers": [
+          "destination_http_error:404",
+          "no_entity_local_research_text"
+        ]
+      },
+      "existingProjectionState": {
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "checkScope": "related_url_request_only",
+        "transportStatus": "http_error",
+        "failureCategory": "http_error",
+        "blockedUrl": null,
+        "verificationLimitations": [
+          "实际检查地址与原列表地址不同或缺少请求地址证明；未据此声称原地址已直接检查或发生HTTP重定向。"
+        ]
+      },
+      "reasonZh": "原 baseline 已存 Kleinfeld HTTP neurophysics 路径。相关 HTTPS 原路径返回 404，可用其他资料为加载占位/教师 API，未确认研究组正文。可核验原 HTTP 原路径，不能发明新地址、改路径或以 API 接受实验室；失败仍原样保留。",
+      "existingRelatedHTTPSBlockersAndAcceptanceLimits": [
+        {
+          "appliesTo": "existing_related_HTTPS_destination",
+          "code": "http_404",
+          "observedAt": "2026-10-16T01:05:22+00:00",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Only observe literal baseline HTTP URI with gates; preserve actual failure if it persists, no alternate paths."
+        },
+        {
+          "appliesTo": "destination_identity_or_research_acceptance",
+          "code": "root_page_identity_uncertain",
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Network observation does not accept identity; target-specific post-fetch identity review is required."
+        },
+        {
+          "appliesTo": "existing_scientific_record",
+          "code": "unresolved",
+          "blockers": [
+            "destination_http_error:404",
+            "no_entity_local_research_text"
+          ],
+          "blocksOriginalHTTPURIAdmission": false,
+          "condition": "Keep provisional/unresolved science and identity state regardless of transport success until separately reviewed."
+        }
+      ],
+      "currentMetadataShowsDNSError": false,
+      "currentMetadataShows2MBCapFailure": false,
+      "currentMetadataShowsExplicitAccessRefusal": false,
+      "executionConditions": [
+        "Use this original baseline literal HTTP URI only, preserving scheme/host/path/query; no invented route or protocol switch after failure.",
+        "HTTP-origin robots first under unchanged fetcher policy (valid same-origin cached rules may be used); HTTPS robots cannot authorize HTTP. Stop without page request on denial, challenge, authentication or unavailable robots.",
+        "A real HTTP Location redirect may be followed only through normal public-origin/auth/target-robots checks, strict TLS validation for HTTPS, existing redirect limit and v2 shared gate/cooldown. HTML meta/frames/navigation is not permission for new requests.",
+        "Keep 2,000,000-byte cap, existing robot/transport retry budgets, shared host concurrency/delay/cooldowns/Retry-After and Profiles >=10 seconds. Do not reset counters or raise cap; do not disable TLS, login or work around refusal.",
+        "Record every actual original URI/time/status/final/raw Location/chain/hash and access-precheck-only outcome truthfully; no assumed redirect, verified identity or canonical alias.",
+        "No entity or scientific acceptance is authorized by this route observation; post-fetch identity binding requires separate review and all13 mismatch gates remain."
+      ]
+    }
+  ]
+}

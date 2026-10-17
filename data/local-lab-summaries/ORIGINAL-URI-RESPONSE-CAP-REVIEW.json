@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:40:38+00:00",
+  "reviewType": "offline_source_and_existing_metadata_response_cap_review",
+  "networkRequestsMade": 0,
+  "codeOrDataEditedExceptReports": false,
+  "exactFetcherProof": {
+    "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+    "sha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "matchesRecordedActiveRequiredPin": true,
+    "wireDefinition": {
+      "name": "PublicFetcher._wire",
+      "lines": [
+        257,
+        273
+      ],
+      "defaultPageCapBytes": 2000000
+    },
+    "pageCall": {
+      "name": "PublicFetcher.fetch",
+      "line": 380,
+      "passesExplicitMaxBytes": false
+    },
+    "robotsCall": {
+      "name": "PublicFetcher._rules",
+      "line": 317,
+      "explicitCapBytes": 300000
+    },
+    "transport": {
+      "name": "PublicFetcher._transport",
+      "lines": [
+        275,
+        298
+      ],
+      "curlMaxFilesizeLine": 281,
+      "independentBodyLengthGuardLines": [
+        286,
+        288
+      ],
+      "temporaryHeadersDiscardedAfterCall": true
+    },
+    "persistence": {
+      "lines": [
+        391,
+        402,
+        419,
+        425
+      ],
+      "contentLengthNotSaved": true,
+      "fullHeadersNotSaved": true,
+      "bodySavedOnlyWhenStatusOK": true
+    },
+    "taskAdapter": {
+      "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "definition": "instrumented_fetcher.TrackedFetcher._transport",
+      "lines": [
+        266,
+        290
+      ],
+      "forwardsMaxBytesUnchanged": true,
+      "currentlyDoesNotRaiseCap": true
+    }
+  },
+  "constraintAssessment": {
+    "persistedGoalPath": "/tmp/ucsd-lab-summaries-20261016/docs/operations/summary-goal-receipt.jsonl",
+    "persistedGoalObjective": "On this Mac, process the full 868-lab baseline and append only subsequently reviewed collection additions. Produce concise Chinese basic research summaries, research questions/topics/methods, official evidence and actual observation times, stable lab IDs, uncertainty and canonical URL/redirect/entity-identity verification. Work only in /tmp/ucsd-lab-summaries-20261016 with resumable atomic checkpoints. Reuse /tmp/ucsd-research-20261016 collection caches read-only while its crawler is active; do not create overlapping slow-host requests or overwrite collection artifacts. Continue all eligible batches until complete or per-record concrete blockers, validate outputs, and prepare reviewable local commits without push, merge, deployment, paid APIs, lab contact or forms. No cloud execution or cloud permission changes.",
+    "explicitNumericPageCapInReviewedPersistedGoal": false,
+    "twoMBIsPinnedImplementationDefault": true,
+    "priorDelegatedRunConstraint": "The preceding metadata assignment explicitly said not to raise the2MB cap; it was followed and remains the rule for that completed run.",
+    "currentReviewDoesNotChangeRuntimeCapOrAuthorizeNetwork": true,
+    "absenceOfNumericCapClaimScope": "Only reviewed persisted goal/setup and supplied task instructions; no claim to have exhaustively audited unavailable user conversation history."
+  },
+  "recommendedBoundaries": {
+    "allowlistOnly": [
+      "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson"
+    ],
+    "originalBaselineLiteralHTTPOnly": true,
+    "singleLogicalCheckPerTarget": true,
+    "pageHardCapBytes": 8000000,
+    "robotsCapBytesUnchanged": 300000,
+    "normalTLSVerificationRequired": true,
+    "httpOriginRobotsFirst": true,
+    "everyRedirectTargetRobotsRequired": true,
+    "sharedV2HostGateRequired": true,
+    "keepRetryAfterAndExistingTimeoutRedirectLimits": true,
+    "keepLocal404410ChallengeCompensation": true,
+    "noChallengeLoginRobotsBypass": true,
+    "noAutomaticCapEscalationOrMultiPartReassembly": true,
+    "abortAndRetainConcreteBlockerIfStillTooLarge": true,
+    "preserveOldSourceTimesAndRecordActualNewTimes": true,
+    "storeContentLengthAndActualByteCountForNewAttemptIfImplemented": true,
+    "noScienceAcceptanceFromTransportSuccessAlone": true,
+    "noPromiseFourOrEightMBWillFit": true
+  },
+  "items": [
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "ordinal": 708,
+      "reviewedAt": "2026-10-16T04:40:38+00:00",
+      "metadataOnly": true,
+      "baseline": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "literalOriginalURL": "http://stauberlab.ucsd.edu/",
+        "stableId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+        "historicalWebsiteCheck": {
+          "url": "http://stauberlab.ucsd.edu/",
+          "httpStatus": 200,
+          "finalUrl": "http://stauberlab.ucsd.edu/",
+          "title": "stauber lab",
+          "status": "ok"
+        },
+        "historicalCheckNotModernRequestProof": true
+      },
+      "actualObservedRequest": {
+        "queuePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "queueSnapshotUpdatedAt": "2026-10-16T04:40:18+00:00",
+        "queueSnapshotSha256": "92dd32f33c2bbd28390e5ccb27442828233ca7ca3a6837a1bfd0efbd4a41a59f",
+        "url": "https://stauberlab.ucsd.edu/",
+        "queueAttempts": 3,
+        "attemptObservationTimes": [
+          "2026-10-16T01:07:15+00:00",
+          "2026-10-16T01:08:15+00:00",
+          "2026-10-16T01:10:16+00:00"
+        ],
+        "fetch": {
+          "sourceUrl": "https://stauberlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:10:16+00:00",
+          "status": "fetch_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://stauberlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:14+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112834.2733939,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://stauberlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "curl: (63) Maximum file size exceeded",
+          "retrievedEpoch": 1792113016.932588
+        }
+      },
+      "exactMetadataCache": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/144251a1a955ad7bd0ec81b85acbc6030a11eb41b98c676a0c3b4f1bfc9276c3.json",
+        "sha256": "a82511db6e0cc3a7d0b8eb5c8634a870448f8f312d116388583bac465694a65c",
+        "equalsQueueAndPacket": true,
+        "contentLength": null,
+        "contentLengthState": "not_persisted_unknown_not_zero",
+        "rawResponseHeadersAvailable": false,
+        "responseContentType": "text/html",
+        "bodyFilePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/144251a1a955ad7bd0ec81b85acbc6030a11eb41b98c676a0c3b4f1bfc9276c3.html",
+        "bodyFileExists": false,
+        "usableDestinationBodySHA256": null,
+        "bodySizeUnknown": true
+      },
+      "existingPacketEvidenceMetadata": [
+        {
+          "sourceId": "src-c13984dacc78299f",
+          "role": "historical_field_labName",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-07T22:53:04+00:00",
+          "title": "Historical field evidence: labName",
+          "bodySha256": null
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "role": "listed_official_source_requires_entity_localization",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-16T00:59:05+00:00",
+          "title": "Faculty Profiles | Department of Chemistry",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745"
+        },
+        {
+          "sourceId": "src-cd23f174d5146eda",
+          "role": "listed_official_source_requires_entity_localization",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/julia-stauber",
+          "observedAt": "2026-10-16T01:01:55+00:00",
+          "title": "Julia Stauber | Department of Chemistry",
+          "bodySha256": "34dfb17d1fdddcce50ed6d4d2dd199cae4678827a35002f6eb7b2bab6d1efda4"
+        }
+      ],
+      "existingRaw": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-stauber-lab.json",
+        "status": "unresolved",
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "blockers": [
+          "目标 fetch_error；无实验室研究正文。"
+        ]
+      },
+      "classification": {
+        "observedFailure": "local_transport_resource_size_limit",
+        "explicitAccessDenialRecorded": false,
+        "bodyChallengeExcluded": false,
+        "reason": "HTTP200 plus curl63 is a bounded transport resource failure. No denial/challenge is recorded, but unavailable body cannot exclude a challenge within it."
+      },
+      "recommendation": {
+        "decision": "bounded_original_uri_once_8mb",
+        "exactTarget": "http://stauberlab.ucsd.edu/",
+        "recommendedHardPageCapBytes": 8000000,
+        "acceptableFixedCapRangeBytes": [
+          4000000,
+          8000000
+        ],
+        "preferOneFixedEightMBOverFourThenEightAttempts": true,
+        "guaranteedToFit": false,
+        "changeImplemented": false,
+        "networkRequestsMade": 0,
+        "adoptedByParentForTaskAdapter": true,
+        "automaticRetry": false,
+        "automaticCapEscalation": false
+      },
+      "url": "http://stauberlab.ucsd.edu/",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://stauberlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:10:16+00:00",
+        "status": "fetch_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://stauberlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:14+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112834.2733939,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://stauberlab.ucsd.edu/",
+        "contentType": "text/html",
+        "error": "curl: (63) Maximum file size exceeded",
+        "retrievedEpoch": 1792113016.932588
+      },
+      "maxPageBytes": 8000000,
+      "decision": "bounded_original_uri_once_8mb",
+      "reason": "精确原baseline HTTP地址尚未实测；旧HTTPS HTTP200+curl63是本地2,000,000字节资源上限失败，未记录访问拒绝。parent已采纳仅本项一次8,000,000字节硬上限的公共只读检查；HTTP robots先行、正常TLS/跳转/共享v2gate与challenge/认证停止条件全部保留，不自动重试或继续升级。"
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "ordinal": 720,
+      "reviewedAt": "2026-10-16T04:40:38+00:00",
+      "metadataOnly": true,
+      "baseline": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "literalOriginalURL": "http://fergusonlab.ucsd.edu",
+        "stableId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+        "historicalWebsiteCheck": {
+          "url": "http://fergusonlab.ucsd.edu",
+          "httpStatus": 200,
+          "finalUrl": "http://fergusonlab.ucsd.edu",
+          "title": "FERGUSON LAB",
+          "status": "ok"
+        },
+        "historicalCheckNotModernRequestProof": true
+      },
+      "actualObservedRequest": {
+        "queuePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "queueSnapshotUpdatedAt": "2026-10-16T04:40:18+00:00",
+        "queueSnapshotSha256": "92dd32f33c2bbd28390e5ccb27442828233ca7ca3a6837a1bfd0efbd4a41a59f",
+        "url": "https://fergusonlab.ucsd.edu/",
+        "queueAttempts": 3,
+        "attemptObservationTimes": [
+          "2026-10-16T01:06:14+00:00",
+          "2026-10-16T01:07:15+00:00",
+          "2026-10-16T01:09:15+00:00"
+        ],
+        "fetch": {
+          "sourceUrl": "https://fergusonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:15+00:00",
+          "status": "fetch_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://fergusonlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:13+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112773.8355572,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://fergusonlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "curl: (63) Maximum file size exceeded",
+          "retrievedEpoch": 1792112955.7665439
+        }
+      },
+      "exactMetadataCache": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f4aaa4bcba1b3a0f2c56c0cc13aeed1e9559415c3f3102cef6f0be9a82d713c0.json",
+        "sha256": "070617045fa4b5d2b94ddacae18e3a6b4628f516852c116adb7a6626f0bef6db",
+        "equalsQueueAndPacket": true,
+        "contentLength": null,
+        "contentLengthState": "not_persisted_unknown_not_zero",
+        "rawResponseHeadersAvailable": false,
+        "responseContentType": "text/html",
+        "bodyFilePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f4aaa4bcba1b3a0f2c56c0cc13aeed1e9559415c3f3102cef6f0be9a82d713c0.html",
+        "bodyFileExists": false,
+        "usableDestinationBodySHA256": null,
+        "bodySizeUnknown": true
+      },
+      "existingPacketEvidenceMetadata": [
+        {
+          "sourceId": "src-cc43b76023e496bf",
+          "role": "historical_field_labName",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-07T22:53:34+00:00",
+          "title": "Historical field evidence: labName",
+          "bodySha256": null
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "role": "listed_official_source_requires_entity_localization",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "title": "Faculty | Department of Biochemistry and Molecular Biophysics",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef"
+        }
+      ],
+      "existingRaw": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson.json",
+        "status": "unresolved",
+        "reviewedAt": "2026-10-16T01:49:25+00:00",
+        "blockers": [
+          "目标 fetch_error；无实验室研究正文。"
+        ]
+      },
+      "classification": {
+        "observedFailure": "local_transport_resource_size_limit",
+        "explicitAccessDenialRecorded": false,
+        "bodyChallengeExcluded": false,
+        "reason": "HTTP200 plus curl63 is a bounded transport resource failure. No denial/challenge is recorded, but unavailable body cannot exclude a challenge within it."
+      },
+      "recommendation": {
+        "decision": "bounded_original_uri_once_8mb",
+        "exactTarget": "http://fergusonlab.ucsd.edu",
+        "recommendedHardPageCapBytes": 8000000,
+        "acceptableFixedCapRangeBytes": [
+          4000000,
+          8000000
+        ],
+        "preferOneFixedEightMBOverFourThenEightAttempts": true,
+        "guaranteedToFit": false,
+        "changeImplemented": false,
+        "networkRequestsMade": 0,
+        "adoptedByParentForTaskAdapter": true,
+        "automaticRetry": false,
+        "automaticCapEscalation": false
+      },
+      "url": "http://fergusonlab.ucsd.edu",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://fergusonlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:09:15+00:00",
+        "status": "fetch_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://fergusonlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:06:13+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112773.8355572,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://fergusonlab.ucsd.edu/",
+        "contentType": "text/html",
+        "error": "curl: (63) Maximum file size exceeded",
+        "retrievedEpoch": 1792112955.7665439
+      },
+      "maxPageBytes": 8000000,
+      "decision": "bounded_original_uri_once_8mb",
+      "reason": "精确原baseline HTTP地址尚未实测；旧HTTPS HTTP200+curl63是本地2,000,000字节资源上限失败，未记录访问拒绝。parent已采纳仅本项一次8,000,000字节硬上限的公共只读检查；HTTP robots先行、正常TLS/跳转/共享v2gate与challenge/认证停止条件全部保留，不自动重试或继续升级。"
+    }
+  ],
+  "sayginRetainedBlocker": {
+    "url": "https://sayginlab.ucsd.edu/",
+    "queueAttempts": 3,
+    "latestObservedAt": "2026-10-16T03:49:47+00:00",
+    "robotsError": "curl: (6) Could not resolve host: sayginlab.ucsd.edu",
+    "decision": "retain_same_host_DNS_failure_and_do_not_repeat_in_this_review",
+    "actualNetworkObstacle": true
+  },
+  "conclusion": "The2,000,000-byte limit is a local pinned fetcher default, not a numerical limit found in the reviewed persisted user objective. The two curl63 observations are size-resource failures, not recorded explicit access refusals. A separately adopted, allowlisted, one-attempt8,000,000-byte cap is compatible with the reviewed task scope and may recover the public body, with normal robots/TLS/shared-gate and challenge boundaries preserved; success is unknown because Content-Length is absent. This review makes no change and sends no request.",
+  "policy": {
+    "defaultPageBytes": 2000000,
+    "defaultPageLimitUnchanged": true,
+    "robotsBytes": 300000,
+    "robotsLimitUnchanged": true,
+    "exceptionPageBytes": 8000000,
+    "exceptionURLs": [
+      "http://stauberlab.ucsd.edu/",
+      "http://fergusonlab.ucsd.edu"
+    ],
+    "exceptionLabIds": [
+      "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson"
+    ],
+    "singleLogicalAttemptPerItem": true,
+    "automaticRetries": false,
+    "automaticCapEscalation": false,
+    "tlsVerificationRequired": true,
+    "httpOriginRobotsFirst": true,
+    "targetRobotsAndSharedV2GateRequired": true,
+    "noChallengeAuthenticationOrRobotsBypass": true,
+    "approvalScope": "Parent adopted these two bounded exceptions; this review makes no request or runtime change."
+  },
+  "scopeAdoptedAt": "2026-10-16T04:40:38+00:00"
+}

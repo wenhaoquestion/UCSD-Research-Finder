@@ -1,0 +1,19 @@
+# 研究问题字段应用后独立交叉QA
+
+结论：PASS。实际审阅 2026-10-16T07:58:29.460947+00:00 至 2026-10-16T07:58:31.240009+00:00，0网络请求、0生产编辑。
+
+独立重新读取全部884条raw及packet，149条变更与applied journal完全一致；735条raw保持原字节，884个packet保持原字节。148条补充207个问题，新增176条去重问题证据，148条旧证据均为准确前缀；另1条为已独立审阅的核酶团队范围收窄。
+
+应用日志SHA-256：`88bdad9a478131d5c2f914e4b23aa0caf1e5b24a282405c2b01f4e8fd67ffdda`；preapply不变量SHA-256：`dbc19c0406c7cc231e69cc9bd5f44dbfc5654d601d146a9f21864d3021edd343`。每条oldRecord重新序列化均重建原始字节SHA；实际newRecord与日志对象、newSha和packetSHA逐项一致。
+
+207个问题proof均逐字存在于相应原packet来源和旧已接受research evidence；163条proof自身带有原观察时间，余下44条通过固定sourceId绑定原packet时间，没有新增或伪造日期。
+
+148条raw.reviewedAt已明确更新为问题字段审阅时间，旧科学审阅时间逐项保存在questionFieldReview.previousRecordReviewedAt；本报告没有把该字段描述为未变。科学摘要/方法/PI/身份/affiliation和URL范围仅在单独核酶范围收窄外保持原值。原source observedAt、URI、packet所有日期及字节保持不变。
+
+重新hydrate全部884条现记录及149条journal旧记录均成功，当前summary与URL投影884/884逐项一致；去除新增evidence与reviewedAt后，149条完整URL投影逐项不变，canCountVerified计数前后均569。14条mismatch仍不接受。
+
+核酶team完整主文已另读：I believe生命起源设想与We团队治疗性转剪接核酶/定向进化明确分开；前三条旧quote/source保留并纠正supports，临床应用仍表述为未来期望。
+
+网络ledger、14项身份决策、两个profile准入registry均保持原字节；此前实际430项离线测试的46个源码哈希全部仍匹配，本次数据审计未重复运行测试。owner validation原文件时间 `2026-10-16T07:55:12+00:00`、passed=True，另作旁证，非本结论的替代。
+
+逐项149条哈希、字段差异、问题proof/source原时间与检查结果见同名JSON。开放问题：无。

@@ -1,0 +1,34 @@
+{
+  "reviewRange": [
+    280,
+    559
+  ],
+  "reviewedCount": 280,
+  "counts": {
+    "supported": 217,
+    "unresolved": 27,
+    "partial": 36
+  },
+  "entityTypeCounts": {
+    "lab": 193,
+    "research_group": 47,
+    "unconfirmed": 20,
+    "facility": 9,
+    "center_or_institute": 3,
+    "personal_research_site": 8
+  },
+  "supportedMethodsUnspecifiedCount": 46,
+  "validationErrors": [],
+  "networkRequestsByThisAgent": 0,
+  "checkedAt": "2026-10-16T01:58:10+00:00",
+  "reviewMethod": "Each packet individually inspected; Chinese summaries authored by model; exact local source quotations; no external AI/API or network. Rechecked non-supported packets after refresh.",
+  "risks": [
+    "Unsuccessful destination access does not establish closure.",
+    "Faculty personal research is not automatically assigned to a laboratory.",
+    "Some historical/current links and organization types disagree; uncertainty retained.",
+    "Potential duplicate stable IDs were not merged without packet-local evidence.",
+    "Research/method evidence includes exact contextual source excerpts; source observation times retained by hydration."
+  ],
+  "crossRecordUpgradedToSupported": 6,
+  "crossRecordReviewReceipt": "data/local-lab-summaries/cross-record-review-280-559.json"
+}

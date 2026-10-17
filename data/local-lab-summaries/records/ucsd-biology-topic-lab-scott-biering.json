@@ -1,0 +1,120 @@
+{
+  "labId": "ucsd-biology-topic-lab-scott-biering",
+  "status": "supported",
+  "summaryZh": "Biering 病毒学实验室位于 UCSD 生物科学学院分子生物学系，研究病毒与宿主之间的相互作用，旨在发现驱动病毒致病的机制。首页未明确具体病毒对象或研究方法。",
+  "researchQuestions": [
+    "病毒如何与宿主相互作用？",
+    "哪些机制驱动病毒致病？"
+  ],
+  "topics": [
+    "病毒与宿主互作",
+    "病毒致病机制"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-7f324059177c4a9a",
+      "quote": "Welcome to the Biering Virology Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-7f324059177c4a9a",
+      "quote": "We are a virology research lab located in the department of Molecular Biology in the School of Biological Sciences at UCSD.",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-7f324059177c4a9a",
+      "quote": "We are fascinated by the interactions between viruses and their hosts. We aim to discover the mechanisms that drive viral pathogenesis.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "本次原列表根页以 Welcome to the Biering Virology Lab 明确命名实验室，紧接着以 We are a virology research lab 说明自身身份和所在系院。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "根页正文明确说明该病毒学实验室位于 UCSD School of Biological Sciences 的 department of Molecular Biology；未附带日期的现时任职证明。"
+  },
+  "uncertainty": [
+    "所审阅来源未明确说明研究方法。",
+    "首页未明确具体病毒研究对象；不把新兴病毒、疫苗与治疗开发的背景说明推断为已开展的具体项目或技术。",
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+    "研究方法待核（限本轮已审阅材料）：完整主页明确病毒—宿主相互作用与致病机制目标；疫苗/治疗开发为背景困难，不是实验室实际方法或特定病毒项目。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:12:59+00:00",
+  "regainedRootReviews": [
+    {
+      "reviewedAt": "2026-10-16T04:10:21+00:00",
+      "newSourceId": "src-7f324059177c4a9a",
+      "captureObservedAt": "2026-10-16T03:57:30+00:00",
+      "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+      "decision": "supported_from_entity_scoped_regained_root",
+      "reason": "首页正文虽短，但明确包含实验室自身身份、机构以及整体研究问题，因此可支持一般层面的研究摘要；没有把疫苗背景说明或导航当作方法证据。",
+      "previousReviewPreserved": {
+        "status": "unresolved",
+        "summaryZh": null,
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet has no sources."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "networkRequestsMade": 0
+    }
+  ],
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:12:59+00:00",
+    "previousRecordReviewedAt": "2026-10-16T04:10:21+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "完整主页明确病毒—宿主相互作用与致病机制目标；疫苗/治疗开发为背景困难，不是实验室实际方法或特定病毒项目。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-000-054.json",
+    "reviewComponentSha256": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-7f324059177c4a9a",
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T03:57:30+00:00",
+        "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "textSha256": "30b858f227898b56301243df5206e78ad63d869eaf7b9c57178678c89fdecfc9",
+        "textCharacters": 556,
+        "role": "listed_lab_destination",
+        "title": "Biering Lab |",
+        "readRanges": [
+          [
+            0,
+            556
+          ]
+        ],
+        "coverage": "entity_local_prose_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

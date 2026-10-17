@@ -1,0 +1,272 @@
+{
+  "checkedAt": "2026-10-16T04:30:07+00:00",
+  "protocolVersion": "fcntl-host-clock-v2",
+  "protocolDirectory": "/tmp/ucsd-research-network-20261016",
+  "collectorPid": 5224,
+  "collectorStartedAt": "2026-10-16T04:07:36+00:00",
+  "activation": {
+    "protocolVersion": "fcntl-host-clock-v2",
+    "directory": "/tmp/ucsd-research-network-20261016",
+    "legacyClocksImported": 912,
+    "legacyCooldownsImported": 0,
+    "cacheObservationTimestampsModified": false,
+    "state": "active",
+    "activatedAt": "2026-10-16T04:07:36+00:00",
+    "robotsAndRedirectsIncluded": true,
+    "profilesMinimumSeconds": 10,
+    "collectorCodeSha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "scopePolicyCodeSha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "requiredSourceFiles": {
+      "collect_ucsd_coverage.py": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    }
+  },
+  "sourceHashes": {
+    "collectorCodeSha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+  },
+  "sourceOrigins": {
+    "collectorCodeSha256": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py",
+    "coordinationCodeSha256": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py"
+  },
+  "currentWorkingFileHashes": {
+    "collectorCodeSha256": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c",
+    "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+  },
+  "requiredSourceHashes": {
+    "collect_ucsd_coverage.py": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+    "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+  },
+  "requiredSourceOrigins": {
+    "lab_destinations.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+    "refresh_labs.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead.py",
+    "refresh_faculty_directories.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+    "collection_lock.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+    "collection_scope.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+    "network_coordination.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+    "collect_ucsd_coverage.py": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82.py"
+  },
+  "currentRequiredWorkingFileHashes": {
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+    "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+    "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "collect_ucsd_coverage.py": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c"
+  },
+  "pidProbe": "5224 22:36 /opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /private/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py --cache /private/tmp/ucsd-research-20261016/.cache/coverage-20261016 --workers 8 --max-pages 250",
+  "schemaVersion": 6,
+  "status": "ready",
+  "collectorConnected": true,
+  "adapterVerified": true,
+  "liveRequestsEnabled": true,
+  "previousActivationReceipts": [
+    {
+      "checkedAt": "2026-10-16T02:21:18+00:00",
+      "collectorPid": 73749,
+      "collectorStartedAt": "2026-10-16T02:09:38+00:00",
+      "sourceHashes": {
+        "collectorCodeSha256": "599bc6ab0d30284ff8832a5d452299e2125ec1205326f393a5434db972e338a5",
+        "coordinationCodeSha256": "c82b537e1349b775ab0116eb009adbc80b71f203d9d80c0e3727f0bda2aaa8e1"
+      }
+    },
+    {
+      "checkedAt": "2026-10-16T02:30:49+00:00",
+      "protocolVersion": "fcntl-host-clock-v1",
+      "collectorPid": 78656,
+      "collectorStartedAt": "2026-10-16T02:24:01+00:00",
+      "sourceHashes": {
+        "collectorCodeSha256": "f3bf80bff3a236aab96341f7ca7f6a450e5c93bbd78e605ed3479cf0cdc3e9cc",
+        "coordinationCodeSha256": "c82b537e1349b775ab0116eb009adbc80b71f203d9d80c0e3727f0bda2aaa8e1"
+      }
+    },
+    {
+      "checkedAt": "2026-10-16T02:48:38+00:00",
+      "protocolVersion": "fcntl-host-clock-v2",
+      "collectorPid": 85630,
+      "collectorStartedAt": "2026-10-16T02:42:32+00:00",
+      "sourceHashes": {
+        "collectorCodeSha256": "baa97a1a8b71216c76a3d125a17d25058c36fb509b8a19c7bf62e97ef507c253",
+        "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+      },
+      "status": "awaiting_active_collector",
+      "failedActivationProbe": {
+        "recordedAt": "2026-10-16T02:48:38+00:00",
+        "collectorPid": 85630,
+        "result": "coordination_snapshot(probe=True) refused because recorded PID was not live; no network request made."
+      }
+    },
+    {
+      "checkedAt": "2026-10-16T03:44:30+00:00",
+      "protocolVersion": "fcntl-host-clock-v2",
+      "collectorPid": 92482,
+      "collectorStartedAt": "2026-10-16T03:12:22+00:00",
+      "sourceHashes": {
+        "collectorCodeSha256": "aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c",
+        "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+      },
+      "requiredSourceHashes": {
+        "collect_ucsd_coverage.py": "aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c",
+        "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+        "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+        "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+        "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+        "refresh_faculty_directories.py": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8",
+        "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+      },
+      "adapterVerification": {
+        "checkedAt": "2026-10-16T03:54:58+00:00",
+        "testsPassed": 100,
+        "networkRequestsDuringTests": 0,
+        "testResult": "passed",
+        "dailyRobotsMemoryExpiryVerified": true,
+        "queueLeaseNotAcquired": true,
+        "sharedResponseCooldownVerifiedWithIndependentConsumer": true,
+        "redirectDeadlineBeforeTargetRobotsVerified": true,
+        "completeDependencyPinsVerified": 7,
+        "adapterPath": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+        "adapterSha256": "23b481bd02c9e87102bc40b7aaf98674b8b833c7bd28648450925c3d0e358e08",
+        "testFiles": [
+          "tests/test_local_lab_cache_candidates.py",
+          "tests/test_local_lab_content.py",
+          "tests/test_local_lab_handoff.py",
+          "tests/test_local_lab_shared_adapter.py",
+          "tests/test_local_lab_shared_cooldown.py",
+          "tests/test_local_lab_summaries.py"
+        ],
+        "testSourceSha256": {
+          "tests/test_local_lab_cache_candidates.py": "d5730a50eb7d6830b141394d57718191bda5f2147061701c04fbe0ed4b5d5292",
+          "tests/test_local_lab_content.py": "0117bfb405296ba7f07b9dc78f81638284b2063a10675e4d7adbd2beb42ec66b",
+          "tests/test_local_lab_handoff.py": "6df3ed1fe69bde52ee12837768b4ba7b859696ae00ca285160e422a8d1c5aca1",
+          "tests/test_local_lab_shared_adapter.py": "3aa484a8e7c15ef3281c5336d597a8244ed5741297f0374334c15f6fdc7ce890",
+          "tests/test_local_lab_shared_cooldown.py": "5318fc6991da083246a0e5539b93f906fabc5d5bedc8ed019b62c2fa2c5468dc",
+          "tests/test_local_lab_summaries.py": "f0291866bacb22e8dbb292d10681b65da64143dc1b3a63b8c54bda53c9edff8a"
+        }
+      }
+    }
+  ],
+  "reason": "All48 original-URI requests completed and were individually bound to actual destination evidence. No further immediate live gap remains.",
+  "currentLiveGapCount": 0,
+  "previousAdapterVerification": {
+    "checkedAt": "2026-10-16T04:03:52+00:00",
+    "testsPassed": 113,
+    "networkRequestsDuringTests": 0,
+    "testResult": "passed",
+    "dailyRobotsMemoryExpiryVerified": true,
+    "queueLeaseNotAcquired": true,
+    "sharedResponseCooldownVerifiedWithIndependentConsumer": true,
+    "redirectDeadlineBeforeTargetRobotsVerified": true,
+    "completeDependencyPinsVerified": 7,
+    "verifiedSourcePins": {
+      "collect_ucsd_coverage.py": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "refresh_faculty_directories.py": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    },
+    "adapterPath": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+    "adapterSha256": "2ccb3f746f87bb9431921cacb4b059d00b50ea12f5d9a4c831b07699bbf11db5",
+    "testFiles": [
+      "tests/test_local_lab_cache_candidates.py",
+      "tests/test_local_lab_content.py",
+      "tests/test_local_lab_handoff.py",
+      "tests/test_local_lab_shared_adapter.py",
+      "tests/test_local_lab_shared_cooldown.py",
+      "tests/test_local_lab_summaries.py"
+    ],
+    "testSourceSha256": {
+      "tests/test_local_lab_cache_candidates.py": "d5730a50eb7d6830b141394d57718191bda5f2147061701c04fbe0ed4b5d5292",
+      "tests/test_local_lab_content.py": "0117bfb405296ba7f07b9dc78f81638284b2063a10675e4d7adbd2beb42ec66b",
+      "tests/test_local_lab_handoff.py": "6df3ed1fe69bde52ee12837768b4ba7b859696ae00ca285160e422a8d1c5aca1",
+      "tests/test_local_lab_shared_adapter.py": "3aa484a8e7c15ef3281c5336d597a8244ed5741297f0374334c15f6fdc7ce890",
+      "tests/test_local_lab_shared_cooldown.py": "d050fc6633e302e08898d35604ad3f45a54d41b079db23349bb0039fb79ec236",
+      "tests/test_local_lab_summaries.py": "0aaadc50347d36cdd90815669c3a9f2c5b8b5437d624e057ae6ac5cf2a9a03ae"
+    },
+    "robotsChallenge404410LocalCompensationVerified": true,
+    "sourceReviewSha256": {
+      "CURRENT-COLLECTOR-ADAPTER-REVIEW.md": "4cb7d20c4aa595d53f87cbd97e1cfa6f23d0eb3a890eaf42a28703d76d53bb1c",
+      "CURRENT-COLLECTOR-ADAPTER-REVIEW.json": "be1f428e2598bbe8d27b7eb6584a38eb106be4ed78c36696b1d5654f82b56af8"
+    },
+    "verificationScope": "Only this summary adapter using exact loaded collector definitions and the unchanged seven dependency pins. Independent collector code is read-only; its two documented upstream findings remain open."
+  },
+  "adapterVerification": {
+    "checkedAt": "2026-10-16T04:30:04+00:00",
+    "testsPassed": 131,
+    "networkRequestsDuringTests": 0,
+    "testResult": "passed",
+    "dailyRobotsMemoryExpiryVerified": true,
+    "queueLeaseNotAcquired": true,
+    "sharedResponseCooldownVerifiedWithIndependentConsumer": true,
+    "redirectDeadlineBeforeTargetRobotsVerified": true,
+    "completeDependencyPinsVerified": 7,
+    "verifiedSourcePins": {
+      "collect_ucsd_coverage.py": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    },
+    "adapterPath": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+    "adapterSha256": "5c2121c2ab90481e8836e0230dafaf0b194453aa554a4e7f7ceaf62aa2948dfa",
+    "testFiles": [
+      "tests/test_local_lab_cache_candidates.py",
+      "tests/test_local_lab_content.py",
+      "tests/test_local_lab_handoff.py",
+      "tests/test_local_lab_shared_adapter.py",
+      "tests/test_local_lab_shared_cooldown.py",
+      "tests/test_local_lab_summaries.py"
+    ],
+    "testSourceSha256": {
+      "tests/test_local_lab_cache_candidates.py": "d5730a50eb7d6830b141394d57718191bda5f2147061701c04fbe0ed4b5d5292",
+      "tests/test_local_lab_content.py": "0117bfb405296ba7f07b9dc78f81638284b2063a10675e4d7adbd2beb42ec66b",
+      "tests/test_local_lab_handoff.py": "6df3ed1fe69bde52ee12837768b4ba7b859696ae00ca285160e422a8d1c5aca1",
+      "tests/test_local_lab_shared_adapter.py": "d95ae9170ff1b27271d67f3d19bf4f4c26b4d5fbaf89dfaa3045f9e26ac354ea",
+      "tests/test_local_lab_shared_cooldown.py": "cdc17397036dfd718012ce4a45cf78a992d30e80a8c6fca782a32734e3fbdf43",
+      "tests/test_local_lab_summaries.py": "ea3ad7112ef26188e9ccb1ea9c513e10a06a6c93bdfcc54261056c5120a77f27"
+    },
+    "robotsChallenge404410LocalCompensationVerified": true,
+    "sourceReviewSha256": {
+      "CURRENT-COLLECTOR-ADAPTER-REVIEW.md": "4cb7d20c4aa595d53f87cbd97e1cfa6f23d0eb3a890eaf42a28703d76d53bb1c",
+      "CURRENT-COLLECTOR-ADAPTER-REVIEW.json": "be1f428e2598bbe8d27b7eb6584a38eb106be4ed78c36696b1d5654f82b56af8",
+      "LISTED-URL-ADAPTER-QA.md": "f528e9a51e60edd258447f8d7dc6770412a32c0ebe06e0623db9ff3594f86176",
+      "LISTED-URL-ADAPTER-QA.json": "7a3a3bc977fa3b7cf4a1e758184a52d270eb9ee849b7b36a0984b74981e65e88",
+      "LISTED-URL-DIRECT-GAP-REVIEW.md": "d11d80060e3e333ca89c69e37f263a0a5bee333817096f66840481c4aed92562",
+      "LISTED-URL-DIRECT-GAP-REVIEW.json": "cf4736ac4ed3a02d415746cee52f408c39db7ca9e85621ef93becfb700a0229c",
+      "COLLECTOR-REVISION-6A5D-REVIEW.md": "f25cffd447cf8ef7e0143366cf776eaeaa14b2883f764c8f59f5029cd370b55c",
+      "COLLECTOR-REVISION-6A5D-REVIEW.json": "ea3c5e51182ecd001c679be5a2ee8a26f94fdb59a0997c5c4c5d9baab46eab0e"
+    },
+    "verificationScope": "This isolated summary adapter, exact6a5d collector/all seven pins, original public-origin validation plus explicit wire-URI preservation and local robots404/410 challenge compensation. Independent collector remains read-only.",
+    "originalListedUriPreservationVerified": true,
+    "originalHttpRobotsAndPageRedirectWireSequenceVerified": true,
+    "normalizedCaptureCannotCloseOriginalUriGapVerified": true,
+    "independentUrlAdapterReview": "LISTED-URL-ADAPTER-QA.json",
+    "independentUrlAdapterTestsPassed": 53,
+    "originalUriScopeReview": "LISTED-URL-DIRECT-GAP-REVIEW.json",
+    "reviewedOriginalUris": 48,
+    "networkDefinitionsASTEqualToPriorPinnedRevision": true,
+    "sourceCodeSha256": {
+      "scripts/local_lab_summaries.py": "8bdd916f67022e4c0c22d0efb27467b9ba013eb1d07e793d29f80eed99c81762",
+      "scripts/local_lab_summary_gaps.py": "5c2121c2ab90481e8836e0230dafaf0b194453aa554a4e7f7ceaf62aa2948dfa",
+      "scripts/lab_summary_content.py": "002bdd9c87071ba62b18d0a1d5daeeba567e84f58efdb1bfb51f08bf27427ba0",
+      "scripts/lab_summary_handoff.py": "eae6270918e7f975e5f93a8bde7f1774e2e281475477ee8dbae4c748d2da6272",
+      "scripts/local_lab_cache_candidates.py": "0ed7cad926d51b180ab0b9652adfacf17a3541a16a0bc01553b8dc08ffc0c455"
+    },
+    "legacyRedirectNormalizationLimitationsExposed": true
+  }
+}

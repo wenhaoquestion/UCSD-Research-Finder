@@ -1,0 +1,102 @@
+{
+  "labId": "ucsd-psychology-lab-rickard-lab-cognition-and-cognitive-neuroscience-laboratory",
+  "status": "supported",
+  "summaryZh": "Rickard实验室关注人类学习、技能获得、记忆表征和提取过程。现有官网主页列出研究方向，但未明确说明具体实验或分析方法。",
+  "researchQuestions": [
+    "人如何获得技能、形成记忆表征并提取记忆？"
+  ],
+  "topics": [
+    "人类学习",
+    "技能获得",
+    "记忆表征",
+    "提取过程"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-14423c3b373d75cc",
+      "quote": "Research Learn about our investigations of human learning, skill acquisition, memory representation, retrieval processes, and more.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "匹配官网正文、页面标题或有明确关联的官方实验室目录；未将HTTP成功作为身份依据。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "现有实体页面或保留链接不足以独立确认目前的院系与机构关系。"
+  },
+  "uncertainty": [
+    "页面研究介绍未标明内容日期，不能据此确认目前隶属或持续运营。",
+    "已捕获资料未明确研究方法。",
+    "研究方法待核（限本轮已审阅材料）：已读Rickard完整短首页及目录：human learning/skill/memory为研究对象，Publications列主题，未说明实际实验或分析方法。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:13:47.971Z",
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:13:47.971Z",
+    "previousRecordReviewedAt": "2026-10-16T01:44:28+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读Rickard完整短首页及目录：human learning/skill/memory为研究对象，Publications列主题，未说明实际实验或分析方法。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-14423c3b373d75cc",
+        "sourceUrl": "https://rickardlab.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:07:41+00:00",
+        "bodySha256": "2c88f330fba46e75cac236eeee0b6fe904a09e12dc236087ae05d88038a104f8",
+        "textSha256": "b147f411941562356255ed1a800da7cc8c252ec7581453ec903757c35089ee21",
+        "textCharacters": 467,
+        "rangesActuallyRead": [
+          [
+            0,
+            467
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-89bfdaf46989b370",
+        "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+        "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+        "bodySha256": null,
+        "textSha256": "e406d9676271fdf45bf6a2dd4d48a0f26d3e4c63fa56d88eb90a7713a4c2a622",
+        "textCharacters": 39,
+        "rangesActuallyRead": [
+          [
+            0,
+            39
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-c04548c23c83144f",
+        "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+        "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+        "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+        "textCharacters": 6411,
+        "rangesActuallyRead": [
+          [
+            0,
+            6411
+          ]
+        ],
+        "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

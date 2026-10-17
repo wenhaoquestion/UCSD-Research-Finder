@@ -1,0 +1,1962 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:49:08+00:00",
+  "status": "pass",
+  "scope": "independent_cross_qa_of_question_draft_089_132_only",
+  "networkRequests": 0,
+  "recordsPacketsCodeCollectorWrites": 0,
+  "inputSnapshots": {
+    "draftJson": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-089-132.json",
+      "sha256": "77ca845bcd0a9f42174c2df00b154143529abcc336c712c7d7b723d08ede15ee",
+      "reviewedAt": "2026-10-16T07:41:03+00:00",
+      "finalizedAt": "2026-10-16T07:41:46+00:00"
+    },
+    "draftMarkdown": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-089-132.md",
+      "sha256": "165881fa67697f56e67e2345929b6c16af96ee1549c7e8815d6bfae585a1b4b0"
+    },
+    "candidateInventory": {
+      "path": "data/local-lab-summaries/SOURCE-EXPLICIT-QUESTION-CANDIDATES.json",
+      "sha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24",
+      "inventoriedAt": "2026-10-16T07:34:40+00:00"
+    }
+  },
+  "aggregate": {
+    "itemsIndividuallyReviewed": 44,
+    "addDecisionsPassed": 29,
+    "unchangedDecisionsPassed": 15,
+    "questionsIndividuallyChecked": 44,
+    "itemSourceMetadataAssociationsChecked": 44,
+    "frozenRawShaMatches": 44,
+    "frozenPacketShaMatches": 44,
+    "actionableIssues": 0,
+    "requiredEdits": 0,
+    "oldCaptureDatesUnchanged": true
+  },
+  "questionIndexBase": 0,
+  "verdictZh": "44条草案逐项交叉审阅通过；29条新增共44问、15条保持为空均有明确范围依据。没有发现需要修改的中文翻译、主体范围、因果/结果外推、哈希或捕获日期问题。应用前仍应逐条重核冻结raw/packet哈希。",
+  "items": [
+    {
+      "candidateIndex": 89,
+      "ordinal": 372,
+      "labId": "ucsd-physics-research-site-m-brian-maple",
+      "labName": "M. Brian Maple Research Group",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "da75b92107c411b42d182974cf0d3e4c5b539079e2f61e0ded9361ce6b1d2793",
+      "packetSha256": "298609727f7da0cc3b8d0d2bc206b93fb5b8e334e44689b9406508ad843910ce",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "what 是样品选择反馈说明，不是明确科学问题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-f6b3c9f0b426abc3",
+          "sourceUrl": "https://mbmlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:26+00:00",
+          "bodySha256": "b59af6bf8908725401ad022705cca1ae4d55f47c6c88bfec8218a0c438b87e9b",
+          "role": "related_destination_variant",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 90,
+      "ordinal": 374,
+      "labId": "ucsd-physics-lab-oh-lab",
+      "labName": "Oh Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "4d0ef7f1b53ca57c3ee0c01e27345f06a831044678e6bd01d675309bd24d3230",
+      "packetSha256": "9e956c23c55a8fcc474fefb1eb84302d63ca21c67d60127d161f91c14daa6929",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Oh lab / Our research group 上下文明确，物理性质及单细胞指标均为原句范围。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-37527133992b1abc",
+          "quoteSha256": "8866f35e0f7d1f16949859cefff17647bcfa30385261c4b41205efb88d5a1d1f",
+          "sourceObservedAt": "2026-10-16T01:05:28+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-37527133992b1abc",
+          "sourceUrl": "https://www.seungeunohlab.org/",
+          "observedAt": "2026-10-16T01:05:28+00:00",
+          "bodySha256": "c67375565e533c292620693f7a9538c5bb007b69af73fddc133b7a026e2df77d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 91,
+      "ordinal": 379,
+      "labId": "ucsd-physics-lab-tan-lab",
+      "labName": "Tan Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "d053c06f9ef98b38974058de44ff51250ef2cc4e7209216305144f37516331d9",
+      "packetSha256": "54ed515e1edfb987be08407d483d64ba1e77d50ebed8166f4e3edab227d4a78b",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Tan lab overarching vision 明确给出两项 how；历史字段日期不变。",
+      "questionCount": 2,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-f6a34b085c2a06d0",
+          "quoteSha256": "4f3a56b63d51017892a59aa9ca6d30d3d42ca4208dac0f18800a18dab6453b5c",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-f6a34b085c2a06d0",
+          "quoteSha256": "4f3a56b63d51017892a59aa9ca6d30d3d42ca4208dac0f18800a18dab6453b5c",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-f6a34b085c2a06d0",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 92,
+      "ordinal": 386,
+      "labId": "ucsd-psychiatry-lab-cns-laboratory-of-memory-and-the-brain",
+      "labName": "CNS Laboratory of Memory and Brain",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "7e2654242f5fe731a3ca33712e5dc2cad493eb8390609e802f79240607db3308",
+      "packetSha256": "8bd17924f544da2d167fa267eba67fd02d4271132c4d67e6a0d58a211441563a",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "My focus / My goal 个人表述，没有整体实验室问题绑定；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d66fe22a377da180",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "observedAt": "2026-10-16T01:05:32+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 93,
+      "ordinal": 387,
+      "labId": "ucsd-psychiatry-lab-cheng-lab",
+      "labName": "Cheng Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "f56eefe784e6fa2cb6647d8aaf4aa60c2b2cf2015edfc512864a178c83470c0c",
+      "packetSha256": "0fdb0ef793098ea8d0a31e21beb11e183877b95bbb1eedc7ff25cd93655dc4ec",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "紧邻 Dr. Cheng’s laboratory 和后续 lab 方法说明，将 research program 绑定为实验室目标；译文无新因果关系。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-2dcdf9c044a8a722",
+          "quoteSha256": "56590636c6f16ed0f78efbe3d79ba6691568e3eb4bec86b714609f932c3a95ec",
+          "sourceObservedAt": "2026-10-16T01:02:57+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-2dcdf9c044a8a722",
+          "sourceUrl": "https://www.chenglaboratory.com/",
+          "observedAt": "2026-10-16T01:02:57+00:00",
+          "bodySha256": "773b16dc749d4eb61c2998b2c1d7b061486d4706c380b713766e4c303084f963",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 94,
+      "ordinal": 389,
+      "labId": "ucsd-psychiatry-lab-courtney-lab",
+      "labName": "Courtney Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "c9ca4d8b29b1de99c4ca0a0be0597e87d189c22bac175f03ab4d0506b11fdcc8",
+      "packetSha256": "b69e13e767cbcb5da0e2af801abeba9c3144df4f0548ee55ae2f60de772a533d",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "NicAdmin 是实验室研究项目，年轻成人及尼古丁均为原句限定；未保留页面 currently running 为当前事实。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-1ba28d12c9980e18",
+          "quoteSha256": "90e6fee1e522774926615cdfa6ceb6654d5792ea42275e83b22968f4e570611e",
+          "sourceObservedAt": "2026-10-16T01:02:56+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-1ba28d12c9980e18",
+          "sourceUrl": "https://sites.google.com/view/courtneylab",
+          "observedAt": "2026-10-16T01:02:56+00:00",
+          "bodySha256": "6602b9afebcd501a75f09d54d18b07d0de0b5d3c4daec9d2a97958f3a79eea1d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 95,
+      "ordinal": 390,
+      "labId": "ucsd-psychiatry-lab-functional-neuroscience-lab",
+      "labName": "Functional Neuroscience Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "d92862ab3e1f5bdbd9da8d6f6489fe0d06e437ac774cea709403eb42acdad15e",
+      "packetSha256": "eae2aa1fbb258821aade70b33e618b7c4d96856f6aed86484566dcfaa6ab010e",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "What is Neurofeedback 为定义性FAQ；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-12de66987ff4c2b8",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/index.html",
+          "observedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "75e541a72f9c958881a877769564c7c6c394001e69e2c4b209c1586e3f9f9373",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 96,
+      "ordinal": 391,
+      "labId": "ucsd-psychiatry-lab-george-lab",
+      "labName": "Olivier George — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "e85e77e4ec42175fe3e4daea285203f0f0667ca799fe7c7e86f5d3b5c67b7488",
+      "packetSha256": "d6db9b0236e82ea52cc8ccd5ce13a37fd624d4b1e7de0a47f6aa1d5f9dcb651a",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "how 是成瘾概念史，why 是新闻标题，未转为实验室问题。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-bae3fbfd44e4a777",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 97,
+      "ordinal": 393,
+      "labId": "ucsd-psychiatry-lab-iakoucheva-lab",
+      "labName": "Iakoucheva Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "119d8845ad16334f84736bfbbe40d95ab86f0a5014bf6a1aa9b5961049314124",
+      "packetSha256": "522b3b0120bf5e34756de9bea27846794dac6eb3cd2c61f5bb4a8b8642f00901",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our projects 中 exTSP 的明确评估目的直接涉及遗传变异如何影响组织转录本；未将工具性能结果改成问题。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-3ffd5387a1925ee6",
+          "quoteSha256": "1dac71de1d58e1fe6802b0d4d8f89b64a50fdd16834ddeae3b952c3955a34aa6",
+          "sourceObservedAt": "2026-10-16T01:00:01+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-3ffd5387a1925ee6",
+          "sourceUrl": "https://iakouchevalab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:01+00:00",
+          "bodySha256": "9bd13a624d1de17bb481c1db62fa7a3ecf74f5e79553082b1cca025723a96b55",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 98,
+      "ordinal": 399,
+      "labId": "ucsd-psychiatry-lab-nstar-lab",
+      "labName": "NSTAR Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "78b6dd9a3bce304b164ea4f44ee5ba353b48f6b0ef3ac826b58585f2da79c58a",
+      "packetSha256": "5d8f012146fa9eb9399976eee46088c8c2de8b52276a97ea9d8aa0ca143d7c8d",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "how to join 为招募说明；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-635d416ac418638c",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/index.html",
+          "observedAt": "2026-10-16T01:03:01+00:00",
+          "bodySha256": "a322b431b532c9daaa69c8039fccc4a141a711e9a6ad6009dada78550f480178",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 99,
+      "ordinal": 408,
+      "labId": "ucsd-psychiatry-lab-telese-lab",
+      "labName": "Telese Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "4f73a6a946e1e739e3a53f4a06e04fbd329011ececf3bc05b8e67b48a1a44613",
+      "packetSha256": "32dab3aff670d0c0f9e3e920bbe1759d82f152a77b01ddf9979c126acb166db4",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Whether 为人员招募条件；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-bf0d3d4d9d0da7c0",
+          "sourceUrl": "https://profiles.ucsd.edu/francesca.telese",
+          "observedAt": "2026-10-07T22:05:47+00:00",
+          "bodySha256": null,
+          "role": "associated_faculty_research_requires_lab_scope_check",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 100,
+      "ordinal": 409,
+      "labId": "ucsd-psychiatry-lab-twamley-smart-lab",
+      "labName": "Twamley SMART Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "2c7cfa79c3830055f625bc093fdb3933aa033a83f20d737ab5bc87dd0c7e18a3",
+      "packetSha256": "010fba3b7825a182cf5408363273538be2d24af72c014e6ea7fedc85525d34fe",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "how to improve 为向参与者教授补偿策略的干预内容，非待解问题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-8287085519d64d68",
+          "sourceUrl": "https://smartlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:02+00:00",
+          "bodySha256": "1b891f463faa83ec16e557b18c3fd437ce01d87541b3074d0ebc50dcd28aca17",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 101,
+      "ordinal": 412,
+      "labId": "ucsd-psychiatry-lab-welsh-mccarthy-lab",
+      "labName": "Welsh-McCarthy Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "72d19d560d510f7783697461ce6e4a941b7046dc3a6ca56856641589c0168f90",
+      "packetSha256": "1acf484119988f9349a32df2ab389d26d5de72ca0fd18ccd15695102f830e6e9",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "we examining how 明确，保留 may 的可能性及胰岛素释放时间模式；没有暗示治疗已有效。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-5279a0379e3336d2",
+          "quoteSha256": "5b92c81b3efa871135c40ca209d05f2212c8d7b15f0cff3e711f725edb88ff79",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-5279a0379e3336d2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/research/mccarthy-lab.html",
+          "observedAt": "2026-10-16T01:03:54+00:00",
+          "bodySha256": "01f2ec1f4a295141450b69fb02165100fd808dfe34ff258a329af09af17d30c0",
+          "role": "explicit_linked_research_subpage",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 102,
+      "ordinal": 416,
+      "labId": "ucsd-public-health-lab-the-e-commerce-lab",
+      "labName": "The E-commerce Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "7b1b679702776c7e46cb8fbea8940f0fcd80aa171080f7c7000b1bf63fa3f46d",
+      "packetSha256": "3bda5c31c37c63acbf3c08288679593a17101bf505b455f35c7d4262d9722475",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "The E-commerce Lab / The team 明确三项研究内容；who、why、how 均为原文。",
+      "questionCount": 3,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-48038f8799beb3ab",
+          "quoteSha256": "6a6c5b33825891983ee6377bab9b074a4b6d7ab32a56c78dfd41643b63c9da41",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-48038f8799beb3ab",
+          "quoteSha256": "47fb905e800ba3b813b2a9bb99112318aedf0856cb035a5348daf87df99ec5e2",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-48038f8799beb3ab",
+          "quoteSha256": "47fb905e800ba3b813b2a9bb99112318aedf0856cb035a5348daf87df99ec5e2",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-48038f8799beb3ab",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+          "observedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 103,
+      "ordinal": 426,
+      "labId": "ucsd-radiation-medicine-lab-moore-lab",
+      "labName": "Moore Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "27c93dd8ec400c9b3217552f8fd124dba09bdef8904311c92eb6c38f46dc2f79",
+      "packetSha256": "3e603cd60247f85f29d389621648b8467d511a6477378507a5eeb6dc32a79cf3",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "educating clinicians in how 为临床教育内容，非待解问题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-7e3746036e45c778",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/index.html",
+          "observedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "ac0d7d78fe760786a485d01d2f10f7f8f0bd07c3ec34f2d542c4d0690f963072",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 104,
+      "ordinal": 431,
+      "labId": "ucsd-radiation-medicine-lab-sharabi-lab",
+      "labName": "Sharabi Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "fba476f8b0a7819a7bb3659973f387f0dd51d03f68f999cdcc74674683489f85",
+      "packetSha256": "82b6856a3cf2dedbb75002eaa286401bb0598e4f62fd51baf935ef9df729be5c",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "命中的是负责人既往发表工作，不泛化为 whole-lab 目标；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-ac782442f231ae2e",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/sharabi/index.html",
+          "observedAt": "2026-10-16T01:03:07+00:00",
+          "bodySha256": "f54106232378e385ec72fbf7d237def1010cfa1ce2a5590aaf82eb81e7f7230f",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 105,
+      "ordinal": 441,
+      "labId": "ucsd-lab-from-faculty-cohab-lab-net",
+      "labName": "cohab-lab.net",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "a14ee394479179ab993e46a6a5d74ce4a4d0c95b8bdaac06fa83755aebe725a5",
+      "packetSha256": "38f0924b140e99f0ad05f78d3bbda7ed0b8959b2ca12ad938fe17e4fca72ccc2",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Machine Cohabitation Lab 的 We explore 明确，译文限定 emerging technology 与 sites of intimate life。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-475ef1a9ab7e9712",
+          "quoteSha256": "f0b51c99e182203c4f0cb9d535f998a803a8e4c917dbf08c85d7032dead3aa5b",
+          "sourceObservedAt": "2026-10-16T01:03:03+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-475ef1a9ab7e9712",
+          "sourceUrl": "https://cohab-lab.net/",
+          "observedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "8a17102b62e547398e790782f0580c6b8c66c5a57d0ef9e9c4a507ee62f0e6d7",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 106,
+      "ordinal": 444,
+      "labId": "ucsd-live-lab-2b0b6b6ef98660",
+      "labName": "Adams Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "f250c8e11ad14f42ba36c445eec199eb265b9c1eabaeebbef69b0a0f2985501c",
+      "packetSha256": "fdbb3459a8fa8420dc4323aa17cf06cb07556166b2c4413b2ac192e82648dacf",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our laboratory 明确；these enzymes 的相邻前文为 SRPK 和 CLK，两个中文问题未扩展药物疗效。",
+      "questionCount": 2,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "quoteSha256": "91b618e3dd81586af0e1d21afc8fffe0eeb6b38555b6dc5de40b1aad8b96d18a",
+          "sourceObservedAt": "2026-10-16T01:00:05+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "quoteSha256": "97ae3baac5137ca2baa020eaf461a17585abe193c08987102701e6874372082f",
+          "sourceObservedAt": "2026-10-16T01:00:05+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/joseph-adams.html",
+          "observedAt": "2026-10-16T01:00:05+00:00",
+          "bodySha256": "5b4108583383d37788b0605049659b6e1867b78bad954d4f414869e30c20d1ba",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 107,
+      "ordinal": 445,
+      "labId": "ucsd-live-lab-f852bd0bd92d00",
+      "labName": "Aguado Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "4b638f9b5f46af7cfd46836a9df2cfc6598f781a3801f5d16d3536342061171f",
+      "packetSha256": "2cc4b3336d52d4d219add0c53039b99214f7fcb3c83829ae7d77b2f78d4c7389",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our multidisciplinary team 与 We operate 明确；所有列出的影响因素及心血管疾病性别差异均来自原句。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d7646a4c3accab79",
+          "quoteSha256": "3378d4019d3edece3ba8213c52110541325fa5b8731ed8122c86be54680a138a",
+          "sourceObservedAt": "2026-10-16T01:00:06+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d7646a4c3accab79",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=533",
+          "observedAt": "2026-10-16T01:00:06+00:00",
+          "bodySha256": "59b450ad24d6f83a2828ea21504a2bf66ad7c7ac24aabfe77320c3eeabf8e10e",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 108,
+      "ordinal": 449,
+      "labId": "ucsd-live-lab-900a1da046671f",
+      "labName": "Amy Non’s Epigenetic Anthropology Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "d6c58a2d8c4d945b41866b7a9f374723057c82d08e4c97f77f09f8eea9a6214e",
+      "packetSha256": "cc5ad5d3111f86e0ed1dc560a9df4780ac4c2a33693f73d07f128509d76f6ec9",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "My lab 明确 how 社会经历在早期嵌入生物过程并影响生命历程健康；没有将个人履历转为实验室问题。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-1f2b242edf62cfdb",
+          "quoteSha256": "156cdd1dae8bfb3b77fec192673d0999826f261296401a8d7019b5341f30f043",
+          "sourceObservedAt": "2026-10-16T01:06:27+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-1f2b242edf62cfdb",
+          "sourceUrl": "https://amynon.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:27+00:00",
+          "bodySha256": "72f670a383e309bb59e95dd4dd534d7c2ac44ba2e4460715a40b03514bc491d5",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 109,
+      "ordinal": 450,
+      "labId": "ucsd-live-lab-e730dbff4e8fd2",
+      "labName": "Anastasia Kiyonaga | Kiyonaga Lab | La Jolla, CA",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "3e02d422a2a1e8465cae18070bb84f87079932635e063b48679e83273572acde",
+      "packetSha256": "cd8addf3713950d1b1c8953316f28cf134c8bdc2b57dbc595cb20c61561bffe4",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Research in the lab 与 We study 明确两项问题，未新增方法或行为结果。",
+      "questionCount": 2,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-b74983775625f773",
+          "quoteSha256": "0eef776146378e61223aea8776a7b7103ed2289d27349e9d0e0a75cac22fc23f",
+          "sourceObservedAt": "2026-10-16T01:34:24+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-b74983775625f773",
+          "quoteSha256": "b83a3e8fa7661721a97a0aa2963907977cdadd8557c336bbb91b9fa3ff6d0433",
+          "sourceObservedAt": "2026-10-16T01:34:24+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-b74983775625f773",
+          "sourceUrl": "https://www.kiyonagalab.org/about",
+          "observedAt": "2026-10-16T01:34:24+00:00",
+          "bodySha256": "d633e2b7427eff88b125bb7c9469f8e6c24859a5ebb4d169b2e23fe75c5dd5a6",
+          "role": "explicit_linked_research_subpage",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 110,
+      "ordinal": 452,
+      "labId": "ucsd-live-lab-c1cb41c6661a91",
+      "labName": "Andrew Mendiola — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "48b9d7e7dc52421d5a54c2b8d3e5ec78c67204f011512504c9834dbee934fa56",
+      "packetSha256": "9facfd7a82d86496b8e745e89f1555b0dde63d700624db98450fe951bd392166",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "We are a brain immunology research laboratory 明确，问题严格对应先天免疫细胞与神经疾病炎症。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d8e133fe7ec35213",
+          "quoteSha256": "64228834da38a12d646c3707425ebd8d4d17c7ce4f4b5cdb16fc52ec55fe8419",
+          "sourceObservedAt": "2026-10-16T01:06:28+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d8e133fe7ec35213",
+          "sourceUrl": "https://mendiolalab.com/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 111,
+      "ordinal": 459,
+      "labId": "ucsd-live-lab-932e1c69552100",
+      "labName": "BioNE Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "acbca0300bed8ff38e99f2981445450599c6a3b37fe000c36e03d8320780cce9",
+      "packetSha256": "a0eea8ff1e9aee3f01c7426e93b34653b52b78ce0f6ad07741acd61993cc4ba6",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our lab builds tools to study how 明确研究目的；未从递送技术反推未知机制。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-292a46c16f269ba3",
+          "quoteSha256": "8da7bd26dfc8b60382e59b2ce006b1b717298161a05c43da7315c761f9af47b5",
+          "sourceObservedAt": "2026-10-16T01:03:09+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-292a46c16f269ba3",
+          "sourceUrl": "https://www.zjahed.com/",
+          "observedAt": "2026-10-16T01:03:09+00:00",
+          "bodySha256": "d650ef881d31dd5eb7611974e0481038f9f19568574d07e9f0ae050a8a33ee06",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 112,
+      "ordinal": 471,
+      "labId": "ucsd-live-lab-772273389bdfc0",
+      "labName": "Christian M. Metallo — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "98333e0a1efe552eaf093d162642a1e60ce25852d6848397cae209af293aa5ba",
+      "packetSha256": "8df9ff11625f247933c372c3818c4270e5310936876dbd2b9a86851b2739f8d2",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "the lab characterize how 明确，癌基因等调控因素与生长存活关系来自原句。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-db9cabd60e4deb96",
+          "quoteSha256": "e56f75ba0740ba43be8d5bc86ee83a840ebff06b6ff35923a6703f45e30e8659",
+          "sourceObservedAt": "2026-10-16T01:00:18+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-db9cabd60e4deb96",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=332",
+          "observedAt": "2026-10-16T01:00:18+00:00",
+          "bodySha256": "2681cba1a61f762acdccc64f91616817ac9ecd3acf388f3e81e8aeeb5df5ec92",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 113,
+      "ordinal": 474,
+      "labId": "ucsd-live-lab-d59ce522fdf757",
+      "labName": "Christopher Obara — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "9dc3a25dc77c21d5d64636b11b9c794fc3b9289f4197a813a9c39d19679cbc0b",
+      "packetSha256": "bc02ce61d2c11991637f8b68e6591645174c7953aa72676be8adac12e7206f75",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "The Obara Lab is a team trying to address big questions 明确把三项大问题归于实验室，故有别于FAQ或无研究主体的修辞。",
+      "questionCount": 3,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quoteSha256": "7bd2e31aee92d0888a3d79d3537b23a61f774060cf3f2aed53e4386c85c75549",
+          "sourceObservedAt": "2026-10-16T01:00:15+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quoteSha256": "7bd2e31aee92d0888a3d79d3537b23a61f774060cf3f2aed53e4386c85c75549",
+          "sourceObservedAt": "2026-10-16T01:00:15+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quoteSha256": "7bd2e31aee92d0888a3d79d3537b23a61f774060cf3f2aed53e4386c85c75549",
+          "sourceObservedAt": "2026-10-16T01:00:15+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-bb3f3ad2107ed834",
+          "sourceUrl": "https://obaralab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:15+00:00",
+          "bodySha256": "7b95ef72775bcf96ee0e52d59e4d55610e6518a55e9e8b3b0fc682430571bdcb",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 114,
+      "ordinal": 477,
+      "labId": "ucsd-live-lab-2340e3890ad4ea",
+      "labName": "Corina Antal — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "b6d92c70f4dd2fa0a2c6b21a40b60a44c04c2fae5e302b3b8cb007bf830751a9",
+      "packetSha256": "8014dc9278800079bd992c069c5b40ec183202e1bbb35473e085a9d869de0f89",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our goal / Our laboratory 明确；三项问题来自目标及 remain poorly understood 句，不将其写成已证实机制。",
+      "questionCount": 3,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-11ad93aa64ad8952",
+          "quoteSha256": "433f9273ae6f381a20f57609cd6076b4d0b91cec671a61d94822690b6f992c09",
+          "sourceObservedAt": "2026-10-16T01:00:17+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-11ad93aa64ad8952",
+          "quoteSha256": "dd9c4c76c2d1ed091e3a26b4d14f841e72ecb5bd5080bfeaf14f5241a78411d8",
+          "sourceObservedAt": "2026-10-16T01:00:17+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-11ad93aa64ad8952",
+          "quoteSha256": "dd9c4c76c2d1ed091e3a26b4d14f841e72ecb5bd5080bfeaf14f5241a78411d8",
+          "sourceObservedAt": "2026-10-16T01:00:17+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-11ad93aa64ad8952",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/corina-antal.html",
+          "observedAt": "2026-10-16T01:00:17+00:00",
+          "bodySha256": "e3e0d4593eb8d1e8670954ee7682ab6c8d0644c9f20856fa4971ede3c58a6549",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 115,
+      "ordinal": 478,
+      "labId": "ucsd-live-lab-002fe65114a2ab",
+      "labName": "Coufal Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "753c08d64bfa1033b8c056d5e049a4e75c99c1eee071e3dbabea7fbf8268a9d1",
+      "packetSha256": "b59b54be955e10b454ede19e7526c802a4b8b91cce36ee8369614869e36cfe17",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "A major focus of our lab 同时给出 how 和 what contexts；靶点只作为问题，无临床疗效结论。",
+      "questionCount": 2,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-3aece4ea71058c9d",
+          "quoteSha256": "45de0fe39a4c0d95b82454ac17914309cfd90b4cba10eaec040f48d585200f7a",
+          "sourceObservedAt": "2026-10-16T01:06:30+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-3aece4ea71058c9d",
+          "quoteSha256": "45de0fe39a4c0d95b82454ac17914309cfd90b4cba10eaec040f48d585200f7a",
+          "sourceObservedAt": "2026-10-16T01:06:30+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-3aece4ea71058c9d",
+          "sourceUrl": "https://www.coufallab.com/",
+          "observedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "491d56f33097d57802b9e2fc38e0a84df65ed618f6815d9f6db88a9bf5d0f747",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 116,
+      "ordinal": 482,
+      "labId": "ucsd-live-lab-0908e6aba4a9ea",
+      "labName": "Developmental Cognitive Neuroscience Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "8c81e32550e897e3f9b7a24d498716ee4902c36aa306d7b4a3317c8c1116370a",
+      "packetSha256": "627c8fb09cc279ca04c30e97512a898099ddb9ebcdd50207459a2381b7b136f4",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "具名 Greene laboratory seeks to understand how；发育、个体化与系统相互作用均为原句，未添加疾病机制。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-1a904e86b60703e2",
+          "quoteSha256": "a5324026a29a3ed9d967ab8e22a2a00b378859eecb8b603625fbe066facd5b1c",
+          "sourceObservedAt": "2026-10-16T01:03:37+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-1a904e86b60703e2",
+          "sourceUrl": "https://greenelab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:03:37+00:00",
+          "bodySha256": "f955543c8750a8ba08ab8ee9a3912df8f0db7223a6121029d4520c9c82b38bb8",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 117,
+      "ordinal": 483,
+      "labId": "ucsd-live-lab-fbec895318f5ad",
+      "labName": "Dorrestein Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "ae7c8140be1228b968bb59cd97e7322d0da374095915bc08761257b620cd0a31",
+      "packetSha256": "f83e09a40de8a9fbe3d4ca016e887fc0c21325d612bba29888d337f5602f5ca6",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "The Dorrestein Laboratory Research Aims 下明确 how 化学影响生态系统，未另造质谱工具问题。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-855812cc91be1c61",
+          "quoteSha256": "2c1a50c51eef799be437cb4211c7adbd18869c7832ac8789b0dcc128f04be093",
+          "sourceObservedAt": "2026-10-16T01:00:20+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-855812cc91be1c61",
+          "sourceUrl": "https://dorresteinlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:20+00:00",
+          "bodySha256": "7bc177c34e28c0e1a8c178df565656efcf010d1f6bed116ece0cb629846766a6",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 118,
+      "ordinal": 487,
+      "labId": "ucsd-live-lab-25356b3d44ef3f",
+      "labName": "Engler Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "31f174550f22c7f300c86b4b8e5b8ee7b6e7f1fd41ad96dad6b2040345c1e1e1",
+      "packetSha256": "598f360cc482cfa88d6152b68b3681409601de39aba404877e7c219f4a395eff",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Investigations in the lab 与 3D ECM 明确，力学/生化性质引导行为关系直接来自原句。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-31167b84c71f16df",
+          "quoteSha256": "be74c97d196cfce5db48206e249587585914a030f618b7bf73453b1b26f5175e",
+          "sourceObservedAt": "2026-10-16T00:57:55+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-31167b84c71f16df",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=271",
+          "observedAt": "2026-10-16T00:57:55+00:00",
+          "bodySha256": "6da56e43bbb6391a7de4261646fac65092359a1097a20408ec450db8fcc11886",
+          "role": "associated_faculty_profile_requires_lab_scope_check",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 119,
+      "ordinal": 490,
+      "labId": "ucsd-live-lab-3fb493ff6136bb",
+      "labName": "Frazer Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "369952b0f55cd5de1c15541bb7a96df48261a9d2b2cb493780546004610485ff",
+      "packetSha256": "f22116e20054f8e2af18ad65d8123048cad1ee916c2134f234f470b88215059b",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "our lab 建立并使用 iPSCORE 的上下文明晰，问句忠实于遗传变异影响分化细胞性状的检验目的。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-e9e0fdc0ea4aa75a",
+          "quoteSha256": "48227b6087751c93a23b2504f38124b2201bc4d12de82e5db00a47731394539b",
+          "sourceObservedAt": "2026-10-16T01:00:18+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-e9e0fdc0ea4aa75a",
+          "sourceUrl": "https://frazer.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:18+00:00",
+          "bodySha256": "81c4f5c105559987c517909d325c657de62191aa33674be23cdd1bd7256fa2c7",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 120,
+      "ordinal": 491,
+      "labId": "ucsd-live-lab-7a564d19924e8f",
+      "labName": "Front Page | Mobile Systems Design Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "3bab696965b9221ee4829acd4670a5b8ca49cb56dedea55ace59c8e37d9f13fb",
+      "packetSha256": "2125012ac386df9550c21174b81a9afe36b96609311f9a85984222950a151fb3",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "What will Wi-Fi 是BBC采访新闻标题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d9506eb2f0ecc5df",
+          "sourceUrl": "https://esdat.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "b712fd01916cb1438f88a5d817f0bf69a189a2814aa17c1b44748c58564caed0",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 121,
+      "ordinal": 493,
+      "labId": "ucsd-live-lab-30d5277524f91a",
+      "labName": "Goldenfeld Group",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "ed875655b36fd6b471266062626359e7969d50b5e8a691b840255c5df08872b1",
+      "packetSha256": "1766b1f54fa3a3d932d6313a69fbb90e2b6ee3255940c72fbb0228834d292269",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Nigel is interested 为个人兴趣，未自动扩展为 Goldenfeld Group 整体问题。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-4c5bff2df58cdc1b",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 122,
+      "ordinal": 496,
+      "labId": "ucsd-live-lab-f3a5edc06ada6b",
+      "labName": "Gurol M. Suel — lab website",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "3dc628a22b3e210d99a959005aaad8d82fef75ff60cc2433390c4dca02349c46",
+      "packetSha256": "1251e53a508a1acf693084a225b4a896c6566ecd3997e66a1d6156b00b9cd02b",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Dr. Süel’s lab 明确，分子/细胞相互作用与微生物涌现动态范围直接来自 how 句。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-a0972a46c86d2337",
+          "quoteSha256": "e7249999075d4eac3c4d5f7f24191eff49f017e8fe5195796f98b7934cc78d15",
+          "sourceObservedAt": "2026-10-16T01:00:21+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-a0972a46c86d2337",
+          "sourceUrl": "https://matsci.ucsd.edu/faculty/gurol-suel",
+          "observedAt": "2026-10-16T01:00:21+00:00",
+          "bodySha256": "16155577e9cb1745eb4922515b9914e6d9b20efd6fcc483017e7f6741876c0e4",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 123,
+      "ordinal": 498,
+      "labId": "ucsd-live-lab-788dffcb20dbbc",
+      "labName": "Gutkind Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "0ecc53dd8f9d1f8be0e74a933f49551a0018f016c476bdfe2d6f7c4812b9130a",
+      "packetSha256": "d7d8aa70ce8ea4ad4a9d9c463b01caad239f5dab1e155e828afbe9e5ffa2905e",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our laboratory / We are now investigating 明确；GPCR突变、自分泌激活和三项癌症相关作用均为原文。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-72112d86861302ba",
+          "quoteSha256": "6917c1ca730ae599da1a7a5046d850db827411d17d998668ecc228b7d2c645fb",
+          "sourceObservedAt": "2026-10-16T01:00:21+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-72112d86861302ba",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/j-silvio-gutkind.html",
+          "observedAt": "2026-10-16T01:00:21+00:00",
+          "bodySha256": "aa9d47f4a7750d1e61b475e635bf21dc19c6cf7dc341e8965e2c0c4638d3ed7b",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 124,
+      "ordinal": 499,
+      "labId": "ucsd-live-lab-c7aab6c5f348ec",
+      "labName": "Gymrek Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "de3e5b833c8d0994013e94d4767ca36b1f72edcd6e1cbde0d7980600a278aabc",
+      "packetSha256": "bbd9f53c8c55b39c0defb4ca2ab437ab573755e0db90a6c81b7cdc332f7cf5ca",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our overall goal 明确，遗传变异的疾病关联和跨人群效应为同一句原文。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-45a858d307a0463d",
+          "quoteSha256": "5907b0b0c693affe78cf6113b8138605ee94c51ff81982cecb462bba31232f4f",
+          "sourceObservedAt": "2026-10-16T01:03:11+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-45a858d307a0463d",
+          "sourceUrl": "https://gymreklab.com/",
+          "observedAt": "2026-10-16T01:03:11+00:00",
+          "bodySha256": "88113141cce0b0786054c57087ac435245012b754d8ef43a9953443e25545d10",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 125,
+      "ordinal": 503,
+      "labId": "ucsd-live-lab-25630d3163ab24",
+      "labName": "Health Behaviors, Aging, & Cognition Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "c9a69d3818a83f6fbe847f7e7858c825660e860bdf6c529b041644cbf4002abf",
+      "packetSha256": "7e4ec97687adf7f8b81afdc01a6ddfa691c234c2c90ce69d8a586f8f6fa3ab03",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "具名 Health Behaviors, Aging, & Cognition Lab studies how；三个健康维度均为原句，未添加治疗结果或当前试验状态。",
+      "questionCount": 1,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d3b5afa639d2da71",
+          "quoteSha256": "9591007000a4c1e2beab28452445c3760fc641dc8369ffea732b04a13629db85",
+          "sourceObservedAt": "2026-10-16T01:04:10+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d3b5afa639d2da71",
+          "sourceUrl": "https://sites.ucsd.edu/hartman-research-group/",
+          "observedAt": "2026-10-16T01:04:10+00:00",
+          "bodySha256": "2e9adf6957d76ed104f0e4f061e2a432964e626e022d7a4c35515aa4c4ca8855",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 126,
+      "ordinal": 508,
+      "labId": "ucsd-live-lab-b7ed8defbfbb77",
+      "labName": "HXI Research Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "9e38216e9b2dd0ace3ad74aedbd77e8f92c81e9c743a2c0e0023def273e91fa1",
+      "packetSha256": "a1abcdc48fe8e17cd04a785093b6f2c5145ae7c2b4bba0d5de40da5c70d9f97f",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "How 位于 Recent Publications 单篇论文标题，未转为整组目标。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-513bed47157bf7d4",
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "observedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "62a9e2f3e1236ac22f92a817d923b908cbeced83b286b810a1b7d92656612041",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 127,
+      "ordinal": 512,
+      "labId": "ucsd-live-lab-6b32da6d5c1343",
+      "labName": "Jack Bui Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "0ba60533145da51513b262dc6e83f402be7d0f00fe39e48dbda7215d5f94df90",
+      "packetSha256": "be5900ce863f580bec2f5af69a420caaa3533361ceaaf4d5beede60b518067ac",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Our lab / The Bui Lab Current projects 明确三项 how，未跨ID合并或以论文结果代替目标。",
+      "questionCount": 3,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d13a6813b983ab3c",
+          "quoteSha256": "c9f8d0d03f2678714076f7fe8c5a7de568c2213459ce9163e51d95e857f0d5ca",
+          "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-d13a6813b983ab3c",
+          "quoteSha256": "c266d07d84ea88726d9837aeb09663b1084586e61cb2eff27695116d3de5c639",
+          "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-d13a6813b983ab3c",
+          "quoteSha256": "c266d07d84ea88726d9837aeb09663b1084586e61cb2eff27695116d3de5c639",
+          "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d13a6813b983ab3c",
+          "sourceUrl": "https://jackbuilab.com/",
+          "observedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "18aea8b9a3d1cae1ad726dfe1ce25a8e4bde533a2246e88d326691c2c992d537",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 128,
+      "ordinal": 517,
+      "labId": "ucsd-live-lab-d24b4dc229ae01",
+      "labName": "Joiner Lab",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "baf47ee9b808ad4f381a042ae672d427da5196b13c17f26bae6f55b7bdec9269",
+      "packetSha256": "55462ced0f66b5e1ee807c3798dafd7e8079357614003fdc2d5e6caf41928f98",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "We are studying how/whether 明确，may 及能否语气保留；没有断言治疗有效。",
+      "questionCount": 2,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-aaac3b87b0a782e2",
+          "quoteSha256": "f54a7e7f06345961cb25d08d06e33e221bcd1d9db13524b293b6187f54981d3d",
+          "sourceObservedAt": "2026-10-16T01:03:14+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-aaac3b87b0a782e2",
+          "quoteSha256": "199bd0dcc9c7bb6a0df4ee717b2761a5941cd34cfaf85130f75e83a9f4227ae1",
+          "sourceObservedAt": "2026-10-16T01:03:14+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-aaac3b87b0a782e2",
+          "sourceUrl": "http://www.joinerlab.com/",
+          "observedAt": "2026-10-16T01:03:14+00:00",
+          "bodySha256": "32b6b354324014fa16c99356ed39c09c4be95138dab847ef4da376362846e7ea",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 129,
+      "ordinal": 519,
+      "labId": "ucsd-live-lab-087593d9bb69c5",
+      "labName": "Kate Ricke ☁️ Ricke Lab @ UCSD",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "ee41f91f53671e848ab3cb5a409da05667438b040d9e97f5dc4c1bf8eef90745",
+      "packetSha256": "c54482e90bc1a183ec08b8f5266d271b6780e434ec60d83ce2fbe57c16cac1db",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "how 是论文标题，前文为个人研究说明；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-f03b49961631dba4",
+          "sourceUrl": "https://katericke.com/",
+          "observedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "9cbb4ec267622f591497b75b7e4b285c7e8d01f861daff42cbebde7d45f68131",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 130,
+      "ordinal": 524,
+      "labId": "ucsd-live-lab-20a7c3b49b7458",
+      "labName": "Koslover Group",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "37c3d46ff52c282e1511973ebb54113b64a36373aa85fcfe813550ceddbf9a9c",
+      "packetSha256": "1cd052bb6d8999926a2c77f98a1ee73d670d45bb78d63ff07c92a5afdf96db0b",
+      "draftDecision": "add_source_explicit_questions",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "Koslover group 明确 questions we address 并逐项 how 提问，三问直译无额外动力学因果。",
+      "questionCount": 3,
+      "questionChecks": [
+        {
+          "questionIndex": 0,
+          "result": "pass",
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quoteSha256": "c7dc24f08845f7cf400739a293a65bb375347b45445d44b67d77d58f688f3065",
+          "sourceObservedAt": "2026-10-16T01:06:35+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 1,
+          "result": "pass",
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quoteSha256": "2699687a7eee2a06614af301dad5b56da48465e33c39fa487b3c6869bceeed52",
+          "sourceObservedAt": "2026-10-16T01:06:35+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        },
+        {
+          "questionIndex": 2,
+          "result": "pass",
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quoteSha256": "160a7c2a45cf681369c8fa524767cc0b504c17f7aee1a66bb49fc3430834e300",
+          "sourceObservedAt": "2026-10-16T01:06:35+00:00",
+          "literalInPacket": true,
+          "literalInAcceptedResearchEvidence": true,
+          "translationAndScope": "pass"
+        }
+      ],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-d8bbc95d38d6f641",
+          "sourceUrl": "https://koslover.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:35+00:00",
+          "bodySha256": "1e8479a670e7584df2d57de9783886939cbba7b33601413ada6d72887a9247e0",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 131,
+      "ordinal": 528,
+      "labId": "ucsd-live-lab-4f6cbd2289cdd6",
+      "labName": "Laboratory for Energy Storage and Conversion",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "9f37b6178d61f2f2fc6bf7edef586757e69b0c408828f7c8203950b175b0a1b9",
+      "packetSha256": "655a885fb2bd3ded6657e54c0b35371334a7566c082377358ab99fbc4dd75db7",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "how 仅在新闻URL路径，不是主文问题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-44011791806126dd",
+          "sourceUrl": "https://smeng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:31+00:00",
+          "bodySha256": "905d8182af6f33ac25cd574218d84d2fb60fd9aa6939e542e700d97c1e1c659f",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    },
+    {
+      "candidateIndex": 132,
+      "ordinal": 529,
+      "labId": "ucsd-live-lab-caa34ae32a8126",
+      "labName": "Lagrangian Drifter Laboratory",
+      "reviewedAt": "2026-10-16T07:49:08+00:00",
+      "rawSha256": "6c0806f7af0a6266d05f2ffeb22dde4e39394296e332f796a1b0a1bcb450305c",
+      "packetSha256": "6c3b8bf8a85c124e13c202d4b8d2277ca684db8ee6d36af63bb96bd73fe5ddc2",
+      "draftDecision": "unchanged",
+      "qaDecision": "pass",
+      "requiredChanges": [],
+      "reasonZh": "What’s new 导航和 drifters/drogues 定义FAQ，非实验室研究问题；维持为空。",
+      "questionCount": 0,
+      "questionChecks": [],
+      "sourceMetadataChecked": [
+        {
+          "sourceId": "src-f27bb4ca25fc9578",
+          "sourceUrl": "https://gdp.ucsd.edu/ldl/",
+          "observedAt": "2026-10-16T01:06:35+00:00",
+          "bodySha256": "1c89fcf2c9312074b2a0775e735697a87efe64108097f7f82ca6422f6a28eeb5",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "checks": {
+        "inventoryAndDraftHashesMatch": true,
+        "rawSupportedAndQuestionsStillEmpty": true,
+        "rawMainReviewedAtPreserved": true,
+        "sourceDatesAndMetadataMatch": true,
+        "wholeLabScopeOrCorrectExclusion": true,
+        "noExtraCauseMethodOrResult": true
+      }
+    }
+  ]
+}

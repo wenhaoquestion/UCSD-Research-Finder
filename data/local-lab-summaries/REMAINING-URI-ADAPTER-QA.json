@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:46:31+00:00",
+  "scope": "read-only offline independent QA of new route-only admission and scoped8M cap",
+  "networkRequestsMade": 0,
+  "originalSnapshot": {
+    "adapterPath": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+    "adapterSha256": "19a92ccd594e4632d38e302bae8dbdf5b12b1ffe3e058ad1376140f3568685f4",
+    "testPath": "/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_original_uri_scope.py",
+    "testSha256": "c98c65963acc92f201a307c71d41fe7ca8c52cfbc917bd33b0a6a2fed95a34ae",
+    "exactCollectorSha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82"
+  },
+  "status": "changes_requested_before_live_execution",
+  "findings": [
+    {
+      "id": "URIQA-1",
+      "priority": "P1",
+      "state": "open_in_reviewed_snapshot",
+      "title": "Real queue top-level prior access refusals do not close original-URI admission",
+      "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "definition": "reviewed_original_uri_observations / explicit_access_boundary",
+      "lines": [
+        116,
+        146
+      ],
+      "source": "explicit_access_boundary checks only the bound fetch object and its nested history/robots; capture top-level attemptHistory is used to collect observed original URLs but not to retain refusals on the related HTTPS URI.",
+      "reproduction": {
+        "fixture": "OriginalURIObservationTests.setUp",
+        "mutation": "t.capture['attemptHistory']=[{'sourceUrl':t.meta['sourceUrl'],'status':'authentication_required','httpStatus':403,'observedAt':'2026-10-16T00:30:00+00:00'}]",
+        "call": "t.plan()",
+        "expectedLiveCandidateCount": 0,
+        "actualLiveCandidateCount": 1,
+        "networkRequests": 0
+      },
+      "consequence": "A known prior related-root/robots refusal in the actual queue storage shape can be bypassed by admitting the original HTTP route despite the intended refusal-retention rule.",
+      "recommendation": "Include relevant captures top-level histories in explicit-access-boundary admission checks; add the real queue-shape test. Keep this scoped to the same original/related root rather than unrelated URLs.",
+      "actualCurrentBatchOccurrences": 0
+    },
+    {
+      "id": "URIQA-2",
+      "priority": "P1",
+      "state": "open_in_reviewed_snapshot",
+      "title": "Orphan wire event after transport exception permits another one-shot original-URI attempt",
+      "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "definition": "instrumented_fetcher.TrackedFetcher._transport / execute / reviewed_original_uri_observations",
+      "lines": [
+        376,
+        445
+      ],
+      "source": "_transport persists its wire event before calling the real transport and in finally; execute catches only RetryAfterDeferred and writes the completed item after fetch returns. Admission consumes captures/items but does not consume the wireEvents-only footprint.",
+      "reproduction": {
+        "fixture": "OriginalURIObservationTests + size_proof + same coordination/load_fetcher mocks as existing per-fetch cap test",
+        "fakeTransport": "FakePublicFetcher._wire delegates to self._transport; _transport raises RuntimeError; fetch calls self._wire(originalURL)",
+        "call": "execute(1), catch RuntimeError, then plan()",
+        "storedWireEvents": 1,
+        "storedCompletedItems": 0,
+        "expectedNextLiveCandidateCount": 0,
+        "actualNextLiveCandidateCount": 1,
+        "capAfterException": 2000000,
+        "networkRequests": 0
+      },
+      "consequence": "A timeout/transport exception or hard interrupt can leave an attempted route re-admissible, repeating the one-shot 8M request.",
+      "recommendation": "Conservatively close one-shot admission from its durable attempt/wire footprint and save an accurate exception receipt when possible. Do not invent final URL or completed page-request proof when response/transport completion is unknown; hard-interrupt orphan wires must also close admission.",
+      "actualCurrentBatchOccurrences": 0
+    }
+  ],
+  "verifiedProperties": {
+    "baselineHashAndLiteralStableURIRequired": true,
+    "fullNestedFetchMetadataAndJSONTypesBound": true,
+    "sizeReviewPathAndSHAAndPerItemFieldsChecked": true,
+    "only2MOrReviewed8MIntegerCapsAdmitted": true,
+    "normalTLSAndPinnedSharedV2WirePathRetained": true,
+    "robotsExplicit300000Unchanged": true,
+    "defaultPageCap2000000Unchanged": true,
+    "newEvidenceDoesNotAcceptEntityOrScience": true,
+    "thirteenMismatchGateExclusionsRetained": true,
+    "capResetAfterGenericTransportExceptionVerified": 2000000
+  },
+  "testsRun": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_local_lab_original_uri_scope.py -v",
+      "passed": 21,
+      "failed": 0,
+      "durationSecondsReported": 0.277
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_local_lab_shared_cooldown.py",
+      "passed": 39,
+      "failed": 0,
+      "durationSecondsReported": 0.768
+    }
+  ],
+  "additionalOfflineCounterexamples": {
+    "executed": 2,
+    "confirmedDefects": 2,
+    "realTransportUsed": false,
+    "fixturesIsolatedAndCleaned": true
+  },
+  "savedPlanMetadataCheck": {
+    "plannedAt": "2026-10-16T04:43:47+00:00",
+    "urlCount": 62,
+    "liveCandidateCount": 34,
+    "liveCaps": {
+      "2000000": 32,
+      "8000000": 2
+    },
+    "actualCurrentCandidateTopLevelRefusals": 0,
+    "actualCurrentCandidateOrphanPageWires": 0,
+    "scienceBodiesRead": 0,
+    "savedPlanNotRegeneratedByReviewer": true
+  },
+  "repairStatus": "Parent and adapter owner notified with exact fixtures; live execution held. Original snapshot preserved here; future independent retest will be an appended snapshot."
+}

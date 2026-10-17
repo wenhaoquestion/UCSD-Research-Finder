@@ -1,0 +1,1371 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:37:40+00:00",
+  "startedAt": "2026-10-16T04:37:36+00:00",
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "scope": {
+    "inventoryPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/remaining-related-request-provenance-review-inventory.json",
+    "inventorySha256": "c27b6f1d7953813c9e5a2b9fb78032000c5ff0a52a6ecfb041f3413a054d51d4",
+    "inventoryGeneratedAt": "2026-10-16T04:32:23+00:00",
+    "indices": [
+      24,
+      34
+    ],
+    "count": 11,
+    "recordsOrPacketsEdited": 0,
+    "htmlBodiesRead": 0,
+    "scientificReacceptance": false,
+    "unresolvedMismatchAcceptanceGateChanges": 0
+  },
+  "counts": {
+    "reviewed": 11,
+    "baselineLiteralAndStableIdMatch": 11,
+    "latestPacketFetchMatchedOriginalQueueMetadata": 11,
+    "currentRelatedPageRequests": 8,
+    "currentRelatedAccessPrechecks": 3,
+    "candidateOnceOriginalHTTP": 8,
+    "deferConcreteBlocker": 3,
+    "capBlockers": 2,
+    "sameHostDNSBlockers": 1,
+    "noOriginalHTTPPageRequestFoundInStoredCaptures": 11
+  },
+  "policy": {
+    "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+    "originalHttpIsBaselineNotInventedFallback": true,
+    "maxOriginalRouteAttempts": 1,
+    "httpOriginRobotsFirst": true,
+    "httpsOriginRobotsNotReusedAsHttpPermission": true,
+    "sharedProtocol": "fcntl-host-clock-v2",
+    "includeRobotsAndRedirectsInHostGate": true,
+    "respectExistingRetryAfterAndRetryLimits": true,
+    "verifyTLSOnEveryActualHTTPSHop": true,
+    "disableTLSVerification": false,
+    "maxPageBytes": 2000000,
+    "raiseByteCap": false,
+    "loginOrChallengeBypass": false,
+    "robotsDenialOrUnknownBypass": false,
+    "recordActualRequestFinalRedirectAndTimes": true,
+    "preserveListedURLAndStableID": true,
+    "htmlMetaRefreshIsHTTPRedirect": false,
+    "reviewIsExecutionAuthorization": false
+  },
+  "items": [
+    {
+      "index": 24,
+      "ordinal": 694,
+      "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+      "reviewedAt": "2026-10-16T04:37:36+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原地址明确为HTTP；最新HTTPS页面200且robots checked，无访问边界错误。可仅为补齐原URI路由证据检查一次HTTP原地址；raw仍partial，正文不足与身份未知不会因此自动解决。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/694/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+        "literalHttpURL": "http://jenningslab.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-jennings-lab.json",
+        "sha256": "645c3f23c16184ca375b13d6b1dd9cff3f8f3cc22f3bafba556876ab4564418a",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://jenningslab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:09+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://jenningslab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:08+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112828.3188019,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://jenningslab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+          "retrievedEpoch": 1792112829.301766
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-5d1996b644f76fc1",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://jenningslab.ucsd.edu/",
+            "requestedUrl": "https://jenningslab.ucsd.edu/",
+            "checkedUrl": "https://jenningslab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:07:09+00:00",
+            "bodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+            "title": "Jennings Lab",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e9226f174bf5e818e0cac3f3231d4f5b13adb8fcb34437696c187b51507eb49a.html",
+            "htmlMetaRefreshes": []
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-jennings-lab.json",
+        "sha256": "c4a70c7af749d5f6190ac115340c70e39300f3b6a6814d7246b09a0a73efaea7",
+        "status": "partial",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "官方资料确认研究者，但实验室目标正文为空。"
+        },
+        "blockers": [
+          "目标提取正文为空；仅负责人宽泛研究领域。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://jenningslab.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://jenningslab.ucsd.edu/",
+        "actualFinalURL": "https://jenningslab.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 25,
+      "ordinal": 695,
+      "labId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+      "reviewedAt": "2026-10-16T04:37:37+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原HTTP地址未检查；旧失败发生在HTTPS robots证书验证（curl60），只证明443/TLS前置检查失败。可检查一次既存HTTP原地址及其HTTP robots，不禁用TLS；若实际跳转HTTPS则保留并遵守原证书失败边界。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/695/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-kim-group-judy-kim",
+        "literalHttpURL": "http://galileo.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-kim-group-judy-kim.json",
+        "sha256": "ccfb96213b4acafb832d020d3461bdca64afa64768700a4faa1b3f3ad0965381",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_access_precheck_only",
+        "latestDestinationPageRequestProven": false,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://galileo.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:09+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://galileo.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:09+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112829.0575109,
+            "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secu",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "blockedUrl": "https://galileo.ucsd.edu/",
+          "retrievedEpoch": 1792112829.0583072
+        },
+        "sourceMetadata": [],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-kim-group-judy-kim.json",
+        "sha256": "ab55aa44293a623ed8b9291f60fc41d7fdfcc3c56fb681cac81015a1a03dfd16",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "没有实验室身份与研究正文。"
+        },
+        "blockers": [
+          "目标 robots 获取失败；只有个人宽泛学科领域。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://galileo.ucsd.edu/",
+        "itemState": "unresolved",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://galileo.ucsd.edu/",
+        "actualFinalURL": null,
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [
+        "HTTPS robots TLS certificate verification failed: curl60 unable to get local issuer certificate; retain if actual route reaches HTTPS."
+      ],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 26,
+      "ordinal": 697,
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "reviewedAt": "2026-10-16T04:37:37+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原地址明确为HTTP；最新HTTPS200且robots checked，无阻止一次原URI路由检查的访问错误。raw实验室身份确认但科研仍partial，本候选不提升科研接受。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/697/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+        "literalHttpURL": "http://kummelgroup.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-kummel-lab.json",
+        "sha256": "bd4042f34b59852684c00f0dd534e56986d614dc26d687b020aae74882b0c679",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://kummelgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:10+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://kummelgroup.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:09+00:00",
+            "httpStatus": 200,
+            "retrievedEpoch": 1792112829.693311,
+            "error": "",
+            "redirects": [],
+            "status": "checked"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://kummelgroup.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+          "retrievedEpoch": 1792112830.58267
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-2ebd0459514d0d6f",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://kummelgroup.ucsd.edu/",
+            "requestedUrl": "https://kummelgroup.ucsd.edu/",
+            "checkedUrl": "https://kummelgroup.ucsd.edu/",
+            "observedAt": "2026-10-16T01:07:10+00:00",
+            "bodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+            "title": "Welcome to the Kummel Lab Web Page!!!",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/efd5e9885dc1617e4063216291252aad1636523ddd6cd766b4fd2e6617555c01.html",
+            "htmlMetaRefreshes": []
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-kummel-lab.json",
+        "sha256": "b9a0230165f7970e7567c811a5f5a4180bd813ef0dc1c5f7568bfa0c4d430c59",
+        "status": "partial",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "来源明确标识此实体。"
+        },
+        "blockers": [
+          "实验室首页只有欢迎语；负责人资料仅列宽泛领域。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://kummelgroup.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://kummelgroup.ucsd.edu/",
+        "actualFinalURL": "https://kummelgroup.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 27,
+      "ordinal": 705,
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "reviewedAt": "2026-10-16T04:37:37+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原地址明确为HTTP；最新HTTPS200、robots404且无challenge/error。可按HTTP本源robots规则做一次原URI路由检查；首页名称/动画与科研partial问题不在本次接受范围。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/705/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+        "literalHttpURL": "http://r2g.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json",
+        "sha256": "60ca5c35bb23996410ef43b94c876cbb1ea6440b7bde47f6680df0354e2f24c7",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://r2g.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:13+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://r2g.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:12+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112832.9360251,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://r2g.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+          "retrievedEpoch": 1792112833.904203
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-16348f4142c7262a",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://r2g.ucsd.edu/",
+            "requestedUrl": "https://r2g.ucsd.edu/",
+            "checkedUrl": "https://r2g.ucsd.edu/",
+            "observedAt": "2026-10-16T01:07:13+00:00",
+            "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+            "title": "Intro Animation",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a551c3356fa6c7d3430bf03ea8ea129922e9d6abccda11aed04805e77e589592.html",
+            "htmlMetaRefreshes": []
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json",
+        "sha256": "3f7edb0582cd1a7754b748a449911556359b3003db900bf4f5b6dbcb3b640489",
+        "status": "partial",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "来源明确标识此实体。"
+        },
+        "blockers": [
+          "首页只有名称；教师资料只有宽泛研究领域。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://r2g.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://r2g.ucsd.edu/",
+        "actualFinalURL": "https://r2g.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 28,
+      "ordinal": 708,
+      "labId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+      "reviewedAt": "2026-10-16T04:37:38+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "defer_concrete_blocker",
+      "candidate": false,
+      "reason": "既有同host/effective-path的HTTPS页面HTTP200但curl63 Maximum file size exceeded，未形成可用正文。建议保留2MB cap具体阻塞，当前完整正文抓取适配器不再重复该主机正文获取；原HTTP仍未实测，不能声称其响应也已超限。不得提高cap、分块拼接或改用无限大小抓取。",
+      "proposedPlanKind": null,
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/708/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-stauber-lab",
+        "literalHttpURL": "http://stauberlab.ucsd.edu/",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-stauber-lab.json",
+        "sha256": "cb700d0f1c9acb59d6c88b9aba47f3bd222dcb209ad0290cc4e74ded32e915ad",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://stauberlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:10:16+00:00",
+          "status": "fetch_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://stauberlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:14+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112834.2733939,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://stauberlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "curl: (63) Maximum file size exceeded",
+          "retrievedEpoch": 1792113016.932588
+        },
+        "sourceMetadata": [],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-stauber-lab.json",
+        "sha256": "b637b5eb3ac7bfa3697f65cb8594292d81433bcffe3ad1dbe82190484a29a221",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "只有个人宽泛研究领域。"
+        },
+        "blockers": [
+          "目标 fetch_error；无实验室研究正文。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://stauberlab.ucsd.edu/",
+        "itemState": "unresolved",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://stauberlab.ucsd.edu/",
+        "actualFinalURL": "https://stauberlab.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [
+        "HTTPS page httpStatus=200 with curl63 Maximum file size exceeded; 2,000,000-byte cap remains binding; no usable captured body."
+      ],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 29,
+      "ordinal": 709,
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "reviewedAt": "2026-10-16T04:37:38+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原HTTP未实测；HTTPS robots已有3次curl7连接443失败，未发页面请求。端口443失败不证明端口80结果，可仅一次检查原HTTP及本源robots；保留HTTPS三次失败/冷却历史，若回跳HTTPS仍受现有边界与重试上限约束。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/709/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+        "literalHttpURL": "http://tezcan.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-tezcan-lab.json",
+        "sha256": "81562bac5699ee6e787efda5e9158a161f836ffd9bcca88c8950121811d8c14d",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_access_precheck_only",
+        "latestDestinationPageRequestProven": false,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://tezcan.ucsd.edu/",
+          "observedAt": "2026-10-16T03:49:28+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://tezcan.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:28+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122568.855943,
+            "error": "curl: (7) Failed to connect to tezcan.ucsd.edu port 443 after 42 ms: Couldn't connect to server",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "https://tezcan.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T01:07:14+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112834.389291,
+                "error": "curl: (7) Failed to connect to tezcan.ucsd.edu port 443 after 45 ms: Couldn't connect to server",
+                "redirects": [],
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "https://tezcan.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:18+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122438.881261,
+                "error": "curl: (7) Failed to connect to tezcan.ucsd.edu port 443 after 31 ms: Couldn't connect to server",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122498.8743548
+              }
+            ],
+            "retryAfterEpoch": 1792122688.839755
+          },
+          "blockedUrl": "https://tezcan.ucsd.edu/",
+          "retrievedEpoch": 1792122568.872513
+        },
+        "sourceMetadata": [],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-tezcan-lab.json",
+        "sha256": "6fbe94333c9c6941b08031df00fcc82f9d1f86a360324c6857f689a0a147cc3a",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "仅负责人宽泛研究领域。"
+        },
+        "blockers": [
+          "目标 robots 获取失败；无实验室研究正文。"
+        ],
+        "reviewedAt": "2026-10-16T01:48:38+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://tezcan.ucsd.edu/",
+        "itemState": "unresolved",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://tezcan.ucsd.edu/",
+        "actualFinalURL": null,
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [
+        "HTTPS robots curl7 failed to connect port443, attempts=3; no page request; preserve original retry history/cooldown."
+      ],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 30,
+      "ordinal": 710,
+      "labId": "ucsd-chemistry-biochemistry-lab-theodorakis-group",
+      "reviewedAt": "2026-10-16T04:37:38+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原地址明确为HTTP；HTTPS根200、robots404且无challenge/error，原HTTP仍未知。可做一次原URI路由检查；此前研究正文接受不替代此根地址的身份/地址绑定。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/710/labWebsiteUrl",
+        "stableId": "ucsd-chemistry-biochemistry-lab-theodorakis-group",
+        "literalHttpURL": "http://theodorakisgroup.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-theodorakis-group.json",
+        "sha256": "bb2480b91c19ce9cf5150a3f46a26a65fb5511e2f4844677d93f9be29413849f",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://theodorakisgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:15+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://theodorakisgroup.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:07:14+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112834.761719,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://theodorakisgroup.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "c68cda4ff35c8c0f979ca06faff6004917a86f963ad92ca4484b9e07e5654a23",
+          "retrievedEpoch": 1792112835.6758022
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-c6710d54f8990201",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://theodorakisgroup.ucsd.edu/",
+            "requestedUrl": "https://theodorakisgroup.ucsd.edu/",
+            "checkedUrl": "https://theodorakisgroup.ucsd.edu/",
+            "observedAt": "2026-10-16T01:07:15+00:00",
+            "bodySha256": "c68cda4ff35c8c0f979ca06faff6004917a86f963ad92ca4484b9e07e5654a23",
+            "title": "Index",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/1f0272256d3174c6b7b2229c3a5d06b7e5934fc998433e0158a8d91603153da4.html",
+            "htmlMetaRefreshes": []
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-theodorakis-group.json",
+        "sha256": "51e5fe69ac1d5d5ffafa060dc947c2e80b2f290ac66aaea9951bdac5b4c73805",
+        "status": "supported",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "研究页反复明确The Theodorakis group；与同站根页实际Research锚点及既有具名教师身份相接。"
+        },
+        "blockers": [],
+        "reviewedAt": "2026-10-16T03:21:31+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://theodorakisgroup.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://theodorakisgroup.ucsd.edu/",
+        "actualFinalURL": "https://theodorakisgroup.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 31,
+      "ordinal": 720,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+      "reviewedAt": "2026-10-16T04:37:39+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "defer_concrete_blocker",
+      "candidate": false,
+      "reason": "既有同host/effective-path的HTTPS页面HTTP200但curl63 Maximum file size exceeded，未保存有效正文SHA。建议保留2MB cap具体阻塞并暂不重复完整正文获取；原HTTP结果仍未知，不能推断HTTP已超限或以提高cap消除该阻塞。",
+      "proposedPlanKind": null,
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/720/labWebsiteUrl",
+        "stableId": "ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson",
+        "literalHttpURL": "http://fergusonlab.ucsd.edu",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson.json",
+        "sha256": "050683ca3dbe51fbe06e108b3e9a8c1467334a8daf6be1fd614f9c81691ffa75",
+        "preparedAt": "2026-10-16T03:40:15+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://fergusonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:09:15+00:00",
+          "status": "fetch_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://fergusonlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:13+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112773.8355572,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://fergusonlab.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "curl: (63) Maximum file size exceeded",
+          "retrievedEpoch": 1792112955.7665439
+        },
+        "sourceMetadata": [],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biochemistry-and-molecular-biophysics-lab-ferguson-lab-fleur-ferguson.json",
+        "sha256": "18b0e1cb4dcd6553cd8ff0d0f72d458798d3aa82b02b14d7bbc3d419c26b1d9e",
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "只有目录中的研究者与宽泛领域。"
+        },
+        "blockers": [
+          "目标 fetch_error；无实验室研究正文。"
+        ],
+        "reviewedAt": "2026-10-16T01:49:25+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://fergusonlab.ucsd.edu/",
+        "itemState": "unresolved",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://fergusonlab.ucsd.edu/",
+        "actualFinalURL": "https://fergusonlab.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [
+        "HTTPS page httpStatus=200 with curl63 Maximum file size exceeded; 2,000,000-byte cap remains binding; no usable captured body."
+      ],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 32,
+      "ordinal": 824,
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "reviewedAt": "2026-10-16T04:37:39+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline literal root是http://shm.ucsd.edu/，HTTPS根200且robots404无错误，可一次检查原root。historicalWebsiteCheck的/Site/Home.html以及缓存HTML meta-refresh只是另一路径/导航，不是本轮root的HTTPredirect，不能先替换原root。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/824/labWebsiteUrl",
+        "stableId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+        "literalHttpURL": "http://shm.ucsd.edu/",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group.json",
+        "sha256": "9f5abf83f1bede0c7748dfe758ee708efefabfdb2df7fad0585b76adc76c2836",
+        "preparedAt": "2026-10-16T03:40:17+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://shm.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:47+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://shm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:00:46+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112446.082647,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://shm.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "retrievedEpoch": 1792112447.058005
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-a7325ccd6938272b",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://shm.ucsd.edu/",
+            "requestedUrl": "https://shm.ucsd.edu/",
+            "checkedUrl": "https://shm.ucsd.edu/",
+            "observedAt": "2026-10-16T01:00:47+00:00",
+            "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+            "title": "",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/944d7b728566ba1ea74312f52f27c880d8bec8bdbc7300f7147e4ca056a485c5.html",
+            "htmlMetaRefreshes": [
+              {
+                "content": "0;url= http://shm.ucsd.edu/Site/Home.html",
+                "targetUrl": "http://shm.ucsd.edu/Site/Home.html",
+                "isObservedHTTPRedirect": false
+              }
+            ]
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group.json",
+        "sha256": "581ac0f1424edaf9579ca7dcb2373dd027e8ce45b2f97353d8433700ea42aecc",
+        "status": "partial",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "research_group",
+          "reason": "负责人仅来自历史证据，目标正文为空。"
+        },
+        "blockers": [
+          "目标HTTP200但提取正文为空；缺少研究组研究内容。"
+        ],
+        "reviewedAt": "2026-10-16T01:53:25+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://shm.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://shm.ucsd.edu/",
+        "actualFinalURL": "https://shm.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 33,
+      "ordinal": 825,
+      "labId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+      "reviewedAt": "2026-10-16T04:37:39+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_once_original_literal_http",
+      "candidate": true,
+      "reason": "baseline原HTTP明确且未实测；HTTPS根200、robots404无错误，可一次原URI路由检查。MMRL科研partial与个人首页范围问题仍保留，本次元数据审阅不接受实体或研究。",
+      "proposedPlanKind": "original_listed_uri_route_only",
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/825/labWebsiteUrl",
+        "stableId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+        "literalHttpURL": "http://mmrl.ucsd.edu/",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl.json",
+        "sha256": "69dd3d155d6d1b0c8668a12e1a8507f3b0eb65a278b8debfeab80358034268f1",
+        "preparedAt": "2026-10-16T03:40:17+00:00",
+        "latestDestinationCheckScope": "related_url_request_only",
+        "latestDestinationPageRequestProven": true,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://mmrl.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:48+00:00",
+          "status": "ok",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://mmrl.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:00:47+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112447.897312,
+            "error": "",
+            "redirects": [],
+            "status": "not_found"
+          },
+          "httpStatus": 200,
+          "finalUrl": "https://mmrl.ucsd.edu/",
+          "contentType": "text/html",
+          "error": "",
+          "sha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+          "retrievedEpoch": 1792112448.450231
+        },
+        "sourceMetadata": [
+          {
+            "sourceId": "src-dce22ffee9c6fa41",
+            "role": "related_destination_variant",
+            "sourceUrl": "https://mmrl.ucsd.edu/",
+            "requestedUrl": "https://mmrl.ucsd.edu/",
+            "checkedUrl": "https://mmrl.ucsd.edu/",
+            "observedAt": "2026-10-16T01:00:48+00:00",
+            "bodySha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+            "title": "Prof. Yu Qiao's Homepage",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/de6cee9735dd47623058e00fbc1838f595956b42bebf6a62d67141fd8096d186.html",
+            "htmlMetaRefreshes": []
+          }
+        ],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl.json",
+        "sha256": "78690aa94b9c05ef210af889a571b65ac1a8e2fcab01ca6d872fdb1257f5f0ab",
+        "status": "partial",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "来源明确标识此实体。"
+        },
+        "blockers": [
+          "页面只有领域列表及履历，具体实验室研究问题未展开。"
+        ],
+        "reviewedAt": "2026-10-16T01:54:02+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://mmrl.ucsd.edu/",
+        "itemState": "done",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://mmrl.ucsd.edu/",
+        "actualFinalURL": "https://mmrl.ucsd.edu/",
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    },
+    {
+      "index": 34,
+      "ordinal": 861,
+      "labId": "ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab",
+      "reviewedAt": "2026-10-16T04:37:39+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "defer_concrete_blocker",
+      "candidate": false,
+      "reason": "相同hostname的HTTPS robots在3次尝试中均curl6 Could not resolve host。DNS解析发生于协议/端口连接之前；建议保留host DNS blocker并避免立刻用HTTP对同host再作无益获取。原HTTP未请求；需实际DNS恢复或其他新证据再重新审阅，不推断网站关闭。",
+      "proposedPlanKind": null,
+      "baselineProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json",
+        "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "jsonPointer": "/labs/861/labWebsiteUrl",
+        "stableId": "ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab",
+        "literalHttpURL": "http://sayginlab.ucsd.edu/",
+        "sourceUrlsIncludesLiteral": true
+      },
+      "currentPacketProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab.json",
+        "sha256": "4a113399996e5d189eceb9fe70745698d62401ce1660cd080c091f00e1056c88",
+        "preparedAt": "2026-10-16T03:40:17+00:00",
+        "latestDestinationCheckScope": "related_url_access_precheck_only",
+        "latestDestinationPageRequestProven": false,
+        "latestDestinationRequestMatchesListed": false,
+        "latestDestinationFetch": {
+          "sourceUrl": "https://sayginlab.ucsd.edu/",
+          "observedAt": "2026-10-16T03:49:47+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://sayginlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:47+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122587.112281,
+            "error": "curl: (6) Could not resolve host: sayginlab.ucsd.edu",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "https://sayginlab.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T01:07:41+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112861.858714,
+                "error": "curl: (6) Could not resolve host: sayginlab.ucsd.edu",
+                "redirects": [],
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "https://sayginlab.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:43+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122463.404449,
+                "error": "curl: (6) Could not resolve host: sayginlab.ucsd.edu",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122523.3897011
+              }
+            ],
+            "retryAfterEpoch": 1792122707.0984719
+          },
+          "blockedUrl": "https://sayginlab.ucsd.edu/",
+          "retrievedEpoch": 1792122587.1341069
+        },
+        "sourceMetadata": [],
+        "allAvailableDestinationSourcesMatchFetchMetadata": true,
+        "bodyHTMLRead": false,
+        "bodyHashRecomputed": false
+      },
+      "rawMetadataProof": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab.json",
+        "sha256": "afc2909f2e7e9c09e96b8079a0bd5e6f5b4cc299db18091250956b691fe218be",
+        "status": "unresolved",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "历史官方目录明确列出实体名称；本次目的页身份未确认。"
+        },
+        "blockers": [
+          "https://sayginlab.ucsd.edu/robots.txt: curl (6) Could not resolve host；目的页请求因robots不可核验而停止。",
+          "恢复的官方教师简介未将所列研究兴趣明确归于Cognitive Neuroscience and Neuropsychology Lab，仍缺少对应实验室研究正文。"
+        ],
+        "reviewedAt": "2026-10-16T02:38:46+00:00",
+        "scientificFieldsRead": false
+      },
+      "queueMetadataProof": {
+        "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+        "snapshotUpdatedAt": "2026-10-16T04:37:27+00:00",
+        "snapshotSha256": "f160d02bd53277309b8909820e5462be3f7bb58d9a29aff7ddc941c893e13af6",
+        "itemUrl": "https://sayginlab.ucsd.edu/",
+        "itemState": "unresolved",
+        "latestFetchFieldsExactlyMatch": true
+      },
+      "addressComparison": {
+        "sameHostname": true,
+        "sameEffectivePathAndQuery": true,
+        "differentSchemeOnlyAfterRootSlashNormalization": true,
+        "actualCheckedURL": "https://sayginlab.ucsd.edu/",
+        "actualFinalURL": null,
+        "originalLiteralHTTPPageRequestFound": false,
+        "historicalUndatedWebsiteCheckNotCountedAsFreshRequest": true
+      },
+      "retainedTransportBlockers": [
+        "Same-host robots DNS resolution failed curl6 on all three recorded attempts; defer immediate HTTP repeat until new DNS recovery evidence."
+      ],
+      "prospectiveConstraints": {
+        "purpose": "original baseline literal URI route provenance only; not identity or scientific acceptance",
+        "originalHttpIsBaselineNotInventedFallback": true,
+        "maxOriginalRouteAttempts": 1,
+        "httpOriginRobotsFirst": true,
+        "httpsOriginRobotsNotReusedAsHttpPermission": true,
+        "sharedProtocol": "fcntl-host-clock-v2",
+        "includeRobotsAndRedirectsInHostGate": true,
+        "respectExistingRetryAfterAndRetryLimits": true,
+        "verifyTLSOnEveryActualHTTPSHop": true,
+        "disableTLSVerification": false,
+        "maxPageBytes": 2000000,
+        "raiseByteCap": false,
+        "loginOrChallengeBypass": false,
+        "robotsDenialOrUnknownBypass": false,
+        "recordActualRequestFinalRedirectAndTimes": true,
+        "preserveListedURLAndStableID": true,
+        "htmlMetaRefreshIsHTTPRedirect": false,
+        "reviewIsExecutionAuthorization": false
+      },
+      "entityOrScienceAcceptanceGranted": false,
+      "rawOrPacketEdited": false
+    }
+  ],
+  "conclusion": "8 metadata-reviewed candidates for one original-baseline HTTP route check; 3 deferred for specific size/DNS blockers. This review made zero requests and grants no entity/scientific acceptance."
+}

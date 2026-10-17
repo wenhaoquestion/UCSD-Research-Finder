@@ -1,0 +1,117 @@
+{
+  "labId": "ucsd-radiation-medicine-lab-meyers-lab",
+  "status": "supported",
+  "summaryZh": "Meyers 实验室研究用人工智能改进和自动化放射治疗，重点发展宫颈癌近距离放疗的全自动计划。",
+  "researchQuestions": [],
+  "topics": [
+    "放射治疗自动化",
+    "宫颈癌近距离放疗"
+  ],
+  "methods": [
+    "人工智能",
+    "基于知识的自动化计划"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-cab3960f682dfb7e",
+      "quote": "Dr. Sandra Meyers Dr. Meyers’ lab focuses on the use of AI for improving and automating aspects of radiation treatment. One major effort is the development and implementation of a fully-automated (knowledge-based) planning approach in patients undergoing brachytherapy, particularly in women with cervical cancer. Her work is complementary to that of other RMAS researchers who are focused on developing and clinically implementing automated planning in patients treated with intensity-modulated radiotherapy (IMRT) and conventional 3D conformal radiotherapy (3DCRT). Support Dr. Meyers’ research is supported in part by a 5-year, $1.2M K08 grant from the National Cancer Institute of the National Institute of Health​. Explore the Lab People Discover the brilliant minds in Dr. Sandra Meyers' lab, dedicated to pioneering advancements in radiation medicine. Meet Our Team Publications Dive into the cutting-edge research coming out of Dr. Sandra Meyers' lab. See Publications Featured Articles Automated Treatment Planning Framework for Brachytherapy of Cervical Cancer Knowledge-Based Dose Prediction Models to Inform Gynecologic Brachytherapy Needle Supplementation Neural network dose prediction for cervical brachytherapy: Overcoming data scarcity for applicator-specific models",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-686030f8d7b124d8",
+      "quote": "Meyers Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究问题待核（限本轮已审阅材料）：具名lab段明确AI自动计划开发用途，但没有具体未知问题；不把自动化工具开发或论文中克服数据稀缺标题转为科学how。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:24+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "具名lab段明确AI自动计划开发用途，但没有具体未知问题；不把自动化工具开发或论文中克服数据稀缺标题转为科学how。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-cab3960f682dfb7e",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/meyers/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:29+00:00",
+        "bodySha256": "335fa082837576a8430ee803fa5cd44bab42b7f73370365224cb3abd7c35e894",
+        "textSha256": "62a2460765b0329ae31df94a1c791e645e74d3652d4d940df5a8fe08fca2f739",
+        "textCharacters": 1283,
+        "readRanges": [
+          [
+            0,
+            1283
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-12a2c2066a29074c",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/meyers/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:30+00:00",
+        "bodySha256": "bd5e086b4888fdf75776bab8d02e19773d60fc8151ea0dd1e4fd3faae4e876ca",
+        "textSha256": "c1e7f1cc9295b5d6c728fd34d3c1efdbdddc3cae563407f74a9b72d7dc600b72",
+        "textCharacters": 748,
+        "readRanges": [
+          [
+            0,
+            748
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-686030f8d7b124d8",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+        "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+        "bodySha256": null,
+        "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+        "textCharacters": 156,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 192,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-eb2f0ee9bcc65989",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/meyers/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:30+00:00",
+        "bodySha256": "bd5e086b4888fdf75776bab8d02e19773d60fc8151ea0dd1e4fd3faae4e876ca",
+        "textSha256": "09cbdd1fe97666f869a56533158b9c6693adc96aef96a9b22a6f0d9790b96cfd",
+        "textCharacters": 1453,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-12a2c2066a29074c",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

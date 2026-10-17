@@ -1,0 +1,222 @@
+{
+  "checkedAt": "2026-10-16T22:40:27.946615+00:00",
+  "originalHandoffSha256": "0270ad727eae517c64efb1064574231a6119e84ad5b745ef8f33af88cf5080d2",
+  "originalDecisionsSha256": "c897ae79bb5fc994cef9da19f45bf4b9f79c32acbe85f116583857a08761bd06",
+  "admissionHandoffSha256": "36d4bbc67054d29713b1d71bdcac89de2a3552fbd02d2519a34efdf9377d4e8f",
+  "admissionDecisionsSha256": "87f8aaec32559a13b76e693992f359d8910c7a5ef76e6bf3d6c356ae6a50b862",
+  "changesToAdmissionDerivative": "Only cachePath mapping to independently hash-matched standard captures, literal Fogler link correction and explicit typing of legacy Ahmadi link; original handoff and decision bytes retained.",
+  "receiptCorrections": [
+    {
+      "old": {
+        "requestedUrl": "https://profiles.ucsd.edu/michael.fogler",
+        "sourceUrl": "https://profiles.ucsd.edu/michael.fogler",
+        "observedAt": "2026-10-16T04:10:05+00:00",
+        "bodySha256": "d42a994ad7651b2bf20117044aceea5df6b78b3551777d336f0d3598e3e2f047",
+        "status": "verified",
+        "method": "reviewed_positive_named_lab_resource",
+        "evidenceType": "named_link",
+        "evidence": "My Lab Site -> http://mfogler.physics.ucsd.edu/",
+        "linkText": "My Lab Site",
+        "linkUrl": "http://mfogler.physics.ucsd.edu/"
+      },
+      "reason": "Raw anchor href has no terminal slash; original receipt normalized it. Restore literal attribute verified in raw capture."
+    },
+    {
+      "old": {
+        "sourceUrl": "https://profiles.ucsd.edu/armin.ahmadi",
+        "observedAt": "2026-10-16T07:42:28+00:00",
+        "method": "official_profile_website_link_discovery_only",
+        "evidence": "Lab website → https://sites.ucsd.edu/ahmadi-lab/",
+        "status": "verified",
+        "redirectEvidence": []
+      },
+      "reason": "Explicitly type legacy named-link receipt using verified literal anchor label/href; preserve original snapshot."
+    },
+    {
+      "old": {
+        "requestedUrl": "https://profiles.ucsd.edu/michael.fogler",
+        "sourceUrl": "https://profiles.ucsd.edu/michael.fogler",
+        "observedAt": "2026-10-16T04:10:05+00:00",
+        "bodySha256": "d42a994ad7651b2bf20117044aceea5df6b78b3551777d336f0d3598e3e2f047",
+        "status": "verified",
+        "method": "reviewed_positive_named_lab_resource",
+        "evidenceType": "named_link",
+        "evidence": "My Lab Site -> http://mfogler.physics.ucsd.edu/",
+        "linkText": "My Lab Site",
+        "linkUrl": "http://mfogler.physics.ucsd.edu/"
+      },
+      "reason": "Raw anchor href has no terminal slash; original receipt normalized it. Restore literal attribute verified in raw capture."
+    }
+  ],
+  "prior885PacketsAndRecordsByteIdentical": true,
+  "prior885ProjectionRowsIdentical": true,
+  "all56ManifestCapturesVerified": true,
+  "new25UniqueBodiesCopiedByteForByte": true,
+  "newNetworkRequests": 0,
+  "newModelWorkers": 0,
+  "collectionWrites": 0,
+  "servedAtlasModified": false,
+  "validationPassed": true,
+  "validationErrors": [],
+  "cacheWarnings": [],
+  "newItems": [
+    {
+      "labId": "ucsd-live-lab-e4e6eca4020c54",
+      "labName": "Sitapati Lab",
+      "status": "partial",
+      "summaryZh": "已确认 Sitapati Lab 具名主页及其UC San Diego关联。现有正文主要为Amy Sitapati个人职务、专业领域及履历，尚不足以归纳实验室整体的具体研究问题和方法。",
+      "listedUrl": "https://sitapati.org/",
+      "originalUrlVerified": false,
+      "lastCheckedAt": "2026-10-16T01:03:41+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 2
+    },
+    {
+      "labId": "ucsd-live-lab-ae260ca4c6dbaa",
+      "labName": "MOSAIC Laboratory",
+      "status": "supported",
+      "summaryZh": "MOSAIC Laboratory 研究大规模传感数据系统和多模态AI/机器学习，用于健康与行为建模，重点利用异构传感模态和平台构建可扩展、节能的移动感测系统。",
+      "listedUrl": "https://mosaic-laboratory.github.io/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T01:09:53+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-7d63fdc52b1a03",
+      "labName": "Mertens Lab",
+      "status": "supported",
+      "summaryZh": "Mertens Lab（主页正文称Neural Aging Laboratory）利用细胞重编程构建人类衰老模型，研究衰老如何影响脑健康和疾病，并寻找驱动人类衰老的关键分子，以支持年龄相关神经退行性疾病研究。",
+      "listedUrl": "https://www.mertenslab.com/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T02:13:42+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-0b30919c2bef2f",
+      "labName": "The Ju Lab",
+      "status": "supported",
+      "summaryZh": "Ju Lab 研究青光眼中的神经保护机制，关注线粒体功能障碍、氧化应激、兴奋性毒性、神经炎症与神经退行性变化之间的关系。已捕获主页未具体列出实验方法。",
+      "listedUrl": "https://the-ju-lab.com/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T04:38:49+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-d0957addf55506",
+      "labName": "Fogler Theoretical Physics Group",
+      "status": "supported",
+      "summaryZh": "Fogler 研究组开展凝聚态理论研究，关注半导体、纳米结构、石墨烯及其他二维晶体的电子、激子、力学和等离激元性质，特别包括二维范德华材料中的等离激元与极化激元。",
+      "listedUrl": "https://mfogler.physics.ucsd.edu/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T04:10:07+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-3ff4f6521ed9d9",
+      "labName": "Lab for Nano-bio-imaging and Devices",
+      "status": "supported",
+      "summaryZh": "Lab for Nano-bio-imaging and Devices 利用多尺度、多模态原子力显微成像和功能映射研究疾病相关生物物理机制，并设计可控递送纳米载体及芯片式生物标志物传感器。",
+      "listedUrl": "https://lal.ucsd.edu/home",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T05:34:15+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-09d0d866944f48",
+      "labName": "MURO Lab",
+      "status": "supported",
+      "summaryZh": "MURO Lab 研究多机器人网络如何协作完成空间分布式任务，设计、分析并实现运动规划与分布式协调算法，面向搜救、环境监测、服务机器人和智能基础设施等场景。",
+      "listedUrl": "http://muro.ucsd.edu/index.html",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T05:34:29+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-5c7a3b14f0f39c",
+      "labName": "Heller Brown Lab",
+      "status": "supported",
+      "summaryZh": "Heller Brown Lab 研究G蛋白偶联受体如何通过信号转导调控细胞生长、存活和炎症，并影响心脏病、神经炎症及胶质母细胞瘤。实验室利用生化、细胞与分子生物学技术识别通路，再以转基因或基因敲除小鼠研究其生理作用。",
+      "listedUrl": "https://www.hellerbrownlab.org/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T06:30:14+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-c9ffdf33197da6",
+      "labName": "Bowman Lab",
+      "status": "supported",
+      "summaryZh": "Bowman Lab 研究海洋、陆地及宿主微生物群落的结构与功能，以及微生物在地球系统中的作用。方法包括序列分析、流式细胞术和建模，主题涵盖极地微生物生态、宏基因组及生态系统功能。",
+      "listedUrl": "http://www.polarmicrobes.org/",
+      "originalUrlVerified": false,
+      "lastCheckedAt": "2026-10-16T07:39:24+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-a15462c8329a59",
+      "labName": "Thermal Energy Materials and Physics Laboratory",
+      "status": "supported",
+      "summaryZh": "TEMP Lab 研究不同尺度的热输运、能量转换、储存和管理，重点开发热电转换纳米结构材料与器件，并研究微纳尺度电子、声子和光子的输运物理。",
+      "listedUrl": "http://chen.ucsd.edu/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T05:31:10+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-53daf590030749",
+      "labName": "Yi-Zhuang You's Research Group",
+      "status": "supported",
+      "summaryZh": "Yi-Zhuang You 研究组研究凝聚态及高能物理中的关联拓扑相和相变、量子纠缠动力学，以及机器学习在量子多体问题中的应用。研究描述采用官方Profiles的Our research陈述；主页标记由AI撰写的科普文章不作为研究方法证据。",
+      "listedUrl": "https://everettyou.github.io/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T13:04:36+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 3
+    },
+    {
+      "labId": "ucsd-live-lab-a463ff9c900f83",
+      "labName": "Coastal Ocean Observing Lab",
+      "status": "partial",
+      "summaryZh": "已确认 Coastal Ocean Observing Lab 的具名主页与官方关联链接；现有主页正文主要列资助方，缺少足够研究问题及方法说明，暂不生成推测性研究总结。",
+      "listedUrl": "https://coollab.ucsd.edu/",
+      "originalUrlVerified": false,
+      "lastCheckedAt": "2026-10-16T20:56:47+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 4
+    },
+    {
+      "labId": "ucsd-live-lab-ca190c92ae75b0",
+      "labName": "Ahmadi Lab",
+      "status": "supported",
+      "summaryZh": "Ahmadi Lab 以患者为中心研究慢性肾病作为全身性疾病的机制，关注线粒体健康、微血管功能、体能表现与患者结局之间的联系，并探索改善日常功能和长期健康的干预。",
+      "listedUrl": "https://sites.ucsd.edu/ahmadi-lab/",
+      "originalUrlVerified": true,
+      "lastCheckedAt": "2026-10-16T07:42:29+00:00",
+      "reviewedAt": "2026-10-16T22:39:18+00:00",
+      "evidenceCount": 5
+    }
+  ],
+  "totals": {
+    "eligible": 898,
+    "processed": 898,
+    "supportedAllTypes": 750,
+    "supportedLabGroupSummaries": 736,
+    "partial": 58,
+    "unresolved": 90,
+    "verifiedAcceptedLabGroupURLs": 588
+  },
+  "wholeProjectComplete": false,
+  "tests": {
+    "offlineRelevantTestsPassed": 333,
+    "newNamedLinkAndTitleGuardsPassed": true,
+    "networkAdapterLimitation": "Six previously observed integration cases fail closed because the unchanged adapter expects seven dependency sources while the active collector supplies ten; no live requests or gate relaxation in this batch."
+  }
+}

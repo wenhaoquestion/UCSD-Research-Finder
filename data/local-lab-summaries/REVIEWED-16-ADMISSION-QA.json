@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:14:05+00:00",
+  "verdict": "PASS_WITH_MINOR_PROVENANCE_OMISSION",
+  "scope": "Read-only admission QA for two explicitly reviewed shared-homepage entities; no additional source discovery or requests.",
+  "networkRequests": 0,
+  "importValidation": {
+    "sourceFile": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-reviewed-lab-handoff-49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776.json",
+    "sourceSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "decisionArtifactPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-decisions-780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1.json",
+    "decisionArtifactSha256": "780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1",
+    "usesFrozenApprovedSnapshot": true,
+    "generatedAt": "2026-10-16T04:46:40+00:00",
+    "validation": {
+      "acceptedRecords": 16,
+      "rawByteCapturesVerified": 28,
+      "actualQueueCaptureTimesVerified": 28,
+      "exactFieldQuotesVerified": 100
+    },
+    "ignoredLabAliases": 30,
+    "ignoredLabUpdates": 8,
+    "isFinalExport": false,
+    "mutableRevisionAutomaticallyAdmitted": false
+  },
+  "items": [
+    {
+      "labId": "ucsd-live-lab-802bc4f0642435",
+      "ordinal": 882,
+      "reviewedAt": "2026-10-16T05:14:05+00:00",
+      "rawReviewAt": "2026-10-16T05:11:05+00:00",
+      "status": "supported",
+      "sourceId": "src-b4ab573dff1b4ca6",
+      "sourceUrl": "https://www.ucsdrobotics.org/",
+      "requestedUrl": "https://www.ucsdrobotics.org/",
+      "observedAt": "2026-10-16T01:08:35+00:00",
+      "bodySha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "actualCacheHashMatches": true,
+      "sourceMatchesFetch": true,
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "共用主页以独立Flow Control Lab段落描述其研究；与Coordinated Robotics Lab明确为两个实验室，按已审共享组保留独立ID。"
+      },
+      "canCountAsVerifiedLabGroupURL": true,
+      "researchPartitionProof": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems.",
+      "rawEvidenceQuotesLiteral": true,
+      "rawEvidenceCount": 3,
+      "fieldEvidenceCount": 7,
+      "originalProfessorIds": [],
+      "piFieldsPreserved": true,
+      "websiteSharingPreservedExactly": true,
+      "unknownMetadataProjectsExactly": true,
+      "professorIdsExplicitlyPreservedInPacket": false,
+      "scientificScopeDecision": "Claims and methods follow only this individually named paragraph; shared swarm collaboration, logo and teaching material excluded."
+    },
+    {
+      "labId": "ucsd-live-lab-7df54236890322",
+      "ordinal": 883,
+      "reviewedAt": "2026-10-16T05:14:05+00:00",
+      "rawReviewAt": "2026-10-16T05:11:05+00:00",
+      "status": "supported",
+      "sourceId": "src-b4ab573dff1b4ca6",
+      "sourceUrl": "https://www.ucsdrobotics.org/",
+      "requestedUrl": "https://www.ucsdrobotics.org/",
+      "observedAt": "2026-10-16T01:08:35+00:00",
+      "bodySha256": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "actualCacheHashMatches": true,
+      "sourceMatchesFetch": true,
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "共用主页以独立Coordinated Robotics Lab段落描述运动、协同及原型方法；与Flow Control Lab为两个具名实体。"
+      },
+      "canCountAsVerifiedLabGroupURL": true,
+      "researchPartitionProof": "The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing.",
+      "rawEvidenceQuotesLiteral": true,
+      "rawEvidenceCount": 5,
+      "fieldEvidenceCount": 7,
+      "originalProfessorIds": [],
+      "piFieldsPreserved": true,
+      "websiteSharingPreservedExactly": true,
+      "unknownMetadataProjectsExactly": true,
+      "professorIdsExplicitlyPreservedInPacket": false,
+      "scientificScopeDecision": "Claims and methods follow only this individually named paragraph; shared swarm collaboration, logo and teaching material excluded."
+    }
+  ],
+  "appendOnlyVerification": {
+    "snapshotFile": "data/local-lab-summaries/before-reviewed16-append-packet-hashes.json",
+    "snapshotObservedAt": "2026-10-16T05:09:29+00:00",
+    "oldPacketCount": 882,
+    "unchangedActualPacketHashes": 882,
+    "changedOldPacketIds": [],
+    "headManifestCount": 882,
+    "currentManifestCount": 884,
+    "headManifestExactPrefix": true,
+    "headCommit": "a63a20802708fffd1004346761e20e96dd72dfc7",
+    "gitHeadComparisonCaveat": "HEAD differs from 34 old packets and 19 old raw records because of the independent current original-URI reviews; those unrelated changes are not attributed to this append. The immediate pre-append hash snapshot is the appropriate byte preservation comparison."
+  },
+  "actionableIssues": [
+    {
+      "severity": "minor",
+      "file": "scripts/local_lab_summaries.py",
+      "line": 361,
+      "finding": "The imported unknown/date-boundary field whitelist omits professorIds. Both admitted handoff lab objects have professorIds: [], but their packets and hydrated projections do not explicitly preserve that empty association. No professor association has been inferred.",
+      "recommendation": "Preserve professorIds through the same opaque importedUnknownsAndDateBoundaries copy for the two new packets and projection; keep the empty list exactly. No science or identity change needed."
+    }
+  ],
+  "boundaries": {
+    "piOrProfileInferred": false,
+    "sharedProjectsAssignedIndividually": false,
+    "newScienceInferred": false,
+    "rawPacketCodeCollectorWrites": false
+  }
+}

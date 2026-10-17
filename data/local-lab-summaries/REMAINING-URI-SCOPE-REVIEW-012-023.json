@@ -1,0 +1,1607 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:37:59+00:00",
+  "scope": "Inventory indices 12..23 inclusive only; metadata-only original literal URI provenance/access review",
+  "sourceInventory": "data/local-lab-summaries/remaining-related-request-provenance-review-inventory.json",
+  "sourceInventorySha256": "c27b6f1d7953813c9e5a2b9fb78032000c5ff0a52a6ecfb041f3413a054d51d4",
+  "baselineAtlas": "data/research-atlas.json",
+  "baselineAtlasSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "reviewedCount": 12,
+  "allowedSingleOriginalURICheckCount": 12,
+  "excludedKnownAccessBoundaryCount": 0,
+  "currentRoundOriginalURIRequestsFound": 0,
+  "historicalOriginalURIChecksPreservedCount": 12,
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "newSourceOrScientificReview": false,
+  "recordsChanged": 0,
+  "packetsChanged": 0,
+  "codeChanged": 0,
+  "collectorChanged": 0,
+  "sharedCoordinatorChanged": 0,
+  "allReviewedRawAndPacketBytesUnchangedAtCompletion": true,
+  "items": [
+    {
+      "index": 12,
+      "labId": "ucsd-physics-research-site-frank-wuerthwein",
+      "url": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "listedUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "labIds": [
+        "ucsd-physics-research-site-frank-wuerthwein"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 原文明确保存该 HTTP TWiki 组页 URI，当前只请求了同主机同路径 HTTPS，返回 404；这不是登录、robots 拒绝或 challenge。可安排一次原 URI 公共检查，仍须先执行该 HTTP origin 的 robots 检查；404 或新的身份占位内容不得当作实验室关闭或接受依据。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-frank-wuerthwein",
+        "labName": "Frank Wuerthwein Research Group",
+        "labWebsiteUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+          "status": "http_error",
+          "observedAt": "2026-10-03T00:04:04+00:00",
+          "httpStatus": 404
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+        "sourceUrl": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+        "observedAt": "2026-10-16T01:05:23+00:00",
+        "bodySha256": null,
+        "status": "http_error",
+        "httpStatus": 404,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://www.t2.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:05:22+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112722.2907898,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+          "fetch": {
+            "sourceUrl": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+            "observedAt": "2026-10-16T01:05:23+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://www.t2.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:22+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112722.2907898,
+              "error": "",
+              "redirects": [],
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+            "contentType": "text/html; charset=iso-8859-1",
+            "error": "",
+            "retrievedEpoch": 1792112723.252532
+          }
+        }
+      ],
+      "packetSha256AtReview": "88a72718ed854a8e0d27cd083b78fb0de696629d49f1158230b42efe0ef9e53d",
+      "rawSha256AtReview": "80bd24e773f1534a890444f310b20beb9c15ec1a883900eb037f710de731db31",
+      "sourceMetadata": [],
+      "rawStatus": "unresolved",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "目标 404，只有教师列表或占位内容。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [
+        "destination_http_error:404",
+        "no_entity_local_research_text"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://www.t2.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [
+        "HTTPS page returned 404; preserve the failed attempt and do not infer closure or identity."
+      ],
+      "identityScopeNotes": [],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "3ca9927bef7342f8f8ddf5b7bd4fb3c8af3ed609f0746a99ce9c0cd418ad847a"
+    },
+    {
+      "index": 13,
+      "labId": "ucsd-physics-research-site-john-m-goodkind",
+      "url": "http://physics.ucsd.edu/research/condensed_matter/",
+      "listedUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+      "labIds": [
+        "ucsd-physics-research-site-john-m-goodkind"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 原文 HTTP 地址和本轮 HTTPS 地址同主机同路径；本轮 HTTPS 是 404，没有已知访问控制边界。允许一次原地址 route-only 检查以补本轮请求范围；该路径属于 condensed_matter 区域，即使可达也不能自动确认 Goodkind 研究组。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-john-m-goodkind",
+        "labName": "John M. Goodkind Research Group",
+        "labWebsiteUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+          "status": "http_error",
+          "observedAt": "2026-10-03T00:04:04+00:00",
+          "httpStatus": 404
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+        "sourceUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+        "observedAt": "2026-10-16T01:05:23+00:00",
+        "bodySha256": null,
+        "status": "http_error",
+        "httpStatus": 404,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:20+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112240.2613912,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://physics.ucsd.edu/research/condensed_matter",
+          "fetch": {
+            "sourceUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+            "observedAt": "2026-10-16T01:05:23+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:20+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112240.2613912,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112723.610858
+          }
+        }
+      ],
+      "packetSha256AtReview": "768f7b950474cb5f3e261cab74adc2167d7c3482ddcf6cf965b7572b5191d72e",
+      "rawSha256AtReview": "d69afefd1405786e3eda408435788080da627a9c6516820e60ec26c2e50f1fd2",
+      "sourceMetadata": [],
+      "rawStatus": "unresolved",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "目标 404；只有教师资料，未确认研究组。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [
+        "destination_http_error:404",
+        "no_entity_local_research_text"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://physics.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [
+        "HTTPS page returned 404; preserve the failed attempt and do not infer closure or identity."
+      ],
+      "identityScopeNotes": [],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "0b303fe52b9c21c7f1b59b83efcbab8f5386034cb59dc30fcf202870ace614e2"
+    },
+    {
+      "index": 14,
+      "labId": "ucsd-physics-research-site-lu-j-sham",
+      "url": "http://ljssst.physics.ucsd.edu",
+      "listedUrl": "http://ljssst.physics.ucsd.edu",
+      "labIds": [
+        "ucsd-physics-research-site-lu-j-sham"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 存储原 HTTP 根 URI，本轮只有 HTTPS 捕获；当前记录属于个人研究站而非已确认研究组。没有 robots 拒绝、登录、challenge、DNS 或大小上限错误，可安排一次原 URI 检查；个人站实体和 provisional 接受状态不因此改变。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-lu-j-sham",
+        "labName": "Lu J. Sham Research Group",
+        "labWebsiteUrl": "http://ljssst.physics.ucsd.edu",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://ljssst.physics.ucsd.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:13+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://ljssst.physics.ucsd.edu/",
+          "title": "UC San Diego Physics - Lu Jeu Sham - Professor of Physics"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://ljssst.physics.ucsd.edu/",
+        "sourceUrl": "https://ljssst.physics.ucsd.edu/",
+        "observedAt": "2026-10-16T01:05:26+00:00",
+        "bodySha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://ljssst.physics.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:05:25+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112725.133429,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://ljssst.physics.ucsd.edu/",
+          "fetch": {
+            "sourceUrl": "https://ljssst.physics.ucsd.edu/",
+            "observedAt": "2026-10-16T01:05:26+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://ljssst.physics.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:25+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112725.133429,
+              "error": "",
+              "redirects": [],
+              "status": "not_found"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://ljssst.physics.ucsd.edu/",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+            "retrievedEpoch": 1792112726.140139
+          }
+        }
+      ],
+      "packetSha256AtReview": "6f717507a033ad0d9b424d526a1908f87e6b3b56d7840a9ace704ceeee4c7a54",
+      "rawSha256AtReview": "98e54aaca2195f0e1c5e47500b40dfc89dd15ddb21625827ba570a358e96749a",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-77ef95a623e4afc8",
+          "sourceUrl": "https://ljssst.physics.ucsd.edu/",
+          "requestedUrl": "https://ljssst.physics.ucsd.edu/",
+          "checkedUrl": "https://ljssst.physics.ucsd.edu/",
+          "queueUrl": "https://ljssst.physics.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:26+00:00",
+          "bodySha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+          "collectorSha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+          "title": "UC San Diego Physics - Lu Jeu Sham - Professor of Physics",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6bb0e2f56276041acff22f70780bded6b99240df778466274d8339cd782cc24e.html"
+        }
+      ],
+      "rawStatus": "partial",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "personal_research_site",
+        "reason": "第一人称个人研究页面，未明确研究组实体。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "personal_research_site",
+        "reason": "第一人称个人研究页面，未明确研究组实体。"
+      },
+      "currentRawBlockersPreserved": [
+        "personal_page_not_group_identity"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://ljssst.physics.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Existing entity is a personal_research_site and remains provisional."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "90abbbb6f73381fcfd60afd14e8f88a720fc5ae5e87ae0e518e5d8a136aa61d7"
+    },
+    {
+      "index": 15,
+      "labId": "ucsd-physics-research-site-shelley-wright",
+      "url": "http://oirlab.ucsd.edu",
+      "listedUrl": "http://oirlab.ucsd.edu",
+      "labIds": [
+        "ucsd-physics-research-site-shelley-wright"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 原 HTTP OIR 根 URI 与当前 HTTPS 捕获只有协议差异；没有已知访问边界。可安排一次原 URI 检查，但该根页的旧标题是 Redirecting...、只记录 HTML meta refresh；不将它伪装为 HTTP 重定向，不把另页的团队身份引用自动绑定新根捕获。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-shelley-wright",
+        "labName": "Shelley Wright Research Group",
+        "labWebsiteUrl": "http://oirlab.ucsd.edu",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://oirlab.ucsd.edu",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:13+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://oirlab.ucsd.edu/",
+          "title": "Redirecting..."
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://oirlab.ucsd.edu/",
+        "sourceUrl": "https://oirlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:05:27+00:00",
+        "bodySha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://oirlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:05:26+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112726.60304,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://oirlab.ucsd.edu/",
+          "fetch": {
+            "sourceUrl": "https://oirlab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:05:27+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://oirlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:26+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112726.60304,
+              "error": "",
+              "redirects": [],
+              "status": "not_found"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://oirlab.ucsd.edu/",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+            "retrievedEpoch": 1792112727.607139
+          }
+        }
+      ],
+      "packetSha256AtReview": "fd43ad365caf05214c3af5ea846ce2e2e7c91e5d5a4857b79213bce82b7ee0bb",
+      "rawSha256AtReview": "2337c53e434bac6b0b64ffb9948da4d1a21b3768a57a5d61c85c5b981e1b1d87",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-6c0a5af04a439d91",
+          "sourceUrl": "https://oirlab.ucsd.edu/",
+          "requestedUrl": "https://oirlab.ucsd.edu/",
+          "checkedUrl": "https://oirlab.ucsd.edu/",
+          "queueUrl": "https://oirlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:27+00:00",
+          "bodySha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+          "collectorSha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+          "title": "Redirecting...",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fd7d9245878572c92abaf3d682fda45bb4b8ce3daee0f59a74d01c7b91721f0e.html"
+        }
+      ],
+      "rawStatus": "supported",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "新取得的同站团队页在Current Members / UCSD OIR Laboratory中完整标识Shelley Wright，并明确Shelley is the Principal Investigator of the UCSD Optical and Infrared Laboratory，与先前OIR概述页的同名实验室和原Shelley Wright研究组记录建立明确负责人关系。该身份关系足以归属既有概述研究；未更名稳定ID、合并实体或接受规范网址迁移。",
+        "observedPageName": "UCSD Optical Infrared Laboratory",
+        "silentIdMigrationAllowed": false
+      },
+      "entityAcceptanceStatus": "accepted_lab_group",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://oirlab.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Latest root is a meta-refresh stub; accepted lab identity from separate team/about sources does not automatically confirm the root capture."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "3991b0a61e5547a7b3f201a57a782dfe11f651846adf931e9bd1e7d521aa9a62"
+    },
+    {
+      "index": 16,
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "url": "http://sinhagroup.ucsd.edu/",
+      "listedUrl": "http://sinhagroup.ucsd.edu/",
+      "labIds": [
+        "ucsd-physics-research-site-sunil-k-sinha"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "原 HTTP URI 在 baseline 中确已存在，并非为绕过 HTTPS 错误临时生成。本轮仅 HTTPS robots 前置检查失败，错误为 certificate has expired，没有页面请求证明或显式 robots 拒绝。允许一次正常原 HTTP-origin robots 先行的有限检查；任何 HTTPS robots/page 跳转仍必须校验 TLS，证书错误必须停止，不许关闭 TLS 或改走其他临时地址。baseline 历史标题 Allen Lab 与 Sinha 列表名不同，须保留身份不确定性。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-sunil-k-sinha",
+        "labName": "Sunil K. Sinha Research Group",
+        "labWebsiteUrl": "http://sinhagroup.ucsd.edu/",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://sinhagroup.ucsd.edu/",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "http://sinhagroup.ucsd.edu/",
+          "title": "Allen Lab"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://sinhagroup.ucsd.edu/",
+        "sourceUrl": null,
+        "observedAt": "2026-10-16T01:05:27+00:00",
+        "bodySha256": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "error": null,
+        "blockedUrl": "https://sinhagroup.ucsd.edu/",
+        "robots": {
+          "sourceUrl": "https://sinhagroup.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:05:27+00:00",
+          "httpStatus": 0,
+          "retrievedEpoch": 1792112727.26259,
+          "error": "curl: (60) SSL certificate problem: certificate has expired More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secure connection t",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://sinhagroup.ucsd.edu/",
+          "fetch": {
+            "sourceUrl": "https://sinhagroup.ucsd.edu/",
+            "observedAt": "2026-10-16T01:05:27+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://sinhagroup.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:27+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112727.26259,
+              "error": "curl: (60) SSL certificate problem: certificate has expired More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secure connection t",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://sinhagroup.ucsd.edu/",
+            "retrievedEpoch": 1792112727.275736
+          }
+        }
+      ],
+      "packetSha256AtReview": "f3a4f9952e807aae2c638d6473b9ec70a6b7697b0652a143051815d062b2828e",
+      "rawSha256AtReview": "0ef30d229c37ed7e7e1d2ae173dcf1e1738530b5dffe27262909fe7424eff57d",
+      "sourceMetadata": [],
+      "rawStatus": "unresolved",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "目标 robots 不可用，现有来源未提供实验室本地正文。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [
+        "destination_robots_unavailable",
+        "no_entity_local_research_text"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://sinhagroup.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [
+        "HTTPS robots TLS certificate expired; HTTPS redirect must fail normally if certificate remains invalid."
+      ],
+      "identityScopeNotes": [
+        "Historical baseline HTTP title Allen Lab differs from Sinha listed name; route eligibility provides no identity acceptance."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "510af2872104b7d166012dd2bfacd212321f218db7186f1e962b45ec6301ce94"
+    },
+    {
+      "index": 17,
+      "labId": "ucsd-physics-research-site-thomas-m-o-neil",
+      "url": "http://physics.ucsd.edu/research/plasma/",
+      "listedUrl": "http://physics.ucsd.edu/research/plasma/",
+      "labIds": [
+        "ucsd-physics-research-site-thomas-m-o-neil"
+      ],
+      "reviewedAt": "2026-10-16T04:37:58+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline HTTP plasma 路径与本轮 HTTPS 实际请求同主机同路径，HTTPS 返回 404，不是访问控制拒绝。允许一次原 URI 的公开只读检查以补本轮请求范围；该路径是学科页，成功也不能自动确认 O'Neil 研究组。",
+      "baseline": {
+        "id": "ucsd-physics-research-site-thomas-m-o-neil",
+        "labName": "Thomas M. O’Neil Research Group",
+        "labWebsiteUrl": "http://physics.ucsd.edu/research/plasma/",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://physics.ucsd.edu/research/plasma/",
+          "status": "http_error",
+          "observedAt": "2026-10-03T00:04:04+00:00",
+          "httpStatus": 404
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://physics.ucsd.edu/research/plasma/",
+        "sourceUrl": "https://physics.ucsd.edu/research/plasma/",
+        "observedAt": "2026-10-16T01:05:28+00:00",
+        "bodySha256": null,
+        "status": "http_error",
+        "httpStatus": 404,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:20+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112240.2613912,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://physics.ucsd.edu/research/plasma",
+          "fetch": {
+            "sourceUrl": "https://physics.ucsd.edu/research/plasma/",
+            "observedAt": "2026-10-16T01:05:28+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:20+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112240.2613912,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://physics.ucsd.edu/research/plasma/",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112728.863443
+          }
+        }
+      ],
+      "packetSha256AtReview": "3b0ae60119b7bdeda13e0fd9f021161b8e0bc9ea02ca19a5a5ae8347c1cbe9c9",
+      "rawSha256AtReview": "938cd4953d00a05e045de65002980a20f8e8f5274a74a378f1a2cd086edf753a",
+      "sourceMetadata": [],
+      "rawStatus": "unresolved",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "目标 404，可用教师名录未确认研究组。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [
+        "destination_http_error:404",
+        "no_entity_local_research_text"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://physics.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [
+        "HTTPS page returned 404; preserve the failed attempt and do not infer closure or identity."
+      ],
+      "identityScopeNotes": [],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "d35278db825e5a4a8b6a516cb454f36cf2f37ff2937d6b5f9fe4ea1515c31022"
+    },
+    {
+      "index": 18,
+      "labId": "ucsd-structural-engineering-lab-composite-structures-laboratory",
+      "url": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "listedUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "labIds": [
+        "ucsd-structural-engineering-lab-composite-structures-laboratory"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "原 HTTP facilities 路径在 baseline 中字面保存，目前仅有 HTTPS 捕获，后者无已知访问错误。允许一次原 URI 检查；实体仍是 facility，且当前只有设施描述、缺实验室科研问题，不能因 route 成功升级或计为研究组。",
+      "baseline": {
+        "id": "ucsd-structural-engineering-lab-composite-structures-laboratory",
+        "labName": "Composite Structures Laboratory",
+        "labWebsiteUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "title": "Composite Structures Laboratory | Structural Engineering"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+        "sourceUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+        "observedAt": "2026-10-16T01:06:10+00:00",
+        "bodySha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://se.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.709431,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "fetch": {
+            "sourceUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+            "observedAt": "2026-10-16T01:06:10+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://se.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:12+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112232.709431,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+            "retrievedEpoch": 1792112770.59903
+          }
+        }
+      ],
+      "packetSha256AtReview": "cb0d06c4b0dfbc06745a7fe3dac198a921a2f854ca7211bfd11ca3355c12c87a",
+      "rawSha256AtReview": "bdd2ebb7b239ea033bccec4b4bdd0ed976fe66eb85732f18ef66ce32eac1941c",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-f93474e8e9e61386",
+          "sourceUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "requestedUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "checkedUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "queueUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "observedAt": "2026-10-16T01:06:10+00:00",
+          "bodySha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+          "collectorSha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+          "title": "Composite Structures Laboratory | Structural Engineering",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/386ee3bdacc8a420765f9fc98901df042d8965f4ada54865622a31ed8526c7cd.html"
+        }
+      ],
+      "rawStatus": "partial",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "currentRawBlockersPreserved": [
+        "facility_description_only_no_research_question"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://se.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Facility classification must remain; request-scope evidence does not create an accepted lab/group."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "0c3dccc1ef9c217f5340b4e6a7ac8fcbd2743656bf68e0a66e165a14344ddd7d"
+    },
+    {
+      "index": 19,
+      "labId": "ucsd-structural-engineering-lab-geotechnical-laboratories",
+      "url": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "listedUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "labIds": [
+        "ucsd-structural-engineering-lab-geotechnical-laboratories"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 字面保存该 HTTP geotechnical facilities 路径，本轮只有同主机同路径 HTTPS 成功捕获且没有已知访问边界。允许一次原 URI 检查；保持 facility / source_supported_other_entity 分类，不自动加入 accepted lab/group。",
+      "baseline": {
+        "id": "ucsd-structural-engineering-lab-geotechnical-laboratories",
+        "labName": "Geotechnical Laboratories",
+        "labWebsiteUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "title": "Geotechnical Facilities | Structural Engineering"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+        "sourceUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+        "observedAt": "2026-10-16T01:06:11+00:00",
+        "bodySha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://se.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.709431,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "fetch": {
+            "sourceUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+            "observedAt": "2026-10-16T01:06:11+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://se.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:12+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112232.709431,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+            "retrievedEpoch": 1792112771.7512891
+          }
+        }
+      ],
+      "packetSha256AtReview": "0358f9f5157a310fbde0b0a0e30e1896f3716c37a74d4ced4d8668146cbdb3f7",
+      "rawSha256AtReview": "7d9df352dcd25af31994815c1b0bb0ce0ec1283fa054a33eb2c112694dc6f9c2",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-4ee98098754bd15b",
+          "sourceUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "requestedUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "checkedUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "queueUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "observedAt": "2026-10-16T01:06:11+00:00",
+          "bodySha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+          "collectorSha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+          "title": "Geotechnical Facilities | Structural Engineering",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6515ba0866abe6a8ffd66efb2b7a273859872be723e711358051f82fce0a30f7.html"
+        }
+      ],
+      "rawStatus": "supported",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "entityAcceptanceStatus": "source_supported_other_entity",
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "currentRawBlockersPreserved": [],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://se.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Facility classification must remain; request-scope evidence does not create an accepted lab/group."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "b25bd02af59070ab2772ad9b4049d07a1411237fac4993174722eb45823b6ea8"
+    },
+    {
+      "index": 20,
+      "labId": "ucsd-structural-engineering-lab-srmd-laboratory",
+      "url": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "listedUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "labIds": [
+        "ucsd-structural-engineering-lab-srmd-laboratory"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 字面保存该 HTTP SRMD test-facility 路径，本轮只有同主机同路径 HTTPS 成功捕获且没有已知访问边界。允许一次原 URI 检查；设施身份与其他实体接受状态保留，检查本身不是研究组接受。",
+      "baseline": {
+        "id": "ucsd-structural-engineering-lab-srmd-laboratory",
+        "labName": "SRMD Laboratory",
+        "labWebsiteUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "title": "Caltrans Seismic Response Modification Device (SRMD) Test Facility | Structural Engineering"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+        "sourceUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+        "observedAt": "2026-10-16T01:06:12+00:00",
+        "bodySha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://se.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.709431,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "fetch": {
+            "sourceUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+            "observedAt": "2026-10-16T01:06:12+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://se.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:12+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112232.709431,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+            "retrievedEpoch": 1792112772.7891252
+          }
+        }
+      ],
+      "packetSha256AtReview": "66f6f0b2f32e7d3f9b9b57d2a4e48cb3a025e478da3e26767d19c3b8559e2832",
+      "rawSha256AtReview": "d9a2d458793ebf0c63c9661578b78d5522234f7ff9a509b7c8f194191e28660c",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-ae3553870519d80a",
+          "sourceUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "requestedUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "checkedUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "queueUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "bodySha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+          "collectorSha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+          "title": "Caltrans Seismic Response Modification Device (SRMD) Test Facility | Structural Engineering",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5c4ba80ef2e0c395e686845b9e3fcf29d8a116d431cdcd3c1af6930425dba9e3.html"
+        }
+      ],
+      "rawStatus": "supported",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "entityAcceptanceStatus": "source_supported_other_entity",
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "currentRawBlockersPreserved": [],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://se.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Facility classification must remain; request-scope evidence does not create an accepted lab/group."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "6fae2a8370d1316f03f420d4cc6334d26cef8d077064bbcf12d7b1ae0bdb11de"
+    },
+    {
+      "index": 21,
+      "labId": "ucsd-structural-engineering-lab-structural-components-laboratory",
+      "url": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "listedUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "labIds": [
+        "ucsd-structural-engineering-lab-structural-components-laboratory"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 字面保存该 HTTP structural-components facility 路径，本轮只有对应 HTTPS 成功捕获且没有已知访问边界。允许一次原 URI 检查；保持 facility 分类、历史研究实例与当前项目的不确定性。",
+      "baseline": {
+        "id": "ucsd-structural-engineering-lab-structural-components-laboratory",
+        "labName": "Structural Components Laboratory",
+        "labWebsiteUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "title": "Structural Components Laboratory | Structural Engineering"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+        "sourceUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+        "observedAt": "2026-10-16T01:06:13+00:00",
+        "bodySha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://se.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.709431,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "fetch": {
+            "sourceUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+            "observedAt": "2026-10-16T01:06:13+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://se.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:12+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112232.709431,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+            "retrievedEpoch": 1792112773.8647401
+          }
+        }
+      ],
+      "packetSha256AtReview": "65c93b34fa8e06eda0523de05f2d9b2823840149b14ca13def7d84f967aa1df0",
+      "rawSha256AtReview": "129a0c1a5cdce478a54b856585522c18bb0fb4033fed486b1c9252c97ff04ed8",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-6fc7d92ea2e87080",
+          "sourceUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "requestedUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "checkedUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "queueUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "observedAt": "2026-10-16T01:06:13+00:00",
+          "bodySha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+          "collectorSha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+          "title": "Structural Components Laboratory | Structural Engineering",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8a2c63fb86f9a96b3dc650ec43f57e1dbc5e591c1e0148c09fef8dc77d0e8f48.html"
+        }
+      ],
+      "rawStatus": "supported",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "entityAcceptanceStatus": "source_supported_other_entity",
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "currentRawBlockersPreserved": [],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://se.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Facility classification must remain; request-scope evidence does not create an accepted lab/group."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "aa4d0a85bded0563f96d6a8d863ceccc931ee01c7c6237c0e1746e81277dbbba"
+    },
+    {
+      "index": 22,
+      "labId": "ucsd-lab-from-faculty-se-ucsd-edu-facilities-structural-systems-laboratory",
+      "url": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "listedUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "labIds": [
+        "ucsd-lab-from-faculty-se-ucsd-edu-facilities-structural-systems-laboratory"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 稳定 ID 及字面 HTTP structural-systems facility 地址与当前 packet 一致，本轮仅有 HTTPS 成功捕获。允许一次原 URI 检查，无须改 ID 或套用教师邻接资料；实体仍是 facility，不据请求成功接受为 lab/group。",
+      "baseline": {
+        "id": "ucsd-lab-from-faculty-se-ucsd-edu-facilities-structural-systems-laboratory",
+        "labName": "Structural Systems Laboratory",
+        "labWebsiteUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "status": "reachable",
+          "observedAt": "2026-10-02T22:41:15+00:00",
+          "httpStatus": 200,
+          "finalUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "title": "Structural Systems Laboratory | Structural Engineering"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+        "sourceUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+        "observedAt": "2026-10-16T01:06:15+00:00",
+        "bodySha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://se.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.709431,
+          "error": "",
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "fetch": {
+            "sourceUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+            "observedAt": "2026-10-16T01:06:15+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://se.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:12+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112232.709431,
+              "error": "",
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "sha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+            "retrievedEpoch": 1792112775.178155
+          }
+        }
+      ],
+      "packetSha256AtReview": "259122f00086034dccbc2ab584ca59789c12837999dc380947ab0974392a8ed3",
+      "rawSha256AtReview": "7d7f21b4663767cd4436c43662057e9d39119d4569e9a8931630b0c0ff2e5343",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-18a0900c2b0878e4",
+          "sourceUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "requestedUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "checkedUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "queueUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "observedAt": "2026-10-16T01:06:15+00:00",
+          "bodySha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+          "collectorSha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+          "title": "Structural Systems Laboratory | Structural Engineering",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/62e314abcbf47d0ff8b176217335c50d2cef06b1e51262f1d83a172fb64b3e49.html"
+        }
+      ],
+      "rawStatus": "supported",
+      "entityIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "entityAcceptanceStatus": "source_supported_other_entity",
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "currentRawBlockersPreserved": [],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://se.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Facility classification must remain; request-scope evidence does not create an accepted lab/group."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "09523aff00247af4939d25cc10e6da802eb118ab57bf632747cd0c4ab4a05b8f"
+    },
+    {
+      "index": 23,
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "url": "http://tch.ucsd.edu",
+      "listedUrl": "http://tch.ucsd.edu",
+      "labIds": [
+        "ucsd-chemistry-biochemistry-lab-hermann-lab"
+      ],
+      "reviewedAt": "2026-10-16T04:37:59+00:00",
+      "metadataOnly": true,
+      "decision": "allow_single_original_uri_public_check",
+      "candidateAllowed": true,
+      "routeOnly": true,
+      "reason": "baseline 已保存原 HTTP tch 根 URI，本轮仅有同主机同路径 HTTPS 成功捕获且无已知访问边界。允许一次原 URI 检查，但当前 Hermann 记录是 partial、正文不足；HTTP 200、历史标题或负责人宽泛领域均不自动补足实验室整体科研证据。",
+      "baseline": {
+        "id": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+        "labName": "Hermann Lab",
+        "labWebsiteUrl": "http://tch.ucsd.edu",
+        "literalHttpIsInSourceUrls": true,
+        "historicalWebsiteCheck": {
+          "url": "http://tch.ucsd.edu",
+          "httpStatus": 200,
+          "finalUrl": "http://tch.ucsd.edu",
+          "title": "Hermann Lab Home",
+          "status": "ok"
+        }
+      },
+      "relatedCapture": {
+        "requestedUrl": "https://tch.ucsd.edu/",
+        "sourceUrl": "https://tch.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:09+00:00",
+        "bodySha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+        "status": "ok",
+        "httpStatus": 200,
+        "error": "",
+        "blockedUrl": null,
+        "robots": {
+          "sourceUrl": "https://tch.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:08+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112828.142368,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "redirects": []
+      },
+      "metadataOrigin": [
+        {
+          "source": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+          "origin": "collector_queue",
+          "itemKey": "https://tch.ucsd.edu/",
+          "fetch": {
+            "sourceUrl": "https://tch.ucsd.edu/",
+            "observedAt": "2026-10-16T01:07:09+00:00",
+            "status": "ok",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://tch.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:07:08+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792112828.142368,
+              "error": "",
+              "redirects": [],
+              "status": "checked"
+            },
+            "httpStatus": 200,
+            "finalUrl": "https://tch.ucsd.edu/",
+            "contentType": "text/html",
+            "error": "",
+            "sha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+            "retrievedEpoch": 1792112829.178654
+          }
+        }
+      ],
+      "packetSha256AtReview": "1e958485469fb086c540ce7e906d6b30c895584f278c9f1f6cc71477a27837b4",
+      "rawSha256AtReview": "b3371898838e5b26283cdd42539dd25aed39087bc808ea74878fde2bdddfe790",
+      "sourceMetadata": [
+        {
+          "sourceId": "src-6882240f2c380608",
+          "sourceUrl": "https://tch.ucsd.edu/",
+          "requestedUrl": "https://tch.ucsd.edu/",
+          "checkedUrl": "https://tch.ucsd.edu/",
+          "queueUrl": "https://tch.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:09+00:00",
+          "bodySha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+          "collectorSha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+          "title": "Hermann Lab Home",
+          "role": "related_destination_variant",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02332ecc6a540ac26c25bd7c224db87fee406ef6f8767fa496ce06dee61dace4.html"
+        }
+      ],
+      "rawStatus": "partial",
+      "entityIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "当前实验室正文为空。"
+      },
+      "entityAcceptanceStatus": "provisional_or_unresolved",
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "currentRawBlockersPreserved": [
+        "目标提取正文为空；仅负责人宽泛研究领域。"
+      ],
+      "unresolvedMismatchDecisionPresent": false,
+      "sameHostnameAndEffectivePath": true,
+      "onlyHttpHttpsDifference": true,
+      "currentRoundOriginalURICaptureCount": 0,
+      "currentRoundOriginalURIRedirectFromCount": 0,
+      "currentRoundOriginalURIWireEventCount": 0,
+      "originalHTTPRobotsUrl": "http://tch.ucsd.edu/robots.txt",
+      "originalHTTPRobotsCacheFiles": [],
+      "originalHTTPKnownCachedRobotsDenial": null,
+      "historicalOriginalURICheckMayExist": true,
+      "historicalDatesNotCurrentRoundProof": true,
+      "knownRequestScopeBlockers": [],
+      "knownRelatedAttemptLimits": [],
+      "identityScopeNotes": [
+        "Hermann remains partial with insufficient lab-local scientific body; route success cannot fill the content gap."
+      ],
+      "requestConditions": [
+        "Check only the baseline literal HTTP URI, preserving scheme/www/path/query; no invented protocol variants, aliases or alternate research paths.",
+        "Evaluate the original HTTP-origin robots rules first using the existing fetcher; a cached HTTPS success or robots result is not permission to skip this boundary.",
+        "Use the existing shared fcntl-host-clock-v2 gate for every robots, page and observed HTTP redirect transport, retaining host timing, Retry-After and cooldown policy.",
+        "Retain normal HTTPS TLS verification on every observed redirect, including Sinha; stop on certificate failure, never use insecure TLS or a substitute route.",
+        "Retain the existing 2,000,000-byte response cap, 300,000-byte robots cap, bounded redirect counts and existing timeouts; do not raise limits or add retries to overcome an error.",
+        "Stop on robots denial/unavailability, authentication, login target or access challenge; no login or bypass. HTML meta refresh does not become an observed HTTP redirect.",
+        "Eligibility is request-scope-only: do not change stable ID, summary, entity type, acceptance, canonical identity or any of the 13 mismatch gates. Any returned identity or research prose requires separate model review."
+      ],
+      "networkRequestsMade": 0,
+      "bodyScientificContentRead": false,
+      "recordsChanged": false,
+      "packetsChanged": false,
+      "assessmentFingerprint": "a1d6d82cd019727225d9e36791700b650f9fb4292629e088fa6fa4af6ee3b366"
+    }
+  ]
+}

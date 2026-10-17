@@ -1,0 +1,162 @@
+{
+  "checkedAt": "2026-10-16T07:08:38+00:00",
+  "receipt": {
+    "path": "data/local-lab-summaries/PROFILE-LINK-COHORT2-PRE-TRANSPORT-NOT-STARTED.json",
+    "sha256": "03839625a73447ec78da6b7f4cc685226c80dcded79c0e528d34c9dcb8d637fa",
+    "recordedAt": "2026-10-16T07:06:58+00:00",
+    "outcome": "not_started_collector_pid_not_live",
+    "recordedProcessPid": 55354,
+    "recordedActualPsExitCode": 1,
+    "psReadFromReceiptNotNewProbe": true,
+    "notAnHttpFailureOrPageObservation": true,
+    "wrapperGateBeforePlanReceiptsTransportVerified": true,
+    "wrapperSha256": "6588a788d3427015db8ebab03167187713aa21b5f631165dee8f1038bc602ff1"
+  },
+  "recordAndPacketFreeze": {
+    "preInvariantSha256": "70ee691d032c5005710b21a60f0694b489dec9adacc45291e069d2e4aad2ea9d",
+    "rawCount": 884,
+    "packetCount": 884,
+    "allRawSha256Exact": true,
+    "allPacketSha256Exact": true
+  },
+  "network": {
+    "ownLedgerSha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+    "fullLedgerBytesEqualPreCopy": true,
+    "wires": 353,
+    "receipts": 205,
+    "oldThreeSubtreesTypedExact": {
+      "wireEvents": true,
+      "items": true,
+      "originalUriObservationStarts": true
+    },
+    "newEvents": 0,
+    "newReceipts": 0,
+    "newJournalStarts": 0,
+    "coordinationSha256": "29b0cd5723ea5518fbdd8f50cf6ab6d07c6461c89fd9e4710b0710c9e4065a0f",
+    "coordinationStatus": "waiting_for_live_collector",
+    "liveRequestsEnabled": false,
+    "collectorConnected": false,
+    "coordinationReadyFunction": false,
+    "oldReadyCheckedAtIsHistorical": "2026-10-16T06:45:45+00:00",
+    "lastGateCheckAt": "2026-10-16T07:06:58+00:00"
+  },
+  "active": {
+    "count": 6,
+    "sha256": "60f8917c3216e47c6441c5ee945d926c8a46138f89745d9f436964d387daf140",
+    "new3RemainUnattempted": [
+      {
+        "labId": "ucsd-cellular-molecular-medicine-lab-esko-lab",
+        "literalURL": "http://eskolab.ucsd.edu/",
+        "ownWireReceiptAndJournalAbsent": true,
+        "frozenCollectorActualExactAttemptAndPendingAbsent": true
+      },
+      {
+        "labId": "ucsd-live-lab-ebefe055ae9fce",
+        "literalURL": "http://kaufmanlab.ucsd.edu",
+        "ownWireReceiptAndJournalAbsent": true,
+        "frozenCollectorActualExactAttemptAndPendingAbsent": true
+      },
+      {
+        "labId": "ucsd-live-lab-eb8a5809f8da0f",
+        "literalURL": "http://ghoshlab.ucsd.edu/Pages/default.aspx",
+        "ownWireReceiptAndJournalAbsent": true,
+        "frozenCollectorActualExactAttemptAndPendingAbsent": true
+      }
+    ]
+  },
+  "collectorQueueSnapshot": {
+    "updatedAt": "2026-10-16T07:05:22+00:00",
+    "sha256": "617d8915995f022975503a14dfdaec134a22b94032d1ae3c30d0eee3d1e746b4",
+    "bytes": 44056108,
+    "itemCount": 19255
+  },
+  "mismatch": {
+    "sha256": "d03f63cfc224974df2951ebbc152619fc05289431dbcb69781c888df5874362a",
+    "all14BaseDecisionsExact": true,
+    "accepted": 0
+  },
+  "testReuse": {
+    "path": "data/local-lab-summaries/PROFILE-LINK-ACTUAL-FULL-TEST-RUN.json",
+    "sha256": "df62a6dc11a38e4100ceeec56a1b5137c32d6f2edd5be19508ad3574de0b1ea9",
+    "testsPassed": 409,
+    "all44SourceHashesMatch": true,
+    "logHashMatch": true,
+    "testsRerun": false
+  },
+  "finalProjectionBinding": {
+    "validationCheckedAt": "2026-10-16T07:07:20+00:00",
+    "validationSha256": "7bd23f7b3d77a6b5190751c3e5f9b18c2ff39eb434ea575903122bf9a27e628d",
+    "projectionSha256": {
+      "summaries.jsonl": "fc26ed5e25844751f6f8c09707ae6fe78143aaaaf0d1fefe939bb4e628fddcd8",
+      "url-verification.jsonl": "9f67f08960db72ba5204fc96c09067837cf337361e1b4b884488bb37537ab4e4",
+      "queue.json": "25211fa1937750e3bce7cb6984e796f5c75d46f2488d3dc8a028ae424c46174e",
+      "checkpoint.json": "760265adb0aa04da327805c121f81333f2c4951ff042b73b5bb1603d1e609fbc"
+    },
+    "manifestSha256": "befccd15d0c87dba93f0ede454dd1653dab973a3cd02f832428b6cc2dbb082e8",
+    "all884SourceCountsMatch": true,
+    "sameScientificAndUrlObjectsAsHead884Each": {
+      "summaries.jsonl": true,
+      "url-verification.jsonl": true
+    },
+    "counts": {
+      "supported": 738,
+      "partial": 56,
+      "unresolved": 90
+    },
+    "labGroups": 724,
+    "verifiedOriginalURLs": 569,
+    "outputsAreComplete": false,
+    "evidenceCacheFilesCheckedByParent": 1058,
+    "errors": [],
+    "sourceCacheDigestWarnings": [],
+    "parentInvariantReportSha256": "619fb4e382b6934b2e14bfe9f9d8ce93b0fa33140b2248b77fc3e326f989b6cd"
+  },
+  "qaNetworkRequests": 0,
+  "qaRawPacketCodeCollectorSharedWrites": 0,
+  "schemaVersion": 1,
+  "result": "passed",
+  "scope": "Read-only Cohort2 pre-transport non-start, frozen data/ledger/code-receipt consistency, final projection and suspended offline plan binding. No scientific body review or actual HTTP observation.",
+  "findings": [],
+  "suspendedOfflinePlan": {
+    "plannedAt": "2026-10-16T07:08:09+00:00",
+    "status": "awaiting_verified_shared_coordinator",
+    "urlCount": 36,
+    "liveCandidateCount": 3,
+    "executionStarted": false,
+    "networkRequestsMade": 0,
+    "finiteCandidatesExactlyActiveLastThree": true,
+    "planAndSuspendedCopyEqualExceptExplicitNonExecutionFields": true,
+    "artifacts": {
+      "gap-plan.json": "fa83aa7c3a5569c7b2196880cf389ef7f4bb9668973b4ca8db0abe427789aaee",
+      "COHORT2-SUSPENDED-FINITE-PLAN.json": "de98b7a74b0048b7c808aa1ddb0ff58a0201b8c270bfdb35bd9a00232bb587dd"
+    },
+    "chronology": "The execution wrapper failed at coordination_snapshot before its plan/receipt/journal/transport steps. Parent later saved an offline suspended plan at 07:08:09; its presence is not execution evidence."
+  },
+  "finalRuntimeReceipt": {
+    "path": "data/local-lab-summaries/COHORT2-FINAL-RUNTIME-OBSERVATION.json",
+    "sha256": "99dc291bba8b5e21ca1cd2bc28a2d420a8684359c8f67c5ebcb2ae17fc1742ba",
+    "observedAt": "2026-10-16T07:08:17+00:00",
+    "processReceiptPid": 55354,
+    "actualPidProbeExitCode": 1,
+    "actualPidProbeStdout": "",
+    "matchingActualCollectorProcessRows": [],
+    "newNetworkRequests": 0,
+    "queueUpdatedAt": "2026-10-16T07:05:22+00:00",
+    "queueCounts": {
+      "done": 6021,
+      "unresolved": 814,
+      "scope_excluded": 288,
+      "retained_prior_evidence": 1859,
+      "pending": 10273
+    },
+    "psReadFromSavedReceiptNotNewProbe": true,
+    "notEvidenceThatGlobalCollectionIsComplete": true
+  },
+  "limitations": [
+    "This QA made zero network requests and no new process probes; runtime facts are read from the saved 07:06:58 and 07:08:17 observations.",
+    "No scientific text was reread or accepted, and no requested-root identity/canonical/verified-URL claim was added.",
+    "The three finite candidates remain unattempted. A future actually verified live collector requires a new normal preflight; this point-in-time non-start is not a permanent blocked decision.",
+    "Existing 409-test results are reused because all 44 tested source hashes and the test-log hash match; this QA did not rerun tests and is not real transport proof."
+  ],
+  "reviewedAt": "2026-10-16T07:10:45+00:00"
+}

@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:00:43+00:00",
+  "scope": {
+    "reviewFile": "reviewed-original-uri-observations.json",
+    "indices": [
+      12,
+      23
+    ],
+    "assignedCount": 12,
+    "readonly": true,
+    "networkRequestsMade": 0,
+    "rawPacketOrReceiptEdits": 0,
+    "automaticMetaRefreshFrameOrNavigationFollowing": false
+  },
+  "counts": {
+    "reviewed": 12,
+    "newSuccessfulBodiesActuallyRead": 9,
+    "fullVisibleCharactersRead": 18661,
+    "http404NoNewBodySource": 3,
+    "sameFullTextAndTitlePriorBodies": 8,
+    "sameSHAPriorBodies": 8,
+    "pageIdentityConfirmed": 6,
+    "pageIdentityUncertain": 5,
+    "pageIdentityMismatch": 1,
+    "facilityTypesRetained": 5,
+    "personalSiteTypesRetained": 1,
+    "newWholeLabScienceUpgradesRecommended": 0,
+    "newVerifiedLabGroupURLsRecommended": 0,
+    "networkRequestsMade": 0
+  },
+  "scientificPolicy": "For all these12 preserve old scientific fields/evidence/reviewedAt. New sources are same body except the Sinha destination, whose Allen research is the wrong entity; no new target-lab research accepted.",
+  "identityCaveat": "The Sinha new mismatch is reported for an explicit parent decision; no ID rename/merge/alias or silent acceptance. Prior13 mismatch gates remain unchanged by this review.",
+  "items": [
+    {
+      "index": 12,
+      "ordinal": 360,
+      "labId": "ucsd-physics-research-site-frank-wuerthwein",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": false,
+      "fullNewPacketTextRead": false,
+      "newBodyCharactersRead": 0,
+      "actualStatus": "http_error",
+      "httpStatus": 404,
+      "listedUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "actualRequestedUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "actualFinalUrl": "http://www.t2.ucsd.edu/twiki2/bin/view/HEPProjects/FkwsGroup",
+      "observedAt": "2026-10-16T04:56:33+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:33+00:00",
+      "redirects": [],
+      "sourceId": null,
+      "bodySha256": null,
+      "actualCacheSha256Verified": false,
+      "sourceMatchesFetch": null,
+      "newSourceTitle": null,
+      "newSourceHeadings": [],
+      "sameFullTextAndTitleAsPrior": false,
+      "sameBodySHAAsPrior": false,
+      "priorEquivalentSources": [],
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "原HTTP直接返回404，无成功正文来源；既有教师资料不能确认这个TWiki组实体，失败不表示关闭。"
+      },
+      "evidenceRecommendations": [],
+      "recommendedAction": "retain_failed_target_unresolved",
+      "specificBlockers": [
+        "destination_http_error:404",
+        "no_target_entity_local_body_source"
+      ],
+      "rawStatusAtReview": "unresolved",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:47:27+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "80bd24e773f1534a890444f310b20beb9c15ec1a883900eb037f710de731db31",
+      "packetSha256AtReview": "cf02b9604efad60b9ce4a43768f9c1078175bbeb30cd448a9c4b4e92b509fe47",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 13,
+      "ordinal": 364,
+      "labId": "ucsd-physics-research-site-john-m-goodkind",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": false,
+      "fullNewPacketTextRead": false,
+      "newBodyCharactersRead": 0,
+      "actualStatus": "http_error",
+      "httpStatus": 404,
+      "listedUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+      "actualRequestedUrl": "http://physics.ucsd.edu/research/condensed_matter/",
+      "actualFinalUrl": "https://physics.ucsd.edu/research/condensed_matter/",
+      "observedAt": "2026-10-16T04:56:35+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:34+00:00",
+      "redirects": [
+        {
+          "from": "http://physics.ucsd.edu/research/condensed_matter/",
+          "to": "https://physics.ucsd.edu/research/condensed_matter/",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": null,
+      "bodySha256": null,
+      "actualCacheSha256Verified": false,
+      "sourceMatchesFetch": null,
+      "newSourceTitle": null,
+      "newSourceHeadings": [],
+      "sameFullTextAndTitleAsPrior": false,
+      "sameBodySHAAsPrior": false,
+      "priorEquivalentSources": [],
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "实际HTTP301至同路径HTTPS，最终404；condensed_matter学科路径没有新具名Goodkind组正文。"
+      },
+      "evidenceRecommendations": [],
+      "recommendedAction": "retain_failed_target_unresolved",
+      "specificBlockers": [
+        "destination_http_error:404",
+        "no_target_entity_local_body_source"
+      ],
+      "rawStatusAtReview": "unresolved",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:47:27+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "d69afefd1405786e3eda408435788080da627a9c6516820e60ec26c2e50f1fd2",
+      "packetSha256AtReview": "2d2fac710278e4799650244f03cadf5c2d574049650db64f78732f817192f379",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 14,
+      "ordinal": 371,
+      "labId": "ucsd-physics-research-site-lu-j-sham",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 1715,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://ljssst.physics.ucsd.edu",
+      "actualRequestedUrl": "http://ljssst.physics.ucsd.edu/",
+      "actualFinalUrl": "https://ljssst.physics.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:39+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:38+00:00",
+      "redirects": [
+        {
+          "from": "http://ljssst.physics.ucsd.edu/",
+          "to": "https://ljssst.physics.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-5254714b0005f61c",
+      "bodySha256": "99836205cf76360ffd678ff2396e5e525a60a1ac04fb993c1be7ab95b6e0d569",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "UC San Diego Physics - Lu Jeu Sham - Professor of Physics",
+      "newSourceHeadings": [
+        "Lu Jeu Sham",
+        "Selected Publications",
+        "\"Optically controlled locking of the nuclear field via coherent dark-state spectroscopy\", Nature 459, 1105 2009",
+        "\"Spin Extraction Theory and Its Relevance to Spintronics\", Phys. Rev. Lett. 98, 046602 (2007)",
+        "\"Restoring Coherence Lost to a Slow Interacting Mesoscopic Spin Bath\", Phys. Rev. Lett. 98, 077602 (2007)",
+        "\"Spin-based logic in semiconductors for reconfigurable large-scale circuits\", Nature 447, 573 (2007)."
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-77ef95a623e4afc8",
+          "sourceUrl": "https://ljssst.physics.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:26+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "personal_research_site",
+        "reason": "当前目的页明确Lu Jeu Sham且第一人称My specialty/My current interest；确认个人研究站作用域，未确认独立lab/group，不提升实验室实体。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-5254714b0005f61c",
+          "quote": "Lu Jeu Sham Distinguished Professor Emeritus of Physics",
+          "quoteLocation": "body",
+          "purpose": "identity_personal_site"
+        },
+        {
+          "sourceId": "src-5254714b0005f61c",
+          "quote": "The opinion expressed in this website is entirely my own and does not reflect the official positions of the funding agencies.",
+          "quoteLocation": "body",
+          "purpose": "personal_scope"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_personal_type",
+      "specificBlockers": [
+        "personal_research_site_not_independent_lab_group"
+      ],
+      "rawStatusAtReview": "partial",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:55:29+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "98e54aaca2195f0e1c5e47500b40dfc89dd15ddb21625827ba570a358e96749a",
+      "packetSha256AtReview": "0f0ee9449bf0025da7cfed75494e8aa13ae09fec2ce6033d5a55f4d1787d2046",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 15,
+      "ordinal": 376,
+      "labId": "ucsd-physics-research-site-shelley-wright",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 34,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://oirlab.ucsd.edu",
+      "actualRequestedUrl": "http://oirlab.ucsd.edu/",
+      "actualFinalUrl": "https://oirlab.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:43+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:42+00:00",
+      "redirects": [
+        {
+          "from": "http://oirlab.ucsd.edu/",
+          "to": "https://oirlab.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-23b5d4ff05200932",
+      "bodySha256": "92a3b5a77991171ad13605f0665ae30437fea09d8cffce5d3c9d778e83b3ad68",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Redirecting...",
+      "newSourceHeadings": [],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-6c0a5af04a439d91",
+          "sourceUrl": "https://oirlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:27+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "HTTP301只到HTTPS根；新根正文仅This page has moved to index.php并有HTML meta-refresh。没有具名OIR/Shelley身份字面引文；保持根pageIdentity uncertain，既有团队/概述科学supported不动。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-23b5d4ff05200932",
+          "quote": "This page has moved to index.php .",
+          "quoteLocation": "body",
+          "purpose": "navigation_only_not_identity"
+        }
+      ],
+      "recommendedAction": "keep_root_identity_uncertain_and_preserve_existing_science",
+      "specificBlockers": [
+        "root_is_navigation_document_without_named_entity_identity",
+        "html_meta_refresh_not_an_observed_HTTP_redirect_to_index_php"
+      ],
+      "rawStatusAtReview": "supported",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T03:26:20+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "2337c53e434bac6b0b64ffb9948da4d1a21b3768a57a5d61c85c5b981e1b1d87",
+      "packetSha256AtReview": "86aeda446ed481537c38984dfbb2b078035ddcea51c6399def8624ee0ecb0473",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 16,
+      "ordinal": 378,
+      "labId": "ucsd-physics-research-site-sunil-k-sinha",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 1848,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://sinhagroup.ucsd.edu/",
+      "actualRequestedUrl": "http://sinhagroup.ucsd.edu/",
+      "actualFinalUrl": "http://sinhagroup.ucsd.edu/",
+      "observedAt": "2026-10-16T04:56:45+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:45+00:00",
+      "redirects": [],
+      "sourceId": "src-7da5f97add4fcfac",
+      "bodySha256": "35b50cf6304cafc42e6f4ccbd258eaabf7cf130e132d9541eb379740145c97eb",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Allen Lab",
+      "newSourceHeadings": [
+        "Imaging and engineering correlated quantum matter",
+        "Research Directions:",
+        "Open Positions We seek to build a diverse and creative team of scientists with expertise spanning physics, engineering, and materials science. Inquiries for positions at all levels are welcome. If you are interested, please contact Monica Allen ."
+      ],
+      "sameFullTextAndTitleAsPrior": false,
+      "sameBodySHAAsPrior": false,
+      "priorEquivalentSources": [],
+      "pageIdentity": {
+        "status": "mismatch",
+        "entityType": "unconfirmed",
+        "reason": "实际HTTP200无redirect，但titleAllen Lab且正文联系Monica Allen；没有Sunil K. Sinha与该团队的显式关系。当前目的页与目标Sinha记录身份错配，Allen研究不得归入Sinha。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-7da5f97add4fcfac",
+          "quote": "Allen Lab",
+          "quoteLocation": "title",
+          "purpose": "conflicting_identity"
+        },
+        {
+          "sourceId": "src-7da5f97add4fcfac",
+          "quote": "If you are interested, please contact Monica Allen .",
+          "quoteLocation": "body",
+          "purpose": "conflicting_named_contact"
+        }
+      ],
+      "recommendedAction": "record_mismatch_and_hold_Sinha_unaccepted",
+      "specificBlockers": [
+        "destination_identity_mismatch:Allen_Lab_Monica_Allen_instead_of_Sunil_K_Sinha",
+        "no_target_Sinha_scoped_research",
+        "requires_parent_identity_decision_no_silent_alias"
+      ],
+      "rawStatusAtReview": "unresolved",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:47:27+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "0ef30d229c37ed7e7e1d2ae173dcf1e1738530b5dffe27262909fe7424eff57d",
+      "packetSha256AtReview": "9c3ce1f9b82a8360aa0b36a2e72b50169fdf218d8b23fcb1a318a07deae9452b",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json",
+      "proposedIdentityDecision": {
+        "status": "mismatch",
+        "hasUnresolvedMismatch": true,
+        "acceptanceStatus": "provisional_or_unresolved",
+        "entityType": "unconfirmed",
+        "observedPageName": "Allen Lab",
+        "targetListedPerson": "Sunil K. Sinha",
+        "mustBeAppliedByParentOnly": true,
+        "doNotAssignObservedAllenResearchToTarget": true,
+        "replaceStaleTLSOnlyBlockerWithCurrentIdentityMismatch": true,
+        "observedNamedContact": "Monica Allen"
+      }
+    },
+    {
+      "index": 17,
+      "ordinal": 380,
+      "labId": "ucsd-physics-research-site-thomas-m-o-neil",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": false,
+      "fullNewPacketTextRead": false,
+      "newBodyCharactersRead": 0,
+      "actualStatus": "http_error",
+      "httpStatus": 404,
+      "listedUrl": "http://physics.ucsd.edu/research/plasma/",
+      "actualRequestedUrl": "http://physics.ucsd.edu/research/plasma/",
+      "actualFinalUrl": "https://physics.ucsd.edu/research/plasma/",
+      "observedAt": "2026-10-16T04:56:47+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:45+00:00",
+      "redirects": [
+        {
+          "from": "http://physics.ucsd.edu/research/plasma/",
+          "to": "https://physics.ucsd.edu/research/plasma/",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": null,
+      "bodySha256": null,
+      "actualCacheSha256Verified": false,
+      "sourceMatchesFetch": null,
+      "newSourceTitle": null,
+      "newSourceHeadings": [],
+      "sameFullTextAndTitleAsPrior": false,
+      "sameBodySHAAsPrior": false,
+      "priorEquivalentSources": [],
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "实际HTTP301至同路径HTTPS，最终404；plasma学科路径没有新具名O’Neil组正文。"
+      },
+      "evidenceRecommendations": [],
+      "recommendedAction": "retain_failed_target_unresolved",
+      "specificBlockers": [
+        "destination_http_error:404",
+        "no_target_entity_local_body_source"
+      ],
+      "rawStatusAtReview": "unresolved",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:48:07+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "938cd4953d00a05e045de65002980a20f8e8f5274a74a378f1a2cd086edf753a",
+      "packetSha256AtReview": "cf82b54f883ac18ce1c3dfaad3d9fe7728c3e1393b37a444bb2e6b754320ab58",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 18,
+      "ordinal": 432,
+      "labId": "ucsd-structural-engineering-lab-composite-structures-laboratory",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 507,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "actualRequestedUrl": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "actualFinalUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+      "observedAt": "2026-10-16T04:56:50+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:49+00:00",
+      "redirects": [
+        {
+          "from": "http://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "to": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-4d8d0952c44bd2c8",
+      "bodySha256": "d58101b63bec9b85ab3f6cc2d6f4caa6e4661a1451c66dcf34b2a9494d60687a",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Composite Structures Laboratory | Structural Engineering",
+      "newSourceHeadings": [
+        "Composite Structures Laboratory",
+        "Inquiry"
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-f93474e8e9e61386",
+          "sourceUrl": "https://se.ucsd.edu/facilities/composite-structures-laboratory",
+          "observedAt": "2026-10-16T01:06:10+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "具名Composite Structures Laboratory正文只描述反力墙/强地板/空间及Inquiry联系人，确认facility，不是lab/group科研升级。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-4d8d0952c44bd2c8",
+          "quote": "Composite Structures Laboratory",
+          "quoteLocation": "body",
+          "purpose": "facility_identity"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_facility_type",
+      "specificBlockers": [
+        "facility_description_only_no_research_question"
+      ],
+      "rawStatusAtReview": "partial",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:49:24+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "bdd2ebb7b239ea033bccec4b4bdd0ed976fe66eb85732f18ef66ce32eac1941c",
+      "packetSha256AtReview": "f4166349264499a981828bd7df70c1e356b0e36abc24c12cad23e13f410799c7",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 19,
+      "ordinal": 433,
+      "labId": "ucsd-structural-engineering-lab-geotechnical-laboratories",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 8576,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "actualRequestedUrl": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+      "actualFinalUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+      "observedAt": "2026-10-16T04:56:52+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:51+00:00",
+      "redirects": [
+        {
+          "from": "http://se.ucsd.edu/facilities/geotechnical-facilities",
+          "to": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-25ef0d806015bf06",
+      "bodySha256": "6d8ce30f9f6487e3ea16241beab76cc6650ef046f0c5f41c18c8a3d923358676",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Geotechnical Facilities | Structural Engineering",
+      "newSourceHeadings": [
+        "Geotechnical Facilities",
+        "Geotechnical Laboratory",
+        "Geotechnical Centrifuge Laboratory",
+        "Geotechnical Engineering at the Englekirk Structural Engineering Center (ESEC)",
+        "Geotechnical Engineering in the Powell Laboratory"
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-4ee98098754bd15b",
+          "sourceUrl": "https://se.ucsd.edu/facilities/geotechnical-facilities",
+          "observedAt": "2026-10-16T01:06:11+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "具名Geotechnical Facilities及UCSD geotechnical laboratory设备/测试叙述确认岩土设施；同旧全文，不扩展为独立PI研究组。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-25ef0d806015bf06",
+          "quote": "Geotechnical Facilities",
+          "quoteLocation": "body",
+          "purpose": "facility_identity"
+        },
+        {
+          "sourceId": "src-25ef0d806015bf06",
+          "quote": "The UCSD geotechnical laboratory is fully equipped for standard soil classification and characterization.",
+          "quoteLocation": "body",
+          "purpose": "facility_scope"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_facility_type",
+      "specificBlockers": [],
+      "rawStatusAtReview": "supported",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:55:29+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "7d9df352dcd25af31994815c1b0bb0ce0ec1283fa054a33eb2c112694dc6f9c2",
+      "packetSha256AtReview": "4b13350ce2bbd7c956e05d355fa533dff2811ec2cdb112429a4ad6527885108a",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 20,
+      "ordinal": 434,
+      "labId": "ucsd-structural-engineering-lab-srmd-laboratory",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 2819,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "actualRequestedUrl": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "actualFinalUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+      "observedAt": "2026-10-16T04:56:54+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:53+00:00",
+      "redirects": [
+        {
+          "from": "http://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "to": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-9abf6474a6335d0a",
+      "bodySha256": "1c3fa24be16b9889fcb3458e26b8d84f8ca5046250dcf4b6c58ef9653cffb82a",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Caltrans Seismic Response Modification Device (SRMD) Test Facility | Structural Engineering",
+      "newSourceHeadings": [
+        "Caltrans Seismic Response Modification Device (SRMD) Test Facility",
+        "Videos",
+        "Inquiry"
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-ae3553870519d80a",
+          "sourceUrl": "https://se.ucsd.edu/facilities/laboratory-listing/srmd",
+          "observedAt": "2026-10-16T01:06:12+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "正文完整具名SRMD Test Facility并描述全尺度装置测试系统，确认facility；保留1999/2003历史时间边界。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-9abf6474a6335d0a",
+          "quote": "Caltrans Seismic Response Modification Device (SRMD) Test Facility",
+          "quoteLocation": "body",
+          "purpose": "facility_identity"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_facility_type",
+      "specificBlockers": [],
+      "rawStatusAtReview": "supported",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:55:29+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "d9a2d458793ebf0c63c9661578b78d5522234f7ff9a509b7c8f194191e28660c",
+      "packetSha256AtReview": "2c9d14d18020b9d9a33238b4c2194eb30f00cec1e5fb36302acacb63edb76b31",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 21,
+      "ordinal": 435,
+      "labId": "ucsd-structural-engineering-lab-structural-components-laboratory",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 1028,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "actualRequestedUrl": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+      "actualFinalUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+      "observedAt": "2026-10-16T04:56:56+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:55+00:00",
+      "redirects": [
+        {
+          "from": "http://se.ucsd.edu/facilities/structural-components-laboratory",
+          "to": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-a5fc160a948272fd",
+      "bodySha256": "c46ce91075044ed9211fb998b8ded8b0b77e25ded2828eb83bb0e5f1664d8475",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Structural Components Laboratory | Structural Engineering",
+      "newSourceHeadings": [
+        "Structural Components Laboratory",
+        "Inquiry"
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-6fc7d92ea2e87080",
+          "sourceUrl": "https://se.ucsd.edu/facilities/structural-components-laboratory",
+          "observedAt": "2026-10-16T01:06:13+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "正文具名Structural Components Laboratory并介绍其强地板/反力墙/振动台；保持facility，历史1994震后测试不改写为全部当前项目。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-a5fc160a948272fd",
+          "quote": "Structural Components Laboratory",
+          "quoteLocation": "body",
+          "purpose": "facility_identity"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_facility_type",
+      "specificBlockers": [],
+      "rawStatusAtReview": "supported",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:55:29+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "129a0c1a5cdce478a54b856585522c18bb0fb4033fed486b1c9252c97ff04ed8",
+      "packetSha256AtReview": "d39bf4f212d9254c9805eba667c1ab21de3b611a5dc9376b4a47ac406f8d0ad5",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 22,
+      "ordinal": 436,
+      "labId": "ucsd-lab-from-faculty-se-ucsd-edu-facilities-structural-systems-laboratory",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 2134,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "actualRequestedUrl": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "actualFinalUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+      "observedAt": "2026-10-16T04:56:58+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:57+00:00",
+      "redirects": [
+        {
+          "from": "http://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "to": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "httpStatus": 301
+        }
+      ],
+      "sourceId": "src-55982eaf3e74e880",
+      "bodySha256": "3745328ed1259d4896258609dc9697e8fa554068b1a7a13d8f6543d3103aeb07",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Structural Systems Laboratory | Structural Engineering",
+      "newSourceHeadings": [
+        "Structural Systems Laboratory",
+        "Dimensions, Capacities and Capabilities",
+        "Test Floor",
+        "Reaction Wall",
+        "Overhead Crane",
+        "Inquiry"
+      ],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-18a0900c2b0878e4",
+          "sourceUrl": "https://se.ucsd.edu/facilities/structural-systems-laboratory",
+          "observedAt": "2026-10-16T01:06:15+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "正文具名Structural Systems Laboratory与反力墙/强地板系统，保持facility；1986/1989/1999历史信息不等于新当前项目。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-55982eaf3e74e880",
+          "quote": "Structural Systems Laboratory",
+          "quoteLocation": "body",
+          "purpose": "facility_identity"
+        }
+      ],
+      "recommendedAction": "append_identity_only_keep_facility_type",
+      "specificBlockers": [],
+      "rawStatusAtReview": "supported",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:55:29+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "7d7f21b4663767cd4436c43662057e9d39119d4569e9a8931630b0c0ff2e5343",
+      "packetSha256AtReview": "ac83daf467815d4c9493ecff9ce441cb46cd32170f37481ebdd982e5a3a28495",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json"
+    },
+    {
+      "index": 23,
+      "ordinal": 693,
+      "labId": "ucsd-chemistry-biochemistry-lab-hermann-lab",
+      "reviewedAt": "2026-10-16T05:00:43+00:00",
+      "metadataOnly": false,
+      "bodyReviewPerformed": true,
+      "fullNewPacketTextRead": true,
+      "newBodyCharactersRead": 0,
+      "actualStatus": "ok",
+      "httpStatus": 200,
+      "listedUrl": "http://tch.ucsd.edu",
+      "actualRequestedUrl": "http://tch.ucsd.edu/",
+      "actualFinalUrl": "http://tch.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:00+00:00",
+      "liveCheckedAt": "2026-10-16T04:57:00+00:00",
+      "redirects": [],
+      "sourceId": "src-6b3d477e4eb8109d",
+      "bodySha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+      "actualCacheSha256Verified": true,
+      "sourceMatchesFetch": true,
+      "newSourceTitle": "Hermann Lab Home",
+      "newSourceHeadings": [],
+      "sameFullTextAndTitleAsPrior": true,
+      "sameBodySHAAsPrior": true,
+      "priorEquivalentSources": [
+        {
+          "sourceId": "src-6882240f2c380608",
+          "sourceUrl": "https://tch.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:09+00:00",
+          "sameBodySHA256": true,
+          "sameFullTextAndTitle": true
+        }
+      ],
+      "pageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "标题Hermann Lab Home与目标名称相符，但实际缓存HTML正文全为无alt图片和导航，未提供可读具名PI/实验室研究说明。标题可作名称线索，当前实体范围仍uncertain，不自动提升partial。"
+      },
+      "evidenceRecommendations": [
+        {
+          "sourceId": "src-6b3d477e4eb8109d",
+          "quote": "Hermann Lab Home",
+          "quoteLocation": "title",
+          "purpose": "identity_name_only_insufficient_current_entity_scope"
+        }
+      ],
+      "recommendedAction": "retain_partial_title_only_entity_uncertainty",
+      "specificBlockers": [
+        "only_named_title_and_image_navigation_no_readable_entity_or_research_body"
+      ],
+      "rawStatusAtReview": "partial",
+      "rawScientificReviewedAtToPreserve": "2026-10-16T01:48:38+00:00",
+      "keepScientificFieldsAndOldEvidence": true,
+      "scienceDiff": [],
+      "newWholeLabResearchAccepted": false,
+      "canCountAsVerifiedLabGroupURLRecommended": false,
+      "keepStableIdAndListedURL": true,
+      "aliasOrMergeRecommended": false,
+      "rawOrPacketEdited": false,
+      "rawSha256AtReview": "b3371898838e5b26283cdd42539dd25aed39087bc808ea74878fde2bdddfe790",
+      "packetSha256AtReview": "febb16d22e317381fa11a1bbb110fe761e1c51c65739899e18a899818b9420bd",
+      "originalRefreshReceiptPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/original-url-packet-refresh.json",
+      "discoveryOnlyCandidates": [
+        {
+          "url": "http://tch.ucsd.edu/Research.html",
+          "linkedFrom": "http://tch.ucsd.edu/",
+          "literalAnchor": "<a href=\"Research.html\">",
+          "imageLabelEvidence": "images/Research.gif; image alt is empty",
+          "sourceId": "src-6b3d477e4eb8109d",
+          "sourceObservedAt": "2026-10-16T04:57:00+00:00",
+          "sourceBodySha256": "1a1f4a851a89ce5ef69c1bb5324e132308a3f2ca4e380af0f8d0e0a9de138610",
+          "notFetchedOrFollowed": true,
+          "notResearchEvidence": true
+        }
+      ]
+    }
+  ]
+}

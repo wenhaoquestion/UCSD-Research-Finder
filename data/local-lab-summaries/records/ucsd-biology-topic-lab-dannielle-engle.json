@@ -1,0 +1,128 @@
+{
+  "labId": "ucsd-biology-topic-lab-dannielle-engle",
+  "status": "supported",
+  "summaryZh": "Engle 实验室研究胰腺癌的早期检测与治疗，寻找可区分胰腺癌和其他炎症状态的标志物。团队采用类器官、干细胞技术、生物化学与基因工程小鼠模型，研究疾病机制并评估治疗靶点。",
+  "researchQuestions": [
+    "CA19-9升高通过哪些途径促进胰腺炎和胰腺肿瘤形成？"
+  ],
+  "topics": [
+    "胰腺癌",
+    "早期检测",
+    "生物标志物",
+    "胰腺炎"
+  ],
+  "methods": [
+    "类器官",
+    "干细胞技术",
+    "生物化学",
+    "基因工程小鼠模型"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-46503f1cb6adc317",
+      "quote": "The Engle Laboratory focuses on the early detection and treatment of pancreatic cancer.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-46503f1cb6adc317",
+      "quote": "The organoid models employ stem-cell techniques to create more accurate models of pancreatitis and pancreatic cancer, as well as biochemistry methodology to identify biomarkers that unambiguously differentiate between pancreatic cancer and other inflammatory conditions.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-46503f1cb6adc317",
+      "quote": "Welcome to the Engle lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-46503f1cb6adc317",
+      "quote": "Further investigation is required to understand ways through which CA19-9 elevation promotes pancreatitis and pancreatic tumor formation.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+  },
+  "uncertainty": [
+    "机构网页包含 UCSD 研究介绍，但所引正文没有明确的当前任职陈述。",
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:47:04+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具名Engle实验室正文明确要求进一步理解上述途径，保留未解机制，未把小鼠既往发现外推成人体疗效。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-46503f1cb6adc317",
+        "sourceUrl": "https://engle.salk.edu/",
+        "sourceObservedAt": "2026-10-16T01:04:02+00:00",
+        "bodySha256": "9b8a61e7ef7f7c01f7847e307eecbed11136ff920cb158fb9e5b5eb951ac11aa",
+        "textSha256": "b4bcdb5634b30df41ced10d34f8e8b7900cfb5632c699dc72266f5ab33c4394f",
+        "textCharacters": 2328,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            2328
+          ]
+        ],
+        "reasonZh": "读取上述范围的主文/局部科研语境；履历、导航、新闻、论文或教学材料不转作整体研究问题。"
+      },
+      {
+        "sourceId": "src-d98798074da28974",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/dengle",
+        "sourceObservedAt": "2026-10-16T01:07:53+00:00",
+        "bodySha256": "a297bc744dbfbebe6e73fc8dd46e7b1cc49f222d8379735e7b49809f9aa25d79",
+        "textSha256": "38f3511c0d18b83942128a6e0caa6bc9a98457efadfdc3c48d38f97e4282c9dd",
+        "textCharacters": 7318,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            6200
+          ]
+        ],
+        "reasonZh": "读取前述范围；后续未读部分不声称已审阅，当前已读科研介绍与后续新闻/论文/成员边界另列。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-46503f1cb6adc317",
+        "quote": "Further investigation is required to understand ways through which CA19-9 elevation promotes pancreatitis and pancreatic tumor formation.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:04:02+00:00",
+        "bodySha256": "9b8a61e7ef7f7c01f7847e307eecbed11136ff920cb158fb9e5b5eb951ac11aa",
+        "sourceUrl": "https://engle.salk.edu/"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

@@ -1,0 +1,3743 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:06:20.327815+00:00",
+  "verdict": "Finite10 independent-date literal routes classified; no admission or request.",
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "inputPrimaryReview": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIFFERENT-TIME-PROFILE-PRIMARY-REVIEW.json",
+    "sha256": "c9ebcf87352c0e28279b7bdf7e5f44a2e88bc46870458015289a7ba3a90d5138",
+    "reviewedAt": "2026-10-16T07:03:03+00:00"
+  },
+  "inputSnapshots": [
+    {
+      "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+      "sha256": "617d8915995f022975503a14dfdaec134a22b94032d1ae3c30d0eee3d1e746b4",
+      "updatedAt": "2026-10-16T07:05:22+00:00",
+      "captureCount": 19255
+    },
+    {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json",
+      "sha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+      "updatedAt": "2026-10-16T06:45:58+00:00",
+      "wireEvents": 353
+    },
+    {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/identity-decisions.json",
+      "sha256": "d03f63cfc224974df2951ebbc152619fc05289431dbcb69781c888df5874362a",
+      "mismatchGateCount": 14
+    }
+  ],
+  "counts": {
+    "targetIDs": 10,
+    "deduplicatedLiteralRequestKeys": 10,
+    "HTTPvsListedHTTPS": 4,
+    "sameLiteralAndListedRequestKey": 6,
+    "unobservedRoutes": 2,
+    "knownLiteralOriginRobotsUnavailable": 3,
+    "explicitBoundaryTargets": 0,
+    "hasExactLogicalAttempt": 7,
+    "hasOwnWireOrJournal": 1,
+    "hasExactPending": 0,
+    "externalTargets": 1,
+    "decisions": {
+      "blocked_known_literal_origin_robots_unavailable": 3,
+      "already_one_shot_observed_or_started_no_repeat": 1,
+      "unobserved_literal_related_route_requires_independent_date_contract": 2,
+      "existing_exact_request_key_logical_attempt_no_new_route": 4
+    },
+    "uniqueTargetIDsWithActualReturnedPageOrRedirectResponse": 5,
+    "onlyKnownRobotsPrecheckNoPageProof": 2
+  },
+  "items": [
+    {
+      "labId": "ucsd-lab-from-faculty-raidivision-ucsd-edu-research-corr-lab-pages-default-aspx",
+      "ordinal": 221,
+      "labName": "Mary P. Corr — lab website",
+      "reviewedAt": "2026-10-16T07:06:17.593709+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+      "literalLabLink": {
+        "label": "Lab",
+        "href": "http://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+        "literalHTML": "<a href=\"http://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx\">Lab</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "http",
+        "raidivision.ucsd.edu",
+        null,
+        "/research/corr-lab/Pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "raidivision.ucsd.edu",
+        null,
+        "/research/corr-lab/Pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": false,
+      "sameHostPathQueryDifferentScheme": true,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/mary.corr",
+        "observedAt": "2026-10-03T02:51:07+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab → https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "670037f4af8a2c5eb61a7c3f0c6367dd54ef5f3861a608ddf1d3068c722b187a",
+      "oldFieldObservedAt": "2026-10-03T02:51:07+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/mary.corr",
+        "actualCaptureObservedAt": "2026-10-07T22:57:29+00:00",
+        "bodySha256": "b13e1d98f560ebc8d6108a52c4627e8c16fd9602cc736790d56a99b44cc787eb",
+        "originalMetadataSha256": "2d8278d637fa7919518480eee3d17fd1c67deadbe764d69fd457aa2792d8a1cd",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/0859b1ed8f9e54a7f738a71111ed190efb6c2a7b7f1d711145d95c30e18af380.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/0859b1ed8f9e54a7f738a71111ed190efb6c2a7b7f1d711145d95c30e18af380.json"
+      },
+      "independentSourceId": "src-37fe094a1664065f",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+        "transportStatus": "robots_unavailable",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": false,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "b8b66793d12fd1f6a3b6554196df861af30c37081621fe5865a16e7a99b5ae53",
+      "packetSha256": "55823337a247d95dffc921053eaaf6abe271430ae02c678c28deeb0b52ab271d",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:19:41+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:40+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113580.095382,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+        "retrievedEpoch": 1792113581.5630348
+      },
+      "exactRequestKeyLogicalAttempts": [],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:19:41+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:40+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113580.095382,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792113581.5630348
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:05:02+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:01+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112701.057426,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112702.0961459
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:23+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:22+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112782.662185,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112783.166763
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:09:54+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:53+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112993.825984,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112994.897675
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:16:03+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:02+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113362.239605,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792113363.530029
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:19:41+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:40+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113580.095382,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/corr-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792113581.5630348
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": true,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "http://raidivision.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.json",
+          "metadataSha256": "57eed9cb10267e44b3e53bbe65b0733ff664f5377255889688e086e94cb914d1",
+          "metadata": {
+            "sourceUrl": "http://raidivision.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T06:18:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792131523.248993,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "attempts": 1,
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.html",
+          "bodySha256": "8e430ff85c1c512f6d6bc22699d57bb52318f765ec4bee045f3997367f5a0986"
+        },
+        {
+          "robotsOriginURL": "http://raidivision.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.json",
+          "metadataSha256": "57eed9cb10267e44b3e53bbe65b0733ff664f5377255889688e086e94cb914d1",
+          "metadata": {
+            "sourceUrl": "http://raidivision.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T06:18:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792131523.248993,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "attempts": 1,
+            "status": "unavailable"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.html",
+          "bodySha256": "8e430ff85c1c512f6d6bc22699d57bb52318f765ec4bee045f3997367f5a0986"
+        },
+        {
+          "robotsOriginURL": "https://raidivision.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-8d5eafb33cf76c9ba186e3f569c00b39970d60ca8cd1d84cadf0c955c0429b5a.json",
+          "metadataSha256": "abce3272f85f15ff73bd1922610c01ee0a5ff143502eb2095a939bbec754538a",
+          "metadata": {
+            "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:40+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113580.095382,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-8d5eafb33cf76c9ba186e3f569c00b39970d60ca8cd1d84cadf0c955c0429b5a.html",
+          "bodySha256": "8e430ff85c1c512f6d6bc22699d57bb52318f765ec4bee045f3997367f5a0986"
+        },
+        {
+          "robotsOriginURL": "https://raidivision.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-8d5eafb33cf76c9ba186e3f569c00b39970d60ca8cd1d84cadf0c955c0429b5a.json",
+          "metadataSha256": "abce3272f85f15ff73bd1922610c01ee0a5ff143502eb2095a939bbec754538a",
+          "metadata": {
+            "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:40+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113580.095382,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-8d5eafb33cf76c9ba186e3f569c00b39970d60ca8cd1d84cadf0c955c0429b5a.html",
+          "bodySha256": "8e430ff85c1c512f6d6bc22699d57bb52318f765ec4bee045f3997367f5a0986"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "blocked_known_literal_origin_robots_unavailable",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-48e8d895726620",
+      "ordinal": 621,
+      "labName": "Lab Site",
+      "reviewedAt": "2026-10-16T07:06:17.895618+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://cmm.ucsd.edu/cleveland/home.html",
+      "literalLabLink": {
+        "label": "Lab Site",
+        "href": "http://cmm.ucsd.edu/cleveland/home.html",
+        "literalHTML": "<a href=\"http://cmm.ucsd.edu/cleveland/home.html\">Lab Site</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "http",
+        "cmm.ucsd.edu",
+        null,
+        "/cleveland/home.html",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "cmm.ucsd.edu",
+        null,
+        "/cleveland/home.html",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": false,
+      "sameHostPathQueryDifferentScheme": true,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+        "observedAt": "2026-10-03T01:44:19+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab Site → https://cmm.ucsd.edu/cleveland/home.html",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "320212db922a0b908cda4ecbf869b997c7491f530309c50f0382fc54f5e9372e",
+      "oldFieldObservedAt": "2026-10-03T01:44:19+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+        "actualCaptureObservedAt": "2026-10-07T22:04:19+00:00",
+        "bodySha256": "f29fb590ced0dfa0e19df60bf0fbeaefabd6ccc7238fdab3568e33e9a5429f43",
+        "originalMetadataSha256": "0793be8babf83fb878947b2de9a9e95ca4b49f80f716611d15657d3a9da5088e",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/f1eb30c25c9aab9f1449681e400baa3eea9a26b326b2fd7a0394aa499d3490b2.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/f1eb30c25c9aab9f1449681e400baa3eea9a26b326b2fd7a0394aa499d3490b2.json"
+      },
+      "independentSourceId": "src-22669fe1654de02d",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "仅有通用标签与历史链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+        "transportStatus": "http_error",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": true,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "aeeeef21b573f7c0943e7a323586ce7dd698ccf82a30039d0f0d24c4078e8073",
+      "packetSha256": "ab28bce63f4edc0661c667dc757db6a826fbdd5b97241521e96cacdd2efcff37",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+        "observedAt": "2026-10-16T01:06:44+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:15+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112235.484807,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112804.826734
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "own",
+          "captureURL": "http://cmm.ucsd.edu/cleveland/home.html",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T06:45:58+00:00",
+            "status": "http_error",
+            "redirects": [
+              {
+                "from": "http://cmm.ucsd.edu/cleveland/home.html",
+                "to": "https://cmm.ucsd.edu/cleveland/home.html",
+                "httpStatus": 301
+              }
+            ],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792133158.701018,
+            "summaryPageMaxBytes": 2000000,
+            "liveCheckedAt": "2026-10-16T06:45:57+00:00",
+            "actualPageRequestMade": true
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://cmm.ucsd.edu/cleveland/home.html",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T01:06:44+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112804.826734
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://cmm.ucsd.edu/cleveland/home.html",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T01:06:44+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112804.826734
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "own",
+          "captureURL": "http://cmm.ucsd.edu/cleveland/home.html",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T06:45:58+00:00",
+            "status": "http_error",
+            "redirects": [
+              {
+                "from": "http://cmm.ucsd.edu/cleveland/home.html",
+                "to": "https://cmm.ucsd.edu/cleveland/home.html",
+                "httpStatus": 301
+              }
+            ],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792133158.701018,
+            "summaryPageMaxBytes": 2000000,
+            "liveCheckedAt": "2026-10-16T06:45:57+00:00",
+            "actualPageRequestMade": true
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [
+        {
+          "url": "http://cmm.ucsd.edu/robots.txt",
+          "startedAt": "2026-10-16T06:45:55+00:00",
+          "startedEpoch": 1792133155.323572,
+          "kind": "robots",
+          "sharedProtocol": "fcntl-host-clock-v2",
+          "maxResponseBytes": 300000,
+          "originalObservationUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+          "httpStatus": 301,
+          "error": "",
+          "transportReturned": true,
+          "finishedAt": "2026-10-16T06:45:55+00:00"
+        },
+        {
+          "url": "https://cmm.ucsd.edu/robots.txt",
+          "startedAt": "2026-10-16T06:45:56+00:00",
+          "startedEpoch": 1792133156.3806,
+          "kind": "robots",
+          "sharedProtocol": "fcntl-host-clock-v2",
+          "maxResponseBytes": 300000,
+          "originalObservationUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+          "httpStatus": 404,
+          "error": "",
+          "transportReturned": true,
+          "finishedAt": "2026-10-16T06:45:56+00:00"
+        },
+        {
+          "url": "http://cmm.ucsd.edu/cleveland/home.html",
+          "startedAt": "2026-10-16T06:45:57+00:00",
+          "startedEpoch": 1792133157.376353,
+          "kind": "page_or_redirect",
+          "sharedProtocol": "fcntl-host-clock-v2",
+          "maxResponseBytes": 2000000,
+          "originalObservationUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+          "httpStatus": 301,
+          "error": "",
+          "transportReturned": true,
+          "finishedAt": "2026-10-16T06:45:57+00:00"
+        },
+        {
+          "url": "https://cmm.ucsd.edu/cleveland/home.html",
+          "startedAt": "2026-10-16T06:45:58+00:00",
+          "startedEpoch": 1792133158.398928,
+          "kind": "page_or_redirect",
+          "sharedProtocol": "fcntl-host-clock-v2",
+          "maxResponseBytes": 2000000,
+          "originalObservationUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+          "httpStatus": 404,
+          "error": "",
+          "transportReturned": true,
+          "finishedAt": "2026-10-16T06:45:58+00:00"
+        }
+      ],
+      "ownOneShotJournals": [
+        {
+          "url": "http://cmm.ucsd.edu/cleveland/home.html",
+          "startedAt": "2026-10-16T06:45:54+00:00",
+          "maxPageBytes": 2000000,
+          "labIds": [
+            "ucsd-live-lab-48e8d895726620"
+          ],
+          "state": "receipt_saved",
+          "journalIsNotPageRequestProof": true,
+          "wireEventStart": 349,
+          "journalContextKind": "reviewed_profile_lab_link_gap",
+          "notAnOriginalListedURLCheck": true,
+          "finishedAt": "2026-10-16T06:45:58+00:00",
+          "outcome": "http_error",
+          "wireEventRange": [
+            349,
+            353
+          ]
+        }
+      ],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "http://cmm.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-0a62d352209ff32032a6b372adc7578a3a4de585a2dc6e38cabee6952f1c259c.json",
+          "metadataSha256": "fbb0a46ef5b23ad524451eb272688f8ab167fb1240ad2fe537feda27e11f350c",
+          "metadata": {
+            "sourceUrl": "http://cmm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T06:45:56+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792133156.6645608,
+            "error": "",
+            "redirects": [
+              {
+                "from": "http://cmm.ucsd.edu/robots.txt",
+                "to": "https://cmm.ucsd.edu/robots.txt",
+                "httpStatus": 301
+              }
+            ],
+            "attempts": 1,
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-0a62d352209ff32032a6b372adc7578a3a4de585a2dc6e38cabee6952f1c259c.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://cmm.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-df06aefd0969c0fd562c229ec8c24c8ac751f85c1fd015e9cafcfc1e128ce224.json",
+          "metadataSha256": "0c1c6e3dfb7d9781b687e72e894e8efe192460d60c4a261d6647429a4faeddf0",
+          "metadata": {
+            "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:15+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112235.484807,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-df06aefd0969c0fd562c229ec8c24c8ac751f85c1fd015e9cafcfc1e128ce224.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://cmm.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-df06aefd0969c0fd562c229ec8c24c8ac751f85c1fd015e9cafcfc1e128ce224.json",
+          "metadataSha256": "0c1c6e3dfb7d9781b687e72e894e8efe192460d60c4a261d6647429a4faeddf0",
+          "metadata": {
+            "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:15+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112235.484807,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-df06aefd0969c0fd562c229ec8c24c8ac751f85c1fd015e9cafcfc1e128ce224.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "already_one_shot_observed_or_started_no_repeat",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "relatedDestinationChecks",
+          "fetch": {
+            "sourceUrl": "http://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T06:45:58+00:00",
+            "status": "http_error",
+            "redirects": [
+              {
+                "from": "http://cmm.ucsd.edu/cleveland/home.html",
+                "to": "https://cmm.ucsd.edu/cleveland/home.html",
+                "httpStatus": 301
+              }
+            ],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792133158.701018,
+            "summaryPageMaxBytes": 2000000,
+            "liveCheckedAt": "2026-10-16T06:45:57+00:00",
+            "actualPageRequestMade": true
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-c0c0ce3c3b0e1e",
+      "ordinal": 634,
+      "labName": "Chang Lab",
+      "reviewedAt": "2026-10-16T07:06:18.195575+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://changlab.ucsd.edu/Pages/default.aspx",
+      "literalLabLink": {
+        "label": "Chang Lab",
+        "href": "http://changlab.ucsd.edu/Pages/default.aspx",
+        "literalHTML": "<a href=\"http://changlab.ucsd.edu/Pages/default.aspx\">Chang Lab</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "http",
+        "changlab.ucsd.edu",
+        null,
+        "/Pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "changlab.ucsd.edu",
+        null,
+        "/Pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": false,
+      "sameHostPathQueryDifferentScheme": true,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/john.chang",
+        "observedAt": "2026-10-03T02:36:03+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Chang Lab → https://changlab.ucsd.edu/Pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "112e1864221e238e82919a332964a49cc3b544adbbfbfd51a1d6ec2f9a10e7d9",
+      "oldFieldObservedAt": "2026-10-03T02:36:03+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/john.chang",
+        "actualCaptureObservedAt": "2026-10-07T22:45:38+00:00",
+        "bodySha256": "52896352079b1c406e800c7f12baf42c6148e72df3eb6aa4de26e94c858eea95",
+        "originalMetadataSha256": "9a1fc557c209dd4b02f974e2321bbc65468787dab66a64fa119996dc4e311be3",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/8b049e068fdaa1c06d2a2ef579b0822bdf9f98d59af1abac0173627cb797e6dc.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/8b049e068fdaa1c06d2a2ef579b0822bdf9f98d59af1abac0173627cb797e6dc.json"
+      },
+      "independentSourceId": "src-8f318d5925d6a45f",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+        "transportStatus": "robots_unavailable",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": false,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "3ff0b5fdf161b5c926a85e82d29205741709edaf3e6b9cfc0a889533687406f9",
+      "packetSha256": "222acede563f229febf6838ed603b25ffffe083fd895826ea562bb2660e22558",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:19:43+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:43+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113583.105749,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+        "retrievedEpoch": 1792113583.137873
+      },
+      "exactRequestKeyLogicalAttempts": [],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://changlab.ucsd.edu/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.105749,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "retrievedEpoch": 1792113583.137873
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://changlab.ucsd.edu/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:47+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:47+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112807.709048,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "retrievedEpoch": 1792112807.709706
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://changlab.ucsd.edu/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:09:57+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:57+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112997.138502,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "retrievedEpoch": 1792112997.139664
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://changlab.ucsd.edu/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:16:05+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:05+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113365.39216,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "retrievedEpoch": 1792113365.403417
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://changlab.ucsd.edu/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.105749,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://changlab.ucsd.edu/Pages/default.aspx",
+            "retrievedEpoch": 1792113583.137873
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://changlab.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-4de4d9257c822452f3fc4e63cfe98232dad1a0b41daf6e7d689fa117de085e34.json",
+          "metadataSha256": "24b5b2ce6fc7805818e1383670d5fd9003e13108715345a8865b1ed174e1daac",
+          "metadata": {
+            "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.105749,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-4de4d9257c822452f3fc4e63cfe98232dad1a0b41daf6e7d689fa117de085e34.html",
+          "bodySha256": "1570be101a8b9025e2cf78be466cd29a31a192d4621c1e13d9623bf8b8df6719"
+        },
+        {
+          "robotsOriginURL": "https://changlab.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-4de4d9257c822452f3fc4e63cfe98232dad1a0b41daf6e7d689fa117de085e34.json",
+          "metadataSha256": "24b5b2ce6fc7805818e1383670d5fd9003e13108715345a8865b1ed174e1daac",
+          "metadata": {
+            "sourceUrl": "https://changlab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.105749,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-4de4d9257c822452f3fc4e63cfe98232dad1a0b41daf6e7d689fa117de085e34.html",
+          "bodySha256": "1570be101a8b9025e2cf78be466cd29a31a192d4621c1e13d9623bf8b8df6719"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "unobserved_literal_related_route_requires_independent_date_contract",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [],
+      "futureAdmissionBlocker": "No current exact-observation baseline-field contract: actual10/07 capture cannot be represented as original10/03 field observation. Needs separately reviewed independent-dated source binding, no current entry/plan/request.",
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-7c03bec7416f6a",
+      "ordinal": 636,
+      "labName": "Ginsberg Lab",
+      "reviewedAt": "2026-10-16T07:06:18.491984+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://ginsberglab.ucsd.edu/",
+      "literalLabLink": {
+        "label": "Ginsberg Lab",
+        "href": "http://ginsberglab.ucsd.edu",
+        "literalHTML": "<a href=\"http://ginsberglab.ucsd.edu\">Ginsberg Lab</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "http",
+        "ginsberglab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "ginsberglab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": false,
+      "sameHostPathQueryDifferentScheme": true,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/mark.ginsberg",
+        "observedAt": "2026-10-03T02:49:37+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Ginsberg Lab → https://ginsberglab.ucsd.edu/",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "4c8a295cff881a5fdc9ee77e5fa79d962a7b6da238c9ffedf543afab272070cd",
+      "oldFieldObservedAt": "2026-10-03T02:49:37+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/mark.ginsberg",
+        "actualCaptureObservedAt": "2026-10-07T22:56:09+00:00",
+        "bodySha256": "797aab74a21038675a7a363324554be24bfc88d7fa8c0393800b9333060b882a",
+        "originalMetadataSha256": "9a894945cd4b1cb55d129d3d42d7bf3d16b90c7c18c0368c4263ed3da0e1bdac",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/38cdc361d1b11e8ac18caef1f43d240bf5bb6a74a2ae4a46f9463ba7949e9473.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/38cdc361d1b11e8ac18caef1f43d240bf5bb6a74a2ae4a46f9463ba7949e9473.json"
+      },
+      "independentSourceId": "src-2327f6f8d06c75e4",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://ginsberglab.ucsd.edu/",
+        "transportStatus": "robots_unavailable",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": false,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "c3d8a05c691bd3890b459ebcc407a36dedaecea4f44c5bb3f4f64c23d3ec6cbf",
+      "packetSha256": "5f303c3a15a8732015086a8fa83a020e00c77df5ba43a4a5019e59f33ec91685",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://ginsberglab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T03:49:45+00:00",
+          "httpStatus": 0,
+          "retrievedEpoch": 1792122585.669773,
+          "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+          "redirects": [],
+          "attempts": 3,
+          "status": "unavailable",
+          "attemptHistory": [
+            {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:48+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112808.025759,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T03:47:40+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122460.600863,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "attempts": 2,
+              "status": "unavailable",
+              "retryAfterEpoch": 1792122520.589696
+            }
+          ],
+          "retryAfterEpoch": 1792122705.658126
+        },
+        "blockedUrl": "https://ginsberglab.ucsd.edu/",
+        "retrievedEpoch": 1792122585.6837308
+      },
+      "exactRequestKeyLogicalAttempts": [],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://ginsberglab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.669773,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:48+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112808.025759,
+                  "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.600863,
+                  "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.589696
+                }
+              ],
+              "retryAfterEpoch": 1792122705.658126
+            },
+            "blockedUrl": "https://ginsberglab.ucsd.edu/",
+            "retrievedEpoch": 1792122585.6837308
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://ginsberglab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:06:48+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:48+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112808.025759,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://ginsberglab.ucsd.edu/",
+            "retrievedEpoch": 1792112808.048185
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://ginsberglab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:40+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T03:47:40+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122460.600863,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "attempts": 2,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:48+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112808.025759,
+                  "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                  "redirects": [],
+                  "status": "unavailable"
+                }
+              ],
+              "retryAfterEpoch": 1792122520.589696
+            },
+            "blockedUrl": "https://ginsberglab.ucsd.edu/",
+            "retryAfterEpoch": 1792122580.600863,
+            "retrievedEpoch": 1792122460.6170418
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://ginsberglab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.669773,
+              "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:48+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112808.025759,
+                  "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.600863,
+                  "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.589696
+                }
+              ],
+              "retryAfterEpoch": 1792122705.658126
+            },
+            "blockedUrl": "https://ginsberglab.ucsd.edu/",
+            "retrievedEpoch": 1792122585.6837308
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://ginsberglab.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-79d038fd07c08c5a7ed70ce0069aad2409a9eb67371ee8e85a8782e5da80d6cf.json",
+          "metadataSha256": "719a316ee0cfb64e7e5f0188d09722d00e072f61c41c98652e31bc8be011f1d2",
+          "metadata": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:48+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112808.025759,
+            "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-79d038fd07c08c5a7ed70ce0069aad2409a9eb67371ee8e85a8782e5da80d6cf.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "robotsOriginURL": "https://ginsberglab.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-79d038fd07c08c5a7ed70ce0069aad2409a9eb67371ee8e85a8782e5da80d6cf.json",
+          "metadataSha256": "2353cf82f126828b312ea1a952e84f32087851f61f9f359e650744abf747aa7c",
+          "metadata": {
+            "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122585.669773,
+            "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T01:06:48+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112808.025759,
+                "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                "redirects": [],
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "https://ginsberglab.ucsd.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:40+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122460.600863,
+                "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122520.589696
+              }
+            ],
+            "retryAfterEpoch": 1792122705.658126
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-79d038fd07c08c5a7ed70ce0069aad2409a9eb67371ee8e85a8782e5da80d6cf.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "unobserved_literal_related_route_requires_independent_date_contract",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [],
+      "futureAdmissionBlocker": "No current exact-observation baseline-field contract: actual10/07 capture cannot be represented as original10/03 field observation. Needs separately reviewed independent-dated source binding, no current entry/plan/request.",
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-5ead21eb34ab92",
+      "ordinal": 643,
+      "labName": "Bryan Lab Site",
+      "reviewedAt": "2026-10-16T07:06:18.812225+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "http://bryanlabsite.edu/",
+      "literalLabLink": {
+        "label": "Bryan Lab Site",
+        "href": "http://bryanlabsite.edu",
+        "literalHTML": "<a href=\"http://bryanlabsite.edu\">Bryan Lab Site</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "http",
+        "bryanlabsite.edu",
+        null,
+        "/",
+        ""
+      ],
+      "listedRequestKey": [
+        "http",
+        "bryanlabsite.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/ru.bryan",
+        "observedAt": "2026-10-03T03:07:19+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Bryan Lab Site → http://bryanlabsite.edu/",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "daefc6aa428e912352e2a181402aa96dc6524679c75cd65aad377988358a806f",
+      "oldFieldObservedAt": "2026-10-03T03:07:19+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/ru.bryan",
+        "actualCaptureObservedAt": "2026-10-07T23:08:49+00:00",
+        "bodySha256": "1bbd9208a6e0cb7467c6dab2d155cf3c22eaedd126fe6ddd4b0ca4133249f138",
+        "originalMetadataSha256": "b1df9fa3bb86663b7f85906295af4ea2f62e74f3f8558300aa7da84a067525af",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/ac15d380e354ccafd6c4dbe11fd4a91e4299ff99205984024b5c77999b9b9379.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/ac15d380e354ccafd6c4dbe11fd4a91e4299ff99205984024b5c77999b9b9379.json"
+      },
+      "independentSourceId": "src-7fe8c39ef23037bf",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接，网址本身不足以确认身份。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "http://bryanlabsite.edu/",
+        "transportStatus": "robots_unavailable",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": false,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "4fd50a59986e961fd7e54dcc9cc85fcc9a12f14feb942b232221b14d5ae3a167",
+      "packetSha256": "96008471f77fa5157a4f67740d05ed200bb2c91474e0a68f0f172fd92965edfb",
+      "latestDestinationFetch": {
+        "sourceUrl": "http://bryanlabsite.edu/",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+          "observedAt": "2026-10-16T03:49:45+00:00",
+          "httpStatus": 0,
+          "retrievedEpoch": 1792122585.629317,
+          "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+          "redirects": [],
+          "attempts": 3,
+          "status": "unavailable",
+          "attemptHistory": [
+            {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:50+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112810.379214,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:47:40+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122460.612257,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 2,
+              "status": "unavailable",
+              "retryAfterEpoch": 1792122520.598537
+            }
+          ],
+          "retryAfterEpoch": 1792122705.628465
+        },
+        "blockedUrl": "http://bryanlabsite.edu/",
+        "retrievedEpoch": 1792122585.630284
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T01:06:50+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:50+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112810.379214,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792112810.380129
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:47:40+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:47:40+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122460.612257,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 2,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                }
+              ],
+              "retryAfterEpoch": 1792122520.598537
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retryAfterEpoch": 1792122580.612257,
+            "retrievedEpoch": 1792122460.624875
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T01:06:50+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:50+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112810.379214,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792112810.380129
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:47:40+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:47:40+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122460.612257,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 2,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                }
+              ],
+              "retryAfterEpoch": 1792122520.598537
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retryAfterEpoch": 1792122580.612257,
+            "retrievedEpoch": 1792122460.624875
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "http://bryanlabsite.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": true,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "http://bryanlabsite.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.json",
+          "metadataSha256": "998ac48513a64742990534bd5da83cf4e58ed636e4e6b60603dee476a9bcd466",
+          "metadata": {
+            "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:50+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112810.379214,
+            "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "robotsOriginURL": "http://bryanlabsite.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.json",
+          "metadataSha256": "93ce84c4defcf7c284718366258416e870a06697380d17d490d40a2a1c83c28a",
+          "metadata": {
+            "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122585.629317,
+            "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                "observedAt": "2026-10-16T01:06:50+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112810.379214,
+                "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                "redirects": [],
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:40+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122460.612257,
+                "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122520.598537
+              }
+            ],
+            "retryAfterEpoch": 1792122705.628465
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "robotsOriginURL": "http://bryanlabsite.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.json",
+          "metadataSha256": "998ac48513a64742990534bd5da83cf4e58ed636e4e6b60603dee476a9bcd466",
+          "metadata": {
+            "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:50+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112810.379214,
+            "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "robotsOriginURL": "http://bryanlabsite.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.json",
+          "metadataSha256": "93ce84c4defcf7c284718366258416e870a06697380d17d490d40a2a1c83c28a",
+          "metadata": {
+            "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792122585.629317,
+            "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+            "redirects": [],
+            "attempts": 3,
+            "status": "unavailable",
+            "attemptHistory": [
+              {
+                "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                "observedAt": "2026-10-16T01:06:50+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792112810.379214,
+                "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                "redirects": [],
+                "status": "unavailable"
+              },
+              {
+                "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                "observedAt": "2026-10-16T03:47:40+00:00",
+                "httpStatus": 0,
+                "retrievedEpoch": 1792122460.612257,
+                "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                "redirects": [],
+                "attempts": 2,
+                "status": "unavailable",
+                "retryAfterEpoch": 1792122520.598537
+              }
+            ],
+            "retryAfterEpoch": 1792122705.628465
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-3db398ffb6ec1f05cfc966b541240ceb3c13ab2b720bca23393a37a0be70570b.html",
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": true,
+      "decision": "blocked_known_literal_origin_robots_unavailable",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T01:06:50+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:50+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112810.379214,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792112810.380129
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "http://bryanlabsite.edu/",
+            "observedAt": "2026-10-16T03:49:45+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+              "observedAt": "2026-10-16T03:49:45+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792122585.629317,
+              "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+              "redirects": [],
+              "attempts": 3,
+              "status": "unavailable",
+              "attemptHistory": [
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T01:06:50+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792112810.379214,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "status": "unavailable"
+                },
+                {
+                  "sourceUrl": "http://bryanlabsite.edu/robots.txt",
+                  "observedAt": "2026-10-16T03:47:40+00:00",
+                  "httpStatus": 0,
+                  "retrievedEpoch": 1792122460.612257,
+                  "error": "curl: (6) Could not resolve host: bryanlabsite.edu",
+                  "redirects": [],
+                  "attempts": 2,
+                  "status": "unavailable",
+                  "retryAfterEpoch": 1792122520.598537
+                }
+              ],
+              "retryAfterEpoch": 1792122705.628465
+            },
+            "blockedUrl": "http://bryanlabsite.edu/",
+            "retrievedEpoch": 1792122585.630284
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-dd753ba8b2058b",
+      "ordinal": 647,
+      "labName": "Binhai Zheng — lab website",
+      "reviewedAt": "2026-10-16T07:06:19.116103+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+      "literalLabLink": {
+        "label": "Lab Website",
+        "href": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        "literalHTML": "<a href=\"https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx\">Lab Website</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/binhai.zheng",
+        "observedAt": "2026-10-03T03:31:25+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab Website → https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "fa7d21a29faf7c98fcafccad3c5cf04ec40b3e416c895f67eec0b371a1fbd167",
+      "oldFieldObservedAt": "2026-10-03T03:31:25+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/binhai.zheng",
+        "actualCaptureObservedAt": "2026-10-07T23:27:20+00:00",
+        "bodySha256": "94f4a87a9dff725da11f0b5f21f4c2c0f80d88b86d5837c51d30fbbba487b20d",
+        "originalMetadataSha256": "993276fa3f3fa7b6f9f873c84229e513851ba5f2e8e31c1112c79e2cb37213a2",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6e963e18506bca9e114c9dfd5a0f83498918414c1d10a841e2b0f5b3aed1f336.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6e963e18506bca9e114c9dfd5a0f83498918414c1d10a841e2b0f5b3aed1f336.json"
+      },
+      "independentSourceId": "src-20f307ba1366ee93",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "只有通用标签与历史地址。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        "transportStatus": "http_error",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": true,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "016fc9cd59b5b7eafeae3ca3ec4ad519768372a464471d17290f500ed05c5f68",
+      "packetSha256": "6d23f12ed442b7a0dec16c6c32ed0c303827a749c0bbb8414f4535cbb7d9067e",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        "observedAt": "2026-10-16T01:06:52+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:17+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112237.3471382,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112812.581832
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "existing_exact_request_key_logical_attempt_no_new_route",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:52+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/zheng/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112812.581832
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-f2d8cdd2c719f1",
+      "ordinal": 648,
+      "labName": "Jennifer Graves — lab website",
+      "reviewedAt": "2026-10-16T07:06:19.423690+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+      "literalLabLink": {
+        "label": "Lab Website",
+        "href": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        "literalHTML": "<a href=\"https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx\">Lab Website</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/jennifer.graves",
+        "observedAt": "2026-10-03T03:36:53+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab Website → https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "92ec7d920f361051cbeee2d8dc054eef5d4c83bcecd54272e773084127a6f266",
+      "oldFieldObservedAt": "2026-10-03T03:36:53+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/jennifer.graves",
+        "actualCaptureObservedAt": "2026-10-07T23:31:20+00:00",
+        "bodySha256": "4c3c0b5ec16c9303a4f2b6fb6e067595be78c0ee8f22ac125f8d194ec4eac28b",
+        "originalMetadataSha256": "75f10adbc60f60e4f1cf9af11c9bdd442e71ae24bc1501f52b8d8157292a7e1f",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6cb8fb2d7a05c7a07bf702aea9c0ce9031ac4e4b742588536ea9e6d682cfcf1d.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6cb8fb2d7a05c7a07bf702aea9c0ce9031ac4e4b742588536ea9e6d682cfcf1d.json"
+      },
+      "independentSourceId": "src-dbf7945f4b494dbd",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "只有通用标签与历史地址。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        "transportStatus": "http_error",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": true,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "f3043801cb68c4882152fb0476f54974213338320a4269c6fae8bc1290bb8775",
+      "packetSha256": "cb508beeafa091c307b95302d4e631efc717f434b2d333783d3f778c80b8e449",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:06:53+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:17+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112237.3471382,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112813.614271
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "existing_exact_request_key_logical_attempt_no_new_route",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/graves/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112813.614271
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-b692982c2795e9",
+      "ordinal": 650,
+      "labName": "Mark H Tuszynski — lab website",
+      "reviewedAt": "2026-10-16T07:06:19.724202+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+      "literalLabLink": {
+        "label": "Lab Website",
+        "href": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        "literalHTML": "<a href=\"https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx\">Lab Website</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/mark.tuszynski",
+        "observedAt": "2026-10-03T03:39:52+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab Website → https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "9091a56184b2f969f174e7aef62de7dda7cc9fc407134029283b3152a21a6a6a",
+      "oldFieldObservedAt": "2026-10-03T03:39:52+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/mark.tuszynski",
+        "actualCaptureObservedAt": "2026-10-07T23:34:21+00:00",
+        "bodySha256": "921797cc91c94b380a309df7bd95d589629d95044ed1214311dc365980acbe61",
+        "originalMetadataSha256": "5e3ef3951558a731ad00cab3135c05af7f59b671657ae8b1c6c2bdbec6c73502",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/18feb38f68830e9856fa6f148170c568d36d4cfcd621daf5399d6d66f4a9001e.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/18feb38f68830e9856fa6f148170c568d36d4cfcd621daf5399d6d66f4a9001e.json"
+      },
+      "independentSourceId": "src-3f6c3c20788e20db",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "仅历史链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        "transportStatus": "http_error",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": true,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "c1ac1d94b4cc3d1f29d3387c591206e0004465b9027ca91d7dfc72e7c980a9c0",
+      "packetSha256": "6dd5c647ed3cc47431c5ae36cee28ffa70c5e92e5fee08f43f3e517b1e4acfca",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        "observedAt": "2026-10-16T01:00:41+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:17+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112237.3471382,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112441.286985
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "existing_exact_request_key_logical_attempt_no_new_route",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "observedAt": "2026-10-16T01:00:41+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/centers/neural-repair/pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112441.286985
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-1ac4a68f729918",
+      "ordinal": 652,
+      "labName": "Thomas Scott Hnasko — lab website",
+      "reviewedAt": "2026-10-16T07:06:20.025878+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+      "literalLabLink": {
+        "label": "Lab Website",
+        "href": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        "literalHTML": "<a href=\"https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx\">Lab Website</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "medschool.ucsd.edu",
+        null,
+        "/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/thomas.hnasko",
+        "observedAt": "2026-10-03T03:45:31+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Lab Website → https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "85f0d904e5523eed2964613dd464001b2bc899261fdb52329a2372c28e6787f3",
+      "oldFieldObservedAt": "2026-10-03T03:45:31+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/thomas.hnasko",
+        "actualCaptureObservedAt": "2026-10-08T04:45:50+00:00",
+        "bodySha256": "0f06f781aec436b6bff4fb7a4b37fdef87c88006beada1d453ff988e23a665ff",
+        "originalMetadataSha256": "67bbe642d604bef9bcaf8f5ff6227275b1f175e608d78a5766da8f91354322ef",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/cc0f33a4917681cfd53eb377635699dcdcd340c7b27034d79c40a1d8a00223a7.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/cc0f33a4917681cfd53eb377635699dcdcd340c7b27034d79c40a1d8a00223a7.json"
+      },
+      "independentSourceId": "src-248b2dbcb0675e39",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "仅通用实验室链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        "transportStatus": "http_error",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": true,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "248aa7f89dbf1feebcd304ce6ba071975ab32e03199324b849f10eb9595b9a66",
+      "packetSha256": "b34a2cf7d37be6c67ac2eb2d5f8e644e302a2feb8aa06cca0e6ad69d845e19d3",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:06:54+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:17+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112237.3471382,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112814.582217
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          },
+          "originalPageRequestProven": true
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          },
+          "originalPageRequestProven": true
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": false,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        },
+        {
+          "robotsOriginURL": "https://medschool.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.json",
+          "metadataSha256": "31d46d8c5a15950e1e4bb7eeb8fdc4a36b98882172be1a963fd0b4479d5da3df",
+          "metadata": {
+            "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:17+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112237.3471382,
+            "error": "",
+            "status": "not_found"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-922a38840abbf384d00055d39964acc2aab4de0e0a400d15e60b23c1d3a5f9b3.html",
+          "bodySha256": "22ba85c43a64da4eb94d711de87e2370933e027d165482f63205e06c79018d89"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "existing_exact_request_key_logical_attempt_no_new_route",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:54+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:17+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112237.3471382,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://medschool.ucsd.edu/som/neurosciences/research/labs/hnasko/Pages/default.aspx",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112814.582217
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    },
+    {
+      "labId": "ucsd-live-lab-806c5bae5fcb86",
+      "ordinal": 653,
+      "labName": "Hnasko Lab",
+      "reviewedAt": "2026-10-16T07:06:20.327788+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "listedWebsite": "https://hnaskolab.ucsd.edu/",
+      "literalLabLink": {
+        "label": "Hnasko Lab",
+        "href": "https://hnaskolab.ucsd.edu",
+        "literalHTML": "<a href=\"https://hnaskolab.ucsd.edu\">Hnasko Lab</a>",
+        "ancestorWebpageID": "http://vivoweb.org/ontology/core#webpage",
+        "ancestorTableID": "view_links_table"
+      },
+      "literalRequestKey": [
+        "https",
+        "hnaskolab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "hnaskolab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "strictRequestKeyMatchesListed": true,
+      "sameHostPathQueryDifferentScheme": false,
+      "oldFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/thomas.hnasko",
+        "observedAt": "2026-10-03T03:45:31+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Hnasko Lab → https://hnaskolab.ucsd.edu/",
+        "status": "verified"
+      },
+      "oldFieldProofSha256": "552ab312547cc4394cb2f0c2d1d7e5a5428d166f19087ffea6ee39a9590382b9",
+      "oldFieldObservedAt": "2026-10-03T03:45:31+00:00",
+      "actualIndependentProfileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/thomas.hnasko",
+        "actualCaptureObservedAt": "2026-10-08T04:45:50+00:00",
+        "bodySha256": "0f06f781aec436b6bff4fb7a4b37fdef87c88006beada1d453ff988e23a665ff",
+        "originalMetadataSha256": "67bbe642d604bef9bcaf8f5ff6227275b1f175e608d78a5766da8f91354322ef",
+        "originalBodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/cc0f33a4917681cfd53eb377635699dcdcd340c7b27034d79c40a1d8a00223a7.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/cc0f33a4917681cfd53eb377635699dcdcd340c7b27034d79c40a1d8a00223a7.json"
+      },
+      "independentSourceId": "src-248b2dbcb0675e39",
+      "independentOriginalMetadataHashVerified": true,
+      "fullBodyReviewReusedNoScientificReread": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接。"
+      },
+      "currentProjectionIdentity": {
+        "listedUrl": "https://hnaskolab.ucsd.edu/",
+        "transportStatus": "robots_unavailable",
+        "pageIdentity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+        },
+        "entityAcceptanceStatus": "provisional_or_unresolved",
+        "listedUrlDirectlyChecked": false,
+        "canCountAsVerifiedLabGroupURL": false
+      },
+      "rawSha256": "8368d49ff476370674f24e0fde02f377ff18e2656dfb7102ea6905f3dff82f42",
+      "packetSha256": "efd0bde66b9f0e3851e68fb1f5610e73ffd519aa104e881eb32b94b427a7a152",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://hnaskolab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:19:43+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:43+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113583.459342,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://hnaskolab.ucsd.edu/",
+        "retrievedEpoch": 1792113583.46856
+      },
+      "exactRequestKeyLogicalAttempts": [
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:53+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112813.56565,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112813.566389
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:09:57+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:57+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112997.138276,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112997.139346
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:16:05+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:05+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113365.484749,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113365.4915998
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "exactRequestKeyPending": [],
+      "relatedRootActualCaptures": [
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "fetch",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:53+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112813.56565,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112813.566389
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:09:57+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:57+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112997.138276,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112997.139346
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:16:05+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:05+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113365.484749,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113365.4915998
+          },
+          "originalPageRequestProven": false
+        },
+        {
+          "origin": "collector",
+          "captureURL": "https://hnaskolab.ucsd.edu/",
+          "state": "unresolved",
+          "metadataLocation": "attemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          },
+          "originalPageRequestProven": false
+        }
+      ],
+      "redirectTargetDiscoveryNotPageProof": [],
+      "ownWireEvents": [],
+      "ownOneShotJournals": [],
+      "literalOriginRobotsUnavailable": true,
+      "literalCachedRobotsRuleDenial": null,
+      "literalAndListedOriginRobotsSidecars": [
+        {
+          "robotsOriginURL": "https://hnaskolab.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.json",
+          "metadataSha256": "f2c0f1a6214e4f45b9ce2cef4a295fdcb29e73c7cce0493bddc92a4b7732eb13",
+          "metadata": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.459342,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.html",
+          "bodySha256": "f6a89dedebac36c5a478dff48f13eccc24039fed90e135714107919ffb47ad1e"
+        },
+        {
+          "robotsOriginURL": "https://hnaskolab.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.json",
+          "metadataSha256": "f2c0f1a6214e4f45b9ce2cef4a295fdcb29e73c7cce0493bddc92a4b7732eb13",
+          "metadata": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.459342,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.html",
+          "bodySha256": "f6a89dedebac36c5a478dff48f13eccc24039fed90e135714107919ffb47ad1e"
+        },
+        {
+          "robotsOriginURL": "https://hnaskolab.ucsd.edu/robots.txt",
+          "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.json",
+          "metadataSha256": "f2c0f1a6214e4f45b9ce2cef4a295fdcb29e73c7cce0493bddc92a4b7732eb13",
+          "metadata": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.459342,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.html",
+          "bodySha256": "f6a89dedebac36c5a478dff48f13eccc24039fed90e135714107919ffb47ad1e"
+        },
+        {
+          "robotsOriginURL": "https://hnaskolab.ucsd.edu/robots.txt",
+          "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.json",
+          "metadataSha256": "f2c0f1a6214e4f45b9ce2cef4a295fdcb29e73c7cce0493bddc92a4b7732eb13",
+          "metadata": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113583.459342,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-d7bc4726b8f442b1152ea63fa0274a1da99d0a5ac12c893286e06ddb6fd55323.html",
+          "bodySha256": "f6a89dedebac36c5a478dff48f13eccc24039fed90e135714107919ffb47ad1e"
+        }
+      ],
+      "explicitAccessBoundaries": [],
+      "identityMismatchBoundary": false,
+      "externalTarget": false,
+      "decision": "blocked_known_literal_origin_robots_unavailable",
+      "notAdmitted": true,
+      "oldDateReplaced": false,
+      "recordsPacketsModified": false,
+      "packetExactRequestKeyChecks": [
+        {
+          "packetField": "latestDestinationFetch",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:06:53+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:53+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112813.56565,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112813.566389
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:09:57+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:57+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112997.138276,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792112997.139346
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:16:05+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:05+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113365.484749,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113365.4915998
+          }
+        },
+        {
+          "packetField": "destinationAttemptHistory",
+          "fetch": {
+            "sourceUrl": "https://hnaskolab.ucsd.edu/",
+            "observedAt": "2026-10-16T01:19:43+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://hnaskolab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113583.459342,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://hnaskolab.ucsd.edu/",
+            "retrievedEpoch": 1792113583.46856
+          }
+        }
+      ],
+      "sourceDateBoundary": "Old baseline field and independently captured profile observedAt remain distinct; no retiming, no inferred global page update date."
+    }
+  ],
+  "scienceConclusionsChanged": false,
+  "noPlanOrExecuteInvoked": true,
+  "allowedWrites": [
+    "DIFFERENT-TIME-PROFILE-ROUTE-BOUNDARIES.md",
+    "DIFFERENT-TIME-PROFILE-ROUTE-BOUNDARIES.json"
+  ],
+  "all10RawAndPacketBytesUnchangedDuringReview": true,
+  "finalStaticVerifiedAt": "2026-10-16T07:07:36.878891+00:00",
+  "futureIndependentDateAdmissionContract": [
+    "No current admission or entries are created. A separate reviewed branch would need explicit purpose and actual independent-date source identity; retain the10/03 baseline field proof and its hash as historical association rather than claiming exact-observation equivalence.",
+    "Bind fixed baseline bytes/labID/listed HTTPS, full old verified field proof hash, existing exact officialProfiles professor relationship and exact profile source URL. Independently bind actual10/07 original body+sidecar hashes, full metadata/time/status/final and visible actual main FeaturedContent webpage literal label/href.",
+    "For Chang/Ginsberg literal HTTP vs listedHTTPS, preserve original full URI (Ginsberg has no trailing slash); require strict same host/effective path/query, no guessed protocol/slug/alias/credentials/port/query repair. A parser effective root/ is not HTTP redirect evidence.",
+    "Recheck exact queue pending/attempts, packet root/history/followups, actual final response, own wire and durable journal. Known refusals/challenge/robots unavailable and14mismatch gates must remain closed; no retry of already observed Cleveland or blocked Corr/Bryan/Hnasko.",
+    "Normal public-origin validation, robots first, shared v2 gate/cooldown, redirect/TLS, default2MB cap and durable one-shot remain required. Missing HTTP robots result is not permission.",
+    "No lab identity, canonicalURL, currentPI/affiliation or science acceptance follows from historical profile discovery or transport. Hnasko two stable IDs remain separate. External Bryan is outside automatic official.ucsd.edu route admission."
+  ],
+  "finiteReviewComplete": true,
+  "openIssues": []
+}

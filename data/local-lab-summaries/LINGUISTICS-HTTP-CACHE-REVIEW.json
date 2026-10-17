@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:05:40+00:00",
+  "verdict": "TWO_LAB_SCOPED_RESEARCH_RECOVERIES_SUPPORTED_HTTP_ONLY",
+  "networkRequests": 0,
+  "codeRecordsPacketsCollectorEdits": 0,
+  "originalBytesAndCompleteHtmlAndPrimaryTextRead": true,
+  "queueSnapshot": {
+    "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+    "updatedAt": "2026-10-16T06:04:41+00:00",
+    "sha256": "b52e99ce680dce1af7f2b1606b746b8f27652e1cb7670460cdc1adb2c729e7e4",
+    "actualTargetsIndividuallyMatchedByRequestKey": true
+  },
+  "items": [
+    {
+      "ordinal": 216,
+      "labId": "ucsd-linguistics-lab-mayberry-lab-for-multimodal-language-development",
+      "baselineName": "Mayberry Lab for Multimodal Language Development",
+      "originalListedUrl": "https://grammar.ucsd.edu/labs/mayberrylab/",
+      "originalHttpsCapture": {
+        "observedAt": "2026-10-16T00:59:51+00:00",
+        "status": "http_error",
+        "httpStatus": 404,
+        "finalUrl": "https://grammar.ucsd.edu/labs/mayberrylab/",
+        "preserve": true
+      },
+      "actualHttpCapture": {
+        "requestedUrl": "http://grammar.ucsd.edu/labs/mayberrylab/",
+        "finalUrl": "http://grammar.ucsd.edu/labs/mayberrylab/",
+        "observedAt": "2026-10-16T05:30:37+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "bodySha256": "b17f7ef203103a81c761cf769d93809617a244044a2edf5e0218bb0f93161ec5",
+        "byteCount": 3931,
+        "primaryTextCharacters": 461,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c4e283016b8d28e42be44b1406899359c1d495ef7ef39a34e240fb3720fd6d9e.html",
+        "originalSidecarQueueAndActualByteHashMatch": true,
+        "computedSourceId": "src-e931e28c3989ef1e"
+      },
+      "proposedStatus": "supported",
+      "identity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "The body explicitly welcomes readers to the fully named Mayberry laboratory and describes We investigate/We use; matches the existing official directory lab name independently of HTTP success."
+      },
+      "candidateSummaryZh": "Mayberry 实验室研究多模态语言习得与加工，涵盖手语、口语、书面语和手势，考察儿童早期语言经验如何影响成年后的语言能力。页面列出心理语言学和神经语言学研究范式，未具体说明测量技术。",
+      "candidateQuestionsZh": [
+        "儿童早期语言经验如何影响成年后的跨模态语言能力？"
+      ],
+      "candidateTopicsZh": [
+        "多模态语言习得与加工",
+        "手语、口语、书面语与手势",
+        "早期语言经验与成年语言能力"
+      ],
+      "candidateMethodsZh": [
+        "心理语言学研究范式",
+        "神经语言学研究范式"
+      ],
+      "candidateEvidence": [
+        {
+          "quote": "Welcome to the Mayberry Laboratory for Multimodal Language Development.",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "quote": "We investigate language acquisition and processing across the multiple sensory and motor modalities through which language occurs: sign language, spoken language, written language, and gesture.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "quote": "psycholinguistic and neurolinguistic paradigms",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "quote": "how the child's early language experience affects adult language ability across these modalities.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "affiliationBoundary": {
+        "preserveExistingOfficialDepartmentDirectoryProof": true,
+        "currentFullHtmlLocation": "Location: University of California, San Diego Applied Physics & Mathematics 4402",
+        "locationNode": "div#rightside",
+        "locationIncludedIn461CharacterPrimaryText": false,
+        "advice": "The location is genuine visible side-body text, but cannot be quoted against a source.text containing only the461-character main content. Retain the already-supported official department listing, or separately preserve the actual visible location excerpt before using it as current source evidence."
+      },
+      "facultyBoundary": {
+        "baselinePiAndPiProfile": "Not found; do not overwrite automatically",
+        "actualRootMenuName": "Rachel Mayberry",
+        "actualRootMenuHref": "RachelMayberry.html",
+        "facultyAssociationCorroboratedByCachedProfiles": true,
+        "labPiOrCurrentDirectorshipExplicitlyEstablished": false
+      },
+      "dateBoundary": {
+        "contentUpdateDateFound": false,
+        "actualHtmlCopyrightYear": 2015,
+        "copyrightIsNotResearchUpdate": true,
+        "explicitSpecificInstrumentOrParadigmNamesAbsent": true
+      },
+      "limits": [
+        "Do not infer EEG, MRI, fMRI, eye-tracking or any named experiment from broad psycholinguistic/neurolinguistic wording.",
+        "No PI/director assignment from lab surname, menu name, profile funding Principal Investigator label or copyright holder.",
+        "Copyright2015 and an illumination2020 image/link path do not date the research plan."
+      ],
+      "originalHttpsCanCountVerifiedLabGroupUrl": false
+    },
+    {
+      "ordinal": 218,
+      "labId": "ucsd-linguistics-lab-phonetics-lab",
+      "baselineName": "Phonetics Lab",
+      "originalListedUrl": "https://grammar.ucsd.edu/phoneticslab/",
+      "originalHttpsCapture": {
+        "observedAt": "2026-10-16T01:05:00+00:00",
+        "status": "http_error",
+        "httpStatus": 404,
+        "finalUrl": "https://grammar.ucsd.edu/phoneticslab/",
+        "preserve": true
+      },
+      "actualHttpCapture": {
+        "requestedUrl": "http://grammar.ucsd.edu/phoneticslab/",
+        "finalUrl": "http://grammar.ucsd.edu/phoneticslab/",
+        "observedAt": "2026-10-16T05:33:08+00:00",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "bodySha256": "1030e334c2d2ba7cd605b09978b5f11da5759ef7fb572bfcd382257a447d5411",
+        "byteCount": 2718,
+        "primaryTextCharacters": 615,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8845845f98c8487543e953e16884653d70e8a984be24466fba3b65d3959be0c0.html",
+        "originalSidecarQueueAndActualByteHashMatch": true,
+        "computedSourceId": "src-997eb2f9147bba79"
+      },
+      "proposedStatus": "supported",
+      "identity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "The title/body directly name UCSD Phonetics Lab and state the laboratory's adult speech research focus, so this is more than a generic facility or directory entry."
+      },
+      "candidateSummaryZh": "UCSD Phonetics Lab 研究成年人的语音发音、声学、感知与模式组织。页面列有隔音室录音、电声门图、气流与气压测量系统，以及用于语音感知实验的眼动追踪设备。",
+      "candidateQuestionsZh": [
+        "成人语音的发音、声学、感知与模式组织具有哪些特征？"
+      ],
+      "questionScopeNote": "This is a question-form paraphrase of the stated focus, not an added causal mechanism or relationship hypothesis.",
+      "candidateTopicsZh": [
+        "成人语音发音与声学",
+        "语音感知",
+        "语音模式组织"
+      ],
+      "candidateMethodsZh": [
+        "隔音室高质量录音",
+        "电声门图：间接测量声带接触",
+        "气流与气压测量",
+        "语音感知实验的眼动追踪"
+      ],
+      "candidateEvidence": [
+        {
+          "quote": "Welcome to UCSD’s Phonetics Lab!",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "quote": "The focus of the laboratory is to study sound articulation, acoustics, perception, and patterning in adults.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "quote": "a sound booth for high-quality audio recordings",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "quote": "electroglottography for measuring indirect vocal fold contact",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "quote": "a system for measuring airflow and air pressure",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "quote": "an eye-tracker for speech perception experiments",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "quote": "UCSD Linguistics Department",
+          "supports": [
+            "affiliation"
+          ]
+        }
+      ],
+      "facultyBoundary": {
+        "baselinePiAndPiProfile": "Not found; preserve",
+        "namedFacultyOrPiFoundOnRoot": false
+      },
+      "dateBoundary": {
+        "contentUpdateDateFound": false,
+        "actualHtmlCopyrightYear": 2013,
+        "copyrightIsNotResearchUpdate": true,
+        "currentlyEquippedIsUndatedSourceReport": true
+      },
+      "limits": [
+        "Equipment/method list is stated experimental capability, not independent proof that every instrument is currently operating in2026.",
+        "Do not reinterpret electroglottography as electromyography, or add an unmentioned imaging/clinical technique.",
+        "Adult focus must not be expanded to infant/child language or clinical populations."
+      ],
+      "originalHttpsCanCountVerifiedLabGroupUrl": false
+    }
+  ],
+  "cachedFacultyLinkage": {
+    "sourceUrl": "https://profiles.ucsd.edu/rachel.mayberry",
+    "observedAt": "2026-10-16T04:17:56+00:00",
+    "bodySha256": "e5beb7e7e75eb30d58b6172afe87642cd191956817fce5d2c7e091d1e5cef921",
+    "actualCachedPrimaryTextRead": true,
+    "actualRawHashMatchesQueue": true,
+    "sourceTitleLabel": "Rachel Mayberry",
+    "positionText": "Professor, Linguistics",
+    "featuredLink": {
+      "text": "Mayberry Lab for Multimodal Language Development",
+      "href": "http://mayberrylab.ucsd.edu"
+    },
+    "scope": "Corroborates an actual faculty/lab-webpage association. Does not establish a lab PI appointment, a redirect from grammar.ucsd.edu, or additional lab methods. Historical grants ending2019/2024 are not current2026 operations or lab-wide research evidence."
+  },
+  "admissionRecommendation": {
+    "forParentOnly": true,
+    "stageEachActualHttpCaptureAsSeparateReviewedCachedFollowup": true,
+    "preserveStableIdsAndFullOldEvidenceHistory": true,
+    "preserveOriginalHttpsLatestFetch404AndPreparedAt": true,
+    "noProtocolSubstitutionOrCanonicalRedirectInvented": true,
+    "noNewRequestsNeededForTheseBodies": true,
+    "originalHttpsVerificationCountsRemainFalse": true
+  },
+  "inMemoryProjectionChecks": {
+    "bothHypotheticalLabStatuses": "supported",
+    "bothEntityAcceptance": "accepted_lab_group",
+    "bothOriginalHttpsTransport": "http_error/404",
+    "bothOriginalPageIdentity": "uncertain",
+    "bothOriginalCanonical": null,
+    "bothOriginalVerifiedLabGroupUrl": false,
+    "httpSourcesMatchTheirActualHttpFetches": true,
+    "httpSourcesDoNotMatchOriginalHttpsFetches": true,
+    "rootFetchPreparedAtRawPacketFilesUnchanged": true,
+    "actualPrepareOrCheckpointCalled": false
+  },
+  "actualAppliedResultQA": {
+    "reviewedAt": "2026-10-16T06:07:54+00:00",
+    "applicationAt": "2026-10-16T06:07:26+00:00",
+    "verdict": "PASS",
+    "baseCommit": "5f9a28e3cd523c3bd69e84f8de4e45b13622dff5",
+    "applicationReceipt": "LINGUISTICS-RELATED-HTTP-SCIENCE-APPLICATION.json",
+    "items": [
+      {
+        "labId": "ucsd-linguistics-lab-mayberry-lab-for-multimodal-language-development",
+        "rawSha256": "75dd8bbc508345a4f9d61e813468aaf14c7f6f1cd2fb47f6ae2d77119d5a133f",
+        "packetSha256": "317487e37ebd1f79669c8a374ef9f90723ca20d8052036f86f43826cd3d7ec3f",
+        "sourceChecks": [
+          {
+            "sourceId": "src-e931e28c3989ef1e",
+            "requestedUrl": "http://grammar.ucsd.edu/labs/mayberrylab/",
+            "sourceUrl": "http://grammar.ucsd.edu/labs/mayberrylab/",
+            "observedAt": "2026-10-16T05:30:37+00:00",
+            "bodySha256": "b17f7ef203103a81c761cf769d93809617a244044a2edf5e0218bb0f93161ec5",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c4e283016b8d28e42be44b1406899359c1d495ef7ef39a34e240fb3720fd6d9e.html",
+            "actualHashMatches": true,
+            "originalMetadataDateHashUrlMatches": true
+          }
+        ],
+        "fullPriorRawExactlyMatchesBase": true,
+        "oldEvidenceExactPrefix": true,
+        "oldSourceObjectsExactPrefix": true,
+        "rootFetchUnchanged": true,
+        "preparedAtUnchanged": true,
+        "allActiveQuotesLiteral": true,
+        "activeQuoteCount": 4,
+        "status": "supported",
+        "entityAcceptance": "accepted_lab_group",
+        "originalHttpsTransport": "http_error",
+        "originalHttpsHttpStatus": 404,
+        "originalPageIdentity": "uncertain",
+        "originalCanonical": null,
+        "originalVerifiedUrl": false,
+        "piOr2026EquipmentOperationInferred": false,
+        "footerNotTreatedAsResearchUpdate": true,
+        "affiliationHandling": {
+          "status": "source_reported",
+          "reason": "保留历史官方院系实验室目录的具名隶属证据；不将新捕获时间当作任职或当前隶属生效日期。"
+        }
+      },
+      {
+        "labId": "ucsd-linguistics-lab-phonetics-lab",
+        "rawSha256": "4128beb15bc4f851b7204dd5c8136b638a5105c866030f3ef6c222fb55caf8b1",
+        "packetSha256": "311c52ebe149f15ab7f292799aa8761d31155e47f789d11ea60937a6dafa9f87",
+        "sourceChecks": [
+          {
+            "sourceId": "src-997eb2f9147bba79",
+            "requestedUrl": "http://grammar.ucsd.edu/phoneticslab/",
+            "sourceUrl": "http://grammar.ucsd.edu/phoneticslab/",
+            "observedAt": "2026-10-16T05:33:08+00:00",
+            "bodySha256": "1030e334c2d2ba7cd605b09978b5f11da5759ef7fb572bfcd382257a447d5411",
+            "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8845845f98c8487543e953e16884653d70e8a984be24466fba3b65d3959be0c0.html",
+            "actualHashMatches": true,
+            "originalMetadataDateHashUrlMatches": true
+          }
+        ],
+        "fullPriorRawExactlyMatchesBase": true,
+        "oldEvidenceExactPrefix": true,
+        "oldSourceObjectsExactPrefix": true,
+        "rootFetchUnchanged": true,
+        "preparedAtUnchanged": true,
+        "allActiveQuotesLiteral": true,
+        "activeQuoteCount": 5,
+        "status": "supported",
+        "entityAcceptance": "accepted_lab_group",
+        "originalHttpsTransport": "http_error",
+        "originalHttpsHttpStatus": 404,
+        "originalPageIdentity": "uncertain",
+        "originalCanonical": null,
+        "originalVerifiedUrl": false,
+        "piOr2026EquipmentOperationInferred": false,
+        "footerNotTreatedAsResearchUpdate": true,
+        "affiliationHandling": {
+          "status": "source_reported",
+          "reason": "新HTTP正文明确UCSD Phonetics Lab及UCSD Linguistics Department；来源无内容日期，不据采集时间确认带日期的当前隶属。"
+        }
+      }
+    ],
+    "rawPacketCodeCollectorWrites": 0,
+    "networkRequests": 0,
+    "actionableIssues": []
+  }
+}

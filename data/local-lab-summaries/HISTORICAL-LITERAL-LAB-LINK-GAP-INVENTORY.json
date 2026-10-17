@@ -1,0 +1,797 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:32:49+00:00",
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "verdict": "Four historical literal HTTP followup candidates; none fetched/admitted; Firestein HTTP origin robots unavailable",
+  "counts": {
+    "candidateLiteralHTTPTargets": 4,
+    "exactTargetsWithCurrentCaptureEvidence": 0,
+    "exactTargetsWithOwnWireOrOneShotAttempt": 0,
+    "exactHTTPBaselineSourceUrls": 2,
+    "exactHTTPBaselineFieldEvidence": 0,
+    "currentHTTPOriginRobotsUnavailable": 1,
+    "existingOriginalURIContractEligible": 0,
+    "newRequests": 0
+  },
+  "inputSnapshots": [
+    {
+      "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+      "sha256": "147ecb384b3f7a819c3e4773a2202df801e72254437dacffdd0351b3b571bf28",
+      "updatedAt": "2026-10-16T06:32:42+00:00"
+    },
+    {
+      "path": "data/local-lab-summaries/gap-results.json",
+      "sha256": "af7c4da100b9d831b691f65c5109024fb16b8e0b7b229f6e1c420f77b459bf23",
+      "updatedAt": "2026-10-16T05:51:14+00:00"
+    }
+  ],
+  "baseline": {
+    "path": "data/research-atlas.json",
+    "sha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e"
+  },
+  "items": [
+    {
+      "labId": "ucsd-pathology-lab-aaron-carlin-lab",
+      "ordinal": 294,
+      "labName": "Aaron Carlin Lab",
+      "reviewedAt": "2026-10-16T06:32:49+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_for_separate_literal_profile_link_observation_review_not_admitted",
+      "reason": "精确HTTP锚点真实存在于已读历史profile；所查队列/缓存/own ledger未见该HTTP目标实际请求或显式拒绝。尚需独立有限准入审阅及正常HTTP-origin robots/共享gate，不能视为已获准抓取或身份接受。",
+      "candidateURL": "http://homer.ucsd.edu/CarlinLab/index.html",
+      "candidateSource": "literal original HTML href, not protocol guessing",
+      "literalAnchor": {
+        "label": "Carlin Lab Website",
+        "href": "http://homer.ucsd.edu/CarlinLab/index.html",
+        "rawHTML": "<a href=\"http://homer.ucsd.edu/CarlinLab/index.html\">Carlin Lab Website</a>",
+        "presentVerbatimInOriginalBytes": true
+      },
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+        "finalUrl": "https://profiles.ucsd.edu/aaron.carlin",
+        "observedAt": "2026-10-07T22:17:28+00:00",
+        "bodySha256": "7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc",
+        "originalMetadataSha256": "ff236a6a55d38647a78622e2ac6cea5ab082f8e9ac74942665a75f19bad477f3",
+        "originalCachePath": "/Users/question/Desktop/research web/.cache/atlas/profiles/bad328a6be5256f8aa484b28171f84e1f968e78a45ac5c72db50c37b0cf0fa9f.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/bad328a6be5256f8aa484b28171f84e1f968e78a45ac5c72db50c37b0cf0fa9f.json",
+        "originalMetadata": {
+          "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "observedAt": "2026-10-07T22:17:28+00:00",
+          "status": "ok",
+          "robotsStatus": "checked",
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/aaron.carlin",
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "7489a5991ca6230a27e2051274abd7ad56014a37dbc5f090cb8f0fd57f4861cc"
+        }
+      },
+      "baselineProof": {
+        "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "listedURL": "https://homer.ucsd.edu/CarlinLab/index.html",
+        "exactHTTPInSourceUrls": true,
+        "sourceUrls": [
+          "http://homer.ucsd.edu/CarlinLab/index.html",
+          "https://pathology.ucsd.edu/research/labs/index.html",
+          "https://homer.ucsd.edu/CarlinLab/index.html",
+          "https://profiles.ucsd.edu/aaron.carlin"
+        ],
+        "exactHTTPFieldEvidence": [],
+        "allLabWebsiteFieldEvidence": [
+          {
+            "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+            "observedAt": "2026-10-02T22:42:06+00:00",
+            "method": "official_directory_main_content",
+            "evidence": "Jack Bui Lab Aaron Carlin Lab David Cheresh Lab Hiutung Chu Lab Cole Ferguson Lab Pascal Gagneux Lab Steven Gonias Lab ​Mariko Horii Lab​​ Richard Klemke Lab Gerald Morris Lab Subhojit Roy Lab Mana Parast Lab David Pride Lab Saravanan Raju Lab Diane Shelton Lab Christina Sigurdson Lab Francesca Soncin Lab Ina Stelzer Lab Hiromi Wettersten Lab​ Dong-Er Zhang Lab",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://profiles.ucsd.edu/aaron.carlin",
+            "observedAt": "2026-10-07T22:17:28+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Carlin Lab Website → https://homer.ucsd.edu/CarlinLab/index.html",
+            "status": "verified"
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:05+00:00"
+        }
+      },
+      "currentRecord": {
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "历史名录和链接支持名称关联，目标因 robots 证书检查不可用而未取得内容。"
+        },
+        "rawSha256": "a4e280a585483c5c71a0129e97f13226c66e3aa05d04b39eb92d74e87fcf7f4c",
+        "packetSha256": "6f204a5e1e32f4319840a47946c8fd69ecd24c621d75d7b26141cb2aa7a2885c",
+        "listedWebsite": "https://homer.ucsd.edu/CarlinLab/index.html",
+        "latestDestinationFetch": {
+          "sourceUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://homer.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:05:11+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112711.2098749,
+            "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secu",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "blockedUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+          "retrievedEpoch": 1792112711.2242482
+        },
+        "latestDestinationCheckScope": "listed_url_access_precheck_only",
+        "destinationAttemptHistory": [
+          {
+            "sourceUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+            "observedAt": "2026-10-16T01:05:11+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://homer.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:11+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112711.2098749,
+              "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefore could not establish a secu",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://homer.ucsd.edu/CarlinLab/index.html",
+            "retrievedEpoch": 1792112711.2242482
+          }
+        ],
+        "relatedDestinationChecks": [],
+        "followupChecks": [],
+        "preparedAt": "2026-10-16T03:40:08+00:00"
+      },
+      "actualHTTPObservationSearch": {
+        "collectorQueueMatches": [],
+        "ownGapLedgerMatches": [],
+        "ownWireMatches": [],
+        "ownOneShotJournalKeyPresent": false,
+        "cacheExistence": [
+          {
+            "directory": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses",
+            "htmlExists": false,
+            "sidecarExists": false
+          },
+          {
+            "directory": "data/local-lab-summaries/gap-cache",
+            "htmlExists": false,
+            "sidecarExists": false
+          }
+        ],
+        "pageCaptureEvidenceFound": false,
+        "claimBoundary": "No exact-target request proof in inspected current collector queue/cache or own gap ledger; does not assert an unlogged global history."
+      },
+      "accessBoundaries": {
+        "exactHTTP401403ChallengeOrRobotsDenyObserved": false,
+        "exactHTTPCachedRobotsRuleDenial": null,
+        "HTTPOriginRobotsCaptures": [
+          {
+            "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-531d7a3daf70020f906016ea863f1679179222d6a74fac3f6b06fd151fd51d51.json",
+            "metadataSha256": "4229148f21e1436b4a875f470eb843dfe09f1196f0b9a3435587ddc278e813ae",
+            "metadata": {
+              "sourceUrl": "http://homer.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T05:33:45+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792128825.8386261,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "not_found"
+            },
+            "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-531d7a3daf70020f906016ea863f1679179222d6a74fac3f6b06fd151fd51d51.html",
+            "bodySha256": "e10aa5cfb3a2675cfb50f056b3c0b1b08e96f4ed5da21c4a7744773374e35fbe"
+          },
+          {
+            "metadataPath": "data/local-lab-summaries/gap-cache/robots-531d7a3daf70020f906016ea863f1679179222d6a74fac3f6b06fd151fd51d51.json",
+            "metadataSha256": "4229148f21e1436b4a875f470eb843dfe09f1196f0b9a3435587ddc278e813ae",
+            "metadata": {
+              "sourceUrl": "http://homer.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T05:33:45+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792128825.8386261,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "not_found"
+            },
+            "bodyPath": "data/local-lab-summaries/gap-cache/robots-531d7a3daf70020f906016ea863f1679179222d6a74fac3f6b06fd151fd51d51.html",
+            "bodySha256": "e10aa5cfb3a2675cfb50f056b3c0b1b08e96f4ed5da21c4a7744773374e35fbe"
+          }
+        ],
+        "originRobotsUnavailable": false,
+        "HTTPSRootFailureRetained": true,
+        "noAccessBypassPermitted": true
+      },
+      "existingOriginalURIContract": {
+        "eligible": false,
+        "reason": "当前baseline.labWebsiteUrl与packet.listedWebsite均为HTTPS；现有reviewed_original_uri_observations要求original listed本来精确HTTP且entry.url==listedWebsite，不能直接复用。"
+      },
+      "notAnAcceptedCanonicalLabURL": true,
+      "notFetchedByThisReview": true,
+      "notAnIdentityAcceptance": true,
+      "candidatePageMaxBytesNoException": 2000000,
+      "semanticProofFingerprint": "570e8bbf870dee5fc25bdf859057d62e803990225de8e6cd7f392fca701877ee"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-raidivision-ucsd-edu-research-firestein-lab-pages-default-aspx",
+      "ordinal": 223,
+      "labName": "Firestein Lab",
+      "reviewedAt": "2026-10-16T06:32:49+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "literal_candidate_retained_but_current_HTTP_origin_robots_unavailable",
+      "reason": "同HTTP origin已有实际robots302且不是robots文件；当前不应安排页面请求或换路径绕过。此项只保留发现来源，等待正常robots状态可用。",
+      "candidateURL": "http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+      "candidateSource": "literal original HTML href, not protocol guessing",
+      "literalAnchor": {
+        "label": "Firestein Lab",
+        "href": "http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+        "rawHTML": "<a href=\"http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx\">Firestein Lab</a>",
+        "presentVerbatimInOriginalBytes": true
+      },
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/gary.firestein",
+        "finalUrl": "https://profiles.ucsd.edu/gary.firestein",
+        "observedAt": "2026-10-07T22:37:39+00:00",
+        "bodySha256": "9c8875188e995dd867ca0ddf0b58c0bf2329ce37d72914c6335f9b0845b0e9fb",
+        "originalMetadataSha256": "14a8ed809f1f0f388eb9611f79b9562575590cf66bc4b6deaf591e061bc11c1a",
+        "originalCachePath": "/Users/question/Desktop/research web/.cache/atlas/profiles/2e26082cd7268a7176df1191706d42fdca264897ad57c4cbb15ca08707eeb5bb.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/2e26082cd7268a7176df1191706d42fdca264897ad57c4cbb15ca08707eeb5bb.json",
+        "originalMetadata": {
+          "sourceUrl": "https://profiles.ucsd.edu/gary.firestein",
+          "observedAt": "2026-10-07T22:37:39+00:00",
+          "status": "ok",
+          "robotsStatus": "checked",
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/gary.firestein",
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "9c8875188e995dd867ca0ddf0b58c0bf2329ce37d72914c6335f9b0845b0e9fb"
+        }
+      },
+      "baselineProof": {
+        "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "listedURL": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+        "exactHTTPInSourceUrls": true,
+        "sourceUrls": [
+          "http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+          "https://profiles.ucsd.edu/gary.firestein",
+          "https://med.ucsd.edu/about/faculty-directory.html",
+          "https://actri.ucsd.edu",
+          "https://researcherprofiles.org/search/",
+          "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx"
+        ],
+        "exactHTTPFieldEvidence": [],
+        "allLabWebsiteFieldEvidence": [
+          {
+            "sourceUrl": "https://profiles.ucsd.edu/gary.firestein",
+            "observedAt": "2026-10-07T22:37:39+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Firestein Lab → https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "status": "verified"
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "currentRecord": {
+        "status": "partial",
+        "identity": {
+          "status": "confirmed",
+          "entityType": "lab",
+          "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+        },
+        "rawSha256": "a86f2b87c080ded004f76f41bf97d32e04292b52377d6613b6d13ddb83bf7f1a",
+        "packetSha256": "97231f89b072ff923d61bdde022e8066778c136aa173d95174a94dd57dd7bc08",
+        "listedWebsite": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+        "latestDestinationFetch": {
+          "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+          "observedAt": "2026-10-16T01:19:44+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:19:40+00:00",
+            "httpStatus": 302,
+            "retrievedEpoch": 1792113580.095382,
+            "error": "robots_redirect_is_not_a_robots_file",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+          "retrievedEpoch": 1792113584.906328
+        },
+        "latestDestinationCheckScope": "listed_url_access_precheck_only",
+        "destinationAttemptHistory": [
+          {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:05:03+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:05:01+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112701.057426,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112703.322666
+          },
+          {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:06:25+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:22+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112782.662185,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112785.354008
+          },
+          {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:09:57+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:09:53+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792112993.825984,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792112997.588732
+          },
+          {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:16:06+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:16:02+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113362.239605,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792113366.877493
+          },
+          {
+            "sourceUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "observedAt": "2026-10-16T01:19:44+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:19:40+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792113580.095382,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+            "retrievedEpoch": 1792113584.906328
+          }
+        ],
+        "relatedDestinationChecks": [],
+        "followupChecks": [],
+        "preparedAt": "2026-10-16T03:40:07+00:00"
+      },
+      "actualHTTPObservationSearch": {
+        "collectorQueueMatches": [],
+        "ownGapLedgerMatches": [],
+        "ownWireMatches": [],
+        "ownOneShotJournalKeyPresent": false,
+        "cacheExistence": [
+          {
+            "directory": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses",
+            "htmlExists": false,
+            "sidecarExists": false
+          },
+          {
+            "directory": "data/local-lab-summaries/gap-cache",
+            "htmlExists": false,
+            "sidecarExists": false
+          }
+        ],
+        "pageCaptureEvidenceFound": false,
+        "claimBoundary": "No exact-target request proof in inspected current collector queue/cache or own gap ledger; does not assert an unlogged global history."
+      },
+      "accessBoundaries": {
+        "exactHTTP401403ChallengeOrRobotsDenyObserved": false,
+        "exactHTTPCachedRobotsRuleDenial": null,
+        "HTTPOriginRobotsCaptures": [
+          {
+            "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.json",
+            "metadataSha256": "57eed9cb10267e44b3e53bbe65b0733ff664f5377255889688e086e94cb914d1",
+            "metadata": {
+              "sourceUrl": "http://raidivision.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T06:18:43+00:00",
+              "httpStatus": 302,
+              "retrievedEpoch": 1792131523.248993,
+              "error": "robots_redirect_is_not_a_robots_file",
+              "redirects": [],
+              "attempts": 1,
+              "status": "unavailable"
+            },
+            "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/robots-1de2368356b95326378b6fd2c27d87e056f60d1d67a871ef555e5c53e53d4658.html",
+            "bodySha256": "8e430ff85c1c512f6d6bc22699d57bb52318f765ec4bee045f3997367f5a0986"
+          }
+        ],
+        "originRobotsUnavailable": true,
+        "HTTPSRootFailureRetained": true,
+        "noAccessBypassPermitted": true
+      },
+      "existingOriginalURIContract": {
+        "eligible": false,
+        "reason": "当前baseline.labWebsiteUrl与packet.listedWebsite均为HTTPS；现有reviewed_original_uri_observations要求original listed本来精确HTTP且entry.url==listedWebsite，不能直接复用。"
+      },
+      "notAnAcceptedCanonicalLabURL": true,
+      "notFetchedByThisReview": true,
+      "notAnIdentityAcceptance": true,
+      "candidatePageMaxBytesNoException": 2000000,
+      "semanticProofFingerprint": "0623a958e2f6fb1d8947ae108aded07c1a9c03459423929c111d8ad18aa3c035"
+    },
+    {
+      "labId": "ucsd-live-lab-c53a46a8ac4496",
+      "ordinal": 447,
+      "labName": "Alexandrov Lab",
+      "reviewedAt": "2026-10-16T06:32:49+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_for_separate_literal_profile_link_observation_review_not_admitted",
+      "reason": "精确HTTP锚点真实存在于已读历史profile；所查队列/缓存/own ledger未见该HTTP目标实际请求或显式拒绝。尚需独立有限准入审阅及正常HTTP-origin robots/共享gate，不能视为已获准抓取或身份接受。",
+      "candidateURL": "http://alexandrov.ucsd.edu/",
+      "candidateSource": "literal original HTML href, not protocol guessing",
+      "literalAnchor": {
+        "label": "Alexandrov Lab",
+        "href": "http://alexandrov.ucsd.edu/",
+        "rawHTML": "<a href=\"http://alexandrov.ucsd.edu/\">Alexandrov Lab</a>",
+        "presentVerbatimInOriginalBytes": true
+      },
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+        "finalUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+        "observedAt": "2026-10-07T22:09:38+00:00",
+        "bodySha256": "9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38",
+        "originalMetadataSha256": "667f20ab0602d97be5cc50f9a7cfa363364ba08d0c737f96d8b056a8924dc3a7",
+        "originalCachePath": "/Users/question/Desktop/research web/.cache/atlas/profiles/e9bea59461e432bf43d4b525cb8a60d0f00bf7bd706a0f28dcf2ef71348ddae6.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/e9bea59461e432bf43d4b525cb8a60d0f00bf7bd706a0f28dcf2ef71348ddae6.json",
+        "originalMetadata": {
+          "sourceUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+          "observedAt": "2026-10-07T22:09:38+00:00",
+          "status": "ok",
+          "robotsStatus": "checked",
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "9a009a30e1850d53bda9e9430268ccae158f0d1afe86767ca09d4abbe8874f38"
+        }
+      },
+      "baselineProof": {
+        "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "listedURL": "https://alexandrov.ucsd.edu/",
+        "exactHTTPInSourceUrls": false,
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/ludmil.alexandrov",
+          "https://alexandrov.ucsd.edu/"
+        ],
+        "exactHTTPFieldEvidence": [],
+        "allLabWebsiteFieldEvidence": [
+          {
+            "sourceUrl": "https://profiles.ucsd.edu/ludmil.alexandrov",
+            "observedAt": "2026-10-07T22:09:38+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Alexandrov Lab → https://alexandrov.ucsd.edu/",
+            "status": "verified"
+          }
+        ],
+        "historicalWebsiteCheck": {
+          "sourceUrl": "https://alexandrov.ucsd.edu/",
+          "status": "unavailable",
+          "observedAt": "2026-10-03T00:04:04+00:00"
+        }
+      },
+      "currentRecord": {
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "lab",
+          "reason": "历史链接确认名称关联，但个人研究叙述不能自动代表整个实验室。"
+        },
+        "rawSha256": "77bf2a6f2c460b7e1f8eaf542c7594cade7e8cc4493f27f6020344c547bab025",
+        "packetSha256": "cf57ead3d10affb30b5d4969d3432e43e1ae7fb2d625c9edf990f25673051463",
+        "listedWebsite": "https://alexandrov.ucsd.edu/",
+        "latestDestinationFetch": {
+          "sourceUrl": "https://alexandrov.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:25+00:00",
+          "status": "robots_unavailable",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://alexandrov.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T01:06:25+00:00",
+            "httpStatus": 0,
+            "retrievedEpoch": 1792112785.418936,
+            "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'alexandrov.ucsd.edu' More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefor",
+            "redirects": [],
+            "status": "unavailable"
+          },
+          "blockedUrl": "https://alexandrov.ucsd.edu/",
+          "retrievedEpoch": 1792112785.430876
+        },
+        "latestDestinationCheckScope": "listed_url_access_precheck_only",
+        "destinationAttemptHistory": [
+          {
+            "sourceUrl": "https://alexandrov.ucsd.edu/",
+            "observedAt": "2026-10-16T01:06:25+00:00",
+            "status": "robots_unavailable",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://alexandrov.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T01:06:25+00:00",
+              "httpStatus": 0,
+              "retrievedEpoch": 1792112785.418936,
+              "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'alexandrov.ucsd.edu' More details here: https://curl.se/docs/sslcerts.html curl failed to verify the legitimacy of the server and therefor",
+              "redirects": [],
+              "status": "unavailable"
+            },
+            "blockedUrl": "https://alexandrov.ucsd.edu/",
+            "retrievedEpoch": 1792112785.430876
+          }
+        ],
+        "relatedDestinationChecks": [],
+        "followupChecks": [],
+        "preparedAt": "2026-10-16T03:40:11+00:00"
+      },
+      "actualHTTPObservationSearch": {
+        "collectorQueueMatches": [],
+        "ownGapLedgerMatches": [],
+        "ownWireMatches": [],
+        "ownOneShotJournalKeyPresent": false,
+        "cacheExistence": [
+          {
+            "directory": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses",
+            "htmlExists": false,
+            "sidecarExists": false
+          },
+          {
+            "directory": "data/local-lab-summaries/gap-cache",
+            "htmlExists": false,
+            "sidecarExists": false
+          }
+        ],
+        "pageCaptureEvidenceFound": false,
+        "claimBoundary": "No exact-target request proof in inspected current collector queue/cache or own gap ledger; does not assert an unlogged global history."
+      },
+      "accessBoundaries": {
+        "exactHTTP401403ChallengeOrRobotsDenyObserved": false,
+        "exactHTTPCachedRobotsRuleDenial": null,
+        "HTTPOriginRobotsCaptures": [],
+        "originRobotsUnavailable": false,
+        "HTTPSRootFailureRetained": true,
+        "noAccessBypassPermitted": true
+      },
+      "existingOriginalURIContract": {
+        "eligible": false,
+        "reason": "当前baseline.labWebsiteUrl与packet.listedWebsite均为HTTPS；现有reviewed_original_uri_observations要求original listed本来精确HTTP且entry.url==listedWebsite，不能直接复用。"
+      },
+      "notAnAcceptedCanonicalLabURL": true,
+      "notFetchedByThisReview": true,
+      "notAnIdentityAcceptance": true,
+      "candidatePageMaxBytesNoException": 2000000,
+      "semanticProofFingerprint": "c401fe936b3c29d24367a235481a262a6a44b89f736e99089ffbce7ab664c615"
+    },
+    {
+      "labId": "ucsd-live-lab-48e8d895726620",
+      "ordinal": 621,
+      "labName": "Lab Site",
+      "reviewedAt": "2026-10-16T06:32:49+00:00",
+      "metadataOnly": true,
+      "networkRequestsMade": 0,
+      "decision": "candidate_for_separate_literal_profile_link_observation_review_not_admitted",
+      "reason": "精确HTTP锚点真实存在于已读历史profile；所查队列/缓存/own ledger未见该HTTP目标实际请求或显式拒绝。尚需独立有限准入审阅及正常HTTP-origin robots/共享gate，不能视为已获准抓取或身份接受。",
+      "candidateURL": "http://cmm.ucsd.edu/cleveland/home.html",
+      "candidateSource": "literal original HTML href, not protocol guessing",
+      "literalAnchor": {
+        "label": "Lab Site",
+        "href": "http://cmm.ucsd.edu/cleveland/home.html",
+        "rawHTML": "<a href=\"http://cmm.ucsd.edu/cleveland/home.html\">Lab Site</a>",
+        "presentVerbatimInOriginalBytes": true
+      },
+      "profileCapture": {
+        "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+        "finalUrl": "https://profiles.ucsd.edu/don.cleveland",
+        "observedAt": "2026-10-07T22:04:19+00:00",
+        "bodySha256": "f29fb590ced0dfa0e19df60bf0fbeaefabd6ccc7238fdab3568e33e9a5429f43",
+        "originalMetadataSha256": "0793be8babf83fb878947b2de9a9e95ca4b49f80f716611d15657d3a9da5088e",
+        "originalCachePath": "/Users/question/Desktop/research web/.cache/atlas/profiles/f1eb30c25c9aab9f1449681e400baa3eea9a26b326b2fd7a0394aa499d3490b2.html",
+        "originalMetadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/f1eb30c25c9aab9f1449681e400baa3eea9a26b326b2fd7a0394aa499d3490b2.json",
+        "originalMetadata": {
+          "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+          "observedAt": "2026-10-07T22:04:19+00:00",
+          "status": "ok",
+          "robotsStatus": "checked",
+          "httpStatus": 200,
+          "finalUrl": "https://profiles.ucsd.edu/don.cleveland",
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "f29fb590ced0dfa0e19df60bf0fbeaefabd6ccc7238fdab3568e33e9a5429f43"
+        }
+      },
+      "baselineProof": {
+        "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+        "listedURL": "https://cmm.ucsd.edu/cleveland/home.html",
+        "exactHTTPInSourceUrls": false,
+        "sourceUrls": [
+          "https://profiles.ucsd.edu/don.cleveland",
+          "https://cmm.ucsd.edu/cleveland/home.html"
+        ],
+        "exactHTTPFieldEvidence": [],
+        "allLabWebsiteFieldEvidence": [
+          {
+            "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+            "observedAt": "2026-10-03T01:44:19+00:00",
+            "method": "official_profile_explicit_lab_link",
+            "evidence": "Lab Site → https://cmm.ucsd.edu/cleveland/home.html",
+            "status": "verified"
+          },
+          {
+            "sourceUrl": "https://profiles.ucsd.edu/don.cleveland",
+            "observedAt": "2026-10-07T22:04:19+00:00",
+            "method": "official_profile_generic_lab_link",
+            "evidence": "Lab Site → https://cmm.ucsd.edu/cleveland/home.html",
+            "status": "verified"
+          }
+        ],
+        "historicalWebsiteCheck": null
+      },
+      "currentRecord": {
+        "status": "unresolved",
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "仅有通用标签与历史链接。"
+        },
+        "rawSha256": "aeeeef21b573f7c0943e7a323586ce7dd698ccf82a30039d0f0d24c4078e8073",
+        "packetSha256": "32ef389919269a56a565a21a3fa4c3d97ba8a0b4d520df2d2f4c787e32ca3082",
+        "listedWebsite": "https://cmm.ucsd.edu/cleveland/home.html",
+        "latestDestinationFetch": {
+          "sourceUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+          "observedAt": "2026-10-16T01:06:44+00:00",
+          "status": "http_error",
+          "redirects": [],
+          "robots": {
+            "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T00:57:15+00:00",
+            "httpStatus": 404,
+            "retrievedEpoch": 1792112235.484807,
+            "error": "",
+            "status": "not_found"
+          },
+          "httpStatus": 404,
+          "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+          "contentType": "text/html; charset=UTF-8",
+          "error": "",
+          "retrievedEpoch": 1792112804.826734
+        },
+        "latestDestinationCheckScope": "listed_url_direct_request",
+        "destinationAttemptHistory": [
+          {
+            "sourceUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "observedAt": "2026-10-16T01:06:44+00:00",
+            "status": "http_error",
+            "redirects": [],
+            "robots": {
+              "sourceUrl": "https://cmm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T00:57:15+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792112235.484807,
+              "error": "",
+              "status": "not_found"
+            },
+            "httpStatus": 404,
+            "finalUrl": "https://cmm.ucsd.edu/cleveland/home.html",
+            "contentType": "text/html; charset=UTF-8",
+            "error": "",
+            "retrievedEpoch": 1792112804.826734
+          }
+        ],
+        "relatedDestinationChecks": [],
+        "followupChecks": [],
+        "preparedAt": "2026-10-16T03:40:14+00:00"
+      },
+      "actualHTTPObservationSearch": {
+        "collectorQueueMatches": [],
+        "ownGapLedgerMatches": [],
+        "ownWireMatches": [],
+        "ownOneShotJournalKeyPresent": false,
+        "cacheExistence": [
+          {
+            "directory": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses",
+            "htmlExists": false,
+            "sidecarExists": false
+          },
+          {
+            "directory": "data/local-lab-summaries/gap-cache",
+            "htmlExists": false,
+            "sidecarExists": false
+          }
+        ],
+        "pageCaptureEvidenceFound": false,
+        "claimBoundary": "No exact-target request proof in inspected current collector queue/cache or own gap ledger; does not assert an unlogged global history."
+      },
+      "accessBoundaries": {
+        "exactHTTP401403ChallengeOrRobotsDenyObserved": false,
+        "exactHTTPCachedRobotsRuleDenial": null,
+        "HTTPOriginRobotsCaptures": [],
+        "originRobotsUnavailable": false,
+        "HTTPSRootFailureRetained": true,
+        "noAccessBypassPermitted": true
+      },
+      "existingOriginalURIContract": {
+        "eligible": false,
+        "reason": "当前baseline.labWebsiteUrl与packet.listedWebsite均为HTTPS；现有reviewed_original_uri_observations要求original listed本来精确HTTP且entry.url==listedWebsite，不能直接复用。"
+      },
+      "notAnAcceptedCanonicalLabURL": true,
+      "notFetchedByThisReview": true,
+      "notAnIdentityAcceptance": true,
+      "candidatePageMaxBytesNoException": 2000000,
+      "semanticProofFingerprint": "ad037790868d1e29c2960788890b07db12894fbde87a353d17f5d664d8e3f49e"
+    }
+  ],
+  "otherAlreadyReadProtocolChecks": [
+    {
+      "ordinal": 227,
+      "lab": "Jamieson",
+      "result": "actual named Lab href is HTTPS and equals listedURL; no protocol-difference candidate"
+    },
+    {
+      "ordinals": [
+        619,
+        620
+      ],
+      "lab": "Hamilton",
+      "result": "both actual named Lab hrefs are HTTPS and each equals its listedURL; already fully adjudicated; no protocol-difference candidate"
+    }
+  ],
+  "nextStepReviewContractRecommendation": [
+    "Only separately reviewed finite historical-literal-profile-link observation admission could consider these; no code or plan change in this report.",
+    "Pin stable labID + unchanged listedHTTPS + exact raw HTTP href/label + original profile URL/time/bodySHA/sidecarSHA + current root metadata; no invented scheme/path/www/case/query.",
+    "Current original-URI contract is inapplicable to every item. Baseline sourceUrls already contains exactHTTP only for Carlin and Firestein; no exactHTTP fieldEvidence for any item. Alexandrov/Cleveland require the independently preserved raw HTML anchor proof.",
+    "Normal HTTP-origin robots and shared host-clock gate first; preserve current Firestein origin robots-unavailable state, no page request while that boundary persists. Do not treat redirect HTML as robots rules.",
+    "Honor robots deny,401,403,challenge,rate/cap and DNS; no login/challenge workaround/TLS disabling/cap increase. Any actual redirect toHTTPS must validate normal TLS and target robots.",
+    "Normal2M page cap; one finite observation journal if later explicitly admitted; no automatic retry.",
+    "Observation is not identity/research acceptance. Preserve failed originalHTTPS fetches, stable IDs and mismatch gates; subsequent actual body would need separate entity/research review."
+  ],
+  "allowedWrites": [
+    "HISTORICAL-LITERAL-LAB-LINK-GAP-INVENTORY.md",
+    "HISTORICAL-LITERAL-LAB-LINK-GAP-INVENTORY.json"
+  ]
+}

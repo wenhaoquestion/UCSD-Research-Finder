@@ -1,0 +1,153 @@
+{
+  "labId": "ucsd-radiation-medicine-lab-rose-lab",
+  "status": "supported",
+  "summaryZh": "Rose 实验室开展前列腺癌人群研究，分析治疗安全性、药物影响及相关结局。团队使用 VINCI 和 Million Veteran Project 等大型数据库。",
+  "researchQuestions": [
+    "遗传因素如何影响前列腺癌风险，以及不同族群的癌症筛查和治疗？"
+  ],
+  "topics": [
+    "前列腺癌",
+    "人群结局研究"
+  ],
+  "methods": [
+    "大型患者数据库分析"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-4c06fb7f48bde8b4",
+      "quote": "Dr. Brent Rose The major focus of Dr. Rose’s lab is on population sciences research, in particular analyses of large databases of prostate cancer patients. Recent work includes assessment of the impact of pre-diagnostic 5α-reductase inhibitor, the association between dementia and androgen deprivation therapy in prostate cancer patients undergoing definitive RT and the safety of active surveillance in African-American men with low-risk prostate cancer. His group focuses on multiple large databases including VINCI and the Million Veteran Project within the Veterans Administration system. Support Dr. Rose’s research is supported by 4-year $806K Department of Defense grant. Explore the Lab People Learn more about the dedicated team in Dr. Brent Rose's lab. Meet Our Team Publications Explore the latest publications from Dr. Brent Rose's lab. See Publications Featured Articles Adverse Impact of Pre-Diagnostic 5α-Reductase Inhibitors No Association Between ADT and Dementia in Prostate Cancer Patients Undergoing RT 3-Month Post-Treatment PSA Level as a Prognostic Biomarker",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-686030f8d7b124d8",
+      "quote": "Rose Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-a2110c23302d315d",
+      "quote": "Currently, he is investigating how inherited genetic factors influence prostate cancer risk, as well as their impact on cancer screening and treatment across all racial groups. His research group leverages large databases including VINCI and the Million Veterans Project.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:24+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "官方负责人页的how紧接His research group，且原根明确该组人群科学/数据库研究，形成局部同体研究范围；不采用既往ADT关联等论文结果。保留探索语气，不作风险结论。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-4c06fb7f48bde8b4",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/rose/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:06+00:00",
+        "bodySha256": "31a78f5ee58fdc7ecbd24099a0dd37588901ed66ac55eb76732d5ad8c230a302",
+        "textSha256": "b080894b39c84899205cc0fa6331bb8fa5287d5ee74869f709cd34261ee31f0e",
+        "textCharacters": 1081,
+        "readRanges": [
+          [
+            0,
+            1081
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-c3b959c2b7fa96ab",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/rose/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:36+00:00",
+        "bodySha256": "e8b1800a941b612eb695419d51d11639c6db78fd34f80a33bbb50ca8e7130c4c",
+        "textSha256": "1d5dc7971d11da9c1fdd15f981e07954012dbe9878c26e95f85d911fc9eb1d87",
+        "textCharacters": 116,
+        "readRanges": [
+          [
+            0,
+            116
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-686030f8d7b124d8",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+        "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+        "bodySha256": null,
+        "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+        "textCharacters": 156,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 192,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-a2110c23302d315d",
+        "sourceUrl": "https://radonc.ucsd.edu/faculty/radiation-oncology/rose-brent.html",
+        "sourceObservedAt": "2026-10-16T01:00:04+00:00",
+        "bodySha256": "59cdb864fbd3b1279e229b0743198ab9adff78bbf5d71bba044dc7b4b16f7007",
+        "textSha256": "1f5dac6878c632c324d0b962cab4b1d481ae02d43a26bc8b4173d9d7915a34cd",
+        "textCharacters": 2269,
+        "readRanges": [
+          [
+            0,
+            2269
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-ee7b1ebdf09121b3",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/rose/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:36+00:00",
+        "bodySha256": "e8b1800a941b612eb695419d51d11639c6db78fd34f80a33bbb50ca8e7130c4c",
+        "textSha256": "8165e4e9ff15b409686535f8473d4dbeda8c4546f38ebaa88cd20c6a2beb8ac4",
+        "textCharacters": 821,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-c3b959c2b7fa96ab",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-a2110c23302d315d",
+        "quote": "Currently, he is investigating how inherited genetic factors influence prostate cancer risk, as well as their impact on cancer screening and treatment across all racial groups. His research group leverages large databases including VINCI and the Million Veterans Project.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:04+00:00",
+        "bodySha256": "59cdb864fbd3b1279e229b0743198ab9adff78bbf5d71bba044dc7b4b16f7007"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

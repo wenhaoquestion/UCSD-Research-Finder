@@ -1,0 +1,1661 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:00:35+00:00",
+  "reviewOnly": true,
+  "networkRequestsMade": 0,
+  "rawPacketReceiptWrites": 0,
+  "reviewedCount": 12,
+  "captureStatusCounts": {
+    "robots_unavailable": 2,
+    "ok": 8,
+    "http_error": 2
+  },
+  "pageIdentityMatchCounts": {
+    "uncertain": 8,
+    "confirmed": 4
+  },
+  "newSourceBodiesRead": 8,
+  "sameFullVisibleTextCount": 7,
+  "newDifferentWholeLabScienceCount": 1,
+  "hypotheticalIdentityBindingWouldRestoreVerifiedAcceptedLabGroupURLs": 3,
+  "actualBindingsApplied": 0,
+  "mismatchIntersection": [],
+  "inputHashes": {
+    "reviewed-original-uri-observations.json": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f",
+    "original-url-packet-refresh.json": "2200668c2dc986838f19aa8e76951243a4f81e33d3b38fd65874ab7de6e1de81"
+  },
+  "refreshSnapshotAtRead": {
+    "refreshedAt": "2026-10-16T04:58:20+00:00",
+    "completedOriginalURICaptures": 82
+  },
+  "boundaries": [
+    "Only these two new review reports written. No raw/packet/receipt/code/network edits.",
+    "All8 actual new body caches were read and independently extracted; raw bytes/title/full visible text and request/time/hash/final tuple match packet. Four failure/precheck records have no new body/sourceId/hash; no quote invented.",
+    "Bennett title binding is limited identity evidence plus previously independently confirmed meta target relationship. Yanofsky title binding retains existing partial status and frames blocker. Murre remains uncertain without adequate entity relationship.",
+    "Empty same-text meta bodies do not support new science or inherit target-site identity quotes; HTML meta/frame directives are distinct from actual HTTP redirects.",
+    "Goldrath only needs new identity title binding; preserve all prior science fields and scientific reviewedAt. Hampton has a substantive explicit model/topic/affiliation addition, so its optional full science revision gets a new proposedScientificReviewAt while preserving prior history.",
+    "Original observations/live wire times remain distinct from this later model review. Source content update/current-affiliation dates stay unknown where not stated.",
+    "Hypothetical hydrate results are recommendations only; parent applies later. No ID/alias migration or13 mismatch acceptance change."
+  ],
+  "items": [
+    {
+      "inventoryIndex": 0,
+      "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "robots_unavailable",
+      "sourceId": null,
+      "actualURL": "http://sung-lab.eng.ucsd.edu/",
+      "literalListedURL": "http://sung-lab.eng.ucsd.edu/",
+      "actualPageRequestMade": false,
+      "observedAt": "2026-10-16T04:56:09+00:00",
+      "liveCheckedAt": null,
+      "finalURL": null,
+      "httpStatus": null,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://sung-lab.eng.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:56:09+00:00",
+        "httpStatus": 0,
+        "retrievedEpoch": 1792126569.6161668,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to sung-lab.eng.ucsd.edu:443",
+        "redirects": [
+          {
+            "from": "http://sung-lab.eng.ucsd.edu/robots.txt",
+            "to": "https://sung-lab.eng.ucsd.edu/robots.txt",
+            "httpStatus": 301
+          }
+        ],
+        "attempts": 1,
+        "status": "unavailable",
+        "retryAfterEpoch": 1792126629.61516
+      },
+      "error": null,
+      "bodySha256": null,
+      "sourceMatchesFetch": null,
+      "sameByteBody": null,
+      "sameFullVisibleText": null,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "newBodyRead": false,
+      "fullVisibleTextCharactersRead": null,
+      "fullVisibleTextSha256": null,
+      "title": null,
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_actual_robots_blocker",
+      "reasons": [
+        "原 HTTP 仅完成 robots 前置检查，robots 从 HTTP 跳 HTTPS 后出现 curl35 TLS 错误；没有页面请求、页面正文、sourceId 或正文hash。保留既有官方研究证据，不补本次目的页身份。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "官方个人页面明确描述其研究并标明 Molecular Bioengineering Laboratory 负责人；Sung Lab 的目的页未捕获。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:45:38+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-a489b108668bb1e0",
+          "quote": "Molecular basis of erythrocyte cell membrane mechanics.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-a489b108668bb1e0",
+          "quote": "Sung uses gene-targeting techniques to identify the functions of individual genes, including in vitro experiments using knockout mouse embryos made with embryonic stem cells.",
+          "supports": [
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-a489b108668bb1e0",
+          "quote": "Lanping Amy Sung is principal researcher of the Center for Molecular Genetics, and the Molecular Bioengineering Laboratory.",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-10695595490a141e",
+          "quote": "Amy Sung Professor Emeritus Sung Research",
+          "supports": [
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-a489b108668bb1e0",
+          "quote": "Sung is now researching similar meshes in other tissues that, like red blood cells, regularly change shape. Among these are cardio-myocytes, or heart muscles.",
+          "supports": [
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "目的地 robots 获取出现 TLS 错误；实验室别名及现时网站身份尚待直接核实。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [
+        "Destination robots_unavailable: SSL_ERROR_SYSCALL for sung-lab.eng.ucsd.edu."
+      ],
+      "packetSha256ReadOnly": "c2e05b2c3d77d9532ca55fdeb40cc6e60a483672563d102657346005e2bc7a10",
+      "rawSha256ReadOnly": "0cb8e21d465b7cecf28a99fd048165b3ae6af959291e06e2e89f08818a6e40a5",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-a489b108668bb1e0",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=20",
+          "checkedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=20",
+          "requestedUrl": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=20",
+          "observedAt": "2026-10-16T00:59:33+00:00",
+          "bodySha256": "3e0b3692d7e98ccf8dc5b54a3eb6cd8274a78e0981aa0db6e1d291ea0413b294",
+          "title": "Faculty Profiles | Jacobs School of Engineering",
+          "role": "listed_official_source_requires_entity_localization",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-10695595490a141e",
+          "sourceUrl": "https://be.ucsd.edu/faculty",
+          "checkedUrl": "https://be.ucsd.edu/faculty",
+          "requestedUrl": "https://be.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T00:57:23+00:00",
+          "bodySha256": "1f62c2b41b7d970d7e0f39679c2374c11aea40db436afda4e14e42e07afcd4e3",
+          "title": "Faculty Profiles | Shu Chien - Gene Lay Department of Bioengineering",
+          "role": "listed_official_source_requires_entity_localization",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 1,
+      "labId": "ucsd-biology-topic-lab-bennett-lab",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-cebe2dbe044b27a0",
+      "actualURL": "http://labs.biology.ucsd.edu/bennett",
+      "literalListedURL": "http://labs.biology.ucsd.edu/bennett",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:11+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:10+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/bennett/",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://labs.biology.ucsd.edu/bennett",
+          "to": "http://labs.biology.ucsd.edu/bennett/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-9e979d00395b0a70",
+          "sourceUrl": "https://labs.biology.ucsd.edu/bennett/",
+          "observedAt": "2026-10-16T01:03:53+00:00",
+          "bodySha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": "Bennett Lab",
+      "headings": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "recommend_identity_title_binding_only",
+      "reasons": [
+        "新根是meta refresh壳页，正文为空，无新研究；literal title直接具名，且同旧根整页字节/文本，既有meta目标已独立核实具名实验室。仅可将本次源的title支持identity；meta属性不是HTTP重定向，也不采纳新规范URL。"
+      ],
+      "proposedIdentityEvidence": [
+        {
+          "sourceId": "src-cebe2dbe044b27a0",
+          "quote": "Bennett Lab",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [
+        {
+          "content": "0; url=http://ebennettlab.com/",
+          "targetUrl": "http://ebennettlab.com/",
+          "isObservedHTTPRedirect": false
+        }
+      ],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Bennett根页的实际HTML meta refresh明确指向本次抓取的ebennettlab.com；新页正文明确The Bennett Lab和The Bennett research group及整体研究计划，具名主体对应。HTML跳转提示只用于来源关联，不改写为原根页HTTP重定向或接受规范网址迁移。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T03:23:19+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "The Bennett Lab studies the fundamental principles of how cells build, maintain, and destroy proteins . Our research aims to define mechanisms that can be leveraged to promote healthy aging and combat human aging-associated disorders.",
+          "supports": [
+            "identity",
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "The research group utilizes integrated molecular, genetic, and systems-level approaches to examine mechanisms that catalyze proteome remodeling. We employ global and quantitative proteomic platforms that enable systematic analyses of protein homeostasis. These platforms enable studies aimed at detailing how the proteome responds to both genetic and environmental challenges to proteostasis.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "quote": "Ubiquitin Biology Identifying and characterizing ubiquitin-dependent mechanisms that regulate cellular quality control pathways",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "d4aad98426844aaaa93cbfff0d0c2641141e0a39a12867eeee4ab6f9aa3fbe74",
+      "rawSha256ReadOnly": "fa93e9d259830ee980d5067405163144563db60e90985259d79ff6c4519bc774",
+      "hypotheticalIdentityOnlyHydrate": {
+        "pageIdentityMatch": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "statusUnchanged": "supported",
+        "applied": false
+      },
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-4af9ae6784e45a88",
+          "sourceUrl": "https://ebennettlab.com/",
+          "checkedUrl": "http://ebennettlab.com/",
+          "requestedUrl": "http://ebennettlab.com/",
+          "observedAt": "2026-10-16T03:18:12+00:00",
+          "bodySha256": "6b65dde8fa6ac6ff46843482d00310221215f599e96322a7fd7d79bde3400a34",
+          "title": "Bennett Lab – Leveraging Proteostasis Mechanisms to Promote Healthy Aging",
+          "role": "reviewed_followup_requires_entity_match",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-cebe2dbe044b27a0",
+          "sourceUrl": "http://labs.biology.ucsd.edu/bennett/",
+          "checkedUrl": "http://labs.biology.ucsd.edu/bennett",
+          "requestedUrl": "http://labs.biology.ucsd.edu/bennett",
+          "observedAt": "2026-10-16T04:56:11+00:00",
+          "bodySha256": "ddcae5a4c30a5849a59532c949cbcdabdd1dbb58bd846178abaea4e35ecd2c1b",
+          "title": "Bennett Lab",
+          "role": "listed_lab_destination",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 2,
+      "labId": "ucsd-biology-topic-lab-bier",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-c5baf2d450d79f22",
+      "actualURL": "http://bierlab.ucsd.edu/",
+      "literalListedURL": "http://bierlab.ucsd.edu",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:13+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:13+00:00",
+      "finalURL": "http://bierlab.ucsd.edu/",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://bierlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:56:12+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126572.356249,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-fcd2a788e03afab1",
+          "sourceUrl": "https://bierlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:03:54+00:00",
+          "bodySha256": "9a971c153ad99cc72353cd30b03dbcd398bf6b705f9784c769e70ded6425c8a1",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": "",
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_meta_only_root_blocker",
+      "reasons": [
+        "新根无title、headings或正文，只有指向bierlab.weebly.com的HTML meta。旧独立目标的科研/身份继续支持实体，但不能冒充此次原根的具名正文引证。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [
+        {
+          "content": "0; url=http://bierlab.weebly.com/",
+          "targetUrl": "http://bierlab.weebly.com/",
+          "isObservedHTTPRedirect": false
+        }
+      ],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Bier根页HTML meta refresh实际指向bierlab.weebly.com；新正文明确Bier Lab、UCSD与we的三个研究方向，支持具名实验室身份。原根页HTTP记录保持，未把HTML meta当成HTTP链。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T03:23:19+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "BIER LAB University of California San Diego",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "We have been forging ahead with great energy on our research, focusing on three integrated areas: 1) Active Genetics , a new CRISPR based methodology developed in the lab that can be used to create gene-drive elements to combat vector borne diseases and to aid in large-scale combinatorial genome engineering, 2 ) Developmental Patterning , analyzing the mechanisms by which morphogen gradients that initiate patterning are linked to morphogenesis of embryonic and adult structures in fruit flies, and 3) Human Disease Mechanisms , using fruit flies to model human disease",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "The overarching theme of our developmental studies is to understand how secreted factors in the Bone Morphogenetic Protein (BMP) pathway contribute to developmental patterning",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-87ae919da497986b",
+          "quote": "We have led efforts to develop Drosophila as a model system for analyzing the function of human disease genes and then validating these results in vertebrate models",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "7dd73f342981641459a1c6ddbd4f482794ebed303d211233e288522499b7ae79",
+      "rawSha256ReadOnly": "ae4c8d8b147c854ea493ec1784d2f34e4b10cc37c85b9c5762ae10d2f2e74a6d",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-87ae919da497986b",
+          "sourceUrl": "http://bierlab.weebly.com/",
+          "checkedUrl": "http://bierlab.weebly.com/",
+          "requestedUrl": "http://bierlab.weebly.com/",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "6c9ba5556732fe658b158af0facee65ee0a9090a6a4e9329a9ccebf6aae750df",
+          "title": "Research",
+          "role": "reviewed_followup_requires_entity_match",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 3,
+      "labId": "ucsd-biology-topic-lab-firtel",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "robots_unavailable",
+      "sourceId": null,
+      "actualURL": "http://people.biology.ucsd.edu/firtel",
+      "literalListedURL": "http://people.biology.ucsd.edu/firtel",
+      "actualPageRequestMade": false,
+      "observedAt": "2026-10-16T04:56:14+00:00",
+      "liveCheckedAt": null,
+      "finalURL": null,
+      "httpStatus": null,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://people.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:56:14+00:00",
+        "httpStatus": 301,
+        "retrievedEpoch": 1792126574.17663,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "redirects": [],
+        "attempts": 1,
+        "status": "unavailable"
+      },
+      "error": null,
+      "bodySha256": null,
+      "sourceMatchesFetch": null,
+      "sameByteBody": null,
+      "sameFullVisibleText": null,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "newBodyRead": false,
+      "fullVisibleTextCharactersRead": null,
+      "fullVisibleTextSha256": null,
+      "title": null,
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_actual_robots_blocker",
+      "reasons": [
+        "原HTTP robots返回301，但目标不满足现有robots文件规则，error=robots_redirect_is_not_a_robots_file；没有页面请求。不能把旧HTTPS Lab Members页或faculty科研材料转记为此次目的页身份。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:47:04+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-d63d63a8c9ab6725",
+          "quote": "Our laboratory focuses on the signal transduction pathways and the mechanics that control directional cell movement, or chemotaxis, and morphogenesis of eukaryotic cells.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-d63d63a8c9ab6725",
+          "quote": "we use Dictyostelium as our primary experimental system, which allows us to employ a wide range of genetic as well as biochemical approaches to dissect these signaling pathways. These methods are combined with in vivo, real-time analysis of GFP fusions of signaling proteins in living cells",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-d63d63a8c9ab6725",
+          "quote": "Rick Firtel Research",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "34d79f946ad51651f282145bfb0fbca7b4c5876f0e1c8e6ffe3db5afbb8dd347",
+      "rawSha256ReadOnly": "3e482a3d5577cb942e99d27576eae4630fd44ef805eab598243dd151750e03fa",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-d63d63a8c9ab6725",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/rafirtel",
+          "checkedUrl": "https://biology.ucsd.edu/research/faculty/rafirtel",
+          "requestedUrl": "https://biology.ucsd.edu/research/faculty/rafirtel",
+          "observedAt": "2026-10-16T01:08:05+00:00",
+          "bodySha256": "619e64656449813ae8fe27446eb99934c69bd78362a8e7c8be7c88845f2d0090",
+          "title": "Rick Firtel",
+          "role": "listed_official_source_requires_entity_localization",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 4,
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-6cf67ff1ffd79d15",
+      "actualURL": "http://biology.ucsd.edu/labs/goldrath",
+      "literalListedURL": "http://biology.ucsd.edu/labs/goldrath",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:17+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:14+00:00",
+      "finalURL": "https://goldrathlab.com/",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://biology.ucsd.edu/labs/goldrath",
+          "to": "http://labs.biology.ucsd.edu/goldrath",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/goldrath",
+          "to": "http://labs.biology.ucsd.edu/goldrath/",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/goldrath/",
+          "to": "https://goldrathlab.com/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://goldrathlab.com/robots.txt",
+        "observedAt": "2026-10-16T00:59:51+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112391.733088,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "sourceUrl": "https://goldrathlab.com/",
+          "observedAt": "2026-10-16T00:59:53+00:00",
+          "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": true
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 1219,
+      "fullVisibleTextSha256": "6864f8249c207b4d0a2d187825724c8b7ec28e50b74b1a2f6e89a5b89fbd83c5",
+      "title": "The Goldrath Lab, UCSD",
+      "headings": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "recommend_identity_title_binding_only",
+      "reasons": [
+        "新目的页与已审旧根同字节、同完整可见正文。title明确Goldrath Lab，正文Our research与旧科研完全一致；只建议追加本次源的title身份引文，原科研字段/方法未知/科学reviewedAt保持。"
+      ],
+      "proposedIdentityEvidence": [
+        {
+          "sourceId": "src-6cf67ff1ffd79d15",
+          "quote": "The Goldrath Lab, UCSD",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:47:04+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "quote": "The goal of our research is to understand how T cell memory is generated and maintained by identifying the transcriptional and signaling events that regulate the survival and differentiation of T cells as they navigate the immune response and become long-lived memory T cells.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "quote": "Ultimately we are investigating new ways to induce the immune system to provide protection from infection and eradicate malignancies.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-97b5ecab21a7d35a",
+          "quote": "Ananda Goldrath Research",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "rawSha256ReadOnly": "860014e284947c14a6b83a260b823cbf9a0cab747fea9c37a73ab49d5f23cdb4",
+      "hypotheticalIdentityOnlyHydrate": {
+        "pageIdentityMatch": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "statusUnchanged": "supported",
+        "applied": false
+      },
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "sourceUrl": "https://goldrathlab.com/",
+          "checkedUrl": "https://biology.ucsd.edu/labs/goldrath",
+          "requestedUrl": "https://biology.ucsd.edu/labs/goldrath",
+          "observedAt": "2026-10-16T00:59:53+00:00",
+          "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "title": "The Goldrath Lab, UCSD",
+          "role": "related_destination_variant",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-97b5ecab21a7d35a",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/agoldrath",
+          "checkedUrl": "https://biology.ucsd.edu/research/faculty/agoldrath",
+          "requestedUrl": "https://biology.ucsd.edu/research/faculty/agoldrath",
+          "observedAt": "2026-10-16T01:07:48+00:00",
+          "bodySha256": "658991736f48e6c6c70657d30838aa76dbdf2c1bf26155706ca6d02254c1f6b5",
+          "title": "Ananda Goldrath",
+          "role": "listed_official_source_requires_entity_localization",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-6cf67ff1ffd79d15",
+          "sourceUrl": "https://goldrathlab.com/",
+          "checkedUrl": "http://biology.ucsd.edu/labs/goldrath",
+          "requestedUrl": "http://biology.ucsd.edu/labs/goldrath",
+          "observedAt": "2026-10-16T04:56:17+00:00",
+          "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "title": "The Goldrath Lab, UCSD",
+          "role": "listed_lab_destination",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 5,
+      "labId": "ucsd-biology-topic-lab-hampton",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-079b069f7c694d83",
+      "actualURL": "http://hamptonlab.ucsd.edu/",
+      "literalListedURL": "http://hamptonlab.ucsd.edu",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:18+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:18+00:00",
+      "finalURL": "http://hamptonlab.ucsd.edu/",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://hamptonlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:56:17+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126577.9737759,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "error": "",
+      "bodySha256": "33cc226c71a0d2ef77d4f07910a7c1b72e6e81d14e3bff5c2f4af16323345342",
+      "sourceMatchesFetch": true,
+      "sameByteBody": false,
+      "sameFullVisibleText": false,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-80588a08554f0ac8",
+          "sourceUrl": "https://hamptonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:03+00:00",
+          "bodySha256": "77577392096e95ed59fc52e869fefe6bae2de31a0429efcac0d983b3a6be985d",
+          "sameByteBody": false,
+          "sameFullVisibleText": false,
+          "sameTitle": false,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 581,
+      "fullVisibleTextSha256": "5f1f81a41465f4b4bbfc48c3bf20ce065f21b653593f94ff93b1abc6ea398e32",
+      "title": "Hampton/home",
+      "headings": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "recommend_explicit_new_lab_science_revision",
+      "reasons": [
+        "原HTTP取得真正Hampton实验室正文，区别旧HTTPS Gadsby占位页。正文直接陈述实验室研究、酿酒酵母模型和UCSD Biology位置；可补具名whole-lab科研/方法与来源报告隶属。新观察不证明正文计划更新日期。"
+      ],
+      "proposedIdentityEvidence": [
+        {
+          "sourceId": "src-079b069f7c694d83",
+          "quote": "Welcome to the Hampton lab webpage!",
+          "quoteLocation": "body",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:47:04+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-61468db9b28284b9",
+          "quote": "Our group studies a variety of questions that surround how the cell selectively destroys proteins.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-61468db9b28284b9",
+          "quote": "These studies are ongoing and have led us in a number of interesting directions including cellular management of misfolded proteins, lipid signaling, and the dynamics of the ER and other organelles.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-61468db9b28284b9",
+          "quote": "Hampton lab web site",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "实验室目的页为 Gadsby 占位内容；研究来自官方 Randy Hampton 介绍。",
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "44334a7bcc5a5ac3a38a638f6edbe44d6de5e4f9eed44d3d5664d7cabe51cd3c",
+      "rawSha256ReadOnly": "416fde01d5e662acabfaeca998913d6d45a41dceffdd653cf0988668d461166e",
+      "hypotheticalIdentityOnlyHydrate": {
+        "pageIdentityMatch": "confirmed",
+        "canCountAsVerifiedLabGroupURL": true,
+        "statusUnchanged": "supported",
+        "applied": false
+      },
+      "scientificRevisionRecommended": true,
+      "scienceFieldsOtherwiseStayUnchanged": false,
+      "proposedScientificRevision": {
+        "recommendationOnly": true,
+        "proposedScientificReviewAt": "2026-10-16T05:00:35+00:00",
+        "priorScientificReviewedAt": "2026-10-16T01:47:04+00:00",
+        "status": "supported",
+        "summaryZh": "Hampton 研究组研究细胞如何选择性降解蛋白质，包括 HMGCoA 还原酶（HMGR）的受调控降解和内质网蛋白降解，并以酿酒酵母（出芽酵母）为模型。既有官方介绍还将研究与胆固醇合成调节、错误折叠蛋白处理、脂质信号及细胞器动态相联系。",
+        "researchQuestions": [],
+        "topics": [
+          "选择性蛋白降解",
+          "胆固醇合成",
+          "错误折叠蛋白",
+          "脂质信号",
+          "内质网",
+          "HMGR 的受调控降解",
+          "内质网蛋白降解"
+        ],
+        "methods": [
+          "酿酒酵母（出芽酵母）模型"
+        ],
+        "identity": {
+          "status": "confirmed",
+          "entityType": "research_group",
+          "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+        },
+        "affiliation": {
+          "status": "source_reported",
+          "reason": "新原HTTP主页明确声明实验室位于University of California, San Diego的Biology department；只记录来源声明，未提供带日期的现任/隶属生效证明。"
+        },
+        "preserveAllPriorEvidence": true,
+        "additionalEvidence": [
+          {
+            "sourceId": "src-079b069f7c694d83",
+            "quote": "Welcome to the Hampton lab webpage!",
+            "quoteLocation": "body",
+            "supports": [
+              "identity"
+            ]
+          },
+          {
+            "sourceId": "src-079b069f7c694d83",
+            "quote": "We are located in the Biology department at the University of California, San Diego.",
+            "quoteLocation": "body",
+            "supports": [
+              "affiliation"
+            ]
+          },
+          {
+            "sourceId": "src-079b069f7c694d83",
+            "quote": "Our research interests lie in the regulated degradation of HMGCoA-reductase (HMGR) and in ER protein degradation in general.",
+            "quoteLocation": "body",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          },
+          {
+            "sourceId": "src-079b069f7c694d83",
+            "quote": "Our model organism is Saccharomyces cerevisiae , or budding yeast.",
+            "quoteLocation": "body",
+            "supports": [
+              "methods"
+            ]
+          },
+          {
+            "sourceId": "src-61468db9b28284b9",
+            "quote": "This work started with understanding how these sorts of mechanisms are employed to allow regulation of cellular cholesterol synthesis.",
+            "quoteLocation": "body",
+            "supports": [
+              "research",
+              "topics"
+            ]
+          }
+        ],
+        "uncertainty": [
+          "主页未标注研究计划更新时间；采集时间不等于研究内容更新时间。",
+          "仅明确模型生物，未列出具体测量或实验技术。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "supersededUncertaintyToPreserveInHistory": [
+          "实验室目的页为 Gadsby 占位内容；研究来自官方 Randy Hampton 介绍。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [],
+        "scienceDiff": {
+          "summaryZh": "用新whole-lab HMGR/ER降解及模型说明补充既有官方group介绍，旧方向仍由旧来源支持。",
+          "researchQuestions": "保持原空列表。",
+          "topicsAdded": [
+            "HMGR 的受调控降解",
+            "内质网蛋白降解"
+          ],
+          "methodsAdded": [
+            "酿酒酵母（出芽酵母）模型"
+          ],
+          "affiliation": "uncertain → source_reported，仅按字面机构声明。",
+          "researchScope": "不使用导航/协议链接或publication titles推断方法；不把Hampton/home当内容更新时间。",
+          "taxonomy": "保留原research_group，不迁移ID/alias或强制改lab分类。"
+        },
+        "hypotheticalHydratePassed": true
+      },
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-61468db9b28284b9",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/rhampton",
+          "checkedUrl": "https://biology.ucsd.edu/research/faculty/rhampton",
+          "requestedUrl": "https://biology.ucsd.edu/research/faculty/rhampton",
+          "observedAt": "2026-10-16T01:08:04+00:00",
+          "bodySha256": "4e91fcdf7caba1193ccd41bcf08ff14eb00ec9ae43637f1746bfc4e33288b045",
+          "title": "Randy Hampton",
+          "role": "listed_official_source_requires_entity_localization",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-079b069f7c694d83",
+          "sourceUrl": "http://hamptonlab.ucsd.edu/",
+          "checkedUrl": "http://hamptonlab.ucsd.edu/",
+          "requestedUrl": "http://hamptonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T04:56:18+00:00",
+          "bodySha256": "33cc226c71a0d2ef77d4f07910a7c1b72e6e81d14e3bff5c2f4af16323345342",
+          "title": "Hampton/home",
+          "role": "listed_lab_destination",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 6,
+      "labId": "ucsd-biology-topic-lab-kiger",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-76abe8c329b73470",
+      "actualURL": "http://www.biology.ucsd.edu/labs/kiger",
+      "literalListedURL": "http://www.biology.ucsd.edu/labs/kiger",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:21+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:19+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/kiger/",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/kiger",
+          "to": "https://biology.ucsd.edu/labs/kiger",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/kiger",
+          "to": "http://labs.biology.ucsd.edu/kiger",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/kiger",
+          "to": "http://labs.biology.ucsd.edu/kiger/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-f56ebff58b7e8a49",
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/",
+          "observedAt": "2026-10-16T00:59:45+00:00",
+          "bodySha256": "492e32ddcc79db4d57b8f99e5563fd8bc747379b24a1189a7c10ee5a0842cd0d",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": "",
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_meta_only_root_blocker",
+      "reasons": [
+        "新根无title、headings或正文，仅有同站Amy_Kiger_Lab_at_UCSD/Home.html的meta。相对URL现在以实际HTTP final为基址，不能改标为已请求该HTTP目标；旧已请求HTTPS目标不替代本次根身份。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [
+        {
+          "content": "0;url= Amy_Kiger_Lab_at_UCSD/Home.html",
+          "targetUrl": "http://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "isObservedHTTPRedirect": false
+        }
+      ],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD /kiger/根页实际HTML meta refresh指向同站Amy_Kiger_Lab_at_UCSD/Home.html；本次新正文明确The Kiger Laboratory @ UCSD及Our laboratory研究范围，与原具名记录对应。HTML属性不是HTTP重定向记录。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T03:23:19+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "The Kiger Laboratory @ UCSD",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "Our laboratory is studying central roles for novel membrane trafficking processes, under control of spatiotemporal lipid regulation, that coordinate dynamic cell structure. Using a foundation in genetic and cell biology experiments in the fruit fly, Drosophila, we are linking specific lipid kinase and phosphatase activities to cell remodeling.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "Our research is currently focused in three major areas: (1) roles for phosphoinositide lipid regulation in cellular remodeling, (2) roles for autophagy in cellular remodeling, and (3) systems-biology approaches to understand cellular remodeling.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ]
+        },
+        {
+          "sourceId": "src-861631518cfad575",
+          "quote": "To address these problems, we are investigating questions specific to the dynamic organization of two distinct cell types, immune cells and muscle cells.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "正文未标注完整研究计划更新时间；采集时间不等于正文更新时间。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "c05fa98af9f43519174cce31b77c5e98f09124f18153d2a42894175ebe170dec",
+      "rawSha256ReadOnly": "0ab55c17af5466d3eb840d9bdc22aa33f687659118e71eb532eebbb9b89c66d1",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-861631518cfad575",
+          "sourceUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "checkedUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "requestedUrl": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+          "observedAt": "2026-10-16T03:18:14+00:00",
+          "bodySha256": "9fd187dc3d2a44f676d2aac6f6d3a269cc5502584ec2ec274f97c4dab345afc0",
+          "title": "The Kiger Laboratory @ UCSD",
+          "role": "reviewed_followup_requires_entity_match",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 7,
+      "labId": "ucsd-biology-topic-lab-murre",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-1e9370a1c7cac8eb",
+      "actualURL": "http://labs.biology.ucsd.edu/murre",
+      "literalListedURL": "http://labs.biology.ucsd.edu/murre",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:23+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:22+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/murre/",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://labs.biology.ucsd.edu/murre",
+          "to": "http://labs.biology.ucsd.edu/murre/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-ab1d2cf36e0d7eb8",
+          "sourceUrl": "https://labs.biology.ucsd.edu/murre/",
+          "observedAt": "2026-10-16T01:04:16+00:00",
+          "bodySha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 31,
+      "fullVisibleTextSha256": "ef899d94059ff5abc268d180ab772bba673057de7c2d447b5896a09e21d62785",
+      "title": "Welcome to murre lab!",
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_insufficient_entity_relation",
+      "reasons": [
+        "literal title虽含murre lab，正文仍只有Arthur He更新时间，没有明确PI/团队/研究说明，也无可核实的实体关联链。仅记录有限名称线索，维持本条实体未确认及无科研正文；不靠200或姓氏title接受。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [
+        {
+          "sourceId": "src-1e9370a1c7cac8eb",
+          "quote": "Welcome to murre lab!",
+          "quoteLocation": "title",
+          "purpose": "limited_name_only_not_a_sufficient_identity_binding"
+        },
+        {
+          "sourceId": "src-1e9370a1c7cac8eb",
+          "quote": "updated 8th Apr, 2020 Arthur He",
+          "quoteLocation": "body",
+          "purpose": "update_attribution_not_lab_research_or_affiliation"
+        }
+      ],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "unresolved",
+      "oldRawIdentityUnchanged": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:48:34+00:00",
+      "oldEvidenceRetained": [],
+      "oldUncertaintyRetained": [
+        "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [
+        "Destination HTTP 200 but main text only says updated 8th Apr, 2020 Arthur He; no relevant identity or research text."
+      ],
+      "packetSha256ReadOnly": "37e4c14ebef80c1cb2f178352b5d7976bd92570d9734cc43264abbca7081a49f",
+      "rawSha256ReadOnly": "c8e90867d5694a324430ccff6d8e2e226b0f394103f098b5f5729aa9b1c19c43",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-1e9370a1c7cac8eb",
+          "sourceUrl": "http://labs.biology.ucsd.edu/murre/",
+          "checkedUrl": "http://labs.biology.ucsd.edu/murre",
+          "requestedUrl": "http://labs.biology.ucsd.edu/murre",
+          "observedAt": "2026-10-16T04:56:23+00:00",
+          "bodySha256": "45e2f5ca841118cc40a4646a5bc45b8a1622cbae80a6abb9a3b48ea005ecfee5",
+          "title": "Welcome to murre lab!",
+          "role": "listed_lab_destination",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 8,
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-e0224176cdecd4ab",
+      "actualURL": "http://www.biology.ucsd.edu/labs/spitzer",
+      "literalListedURL": "http://www.biology.ucsd.edu/labs/spitzer",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:26+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:24+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/spitzer/",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/spitzer",
+          "to": "https://biology.ucsd.edu/labs/spitzer",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/spitzer",
+          "to": "http://labs.biology.ucsd.edu/spitzer",
+          "httpStatus": 301
+        },
+        {
+          "from": "http://labs.biology.ucsd.edu/spitzer",
+          "to": "http://labs.biology.ucsd.edu/spitzer/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": true,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-d064f0b5261fc28f",
+          "sourceUrl": "https://labs.biology.ucsd.edu/spitzer/",
+          "observedAt": "2026-10-16T00:59:54+00:00",
+          "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": false
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 0,
+      "fullVisibleTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "title": "",
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_meta_only_root_blocker",
+      "reasons": [
+        "新根无title、headings或正文，只有nickspitzerlab.org的meta。旧独立跟进页研究仍有效，但不能把HTML meta当作本次根HTTP redirect或目的页身份quote。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [
+        {
+          "content": "0; url=http://www.nickspitzerlab.org/",
+          "targetUrl": "http://www.nickspitzerlab.org/",
+          "isObservedHTTPRedirect": false
+        }
+      ],
+      "oldRawStatusUnchanged": "supported",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "原UCSD Spitzer根页实际HTML meta refresh指向www.nickspitzerlab.org；新站明确Nick Spitzer Lab，并在Why do we do the research及Research Team框架下介绍整体研究，支持具名实验室研究。个人滑雪登山经历不作研究依据；本次目标请求的独立HTTP301链不补入原根页HTTP记录。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T03:23:19+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Nick Spitzer Lab | Brain Plasticity | Learn More Here",
+          "supports": [
+            "identity"
+          ],
+          "quoteLocation": "title"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Why do we do the research?",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Investigation of the development of neuronal excitability led to the discovery that calcium-dependent embryonic electrical activity rapidly and reversibly reconfigures the transmitters and matching postsynaptic transmitter receptors that neurons express.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "Both sensory and motor stimuli reprogram neurotransmitter identity, resulting in transmitter switches in young and adult nervous systems.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "quote": "The changes in brain biochemistry during transmitter switching cause changes in behavior that can be beneficial, enhancing learning, or detrimental, contributing to neurological and psychiatric disorders.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "新页面研究正文未明确列出具体实验方法；不从神经兴奋性、钙活动或项目标题推断电生理等技术。",
+        "新站有Nick个人介绍，但摘要只使用实验室研究与团队框架中的研究段。",
+        "旧根页的HTML meta提示与本次目标URL的HTTP跳转分别记录；未采纳新规范网址或别名。",
+        "正文未标注完整研究计划更新时间；来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [],
+      "packetSha256ReadOnly": "8f2317ff3931b6ba503e7e8bfa0ba350e601e02472996f208058139ed3c1b920",
+      "rawSha256ReadOnly": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "checkedUrl": "http://www.nickspitzerlab.org/",
+          "requestedUrl": "http://www.nickspitzerlab.org/",
+          "observedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835",
+          "title": "Nick Spitzer Lab | Brain Plasticity | Learn More Here",
+          "role": "reviewed_followup_requires_entity_match",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 9,
+      "labId": "ucsd-biology-topic-lab-subramani",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "http_error",
+      "sourceId": null,
+      "actualURL": "http://www.biology.ucsd.edu/labs/subramani",
+      "literalListedURL": "http://www.biology.ucsd.edu/labs/subramani",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:27+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:26+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/subramani",
+      "httpStatus": 404,
+      "redirects": [
+        {
+          "from": "http://www.biology.ucsd.edu/labs/subramani",
+          "to": "https://biology.ucsd.edu/labs/subramani",
+          "httpStatus": 302
+        },
+        {
+          "from": "https://biology.ucsd.edu/labs/subramani",
+          "to": "http://labs.biology.ucsd.edu/subramani",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": null,
+      "sourceMatchesFetch": null,
+      "sameByteBody": null,
+      "sameFullVisibleText": null,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "newBodyRead": false,
+      "fullVisibleTextCharactersRead": null,
+      "fullVisibleTextSha256": null,
+      "title": null,
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_actual_404_blocker",
+      "reasons": [
+        "本次实际原HTTP请求经已记录链到目标返回404；没有可归属的新正文source/hash。保留unresolved，不推断实验室关闭、不从URL或他人方向补研究。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "unresolved",
+      "oldRawIdentityUnchanged": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "无可用于确认该实体的正文。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:49:16+00:00",
+      "oldEvidenceRetained": [],
+      "oldUncertaintyRetained": [
+        "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [
+        "Destination fetch http_error; HTTP 404; packet has no sources."
+      ],
+      "packetSha256ReadOnly": "8a0ff9d37666b3f273fa0a51007a95d56e3250db98e591b44897101de55943dc",
+      "rawSha256ReadOnly": "593061fbef3cef37b5c4f0229f93cdf677640e46cb77ec82daad18462672ec04",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": []
+    },
+    {
+      "inventoryIndex": 10,
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "ok",
+      "sourceId": "src-89f0f296045c7f5f",
+      "actualURL": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "literalListedURL": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:28+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:28+00:00",
+      "finalURL": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+      "sourceMatchesFetch": true,
+      "sameByteBody": true,
+      "sameFullVisibleText": true,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [
+        {
+          "sourceId": "src-947ef86bf1f53a64",
+          "sourceUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "observedAt": "2026-10-16T01:04:45+00:00",
+          "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+          "sameByteBody": true,
+          "sameFullVisibleText": true,
+          "sameTitle": true,
+          "priorRawCited": true
+        }
+      ],
+      "newBodyRead": true,
+      "fullVisibleTextCharactersRead": 106,
+      "fullVisibleTextSha256": "b35aff6d126c4af0271321a73e471096125d90046b0fc5b624cd2cd9cf8e991f",
+      "title": "Yanofsky Lab - Welcome",
+      "headings": [],
+      "pageIdentityMatch": "confirmed",
+      "decision": "recommend_limited_existing_identity_binding_keep_partial",
+      "reasons": [
+        "新捕获与已审frames fallback同字节/全文，title可绑定既有confirmed Yanofsky Lab身份；status仍partial，frames研究缺失障碍保留，不能据title接受科研/verified lab URL或追踪frame子页。"
+      ],
+      "proposedIdentityEvidence": [
+        {
+          "sourceId": "src-89f0f296045c7f5f",
+          "quote": "Yanofsky Lab - Welcome",
+          "quoteLocation": "title",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "limitedObservedQuotes": [
+        {
+          "sourceId": "src-89f0f296045c7f5f",
+          "quote": "This page uses frames, but your browser doesn't support them.",
+          "quoteLocation": "body",
+          "purpose": "research_unavailable_frames_fallback"
+        }
+      ],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "partial",
+      "oldRawIdentityUnchanged": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:50:04+00:00",
+      "oldEvidenceRetained": [
+        {
+          "sourceId": "src-947ef86bf1f53a64",
+          "quote": "Yanofsky Lab - Welcome",
+          "supports": [
+            "identity"
+          ]
+        }
+      ],
+      "oldUncertaintyRetained": [
+        "研究正文不足，不能从导航、新闻或名称扩展推断具体研究。",
+        "所审阅来源未明确说明研究方法。",
+        "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+      ],
+      "oldBlockersRetained": [
+        "Captured destination is a frames fallback page; research content unavailable."
+      ],
+      "packetSha256ReadOnly": "182e6512b21cfc8bb5393fdb3bde101b0e522279b77d99bc36f2362085f22018",
+      "rawSha256ReadOnly": "ef4778f8272245e964dbfdf32b57f4ccff205a20b688d4c7decd3adf30e58594",
+      "hypotheticalIdentityOnlyHydrate": {
+        "pageIdentityMatch": "confirmed",
+        "canCountAsVerifiedLabGroupURL": false,
+        "statusUnchanged": "partial",
+        "applied": false
+      },
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": [
+        {
+          "sourceId": "src-947ef86bf1f53a64",
+          "sourceUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "checkedUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "requestedUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "observedAt": "2026-10-16T01:04:45+00:00",
+          "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+          "title": "Yanofsky Lab - Welcome",
+          "role": "related_destination_variant",
+          "textExtractionVersion": "summary-visible-content-v2"
+        },
+        {
+          "sourceId": "src-89f0f296045c7f5f",
+          "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "observedAt": "2026-10-16T04:56:28+00:00",
+          "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+          "title": "Yanofsky Lab - Welcome",
+          "role": "listed_lab_destination",
+          "textExtractionVersion": "summary-visible-content-v2"
+        }
+      ]
+    },
+    {
+      "inventoryIndex": 11,
+      "labId": "ucsd-physics-research-site-david-kleinfeld",
+      "reviewedAt": "2026-10-16T05:00:35+00:00",
+      "reviewOnly": true,
+      "networkRequestsMade": 0,
+      "captureStatus": "http_error",
+      "sourceId": null,
+      "actualURL": "http://physics.ucsd.edu/neurophysics",
+      "literalListedURL": "http://physics.ucsd.edu/neurophysics",
+      "actualPageRequestMade": true,
+      "observedAt": "2026-10-16T04:56:31+00:00",
+      "liveCheckedAt": "2026-10-16T04:56:30+00:00",
+      "finalURL": "https://physics.ucsd.edu/neurophysics",
+      "httpStatus": 404,
+      "redirects": [
+        {
+          "from": "http://physics.ucsd.edu/neurophysics",
+          "to": "https://physics.ucsd.edu/neurophysics",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://physics.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:20+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112240.2613912,
+        "error": "",
+        "status": "checked"
+      },
+      "error": "",
+      "bodySha256": null,
+      "sourceMatchesFetch": null,
+      "sameByteBody": null,
+      "sameFullVisibleText": null,
+      "sameTextIsEmpty": false,
+      "priorSourceComparisons": [],
+      "newBodyRead": false,
+      "fullVisibleTextCharactersRead": null,
+      "fullVisibleTextSha256": null,
+      "title": null,
+      "headings": [],
+      "pageIdentityMatch": "uncertain",
+      "decision": "keep_actual_404_blocker",
+      "reasons": [
+        "实际原HTTP已观察到301至HTTPS，再返回404；无新正文source/hash。旧profile加载占位/教师API不能补成lab身份或科研，不删除原unknown边界。"
+      ],
+      "proposedIdentityEvidence": [],
+      "limitedObservedQuotes": [],
+      "htmlMetaRefreshesAreNotHTTPRedirects": [],
+      "oldRawStatusUnchanged": "unresolved",
+      "oldRawIdentityUnchanged": {
+        "status": "uncertain",
+        "entityType": "unconfirmed",
+        "reason": "目标 404；可用资料为加载占位及教师 API，未确认研究组正文。"
+      },
+      "priorScientificReviewedAt": "2026-10-16T01:46:40+00:00",
+      "oldEvidenceRetained": [],
+      "oldUncertaintyRetained": [
+        "研究主题与方法未知；抓取失败不表示实验室关闭。",
+        "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+      ],
+      "oldBlockersRetained": [
+        "destination_http_error:404",
+        "no_entity_local_research_text"
+      ],
+      "packetSha256ReadOnly": "8c4055eb2afcb5f15a44b2df0f6d7b5d414e4726b75df5f6ed1bf0968c6bc51a",
+      "rawSha256ReadOnly": "811f9059bc10263537f3fef1260488f1459baf13ce455e76e8719d33ce88b726",
+      "hypotheticalIdentityOnlyHydrate": null,
+      "scientificRevisionRecommended": false,
+      "scienceFieldsOtherwiseStayUnchanged": true,
+      "evidenceSourceMetadata": []
+    }
+  ]
+}

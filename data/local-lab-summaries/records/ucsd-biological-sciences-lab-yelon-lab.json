@@ -1,0 +1,166 @@
+{
+  "labId": "ucsd-biological-sciences-lab-yelon-lab",
+  "status": "supported",
+  "summaryZh": "Yelon 实验室研究决定心脏各腔室大小、形状与特性的分子机制。研究利用斑马鱼遗传学和胚胎学方法，识别心腔形成的调节因子及其对细胞命运和行为的影响。",
+  "researchQuestions": [
+    "哪些信号网络调节心脏祖细胞群的大小？",
+    "心腔形态发生过程中，哪些内在和外在信号调节细胞行为？"
+  ],
+  "topics": [
+    "心脏发育",
+    "心腔形态与功能",
+    "细胞命运"
+  ],
+  "methods": [
+    "斑马鱼遗传学",
+    "胚胎学"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-413a97ec229e1fc0",
+      "quote": "Deborah Yelon",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-413a97ec229e1fc0",
+      "quote": "The goal of our laboratory's research is to understand the molecular mechanisms that specify the size, shape, and attributes of each cardiac chamber. By taking advantage of the unique arsenal of genetic and embryologic experimental approaches available in zebrafish",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-f453e78376250534",
+      "quote": "Deborah Yelon",
+      "supports": [
+        "identity"
+      ],
+      "quoteLocation": "title"
+    },
+    {
+      "sourceId": "src-f453e78376250534",
+      "quote": "The goal of our laboratory's research is to understand the molecular mechanisms that specify the size, shape, and attributes of each cardiac chamber.",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-413a97ec229e1fc0",
+      "quote": "Specification of the proper number of cardiac progenitor cells is a critical determinant of heart size, but we do not fully understand the network of signals that regulate the dimensions of the cardiac progenitor pool.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-413a97ec229e1fc0",
+      "quote": "However, it is not clear which extrinsic and intrinsic cues regulate cell behaviors during chamber morphogenesis.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "官方教师页明确描述 our laboratory 的研究。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:22:54.478085+00:00",
+  "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:22:54.478085+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "两个实验室研究小节明确do not fully understand/not clear，保留信号调节而不将已发现机制或基因作为未知。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-413a97ec229e1fc0",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/dyelon",
+        "sourceObservedAt": "2026-10-16T01:07:33+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1469
+          ],
+          [
+            2554,
+            2953
+          ],
+          [
+            1200,
+            3550
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-30d8b3aaa44f9eb1",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/dyelon",
+        "sourceObservedAt": "2026-10-07T23:04:35+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            84
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-f453e78376250534",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/dyelon",
+        "sourceObservedAt": "2026-10-16T04:23:44+00:00",
+        "readScope": "duplicate identical text in record",
+        "rangesRead": [],
+        "coverageReasonZh": "与本记录已读source文本逐字相同，复用先前阅读，不额外声称重读正文。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-413a97ec229e1fc0",
+        "quote": "Specification of the proper number of cardiac progenitor cells is a critical determinant of heart size, but we do not fully understand the network of signals that regulate the dimensions of the cardiac progenitor pool.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:07:33+00:00",
+        "bodySha256": "17c11774a5c71811d1991c03d25864e46fcefd029d6376adec9e857f7f9f12ec",
+        "bodySha256UnavailableReason": null
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-413a97ec229e1fc0",
+        "quote": "However, it is not clear which extrinsic and intrinsic cues regulate cell behaviors during chamber morphogenesis.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:07:33+00:00",
+        "bodySha256": "17c11774a5c71811d1991c03d25864e46fcefd029d6376adec9e857f7f9f12ec",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

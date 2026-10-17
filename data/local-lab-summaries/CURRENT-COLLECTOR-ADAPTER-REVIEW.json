@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:03:12+00:00",
+  "conclusion": "Shared v2 locking, per-hop robots/redirect waits and original observation times are preserved. A definite upstream404/410 challenge classification defect remains in the immutable collector; the task-local summary adapter compensates and independently targeted tests pass. A separate upstream mixed5xx/hard-error retry-classification limitation is documented, not changed or observed live.",
+  "status": "local_access_boundary_compensation_verified_upstream_defects_documented",
+  "versions": {
+    "previousCollector": {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c.py",
+      "sha256": "aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c"
+    },
+    "loadedCollector": {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+      "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+    },
+    "unchangedGate": {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+    },
+    "reviewedTaskAdapter": {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+      "sha256": "2ccb3f746f87bb9431921cacb4b059d00b50ea12f5d9a4c831b07699bbf11db5"
+    },
+    "reviewedTests": {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_shared_cooldown.py",
+      "sha256": "d050fc6633e302e08898d35604ad3f45a54d41b079db23349bb0039fb79ec236"
+    },
+    "processLoadedSevenSourcePinsVerified": [
+      {
+        "name": "collect_ucsd_coverage.py",
+        "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py"
+      },
+      {
+        "name": "network_coordination.py",
+        "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py"
+      },
+      {
+        "name": "collection_lock.py",
+        "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py"
+      },
+      {
+        "name": "collection_scope.py",
+        "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py"
+      },
+      {
+        "name": "refresh_labs.py",
+        "sha256": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead.py"
+      },
+      {
+        "name": "refresh_faculty_directories.py",
+        "sha256": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8.py"
+      },
+      {
+        "name": "lab_destinations.py",
+        "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+        "snapshotPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py"
+      }
+    ]
+  },
+  "scope": {
+    "definitionReview": [
+      "PublicFetcher",
+      "transient_response",
+      "retryable_fetch",
+      "robots_retry_at",
+      "reusable_robots",
+      "Queue retry call sites",
+      "instrumented_fetcher.TrackedFetcher._rules compensation"
+    ],
+    "unchangedASTDefinitions": [
+      "PublicFetcher.__init__",
+      "PublicFetcher._paths",
+      "PublicFetcher._load",
+      "PublicFetcher._wire",
+      "PublicFetcher._transport"
+    ],
+    "collectorEdits": 0,
+    "sharedStateEdits": 0,
+    "networkRequests": 0,
+    "scientificRecordsRead": 0,
+    "HTMLReads": 0,
+    "reportFilesOnly": true
+  },
+  "assessments": [
+    {
+      "area": "shared_v2_host_lock",
+      "result": "preserved",
+      "reasonZh": "PublicFetcher._wire AST与旧版相同；_transport完整位于request_slot上下文内，正常或异常响应均在释放锁前record_response。所有新增robots重试仍调用同一_wire，未增加旁路transport。",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._wire",
+          "lineStart": 243,
+          "lineEnd": 259,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+          "definition": "HostRequestGate.request_slot",
+          "lineStart": 100,
+          "lineEnd": 156,
+          "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+          "definition": "RequestSlot.record_response",
+          "lineStart": 49,
+          "lineEnd": 53,
+          "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+        }
+      ]
+    },
+    {
+      "area": "robots_and_redirect_waits",
+      "result": "preserved",
+      "reasonZh": "每个robots跳转经_wire取得目标主机槽；页面跳转在目标authentication检查及_rules之后才_wire。Retry-After在当前锁内记入共享state，并通过defer传播到下一跳目标。Profiles十秒最小间隔来自未变的gate。",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._rules",
+          "lineStart": 286,
+          "lineEnd": 335,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher.fetch",
+          "lineStart": 337,
+          "lineEnd": 411,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+          "definition": "HostRequestGate.request_slot",
+          "lineStart": 100,
+          "lineEnd": 156,
+          "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+          "definition": "HostRequestGate.defer",
+          "lineStart": 158,
+          "lineEnd": 175,
+          "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c"
+        }
+      ]
+    },
+    {
+      "area": "bounded_transient_retries",
+      "result": "improved_with_documented_classification_edge",
+      "reasonZh": "RETRY扩至408/429/all5xx，与v2 gate一致；robots缓存仅在暂态错误且deadline到期后重取。robots_retry_at取服务器deadline与60×2^(attempts−1)的较大值；单份缓存日内最多三次robots尝试，队列item也限制尝试。计数不是跨消费者全局上限；跨消费者等待由共享gate实现。",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "transient_response",
+          "lineStart": 91,
+          "lineEnd": 100,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "retryable_fetch",
+          "lineStart": 103,
+          "lineEnd": 109,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "robots_retry_at",
+          "lineStart": 112,
+          "lineEnd": 113,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "reusable_robots",
+          "lineStart": 116,
+          "lineEnd": 122,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._rules",
+          "lineStart": 286,
+          "lineEnd": 335,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        }
+      ]
+    },
+    {
+      "area": "cache_original_observation_time",
+      "result": "preserved",
+      "reasonZh": "缓存成功页面直接返回旧meta和正文，不赋新observedAt。robots缓存复用也不赋新时间；只有实际_wire完成后构造新观测，并把旧metadata加入attemptHistory。队列迁移改state/retryAt，不替换原观测时间。兼容clock文件独立于source observedAt。",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher.fetch",
+          "lineStart": 337,
+          "lineEnd": 411,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._rules",
+          "lineStart": 286,
+          "lineEnd": 335,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._wire",
+          "lineStart": 243,
+          "lineEnd": 259,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        }
+      ]
+    },
+    {
+      "area": "authentication_robots_tls_access_boundaries",
+      "result": "local_compensation_required_and_verified",
+      "reasonZh": "login目标先于robots/页面请求被拒；robots Deny仍阻断；curl TLS验证和字节上限未改变。明确challenge/拒绝或硬传输错误通常不重试；下述D1/D2是精确上游边界限制，不能用本地补偿推断独立collector已修复。",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "authentication_target",
+          "lineStart": 86,
+          "lineEnd": 88,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher._transport",
+          "lineStart": 261,
+          "lineEnd": 284,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "PublicFetcher.fetch",
+          "lineStart": 337,
+          "lineEnd": 411,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+          "definition": "retryable_fetch",
+          "lineStart": 103,
+          "lineEnd": 109,
+          "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "D1",
+      "severity": "P1",
+      "scope": "upstream_immutable_collector",
+      "status": "upstream_open_task_local_compensated",
+      "titleZh": "robots404/410的challenge错误被not_found优先级覆盖",
+      "exactLocation": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+        "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+        "lineStart": 318,
+        "lineEnd": 323,
+        "definition": "PublicFetcher._rules"
+      },
+      "evidence": "error = 'access_challenge'; status = 'checked' if code == 200 and not error else 'not_found' if code in {404, 410} else 'unavailable'",
+      "mechanismZh": "404/410正文命中challenge后error明确为access_challenge，但status仍not_found。fetch只在robots.status=unavailable时停止；上游独立PublicFetcher因此可能继续页面请求。没有声称本次实际遇到这种站点响应。",
+      "downstreamReference": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+        "definition": "PublicFetcher.fetch",
+        "lineStart": 337,
+        "lineEnd": 411,
+        "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439"
+      },
+      "taskLocalMitigation": {
+        "status": "verified",
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+        "definition": "instrumented_fetcher.TrackedFetcher._rules",
+        "lineStart": 221,
+        "lineEnd": 228,
+        "sha256": "2ccb3f746f87bb9431921cacb4b059d00b50ea12f5d9a4c831b07699bbf11db5",
+        "behaviorZh": "super._rules返回后，仅对error=access_challenge且原status非unavailable的结果返回dict副本，status=unavailable，保存collectorClassifiedStatus与summaryAccessBoundaryEnforced；不改上游磁盘缓存、HTTP状态、observedAt或retrievedEpoch。",
+        "tests": {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_shared_cooldown.py",
+          "definition": "LatestCollectorSharedCooldownAdapterTests.test_robots_404_and_410_challenge_blocks_page_without_rewriting_observation",
+          "lineStart": 402,
+          "lineEnd": 425,
+          "sha256": "d050fc6633e302e08898d35604ad3f45a54d41b079db23349bb0039fb79ec236"
+        }
+      }
+    },
+    {
+      "id": "D2",
+      "severity": "P2",
+      "scope": "upstream_bounded_retry_classification",
+      "status": "documented_not_fixed_not_observed_live",
+      "titleZh": "5xx状态先于硬错误过滤，可把混合503+curl63归为暂态",
+      "exactLocation": {
+        "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439.py",
+        "sha256": "edaacebf859c73b14b76b41673b4c30089b65c987c41baf2d4294015bae9d439",
+        "lineStart": 91,
+        "lineEnd": 100,
+        "definition": "transient_response"
+      },
+      "pureHelperInput": {
+        "httpStatus": 503,
+        "error": "curl: (63) Maximum file size exceeded",
+        "status": "unavailable",
+        "retrievedEpoch": 1000,
+        "attempts": 1
+      },
+      "pureHelperResult": {
+        "transient_response": true,
+        "retryable_fetch_robots_unavailable": true
+      },
+      "mechanismZh": "httpStatus属于RETRY时在第95–96行提前返回True，后面的curl63/TLS/size过滤未执行。这里只证明helper分类分支，不证明真实发生了混合响应。",
+      "limitsZh": "每次transport原有max-filesize/读取字节上限、共享等待及尝试次数限制未改变；未实现上游或额外本地修复，不扩展当前无live gaps的工作范围。"
+    }
+  ],
+  "independentOfflineVerification": {
+    "testsExecuted": 4,
+    "testsPassed": 4,
+    "elapsedSeconds": 0.068,
+    "fakeTransportOnly": true,
+    "sharedGateFilesInIsolatedTestTemporaryDirectories": true,
+    "liveNetworkRequests": 0,
+    "testNames": [
+      "LatestCollectorSharedCooldownAdapterTests.test_robots_404_and_410_challenge_blocks_page_without_rewriting_observation",
+      "LatestCollectorSharedCooldownAdapterTests.test_transient_robots_waits_then_recovers_with_prior_attempt_preserved",
+      "LatestCollectorSharedCooldownAdapterTests.test_robots_challenge_is_retained_without_retry_or_page_probe",
+      "LatestCollectorSharedCooldownAdapterTests.test_three_transient_robots_attempts_stop_for_the_daily_cache_period"
+    ],
+    "notesZh": "404/410测试分别作为subTest；断言无页面wire、600秒后仍只有1次robots wire、原robots缓存分类及两个时间字段未改变。另三个测试核验deadline前不重试、到期后恢复、旧attemptHistory保持与三次尝试后停止。父代理报告112全套PASS；本审阅未重跑全套，也不把四项计作额外全套。"
+  },
+  "recommendations": [
+    "The task-local adapter may rely on its verified D1 compensation within its own scope; do not claim the independent upstream collector is fixed.",
+    "Keep D2 documented and bounded; handle only on new evidence or an actual trigger, per parent instruction."
+  ],
+  "localMitigationPendingVerification": false,
+  "upstreamOpenFindingIds": [
+    "D1",
+    "D2"
+  ]
+}

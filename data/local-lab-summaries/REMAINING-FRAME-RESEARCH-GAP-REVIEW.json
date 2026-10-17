@@ -1,0 +1,1035 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:05:32+00:00",
+  "reviewOnly": true,
+  "networkRequestsMade": 0,
+  "codeRecordPacketReceiptWrites": 0,
+  "labsReviewed": 4,
+  "literalTargetsDiscovered": 5,
+  "recommendedFiniteNewFollowups": 4,
+  "deferredOptionalIdentityTargets": 1,
+  "alreadyCapturedWholeLabResearchTargets": 0,
+  "existingExplicitAccessRefusalsForRecommendedTargets": 0,
+  "rootRetriesRecommended": 0,
+  "recommendedTargets": [
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+      "url": "http://jenningslab.ucsd.edu/research.html",
+      "targetRequestKey": [
+        "http",
+        "jenningslab.ucsd.edu",
+        null,
+        "/research.html",
+        ""
+      ],
+      "purpose": "primary_whole_lab_research_gap"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "url": "http://kummelgroup.ucsd.edu/home.htm",
+      "targetRequestKey": [
+        "http",
+        "kummelgroup.ucsd.edu",
+        null,
+        "/home.htm",
+        ""
+      ],
+      "purpose": "primary_displayed_main_frame_content"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "url": "http://kummelgroup.ucsd.edu/side.htm",
+      "targetRequestKey": [
+        "http",
+        "kummelgroup.ucsd.edu",
+        null,
+        "/side.htm",
+        ""
+      ],
+      "purpose": "displayed_navigation_frame_to_locate_literal_research_links"
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "url": "http://shm.ucsd.edu/Site/Home.html",
+      "targetRequestKey": [
+        "http",
+        "shm.ucsd.edu",
+        null,
+        "/Site/Home.html",
+        ""
+      ],
+      "purpose": "primary_literal_same_site_meta_content_target"
+    }
+  ],
+  "priorAuditConclusion": "Four rows had candidates=[] in the02:56 cached inventory, so were outside69 nonempty candidate assignments. Their IDs/hostnames are absent from older ADDITIONAL research-link audit and cached69 reports. Absence is not a target refusal or proof that those target pages were fetched. This review reads actual newly observed HTTP-root HTML and concrete attributes.",
+  "inputHashes": {
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": "970c95acc55553e5c23fc5d6051496aae9de2fa7604020c446a1da9780c13869",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json": "c4cd91703d583da167b4bac241db629920db3aa66a3857a8acfd6eef560ad755",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/unpacketized-cache-candidates.json": "702159d034e677be3b898132b4b24f5497374d8390d66fbf5783094f5008bef2",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md": "95d04d0e20ef72141f241839b9b6470ad91fc79abf7252e26a08b69000d3582b",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md": "7922ed243f13de5481b84372775cbb4014fcb03d5b58c3c86d37d5393e76605b",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md": "add7f9ba405d4464553272649a9dd97211431a87158c3971485c164ed751aa56",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md": "e4a059525f64dfff1ede46933f0792ffdd92dc35f529aae00654f70b4b75f02e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/identity-decisions.json": "4679d8fdce45060b170e47a821e1ea1f4b6ffebffbb9815e82c9d5c97c369ee1",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-jennings-lab.json": "9cf62ce067294c573b59b5ae603fe69e1728f34e1a85c823d53bd1c5b6ea7607",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-jennings-lab.json": "c4a70c7af749d5f6190ac115340c70e39300f3b6a6814d7246b09a0a73efaea7",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-24cadce11bb48b3d74dd1b4c30473290d5b44f0b1f4c141d663e7405712caf8c.json": "bfab270c5b0244241533dec4c12aff889c06efa2b86a972f57ccf35d532a0551",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-kummel-lab.json": "b196bc807940e5ff7590a09e79122baf2f84e102818fc33badcdbfd67c548311",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-kummel-lab.json": "b9a0230165f7970e7567c811a5f5a4180bd813ef0dc1c5f7568bfa0c4d430c59",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-e4987c4574a803d236341217417bf8dd82ce36ac674d4ac401ce406e091272c6.json": "ae10283a1770fb54a3656fb98fc4f6a328d6188114c946b9e5437554b483f651",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group.json": "06e04dbe6ace3d9ddfbc561e437eb626b59f5e14f3bf9fcdabbacc377d3d3336",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group.json": "581ac0f1424edaf9579ca7dcb2373dd027e8ce45b2f97353d8433700ea42aecc",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-72ca3797438bb897a4e66334d8954cd289535b9bd5ed21bb62434fd4b4c00b64.json": "de89e817d960f3477d091ac058c91411154caf37a4782df15df797977c25ea5e",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl.json": "9bb311a18d4c26a37a74a1616366def15c95cabf97910d68acf265b3b08870fc",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl.json": "78690aa94b9c05ef210af889a571b65ac1a8e2fcab01ca6d872fdb1257f5f0ab",
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4e059373d9764d491fb92486ca969e39f58e152b47fe3068417072ee765e558d.json": "e35314d037a3dd187d672f73e7d9ea8fc5b9a42b4b3e9e0ed40e54d3c52d3563"
+  },
+  "constraints": [
+    "This report does not enqueue or request any candidate. Parent decides finite followups.",
+    "Keep original root request/time/hash/ID/listed URL unchanged. Frame/meta is not HTTP redirect or canonical migration.",
+    "Use only exact source-resolved target URIs; HTTP/HTTPS alternate cache probes are lookup-only, not authorization to switch scheme after failure.",
+    "Retain normal HTTP-origin robots, target robots/auth/challenge checks, strict TLS at real HTTPS hops, sharedv2 gate/Retry-After, default2MB page and300KB robots caps.",
+    "No inferred research from buttons/images/navigation/frames themselves, broad personal profiles or publication titles. Target full body must independently establish same entity/whole-lab science.",
+    "Tezcan is already handled by parent and is outside this audit. All13 mismatch/acceptance gates remain unchanged."
+  ],
+  "items": [
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+      "shortName": "Jennings",
+      "reviewedAt": "2026-10-16T05:05:31+00:00",
+      "root": {
+        "sourceId": "src-28f455c9c1ad8216",
+        "actualRequestedURL": "http://jenningslab.ucsd.edu/",
+        "sourceURL": "http://jenningslab.ucsd.edu/",
+        "listedURL": "http://jenningslab.ucsd.edu",
+        "observedAt": "2026-10-16T04:57:02+00:00",
+        "liveCheckedAt": "2026-10-16T04:57:01+00:00",
+        "bodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/aba815ffc937e0231c1221be0501a61d2f170a74d37d75a8005f1bf6051c24a8.html",
+        "title": "Jennings Lab",
+        "fullVisibleTextCharacters": 0,
+        "HTTPRedirects": []
+      },
+      "oldRawStatus": "partial",
+      "oldRawScientificReviewedAt": "2026-10-16T01:48:38+00:00",
+      "rawSha256": "c4a70c7af749d5f6190ac115340c70e39300f3b6a6814d7246b09a0a73efaea7",
+      "packetSha256": "9cf62ce067294c573b59b5ae603fe69e1728f34e1a85c823d53bd1c5b6ea7607",
+      "rootElements": [
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "research_button",
+            "href": "research.html"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "class": "nav_img",
+                "src": "Images/flask.png",
+                "height": "90",
+                "width": "70"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "people_button",
+            "href": "researchteam.html"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "class": "people_nav_img",
+                "src": "Images/people_button.png",
+                "height": "50",
+                "width": "110"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "pub_button",
+            "href": "publications.html"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "class": "nav_img",
+                "src": "Images/publicationbutton.png",
+                "height": "90",
+                "width": "90"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "funding_button",
+            "href": "funding.html"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "class": "nav_img",
+                "src": "Images/funding.png",
+                "height": "100",
+                "width": "80"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "contact_button",
+            "href": "contact.html"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "class": "contact_nav_img",
+                "src": "Images/contact_button.png",
+                "height": "90",
+                "width": "90"
+              }
+            }
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "elementTag": "a",
+          "literalStartTag": "<a class=\"research_button\" href=\"research.html\" >",
+          "literalAttribute": "href",
+          "literalValue": "research.html",
+          "textLabel": "",
+          "class": "research_button",
+          "images": [
+            {
+              "src": "Images/flask.png",
+              "alt": null,
+              "altAttributePresent": false,
+              "attrs": {
+                "class": "nav_img",
+                "src": "Images/flask.png",
+                "height": "90",
+                "width": "70"
+              }
+            }
+          ],
+          "decision": "recommend_finite_followup",
+          "purpose": "primary_whole_lab_research_gap",
+          "targetURL": "http://jenningslab.ucsd.edu/research.html",
+          "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+          "rootSourceId": "src-28f455c9c1ad8216",
+          "rootObservedAt": "2026-10-16T04:57:02+00:00",
+          "rootBodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+          "targetRequestKey": [
+            "http",
+            "jenningslab.ucsd.edu",
+            null,
+            "/research.html",
+            ""
+          ],
+          "sameHostname": true,
+          "existingCaptureMatches": [],
+          "cacheProbes": [
+            {
+              "lookupURL": "http://jenningslab.ucsd.edu/research.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d1696fd423164f7bc44c6d50c0e4cc12d93a99b497f4c1c61d8355292dac8c97.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d1696fd423164f7bc44c6d50c0e4cc12d93a99b497f4c1c61d8355292dac8c97.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "http://jenningslab.ucsd.edu/research.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d1696fd423164f7bc44c6d50c0e4cc12d93a99b497f4c1c61d8355292dac8c97.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d1696fd423164f7bc44c6d50c0e4cc12d93a99b497f4c1c61d8355292dac8c97.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://jenningslab.ucsd.edu/research.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/b679ca19e70b82aefa04d0969e9df319aa82260c23412c1fbb5b81d6b0d90cb5.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/b679ca19e70b82aefa04d0969e9df319aa82260c23412c1fbb5b81d6b0d90cb5.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://jenningslab.ucsd.edu/research.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b679ca19e70b82aefa04d0969e9df319aa82260c23412c1fbb5b81d6b0d90cb5.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b679ca19e70b82aefa04d0969e9df319aa82260c23412c1fbb5b81d6b0d90cb5.html",
+              "bodyExists": false
+            }
+          ],
+          "robots": {
+            "url": "http://jenningslab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T04:57:01+00:00",
+            "metadata": {
+              "sourceUrl": "http://jenningslab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T04:57:01+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792126621.139092,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "checked"
+            },
+            "bodySha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-24cadce11bb48b3d74dd1b4c30473290d5b44f0b1f4c141d663e7405712caf8c.html",
+            "policy": "checked_rules",
+            "canFetchFromActualCheckedRules": true,
+            "isFreshTargetResponseProof": false
+          },
+          "HTTPRedirectAssumed": false,
+          "targetResearchClaimsAccepted": false
+        },
+        {
+          "elementTag": "a",
+          "literalStartTag": "<a class=\"people_button\" href=\"researchteam.html\" >",
+          "literalAttribute": "href",
+          "literalValue": "researchteam.html",
+          "textLabel": "",
+          "class": "people_button",
+          "images": [
+            {
+              "src": "Images/people_button.png",
+              "alt": null,
+              "altAttributePresent": false,
+              "attrs": {
+                "class": "people_nav_img",
+                "src": "Images/people_button.png",
+                "height": "50",
+                "width": "110"
+              }
+            }
+          ],
+          "decision": "defer_until_research_page_identity_insufficient",
+          "purpose": "optional_identity_only",
+          "targetURL": "http://jenningslab.ucsd.edu/researchteam.html",
+          "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+          "rootSourceId": "src-28f455c9c1ad8216",
+          "rootObservedAt": "2026-10-16T04:57:02+00:00",
+          "rootBodySha256": "67f95d3c0b382d5be686b78781e693f00d42ccc881c40b3a6e987be872d29afa",
+          "targetRequestKey": [
+            "http",
+            "jenningslab.ucsd.edu",
+            null,
+            "/researchteam.html",
+            ""
+          ],
+          "sameHostname": true,
+          "existingCaptureMatches": [],
+          "cacheProbes": [
+            {
+              "lookupURL": "http://jenningslab.ucsd.edu/researchteam.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/03b48ecd3c84cc3662f76afd405204985fa4c6ab579f35dbd52dd8674487dad7.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/03b48ecd3c84cc3662f76afd405204985fa4c6ab579f35dbd52dd8674487dad7.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "http://jenningslab.ucsd.edu/researchteam.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/03b48ecd3c84cc3662f76afd405204985fa4c6ab579f35dbd52dd8674487dad7.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/03b48ecd3c84cc3662f76afd405204985fa4c6ab579f35dbd52dd8674487dad7.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://jenningslab.ucsd.edu/researchteam.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/815cd3604df99f4e99ebc634915313b6af9fe71e2a51ae654d10334fb967378a.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/815cd3604df99f4e99ebc634915313b6af9fe71e2a51ae654d10334fb967378a.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://jenningslab.ucsd.edu/researchteam.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/815cd3604df99f4e99ebc634915313b6af9fe71e2a51ae654d10334fb967378a.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/815cd3604df99f4e99ebc634915313b6af9fe71e2a51ae654d10334fb967378a.html",
+              "bodyExists": false
+            }
+          ],
+          "robots": {
+            "url": "http://jenningslab.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T04:57:01+00:00",
+            "metadata": {
+              "sourceUrl": "http://jenningslab.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T04:57:01+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792126621.139092,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "checked"
+            },
+            "bodySha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-24cadce11bb48b3d74dd1b4c30473290d5b44f0b1f4c141d663e7405712caf8c.html",
+            "policy": "checked_rules",
+            "canFetchFromActualCheckedRules": true,
+            "isFreshTargetResponseProof": false
+          },
+          "HTTPRedirectAssumed": false,
+          "targetResearchClaimsAccepted": false
+        }
+      ],
+      "decisionReason": "实际Research锚点没有可见文字也没有image alt；class=research_button、href=research.html和flask图像仅用于发现，不能当研究内容。优先只读research.html；不请求图片/CSS/script，不因空首页重试根。",
+      "cached69Inventory": {
+        "snapshotAt": "2026-10-16T02:56:13+00:00",
+        "candidates": [],
+        "wasIn69NonemptyCandidateAssignments": false
+      },
+      "priorAuditMentions": {
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        }
+      },
+      "recordsPacketsUnchanged": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+      "shortName": "Kummel",
+      "reviewedAt": "2026-10-16T05:05:31+00:00",
+      "root": {
+        "sourceId": "src-4eed6cd432ff1acd",
+        "actualRequestedURL": "http://kummelgroup.ucsd.edu/",
+        "sourceURL": "http://kummelgroup.ucsd.edu/",
+        "listedURL": "http://kummelgroup.ucsd.edu",
+        "observedAt": "2026-10-16T04:57:05+00:00",
+        "liveCheckedAt": "2026-10-16T04:57:05+00:00",
+        "bodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/d532e27f6094214f3c0a3d11c9cf6c6269b372e1c3bf27c7b380ea7d9a4f4648.html",
+        "title": "Welcome to the Kummel Lab Web Page!!!",
+        "fullVisibleTextCharacters": 70,
+        "HTTPRedirects": []
+      },
+      "oldRawStatus": "partial",
+      "oldRawScientificReviewedAt": "2026-10-16T01:48:38+00:00",
+      "rawSha256": "b9a0230165f7970e7567c811a5f5a4180bd813ef0dc1c5f7568bfa0c4d430c59",
+      "packetSha256": "b196bc807940e5ff7590a09e79122baf2f84e102818fc33badcdbfd67c548311",
+      "rootElements": [
+        {
+          "tag": "frame",
+          "attrs": {
+            "src": "side.htm",
+            "name": "side",
+            "frameborder": "NO"
+          },
+          "text": "",
+          "images": []
+        },
+        {
+          "tag": "frame",
+          "attrs": {
+            "src": "home.htm",
+            "name": "main",
+            "frameborder": "NO"
+          },
+          "text": "",
+          "images": []
+        }
+      ],
+      "candidates": [
+        {
+          "elementTag": "frame",
+          "literalStartTag": "<frame src=\"home.htm\" name=\"main\" frameborder=\"NO\">",
+          "literalAttribute": "src",
+          "literalValue": "home.htm",
+          "frameName": "main",
+          "alt": null,
+          "altAttributePresent": false,
+          "decision": "recommend_finite_followup",
+          "purpose": "primary_displayed_main_frame_content",
+          "targetURL": "http://kummelgroup.ucsd.edu/home.htm",
+          "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+          "rootSourceId": "src-4eed6cd432ff1acd",
+          "rootObservedAt": "2026-10-16T04:57:05+00:00",
+          "rootBodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+          "targetRequestKey": [
+            "http",
+            "kummelgroup.ucsd.edu",
+            null,
+            "/home.htm",
+            ""
+          ],
+          "sameHostname": true,
+          "existingCaptureMatches": [],
+          "cacheProbes": [
+            {
+              "lookupURL": "http://kummelgroup.ucsd.edu/home.htm",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/38d0424fc55dc7dfcadaed079d6f1cde1a793e2ba8899e319d56b8519ef4ce1e.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/38d0424fc55dc7dfcadaed079d6f1cde1a793e2ba8899e319d56b8519ef4ce1e.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "http://kummelgroup.ucsd.edu/home.htm",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/38d0424fc55dc7dfcadaed079d6f1cde1a793e2ba8899e319d56b8519ef4ce1e.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/38d0424fc55dc7dfcadaed079d6f1cde1a793e2ba8899e319d56b8519ef4ce1e.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://kummelgroup.ucsd.edu/home.htm",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c508edd10e3b4e96a31e2d36e5d10a2a7dced83c256f2e5c96d8e110808bfa53.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c508edd10e3b4e96a31e2d36e5d10a2a7dced83c256f2e5c96d8e110808bfa53.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://kummelgroup.ucsd.edu/home.htm",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c508edd10e3b4e96a31e2d36e5d10a2a7dced83c256f2e5c96d8e110808bfa53.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c508edd10e3b4e96a31e2d36e5d10a2a7dced83c256f2e5c96d8e110808bfa53.html",
+              "bodyExists": false
+            }
+          ],
+          "robots": {
+            "url": "http://kummelgroup.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T04:57:04+00:00",
+            "metadata": {
+              "sourceUrl": "http://kummelgroup.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T04:57:04+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792126624.635534,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "checked"
+            },
+            "bodySha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-e4987c4574a803d236341217417bf8dd82ce36ac674d4ac401ce406e091272c6.html",
+            "policy": "checked_rules",
+            "canFetchFromActualCheckedRules": true,
+            "isFreshTargetResponseProof": false
+          },
+          "HTTPRedirectAssumed": false,
+          "targetResearchClaimsAccepted": false
+        },
+        {
+          "elementTag": "frame",
+          "literalStartTag": "<frame src=\"side.htm\" name=\"side\" frameborder=\"NO\">",
+          "literalAttribute": "src",
+          "literalValue": "side.htm",
+          "frameName": "side",
+          "alt": null,
+          "altAttributePresent": false,
+          "decision": "recommend_finite_followup_discovery_only",
+          "purpose": "displayed_navigation_frame_to_locate_literal_research_links",
+          "targetURL": "http://kummelgroup.ucsd.edu/side.htm",
+          "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+          "rootSourceId": "src-4eed6cd432ff1acd",
+          "rootObservedAt": "2026-10-16T04:57:05+00:00",
+          "rootBodySha256": "568e6a760a2416fb3ac385f66df55208453b3ee8dc9669415c8f4213f8effeeb",
+          "targetRequestKey": [
+            "http",
+            "kummelgroup.ucsd.edu",
+            null,
+            "/side.htm",
+            ""
+          ],
+          "sameHostname": true,
+          "existingCaptureMatches": [],
+          "cacheProbes": [
+            {
+              "lookupURL": "http://kummelgroup.ucsd.edu/side.htm",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a4f2ee1abbbb0838749fe5180c5f70356af022d5f6208dbfd33b64959ce9718a.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/a4f2ee1abbbb0838749fe5180c5f70356af022d5f6208dbfd33b64959ce9718a.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "http://kummelgroup.ucsd.edu/side.htm",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a4f2ee1abbbb0838749fe5180c5f70356af022d5f6208dbfd33b64959ce9718a.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a4f2ee1abbbb0838749fe5180c5f70356af022d5f6208dbfd33b64959ce9718a.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://kummelgroup.ucsd.edu/side.htm",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/74fb1c9d4fb4f4e76f2759d0c0777e5183bbcd7449e8124c252edd087a318655.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/74fb1c9d4fb4f4e76f2759d0c0777e5183bbcd7449e8124c252edd087a318655.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://kummelgroup.ucsd.edu/side.htm",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/74fb1c9d4fb4f4e76f2759d0c0777e5183bbcd7449e8124c252edd087a318655.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/74fb1c9d4fb4f4e76f2759d0c0777e5183bbcd7449e8124c252edd087a318655.html",
+              "bodyExists": false
+            }
+          ],
+          "robots": {
+            "url": "http://kummelgroup.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T04:57:04+00:00",
+            "metadata": {
+              "sourceUrl": "http://kummelgroup.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T04:57:04+00:00",
+              "httpStatus": 200,
+              "retrievedEpoch": 1792126624.635534,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "checked"
+            },
+            "bodySha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-e4987c4574a803d236341217417bf8dd82ce36ac674d4ac401ce406e091272c6.html",
+            "policy": "checked_rules",
+            "canFetchFromActualCheckedRules": true,
+            "isFreshTargetResponseProof": false
+          },
+          "HTTPRedirectAssumed": false,
+          "targetResearchClaimsAccepted": false
+        }
+      ],
+      "decisionReason": "根页实际frameset指定main=home.htm、side=side.htm；main是展示正文候选，side只用于取得真实导航。当前没有Research href，不能凭习惯发明research.htm等路径；不得把frame当HTTP redirect。",
+      "cached69Inventory": {
+        "snapshotAt": "2026-10-16T02:56:13+00:00",
+        "candidates": [],
+        "wasIn69NonemptyCandidateAssignments": false
+      },
+      "priorAuditMentions": {
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        }
+      },
+      "recordsPacketsUnchanged": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "shortName": "SHM",
+      "reviewedAt": "2026-10-16T05:05:31+00:00",
+      "root": {
+        "sourceId": "src-78fc5f4fd64950d0",
+        "actualRequestedURL": "http://shm.ucsd.edu/",
+        "sourceURL": "http://shm.ucsd.edu/",
+        "listedURL": "http://shm.ucsd.edu/",
+        "observedAt": "2026-10-16T04:57:37+00:00",
+        "liveCheckedAt": "2026-10-16T04:57:37+00:00",
+        "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/fd895e0b0eb6b0440a3842d6c5492a2977cdef977b87d9c89c483f2f37b53275.html",
+        "title": "",
+        "fullVisibleTextCharacters": 0,
+        "HTTPRedirects": []
+      },
+      "oldRawStatus": "partial",
+      "oldRawScientificReviewedAt": "2026-10-16T01:53:25+00:00",
+      "rawSha256": "581ac0f1424edaf9579ca7dcb2373dd027e8ce45b2f97353d8433700ea42aecc",
+      "packetSha256": "06e04dbe6ace3d9ddfbc561e437eb626b59f5e14f3bf9fcdabbacc377d3d3336",
+      "rootElements": [
+        {
+          "tag": "meta",
+          "attrs": {
+            "http-equiv": "refresh",
+            "content": "0;url= http://shm.ucsd.edu/Site/Home.html"
+          },
+          "text": ""
+        }
+      ],
+      "candidates": [
+        {
+          "elementTag": "meta",
+          "literalStartTag": "<meta http-equiv=\"refresh\" content=\"0;url= http://shm.ucsd.edu/Site/Home.html\" />",
+          "literalAttribute": "content",
+          "literalValue": "0;url= http://shm.ucsd.edu/Site/Home.html",
+          "decision": "recommend_finite_followup",
+          "purpose": "primary_literal_same_site_meta_content_target",
+          "targetURL": "http://shm.ucsd.edu/Site/Home.html",
+          "isObservedHTTPRedirect": false,
+          "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+          "rootSourceId": "src-78fc5f4fd64950d0",
+          "rootObservedAt": "2026-10-16T04:57:37+00:00",
+          "rootBodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "targetRequestKey": [
+            "http",
+            "shm.ucsd.edu",
+            null,
+            "/Site/Home.html",
+            ""
+          ],
+          "sameHostname": true,
+          "existingCaptureMatches": [],
+          "cacheProbes": [
+            {
+              "lookupURL": "http://shm.ucsd.edu/Site/Home.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/78138f001c1bd13a71040c9c65eb8963ea4809e35e49583a95374807e1f1a546.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/78138f001c1bd13a71040c9c65eb8963ea4809e35e49583a95374807e1f1a546.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "http://shm.ucsd.edu/Site/Home.html",
+              "lookupIsNotNewRequestCandidate": false,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/78138f001c1bd13a71040c9c65eb8963ea4809e35e49583a95374807e1f1a546.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/78138f001c1bd13a71040c9c65eb8963ea4809e35e49583a95374807e1f1a546.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://shm.ucsd.edu/Site/Home.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ef3d40a54eaeae84cb09d8a629b42bdf0cc1a383038bdd0b72a75f472493fcfa.json",
+              "metadataExists": false,
+              "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ef3d40a54eaeae84cb09d8a629b42bdf0cc1a383038bdd0b72a75f472493fcfa.html",
+              "bodyExists": false
+            },
+            {
+              "lookupURL": "https://shm.ucsd.edu/Site/Home.html",
+              "lookupIsNotNewRequestCandidate": true,
+              "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ef3d40a54eaeae84cb09d8a629b42bdf0cc1a383038bdd0b72a75f472493fcfa.json",
+              "metadataExists": false,
+              "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ef3d40a54eaeae84cb09d8a629b42bdf0cc1a383038bdd0b72a75f472493fcfa.html",
+              "bodyExists": false
+            }
+          ],
+          "robots": {
+            "url": "http://shm.ucsd.edu/robots.txt",
+            "observedAt": "2026-10-16T04:57:36+00:00",
+            "metadata": {
+              "sourceUrl": "http://shm.ucsd.edu/robots.txt",
+              "observedAt": "2026-10-16T04:57:36+00:00",
+              "httpStatus": 404,
+              "retrievedEpoch": 1792126656.491849,
+              "error": "",
+              "redirects": [],
+              "attempts": 1,
+              "status": "not_found"
+            },
+            "bodySha256": "d61bd85f90644dddae496f6a11fba967a3f436cf7d32ca00fe45c36a329afd81",
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/robots-72ca3797438bb897a4e66334d8954cd289535b9bd5ed21bb62434fd4b4c00b64.html",
+            "policy": "not_found_no_explicit_refusal_under_existing_fetcher_policy",
+            "canFetchFromActualCheckedRules": null,
+            "isFreshTargetResponseProof": false
+          },
+          "HTTPRedirectAssumed": false,
+          "targetResearchClaimsAccepted": false
+        }
+      ],
+      "decisionReason": "实际字面meta给出同host /Site/Home.html，根HTTP本身200无redirect。Home仅为待观察的展示内容，不能视为已有研究组身份或科研；绝不改写原根HTTP链。",
+      "cached69Inventory": {
+        "snapshotAt": "2026-10-16T02:56:13+00:00",
+        "candidates": [],
+        "wasIn69NonemptyCandidateAssignments": false
+      },
+      "priorAuditMentions": {
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        }
+      },
+      "recordsPacketsUnchanged": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+      "shortName": "MMRL",
+      "reviewedAt": "2026-10-16T05:05:31+00:00",
+      "root": {
+        "sourceId": "src-3bf96383b726f054",
+        "actualRequestedURL": "http://mmrl.ucsd.edu/",
+        "sourceURL": "http://mmrl.ucsd.edu/",
+        "listedURL": "http://mmrl.ucsd.edu/",
+        "observedAt": "2026-10-16T04:57:39+00:00",
+        "liveCheckedAt": "2026-10-16T04:57:39+00:00",
+        "bodySha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+        "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/25e78b3153eac87044c42352c812b730bb2fb50e91a0710df5d004a3432b71fd.html",
+        "title": "Prof. Yu Qiao's Homepage",
+        "fullVisibleTextCharacters": 2842,
+        "HTTPRedirects": []
+      },
+      "oldRawStatus": "partial",
+      "oldRawScientificReviewedAt": "2026-10-16T01:54:02+00:00",
+      "rawSha256": "78690aa94b9c05ef210af889a571b65ac1a8e2fcab01ca6d872fdb1257f5f0ab",
+      "packetSha256": "9bb311a18d4c26a37a74a1616366def15c95cabf97910d68acf265b3b08870fc",
+      "rootElements": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "http://structures.ucsd.edu/"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "border": "0",
+                "width": "93",
+                "height": "24",
+                "src": "index_files/image002.jpg",
+                "v:shapes": "_x0000_i1029"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "http://matsci.ucsd.edu/"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "border": "0",
+                "width": "165",
+                "height": "26",
+                "src": "index_files/image004.jpg",
+                "v:shapes": "Picture_x0020_2"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "http://jacobsschool.ucsd.edu/"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "border": "0",
+                "width": "93",
+                "height": "23",
+                "src": "index_files/image006.jpg",
+                "v:shapes": "Picture_x0020_3"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "http://www.ucsd.edu/"
+          },
+          "text": "",
+          "images": [
+            {
+              "attrs": {
+                "border": "0",
+                "width": "39",
+                "height": "24",
+                "src": "index_files/image008.gif",
+                "v:shapes": "Picture_x0020_4"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "mailto:yqiao@ucsd.edu"
+          },
+          "text": "yqiao@ucsd.edu",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://jacobsschool.ucsd.edu/faculty/profile?id=256"
+          },
+          "text": "here",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://matsci.ucsd.edu/faculty/yu-qiao"
+          },
+          "text": "here",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://escholarship.org/uc/item/0g06321h"
+          },
+          "text": "https://escholarship.org/uc/item/0g06321h",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://escholarship.org/uc/item/55c900dz"
+          },
+          "text": "https://escholarship.org/uc/item/55c900dz",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://escholarship.org/uc/item/1g6074r3"
+          },
+          "text": "https://escholarship.org/uc/item/1g6074r3",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://escholarship.org/uc/item/5632b1ts"
+          },
+          "text": "https://escholarship.org/uc/item/5632b1ts",
+          "images": []
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "https://escholarship.org/uc/item/5hp0w1vv"
+          },
+          "text": "https://escholarship.org/uc/item/5hp0w1vv",
+          "images": []
+        }
+      ],
+      "candidates": [],
+      "decisionReason": "没有frame/iframe/refresh或同站Research锚点。当前正文是Yu Qiao联系/履历、Research Interests列表及Selected Publications；方法不能从单篇论文标题推断。两个here链接是跨host个人档案，机构主页/邮箱/论文均不自动扩张为实验室研究路径。",
+      "cached69Inventory": {
+        "snapshotAt": "2026-10-16T02:56:13+00:00",
+        "candidates": [],
+        "wasIn69NonemptyCandidateAssignments": false
+      },
+      "priorAuditMentions": {
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        },
+        "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md": {
+          "labIdMentioned": false,
+          "rootHostnameMentioned": false
+        }
+      },
+      "recordsPacketsUnchanged": true,
+      "cachedPersonalProfileReview": {
+        "sourceId": null,
+        "sourceIdReason": "未packetize，本轮不创建sourceId",
+        "actualAnchor": {
+          "tag": "a",
+          "href": "https://jacobsschool.ucsd.edu/faculty/profile?id=256",
+          "text": "here"
+        },
+        "actualRequestedURL": "https://jacobsschool.ucsd.edu/faculty/profile?id=256",
+        "sourceURL": "https://jacobsschool.ucsd.edu/faculty/profile?id=256",
+        "observedAt": "2026-10-16T01:01:33+00:00",
+        "bodySha256": "c156e786ed14a1b8db5f1c78e52312b55b82bdb3940688520e0c99af814d19fe",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4e059373d9764d491fb92486ca969e39f58e152b47fe3068417072ee765e558d.html",
+        "fullVisibleTextCharactersRead": 936,
+        "fullVisibleText": "Faculty Profiles Back to Faculty Profiles Yu Qiao Professor, SE Thermodynamics, advanced energy-related materials, high-performance infrastructure materials, in-situ resource utilization, smart materials and structures, failure analysis for engineering materials and structures. Capsule Bio: Yu Qiao received a bachelor's degree in applied mechanics from the University of Science and Technology of China in 1994, and a master's degree in materials science from the Chinese Academy of Sciences in 1997. He received a Ph.D. in mechanical engineering from MIT in 2002. From 2002-2006, he was an assistant professor at the University of Akron. He joined UCSD in 2006. Education: Ph.D. in Mechanical Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts (2002) Update your profile Email: yqiao@ucsd.edu Office Phone: 858-534-3388 Lab Website Institute Affiliations: Charles Lee Powell Structural Research Laboratories",
+        "scopeDecision": "personal_broad_topics_and_biography_only_not_whole_lab_research_or_methods",
+        "mayReuseAsOwnerIdentityAdjunct": true,
+        "closesLabResearchGap": false,
+        "newRequestNeeded": false
+      },
+      "uncapturedPersonalProfileNotRecommended": {
+        "actualAnchorHref": "https://matsci.ucsd.edu/faculty/yu-qiao",
+        "anchorText": "here",
+        "targetRequestKey": [
+          "https",
+          "matsci.ucsd.edu",
+          null,
+          "/faculty/yu-qiao",
+          ""
+        ],
+        "sameHostname": false,
+        "existingCaptureMatches": [],
+        "cacheProbes": [
+          {
+            "lookupURL": "https://matsci.ucsd.edu/faculty/yu-qiao",
+            "lookupIsNotNewRequestCandidate": false,
+            "metadataPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/bdf9e94df1c3e94397d293ca59e44a35d5338ed9b9bbcb43c62228e940d3048a.json",
+            "metadataExists": false,
+            "bodyPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/bdf9e94df1c3e94397d293ca59e44a35d5338ed9b9bbcb43c62228e940d3048a.html",
+            "bodyExists": false
+          },
+          {
+            "lookupURL": "https://matsci.ucsd.edu/faculty/yu-qiao",
+            "lookupIsNotNewRequestCandidate": false,
+            "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bdf9e94df1c3e94397d293ca59e44a35d5338ed9b9bbcb43c62228e940d3048a.json",
+            "metadataExists": false,
+            "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bdf9e94df1c3e94397d293ca59e44a35d5338ed9b9bbcb43c62228e940d3048a.html",
+            "bodyExists": false
+          }
+        ],
+        "decision": "do_not_expand_to_personal_faculty_profile_for_this_frame_research_gap"
+      },
+      "excludedLinkCategories": {
+        "globalInstitutionHomepages": 4,
+        "email": 1,
+        "personalFacultyProfiles": 2,
+        "individualPublicationLinks": 5,
+        "reason": "链接存在不等于具名whole-lab研究正文，不从邻域或论文推断方法。"
+      }
+    }
+  ]
+}

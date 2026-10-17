@@ -1,0 +1,174 @@
+{
+  "labId": "ucsd-pediatrics-lab-nizet-lab",
+  "status": "supported",
+  "summaryZh": "Nizet 实验室研究细菌致病和先天免疫机制，发展针对败血症及多重耐药病原体的治疗和疫苗。团队结合分子遗传学、微生物学、蛋白质组学、免疫学和小鼠感染模型。",
+  "researchQuestions": [
+    "细菌致病及先天免疫系统的基本机制是什么？"
+  ],
+  "topics": [
+    "细菌致病",
+    "先天免疫",
+    "耐药感染治疗与疫苗"
+  ],
+  "methods": [
+    "分子遗传学",
+    "微生物学",
+    "蛋白质组学",
+    "免疫学",
+    "小鼠感染模型"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-3956a1917de04e73",
+      "quote": "Nizet Lab Team The Nizet Lab has more than two dozen students, postdocs, staff, visiting scholars, and affiliated faculty. Meet the Team Nizet Lab Recently, a new graduate student and two postdocs have joined the lab. More News Research The Nizet lab investigates innate immunity, bacterial pathogenesis, therapeutics and vaccines against sepsis and multidrug resistant pathogens. Research Our Publications The Nizet lab published hundreds of papers, contributing our understanding of host pathogen interactions, bacterial pathogenesis, and the development and repurposing of therapeutics effective against multidrug resistant pathogens. More Publications Previous Next About Research Team News Publications Collaborators Calendar Contact About Us The interest of the Nizet laboratory lies in understanding fundamental mechanisms of bacterial pathogenesis and the innate immune system, with a special focus on human streptococcal, staphylococcal and multidrug resistant Gram-negative bacterial infections. Using a combination of molecular genetics, microbiology, proteomics, immunology, and murine models of infection, we seek to identify and develop novel biotherapeutics, antimicrobials, and vaccines to further translational medicine in the fight against MDR infections. Learn More Research Focus Bacterial Pathogenesis Innate Immune System Therapeutics & Vaccines Recent News Congratulations to UCSD Pharmacy PharmD/PhD student Daniel Sun on his successful advancement to candidacy in the UCSD BMS graduate program! Great presentation to his full thesis committee on his innovative studies on alternative therapies for MRSA infections and sepsis. More News Learn More Research People Publications News Contact Networks",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-3956a1917de04e73",
+      "quote": "Nizet Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-3956a1917de04e73",
+      "quote": "The interest of the Nizet laboratory lies in understanding fundamental mechanisms of bacterial pathogenesis and the innate immune system, with a special focus on human streptococcal, staphylococcal and multidrug resistant Gram-negative bacterial infections.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:16:44+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:16:44+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具名实验室明确以understanding fundamental mechanisms为目标，忠实表达该机制问题；不把抗菌药物和疫苗开发写成临床有效性。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-3956a1917de04e73",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/nizet-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:02+00:00",
+        "bodySha256": "962b5363db445ab8bca5543a0f35556073189b0764723b799bbb707201cccc51",
+        "textSha256": "bd459dba37ae12b46d57f9054423d2941472bf31556df2c365cfc419776fc9a8",
+        "textCharacters": 1722,
+        "readRanges": [
+          [
+            0,
+            1722
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-f0aed44649af77bf",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/nizet-lab/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:51+00:00",
+        "bodySha256": "769ba801f87410c9d43664933053394fc0e384b0dd84035577b78307f3f7bbe6",
+        "textSha256": "614a8c4502ebb4ec8d3b9ff6f124de876fa8e36d51d7cd0e3aad1ee8919fea05",
+        "textCharacters": 1824,
+        "readRanges": [
+          [
+            0,
+            900
+          ]
+        ],
+        "coverage": "local_research_context_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-c34df553d9988863",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/nizet-lab/contact.html",
+        "sourceObservedAt": "2026-10-16T01:34:02+00:00",
+        "bodySha256": "2032314695ca9cc96955e67fef611e390e89ad210e8d03028b59bc00dc3e4bee",
+        "textSha256": "6b1af6969e2d10171c917ec2989c494351139275675ca32c64359e8fcee3b632",
+        "textCharacters": 603,
+        "readRanges": [
+          [
+            0,
+            603
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-f5246e9349d4f8a8",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+        "bodySha256": null,
+        "textSha256": "e4752d92f0b10f032c8ab69674223312709299a4d1b4fae5269107555778c6cb",
+        "textCharacters": 131,
+        "readRanges": [
+          [
+            0,
+            131
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-45fa95d3f5b9a413",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+        "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+        "textCharacters": 1659,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 143,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-2d8824c84767daef",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/nizet-lab/contact.html",
+        "sourceObservedAt": "2026-10-16T01:34:02+00:00",
+        "bodySha256": "2032314695ca9cc96955e67fef611e390e89ad210e8d03028b59bc00dc3e4bee",
+        "textSha256": "102deba0e749e20e5a9a63f7a2358864d3449b5585c6fdbfc808c05ddb606e36",
+        "textCharacters": 1770,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-c34df553d9988863",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-3956a1917de04e73",
+        "quote": "The interest of the Nizet laboratory lies in understanding fundamental mechanisms of bacterial pathogenesis and the innate immune system, with a special focus on human streptococcal, staphylococcal and multidrug resistant Gram-negative bacterial infections.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:03:02+00:00",
+        "bodySha256": "962b5363db445ab8bca5543a0f35556073189b0764723b799bbb707201cccc51"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

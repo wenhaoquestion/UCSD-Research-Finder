@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+  "status": "complete_for_assigned_000_008_only",
+  "passed": true,
+  "inputReport": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/PRIOR29-QUESTION-FIELD-REVIEW.json",
+    "sha256": "8eff973cc745e4f1539900e309d8740d61bd5e09574a474f4e7774b7c939393c",
+    "status": "in_progress",
+    "reviewedCount": 9,
+    "inputInventorySha256": "d9c7ca4fb9fa09c29460d4c9549fc6f8296bf3ab1932cc730d43fa3ad2858e94"
+  },
+  "scope": {
+    "recheckIndices": [
+      0,
+      8
+    ],
+    "reviewed": 9,
+    "wholePriorInventoryCount": 29,
+    "remaining20OutOfScope": true,
+    "addRecords": 6,
+    "questions": 12,
+    "unchanged": 3
+  },
+  "counts": {
+    "frozenRawVerified": 9,
+    "frozenPacketsVerified": 9,
+    "literalQuotesSourceDateHashVerified": 12,
+    "actualCacheBodyAndSidecarVerified": 7,
+    "openBlockingIssues": 0
+  },
+  "errors": [],
+  "items": [
+    {
+      "recheckIndex": 0,
+      "labId": "ucsd-lab-from-faculty-lei-lab-ucsd-edu",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "b70fac4b2c85345e722269f448664678a570bffe8b25168dde016fb93f7c3e12",
+      "rawSha256": "d5e4dc67ce89035cbc303622a6a059a6519e9f7bc30e8ea6164e915f3ffc2015",
+      "packetSha256": "a8fe34457ad625c14dac37d90a3fb650e51051621e60563676d6813d487cb7ef",
+      "questionCount": 0,
+      "decision": "pass",
+      "reasonZh": "实际所读正文支持unchanged；命名修辞、宽泛方向或流程介绍不转换成问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-0f223d6b6dd761d2",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/lei-liang/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              35
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-3b36b03d3175f465",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/lei-liang/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              3306
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-819a6d756495f285",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              450
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 1,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-thackray-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "cdbc914233cbfcc7587f56103609587b7084b79e28003f6caeacd794724efb79",
+      "rawSha256": "5ad95028c653b1c98c2c275e32ec520ebf2112724b52e21be029e79bf80f0690",
+      "packetSha256": "3077ebb1807033a5c7d3c3765c7bf13b04221fcb3f768d4a82bf497fae4158e7",
+      "questionCount": 2,
+      "decision": "pass",
+      "reasonZh": "实际局部研究文字支持问题/目标；没有从新闻、教学、个人兴趣或工具开发制造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-772e67b5763f5d14",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/index.html",
+          "rangesActuallyRead": [
+            [
+              145,
+              1351
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-5a3f2b576fd808f9",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/people.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-11057064c4d0ceda",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/contact.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-fae26d7a2938dd29",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-c0959d3cc6548a45",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/contact.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 2,
+      "labId": "ucsd-orthopaedic-surgery-lab-spine-neuromuscular-physiology-laboratory",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "3e6d7d5296d9cf5ec9245c68d0ae9d4f7f6d5e921cf05e737722e10b8342fb5a",
+      "rawSha256": "5bb63168f03f0d8a6b975c4a68c107380b4b1bd8c7fc283aa250f6f3f4961e42",
+      "packetSha256": "c5bee9709e8b5635f5828fdd3719fe053cefa52f3a640749e8d9e986b81d5125",
+      "questionCount": 3,
+      "decision": "pass",
+      "reasonZh": "实际局部研究文字支持问题/目标；没有从新闻、教学、个人兴趣或工具开发制造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-82af9c355ba98a84",
+          "sourceUrl": "https://ortho.ucsd.edu/research/spine-neuromuscular-physiology.html",
+          "rangesActuallyRead": [
+            [
+              314,
+              1402
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-4e7cb8c9e35e1b6f",
+          "sourceUrl": "https://ortho.ucsd.edu/research/epidemiology-bone-and-vascular-calcification.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-8efcaff7e0b0fede",
+          "sourceUrl": "https://ortho.ucsd.edu/research/muscle-biology.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-7f03a2b680abda4c",
+          "sourceUrl": "https://ortho.ucsd.edu/research/musculoskeletal-imaging-and-translational-engineering-laboratory.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-4387b074ea768ac9",
+          "sourceUrl": "https://ortho.ucsd.edu/research/neuromuscular-bioengineering.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 3,
+      "labId": "ucsd-pathology-lab-mana-parast-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "1e8590d2764eb1b3a246031793f711b6356f356b20e457e0ce9116a9ec8b52b7",
+      "rawSha256": "cfba6495cebb069917282a41d731c0453806de3c7b388b9da9f657d406e1844c",
+      "packetSha256": "e0a39436503db2f31d8cb577bb38466a4bc07ba0a6011ae571d56984fcd83e76",
+      "questionCount": 3,
+      "decision": "pass",
+      "reasonZh": "实际局部研究文字支持问题/目标；没有从新闻、教学、个人兴趣或工具开发制造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-a09301c51fc41364",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-ac7e84fda90bb588",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/about.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-9959ff0c5b89627c",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html",
+          "rangesActuallyRead": [
+            [
+              2209,
+              3036
+            ],
+            [
+              3605,
+              4452
+            ],
+            [
+              5137,
+              6037
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-20dfaec029f5ab97",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/people.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-fe66b0f07f0363c3",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-54b85a5b2e50244f",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/people.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 4,
+      "labId": "ucsd-pediatrics-lab-a-chavez-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "85aee8b8582825f4bdd98c9e9ef4062c78f74267ff5fd57bfb562432ea37c2d5",
+      "rawSha256": "d194e5ed48ece1567cdbdf65cbde1ed8fb488ee0efa0a31b4cb692913f3369f7",
+      "packetSha256": "c32c7868e8b3e31156102f81c64a49419240c0f4851dfeed62306e4ee7b33638",
+      "questionCount": 0,
+      "decision": "pass",
+      "reasonZh": "实际所读正文支持unchanged；命名修辞、宽泛方向或流程介绍不转换成问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-55d4e6327a506cde",
+          "sourceUrl": "https://chavezlab.com/",
+          "rangesActuallyRead": [
+            [
+              0,
+              3500
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-f5246e9349d4f8a8",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              131
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-5d9f78fe615342ef",
+          "sourceUrl": "https://profiles.ucsd.edu/alejandro.chavez",
+          "rangesActuallyRead": [
+            [
+              0,
+              35
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              450
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 5,
+      "labId": "ucsd-pediatrics-lab-grossfeld-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "ce316babf4c22124ff730bebeb41511acbad80736a25dd2ecb3e42dc43f76f96",
+      "rawSha256": "aa97f68427c64f8ed2a9ed21a9e9facc512ab2c94dc9598edf11da124cb01bd3",
+      "packetSha256": "c9bee8c3fc03ad47b1ff9ec357d7d1e2a0e4a364e893f426794dbad0d79977b5",
+      "questionCount": 2,
+      "decision": "pass",
+      "reasonZh": "实际局部研究文字支持问题/目标；没有从新闻、教学、个人兴趣或工具开发制造问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-93070f5ce1cdf232",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/index.html",
+          "rangesActuallyRead": [
+            [
+              0,
+              827
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-f5a4a5046618ec5a",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/about.html",
+          "rangesActuallyRead": [
+            [
+              240,
+              1232
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-48418be96570d55c",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/lab-members.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-f7d1100bd284ed0c",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-3ba6013009d17fb9",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 6,
+      "labId": "ucsd-pediatrics-lab-muotri-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "4e3075ae80011000975d1aa315542d20f08c774a0d69a4ca709264deac188bd9",
+      "rawSha256": "ea2cb20626ebf6f148a3e0a4e88de5dcd502544829c017ed316323aa03e62423",
+      "packetSha256": "044a34cb3ef771adae24162602506f090bbd72b67ac1bbcd6aa6da25c884c1f9",
+      "questionCount": 1,
+      "decision": "pass",
+      "reasonZh": "SUPPORT THE MUOTRI LAB’S RESEARCH与Current research projects明确lab项目，引用完整实际段落；只问脑类器官/自闭症等社交障碍中的神经网络机制，不采用个人“人类独特性”宏观设问或药物临床疗效。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-15d953271be72e2f",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/muotri-lab/index.html",
+          "rangesActuallyRead": [
+            [
+              1572,
+              2872
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-081ef51cd8ee14b5",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 7,
+      "labId": "ucsd-pediatrics-lab-winzeler-lab",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "fad74dd22489ab9049628b258f9495545954db929d4fef227b1b4c7479e5e73d",
+      "rawSha256": "0f3a5444c03912fd78729782c966064511044d8956f4f024b1c8788434c7b2e9",
+      "packetSha256": "8324187202016443520486875492c46e420cc140919889b64ec9869437f16ccd",
+      "questionCount": 1,
+      "decision": "pass",
+      "reasonZh": "Priyan Kapoor成员段明确My work at the Winzeler lab，并以I use yeast解释研究目标；问题原字符串“成员项目：”保留，局部酵母范围清楚，不当全组统一目标。该段in vitro evolution是真实lab项目方法，本QA不修改方法字段。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-c0c315f22a7bd48a",
+          "sourceUrl": "https://winzeler.ucsd.edu/winzeler/",
+          "rangesActuallyRead": [
+            [
+              5660,
+              6583
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-f5246e9349d4f8a8",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        },
+        {
+          "sourceId": "src-45fa95d3f5b9a413",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+          "rangesActuallyRead": [],
+          "scope": "not reread: local_context_read_remainder_excluded; 已核对列出范围；目录、人员/联系/导航或具名邻近实验室仅作为边界，未读余段不作本实体研究问题否定。"
+        },
+        {
+          "sourceId": "src-1e69069c157116a8",
+          "sourceUrl": "https://winzeler.ucsd.edu/winzeler/",
+          "rangesActuallyRead": [],
+          "scope": "not reread: full_packet_text_read; 已读该来源整段实体研究/介绍主文或短历史字段。"
+        }
+      ]
+    },
+    {
+      "recheckIndex": 8,
+      "labId": "ucsd-physics-research-site-alex-frano",
+      "reviewedAt": "2026-10-16T08:33:27.292801+00:00",
+      "inputItemSha256": "345c32097a16285b5a791082cc73805581f5c83735b18e9de3f1518f44d44b2d",
+      "rawSha256": "4348af38a812cdb5a6fa6bc201ee8e90e0b0eff1a70e14f494c875aeb8cfe011",
+      "packetSha256": "992ac70044f15f2db95b9d8708dd703f771c58c8b965afceea2541d89812088b",
+      "questionCount": 0,
+      "decision": "pass",
+      "reasonZh": "实际所读正文支持unchanged；命名修辞、宽泛方向或流程介绍不转换成问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-8cd151f7baf84486",
+          "sourceUrl": "https://xlab.ucsd.edu/",
+          "rangesActuallyRead": [
+            [
+              0,
+              3500
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-7ca49dcf8d09e568",
+          "sourceUrl": "https://physics.ucsd.edu/people/profile?id=afrano",
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        },
+        {
+          "sourceId": "src-56e56df479d5870a",
+          "sourceUrl": "https://physics.ucsd.edu/api/profiles/faculty",
+          "rangesActuallyRead": [
+            [
+              0,
+              350
+            ]
+          ],
+          "scope": "actual quoted research/context or unchanged local introduction; other parts not reread"
+        }
+      ]
+    }
+  ],
+  "sourceBindings": [
+    {
+      "sourceId": "src-772e67b5763f5d14",
+      "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/index.html",
+      "sourceObservedAt": "2026-10-16T01:02:59+00:00",
+      "bodySha256": "8c96c9dbc1c187e4c1d5ec3b74df73bcf68a5e5fa69c612964462392b2e00750",
+      "metadataSha256": "58215b66a07d9c6fbc93a54e16a2471216b59a876de050e63fdc2d64a8d9ebaf",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5b8aced2fe263f7686fa9a3a5327689a07a611356c08ed0e6bee73f9011431d2.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5b8aced2fe263f7686fa9a3a5327689a07a611356c08ed0e6bee73f9011431d2.json"
+    },
+    {
+      "sourceId": "src-82af9c355ba98a84",
+      "sourceUrl": "https://ortho.ucsd.edu/research/spine-neuromuscular-physiology.html",
+      "sourceObservedAt": "2026-10-16T01:05:13+00:00",
+      "bodySha256": "d963fa9aaf569685f8da73076696e490e1c8f0d7d8622a4ea98fc527fe0af4b7",
+      "metadataSha256": "08f3f0c9d8f478923ee63f0511a15eaf9a2a971423f587ffb35de4975f00d986",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e9fd396bcb28977dd6551e2084f4cde140c709a237a83faf703ee3a5f4889b86.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e9fd396bcb28977dd6551e2084f4cde140c709a237a83faf703ee3a5f4889b86.json"
+    },
+    {
+      "sourceId": "src-9959ff0c5b89627c",
+      "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/projects.html",
+      "sourceObservedAt": "2026-10-16T01:37:21+00:00",
+      "bodySha256": "796acb2868de89dba7921343b2b10184612baa5943ced3dae0078612319c6c7e",
+      "metadataSha256": "654bd0b4817b376c9e00633c3e19e4b1302777bfd4ab5a2b7bd2ccf420c2cc79",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dfb5c9045e3f65bc155c1a1726da74e63b41bc671300b36b5e0f8a694995f842.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dfb5c9045e3f65bc155c1a1726da74e63b41bc671300b36b5e0f8a694995f842.json"
+    },
+    {
+      "sourceId": "src-93070f5ce1cdf232",
+      "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/index.html",
+      "sourceObservedAt": "2026-10-16T01:02:55+00:00",
+      "bodySha256": "e8de2f6d3e743686b1d53425a8d7379d268a501fb9210cb83919a7fa25bd5e6a",
+      "metadataSha256": "5ed248885f5a12d7441d533eaa9cb53ac2f5222a01423342b923f61864afa342",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6139bdc434e1126b265c367def26cb99eaaadff8e6370f7b6b987dfed6ccc765.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6139bdc434e1126b265c367def26cb99eaaadff8e6370f7b6b987dfed6ccc765.json"
+    },
+    {
+      "sourceId": "src-f5a4a5046618ec5a",
+      "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/about.html",
+      "sourceObservedAt": "2026-10-16T01:33:50+00:00",
+      "bodySha256": "58a92da893bb875edd48dd23c43668068a77bc63a84b95299973412908925f28",
+      "metadataSha256": "352951d80703899ef440112e6624e223e52b565beef75cb6e8beed43bd2b460f",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c12d03522558b909e4ea377f522dfbe99d548a912e86758c3fa5b32545bdaf36.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c12d03522558b909e4ea377f522dfbe99d548a912e86758c3fa5b32545bdaf36.json"
+    },
+    {
+      "sourceId": "src-15d953271be72e2f",
+      "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/muotri-lab/index.html",
+      "sourceObservedAt": "2026-10-16T01:02:59+00:00",
+      "bodySha256": "34b63f3346ae6bc675f64539f15c0775ea36e1d7415f450f37ac9f412c3191ec",
+      "metadataSha256": "5dc55367c2ee26327d9518aa031fac6295309970a43372b93e063b4dd02cf102",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/76b2b6ac9896afe2fa423f6b834e186a65ad1f4e49a05590a9016dfaaa74f823.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/76b2b6ac9896afe2fa423f6b834e186a65ad1f4e49a05590a9016dfaaa74f823.json"
+    },
+    {
+      "sourceId": "src-c0c315f22a7bd48a",
+      "sourceUrl": "https://winzeler.ucsd.edu/winzeler/",
+      "sourceObservedAt": "2026-10-16T00:59:58+00:00",
+      "bodySha256": "ecb5618363e0f0e5a7e5cdfb32e5715d31a55733fca54fdac62a27a44e744d13",
+      "metadataSha256": "59147b4066a322d560ffe1e5ea7f0bb86d036144696bc108f6d30ddd8ad73fb9",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7e481838c31d5c33adb523c9405ab8bd65073b65ec5288971fe890c2f986cb72.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7e481838c31d5c33adb523c9405ab8bd65073b65ec5288971fe890c2f986cb72.json"
+    }
+  ],
+  "readingLimitsZh": "逐条新增问句的实际packet主文及局部上下文已读，unchanged读取列出研究介绍范围。空source范围只复核作者的边界/覆盖说明，不声称重读该source全文；其它20项未审。",
+  "networkRequests": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorSharedWrites": 0,
+  "draftOnlyNotApplied": true
+}

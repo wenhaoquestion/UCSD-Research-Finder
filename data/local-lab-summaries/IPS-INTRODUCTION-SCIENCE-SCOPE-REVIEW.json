@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:47:06+00:00",
+  "verdict": "PROJECT_RESEARCH_SUPPORTED_BASELINE_MAPPING_PENDING",
+  "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+  "networkRequestsByReview": 0,
+  "recordsPacketsCodeCollectorEdited": false,
+  "fullActualHtmlAndPrimaryBodiesRead": true,
+  "sources": [
+    {
+      "sourceId": "src-e33801eceaf7ffc2",
+      "requestedUrl": "https://ips.ucsd.edu/additional_info/intro/intro_gen.html",
+      "sourceUrl": "https://ips.ucsd.edu/additional_info/intro/intro_gen.html",
+      "observedAt": "2026-10-16T05:42:54+00:00",
+      "bodySha256": "66f9d1a4e89b4d6dd270d293878d00a43e9b5e9ee388ddafc468de957d9d1769",
+      "byteCount": 2383,
+      "visibleTextCharacters": 1835,
+      "actualCacheHashAndOriginalSidecarMatch": true,
+      "actualFullContentDOMTextMatchesPacket": true,
+      "scope": "Public explanation of IPS sky-map projections; useful data-display context, not independent named-lab scope."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "requestedUrl": "https://ips.ucsd.edu/additional_info/intro/intro_tech.html",
+      "sourceUrl": "https://ips.ucsd.edu/additional_info/intro/intro_tech.html",
+      "observedAt": "2026-10-16T05:42:55+00:00",
+      "bodySha256": "b131c3938453273d17faafbc79235576965a933abb5031f4885c13a5d214a291",
+      "byteCount": 24398,
+      "visibleTextCharacters": 16310,
+      "actualCacheHashAndOriginalSidecarMatch": true,
+      "actualFullContentDOMTextMatchesPacket": true,
+      "scope": "Explicit Solar Group at A&A near-real-time solar-wind reconstruction/forecast project, using IPS observations supplied by ISEE Nagoya."
+    }
+  ],
+  "candidateProjectSummaryZh": "该无日期技术介绍描述 A&A Solar Group 的太阳风重建项目：利用名古屋大学 ISEE 提供的行星际闪烁（IPS）资料，重建太阳风密度与速度结构，研究近地太阳风条件及扰动到达。页面列出运动学模型、迭代最小二乘拟合、日球层层析及航天器观测数据比较；其与 baseline Space Weather Laboratory 的现行实体映射仍待官方目录核实。",
+  "candidateResearchQuestionsZh": [
+    "如何由沿视线积分的 IPS 观测重建太阳风密度与速度结构？",
+    "如何以太阳风重建预测近地条件和扰动到达？"
+  ],
+  "candidateTopicsZh": [
+    "IPS 太阳风重建",
+    "近地空间天气与太阳风扰动",
+    "共转及随时间变化的太阳风模型"
+  ],
+  "candidateMethodsZh": [
+    "运动学太阳风模型",
+    "迭代最小二乘拟合",
+    "日球层层析重建",
+    "与航天器观测数据比较"
+  ],
+  "optionalDisplayMethodsZh": [
+    "鱼眼（等距方位）与 Hammer-Aitoff 天空图投影，仅属数据展示"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "an ongoing project in the Solar Group at A&A",
+      "supports": [
+        "identity"
+      ],
+      "scope": "Named project/group scope only; does not itself name the baseline Space Weather Laboratory."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "Our goal is to forecast solar wind conditions in the near-Earth environment, and predict the arrival of solar wind structures at Earth.",
+      "supports": [
+        "research",
+        "topics"
+      ],
+      "scope": "Project goal stated at an unknown content date; not a claim of present-day operational forecast delivery."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "The reconstructions of the solar wind are based on a kinematic model of the solar wind.",
+      "supports": [
+        "methods"
+      ],
+      "scope": "Project reconstruction method."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "The reconstruction of the solar wind is based on an iterative least-squares algorithm.",
+      "supports": [
+        "methods"
+      ],
+      "scope": "Project inversion/fitting method."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "We use a tomographic technique to disentangle this line-of-sight smearing.",
+      "supports": [
+        "methods"
+      ],
+      "scope": "Project's line-of-sight reconstruction, explicitly called heliospheric tomography later."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "We use observations from spacecraft instruments to provide corraborative space weather data.",
+      "supports": [
+        "methods"
+      ],
+      "scope": "Use/comparison of spacecraft data, not ownership or operation of spacecraft."
+    },
+    {
+      "sourceId": "src-04c9b7bf1a842574",
+      "quote": "We show forecast results from two different models: a corotating (or time-independent ) model and a time-dependent model.",
+      "supports": [
+        "methods",
+        "topics"
+      ],
+      "scope": "Two modelling choices described by this project."
+    },
+    {
+      "sourceId": "src-e33801eceaf7ffc2",
+      "quote": "'fish-eye' and Hammer-Aitoff projections.",
+      "supports": [
+        "methods"
+      ],
+      "scope": "Sky-map display/projection method only; not an additional laboratory experiment."
+    }
+  ],
+  "dateBoundary": {
+    "sourceContentDates": [],
+    "explicitPageUpdateDateFound": false,
+    "publicationReferenceYearsAreNotPageUpdateDates": true,
+    "undatedCurrentOngoingTextIsNotProofOf2026Operation": true,
+    "collectionTimesAreNotContentUpdateTimes": true,
+    "currentInstrumentOperationOrForecastPerformanceInferred": false
+  },
+  "scopeExclusions": [
+    {
+      "section": "The ISEE IPS Project",
+      "decision": "Do not assign Nagoya's antennas, four sites, 327 MHz observing system, seasonal operation or data-production schedule to UCSD. The project uses externally supplied data."
+    },
+    {
+      "section": "IPS g-level",
+      "decision": "Cambridge attribution and 1964/1982/1986 historical method context do not establish a UCSD invention or this named lab's current instrument operation."
+    },
+    {
+      "section": "IPS Velocity",
+      "decision": "The historical UCSD pioneer statement does not establish current ownership/operation of multiple radio antennas for this baseline lab."
+    },
+    {
+      "section": "ISEE superlative/current wording",
+      "decision": "Do not repeat the undated only-operational-system-in-the-world or reliably/continuously claim as a verified present-day fact."
+    },
+    {
+      "section": "Spacecraft comparisons",
+      "decision": "SOHO/LASCO and ACE are described as corroborative data sources. No current mission status, operation, ownership or measurement performance is inferred."
+    },
+    {
+      "section": "External links and references",
+      "decision": "No foreign sites, instrument links, examples, animations, publications or cited papers were followed."
+    }
+  ],
+  "baselineMapping": {
+    "accepted": false,
+    "currentTargetRawChanged": false,
+    "currentRawSha256AtRead": "866fb9eafb7d2a719921a1f0c83299dd063af6b89e7eb339097aef497759dac3",
+    "historicalMappingSourceId": "src-cc7175efdb0eca8f",
+    "historicalMappingSourceUrl": "https://astro.ucsd.edu/research/labs/index.html",
+    "historicalMappingObservedAt": "2026-10-07T22:55:23+00:00",
+    "historicalLocalizedName": "Space Weather Laboratory",
+    "historicalLinkEvidence": "link: space weather -> https://ips.ucsd.edu",
+    "historicalSourceLimitation": "Retained historical manual card excerpt is partial and has adjacent prior-card material. Do not transfer the preceding Steve Boggs/NuStar context or assume a current complete directory card.",
+    "reason": "New introductions identify a Solar Group project, not an explicit current entity named Space Weather Laboratory. Historical official card/link is a relation clue, not current mapping proof."
+  },
+  "currentDirectoryCheck": {
+    "url": "https://astro.ucsd.edu/research/labs/index.html",
+    "metadataInspectedAt": "2026-10-16T05:46:27+00:00",
+    "queueUpdatedAt": "2026-10-16T05:46:26+00:00",
+    "queueSha256": "f5efdcf74054a45fcdf863f017ef1972f6ac5c85187e19eef606fced004e48e7",
+    "exactQueueEntries": 0,
+    "exactActualQueueAttempts": 0,
+    "exactGapEntries": 0,
+    "exactWireEvents": 0,
+    "collectorBodyExists": false,
+    "ownBodyExists": false,
+    "requestMadeByReviewer": false
+  },
+  "conditionalNextStep": "After the separate strict baseline-field-source admission and normal one-target public check by parent, inspect the actual current official directory card. A localized Space Weather Laboratory name and IPS link/relationship may resolve the baseline mapping; retain actual new date/hash/quote. If inaccessible or ambiguous, retain concrete access/mapping blocker and supported Solar Group project evidence separately. No automatic lab acceptance or stable-ID rename/alias.",
+  "rawStatusUpgradeRecommendedNow": false
+}

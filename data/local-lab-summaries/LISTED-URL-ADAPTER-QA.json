@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:17:25+00:00",
+  "verdict": "PASS",
+  "scope": "Independent finite review of only the new literal-listed-URI adapter and planner changes, and the five added tests. No scientific content reread or 48-record metadata assessment.",
+  "reviewedFiles": {
+    "scripts/local_lab_summary_gaps.py": "5c2121c2ab90481e8836e0230dafaf0b194453aa554a4e7f7ceaf62aa2948dfa",
+    "tests/test_local_lab_shared_adapter.py": "d95ae9170ff1b27271d67f3d19bf4f4c26b4d5fbaf89dfaa3045f9e26ac354ea",
+    "tests/test_local_lab_summaries.py": "15bf3e999c835d191c0bcaf60e8b33ed931ea05f87dadbef5dbfa57d4fafd514"
+  },
+  "pinnedCollectorDependenciesAtReview": {
+    "collect_ucsd_coverage.py": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "refresh_labs.py": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+    "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+  },
+  "checks": [
+    {
+      "area": "exact source pins and isolated module",
+      "result": "PASS",
+      "code": "scripts/local_lab_summary_gaps.py:195",
+      "evidence": "All required pinned source bytes are verified into a complete list before the compile loop. Only the loaded summary-side module.safe_url is replaced after compilation; original collector files and shared coordinator code are unchanged."
+    },
+    {
+      "area": "public-origin validation plus literal request URI",
+      "result": "PASS",
+      "code": "scripts/local_lab_summary_gaps.py:224",
+      "evidence": "The retained pinned safe_url validator runs first. Valid requests preserve original scheme and www host, quote the raw path without introducing canonical aliases, preserve query, and remove fragment. file/local/IP/credentials/nonordinary ports remain rejected by the pinned validator."
+    },
+    {
+      "area": "robots and page redirects under shared lock",
+      "result": "PASS",
+      "code": "tests/test_local_lab_shared_adapter.py:29",
+      "evidence": "Mocked transport asserts held == [url] for each actual HTTP robots request, HTTPS robots redirect target, HTTP page, and HTTPS page redirect target. Source request remains HTTP; only observed 301 contributes the redirect chain and HTTPS final URL."
+    },
+    {
+      "area": "stable per-ID reviewed admission binding",
+      "result": "PASS",
+      "code": "scripts/local_lab_summary_gaps.py:89",
+      "evidence": "Admission requires exact packet.listedWebsite == reviewed url and a matching relatedCapture tuple for actual requested URI, final source URL, original observedAt and body SHA. Host/path/query are constrained; hydrate must succeed, page identity must be confirmed, transport must be ok, accepted_lab_group must hold, and listed URL must not already have been directly checked. Hydrate retains the unresolved mismatch exclusion."
+    },
+    {
+      "area": "actual request availability and denial boundary",
+      "result": "PASS",
+      "code": "scripts/local_lab_summary_gaps.py:68",
+      "evidence": "The literal-listed-gap namespace deduplicates by request_key, separately from content-folded discoveries. Availability uses meta.sourceUrl (through checked_url/request_key) rather than a capture dictionary URL or final-URL content key, so an HTTPS related capture cannot close an HTTP original request gap. An actual original-URI robots denial stays access_boundary_do_not_bypass with no live candidate."
+    },
+    {
+      "area": "new regression coverage",
+      "result": "PASS",
+      "code": "tests/test_local_lab_summaries.py:86",
+      "evidence": "The five added tests cover original HTTP/www preservation and public rejection, actual HTTP page/robots redirects with locks, supported research not closing an original-address gap, stale capture/mismatch rejection, and original-address access-denial no-retry behavior."
+    }
+  ],
+  "actionableIssues": [],
+  "tests": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_local_lab_shared_adapter.py -v",
+      "testsRun": 11,
+      "passed": 11,
+      "failures": 0,
+      "errors": 0,
+      "reportedSeconds": 0.194
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_local_lab_summaries.py -v",
+      "testsRun": 42,
+      "passed": 42,
+      "failures": 0,
+      "errors": 0,
+      "reportedSeconds": 0.08
+    }
+  ],
+  "totalTestsRun": 53,
+  "totalTestsPassed": 53,
+  "newRegressionTestsReviewed": 5,
+  "parentReportedFullSuiteCountNotIndependentlyClaimed": 118,
+  "reviewedListedGapsFilePresentAtReview": false,
+  "limitations": [
+    "Production plan() was not run: it materializes gap-plan.json. Planner execution was verified only with isolated temporary test fixtures.",
+    "The 48 real related-address metadata associations and their reviewed-listed-url-gaps.json decisions belong to the separately assigned review; this report assesses the admission mechanism, not those individual decisions.",
+    "No live HTTP behavior was exercised; redirect and gate behavior was verified through mocked transport and gate fixtures."
+  ],
+  "networkRequestsMade": 0,
+  "collectorWrites": 0,
+  "sharedCoordinatorWrites": 0,
+  "recordsOrPacketsChanged": 0,
+  "productionPlanRuns": 0,
+  "durableFilesWritten": [
+    "data/local-lab-summaries/LISTED-URL-ADAPTER-QA.md",
+    "data/local-lab-summaries/LISTED-URL-ADAPTER-QA.json"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-evans-lab",
+  "status": "supported",
+  "summaryZh": "历史官方摘要说明 Evans lab 研究中胚层前体如何逐步确定为心脏祖细胞，并进一步分化为不同心脏谱系。当前目标返回 HTTP 错误，方法没有明确证据。",
+  "researchQuestions": [
+    "中胚层前体如何逐步定向成为心脏祖细胞，再被指定为不同心脏细胞谱系？"
+  ],
+  "topics": [
+    "心脏祖细胞",
+    "心脏细胞谱系决定"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-819287c7dc1c3600",
+      "quote": "The Evans lab is trying to understand the stepwise process by which mesodermal precursors become committed to cardiac progenitors, and then specified to become distinct cardiac lineages.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-819287c7dc1c3600",
+      "quote": "The Evans lab is trying to understand the stepwise process by which mesodermal precursors become committed to cardiac progenitors, and then specified to become distinct cardiac lineages.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "研究依据保存的官方历史摘要，未确认当前研究更新。",
+    "方法未明确。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "研究方法待核（限本轮已审阅材料）：已读320字符历史Evans摘要及完整Pharmacology faculty目录；历史摘要给细胞谱系问题，当前目录只姓名/联系，其他教授的proteomics等不可转给Evans。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:11:43.035Z",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:22:02.177525+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "历史官方引文完整明示Evans lab trying to understand的过程目标，保留步骤与命运限定；不宣称为当前日期项目。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-819287c7dc1c3600",
+        "sourceUrl": "https://pharmacy.ucsd.edu/faculty/evans",
+        "sourceObservedAt": "2026-10-07T22:53:49+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            320
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-03e9a43b91893370",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty.html",
+        "sourceObservedAt": "2026-10-16T00:57:28+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-819287c7dc1c3600",
+        "quote": "The Evans lab is trying to understand the stepwise process by which mesodermal precursors become committed to cardiac progenitors, and then specified to become distinct cardiac lineages.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-07T22:53:49+00:00",
+        "bodySha256": null,
+        "bodySha256UnavailableReason": "当前packet仅保留历史官方字段文字摘录，未提供独立HTML bodySHA；不伪造body hash，不宣称原始HTML已复核。"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:11:43.035Z",
+    "previousRecordReviewedAt": "2026-10-16T08:22:02.177525+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读320字符历史Evans摘要及完整Pharmacology faculty目录；历史摘要给细胞谱系问题，当前目录只姓名/联系，其他教授的proteomics等不可转给Evans。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-819287c7dc1c3600",
+        "sourceUrl": "https://pharmacy.ucsd.edu/faculty/evans",
+        "sourceObservedAt": "2026-10-07T22:53:49+00:00",
+        "bodySha256": null,
+        "textSha256": "cbd6db264e0648fb6cfb4532f82191e7340e7169ea875c6ce9e20b48c9cea5f5",
+        "textCharacters": 320,
+        "rangesActuallyRead": [
+          [
+            0,
+            320
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-03e9a43b91893370",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty.html",
+        "sourceObservedAt": "2026-10-16T00:57:28+00:00",
+        "bodySha256": "3837b802fb5d4dcf21f3d6cd52ecafb84b81865eb66b957f5102d3be33dd656f",
+        "textSha256": "2155a9708a55513d6438495859e83fcfe4b6aa6520513d2d236ca0013912a7b5",
+        "textCharacters": 4064,
+        "rangesActuallyRead": [
+          [
+            0,
+            4064
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

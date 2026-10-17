@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:32:11+00:00",
+  "verdict": "PASS_EXACT_LOADED_COMPOSITION_WITH_PRESERVED_D1_D2_LIMITATIONS",
+  "networkRequestsMade": 0,
+  "collectorSharedReadinessPacketRawWrites": 0,
+  "changedFiles": [
+    "tests/test_local_lab_shared_cooldown.py",
+    "data/local-lab-summaries/COLLECTOR-REVISION-A071-REVIEW.md",
+    "data/local-lab-summaries/COLLECTOR-REVISION-A071-REVIEW.json"
+  ],
+  "processObservation": {
+    "path": "data/local-lab-summaries/collector-process-observation-entry-shell-0528.json",
+    "observedAt": "2026-10-16T05:28:23+00:00",
+    "pid": 29363,
+    "startedAt": "2026-10-16T05:27:06+00:00",
+    "pidProbeEvidence": "29363 01:22 /opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /private/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py --cache /private/tmp/ucsd-research-20261016/.cache/coverage-20261016 --workers 8 --max-pages 250",
+    "observationFileSha256": "ab5cefecf6ceff1c251f58d56a314b4155b941e0e9e88a18d5ba3a89d9499644",
+    "freshPSNotClaimedByThisReview": true
+  },
+  "sourceSnapshotReceipt": {
+    "path": "data/local-lab-summaries/COLLECTOR-A071-SOURCE-SNAPSHOTS.json",
+    "snapshottedAt": "2026-10-16T05:28:38+00:00",
+    "sha256": "60c651b4ff9b3cf999f8081f83c176290da22cd7676828e77c874879f74b2275"
+  },
+  "verifiedRequiredSources": [
+    {
+      "name": "collect_ucsd_coverage.py",
+      "sha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+      "byteCount": 66415
+    },
+    {
+      "name": "network_coordination.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "byteCount": 12160
+    },
+    {
+      "name": "collection_lock.py",
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+      "byteCount": 423
+    },
+    {
+      "name": "collection_scope.py",
+      "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+      "byteCount": 15577
+    },
+    {
+      "name": "refresh_labs.py",
+      "sha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b.py",
+      "byteCount": 61821
+    },
+    {
+      "name": "refresh_faculty_directories.py",
+      "sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+      "byteCount": 42330
+    },
+    {
+      "name": "lab_destinations.py",
+      "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+      "byteCount": 1501
+    }
+  ],
+  "astComparisons": [
+    {
+      "module": "collect_ucsd_coverage",
+      "oldSha256": "22ad544185024a96f0bde83a7f43b275c2424b4cafbf157327bfb9677b398d9c",
+      "newSha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+      "changedCommonDefinitions": [
+        "Queue",
+        "analyze",
+        "analyze_profile_appointment",
+        "collect",
+        "write_report"
+      ],
+      "unchangedCommonDefinitions": [
+        "PublicFetcher",
+        "WireHeaders",
+        "academic_title_clause",
+        "atomic_json",
+        "audit_queue_scope",
+        "authentication_target",
+        "discover_lab_identity_pages",
+        "discovery_links",
+        "eligible_directory",
+        "faculty_table_rows",
+        "main",
+        "mark_scope_excluded",
+        "official",
+        "profiles_appointment",
+        "profiles_identity_heading",
+        "reassess_scope",
+        "replay_identity_discovery",
+        "replay_profile_qualifications",
+        "retryable_fetch",
+        "reusable_robots",
+        "robots_retry_at",
+        "safe_url",
+        "transient_response",
+        "url_key"
+      ],
+      "addedDefinitions": [
+        "discover_math_profile_metadata",
+        "discover_profile_websites",
+        "replay_literal_uri_discovery"
+      ],
+      "removedDefinitions": [],
+      "nonDefinitionTopLevelStatementsIdentical": true,
+      "newDefinitionLines": {
+        "atomic_json": 47,
+        "official": 63,
+        "safe_url": 68,
+        "url_key": 81,
+        "authentication_target": 86,
+        "transient_response": 91,
+        "retryable_fetch": 103,
+        "robots_retry_at": 112,
+        "reusable_robots": 116,
+        "eligible_directory": 125,
+        "discovery_links": 134,
+        "faculty_table_rows": 144,
+        "discover_math_profile_metadata": 169,
+        "profiles_identity_heading": 220,
+        "profiles_appointment": 232,
+        "academic_title_clause": 274,
+        "WireHeaders": 278,
+        "PublicFetcher": 284,
+        "Queue": 479,
+        "discover_lab_identity_pages": 591,
+        "replay_identity_discovery": 620,
+        "mark_scope_excluded": 639,
+        "audit_queue_scope": 651,
+        "reassess_scope": 674,
+        "analyze_profile_appointment": 696,
+        "discover_profile_websites": 709,
+        "replay_profile_qualifications": 726,
+        "replay_literal_uri_discovery": 745,
+        "analyze": 819,
+        "write_report": 887,
+        "main": 925,
+        "collect": 938
+      },
+      "changedQueueMethods": [
+        "seed"
+      ]
+    },
+    {
+      "module": "refresh_labs",
+      "oldSha256": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "newSha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "changedCommonDefinitions": [
+        "canonical_url"
+      ],
+      "unchangedCommonDefinitions": [
+        "DOM",
+        "Fetcher",
+        "Node",
+        "apply_scripps_profile_sections",
+        "apply_ucsd_profiles_sections",
+        "atomic_capture",
+        "block_for_link",
+        "clean",
+        "directory_seeds",
+        "discover_faculty",
+        "every_node",
+        "evidence",
+        "evidence_items",
+        "generic_lab_name",
+        "has_value",
+        "is_lab_destination",
+        "links",
+        "load_previous_capture",
+        "make_lab",
+        "merge_observed_fields",
+        "merge_profile_observation",
+        "normalized",
+        "now",
+        "observation_time",
+        "observed_date",
+        "parse_directory",
+        "parse_personal_site",
+        "parse_profile",
+        "person_matches",
+        "run",
+        "select_slow_profiles",
+        "unique_values",
+        "valid_lab_label"
+      ],
+      "addedDefinitions": [],
+      "removedDefinitions": [],
+      "nonDefinitionTopLevelStatementsIdentical": true,
+      "newDefinitionLines": {
+        "clean": 47,
+        "normalized": 51,
+        "now": 55,
+        "observed_date": 59,
+        "canonical_url": 64,
+        "Node": 75,
+        "DOM": 110,
+        "links": 154,
+        "Fetcher": 159,
+        "evidence": 253,
+        "person_matches": 257,
+        "valid_lab_label": 266,
+        "is_lab_destination": 271,
+        "make_lab": 287,
+        "apply_ucsd_profiles_sections": 319,
+        "every_node": 337,
+        "apply_scripps_profile_sections": 345,
+        "parse_profile": 375,
+        "block_for_link": 447,
+        "parse_directory": 465,
+        "directory_seeds": 504,
+        "discover_faculty": 525,
+        "select_slow_profiles": 591,
+        "parse_personal_site": 610,
+        "unique_values": 673,
+        "evidence_items": 684,
+        "observation_time": 688,
+        "has_value": 700,
+        "generic_lab_name": 704,
+        "merge_observed_fields": 711,
+        "merge_profile_observation": 751,
+        "load_previous_capture": 785,
+        "atomic_capture": 798,
+        "run": 813
+      }
+    }
+  ],
+  "checks": [
+    {
+      "area": "public_origin_and_exact_uri",
+      "status": "preserved_with_literal_uri_correction",
+      "finding": "safe_url AST is identical. Only imported canonical_url changes: HTTP and www.cogsci/www.jacobsschool are preserved rather than upgraded/folded. Existing adapter validates via pinned safe_url then preserves wire scheme/netloc/path/query. New tests confirm invalid protocols, local/IP, credentials and8080 remain rejected.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 68
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b.py",
+          "line": 64
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+          "line": 341
+        }
+      ]
+    },
+    {
+      "area": "network_and_locking",
+      "status": "AST_identical",
+      "finding": "Entire PublicFetcher and WireHeaders unchanged; every robots/page/redirect wire stays inside real v2 request_slot; record_response runs before releasing lock including Exception. Other5 dependency snapshots match prior22ad.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "area": "robots_tls_caps_retry_after_redirects",
+      "status": "preserved_with_existing_D1_D2_limits",
+      "finding": "TLS-verified system curl unchanged, no insecure/automatic location flag; protocol allowlist HTTP/HTTPS,300k robots and2M default page caps,6 robots redirect iterations/7 page redirect iterations, each target revalidates safe URL and page authentication/robots. Redirect Retry-After defers target host before target robots/page; fake-clock real-gate tests exercise these paths.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 321
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 344
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 403
+        }
+      ]
+    },
+    {
+      "area": "cache_observed_at",
+      "status": "preserved",
+      "finding": "_paths/_load/_rules/fetch AST unchanged. Warm success reuses exact old body/meta/observedAt without new gate or wire; HTTP/HTTPS literal origin caches/robots remain distinct and actual redirect metadata preserves www.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 302
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 403
+        }
+      ]
+    },
+    {
+      "area": "summary_loader_composition",
+      "status": "exact7_verified",
+      "finding": "load_fetcher validates all seven expected hashes before compiling in dependency order; compiled refresh_labs063ae feeds collector imported canonical_url, then existing summary public-origin wire-preservation wrapper. Queue/collect/discovery functions are imported only and not instantiated/invoked by summary execute. Adapter bytes unchanged in this task.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+          "line": 341
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+          "line": 452
+        }
+      ]
+    },
+    {
+      "area": "literal_uri_discovery_replay",
+      "status": "collector_discovery_change_not_summary_fetch_path",
+      "finding": "New replay reads hash-verified old captures, retains original observation metadata, queues literal URI leads affected by former HTTP/www normalization and saves discovery metadata; queue seeds now carry configured depth/identityDepth. It does not make cached success prove a new request, accepted alias/PI, or bypass PublicFetcher/ScopePolicy.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 745
+        },
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 938
+        }
+      ]
+    },
+    {
+      "area": "math_structured_metadata_discovery",
+      "status": "collector_discovery_change_not_faculty_acceptance",
+      "finding": "New Math endpoint adapter accepts bounded public captured JSON only at exact math host/export/people/faculty path,depth<=1,matching hash and same final endpoint; only literal /people/profiles/<slug> paths queued. Row titles/emails/date/hash/pointers are discovery observations, facultyAppointmentsAsserted stays0; not a faculty roster or current PI claim. Summary does not invoke this routine.",
+      "references": [
+        {
+          "file": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b.py",
+          "line": 169
+        }
+      ]
+    }
+  ],
+  "preservedLimitations": [
+    {
+      "id": "D1",
+      "label": "robots404/410 challenge classified not_found",
+      "upstreamStatus": "unchanged_open",
+      "summaryStatus": "existing_local_compensation_verified",
+      "finding": "_rules sets error=access_challenge but404/410 classification remainsnot_found. Bare collector may continue to page. Existing summary TrackedFetcher._rules returns anunavailable copy, blocks page and preserves original disk404/410/status/observedAt/retrievedEpoch; inherited A071 test covers both statuses and no600s repeat wire. Do not claim upstream fixed.",
+      "test": "test_robots_404_and_410_challenge_blocks_page_without_rewriting_observation"
+    },
+    {
+      "id": "D2",
+      "label": "mixed503/curl63 transient priority",
+      "upstreamStatus": "unchanged_open_bounded",
+      "summaryStatus": "no_collector_queue_retry_instantiated",
+      "finding": "transient_response checks503 RETRY beforecurl63 hard-error filter, so the mixed response is retryable until attempts3. New explicit fake fixture reproduces helper outcome and manually calls private fetcher at deadlines, verifying max3 robots wires/day cache,300k cap,no page probe. Summaryexecute calls each selected candidate once, doesnot instantiate Queue or automatic queue retries; no widened byte cap or assertion this mixedresponse occurred live.",
+      "test": "test_documented_d2_mixed_503_curl63_still_has_bounded_cache_retries"
+    }
+  ],
+  "oldTestPreservation": {
+    "beforeSha256": "6919115a1e9b11e59ab9719f10c2f33cb8bad07415c9d21e7b9833da451a322a",
+    "afterSha256": "d1f19459499a279461de220997e30aa8175b265b2d331d7885f687a4e9437c8a",
+    "changedOldClasses": [],
+    "addedClasses": [
+      "CollectorA071SharedCooldownAdapterTests"
+    ]
+  },
+  "offlineTests": {
+    "fixture": "CollectorA071SharedCooldownAdapterTests",
+    "exactA071Cases": 19,
+    "caseNames": [
+      "test_all_5xx_default_cooldowns_survive_the_summary_adapter",
+      "test_current_collector_uses_all_seven_exact_pinned_sources",
+      "test_documented_d2_mixed_503_curl63_still_has_bounded_cache_retries",
+      "test_fresh_explicit_robots_denial_blocks_both_independent_consumers",
+      "test_literal_http_and_www_survive_both_loaded_normalizer_and_adapter",
+      "test_literal_http_redirect_checks_distinct_https_robots_and_keeps_www",
+      "test_page_429_retry_after_reaches_an_independent_consumer",
+      "test_page_redirect_retry_after_reaches_target_before_robots_and_page",
+      "test_raised_transport_error_is_persisted_before_another_consumer",
+      "test_redirect_to_login_is_not_followed_with_robots_or_page_requests",
+      "test_returned_transport_error_sets_shared_cooldown",
+      "test_robots_404_and_410_challenge_blocks_page_without_rewriting_observation",
+      "test_robots_challenge_is_retained_without_retry_or_page_probe",
+      "test_robots_http_date_retry_after_is_shared_without_a_page_wire",
+      "test_robots_redirect_retry_after_reaches_target_before_robots",
+      "test_three_transient_robots_attempts_stop_for_the_daily_cache_period",
+      "test_tls_refusal_is_not_retryable_and_shared_gate_still_observes_failure",
+      "test_transient_robots_waits_then_recovers_with_prior_attempt_preserved",
+      "test_warm_page_cache_preserves_capture_without_new_gate_or_wire"
+    ],
+    "allPriorCasesPreserved": 51,
+    "sharedCooldownFile": {
+      "command": "python3 -m unittest discover -s tests -p test_local_lab_shared_cooldown.py",
+      "passed": 70,
+      "elapsedSeconds": 1.088
+    },
+    "localLabSuite": {
+      "command": "python3 -m unittest discover -s tests -p 'test_local_lab_*.py'",
+      "passed": 228,
+      "elapsedSeconds": 2.219
+    },
+    "fullSuite": {
+      "command": "python3 -m unittest discover -s tests",
+      "passed": 350,
+      "elapsedSeconds": 2.466
+    },
+    "transport": "Only fake transport and fake time; real pinned PublicFetcher and real v2 HostRequestGate use private per-test caches/shared-state tempdirs. Subprocess transport forbidden in fixture. No actual HTTP or production shared directory use."
+  },
+  "adapterSha256": "f8d71d075a96ccf22f25a8cf4d5ca24e7a65250c3805c726b8a86237cf0a79ae",
+  "testFileSha256": "d1f19459499a279461de220997e30aa8175b265b2d331d7885f687a4e9437c8a",
+  "newRuntimeDefectFound": false,
+  "readinessUpdated": false,
+  "limitations": "This is exact source/composition +offline behavior review, not live TLS/robots verification; parent must freshly verify process+receipt before live. Existing D1/D2 are retained known upstream issues, not new runtime observations."
+}

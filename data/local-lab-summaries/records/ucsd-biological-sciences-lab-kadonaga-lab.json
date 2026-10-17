@@ -1,0 +1,280 @@
+{
+  "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+  "status": "supported",
+  "summaryZh": "Kadonaga 实验室研究 RNA 聚合酶 II 转录调控和染色质功能。其核心启动子研究覆盖 DNA 元件、转录因子和生物网络三个层次。页面还介绍了已报告的工作：使用SVR机器学习模型研究人类下游核心启动子区（DPR）及TATA盒。",
+  "researchQuestions": [
+    "哪些 DNA 信号引导转录起始？"
+  ],
+  "topics": [
+    "转录调控",
+    "染色质动态",
+    "核心启动子"
+  ],
+  "methods": [
+    "支持向量回归（SVR）建模（已报告的人类DPR和TATA盒研究）"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "James T. Kadonaga",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "In my lab, we study the regulation of transcription by RNA polymerase II.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "We are also interested in the biological functions of chromatin",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "We study core promoters at three levels: DNA elements, transcription factors, and biological networks.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-2705f44bd0668fde",
+      "quote": "James T. Kadonaga",
+      "supports": [
+        "identity"
+      ],
+      "quoteLocation": "title"
+    },
+    {
+      "sourceId": "src-2705f44bd0668fde",
+      "quote": "In my lab, we study the regulation of transcription by RNA polymerase II.",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "We study core promoters at three levels: DNA elements, transcription factors, and biological networks. (1). RNA polymerase II core promoter: DNA elements First, it is essential to identify the DNA-based signals that direct the initiation of transcription.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "This puzzle was ultimately solved by using machine learning (Vo ngoc et al., 2020) (Fig. 2). In this work, we generated a machine learning (support vector regression, SVR) model for the human downstream core promoter region (DPR), which encompasses the positions of the Drosophila MTE and DPE (Fig. 1).",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        0
+      ],
+      "provenanceNote": "In my lab所述核心启动子研究的已报告工作，we generated明确实际建模。 同段引Vo ngoc et al.,2020；属于既有工作，不宣称2026新发现。"
+    },
+    {
+      "sourceId": "src-4cdf2e8fbc6dcb8c",
+      "quote": "We also generated an SVR model for the human TATA box.",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        0
+      ],
+      "provenanceNote": "同一实验室已报告工作中的TATA盒SVR模型。 承接同段既有研究，不新增日期推断。"
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "官方教师页明确以 In my lab 描述实验室作用域。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "SVR方法由页面所述既有研究支持，关联2020年文献；不据此宣称该技术是当前唯一方法或新发现。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:55:24+00:00",
+  "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:22:54.477425+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "In my lab/We研究小节明确identify信号目标，且仍有核心启动子元件待发现；不把已用机器学习解决的人类MTE/DPE历史难题当未解。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ],
+          [
+            2014,
+            2466
+          ],
+          [
+            3272,
+            3669
+          ],
+          [
+            1400,
+            4250
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-7ffd17e4391e38d4",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "sourceObservedAt": "2026-10-07T23:04:07+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            87
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-2705f44bd0668fde",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "sourceObservedAt": "2026-10-16T04:23:43+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ],
+          [
+            3272,
+            3669
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "quote": "We study core promoters at three levels: DNA elements, transcription factors, and biological networks. (1). RNA polymerase II core promoter: DNA elements First, it is essential to identify the DNA-based signals that direct the initiation of transcription.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+        "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  },
+  "methodFieldReview": {
+    "reviewedAt": "2026-10-16T08:55:24+00:00",
+    "sourceScopeReviewedAt": "2026-10-16T08:46:04.756Z",
+    "previousRecordReviewedAt": "2026-10-16T08:22:54.477425+00:00",
+    "proposalPath": "METHOD-FIELD-SCOPE-REVIEW.json",
+    "proposalSha256": "3248021953a5483a17d1afc9189e626ffa0278209f6a5fb7462b6769d4cc2980",
+    "terminologyAddendumSha256": "7c2aabb5262160c10b4fcd4c5e8e2cea9a4ee741f29206123315d1d10a6ee9af",
+    "proposalDecision": "add_reported_historical_method",
+    "reasonZh": "明确we generated的既有SVR工作足以支持方法，必须限定已报告项目。采用原已接受HTTPS科研source及原时间，不借同body较晚HTTP来源重计日期。",
+    "methodEvidence": [
+      {
+        "methodIndices": [
+          0
+        ],
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "quote": "This puzzle was ultimately solved by using machine learning (Vo ngoc et al., 2020) (Fig. 2). In this work, we generated a machine learning (support vector regression, SVR) model for the human downstream core promoter region (DPR), which encompasses the positions of the Drosophila MTE and DPE (Fig. 1).",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+        "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "supports": [
+          "research",
+          "methods"
+        ],
+        "packetTextRange": {
+          "start": 3469,
+          "end": 3771
+        },
+        "scopeZh": "In my lab所述核心启动子研究的已报告工作，we generated明确实际建模。",
+        "timeScopeZh": "同段引Vo ngoc et al.,2020；属于既有工作，不宣称2026新发现。"
+      },
+      {
+        "methodIndices": [
+          0
+        ],
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "quote": "We also generated an SVR model for the human TATA box.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+        "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "supports": [
+          "research",
+          "methods"
+        ],
+        "packetTextRange": {
+          "start": 4015,
+          "end": 4069
+        },
+        "scopeZh": "同一实验室已报告工作中的TATA盒SVR模型。",
+        "timeScopeZh": "承接同段既有研究，不新增日期推断。"
+      }
+    ],
+    "scopeOrRejectionEvidence": [],
+    "evidenceReclassifications": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-4cdf2e8fbc6dcb8c",
+        "sourceUrl": "https://biology.ucsd.edu/research/faculty/jkadonaga",
+        "sourceObservedAt": "2026-10-16T01:07:32+00:00",
+        "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "readScopeZh": "实验室研究引言、核心启动子段及SVR局部完整上下文；非18000字全文",
+        "textLength": 18000,
+        "packetTextRangeActuallyRead": {
+          "start": 1400,
+          "end": 4600
+        }
+      },
+      {
+        "sourceId": "src-2705f44bd0668fde",
+        "sourceUrl": "http://biology.ucsd.edu/research/faculty/jkadonaga",
+        "sourceObservedAt": "2026-10-16T04:23:43+00:00",
+        "bodySha256": "50e353e68862f62e8cabdfdbd639a965e2779ed6d55213759858a3c6c41e835e",
+        "readScopeZh": "仅元数据同body关系（不借较晚HTTP时间给HTTPS科研源）",
+        "textLength": 30133
+      }
+    ],
+    "notReviewedSourceIds": [
+      "src-7ffd17e4391e38d4"
+    ],
+    "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+    "questionApplicationPlanSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf"
+  }
+}

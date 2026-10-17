@@ -1,0 +1,7 @@
+# 采集器未来工作版本输入来源标签审阅
+
+当前实际运行69988仍加载已审bb82完整依赖组。工作目录collector变为c73f213e；只读逐字审阅并保存owned原字节快照。移除Queue.add中唯一observation字典payload后，两版本整模块AST完全相同，传输、robots、TLS、协调、范围、调度与控制流未变。
+
+差异只把无效URI标为queue_input_as_listed_not_body_verified，并将时间/正文SHA明确放入contextSourceCapture，不再把队列种子误作保存正文中的字面href。该标签不能用来新增请求准入。全7文件未来map的owned字节SHA已绑定。
+
+未导入或运行未来collector代码、未烟测网络、未改采集器/共享调度/summary adapter/计划。将来若实际加载该组，仍须新PID、完整依赖map与准入复核。原B30/独立日期检查点保持不变。

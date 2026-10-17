@@ -1,0 +1,36 @@
+{
+  "labId": "ucsd-live-lab-102fe5e24b3082",
+  "status": "unresolved",
+  "summaryZh": "历史官方教师页面保存 Handel Lab 链接；目标返回 404。教师页研究段落使用第一人称复数，但未明确界定实验室范围。",
+  "researchQuestions": [],
+  "topics": [],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-46783f02125d0675",
+      "quote": "Handel Lab",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "uncertain",
+    "entityType": "lab",
+    "reason": "历史链接支持名称，缺少明确 lab/group 作用域研究正文。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "研究主题与方法未知；抓取失败不表示实验室关闭。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [
+    "destination_http_error:404",
+    "no_entity_local_research_text"
+  ],
+  "reviewedAt": "2026-10-16T01:52:40+00:00"
+}

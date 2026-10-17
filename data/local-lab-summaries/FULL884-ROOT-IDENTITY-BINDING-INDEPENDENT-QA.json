@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:59:50+00:00",
+  "status": "pass_identity_only_append_plan",
+  "applied": false,
+  "networkRequests": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorWrites": 0,
+  "inputSnapshots": {
+    "identityBindingPlan": {
+      "path": "data/local-lab-summaries/FULL884-ROOT-IDENTITY-BINDING-PLAN.json",
+      "sha256": "a2e7524f675df41620c02966f661269996fb16657a7ae0e1db23f34a484c119f",
+      "plannedAt": "2026-10-16T07:53:22+00:00"
+    },
+    "sourceDesignReport": {
+      "path": "data/local-lab-summaries/FULL884-URL-IDENTITY-NEXT-REVIEW.json",
+      "sha256": "0927cc82c14d816bbaf7c899ad441c55b3ffcc6191bcc6f4116cddbac7289db9"
+    },
+    "appliedQuestionJournal": {
+      "path": "data/local-lab-summaries/QUESTION-FIELD-APPLICATION-JOURNAL.json",
+      "sha256": "88bdad9a478131d5c2f914e4b23aa0caf1e5b24a282405c2b01f4e8fd67ffdda",
+      "state": "applied",
+      "completedAt": "2026-10-16T07:55:05+00:00"
+    }
+  },
+  "aggregate": {
+    "itemsIndividuallyReviewed": 8,
+    "originalCacheBodyHashesAndSidecarsVerified": 8,
+    "literalTitleIdentityQuotes": 7,
+    "literalBodyIdentityQuotes": 1,
+    "exactListedHttpsRequests": 8,
+    "sourceMatchesFetchPass": 8,
+    "pureHydrateFalseToTrue": 8,
+    "actualRestorationsByThisQa": 0,
+    "sameAsPlanOldRaw": 6,
+    "authorizedNewQuestionRawPreserved": 2,
+    "requiredChanges": 0
+  },
+  "applicationConditions": [
+    "只在实施时重新读取并核对最新raw，逐项append已批准的exact identity evidence及独立reviewmetadata；禁止用newRecordPreview覆盖整条记录。",
+    "Süel/Frazer当前raw已匹配已应用question journal的newRecord，须保留新questions、questionFieldReview、全部旧evidence及当前prior reviewedAt；其他六条仍匹配plan oldSHA。",
+    "packet/source/root tuple必须保持本报告冻结字节；不将实际HTTP相关观察替换为HTTPS，不新增或重解释redirect/canonical，不把新reviewtime当成source capturetime。",
+    "source仅支持identity：Süel root可见正文为空，Zhong正文存在截断；本次不以标题或HTTP成功推导新研究、方法、隶属、现任任职或当前项目状态。",
+    "实施后仍须逐条hydrate及正式validate；本QA的八次false→true只是内存反事实验证，不是已应用计数。"
+  ],
+  "verdictZh": "8项原HTTPS身份绑定均可接受；原缓存字节、sidecar和精准请求/最终URL/观察时间相符，具名title/body及现有官方关联材料对应同一实体。以当前raw进行纯内存追加后，8条canCount均false→true，其他root/canonical/redirect/time与科学字段稳定。未实际修改或恢复任何记录。",
+  "items": [
+    {
+      "labId": "ucsd-live-lab-f3a5edc06ada6b",
+      "ordinal": 496,
+      "labName": "Gurol M. Suel — lab website",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "f2e54dff376313dd6adc6f9e9d0ec95341d783c82ddc7072fa9d3d50b654f134",
+      "planBaseRawSha256": "3dc628a22b3e210d99a959005aaad8d82fef75ff60cc2433390c4dca02349c46",
+      "currentRawAuthorization": "exact_authorized_applied_question_journal_new_record",
+      "packetSha256": "1251e53a508a1acf693084a225b4a896c6566ecd3997e66a1d6156b00b9cd02b",
+      "originalPacketPreparedAt": "2026-10-16T03:40:12+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T07:41:03.528863+00:00",
+      "currentResearchQuestionsPreserved": [
+        "分子和细胞相互作用如何在微生物系统中产生涌现动态？"
+      ],
+      "originalRequestCapture": {
+        "requestedUrl": "https://suellab.github.io/",
+        "sourceUrl": "https://suellab.github.io/",
+        "finalUrl": "https://suellab.github.io/",
+        "observedAt": "2026-10-16T01:06:31+00:00",
+        "bodySha256": "75b4078c791038448f4d0a77c34e6f4dcf5c299bbbe3ab588c01b233e2b12930",
+        "rootFetchMetadataSha256": "d4d4cd6766f244da92946045a61b668fd57b86d045e0a52edd88ce6604a8e565",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f3a5edc06ada6ba1a182687ccf891f6c913bd99fea41afea885c018022694db1.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f3a5edc06ada6ba1a182687ccf891f6c913bd99fea41afea885c018022694db1.json",
+        "originalSidecarSha256": "730975deb6710137b82334f069ec881327f67a5352f348deb28cdaa5792aa9a7"
+      },
+      "sourceId": "src-c4ba244c6440b828",
+      "originalTitle": "Süel Lab",
+      "sourceVisibleTextCharacters": 0,
+      "appendIdentityEvidence": {
+        "sourceId": "src-c4ba244c6440b828",
+        "quote": "Süel Lab",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "原HTTPS捕获的字面标题 Süel Lab 与已接受官方Gürol Süel页面及其精确 Lab Website → https://suellab.github.io/ 对应。该根捕获可见研究正文为空，仅用具名title作identity，不转为研究或任职证据。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-live-lab-c8c17d1c3b0cd2",
+      "ordinal": 466,
+      "labName": "Carlos Coimbra — lab website",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "7921b8394d20d5efaee60f60291e3fb5719eb1537c9da4e2173d1ec7485c63b7",
+      "planBaseRawSha256": "7921b8394d20d5efaee60f60291e3fb5719eb1537c9da4e2173d1ec7485c63b7",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "d36175b6a28ba6f72b864299e79d514a6e0ce8f9877ca2552705a79bf45f1ad6",
+      "originalPacketPreparedAt": "2026-10-16T03:40:12+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentResearchQuestionsPreserved": [],
+      "originalRequestCapture": {
+        "requestedUrl": "https://coimbra.ucsd.edu/",
+        "sourceUrl": "https://coimbra.ucsd.edu/",
+        "finalUrl": "https://coimbra.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:13+00:00",
+        "bodySha256": "f262ee6e97fd03da300bb104bf6469321b9ca7542572604a5ad31d6e7b734ef8",
+        "rootFetchMetadataSha256": "3c697b73d317cf9ca3d2ae1dc038f946e948b6a91af9afd52bdddc2fed312a38",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c8c17d1c3b0cd2e890c4928f0326132c1e89731d880b1da062f53efa31a741bb.json",
+        "originalSidecarSha256": "afc41c4acb4c3a8ce20d3ecd03ce6c3d109575d0a266fa2cf67e4b7e5dd1c32c"
+      },
+      "sourceId": "src-8d8c600e7abe1be8",
+      "originalTitle": "Coimbra Research Group",
+      "sourceVisibleTextCharacters": 881,
+      "appendIdentityEvidence": {
+        "sourceId": "src-8d8c600e7abe1be8",
+        "quote": "Coimbra Research Group",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "标题 Coimbra Research Group、正文同名group及Carlos F. M. Coimbra明确对应现有Coimbra研究组，不是仅凭个人姓名或HTTP成功。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-armor-lab-active-responsive-multifunctional-and-ordered-materials-research",
+      "ordinal": 828,
+      "labName": "ARMOR Lab (Active, Responsive, Multifunctional, and Ordered-materials Research)",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "d5a18371d3ff1d9d04a08d6afa87105a701790caa7404bfeecf38370a95bdfbc",
+      "planBaseRawSha256": "d5a18371d3ff1d9d04a08d6afa87105a701790caa7404bfeecf38370a95bdfbc",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "ee603133d9dc2b15a96c0d4fe2fbb3ababbb2c14ef4a92588fb84ce0fb9cd249",
+      "originalPacketPreparedAt": "2026-10-16T03:40:17+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T02:38:46+00:00",
+      "currentResearchQuestionsPreserved": [
+        "如何利用传感材料与反演方法构建物理资产及人体数字孪生？"
+      ],
+      "originalRequestCapture": {
+        "requestedUrl": "https://armor.ucsd.edu/",
+        "sourceUrl": "https://armor.ucsd.edu/",
+        "finalUrl": "https://armor.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:50+00:00",
+        "bodySha256": "dc659a695b061710430696d24b51e1d357af17a956120f375e1cb378b5f56df5",
+        "rootFetchMetadataSha256": "912ce8dfb57fd194fac805769e47bf112a188692db03c23c51c2bc91c8ead577",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3ac306479b6f500c0d441c6e6133f596018291f09f8219ad788e406583a599e4.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3ac306479b6f500c0d441c6e6133f596018291f09f8219ad788e406583a599e4.json",
+        "originalSidecarSha256": "73e150db2729d910e71606c29bc98d1b9d9dd821ce69d3e8e064135796eb4206"
+      },
+      "sourceId": "src-97b310b478bf8a4d",
+      "originalTitle": "ARMOR Lab",
+      "sourceVisibleTextCharacters": 3811,
+      "appendIdentityEvidence": {
+        "sourceId": "src-97b310b478bf8a4d",
+        "quote": "ARMOR Lab",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "标题 ARMOR Lab 与正文完整缩写释义、UC San Diego laboratory及负责人Prof. Ken Loh一致，匹配现有稳定ID。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-communication-lab-macro-lab",
+      "ordinal": 181,
+      "labName": "MACRO Lab",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "2d68219571e84b3128dfbf59ff8c500ae403a1e3a932c3f124f60931eb174147",
+      "planBaseRawSha256": "2d68219571e84b3128dfbf59ff8c500ae403a1e3a932c3f124f60931eb174147",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "471fa15347ce2260cf77fad1e2144c5456c8b2d4393b1388467f47711bb17ad3",
+      "originalPacketPreparedAt": "2026-10-16T03:40:07+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T01:51:49+00:00",
+      "currentResearchQuestionsPreserved": [],
+      "originalRequestCapture": {
+        "requestedUrl": "https://macrolab.ucsd.edu/",
+        "sourceUrl": "https://macrolab.ucsd.edu/",
+        "finalUrl": "https://macrolab.ucsd.edu/",
+        "observedAt": "2026-10-16T00:59:39+00:00",
+        "bodySha256": "14922b8bcf945a4150bc98b579c9cfa3418a5bb56c36aecfe5836752461a7402",
+        "rootFetchMetadataSha256": "49ca752e2428001d61ae17e788c280f50cc156cdd7ac005013463a5d9c31ce3a",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/06280444cc2efc703cc6a2437bdd1b8dc1dc5264d2003a6804e8c8a4da86a3c3.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/06280444cc2efc703cc6a2437bdd1b8dc1dc5264d2003a6804e8c8a4da86a3c3.json",
+        "originalSidecarSha256": "2e6401df4d57f71c763155bed1732b407b17bca11b80c39344573e8726f1c473"
+      },
+      "sourceId": "src-2b4ad061e661bf3c",
+      "originalTitle": "MACRO Lab – MACRO Lab",
+      "sourceVisibleTextCharacters": 1530,
+      "appendIdentityEvidence": {
+        "sourceId": "src-2b4ad061e661bf3c",
+        "quote": "MACRO Lab – MACRO Lab",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "标题 MACRO Lab – MACRO Lab 与正文MACRO Lab任务和co-directors描述一致，匹配包内既有MACRO实验室身份材料。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-live-lab-d926518929ccab",
+      "ordinal": 442,
+      "labName": "Acevedo Lab website",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "55e162a94d6ad55a5b2d631f5d8ea07ed1a0fec35164d614732440cb5d5deab1",
+      "planBaseRawSha256": "55e162a94d6ad55a5b2d631f5d8ea07ed1a0fec35164d614732440cb5d5deab1",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "6d18c7bfa6a78c80fa68e103efdab38cda35070d270e8d2e1b4800d9fea28252",
+      "originalPacketPreparedAt": "2026-10-16T03:40:11+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentResearchQuestionsPreserved": [],
+      "originalRequestCapture": {
+        "requestedUrl": "https://acevedo.ucsd.edu/",
+        "sourceUrl": "https://acevedo.ucsd.edu/",
+        "finalUrl": "https://acevedo.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:06+00:00",
+        "bodySha256": "168c093dc13b62a3a690a0148ba0065477d18df43e063b5b6dbcf1a061d66219",
+        "rootFetchMetadataSha256": "b27a86583c0a8c5da4014c9d425e4ba92fdcc1eb4833555d7af03c238164e8cb",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d926518929ccabd32a7dd8bec49ca876fe22b531973d32611698f84ad58a956e.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d926518929ccabd32a7dd8bec49ca876fe22b531973d32611698f84ad58a956e.json",
+        "originalSidecarSha256": "1672230be1c1eabc847cf16545869f080cff3f7906669c5cc18ded96f6bbd099"
+      },
+      "sourceId": "src-0cc9bbd11053e1c5",
+      "originalTitle": "F² LAB",
+      "sourceVisibleTextCharacters": 5302,
+      "appendIdentityEvidence": {
+        "sourceId": "src-0cc9bbd11053e1c5",
+        "quote": "FRACTURE AND FATIGUE OF SKELETAL TISSUES LABORATORY F² LAB",
+        "quoteLocation": "body",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "正文完整 F² LAB 名称与下文该实验室由Dr. Claire Acevedo领导的明确关系，解决Acevedo列出名称与F²实际实体名的绑定；不重命名稳定ID。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-live-lab-ce0b313a22d83d",
+      "ordinal": 502,
+      "labName": "Hanh-Phuc Le — lab website",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "6012eca34eeef98cede981905380e297a66c326c77aa1e4cec88e420d01a15e8",
+      "planBaseRawSha256": "6012eca34eeef98cede981905380e297a66c326c77aa1e4cec88e420d01a15e8",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "04cede91736b0cff8576e488045e639d93ac6659ddf73f16bf1bc1384eb33769",
+      "originalPacketPreparedAt": "2026-10-16T03:40:12+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+      "currentResearchQuestionsPreserved": [],
+      "originalRequestCapture": {
+        "requestedUrl": "https://ipower3es.ucsd.edu/",
+        "sourceUrl": "https://ipower3es.eng.ucsd.edu/",
+        "finalUrl": "https://ipower3es.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:27+00:00",
+        "bodySha256": "15c721683da6faa37cbd4d55c02627d40f8f877f120459457eea6312441d01f6",
+        "rootFetchMetadataSha256": "b94e727718168daf13ab1de8b6863be42d81ce5ef62f65df89855ee6db8c0177",
+        "redirects": [
+          {
+            "from": "https://ipower3es.ucsd.edu/",
+            "to": "https://ipower3es.eng.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ce0b313a22d83d9ba205a96b10b5521bd0bb20ca3827caafd998db401ba0ed0a.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ce0b313a22d83d9ba205a96b10b5521bd0bb20ca3827caafd998db401ba0ed0a.json",
+        "originalSidecarSha256": "5b79821057342a83d0e24f1d625539660ccf6180802119d3d1de1491b58f4e4c"
+      },
+      "sourceId": "src-254ea865b6464cde",
+      "originalTitle": "integrated Power Electronics and Energy-Efficient Systems Lab – Create and Supply Integrated/Miniaturized Power for All",
+      "sourceVisibleTextCharacters": 2486,
+      "appendIdentityEvidence": {
+        "sourceId": "src-254ea865b6464cde",
+        "quote": "integrated Power Electronics and Energy-Efficient Systems Lab – Create and Supply Integrated/Miniaturized Power for All",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "原HTTPS请求确实跳至已捕获eng子域；具名iPower3Es实验室title与官方Jacobs页完整实验室名及Prof. Hanh-Phuc Le关系一致，正文group/Prof. Le上下文再次对应。保留旧301及旧collector Location限制。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-live-lab-0958eb5e1d52b6",
+      "ordinal": 614,
+      "labName": "Zhong Lab",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "511e5d03eee7ddbfbb06743d4b3049941ff1863b9587d6a174b88a66fc0c2677",
+      "planBaseRawSha256": "511e5d03eee7ddbfbb06743d4b3049941ff1863b9587d6a174b88a66fc0c2677",
+      "currentRawAuthorization": "exact_plan_old_record",
+      "packetSha256": "eda3a9a8abd48e5637fe54da8e61bfefa32cea5654a4c2b2fa9c98752db7e3b3",
+      "originalPacketPreparedAt": "2026-10-16T03:40:14+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T01:46:21+00:00",
+      "currentResearchQuestionsPreserved": [],
+      "originalRequestCapture": {
+        "requestedUrl": "https://systemsbio.ucsd.edu/",
+        "sourceUrl": "https://systemsbio.ucsd.edu/",
+        "finalUrl": "https://systemsbio.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:20+00:00",
+        "bodySha256": "aa6e8394360072b72690266e7f8e982d5f92bccd7a86e0b3bc79be7c630b7127",
+        "rootFetchMetadataSha256": "e7b881fff9046189803cad5ad56cd81602be552aef7a234218a2ce6c132c0285",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0958eb5e1d52b64f7eda366f5da61891d037f87432db332748fddd0dfabcee54.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0958eb5e1d52b64f7eda366f5da61891d037f87432db332748fddd0dfabcee54.json",
+        "originalSidecarSha256": "93d80c4775de3898cf9591dbe75441af6ea2aa997a1ae8a307ec8d59f00cb7b2"
+      },
+      "sourceId": "src-223296c9545f4eae",
+      "originalTitle": "Welcome to Zhong Lab of Systems Biology",
+      "sourceVisibleTextCharacters": 18000,
+      "appendIdentityEvidence": {
+        "sourceId": "src-223296c9545f4eae",
+        "quote": "Welcome to Zhong Lab of Systems Biology",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "标题明确Zhong Lab of Systems Biology；本地About the PI将Sheng Zhong与后续About the lab连接，匹配当前Zhong Lab。标题证据不受后续研究文本截断影响，不借此扩展科研。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    },
+    {
+      "labId": "ucsd-live-lab-3fb493ff6136bb",
+      "ordinal": 490,
+      "labName": "Frazer Lab",
+      "reviewedAt": "2026-10-16T07:59:50+00:00",
+      "qaDecision": "pass_append_identity_only_to_current_raw",
+      "currentRawSha256": "1a46005ee8c06577354eca9d59f521c9282fd4d857d325fdaa79fb2caa9be0cb",
+      "planBaseRawSha256": "369952b0f55cd5de1c15541bb7a96df48261a9d2b2cb493780546004610485ff",
+      "currentRawAuthorization": "exact_authorized_applied_question_journal_new_record",
+      "packetSha256": "f22116e20054f8e2af18ad65d8123048cad1ee916c2134f234f470b88215059b",
+      "originalPacketPreparedAt": "2026-10-16T03:40:12+00:00",
+      "currentPriorRecordReviewedAt": "2026-10-16T07:41:03.527284+00:00",
+      "currentResearchQuestionsPreserved": [
+        "遗传变异如何影响不同诱导分化细胞类型的分子和生理性状？"
+      ],
+      "originalRequestCapture": {
+        "requestedUrl": "https://frazer.ucsd.edu/",
+        "sourceUrl": "https://frazer.ucsd.edu/",
+        "finalUrl": "https://frazer.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:18+00:00",
+        "bodySha256": "81c4f5c105559987c517909d325c657de62191aa33674be23cdd1bd7256fa2c7",
+        "rootFetchMetadataSha256": "266ea4f7e8e66fa2f3c3c9301f3e984493348a542cd23d77f30d5407a41d6282",
+        "redirects": [],
+        "httpStatus": 200,
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3fb493ff6136bb73332ca27bb3119bb149b16c1177d7adbba2a24262b3af830f.html",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3fb493ff6136bb73332ca27bb3119bb149b16c1177d7adbba2a24262b3af830f.json",
+        "originalSidecarSha256": "5db9a23eda362e3667ba5b05a326dc3a39e560a644dcae9928f77cd8d7d68205"
+      },
+      "sourceId": "src-e9e0fdc0ea4aa75a",
+      "originalTitle": "Home Page | Frazer Lab",
+      "sourceVisibleTextCharacters": 3022,
+      "appendIdentityEvidence": {
+        "sourceId": "src-e9e0fdc0ea4aa75a",
+        "quote": "Home Page | Frazer Lab",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "reasonZh": "原HTTPS根标题 Home Page | Frazer Lab 与该实验室iPSCORE/our lab正文一致。HTML canonical-link的http://frazer.ucsd.edu/home只保留为提示，不当作HTTP跳转或替换原HTTPS实际请求。",
+      "sourceMatchesFetch": true,
+      "rawCacheHashAndSidecarVerified": true,
+      "counterfactual": {
+        "pureInMemoryOnly": true,
+        "pageIdentityBefore": "uncertain",
+        "pageIdentityAfter": "confirmed",
+        "canCountBefore": false,
+        "canCountAfter": true,
+        "urlRootCanonicalRedirectTimeOtherwiseUnchanged": true,
+        "oldEvidenceExactPrefixAndScientificFieldsPreserved": true
+      },
+      "requiredChanges": []
+    }
+  ],
+  "applicationPlanReview": {
+    "reviewedAt": "2026-10-16T08:01:07+00:00",
+    "status": "pass_for_exact_script_and_planned_journal",
+    "script": {
+      "path": "data/local-lab-summaries/apply_existing_root_identity_bindings.py",
+      "sha256": "71beaf7deaaa534554ecfd59d87b8b72e7429c9f48c15f518e8d7df3623a74fc"
+    },
+    "journal": {
+      "path": "data/local-lab-summaries/ROOT-IDENTITY-BINDING-APPLICATION-JOURNAL.json",
+      "sha256": "8b9ecebb2a3bbee51cc2ec6af226b1cbf9f8848b7b99e09e9453a5097b03d4d6",
+      "state": "planned",
+      "plannedAt": "2026-10-16T07:59:14+00:00",
+      "inputPlanSha256": "a2e7524f675df41620c02966f661269996fb16657a7ae0e1db23f34a484c119f",
+      "questionApplicationJournalSha256": "88bdad9a478131d5c2f914e4b23aa0caf1e5b24a282405c2b01f4e8fd67ffdda"
+    },
+    "aggregate": {
+      "plannedRecordsChecked": 8,
+      "allowedThreeFieldChangesOnly": 8,
+      "currentRawAndPacketHashesMatched": 8,
+      "oldEvidenceExactPrefixes": 8,
+      "currentNewQuestionRecordsPreserved": 2,
+      "sourceCaptureMetadataAndDatesUnchanged": 8,
+      "pureHydrateFalseToTrue": 8,
+      "rawWritesByQa": 0,
+      "actualRestorationsByQa": 0,
+      "requiredChanges": 0
+    },
+    "scriptChecks": {
+      "buildsFromCurrentAuthorizedRawNotPreview": true,
+      "sourceMatchesFetchAndBodyHashCheckedDuringPlan": true,
+      "preciseIdentityProofOnlyAppend": true,
+      "unexpectedRawOrPacketChangeStops": true,
+      "newIdentityReviewUsesActualDryRunReviewTimeAndStoresPreviousRawTime": true,
+      "noSourceOrPacketOrNetworkWrites": true,
+      "writesOnlyEightRecordsAndProgressJournal": true,
+      "perRecordAtomicReplace": true,
+      "resumeRecognizesExactNewRecordAndRecordsDigest": true,
+      "exactSourceRootCanonicalRedirectDatesPreserved": true
+    },
+    "boundary": "报告通过仅限所列精确script/journal。未运行脚本或--apply。应用QA文件存在检查并非自动语义审查；实施须采用本次已批准哈希集合。569→577是计划总数预期，本QA仅独立确认八项false→true映射。",
+    "items": [
+      {
+        "labId": "ucsd-live-lab-f3a5edc06ada6b",
+        "ordinal": 496,
+        "oldSha256": "f2e54dff376313dd6adc6f9e9d0ec95341d783c82ddc7072fa9d3d50b654f134",
+        "packetSha256": "1251e53a508a1acf693084a225b4a896c6566ecd3997e66a1d6156b00b9cd02b",
+        "expectedNewRecordSha256": "cb23a8565375fad5458e7208da1bcc2e7d30f3337b98520d5c864175563887f6",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T07:41:03.528863+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:06:31+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-live-lab-c8c17d1c3b0cd2",
+        "ordinal": 466,
+        "oldSha256": "7921b8394d20d5efaee60f60291e3fb5719eb1537c9da4e2173d1ec7485c63b7",
+        "packetSha256": "d36175b6a28ba6f72b864299e79d514a6e0ce8f9877ca2552705a79bf45f1ad6",
+        "expectedNewRecordSha256": "455d2653b9a69cd570d15b2cfcd4beff399791bf5a7c4d66436c9818f39ab37e",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T01:55:29+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:00:13+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-structural-engineering-lab-armor-lab-active-responsive-multifunctional-and-ordered-materials-research",
+        "ordinal": 828,
+        "oldSha256": "d5a18371d3ff1d9d04a08d6afa87105a701790caa7404bfeecf38370a95bdfbc",
+        "packetSha256": "ee603133d9dc2b15a96c0d4fe2fbb3ababbb2c14ef4a92588fb84ce0fb9cd249",
+        "expectedNewRecordSha256": "ad219f7fcc5ed6914754b6ac456ba57699154462628604ff7c5e41d9bd402cd1",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T02:38:46+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:00:50+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-communication-lab-macro-lab",
+        "ordinal": 181,
+        "oldSha256": "2d68219571e84b3128dfbf59ff8c500ae403a1e3a932c3f124f60931eb174147",
+        "packetSha256": "471fa15347ce2260cf77fad1e2144c5456c8b2d4393b1388467f47711bb17ad3",
+        "expectedNewRecordSha256": "5c9dd13a15638a5a6aff548c864887c427cfbe20da6f1077e70f44fac30f0425",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T01:51:49+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T00:59:39+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-live-lab-d926518929ccab",
+        "ordinal": 442,
+        "oldSha256": "55e162a94d6ad55a5b2d631f5d8ea07ed1a0fec35164d614732440cb5d5deab1",
+        "packetSha256": "6d18c7bfa6a78c80fa68e103efdab38cda35070d270e8d2e1b4800d9fea28252",
+        "expectedNewRecordSha256": "ee19aae7b084de904309e3fb36a2e4ff0f485db9f5e1b6ac72c115e3ea1befac",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T01:55:29+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:00:06+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-live-lab-ce0b313a22d83d",
+        "ordinal": 502,
+        "oldSha256": "6012eca34eeef98cede981905380e297a66c326c77aa1e4cec88e420d01a15e8",
+        "packetSha256": "04cede91736b0cff8576e488045e639d93ac6659ddf73f16bf1bc1384eb33769",
+        "expectedNewRecordSha256": "b6f70699844f116cbdebf0cad859e98c20219bd76e5c92594224bff952e646a0",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T01:55:29+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:00:27+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-live-lab-0958eb5e1d52b6",
+        "ordinal": 614,
+        "oldSha256": "511e5d03eee7ddbfbb06743d4b3049941ff1863b9587d6a174b88a66fc0c2677",
+        "packetSha256": "eda3a9a8abd48e5637fe54da8e61bfefa32cea5654a4c2b2fa9c98752db7e3b3",
+        "expectedNewRecordSha256": "2d491f9c9493544d5830a516425f9ac8cbaaa169ec3a94d544789c6e5665860d",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T01:46:21+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:01:20+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      },
+      {
+        "labId": "ucsd-live-lab-3fb493ff6136bb",
+        "ordinal": 490,
+        "oldSha256": "1a46005ee8c06577354eca9d59f521c9282fd4d857d325fdaa79fb2caa9be0cb",
+        "packetSha256": "f22116e20054f8e2af18ad65d8123048cad1ee916c2134f234f470b88215059b",
+        "expectedNewRecordSha256": "d266d1de1a90687d771c2e3f73ba41f20504703bb149d340137271d05e7bf460",
+        "allowedChangedFields": [
+          "evidence",
+          "reviewedAt",
+          "rootIdentityBindingReview"
+        ],
+        "priorRecordReviewedAtPreserved": "2026-10-16T07:41:03.527284+00:00",
+        "bindingReviewAt": "2026-10-16T07:59:14+00:00",
+        "sourceActualObservedAtUnchanged": "2026-10-16T01:00:18+00:00",
+        "oldEvidenceExactPrefix": true,
+        "allScientificFieldsAndNewQuestionsPreserved": true,
+        "counterfactualCanCountBefore": false,
+        "counterfactualCanCountAfter": true,
+        "otherUrlRootCanonicalRedirectCaptureFieldsUnchanged": true,
+        "oldRecordExactBytesReconstructable": true
+      }
+    ]
+  },
+  "finalizedAt": "2026-10-16T08:01:07+00:00"
+}

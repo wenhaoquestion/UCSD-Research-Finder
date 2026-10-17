@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "ordinal": 167,
+  "labId": "ucsd-cellular-molecular-medicine-lab-wang-lab-wang-wei",
+  "labName": "Wang Lab (Wang, Wei)",
+  "listedWebsite": "https://wanglab.ucsd.edu/",
+  "listedDepartment": "Cellular & Molecular Medicine",
+  "listedInstitution": "University of California San Diego",
+  "listedSubtype": "lab",
+  "sources": [
+    {
+      "sourceUrl": "https://wanglab.ucsd.edu/",
+      "queueUrl": "https://wanglab.ucsd.edu/",
+      "requestedUrl": "https://wanglab.ucsd.edu/",
+      "checkedUrl": "https://wanglab.ucsd.edu/",
+      "observedAt": "2026-10-16T01:04:51+00:00",
+      "sourceContentDates": [],
+      "title": "Wei Wang's Group",
+      "headings": [],
+      "text": "Epigenetic landscapes reveal transcription factors that regulate CD8+ T cell differentiation Constructing 3D interaction maps from 1D epigenomes Predicting the human epigenome from DNA motifs Previous Next We are interested in uncovering the regulatory architecture of the genome and understanding the underlying biophysical principles at genomic and molecular levels. Our research is highly interdisciplinary. The computational and theoretical work are tightly coupled with experimental investigation. The focus areas in our lab include (1) Characterizing and engineering the binding specificity of protein recognition; (2) Deciphering the regulatory grammar encoded in the genome; (3) Understanding the relationship between structure and function of the 3D genome; (4) System-level study of cell state specification, cell fate decision and cell type conversion. 1. Characterizing and engineering the binding specificity of protein recognition. We are interested in understanding how the specificity of protein binding is achieved. Our recent work on characterizing the recognition of histone modifications by reader proteins reveals that the binding specificity is determined by the physiochemical patterns defined by the post-translational modifications (PTMs) on the histone residues rather than specific combinations of PTMs (Hard et al., Science Advances, 2018). A computational model characterizing the energetic patterns of the binding interface can successfully predict the reader proteins’ recognition of PTMs that are not even included in the training data. This study suggests that, unlike the genetic code represented by a simple table, “histone code” is decided by the physiochemical properties of the histone peptides and can be interpreted by a computational model. This way, combinations of any PTMs on histone tails including those newly discovered ones can be included as part of the “histone code” because reader proteins recognize the physiochemical properties of the binding interface rather than specific PTMs. We further demonstrated that the binding affinity and specificity of the reader proteins can be efficiently and effectively engineered by combining interpretable deep learning models and high throughput mutation screening (Parkinson et al, JCIM, 2020). We are currently improving the interpretable deep learning models to engineer antibodies and other proteins. 2. Deciphering the regulatory grammar encoded in the genome. The cell is a fine regulated system and the regulatory information is encoded in the genome. For example, transcription factors (TFs) recognize specific DNA motifs and the binding of TFs to particular loci determine which genes are transcribed. While epigenetic modifications including DNA methylation and histone modifications are highly locus-specific, the modifying enzymes do not have strong DNA sequence preference or do not bind to DNA at all. How the locus specificity of epigenetic modifications is achieved and maintained is a key question to answer in epigenetics. We have developed machine learning methods to identify and catalog DNA motifs associated with DNA methylation and histone modifications (Whitaker et al., Nature Methods, 2015; Wang et al., NAR, 2019; Ngo et al., PNAS, 2019). These motifs, called epi-motifs, are tightly associated with epigenetic modifications and disruption of these motifs can lead to significant change of the regional epigenetic state. We propose that the proteins or ncRNAs recognizing these epi-motifs function as pioneer factors and their binding to specific loci initiate recruitment of co-factors and epigenetic modifying enzymes We are currently working on identifying these factors using biochemical assays and confirming their functionalities. We are also developing new AI models to uncover additional regulatory rules encoded in the genome. 3. Understanding the relationship between structure and function of the 3D genome. We are interested in studying how the chromatin structure and functional activities are associated with and impact each other (Zhu et al., Nature Comm., 2016; Zhang et al., Nature Comm., 2016). For example, we developed the first unsupervised learning method to predict 3D contacts of promoter-enhancer, promoter-promoter and enhancer-enhancer from the epigenomic data (Zhu et al., Nature Comm., 2016). Recently we started to investigate the structural and functional importance of genomic regions that form many 3D contacts (called hubs) (Ding et al., Science Advances, 2021). The majority of these hub loci are epigenetically quiescent that have no or low epigenetic signals and whose importance are often overlooked. We observed that genetic variations on hub can significantly change their 3D contact numbers, particularly in disease cells. Deleting hub loci can cause cell death and significant global change of chromatin structure. Importantly, expressions of genes and promoter-enhancer contacts located distal in the linear genome from the deleted hub are often significantly altered. The collective and/or synergistic effect of these alterations cause phenotypic changes such as cell viability. Our analyses suggest that hubs play important roles in forming and maintaining the proper chromatin organization for normal cellular functions. An implication of these observations is to allow develop potent “one-drug-multiple-target” therapeutics by editing the disease-specific non-coding loci. We are currently expanding the scale of this study and working on uncovering the underlying mechanisms. 4. System-level study of cell state specification, cell fate decision and cell type conversion. We are interested in uncovering key regulators that decide cell state, cell type and conversion between cell types. We have developed various systems biology methods to model the epigenetic landscape of cell states and identify key regulators of specific cell state/type. Recently, we developed Taiji, a method that integrates DNA motif, gene expression, and epigenomic data, to construct genetic networks in individual samples (Zhang et al., Science Advances, 2019). Based on the genetic network, the global importance of each gene is assessed by Personalized PageRank algorithm weighted by gene expression and regulatory strength. Analysis of the key regulators in various tissues and different time stages reveal the transcriptional waves in tissue specification during mouse embryonic development. An intriguing observation is that there is no TF activated in specific time stage across all tissues, indicating a distributed timing system to coordinate development of different tissues (Zhang et al., Science Advances, 2019). We have also applied Taiji to study CD8+ T cell differentiation (Yu et al., Nature Immunology, 2017), other biological systems and patient samples. Furthermore, identification of cell type specific regulators can guide developing cocktails to convert one cell type to another, which is useful in generating cells needed for therapeutic treatment. We are currently improving the computational model and expanding the scope of the systems biology study.",
+      "textTruncated": false,
+      "bodySha256": "7edb54a3ad5ec13ffd9f21ff4da0731ca5eded014ec4e99fb66f649637aee003",
+      "collectorSha256": "7edb54a3ad5ec13ffd9f21ff4da0731ca5eded014ec4e99fb66f649637aee003",
+      "canonicalLinkUrls": [
+        "https://wanglab.ucsd.edu/{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+      ],
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b7c7fc04294939fc44c8193e3488e2a70de93de508c30b020c9a7ae99d0050fd.html",
+      "captureOrigin": "collection_cache_reuse",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "listed_lab_destination",
+      "sourceId": "src-830c2390f00a2ad1"
+    },
+    {
+      "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+      "observedAt": "2026-10-02T22:42:07+00:00",
+      "text": "Wang Lab (Wang, Wei)",
+      "title": "Historical field evidence: labName",
+      "headings": [],
+      "sourceContentDates": [],
+      "sourceId": "src-1bf3e89e40379a63",
+      "role": "historical_field_labName",
+      "originalMethod": "official_directory_main_content",
+      "textTruncated": false
+    },
+    {
+      "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+      "queueUrl": "https://cmm.ucsd.edu/research/labs/",
+      "requestedUrl": "https://cmm.ucsd.edu/research/labs/",
+      "checkedUrl": "https://cmm.ucsd.edu/research/labs/",
+      "observedAt": "2026-10-16T02:14:31+00:00",
+      "sourceContentDates": [],
+      "title": "Faculty Labs",
+      "headings": [
+        "Faculty Labs"
+      ],
+      "text": "Faculty Labs Ackerman Lab Alexandrov Lab Cleveland Lab Corbett Lab Novick Lab Desai / Oegema Lab Dowdy Lab Esko Lab Ferro-Novick Lab Ghosh Lab Glass Lab Hamilton Lab Jin Lab Kolodner Lab Leschziner Lab Muotri Lab Novick Lab Oegema / Desai Lab Rana Lab Reck-Peterson Lab Sander Lab Sebat Lab Sen Lab Subramaniam Lab Varki Lab Wang Lab (Wang, Dong) Wang Lab (Wang, Wei) Willert Lab Yeo Lab Zhou Lab",
+      "textTruncated": false,
+      "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+      "collectorSha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+      "canonicalLinkUrls": [],
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/156ba84bf1abdcfaadb83c25247dfb222a763831ef755bc3ba72fb642dc981e9.html",
+      "captureOrigin": "summary_gap_live_fetch",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "listed_official_source_requires_entity_localization",
+      "sourceId": "src-1c6df0a57807721b"
+    },
+    {
+      "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+      "requestedUrl": "https://cmm.ucsd.edu/research/labs/",
+      "observedAt": "2026-10-16T02:14:31+00:00",
+      "sourceContentDates": [],
+      "title": "Faculty Labs",
+      "headings": [
+        "Faculty Labs"
+      ],
+      "text": "Skip to main content Department of Cellular & Molecular Medicine CMM UC San Diego School of Medicine About Chair's Message Research in San Diego Employment Department Leadership Business Office Team Faculty Research Labs Agilent Center of Excellence in Cellular Intelligence Biochemistry & Structural Biology Cell Division & Cell Cycle Control Center for RNA Technologies and Therapeutics Developmental Biology DNA Replication & Repair Electron Microscopy Core Center for Epigenomics Gene Expression & Regulation Genetics & Genomics Facilities & Reservations Glycobiology Humanoid Center of Research Excellence Membrane Trafficking Neurodevelopment & Neurodegenerative Disease Signal Transduction Stem Cell Biology Systems Biology Education Graduate Education Postdoctoral Training CBIO Training Program Genetics Training Program News & Events Seminar Series News Archive Faculty Labs Ackerman Lab Alexandrov Lab Cleveland Lab Corbett Lab Novick Lab Desai / Oegema Lab Dowdy Lab Esko Lab Ferro-Novick Lab Ghosh Lab Glass Lab Hamilton Lab Jin Lab Kolodner Lab Leschziner Lab Muotri Lab Novick Lab Oegema / Desai Lab Rana Lab Reck-Peterson Lab Sander Lab Sebat Lab Sen Lab Subramaniam Lab Varki Lab Wang Lab (Wang, Dong) Wang Lab (Wang, Wei) Willert Lab Yeo Lab Zhou Lab",
+      "textTruncated": false,
+      "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+      "collectorSha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+      "canonicalLinkUrls": [],
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/156ba84bf1abdcfaadb83c25247dfb222a763831ef755bc3ba72fb642dc981e9.html",
+      "captureOrigin": "summary_gap_live_fetch",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "role": "listed_official_source_requires_entity_localization",
+      "sourceId": "src-3ab5126a73730e0c"
+    }
+  ],
+  "latestDestinationFetch": {
+    "sourceUrl": "https://wanglab.ucsd.edu/",
+    "observedAt": "2026-10-16T01:04:51+00:00",
+    "status": "ok",
+    "redirects": [],
+    "robots": {
+      "sourceUrl": "https://wanglab.ucsd.edu/robots.txt",
+      "observedAt": "2026-10-16T01:04:50+00:00",
+      "httpStatus": 404,
+      "retrievedEpoch": 1792112690.88473,
+      "error": "",
+      "redirects": [],
+      "status": "not_found"
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://wanglab.ucsd.edu/",
+    "contentType": "text/html; charset=UTF-8",
+    "error": "",
+    "sha256": "7edb54a3ad5ec13ffd9f21ff4da0731ca5eded014ec4e99fb66f649637aee003",
+    "retrievedEpoch": 1792112691.8426518
+  },
+  "latestDestinationCheckOrigin": "reused_collection_capture",
+  "destinationQueueStates": [
+    "done"
+  ],
+  "historicalWebsiteCheck": {
+    "sourceUrl": "https://wanglab.ucsd.edu/",
+    "status": "unavailable",
+    "observedAt": "2026-10-03T00:04:09+00:00"
+  },
+  "preparedAt": "2026-10-16T03:40:06+00:00",
+  "latestDestinationCheckScope": "listed_url_direct_request",
+  "relatedDestinationChecks": [],
+  "followupChecks": [],
+  "destinationAttemptHistory": [
+    {
+      "sourceUrl": "https://wanglab.ucsd.edu/",
+      "observedAt": "2026-10-16T01:04:51+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://wanglab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:04:50+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792112690.88473,
+        "error": "",
+        "redirects": [],
+        "status": "not_found"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://wanglab.ucsd.edu/",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "7edb54a3ad5ec13ffd9f21ff4da0731ca5eded014ec4e99fb66f649637aee003",
+      "retrievedEpoch": 1792112691.8426518
+    }
+  ],
+  "latestDestinationPageRequestProven": true,
+  "latestDestinationRequestMatchesListed": true
+}

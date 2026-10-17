@@ -1,0 +1,347 @@
+{
+  "reviewedAt": "2026-10-16T07:17:21.742743+00:00",
+  "runtimeReceipt": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/INDEPENDENT-DATE-RUNTIME-SOURCE-OBSERVATION.json",
+    "sha256": "23edf43d767e1aed404e30c04ecc4f2fed8373b88b9fda15afb9ab65c97a5f99",
+    "observedAt": "2026-10-16T07:15:28+00:00",
+    "pid": 57744,
+    "psExitCode": 0,
+    "ps": "57744 03:00 /opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /private/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py --cache /private/tmp/ucsd-research-20261016/.cache/coverage-20261016 --workers 8 --max-pages 250",
+    "reviewerDidNotPerformNewPidProbe": true
+  },
+  "priorReceipt": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/COLLECTOR-A071-SOURCE-SNAPSHOTS.json",
+    "sha256": "60c651b4ff9b3cf999f8081f83c176290da22cd7676828e77c874879f74b2275"
+  },
+  "requiredSourceFiles": {
+    "collect_ucsd_coverage.py": "b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+    "refresh_labs.py": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+    "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+  },
+  "items": [
+    {
+      "name": "lab_destinations.py",
+      "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/lab_destinations-d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/lab_destinations.py",
+      "currentWorkingSha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "refresh_labs.py",
+      "sha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_labs-063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/refresh_labs.py",
+      "currentWorkingSha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "refresh_faculty_directories.py",
+      "sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/refresh_faculty_directories-29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/refresh_faculty_directories.py",
+      "currentWorkingSha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "collection_lock.py",
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_lock-06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/collection_lock.py",
+      "currentWorkingSha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "collection_scope.py",
+      "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collection_scope-6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/collection_scope.py",
+      "currentWorkingSha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "network_coordination.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "sourceOrigin": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/network_coordination-3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/network_coordination.py",
+      "currentWorkingSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "unchangedFromA071": true
+    },
+    {
+      "name": "collect_ucsd_coverage.py",
+      "sha256": "b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674",
+      "sourceOrigin": "/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py",
+      "snapshot": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/network-adapter-sources/collect_ucsd_coverage-b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674.py",
+      "snapshotBodyHashVerified": true,
+      "currentWorkingSourcePath": "/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py",
+      "currentWorkingSha256": "b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674",
+      "matchesOwnerLoadedProcessPin": true,
+      "priorA071Sha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+      "unchangedFromA071": false
+    }
+  ],
+  "ast": {
+    "changedDefinitions": [
+      "Queue",
+      "Queue.add",
+      "replay_literal_uri_discovery",
+      "analyze",
+      "collect"
+    ],
+    "addedDefinitions": [],
+    "removedDefinitions": [],
+    "topLevelImportsAssignmentsAndMainGuardIdentical": true,
+    "networkDefinitions": {
+      "safe_url": {
+        "astIdentical": true,
+        "priorAstSha256": "772ad335e344a9c1b14eccd53373ad01c744711794b23ebd4c2753b6fc5dd706",
+        "newAstSha256": "772ad335e344a9c1b14eccd53373ad01c744711794b23ebd4c2753b6fc5dd706",
+        "newLine": 68
+      },
+      "official": {
+        "astIdentical": true,
+        "priorAstSha256": "ab7a786752ca82f39c81a586f79180e4971a3315d1cb0b16fa6e56a3f0bda084",
+        "newAstSha256": "ab7a786752ca82f39c81a586f79180e4971a3315d1cb0b16fa6e56a3f0bda084",
+        "newLine": 63
+      },
+      "url_key": {
+        "astIdentical": true,
+        "priorAstSha256": "3a1eecf428c1b02d255ddb467c4823c8dc649cee6ebb312135fcce83da7e54c6",
+        "newAstSha256": "3a1eecf428c1b02d255ddb467c4823c8dc649cee6ebb312135fcce83da7e54c6",
+        "newLine": 81
+      },
+      "authentication_target": {
+        "astIdentical": true,
+        "priorAstSha256": "f9fd6b01825a29a9073b784e275dac84b650ffece3660daded25ee2e19661a28",
+        "newAstSha256": "f9fd6b01825a29a9073b784e275dac84b650ffece3660daded25ee2e19661a28",
+        "newLine": 86
+      },
+      "transient_response": {
+        "astIdentical": true,
+        "priorAstSha256": "81c13ceac48fbfd5aeb496548a35c5102282ea5a6d7b183fcb87137c0448824f",
+        "newAstSha256": "81c13ceac48fbfd5aeb496548a35c5102282ea5a6d7b183fcb87137c0448824f",
+        "newLine": 91
+      },
+      "retryable_fetch": {
+        "astIdentical": true,
+        "priorAstSha256": "60ba315cbf309660646c7312647334f575ab759c5eb06fd621dc57b449c2fee1",
+        "newAstSha256": "60ba315cbf309660646c7312647334f575ab759c5eb06fd621dc57b449c2fee1",
+        "newLine": 103
+      },
+      "robots_retry_at": {
+        "astIdentical": true,
+        "priorAstSha256": "3440a471900d2ab0060de5c369a50e5edfe1ba5d42fd980a25e98f2c5696c95b",
+        "newAstSha256": "3440a471900d2ab0060de5c369a50e5edfe1ba5d42fd980a25e98f2c5696c95b",
+        "newLine": 112
+      },
+      "reusable_robots": {
+        "astIdentical": true,
+        "priorAstSha256": "b4949773f8eccbec463ee3a9b3b35443b06699d8822f5587e683cbf5f511f439",
+        "newAstSha256": "b4949773f8eccbec463ee3a9b3b35443b06699d8822f5587e683cbf5f511f439",
+        "newLine": 116
+      },
+      "WireHeaders": {
+        "astIdentical": true,
+        "priorAstSha256": "ec3a31f258369be246024b30ad68d2bae2ac22132315af1000c9c573796f7fa9",
+        "newAstSha256": "ec3a31f258369be246024b30ad68d2bae2ac22132315af1000c9c573796f7fa9",
+        "newLine": 278
+      },
+      "PublicFetcher": {
+        "astIdentical": true,
+        "priorAstSha256": "017925d2abe1467f00b43506fa8e4d130590f98ce1a2cd507e0cbcc7f41a7774",
+        "newAstSha256": "017925d2abe1467f00b43506fa8e4d130590f98ce1a2cd507e0cbcc7f41a7774",
+        "newLine": 284
+      },
+      "PublicFetcher.__init__": {
+        "astIdentical": true,
+        "priorAstSha256": "5bdb5423544c159f17adaf889d60d24459a85e0d6fc45eea39b1268b9cb8a627",
+        "newAstSha256": "5bdb5423544c159f17adaf889d60d24459a85e0d6fc45eea39b1268b9cb8a627",
+        "newLine": 286
+      },
+      "PublicFetcher._paths": {
+        "astIdentical": true,
+        "priorAstSha256": "d01a428df7d3829668dc2195f45a34380f83213fbe2e87953c45b8c08173cd82",
+        "newAstSha256": "d01a428df7d3829668dc2195f45a34380f83213fbe2e87953c45b8c08173cd82",
+        "newLine": 298
+      },
+      "PublicFetcher._load": {
+        "astIdentical": true,
+        "priorAstSha256": "a97964fa5a40a07a8e7261879291b50c4c659303725e391404b39faab6e2bdd2",
+        "newAstSha256": "a97964fa5a40a07a8e7261879291b50c4c659303725e391404b39faab6e2bdd2",
+        "newLine": 302
+      },
+      "PublicFetcher._wire": {
+        "astIdentical": true,
+        "priorAstSha256": "f1560707a02b15b5563541e7887343b653b77738b02bf4ad56eb13cb6b87b925",
+        "newAstSha256": "f1560707a02b15b5563541e7887343b653b77738b02bf4ad56eb13cb6b87b925",
+        "newLine": 308
+      },
+      "PublicFetcher._transport": {
+        "astIdentical": true,
+        "priorAstSha256": "18d2e24923aa344c00b1e52a45c485e9aabff278002bcd5b44c59d5bad49b9fc",
+        "newAstSha256": "18d2e24923aa344c00b1e52a45c485e9aabff278002bcd5b44c59d5bad49b9fc",
+        "newLine": 326
+      },
+      "PublicFetcher._rules": {
+        "astIdentical": true,
+        "priorAstSha256": "f4db7fe4d02af3ccb17cb2f0f2a2cbbe04748a7107a6eb7d019564dfc084aa1f",
+        "newAstSha256": "f4db7fe4d02af3ccb17cb2f0f2a2cbbe04748a7107a6eb7d019564dfc084aa1f",
+        "newLine": 351
+      },
+      "PublicFetcher.fetch": {
+        "astIdentical": true,
+        "priorAstSha256": "a652ef43fbade7736e4bc9df850022d050087b3b6833c06afdf87b7417bc3ede",
+        "newAstSha256": "a652ef43fbade7736e4bc9df850022d050087b3b6833c06afdf87b7417bc3ede",
+        "newLine": 402
+      }
+    },
+    "other6DependencyBytesIdentical": true,
+    "fullUnifiedDiff": "--- A071\n+++ B30\n@@ -509,6 +509,14 @@\n             context['identityDepth'] = identity_depth\n         if context not in entry['contexts']:\n             entry['contexts'].append(context)\n+        if kind == 'profile_identity_review' and entry['state'] == 'retained_prior_evidence':\n+            # A specific identity/field review requires its actual response.\n+            # Preserve the older retention receipt and reuse a fresh imported\n+            # capture through the ordinary fetch/cache path under the lease.\n+            previous = entry.pop('retainedEvidence', None)\n+            if previous:\n+                entry.setdefault('retainedEvidenceHistory', []).append(previous)\n+            entry.update(state='pending', identityReviewRequestedAt=now())\n \n     def seed(self, atlas):\n         for d in json.loads((ROOT / 'data/ucsd/departments.json').read_text())['departments']:\n@@ -751,7 +759,7 @@\n     if queue.state.get('literalUriDiscoveryVersion', 0) >= 1:\n         return\n     kinds = {'department', 'directory', 'faculty_directory', 'institute_directory',\n-             'profile', 'new_faculty_profile', 'profile_discovery',\n+             'profile', 'new_faculty_profile', 'profile_discovery', 'profile_identity_review',\n              'lab_destination', 'lab_link_candidate', 'discovered_lab', 'identity_page'}\n     selected = []\n     changed_links = set()\n@@ -838,7 +846,7 @@\n     contexts = list(item['contexts'])\n     for context in contexts:\n         dept, kind = context['department'], context['kind']\n-        if official(base) and kind not in {'lab_destination', 'profile', 'identity_page'} and item['depth'] <= 2:\n+        if official(base) and kind not in {'lab_destination', 'profile', 'identity_page', 'profile_identity_review'} and item['depth'] <= 2:\n             # Reuse only proven explicit local directory records; never infer PIs.\n             for lab in parse_directory(dept, meta, body, atlas['professors']):\n                 lab['principalInvestigator'] = lab['principalInvestigatorProfileUrl'] = 'Not found'\n@@ -992,12 +1000,13 @@\n         while not stopping.is_set() and not (args.cache / 'STOP').exists():\n             busy_hosts = {urllib.parse.urlsplit(x['url']).netloc for x in running.values()}\n             # Spread slow hosts rather than filling all workers with Profiles.\n-            priority = {'unresolved_candidate': 0, 'department': 1, 'institute_directory': 1, 'faculty_directory': 2, 'directory': 3, 'discovered_lab': 4, 'identity_page': 4, 'lab_link_candidate': 4, 'lab_destination': 5, 'profile': 6, 'new_faculty_profile': 6, 'profile_discovery': 7}\n-            items = sorted(queue.state['items'].values(), key=lambda x: min(priority[c['kind']] for c in x['contexts']))\n+            priority = {'unresolved_candidate': 0, 'department': 1, 'institute_directory': 1, 'faculty_directory': 2, 'directory': 3, 'discovered_lab': 4, 'identity_page': 4, 'lab_link_candidate': 4, 'profile_identity_review': 4, 'lab_destination': 5, 'profile': 6, 'new_faculty_profile': 6, 'profile_discovery': 7}\n+            items = sorted(queue.state['items'].values(), key=lambda x: min((priority.get(c['kind'], 8) for c in x['contexts']), default=8))\n             # Reserve one worker for the long serialized Profiles queue while\n             # independent domains progress; no second Profiles wire request.\n             slow_candidates = [x for x in items if x['state'] == 'pending' and urllib.parse.urlsplit(x['url']).netloc == 'profiles.ucsd.edu' and x.get('retryAt', 0) <= time.time()]\n-            slow = min(slow_candidates, key=lambda x: 0 if any(c.get('professorId') and c.get('sourceUrl') == 'https://profiles.ucsd.edu/sitemap.xml' for c in x['contexts']) else 2 if all(c['kind'] == 'profile_discovery' for c in x['contexts']) else 1) if slow_candidates else None\n+            slow = min(slow_candidates, key=lambda x: (not any(c['kind'] == 'profile_identity_review' for c in x['contexts']),\n+                       0 if any(c.get('professorId') and c.get('sourceUrl') == 'https://profiles.ucsd.edu/sitemap.xml' for c in x['contexts']) else 2 if all(c['kind'] == 'profile_discovery' for c in x['contexts']) else 1)) if slow_candidates else None\n             if slow:\n                 items = [slow] + [x for x in items if x is not slow]\n             for item in items:\n"
+  },
+  "offlineCompositionSmoke": {
+    "passed": true,
+    "adapterSha256": "bb120e073854ce2b18230cf1b7cf0861dec61c2fd4953bb91b9aa59bd244c7b2",
+    "expectedSourceHashes": {
+      "collectorCodeSha256": "b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674",
+      "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "scopePolicyCodeSha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029"
+    },
+    "expectedAll7Pins": {
+      "collect_ucsd_coverage.py": "b30b506404870fff8eac436efeb61a5700598b77f9aea6dc638c3ecd0c8c7674",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "refresh_labs.py": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+      "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+    },
+    "actualProcessReceiptPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/process.json",
+    "actualProcessReceiptSha256": "1d385df1e73724ac6d9b5ff4f537ee5a02fcec60bac4cda2bc54a7ac4657ad6d",
+    "actualProcessPid": 57744,
+    "compiledModules": [
+      {
+        "moduleName": "lab_destinations",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/lab_destinations.py"
+      },
+      {
+        "moduleName": "refresh_labs",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/refresh_labs.py"
+      },
+      {
+        "moduleName": "refresh_faculty_directories",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/refresh_faculty_directories.py"
+      },
+      {
+        "moduleName": "collection_lock",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/collection_lock.py"
+      },
+      {
+        "moduleName": "collection_scope",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/collection_scope.py"
+      },
+      {
+        "moduleName": "network_coordination",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/network_coordination.py"
+      },
+      {
+        "moduleName": "readonly_collection_fetcher",
+        "codeFile": "/tmp/ucsd-research-20261016/scripts/collect_ucsd_coverage.py"
+      }
+    ],
+    "subprocessCalls": 0,
+    "fetcherInstances": 0,
+    "gateInstances": 0,
+    "wireRequests": 0,
+    "networkRequests": 0,
+    "collectorOrSharedStateWrites": 0,
+    "publicOriginAndLiteralUriPureChecksPassed": true
+  },
+  "networkRequestsMade": 0,
+  "schemaVersion": 1,
+  "verdict": "PASS_EXACT_B30_SEVEN_SOURCE_COMPOSITION_WITH_PRESERVED_D1_D2_LIMITATIONS",
+  "metadataOnly": true,
+  "collectorFilesModified": false,
+  "sharedStateModified": false,
+  "readinessUpdated": false,
+  "newNetworkBoundaryIssues": [],
+  "changeReview": [
+    {
+      "definition": "Queue.add",
+      "change": "An explicit profile_identity_review reopens only retained_prior_evidence as pending. The retained receipt moves to retainedEvidenceHistory; identityReviewRequestedAt is scheduling metadata, never source observedAt.",
+      "implication": "Allows actual existing profile-response/cache review under normal lease/fetch path; no response/identity acceptance is synthesized. retain_recent_profiles excludes this new context from automatic retention."
+    },
+    {
+      "definition": "replay_literal_uri_discovery",
+      "change": "Adds profile_identity_review to the existing replay kind set; successful preserved captures and matching cache body hashes are still required, and profile main remains discovery scope.",
+      "implication": "No new URL generation, HTTP call, URI replay policy or source-date rewrite is introduced by the diff."
+    },
+    {
+      "definition": "analyze",
+      "change": "Excludes profile_identity_review from the generic official-directory lab parser, alongside lab_destination/profile/identity_page.",
+      "implication": "Reduces inappropriate directory parsing of explicit profile identity reviews; other existing profile appointment/link discovery paths are unchanged."
+    },
+    {
+      "definition": "collect",
+      "change": "Assigns profile_identity_review priority4, uses priority.get(...,8) and min(...,default=8), and sorts explicit profile identity reviews ahead of other Profiles candidates.",
+      "implication": "Scheduling only: still one busy host per collector worker set, same Profiles reserve, unchanged shared gate/10-second floor, scope request_reason, max-pages and fetcher calls."
+    }
+  ],
+  "preservedLimitations": [
+    {
+      "id": "D1",
+      "label": "robots404/410 challenge classified not_found",
+      "upstreamStatus": "unchanged_open",
+      "summaryStatus": "existing_TrackedFetcher_rules_compensation_unchanged",
+      "detail": "Collector _rules still sets access_challenge but classifies404/410 as not_found. Summary adapter returns an unavailable decision copy, preserving the original cached metadata/date; do not claim upstream fixed."
+    },
+    {
+      "id": "D2",
+      "label": "mixed503/curl63 transient priority",
+      "upstreamStatus": "unchanged_open_bounded",
+      "summaryStatus": "summary_load_and_execution_do_not_instantiate_collector_Queue_retries",
+      "detail": "transient_response still checks RETRY503 before curl63 hard-error filter. Collector retry machinery remains bounded to attempts3 as before; summary handles a selected candidate once, with unchanged cap and durable once. This is code behavior, not a new observed live event."
+    }
+  ],
+  "protectedBehavior": {
+    "publicOrigin": "safe_url/official/url_key and exact refresh_labs canonical helper unchanged; summary wrapper retains supplied wire scheme/host/effective path after pinned public-origin validation.",
+    "TLS": "curl invocation unchanged, protocols restricted tohttp/https, system TLS validation retained, no insecure flag or curl automatic redirects.",
+    "authentication": "authentication_target and pre-cache/pre-wire login detection unchanged.",
+    "robots": "Origin-specific robots cache,300000-byte cap, daily reuse/attempt rules and destination robots checks unchanged.",
+    "sharedGate": "Exact pinned HostRequestGate dependency unchanged; each robots/page/redirect wire holds shared slot and records response/cooldown.",
+    "retryAfter": "Source response cooldown propagation and redirect destination defer unchanged.",
+    "redirects": "Manual seven-hop page loop, six-hop robots loop, validated target and target robots unchanged.",
+    "pageCap": "PublicFetcher default2000000 plus transport max-filesize and post-read byte check unchanged; no broader cap introduced."
+  },
+  "noAutomaticReadinessOrAdmission": true,
+  "testsRunByThisReview": 0,
+  "validationPerformed": "Exact seven source hashes, full collector unified diff, all definition/module-level AST comparisons, protected networking AST proof, actual load_fetcher exact7 composition smoke and pure URL checks; no full suite rerun claimed.",
+  "scopeClarification": "Actual changed processing function is analyze, scheduler function is collect; main is AST-identical. New Queue class AST differs only because Queue.add differs."
+}

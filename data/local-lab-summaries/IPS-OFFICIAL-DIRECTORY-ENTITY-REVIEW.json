@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:52:43+00:00",
+  "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+  "verdict": "LAB_MAPPING_CONFIRMED_ROOT_PAGE_IDENTITY_STAYS_UNCERTAIN",
+  "networkRequestsByReviewer": 0,
+  "rawPacketCodeCollectorWrites": 0,
+  "actualDirectory": {
+    "url": "https://astro.ucsd.edu/research/labs/index.html",
+    "observedAt": "2026-10-16T05:51:14+00:00",
+    "httpStatus": 200,
+    "redirects": [],
+    "bodySha256": "235c204c6646373969a01f380d06014a9863f284ef9fbd24f6f3f6113414197c",
+    "actualHashAndOriginalSidecarVerified": true,
+    "fullContentDOMCharactersRead": 4406,
+    "computedStableSourceId": "src-f8c7e9c911ee6b44",
+    "localizedCard": {
+      "headingTag": "h2",
+      "heading": "Space Weather Laboratory",
+      "parentTag": "div",
+      "parentClass": "col-md-6",
+      "proseQuote": "UC San Diego researchers contribute to space, balloon, and ground-based instrumentation to study solar physics and space weather .",
+      "link": {
+        "href": "https://ips.ucsd.edu",
+        "text": "space weather"
+      },
+      "piQuote": "PI: Dr. Bernard Jackson"
+    },
+    "scope": "One localized card; adjacent Boggs/NuStar, other laboratories and shared facilities are excluded.",
+    "dateBoundary": "Current actual capture of an undated directory statement; no PI appointment effective date or entire project update date inferred."
+  },
+  "entityAndScienceConclusion": {
+    "entityIdentityConfirmed": true,
+    "affiliationSourceReported": true,
+    "stableIdMappingSupported": true,
+    "reason": "The current official Space Weather Laboratory card names the lab, attributes it to UC San Diego, lists Bernard Jackson and explicitly links the IPS site. This resolves the earlier historical-only lab-to-project mapping.",
+    "researchScope": "Lab solar physics/space weather instrumentation context is supported by its own card. Previously read IPS introductions support the linked Solar Group reconstruction/forecast project and its explicitly stated modelling methods, with project scope/date and external-instrument boundaries preserved.",
+    "previousScopeReport": "data/local-lab-summaries/IPS-INTRODUCTION-SCIENCE-SCOPE-REVIEW.json",
+    "foreignAntennaOperationOrCurrent2026ProgrammeInferred": false
+  },
+  "rootPageBoundary": {
+    "sourceId": "src-6e7a68c11632c48b",
+    "actualRootRequestedAndFinalUrl": "https://ips.ucsd.edu/",
+    "observedAt": "2026-10-16T01:07:30+00:00",
+    "bodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+    "quote": "A&A/ISEE IPS Space Weather Forecast",
+    "sourceRole": "listed_lab_destination",
+    "rootHasLiteralNamedSpaceWeatherLabProof": false,
+    "rootHasLiteralBernardJacksonProof": false,
+    "reason": "The retained root source identifies the A&A/ISEE forecast project and frames fallback. The external official link supports lab-to-site association but should not be silently reinterpreted as a new root-local named-lab quote under the existing conservative projection policy.",
+    "canonicalOrRedirectChangeRecommended": false
+  },
+  "dataOnlyResolution": {
+    "recommended": true,
+    "steps": [
+      "Deep-copy the entire pre-correction raw JSON into previousScientificFindings and the entire previous active evidence array into previousEvidenceBeforeCurrentIdentityReview; retain original source IDs, quote strings, observation dates and original supports there.",
+      "Only in the active evidence array, reclassify the old root A&A/ISEE quote from supports=['identity'] to supports=['destination_project_context']; record the actual metadata-correction review time and rationale.",
+      "Append the new actual localized official-directory identity/affiliation/research evidence and project-scoped science/method evidence. Set laboratory identity/status based on those sources, not the project title.",
+      "Keep the packet's root fetch, source records, preparedAt and all source dates/hash values unchanged. Stage the directory as a separate official followup, not as listed_lab_destination."
+    ],
+    "activeEvidenceCorrection": {
+      "sourceId": "src-6e7a68c11632c48b",
+      "quote": "A&A/ISEE IPS Space Weather Forecast",
+      "beforeSupports": [
+        "identity"
+      ],
+      "afterSupports": [
+        "destination_project_context"
+      ],
+      "nature": "Explicit correction of evidence scope, not silent quote deletion or re-dating."
+    },
+    "preservationNote": "Active supports intentionally differ; do not claim the old active evidence array remains an exact prefix. The complete historical object arrays and quote/source provenance are preserved exactly in the named history fields. Original raw SHA can additionally be retained for serialization-level audit."
+  },
+  "inMemoryHydrateExperiment": {
+    "networkRequests": 0,
+    "prepareOrCheckpointCalled": false,
+    "rawAndPacketUnchangedOnDisk": true,
+    "withoutScopeCorrection": {
+      "labStatus": "supported",
+      "entityAcceptance": "accepted_lab_group",
+      "pageIdentity": "confirmed",
+      "canCountAsVerifiedLabGroupURL": true,
+      "assessment": "Reproduces the unwanted projection caused by copying confirmed raw identity through the old project-title identity proof."
+    },
+    "withProposedDataOnlyCorrection": {
+      "labStatus": "supported",
+      "entityAcceptance": "accepted_lab_group",
+      "pageIdentity": "uncertain",
+      "canCountAsVerifiedLabGroupURL": false,
+      "rootCanonical": "https://ips.ucsd.edu/",
+      "rootFetchUnchanged": true,
+      "fullOldRawSnapshotExact": true,
+      "fullOldEvidenceSnapshotExact": true
+    },
+    "globalCountNote": "This lab contributes no additional verified-root count; no independent global total was recomputed."
+  },
+  "actionableIssues": [],
+  "actualAppliedResultReview": {
+    "reviewedAt": "2026-10-16T05:54:05+00:00",
+    "applicationReviewedAt": "2026-10-16T05:53:31+00:00",
+    "applicationReceipt": "IPS-LINKED-PROJECT-SCIENCE-APPLICATION.json",
+    "verdict": "PASS",
+    "rawStatus": "supported",
+    "entityAcceptance": "accepted_lab_group",
+    "projectSpecificQuestionsAndMethodsExplicitlyScoped": true,
+    "currentRawSha256": "ecc518fdbd45a36d6a2d330d1dce7b9ea32980834ca986890c734f59bcbf780a",
+    "activeRootSupports": [
+      "destination_project_context"
+    ],
+    "rootPageIdentity": "uncertain",
+    "canCountAsVerifiedLabGroupURL": false,
+    "canonicalUrl": "https://ips.ucsd.edu/",
+    "rootFetchUnchangedVs641fd9a": true,
+    "packetPreparedAtUnchangedVs641fd9a": true,
+    "allOldSourceObjectsExactPrefixVs641fd9a": true,
+    "oldEvidenceHistoryExact": true,
+    "allOldScientificIdentityAffiliationUncertaintyBlockerValuesExactInPreviousScientificFindings": true,
+    "wholeOldRawExactlyReconstructedFromHistoryAndStableLabId": true,
+    "historyShapeNote": "Actual previousScientificFindings stores all old non-evidence/non-labId fields, and previousEvidenceBeforeCurrentIdentityReview stores the old evidence array. Together with the unchanged stable labId they reconstruct the entire old raw object exactly. This is equivalent complete preservation without duplicating labId/evidence in the findings object.",
+    "scientificDateAndExternalInstrumentBoundariesRetained": true,
+    "reviewerRawPacketCodeWrites": false,
+    "networkRequests": 0
+  }
+}

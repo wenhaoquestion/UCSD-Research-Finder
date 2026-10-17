@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:09:16+00:00",
+  "result": "PASS",
+  "scope": "Independent actual-body/scientific and provenance integrity QA of JuChen518 and Ng603 only, against5f9. No new collection or broad crawl.",
+  "baseCommit": "5f9a28e3cd523c3bd69e84f8de4e45b13622dff5",
+  "networkRequestsMade": 0,
+  "onlyOwnReportPairWritten": true,
+  "codeRawPacketCollectorSharedWrites": 0,
+  "counts": {
+    "records": 2,
+    "fullActualBodiesRead": 3,
+    "provenancePass": 3,
+    "hydratePass": 2,
+    "originalHTTPSVerified": 0,
+    "labIdAdditions": 0
+  },
+  "sources": [
+    {
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "sourceId": "src-d75e35630ead60fd",
+      "actualRequestedUrl": "http://juchenlab.ucsd.edu/homepage.htm",
+      "finalUrl": "http://juchenlab.ucsd.edu/homepage.htm",
+      "originalObservedAt": "2026-10-16T05:34:24+00:00",
+      "bodySha256": "e37e3262438b0821cd012c26ae9e08b042a7d4df225c989441e0c0a26291f29a",
+      "title": "Ju Chen Lab - UC San Diego School of Medicine",
+      "visibleTextCharacters": 1763,
+      "fullVisibleBodyActuallyRead": true,
+      "cachePathAtQA": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4a6c6df68c48043f030dba68fd4aa4214c79a595c3093b22ad56ed2b7351ebea.html",
+      "originalCollectorCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4a6c6df68c48043f030dba68fd4aa4214c79a595c3093b22ad56ed2b7351ebea.html",
+      "cachePathOnlyRelocation": false,
+      "snapshotRule": "Any byte-identical relocation preserves sourceId/URL/time/hash and is not a new capture.",
+      "checks": {
+        "byteHash": true,
+        "originalObservation": true,
+        "actualHTTPURIs": true,
+        "noRedirect": true,
+        "http200": true,
+        "fullExtraction": true,
+        "sourceMatchesFetch": true,
+        "originalCollectorBytes": true
+      },
+      "sourceContentDates": [],
+      "role": "reviewed_related_capture_requires_entity_match"
+    },
+    {
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "sourceId": "src-dcaabae720d63562",
+      "actualRequestedUrl": "http://juchenlab.ucsd.edu/about.htm",
+      "finalUrl": "http://juchenlab.ucsd.edu/about.htm",
+      "originalObservedAt": "2026-10-16T05:35:51+00:00",
+      "bodySha256": "3c7c3cf747a74b2be83b1244d69595448e5e463bc522f6401ede63daf3e45e76",
+      "title": "About the lab - Ju Chen Lab - UC San Diego",
+      "visibleTextCharacters": 3020,
+      "fullVisibleBodyActuallyRead": true,
+      "cachePathAtQA": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e3d3ed15920e95e45bd74cf431f46075bd16a4dbe96f589f6141d3683d2e267e.html",
+      "originalCollectorCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e3d3ed15920e95e45bd74cf431f46075bd16a4dbe96f589f6141d3683d2e267e.html",
+      "cachePathOnlyRelocation": false,
+      "snapshotRule": "Any byte-identical relocation preserves sourceId/URL/time/hash and is not a new capture.",
+      "checks": {
+        "byteHash": true,
+        "originalObservation": true,
+        "actualHTTPURIs": true,
+        "noRedirect": true,
+        "http200": true,
+        "fullExtraction": true,
+        "sourceMatchesFetch": true,
+        "originalCollectorBytes": true
+      },
+      "sourceContentDates": [],
+      "role": "reviewed_related_capture_requires_entity_match"
+    },
+    {
+      "labId": "ucsd-live-lab-bf194dbf29f17f",
+      "sourceId": "src-15280fa2dd979d81",
+      "actualRequestedUrl": "http://flexible-electronics.ucsd.edu/",
+      "finalUrl": "http://flexible-electronics.ucsd.edu/",
+      "originalObservedAt": "2026-10-16T05:32:31+00:00",
+      "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+      "title": "Tse Nga (Tina) Ng UCSD",
+      "visibleTextCharacters": 3020,
+      "fullVisibleBodyActuallyRead": true,
+      "cachePathAtQA": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/97a9753296e9b28ccd8e4fbe3d5ce9463280ccd33e760730a991897deb11878d.html",
+      "originalCollectorCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/97a9753296e9b28ccd8e4fbe3d5ce9463280ccd33e760730a991897deb11878d.html",
+      "cachePathOnlyRelocation": false,
+      "snapshotRule": "Any byte-identical relocation preserves sourceId/URL/time/hash and is not a new capture.",
+      "checks": {
+        "byteHash": true,
+        "originalObservation": true,
+        "actualHTTPURIs": true,
+        "noRedirect": true,
+        "http200": true,
+        "fullExtraction": true,
+        "sourceMatchesFetch": true,
+        "originalCollectorBytes": true
+      },
+      "sourceContentDates": [],
+      "role": "reviewed_related_capture_requires_entity_match"
+    }
+  ],
+  "records": [
+    {
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "oldStatus": "unresolved",
+      "newStatus": "supported",
+      "rawReviewedAt": "2026-10-16T06:06:35+00:00",
+      "rawFullHistoryExact": true,
+      "oldSourceExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 4,
+      "preparedAtExact": true,
+      "originalHTTPSFetchExact": true,
+      "originalHTTPSLastCheckedAt": "2026-10-16T03:49:45+00:00",
+      "originalHTTPSStatus": "robots_unavailable",
+      "originalHTTPSPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "originalHTTPSVerified": false,
+      "originalCanonical": null,
+      "originalRedirects": [],
+      "baselineListedHTTPS": "https://juchenlab.ucsd.edu/homepage.htm",
+      "baselinePIUnknownRetained": "Not found",
+      "baselineOfficialLinkProofs": [
+        {
+          "sourceUrl": "https://cardiology.ucsd.edu/research/labs/index.html",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "method": "official_directory_main_content",
+          "evidence": "Ju Chen Laboratory",
+          "status": "verified"
+        },
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/ju.chen",
+          "observedAt": "2026-10-03T02:38:29+00:00",
+          "method": "official_profile_explicit_lab_link",
+          "evidence": "Ju Chen Laboratory → https://juchenlab.ucsd.edu/homepage.htm",
+          "status": "verified"
+        }
+      ],
+      "finalEvidenceLiteralChecks": [
+        {
+          "sourceId": "src-629da6e55206a571",
+          "quote": "Ju Chen Laboratory",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-d75e35630ead60fd",
+          "quote": "Ju Chen Laboratory",
+          "supports": [
+            "identity"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-d75e35630ead60fd",
+          "quote": "UCSD School of Medicine",
+          "supports": [
+            "affiliation"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-dcaabae720d63562",
+          "quote": "A major focus of the Chen lab is to understand mechanisms by which mutations in cytoskeletal proteins cause myopathy by utilizing genetically engineered mouse models, human induced pluripotent stem cells (iPSCs) from human patients, physiological measurements, and a range of molecular and cell biological techniques.",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-dcaabae720d63562",
+          "quote": "Another major focus of the lab is the study of signaling pathways underlying cardiac hypertrophy and heart failure.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-d75e35630ead60fd",
+          "quote": "My lab primarily focuses on understanding the molecular basis of cardiac and skeletal myopathies and heart failure, with a concurrent effort to develop potential therapies for these conditions.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        }
+      ],
+      "hydratePass": true,
+      "scopeQA": "PASS. AboutLab explicitly states Chen lab majorfocus, cytoskeletal myopathy mechanisms and cardiac-hypertrophy/heart-failure pathways; its one whole-lab methods sentence names engineeredmouse,patientiPSC,physiologicalmeasurement,molecular/cell techniques. No protectedDropbox/news/instrument/therapy-effect inference.",
+      "findings": [],
+      "fullNameProof": "Ju Chen Laboratory / Prof. Dr. Ju Chen on actual HTTP homepage; baseline official cardiology-directory and profiles.ucsd.edu/ju.chen link explicitly name Ju Chen Laboratory.",
+      "homepageOverviewCoverageAdded": true,
+      "contentDateBoundary": "November/December2025 are paper/news labels, not complete research-update/current-PI dates.",
+      "affiliationQA": "source_reported acceptable: named lab homepage and UCSD School of Medicine text; no dated current appointment asserted."
+    },
+    {
+      "labId": "ucsd-live-lab-bf194dbf29f17f",
+      "oldStatus": "partial",
+      "newStatus": "supported",
+      "rawReviewedAt": "2026-10-16T06:06:35+00:00",
+      "rawFullHistoryExact": true,
+      "oldSourceExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 3,
+      "preparedAtExact": true,
+      "originalHTTPSFetchExact": true,
+      "originalHTTPSLastCheckedAt": "2026-10-16T01:01:10+00:00",
+      "originalHTTPSStatus": "robots_unavailable",
+      "originalHTTPSPageIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "本次目的页未取得可匹配身份的正文引证；实体的历史身份结论另列。"
+      },
+      "originalHTTPSVerified": false,
+      "originalCanonical": null,
+      "originalRedirects": [],
+      "baselineListedHTTPS": "https://flexible-electronics.ucsd.edu/",
+      "baselinePIUnknownRetained": "Not found",
+      "baselineOfficialLinkProofs": [
+        {
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+          "observedAt": "2026-10-02T22:48:03+00:00",
+          "method": "official_profile_explicit_lab_link",
+          "evidence": "Lab Website → https://flexible-electronics.ucsd.edu/",
+          "status": "verified"
+        }
+      ],
+      "finalEvidenceLiteralChecks": [
+        {
+          "sourceId": "src-35949bde48448379",
+          "quote": "Tse Nga (Tina) Ng Professor, ECE",
+          "supports": [
+            "linked_faculty_identity_context"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-35949bde48448379",
+          "quote": "Professor Tina Tse Nga Ng’s research focuses on the development of flexible electronics. Her research method is based on additive printing, which allows low-temperature patterning",
+          "supports": [
+            "personal_research_context"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-15280fa2dd979d81",
+          "quote": "Welcome to the Ng Lab!",
+          "supports": [
+            "identity"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-15280fa2dd979d81",
+          "quote": "We engineer flexible electronics and novel processing methodologies to advance free-form fabrication for innovative electronics.",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "literal": true
+        },
+        {
+          "sourceId": "src-15280fa2dd979d81",
+          "quote": "Tse Nga (Tina) Ng",
+          "supports": [
+            "identity"
+          ],
+          "literal": true
+        }
+      ],
+      "hydratePass": true,
+      "scopeQA": "PASS. Welcome to the Ng Lab plus its We engineer flexibleelectronics/novelprocessing/free-formfabrication sentence supports whole-lab basic research. Methods[] correctly excludes first-person vision, individual bio,priorPARC/graduate work and paper examples. Old faculty-based evidence supports explicitly narrowed; complete original raw retained.",
+      "findings": [],
+      "fullNameProof": "Tse Nga (Tina) Ng appears in both retained official faculty profile and actual HTTP lab page; not a nickname-only match.",
+      "officialActualLabWebsiteAnchor": {
+        "sourceId": "src-35949bde48448379",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+        "observedAt": "2026-10-16T01:01:09+00:00",
+        "label": "Lab Website",
+        "href": "http://flexible-electronics.ucsd.edu/"
+      },
+      "contentDateBoundary": "Publication and award years2012/2015/2021/2025 and dynamiccopyright are not global update/current-lab dates.",
+      "affiliationQA": "uncertain retained; no institutional statement asserted from personal title/bio/domain alone."
+    }
+  ],
+  "snapshotRelocationPolicy": "CachePath-only movement into own immutable snapshots is acceptable only with byte-equalSHA/sourceId/actualURI/originaltime fixed; no new observation or live request is implied.",
+  "baselineBytesSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "collectorQueueSnapshotAt": "2026-10-16T06:09:11+00:00",
+  "applicationReceipt": {
+    "schemaVersion": 1,
+    "reviewedAt": "2026-10-16T06:06:35+00:00",
+    "items": [
+      {
+        "labId": "ucsd-live-lab-98174ce75b39b1",
+        "reviewedAt": "2026-10-16T06:06:35+00:00",
+        "oldStatus": "unresolved",
+        "newStatus": "supported",
+        "oldRawPreservedExactly": true,
+        "originalHTTPSRootPageIdentity": "uncertain",
+        "originalHTTPSRootVerified": false,
+        "originalLastCheckedAtUnchanged": true,
+        "newNetworkRequests": 0
+      },
+      {
+        "labId": "ucsd-live-lab-bf194dbf29f17f",
+        "reviewedAt": "2026-10-16T06:06:35+00:00",
+        "oldStatus": "partial",
+        "newStatus": "supported",
+        "oldRawPreservedExactly": true,
+        "originalHTTPSRootPageIdentity": "uncertain",
+        "originalHTTPSRootVerified": false,
+        "originalLastCheckedAtUnchanged": true,
+        "newNetworkRequests": 0
+      }
+    ],
+    "noBaselineOrCanonicalChanges": true,
+    "IDsMergedOrRenamed": false,
+    "collectorWrites": 0,
+    "additionalLiteralEvidenceReview": {
+      "reviewedAt": "2026-10-16T06:07:32+00:00",
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "sourceId": "src-d75e35630ead60fd",
+      "scope": "Cardiac/skeletal myopathies and heart-failure sentence explicitly covers summary first clause; no scientific field or capture-date change."
+    }
+  },
+  "inputHashes": {
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/RELATED-HTTP-CACHE-SOURCE-STAGING.json": "c84a430acc388a6c217e0478029820a9b3321d14a84452de48b8dd8a6dd13340",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/JU-CHEN-NG-RELATED-HTTP-SCIENCE-APPLICATION.json": "b89a0b5c9b34448e6478d63b862b65181e9650dbfc47bccc7986390013f630e5",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/research-atlas.json": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": "f3b14396570a97337e23734c454d10417920774c203595bd981c93e867696b34",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-live-lab-98174ce75b39b1.json": "a544c8aea6bedd94ceef9ad9e7610e4c20b6ce399159610db39876e8ab097016",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-live-lab-98174ce75b39b1.json": "28c3b686e8c929b306903af96a4065c43f9e40fa5072eae338be776a4bcd2946",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-live-lab-bf194dbf29f17f.json": "e2a24fb5d50bd4a9704fe80ea0415e4a6ba3f02af54d31c8a1dd30cdd25dbf0b",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-live-lab-bf194dbf29f17f.json": "6f5a44d4c7f5446128970ebb7b049a45f17ac544dbc80fb09ab0f4671144b80b"
+  },
+  "findings": [],
+  "limits": [
+    "This confirms science/entity scope of independent HTTP captures; originalHTTPSrobots failures remain the current original-URL observations.",
+    "No alias/migration/baselinePI import or dated-current-affiliation claim.",
+    "No protectedDropbox methods, searchforms/mobileJS or external links requested."
+  ]
+}

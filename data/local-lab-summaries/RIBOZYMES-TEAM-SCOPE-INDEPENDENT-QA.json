@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:47:05+00:00",
+  "status": "team_scope_acceptable_with_minimal_quote_completion",
+  "inputDraft": {
+    "path": "data/local-lab-summaries/RIBOZYMES-TEAM-SCOPE-REVIEW-DRAFT.json",
+    "sha256": "73d805e1041ec8181d0beb7f7e950fe95a784d9dde64aac6cc8dd766f5e77a87",
+    "markdownSha256": "48fe8702e96eb573d523069ead7f284595da46f42ec2aaf6bca6aa470a6b8fc2"
+  },
+  "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ribozymes",
+  "rawSha256": "c9502f0cbf211624731a06e84e0bf51c57c065cfac10d0c4b5bed4670e0fffa4",
+  "packetSha256": "0c7fdf5635a893672a8282e05090ed07715f8f014c05e05165699279e27b4092",
+  "sourceProof": {
+    "sourceId": "src-dbfcbf37f71e5279",
+    "sourceUrl": "https://ribozymes.ucsd.edu/team",
+    "observedAt": "2026-10-16T01:35:48+00:00",
+    "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d07d59a21c5226520c38f28da44c8039ffb7735629d6df00babde8c290f608cc.html",
+    "bodySha256": "e59985f457ee6297aa0e3e0b8990e5cc1334ff8c198333995e005ee46434f8e0",
+    "originalMetadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d07d59a21c5226520c38f28da44c8039ffb7735629d6df00babde8c290f608cc.json",
+    "originalMetadataSha256": "f98a2da1dec109e54a266cc7e3e7eb4d8d07cfda3d408dec4d8d5a083f8bad18",
+    "mainCharacters": 2358,
+    "mainReadCompletely": true,
+    "mainEqualsPacketFullText": true,
+    "mainTextSha256": "97d24dd777ee33aa067b50408bde52f2495c7aa92213c0a09d4e4856d33fdb4c",
+    "httpStatus": 200,
+    "redirectChain": [],
+    "sourceDatesNotRetimed": true
+  },
+  "conclusions": [
+    "PI is interested/I believe and How did Life Start remain personal context; proposed RNA-biochemistry pathway is not counted as demonstrated team method.",
+    "Explicit We statements support therapeutic group-I-intron trans-splicing ribozymes, RNA-fragment removal/replacement and already-developed directed evolution.",
+    "Clinical application is a future hope; no efficacy, trial or implemented clinical treatment is asserted.",
+    "Summary/topics narrowed conservatively; questions remain empty, methods only directed evolution.",
+    "All old literal evidence/sourceIDs preserved with personal supports reclassified; status/identity/affiliation equal oldraw, packet root unchanged because no packet mutation.",
+    "Team member descriptions provide additional project context but are not swept into unquoted whole-lab claims."
+  ],
+  "findings": [
+    {
+      "kind": "exact_quote_coverage_completion",
+      "severity": "minimal",
+      "reasonZh": "收窄后的summary保留“改善核酶序列”，但所列methods quote截在strategies，未覆盖improved different sequences。正文确有支持，无需改科研陈述或来源时间。",
+      "sourceId": "src-dbfcbf37f71e5279",
+      "suggestedQuote": "To do that, we have developed directed evolution strategies that improved different sequences on the ribozymes.",
+      "suggestedSupports": [
+        "research",
+        "methods"
+      ],
+      "repairMode": "append_full_sentence_keep_original_short_methods_quote"
+    }
+  ],
+  "scopePass": true,
+  "evidenceCompletionPending": true,
+  "allDraftQuotesLiteral": true,
+  "oldRawHistoryPreservationAtApplication": "Draft not applied. Preserve complete original raw in application history while keeping source observations unchanged.",
+  "networkRequests": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorWrites": 0,
+  "applied": false,
+  "repairAgreement": {
+    "recordedAt": "2026-10-16T07:47:37+00:00",
+    "keepOriginalShortMethodsQuote": true,
+    "appendFullLiteralQuote": "To do that, we have developed directed evolution strategies that improved different sequences on the ribozymes.",
+    "supports": [
+      "research",
+      "methods"
+    ],
+    "originalInputHashPreserved": true,
+    "resolution": "Appending the exact full source sentence resolves evidence coverage while retaining the old literal proof prefix. Final saved delta has not yet been rebound by this report."
+  }
+}

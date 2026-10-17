@@ -1,0 +1,3184 @@
+{
+  "schemaVersion": 1,
+  "state": "complete",
+  "passed": true,
+  "startedAt": "2026-10-16T09:28:38+00:00",
+  "planSha256": "7b56fd88e283ddd395e5a769508e8d1eaef844c0adc72403defe8c2bc8bbdd29",
+  "helperSha256": "4194cf18c22bae571c83a42da1479c0f855c29592c156cbd3836413b3f96e161",
+  "sharedHelperSha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+  "componentHashesVerified": {
+    "REMAINING-METHOD-FIELD-INVENTORY.json": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+    "EMPTY-METHOD-FIELD-REVIEW-000-054.json": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+    "EMPTY-METHOD-FIELD-REVIEW-055-109.json": "e0ec6d91d1488bc15681812210a2bbfa8f1327423c33b1c690be29b6c933f254",
+    "EMPTY-METHOD-FIELD-REVIEW-110-165.json": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "EMPTY-METHOD-FIELD-SCOPE-ADDENDUM.json": "2c84fb63628f35c86d7a83861a884ea9394e95a2de860fbab53417d57103f863",
+    "EMPTY-METHOD-FIELD-CROSS-QA-000-054.json": "4052efc8299acb6e1e7f5a86d58db80cd867c3ef6e82b48d853a3941f4b73315",
+    "EMPTY-METHOD-FIELD-CROSS-QA-055-109.json": "59b0139652c1930e512250bbd89aacd8139e54c7f31cc753c256abb865854e15",
+    "EMPTY-METHOD-FIELD-CROSS-QA-110-165.json": "f9ac7808ee1f47e1f543eb48e753d697d360b1ac52b26dce4bcaffa20dc8f362",
+    "ADDITIONAL-INTEREST-ONLY-METHOD-SCOPE-REVIEW.json": "7f76d4531e8a76cbba64f4be3a177f02db5c88b1cb1f3eb875469d95436469b8",
+    "ADDITIONAL-INTEREST-ONLY-METHOD-INDEPENDENT-QA.json": "da66484a9cbeae98fe882c7196d3c5fb46ceb65e5abcc1db326db861601cb62b"
+  },
+  "scopeAddendumSha256": "2c84fb63628f35c86d7a83861a884ea9394e95a2de860fbab53417d57103f863",
+  "planCountsVerified": {
+    "methodUnknownsDocumented": 143,
+    "addedMethodRecords": 23,
+    "methodsAdded": 40,
+    "interestOnlyCorrections": 2,
+    "interestOnlyEntriesWithdrawn": 3,
+    "newLiteralProofs": 29,
+    "evidenceSupportsReclassifications": 3
+  },
+  "recordChangesReconstructed": 168,
+  "sourceCoverageAssociationsVerified": 611,
+  "outsideScopeRawRecordsFrozen": 716,
+  "allPacketsFrozen": 884,
+  "urlCoreCounterfactual": {
+    "all884HydratedSuccessfullyBeforeAndAfter": true,
+    "allURLCoreFieldsStableExcludingReviewTimeAndEvidence": true,
+    "before": {
+      "total": 884,
+      "status_supported": 738,
+      "acceptedLabGroups": 724,
+      "verifiedLabGroupURLs": 577,
+      "nonemptyMethodRecords": 584,
+      "status_partial": 56,
+      "status_unresolved": 90
+    },
+    "after": {
+      "total": 884,
+      "status_supported": 738,
+      "acceptedLabGroups": 724,
+      "verifiedLabGroupURLs": 577,
+      "nonemptyMethodRecords": 605,
+      "status_partial": 56,
+      "status_unresolved": 90
+    },
+    "all884URLCoreSha256": "fd189e17fb9f299e8b8f09f6dd0f3f7bcf7ed42ee59179232fa52a34977576a9"
+  },
+  "items": [
+    {
+      "labId": "ucsd-anesthesiology-lab-cuomo-lab",
+      "reviewIndex": 0,
+      "kind": "empty",
+      "oldSha256": "764a30e79094b0675bb1197368c49fb1c8211a0d243c0af6793b8d8807c69018",
+      "newSha256": "0363db69a216ddcac382b3d6abb488071d7912a4e8fde404d65e2422ac1317e8",
+      "packetSha256": "33809c677527894b81711984a97352f42ce36dc3c08a80455383a1fc7e084682",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-anesthesiology-lab-kistler-lab",
+      "reviewIndex": 1,
+      "kind": "empty",
+      "oldSha256": "1ae9071634ebe3ae12d33911cbc3a125fe5050ba5216b870b18bd735c6e4464b",
+      "newSha256": "3f902c62f0c875f3795766e746bf40e5e75b9a6729867e94f3a4b720084addef",
+      "packetSha256": "46edb52f70a22a4751d07cd2d5843505fa6ce671e83d88fb57a249c76749a4dc",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-anesthesiology-lab-shubayev-lab",
+      "reviewIndex": 2,
+      "kind": "empty",
+      "oldSha256": "69820dd41fe8a96ed33e46cbdeb6032e0c879f25fefd97814252b20b4c0ae5e3",
+      "newSha256": "32bd7825b40fb89afb192b0ee54942a16a9975748c8ee9f8f79cad422073e18f",
+      "packetSha256": "144b16e1e8fb586cb5b89058cbbdd270c4623a1c0f7ddb322dc09e00da9db621",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-sites-ucsd-edu-mind-lab",
+      "reviewIndex": 3,
+      "kind": "empty",
+      "oldSha256": "2ba287efdc59cd7c7a2069cfa610d858236ab0485133f400795780bff59d7dfa",
+      "newSha256": "3d277e2780dae6273290f8dd54dd47d6a8ccdf1f128bd02c0a3f285400a44f6a",
+      "packetSha256": "036e453b6e697f016e0c9ba79062c66003c1d2bdd64b9b27fbf3d8a402a949fa",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-bioengineering-smarr-lab",
+      "reviewIndex": 4,
+      "kind": "empty",
+      "oldSha256": "6a3bd9b5a494c33577f96e509871e4c9693a11623db3df6e0a4faba6f4bcd343",
+      "newSha256": "7b6378092f48b7b07aa7391e17bdb008b0fb6e656ccde030031a3df2b044cdef",
+      "packetSha256": "e5a254d5962c60348d811d00c4ede38d26f4b5e40fee591ad66e5d52988883a8",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-brenda-bloodgood",
+      "reviewIndex": 5,
+      "kind": "empty",
+      "oldSha256": "8206fab5104bace5f880fdc8603ea7590d54a60846a1de2b0b659b39ef3667d9",
+      "newSha256": "a927fba8ff9c595c53d5b43940340cad8499c90cf7f4f609e6c3be4f16492a9f",
+      "packetSha256": "3f367755e6b262ed744587c6c6eacf25ec38d395cff4bcd6066b7dc82e2dbf5f",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-daniel-hollern",
+      "reviewIndex": 6,
+      "kind": "empty",
+      "oldSha256": "6d444318b11ea62021686f0702d237795bbf4b0f826a344dc37479c059c44374",
+      "newSha256": "2cf0e0be2386337732302f7a89142ec58b4d8938ded073cdbecc4d684998107d",
+      "packetSha256": "a54779ee4d0ffdb3f9d3f50283eff6042febd28fe4b59af4108919b2a04adb3f",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-david",
+      "reviewIndex": 7,
+      "kind": "empty",
+      "oldSha256": "cae7dfccabfdb8405e2f9b26d0b9f3f4ee77657719f4ae97e279cde9346e8753",
+      "newSha256": "7c08fde4ba3e26c4ee59c771773d1cc620a80d809ee72a55d203791fc0b08f19",
+      "packetSha256": "f687f10fc4c6a466dc6bdb5162f0841ba54c3f3ef9b40a59df77c7dcf91580d2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-estelle",
+      "reviewIndex": 8,
+      "kind": "empty",
+      "oldSha256": "7c6394fd3ce1a17a8e622fb067506398449e76f9f54d721ed2fac565c5011014",
+      "newSha256": "2785bee90b01ba44a756d6457f63d5741b34763608ed44bbaf812d9f08275cd5",
+      "packetSha256": "094ee733981053cdd433544c1bb9edba7a0418b34af2008a1bdaf347956ae7ea",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-feng-lab",
+      "reviewIndex": 9,
+      "kind": "empty",
+      "oldSha256": "a1c5a9a230f821d9598c5f31f016aa1d5bea06900586ffb5a9435a74a384f181",
+      "newSha256": "d329b42b12a7a1286b660f140bdf50a82f494033caf928682b51bdce2bf0af52",
+      "packetSha256": "df2722b331f5a10ab5f89cf168fe5141d3f1713ea39f9f6d5e9a3cb3f5340ccd",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "reviewIndex": 10,
+      "kind": "empty",
+      "oldSha256": "e3c5af7c547dd91f8c30e293872948ce80f7c75646c1aecdea8fedec253bb61d",
+      "newSha256": "30815e851304a0560b3567ec3a0488fdfda29e7165914f7d5e7cd595272284e6",
+      "packetSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-gulcin-pekkurnaz",
+      "reviewIndex": 11,
+      "kind": "empty",
+      "oldSha256": "58c1eb2fe88f3074138adaa057476b41b545e9a33a7f278055ff8be0af60113e",
+      "newSha256": "c4b67da1343d6cf0fa0901892c7165369de24d505aeef6c7d4d7151e6564ee9c",
+      "packetSha256": "48d4bdd5957d087b6e8083f6f149c83666cead71642b40589b9c7cf962ad2726",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-isaac-alex-chaim",
+      "reviewIndex": 12,
+      "kind": "empty",
+      "oldSha256": "6fe88c1815606973de8cf272f62406f38f6cdf2898bf4298016d86537ed33db5",
+      "newSha256": "227ca5344272ec4a2437566f08eacb8ffc4d09b14a43ffa51d4aa88f9a118e15",
+      "packetSha256": "dd108d4e1e1c79ecc24eb8783f7eb5a711ba082ca9f34ad9edef9bb5cb672616",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-lena-mueller",
+      "reviewIndex": 13,
+      "kind": "empty",
+      "oldSha256": "5ca5d0653ac703def8e02284258655e08318e92caf0aa740317e46c1d871a768",
+      "newSha256": "45d7e61db7a2bcea0a0280de28104db69ffd1e090ab5145feabb894fcf97bf62",
+      "packetSha256": "bceb0696bda057c9fe872ac95d9421708fad32423c54f85c549aa8f5a37d2503",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-leutgeb",
+      "reviewIndex": 14,
+      "kind": "empty",
+      "oldSha256": "76c3f0454a343591b7f42034bad23a87fa1ee25c9eecb040e8601c31c0069609",
+      "newSha256": "4b85cd4fe6cb4051de8394be424227c0e855d200fe381ea2dc8baef9717416c8",
+      "packetSha256": "339338e3c2fe55c1d94ab34d8f341f517a72f31ab5221f3056d22d73d8263303",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-mayfield",
+      "reviewIndex": 15,
+      "kind": "empty",
+      "oldSha256": "56e2a4024e34e1cddbb02209095ae1cca33ac51338cfe59962447e0f6c4b737d",
+      "newSha256": "8ebd855360f4588dd1034cc721c2f0ce83f08a472456a0d85067d34670f63641",
+      "packetSha256": "924f2211062485d240699a578a294e2a0ab826ad901ea2a21c9fe74cec3943dd",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-monique-smith",
+      "reviewIndex": 16,
+      "kind": "empty",
+      "oldSha256": "82c551150e1062cc69d414d9dfbd19bee9ac0426972c4496e4f26823303dc20b",
+      "newSha256": "cd924e4d314dfb3c4d27c019a73532cd8e0b991f0f962434df8af44a319d9abb",
+      "packetSha256": "7287a10a387de1ace1da895ddc4116300bc752125f8a4e1b8c8e988cac24a9c2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-nguyenqvu",
+      "reviewIndex": 17,
+      "kind": "empty",
+      "oldSha256": "df1d2dd6c576fe45886298ef8030d6655da5c4fd8a344435664517e12e2a0b32",
+      "newSha256": "13324f3854c25e45651c8dd86f4cc7bb0d226f4510d47bda045a11f3da632db9",
+      "packetSha256": "0ba0436e14b5bab78a7f0905fc55f5c66cdf0ba0c39e8f24b44d47910695fff3",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-nicola-allen",
+      "reviewIndex": 18,
+      "kind": "empty",
+      "oldSha256": "3b9d3d92ecfd824ae3745fa7c123a6c11d7cfcf959fd9cfca5429d6f8070271a",
+      "newSha256": "c8c009f9ea189c31eca88b96c15a7e1ebf76e9a51935f62098bf2c391a5302a3",
+      "packetSha256": "92a8bc83d9b116432f6e2d52003c79bac65905a4d296afa349c619080e586f94",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-patrick-rohner",
+      "reviewIndex": 19,
+      "kind": "empty",
+      "oldSha256": "b8621fe5eb70272bf03fa880b146561ad0c6c80abf47192777ac2b12f3b0b57a",
+      "newSha256": "f9e0094b404acbf31a51cf105c841983487d955652aef136201cd3cbf0b902df",
+      "packetSha256": "76e62dffe708d67929a3ed95d0e537005dd6c6fcff72abd873e03dc7133a05a3",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-ryan-hibbs",
+      "reviewIndex": 20,
+      "kind": "empty",
+      "oldSha256": "9f76aa12c960e3aafdeb8a62886c60c777491dd999ea29292acd8d30d8d41e80",
+      "newSha256": "5a138a08256fbdf3122a9d86452e1e8cf36ab18afe94a62243d0c0975958eea7",
+      "packetSha256": "a089770d00b3ebe3a7ea6fae2bdca1cec5aa07bc488884c80cfdb677dd7065f1",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "reviewIndex": 21,
+      "kind": "empty",
+      "oldSha256": "65b9875842b2f195bce2495502ad160acc7518b139129f97477f5d4202c12a81",
+      "newSha256": "5ee555ab9a24aaaeabbe1cdad216e4435fc558d3cc535472e8bfab4d504eeb7f",
+      "packetSha256": "55117b6adb90f51e901de8e40038c420598290a310bcd090dcfa670a52015d04",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-shermin-de-silva",
+      "reviewIndex": 22,
+      "kind": "empty",
+      "oldSha256": "e43c2986d488ca08f0cf17ae3d3848c84ef6f935306b13bd0376f39db81bbc29",
+      "newSha256": "1112e6a631558113bfefa95f82244bd6a3d92cc6170510231ee5ad997123872f",
+      "packetSha256": "7068e797290b5808c007082311bcdb97885a3b8a42af095665b8ce1b764ff222",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-shurin",
+      "reviewIndex": 23,
+      "kind": "empty",
+      "oldSha256": "426ba5eb126a08a53174039d2c9255d1c740180aeda129e604e22e2ae1ebd279",
+      "newSha256": "74dca500938be6b87cb120e496c15ce815b9d7dce0fe0922f76d9a9bb1cad197",
+      "packetSha256": "6a4fa64ed8e7691edda9982c71c3c06359f9c22165ef59271b96e4fa61867435",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "reviewIndex": 24,
+      "kind": "empty",
+      "oldSha256": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+      "newSha256": "abd42e2a76d2481c91b09b8b035a845e9b1a9256757ed746c60f006592668b0c",
+      "packetSha256": "8f2317ff3931b6ba503e7e8bfa0ba350e601e02472996f208058139ed3c1b920",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-stacey-glasgow",
+      "reviewIndex": 25,
+      "kind": "empty",
+      "oldSha256": "fc2bff8fcbfa835b93a6db376b61ef120996f50f09370ec249e137b4549f48ec",
+      "newSha256": "648ecb286260fbb9dad480da8c62be4fbc25f49135d931cbbf5fccfd16b16f02",
+      "packetSha256": "05cc4daf6f8debd9d41fb2248c3bcee47f5ffed43d706a861a4dd8271b4070b1",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-zhang-dong-er",
+      "reviewIndex": 26,
+      "kind": "empty",
+      "oldSha256": "e81b149e01021e439d41b33d8c4280afe7e8cf79bd9ddec167bb269e83bc8ac1",
+      "newSha256": "640e6e2e8976a7f951f83e629f144979f9b4edfe0055ccd20cd756337abeae55",
+      "packetSha256": "8e5d8facab55160da2abee48577a07cb1f36ee998a92fc36fdaea0b226c295e2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-zhao",
+      "reviewIndex": 27,
+      "kind": "empty",
+      "oldSha256": "73d832c532613a348fb72da989a5ab2c59a133227ad466fda47f5e0ac73372e0",
+      "newSha256": "8f8820646fb6b1323aee20c9298e3275542c50394beebc02891d5ac6792af630",
+      "packetSha256": "10cccc07cbd44a0d14a789c0b5ea9a0be5d85e5fb52f8a9af909b6da25d17182",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-cleveland-lab",
+      "reviewIndex": 28,
+      "kind": "empty",
+      "oldSha256": "b7e4afde1ad01511449e883ba23a171a773f16c7a3e103fb908d834817ef794c",
+      "newSha256": "8d742161166998434a7af1daccf8e28aef1cb9212c5a4a454906854b631a58b4",
+      "packetSha256": "22b87ff73ffa42474c06d0febf59e35baedf9d6b3cbc7c4a87f98ffa2fb25a7f",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-ferro-novick-lab",
+      "reviewIndex": 29,
+      "kind": "empty",
+      "oldSha256": "95073c925f143db942038f242be86f2771768e106bd8ca16c554c4ba0a3e9484",
+      "newSha256": "2ba6502d77647ef6cdaa39d27c1092ebf7384011f090fde31dcb629691083156",
+      "packetSha256": "88e966b4ec03327f86576e61167290d2607af32a5bc0b71a08cb3820abc64a4d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-sebat-lab",
+      "reviewIndex": 30,
+      "kind": "empty",
+      "oldSha256": "24628bc5d4d9043417231260d07190767f40d27ff13b7ab35c724268089b24de",
+      "newSha256": "a22e8c61cdecffaf83649b0b36fb3a7cbc58774c455d97947a72411542849268",
+      "packetSha256": "2d8d5a022fd9495dd8d1db063badd8f8e590fa7150b41e7d0baeeab8f812d2a4",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-cogsci-interactive-cognition-lab",
+      "reviewIndex": 31,
+      "kind": "empty",
+      "oldSha256": "1beb96a78a5c12b187e60c604105b61f6aeafdefb1e8496b6ff82d6b3d8f8ee0",
+      "newSha256": "13c29fde1c1d7de1cb9c322a6fca0279d12fdb1f5b4f091da414337aae1aeb91",
+      "packetSha256": "0a83d19afb666e10ba8253e6f8c92fd7d6c0de458f3cd250555b0ffe4199d664",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-communication-lab-laboratory-of-comparative-human-cognition",
+      "reviewIndex": 32,
+      "kind": "empty",
+      "oldSha256": "711c5ca417e6cf98b8d5d73c6e8222647ee9e2ee2fde04a5d313173ef3dc823d",
+      "newSha256": "e43aa7a2edf65c1814707afb152d766c62e545df2f396e58a3a95608b2655502",
+      "packetSha256": "affb5c342b5316d9c45ec0ba68c2b4803790a574f29ffdecf81047510d7c7e8c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-act-lab-org",
+      "reviewIndex": 33,
+      "kind": "empty",
+      "oldSha256": "ce0b8a9e36fc4ae6c0d6d8f75c4ab1bf10b411e5dd050b16516f1be2dcbdc3bf",
+      "newSha256": "d6f60fc204d422602bf1dfffe1074c365a83e8a994f4172144f63932d9642a80",
+      "packetSha256": "6cc90b65d99542f22744f476a02a84c14df0096f721639e45a584b139cb0b205",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-adrenaline-ucsd-edu-kirsh-lab-html",
+      "reviewIndex": 34,
+      "kind": "empty",
+      "oldSha256": "156a107507ca51d3c4b256d352a3ea62e39f8bf96bc1ccb44cc6b6a735d6cb6b",
+      "newSha256": "5e413fd203109000bd96871dede4d0fa274093e902de4b4cf0d14a82b6126a79",
+      "packetSha256": "9a5d5c4c17c5e573546876d31dec44d425e66cbca9563d50a698f033231447b7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-dermatology-lab-dr-matthew-hangauer-s-lab",
+      "reviewIndex": 35,
+      "kind": "empty",
+      "oldSha256": "feb82ace12a283bf726cbe617a029d57033755ac1708ecee52ae71ecc243946b",
+      "newSha256": "dcecf3498b60893c4f66e2da0262b00e6a831312c0c547d4d484ae0c2a40c672",
+      "packetSha256": "43ceca27f98bf1f0bc79e2f651b47ad0382496b712c7391cc98d163b03e8c28a",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-global-policy-and-strategy-lab-cuhk-uc-san-diego-joint-laboratory-on-chinese-economy",
+      "reviewIndex": 36,
+      "kind": "empty",
+      "oldSha256": "7998fccd13ca7d5c9da607ca8847927181420d22c7b12737ba73cc177dd37917",
+      "newSha256": "a57d658a0b839177f0e168c60f6ec64a8571db1b0c6e3e2c3931f6cb6a88baf8",
+      "packetSha256": "cc071ea0853b01203e9a95f05810f4f948ea86ea2263ab392093da2cf4ababae",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-hdsi-ada-lab",
+      "reviewIndex": 37,
+      "kind": "empty",
+      "oldSha256": "ca182029ba788c6dec62e504b8e7b8727cd33bd29bc3f7c077655fefdabf2378",
+      "newSha256": "3df244ca4b8df5c4b7cf98dce6c2e1a4e06f082f01d1e7cdaac07168b89953db",
+      "packetSha256": "1c41e9830f4c89db58009e5c19a00e0c9c27d759aa511deff7e7b2e7aeb17cf9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-hdsi-mlsys",
+      "reviewIndex": 38,
+      "kind": "empty",
+      "oldSha256": "6e25200118428748a1fb46435e22fb904b15d73839c5a04a2bad93a3c2a803ce",
+      "newSha256": "3c17388830abb9bc33112415573ce73fdc1e74de59425ca7b0c014a3927c5bca",
+      "packetSha256": "d2a460035bd702da4d02ec07afcf34878ac55682fedc2be9dd5ed9800cde9f85",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-hdsi-database-lab",
+      "reviewIndex": 39,
+      "kind": "empty",
+      "oldSha256": "1d40522358fd48dc24bea87ca9b0ab78da2374cd59b46d02bd4009fa4dc03dd0",
+      "newSha256": "551cc123e1601a6b70bebd8d2c2ecd0c992b833ba028e2955cb69e50d54eb096",
+      "packetSha256": "c0812ce6f508a0878cb2001b69f1c3351972999959a3c9ce420ad664de32055a",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-linguistics-lab-meaning-language-development-lab",
+      "reviewIndex": 40,
+      "kind": "empty",
+      "oldSha256": "41277c1ae50a2ff8d019bb334506c18df9d3ae1b08629617cfc97a94704482c0",
+      "newSha256": "cfd493a605e301f8dd5a77b22059fa3f6a912901b4f0eb3042222692d180c527",
+      "packetSha256": "3f5bfceb1ecfea24c0628c77e44aa49a5709e59ef82a6457b817ce5fc9610caa",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-insync-lab-org",
+      "reviewIndex": 41,
+      "kind": "empty",
+      "oldSha256": "04a9e90e5dfbd416b3626e48d689c6732152f6e0a5ef2cae1261bd8bf6fd12d3",
+      "newSha256": "31d60a122c37f497b6b33ec4b8caf0cd3409f9b768f9e776d5c91df25374c16a",
+      "packetSha256": "52493ec30bf4b88d83001c2c21fbf489d7e98ff1ff5915959f8d17a7d5bf2969",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-endocrinologymetabolism-ucsd-edu-research-webster-lab",
+      "reviewIndex": 42,
+      "kind": "empty",
+      "oldSha256": "9d2440d6bd002330760ec8e3422cceeda475baada69e20e3cc5f3a07e802dc4a",
+      "newSha256": "09c21969e9e4857a6cd4e3fcc8fa95a50b035c8949318ff5343e7d56a99b81d1",
+      "packetSha256": "6cbd2d23b487404710df948752ccd04946e4af32ea5bf9db32977e2fcdec6a43",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-lei-lab-ucsd-edu",
+      "reviewIndex": 43,
+      "kind": "empty",
+      "oldSha256": "9715dea0e4409d608b052768e8402163ad5584d174e0bae74bac15549d4a904e",
+      "newSha256": "95f6683e1d656837965e76d817839569e7372ade95b3eab2eacb9f09798cd03b",
+      "packetSha256": "a8fe34457ad625c14dac37d90a3fb650e51051621e60563676d6813d487cb7ef",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-cleveland-lab",
+      "reviewIndex": 44,
+      "kind": "empty",
+      "oldSha256": "de743fa9368ccd6c7f4bbdd533751f39a1d5bd7a8f329d66b66fa6ce087fb55a",
+      "newSha256": "69da9647e9d97eed4f7701acfc13fc2d1fc929019abfd349b78baeecb2812681",
+      "packetSha256": "4bdcf37df810e0438948e6b01de547dd98ee426cbf90359c92c3556927b82958",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-neurosciences-lab-mobley-lab",
+      "reviewIndex": 45,
+      "kind": "empty",
+      "oldSha256": "43cc4db7ececb98096e50eaddf926082795b9dc7b4e121be7dd3a86b422bb203",
+      "newSha256": "eec84aadac61450df478475a345d0b87e7ce80e798fbbe5e87d7edbc72fa4f2a",
+      "packetSha256": "4e0a83ca036ca3f60d25af13a6b087cb0526d694c93c1120350d67ae70dc6714",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-burnett-lab",
+      "reviewIndex": 46,
+      "kind": "empty",
+      "oldSha256": "cc0cff2daec23568f5a551e99d3ba4d027d9e3cac172290c0eb2719d7224e2e6",
+      "newSha256": "f486f4a6f6396a097b2ba33b383b47b76e12df7ac878b48f7248c0a5f08ebbe4",
+      "packetSha256": "0ab0f4581672c97cf3ab8ab5f4dd3142b6712cfb5a81415d01219a623748ab95",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-cook-andersen-lab",
+      "reviewIndex": 47,
+      "kind": "empty",
+      "oldSha256": "5051731c1a61b9b29ea5ea52d7bf38ed8babb064ab685dfb3380b617b8b75c99",
+      "newSha256": "023a00d121060dff10bd7fb81f4bfc39452c1f10335434ed4753a32a6ea019c8",
+      "packetSha256": "87b001ede35428fca6d371a8da690c5074532f9fcf03fa5015de4f2eabf70bb9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-fisch-lab",
+      "reviewIndex": 48,
+      "kind": "empty",
+      "oldSha256": "4db0ab1085aadd46f7b75609e078f7c5fc14d864edb62ff8166ddb94609b08db",
+      "newSha256": "b92df3ba058f09cf0971642123c8a6da6ca93d58677940e19daa4b55a001976a",
+      "packetSha256": "a7abab7a92b27f12256f9d0484d310d79788916d65dc009f726050eb00067a50",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-lawson-lab",
+      "reviewIndex": 49,
+      "kind": "empty",
+      "oldSha256": "57fcca0b1dfa5f9bbbf93f620ffd78ac7e62c48134868c057857e191f25c3e59",
+      "newSha256": "d3d1fb0b1e156e983120bc1908eb5705fc6eb7b324c0d778a210686619080ef6",
+      "packetSha256": "40a4b9c10e14f5bd02155b2beb937ff66c8d4331b6d1ef379c9998279861ebb0",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-stupack-lab",
+      "reviewIndex": 50,
+      "kind": "empty",
+      "oldSha256": "e021ac1034e488e07d63f9e6477a003e3582d6ff7086db41f4e7e38f8abffe7a",
+      "newSha256": "2e12558d91e3a0ac45753b03015f23a94c6a83adb7f67d633fe18940576f1276",
+      "packetSha256": "8053ae4946af5c76202bd744a071254829876f7512aa93c3770f78a9424e2207",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-wilkinson-lab",
+      "reviewIndex": 51,
+      "kind": "empty",
+      "oldSha256": "2b590b761c7557069f4c92cb9517954179904af8b7e20041165db64bd894f950",
+      "newSha256": "73476646fb56404179bb7db3f411efd60a681590e3c6c77462a0a03298d04438",
+      "packetSha256": "8e66a6d7351cb931d4712c6fa8a9889123a4a297407d791198cb38565bdcfcb7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-otolaryngology-lab-friedman-lab",
+      "reviewIndex": 52,
+      "kind": "empty",
+      "oldSha256": "331920086e7354a577904f764d134d13321a0fdf98d82d90c50b456ecd4a53f6",
+      "newSha256": "142ed5f1e8ad597feb0f83a5f66df7cae942e04d3ebee6228db8bd45ee9ad17b",
+      "packetSha256": "95588117a6e413af5ce5147a8909609ccc73486ecdee8337326f4013455656f6",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-david-cheresh-lab",
+      "reviewIndex": 53,
+      "kind": "empty",
+      "oldSha256": "92e0ac5f6be74cd1b872d91660ef7a78433ccc4a15b6b8bf2468a419bda1d1cf",
+      "newSha256": "c91a56d93cf21cc9095899635b8ebc08efe95935e317be550ba64de09da37e50",
+      "packetSha256": "327b23c6e103089aab4676f66cc0614a2e4825cbb1cddd5a85a90c581f60bcd9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-david-pride-lab",
+      "reviewIndex": 54,
+      "kind": "empty",
+      "oldSha256": "92d0f10332bfd06cd802fbff5a845a9418c40da10d152118c850613b125f2b30",
+      "newSha256": "d49e3624c17418aafcc9e1a3300a131a3ffed068a33ab74dbe989fa3823b6da2",
+      "packetSha256": "00aff82b86d2e5b9b621469ac80e8861c2fffb259bf7ebad2dc68fdf56a493a2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-diagnostic-discovery-laboratory",
+      "reviewIndex": 55,
+      "kind": "empty",
+      "oldSha256": "e2d20656144582d52157d65726a4889d38cdffd4021505c9500ae28560b44803",
+      "newSha256": "681174cbc77becc63bfcd03573675fab1ec9145d8965244939975b26deda015f",
+      "packetSha256": "3441d55bf60f86168681ebd46346c824894ff10698adc27e55ab93127df0a137",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-hiutung-chu-lab",
+      "reviewIndex": 56,
+      "kind": "empty",
+      "oldSha256": "ed3845968f244ebb26b87bd4ef0fb420a950123645edf9a31f8e3dc42dacd6ec",
+      "newSha256": "b15aba41dc796829f75335757367471064e549b5cf36a285fecbe27f5f77124e",
+      "packetSha256": "7aa7b491f13fc22413f9ecf139ec9366152fa16d31c89df69cb00e2356d1ac36",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pathology-lab-pascal-gagneux-lab",
+      "reviewIndex": 57,
+      "kind": "empty",
+      "oldSha256": "4e60cb4bd0caee83cb7bd2822e1de34eb548025e8630220719d4dcc7a046dcff",
+      "newSha256": "fa2c3f3495798c2a6ffb5abfdd44b08a1e5813c5e6be1ce54d22baa39f32b4dc",
+      "packetSha256": "5cc430b04bbbf06bad4353ead4cf21dae9ede47edc34a7e9d79c9e78b5cff4b7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-feldstein-lab",
+      "reviewIndex": 58,
+      "kind": "empty",
+      "oldSha256": "37725c7ec08db4cd0148ea6da361b5a16b76af0dc115bcdd01589c38ba290e68",
+      "newSha256": "7ab98e5e01354103595830314974f275265146ef6c641d016cd26e8b9180b85a",
+      "packetSha256": "e4e43197cc6e532a6dd15cb2e36caceb2d4c2c601662396880160688f2d0c591",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-haddad-lab",
+      "reviewIndex": 59,
+      "kind": "empty",
+      "oldSha256": "7437abe79fa2736ddf391c7739dbbb4325f2385cdafe664543dfdebf63f3cd97",
+      "newSha256": "6ff7abefafb712608e8fd4e3a69d1e38a50e3bac02da7f7b35c56e730db9ecc3",
+      "packetSha256": "2826de64c7cf13a810e6de211646d76a468bee7052eb1e4b87f697672a1940a8",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-liu-lab",
+      "reviewIndex": 60,
+      "kind": "empty",
+      "oldSha256": "68cacc3935c3818e8c30b7d7f04b23d63bc56480f426f714e9abeffe718e0641",
+      "newSha256": "e1decf1f5b16e1d9230d2e8dfab5e44c9938ea297c95927381716ce02a1406a0",
+      "packetSha256": "9113fc197c1223362f3ad34c22e487464919de59a7f7318dd1a2222e1384f37d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-mestan-lab",
+      "reviewIndex": 61,
+      "kind": "empty",
+      "oldSha256": "a8c9fe9410b43c56a4deb272d1cb8047dfbf70eb0fcae603c8621e9464b176d9",
+      "newSha256": "f8952d5c11123133527fe4e55250819118b9a6ab04ab03398b992f4f8da59f14",
+      "packetSha256": "b905233b8a3a57bb024b09e23ddf3b6f091463b86d51b5745aab7b953161f056",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pharmacology-lab-ginsberg-mark",
+      "reviewIndex": 62,
+      "kind": "empty",
+      "oldSha256": "a9461720f944e4ab948d986e91b4ec8f056dcff2650aa7e501d5b827de98b2a5",
+      "newSha256": "c5568f394e7bcd84697a224d73df3df5db21cce3aa544e9f437cf12f5371faad",
+      "packetSha256": "325e597ec2f87987fe2f458d19002e6d3cb0002e3218024b477f14acfb565067",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-physics-research-site-george-fuller",
+      "reviewIndex": 63,
+      "kind": "empty",
+      "oldSha256": "cc11bd771e4118f5df703a9f3832fd918d1f34267bd3d8104a555a22a4f7565a",
+      "newSha256": "88716a7e9444b84f24a452c93f0245b5d60fff9df10a1aded06b05f3d2b1066b",
+      "packetSha256": "95027c5d950c2aef43ad581e5729bb4b64292ef118decf176d480b5569d04350",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-physics-research-site-leonid-v-butov",
+      "reviewIndex": 64,
+      "kind": "empty",
+      "oldSha256": "1a30794175ae688469d4226b0ba48d22b857506431440ffae949d7896193123e",
+      "newSha256": "bfd339dfccc173cfba1be26bba1e029aba5d517987b66896d5aa12e2423aadee",
+      "packetSha256": "f9738b65f9f228f7b9373487132bb86313545591219466846b8b0e9fc588b8da",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-besterman-lab-for-pediatric-precision-psychiatry",
+      "reviewIndex": 65,
+      "kind": "empty",
+      "oldSha256": "32f2b961a02d0711eaf533b0cd95957301941e950f47ee07da0cfd932bb96ffe",
+      "newSha256": "62a6118fe98ebcdef3af95c7ca9020bb93f15251a85db367707ba74ffe1cab19",
+      "packetSha256": "9bf97ff6e1a21d0d742c808513fb63ed8cbacd0fe58857d547dcce0ba09b58f8",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-lee-lab",
+      "reviewIndex": 66,
+      "kind": "empty",
+      "oldSha256": "41b848d76f8a18a21e23e45f56f0f73e921420048c61bac5c5613e8a7b41b0ee",
+      "newSha256": "d4a07efb6c486decf3e4ed520c096a71220f6a6c0f4b91353059e9717aae3280",
+      "packetSha256": "2d71d6c31ec76f02fc218e0a03affe2455360f71bfd90b1cf7367c9fc8df90fe",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-pelham-lab-ucsd-edu",
+      "reviewIndex": 67,
+      "kind": "empty",
+      "oldSha256": "44ed91740c7aaf015304dca8b5045e3cfab02b79505ab94d39f90c7e50d78845",
+      "newSha256": "027335b1fdd97ea72525634739aa1d7adbaaed364d3e6e1e289980b84e977f70",
+      "packetSha256": "abf0115c6e2ac024bb793cfcf799325eec7f369e3ae714f62e831bcb8cce1a8f",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-stadnick-lab",
+      "reviewIndex": 68,
+      "kind": "empty",
+      "oldSha256": "3675c428966629afb697ed9983da39c37226a89247b1068df04f605074ba57a4",
+      "newSha256": "4af9b8becf63e7bd50888ae7a93e192f702c67e9181fca3fc511c90c64c8316e",
+      "packetSha256": "73ba467031bb736ba1b798a6ade6ebec867414d990ee26c2ca1703a9bdb72bae",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-radiation-medicine-lab-advani-lab",
+      "reviewIndex": 69,
+      "kind": "empty",
+      "oldSha256": "3c3982add5510b833a60799c841008381005bf30abfee1d43556b72ab6cee669",
+      "newSha256": "e4ab3dce51d509b221bc8d329fa7fbf759497fbab1198b0263d30d398f3a1396",
+      "packetSha256": "4e83c3df6d4ec214af27c5fd447273a55ac42ff03cb2643160b0040bc64173a1",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-radiation-medicine-lab-kim-lab",
+      "reviewIndex": 70,
+      "kind": "empty",
+      "oldSha256": "31a59cb4a65a2d9b66e7c83b3c86cae97952d747179eb734372bdd2a935fe6b8",
+      "newSha256": "9a2c9b4ad0c09137011b893870a11b170aa911edfd51f28d6ab802a70606ccdb",
+      "packetSha256": "fadb7f62e8548fe8d81bd64c6cf2fc106b60a32776bd0fa4fcfa5ad56043ae26",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-surgery-lab-brian-eliceiri-phd",
+      "reviewIndex": 71,
+      "kind": "empty",
+      "oldSha256": "a0d8c10a3144f119c2a8ef3a63af7a26955c6495ca2206e01f2cd053f0999e64",
+      "newSha256": "3496d8c539cda81bb31457aa88b5850ae2aa965881dc77a099f53abe70570974",
+      "packetSha256": "584ef82064603611a76c81fea41fe147d6ea9efed225a71188255baff6c14544",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-f9c76b5e18f085",
+      "reviewIndex": 72,
+      "kind": "empty",
+      "oldSha256": "ab73394d5ca887d676ee30e52a9c8935dec4384c7fcdd7f257848aab7b09ae05",
+      "newSha256": "aed8492e970d9565957ed1c0630d2fdbc1b7b42dc086a13c6cddf80e51eb1891",
+      "packetSha256": "d6bf0abf63580f9257ff7a477dd996357a2a523eb8a18439dd2f69e04e493e0e",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-4a495f5f6a488c",
+      "reviewIndex": 73,
+      "kind": "empty",
+      "oldSha256": "3e417b3a11e8103bedb45d25b0f9b459ca073ee13d186ef1fc7860d90d28e652",
+      "newSha256": "e126c9257f8b160d3b4dccea7bedd847e282999217392c073917f7f3327f51d8",
+      "packetSha256": "3588929d5e61490c84b42b845a4da72a45af5930d45ae9cb681e4bcf24a59745",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-7e643b467d3b84",
+      "reviewIndex": 74,
+      "kind": "empty",
+      "oldSha256": "0be3adffc9e2a84b621fdf9c4c74011c53f498720862e97e653b84bfd7afb9c3",
+      "newSha256": "d6256741841edef2ba5fd9388b2d9d749ccb1519011e50ebac7b79e85fccdc59",
+      "packetSha256": "2bde50b619860d8132e45b9c5cffcc34ccd09c7c6dd8c72acfd9f6634fc4c4d7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-5feb0c23ad7b2b",
+      "reviewIndex": 75,
+      "kind": "empty",
+      "oldSha256": "d328ff1d622e3c5982e243827b7345ae157f4c68aae9afdef9347e8ad35a4747",
+      "newSha256": "180a8cc759284f5662df31f981fffeb205153c31e1cecefcaa92258ff69173f6",
+      "packetSha256": "6cec967458201b886a0bf4d0ab129882c385862e262996a2cbc7adc75a8ab5be",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-1040bbc2a80387",
+      "reviewIndex": 76,
+      "kind": "empty",
+      "oldSha256": "059bd3cf71f655fbc8ffa02f9867f1e56cbbdb64da4224baa710f8edf49aaa79",
+      "newSha256": "923591c738bdf0c7287c298fa805b3eaa46a93adc23690f2cffac47a929b8b2c",
+      "packetSha256": "7838a5ea4a1f439252f02c15db4fbdc750da15fc23c5d09042d4dd02cf6fcbcc",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-439e6b401a4a99",
+      "reviewIndex": 77,
+      "kind": "empty",
+      "oldSha256": "22136022f84fb14e3b96399f735d36f46b4aadec29a5554c270b521bb71c3065",
+      "newSha256": "f9f3c0ce693fd41cd4359951b9edbb3a445b64a27b8d0d8db5d4b9da59eff90b",
+      "packetSha256": "e97a5d40920b28764a316621bf5044dfb54b54357f750516e70f1910a29a04ae",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-1000f9eb5cafdf",
+      "reviewIndex": 78,
+      "kind": "empty",
+      "oldSha256": "f821809325b31acb839e85d132211ea284bba9cbd3b55f1cdf0b3d1e5c2b9f82",
+      "newSha256": "aae5c33581ea2b847a3bed3f221612eddc4b7596a31bef023e0821ba20ab0eba",
+      "packetSha256": "879cbec99e75407f28bebab311d8741c567407ccf541c2d0e3b16626b468540c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-30d5277524f91a",
+      "reviewIndex": 79,
+      "kind": "empty",
+      "oldSha256": "a839a45a3ef4e9ca3c19eff2308c2442921ee88e0d0b2859430a4bff3345e9ef",
+      "newSha256": "0933f4c180e4110c298288d9d42ebd87b70869ed2b0ebb6096d343d6b6b21dcd",
+      "packetSha256": "1766b1f54fa3a3d932d6313a69fbb90e2b6ee3255940c72fbb0228834d292269",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-9b19321c08121e",
+      "reviewIndex": 80,
+      "kind": "empty",
+      "oldSha256": "5d88b4189703839e3b4f230f080a29541eab94f92fcd323d7f0bc02a1b15d398",
+      "newSha256": "5cc497e3f1b9f94209a8d4088f4db8b40094a53c4389af1aed9191365548788e",
+      "packetSha256": "aac6e3817b1027b4794a34f1cc32a0d605970fddb1d83234810079f04792d3b2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-788dffcb20dbbc",
+      "reviewIndex": 81,
+      "kind": "empty",
+      "oldSha256": "76d11014e6ec5e70eede240138693cd4033a12275e00fab24e2815e7022ac455",
+      "newSha256": "b008f5567208077966b0f6f0c2468c11dafd1604dfc7c3b8e748249502b0b0e1",
+      "packetSha256": "d7d8aa70ce8ea4ad4a9d9c463b01caad239f5dab1e155e828afbe9e5ffa2905e",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-ce0b313a22d83d",
+      "reviewIndex": 82,
+      "kind": "empty",
+      "oldSha256": "22964ab80181d86f2664ba45078fb5866ed0d00a4137c0cf6047cf48245ecadd",
+      "newSha256": "d86d3909f0fccf2d44b7c4c5095858d69597124122b1486fae50984ebffd6005",
+      "packetSha256": "04cede91736b0cff8576e488045e639d93ac6659ddf73f16bf1bc1384eb33769",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-625fc59c29fbcb",
+      "reviewIndex": 83,
+      "kind": "empty",
+      "oldSha256": "1fa7e8ceed2e04664c0593c38fa3619345e2104a3ca0a88320f94b5724489e77",
+      "newSha256": "667c141e84574c08b823cfcc9f4041755230ea3b00fff33e98e29e308f1f0e42",
+      "packetSha256": "36c3c134dfe23352ab445123587ebb011c8f4a65b939403b505509fb6b2c210c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-272c61c8e40a29",
+      "reviewIndex": 84,
+      "kind": "empty",
+      "oldSha256": "b45a2433292721b27b109f1514c49acfe622f8483d186036e1f239ecbd996918",
+      "newSha256": "0def6258525064f1f4c331e5c92f6eb33b617a1d39469fc63ba84bf76c2f859d",
+      "packetSha256": "0f07e62b0846e7a78dabfc35f2109d35ffe1d1caf21f66d55a06ae674513c847",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-8b251ec56ce8fb",
+      "reviewIndex": 85,
+      "kind": "empty",
+      "oldSha256": "38724d14d567e2ba28153184b4b380f19e14678e3531ad954df78cf83ae1b937",
+      "newSha256": "91c39d6c7cc0f7678dac37d67cb3adca799cc824b2f9b46b315c18ec6f462358",
+      "packetSha256": "5326cabc0417df527059cdbee36714f3265891730734cd31ba5376344f166c09",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-2ece9bc435e9bd",
+      "reviewIndex": 86,
+      "kind": "empty",
+      "oldSha256": "a768c393c3975beddb7285daff009b0b59001540c56cbb1ecdfbc1186b8a7105",
+      "newSha256": "94ed1a9fc7c4513d52aa37149881c61312a84d1ee76ad1284e8e91ef409b199f",
+      "packetSha256": "c33afee2539824370d3a057415476be4a52375407ef44a126ce5a30565bf4020",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-bfbbd5694ff202",
+      "reviewIndex": 87,
+      "kind": "empty",
+      "oldSha256": "9e2a15efffd0b92e5e3b6bd1ff63001901ecfa1e9cbf6d8d0bcfaa5583d548b0",
+      "newSha256": "92a791b4be8409628cca995f62d7eab9e108e619565e44fd462ced58ddb23987",
+      "packetSha256": "bda26da6fdcedb1a7e873ea386c3600830ea41e0543471cc3131a07ef69ef1f2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-4f4cb10b3f5b5e",
+      "reviewIndex": 88,
+      "kind": "empty",
+      "oldSha256": "3cca201bd5f0eb6cb223fb584744f16688ed809e2cc4cdbccd4d16f116639b83",
+      "newSha256": "18186b926967109803c71c810a453ca30a2cd5fa6191d8098d596c4402874cb1",
+      "packetSha256": "068df05d8c9729a2e1fac2e1f39e6fc5b2616fbafdf315e8bf28a88e33f09419",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-81fbbf220c7893",
+      "reviewIndex": 89,
+      "kind": "empty",
+      "oldSha256": "1926b4b630eb5ad448dcdd3f289074a061c684a66b570daf9ab6d7f94baced7a",
+      "newSha256": "7b853e40e9eaa33c8cf67d415aac893667c36bf8578dae64f9a4270fc30f208c",
+      "packetSha256": "45b101200909532cef6e7202ef682b15af10e7ba716ccbdb0f7bce4ecdce2f15",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-b2d2a824e2ec18",
+      "reviewIndex": 90,
+      "kind": "empty",
+      "oldSha256": "51afa65cceea3d59c518c69d697ad78d0eea0341098b82fa6d316c034fae9c33",
+      "newSha256": "4e9de0d7df038b9ccd52fd28ea31171ccc236a1f0451c11b0a0641944fcab4a1",
+      "packetSha256": "38a8a19ca40467bf401c28f2097bc90680c4fe57cc18eb08393aa69dde1274f5",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-9dfceef622d2b2",
+      "reviewIndex": 91,
+      "kind": "empty",
+      "oldSha256": "2c5542b76eacc487ac868e73471c42d57f2f5a869c34121415fac971c334de7c",
+      "newSha256": "99d8b8124bdaa302986976aa9dc41fca3fc5d9cdab77fa901e1d6d46e9297ddc",
+      "packetSha256": "cb9cbae3dcd5dd50183981536de9e3ca939118fd8a85c46fbc7e8347e3a33c47",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-0cb7961b3add03",
+      "reviewIndex": 92,
+      "kind": "empty",
+      "oldSha256": "f4a65126337b5dfb450ce2d0ae3b478141d50ef6d0468a076adda81673623bba",
+      "newSha256": "3c5354d8d66ce755170538be7988acc12c5b8450ae8aaa45b846ec665d1c55c7",
+      "packetSha256": "ba331ab332747c1a0e6e066e4878611136ce72f13f26f70f33e9bfe07b63ae41",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-cfe3491eea0ff1",
+      "reviewIndex": 93,
+      "kind": "empty",
+      "oldSha256": "f7169bb1ff5424a7b8daf34c0a77fc07fc24c2f69e42dfad3478f6cfd48232d6",
+      "newSha256": "2b0075e4de40e86c66472f0d7097d1fa099355e9e858e3bb4ab5b5bdc98517ad",
+      "packetSha256": "4723ecc8a48bd7cb05fedc6b19418f713182fc432388c37fc5a3ece9ab966ddd",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-e940c0304f0769",
+      "reviewIndex": 94,
+      "kind": "empty",
+      "oldSha256": "ca2db7b623a0bc7f9eb159a53e24e30c55200320c9a1ae6a5a31d69637dbbabe",
+      "newSha256": "1b3f6ad42db4af60e6044e1a3217ca3cf2c05bd39992c3702365c0c4baacb2b2",
+      "packetSha256": "e84f3690570d2dfbcf4ff0c786fdf54a282630ce23f45ea198737d8df2453588",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-e7dc037098a9c0",
+      "reviewIndex": 95,
+      "kind": "empty",
+      "oldSha256": "19973dbfa3c59f72e7a01c9f5527c1660c5edf7be7d934800ebae55a2b04a5b5",
+      "newSha256": "4634cb30e1328a44ffb4504a099b3b915a8b6ed130cac775769f69ffb303d11f",
+      "packetSha256": "ba09167f93354056e7ab60dc999dc163a356d5d96c068da2ced92576b221b122",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-bb208b550a9c23",
+      "reviewIndex": 96,
+      "kind": "empty",
+      "oldSha256": "740036f9437b5460c6258725d2deb74c37764a3697bb0191789f123e3b468ad3",
+      "newSha256": "3fdcc9dd47f603f9e81fb13a8a3ff4b699c3c76c2d62075e9efb2037693cf17f",
+      "packetSha256": "c66f18cee6cdcedfedabe12b190ca05861612715ca907d6f93a4d39eefed8a5b",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-79c01416e29e5f",
+      "reviewIndex": 97,
+      "kind": "empty",
+      "oldSha256": "8c859e51d0e043a69dd30f6a87ec3febe6a6fb60ecd595ce2c2879dee2235cdd",
+      "newSha256": "2e9996a04aa487c0a731b15861a87338cd3d9ecf717dc5ab99fd28856cab1377",
+      "packetSha256": "de2b23d4da6f5e3cfd23d7e1be77e3f600893c18d57a1e280a515f6c8e12607e",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-b86761fcdf0f8e",
+      "reviewIndex": 98,
+      "kind": "empty",
+      "oldSha256": "98d8932cd33828f91352e7e5e5dbd937979fe2cd727e2c1509a2c7cf37a10b15",
+      "newSha256": "ab32d95a2397a80ce5d49664510e59e77deb97df67b5dc40237b46ddffc4f29a",
+      "packetSha256": "5438188171accd7b095fb1d18570b999bc3c3b8cc4252ab4d96af0270dc58722",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-67708961680840",
+      "reviewIndex": 99,
+      "kind": "empty",
+      "oldSha256": "a55483dc148969d7a5b5e2d83dcb6b64629cfade1825d37b31ba799ae5970cb2",
+      "newSha256": "16d06712321e4f76975c63fb29a8390f0833d2a02905c42d276082a5cb3b5592",
+      "packetSha256": "157ff4cb7b3ebe91f1dab7d9c470c245363bc2e08defa8c54f31461627176f5d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-645dc3fc28a487",
+      "reviewIndex": 100,
+      "kind": "empty",
+      "oldSha256": "93a1073284bea892af305490d25a11fb70466c8154db76fb8aaddacc5ce95833",
+      "newSha256": "2bc23e34fd1d874d385023e29e34a81e3a0d4b01c2eaf2caf66a844209fe86f5",
+      "packetSha256": "5528330f657ee12311e244649b4ede5f7c1b95b7636a8ed6a2af0d10f7e01127",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-21f177ef8783df",
+      "reviewIndex": 101,
+      "kind": "empty",
+      "oldSha256": "4a38eb4ecac9924befc7ae9ad6528cd095d4fdbb81fd4e1f2c02520d1806f0c1",
+      "newSha256": "2790888b9912a08ba4e387db7804f4e29377cd68d04f574a0d6d0289b6363398",
+      "packetSha256": "dace3ccf9323b65689bc815f6c885ca16861f1616330930de665c45e0de547f9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-be884233f3b1f1",
+      "reviewIndex": 102,
+      "kind": "empty",
+      "oldSha256": "50ad7e96a92b4d8a542cf18ffad0268a4be9afb5d6db52d305b06d25ddc9f670",
+      "newSha256": "093346d8caf325dd9fd63b6af8e7fd1e29450ef15e27721a726ce3dbff89c27e",
+      "packetSha256": "ebe8ad5d399406eb12abd397633d46875b7f6c496bc8d2cfaad997e6e11ff593",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-43d5cbc6fe5e2a",
+      "reviewIndex": 103,
+      "kind": "empty",
+      "oldSha256": "70aa9f6c827f390f5e09fa102f42430f6912779d962aeb605e2d27712e2ee143",
+      "newSha256": "26ec3d5364884f1c3f4bc7cbe63168f9eb14be398ad7733d22cfeb0a72a79f7c",
+      "packetSha256": "807acdc694c046640d3d36b4725f79fedf1ef7e04b8e188b60333439d1beb35f",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-35ce4ed82d21ac",
+      "reviewIndex": 104,
+      "kind": "empty",
+      "oldSha256": "f0a3cce828603cf7e3ec9fee0bf5814b12c385eb73a39d8551b68f340fd3e08b",
+      "newSha256": "c4b487c6a75d839cddf7fffd94d72a6ef74777c98ae1f046a2b0f83dccf4b716",
+      "packetSha256": "defc3d3c88926dbb7c8d85d818c61b84c4f2f76635b6c5b40414aa45ce0f9f00",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-56d64d10b3b052",
+      "reviewIndex": 105,
+      "kind": "empty",
+      "oldSha256": "f11d14a1a51407c240e63ff530c8e9aea0da95d1924f80a7bad22e07d96fe248",
+      "newSha256": "3d9447bd6741f37ff89080017ad1dbf55b6f59b473dd38a0d8264deae7a09d45",
+      "packetSha256": "1fe504841de6c57135e99e5139c0f29c8e9f36d7f7236d98421f94b4cd4dc5cf",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-e0e4053bfb05e0",
+      "reviewIndex": 106,
+      "kind": "empty",
+      "oldSha256": "39b9412be0408a88840ea22096d3620dff8d999fe6e7bba134d3757fd23d0246",
+      "newSha256": "003ac04108d23284e1ca7bce875af8659311c501cd073686bd5ce88a6de8754f",
+      "packetSha256": "dac71f0e2f479fde32072cc230ff9bdf5c32c141ae095d829897939a04c9f8ce",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-215e7df62b97f8",
+      "reviewIndex": 107,
+      "kind": "empty",
+      "oldSha256": "a07e29701c66dfac8a0859f3a62381d5277cbe82127d1814cddbe206c7114958",
+      "newSha256": "5f8ca6d036b8b7396c3a7907e411addeaccc5df9de0c98959152bc756cb87ca2",
+      "packetSha256": "7df40a0f58b672a231dc00b6d2adbf9bafad71a178ad70a9cabed8581353c5c8",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-a83d02395de2e9",
+      "reviewIndex": 108,
+      "kind": "empty",
+      "oldSha256": "be8312be3f97a2465ad7f016e4af8cd5f5b0416ad01bae1d220a475d6c1b5f11",
+      "newSha256": "52f0508eb1d3e3e8f7d3c099660de3ea942f8f97c5c1f47cb39a999e1144b169",
+      "packetSha256": "14f9f066eccb8d26e28fdac2bde94dc23ee29a014dfa11dd87f81f59cfc0901d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-bf194dbf29f17f",
+      "reviewIndex": 109,
+      "kind": "empty",
+      "oldSha256": "6f5a44d4c7f5446128970ebb7b049a45f17ac544dbc80fb09ab0f4671144b80b",
+      "newSha256": "9622b324a6ef8ba96417528670d0801b5dab1fba4fa9343f46491d7975722234",
+      "packetSha256": "3f04a9048031799e7d1bb60c09c15eedd940653a303e87fb5ce881d2b979817c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-ba4098836b71d6",
+      "reviewIndex": 110,
+      "kind": "empty",
+      "oldSha256": "4548317cde80d8e509d92890179d85cb3db0adc2a6cbf93d41f571256aa73a9e",
+      "newSha256": "c7033d26e917489efdf1fd411830c78e0ea5d361621bfe5c00efcf56903dd49a",
+      "packetSha256": "e4313f66ef157cc918b1a09a449764a6ab8b4dff0844884caed68f94993584d3",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-a36c380ec359c5",
+      "reviewIndex": 111,
+      "kind": "empty",
+      "oldSha256": "050b85d82d32590ac57721d90a83bcf337e45c1d05035d74f44bcb88a3d8936e",
+      "newSha256": "811e649e2c6f885e2f4c29878e32765cc68e8cd4aac6789b95e298743a717e97",
+      "packetSha256": "eac006d44afb0db40c568f25ef2193e684907977ae11f094b60ac4569c56f601",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-c71c7e3b160200",
+      "reviewIndex": 112,
+      "kind": "empty",
+      "oldSha256": "9fbd666ef061ed818ebfaed1dc72ce8f583053ec4734db76ab2848ea2b24f570",
+      "newSha256": "8148d08925be1df508adf1763f42729b36683d7cf1aff6d985ae9be83d200a11",
+      "packetSha256": "ae48aea1dca1f23c7a969b974f9ed1201fb01d4f59ecc64237cbde1bc6ae0dd7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-94374f5e44bb8e",
+      "reviewIndex": 113,
+      "kind": "empty",
+      "oldSha256": "ec0d35f3c4a2aa26f1b41a7d56f728772f01c6aeae94e26d4285da6243d59dc2",
+      "newSha256": "e6b353e92ddeab5209868ab78d7c2e5755a93462f5d5e625e230d2453bc77f3d",
+      "packetSha256": "3aab1cc9f1ededd22510e8c7bd770b7690dd0e482c2a88266c8dab9e030e2b46",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-977587ed98de04",
+      "reviewIndex": 114,
+      "kind": "empty",
+      "oldSha256": "de0407d886ac451dbb92ab4a13bf41ca40f4a08fc9ec6348cd34dbf707bc3e48",
+      "newSha256": "e7fd7277e6b45546d67afcac6cf01cf1eb64af8b8589d6ed42f1032b3cba70bb",
+      "packetSha256": "05a3119d0ff38f2aea334d8c589a1c14afc48f38f8699f06db7bb97553abff0d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-210a25a3ee6ee9",
+      "reviewIndex": 115,
+      "kind": "empty",
+      "oldSha256": "70d12ac25c7cd63867f1692da603d7c82a72115f894a87d3e36375ee24da2a21",
+      "newSha256": "66b1228e5d8ed2e7737e4efdd7913df53e85fedb29098e5cbaed94d3bc62a897",
+      "packetSha256": "e34e150677c8f298467c62c8dcd098221eaf63fd4e1a2375a1f91049a7f40ba4",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-493c2d3c113de8",
+      "reviewIndex": 116,
+      "kind": "empty",
+      "oldSha256": "2ca475d23967dd7f783691c2f077254f72a4ff92f56ca7fe0006ba5903e4a099",
+      "newSha256": "dc0ea19cc64e86821892169d45385a5da30ed6f1b8c3e11c4aa4d0079ae1bba3",
+      "packetSha256": "4b7e482e9b09e9bd5c69f39c567738fb880b8c0251c8b02e138430f2a59642ae",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-cd8819aec34b38",
+      "reviewIndex": 117,
+      "kind": "empty",
+      "oldSha256": "efc0cc132fbe2bb1dcfd3a47cf65b42f5bda441572ea486a0040b20e185e2367",
+      "newSha256": "e21c5abf2c0b8fc36d9613fb796f3e19ca7b4b4350122451532c14270ec3de20",
+      "packetSha256": "9a1175bfd2a2d045cb78f5c03908a4e797c655812049cba1fc231ea13c6b077b",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-0fd0529e6aefbc",
+      "reviewIndex": 118,
+      "kind": "empty",
+      "oldSha256": "bbefaae718a3ee7d6039fb3f8d77b7d5ca34e6bf54e78af6e2ebc65577f2304f",
+      "newSha256": "589e8fb4b2f68b4a1ffd051aff76c0d36d07426b4cef75736c9db030a38c130a",
+      "packetSha256": "ac448b163361879f1aaec67e1d3beb87a7e2d7c1e6ea295d1d3285bc068ae83a",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-41588a6e1edd2b",
+      "reviewIndex": 119,
+      "kind": "empty",
+      "oldSha256": "ab37321560522f1d14f5bf45569acac01ba7f0c9054a2143255459ccc486f4bc",
+      "newSha256": "8724a64fa971f588d32eaa43509b718a7cae18db6d6ef08a3e6ae3ab9ce052af",
+      "packetSha256": "1425693cd45eea5aa0f510cf962e8763e182d8c6ecb60c5353e58bf230a37fe7",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-81890c1cb6a9e3",
+      "reviewIndex": 120,
+      "kind": "empty",
+      "oldSha256": "fd3c872d9b57ee84f9a27e5e2a8fa2a3349c98510dde86f19159aff2194ab834",
+      "newSha256": "643ee8073149ca16261afb47fba1dbdfb2693dea51bab055b619dccc17835c1f",
+      "packetSha256": "99a71a740edb9b4a77bc91ba14216440e501038629b8b4c2c6f88ef8f99c1bb9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-4fe603900f7f71",
+      "reviewIndex": 121,
+      "kind": "empty",
+      "oldSha256": "cf5250c9e8eb117ebb8bd1e9b208f3cdec96127de5bafdade523f4df3f385e5c",
+      "newSha256": "5097ced2a5a3558daea0a4fc9ca742dc27183670e64ef19b2182014653436230",
+      "packetSha256": "06e0c2022245247d9e18dd2efbcde7c98b3d9e5bb7966b06417fb6cb82df0e81",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-f7358fde939259",
+      "reviewIndex": 122,
+      "kind": "empty",
+      "oldSha256": "cac6c2e38ae0898f951da53b8227da2c23cbe14d36ec33e16829adba68992f5d",
+      "newSha256": "63879a8a5c86229d08ae26cb7fd95b1b5982cbbab9d1bdfcb187b3a4615e7c8d",
+      "packetSha256": "f3ddc4e41c9d66fe420243d196f32a44f9ddcd4f08beb15286461ce05b4079ff",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-f426b74f514b6d",
+      "reviewIndex": 123,
+      "kind": "empty",
+      "oldSha256": "320301bc50a3eeb86fa3d469007b9daacc1aea26fd80f66153da9e4a874f62d7",
+      "newSha256": "e921f124bd4a5f861965e3edf598523bb0dfcd4fb0ba14625f9d07ee693d5259",
+      "packetSha256": "99d66bb4f00e1d262fdea6d62bbdc3833eeb2b2a8109a4900cf83a33e75ba2be",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-abd12eba39c46d",
+      "reviewIndex": 124,
+      "kind": "empty",
+      "oldSha256": "9bdde1befe43333c2a59cca84752603ac358e07bf7836b56ab8d7dded5171e57",
+      "newSha256": "aba3d695521275ebc01b446006e73c37afe1f6139b8999059484a17ccdc69047",
+      "packetSha256": "e587cad219b419502dee539351f63ef95e74394ed0118af6dd1437eff75c1bcc",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-86c289fa737e94",
+      "reviewIndex": 125,
+      "kind": "empty",
+      "oldSha256": "e3f44351f4bda0d73a138b9a9317c3b2a6caaca4488d1920b0949f3b81c445e3",
+      "newSha256": "ae12cb4c4a32c558cf2c286dbb52a8461839b241cb2ce674403cc680238d99cc",
+      "packetSha256": "716ce5c03084a2b823effeb8fb6a1d3cf85bcbad9656be29207553b82874b5be",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-ap-lab-applied-photochemistry-pun-lab",
+      "reviewIndex": 126,
+      "kind": "empty",
+      "oldSha256": "4b41592044d1c87b71818cb05c2dcf13908170d3293efd7f3b25af9fca7a1a3c",
+      "newSha256": "0e86f10fabc8700ec5a1472fcce49d231eae500209280ea93e0e2df3096037e2",
+      "packetSha256": "7b148ee3e5ae0baa724b5c7cf98b07f8e714176ff18999d5060dc233f23f8078",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-polymer-lab",
+      "reviewIndex": 127,
+      "kind": "empty",
+      "oldSha256": "9b9e00f8817e69d6dbd71cbc52ef38ce55acf9b150ed79a7cb54ee43eeb6e57d",
+      "newSha256": "7c3a46bef0989c70d15c98b26e6965b3af0778c8503e6bd0a43ee95d0e855485",
+      "packetSha256": "c2a2312a67d44409772486dc350f67b18c5ae6cca1802cf5f3445da47b6596da",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tor-lab",
+      "reviewIndex": 128,
+      "kind": "empty",
+      "oldSha256": "2d0312f6875bb403fdbb6a42f745e407876f1dfec75f869f36fb8593855ecb49",
+      "newSha256": "5ffa3759884de52bf15e262081b978db3a42589024cb4268d4e0d2ad5675ee0f",
+      "packetSha256": "d206c15af81e336cac49c2202ac6be1607b7c77c9e75ba5a69f2fbc8371e040d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-budin-lab-laboratory-of-lipid-biology-and-cell-membrane-biophysics",
+      "reviewIndex": 129,
+      "kind": "empty",
+      "oldSha256": "96efe45562b73d99e5af174dcc7a476a98fdb68596d990356650b6489c5f8254",
+      "newSha256": "65d5ef625fa9ec65c848528902c0e75d8e0ba6d103b240cc1b26b84b5298a3a5",
+      "packetSha256": "21cd5c93e2fbddc1e4268d280a9f485cc45392de0872dfe5155b819f81c8e8b6",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-debelouchina-lab",
+      "reviewIndex": 130,
+      "kind": "empty",
+      "oldSha256": "5aebc142ae44c9bfa17a4c14cb2620afe349374a4d82c623a0e7dbabe343136a",
+      "newSha256": "3f9ee2891f61b803f2bb925b69438a9a1205362d0d3e73f88eca591ecf98156b",
+      "packetSha256": "96057a1b8e83b4edaeb418b81d0798d59127ab9ec3b2741320637af5abd6df98",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-alan-saltiel-lab",
+      "reviewIndex": 131,
+      "kind": "empty",
+      "oldSha256": "06837078d2d67ccea0cc79d4cb4aeba560be3cd6c5c05dfa40f89c2120db764e",
+      "newSha256": "0da66393292d3af095fa7055ecec56307785b11a5985e7907f39729059ede76f",
+      "packetSha256": "9fcd8797d54ebfeed146fc2b6a1cf65d6583b130028c236aed0d017ef6dbb9e1",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-jung-lab",
+      "reviewIndex": 132,
+      "kind": "empty",
+      "oldSha256": "fae0834bba15a9570e9390edfaccc49414721a2e923a04df7d560532e9c52cae",
+      "newSha256": "a199b401eb949f5d01f3b2456a539fb4afed055efe6161ef4d26f49f9aea009f",
+      "packetSha256": "d917e78b9da3670bad0f0a69ed0b11ca7298ee64b96089efbaabdb67ee3722c2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-crotty-alexander-lab",
+      "reviewIndex": 133,
+      "kind": "empty",
+      "oldSha256": "b753b0c7fd48bff41de1d2fc0aa162d40fdbdd33118cdaa8fb52f3532893cac8",
+      "newSha256": "b33dbb68114fb9737beb46e704638384e648c0254b47100a5f7246f692a4f01a",
+      "packetSha256": "a13c681072fcf8d2b9eaa9970ed9593631caf4ac1b02f543f237f77c28d3fe86",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-owens-lab",
+      "reviewIndex": 134,
+      "kind": "empty",
+      "oldSha256": "ee4e60c11a396e33a663893469e7dcdce9c745cc3a5933045a5bbf5fe3025791",
+      "newSha256": "dd90062c00c6f90cf97fe5dc11f0fc6769c964f97ca76cb76c5069b7f2e57894",
+      "packetSha256": "9a99412b4d7d57a5fefdd44559d3eb19f477658a1af865c68dcaf35e146d7d78",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-guma-lab",
+      "reviewIndex": 135,
+      "kind": "empty",
+      "oldSha256": "31f06de039c4d0a193bcb14692743c8fc237adc8100fe9d4490ed1b71ec7bd01",
+      "newSha256": "e10543dc0b0f25e4cc64a18c776d6fc652850706fd04a3c68b460d0371b89dd7",
+      "packetSha256": "10bf1c50a6ca49b7c97aeb9ed4dec971fe0fd53d27fae289ee09d2b887adf5cc",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-kavanaugh-lab",
+      "reviewIndex": 136,
+      "kind": "empty",
+      "oldSha256": "ecf80d7c883f41150c2566d569ba8686de8460746a8f835e66bc1d33c2b4874c",
+      "newSha256": "f2b88c5f79c73ddfa46dde3b822c16ee767ac812d72bccf8dea4ec82f4923f67",
+      "packetSha256": "0eed518fc2ff51e02503369b3088d6be32fc8578acccde59b7dd70d7bda25eec",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-raz-lab",
+      "reviewIndex": 137,
+      "kind": "empty",
+      "oldSha256": "254bcdb59b8b6dd0264d325dc79284ceee24575d722359cf70bcf5f978da3401",
+      "newSha256": "818c5908a0109a5e070cc3cb34b7881fce1d13cecd29cfaea1df59a4cd3483cf",
+      "packetSha256": "569ebbe17de795bab85a73e8cd629657661ce02b2ee1a4fa9871173b9ef2a210",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-broide-lab",
+      "reviewIndex": 138,
+      "kind": "empty",
+      "oldSha256": "25f6321c5f56eec1f8b0c5b3128cdbca5635bdc3e806c87e052210a8d7faa680",
+      "newSha256": "05b6d21a2fca233e8291ef12a7b159fcb0f01bf9d693e68fc9ca0ac75411cb33",
+      "packetSha256": "fcccf92378e965e5596c2eb8a833f7088544939e82b8e141d9e401c980ef1737",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-kentson-lam-lab",
+      "reviewIndex": 139,
+      "kind": "empty",
+      "oldSha256": "96192385d31bd52c61553f668d8634feea8f6ade6a1bc21488d8b6afb19a9efc",
+      "newSha256": "3ee820cc598321d9f97f81bc05893ef6100396a02f7123365b15da4c5f26522d",
+      "packetSha256": "821af9c4bbaf032edea8080b7b24d2de99e6a0be389db488e80ff2ae10f3122c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-gerry-boss-laboratory",
+      "reviewIndex": 140,
+      "kind": "empty",
+      "oldSha256": "71ec0a2112d796df7f1b44beb96c911bdcd89bde85d6ed860995c197a77313ff",
+      "newSha256": "be94227475fd137c2551e775f4091d853cc95f0b30f6df4195a72d2b157b9684",
+      "packetSha256": "c766996ff993f72d160659929269c2ebaa8462a7c7468405083eccc4556d02e9",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-golomb-research-group",
+      "reviewIndex": 141,
+      "kind": "empty",
+      "oldSha256": "637ce6c37eb91069eee1f0d6ec6032d7f490cfacf5c17c56eb83c44a16ad9cf9",
+      "newSha256": "651a314fd3462155c57c13cdd5e1e3297d6b4e71f14bb90a0ae29dbd951c213e",
+      "packetSha256": "ed936216bf1ddd16839990cb63c559ce3202302fe263145ed2f3b528a12a4e29",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-molina-lab-mitochondrial-bioenergetics-and-healthy-aging",
+      "reviewIndex": 142,
+      "kind": "empty",
+      "oldSha256": "cd611ff561e0049fe362cd640b8cf186c73d66095a65d8c6fdb9b810106582d6",
+      "newSha256": "48a162b094bec2a6418ca306322e65d9006a947cb55749b68801a3af806c304f",
+      "packetSha256": "51e6a3521c4854e00b21793f941ae0655603ed9161c142ad72bb269acca80778",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-orthopaedic-surgery-lab-muscle-biology-laboratory",
+      "reviewIndex": 143,
+      "kind": "empty",
+      "oldSha256": "7ce0075df94488aacd9075e60b0f981b9442596ff705357fcfd98630b384d4b3",
+      "newSha256": "bc86cff4409e762a09e8338e6a410c7a4becbbba4353048551212dada266908f",
+      "packetSha256": "9f95e840d0058d748059ff1309731240c5f6ad3db1cb92a66375abe0fcea2ed4",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-unknown-moores-cancer-center-department-not-stated-on-fetched-pages-lab-carson-laboratory",
+      "reviewIndex": 144,
+      "kind": "empty",
+      "oldSha256": "1d4895d175b53c275f94126fa6c86a354606b872574c045c4cd3974e213b9073",
+      "newSha256": "642d2e22d8c4a3b1c7fa59f3871c7357b2e005f1529818c2150220f0b9cb083e",
+      "packetSha256": "836062159bb74a8e80d56281a95fa9289b65dd836af42913d1f0c6b3178d9396",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-ophthalmology-lab-shaw-lab",
+      "reviewIndex": 145,
+      "kind": "empty",
+      "oldSha256": "abbaac5e3a60d66d637849e4ac995ff0e440c6324c68ff20ef58217e26bac107",
+      "newSha256": "fa0e5e7af5d83be34749efb19220541359b1bc801f11ef609621e710e23eb1f0",
+      "packetSha256": "6adc0397ddfcfcdc636221e7265dff418189762b378917a7e184bf456d9ecb53",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-ophthalmology-lab-toomey-lab",
+      "reviewIndex": 146,
+      "kind": "empty",
+      "oldSha256": "61577211c9aae963e0025f811f3d2e0baa41aad3955e5306173948312d2b6a04",
+      "newSha256": "e0018e396256cfd5b6966b10ae18cec426ca869b3f6e3eeb7c5d0cadece13c40",
+      "packetSha256": "4a7478eef71c8494c4dbaca072e5978570d0cb118159de0a453dde909575c009",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-evans-lab",
+      "reviewIndex": 147,
+      "kind": "empty",
+      "oldSha256": "53db99949701fc2aca48e783198facfa07a149c6eba94e10075a50ff8af2d596",
+      "newSha256": "09bbc36c97b53fa149846c4ef5dc9849feec5575a60dcc56ff96e251a2edb626",
+      "packetSha256": "4d050ddd065dc9492443ae98321b95e6f7376e49723fa605ff40d3839f0f67a5",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-hook-laboratory",
+      "reviewIndex": 148,
+      "kind": "empty",
+      "oldSha256": "f04f230053411388a47dd25b092acc61a115d9423074350198ca2f6e9c01f847",
+      "newSha256": "ed96adc31e7b2aea3b21d851ddf93cd4acfaa32a7a718b9696a71fbeac2a7801",
+      "packetSha256": "bd6ace9985b93734570a3cb54b84b1f195c0f555085023923e335feb74a97732",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "reviewIndex": 149,
+      "kind": "empty",
+      "oldSha256": "2ccb32d8699c13a5d026ac1c1aabb96a2203735abaa9f8a94d080823f8774e70",
+      "newSha256": "8e210800a407cf52c8a7253c2b542d3c59674aabd580a07a98299f76cff6d536",
+      "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-electrical-and-computer-engineering-lab-advanced-robotics-and-controls-lab-arclab",
+      "reviewIndex": 150,
+      "kind": "empty",
+      "oldSha256": "e3ddb5a2c225a810dd0a9d6e9b0cf263cd7c166ccd397827b0dbdb1c3c95ace5",
+      "newSha256": "a6b744e57f9b1aa1a6a6960bfae274591f21bb8c1824a4810ab801a3e5e59996",
+      "packetSha256": "cfef966958a30a1404f8019e053d31dffd6806005c8e9d947743ea14437d1f41",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "evidence",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "reviewIndex": 151,
+      "kind": "empty",
+      "oldSha256": "95c7296a097a5a01138fb30b82d21b5c481cd6dfd8be0ec81efe6d9b04021514",
+      "newSha256": "1ad4d92838f0b515dbdfc8f1d7970f92e81e544d33ac2cbf855755daf20fe761",
+      "packetSha256": "5dd891f7486628e4a1e8e0caf6fa116e713ff18a188ef6f41744a5cc6527595c",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-tehrani-group",
+      "reviewIndex": 152,
+      "kind": "empty",
+      "oldSha256": "b48c8afe21e3caa0a8e41ecb8ff182af7bffaf0232bd6cd00f56d763a5ba440b",
+      "newSha256": "9ca20e25f9533983e33b74bd9b47ef499a3e5e52f830d1ed6795b96f3e933117",
+      "packetSha256": "805aec5465360942a4298c5b0771137b18b66aa32957e3e0641d06d3cb872f33",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-fluid-effects-on-structural-systems-research-group-fessrg",
+      "reviewIndex": 153,
+      "kind": "empty",
+      "oldSha256": "0f6b26c2b3dd74d9804a0757001e1aca47bdfbab7466c9e4124b7660e3e9d613",
+      "newSha256": "e6f882c7f4099333afbf9a307d5164bf53cea122449bf868f30c5250d23627a8",
+      "packetSha256": "e76c52e6baa949a17ff85e3c42d773cc80cfb9f0839da9726a75393bb4318691",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-bambah-mukku-lab",
+      "reviewIndex": 154,
+      "kind": "empty",
+      "oldSha256": "bc810399820eb7c4656b9acd8c39ab8965461de5bf95b05bec23516933cae098",
+      "newSha256": "9b0d172399e3ff5537d32432e1e5add2c3f6db2f634e3c410cf0f70f64414ed3",
+      "packetSha256": "8ea8ce9178d1eefc6fccb57c6921320b4af9c8aae70963c42bd2a79c346b34ec",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-language-development-lab",
+      "reviewIndex": 155,
+      "kind": "empty",
+      "oldSha256": "68a1c71a47ee2007f6ff931b08cc51c29898785876235264f16e954512e17ef6",
+      "newSha256": "8e98a624444aa6b3d67ffeca70c77ef94d5d0a3bcf601a77831ad7e0013227b5",
+      "packetSha256": "e1765ec948a8ea376b2357e10c661405138a0264712824718100426aa04d35a3",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-uc-san-diego-developmental-neuroscience-lab",
+      "reviewIndex": 156,
+      "kind": "empty",
+      "oldSha256": "46afeb4c80e6bfb73a32260bcaa8eeb0f82a5932a7d4d90c2754323b8d4e0115",
+      "newSha256": "d085596a901b508e60b24109c669a354295f92923a01f6414f9e4ba8efe0b5c8",
+      "packetSha256": "92c9ac9e3b0905381300b2bbb1c603cac17e19f1268d61804998b66c24511d69",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-language-production-lab",
+      "reviewIndex": 157,
+      "kind": "empty",
+      "oldSha256": "2ca6e79007f51d77ec84acbfb0843e60d2cc11eb4f4f500a808fd8f3b626f056",
+      "newSha256": "3ce114197b714f511ab664792877770df24bfa347ce1bbb2d7bf29b215f978a1",
+      "packetSha256": "694f8a204a3e1e2d75807bc78665c3422eb582e848c49b87d88c80ff893b7c17",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-lime-lab-learning-and-instruction-in-multimedia-environments",
+      "reviewIndex": 158,
+      "kind": "empty",
+      "oldSha256": "432cc936e813792c862b164d958cc6002671879efc6a65c17f128664affb411a",
+      "newSha256": "90c0971655f69a12ed0024bac10fbcdf078e8c056825f860bbbcc7cf8f5205b0",
+      "packetSha256": "cc275f4977562660b47458d273638e1d1292d5ac6c4a175f296bdd4e34fcf33d",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-sciminds-social-computations-interacting-minds-research-studio",
+      "reviewIndex": 159,
+      "kind": "empty",
+      "oldSha256": "6351d93a4818f879fd9bdd011ba0072006f3a8b1e0c06eb73cdaae5b2c042bc6",
+      "newSha256": "f788cfd180fa578c2a78c317205cbc5eaaa0fab94dace5193bb8c33f526db8ec",
+      "packetSha256": "898a69783a212c294e79ccc206a9126cd00f03f4eded0a6afd980622851c9f70",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-cortical-systems-and-behavior-lab",
+      "reviewIndex": 160,
+      "kind": "empty",
+      "oldSha256": "7a56763e92815e0d41e420a3173bbe94a4e389faea72a4d3e55ec8c74573dabd",
+      "newSha256": "876417c132681c40e6d607a30e41e8c64874531f9ef5a9c764e79bf4fa77ae6b",
+      "packetSha256": "49b85117171f6767b163a2989a21b892c72121002d0c1c10f4043cd3d1b9baac",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-rickard-lab-cognition-and-cognitive-neuroscience-laboratory",
+      "reviewIndex": 161,
+      "kind": "empty",
+      "oldSha256": "8fd26979d087e840ed71a13649fae6c6cca5c8ddb0bd4319bfa7a7f6982b92e8",
+      "newSha256": "46b4cb4fdf40d40dd304cb3336fd565d8a1f81376d79b11e6ab3f9de1e5c65c8",
+      "packetSha256": "4a6fd4e5924913b45976b4956dfff7e9ceede7d7a2bc8cb6f6f5687714cddef4",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-psychology-lab-early-learning-and-cognition-lab",
+      "reviewIndex": 162,
+      "kind": "empty",
+      "oldSha256": "938ddcf3904556cb1607c5c4065ee47d4b1f47aa380113ad4bad458d0c356271",
+      "newSha256": "607a533bd9f1b1420871308ff71cc1d3a7f95661876b6eb198a3bf4479f3cb94",
+      "packetSha256": "e8fad7bfbe7d02dc908227f17a7ef1ff020a25ff55e27d711f6bfb58b62d11e8",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-cognitive-science-lab-mooshagian-lab",
+      "reviewIndex": 163,
+      "kind": "empty",
+      "oldSha256": "fadc1b402bfa80b6266d58ceb49ec0ba06a95897f0d431f0751a8af171cd41a7",
+      "newSha256": "2f8ee4f2e9929d2d2c84697bd862aa19ae1422f8e87f0ea56fafd50fd8708408",
+      "packetSha256": "ea102d0eb5069c7a67a88726ecb5dcf93bfa417272d772db276b0646add8e2b2",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-global-policy-and-strategy-lab-power-transformation-lab",
+      "reviewIndex": 164,
+      "kind": "empty",
+      "oldSha256": "005ea0be0df8c8f4bc40579de6cd602e4099cc346e26796f0eada0fa6cbb3fc4",
+      "newSha256": "14810f96e339ff482173d1055e04286bbf96dbfb84f3ef3175088d2af1d392b2",
+      "packetSha256": "72e8e9c71521f6221747e65eccc9a0f3554aff5dca6137b10fba74b1da64b703",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-da307b4f0f98b5",
+      "reviewIndex": 165,
+      "kind": "empty",
+      "oldSha256": "ebc2f9c9c4775ad95ba2354badcd0aab4528f26bcbf47c8b46c993722827e958",
+      "newSha256": "4e6dec6aae28d6d68bda7ea0f89350621f666cfe5b695e2ebbb77644edd752c5",
+      "packetSha256": "f5514fd1397f970f28a3a01b9faf479922b5f2bcabb648b92bc063b06765eb27",
+      "changedFields": [
+        "emptyMethodFieldReview",
+        "reviewedAt",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-medicine-lab-hogan-lab",
+      "reviewIndex": null,
+      "kind": "interest",
+      "oldSha256": "03c6fcc116ed17feea87682e47cefe144f2c8da1685c88f16dea3e824292e8fc",
+      "newSha256": "a80506e96ffc80689f134f3d7fb4bbd6f59a977097709508c0b8fee45a0222ff",
+      "packetSha256": "55a51456bc882f23811e878c379d9ffcb2160c19ea60fc6cf3541abfe3efb4ff",
+      "changedFields": [
+        "evidence",
+        "interestOnlyMethodCorrectionReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-semnani-research-group",
+      "reviewIndex": null,
+      "kind": "interest",
+      "oldSha256": "6fbb1a40d2cd23b50e9acbd2ccf02b5e42d12287c42087f8f449fb2ba8fdd562",
+      "newSha256": "dc4f9a0279c8b296cc77f1a8579db058d9dad2781c561d9bca74c0a82dff1ac3",
+      "packetSha256": "f354a2f65159db6192f8a1ee3a6eddd7276464322b17ebdf0519a2b0e915ea42",
+      "changedFields": [
+        "evidence",
+        "interestOnlyMethodCorrectionReview",
+        "methods",
+        "reviewedAt",
+        "summaryZh",
+        "uncertainty"
+      ],
+      "approvedPatchReconstructionExact": true,
+      "questionsQuestionFieldReviewAndAllUnrelatedFieldsPreserved": true,
+      "sourceDatesUrlsAndOldQuoteTextsPreserved": true
+    }
+  ],
+  "simulationResults": [
+    {
+      "scenario": "normal_168_record_apply_in_memory",
+      "passed": true,
+      "recordWrites": 168,
+      "journalWrites": 169,
+      "completeJournalEntries": 168,
+      "outside716RawBytesUnchanged": true,
+      "packetWrites": 0
+    },
+    {
+      "scenario": "resume_already_complete_is_idempotent_for_raw_records",
+      "passed": true,
+      "additionalRawWrites": 0,
+      "duplicateJournalEntries": 0
+    },
+    {
+      "scenario": "crash_after_84th_raw_write_before_its_journal_checkpoint_then_resume",
+      "passed": true,
+      "crashLabId": "ucsd-live-lab-625fc59c29fbcb",
+      "rawWritesAtCrash": 84,
+      "journalEntriesAtCrash": 83,
+      "finalRawWrites": 168,
+      "finalJournalEntries": 168,
+      "recoveredAfterRecordWriteExactlyThisLab": true,
+      "newSha256RecordedOnRecovery": "667c141e84574c08b823cfcc9f4041755230ea3b00fff33e98e29e308f1f0e42"
+    },
+    {
+      "scenario": "unknown_hash_on_final_168th_record_rejected_before_any_write",
+      "passed": true,
+      "labId": "ucsd-structural-engineering-lab-semnani-research-group",
+      "rawWrites": 0,
+      "journalWrites": 0,
+      "allEarlier167KnownRecordsUnchanged": true
+    },
+    {
+      "scenario": "qa_pass_false_rejected_before_any_write",
+      "passed": true,
+      "rawWrites": 0,
+      "journalWrites": 0
+    },
+    {
+      "scenario": "qa_plan_hash_mismatch_rejected_before_any_write",
+      "passed": true,
+      "rawWrites": 0,
+      "journalWrites": 0
+    },
+    {
+      "scenario": "helper_pin_mismatch_rejected_before_any_write",
+      "passed": true,
+      "rawWrites": 0,
+      "journalWrites": 0
+    },
+    {
+      "scenario": "component_bytes_changed_rejected_before_any_write",
+      "passed": true,
+      "rawWrites": 0,
+      "journalWrites": 0
+    }
+  ],
+  "issues": [],
+  "networkRequests": 0,
+  "psChecks": 0,
+  "productionRawPacketProjectionCodeCollectorSharedWrites": 0,
+  "applicationNotRunOnDisk": true,
+  "simulationIsolation": {
+    "actualFinalHelperApplyCalled": true,
+    "atomicAndReadAndDigestAndSnapshotReplacedWithStrictInMemoryAdapters": true,
+    "onlyRecordAndJournalTargetsAllowedInMemory": true,
+    "actualQAFileNeverUsedAsAnApplicationGateDuringSimulation": true,
+    "all884RawAnd884PacketBytesRecheckedUnchangedAfterSimulation": true,
+    "noActualJournalOrPlanWritten": true
+  },
+  "simulationCompletedAt": "2026-10-16T09:29:51+00:00",
+  "admittedMethodSourceProvenanceAudit": {
+    "uniqueSourceIds": 23,
+    "actualRawBytesAndOriginalSidecarChecks": 22,
+    "nullableHistoricalBodyShaPreserved": 1,
+    "items": [
+      {
+        "sourceId": "src-cdde6c6f4fcec449",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+        "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+        "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "textSha256": "fc42a53306cd24305ffdd4ce676c57a2a21544014e21b323ba72ae8887c74648",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.html",
+        "actualCacheSha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-1bc1f8be726ece99",
+        "sourceUrl": "https://www.leutgeblabs.com/",
+        "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+        "bodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+        "textSha256": "33c19bab2cdcdc7dde2d3810ac4f5f7c1870cecab397b7def4aa82591cc87c3a",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f7dc5cdbf6899a5a0d3d16334745f6e526d374abf19690c88bca3edb8beecda3.html",
+        "actualCacheSha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f7dc5cdbf6899a5a0d3d16334745f6e526d374abf19690c88bca3edb8beecda3.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-b16a10555171132b",
+        "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+        "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+        "bodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+        "textSha256": "272f5aa610a32e9591c8e63b040077235a0d17ed028e999b7620dd72135f1be1",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/377f8ef12a11aaccd9f2d6be38b2376a42c452df870a324f04bee4d07abf59cd.html",
+        "actualCacheSha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/377f8ef12a11aaccd9f2d6be38b2376a42c452df870a324f04bee4d07abf59cd.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-ae7ea5068e21375c",
+        "sourceUrl": "https://adalabucsd.github.io/",
+        "sourceObservedAt": "2026-10-16T01:04:59+00:00",
+        "bodySha256": "9da8bbf29686af920503b62ead58b9defba2e3f894349036b914b520a19ac931",
+        "textSha256": "ac6dace3d6ca6545bc25b1b1348576f16e4cf69324cdcd551cccf2aca7ff7609",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ec9f71cf847bac6a6b8641bb603a1f7d7ee58c9d28ab684e700bacc7130a3fde.html",
+        "actualCacheSha256": "9da8bbf29686af920503b62ead58b9defba2e3f894349036b914b520a19ac931",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ec9f71cf847bac6a6b8641bb603a1f7d7ee58c9d28ab684e700bacc7130a3fde.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-155a4223751e14dc",
+        "sourceUrl": "https://dbucsd.github.io/",
+        "sourceObservedAt": "2026-10-16T01:05:00+00:00",
+        "bodySha256": "b259b408b02e2843897724a5e666c78cf7c0397923dd6e0fcbf8c75ecc9d3576",
+        "textSha256": "f83535a2659447ee8c0c665c8f946388d9de10197fc67894a86c8d079e30bf4b",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bf46f56c6e473e33902c0e6780d3f6a1cab9765872180b4539a9afea2ecd7308.html",
+        "actualCacheSha256": "b259b408b02e2843897724a5e666c78cf7c0397923dd6e0fcbf8c75ecc9d3576",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bf46f56c6e473e33902c0e6780d3f6a1cab9765872180b4539a9afea2ecd7308.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-3810a1910ffb6dcc",
+        "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/people.html",
+        "sourceObservedAt": "2026-10-16T02:41:01+00:00",
+        "bodySha256": "cabf9b1ea06b3df3980592288d2a878e363d68dd195dcd73eb01f0bceeaa6d10",
+        "textSha256": "52ac001cfcaba4a9e03519de5489455e6f67e89b1c8bf92cf86c1b007e37fc5d",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/55ab46fcc5c18ae38b67470a2eb502853d14d1f61da86d4dca4726271583f565.html",
+        "actualCacheSha256": "cabf9b1ea06b3df3980592288d2a878e363d68dd195dcd73eb01f0bceeaa6d10",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/55ab46fcc5c18ae38b67470a2eb502853d14d1f61da86d4dca4726271583f565.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-cc3ee27d92332efe",
+        "sourceUrl": "https://www.thepridelaboratory.org/about",
+        "sourceObservedAt": "2026-10-16T01:33:22+00:00",
+        "bodySha256": "a90cda8448dfb8a00752666e707eccf09486621ac491486c4b845cf71c655747",
+        "textSha256": "e15a705000d9f9b6a3fae1334a235217f1609bfb4b30ed3e60b48687c096f8aa",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c2c6cad479fcc130993596023db0a89c4431147659d8bb09211fdca6ebc9c924.html",
+        "actualCacheSha256": "a90cda8448dfb8a00752666e707eccf09486621ac491486c4b845cf71c655747",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c2c6cad479fcc130993596023db0a89c4431147659d8bb09211fdca6ebc9c924.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-fd71a1ccf40b9192",
+        "sourceUrl": "https://www.leelaboratory.com/team",
+        "sourceObservedAt": "2026-10-16T01:03:00+00:00",
+        "bodySha256": "25170a2aa9af9edd02d419f14fc0110e8284661f7df46b0052dd866322f876d3",
+        "textSha256": "747f7d3547f415224720480ebaecf1ebe2218cd42a2473fd077d1832ebe5b42a",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7b62d4df6954676159d9b5affde21a55077e0ca89715b57c3c262f0e4fc47f14.html",
+        "actualCacheSha256": "25170a2aa9af9edd02d419f14fc0110e8284661f7df46b0052dd866322f876d3",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7b62d4df6954676159d9b5affde21a55077e0ca89715b57c3c262f0e4fc47f14.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-ceca78ecaaa5fcec",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/asa-gustafsson.html",
+        "sourceObservedAt": "2026-10-16T01:00:20+00:00",
+        "bodySha256": "2686ec170eef8c01a5e54bfabc35c80ba0abcfd4f6a59bff4cbe4c41bfb15096",
+        "textSha256": "0bb3e42a7a822b8f08eb3fc7af1800329153a6d16b379c51cf09b1cb9bc08f59",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc63c47e100adbf22bb1303cd0271ea070bbf777390415b6985ab97b29192a4b.html",
+        "actualCacheSha256": "2686ec170eef8c01a5e54bfabc35c80ba0abcfd4f6a59bff4cbe4c41bfb15096",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc63c47e100adbf22bb1303cd0271ea070bbf777390415b6985ab97b29192a4b.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-72112d86861302ba",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/j-silvio-gutkind.html",
+        "sourceObservedAt": "2026-10-16T01:00:21+00:00",
+        "bodySha256": "aa9d47f4a7750d1e61b475e635bf21dc19c6cf7dc341e8965e2c0c4638d3ed7b",
+        "textSha256": "2476d7d3ad30d5d94230a0cba02e4bfd4b68a4f87a5d0a0803d0259fb3475bd4",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fc1dbe34421874e38d3972708dd208b6634463ca96b85069a59dd8c43f4d18f5.html",
+        "actualCacheSha256": "aa9d47f4a7750d1e61b475e635bf21dc19c6cf7dc341e8965e2c0c4638d3ed7b",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/fc1dbe34421874e38d3972708dd208b6634463ca96b85069a59dd8c43f4d18f5.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-254ea865b6464cde",
+        "sourceUrl": "https://ipower3es.eng.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:00:27+00:00",
+        "bodySha256": "15c721683da6faa37cbd4d55c02627d40f8f877f120459457eea6312441d01f6",
+        "textSha256": "af2a8c1a7edb8b29fc5b1403c1d6877d05a58cb24e7c904df7f57378ba23e872",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ce0b313a22d83d9ba205a96b10b5521bd0bb20ca3827caafd998db401ba0ed0a.html",
+        "actualCacheSha256": "15c721683da6faa37cbd4d55c02627d40f8f877f120459457eea6312441d01f6",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ce0b313a22d83d9ba205a96b10b5521bd0bb20ca3827caafd998db401ba0ed0a.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-de8f25c30e0ff6f3",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=435",
+        "sourceObservedAt": "2026-10-16T01:00:48+00:00",
+        "bodySha256": "5c033f13559a9d7aec99fae5b223a63b3af0510f1a297b0528b19ecaeafe1f68",
+        "textSha256": "06191b9274e6967388a4a786783e2562ea0c1e5435898ff693a308d6a7744bd2",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b668b13550b207638a8662f315fec294d36cc913f5778748475acf5a3e031668.html",
+        "actualCacheSha256": "5c033f13559a9d7aec99fae5b223a63b3af0510f1a297b0528b19ecaeafe1f68",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/b668b13550b207638a8662f315fec294d36cc913f5778748475acf5a3e031668.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-cdf42ff2eb5d2fd0",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=217",
+        "sourceObservedAt": "2026-10-02T22:43:23+00:00",
+        "bodySha256": null,
+        "textSha256": "bd54b29ceedd448af70db1e16fc3154aaa99a1524c881780c57a7148582f31d5",
+        "boundary": "Preserved historical official associated-faculty excerpt; packet has no raw HTML body hash/cache path. Exact complete method sentence and original field observation date preserved; no invented body SHA or full-profile claim.",
+        "actualRawBodyCheck": "not_available_in_this_source"
+      },
+      {
+        "sourceId": "src-9748defd6f23e3ea",
+        "sourceUrl": "https://anthropology.ucsd.edu/people/faculty/faculty-profiles/isabel-rivera-collazo.html",
+        "sourceObservedAt": "2026-10-16T01:00:37+00:00",
+        "bodySha256": "5123660d49cdc3e8ef0466d84b2b765a018c96555c1c132d6c3f0b8910e3e393",
+        "textSha256": "9cfbf897f178f400cf0afac93a55e7b3044a278ecd6a488822357dc847ef1815",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d3df26c76bd617670cca4f7615214df88428cf7f5641b59b55e675dd5404d2c2.html",
+        "actualCacheSha256": "5123660d49cdc3e8ef0466d84b2b765a018c96555c1c132d6c3f0b8910e3e393",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d3df26c76bd617670cca4f7615214df88428cf7f5641b59b55e675dd5404d2c2.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-c1fb2634613c0cc3",
+        "sourceUrl": "https://sites.ucsd.edu/trejolab/current-members/",
+        "sourceObservedAt": "2026-10-16T01:04:40+00:00",
+        "bodySha256": "2a63a9b4e80c2406119135e907bd0e6dfd475445c280aad900bcc1b08eaeb3ea",
+        "textSha256": "13db0edda7cd3ebeaff2faf840ba1763c6b448d4693e2d6da399e0f836d4260c",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c70054004b55d584437df69c34aa456fbf1c16eab09292e10b8c72b6df49b57d.html",
+        "actualCacheSha256": "2a63a9b4e80c2406119135e907bd0e6dfd475445c280aad900bcc1b08eaeb3ea",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c70054004b55d584437df69c34aa456fbf1c16eab09292e10b8c72b6df49b57d.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-35949bde48448379",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=394",
+        "sourceObservedAt": "2026-10-16T01:01:09+00:00",
+        "bodySha256": "6b44b2e28d2ac6e117986552518d900ed65c8e9f782640deb518c212ec686c4c",
+        "textSha256": "5dc302bdea3553051cedf3bb655fb4d428d96dc9124387b990a23b3c731c6234",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d1b2d8d1435fad76825ba7d2de28ae47f70f9138ebdaf7ae274aba0cfbdb240d.html",
+        "actualCacheSha256": "6b44b2e28d2ac6e117986552518d900ed65c8e9f782640deb518c212ec686c4c",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d1b2d8d1435fad76825ba7d2de28ae47f70f9138ebdaf7ae274aba0cfbdb240d.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-15280fa2dd979d81",
+        "sourceUrl": "http://flexible-electronics.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T05:32:31+00:00",
+        "bodySha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+        "textSha256": "d2dbb84204e9e0426d2e3dc9027427e7ca86faa3d362ccfc4037abe9da363812",
+        "snapshotRetainsOriginalCaptureTime": true,
+        "actualCachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/collection-cache-snapshots/9bfe9ea4e2e62b090d680a7e64bfa5648d3639c5ffe8f3015d25894fb26421dd.html",
+        "actualCacheSha256": "7640df40dd31d09bb282523e91b8e51de00d4594ca6f026879539f53666c28fc",
+        "originalSidecarPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/collection-cache-snapshots/9bfe9ea4e2e62b090d680a7e64bfa5648d3639c5ffe8f3015d25894fb26421dd.original.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-67fe13c9f7da8c09",
+        "sourceUrl": "https://www.zhaowei.us/",
+        "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+        "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+        "textSha256": "cf78fe0122bc39e1e5faddb5a6983a51e24ba0c0fbfbd05fb30c95e9c7584a43",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.html",
+        "actualCacheSha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "textSha256": "3384f182b051d566ea6019de03b1a924d5e11cc9378d2d66290899b366900d83",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.html",
+        "actualCacheSha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-f008a8591c981529",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+        "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+        "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+        "textSha256": "6b08c59c22d475fab741f7017640c58c7a437b8fb24870a42cb594c685d1cd70",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.html",
+        "actualCacheSha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-7860c9151c7e8a82",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+        "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+        "textSha256": "78c768892b84ed59717b2ba832ab7dad201b34f37f92cfb530534d1765c743bf",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.html",
+        "actualCacheSha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-ecb5f3bfb3b5c8a7",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+        "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+        "textSha256": "4789b118a9fc2104288df0ba5d1880febde1ae20301a578667892485c4046745",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.html",
+        "actualCacheSha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.json",
+        "originalSidecarUrlTimeHashMatch": true
+      },
+      {
+        "sourceId": "src-8b426b44eccb9855",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=401",
+        "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+        "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+        "textSha256": "b7fe81e4c74476bc13ec4c96600f8c0a1e6e654d9c460ea5be92618bbd2a5b1b",
+        "actualCachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.html",
+        "actualCacheSha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+        "originalSidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.json",
+        "originalSidecarUrlTimeHashMatch": true
+      }
+    ]
+  },
+  "sourceProvenanceAuditAt": "2026-10-16T09:31:18+00:00",
+  "staticGateReview": {
+    "reviewedFinalHelperSha256": "4194cf18c22bae571c83a42da1479c0f855c29592c156cbd3836413b3f96e161",
+    "immutablePlanHasExact166Plus2UniqueStableIds": true,
+    "allThreeCrossQAsBindDraftInventoryAndScopeAddendumHashes": true,
+    "additionalInterestOnlyQABindsProposalHash": true,
+    "smarrAddendumChecksOldValueDraftShaAndActualReviewTimeBeforeProvenancePointer": true,
+    "applyBindsPassedQAPlanHelperSharedHelperAndEveryComponentHash": true,
+    "all884PacketHashesAnd716OutsideRawHashesCheckedBeforeWrites": true,
+    "all168OldNewObjectDigestsAndCurrentKnownHashesPreflightedBeforeFirstAtomicWrite": true,
+    "journalPlanBindingAndAppliedEntryHashGuards": true,
+    "resumeUsesFixedNewRecordAndFillsMissingJournalDigest": true,
+    "atomicProductionWriterRemainsOwnedRootTempfileFsyncReplace": true,
+    "existing430TestReceiptDoesNotCoverThisHelper": true,
+    "independentFinalHelperInMemoryScenariosRun": 8
+  },
+  "reviewedAt": "2026-10-16T09:32:16+00:00",
+  "limits": [
+    "This QA validates the immutable 168-record application plan against already independently reviewed scientific drafts, rather than repeating every scientific source read.",
+    "One preserved historical official snippet (src-cdf42ff2eb5d2fd0) has nullable bodySha256 and no original HTML path in that source; the exact complete method sentence and actual original field observation time are preserved, with no fabricated raw-body verification.",
+    "All application exercises used strict in-memory read/digest/snapshot/atomic adapters; no on-disk apply, journal, raw, packet, projection, code, collector or shared-data mutation occurred."
+  ],
+  "finalDiskSnapshotAudit": {
+    "all884RawStillExactlyBeforeHashes": true,
+    "all884PacketsStillExactlyBeforeHashes": true,
+    "planHelperAndAllComponentsStillPinned": true,
+    "realApplicationJournalAbsent": true,
+    "verifiedURLCoreCounterfactualCount": 577
+  }
+}

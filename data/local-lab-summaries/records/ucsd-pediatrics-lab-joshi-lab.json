@@ -1,0 +1,158 @@
+{
+  "labId": "ucsd-pediatrics-lab-joshi-lab",
+  "status": "supported",
+  "summaryZh": "Joshi 实验室研究髓系细胞如何塑造肿瘤微环境并影响癌症进展，目标是调节抗肿瘤免疫。团队使用空间转录组学、免疫表型分析、系统生物学、临床前模型和患者样本。",
+  "researchQuestions": [
+    "哪些机制调控肿瘤微环境中的髓系细胞功能？"
+  ],
+  "topics": [
+    "肿瘤微环境",
+    "髓系细胞",
+    "抗肿瘤免疫"
+  ],
+  "methods": [
+    "空间转录组学",
+    "免疫表型分析",
+    "系统生物学",
+    "临床前模型与患者样本"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-65f70600d400feb1",
+      "quote": "Our lab is dedicated to understanding the complex biology of the tumor microenvironment (TME) and its influence on cancer progression. We focus on the role of myeloid cells, such as macrophages and myeloid-derived suppressor cells (MDSCs), in shaping the TME.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-65f70600d400feb1",
+      "quote": "including spatial transcriptomics, immune phenotyping, system biology approaches, and preclinical models, along with human patient samples",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-d9dcf8fc610d3df2",
+      "quote": "Joshi Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-65f70600d400feb1",
+      "quote": "In 2019, Dr. Joshi joined as an Assistant Professor in the Department of Pediatrics, UCSD.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-65f70600d400feb1",
+      "quote": "By studying the mechanisms that regulate myeloid cell function within the TME, we aim to identify new strategies for cancer therapy.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "列出目标 URL 返回 404，但另一已缓存官方实验室页面提供研究证据；不据 404 判断关闭。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:15:30+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:15:30+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:46:01+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Our lab段明确将调控髓系细胞功能的机制列为研究目标；只问机制，不断言新治疗策略已经有效。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-d9dcf8fc610d3df2",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+        "bodySha256": null,
+        "textSha256": "ea09584648416775d945924a5e0c30701609c6133d71403537edb3420676a835",
+        "textCharacters": 39,
+        "readRanges": [
+          [
+            0,
+            39
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-3d3d0187aa44ecaf",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/joshi-lab/index.html",
+        "sourceObservedAt": "2026-10-07T23:01:49+00:00",
+        "bodySha256": null,
+        "textSha256": "a08f8a3bff9fe68f6f5928bcf80a67e35eabdf81b4022b43f9f887c9c93d31af",
+        "textCharacters": 103,
+        "readRanges": [
+          [
+            0,
+            103
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-45fa95d3f5b9a413",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+        "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+        "textCharacters": 1659,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 143,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-65f70600d400feb1",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/joshi-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:25+00:00",
+        "bodySha256": "8f219ecd5f43378412c77f362ae5943804cb8f533ed596822701e1a8d332d17e",
+        "textSha256": "5c76e38e3a7a3c0d351b6fde318105c86693943293460b4e6ef263091d229890",
+        "textCharacters": 2862,
+        "readRanges": [
+          [
+            0,
+            2862
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-65f70600d400feb1",
+        "quote": "By studying the mechanisms that regulate myeloid cell function within the TME, we aim to identify new strategies for cancer therapy.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:03:25+00:00",
+        "bodySha256": "8f219ecd5f43378412c77f362ae5943804cb8f533ed596822701e1a8d332d17e"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

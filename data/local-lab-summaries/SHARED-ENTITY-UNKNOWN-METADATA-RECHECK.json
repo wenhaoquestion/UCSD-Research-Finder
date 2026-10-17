@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:20:20+00:00",
+  "verdict": "PASS_MINOR_PROVENANCE_OMISSION_RESOLVED",
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "existingFileWrites": 0,
+  "sourceHandoffSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+  "sourceDecisionsSha256": "780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1",
+  "sourceHandoffApprovedRecordCount": 16,
+  "whitelistCheck": {
+    "file": "scripts/local_lab_summaries.py",
+    "line": 361,
+    "fields": [
+      "principalInvestigator",
+      "principalInvestigatorProfileUrl",
+      "principalInvestigatorIdentityScope",
+      "department",
+      "departmentAssessment",
+      "unverifiedFields",
+      "contentDateNote",
+      "relatedProfessorNames",
+      "relationshipScope",
+      "relationshipType",
+      "websiteSharing",
+      "professorIds"
+    ],
+    "professorIdsCopiedWithoutInference": true
+  },
+  "fixReportedAt": "2026-10-16T05:15:49+00:00",
+  "projectionCheckpointUpdatedAt": "2026-10-16T05:19:58+00:00",
+  "projectionCheckpointCount": 884,
+  "projectionCheckpointValidationErrors": [],
+  "items": [
+    {
+      "labId": "ucsd-live-lab-802bc4f0642435",
+      "labName": "Flow Control Lab",
+      "ordinal": 882,
+      "reviewedAt": "2026-10-16T05:20:20+00:00",
+      "approvedSharedRecordValidator": "PASS",
+      "approvedDecisionBinding": {
+        "labId": "ucsd-live-lab-802bc4f0642435",
+        "decisionUrlKey": "https://www.ucsdrobotics.org/",
+        "action": "accept_shared_entities",
+        "sharingGroupId": "ucsd-shared-homepage-802bc4f0642435"
+      },
+      "professorIdsInApprovedHandoff": [],
+      "professorIdsInPacket": [],
+      "professorIdsInSummaryProjection": [],
+      "professorIdsInURLProjection": [],
+      "principalInvestigator": "Not found",
+      "principalInvestigatorProfileUrl": "Not found",
+      "piScopeAbsentInApprovedAndAllProjections": true,
+      "unverifiedFieldsAbsentInApprovedAndAllProjections": true,
+      "websiteSharingEqualsExactApproved": true,
+      "websiteSharing": {
+        "kind": "distinct_named_labs",
+        "groupId": "ucsd-shared-homepage-802bc4f0642435",
+        "memberLabIds": [
+          "ucsd-live-lab-7df54236890322",
+          "ucsd-live-lab-802bc4f0642435"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "reviewed_distinct_named_labs_in_shared_homepage",
+            "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+            "status": "verified"
+          }
+        ]
+      },
+      "unknownBoundaryCompleteExactProjection": true,
+      "importProvenanceExactProjection": true,
+      "scienceReviewedAtUnchangedFromOriginalQA": "2026-10-16T05:11:05+00:00",
+      "statusUnchanged": "supported",
+      "entityAcceptanceStatus": "accepted_lab_group",
+      "canCountAsVerifiedLabGroupURL": true,
+      "originalSourceIdPreserved": "src-b4ab573dff1b4ca6",
+      "originalSourceObservedAtPreserved": "2026-10-16T01:08:35+00:00",
+      "originalBodySha256Preserved": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "packetSha256": "b651735c76a7f98bd58fe3efd1240e3c3df43f53db752acba9aca54d898f44bf",
+      "rawSha256": "ed034d1ad504a924da715dccbd2137849077ba72b4ada499f0538cc328ca0c28",
+      "originalMinorFindingAt": "2026-10-16T05:14:05+00:00",
+      "previousExplicitProfessorIdsPreservedFinding": false,
+      "nowExplicitlyPreserved": true
+    },
+    {
+      "labId": "ucsd-live-lab-7df54236890322",
+      "labName": "Coordinated Robotics Lab",
+      "ordinal": 883,
+      "reviewedAt": "2026-10-16T05:20:20+00:00",
+      "approvedSharedRecordValidator": "PASS",
+      "approvedDecisionBinding": {
+        "labId": "ucsd-live-lab-7df54236890322",
+        "decisionUrlKey": "https://www.ucsdrobotics.org/",
+        "action": "accept_shared_entities",
+        "sharingGroupId": "ucsd-shared-homepage-802bc4f0642435"
+      },
+      "professorIdsInApprovedHandoff": [],
+      "professorIdsInPacket": [],
+      "professorIdsInSummaryProjection": [],
+      "professorIdsInURLProjection": [],
+      "principalInvestigator": "Not found",
+      "principalInvestigatorProfileUrl": "Not found",
+      "piScopeAbsentInApprovedAndAllProjections": true,
+      "unverifiedFieldsAbsentInApprovedAndAllProjections": true,
+      "websiteSharingEqualsExactApproved": true,
+      "websiteSharing": {
+        "kind": "distinct_named_labs",
+        "groupId": "ucsd-shared-homepage-802bc4f0642435",
+        "memberLabIds": [
+          "ucsd-live-lab-7df54236890322",
+          "ucsd-live-lab-802bc4f0642435"
+        ],
+        "evidence": [
+          {
+            "sourceUrl": "https://www.ucsdrobotics.org/",
+            "observedAt": "2026-10-16T01:08:35+00:00",
+            "method": "reviewed_distinct_named_labs_in_shared_homepage",
+            "evidence": "The UCSD Flow Control Lab , founded in 1998, investigates a range of questions ranging from fundamental to applied, including the development of advanced analysis tools and numerical methods to better understand, optimize, estimate, forecast, and control fluid systems. ​ The UCSD Coordinated Robotics Lab , founded in 2004, investigates the mobility and coordination of low-cost robotic vehicles, leveraging dynamic models and feedback control, with prototypes built using cellphone-grade and IoT technologies, custom PCBs, and 3D printing. The two labs collaborate closely on a variety of interdisciplinary projects,",
+            "status": "verified"
+          }
+        ]
+      },
+      "unknownBoundaryCompleteExactProjection": true,
+      "importProvenanceExactProjection": true,
+      "scienceReviewedAtUnchangedFromOriginalQA": "2026-10-16T05:11:05+00:00",
+      "statusUnchanged": "supported",
+      "entityAcceptanceStatus": "accepted_lab_group",
+      "canCountAsVerifiedLabGroupURL": true,
+      "originalSourceIdPreserved": "src-b4ab573dff1b4ca6",
+      "originalSourceObservedAtPreserved": "2026-10-16T01:08:35+00:00",
+      "originalBodySha256Preserved": "a961afcb796d1106489b68ff10a961d03b982af4205ff1e502994669f546ba1e",
+      "packetSha256": "9c6bc09c7e7e584a3a8f16ae017023357b45a7220d5da4fddb30116a70690fff",
+      "rawSha256": "a6a6f4c700fbeb046f216444016b8a4c473b61839716f5528187f351a03c9f60",
+      "originalMinorFindingAt": "2026-10-16T05:14:05+00:00",
+      "previousExplicitProfessorIdsPreservedFinding": false,
+      "nowExplicitlyPreserved": true
+    }
+  ],
+  "old882Snapshot": {
+    "snapshotPath": "data/local-lab-summaries/before-reviewed16-append-packet-hashes.json",
+    "snapshotObservedAt": "2026-10-16T05:09:29+00:00",
+    "snapshotSha256": "5e7e61e00f753c3616a911d6c8e18e6021ebc2cf65efbc4039cb91f4c5745a12",
+    "oldPacketCount": 882,
+    "currentlyMatchingSnapshotCount": 879,
+    "currentIndependentFollowupDifferences": [
+      {
+        "labId": "ucsd-chemistry-biochemistry-lab-jennings-lab",
+        "snapshotSha256": "9cf62ce067294c573b59b5ae603fe69e1728f34e1a85c823d53bd1c5b6ea7607",
+        "currentSha256": "66261ab75d735bd691870c38982e71a473aa90c1bdd52927fc07dd4ed96a07e5",
+        "professorIdsNotAdded": true,
+        "independentSubsequentFollowupSources": [
+          {
+            "sourceId": "src-0bdc9a2cf67f6aa7",
+            "sourceUrl": "http://jenningslab.ucsd.edu/research.html",
+            "observedAt": "2026-10-16T05:16:21+00:00",
+            "bodySha256": "43f162576b348d66ad21d6c455a9004810e29fdd3a558d8ba4d91bb6827375c1"
+          }
+        ]
+      },
+      {
+        "labId": "ucsd-chemistry-biochemistry-lab-kummel-lab",
+        "snapshotSha256": "b196bc807940e5ff7590a09e79122baf2f84e102818fc33badcdbfd67c548311",
+        "currentSha256": "ee6a440d29b0920274749244cc6d153d783532efcc1880c4831f35b5f61edc2d",
+        "professorIdsNotAdded": true,
+        "independentSubsequentFollowupSources": [
+          {
+            "sourceId": "src-bcab5ff0dfd33434",
+            "sourceUrl": "http://kummelgroup.ucsd.edu/home.htm",
+            "observedAt": "2026-10-16T05:16:22+00:00",
+            "bodySha256": "77f5e011bf5f28b9d121a9da8fdc8fb4f9f87c0dc9831425532bd8b476589f1c"
+          },
+          {
+            "sourceId": "src-3626de29c7f61579",
+            "sourceUrl": "http://kummelgroup.ucsd.edu/side.htm",
+            "observedAt": "2026-10-16T05:16:23+00:00",
+            "bodySha256": "69030e3850045ea5aa732347dc0d8c5da32161b985db079cc1af39eb980ebcb0"
+          }
+        ]
+      },
+      {
+        "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+        "snapshotSha256": "06e04dbe6ace3d9ddfbc561e437eb626b59f5e14f3bf9fcdabbacc377d3d3336",
+        "currentSha256": "5dd891f7486628e4a1e8e0caf6fa116e713ff18a188ef6f41744a5cc6527595c",
+        "professorIdsNotAdded": true,
+        "independentSubsequentFollowupSources": [
+          {
+            "sourceId": "src-0de7802df1ac58fb",
+            "sourceUrl": "http://shm.ucsd.edu/Site/Home.html",
+            "observedAt": "2026-10-16T05:16:24+00:00",
+            "bodySha256": "1b4e9cbb73cfab12830a535e4ed0948125ec7987651de148c696e8a7d05a2843"
+          }
+        ]
+      }
+    ],
+    "oldPacketProfessorIdsBoundaryAdditions": [],
+    "professorIdsRepairAffectsOnlyNewSharedPair": true,
+    "chronology": "Original QA at05:14:05 recorded882/882 exact hashes. Repair at05:15:49 added professorIds only to new IDs882/883. Actual followups observed05:16:21..24 later changed Jennings/Kummel/SHM packets; those are independent of metadata repair."
+  },
+  "originalQAPreserved": {
+    "path": "data/local-lab-summaries/REVIEWED-16-ADMISSION-QA.json",
+    "sha256": "027767ffa94fb74e86498fee56e94072a86c63d97307f1083923e84f2b31661c",
+    "reviewedAt": "2026-10-16T05:14:05+00:00",
+    "originalVerdict": "PASS_WITH_MINOR_PROVENANCE_OMISSION",
+    "originalActionableFindingRetained": true,
+    "minorFindingNowResolvedBySeparateRecheck": true,
+    "markdownSha256": "46b34aec9fb448c3c078ebc22284130d333592745307e56b275781c90a225ae4"
+  },
+  "inputHashes": {
+    "data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-reviewed-lab-handoff-49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776.json": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+    "data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-decisions-780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1.json": "780a47cabd7b2c6b21b126927244d1fecb5fb3705100ae872d43f0fed5a116c1",
+    "data/local-lab-summaries/SHARED-ENTITY-UNKNOWN-METADATA-FIX.json": "5d59e1d5322794f868c2107dd0ab1140faa277fba06c76150ddf22d0cc6f8f1b",
+    "data/local-lab-summaries/REVIEWED-16-ADMISSION-QA.json": "027767ffa94fb74e86498fee56e94072a86c63d97307f1083923e84f2b31661c",
+    "data/local-lab-summaries/REVIEWED-16-ADMISSION-QA.md": "46b34aec9fb448c3c078ebc22284130d333592745307e56b275781c90a225ae4",
+    "data/local-lab-summaries/before-reviewed16-append-packet-hashes.json": "5e7e61e00f753c3616a911d6c8e18e6021ebc2cf65efbc4039cb91f4c5745a12",
+    "data/local-lab-summaries/summaries.jsonl": "18d6ceca8cbab2cf8f735c5148849f9917c621aa04d39b5fe3f63ac495664ce2",
+    "data/local-lab-summaries/url-verification.jsonl": "a2b1ac2462eb0eab3576b3a14d1e73bdcc7e691c1218653c693cdbf59e49ba69",
+    "data/local-lab-summaries/checkpoint.json": "de5907fab57fe9d125022d849c978809675c28a16628c3211fdaa3f287789dd2",
+    "scripts/local_lab_summaries.py": "32899783de11069acc096f8ba2308499bf64a5528809a21f56e85357e5d03484",
+    "scripts/lab_summary_handoff.py": "37c90df72de6e632462322376435bd918aecd0ed0c7dd298ec8536a1317eada8"
+  },
+  "readSnapshotsStableDuringCheck": true,
+  "actionableIssues": [],
+  "boundaries": [
+    "Empty professorIds means no assigned professor association; it does not establish a real-world absence of a PI.",
+    "No PI/profile inference, ID merging, source time replacement, scientific revision, acceptance expansion or alias application.",
+    "Existing QA chronology remains immutable; this recheck closes its minor metadata omission separately."
+  ]
+}

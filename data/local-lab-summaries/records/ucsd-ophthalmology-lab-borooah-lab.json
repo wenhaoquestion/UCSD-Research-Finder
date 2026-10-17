@@ -1,0 +1,134 @@
+{
+  "labId": "ucsd-ophthalmology-lab-borooah-lab",
+  "status": "supported",
+  "summaryZh": "Borooah Lab 研究视网膜与黄斑疾病的成因，探索防盲治疗。研究以诱导多能干细胞建模，采用基因治疗、CRISPR 编辑和反义寡核苷酸等策略，并结合成像分析。",
+  "researchQuestions": [
+    "导致视网膜和黄斑疾病的原因是什么？"
+  ],
+  "topics": [
+    "视网膜与黄斑疾病",
+    "疾病机制",
+    "个体化治疗"
+  ],
+  "methods": [
+    "诱导多能干细胞模型",
+    "基因治疗",
+    "CRISPR编辑",
+    "反义寡核苷酸",
+    "成像分析"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "Borooah Lab Retina Research",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "The main aim of our research is to better understand the cause of disease conditions affecting the retina and the main visual part of the retina, the macula.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "modelling disease using induced pluripotent stem cells (iPSCs).",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "Gene therapy CRISPR gene editing CRISPR DNA base editing PRIME editing Antisense-oligonucleotides",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "The imaging team uses complex analysis tools and newly developed artificial intelligence algorithms",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-03893b5307f8cfc6",
+      "quote": "The main aim of our research is to better understand the cause of disease conditions affecting the retina and the main visual part of the retina, the macula.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:21:10.090360+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:21:10.090360+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:00+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Our research明确理解病因目标，保留宽泛病因层级，不添加具体遗传或成像机制。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-03893b5307f8cfc6",
+        "sourceUrl": "https://sites.ucsd.edu/borooahlab/",
+        "sourceObservedAt": "2026-10-16T01:08:52+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            2414
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-21998be3a04d44c6",
+        "sourceUrl": "https://shileyeye.ucsd.edu/research/ophthalmic-lab-sites",
+        "sourceObservedAt": "2026-10-07T22:58:44+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            303
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-03893b5307f8cfc6",
+        "quote": "The main aim of our research is to better understand the cause of disease conditions affecting the retina and the main visual part of the retina, the macula.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:08:52+00:00",
+        "bodySha256": "2e02810ee56e104b45339c63f8052caeb780e9066a5544d7782b6eaf692cc10e",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

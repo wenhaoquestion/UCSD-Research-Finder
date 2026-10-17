@@ -1,0 +1,115 @@
+{
+  "labId": "ucsd-otolaryngology-lab-guo-lab",
+  "status": "supported",
+  "summaryZh": "Guo 实验室研究头颈癌中的转录后变化，特别是可变剪接及其与肿瘤蛋白表型之间的联系。团队采用计算生物学方法，目标是将这些知识用于精准癌症照护。",
+  "researchQuestions": [
+    "肿瘤中的DNA突变与最终表达的蛋白质表型之间，发生哪些转录后改变？"
+  ],
+  "topics": [
+    "头颈癌",
+    "转录后变化",
+    "可变剪接"
+  ],
+  "methods": [
+    "计算生物学"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-9ea18d53a4137c53",
+      "quote": "The Guo Lab University of California, San Diego Gleiberman Head & Neck Cancer Center Moores Cancer Center",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-9ea18d53a4137c53",
+      "quote": "The Guo Lab University of California, San Diego Gleiberman Head & Neck Cancer Center Moores Cancer Center Integrating biology and software into precision medicine for head and neck cancer Learn more About Us Our research work seeks to understand post transcriptional changes, including alternative splicing events, which are prevalent in head and neck cancer. We utilize computational biology methods to achieve a deeper understanding of these post transcriptional genomic alterations that are not readily apparent through sequencing alone. Splicing alteration and post transcriptional alterations represent an understudied gap in genomic knowledge that seeks to understand changes that occur between DNA mutations and ultimately expressed protein phenotypes in tumors. By harnessing computational tools, we can come closer to translating this genomic knowledge towards the delivery of precision cancer care in head and neck cancer.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-9ea18d53a4137c53",
+      "quote": "Splicing alteration and post transcriptional alterations represent an understudied gap in genomic knowledge that seeks to understand changes that occur between DNA mutations and ultimately expressed protein phenotypes in tumors.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:26:23.237691+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:26:23.237691+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Guo具名About Us以Our research seeks to understand与understudied gap明确待解改变对象，保留头颈癌背景；不把关联链条扩成某种已证因果或临床疗效。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-9ea18d53a4137c53",
+        "sourceUrl": "https://www.guolabucsd.com/",
+        "sourceObservedAt": "2026-10-16T01:02:51+00:00",
+        "bodySha256": "29a12d3e45c7713f0c4dcb72f95de7007139b9ea34c7e0e6b5edc35bac14bf24",
+        "textSha256": "f2d89b06ca1dd4f1d2fa38a1d014ade0447de1c406c7f767bbcf7d040614b9e7",
+        "textCharacters": 932,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            932
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-51673e99a4b0caec",
+        "sourceUrl": "https://oto.ucsd.edu/research/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:10+00:00",
+        "bodySha256": null,
+        "textSha256": "9a4aecdcc8ca5735c926b0005abea4d73096b0a5d27644efbff23c65fda7eb0d",
+        "textCharacters": 17,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            17
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-9ea18d53a4137c53",
+        "quote": "Splicing alteration and post transcriptional alterations represent an understudied gap in genomic knowledge that seeks to understand changes that occur between DNA mutations and ultimately expressed protein phenotypes in tumors.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:02:51+00:00",
+        "bodySha256": "29a12d3e45c7713f0c4dcb72f95de7007139b9ea34c7e0e6b5edc35bac14bf24",
+        "sourceUrl": "https://www.guolabucsd.com/"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "labId": "ucsd-physics-lab-groisman-lab",
+  "status": "supported",
+  "summaryZh": "Groisman 研究组发展基于微流动和软材料的器件与技术，用于细胞生物学和蛋白质折叠研究。研究包括趋化梯度响应及微流控微生物培养。",
+  "researchQuestions": [
+    "细胞行为和基因表达如何随培养基中的氧张力变化？"
+  ],
+  "topics": [
+    "微流控",
+    "细胞生物学",
+    "蛋白质折叠"
+  ],
+  "methods": [
+    "微通道梯度发生器",
+    "微流控培养"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-9e9881d119e89ed5",
+      "quote": "Microfluidics for cell biology and protein folding hh Research ww Publications ww Press reports ww Technologies ww People ww t The main area of research of our group is the development and application of new devices and techniques based on micro-flows and soft materials for cell biology and protein folding research. We collaborate with many bio-research laboratories in San Diego area and outside. Chemotaxis and gradient response We have designed and built a variety microchannel networks generating stable linear and exponential gradients of soluble factors, temperature and gas concentrations. These microchannel devices have been used to study the chemotaxis of neutrophil-like HL60 cells, primary neutrophils, and D. discoideum amoebas, the chemotropism of yeast, and the thermotaxis and aerotaxis of E. coli bacteria. Microbial cultures in microchambers We built a series of microfluidic devices for on-chip cultures of bacteria and yeast. The devices enable culturing cells at constant medium conditions up to very high cell densities and reaching extremely high densities, tracking a colony starting from a single cellfor >10 generations at a single-cell resolution, rapidly adding and removining soluble factors without loosing cells, testing a range of medium conditions and multiple cell lines in a single experiment, controlling the oxygen tension in the medium, and temporarily immobilizing cells for high-resolution imaging. Perfusion chambers to study rolling, adhesion, migration of blood cells We designed and applied novel microfluidic perfusion devices for experiments on blood cells: rolling and adhesion of platelets, rolling of neutrophils, and shear stress reponse of endothelial cells. In addition we built and applied microfluidic perfusion chamber to study the strength of adhesion of platelets, neutrophils, and D. discoideum amoebas. To seal the perfusion devices against substrates with plated cells, we developed an original magnetc clamp. Substrate regidity sensing and TIRF microscopy of mammalian cells We developed a technology of high refractive index gels with physiological rigidity that enables combining the traction force and TIRF microscopy of adherent animal cells. We applied it to concurrently visualize the maps of traction forces and points of adhesion of human endothelial cells. We also developed a microfluidic technique to measure the elastic moduli of thin layers of soft gels. Imaging of the development and behavior of C. elegans worms We developed a microwell device enabling the extraction of shell-free eggs from C. elegans and the imaging of their early stages of development with the possibility to add and remove desired soluble factors at well-defined time points. We also developed an easy-to-use device that enables adjustable immobilization of C. elegans at different larval and adult stages for extended high-resolution imaging. Oxygen tension and hypoxia We designed and built a computer 10-channel gas mixer and used it together with several microfluidic and multiwell plate setups to study cellular behavior and gene expression as a function of oxygen tension in the medium at a high throughput. Kinetics and thermodynamics of protein folding We developed and applied a series of microfluidic devices to study the kinetics of protein folding and to obtain equilibrium diagrams of protein conformations at high resolution using measurement of the Foester resonance energy transfer (FRET) from proetin molecules labeled with two fluorescent dyes. We greatly increased the dye photostability by in-situ reagent-free deoxygenation, and brought the time resolution of single-molecule kinetics to 0.2 ms.",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-84a1dc6e5a262e11",
+      "quote": "Groisman Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-9e9881d119e89ed5",
+      "quote": "We designed and built a computer 10-channel gas mixer and used it together with several microfluidic and multiwell plate setups to study cellular behavior and gene expression as a function of oxygen tension in the medium at a high throughput.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "research_group",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:17:43+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:17:43+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "实验室We明确研究两个输出随氧张力变化的关系，译文使用随而非额外因果机制；未将其他设备开发或已测性能改写为科学问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-9e9881d119e89ed5",
+        "sourceUrl": "https://groisman.physics.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:05:24+00:00",
+        "bodySha256": "e81aa1edef7827d5c3f08abe7274293e0c331990d2543ac56888d017902640d5",
+        "textSha256": "7b6c7a452e03b56fa2e88f4da512152e232b0db137f4d1cfb3c451a647eabb7b",
+        "textCharacters": 4268,
+        "readRanges": [
+          [
+            0,
+            4268
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-84a1dc6e5a262e11",
+        "sourceUrl": "https://biophysics.ucsd.edu/",
+        "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+        "bodySha256": null,
+        "textSha256": "dea61fde0684e13109ca6a6039b860bd97f55bf51dfe2f823b8c83f57e1c1a0c",
+        "textCharacters": 465,
+        "readRanges": [
+          [
+            0,
+            465
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-9e9881d119e89ed5",
+        "quote": "We designed and built a computer 10-channel gas mixer and used it together with several microfluidic and multiwell plate setups to study cellular behavior and gene expression as a function of oxygen tension in the medium at a high throughput.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:05:24+00:00",
+        "bodySha256": "e81aa1edef7827d5c3f08abe7274293e0c331990d2543ac56888d017902640d5"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

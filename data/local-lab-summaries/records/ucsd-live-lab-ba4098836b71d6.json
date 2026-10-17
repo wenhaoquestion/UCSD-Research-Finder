@@ -1,0 +1,167 @@
+{
+  "labId": "ucsd-live-lab-ba4098836b71d6",
+  "status": "supported",
+  "summaryZh": "UCSD Smarr lab 研究生命如何利用时间，以及生物节律与现代生活要求之间的关系。实验室希望通过认识生物时间为健康、教育和个人及社会选择提供信息。官方负责人介绍列出其生物系统时间序列分析研究；TemPredict项目另说明整合可穿戴设备数据与每日症状报告。",
+  "researchQuestions": [
+    "生命如何利用时间？"
+  ],
+  "topics": [
+    "生物时间",
+    "生物节律与现代生活"
+  ],
+  "methods": [
+    "生物系统时间序列分析（官方档案所述负责人研究）",
+    "整合可穿戴设备数据与每日症状报告（负责人TemPredict项目）"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-12e0aa5bbc55146e",
+      "quote": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time. Use this knowledge to improve health, education, and the world.",
+      "supports": [
+        "identity",
+        "affiliation",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-12e0aa5bbc55146e",
+      "quote": "Modern life often conflicts with natural time by imposing social demands that go against the rhythms of our bodies.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-12e0aa5bbc55146e",
+      "quote": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time. Use this knowledge to improve health, education, and the world.",
+      "supports": [
+        "researchQuestions"
+      ]
+    },
+    {
+      "sourceId": "src-cdde6c6f4fcec449",
+      "quote": "Smarr’s research focuses on time series analysis in biological systems, with an emphasis on practical information extraction for translational applications. Currently his main project is TemPredict, which brings together wearable device data from 50K people with over 1 million daily symptom reports. This massive data object is being used to identify signs of COVID-19 onset, progression, and recovery.",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        0,
+        1
+      ],
+      "provenanceNote": "官方档案明确负责人研究聚焦生物系统时间序列分析；另将TemPredict列为其主要项目并说明数据整合，两种范围分开，不声称TemPredict必定采用时间序列分析。 简介用Currently但无项目内容日期；不认定2026年仍开展或已证疾病预测效能。"
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "首页明确以 UCSD Smarr lab 命名。"
+  },
+  "uncertainty": [
+    "方法分别限于官方档案所述负责人时间序列研究及TemPredict数据整合项目；简介无独立内容日期，不据采集日确认2026年仍开展。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:21:21+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:56:13+00:00",
+    "candidateIndex": 147,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-12e0aa5bbc55146e",
+        "quote": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time. Use this knowledge to improve health, education, and the world.",
+        "sourceUrl": "https://smarr.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:13+00:00",
+        "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70"
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:21:21+00:00",
+    "previousRecordReviewedAt": "2026-10-16T07:41:11+00:00",
+    "availability": "source_explicit_scoped_method",
+    "reasonZh": "官网给时间/生物节律总体使命，官方负责人页明确其时间序列分析研究及TemPredict项目实际整合、使用可穿戴数据与症状报告。按负责人研究与具体项目分别限定，不推广到所有实验室项目。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [
+      {
+        "path": "EMPTY-METHOD-FIELD-SCOPE-ADDENDUM.json",
+        "sha256": "2c84fb63628f35c86d7a83861a884ea9394e95a2de860fbab53417d57103f863"
+      }
+    ],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-12e0aa5bbc55146e",
+        "sourceUrl": "https://smarr.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:01:13+00:00",
+        "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70",
+        "textSha256": "2c4c056c5bdc480f575e27d21e1259450846eec41aa590671bef4cf34ac245ec",
+        "textCharacters": 1626,
+        "rangesActuallyRead": [
+          [
+            0,
+            1626
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-6abc8972ebacce77",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+        "sourceObservedAt": "2026-10-02T22:43:17+00:00",
+        "bodySha256": null,
+        "textSha256": "8f7adeaf2676f5da3511b520043a72ceda336b5272b8a3149f0cde1577b9a2fd",
+        "textCharacters": 40,
+        "rangesActuallyRead": [
+          [
+            0,
+            40
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-cdde6c6f4fcec449",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+        "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+        "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "textSha256": "fc42a53306cd24305ffdd4ce676c57a2a21544014e21b323ba72ae8887c74648",
+        "textCharacters": 847,
+        "rangesActuallyRead": [
+          [
+            0,
+            847
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      }
+    ],
+    "methodEvidence": [
+      {
+        "methodIndices": [
+          0,
+          1
+        ],
+        "sourceId": "src-cdde6c6f4fcec449",
+        "quote": "Smarr’s research focuses on time series analysis in biological systems, with an emphasis on practical information extraction for translational applications. Currently his main project is TemPredict, which brings together wearable device data from 50K people with over 1 million daily symptom reports. This massive data object is being used to identify signs of COVID-19 onset, progression, and recovery.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+        "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "scopeZh": "官方档案明确负责人研究聚焦生物系统时间序列分析；另将TemPredict列为其主要项目并说明数据整合，两种范围分开，不声称TemPredict必定采用时间序列分析。",
+        "timeScopeZh": "简介用Currently但无项目内容日期；不认定2026年仍开展或已证疾病预测效能。"
+      }
+    ],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:26:12+00:00",
+  "verdict": "NO_ACTIONABLE_NEW_LINKED_SOURCE_GAP",
+  "scope": "Finite read-only collector latest-fetch snapshot; existing884 eligible IDs only; no new entities, requests, aliases, PI identity assumptions or packet/raw/code/receipt edits.",
+  "networkRequestsMade": 0,
+  "existingFileWrites": 0,
+  "scan": {
+    "schemaVersion": 1,
+    "scanAt": "2026-10-16T05:24:05+00:00",
+    "cutoffObservedAtInclusive": "2026-10-16T04:06:39+00:00",
+    "queuePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+    "queueSha256": "116aa5c13164f54a4475afff44e830992c7304458815dddf48b90f260e5a2f16",
+    "queueByteCount": 36457773,
+    "queueUpdatedAt": "2026-10-16T05:23:59+00:00",
+    "queueCounts": {
+      "done": 4643,
+      "unresolved": 712,
+      "scope_excluded": 284,
+      "retained_prior_evidence": 1859,
+      "pending": 10676
+    },
+    "queueItems": 18174,
+    "eligibleCount": 884,
+    "latestFetchAtOrAfterCutoff": 484,
+    "latestSuccessfulFetchesAtOrAfterCutoff": 475,
+    "counts": {
+      "successfulUnlinkedCaptures": 471,
+      "successfulLinkedCaptures": 4,
+      "newTargetSourceRelationships": 2,
+      "relationshipsAlreadyExactURLBodyInPacket": 2
+    },
+    "newSourceCaptures": 2,
+    "priorCandidateInventorySha256": "702159d034e677be3b898132b4b24f5497374d8390d66fbf5783094f5008bef2"
+  },
+  "associatedProfessorSourceURLExtraPass": {
+    "queueSha256": "8137522857831f360ec1a6a10d373e443b5443f2e3b1130b727969d0e0d450c1",
+    "queueUpdatedAt": "2026-10-16T05:24:39+00:00",
+    "professorLabRelations": 319,
+    "professorSourceURLIndexSize": 1274,
+    "hits": []
+  },
+  "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "frozenApprovedHandoffSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776",
+  "scopeCounts": {
+    "eligibleIDs": 884,
+    "associatedProfessorRelations": 319,
+    "latestSuccessfulCapturesScanned": 475,
+    "linkedSuccessfulCaptures": 4,
+    "excludedExactPacketSemanticDuplicates": 2,
+    "newTargetSpecificSourcesFullyRead": 2,
+    "newSourcesForPartialOrUnresolvedRecords": 0,
+    "newRawScientificRecommendations": 0,
+    "newAffiliationRecommendations": 0
+  },
+  "dedupPolicy": [
+    "Compare actual source/request/final URL and bodySHA; observation-time-only variants do not become new semantic sources.",
+    "Known packet body hashes and prior candidate assessment exact final-URL/bodySHA are excluded.",
+    "Only explicit baseline/approved-handoff professorIds, PI/profile/source URLs, existing packet URLs or one-step actual queue contexts from those URLs associate a source. Same-name/slug guesses and generic new-entity discovery are excluded.",
+    "Semantic reader examines full new linked bodies; navigation, center descriptions, publication lists and personal grants are not transferred to a laboratory."
+  ],
+  "unlinkedCaptureScope": "471 successful captures had none of the allowed target-specific relations in the primary snapshot. Their body contents were not treated as evidence for existing labs. Associated professor sourceURLs were additionally indexed (1274 URL keys) and yielded0 further hits in the separately recorded05:24:39 queue snapshot.",
+  "excludedKnownSemanticCaptures": [
+    {
+      "url": "http://www.ucsdarclab.com/",
+      "actual": "http://www.ucsdarclab.com/",
+      "final": "https://ucsdarclab.com/",
+      "observedAt": "2026-10-16T05:13:14+00:00",
+      "bodySha256": "ad1855dfa32082a4e355e82f667e5c7fa3e083cffac2a85fd9d0cfc94a981e8c",
+      "targets": [
+        {
+          "labId": "ucsd-electrical-and-computer-engineering-lab-advanced-robotics-and-controls-lab-arclab",
+          "status": "supported",
+          "knownBodySources": [
+            {
+              "sourceId": "src-7148f67d11a7b404",
+              "sourceUrl": "https://ucsdarclab.com/",
+              "observedAt": "2026-10-16T01:07:34+00:00"
+            }
+          ]
+        }
+      ],
+      "labId": "ucsd-electrical-and-computer-engineering-lab-advanced-robotics-and-controls-lab-arclab",
+      "reason": "same_final_actual_URL_and_bodySHA_already_packetized_no_new_semantic_source",
+      "knownBodySources": [
+        {
+          "sourceId": "src-7148f67d11a7b404",
+          "sourceUrl": "https://ucsdarclab.com/",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "ad1855dfa32082a4e355e82f667e5c7fa3e083cffac2a85fd9d0cfc94a981e8c",
+          "existingCachedBodyHashVerified": true
+        }
+      ],
+      "newScientificReviewNeeded": false
+    },
+    {
+      "url": "http://www.gutkindlab.org/%20",
+      "actual": "http://www.gutkindlab.org/%20",
+      "final": "https://gutkindlab.org/",
+      "observedAt": "2026-10-16T05:17:55+00:00",
+      "bodySha256": "318c0eee3c51443f724194d6c979043a968eec53a1f20647feaf1c068f4f773e",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-788dffcb20dbbc",
+          "status": "supported",
+          "knownBodySources": [
+            {
+              "sourceId": "src-e8ca9eeccacfc463",
+              "sourceUrl": "https://gutkindlab.org/",
+              "observedAt": "2026-10-16T01:03:11+00:00"
+            }
+          ]
+        }
+      ],
+      "labId": "ucsd-live-lab-788dffcb20dbbc",
+      "reason": "same_final_actual_URL_and_bodySHA_already_packetized_no_new_semantic_source",
+      "knownBodySources": [
+        {
+          "sourceId": "src-e8ca9eeccacfc463",
+          "sourceUrl": "https://gutkindlab.org/",
+          "observedAt": "2026-10-16T01:03:11+00:00",
+          "bodySha256": "318c0eee3c51443f724194d6c979043a968eec53a1f20647feaf1c068f4f773e",
+          "existingCachedBodyHashVerified": true
+        }
+      ],
+      "newScientificReviewNeeded": false
+    }
+  ],
+  "items": [
+    {
+      "labId": "ucsd-lab-from-faculty-healthsciences-ucsd-edu-som-medicine-divisions-med-genetics-research-pages-mesirov-lab-aspx",
+      "ordinal": 191,
+      "labName": "Mesirov Lab",
+      "reviewedAt": "2026-10-16T05:26:12+00:00",
+      "source": {
+        "sourceId": null,
+        "notYetAdmittedToPacket": true,
+        "sourceUrl": "https://profiles.ucsd.edu/jill.mesirov",
+        "requestedUrl": "https://profiles.ucsd.edu/jill.mesirov",
+        "observedAt": "2026-10-16T04:24:46+00:00",
+        "bodySha256": "56f4a8767aaa877b394cef674f470a08aae8642b39559ef40477fe6a23fe2c30",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2a9204baed10b7bfc254fe8d15607a5ce42d004504d50fb58574ff747c401fdf.html",
+        "actualByteHashVerified": true,
+        "fullBodyRead": true,
+        "visibleTextCharacters": 3303,
+        "visibleTextSha256": "0162d6ab1544222e0d67bbc2608b9d765945f44da411fbcc1c73fa3771388b92",
+        "title": "Jill Mesirov | UCSD Profiles",
+        "headings": [
+          "Jill Mesirov"
+        ],
+        "redirectChain": [],
+        "httpStatus": 200
+      },
+      "discoveryReasons": [
+        {
+          "kind": "baseline_or_approved_handoff_explicit_source_or_PI_URL",
+          "matchedURL": "https://profiles.ucsd.edu/jill.mesirov",
+          "captureURL": "https://profiles.ucsd.edu/jill.mesirov"
+        }
+      ],
+      "linkIsDiscoveryOnly": true,
+      "newWholeLabScope": false,
+      "scopeDecision": "personal_profile_matches_existing_named_researcher_not_new_lab_identity",
+      "decision": "no_lab_science_or_affiliation_change_personal_profile_only",
+      "reason": "新版官方Profiles仅列Jill Mesirov个人Emeritus Professor, Medicine及funding项目/Role PI，未描述Mesirov lab整体研究或其当前机构。个人校内emeritus头衔不覆盖实验室第一方Sanford Burnham Prebys地址与机构自述；项目日期不是任职或实验室隶属日期。现raw已有明确whole-lab科研与机构冲突说明，维持external/当前待核实，不据此改source_reported。",
+      "primaryEvidence": [
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/jill.mesirov",
+          "requestedUrl": "https://profiles.ucsd.edu/jill.mesirov",
+          "observedAt": "2026-10-16T04:24:46+00:00",
+          "bodySha256": "56f4a8767aaa877b394cef674f470a08aae8642b39559ef40477fe6a23fe2c30",
+          "quote": "Jill Mesirov Title(s) Emeritus Professor, Medicine School Vc-health Sciences-schools Address 9500 Gilman Drive # La Jolla CA 92093",
+          "quoteLocation": "body",
+          "supports": [
+            "personal_identity",
+            "personal_source_reported_affiliation"
+          ]
+        },
+        {
+          "sourceUrl": "https://profiles.ucsd.edu/jill.mesirov",
+          "requestedUrl": "https://profiles.ucsd.edu/jill.mesirov",
+          "observedAt": "2026-10-16T04:24:46+00:00",
+          "bodySha256": "56f4a8767aaa877b394cef674f470a08aae8642b39559ef40477fe6a23fe2c30",
+          "quote": "The Molecular Signatures Database: A knowledgebase for gene set based analysis of genomic data NIH U24CA295532 Apr 1, 2024 - Mar 31, 2030 Role: Principal Investigator",
+          "quoteLocation": "body",
+          "supports": [
+            "personal_dated_funding_only"
+          ]
+        }
+      ],
+      "recommendRawPacketChange": false,
+      "wouldImprovePartialOrUnresolved": false,
+      "wouldImproveAffiliation": false,
+      "currentRawStatusRetained": "supported",
+      "currentAffiliationRetained": {
+        "status": "external",
+        "reason": "已缓存实验室主页及联系页明确报告Sanford Burnham Prebys任职与实验室地址；UCSD GPM页仍列UCSD任职，两者不用于推断迁移日期。正文没有带日期的现任声明，当前隶属仍未独立确认。"
+      },
+      "currentIdentityRetained": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "UCSD GPM具名Jill Mesirov Laboratory研究页明确描述Mesirov lab，并在实际HTML以Discover链接https://mesirovlab.org/；该站主页与联系页完整标识Jill P. Mesirov及实验室。UCSD页与第一方站相互匹配，支持该稳定ID的研究内容；第一方站报告Sanford Burnham Prebys，不能继续把旧UCSD任职当作已核实当前隶属，也不接受URL别名或迁移时间。"
+      },
+      "scientificReviewedAtRetained": "2026-10-16T03:03:28+00:00",
+      "currentSummaryRetained": "Mesirov 实验室以癌症基因组学为重点，将机器学习用于患者肿瘤的功能数据，研究肿瘤亚型的生物机制、复发风险分层和候选治疗化合物。实验室还开发便于生物医学研究者使用的软件工具；所捕获的实验室站点将地址列为 Sanford Burnham Prebys，与 UCSD 页面任职信息不同，现时隶属仍需带日期的确认。",
+      "rawSha256": "ce1e9bbd884512130caafd4ab9a797ae3f7116aa6359e9c4920eeb643b4d3894",
+      "packetSha256": "400e32ea72e6859ab80a87ec1a117fded47006a0e42ff6ea1b8b90d9376150cb",
+      "sourceAlreadyInPacketByActualURLBodyHash": false,
+      "priorInventoryExactURLBodyAssessmentFound": false,
+      "PIOrCurrentDateInferred": false,
+      "networkRequestsMade": 0,
+      "existingLabAffiliationCounterEvidence": [
+        {
+          "sourceId": "src-000f31c75a1d2e7a",
+          "quote": "Principal Investigator Jill P. Mesirov, PhD Distinguished Professor and Senior Vice President for Computational Science; Sanford Burnham Prebys Discovery Institute",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "sourceUrl": "https://mesirovlab.org/about/",
+          "observedAt": "2026-10-16T02:43:07+00:00",
+          "bodySha256": "86d14a0b84f48ce1f299e1978460a0e1a92228812cf51edcb709a7d6ec15acfd"
+        },
+        {
+          "sourceId": "src-000f31c75a1d2e7a",
+          "quote": "Lab Location Sanford Burnham Prebys 10901 North Torrey Pines Road La Jolla, CA 92037",
+          "supports": [
+            "affiliation"
+          ],
+          "sourceUrl": "https://mesirovlab.org/about/",
+          "observedAt": "2026-10-16T02:43:07+00:00",
+          "bodySha256": "86d14a0b84f48ce1f299e1978460a0e1a92228812cf51edcb709a7d6ec15acfd"
+        }
+      ]
+    },
+    {
+      "labId": "ucsd-live-lab-3ecd40fc6caea9",
+      "ordinal": 613,
+      "labName": "Zheng Chen — lab website",
+      "reviewedAt": "2026-10-16T05:26:12+00:00",
+      "source": {
+        "sourceId": null,
+        "notYetAdmittedToPacket": true,
+        "sourceUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+        "requestedUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+        "observedAt": "2026-10-16T04:46:36+00:00",
+        "bodySha256": "92bc0e47351bc772e0ebbf8ce6eacfcce730868ac6ee0d90ef3ac4d37cfba825",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ea74ceb5faedbb89d55f9957f29ec74cb05026cd963a42399fac869fd48457bb.html",
+        "actualByteHashVerified": true,
+        "fullBodyRead": true,
+        "visibleTextCharacters": 5909,
+        "visibleTextSha256": "fd354715e5ad79e789a17363b4e2a22ee73dbb75ebd293e25d530938bba96f1f",
+        "title": "Z.Chen LAB@NanoEngineering",
+        "headings": [],
+        "redirectChain": [],
+        "httpStatus": 200
+      },
+      "discoveryReasons": [
+        {
+          "kind": "capture_context_from_existing_source_URL",
+          "matchedURL": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/",
+          "context": {
+            "department": "Unknown",
+            "kind": "identity_page",
+            "sourceUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/",
+            "candidateId": "",
+            "professorId": "",
+            "identityDepth": 1
+          }
+        }
+      ],
+      "linkIsDiscoveryOnly": true,
+      "newWholeLabScope": true,
+      "scopeDecision": "same_named_SMEL_source_supported_no_PI_inference",
+      "decision": "corroborates_named_lab_older_site_no_needed_revision",
+      "reason": "该Google主页正文明确SMEL及UCSD NanoEngineering，whole-lab研究范围可归同名既有实验室；并含具名Our lab过氧化氢电合成项目正文。现raw和已引smelab.org首页已有更完整材料表征/纳米制造方法及电池方向、明确source_reported机构。此页代表性论文/视频参考2020–2022，未给整页更新日期；只作既有范围旁证，不能替换现有部门全称、推现时PI或把SPEC中心/论文题目借作该lab方法。非partial/unresolved缺口，无需科学或隶属升级。",
+      "primaryEvidence": [
+        {
+          "sourceUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "requestedUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "observedAt": "2026-10-16T04:46:36+00:00",
+          "bodySha256": "92bc0e47351bc772e0ebbf8ce6eacfcce730868ac6ee0d90ef3ac4d37cfba825",
+          "quote": "We are the Sustainable Materials and Energy Laboratory (SMEL) in the NanoEngineering department at UC San Diego.",
+          "quoteLocation": "body",
+          "supports": [
+            "identity",
+            "affiliation"
+          ]
+        },
+        {
+          "sourceUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "requestedUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "observedAt": "2026-10-16T04:46:36+00:00",
+          "bodySha256": "92bc0e47351bc772e0ebbf8ce6eacfcce730868ac6ee0d90ef3ac4d37cfba825",
+          "quote": "Our research group focuses on designing and understanding novel materials and chemical processes for energy and environmental applications. We are particularly interested in the following topics: (1) Energy storage and conversion materials and devices; (2) Batteries for extreme environments; (3) Next-generation battery recycling; (4) Porous materials for charge separation and storage.",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "requestedUrl": "https://sites.google.com/a/eng.ucsd.edu/chen-nanoe/home",
+          "observedAt": "2026-10-16T04:46:36+00:00",
+          "bodySha256": "92bc0e47351bc772e0ebbf8ce6eacfcce730868ac6ee0d90ef3ac4d37cfba825",
+          "quote": "Our lab has developed a portable, more environmentally friendly method to produce H 2 O 2 . W e reported that direct metal-oxygen coordination can create unique active sites that enable efficient and more practical catalyst for electrosynthesis of H 2 O 2 .",
+          "quoteLocation": "body",
+          "supports": [
+            "research",
+            "project_specific_method"
+          ]
+        }
+      ],
+      "recommendRawPacketChange": false,
+      "wouldImprovePartialOrUnresolved": false,
+      "wouldImproveAffiliation": false,
+      "currentRawStatusRetained": "supported",
+      "currentAffiliationRetained": {
+        "status": "source_reported",
+        "reason": "首页明确列出 UC San Diego 化学与纳米工程系。"
+      },
+      "currentIdentityRetained": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "来源明确标识此实体。"
+      },
+      "scientificReviewedAtRetained": "2026-10-16T01:46:21+00:00",
+      "currentSummaryRetained": "Sustainable Materials & Energy Lab 设计和理解用于能源及环境的新材料与化学过程。研究结合材料表征和纳米制造，关注储能转化、固态电池、电池回收及极端环境电池。",
+      "rawSha256": "2aaae037ed206467303914ab83dff462e759f0a61768200475cd4ed0ecf0d34b",
+      "packetSha256": "ab5265ebba426a12aa17f7eff9c6112f1d423284b550e315a2dd73d2354ec35e",
+      "sourceAlreadyInPacketByActualURLBodyHash": false,
+      "priorInventoryExactURLBodyAssessmentFound": false,
+      "PIOrCurrentDateInferred": false,
+      "networkRequestsMade": 0
+    }
+  ],
+  "boundaries": [
+    "Personal Emeritus affiliation and grant dates do not establish a laboratory current institution or current PI.",
+    "Google-site lab prose may corroborate named identity but does not automatically become accepted alias, canonical migration or a newer research plan.",
+    "No modification to records, packets, collector, code, receipts, mismatch gates or scientific review dates."
+  ]
+}

@@ -1,0 +1,2191 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T06:15:43.790251+00:00",
+  "verdict": "All 17 finite remaining sources individually reviewed and closed; no pending source in this finite queue. No further candidate application proposed.",
+  "networkRequestsMade": 0,
+  "collectorWritesMade": 0,
+  "recordWritesMade": 0,
+  "packetWritesMade": 0,
+  "codeWritesMade": 0,
+  "initialReportPreserved": {
+    "path": "data/local-lab-summaries/NEW-LINKED-SOURCE-DELTA-0558.json",
+    "sha256": "77359bed136017b042279f2297ba2c3342fefdc724f40556f0cee24219926717",
+    "markdownPath": "data/local-lab-summaries/NEW-LINKED-SOURCE-DELTA-0558.md",
+    "markdownSha256": "71b2eeacff5b8935e5a172ca822e8023f4e8d394de92987a2b5797af6a92742c"
+  },
+  "frozenQueueContextFromInitialReport": {
+    "queueSha256": "51b8b4a770cfc21d0725fdb98efc59eeacb48b0370e4e7dbaa007f37c337157b",
+    "queueByteCount": 42696556,
+    "queueUpdatedAt": "2026-10-16T06:01:22+00:00",
+    "queueItemCount": 19231,
+    "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+    "approvedHandoffSha256": "49c5aa9c7864e67553ec8c4f6273e57284dd204ab13d42dc1f8c98197ae24776"
+  },
+  "sourceMetadataVerifiedAt": "2026-10-16T06:12:10.402038+00:00",
+  "scope": {
+    "inventory": "NEW-LINKED-SOURCE-DELTA-0558.json:boundedOtherSelectedSourceInventory",
+    "sourceCount": 17,
+    "targetRelationshipCount": 42,
+    "distinctTargetCount": 24,
+    "distinctTargetIds": [
+      "ucsd-bioengineering-metallo-lab",
+      "ucsd-biological-sciences-lab-halpain-lab",
+      "ucsd-biological-sciences-lab-jackrel-lab",
+      "ucsd-biological-sciences-lab-kadonaga-lab",
+      "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+      "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "ucsd-biological-sciences-lab-posakony-lab",
+      "ucsd-biological-sciences-lab-yelon-lab",
+      "ucsd-biology-topic-lab-nan-hao",
+      "ucsd-chemistry-biochemistry-lab-burkart-laboratory",
+      "ucsd-chemistry-biochemistry-lab-yang-research-group-jerry-yang",
+      "ucsd-linguistics-lab-phonetics-lab",
+      "ucsd-live-lab-0fd0529e6aefbc",
+      "ucsd-live-lab-4ee3ff2395c24d",
+      "ucsd-live-lab-55424aea242e83",
+      "ucsd-live-lab-56d64d10b3b052",
+      "ucsd-live-lab-5db1834b7b663d",
+      "ucsd-live-lab-81abeaef71cf01",
+      "ucsd-live-lab-86c289fa737e94",
+      "ucsd-live-lab-8faf85a74eb832",
+      "ucsd-live-lab-98174ce75b39b1",
+      "ucsd-live-lab-b8a6c47fb14087",
+      "ucsd-live-lab-d2b51912951305",
+      "ucsd-live-lab-ff15c690b9f931"
+    ],
+    "fullVisibleTextCharactersRead": 103703,
+    "closedSourceCount": 17,
+    "finiteSourceReviewPendingCount": 0,
+    "other87ClosedFieldCandidatesRead": 0,
+    "limitedOfficialFacultySiteAssociationsOnly": [
+      "ucsd-live-lab-d2b51912951305",
+      "ucsd-live-lab-56d64d10b3b052",
+      "ucsd-live-lab-81abeaef71cf01"
+    ],
+    "acceptedNewScienceRecommendations": 0,
+    "furtherApplicationRecommendations": 0,
+    "bennerAffiliationAlreadyAppliedByParent": true,
+    "burkartLabAffiliationInferenceRejected": true
+  },
+  "method": {
+    "sources": "Only the 17 exact cached official-source tuples frozen in the initial report, latest existing owned raw/packet context, actual collector .html/.json bytes. No crawl, discovery request, or second wire observation.",
+    "provenanceChecks": [
+      "actual requested URI vs final URL kept separate",
+      "original observedAt preserved",
+      "SHA256 cached response bytes equals frozen inventory and sidecar sha256",
+      "all evidence quotes are literal substrings of full extracted body or title",
+      "all reported anchor HTML literals checked against actual cached HTML",
+      "full semantic fingerprints recomputed from genuine cache; not inferred from title",
+      "current record status/affiliation/old science reviewedAt captured at metadata verification time"
+    ],
+    "dateBoundary": "reviewedAt is model review completion, never source content date. Source observedAt is the original network observation. Undated currently and member/year listings never establish a 2026 current PI or whole-lab status.",
+    "identityBoundary": "No stable-ID rename/merge/alias, no HTTP/HTTPS substitution, no root recheck inferred from related pages. Original root failures and reviewed mismatch gates remain unchanged.",
+    "parentIndependentScopeDecision": "Final conservative boundary follows parent and agent280: three faculty/site associations are not standalone whole-lab physical/current affiliation proof; Burkart Boss institution/room is person-scoped, so lab affiliation stays uncertain."
+  },
+  "items": [
+    {
+      "priorCandidateIndex": 0,
+      "requestedUrl": "http://be.ucsd.edu/faculty",
+      "finalUrl": "https://be.ucsd.edu/faculty",
+      "observedAt": "2026-10-16T05:30:11+00:00",
+      "bodySha256": "1f62c2b41b7d970d7e0f39679c2374c11aea40db436afda4e14e42e07afcd4e3",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0b655e733a815cb523aaf43df29598861cfc0278f05b4fab90942596f2db5cba.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0b655e733a815cb523aaf43df29598861cfc0278f05b4fab90942596f2db5cba.json",
+      "metadataSha256": "a43679ce33aab417dcc2a674d8ebc016526cd37144633a0ecfbe9356d2e17ccb",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://be.ucsd.edu/faculty",
+          "to": "https://be.ucsd.edu/faculty",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://be.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:12+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112232.5513442,
+        "error": "",
+        "status": "checked"
+      },
+      "title": "Faculty Profiles | Shu Chien - Gene Lay Department of Bioengineering",
+      "fullVisibleTextCharacters": 5021,
+      "semanticFingerprint": "d29c19d0c5a7bdd789aaa1e04f7d0d23110bbd3f647459b616b08a8041230813",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-b8a6c47fb14087",
+          "ordinal": 552,
+          "labName": "Nathan Lewis — lab website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "官方 UCSD 教师描述与现 uga.edu 目标并存；域名本身不确证现任归属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:55:29+00:00",
+          "rawSha256": "a4ea2f4c9950e1b3acc5eeb285a0d3ef2314d2224263d883a0f9ad535252c8e0",
+          "packetSha256": "88570b265753b4e4b03a19269fcb0fa1054569644a85e067a25e333f821b375b",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-8e700a83e994fd49"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-d2b51912951305",
+          "ordinal": 587,
+          "labName": "Shi Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:45:00+00:00",
+          "rawSha256": "c0afc4f47120d270cae97cb12910b5ff87aa8286c097dfcaf9b887abd28c7f51",
+          "packetSha256": "351a8de64912efc8a212091e81d36fe77ad14fe8ce465f375d74e17aabebd633",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-8857fae0438f89e1",
+            "src-a52c84d1544ffadb"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-bioengineering-metallo-lab",
+          "ordinal": 26,
+          "labName": "Metallo Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "external",
+            "reason": "本次目的地明确标识 Salk Institute；UCSD 目录仅有历史关联。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "research_group",
+            "reason": "Salk 官方个人页面明确描述 Metallo 的实验室研究团队；目的地为科学家介绍页。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:45:38+00:00",
+          "rawSha256": "6cb28f1be03e597f677f2274c052dd5817d80998fc9544df0df3284bebb52a90",
+          "packetSha256": "d4db71c4ff54539fa89d9a3d9232ad19650b6ba579726e966b60a30ebfdca9e5",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-b9cf0ef0a7010f02"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-56d64d10b3b052",
+          "ordinal": 591,
+          "labName": "Silva Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:45:42+00:00",
+          "rawSha256": "30f9ed33c7db39ed983bf735dacf6c46c68581c00c61ba998a5d7de3ea356842",
+          "packetSha256": "1fe504841de6c57135e99e5139c0f29c8e9f36d7f7236d98421f94b4cd4dc5cf",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-3dff27a702ab3f20",
+            "src-723caf100d0b4543"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-ff15c690b9f931",
+          "ordinal": 513,
+          "labName": "James Friend — lab website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "external",
+            "reason": "目标正文明确报告迁往 Washington University in St. Louis；官方 UCSD 页面另列 adjunct，归属存在多重关系。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "research_group",
+            "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:55:29+00:00",
+          "rawSha256": "87e5cb7d5828c41533f0019812642c34157172e8656e4e07550aba69cbbe5fae",
+          "packetSha256": "9df1786c5cb2693bc769879114d0fe5b727a3ec8c4ef480cb0bf077a1d63b7cc",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-9e5309d57b27afa6"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-4ee3ff2395c24d",
+          "ordinal": 617,
+          "labName": "Zarrinpar Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:46:21+00:00",
+          "rawSha256": "b86a9025e1daf9edab668fd95802a2c9ee8da3e710e290eb0e9934ddc7b45751",
+          "packetSha256": "4bfe86769434a47da28eea47009375ce5a62453d9a297c78dbf16d00da6091fa",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a9d96293e69881e7"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-0fd0529e6aefbc",
+          "ordinal": 626,
+          "labName": "Signer Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "恢复正文明确署名SIGNER LABORATORY，与历史Signer Lab链接相符。"
+          },
+          "priorResearchReviewAt": "2026-10-16T02:37:26+00:00",
+          "rawSha256": "a392fa82f46ec3fcc682b6c37828cdb80eb54a2a2a1df44fe1be04c2c7dc087e",
+          "packetSha256": "ac448b163361879f1aaec67e1d3beb87a7e2d7c1e6ea295d1d3285bc068ae83a",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-ff3ce8310d33b469",
+            "src-f9e686a79b187290",
+            "src-26e0a94abc32a89a"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "close_as_limited_official_faculty_site_associations",
+      "scope": "官方 Bioengineering 教师名录；完整正文为教师/附属教师名册，实际 Research href 另行核对。",
+      "reason": "这不是具名实验室自己的机构声明。Shi/Silva 的 Research 链与已确认站点对应，可保存有限的官方教师—站点关联；不能仅凭这些链接将整组的物理或带日期当前隶属改为 source_reported。",
+      "quotes": [
+        {
+          "quoteLocation": "title",
+          "quote": "Faculty Profiles | Shu Chien - Gene Lay Department of Bioengineering",
+          "purpose": "名录所属院系范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Lingyan Shi Associate Professor Shi Research",
+          "purpose": "教授条目与研究站点关联"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Gabriel Silva Professor Silva Research",
+          "purpose": "教授条目与研究站点关联"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Nathan Lewis Affiliate Lewis Research",
+          "purpose": "仅个人 Affiliate 名录关系，不能消除 UGA 目的页的未知归属"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Christian Metallo Adjunct Professor Metallo Research",
+          "purpose": "个人 adjunct 与已保存 Salk 目的地并存"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "James Friend Affiliate Friend Research",
+          "purpose": "个人 affiliate 不推翻团队迁往 Washington University 的正文"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Robert Signer Affiliate Signer Research",
+          "purpose": "Research 链是旧 Wordpress，不自动视为 signerlab.com 别名"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Amir Zarrinpar Affiliate Zarrinpar Research",
+          "purpose": "明确个人 Affiliate；不扩大成实验室整组物理归属"
+        }
+      ],
+      "anchors": [
+        {
+          "contextName": "Lingyan Shi",
+          "literalHref": "https://shi.eng.ucsd.edu",
+          "linkText": "Shi Research",
+          "htmlLiteral": "<a href=\"https://shi.eng.ucsd.edu\">Shi Research</a>"
+        },
+        {
+          "contextName": "Gabriel Silva",
+          "literalHref": "http://www.silva.ucsd.edu/",
+          "linkText": "Silva Research",
+          "htmlLiteral": "<a href=\"http://www.silva.ucsd.edu/\">Silva Research</a>"
+        },
+        {
+          "contextName": "Nathan Lewis",
+          "literalHref": "http://lewislab.ucsd.edu/",
+          "linkText": "Lewis Research",
+          "htmlLiteral": "<a href=\"http://lewislab.ucsd.edu/\">Lewis Research </a>"
+        },
+        {
+          "contextName": "Christian Metallo",
+          "literalHref": "https://www.salk.edu/scientist/christian-metallo/",
+          "linkText": "Metallo Research",
+          "htmlLiteral": "<a href=\"https://www.salk.edu/scientist/christian-metallo/\">Metallo Research</a>"
+        },
+        {
+          "contextName": "James Friend",
+          "literalHref": "http://friend.ucsd.edu/",
+          "linkText": "Friend Research",
+          "htmlLiteral": "<a href=\"http://friend.ucsd.edu/\">Friend Research</a>"
+        },
+        {
+          "contextName": "Robert Signer",
+          "literalHref": "https://robertsigner.wordpress.com/",
+          "linkText": "Signer Research",
+          "htmlLiteral": "<a href=\"https://robertsigner.wordpress.com/\">Signer Research</a>"
+        },
+        {
+          "contextName": "Amir Zarrinpar",
+          "literalHref": "https://zarrinparlab.org/",
+          "linkText": "Zarrinpar Research",
+          "htmlLiteral": "<a href=\"https://zarrinparlab.org/\">Zarrinpar Research</a>"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_all_seven_science_identity_affiliation_states",
+        "changes": [],
+        "facultySiteAssociationsOnly": [
+          "ucsd-live-lab-d2b51912951305",
+          "ucsd-live-lab-56d64d10b3b052"
+        ],
+        "limitations": "不确认当前 PI、不自动迁移 HTTP/HTTPS 或旧 Wordpress、不覆盖外校证据。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.699177+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 1,
+      "requestedUrl": "http://mae.ucsd.edu/people/faculty-profiles",
+      "finalUrl": "https://mae.ucsd.edu/people/faculty-profiles",
+      "observedAt": "2026-10-16T05:30:14+00:00",
+      "bodySha256": "902b7ca8298d5d6e112fb089519f011d6ba7cb6ba3779493c991d1f5a324bb9b",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d29d1dcd44a9aa441ee4dd2af118ae56178ccb90179e4e133e8c8980d754cda8.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/d29d1dcd44a9aa441ee4dd2af118ae56178ccb90179e4e133e8c8980d754cda8.json",
+      "metadataSha256": "b712c2bf9ce7a8b9587f327361e5f5d7d67c8a7b1329224fffe435fa8c2cea1e",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://mae.ucsd.edu/people/faculty-profiles",
+          "to": "https://mae.ucsd.edu/people/faculty-profiles",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://mae.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:57:12+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112232.5467079,
+        "error": "",
+        "status": "checked"
+      },
+      "title": "Faculty | Mechanical and Aerospace Engineering",
+      "fullVisibleTextCharacters": 4090,
+      "semanticFingerprint": "310e8efc95e39d7c8437760e9d50926cdd747ca61062505b7ce6485e214896d5",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-81abeaef71cf01",
+          "ordinal": 592,
+          "labName": "Sutanu Sarkar — lab website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:56:13+00:00",
+          "rawSha256": "af78f0d3b2099d72b219ad3f154c5e3c2e5496c94276c36521273e43b1614f41",
+          "packetSha256": "d76f4075ced498133a8381868d08be18e6f211052ceb5652196f32e59014b3dc",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-cd91569ac45fb946"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-live-lab-ff15c690b9f931",
+          "ordinal": 513,
+          "labName": "James Friend — lab website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "external",
+            "reason": "目标正文明确报告迁往 Washington University in St. Louis；官方 UCSD 页面另列 adjunct，归属存在多重关系。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "research_group",
+            "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:55:29+00:00",
+          "rawSha256": "87e5cb7d5828c41533f0019812642c34157172e8656e4e07550aba69cbbe5fae",
+          "packetSha256": "9df1786c5cb2693bc769879114d0fe5b727a3ec8c4ef480cb0bf077a1d63b7cc",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-9e5309d57b27afa6"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "close_as_limited_official_faculty_site_associations",
+      "scope": "MAE 官方教师名录及逐行真实 Lab Website href。",
+      "reason": "Sarkar 的 Lab Website 显式链接已确认 CFDLab；这是教师—网站关联，不是实验室整体机构/当前地址声明。Friend 的 Adjunct/Calit2 条目不推翻团队迁校文字。",
+      "quotes": [
+        {
+          "quoteLocation": "title",
+          "quote": "Faculty | Mechanical and Aerospace Engineering",
+          "purpose": "院系名录范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Sutanu Sarkar Professor Blasker Endowed Chair in Environmental Engineering Distinguished Professor Lab Website",
+          "purpose": "Sarkar 教师条目与具名 Lab Website 关系"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "James Friend Adjunct Professor Faculty Affiliate, Calit2 Lab Website",
+          "purpose": "个人 adjunct/affiliate 范围"
+        }
+      ],
+      "anchors": [
+        {
+          "contextName": "Sutanu Sarkar",
+          "literalHref": "http://cfdlab.ucsd.edu/",
+          "linkText": "Lab Website",
+          "htmlLiteral": "<a href=\"http://cfdlab.ucsd.edu/\" target=\"_blank\">Lab Website</a>"
+        },
+        {
+          "contextName": "James Friend",
+          "literalHref": "http://friend.ucsd.edu/",
+          "linkText": "Lab Website",
+          "htmlLiteral": "<a href=\"http://friend.ucsd.edu/\" target=\"_blank\">Lab Website</a>"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_science_and_affiliation",
+        "changes": [],
+        "facultySiteAssociationsOnly": [
+          "ucsd-live-lab-81abeaef71cf01"
+        ],
+        "limitations": "Sarkar affiliation 维持 uncertain；Friend 维持 external，不推定唯一隶属。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.714935+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 22,
+      "requestedUrl": "http://designlab.ucsd.edu/",
+      "finalUrl": "https://designlab.ucsd.edu/",
+      "observedAt": "2026-10-16T05:32:48+00:00",
+      "bodySha256": "fe8ceaeac8ab4d88d0d25a3d075897f00f0fc6c72da6f08af3e645315a034e7b",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/38f0accbff2ce4c8f60e28b07317261e0392be46f3dc554cfa073110a920e5fc.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/38f0accbff2ce4c8f60e28b07317261e0392be46f3dc554cfa073110a920e5fc.json",
+      "metadataSha256": "4f88650d50c022cce93d887e707f6ea604e6d26dc1f0995c635364f71bf9a20a",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [
+        {
+          "from": "http://designlab.ucsd.edu/",
+          "to": "https://designlab.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "robots": {
+        "sourceUrl": "https://designlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T00:59:40+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792112380.508865,
+        "error": "",
+        "redirects": [],
+        "status": "not_found"
+      },
+      "title": "The Design Lab",
+      "fullVisibleTextCharacters": 1239,
+      "semanticFingerprint": "e0f6fe01f3d5daa7c3bac9c22b978e124abdc8b5821cb957f004067ef6e7f8f0",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-86c289fa737e94",
+          "ordinal": 684,
+          "labName": "Mental Health in Design Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:48:03+00:00",
+          "rawSha256": "ab775fda0a91e4b6c5d7e595d924b6685bb09c7f38f3bdfc574a81e2ab0c8571",
+          "packetSha256": "716ce5c03084a2b823effeb8fb6a1d3cf85bcbad9656be29207553b82874b5be",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-0869aa97b8c3dbba"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "reject_parent_design_lab_scope_for_mid_subgroup",
+      "scope": "母体 UC San Diego Design Lab 的使命、教学与地址。",
+      "reason": "全文 1,239 字符没有 Mental Health in Design Lab、MiD 或 Elizabeth Eikey。母体的 humanity-centered design 使命与 DIB 地址不能给 ordinal 684 子组补研究、方法或机构归属。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Humanity-centered design at the UC San Diego Design Lab transcends disciplinary boundaries and charts new frontiers in design research, education, and practice.",
+          "purpose": "明确是更大 Design Lab 的使命"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "The Design Lab is located on the third floor of the Design and Innovation Building (DIB) at UC San Diego",
+          "purpose": "只支持母体位置，不能搬给 MiD"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_mid_record_all_fields",
+        "changes": [],
+        "limitations": "不以相关教授来源 URL 或同一母体名称推导子组隶属。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.720064+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 24,
+      "requestedUrl": "http://homer.ucsd.edu/BennerLab/",
+      "finalUrl": "http://homer.ucsd.edu/BennerLab/",
+      "observedAt": "2026-10-16T05:33:46+00:00",
+      "bodySha256": "e232210de4823e56d7f3f48641d2402aaf119dcbd74beca00dd739dcf959db25",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/25f69bd5387a063e47f683e0f0d8a769450bc926985d559ad76abdf8e17282be.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/25f69bd5387a063e47f683e0f0d8a769450bc926985d559ad76abdf8e17282be.json",
+      "metadataSha256": "873527f8ae09b3e0dd47d090107fda9a7193c82ebc7591641b5969cda1eec0ce",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://homer.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:33:45+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128825.8386261,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Benner Lab, UCSD",
+      "fullVisibleTextCharacters": 51722,
+      "semanticFingerprint": "d8bcbd675785725f2269c9905a3b4c034a31b9bd9c0ca9c90f919864b73cddc7",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-8faf85a74eb832",
+          "ordinal": 629,
+          "labName": "Benner Lab Website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "新HTTP首页直接陈述The Benner Lab is located at the UCSD School of Medicine；来源无更新时间，不确认带日期的当前任职或2026年机构状态。",
+            "reviewedAt": "2026-10-16T06:12:07+00:00"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "关联官方研究摘要明确以 The laboratory 描述研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:55:10+00:00",
+          "rawSha256": "34f685e109ad644e5b3024a370e232c0eb6ca12cbaed4280c307ea4ea0ab4fe5",
+          "packetSha256": "b5998cf1737048af34cd94a385525c6a0191006adbbd4a79dbd723a91c287302",
+          "sameFullVisibleTextPacketSources": [
+            {
+              "sourceId": "src-5632a25f1ab0502f",
+              "sourceUrl": "http://homer.ucsd.edu/BennerLab/",
+              "observedAt": "2026-10-16T05:33:46+00:00",
+              "bodySha256": "e232210de4823e56d7f3f48641d2402aaf119dcbd74beca00dd739dcf959db25",
+              "sameTitle": true,
+              "sameFullVisibleText": true,
+              "sameBodyBytes": true
+            }
+          ],
+          "evidenceSourceIds": [
+            "src-55ebf5f3995f6473",
+            "src-35726394fd9646e5",
+            "src-5632a25f1ab0502f"
+          ],
+          "disposition": "parent_already_applied_direct_lab_affiliation_only_preserve_science"
+        }
+      ],
+      "decision": "close_with_direct_named_lab_affiliation_evidence_already_applied_by_parent",
+      "scope": "完整 Benner Lab 首页：整体科研、技术/软件、论文清单、团队、联系；全部 51,722 字符均已读。",
+      "reason": "具名实验室自身正文明确位于 UCSD School of Medicine，补足先前 uncertain 的机构字段。原摘要的转录调控、csRNA-seq、TSS-MPRA、炎症与非编码变异均有直接 whole-lab prose 支持；无需新增研究主题或更改原科学审阅时间。论文清单、研究者/校友个人兴趣不作为整组方法扩写。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "The Benner Lab is located at the UCSD School of Medicine, in La Jolla, CA.",
+          "purpose": "实验室整体的来源报告机构位置"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "The laboratory develops computational and experimental technologies to study how transcription is regulated, analyzing how regulatory DNA, transcription, epigenetics, and 3D genome structure exert influence on one another.",
+          "purpose": "直接核对已有研究摘要，不是从论文题名推导"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "The laboratory leverages experimental methods to profile transcription initiation in the genome (e.g. csRNA-seq, TSS-MPRA), which provide sensitive measurements of regulatory element activity at single-nucleotide resolution.",
+          "purpose": "直接核对已有技术字段"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Lab Location George Palade Laboratories (CMM west) GPL Room 105H School of Medicine University of California, San Diego",
+          "purpose": "具名站点联系区的额外机构/地点印证"
+        }
+      ],
+      "recommendation": {
+        "action": "retain_parent_affiliation_only_application",
+        "changes": [
+          "affiliation_uncertain_to_source_reported_by_parent"
+        ],
+        "scienceChanges": [],
+        "limitations": "不将网页无日期的位于/当前用语转为 2026 年当前任职声明；保留原 HTTPS robots 失败及原科学 reviewedAt。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.740023+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 25,
+      "requestedUrl": "http://biology.ucsd.edu/about/index.html",
+      "finalUrl": "http://biology.ucsd.edu/about/index.html",
+      "observedAt": "2026-10-16T05:35:18+00:00",
+      "bodySha256": "84f8590f454b6e459b63c8ab7957957e059d6b74248bf057d9f755e275e5c790",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/22856e06372971d3fb914fa9010ee7c055b6c7598e8c9d8c0eccffe53e8ab42e.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/22856e06372971d3fb914fa9010ee7c055b6c7598e8c9d8c0eccffe53e8ab42e.json",
+      "metadataSha256": "8daccdff8e9c6b0c0b4e907bdfcadc511c7ed044608051832712f8270f9f535f",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:29:59+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792128599.767362,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "title": "About the School",
+      "fullVisibleTextCharacters": 647,
+      "semanticFingerprint": "93bf9aca589ded2375a3deb3020fa8746762b7078ad35bcf945e359c58311c39",
+      "targets": [
+        {
+          "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+          "ordinal": 807,
+          "labName": "Kadonaga Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 In my lab 描述实验室作用域。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "ec40c49d33d23148f127254b640955ab2d96f5c25e6edbe5578e39841fa48575",
+          "packetSha256": "11654f42061634497ee7fe4d47311928daf8437c8b89f25a70cbb5bcaa0aec8c",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-4cdf2e8fbc6dcb8c",
+            "src-2705f44bd0668fde"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-yelon-lab",
+          "ordinal": 808,
+          "labName": "Yelon Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "3a23424180abd556b27d3555a224909f195eccacbf7e746e342df96725778781",
+          "packetSha256": "efd6d5cb3f19cc061aa67809220c4e8850eabfc7f000ba79d5df9d154a22f13e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-413a97ec229e1fc0",
+            "src-f453e78376250534"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+          "ordinal": 809,
+          "labName": "Lykke-Andersen Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "0139637051c6c44dac0e1b5761cdf2349457ca68ff7ae6ab5a4085fcd85a7e47",
+          "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-322a2ca2584566c6",
+            "src-11b4f50c5487577f"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+          "ordinal": 810,
+          "labName": "Kryazhimskiy Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 Our lab 描述研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "b2e909dc6583414fa66becb70ecdfb07438d2dbf7082c2b40432db1481627774",
+          "packetSha256": "0182744a0585546fb4297373ae6b19e3ca97883de9c5e7e199a0b05c2679d1d7",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a9e2cce5f55b42cf",
+            "src-73d585e359a77307"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-jackrel-lab",
+          "ordinal": 811,
+          "labName": "Jackrel Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "f2b6fe64611207a7c64493e839865ec10e472c3a5086c7dbbbf1dda346bb93a4",
+          "packetSha256": "5645ae63fd46218007096d1d48698a731aae42478257e769a9fec0384304ae7e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-544b5d38b78800fb",
+            "src-a79d5b12162bf295"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-halpain-lab",
+          "ordinal": 812,
+          "labName": "Halpain Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "25805278deb8ddef8f103c01d6e13bebc2e773c59178726dca7e4ce82e575bd8",
+          "packetSha256": "2fd16ab878668e9a3f4d015bda834912a181dce912c7b1ba9d2cbdb4e3017e43",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a76f19d10cdb5236",
+            "src-e0f7e4468c2b4014"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-posakony-lab",
+          "ordinal": 813,
+          "labName": "Posakony Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "e2a2d9c993c7103a96b314d9253ebb18b4ea2bff2c60e4d8b315c6186db33cc9",
+          "packetSha256": "cbb72d617959532f5965ba2771884a7e1d4aa1c3728dd226d33ec44cdbce2b49",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-900c1b5e62983021",
+            "src-3ddd44182e682269"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "reject_generic_school_about_scope",
+      "scope": "School of Biological Sciences 的介绍与 Dean's Leadership Council。",
+      "reason": "全文没有七个目标实验室的名字、具名研究或位置；School-level 自我介绍不能逐一补给 Kadonaga/Yelon/Lykke-Andersen/Kryazhimskiy/Jackrel/Halpain/Posakony。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Biological Sciences at UC San Diego Innovation. Diversity. Impact.",
+          "purpose": "学院层面主体"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "The Dean’s Leadership Council is the School of Biological Sciences preeminent volunteer group",
+          "purpose": "学院管理/顾问范围"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_all_seven_lab_records",
+        "changes": [],
+        "limitations": "既有 faculty source 的上下文扩展仅是发现路径，不建立七组的实体级隶属。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.744389+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 26,
+      "requestedUrl": "http://biology.ucsd.edu/about/contact/index.html",
+      "finalUrl": "http://biology.ucsd.edu/about/contact/index.html",
+      "observedAt": "2026-10-16T05:35:24+00:00",
+      "bodySha256": "88997f04cf34b48a11aebcaf0253ab1fa0874ffd21d96374b835896f8865566f",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a846ecc52557355cc8fb3adcc0fe1f1457b66591b9e73b026af3cc80543853d3.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a846ecc52557355cc8fb3adcc0fe1f1457b66591b9e73b026af3cc80543853d3.json",
+      "metadataSha256": "2461e6d03b86d03a6621d188683e70a933d8687f41faf971b7d352aaa3a8dbf8",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:29:59+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792128599.767362,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "title": "Contact",
+      "fullVisibleTextCharacters": 3976,
+      "semanticFingerprint": "522b7194e0b8da53d3f0a1872f1009aee7f8eaf2bc449d825d3b4686544c6916",
+      "targets": [
+        {
+          "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+          "ordinal": 807,
+          "labName": "Kadonaga Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 In my lab 描述实验室作用域。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "ec40c49d33d23148f127254b640955ab2d96f5c25e6edbe5578e39841fa48575",
+          "packetSha256": "11654f42061634497ee7fe4d47311928daf8437c8b89f25a70cbb5bcaa0aec8c",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-4cdf2e8fbc6dcb8c",
+            "src-2705f44bd0668fde"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-yelon-lab",
+          "ordinal": 808,
+          "labName": "Yelon Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "3a23424180abd556b27d3555a224909f195eccacbf7e746e342df96725778781",
+          "packetSha256": "efd6d5cb3f19cc061aa67809220c4e8850eabfc7f000ba79d5df9d154a22f13e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-413a97ec229e1fc0",
+            "src-f453e78376250534"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+          "ordinal": 809,
+          "labName": "Lykke-Andersen Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "0139637051c6c44dac0e1b5761cdf2349457ca68ff7ae6ab5a4085fcd85a7e47",
+          "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-322a2ca2584566c6",
+            "src-11b4f50c5487577f"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+          "ordinal": 810,
+          "labName": "Kryazhimskiy Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 Our lab 描述研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "b2e909dc6583414fa66becb70ecdfb07438d2dbf7082c2b40432db1481627774",
+          "packetSha256": "0182744a0585546fb4297373ae6b19e3ca97883de9c5e7e199a0b05c2679d1d7",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a9e2cce5f55b42cf",
+            "src-73d585e359a77307"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-jackrel-lab",
+          "ordinal": 811,
+          "labName": "Jackrel Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "f2b6fe64611207a7c64493e839865ec10e472c3a5086c7dbbbf1dda346bb93a4",
+          "packetSha256": "5645ae63fd46218007096d1d48698a731aae42478257e769a9fec0384304ae7e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-544b5d38b78800fb",
+            "src-a79d5b12162bf295"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-halpain-lab",
+          "ordinal": 812,
+          "labName": "Halpain Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "25805278deb8ddef8f103c01d6e13bebc2e773c59178726dca7e4ce82e575bd8",
+          "packetSha256": "2fd16ab878668e9a3f4d015bda834912a181dce912c7b1ba9d2cbdb4e3017e43",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a76f19d10cdb5236",
+            "src-e0f7e4468c2b4014"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-posakony-lab",
+          "ordinal": 813,
+          "labName": "Posakony Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "e2a2d9c993c7103a96b314d9253ebb18b4ea2bff2c60e4d8b315c6186db33cc9",
+          "packetSha256": "cbb72d617959532f5965ba2771884a7e1d4aa1c3728dd226d33ec44cdbce2b49",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-900c1b5e62983021",
+            "src-3ddd44182e682269"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "reject_general_school_business_contacts",
+      "scope": "学院业务单位、学生服务、行政、人力、采购、安全与帮助目录。",
+      "reason": "实际正文没有七个具名实验室的联系地址或科研。Instructional Labs/Lab Course Safety 指教学实验室服务，不能作为这些研究实验室的身份/方法证据。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Below is a list of general contacts for major business units within the School.",
+          "purpose": "一般学院联系目录范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Instructional Labs Lab Course Safety (for students and Instructional Assistants)",
+          "purpose": "教学实验室服务，非目标研究实体"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_all_seven_lab_records",
+        "changes": [],
+        "limitations": "不从学校行政联系人/地址推导各研究组的归属。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.750351+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 27,
+      "requestedUrl": "http://biology.ucsd.edu/index.html",
+      "finalUrl": "http://biology.ucsd.edu/index.html",
+      "observedAt": "2026-10-16T05:35:29+00:00",
+      "bodySha256": "b2d728ac65bad5ffb109b3dc32169cef268501958ca0b19deabddfb99075c725",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7e7cb2e1a2b7db633785b411d89327c133603a20335c2643a3a6818560419306.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/7e7cb2e1a2b7db633785b411d89327c133603a20335c2643a3a6818560419306.json",
+      "metadataSha256": "39bfc379def28fb889f3e9b1d5c4f57b03c986bc41ca18a6dc61ef176f8a98ae",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:29:59+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792128599.767362,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "title": "Biological Sciences",
+      "fullVisibleTextCharacters": 1176,
+      "semanticFingerprint": "1043830efc2fc92a2b4416fae21ffcb2b1a5497703e1e3b28bbf6371c2633e2e",
+      "targets": [
+        {
+          "labId": "ucsd-biological-sciences-lab-kadonaga-lab",
+          "ordinal": 807,
+          "labName": "Kadonaga Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 In my lab 描述实验室作用域。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "ec40c49d33d23148f127254b640955ab2d96f5c25e6edbe5578e39841fa48575",
+          "packetSha256": "11654f42061634497ee7fe4d47311928daf8437c8b89f25a70cbb5bcaa0aec8c",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-4cdf2e8fbc6dcb8c",
+            "src-2705f44bd0668fde"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-yelon-lab",
+          "ordinal": 808,
+          "labName": "Yelon Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "3a23424180abd556b27d3555a224909f195eccacbf7e746e342df96725778781",
+          "packetSha256": "efd6d5cb3f19cc061aa67809220c4e8850eabfc7f000ba79d5df9d154a22f13e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-413a97ec229e1fc0",
+            "src-f453e78376250534"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+          "ordinal": 809,
+          "labName": "Lykke-Andersen Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确描述 our laboratory 的研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:52:41+00:00",
+          "rawSha256": "0139637051c6c44dac0e1b5761cdf2349457ca68ff7ae6ab5a4085fcd85a7e47",
+          "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-322a2ca2584566c6",
+            "src-11b4f50c5487577f"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+          "ordinal": 810,
+          "labName": "Kryazhimskiy Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "官方教师页明确以 Our lab 描述研究。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "b2e909dc6583414fa66becb70ecdfb07438d2dbf7082c2b40432db1481627774",
+          "packetSha256": "0182744a0585546fb4297373ae6b19e3ca97883de9c5e7e199a0b05c2679d1d7",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a9e2cce5f55b42cf",
+            "src-73d585e359a77307"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-jackrel-lab",
+          "ordinal": 811,
+          "labName": "Jackrel Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "f2b6fe64611207a7c64493e839865ec10e472c3a5086c7dbbbf1dda346bb93a4",
+          "packetSha256": "5645ae63fd46218007096d1d48698a731aae42478257e769a9fec0384304ae7e",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-544b5d38b78800fb",
+            "src-a79d5b12162bf295"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-halpain-lab",
+          "ordinal": 812,
+          "labName": "Halpain Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "25805278deb8ddef8f103c01d6e13bebc2e773c59178726dca7e4ce82e575bd8",
+          "packetSha256": "2fd16ab878668e9a3f4d015bda834912a181dce912c7b1ba9d2cbdb4e3017e43",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-a76f19d10cdb5236",
+            "src-e0f7e4468c2b4014"
+          ],
+          "disposition": "preserve_current_record_fields"
+        },
+        {
+          "labId": "ucsd-biological-sciences-lab-posakony-lab",
+          "ordinal": 813,
+          "labName": "Posakony Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:53:25+00:00",
+          "rawSha256": "e2a2d9c993c7103a96b314d9253ebb18b4ea2bff2c60e4d8b315c6186db33cc9",
+          "packetSha256": "cbb72d617959532f5965ba2771884a7e1d4aa1c3728dd226d33ec44cdbce2b49",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-900c1b5e62983021",
+            "src-3ddd44182e682269"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "reject_generic_school_mission_and_neighbor_news",
+      "scope": "学院整体使命、学位项目、新闻和四个学科部门简介。",
+      "reason": "全文无七个目标实验室的实体级陈述。新闻中 Schroeder、AI/DNA 或部门概括不能借给这些目标的科研或机构字段。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Our mission is to advance knowledge of basic biological sciences and apply our research discoveries in ways that improve human health, protect our environment and enrich our economy.",
+          "purpose": "学院层面的使命"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Julian Schroeder Honored with Plant Biology Lifetime Achievement Award",
+          "purpose": "邻近新闻主体，不是七个目标"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_all_seven_lab_records",
+        "changes": [],
+        "limitations": "不把学院部门主题/邻组新闻用作目标研究证据。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.757653+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 30,
+      "requestedUrl": "http://maeresearch.ucsd.edu/callafon/teaching/index.html",
+      "finalUrl": "http://maeresearch.ucsd.edu/callafon/teaching/index.html",
+      "observedAt": "2026-10-16T05:34:09+00:00",
+      "bodySha256": "741f25003ba67d3344ae3b2bf0221726bd7ada0c80009fa52701cdb1f7357410",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5eb282172b89a5a9a695fe8f2f49a2b368b50bb238b700583ebf27b72df15581.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5eb282172b89a5a9a695fe8f2f49a2b368b50bb238b700583ebf27b72df15581.json",
+      "metadataSha256": "77b44158ad2c1d4eaaf0d081994de004eff82f42af2780a969ab2d2b2f08674f",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://maeresearch.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:31:16+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128676.185885,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Teaching of Raymond A. de Callafon, Dept. of MAE, UCSD",
+      "fullVisibleTextCharacters": 6911,
+      "semanticFingerprint": "5537b834fc4a1893725ec9b40dd989e380185f93f53e42cc7e363da9f3e9daca",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-55424aea242e83",
+          "ordinal": 574,
+          "labName": "Raymond de Callafon — lab website",
+          "currentStatus": "partial",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "uncertain",
+            "entityType": "personal_research_site",
+            "reason": "官方材料确认研究者，但目标站未捕获，无法确认实验室实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:45:00+00:00",
+          "rawSha256": "758f5070e9a999e2e63612c2cbba2bd317729e5278dffcca1f49c06477ca5d6b",
+          "packetSha256": "6ab0a5a7026808d680fe79cb0976f182a60042d906d20c1d3670a9387ccce8fc",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-e442554683eba931"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "reject_teaching_and_facility_as_single_research_lab",
+      "scope": "Raymond de Callafon 个人教学介绍、1999–2015 课程及 UGCL/COSMOS 教学设施。",
+      "reason": "明确是教师授课与教学设施；UGCL 的目标是给学生教授控制概念。不能把课程内容或教学硬件合成某个单一研究实验室的方法，亦不能解除目标个人研究站点/实验室实体不明的 partial。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Within the department of Mechanical and Aerospace Engineering ( MAE ) at the University of California, San Diego , Raymond de Callafon teaches graduate and undergraduate courses in Dynamic Systems and Control.",
+          "purpose": "个人教学与院系关系"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "The Undergraduate Control Laboratory ( UGCL ) at the department of Mechanical and Aerospace Engineering (MAE) is a laboratory that facilitates teaching of control related aspects to (under)graduate students.",
+          "purpose": "明确教学设施实体范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "For the Fall Quarter of 2013, Prof. de Callafon is scheduled to teach the graduate course on System Identification MAE283a",
+          "purpose": "历史内容边界，非当前课程/研究状态"
+        }
+      ],
+      "recommendation": {
+        "action": "retain_partial_personal_research_scope",
+        "changes": [],
+        "limitations": "教学页实际已成功缓存与原 root robots 失败是不同事实；不据教学页给目标研究实验室补 affiliation 或方法。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.761128+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 34,
+      "requestedUrl": "http://cmp.ucsd.edu/announcements/sacnas2020/",
+      "finalUrl": "http://cmp.ucsd.edu/announcements/sacnas2020/",
+      "observedAt": "2026-10-16T05:34:32+00:00",
+      "bodySha256": "511febcb288fe6667a7a9d7edd75602b6963183c9ccc58df57d9fd4c259036e7",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8dd8fcae937b6b8afacef020b776f65d3830b10e9c17bab40e769d8a51605490.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8dd8fcae937b6b8afacef020b776f65d3830b10e9c17bab40e769d8a51605490.json",
+      "metadataSha256": "b0ac3adaead8f9bca84a21b88ffa200f737555baf42d5c7d0d714ed21e9f0d23",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://cmp.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:32:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792128750.52685,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "title": "Best Presentation at SACNAS 2020 | ATLAS Materials Physics Lab",
+      "fullVisibleTextCharacters": 831,
+      "semanticFingerprint": "80f3b11df900df6a61fb0d112df75706ae5249805d74f8d91f2057575c871ed6",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-5db1834b7b663d",
+          "ordinal": 601,
+          "labName": "Tod Pascal — lab website",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:45:42+00:00",
+          "rawSha256": "7c41512fe9dc0b989bac8034a45048f1af565e1b97ff5098968163999e60ddd9",
+          "packetSha256": "9a71343362e53f232d1be2153a9f6f98f7b0afd8a8da23d800755fa8fd6184f9",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-34b85d12016dc853",
+            "src-2c16c1f000b131f6"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "retain_as_historical_project_news_only_no_science_expansion",
+      "scope": "ATLAS 的 SACNAS 学生海报奖项新闻；单个 DNA/银纳米粒子模拟项目。",
+      "reason": "“Molecular Dynamics Simulations” 是特定学生海报内容；已有 ATLAS 整组摘要已覆盖分子模拟，不需据此增加整组 targeted drug carrier 新主线/方法或 UCSD 归属。页面 Apr 23, 2020 与叙述 October 2020 并存，不能视为完整研究更新时间。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Best Presentation at SACNAS 2020 Apr 23, 2020",
+          "purpose": "新闻标注时间"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Kyle Skelil presented a poster of his research at the Society for Advancement of Chicanos/Hispanics and Native Americans in Science (SACNAS) in October 2020.",
+          "purpose": "明确个人海报与另一日期"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "This poster, titled “Molecular Dynamics Simulations of Binding Energy Between Single Strand DNA and Silver Nanoparticles” demonstrated how we can use DNA and silver nanoparticle systems as novel methods of targeted drug carriers.",
+          "purpose": "只属于该项目的内容"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_atlas_science_and_affiliation",
+        "changes": [],
+        "limitations": "currently ongoing 是旧新闻叙事，不证明 2026 年进行中；不从作者头衔推定实验室机构。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.763182+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 36,
+      "requestedUrl": "http://grammar.ucsd.edu/phoneticslab/labmembers.html",
+      "finalUrl": "http://grammar.ucsd.edu/phoneticslab/labmembers.html",
+      "observedAt": "2026-10-16T05:35:31+00:00",
+      "bodySha256": "8c00c588cd47be6f47d13807972f36d45cc968524f5dabdb65e35a4d29162ab4",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/1fe3c961e764bfda9bff31cccd596e8fb540eba703cc3ff13537836c47d10d53.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/1fe3c961e764bfda9bff31cccd596e8fb540eba703cc3ff13537836c47d10d53.json",
+      "metadataSha256": "a73c634a453fd3250f5beef496fc184ca9a6dc677963afd28ed965d8441fec0f",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://grammar.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:30:36+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128636.126135,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "UCSD Phonetics Lab | Lab Members",
+      "fullVisibleTextCharacters": 2100,
+      "semanticFingerprint": "b439803ff2d1ce5a0538881e415b4e02953cf764f0f102a5db6e666fc9c98240",
+      "targets": [
+        {
+          "labId": "ucsd-linguistics-lab-phonetics-lab",
+          "ordinal": 218,
+          "labName": "Phonetics Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "新HTTP正文明确UCSD Phonetics Lab及UCSD Linguistics Department；来源无内容日期，不据采集时间确认带日期的当前隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "本次独立HTTP捕获正文直接具名实验室且陈述实验室研究，与原官方实验室目录条目一致；保留稳定ID和原始HTTPS检查。"
+          },
+          "priorResearchReviewAt": "2026-10-16T06:07:26+00:00",
+          "rawSha256": "4128beb15bc4f851b7204dd5c8136b638a5105c866030f3ef6c222fb55caf8b1",
+          "packetSha256": "9313f902b61f8b29bfa3e417e646a1ac4077ab7a0911b05a64f6ea9debb119ac",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-4e03d591f5107907",
+            "src-997eb2f9147bba79"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_phonetics_root_recovery_dated_roster_only",
+      "scope": "Phonetics Lab 2021–2022 成员及校友名册。",
+      "reason": "父代理已用实际 HTTP 根页恢复整体研究、设备与 UCSD Linguistics 关系。此页只能补历史名单，不能从多位 Faculty 中选定现任 PI，也没有新的 whole-lab 科研。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "UCSD Phonetics Lab Current Lab Members (2021-2022)",
+          "purpose": "具名历史成员名单边界"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Eric Baković ['εɹɪk 'bækəvɪtʃ] ebakovic at ucsd.edu Faculty, UCSD Linguistics",
+          "purpose": "成员所属院系，非 PI 任命"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_recovered_phonetics_record",
+        "changes": [],
+        "limitations": "不更新当前 PI 或成员，不把 2021–2022 roster 当 2026 当前。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.765580+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 37,
+      "requestedUrl": "http://grammar.ucsd.edu/phoneticslab/contact.html",
+      "finalUrl": "http://grammar.ucsd.edu/phoneticslab/contact.html",
+      "observedAt": "2026-10-16T05:35:37+00:00",
+      "bodySha256": "8e705a768ad093bf102fe145e00bcaa19461f1b2c26eed209de70473a7d4ca2c",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a4435280a96d04acc540f8ecef6f848af9eac56d0c40a07461656be337a4adb3.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/a4435280a96d04acc540f8ecef6f848af9eac56d0c40a07461656be337a4adb3.json",
+      "metadataSha256": "9cbfd4d0553f8109784ece1cbb14eff6902e443bfc7931079143f6b881d66390",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://grammar.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:30:36+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128636.126135,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "UCSD Phonetics Lab | Contact",
+      "fullVisibleTextCharacters": 504,
+      "semanticFingerprint": "a52781710ccf79b3883d74863f729e878d853e5c7a6f94fb97656b62164f9478",
+      "targets": [
+        {
+          "labId": "ucsd-linguistics-lab-phonetics-lab",
+          "ordinal": 218,
+          "labName": "Phonetics Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "新HTTP正文明确UCSD Phonetics Lab及UCSD Linguistics Department；来源无内容日期，不据采集时间确认带日期的当前隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "本次独立HTTP捕获正文直接具名实验室且陈述实验室研究，与原官方实验室目录条目一致；保留稳定ID和原始HTTPS检查。"
+          },
+          "priorResearchReviewAt": "2026-10-16T06:07:26+00:00",
+          "rawSha256": "4128beb15bc4f851b7204dd5c8136b638a5105c866030f3ef6c222fb55caf8b1",
+          "packetSha256": "9313f902b61f8b29bfa3e417e646a1ac4077ab7a0911b05a64f6ea9debb119ac",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-4e03d591f5107907",
+            "src-997eb2f9147bba79"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_phonetics_root_recovery_contact_only",
+      "scope": "具名实验室联系地址、联系 Marc Garellek 和音室预约说明。",
+      "reason": "直接实验室地址与已恢复根页的 UCSD Linguistics 机构关系一致，现 record 已 source_reported；不需要重复追加，更不把联系对象当 PI。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Lab Address Phonetics Lab Applied Physics and Math Building 4432 UCSD Linguistics Department 9500 Gilman Drive La Jolla, CA 92093-0108",
+          "purpose": "冗余的具名实验室联系地址"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "contact Marc Garellek at mgarellek at ucsd.edu",
+          "purpose": "联系人员，不是负责人任命"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_recovered_phonetics_record",
+        "changes": [],
+        "limitations": "预约用户名/密码指音室资源使用；没有读取受保护内容或提出登录。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.766468+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 38,
+      "requestedUrl": "http://juchenlab.ucsd.edu/lab.htm",
+      "finalUrl": "http://juchenlab.ucsd.edu/lab.htm",
+      "observedAt": "2026-10-16T05:35:40+00:00",
+      "bodySha256": "efa6f067eaa0166dbd5860fec37d85fbf36648e337568f7273c50f599bc226c9",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/18def497c3f88bde40ee7c0c9d43b622c6762b076e9acc27cf064875ac13322f.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/18def497c3f88bde40ee7c0c9d43b622c6762b076e9acc27cf064875ac13322f.json",
+      "metadataSha256": "4521f45d5f4db612d8ad6fcd33509ef3013502f476aa11932067c313727d8cf8",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://juchenlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:34:24+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128864.1931221,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Members - Ju Chen Lab - UC San Diego",
+      "fullVisibleTextCharacters": 1697,
+      "semanticFingerprint": "62d29f45145c19d04a0aee6e50b06f9c599e21d80faf3e1ab80909a94c5379fd",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-98174ce75b39b1",
+          "ordinal": 518,
+          "labName": "Ju Chen Laboratory",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "实验室首页在Ju Chen Laboratory标题下列出UCSD School of Medicine；保留来源陈述，不据此确认带日期的当前任职。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "本次复用的HTTP主页明确Ju Chen Laboratory，About the Lab正文直接陈述Chen lab的整体研究；与基线官方名录和具名Lab Website证据一致。原HTTPS失败另存，未据HTTP成功改写原网址。"
+          },
+          "priorResearchReviewAt": "2026-10-16T06:06:35+00:00",
+          "rawSha256": "28c3b686e8c929b306903af96a4065c43f9e40fa5072eae338be776a4bcd2946",
+          "packetSha256": "66e507a2ee2a4eed92ca7e87e8311e3c57c30ecbcd9716e9e23409ee84234250",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-629da6e55206a571",
+            "src-d75e35630ead60fd",
+            "src-dcaabae720d63562"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_ju_chen_root_recovery_member_page",
+      "scope": "Ju Chen Lab 成员、具名指导者及跨页重复的 research teaser/navigation。",
+      "reason": "成员页的直接 whole-lab 小鼠模型 teaser 已被根页/About 的更完整研究覆盖；成员与指导语句无日期，不能确认 2026 年 PI 或扩写各成员方向。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "The Ju Chen lab is a multinational group of engaged scientists and researchers under the guidance and supervision of Ju Chen, PhD.",
+          "purpose": "旧网页所列指导关系，非带日期当前任命"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "We are interested in elucidating molecular mechanisms behind human muscle diseases using genetically engineered mouse models.",
+          "purpose": "重复研究 teaser；现已由更完整 About 直接支持"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_recovered_ju_chen_record",
+        "changes": [],
+        "limitations": "Research Focus 和 Methods/Databases via Dropbox (protected) 是导航，不能当方法正文。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.769143+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 39,
+      "requestedUrl": "http://juchenlab.ucsd.edu/lablife.htm",
+      "finalUrl": "http://juchenlab.ucsd.edu/lablife.htm",
+      "observedAt": "2026-10-16T05:35:46+00:00",
+      "bodySha256": "a153b81dddbcca1e4cdbdd9c309178179044df212527ab24333a72bf0f4f2182",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0022b907591a7319194480b7c0aff90c1c5f7c7023fb71d48912fd3a435cfa03.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0022b907591a7319194480b7c0aff90c1c5f7c7023fb71d48912fd3a435cfa03.json",
+      "metadataSha256": "6ed03e39456a8f94e7602721d2a99112467f05650cd8cf1486ea1e26ec0d2ee1",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://juchenlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:34:24+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128864.1931221,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Life in the lab - Ju Chen Lab - UC San Diego",
+      "fullVisibleTextCharacters": 3322,
+      "semanticFingerprint": "97addca69cc023b65159c7774855ee42ac2bc299ad5153593cc86dcd1319e5ca",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-98174ce75b39b1",
+          "ordinal": 518,
+          "labName": "Ju Chen Laboratory",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "实验室首页在Ju Chen Laboratory标题下列出UCSD School of Medicine；保留来源陈述，不据此确认带日期的当前任职。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "本次复用的HTTP主页明确Ju Chen Laboratory，About the Lab正文直接陈述Chen lab的整体研究；与基线官方名录和具名Lab Website证据一致。原HTTPS失败另存，未据HTTP成功改写原网址。"
+          },
+          "priorResearchReviewAt": "2026-10-16T06:06:35+00:00",
+          "rawSha256": "28c3b686e8c929b306903af96a4065c43f9e40fa5072eae338be776a4bcd2946",
+          "packetSha256": "66e507a2ee2a4eed92ca7e87e8311e3c57c30ecbcd9716e9e23409ee84234250",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-629da6e55206a571",
+            "src-d75e35630ead60fd",
+            "src-dcaabae720d63562"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_ju_chen_root_recovery_social_history",
+      "scope": "2010–2012 实验室聚会、Heart Walk、聚餐照片介绍与重复研究 teaser。",
+      "reason": "多实验室共同 potluck/慈善活动不构成各实验室科研、方法、当前成员或隶属证据；重复 teaser 不需再引入。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Below are some impressions on events that involve people from the Ju Chen lab.",
+          "purpose": "社交照片范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "2012 Cardiology Division Potluck",
+          "purpose": "明确旧活动"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "2011 Holiday Potluck",
+          "purpose": "明确旧活动"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_recovered_ju_chen_record",
+        "changes": [],
+        "limitations": "不把合作聚餐中出现的其他实验室或方法导航作为目标科研。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.772780+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 41,
+      "requestedUrl": "http://juchenlab.ucsd.edu/contact.htm",
+      "finalUrl": "http://juchenlab.ucsd.edu/contact.htm",
+      "observedAt": "2026-10-16T05:35:58+00:00",
+      "bodySha256": "7371fc3d481a9417ddd9937489fca33805fa4253e538cf20a2ccce35f73e8ba8",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9c743ef66c2420941ee2058ab2226a7d3e6b026e28f36ebc3ba11af0a929d68f.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9c743ef66c2420941ee2058ab2226a7d3e6b026e28f36ebc3ba11af0a929d68f.json",
+      "metadataSha256": "8132872ce800c75ea060623e51296878489f98526888fb7f86207fc68adb48e8",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://juchenlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:34:24+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128864.1931221,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Contact - Ju Chen Lab - UC San Diego",
+      "fullVisibleTextCharacters": 1468,
+      "semanticFingerprint": "6ce63a7b8a550311468888c1206650e5aad62d2edea40cd330c9ac58ab28bf31",
+      "targets": [
+        {
+          "labId": "ucsd-live-lab-98174ce75b39b1",
+          "ordinal": 518,
+          "labName": "Ju Chen Laboratory",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "实验室首页在Ju Chen Laboratory标题下列出UCSD School of Medicine；保留来源陈述，不据此确认带日期的当前任职。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "本次复用的HTTP主页明确Ju Chen Laboratory，About the Lab正文直接陈述Chen lab的整体研究；与基线官方名录和具名Lab Website证据一致。原HTTPS失败另存，未据HTTP成功改写原网址。"
+          },
+          "priorResearchReviewAt": "2026-10-16T06:06:35+00:00",
+          "rawSha256": "28c3b686e8c929b306903af96a4065c43f9e40fa5072eae338be776a4bcd2946",
+          "packetSha256": "66e507a2ee2a4eed92ca7e87e8311e3c57c30ecbcd9716e9e23409ee84234250",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-629da6e55206a571",
+            "src-d75e35630ead60fd",
+            "src-dcaabae720d63562"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_ju_chen_root_recovery_contact_only",
+      "scope": "具名实验室 UCSD School of Medicine 联系地址及重复 research teaser。",
+      "reason": "机构陈述足够直接，但父代理已从具名实验室主页获得同一 School of Medicine 隶属，现 source_reported；该页不增加必需的科学字段。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Contact us Ju Chen Lab University of California, San Diego School of Medicine, Biomedical Research Building (MSR) 1217 Bay FF 9500 Gilman Drive La Jolla, California 92093-0613C",
+          "purpose": "冗余的具名实验室机构/联系地址"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_recovered_ju_chen_record",
+        "changes": [],
+        "limitations": "联系页没有完整内容日期，不确认地址或 PI 现时仍有效。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.775132+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 42,
+      "requestedUrl": "http://burkartlab.ucsd.edu/page2.html",
+      "finalUrl": "http://burkartlab.ucsd.edu/page2.html",
+      "observedAt": "2026-10-16T05:34:47+00:00",
+      "bodySha256": "001aeb087952ce660e01f9d0678e702c30dd6d91e2d25efe18379a15ad458e0f",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5ce4309b763e8e0d8959dae7474fec1591b23d1ee5ca1107012b2a7a20b0e7be.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/5ce4309b763e8e0d8959dae7474fec1591b23d1ee5ca1107012b2a7a20b0e7be.json",
+      "metadataSha256": "49a566fb2695071ba56c176dd79be36e9dd46685e58194254ad563e2e243d890",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://burkartlab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:34:38+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128878.728568,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Lab members",
+      "fullVisibleTextCharacters": 8570,
+      "semanticFingerprint": "2e333396c749f8d39eff9143c1eb21050cc6c12cbe5b403a173648f55cceebd6",
+      "targets": [
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-burkart-laboratory",
+          "ordinal": 687,
+          "labName": "Burkart Laboratory",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "uncertain",
+            "reason": "来源不足以确认机构隶属。"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:48:03+00:00",
+          "rawSha256": "7e776a1ba22d4f2943b7e34876c03c159c62e668c1eca15a09900ea1d5928427",
+          "packetSha256": "b5206ded0205b6613562c3aaf41d40a119fa8357df4ce899bd7f3b4d420322c2",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-8ffe28228d5ee744",
+            "src-813b078a3b3cf17a"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "close_as_person_institution_contact_reject_whole_lab_affiliation_inference",
+      "scope": "Burkart Laboratory 成员页开头 The Boss 个人联系栏，随后为成员个人项目、过去学历与校友去向。",
+      "reason": "实际正文在具名实验室成员页的 The Boss 下列 Prof. Michael D. Burkart 的 Department of Chemistry and Biochemistry、University of California, San Diego 与 Pacific Hall。机构/房间在语法上属于该人联系栏；没有 Lab mailing/shipping/location 或整组机构句。按父代理与独立 280 复核结论，仅保存 person–institution association，拒绝由此接受实验室隶属。其余成员学历、个人项目与校友去向更不能用于整组归属或科学扩写。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Burkart Laboratory Lab Members The Boss Prof. Michael D. Burkart Department of Chemistry and Biochemistry University of California, San Diego Pacific Hall 6100D",
+          "purpose": "具名实验室页面中 The Boss 个人的机构/房间联系栏；不是整组 affiliation 接受证据"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Graham received his Ph. D. in Chemistry at the University of Ottawa under the guidance of Professor Christopher Boddy.",
+          "purpose": "对比：明确过去学位，禁止转移为实验室隶属"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "FORMER GROUP MEMBERS",
+          "purpose": "后续校友去向范围"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_burkart_lab_affiliation_uncertain",
+        "changes": [],
+        "scienceChanges": [],
+        "limitations": "独立 scope QA 已完成；不追加为 accepted lab affiliation，不确认 PI 任命/2026 年现任状态，也不从成员方向合成科研。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.780056+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 44,
+      "requestedUrl": "http://haolab.ucsd.edu/people.html",
+      "finalUrl": "http://haolab.ucsd.edu/people.html",
+      "observedAt": "2026-10-16T05:36:13+00:00",
+      "bodySha256": "d00871b6d01451cb13ee4a043905868de68fe8d35d599088fba2195abcd00395",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/551d27713a530bee9d6c5167b6f4764a49f5459febb7aba4e3670e7c96b884fa.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/551d27713a530bee9d6c5167b6f4764a49f5459febb7aba4e3670e7c96b884fa.json",
+      "metadataSha256": "22b57484a14e0fa90feb941e35c5d5015d4094ab26ef0557b7c53a17e9b00127",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://haolab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:36:03+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792128963.158622,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Hao Lab at UCSD: People",
+      "fullVisibleTextCharacters": 4502,
+      "semanticFingerprint": "4b360968ce5447500d5d95cab328ea7ff37f8c7e41f7f3aff8168e6d58f83add",
+      "targets": [
+        {
+          "labId": "ucsd-biology-topic-lab-nan-hao",
+          "ordinal": 100,
+          "labName": "Nan Hao Lab",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "具名实验室站点的联系/实验室地址正文明确University of California, San Diego；这是来源报告的机构联系地址，不确认带日期的当前任职或2026年运行状态。",
+            "reviewedAt": "2026-10-16T06:09:39+00:00"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "lab",
+            "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+          },
+          "priorResearchReviewAt": "2026-10-16T01:48:34+00:00",
+          "rawSha256": "2a5d6b2e12bc23c95e0b01e11b8dc235bbccf43829ac5601d2f075d19a7e3579",
+          "packetSha256": "901acbe51ba40240110500c53bb7617069bcbb7720385795cb57705decab9326",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-d7a34e0783d2f428",
+            "src-fca53ee58416ea54",
+            "src-a3e839428e2c7d23"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_explicit_hao_lab_contact_recovery",
+      "scope": "Nan Hao 负责人条目、成员学历、校友去向和聚餐照片。",
+      "reason": "联系页已由父代理补直接 The Hao Lab / University of California San Diego，现 source_reported。此页的 Professor Molecular Biology, UCSD 是个人职位，后续 Ph.D./B.S. 为学历与校友，不能加研究方法或搬为全组当前状态。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Principal Investigator Nan Hao, Ph.D. ( cv ) Professor Molecular Biology, UCSD",
+          "purpose": "个人负责人/职位的网页陈述，非带日期当前任命"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Ph.D., Washington University St. Louis (Computational and Systems Biology)",
+          "purpose": "成员学位经历，非实验室所属或方法"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_science_and_recent_contact_affiliation",
+        "changes": [],
+        "limitations": "不从成员职位、学历与 2026 校友年份推定页面总更新时间或现任 PI。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.785482+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    },
+    {
+      "priorCandidateIndex": 47,
+      "requestedUrl": "http://yanglab.ucsd.edu/page4.html",
+      "finalUrl": "http://yanglab.ucsd.edu/page4.html",
+      "observedAt": "2026-10-16T05:37:08+00:00",
+      "bodySha256": "edbf3b78a3d11e6a7a278c336de3cff88fe874f12ab1481b041d24ac71474289",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ee242c6deefd620e35ef5f940867b9a1929c78c0e94374aa4d610f36939db4dd.html",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ee242c6deefd620e35ef5f940867b9a1929c78c0e94374aa4d610f36939db4dd.json",
+      "metadataSha256": "c5f0b7762a2303959973c56ef6ae37d4cdc16674fca8f68e8161c4f8b5a4648c",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "http://yanglab.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T05:36:58+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792129018.0208378,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "title": "Group Members",
+      "fullVisibleTextCharacters": 5927,
+      "semanticFingerprint": "cb4438487617ad08248c0928ca3fb2f1936b38ff2e80528139dc21b5540e8f2b",
+      "targets": [
+        {
+          "labId": "ucsd-chemistry-biochemistry-lab-yang-research-group-jerry-yang",
+          "ordinal": 713,
+          "labName": "Yang Research Group (Jerry Yang)",
+          "currentStatus": "supported",
+          "currentAffiliation": {
+            "status": "source_reported",
+            "reason": "具名实验室站点的联系/实验室地址正文明确University of California, San Diego；这是来源报告的机构联系地址，不确认带日期的当前任职或2026年运行状态。",
+            "reviewedAt": "2026-10-16T06:09:39+00:00"
+          },
+          "currentIdentity": {
+            "status": "confirmed",
+            "entityType": "research_group",
+            "reason": "来源明确标识此实体。"
+          },
+          "priorResearchReviewAt": "2026-10-16T02:21:55+00:00",
+          "rawSha256": "e3c26bb449e89971c0a9b07eca5025f9d356b298f313c09c523da0b384f65a99",
+          "packetSha256": "446b7567de2bb85237acf9cb35b2e92e493f0bec72e1982bb48e850ad222302a",
+          "sameFullVisibleTextPacketSources": [],
+          "evidenceSourceIds": [
+            "src-590567ddd5d224f3",
+            "src-7336de2dd2ec4e1f",
+            "src-eea5c22ef8fede93",
+            "src-600adb3d83e83c74",
+            "src-fa885efaa514524b"
+          ],
+          "disposition": "preserve_current_record_fields"
+        }
+      ],
+      "decision": "unnecessary_after_explicit_yang_group_contact_recovery",
+      "scope": "当前标注学生名册、Former Group Members、学位年份、离组去向及访问人员。",
+      "reason": "已恢复具名 Yang Research Group 联系地址的 source_reported 机构字段。此页没有整组科学陈述，校友在 UCSD 或其他机构的工作/学位不能用于目标当前机构或新方法。",
+      "quotes": [
+        {
+          "quoteLocation": "body",
+          "quote": "Group Members Joseph Sawires Graduate Student Sascha Castro-Lingl Graduate Student Erin Jessup Graduate Student Jeewon Chung Graduate Student Hyunji Yu Graduate Student Former Group Members",
+          "purpose": "名单与后续校友范围"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "Dr. Chih-Chin Chi, PhD. (currently a postdoc in Devaraj Lab at UCSD)",
+          "purpose": "明确另一个实验室中的校友去向"
+        },
+        {
+          "quoteLocation": "body",
+          "quote": "© Yang Research Group | Contact Us",
+          "purpose": "具名站点，仅作范围核对"
+        }
+      ],
+      "recommendation": {
+        "action": "preserve_science_and_recent_contact_affiliation",
+        "changes": [],
+        "limitations": "多个 currently、学位年份或去向不构成带日期的整组现状，不推断 PI。"
+      },
+      "reviewedAt": "2026-10-16T06:15:43.790240+00:00",
+      "reviewComplete": true,
+      "networkRequestsMade": 0,
+      "completeVisibleTextRead": true,
+      "fullTextComparisonMethod": "SHA256(title + LF + ContentDOM.main().text()) from actual cached bytes; also direct full-body model reading.",
+      "preserveScientificFieldsAndReviewTimes": true,
+      "recordOrPacketWritesMade": false
+    }
+  ]
+}

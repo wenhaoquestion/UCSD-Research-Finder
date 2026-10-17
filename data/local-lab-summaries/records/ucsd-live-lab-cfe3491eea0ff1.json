@@ -1,0 +1,157 @@
+{
+  "labId": "ucsd-live-lab-cfe3491eea0ff1",
+  "status": "supported",
+  "summaryZh": "Newton 实验室研究细胞信号传导的分子机制，重点是蛋白激酶 C 和磷酸酶 PHLPP，以及其在癌症和神经退行性疾病中的失调。具体方法未明确。",
+  "researchQuestions": [
+    "细胞如何在分子层面转导信息？"
+  ],
+  "topics": [
+    "细胞信号",
+    "蛋白激酶 C",
+    "PHLPP"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-a520aca498ba6a1b",
+      "quote": "Skip to content Newton Lab University of California San Diego About Play Our Research Our lab investigates the basic molecular mechanisms of how cells transduce information, a process know as cell signaling. We focus on a key signaling enzyme, protein kinase C , which is generally a little too active in neurodegenerative diseases such as Alzheimer’s Disease, and not active enough in many cancers. Understanding protein kinase C mechanisms is a first step in developing therapies to restore (cancer) or inhibit (Alzheimer’s Disease) protein kinase C so that it functions normally. We also study the phosphatase PHLPP which has many cellular functions, including opposing protein kinase C signaling. PUBLICATIONS",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-4765512b61ba6ca3",
+      "quote": "Newton Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-4765512b61ba6ca3",
+      "quote": "Newton Lab University of California San Diego",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-a520aca498ba6a1b",
+      "quote": "Our lab investigates the basic molecular mechanisms of how cells transduce information, a process know as cell signaling.",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "方法未明确。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究方法待核（限本轮已审阅材料）：已读实验室About及官方负责人档案全文，研究段落说明PKC/PHLPP和细胞信号机制；未明示采用的具体技术，Selected Publications标题不转为团队方法。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:14:36+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "candidateIndex": 141,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-a520aca498ba6a1b",
+        "quote": "Our lab investigates the basic molecular mechanisms of how cells transduce information, a process know as cell signaling.",
+        "sourceUrl": "https://newtonlab.ucsd.edu/about/",
+        "observedAt": "2026-10-16T01:35:06+00:00",
+        "bodySha256": "040a615ed759ffb08a14231fe42352d626c96b1a0a9ddf38416a2a322546cc93"
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:14:36+00:00",
+    "previousRecordReviewedAt": "2026-10-16T07:41:11+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读实验室About及官方负责人档案全文，研究段落说明PKC/PHLPP和细胞信号机制；未明示采用的具体技术，Selected Publications标题不转为团队方法。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-055-109.json",
+    "reviewComponentSha256": "e0ec6d91d1488bc15681812210a2bbfa8f1327423c33b1c690be29b6c933f254",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-4765512b61ba6ca3",
+        "sourceUrl": "https://newtonlab.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:00:36+00:00",
+        "bodySha256": "717f1ee7ad4549c60e3c9d2b9bee2622b04a2a7e43030972795cf79c42012cb5",
+        "textSha256": "d2949e81b8c4c29d7cc0e0a295aadb1de6cb6d3f4a876b53c9c05a69a084372c",
+        "textCharacters": 128,
+        "rangesActuallyRead": [
+          [
+            0,
+            128
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      },
+      {
+        "sourceId": "src-a520aca498ba6a1b",
+        "sourceUrl": "https://newtonlab.ucsd.edu/about/",
+        "sourceObservedAt": "2026-10-16T01:35:06+00:00",
+        "bodySha256": "040a615ed759ffb08a14231fe42352d626c96b1a0a9ddf38416a2a322546cc93",
+        "textSha256": "3eea79b102f02acc7c4033b9c7d63de18c895de8fb7926e73db319d7defecc03",
+        "textCharacters": 713,
+        "rangesActuallyRead": [
+          [
+            0,
+            713
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      },
+      {
+        "sourceId": "src-d52a3a3e6fcaa5f9",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/alexandra-newton.html",
+        "sourceObservedAt": "2026-10-02T22:49:05+00:00",
+        "bodySha256": null,
+        "textSha256": "b4ad64f5f6128d880de5be1e6adf3bff85abc18b5fb0dcb50932dc1f07dd3549",
+        "textCharacters": 40,
+        "rangesActuallyRead": [
+          [
+            0,
+            40
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      },
+      {
+        "sourceId": "src-b02b1f8d3a51406b",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/alexandra-newton.html",
+        "sourceObservedAt": "2026-10-16T01:00:31+00:00",
+        "bodySha256": "15158ad6e1555842a1b578551a7477a77eb0aba98b6444d490a4f999cb54557b",
+        "textSha256": "74b45abafbab9e975799b01657db0b3057d2b80e251f811c643df2b5c4781a17",
+        "textCharacters": 2819,
+        "rangesActuallyRead": [
+          [
+            0,
+            2819
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

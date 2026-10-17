@@ -1,0 +1,108 @@
+{
+  "labId": "ucsd-biology-topic-lab-briggs",
+  "status": "supported",
+  "summaryZh": "Briggs 实验室研究光合生物表型的化学基础，关注完整蛋白质状态与表型之间的关系。团队开发和应用肽质谱方法测量蛋白质组状态，并以系统生物学算法分析蛋白质组数据以发现表型调控机制。",
+  "researchQuestions": [
+    "光合生物表型的化学基础是什么？"
+  ],
+  "topics": [
+    "光合生物",
+    "表型",
+    "蛋白质组"
+  ],
+  "methods": [
+    "肽质谱",
+    "系统生物学计算分析"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-7eca97113aaddd3e",
+      "quote": "BRIGGS LAB The scientific focus of our research is to understand the chemical basis for phenotype in photosynthetic organisms. Our technical focus is on peptide mass spectrometry",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-7eca97113aaddd3e",
+      "quote": "By applying the algorithms and computational resources of systems biology to our proteome-wide datasets we discover mechanisms that regulate phenotype.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-7eca97113aaddd3e",
+      "quote": "BRIGGS LAB",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-7eca97113aaddd3e",
+      "quote": "The scientific focus of our research is to understand the chemical basis for phenotype in photosynthetic organisms.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:11:10.640933+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:46:13+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "BRIGGS LAB主文将理解表型的化学基础明示为科学目标，转为同一待解问题，不从蛋白组技术衍生新因果。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-7eca97113aaddd3e",
+        "sourceUrl": "https://briggs.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:03:55+00:00",
+        "bodySha256": "ec3b5680a7f6ce1773b8a15a7323f9d23170e2f86115c0080899580b43bb5316",
+        "textSha256": "b4d5492eefba287315447b351d1ad4bb3eb1cbb5c6c72fb99272e91a8f3918df",
+        "textCharacters": 554,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            554
+          ]
+        ],
+        "reasonZh": "读取上述范围的主文/局部科研语境；履历、导航、新闻、论文或教学材料不转作整体研究问题。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-7eca97113aaddd3e",
+        "quote": "The scientific focus of our research is to understand the chemical basis for phenotype in photosynthetic organisms.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:03:55+00:00",
+        "bodySha256": "ec3b5680a7f6ce1773b8a15a7323f9d23170e2f86115c0080899580b43bb5316",
+        "sourceUrl": "https://briggs.biosci.ucsd.edu/"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "labId": "ucsd-live-lab-4a70223ec89928",
+  "status": "supported",
+  "summaryZh": "Vallon lab 整合血管、肾小管和代谢功能，研究肾脏生理、病理生理与药理学。实验室使用基因靶向小鼠模型和啮齿类单肾单位体内肾微穿刺，研究肾损伤、肾病与血压调控。",
+  "researchQuestions": [
+    "SGLT2抑制对近端肾小管早段与晚段的代谢特征及基因与蛋白表达谱有何影响？"
+  ],
+  "topics": [
+    "肾脏生理与药理",
+    "肾损伤与肾病",
+    "血压调控"
+  ],
+  "methods": [
+    "基因靶向小鼠模型",
+    "体内肾微穿刺"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-6214c0876abbd5d1",
+      "quote": "The Vallon lab aims to integrate aspects of vascular, tubular and metabolic function to gain a more complete understanding of renal physiology, pathophysiology and pharmacology.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-6214c0876abbd5d1",
+      "quote": "the regulation of blood pressure",
+      "supports": [
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-6214c0876abbd5d1",
+      "quote": "acute kidney injury (AKI) and chronic kidney disease (CKD)",
+      "supports": [
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-6214c0876abbd5d1",
+      "quote": "It uses gene-targeted mouse models to dissect contributions of specific genes and address clinically relevant questions. The group is one of few that performs in vivo renal micropuncture at the single nephron level of rodents.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-6214c0876abbd5d1",
+      "quote": "The current work of the Vallon lab is focusing on the functional and physical interaction of SGLT2 with other transporters in the early proximal tubule (incl. URAT1, NHE3), the consequences of SGLT2 inhibition on these transporters as well as on the metabolic and gene and protein expression profile (\"inner workings\") of the early versus late proximal tubule, the off-target effect of SGLT2 inhibitors on the microbiome formation of uremic toxins, as well as new strategies to target metabolic and kidney disease, including the role of the early proximal tubule amino acid transporter SLC6A19 and of SGLT1 as a glucose sensor in the macula densa.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:36:30+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:36:30+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:46:59+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "early/late proximal tubule表示解剖段位，译为早段/晚段，避免早期/晚期的时间或病程含义。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [
+      {
+        "path": "REMAINING-QUESTION-SCOPE-REVISIONS.json",
+        "sha256": "df38a162df6e98571d914706d8f0a8207345ae320b609a1b8933dd42285131d4"
+      }
+    ],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-6214c0876abbd5d1",
+        "sourceUrl": "https://nephrology.ucsd.edu/research/basic-translational/volker-vallon.html",
+        "sourceObservedAt": "2026-10-16T01:06:53+00:00",
+        "readScope": "full packet text (initial and continuation reads)",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ],
+          [
+            2873,
+            3267
+          ],
+          [
+            1400,
+            10162
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-bc0747fce2581653",
+        "sourceUrl": "https://nephrology.ucsd.edu/research/basic-translational/prabhleen-singh.html",
+        "sourceObservedAt": "2026-10-16T01:07:23+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1781
+          ],
+          [
+            5157,
+            5637
+          ]
+        ],
+        "coverageReasonZh": "已读引言及明确未知段，正文具名Singh Lab，属于另一实体，排除。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-214c9b9f1883a300",
+        "sourceUrl": "https://nephrology.ucsd.edu/research/basic-translational/michael-ziegler.html",
+        "sourceObservedAt": "2026-10-16T01:07:25+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            2098
+          ]
+        ],
+        "coverageReasonZh": "完整读，具名Ziegler lab及个人研究，不属于Vallon，排除。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-4228bf6d177ba91c",
+        "sourceUrl": "https://profiles.ucsd.edu/volker.vallon",
+        "sourceObservedAt": "2026-10-03T03:22:58+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            88
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-6214c0876abbd5d1",
+        "quote": "The current work of the Vallon lab is focusing on the functional and physical interaction of SGLT2 with other transporters in the early proximal tubule (incl. URAT1, NHE3), the consequences of SGLT2 inhibition on these transporters as well as on the metabolic and gene and protein expression profile (\"inner workings\") of the early versus late proximal tubule, the off-target effect of SGLT2 inhibitors on the microbiome formation of uremic toxins, as well as new strategies to target metabolic and kidney disease, including the role of the early proximal tubule amino acid transporter SLC6A19 and of SGLT1 as a glucose sensor in the macula densa.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:06:53+00:00",
+        "bodySha256": "e3dfb5022c934425b39501af1ff59ba7ee6755185fb9962fd11c211b590f35db",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

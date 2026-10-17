@@ -1,0 +1,106 @@
+{
+  "labId": "ucsd-live-lab-20a7c3b49b7458",
+  "status": "supported",
+  "summaryZh": "Koslover 研究组研究真核细胞内部动力学和运输，关注分子与细胞器分布、细胞器相互作用及网络结构形成。团队结合可解析理论、介观计算模拟和活细胞数据比较。",
+  "researchQuestions": [
+    "从分子到细胞器的不同组分如何在活细胞内部的复杂环境中移动？",
+    "细胞器之间的相互作用如何促进细胞组分的分布与分散？",
+    "大尺度结构（例如网状细胞器网络）如何由较小尺度的动态过程产生？"
+  ],
+  "topics": [
+    "细胞内运输",
+    "细胞器动力学",
+    "细胞器网络"
+  ],
+  "methods": [
+    "理论建模",
+    "介观模拟",
+    "活细胞数据比较"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "The Koslover Group Department of Physics, UCSD Transport and Kinetics in the Intracellular World The Koslover group is focused on physical modeling of eukaryotic cells. Many of the questions we address center on intracellular dynamics and transport -- how do different components, ranging from molecules to organelles, navigate the complex world inside a living cell? How do interactions between organelles contribute to distributing and dispersing cellular components? How do large-scale structures (eg: reticulated organelle networks) emerge from smaller-scale dynamic processes? To address these questions, we use a combination of pencil-and-paper theoretical modeling together with meso-scale computational simulations that aim to establish the key physical principles and parameters that govern intracellular dynamics. We work closely with experimental collaborators to compare model predictions against data from live cells. Simulated trajectory of a diffusion particle on a yeast mitochondrial network. Model for initiation of peroxisome transport via hitchhiking on moving endosomes in a fungal hypha. Diffusive search times on network structure for a portion of the peripheral endoplasmic reticulum in a mammalian cell.",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "The Koslover Group",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "The Koslover Group Department of Physics, UCSD",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "Many of the questions we address center on intracellular dynamics and transport -- how do different components, ranging from molecules to organelles, navigate the complex world inside a living cell?",
+      "supports": [
+        "researchQuestions"
+      ]
+    },
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "How do interactions between organelles contribute to distributing and dispersing cellular components?",
+      "supports": [
+        "researchQuestions"
+      ]
+    },
+    {
+      "sourceId": "src-d8bbc95d38d6f641",
+      "quote": "How do large-scale structures (eg: reticulated organelle networks) emerge from smaller-scale dynamic processes?",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "research_group",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T07:41:03.533816+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:03.533816+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "candidateIndex": 130,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-089-132.json",
+    "draftSha256": "77ca845bcd0a9f42174c2df00b154143529abcc336c712c7d7b723d08ede15ee",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-d8bbc95d38d6f641",
+        "quote": "Many of the questions we address center on intracellular dynamics and transport -- how do different components, ranging from molecules to organelles, navigate the complex world inside a living cell?"
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-d8bbc95d38d6f641",
+        "quote": "How do interactions between organelles contribute to distributing and dispersing cellular components?"
+      },
+      {
+        "questionIndex": 2,
+        "sourceId": "src-d8bbc95d38d6f641",
+        "quote": "How do large-scale structures (eg: reticulated organelle networks) emerge from smaller-scale dynamic processes?"
+      }
+    ],
+    "reasonZh": "Koslover group明确标为 questions we address，并逐句给出三个how问句，直接翻译而不添加动力学机制。"
+  }
+}

@@ -1,0 +1,4169 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "reviewedAt": "2026-10-16T09:13:48+00:00",
+  "inputInventory": {
+    "path": "data/local-lab-summaries/REMAINING-METHOD-FIELD-INVENTORY.json",
+    "sha256": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7"
+  },
+  "baseCommit": "b548801880efa8e28db1d4b469518a96ac51430d",
+  "assignedRange": [
+    110,
+    165
+  ],
+  "assignedCount": 56,
+  "reviewedCount": 56,
+  "pendingIndices": [],
+  "counts": {
+    "addRecords": 7,
+    "methodEntries": 14,
+    "unchanged": 49
+  },
+  "items": [
+    {
+      "reviewIndex": 110,
+      "labId": "ucsd-live-lab-ba4098836b71d6",
+      "labName": "UCSD Smarr lab",
+      "rawSha256": "4548317cde80d8e509d92890179d85cb3db0adc2a6cbf93d41f571256aa73a9e",
+      "packetSha256": "e4313f66ef157cc918b1a09a449764a6ab8b4dff0844884caed68f94993584d3",
+      "reviewedAt": "2026-10-16T09:10:49.478Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "生物系统时间序列分析（官方档案所述负责人研究）",
+        "整合可穿戴设备数据与每日症状报告（负责人TemPredict项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1
+          ],
+          "sourceId": "src-cdde6c6f4fcec449",
+          "quote": "Smarr’s research focuses on time series analysis in biological systems, with an emphasis on practical information extraction for translational applications. Currently his main project is TemPredict, which brings together wearable device data from 50K people with over 1 million daily symptom reports. This massive data object is being used to identify signs of COVID-19 onset, progression, and recovery.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+          "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+          "scopeZh": "官方档案明确负责人研究聚焦生物系统时间序列分析；另将TemPredict列为其主要项目并说明数据整合，两种范围分开，不声称TemPredict必定采用时间序列分析。",
+          "timeScopeZh": "简介用Currently但无项目内容日期；不认定2026年仍开展或已证疾病预测效能。"
+        }
+      ],
+      "reasonZh": "官网给时间/生物节律总体使命，官方负责人页明确其时间序列分析研究及TemPredict项目实际整合、使用可穿戴数据与症状报告。按负责人研究与具体项目分别限定，不推广到所有实验室项目。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-12e0aa5bbc55146e",
+          "sourceUrl": "https://smarr.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70",
+          "textSha256": "2c4c056c5bdc480f575e27d21e1259450846eec41aa590671bef4cf34ac245ec",
+          "textCharacters": 1626,
+          "rangesActuallyRead": [
+            [
+              0,
+              1626
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-6abc8972ebacce77",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "sourceObservedAt": "2026-10-02T22:43:17+00:00",
+          "bodySha256": null,
+          "textSha256": "8f7adeaf2676f5da3511b520043a72ceda336b5272b8a3149f0cde1577b9a2fd",
+          "textCharacters": 40,
+          "rangesActuallyRead": [
+            [
+              0,
+              40
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-cdde6c6f4fcec449",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+          "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+          "textSha256": "fc42a53306cd24305ffdd4ce676c57a2a21544014e21b323ba72ae8887c74648",
+          "textCharacters": 847,
+          "rangesActuallyRead": [
+            [
+              0,
+              847
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "UCSD Smarr lab 研究生命如何利用时间，以及生物节律与现代生活要求之间的关系。实验室希望通过认识生物时间为健康、教育和个人及社会选择提供信息。",
+        "newSummaryZh": "UCSD Smarr lab 研究生命如何利用时间，以及生物节律与现代生活要求之间的关系。实验室希望通过认识生物时间为健康、教育和个人及社会选择提供信息。官方负责人介绍列出其生物系统时间序列分析研究；TemPredict项目另说明整合可穿戴设备数据与每日症状报告。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "方法限于来源所述TemPredict项目；简介未提供项目状态的独立日期，不据采集日确认2026年仍在开展。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 111,
+      "labId": "ucsd-live-lab-a36c380ec359c5",
+      "labName": "Welcome to the UCSD N ano B io E lectronic ( NBE ) Lab",
+      "rawSha256": "050b85d82d32590ac57721d90a83bcf337e45c1d05035d74f44bcb88a3d8936e",
+      "packetSha256": "eac006d44afb0db40c568f25ef2193e684907977ae11f094b60ac4569c56f601",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "完整首页为研究领域、奖项、指标及新闻/论文/视频标题，官方profile明确research interests及书名；没有足够实体内主文说明具体采用步骤。不能把nanomachines、wearable sensors或单篇multiplexed microneedle标题机械当采用方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-e1314a372a1d92d8",
+          "sourceUrl": "https://joewang.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:44+00:00",
+          "bodySha256": "065b26ef1cdea671637682dce51cbfb0d3125f7376b3251a13963ac1b500fc85",
+          "textSha256": "ac061354cff95ef30332ec4dba32db9d8abd0474fb673375fe1ae47d5bacdd7b",
+          "textCharacters": 5726,
+          "rangesActuallyRead": [
+            [
+              0,
+              5726
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-72500e987e1bee3f",
+          "sourceUrl": "https://joewang.ucsd.edu/",
+          "sourceObservedAt": "2026-10-02T23:43:14+00:00",
+          "bodySha256": null,
+          "textSha256": "d5f88ec4ef389830ede4cb4a12bf586cf1b270163457ec3b992d6d1d13238028",
+          "textCharacters": 124,
+          "rangesActuallyRead": [
+            [
+              0,
+              124
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-5d042e97981acb95",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=278",
+          "sourceObservedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "e6b25da233cc5b45786eedccfe78991fe53827e0f862a64977c902f132389376",
+          "textSha256": "cc58ee372692f58dea3b46530eb72328a94d58c154a48e95a45a26e7ea712beb",
+          "textCharacters": 2878,
+          "rangesActuallyRead": [
+            [
+              0,
+              2878
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 112,
+      "labId": "ucsd-live-lab-c71c7e3b160200",
+      "labName": "Xi Fang Laboratory",
+      "rawSha256": "9fbd666ef061ed818ebfaed1dc72ce8f583053ec4734db76ab2848ea2b24f570",
+      "packetSha256": "ae48aea1dca1f23c7a969b974f9ed1201fb01d4f59ecc64237cbde1bc6ae0dd7",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读首页全文：Research Focus只列心脏发育与疾病分子基础；其余为成员毕业、获奖及论文题目。Detection of DELE1是学生论文标题，dietary supplementation为论文主题，不据此列整组方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-038a1b4e59f894da",
+          "sourceUrl": "https://xifanglab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:44+00:00",
+          "bodySha256": "2f95a3a430f9aa300fc6d6b2017ee77f91e75e09f2d805ea5bf6ce45db26f29e",
+          "textSha256": "d4d5a7d99e8c4f9f1f06770a4616c23332d565177f0a0fea25f5e4256d36ad13",
+          "textCharacters": 1688,
+          "rangesActuallyRead": [
+            [
+              0,
+              1688
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0296095e054ae200",
+          "sourceUrl": "https://cardiology.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "38118612cc29e81907f4d9b0d22f27f261770af02fdf424461fd03d9347cd7f9",
+          "textCharacters": 18,
+          "rangesActuallyRead": [
+            [
+              0,
+              18
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 113,
+      "labId": "ucsd-live-lab-94374f5e44bb8e",
+      "labName": "Zhaowei Liu's Research Group",
+      "rawSha256": "ec0d35f3c4a2aa26f1b41a7d56f728772f01c6aeae94e26d4285da6243d59dc2",
+      "packetSha256": "3aab1cc9f1ededd22510e8c7bd770b7690dd0e482c2a88266c8dab9e030e2b46",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "工程设计与优化",
+        "器件制备与表征"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1
+          ],
+          "sourceId": "src-67fe13c9f7da8c09",
+          "quote": "The research topics transcend the boundaries of traditional disciplines and are typically a combination of fundamental science exploration, engineering design and optimization, device fabrication and characterization, and various applications.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+          "scopeZh": "具名Zhaowei Liu Research Group的Group Mission直接说明其工作通常组合的基本研究方式；非只取后续Detailed research topics清单。",
+          "timeScopeZh": "未给此Mission更新时间，不把具体2026新闻中的单篇技术推广为当前所有项目方法。"
+        }
+      ],
+      "reasonZh": "Group Mission以are typically a combination直接描述团队研究方式，足以采工程设计/优化及器件制备/表征基本类别；不从成像主题或PI先前已开发器件名再推具体技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-67fe13c9f7da8c09",
+          "sourceUrl": "https://www.zhaowei.us/",
+          "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+          "textSha256": "cf78fe0122bc39e1e5faddb5a6983a51e24ba0c0fbfbd05fb30c95e9c7584a43",
+          "textCharacters": 2150,
+          "rangesActuallyRead": [
+            [
+              0,
+              2150
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0056ad94906d676f",
+          "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+          "sourceObservedAt": "2026-10-02T22:42:04+00:00",
+          "bodySha256": null,
+          "textSha256": "fea5460e3c3edc087f9a8765cc75cf3e17329f0812ad9c67eff406019e1ec8af",
+          "textCharacters": 52,
+          "rangesActuallyRead": [
+            [
+              0,
+              52
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-32de4fdeaf8e5afb",
+          "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+          "textSha256": "b070254363e97b48347713732d2de2036fda872b411c629eb269af0ead5c81ca",
+          "textCharacters": 1399,
+          "rangesActuallyRead": [
+            [
+              0,
+              1399
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-630823d4a2b1d679",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=276",
+          "sourceObservedAt": "2026-10-16T01:01:16+00:00",
+          "bodySha256": "72b141f40285c511f598a0c1c9495e4b83822b5b5a2f85bb52813153b5531383",
+          "textSha256": "3ccdffb59a4e80fcbfae0990d8d8b44601fe4ad8e22754e77e1e17e55b064213",
+          "textCharacters": 1908,
+          "rangesActuallyRead": [
+            [
+              0,
+              1908
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "Zhaowei Liu Research Group 研究纳米光子学、纳米结构材料与等离激元，探索光电子和生物科学应用。方向包括超分辨高速显微、计算成像与光谱、超材料、集成光学及量子传感。",
+        "newSummaryZh": "Zhaowei Liu Research Group 研究纳米光子学、纳米结构材料与等离激元，探索光电子和生物科学应用。方向包括超分辨高速显微、计算成像与光谱、超材料、集成光学及量子传感。研究组自述工作通常结合工程设计与优化、器件制备与表征。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "所列为研究组自述的基本研究方式，未细化各项目的具体工艺、表征仪器或实验参数。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 114,
+      "labId": "ucsd-live-lab-977587ed98de04",
+      "labName": "Muotri Lab",
+      "rawSha256": "de0407d886ac451dbb92ab4a13bf41ca40f4a08fc9ec6348cd34dbf707bc3e48",
+      "packetSha256": "05a3119d0ff38f2aea334d8c589a1c14afc48f38f8699f06db7bb97553abff0d",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读保存的900字符Muotri官方摘要，具名The lab uses后立即截断，未留下方法宾语；历史实验室名称不补足技术。保留具体方法待核，不猜测类器官、iPSC或其他已知常识。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-ed5f8b233e355346",
+          "sourceUrl": "https://profiles.ucsd.edu/alysson.muotri",
+          "sourceObservedAt": "2026-10-07T22:01:27+00:00",
+          "bodySha256": null,
+          "textSha256": "171e9e19b15bf773abcc323a14774595818a1c92302961989c80a246c24727e1",
+          "textCharacters": 37,
+          "rangesActuallyRead": [
+            [
+              0,
+              37
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-46160ac8198612da",
+          "sourceUrl": "https://profiles.ucsd.edu/alysson.muotri",
+          "sourceObservedAt": "2026-10-07T22:01:27+00:00",
+          "bodySha256": null,
+          "textSha256": "f6492c0076639ea085a1771f19861355d699a74031951586961d7cf833528db3",
+          "textCharacters": 900,
+          "rangesActuallyRead": [
+            [
+              0,
+              900
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 115,
+      "labId": "ucsd-live-lab-210a25a3ee6ee9",
+      "labName": "Arshad B. Desai — lab website",
+      "rawSha256": "70d12ac25c7cd63867f1692da603d7c82a72115f894a87d3e36375ee24da2a21",
+      "packetSha256": "e34e150677c8f298467c62c8dcd098221eaf63fd4e1a2375a1f91049a7f40ba4",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "保存官方研究摘要191字符完整只给复制基因组分离目标和Cell Division/Genetics and Genomics分类；没有方法实际采用叙述。旧网址名称不补技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-cfa8fa4af4a9811e",
+          "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+          "sourceObservedAt": "2026-10-03T01:42:39+00:00",
+          "bodySha256": null,
+          "textSha256": "809cadc6da349f626270ef049e133a4bfe4bca15ad0bd2a011a92dc81966527f",
+          "textCharacters": 50,
+          "rangesActuallyRead": [
+            [
+              0,
+              50
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-3ac71b0dfbb43e10",
+          "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+          "sourceObservedAt": "2026-10-07T22:02:07+00:00",
+          "bodySha256": null,
+          "textSha256": "5c03be76da03e449b3c29d1a9039fed10d3c894b3e9ffefb23bf92dd358f3251",
+          "textCharacters": 191,
+          "rangesActuallyRead": [
+            [
+              0,
+              191
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 116,
+      "labId": "ucsd-live-lab-493c2d3c113de8",
+      "labName": "Hamilton Lab",
+      "rawSha256": "2ca475d23967dd7f783691c2f077254f72a4ff92f56ca7fe0006ba5903e4a099",
+      "packetSha256": "4b7e482e9b09e9bd5c69f39c567738fb880b8c0251c8b02e138430f2a59642ae",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "完整3896字符官方profile中His laboratory只列三研究方向。Drosophila genetics、positional cloning及mouse models出现在Caltech/Whitehead早年训练；in situ proteomics和mouse models出现在资助项目标题，均未给该实验室实际采用方法的研究主文，不据标题/训练填充。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-e4773d151cf151b9",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "16607669306821365780c6e01238fa9e1f4df4fd2f33945f78f7d3a6b931bde0",
+          "textCharacters": 96,
+          "rangesActuallyRead": [
+            [
+              0,
+              96
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-43b5374c9e708af2",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "d98b3e361f6d82d526f1464dd7985d011c976c4f02efcd1d9012caf363cfe4df",
+          "textCharacters": 900,
+          "rangesActuallyRead": [
+            [
+              0,
+              900
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f36a14458458298d",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": "9ff4279cc7fc83c9302f07bbc24e292b62203511d203713182da21ef0950382e",
+          "textSha256": "cb7234df8ea2605d24950170589ffbc51a4831547672f473b4b5f01cef897b38",
+          "textCharacters": 3896,
+          "rangesActuallyRead": [
+            [
+              0,
+              3896
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 117,
+      "labId": "ucsd-live-lab-cd8819aec34b38",
+      "labName": "Hamilton Lab",
+      "rawSha256": "efc0cc132fbe2bb1dcfd3a47cf65b42f5bda441572ea486a0040b20e185e2367",
+      "packetSha256": "9a1175bfd2a2d045cb78f5c03908a4e797c655812049cba1fc231ea13c6b077b",
+      "reviewedAt": "2026-10-16T09:07:27.638Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "该稳定ID与116使用同一Hamilton官方profile和900字符历史摘要，逐textSHA相同，复用116完整阅读。实验室段只列方向；早年训练技术与grant标题不是实验室采用证据，保留独立ID不合并。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-96cc2e93adfc341c",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "937426ea94974930c971815ca4b30cc3df89c83c4e7a657191048886a102519b",
+          "textCharacters": 100,
+          "rangesActuallyRead": [
+            [
+              0,
+              100
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-43b5374c9e708af2",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "d98b3e361f6d82d526f1464dd7985d011c976c4f02efcd1d9012caf363cfe4df",
+          "textCharacters": 900,
+          "rangesActuallyRead": [
+            [
+              0,
+              900
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 116,
+          "reuseSourceId": "src-43b5374c9e708af2"
+        },
+        {
+          "sourceId": "src-f36a14458458298d",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.hamilton",
+          "sourceObservedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": "9ff4279cc7fc83c9302f07bbc24e292b62203511d203713182da21ef0950382e",
+          "textSha256": "cb7234df8ea2605d24950170589ffbc51a4831547672f473b4b5f01cef897b38",
+          "textCharacters": 3896,
+          "rangesActuallyRead": [
+            [
+              0,
+              3896
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 116,
+          "reuseSourceId": "src-f36a14458458298d"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 118,
+      "labId": "ucsd-live-lab-0fd0529e6aefbc",
+      "labName": "Signer Lab",
+      "rawSha256": "bbefaae718a3ee7d6039fb3f8d77b7d5ca34e6bf54e78af6e2ebc65577f2304f",
+      "packetSha256": "ac448b163361879f1aaec67e1d3beb87a7e2d7c1e6ea295d1d3285bc068ae83a",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Signer首页及短使命摘录全部文字；只给干细胞与健康寿命总体使命，无实际采用技术。登录/评论栏不作科研方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-26e0a94abc32a89a",
+          "sourceUrl": "https://signerlab.com/",
+          "sourceObservedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "3bf275b7c5e9863a791d3116dc3cb0032b7b62799dcfeb82374e6360f00a870f",
+          "textSha256": "58237ab41a0dbebdd91cb63155d11e695fc317f282cc2c544d98e369a1a86f8d",
+          "textCharacters": 435,
+          "rangesActuallyRead": [
+            [
+              0,
+              435
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ff3ce8310d33b469",
+          "sourceUrl": "https://profiles.ucsd.edu/robert.signer",
+          "sourceObservedAt": "2026-10-07T22:12:18+00:00",
+          "bodySha256": null,
+          "textSha256": "2357634a311355263a648f9bc7cfdea69bb3e75d57bfa930c9b0129e2e16b8f5",
+          "textCharacters": 34,
+          "rangesActuallyRead": [
+            [
+              0,
+              34
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f9e686a79b187290",
+          "sourceUrl": "https://signerlab.com/",
+          "sourceObservedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "3bf275b7c5e9863a791d3116dc3cb0032b7b62799dcfeb82374e6360f00a870f",
+          "textSha256": "695193cdc2f11e6a3f7df28e39bf286de1a6d906e71162d367db6f26483bb66c",
+          "textCharacters": 187,
+          "rangesActuallyRead": [
+            [
+              0,
+              187
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 119,
+      "labId": "ucsd-live-lab-41588a6e1edd2b",
+      "labName": "Bejar Lab Homepage",
+      "rawSha256": "ab37321560522f1d14f5bf45569acac01ba7f0c9054a2143255459ccc486f4bc",
+      "packetSha256": "1425693cd45eea5aa0f510cf962e8763e182d8c6ecb60c5353e58bf230a37fe7",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Research Goals全文：genetic causes是目标，combine clinical skills/clinical trials/transplantation是拟整合专业能力，不是已采用试验协议；图片标签DAPI-CD11b/fluorescent beads没有实验主文，不据标签推断方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-8c44f8cce93251fc",
+          "sourceUrl": "https://www.bejarlab.org/",
+          "sourceObservedAt": "2026-10-16T01:06:54+00:00",
+          "bodySha256": "5f9a117603b1cbc481e5144c79836bd6026c766156647ac7f288a9fffea9155e",
+          "textSha256": "625aaf4e1eded8d5fbd0ccd8a8f86c0c892d53a729aa1ead5fab755ea2cb01af",
+          "textCharacters": 1038,
+          "rangesActuallyRead": [
+            [
+              0,
+              1038
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-7e19f0fd42ae7685",
+          "sourceUrl": "https://profiles.ucsd.edu/rafael.bejar",
+          "sourceObservedAt": "2026-10-03T03:03:23+00:00",
+          "bodySha256": null,
+          "textSha256": "7b032b6d31589a81a8e45ec7ddc8380d67366ad0fb754b2571db35d8c507fcf2",
+          "textCharacters": 45,
+          "rangesActuallyRead": [
+            [
+              0,
+              45
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 120,
+      "labId": "ucsd-live-lab-81890c1cb6a9e3",
+      "labName": "Naviaux Lab Site",
+      "rawSha256": "fd3c872d9b57ee84f9a27e5e2a8fa2a3349c98510dde86f19159aff2194ab834",
+      "packetSha256": "99a71a740edb9b4a77bc91ba14216440e501038629b8b4c2c6f88ef8f99c1bb9",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读首页和Paths to Discovery全文：分三研究领域并列ecogenetics/metabolomics，未明示实际实验采用；疾病列表、诊疗使命和示意图说明不补方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-0f938977a5159496",
+          "sourceUrl": "https://naviauxlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:01:43+00:00",
+          "bodySha256": "dfff5e979c0d080ac47eb84ad62c5c6688376f8e08f09c96382144f6c2e7b9a2",
+          "textSha256": "b7ce6e07bdf8564469fd9084ff7e4daaa644f6aace6f9c39b38ff5929206592c",
+          "textCharacters": 1849,
+          "rangesActuallyRead": [
+            [
+              0,
+              1849
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-55ae16860bdbf7c3",
+          "sourceUrl": "https://naviauxlab.ucsd.edu/about/",
+          "sourceObservedAt": "2026-10-16T01:02:31+00:00",
+          "bodySha256": "b16872b0d7d214bd65f588bf2f13151d8f42b95794dab3632a2f2b451022c8eb",
+          "textSha256": "b404da4982495d39327ffe62f3d66179e17057b082e5e9f37fe499072cd59793",
+          "textCharacters": 1445,
+          "rangesActuallyRead": [
+            [
+              0,
+              1445
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c4a61ed973f12269",
+          "sourceUrl": "https://profiles.ucsd.edu/robert.naviaux",
+          "sourceObservedAt": "2026-10-03T03:05:43+00:00",
+          "bodySha256": null,
+          "textSha256": "b8c7272d96b8aad2d5197f9347a7d68e0455e391d5a3d87efe09ca85b06e6033",
+          "textCharacters": 47,
+          "rangesActuallyRead": [
+            [
+              0,
+              47
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 121,
+      "labId": "ucsd-live-lab-4fe603900f7f71",
+      "labName": "Megan Fitzhugh — lab website",
+      "rawSha256": "cf5250c9e8eb117ebb8bd1e9b208f3cdec96127de5bafdade523f4df3f385e5c",
+      "packetSha256": "06e0c2022245247d9e18dd2efbcde7c98b3d9e5bb7966b06417fb6cb82df0e81",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读首页全文及同源任职短摘录。明确正在招募听力/脑功能研究参与者，但没有测量、实验或分析方法叙述；不从招募年龄范围猜测听觉/影像技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-cb6a70f6dde8aa4b",
+          "sourceUrl": "https://www.hearingbrainlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:53+00:00",
+          "bodySha256": "e9c5c817e629f4b643b185d3170527d66e958d809506363d61ecae910f196d2b",
+          "textSha256": "cc79fcd3e72be87cb1fd1a115f60a824a0cbe61540b7c2c430bdd7e8a9edcac8",
+          "textCharacters": 725,
+          "rangesActuallyRead": [
+            [
+              0,
+              725
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-40df0b8bb0e6f0d1",
+          "sourceUrl": "https://profiles.ucsd.edu/megan.fitzhugh",
+          "sourceObservedAt": "2026-10-03T03:40:22+00:00",
+          "bodySha256": null,
+          "textSha256": "e0d2fdaf063e471c0d97a88e7e502b249fd0d78ec07bf49c8aa14ff8bb731ca3",
+          "textCharacters": 51,
+          "rangesActuallyRead": [
+            [
+              0,
+              51
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f0dca20f173df321",
+          "sourceUrl": "https://www.hearingbrainlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:53+00:00",
+          "bodySha256": "e9c5c817e629f4b643b185d3170527d66e958d809506363d61ecae910f196d2b",
+          "textSha256": "5cf25f48054e4384cdb1169c548c1a46b775ddcfedbe10eb9711e90312d8b810",
+          "textCharacters": 103,
+          "rangesActuallyRead": [
+            [
+              0,
+              103
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 122,
+      "labId": "ucsd-live-lab-f7358fde939259",
+      "labName": "Chen Lab",
+      "rawSha256": "cac6c2e38ae0898f951da53b8227da2c23cbe14d36ec33e16829adba68992f5d",
+      "packetSha256": "f3ddc4e41c9d66fe420243d196f32a44f9ddcd4f08beb15286461ce05b4079ff",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读短首页全文；仅提出阿尔茨海默病及相关痴呆原因与干预问题，没有技术采用叙述。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-61382e56b7f41cac",
+          "sourceUrl": "https://www.xuchenlab-ucsd.org/",
+          "sourceObservedAt": "2026-10-16T01:06:55+00:00",
+          "bodySha256": "379715c6bf694d32458f3320e8ac5ad60d37a241b1641cf43f42299b95535d89",
+          "textSha256": "c3303f4f052cdd1ea8605334301524dfcfb65d2aa2aed19831f942126c794cbc",
+          "textCharacters": 264,
+          "rangesActuallyRead": [
+            [
+              0,
+              264
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e49ab97304a242de",
+          "sourceUrl": "https://profiles.ucsd.edu/xu.chen",
+          "sourceObservedAt": "2026-10-03T03:46:11+00:00",
+          "bodySha256": null,
+          "textSha256": "d5eafcd3a8ec786c3f1c59028f71a501c291fc4c04f4c100e1f54f1f84d41316",
+          "textCharacters": 42,
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 123,
+      "labId": "ucsd-live-lab-f426b74f514b6d",
+      "labName": "Palmer Lab Website",
+      "rawSha256": "320301bc50a3eeb86fa3d469007b9daacc1aea26fd80f66153da9e4a874f62d7",
+      "packetSha256": "99d66bb4f00e1d262fdea6d62bbdc3833eeb2b2a8109a4900cf83a33e75ba2be",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读首页新闻全段、同SHA重复来源及使命短摘录；各建模/GWAS/大鼠等出现在单篇论文题目，不能据题目扩写实验室方法。使命仅给基因-行为目标。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-0fd0a962aaa5a375",
+          "sourceUrl": "https://palmerlab.org/",
+          "sourceObservedAt": "2026-10-16T01:07:02+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "df65ea11268af410a9f7d4d0189ea598c4de17f37cf9b463cb0c5bc5efd5418e",
+          "textCharacters": 3406,
+          "rangesActuallyRead": [
+            [
+              0,
+              3406
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-a6d146e136ec2ff3",
+          "sourceUrl": "https://profiles.ucsd.edu/Abraham.Palmer",
+          "sourceObservedAt": "2026-10-03T04:57:54+00:00",
+          "bodySha256": null,
+          "textSha256": "8224b9bec2e81677fc18fc7ac3083fa56c74b0dd9b57e8cf94fa8cb0f0372e06",
+          "textCharacters": 46,
+          "rangesActuallyRead": [
+            [
+              0,
+              46
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-614d734b64f23151",
+          "sourceUrl": "https://palmerlab.org/",
+          "sourceObservedAt": "2026-10-16T01:36:56+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "df65ea11268af410a9f7d4d0189ea598c4de17f37cf9b463cb0c5bc5efd5418e",
+          "textCharacters": 3406,
+          "rangesActuallyRead": [
+            [
+              0,
+              3406
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 123,
+          "reuseSourceId": "src-0fd0a962aaa5a375"
+        },
+        {
+          "sourceId": "src-4e45e5e69ba46de5",
+          "sourceUrl": "https://palmerlab.org/",
+          "sourceObservedAt": "2026-10-16T01:07:02+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "bb2967ad57ab9f9b380fda7f461bf263e9ee5a393693f8ef664a435f1e0e84b1",
+          "textCharacters": 199,
+          "rangesActuallyRead": [
+            [
+              0,
+              199
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 124,
+      "labId": "ucsd-live-lab-abd12eba39c46d",
+      "labName": "Lee Lab site",
+      "rawSha256": "9bdde1befe43333c2a59cca84752603ac358e07bf7836b56ab8d7dded5171e57",
+      "packetSha256": "e587cad219b419502dee539351f63ef95e74394ed0118af6dd1437eff75c1bcc",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Lee Laboratory首页全部文字，只有睡眠/炎症/孤独和老年严重精神疾病研究兴趣；脑3D rendering是图片标签，不证明采用影像。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-1087f8bfce7fc811",
+          "sourceUrl": "https://www.leelaboratory.com/",
+          "sourceObservedAt": "2026-10-16T01:07:01+00:00",
+          "bodySha256": "f2a13e4553b318f580b0ba26445af74cc999805373a40562396151d8589db2c3",
+          "textSha256": "a516208f00e25c5be57badb71a2fb96958812b3807f7f889337295a8ddcd3b9c",
+          "textCharacters": 442,
+          "rangesActuallyRead": [
+            [
+              0,
+              442
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-776a8d566889ba76",
+          "sourceUrl": "https://profiles.ucsd.edu/ellen.lee",
+          "sourceObservedAt": "2026-10-03T05:10:24+00:00",
+          "bodySha256": null,
+          "textSha256": "5ed35dc7183cb107e623d9191b650c3d4abe3d405d78af83aa9588a2e1ca7662",
+          "textCharacters": 45,
+          "rangesActuallyRead": [
+            [
+              0,
+              45
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 125,
+      "labId": "ucsd-live-lab-86c289fa737e94",
+      "labName": "Mental Health in Design Lab",
+      "rawSha256": "e3f44351f4bda0d73a138b9a9317c3b2a6caaca4488d1920b0949f3b81c445e3",
+      "packetSha256": "716ce5c03084a2b823effeb8fb6a1d3cf85bcbad9656be29207553b82874b5be",
+      "reviewedAt": "2026-10-16T09:08:51.257Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读MIDLAB首页全部文字，为技术设计理念、AI/应用/社媒类别及引用公众统计；未描述本团队实际实验或用户研究方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-0869aa97b8c3dbba",
+          "sourceUrl": "https://mentalhealthindesign.weebly.com/",
+          "sourceObservedAt": "2026-10-16T01:07:06+00:00",
+          "bodySha256": "6002052376282caa4606c57687ddc0cfa46b756031dd232f481433cee63a51c7",
+          "textSha256": "4c99a43429fd783b5cc655b3033f00839bd15b098130a71d812835ff32b0c86f",
+          "textCharacters": 1469,
+          "rangesActuallyRead": [
+            [
+              0,
+              1469
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-fe79233a783c7cf1",
+          "sourceUrl": "https://profiles.ucsd.edu/elizabeth.eikey",
+          "sourceObservedAt": "2026-10-03T05:47:23+00:00",
+          "bodySha256": null,
+          "textSha256": "d407290a332f9d83c505b73f6e3a90b4a694549d88701cf6d35fec16493815bc",
+          "textCharacters": 62,
+          "rangesActuallyRead": [
+            [
+              0,
+              62
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 126,
+      "labId": "ucsd-chemistry-biochemistry-lab-ap-lab-applied-photochemistry-pun-lab",
+      "labName": "AP Lab (Applied Photochemistry, Pun Lab)",
+      "rawSha256": "4b41592044d1c87b71818cb05c2dcf13908170d3293efd7f3b25af9fca7a1a3c",
+      "packetSha256": "7b148ee3e5ae0baa724b5c7cf98b07f8e714176ff18999d5060dc233f23f8078",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读AP首页、Pun官方简介和化学faculty目录全文：exciton应用为研究目标，官方页只有research area/coming soon；未说明实际光化学或光谱技术。目录其他实验室研究不归给AP。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-6a20bd8154ffff4f",
+          "sourceUrl": "https://aplab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:13+00:00",
+          "bodySha256": "c39f73379940126945c692176b7fc13bb02ffd31afc02e9878bc0c83d792d0ff",
+          "textSha256": "18dadd69419160a1e5653a4fcb3e8f172f00227b0a7398d49cf5ffd161fdf0c0",
+          "textCharacters": 373,
+          "rangesActuallyRead": [
+            [
+              0,
+              373
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-46b70cb75f810ebb",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "f6785ee0a075f8518cf8fc517a57350567e422e098beb2431ae74bfe412e461a",
+          "textCharacters": 32,
+          "rangesActuallyRead": [
+            [
+              0,
+              32
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "textCharacters": 8082,
+          "rangesActuallyRead": [
+            [
+              0,
+              8082
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-3b13b10b86e5c006",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/andrew-pun",
+          "sourceObservedAt": "2026-10-16T01:01:48+00:00",
+          "bodySha256": "81abd01512ce2beec5b9ad30abd6b4fa3521b971bf27c0e201f3f4a343c53bd3",
+          "textSha256": "7c76fa7b817327a95f95cf70e4d98de1d118461d8fb6dcd0f8f175c9b0bbe688",
+          "textCharacters": 337,
+          "rangesActuallyRead": [
+            [
+              0,
+              337
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 127,
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-polymer-lab",
+      "labName": "Romero Polymer Lab",
+      "rawSha256": "9b9e00f8817e69d6dbd71cbc52ef38ce55acf9b150ed79a7cb54ee43eeb6e57d",
+      "packetSha256": "c2a2312a67d44409772486dc350f67b18c5ae6cca1802cf5f3445da47b6596da",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读研究组首页（两source同正文）、PI简介、历史负责人字段及目录；只提出开发新合成工具和聚合物材料，未说明具体采用的合成反应或分析方法。出版文献页码和兴趣类别不补技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-92b1d5aa41720760",
+          "sourceUrl": "https://romeropolymerlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:14+00:00",
+          "bodySha256": "a9abe7c3308ff3394d1aaa77c91bb9038875343d675e308df433c93bfbdbe9f6",
+          "textSha256": "3b89d2c0cee9d34dab30b389b79ad0f405d169be7ddeca15d492fc08af2e2167",
+          "textCharacters": 589,
+          "rangesActuallyRead": [
+            [
+              0,
+              589
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-9b415d1606bec9a5",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "fde42af66abe4e9cb9e99c4988586b1329e3ac787d6ae92fcfe7ce1ad475b69b",
+          "textCharacters": 43,
+          "rangesActuallyRead": [
+            [
+              0,
+              43
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-25163f1e17ba8bf5",
+          "sourceUrl": "http://romeropolymerlab.ucsd.edu",
+          "sourceObservedAt": "2026-10-07T22:56:19+00:00",
+          "bodySha256": null,
+          "textSha256": "6c79249b1c5cbe7d8b9b4fa102da1923292c264118b9c356481633a82475c58a",
+          "textCharacters": 142,
+          "rangesActuallyRead": [
+            [
+              0,
+              142
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "textCharacters": 8082,
+          "rangesActuallyRead": [
+            [
+              0,
+              8082
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 126,
+          "reuseSourceId": "src-ad1952dbe19fb7d8"
+        },
+        {
+          "sourceId": "src-e84290007d5ea217",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/nathan-romero",
+          "sourceObservedAt": "2026-10-16T01:01:50+00:00",
+          "bodySha256": "08b347bc2b27fd16418df0055d090f9584a4cb245d2d26648f31703360ac6710",
+          "textSha256": "cbbb8dad4e7116d0169c9dd9d9a2db68d67437b7179b920bfe45b71fab453c54",
+          "textCharacters": 611,
+          "rangesActuallyRead": [
+            [
+              0,
+              611
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-859c890e93537989",
+          "sourceUrl": "http://romeropolymerlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T04:22:53+00:00",
+          "bodySha256": "a9abe7c3308ff3394d1aaa77c91bb9038875343d675e308df433c93bfbdbe9f6",
+          "textSha256": "3b89d2c0cee9d34dab30b389b79ad0f405d169be7ddeca15d492fc08af2e2167",
+          "textCharacters": 589,
+          "rangesActuallyRead": [
+            [
+              0,
+              589
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 127,
+          "reuseSourceId": "src-92b1d5aa41720760"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 128,
+      "labId": "ucsd-chemistry-biochemistry-lab-tor-lab",
+      "labName": "Tor Lab",
+      "rawSha256": "2d0312f6875bb403fdbb6a42f745e407876f1dfec75f869f36fb8593855ecb49",
+      "packetSha256": "d206c15af81e336cac49c2202ac6be1607b7c77c9e75ba5a69f2fbc8371e040d",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Tor首页全部主文（重复scheme来源同文本）、PI简介及目录。荧光核苷酸是待开发、to be used as a probe的目标，未明确实际采用；新闻标题中的synthesis/real-time monitoring不扩写为组方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-61dc67c7eacda35e",
+          "sourceUrl": "https://torgroup.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+          "textSha256": "72fa390b60ce3eef5d58db76ce2f635a9b3a994f41a01442e688f559a0a70cf5",
+          "textCharacters": 2260,
+          "rangesActuallyRead": [
+            [
+              0,
+              2260
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-badc000ecf949b63",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "a6ac538d1a46b60ffa0b28876bcdf5e0556b9de6a67933d71a41bb6d2cf53405",
+          "textCharacters": 35,
+          "rangesActuallyRead": [
+            [
+              0,
+              35
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "textCharacters": 8082,
+          "rangesActuallyRead": [
+            [
+              0,
+              8082
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 126,
+          "reuseSourceId": "src-ad1952dbe19fb7d8"
+        },
+        {
+          "sourceId": "src-955a1f00a2957102",
+          "sourceUrl": "https://chemistry.ucsd.edu/faculty/profiles/yitzhak-tor",
+          "sourceObservedAt": "2026-10-16T01:01:57+00:00",
+          "bodySha256": "09128b41ffac50dd1867bee1f5c4800dd1e5862f5860a331faa985fdbbe230f8",
+          "textSha256": "4a5d90fe02db2840ec7b125c598dd3db22736d767d7e8d940f34f19007eccac8",
+          "textCharacters": 1126,
+          "rangesActuallyRead": [
+            [
+              0,
+              1126
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-4ff55423c2b5fa89",
+          "sourceUrl": "http://torgroup.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T04:23:31+00:00",
+          "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+          "textSha256": "72fa390b60ce3eef5d58db76ce2f635a9b3a994f41a01442e688f559a0a70cf5",
+          "textCharacters": 2260,
+          "rangesActuallyRead": [
+            [
+              0,
+              2260
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 128,
+          "reuseSourceId": "src-61dc67c7eacda35e"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 129,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-budin-lab-laboratory-of-lipid-biology-and-cell-membrane-biophysics",
+      "labName": "Budin Lab (Laboratory of Lipid Biology and Cell Membrane Biophysics)",
+      "rawSha256": "96efe45562b73d99e5af174dcc7a476a98fdb68596d990356650b6489c5f8254",
+      "packetSha256": "21cd5c93e2fbddc1e4268d280a9f485cc45392de0872dfe5155b819f81c8e8b6",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读根页、People页全文和生化faculty目录：interdisciplinary approaches与new tools未具名具体技术；研究材料及开发工具目标不是明示方法。人员学历、邻实体imaging研究领域不作本组方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-c6deef290f2cbc9e",
+          "sourceUrl": "https://budinlab.com/",
+          "sourceObservedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "34b61b78a87fc17da714b4b1fb6663c069a9643aee85e9205693213d170de508",
+          "textSha256": "5518f825c34b15cbfa3ac68d54ba20def8d3b77d31d189e8a74adb586fb27b9d",
+          "textCharacters": 587,
+          "rangesActuallyRead": [
+            [
+              0,
+              587
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-73525050316bbd68",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-07T22:53:34+00:00",
+          "bodySha256": null,
+          "textSha256": "d1b687c47a9c484c16a3494b2921eff7c9b9eba16b06e81a00b2fa72c96e4b6f",
+          "textCharacters": 34,
+          "rangesActuallyRead": [
+            [
+              0,
+              34
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+          "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563",
+          "textCharacters": 5256,
+          "rangesActuallyRead": [
+            [
+              0,
+              5256
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-22387c5b36ed6272",
+          "sourceUrl": "https://budinlab.com/people/",
+          "sourceObservedAt": "2026-10-16T01:35:45+00:00",
+          "bodySha256": "3e4f1c7bafcb7eade621cd2a131d1ff390cbee5b1cf6fae5d7883d80776e0749",
+          "textSha256": "bcc0ba499cd41390988f47f344cdb89d081bceecebb366196bb12053dd0d26ac",
+          "textCharacters": 1923,
+          "rangesActuallyRead": [
+            [
+              0,
+              1923
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 130,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-debelouchina-lab",
+      "labName": "Debelouchina Lab",
+      "rawSha256": "5aebc142ae44c9bfa17a4c14cb2620afe349374a4d82c623a0e7dbabe343136a",
+      "packetSha256": "96057a1b8e83b4edaeb418b81d0798d59127ab9ec3b2741320637af5abd6df98",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Debelouchina短首页及目录；只有gene regulation/aging分子机制标语、Research导航和faculty research area，没有实际采用方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-bc8c1c4c00e2f284",
+          "sourceUrl": "https://galialab.weebly.com/",
+          "sourceObservedAt": "2026-10-16T01:07:17+00:00",
+          "bodySha256": "bfd4c06d3387108cb4bfffdc8ac082ad419cff200f3cc863a7de157e8000886b",
+          "textSha256": "02d8c1541d017e5e0705c3d9b926e0a4684890906f4da7af079ab48cf4cacb47",
+          "textCharacters": 306,
+          "rangesActuallyRead": [
+            [
+              0,
+              306
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-8af835d1385ed0e3",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-07T22:53:34+00:00",
+          "bodySha256": null,
+          "textSha256": "19c7d06419768d41d5664307a2be1b5aad5a83826dafcfc7c3c8c7cac20ecd7f",
+          "textCharacters": 39,
+          "rangesActuallyRead": [
+            [
+              0,
+              39
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "sourceUrl": "https://bmb.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+          "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563",
+          "textCharacters": 5256,
+          "rangesActuallyRead": [
+            [
+              0,
+              5256
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 129,
+          "reuseSourceId": "src-adb12bae50dedef6"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 131,
+      "labId": "ucsd-medicine-lab-alan-saltiel-lab",
+      "labName": "Alan Saltiel Lab",
+      "rawSha256": "06837078d2d67ccea0cc79d4cb4aeba560be3cd6c5c05dfa40f89c2120db764e",
+      "packetSha256": "9fcd8797d54ebfeed146fc2b6a1cf65d6583b130028c236aed0d017ef6dbb9e1",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Saltiel首页和保存目录段：描述激素/营养响应与胰岛素机制，生物试剂in-kind资助并未列明实验技术，不从试剂或代谢主题猜测方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-15b11d38d4bb4322",
+          "sourceUrl": "https://sites.ucsd.edu/saltiellab/",
+          "sourceObservedAt": "2026-10-16T01:07:22+00:00",
+          "bodySha256": "0e562c6459cfe973d33422bbd1bad0bf499db63aa98efe46c0eddd00b3720005",
+          "textSha256": "af4ef62b91b263dbea5b1bf2bd4181ecb26c3dd4afdff5bf71476b8efa1178a5",
+          "textCharacters": 968,
+          "rangesActuallyRead": [
+            [
+              0,
+              968
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e2034847e7735a2c",
+          "sourceUrl": "https://endocrinologymetabolism.ucsd.edu/research/index.html",
+          "sourceObservedAt": "2026-10-07T22:53:29+00:00",
+          "bodySha256": null,
+          "textSha256": "fb930dd3be18068175f762b585c7ced955e99094f80758c3ec7b9d2e903d559d",
+          "textCharacters": 305,
+          "rangesActuallyRead": [
+            [
+              0,
+              305
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 132,
+      "labId": "ucsd-medicine-lab-jung-lab",
+      "labName": "Jung Lab",
+      "rawSha256": "fae0834bba15a9570e9390edfaccc49414721a2e923a04df7d560532e9c52cae",
+      "packetSha256": "d917e78b9da3670bad0f0a69ed0b11ca7298ee64b96089efbaabdb67ee3722c2",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Jung根页、成员和两contact来源全文及历史条目；明确activin A项目目标与发现，但没有实际采用方法叙述。manipulate signaling为新治疗目标，不能当现成操作技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-3196e8d92daa9e3d",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/jung/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "6aff065569224f9a2de5c6484be62d6a3832ad9253f0119a35d9100dee90a2b4",
+          "textSha256": "88fa1ee55820b23c1201413f8ac29e00c12dac480ee82af3919628cb683aa2d4",
+          "textCharacters": 1138,
+          "rangesActuallyRead": [
+            [
+              0,
+              1138
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e52af173e0b64643",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/jung/team.html",
+          "sourceObservedAt": "2026-10-16T02:41:41+00:00",
+          "bodySha256": "bf44deaa03323d1cbfccacdb94fc7a865381b518b37f4b7e8b07fd4b7d032dc1",
+          "textSha256": "269aecec5c48b9de0208ce4083aee4e41dca4680dfeec6de4c94b254f04cbfe6",
+          "textCharacters": 201,
+          "rangesActuallyRead": [
+            [
+              0,
+              201
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-336aa7f4ed19af67",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/jung/contact.html",
+          "sourceObservedAt": "2026-10-16T01:35:56+00:00",
+          "bodySha256": "49a16d91eccd70efc3ff7a1d3cbf9cd4769d227aeee4c86c60629a7041931419",
+          "textSha256": "61f984eb5f392f62f5df522497183e45368abe91cebbaffa30ddafd272e341cf",
+          "textCharacters": 413,
+          "rangesActuallyRead": [
+            [
+              0,
+              413
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-26bb048842488858",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-07T22:53:33+00:00",
+          "bodySha256": null,
+          "textSha256": "5766acd4ec99e43cb9e6964faa7614857626373ccec25e11ba76bd0f0a89e2bf",
+          "textCharacters": 326,
+          "rangesActuallyRead": [
+            [
+              0,
+              326
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-eaec3c75133177ac",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/jung/contact.html",
+          "sourceObservedAt": "2026-10-16T01:35:56+00:00",
+          "bodySha256": "49a16d91eccd70efc3ff7a1d3cbf9cd4769d227aeee4c86c60629a7041931419",
+          "textSha256": "a8a115f45bbab3cad51a4ae2503afcd1439480433f3f102efcb330f0b5ca6407",
+          "textCharacters": 775,
+          "rangesActuallyRead": [
+            [
+              0,
+              775
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 133,
+      "labId": "ucsd-medicine-lab-crotty-alexander-lab",
+      "labName": "Crotty Alexander Lab",
+      "rawSha256": "b753b0c7fd48bff41de1d2fc0aa162d40fdbdd33118cdaa8fb52f3532893cac8",
+      "packetSha256": "a13c681072fcf8d2b9eaa9970ed9593631caf4ac1b02f543f237f77c28d3fe86",
+      "reviewedAt": "2026-10-16T09:09:23.486Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Crotty Alexander首页全文及官方目录；研究主题、成员列表、单篇Science/MedEd文献和招募均未提供独立采用方法主文。论文题目中的metabolomic signatures、case series等不直接移为实验室方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-cae0968a102773d3",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/crotty-alexander/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:18+00:00",
+          "bodySha256": "5f6365e94eb416b28cf878016009c1c0eec255e89029840c3c558e0603c85932",
+          "textSha256": "f82fd0b6b8b59a64a140490aea3bbcfb5a89ff67927a41aa0d731c9ee86974bc",
+          "textCharacters": 5071,
+          "rangesActuallyRead": [
+            [
+              0,
+              5071
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-8d1ab9bc0b14cbae",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "sourceObservedAt": "2026-10-07T22:53:40+00:00",
+          "bodySha256": null,
+          "textSha256": "a9124e54cc57df414d9b20715343e704cf07a6478f3e2eabca9b3b8e818ec0a1",
+          "textCharacters": 355,
+          "rangesActuallyRead": [
+            [
+              0,
+              355
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d0111215a9951a91",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/crotty-alexander/index.html",
+          "sourceObservedAt": "2026-10-07T22:58:17+00:00",
+          "bodySha256": null,
+          "textSha256": "fe00682964aec050dc0081e997f20d432825bac3bdec9417a048c695d176ebf8",
+          "textCharacters": 70,
+          "rangesActuallyRead": [
+            [
+              0,
+              70
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2f2778580fed22ce",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:08+00:00",
+          "bodySha256": "6c120c287187710444379eeb619579f17f966bb8823b116bdea9e5ce59e05dc1",
+          "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a",
+          "textCharacters": 1734,
+          "rangesActuallyRead": [
+            [
+              0,
+              1734
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 134,
+      "labId": "ucsd-medicine-lab-owens-lab",
+      "labName": "Owens Lab",
+      "rawSha256": "ee4e60c11a396e33a663893469e7dcdce9c745cc3a5933045a5bbf5fe3025791",
+      "packetSha256": "9a99412b4d7d57a5fefdd44559d3eb19f477658a1af865c68dcaf35e146d7d78",
+      "reviewedAt": "2026-10-16T09:10:49.479Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "生理传感（成员Dae Kang睡眠健康项目）",
+        "信号处理（成员Dae Kang睡眠健康项目）",
+        "机器学习（成员Dae Kang睡眠健康项目）",
+        "医院睡眠环境测量（成员Stuti Jaiswal项目）",
+        "临床试验（成员Stuti Jaiswal住院睡眠项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1,
+            2
+          ],
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "quote": "Dae Kang, Ph.D. I am a NHLBI T32 Postdoctoral Research Fellow in the Department of Medicine, Division of Pulmonary, Critical Care, and Sleep Medicine at UC San Diego, under the advisory and mentorship of Dr. Robert Owens. My research involves the development and implementation of novel physiological sensing, signals processing, and machine learning tools for the estimation and prediction of sleep-based health outcomes.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "scopeZh": "Owens官网People页明确Dae Kang在Dr. Robert Owens指导下任职，其项目development and implementation方法；限定该成员睡眠健康项目，不取其Coleman早年训练。",
+          "timeScopeZh": "页面称current work但无内容日期；不以采集日断定2026仍在开展。"
+        },
+        {
+          "methodIndices": [
+            3,
+            4
+          ],
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "quote": "I have carefully measured the hospital environment for sleep, and have conducted multiple clinical trials to try and improve sleep using drugs like melatonin.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "scopeZh": "实验室People页Stuti Jaiswal段的医院睡眠研究，明示have measured/have conducted；不取同段PhD期间的电生理/免疫组化/Western训练。",
+          "timeScopeZh": "已开展的成员研究，试验年份未明；不声明2026在招募或临床疗效成立。"
+        }
+      ],
+      "reasonZh": "People页两位具名成员明确实际实施技术或已开展临床试验，Dae Kang还明确Robert Owens指导关系。按成员项目限定5项；不从Orr未来model-based开发目标或Stuti早年PhD训练补其他方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-8ab945f4c3a0e0bd",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:19+00:00",
+          "bodySha256": "295842b717a40364f32fc9b9a0ecd45142a12035616f1c5c714867dba6e953bb",
+          "textSha256": "a0b14209598feddd26ccf4037b559e55a66bbebecec685a4811035d588be26fb",
+          "textCharacters": 1069,
+          "rangesActuallyRead": [
+            [
+              0,
+              1069
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "textSha256": "3384f182b051d566ea6019de03b1a924d5e11cc9378d2d66290899b366900d83",
+          "textCharacters": 6122,
+          "rangesActuallyRead": [
+            [
+              0,
+              6122
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-71e6cfac839785aa",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "sourceObservedAt": "2026-10-07T22:53:40+00:00",
+          "bodySha256": null,
+          "textSha256": "1ec538d2841ea32983d2083c3dc486022f9df9c188302762a62bc75294e7c69b",
+          "textCharacters": 322,
+          "rangesActuallyRead": [
+            [
+              0,
+              322
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2f2778580fed22ce",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:08+00:00",
+          "bodySha256": "6c120c287187710444379eeb619579f17f966bb8823b116bdea9e5ce59e05dc1",
+          "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a",
+          "textCharacters": 1734,
+          "rangesActuallyRead": [
+            [
+              0,
+              1734
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 133,
+          "reuseSourceId": "src-2f2778580fed22ce"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "Owens Lab 研究院内外睡眠及其健康影响。方向包括阻塞性睡眠呼吸暂停的发生与后果、睡眠监测技术，以及患者和家属的住院睡眠中断与 ICU 谵妄。",
+        "newSummaryZh": "Owens Lab 研究院内外睡眠及其健康影响。方向包括阻塞性睡眠呼吸暂停的发生与后果、睡眠监测技术，以及患者和家属的住院睡眠中断与 ICU 谵妄。成员项目中，Dae Kang开发并实施生理传感、信号处理和机器学习；Stuti Jaiswal描述了医院睡眠环境测量及临床试验。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "方法各限Dae Kang或Stuti Jaiswal在实验室People页介绍的项目；未给项目实施年份、具体试验设计或疗效证据。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 135,
+      "labId": "ucsd-medicine-lab-guma-lab",
+      "labName": "Guma Lab",
+      "rawSha256": "31f06de039c4d0a193bcb14692743c8fc237adc8100fe9d4490ed1b71ec7bd01",
+      "packetSha256": "10bf1c50a6ca49b7c97aeb9ed4dec971fe0fd53d27fae289ee09d2b887adf5cc",
+      "reviewedAt": "2026-10-16T09:10:49.479Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "临床与转化研究（循环代谢标志物项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-f008a8591c981529",
+          "quote": "We also conduct clinical and translational research to identify noninvasive circulating metabolic biomarkers and to determine how they change after therapeutic interventions.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+          "scopeZh": "Guma lab About the Lab中的We直接描述正在conduct的基本研究类别，限循环标志物项目。",
+          "timeScopeZh": "无项目独立日期，不声称2026当前入组或治疗有效。"
+        }
+      ],
+      "reasonZh": "根页明确conduct clinical and translational research，支持最低层次研究类别；没有具体代谢组测量平台或试验设计。ITIS被设计为饮食方案，不能由设计目标推断已采用随机试验。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f008a8591c981529",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+          "textSha256": "6b08c59c22d475fab741f7017640c58c7a437b8fb24870a42cb594c685d1cd70",
+          "textCharacters": 2263,
+          "rangesActuallyRead": [
+            [
+              0,
+              2263
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-9fc6e6e45cbd4d26",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+          "bodySha256": "c8d9c48fd9b6796d06010dbdaf7f7f25e29f227564c3bdd84b79fbddf82a28fd",
+          "textSha256": "f9c77a10193e498265c69f928a5384e17791aebb7b84acec5b91657ab4ae0b92",
+          "textCharacters": 1774,
+          "rangesActuallyRead": [
+            [
+              0,
+              1774
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d6ad53eb5c6a48e8",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:04+00:00",
+          "bodySha256": "aadebef729cf29399452ba03801a594b76f7ea6180704af50407361e763576cf",
+          "textSha256": "9f0a608ffffd5d491ff05ed6263c7e035bee99631182f22d3980f9aeb5f5dcd9",
+          "textCharacters": 523,
+          "rangesActuallyRead": [
+            [
+              0,
+              523
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-6af44ef463f9ce39",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:07+00:00",
+          "bodySha256": "b146bca7fbf110e007dff94c4ece6e2b69736447446e33339821cc75bdb73c80",
+          "textSha256": "c38791919f3950c19e55f2ba7e819dc7facd59489255a663e15124c954ef1c1b",
+          "textCharacters": 392,
+          "rangesActuallyRead": [
+            [
+              0,
+              392
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-1b23499c0e060d14",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "54efd52949fe91bc8d9c7eda60743d668f1236080174b42ca801dd6ee964f36e",
+          "textCharacters": 326,
+          "rangesActuallyRead": [
+            [
+              0,
+              326
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0dea6c59e60f3e7e",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:04+00:00",
+          "bodySha256": "aadebef729cf29399452ba03801a594b76f7ea6180704af50407361e763576cf",
+          "textSha256": "aea3a89b4e24b13eab649e4ee6069e351b70f2b138454e8ccbc7d59aed35df6d",
+          "textCharacters": 1010,
+          "rangesActuallyRead": [
+            [
+              0,
+              1010
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ccaae0e62ab1d01e",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:07+00:00",
+          "bodySha256": "b146bca7fbf110e007dff94c4ece6e2b69736447446e33339821cc75bdb73c80",
+          "textSha256": "ed65c68bc1f5cc92ce21fd0ba155bdb2c6a2ba7a13904942face896e49e575db",
+          "textCharacters": 879,
+          "rangesActuallyRead": [
+            [
+              0,
+              879
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "Guma lab 研究关节炎关键细胞的代谢变化，尤其是成纤维样滑膜细胞和巨噬细胞。研究还识别循环代谢标志物、评估治疗后的变化，并探索抗炎饮食与微生物组和代谢物的关系。",
+        "newSummaryZh": "Guma lab 研究关节炎关键细胞的代谢变化，尤其是成纤维样滑膜细胞和巨噬细胞。研究还识别循环代谢标志物、评估治疗后的变化，并探索抗炎饮食与微生物组和代谢物的关系。其中循环代谢标志物项目明确开展临床与转化研究。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "来源仅明示临床与转化研究的基本类别，未列具体测定平台、试验设计；ITIS饮食的设计不证明已实施某种试验。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 136,
+      "labId": "ucsd-medicine-lab-kavanaugh-lab",
+      "labName": "Kavanaugh Lab",
+      "rawSha256": "ecf80d7c883f41150c2566d569ba8686de8460746a8f835e66bc1d33c2b4874c",
+      "packetSha256": "0eed518fc2ff51e02503369b3088d6be32fc8578acccde59b7dd70d7bda25eec",
+      "reviewedAt": "2026-10-16T09:10:49.479Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "临床研究（风湿免疫疾病项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-7860c9151c7e8a82",
+          "quote": "The Kavanaugh lab conducts clinical research in the following: Lupus (SLE) Rheumatoid Arthritis (RA) Ankylosing Spondylitis (AS) Scleroderma (PSS) Gout Psoriatic arthritis",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "scopeZh": "具名Kavanaugh lab About直接conducts clinical research，只有基本类别，不加随机/对照/干预设计。",
+          "timeScopeZh": "无研究实施日期或现任项目状态证据。"
+        }
+      ],
+      "reasonZh": "可补明示正在开展的基本类别临床研究；contact/reagent request、获奖及Research Highlights概述均不能细化成特定试验方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-dc0912fe4f6ea509",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "e9eb4fb4a887635e2f4c6392031b4cbd376fdc19636ba1fb547083332174af9b",
+          "textSha256": "a16fee3f35f79bd6b404acaf0834fb0ee0a0ce5dbf672592de3f9d4f342a0a86",
+          "textCharacters": 1117,
+          "rangesActuallyRead": [
+            [
+              0,
+              1117
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-7860c9151c7e8a82",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "textSha256": "78c768892b84ed59717b2ba832ab7dad201b34f37f92cfb530534d1765c743bf",
+          "textCharacters": 185,
+          "rangesActuallyRead": [
+            [
+              0,
+              185
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-481f2c6a7c53750a",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:13+00:00",
+          "bodySha256": "8d3a180b9de76916e074506accbe24299c056b36b136595ad1a46b7228e43a46",
+          "textSha256": "169f8b32660ee0aed30bafc6023a475e5346fec350c0996f76d505facf542502",
+          "textCharacters": 494,
+          "rangesActuallyRead": [
+            [
+              0,
+              494
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-9c4c1a802186d68a",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:16+00:00",
+          "bodySha256": "a2a02845ba08676c24139e0f1b76890bf2a1a3d553b423cc3f94439ef9c03ead",
+          "textSha256": "d7e98ced378ea50ca6c57640dc7208429890b1b5b5e020aa2f8fa8df065b2fcf",
+          "textCharacters": 670,
+          "rangesActuallyRead": [
+            [
+              0,
+              670
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-03b389d3c3285175",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "63ea10a9e26f53ff8fe0ec5f9573512641e5baa1cd4151327a8e4e904ad317aa",
+          "textCharacters": 341,
+          "rangesActuallyRead": [
+            [
+              0,
+              341
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2e1af47a6ba44401",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "textSha256": "6c17a5c73464f58d55583501a3b0285834e1a1548f9ebfeb739b5fe2fe9c63ba",
+          "textCharacters": 672,
+          "rangesActuallyRead": [
+            [
+              0,
+              672
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-8eabc242d9ae0ce2",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:13+00:00",
+          "bodySha256": "8d3a180b9de76916e074506accbe24299c056b36b136595ad1a46b7228e43a46",
+          "textSha256": "59a2f3849252a92a27b6113f8b079d3e74a023504e69368fd321f6ac942ccc96",
+          "textCharacters": 981,
+          "rangesActuallyRead": [
+            [
+              0,
+              981
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "Kavanaugh lab 开展风湿免疫疾病的临床研究，涉及系统性红斑狼疮、类风湿关节炎、强直性脊柱炎、硬皮病、痛风和银屑病关节炎。页面未细化各项研究的方法。",
+        "newSummaryZh": "Kavanaugh lab 开展风湿免疫疾病的临床研究，涉及系统性红斑狼疮、类风湿关节炎、强直性脊柱炎、硬皮病、痛风和银屑病关节炎。页面明确开展临床研究，但未细化各项研究设计或技术。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "仅明确临床研究基本类别，未给随机化、对照、采样或统计方法的实际采用证据。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 137,
+      "labId": "ucsd-medicine-lab-raz-lab",
+      "labName": "Raz Lab",
+      "rawSha256": "254bcdb59b8b6dd0264d325dc79284ceee24575d722359cf70bcf5f978da3401",
+      "packetSha256": "569ebbe17de795bab85a73e8cd629657661ce02b2ee1a4fa9871173b9ef2a210",
+      "reviewedAt": "2026-10-16T09:10:49.479Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读根页、About、People、contact及带导航对应页全文；TLR/non-TLR stimulation为宿主反应研究对象，未说明实施实验/检测方式。Dynavax临床试验属于关联公司而非本实验室采用，不转移。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-5cf29339278831c2",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "0eb641a12712885400bbd77de02ea51a4fe7730eeb99413797142526d086ef67",
+          "textSha256": "84450587523876ede7f647307efd2b27a546727635e5738247bdeb59b5a873f5",
+          "textCharacters": 1411,
+          "rangesActuallyRead": [
+            [
+              0,
+              1411
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0b8773a79365277e",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:29+00:00",
+          "bodySha256": "9e2f9c3431ca55a05ccf547dab7af3fb45ee0b05195bd5a77963bb525d66967e",
+          "textSha256": "93e9fb062634d19644a81ed69fbbc4313bca17a84b85a739adda9b0815cfdf1e",
+          "textCharacters": 733,
+          "rangesActuallyRead": [
+            [
+              0,
+              733
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2d98b9a003bcbf79",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:20+00:00",
+          "bodySha256": "656bdfada9af0ab94633ffd203d2157cf0bb9490575ef204fcbd1443ad3643d2",
+          "textSha256": "4cea6a1c09827aebf979ed5df1b47141432d8191996b9c5db20c92f0af3b7151",
+          "textCharacters": 699,
+          "rangesActuallyRead": [
+            [
+              0,
+              699
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e15c8946fb01958e",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:23+00:00",
+          "bodySha256": "6a5f6f2da015cf978993170fe8362d2dd52212055812fca786730afab012ed24",
+          "textSha256": "b350d0099829061162868e92ed515031186edccb26b187c6a6c0b4b3b40c0ecf",
+          "textCharacters": 43,
+          "rangesActuallyRead": [
+            [
+              0,
+              43
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-9b704fc25ee5bf85",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "9617ff6378f0922cf4fbbe73f436a0ae81b5b958c73730bbab176639b036d449",
+          "textCharacters": 322,
+          "rangesActuallyRead": [
+            [
+              0,
+              322
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-05fa1fe5b93c4bb7",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:23+00:00",
+          "bodySha256": "6a5f6f2da015cf978993170fe8362d2dd52212055812fca786730afab012ed24",
+          "textSha256": "1dca8e663fc84dc2c2108a94eb1ee3b3f3efc2322e9010c4ae119fd2fcfb6f62",
+          "textCharacters": 530,
+          "rangesActuallyRead": [
+            [
+              0,
+              530
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 138,
+      "labId": "ucsd-medicine-lab-broide-lab",
+      "labName": "Broide Lab",
+      "rawSha256": "25f6321c5f56eec1f8b0c5b3128cdbca5635bdc3e806c87e052210a8d7faa680",
+      "packetSha256": "fcccf92378e965e5596c2eb8a833f7088544939e82b8e141d9e401c980ef1737",
+      "reviewedAt": "2026-10-16T09:10:49.479Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读根页、About、People/contact全部来源，都是气道炎症、嗜酸细胞及先天免疫机制研究目标和简介；没有实际操作/测量方法。不能由ORMDL3研究或相关学科训练名推断技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-ae20467ab6983edc",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:16+00:00",
+          "bodySha256": "b9022e4f387c35aa10aa4716adb82c65ca008de301cffdff234f3dbb78568956",
+          "textSha256": "b2ec3d5beaed30d906b6634eb7e06e654d8cd73d36218cded7b1246539f3ee99",
+          "textCharacters": 1159,
+          "rangesActuallyRead": [
+            [
+              0,
+              1159
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-4c6c03496f982a1a",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:52+00:00",
+          "bodySha256": "a40a930d202cd793dfdb6f542bc2848bc1901d41699969831a1a3857feab4df1",
+          "textSha256": "27b22002e0a4f128da4b62dfe870f65a6e1d12110218f924033211fc3be0aed5",
+          "textCharacters": 281,
+          "rangesActuallyRead": [
+            [
+              0,
+              281
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e2f69934e2b9ca26",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:55+00:00",
+          "bodySha256": "40a6fd8b09e621843af21e15f54f2e5c1a106d5f1baeb9c2860390874aaa6c1f",
+          "textSha256": "d08435ab929c3d03a65f443d3a841cad0e60a67f11bed92586771201c4bc5143",
+          "textCharacters": 239,
+          "rangesActuallyRead": [
+            [
+              0,
+              239
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-62b08118cc297592",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:57+00:00",
+          "bodySha256": "0cb4d9f5fa8fc4dd2f4b64dddcb82a7b259244f445004d96f132ae05730db9f3",
+          "textSha256": "7edc5b0a0d16528b08d6c62381bd7c4db5193e5e8553dd6998250d25471a9aac",
+          "textCharacters": 137,
+          "rangesActuallyRead": [
+            [
+              0,
+              137
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-cbd9d505de7fc5a4",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/index.html",
+          "sourceObservedAt": "2026-10-07T22:55:15+00:00",
+          "bodySha256": null,
+          "textSha256": "e1be72f62c6979180bb69e7fc9cb134cecaa6d131f4a867894f8ec8b7764f9db",
+          "textCharacters": 333,
+          "rangesActuallyRead": [
+            [
+              0,
+              333
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-57a67a31c9a413bf",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:52+00:00",
+          "bodySha256": "a40a930d202cd793dfdb6f542bc2848bc1901d41699969831a1a3857feab4df1",
+          "textSha256": "475206a94f8180a7cebf2c68b3515597157750600fd30118cfba18e6f6830f9c",
+          "textCharacters": 663,
+          "rangesActuallyRead": [
+            [
+              0,
+              663
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0fae4c20adfe101c",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/contact/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:55+00:00",
+          "bodySha256": "40a6fd8b09e621843af21e15f54f2e5c1a106d5f1baeb9c2860390874aaa6c1f",
+          "textSha256": "c3699b8eae145b84bffa5ec11dedc8e09b5969f4bb318722c2d3eb4fe16a20f1",
+          "textCharacters": 621,
+          "rangesActuallyRead": [
+            [
+              0,
+              621
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2f1179122c2b0a0c",
+          "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:57+00:00",
+          "bodySha256": "0cb4d9f5fa8fc4dd2f4b64dddcb82a7b259244f445004d96f132ae05730db9f3",
+          "textSha256": "9660954cedefdb38f7ea40176b8f80caec72d0421ff513963a5368f9c507cded",
+          "textCharacters": 519,
+          "rangesActuallyRead": [
+            [
+              0,
+              519
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 139,
+      "labId": "ucsd-medicine-lab-kentson-lam-lab",
+      "labName": "Kentson Lam Lab",
+      "rawSha256": "96192385d31bd52c61553f668d8634feea8f6ade6a1bc21488d8b6afb19a9efc",
+      "packetSha256": "821af9c4bbaf032edea8080b7b24d2de99e6a0be389db488e80ff2ae10f3122c",
+      "reviewedAt": "2026-10-16T09:11:13.007Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Kentson Lam实验室完整介绍；蛋白稳态、备份通路及破坏防御策略为研究机制/治疗目标，没有具体方法实际采用叙述。临床专长与期刊名不补实验方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-5d47919443316405",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/lam-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "c3f52c8c355cea698dd7aec942d799db78e8e1e118c2842c89cb11ba793bca20",
+          "textSha256": "316a4d779cd63cba60c27143f5bc7efbb6969cb8bee83da569a81351e39f5934",
+          "textCharacters": 1460,
+          "rangesActuallyRead": [
+            [
+              0,
+              1460
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-2b89047ccf6f4aa9",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/index.html",
+          "sourceObservedAt": "2026-10-07T22:55:15+00:00",
+          "bodySha256": null,
+          "textSha256": "0c9bc86d045385f17948cf018cace3b30845cb665dbd3735b0b724b535520947",
+          "textCharacters": 64,
+          "rangesActuallyRead": [
+            [
+              0,
+              64
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 140,
+      "labId": "ucsd-medicine-lab-gerry-boss-laboratory",
+      "labName": "Gerry Boss Laboratory",
+      "rawSha256": "71ec0a2112d796df7f1b44beb96c911bdcd89bde85d6ed860995c197a77313ff",
+      "packetSha256": "c766996ff993f72d160659929269c2ebaa8462a7c7468405083eccc4556d02e9",
+      "reviewedAt": "2026-10-16T09:11:13.007Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Boss完整研究引言和出版列表；开发cobinamide及purine调控未给操作方法。临床试验是hope sometime in2023的未来愿望，不能作已实施试验。鼠/猪等仅在论文题目，不据题目列方法；Golomb来源是另一组，排除。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-51d1cd763d7dff81",
+          "sourceUrl": "https://gim.ucsd.edu/research/boss-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a4a26d64df5ed47b25bc6b318c2706dd44a3d2c146990d4991e50eb54e01fb44",
+          "textSha256": "405fe42e62f7dcd2a588e6b6ef7910d38ba8c0d7f16b21d081329814339ef54d",
+          "textCharacters": 10914,
+          "rangesActuallyRead": [
+            [
+              0,
+              10914
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c4f932b065fd8427",
+          "sourceUrl": "https://gim.ucsd.edu/research/golomb-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "6c74d0b03cc535afa5efb21d1394fb9714d470f454875764cf5bb49a1a99a499",
+          "textSha256": "ed30ac61c65f08b74b0b707769ee70bc9199bb56545d9e02e2146704ed7f3181",
+          "textCharacters": 7090,
+          "rangesActuallyRead": [
+            [
+              0,
+              7090
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-836bdc0f695811ac",
+          "sourceUrl": "https://gim.ucsd.edu/",
+          "sourceObservedAt": "2026-10-07T22:55:11+00:00",
+          "bodySha256": null,
+          "textSha256": "39c067b4c0edf08031042bf6f90cfe4f28673068e851c8768f07c79ebf6b5b4d",
+          "textCharacters": 55,
+          "rangesActuallyRead": [
+            [
+              0,
+              55
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 141,
+      "labId": "ucsd-medicine-lab-golomb-research-group",
+      "labName": "Golomb Research Group",
+      "rawSha256": "637ce6c37eb91069eee1f0d6ec6032d7f490cfacf5c17c56eb83c44a16ad9cf9",
+      "packetSha256": "ed936216bf1ddd16839990cb63c559ce3202302fe263145ed2f3b528a12a4e29",
+      "reviewedAt": "2026-10-16T09:11:13.007Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Golomb全部研究介绍/出版等文字；placebos/effect modification是方法学关注主题，不是实际采用说明。FDA disproportionality等仅论文标题，Boss全文为另一实验室而不借用。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-c4f932b065fd8427",
+          "sourceUrl": "https://gim.ucsd.edu/research/golomb-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "6c74d0b03cc535afa5efb21d1394fb9714d470f454875764cf5bb49a1a99a499",
+          "textSha256": "ed30ac61c65f08b74b0b707769ee70bc9199bb56545d9e02e2146704ed7f3181",
+          "textCharacters": 7090,
+          "rangesActuallyRead": [
+            [
+              0,
+              7090
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 140,
+          "reuseSourceId": "src-c4f932b065fd8427"
+        },
+        {
+          "sourceId": "src-51d1cd763d7dff81",
+          "sourceUrl": "https://gim.ucsd.edu/research/boss-lab.html",
+          "sourceObservedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a4a26d64df5ed47b25bc6b318c2706dd44a3d2c146990d4991e50eb54e01fb44",
+          "textSha256": "405fe42e62f7dcd2a588e6b6ef7910d38ba8c0d7f16b21d081329814339ef54d",
+          "textCharacters": 10914,
+          "rangesActuallyRead": [
+            [
+              0,
+              10914
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 140,
+          "reuseSourceId": "src-51d1cd763d7dff81"
+        },
+        {
+          "sourceId": "src-bc9cf0cf2254ea0e",
+          "sourceUrl": "https://gim.ucsd.edu/",
+          "sourceObservedAt": "2026-10-07T22:55:11+00:00",
+          "bodySha256": null,
+          "textSha256": "e1e38ded451e89c3868bdd936b194e894eef82e38ff33e8c56b0a45c04b129b0",
+          "textCharacters": 59,
+          "rangesActuallyRead": [
+            [
+              0,
+              59
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 142,
+      "labId": "ucsd-medicine-lab-molina-lab-mitochondrial-bioenergetics-and-healthy-aging",
+      "labName": "Molina Lab (Mitochondrial Bioenergetics and Healthy Aging)",
+      "rawSha256": "cd611ff561e0049fe362cd640b8cf186c73d66095a65d8c6fdb9b810106582d6",
+      "packetSha256": "51e6a3521c4854e00b21793f941ae0655603ed9161c142ad72bb269acca80778",
+      "reviewedAt": "2026-10-16T09:11:13.007Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Molina全首页：bioenergetic profiles/signatures为标志物假说或识别目标，multi-omic resilience是项目标题；未具名实际测定或分析实施。核心设施新闻链接也不等于lab采用。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-dbc5c352949223c8",
+          "sourceUrl": "https://www.molinalab.com/",
+          "sourceObservedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "969781d320bcc2172b5a775b25670f0fcc221616615060b1ecce4c1b89e8f1c6",
+          "textSha256": "e216804fbb116e6abab21bf2b81b185b83696af9fe544c4ab032efb4ae8e803b",
+          "textCharacters": 2662,
+          "rangesActuallyRead": [
+            [
+              0,
+              2662
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-1bd0d33740ae54ff",
+          "sourceUrl": "https://gerigeropal.ucsd.edu/research/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:55:22+00:00",
+          "bodySha256": null,
+          "textSha256": "5d5143606ae4c4cde0a8f46bcb3bbcf1144f126722c406e972a5ce9ce3ae3ec2",
+          "textCharacters": 75,
+          "rangesActuallyRead": [
+            [
+              0,
+              75
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 143,
+      "labId": "ucsd-orthopaedic-surgery-lab-muscle-biology-laboratory",
+      "labName": "Muscle Biology Laboratory",
+      "rawSha256": "7ce0075df94488aacd9075e60b0f981b9442596ff705357fcfd98630b384d4b3",
+      "packetSha256": "9f95e840d0058d748059ff1309731240c5f6ad3db1cb92a66375abe0fcea2ed4",
+      "reviewedAt": "2026-10-16T09:11:43.035Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Muscle Biology根页及各linked页全文；根页仅Dr. Schenk研究兴趣/出版物，exercise/calorie restriction/inactivity是可能诱导代谢改变的解释，未明示实际采用。流行病学、MRI/3D打印、神经生物工程、免疫代谢页分别属于另4个具名实验室，不借其明确方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-8efcaff7e0b0fede",
+          "sourceUrl": "https://ortho.ucsd.edu/research/muscle-biology.html",
+          "sourceObservedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a05408721925b5c6c29f73f43e9c9d6d918adcfca52b6d9fdc73417320b40f77",
+          "textSha256": "7924f3975630e3176862006e6a9eca989278ae310218ffc2d38c11b7e32649ff",
+          "textCharacters": 2678,
+          "rangesActuallyRead": [
+            [
+              0,
+              2678
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-4e7cb8c9e35e1b6f",
+          "sourceUrl": "https://ortho.ucsd.edu/research/epidemiology-bone-and-vascular-calcification.html",
+          "sourceObservedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "0d6717f83335ccba72468ebbb4497bfb533a7d5d08186d989b2114e22ac4091d",
+          "textSha256": "521c9b5c1cefd8cce131133eb09329ebe050f077eda108b89bf92a317a184c50",
+          "textCharacters": 4229,
+          "rangesActuallyRead": [
+            [
+              0,
+              4229
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-7f03a2b680abda4c",
+          "sourceUrl": "https://ortho.ucsd.edu/research/musculoskeletal-imaging-and-translational-engineering-laboratory.html",
+          "sourceObservedAt": "2026-10-16T01:05:10+00:00",
+          "bodySha256": "35a03f0d3eecd90317776b0d29f97967de8bf4aafb1d298e17ba73a923f3d397",
+          "textSha256": "67cb57266c4dc18d1d7b4305ac5ecbd52314105680c5e3fba2e2178360f1912d",
+          "textCharacters": 2731,
+          "rangesActuallyRead": [
+            [
+              0,
+              2731
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-4387b074ea768ac9",
+          "sourceUrl": "https://ortho.ucsd.edu/research/neuromuscular-bioengineering.html",
+          "sourceObservedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "5953acdf38db6e2a7ac054eaf8539a08cafa5a2c9a9f8949dd5d0b972f516493",
+          "textSha256": "fd2e83999154b6c64aaa67ab7e1d6196a72c8de887437c36f8348f2205b101d2",
+          "textCharacters": 2760,
+          "rangesActuallyRead": [
+            [
+              0,
+              2760
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-dc83011dd0e30eff",
+          "sourceUrl": "https://ortho.ucsd.edu/research/signal-transduction-immunometabolism.html",
+          "sourceObservedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "a970ca8c372260de1f6d385f2996d2b3cc625727190a711d0989564d5f0e5bbc",
+          "textSha256": "20a93409572b0a4e9d46f064c0d62da16dc3d7be2b2db9c90d38eb88c86a6f44",
+          "textCharacters": 3290,
+          "rangesActuallyRead": [
+            [
+              0,
+              3290
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d96d4244880fe5b7",
+          "sourceUrl": "https://ortho.ucsd.edu/research/index.html",
+          "sourceObservedAt": "2026-10-07T22:54:35+00:00",
+          "bodySha256": null,
+          "textSha256": "a0f1d566c6160a99f0e257ee7d2ac3978e54ef65ac016927d3e0809664245447",
+          "textCharacters": 340,
+          "rangesActuallyRead": [
+            [
+              0,
+              340
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-b59ee174fca4081e",
+          "sourceUrl": "https://ortho.ucsd.edu/faculty/research.html",
+          "sourceObservedAt": "2026-10-16T00:59:09+00:00",
+          "bodySha256": "0c9931db0989dea73cc2c33a757754d9822de7a28bba1afa76434854cb9b0b51",
+          "textSha256": "5a6d9cd47bca6af466c29254d39871365c66d7f482e73580431d82f15fac9dd2",
+          "textCharacters": 520,
+          "rangesActuallyRead": [
+            [
+              0,
+              520
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-785aee2a6377bc65",
+          "sourceUrl": "https://ortho.ucsd.edu/faculty/research.html",
+          "sourceObservedAt": "2026-10-16T00:59:09+00:00",
+          "bodySha256": "0c9931db0989dea73cc2c33a757754d9822de7a28bba1afa76434854cb9b0b51",
+          "textSha256": "5cc16ab20d6f9662d8447c832b63ae75e81665fa8eee66fd7515c7f40875c7e0",
+          "textCharacters": 1306,
+          "rangesActuallyRead": [
+            [
+              0,
+              1306
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 144,
+      "labId": "ucsd-unknown-moores-cancer-center-department-not-stated-on-fetched-pages-lab-carson-laboratory",
+      "labName": "Carson Laboratory",
+      "rawSha256": "1d4895d175b53c275f94126fa6c86a354606b872574c045c4cd3974e213b9073",
+      "packetSha256": "836062159bb74a8e80d56281a95fa9289b65dd836af42913d1f0c6b3178d9396",
+      "reviewedAt": "2026-10-16T09:11:43.035Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "癌症患者中的药物测试（免疫治疗项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0
+          ],
+          "sourceId": "src-ecb5f3bfb3b5c8a7",
+          "quote": "The drugs are also being tested as immunotherapeutic agents in patients with cancer.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "scopeZh": "Carson Laboratory About Our Research中our research team紧接的新药项目，明确实际在癌症患者中测试；只取最低类别。",
+          "timeScopeZh": "being tested为页面自述，无实施日期或完成结果，不确认2026状态。"
+        }
+      ],
+      "reasonZh": "Carson主文明确在癌症患者中being tested，足以补患者药物测试这一基本类别，不升级为RCT/分期/对照试验，也不借邻Gleiberman中心clinical trials。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-ecb5f3bfb3b5c8a7",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "textSha256": "4789b118a9fc2104288df0ba5d1880febde1ae20301a578667892485c4046745",
+          "textCharacters": 592,
+          "rangesActuallyRead": [
+            [
+              0,
+              592
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-dbc1b2032671fe39",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "sourceObservedAt": "2026-10-07T23:00:12+00:00",
+          "bodySha256": null,
+          "textSha256": "7463d764cb73680179ab4af7267374386882243d728cbefc060f3113d4324d3f",
+          "textCharacters": 94,
+          "rangesActuallyRead": [
+            [
+              0,
+              94
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c1d3e54bcab133f6",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+          "textSha256": "4dec479d8d80cdaa6499c969ade3d526b47e566555c3a6eccfe3ccaadd0d5a0d",
+          "textCharacters": 588,
+          "rangesActuallyRead": [
+            [
+              0,
+              588
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-16ab40dfc1e1d1ec",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "textSha256": "be951f57e81eb23511264f7f80c63c624b925c0b1a0cc5a6c69a6ca6b81ede25",
+          "textCharacters": 1924,
+          "rangesActuallyRead": [
+            [
+              0,
+              1924
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-7520d1ee48f7dd96",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+          "textSha256": "3cae555b2f5e284dca6b5ec493c5181736a141cb1f29dcceeadbd2eb58d5dce9",
+          "textCharacters": 1920,
+          "rangesActuallyRead": [
+            [
+              0,
+              1920
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "Carson Laboratory 开发增强人类免疫功能的新药，目标包括改善免疫受损患者的疫苗效果。页面说明这些药物也作为癌症免疫治疗药物进行测试，但未明确试验方法。",
+        "newSummaryZh": "Carson Laboratory 开发增强人类免疫功能的新药，目标包括改善免疫受损患者的疫苗效果。页面说明这些药物也正在癌症患者中作免疫治疗药物测试，但未细化试验设计。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "仅明确癌症患者中的药物测试这一基本类别，未给随机化、对照、分期或具体实验步骤，不据此宣称临床疗效。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 145,
+      "labId": "ucsd-ophthalmology-lab-shaw-lab",
+      "labName": "Shaw Lab",
+      "rawSha256": "abbaac5e3a60d66d637849e4ac995ff0e440c6324c68ff20ef58217e26bac107",
+      "packetSha256": "6adc0397ddfcfcdc636221e7265dff418189762b378917a7e184bf456d9ecb53",
+      "reviewedAt": "2026-10-16T09:11:43.035Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Shaw根页、历史目录和People全文；只有AMD机制、治疗靶点目标和人员名单，没有实验方法实际采用说明。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-c78e9f0ab65656be",
+          "sourceUrl": "https://sites.ucsd.edu/shawlab/",
+          "sourceObservedAt": "2026-10-16T01:09:22+00:00",
+          "bodySha256": "5666373ad9b64a015427550e705cfb319db2e56943361589ba07ca834c1ac601",
+          "textSha256": "02475f9ee47392bd40cde2ef2a53dddf97558f7fe9ce3237f7d91a1420d7f623",
+          "textCharacters": 703,
+          "rangesActuallyRead": [
+            [
+              0,
+              703
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f46a07a1893714e2",
+          "sourceUrl": "https://shileyeye.ucsd.edu/research/ophthalmic-lab-sites",
+          "sourceObservedAt": "2026-10-07T22:58:44+00:00",
+          "bodySha256": null,
+          "textSha256": "84b73060e78930e9e4dd8ca115f987566f46febed517c784fe786d6f002977f0",
+          "textCharacters": 292,
+          "rangesActuallyRead": [
+            [
+              0,
+              292
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e291af7cb2e46e1b",
+          "sourceUrl": "https://sites.ucsd.edu/shawlab/lab-members/",
+          "sourceObservedAt": "2026-10-16T01:01:40+00:00",
+          "bodySha256": "d4c0f0cf7f61fde7db908a6ac6f0a611911510552899521c4b9c6d05a329cf58",
+          "textSha256": "7b387f07fa71086ae3bf1c08f7ba7c43ebad6a15a501fcc3143419f17e112582",
+          "textCharacters": 783,
+          "rangesActuallyRead": [
+            [
+              0,
+              783
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 146,
+      "labId": "ucsd-ophthalmology-lab-toomey-lab",
+      "labName": "Toomey Lab",
+      "rawSha256": "61577211c9aae963e0025f811f3d2e0baa41aad3955e5306173948312d2b6a04",
+      "packetSha256": "4a7478eef71c8494c4dbaca072e5978570d0cb118159de0a453dde909575c009",
+      "reviewedAt": "2026-10-16T09:11:43.035Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Toomey根页及负责人/成员介绍全文；既有lipoprotein binding发现未给检测方法，modern molecular biology是通用框架批评，中心合作/临床手术专长不证明lab采用某技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-294398e61739e3ad",
+          "sourceUrl": "https://sites.ucsd.edu/toomeylab/",
+          "sourceObservedAt": "2026-10-16T01:11:22+00:00",
+          "bodySha256": "c0a73902bb647f9c66c6f5cbdf3a8907d20a393c42df58a24447ef7279caa50c",
+          "textSha256": "f6e3f23b2e43dd5bac37903f2ec7a799d95041b8713621dcc078aa9e1abc5cad",
+          "textCharacters": 1843,
+          "rangesActuallyRead": [
+            [
+              0,
+              1843
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-cc2b6f9f32b2644d",
+          "sourceUrl": "https://shileyeye.ucsd.edu/research/ophthalmic-lab-sites",
+          "sourceObservedAt": "2026-10-07T22:58:44+00:00",
+          "bodySha256": null,
+          "textSha256": "6fde8634d7365f10db3b1635fbad78ca546284b94a15710f958dfe1f6a7b2240",
+          "textCharacters": 298,
+          "rangesActuallyRead": [
+            [
+              0,
+              298
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-f0e850ce59632e7a",
+          "sourceUrl": "https://sites.ucsd.edu/toomeylab/lab-members/",
+          "sourceObservedAt": "2026-10-16T01:02:10+00:00",
+          "bodySha256": "4c96abc10ba502d27c5669b7a85adae3ed120ac84c12aadf4caaecf6a4f32956",
+          "textSha256": "7b44a203ca1f21160cbb7887bde1ab3c3ed00cb498c8eabc51856b36c0d213bf",
+          "textCharacters": 2411,
+          "rangesActuallyRead": [
+            [
+              0,
+              2411
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 147,
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-evans-lab",
+      "labName": "Evans Lab",
+      "rawSha256": "53db99949701fc2aca48e783198facfa07a149c6eba94e10075a50ff8af2d596",
+      "packetSha256": "4d050ddd065dc9492443ae98321b95e6f7376e49723fa605ff40d3839f0f67a5",
+      "reviewedAt": "2026-10-16T09:11:43.035Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读320字符历史Evans摘要及完整Pharmacology faculty目录；历史摘要给细胞谱系问题，当前目录只姓名/联系，其他教授的proteomics等不可转给Evans。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-819287c7dc1c3600",
+          "sourceUrl": "https://pharmacy.ucsd.edu/faculty/evans",
+          "sourceObservedAt": "2026-10-07T22:53:49+00:00",
+          "bodySha256": null,
+          "textSha256": "cbd6db264e0648fb6cfb4532f82191e7340e7169ea875c6ce9e20b48c9cea5f5",
+          "textCharacters": 320,
+          "rangesActuallyRead": [
+            [
+              0,
+              320
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-03e9a43b91893370",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:28+00:00",
+          "bodySha256": "3837b802fb5d4dcf21f3d6cd52ecafb84b81865eb66b957f5102d3be33dd656f",
+          "textSha256": "2155a9708a55513d6438495859e83fcfe4b6aa6520513d2d236ca0013912a7b5",
+          "textCharacters": 4064,
+          "rangesActuallyRead": [
+            [
+              0,
+              4064
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 148,
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-hook-laboratory",
+      "labName": "Hook Laboratory",
+      "rawSha256": "f04f230053411388a47dd25b092acc61a115d9423074350198ca2f6e9c01f847",
+      "packetSha256": "bd6ace9985b93734570a3cb54b84b1f195c0f555085023923e335feb74a97732",
+      "reviewedAt": "2026-10-16T09:12:21.293Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "仅有325字符截断历史Hook摘要，说明肽/蛋白酶机制与靶点方向，没有方法宾语或实际步骤；不补截断的疾病和技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-35b31b72b4bfafd5",
+          "sourceUrl": "https://pharmacy.ucsd.edu/faculty/hook",
+          "sourceObservedAt": "2026-10-07T22:54:07+00:00",
+          "bodySha256": null,
+          "textSha256": "029038ef63a9bc6573a32b9a1cee7cc24c2ada5fa44cbc6e8fe9b8fd749b72e0",
+          "textCharacters": 325,
+          "rangesActuallyRead": [
+            [
+              0,
+              325
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 149,
+      "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "labName": "Lykke-Andersen Lab",
+      "rawSha256": "2ccb32d8699c13a5d026ac1c1aabb96a2203735abaa9f8a94d080823f8774e70",
+      "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+      "reviewedAt": "2026-10-16T09:12:21.293Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Lykke-Andersen全部packet主文（两scheme同文本）：三研究问题、2010/2011既有发现与出版清单未说明具体实验采用。Upf1不能水解ATP是观察结果，不据此猜测基因操作、成像或生化检测。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-322a2ca2584566c6",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "sourceObservedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+          "textSha256": "551da6ffe04789e1fafeab07dab1c9426fde39ae3fce11f5be4d5d5f05acc4f9",
+          "textCharacters": 11121,
+          "rangesActuallyRead": [
+            [
+              0,
+              11121
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c9e9af6d3e344604",
+          "sourceUrl": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "sourceObservedAt": "2026-10-07T23:04:38+00:00",
+          "bodySha256": null,
+          "textSha256": "90fb46f0ad8c8fabe22ef8235ac3f3d756c4dc2348df6da28413ee4d01c6999b",
+          "textCharacters": 92,
+          "rangesActuallyRead": [
+            [
+              0,
+              92
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-11b4f50c5487577f",
+          "sourceUrl": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "sourceObservedAt": "2026-10-16T04:23:45+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+          "textSha256": "551da6ffe04789e1fafeab07dab1c9426fde39ae3fce11f5be4d5d5f05acc4f9",
+          "textCharacters": 11121,
+          "rangesActuallyRead": [
+            [
+              0,
+              11121
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 149,
+          "reuseSourceId": "src-322a2ca2584566c6"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 150,
+      "labId": "ucsd-electrical-and-computer-engineering-lab-advanced-robotics-and-controls-lab-arclab",
+      "labName": "Advanced Robotics and Controls Lab (ARCLab)",
+      "rawSha256": "e3ddb5a2c225a810dd0a9d6e9b0cf263cd7c166ccd397827b0dbdb1c3c95ace5",
+      "packetSha256": "cfef966958a30a1404f8019e053d31dffd6806005c8e9d947743ea14437d1f41",
+      "reviewedAt": "2026-10-16T09:12:21.294Z",
+      "decision": "add_source_explicit_methods",
+      "methods": [
+        "深度学习（机器人控制与运动规划项目）",
+        "强化学习（机器人控制与运动规划项目）"
+      ],
+      "methodEvidence": [
+        {
+          "methodIndices": [
+            0,
+            1
+          ],
+          "sourceId": "src-8b426b44eccb9855",
+          "quote": "His group currently focuses on solving problems in data-efficient and computationally efficient robot control and motion planning through the use of various forms of learning representations, including deep learning and reinforcement learning strategies. His lab applies these ideas to surgical robotics and the automation of surgical procedures.",
+          "quoteLocation": "body",
+          "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+          "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+          "scopeZh": "官方profile明确His group通过deep/reinforcement learning策略解决控制与规划，His lab将这些想法用于手术机器人与自动化，非仅PI兴趣列表。",
+          "timeScopeZh": "页面称currently但无项目日期；不依采集日确认2026运行状态。"
+        }
+      ],
+      "reasonZh": "有明确具名负责人-实验室作用域及through the use/His lab applies实际采用句，可补深度/强化学习；不从论文标题或此前个人的haptics/soft robotics主题再扩方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-7148f67d11a7b404",
+          "sourceUrl": "https://ucsdarclab.com/",
+          "sourceObservedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "ad1855dfa32082a4e355e82f667e5c7fa3e083cffac2a85fd9d0cfc94a981e8c",
+          "textSha256": "2869e7448e510c3c65e290220f6c803d54621905ba8e839bc8dac729aa61821f",
+          "textCharacters": 1988,
+          "rangesActuallyRead": [
+            [
+              0,
+              1988
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-a0ae99dd21feb592",
+          "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "8603204659b27a1410a9b5ea726a3d7030f66662d02f2fda17bba9b296d4111e",
+          "textCharacters": 259,
+          "rangesActuallyRead": [
+            [
+              0,
+              259
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-aed9f7c5383ff2e1",
+          "sourceUrl": "https://ucsdarclab.com/",
+          "sourceObservedAt": "2026-10-07T23:01:48+00:00",
+          "bodySha256": null,
+          "textSha256": "ca6c655b3a056562ce46939e4e4ee01e53c02f3beccb5cbc9e285bb2e15bd28a",
+          "textCharacters": 47,
+          "rangesActuallyRead": [
+            [
+              0,
+              47
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-32de4fdeaf8e5afb",
+          "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+          "textSha256": "b070254363e97b48347713732d2de2036fda872b411c629eb269af0ead5c81ca",
+          "textCharacters": 1399,
+          "rangesActuallyRead": [
+            [
+              0,
+              1399
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 113,
+          "reuseSourceId": "src-32de4fdeaf8e5afb"
+        },
+        {
+          "sourceId": "src-8b426b44eccb9855",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=401",
+          "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+          "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+          "textSha256": "b7fe81e4c74476bc13ec4c96600f8c0a1e6e654d9c460ea5be92618bbd2a5b1b",
+          "textCharacters": 2697,
+          "rangesActuallyRead": [
+            [
+              0,
+              2697
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ],
+      "summaryRevision": {
+        "oldSummaryZh": "ARClab 研究智能机器人设计与自动化。主要方向是半自主及影像引导手术机器人、用于人机照护等场景的仿生机器人，以及与环境交互的机器人学习。",
+        "newSummaryZh": "ARClab 研究智能机器人设计与自动化。主要方向是半自主及影像引导手术机器人、用于人机照护等场景的仿生机器人，以及与环境交互的机器人学习。官方介绍明确团队将深度学习和强化学习用于机器人控制与运动规划，并应用于手术自动化。"
+      },
+      "uncertaintyReplacements": [
+        {
+          "old": "方法未明确。",
+          "new": "方法限官方介绍所述机器人控制、运动规划与手术自动化项目；未给项目实施期或模型细节，不据采集日确认2026状态。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 151,
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "labName": "UCSD Structural Health Monitoring (SHM) Group",
+      "rawSha256": "95c7296a097a5a01138fb30b82d21b5c481cd6dfd8be0ec81efe6d9b04021514",
+      "packetSha256": "5dd891f7486628e4a1e8e0caf6fa116e713ff18a188ef6f41744a5cc6527595c",
+      "reviewedAt": "2026-10-16T09:12:21.293Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读SHM Home全文与目录/历史字段。传感、数据挖掘、特征提取、统计建模明确是any SHM/DP strategy的通用框架；团队描述仅开发SHM/DP方案，不足证明实际实施具体方法。2011–2014新闻不作当前项目证明。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-a7325ccd6938272b",
+          "sourceUrl": "https://shm.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "textCharacters": 0,
+          "rangesActuallyRead": [
+            [
+              0,
+              0
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-0a3e3120209350f7",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "3ef55ba271b1095304089883cf39be6236969acd9ebfc4aa50134f2ef261a260",
+          "textCharacters": 34,
+          "rangesActuallyRead": [
+            [
+              0,
+              34
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-4097577e6b7a099b",
+          "sourceUrl": "http://shm.ucsd.edu/Site/Home.html",
+          "sourceObservedAt": "2026-10-07T23:06:45+00:00",
+          "bodySha256": null,
+          "textSha256": "64c691993bc50da916c3db599cdd2afa7a6ad6c15453ff2c477d5d30ce9ac75f",
+          "textCharacters": 29,
+          "rangesActuallyRead": [
+            [
+              0,
+              29
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "textCharacters": 1978,
+          "rangesActuallyRead": [
+            [
+              0,
+              1978
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-78fc5f4fd64950d0",
+          "sourceUrl": "http://shm.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T04:57:37+00:00",
+          "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "textCharacters": 0,
+          "rangesActuallyRead": [
+            [
+              0,
+              0
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 151,
+          "reuseSourceId": "src-a7325ccd6938272b"
+        },
+        {
+          "sourceId": "src-0de7802df1ac58fb",
+          "sourceUrl": "http://shm.ucsd.edu/Site/Home.html",
+          "sourceObservedAt": "2026-10-16T05:16:24+00:00",
+          "bodySha256": "1b4e9cbb73cfab12830a535e4ed0948125ec7987651de148c696e8a7d05a2843",
+          "textSha256": "692bcb30ac575757a3ff3002de9737d717c506aba52d6b554b0c1761ed60c891",
+          "textCharacters": 4882,
+          "rangesActuallyRead": [
+            [
+              0,
+              4882
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 152,
+      "labId": "ucsd-structural-engineering-lab-tehrani-group",
+      "labName": "Tehrani Group",
+      "rawSha256": "b48c8afe21e3caa0a8e41ecb8ff182af7bffaf0232bd6cd00f56d763a5ba440b",
+      "packetSha256": "805aec5465360942a4298c5b0771137b18b66aa32957e3e0641d06d3cb872f33",
+      "reviewedAt": "2026-10-16T09:12:21.293Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Tehrani首页全文及faculty目录；Additive Manufacturing为页首方向类别，研究段只列先进制造/复合结构/薄膜领域，未说明实际采用的制造工艺或实验。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-9a7be7756af8b7c5",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/tehranigroup/home",
+          "sourceObservedAt": "2026-10-16T01:07:35+00:00",
+          "bodySha256": "beaa5a01d86d2ea73b7b94db94d83b90bd47bc7335f10c69257fbb5529b44cd9",
+          "textSha256": "383f4ba4a5877dfb394feaed66c281caa1ec57543fbca30a66e17075694d1a6a",
+          "textCharacters": 603,
+          "rangesActuallyRead": [
+            [
+              0,
+              603
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d85599e769b05c83",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "5a2ea522ae090b4412726b71e0a3e15ed68ac7cb4a6f709b96517da76d579666",
+          "textCharacters": 66,
+          "rangesActuallyRead": [
+            [
+              0,
+              66
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "textCharacters": 1978,
+          "rangesActuallyRead": [
+            [
+              0,
+              1978
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 151,
+          "reuseSourceId": "src-bad3a88fb4607788"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 153,
+      "labId": "ucsd-structural-engineering-lab-fluid-effects-on-structural-systems-research-group-fessrg",
+      "labName": "Fluid Effects on Structural Systems Research Group (FESSRG)",
+      "rawSha256": "0f6b26c2b3dd74d9804a0757001e1aca47bdfbab7466c9e4124b7660e3e9d613",
+      "packetSha256": "e76c52e6baa949a17ff85e3c42d773cc80cfb9f0839da9726a75393bb4318691",
+      "reviewedAt": "2026-10-16T09:12:21.293Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读FESSRG根页全部文本及同体重复来源、目录；正文说正在分析流体相互作用及介绍analysis methods，但没有展示具体计算/实验方法，不推CFD、风洞或水槽。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-be62b6c92d27644c",
+          "sourceUrl": "https://fessrg.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:00:51+00:00",
+          "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+          "textSha256": "44f7a827794d072edd5715104ac9631b7a9a24362887941452f679f137070857",
+          "textCharacters": 1168,
+          "rangesActuallyRead": [
+            [
+              0,
+              1168
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-3f597a2161dffa20",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "00982b9b34b496356ed872ece8979e45a7d223653f4e70e8795a982d9dd56197",
+          "textCharacters": 38,
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "sourceUrl": "https://se.ucsd.edu/people/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "textCharacters": 1978,
+          "rangesActuallyRead": [
+            [
+              0,
+              1978
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 151,
+          "reuseSourceId": "src-bad3a88fb4607788"
+        },
+        {
+          "sourceId": "src-787541b8969257d3",
+          "sourceUrl": "http://fessrg.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T04:23:56+00:00",
+          "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+          "textSha256": "44f7a827794d072edd5715104ac9631b7a9a24362887941452f679f137070857",
+          "textCharacters": 1168,
+          "rangesActuallyRead": [
+            [
+              0,
+              1168
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 153,
+          "reuseSourceId": "src-be62b6c92d27644c"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 154,
+      "labId": "ucsd-psychology-lab-bambah-mukku-lab",
+      "labName": "Bambah-Mukku Lab",
+      "rawSha256": "bc810399820eb7c4656b9acd8c39ab8965461de5bf95b05bec23516933cae098",
+      "packetSha256": "8ea8ce9178d1eefc6fccb57c6921320b4af9c8aae70963c42bd2a79c346b34ec",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Bambah-Mukku根页及Psychology目录全文：cell-type/circuit机制和动物性别/状态是研究对象，目录Molecular analysis为研究领域，未说明具体采用的操作/记录方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-1f1a6bee97db518e",
+          "sourceUrl": "https://www.bambahmukkulab.com/",
+          "sourceObservedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "10e9598c87827b0895cacdf205f203c8a4fdd020e639ea4b6ab3833e61cfad2a",
+          "textSha256": "59d016dd9c35889e0a0474aa95dd194b55d0e4d9fab588b4e610d394ad08ed37",
+          "textCharacters": 603,
+          "rangesActuallyRead": [
+            [
+              0,
+              603
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-6ba302c3494d8c4f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "2df57a4b3fa6aa2b2b3a3d6c36c9bfb28043ba636f1019f025a5f83c5a423189",
+          "textCharacters": 42,
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 155,
+      "labId": "ucsd-psychology-lab-language-development-lab",
+      "labName": "Language & Development Lab",
+      "rawSha256": "68a1c71a47ee2007f6ff931b08cc51c29898785876235264f16e954512e17ef6",
+      "packetSha256": "e1765ec948a8ea376b2357e10c661405138a0264712824718100426aa04d35a3",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Language & Development短首页和faculty目录，只有儿童语言及物体/事件理解问题，无实际实验或分析方法叙述。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-123dc8d9ca6b1f2d",
+          "sourceUrl": "https://ladlab.ucsd.edu/home",
+          "sourceObservedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "de56d228c2c88e96c06aa96e05a129683d280636dde60561cbf6f935f2604445",
+          "textSha256": "75d71c2147eeb26a052ddcca41a46203bca43631891a28479ca082d38729a872",
+          "textCharacters": 327,
+          "rangesActuallyRead": [
+            [
+              0,
+              327
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-e4e5e3d0d66c88d0",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "160153139c586442ccc7919999a897e7e3041245d77ca3485ae1ca7e78ff629c",
+          "textCharacters": 39,
+          "rangesActuallyRead": [
+            [
+              0,
+              39
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 156,
+      "labId": "ucsd-psychology-lab-uc-san-diego-developmental-neuroscience-lab",
+      "labName": "UC San Diego Developmental Neuroscience Lab",
+      "rawSha256": "46afeb4c80e6bfb73a32260bcaa8eeb0f82a5932a7d4d90c2754323b8d4e0115",
+      "packetSha256": "92c9ac9e3b0905381300b2bbb1c603cac17e19f1268d61804998b66c24511d69",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Developmental Neuroscience首页全文、PI历史字段及目录。研究问题、招募年龄和论文/报告新闻未提供方法采用主文；electrophysiological signatures只在2020论文新闻标题，不据标题补技术。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-7f781b3ced69f6af",
+          "sourceUrl": "https://dnlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:38+00:00",
+          "bodySha256": "9633576d48f0e5a31e6b71067bd4b63938e34365b3a6ef541b028e020405a1f2",
+          "textSha256": "21f3318ae28389b1c70aaafde609e817386e6c566755db01480db9ac0af1fe57",
+          "textCharacters": 4034,
+          "rangesActuallyRead": [
+            [
+              0,
+              4034
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-09443ac96292e93d",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "74ca99966a77ed5901779bd5c45bae754617c4afaf96629395aa1a2af5ad3f29",
+          "textCharacters": 34,
+          "rangesActuallyRead": [
+            [
+              0,
+              34
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-a822dc1cce9de42c",
+          "sourceUrl": "https://dnlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-07T22:53:46+00:00",
+          "bodySha256": null,
+          "textSha256": "90e4083ea0d076ffc351fb7d57fa3de5ff847d7296727b2d124a3f41a0d291d6",
+          "textCharacters": 71,
+          "rangesActuallyRead": [
+            [
+              0,
+              71
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 157,
+      "labId": "ucsd-psychology-lab-language-production-lab",
+      "labName": "Language Production Lab",
+      "rawSha256": "2ca6e79007f51d77ec84acbfb0843e60d2cc11eb4f4f500a808fd8f3b626f056",
+      "packetSha256": "694f8a204a3e1e2d75807bc78665c3422eb582e848c49b87d88c80ff893b7c17",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Language Production完整短首页及目录；句子/词产生与沟通为研究目标，PI在目录的computational modelling领域不证明本实验室实际采用。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-44c441ff64d6d19b",
+          "sourceUrl": "https://lpl.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "b15fc6a96f3eeea8c4bd9f358178108ccae21fea74efa97cab2877d823f5163a",
+          "textSha256": "a01a4a6cb289edcb58b816b9771b50adcd75b502e22f20bf3365f53f51a1083f",
+          "textCharacters": 310,
+          "rangesActuallyRead": [
+            [
+              0,
+              310
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-00cc44c0b596516b",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "d8e1c108061488d83344835b3b0c0cc13fa4ea5de2a6ea0e934e089085acce6c",
+          "textCharacters": 32,
+          "rangesActuallyRead": [
+            [
+              0,
+              32
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 158,
+      "labId": "ucsd-psychology-lab-lime-lab-learning-and-instruction-in-multimedia-environments",
+      "labName": "LIME Lab (Learning and Instruction in Multimedia Environments)",
+      "rawSha256": "432cc936e813792c862b164d958cc6002671879efc6a65c17f128664affb411a",
+      "packetSha256": "cc275f4977562660b47458d273638e1d1292d5ac6c4a175f296bdd4e34fcf33d",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读LIME首页及目录：研究教学工具/技术和数学科学学习项目是研究目标，不是已实施的实验设计；没有具体方法，不由Find Out How导航生成。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-2a8bd8f55ddd2f99",
+          "sourceUrl": "https://www.lime-lab-ucsd.com/",
+          "sourceObservedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "7281944b2687dadef9c427bd8d913323b4e03d889c7529fa58b989d51c683c1d",
+          "textSha256": "4852f0739ef5858a74b1ab4c85b5d86d5751c6e836427e9f3f3a3914a4ef5eb2",
+          "textCharacters": 598,
+          "rangesActuallyRead": [
+            [
+              0,
+              598
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-bc52ff9f34572eb2",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "497d19379346d7cd9de4725360cfd7e53f7dc239d60518b1543ec29f3cf2f6b0",
+          "textCharacters": 41,
+          "rangesActuallyRead": [
+            [
+              0,
+              41
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 159,
+      "labId": "ucsd-psychology-lab-sciminds-social-computations-interacting-minds-research-studio",
+      "labName": "SciMinds - Social Computations & Interacting Minds Research Studio",
+      "rawSha256": "6351d93a4818f879fd9bdd011ba0072006f3a8b1e0c06eb73cdaae5b2c042bc6",
+      "packetSha256": "898a69783a212c294e79ccc206a9126cd00f03f4eded0a6afd980622851c9f70",
+      "reviewedAt": "2026-10-16T09:12:46.944Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读SciMinds Focus全文、短首页、历史关联链及目录。跨学科列表明确是drawing inspiration；自然情境science为方向，不能当具体已采用任务/分析。负责人目录naturalistic fMRI等个人研究领域不自动映为studio方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-703be7803125c398",
+          "sourceUrl": "https://sciminds.studio/",
+          "sourceObservedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "4e53e489ce25db9a371de0e2b58dcbb6a808f1efeac81c27c311461c915f71b9",
+          "textSha256": "25e13bc4b6d7708bca6e79ac43012ec3bd88bacfa0f56940cd325e9721361e1a",
+          "textCharacters": 64,
+          "rangesActuallyRead": [
+            [
+              0,
+              64
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-57beca3a233018aa",
+          "sourceUrl": "https://sciminds.studio/focus",
+          "sourceObservedAt": "2026-10-16T02:17:41+00:00",
+          "bodySha256": "7267cb37cc823c9ea98cf746927b9af01c042882df7c99bb961263f056ee78ff",
+          "textSha256": "335f940658ee3488b76dab2976eed60910a7c649a9cd0025abdfaa9520db7d15",
+          "textCharacters": 1344,
+          "rangesActuallyRead": [
+            [
+              0,
+              1344
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-faa0ab6297015f20",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:55:13+00:00",
+          "bodySha256": null,
+          "textSha256": "e13115c9e95c8279c4dcb0a17def5c80658290988c69fc2ad4d7c5e1342701e4",
+          "textCharacters": 413,
+          "rangesActuallyRead": [
+            [
+              0,
+              413
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 160,
+      "labId": "ucsd-psychology-lab-cortical-systems-and-behavior-lab",
+      "labName": "Cortical Systems and Behavior Lab",
+      "rawSha256": "7a56763e92815e0d41e420a3173bbe94a4e389faea72a4d3e55ec8c74573dabd",
+      "packetSha256": "49b85117171f6767b163a2989a21b892c72121002d0c1c10f4043cd3d1b9baac",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Cortical Systems and Behavior首页及完整Psychology目录，只有自然行为与三研究问题，Public/Scientists入口不提供实际实施方法；不推断神经记录/动物模型。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-93799647134ff6be",
+          "sourceUrl": "https://millerbrainlab.com/",
+          "sourceObservedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "0f75c92712a39dc3bd9a74700c776780b3e0cb8ae6a6fb2eed94aed63426046f",
+          "textSha256": "4afb1ebe2db66a0ee256c8b122dae486af232ecff976caa14387a3802b3ae0cc",
+          "textCharacters": 1067,
+          "rangesActuallyRead": [
+            [
+              0,
+              1067
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ceba61c42bf70e76",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "3051f89228971bbdbb46a22895e21f097b96254cbaca55c451e1515761b78b32",
+          "textCharacters": 38,
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 161,
+      "labId": "ucsd-psychology-lab-rickard-lab-cognition-and-cognitive-neuroscience-laboratory",
+      "labName": "Rickard Lab (Cognition and Cognitive Neuroscience Laboratory)",
+      "rawSha256": "8fd26979d087e840ed71a13649fae6c6cca5c8ddb0bd4319bfa7a7f6982b92e8",
+      "packetSha256": "4a6fd4e5924913b45976b4956dfff7e9ceede7d7a2bc8cb6f6f5687714cddef4",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Rickard完整短首页及目录：human learning/skill/memory为研究对象，Publications列主题，未说明实际实验或分析方法。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-14423c3b373d75cc",
+          "sourceUrl": "https://rickardlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:41+00:00",
+          "bodySha256": "2c88f330fba46e75cac236eeee0b6fe904a09e12dc236087ae05d88038a104f8",
+          "textSha256": "b147f411941562356255ed1a800da7cc8c252ec7581453ec903757c35089ee21",
+          "textCharacters": 467,
+          "rangesActuallyRead": [
+            [
+              0,
+              467
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-89bfdaf46989b370",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "e406d9676271fdf45bf6a2dd4d48a0f26d3e4c63fa56d88eb90a7713a4c2a622",
+          "textCharacters": 39,
+          "rangesActuallyRead": [
+            [
+              0,
+              39
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 162,
+      "labId": "ucsd-psychology-lab-early-learning-and-cognition-lab",
+      "labName": "Early Learning and Cognition Lab",
+      "rawSha256": "938ddcf3904556cb1607c5c4065ee47d4b1f47aa380113ad4bad458d0c356271",
+      "packetSha256": "e8fad7bfbe7d02dc908227f17a7ef1ff020a25ff55e27d711f6bfb58b62d11e8",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读ELC完整首页、PI历史字段及目录：科学思维/因果推理是研究角度和研究对象，未给具体任务/测量。照片说明有testing/participants但未描述科研方法，不据caption扩成行为实验/访谈等。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-97f616d214b1c451",
+          "sourceUrl": "https://elc-lab-ucsd.com/",
+          "sourceObservedAt": "2026-10-16T01:03:39+00:00",
+          "bodySha256": "5559b13515c60c7b4a1b8be1c79de76b6485eee1b304f214006d38cc86ec0f9c",
+          "textSha256": "4cd7285bb697c22fceea7e34d219e7fe18107559938300477b900e5dc2913e75",
+          "textCharacters": 5912,
+          "rangesActuallyRead": [
+            [
+              0,
+              5912
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-ba0844693c4d2ca3",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "e1943e71f5f38c96ef743b0d7ee8b351950f4682f9a592733285124431b7f935",
+          "textCharacters": 36,
+          "rangesActuallyRead": [
+            [
+              0,
+              36
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d1c88a19e19f7f2f",
+          "sourceUrl": "https://elc-lab-ucsd.com/",
+          "sourceObservedAt": "2026-10-07T22:54:48+00:00",
+          "bodySha256": null,
+          "textSha256": "06ff5ff60f1cee8f0720ba636b82e1499dedc92dd0d6a1b7765767cb6566f832",
+          "textCharacters": 132,
+          "rangesActuallyRead": [
+            [
+              0,
+              132
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "sourceUrl": "https://psychology.ucsd.edu/people/faculty.html",
+          "sourceObservedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "textCharacters": 6411,
+          "rangesActuallyRead": [
+            [
+              0,
+              6411
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 154,
+          "reuseSourceId": "src-c04548c23c83144f"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 163,
+      "labId": "ucsd-cognitive-science-lab-mooshagian-lab",
+      "labName": "Mooshagian Lab",
+      "rawSha256": "fadc1b402bfa80b6266d58ceb49ec0ba06a95897f0d431f0751a8af171cd41a7",
+      "packetSha256": "ea102d0eb5069c7a67a88726ecb5dcf93bfa417272d772db276b0646add8e2b2",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Mooshagian People全文、两相同空Research入口和官方目录。非人灵长类模型在Charles与Lauren先前学位训练中；Elise的团队软件开发是成员目的/将由科学家utilizing的支持工作，没有已实施具体科研测量/分析主文，不据专业machine learning推方法。PI段只给感觉运动问题。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-f2593ef10b763844",
+          "sourceUrl": "https://mooshagianlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:07:44+00:00",
+          "bodySha256": "25393568cf795988f15901973119cc770c0c3cfd77c221048e2c7959c9fa7b3a",
+          "textSha256": "f68cdcd93e28dcb0d129da081dfcde935339093cb8c5f774ec2bc9bbf5c1bbf3",
+          "textCharacters": 107,
+          "rangesActuallyRead": [
+            [
+              0,
+              107
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-1e0c0a7a0e405e80",
+          "sourceUrl": "https://mooshagianlab.ucsd.edu/research",
+          "sourceObservedAt": "2026-10-16T01:37:31+00:00",
+          "bodySha256": "fc82306f920fec720aec44e2939405db40875ca6ef94bf3e480d4e58e2f01e63",
+          "textSha256": "f68cdcd93e28dcb0d129da081dfcde935339093cb8c5f774ec2bc9bbf5c1bbf3",
+          "textCharacters": 107,
+          "rangesActuallyRead": [
+            [
+              0,
+              107
+            ]
+          ],
+          "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+          "reuseReviewIndex": 163,
+          "reuseSourceId": "src-f2593ef10b763844"
+        },
+        {
+          "sourceId": "src-cf85a0e4317a6cd4",
+          "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/index.html",
+          "sourceObservedAt": "2026-10-07T23:00:04+00:00",
+          "bodySha256": null,
+          "textSha256": "f53c942b46906b227923de24eb7f6099662af660e6e70a8998703841267973ed",
+          "textCharacters": 42,
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-bd040de6251d3a34",
+          "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/index.html",
+          "sourceObservedAt": "2026-10-16T00:57:36+00:00",
+          "bodySha256": "276612c2e768d4032392f9bd89fc4687980f91de10c409e65ab6acecbdc8cfe1",
+          "textSha256": "8c8aa6ca049179c19f52ed9b489d9381151cf3a344ebf97a1c038fbcdef2f265",
+          "textCharacters": 2858,
+          "rangesActuallyRead": [
+            [
+              0,
+              2858
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-41da4d939dc1f9c1",
+          "sourceUrl": "https://mooshagianlab.ucsd.edu/people",
+          "sourceObservedAt": "2026-10-16T01:36:30+00:00",
+          "bodySha256": "37258b31f53ae30b89b5011db72178e0a921b282ab2025196888c43b10c49453",
+          "textSha256": "c3bc5504419dbab888643a2e382b50b89cfb552bcf8d63e22736137a2c779277",
+          "textCharacters": 4309,
+          "rangesActuallyRead": [
+            [
+              0,
+              4309
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 164,
+      "labId": "ucsd-global-policy-and-strategy-lab-power-transformation-lab",
+      "labName": "Power Transformation Lab",
+      "rawSha256": "005ea0be0df8c8f4bc40579de6cd602e4099cc346e26796f0eada0fa6cbb3fc4",
+      "packetSha256": "72e8e9c71521f6221747e65eccc9a0f3554aff5dca6137b10fba74b1da64b703",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读Power Transformation首页、About和Davidson官方简介全文。规划/电力市场/政治经济为领域，models/data仅导航和开放资源概述，页面题目中的unit commitment/imaging等不能作实际方法采用说明。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-d91165ef014ab14a",
+          "sourceUrl": "https://pwrlab.org/",
+          "sourceObservedAt": "2026-10-16T01:07:45+00:00",
+          "bodySha256": "b5da3771ffe04fafc2e8886b36d090f117451df207451e0ce3ba3679e1886c24",
+          "textSha256": "d82c805d520b74fa55b83149ee1b6b104ab99c475f465a08e01bf472e97b72c1",
+          "textCharacters": 2945,
+          "rangesActuallyRead": [
+            [
+              0,
+              2945
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-a3163e063b7420a9",
+          "sourceUrl": "https://pwrlab.org/about.html",
+          "sourceObservedAt": "2026-10-16T01:07:46+00:00",
+          "bodySha256": "887e58291651f643114bd8b0e04f7cef9530b0d86e2cf501a1ccef3c3b3eb962",
+          "textSha256": "747f58523d2c848167752ea84a4087bc0542bda41f76cf6d0733c6519acf813c",
+          "textCharacters": 1098,
+          "rangesActuallyRead": [
+            [
+              0,
+              1098
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-c4a2d56cb5f372b2",
+          "sourceUrl": "https://gps.ucsd.edu/faculty-directory/michael-davidson.html",
+          "sourceObservedAt": "2026-10-07T23:06:54+00:00",
+          "bodySha256": null,
+          "textSha256": "43a787cb5f36f7a586c25830fa50b5e7fb7178590a111897593f03410ec4b462",
+          "textCharacters": 39,
+          "rangesActuallyRead": [
+            [
+              0,
+              39
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d66ca94f0b893b71",
+          "sourceUrl": "https://gps.ucsd.edu/faculty-directory/michael-davidson.html",
+          "sourceObservedAt": "2026-10-16T01:00:52+00:00",
+          "bodySha256": "dc96371040f422f4d38ce5d2bac4ce6d44113b1705e09aa6fbea31f7d4b10fe7",
+          "textSha256": "331de2707710ba5461980a58dac46071e2c97520efe340ad3366147704c9fa56",
+          "textCharacters": 2007,
+          "rangesActuallyRead": [
+            [
+              0,
+              2007
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 165,
+      "labId": "ucsd-live-lab-da307b4f0f98b5",
+      "labName": "Computational Phonology Research Group",
+      "rawSha256": "ebc2f9c9c4775ad95ba2354badcd0aab4528f26bcbf47c8b46c993722827e958",
+      "packetSha256": "f5514fd1397f970f28a3a01b9faf479922b5f2bcabb648b92bc063b06765eb27",
+      "reviewedAt": "2026-10-16T09:13:47.971Z",
+      "decision": "unchanged",
+      "methods": [],
+      "methodEvidence": [],
+      "reasonZh": "已读ComPhy首页及Eric Baković官方profile；组是理论/计算音系讨论论坛，成员个人研究和通用phonology formal devices介绍不能转为本组采用算法；不猜测当前PI或研究协议。",
+      "sourceCoverage": [
+        {
+          "sourceId": "src-85edebb1b547501a",
+          "sourceUrl": "https://sites.ucsd.edu/compphon/",
+          "sourceObservedAt": "2026-10-16T01:10:52+00:00",
+          "bodySha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+          "textSha256": "46a2d712d19cc21bec3284dd5c9275f3793cb7d1336e88c738bac0ddb7654289",
+          "textCharacters": 357,
+          "rangesActuallyRead": [
+            [
+              0,
+              357
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-d326d70a0edc3d85",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+          "sourceObservedAt": "2026-10-16T01:09:12+00:00",
+          "bodySha256": null,
+          "textSha256": "39ae079b9eacc99fbaaa0c4c169360a7ef4f30e1e7ab2e1a5f34ba30713d92f8",
+          "textCharacters": 38,
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        },
+        {
+          "sourceId": "src-5f4195e0c64192e1",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+          "sourceObservedAt": "2026-10-16T01:09:12+00:00",
+          "bodySha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+          "textSha256": "670afb1ffc23c84cc8df5f9b3f9179fc2cfe4397e0a01cd0d599b21dca0e4931",
+          "textCharacters": 941,
+          "rangesActuallyRead": [
+            [
+              0,
+              941
+            ]
+          ],
+          "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+        }
+      ]
+    }
+  ],
+  "networkRequests": 0,
+  "psCalls": 0,
+  "rawPacketProjectionCodeCollectorSharedWrites": 0,
+  "draftNotApplied": true,
+  "policyZh": "仅源中明确实体/项目实际采用；兴趣、PI受训、导航、新闻/论文题目不自动作方法。历史工作与负责人/成员项目按范围和时间限定。全sourceCoverage记录实际packet text阅读范围，未读部分不作否定结论。",
+  "validation": {
+    "checkedAt": "2026-10-16T09:14:26+00:00",
+    "all56FrozenRawAndPacketHashesMatch": true,
+    "all56CurrentMethodsEmpty": true,
+    "allPacketSourceIdsCovered": true,
+    "sourceCoverageEntries": 203,
+    "allRangesAreFullPacketTextOrExactTextShaReuse": true,
+    "fullUntruncatedHtmlClaimed": false,
+    "methodProofCount": 8,
+    "allMethodQuotesLiteralAndOriginalTimesHashesMatch": true,
+    "actualMethodProofCacheBodiesAndMetadataChecked": {
+      "src-cdde6c6f4fcec449": {
+        "cacheBodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "metadataSha256": "2b407b5320ff437b188007c1b14397478feb333e6f01da735fd307dbb8958158",
+        "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510"
+      },
+      "src-67fe13c9f7da8c09": {
+        "cacheBodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+        "metadataSha256": "cc0e5d325fe439beac84571bb73e011f49aa33073ceebceeb01c74dce77b3776",
+        "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+        "sourceUrl": "https://www.zhaowei.us/"
+      },
+      "src-f6c3d16c4f7a9500": {
+        "cacheBodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "metadataSha256": "73bacd1dffdd569f75e7739ef87fa5d8b406d03bd867ae60d2f3946329715104",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html"
+      },
+      "src-f008a8591c981529": {
+        "cacheBodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+        "metadataSha256": "8c8ad10977ab93c4e2dc2ca489e838a1ac5a56ee1c864873d58bcad444050aa2",
+        "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html"
+      },
+      "src-7860c9151c7e8a82": {
+        "cacheBodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+        "metadataSha256": "465e268cfea090da12eef839ed6f2ea35d13d5f240804c262733cce67bfa9f38",
+        "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html"
+      },
+      "src-ecb5f3bfb3b5c8a7": {
+        "cacheBodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+        "metadataSha256": "207f70da15eee2e16f3795a6485ebefc3a0792cd1cc54bf6984440c138b014de",
+        "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html"
+      },
+      "src-8b426b44eccb9855": {
+        "cacheBodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+        "metadataSha256": "4c5aa9fa209d1c49f6fbb6f0bea0def6234f0da96a5016bb35f587b8828a893c",
+        "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=401"
+      }
+    },
+    "newMethodProofsWithoutBodySha": [],
+    "summaryOldAndUncertaintyReplacementsMatchCurrentRaw": true,
+    "errors": [],
+    "passed": true
+  }
+}

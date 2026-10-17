@@ -1,0 +1,158 @@
+{
+  "labId": "ucsd-live-lab-c53a46a8ac4496",
+  "status": "supported",
+  "summaryZh": "Alexandrov 实验室结合实验与计算研究癌症发生的分子机制，重点分析不同癌种及癌前病变的突变特征和基因组变化，并开发 SigProfiler 等机器学习工具分析癌症测序数据。",
+  "researchQuestions": [
+    "哪些分子过程和基因组变化推动癌症起始与演化，并留下特定的突变特征？",
+    "癌前病变与进展期浸润癌的基因组事件有何异同？"
+  ],
+  "topics": [
+    "癌症发生机制与突变特征",
+    "癌前病变的基因组改变",
+    "癌症起始与演化",
+    "机器学习与癌症测序数据分析"
+  ],
+  "methods": [
+    "实验与计算研究相结合",
+    "机器学习",
+    "SigProfiler 癌症基因组数据分析"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-b588a6d8abf3c778",
+      "quote": "Alexandrov Lab",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-7e288f2d49761026",
+      "quote": "The Alexandrov Lab University of California San Diego",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-ba617541487c7584",
+      "quote": "The Alexandrov Lab Research Our research focuses on utilizing experimental and computational approaches to elucidate the mechanisms by which cancers develop and in leveraging this knowledge for the development of better cancer prevention strategies and the improved targeting of existing cancer treatments.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-ba617541487c7584",
+      "quote": "our work has predominately focused on creating the concept of mutational signatures",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "quote": "The Mutational Landscape of Human Precancer",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "quote": "The analysis will reveal the mutational burden, driver mutations, copy number changes, mutational signatures, and subclonal architecture of pre-malignant lesions and compare them to molecular events previously identified in advanced invasive cancers.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "quote": "Our Lab has developed and maintains the SigProfiler suite of computational machine learning tools for analysis of next-generation generation cancer sequencing data.",
+      "supports": [
+        "research",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-9d02dfeba70a3fd7",
+      "quote": "SigProfiler tools allow researchers to analyze their genomics data and gain a predictive-understanding of the basic molecular processes that contribute to cancer initiation and cancer evolution.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "Ludmil Alexandrov官方历史档案的实际HTTP实验室链接，本次观测302到具名The Alexandrov Lab页面；其真实Research锚点连接明确Our research/Our Lab研究正文，形成此稳定ID独立实体绑定。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "本次关联目的页正文明确并列The Alexandrov Lab及University of California San Diego；不推断带日期的当前任职或部门隶属。"
+  },
+  "uncertainty": [
+    "研究正文复用本任务02:15:08和02:15:09的既有捕获，不作为本轮新抓取或内容更新。",
+    "项目段落含联合研究及计划表述；未把联盟样本数量、癌前病变样本计划当作本实验室已完成结果或当前数量。",
+    "具体湿实验技术未明确；方法保留来源明示的实验/计算、机器学习和SigProfiler。",
+    "原HTTPS地址的robots证书检查失败仍保留；本次HTTP到cloud站的302仅属于该关联HTTP观察，未确认原HTTPS页面身份或接受规范网址迁移。",
+    "此记录与已有Alexandrov记录分别保留独立稳定ID，未合并或判定别名；不据无日期页面核实现任负责人或运营。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T06:49:13+00:00",
+  "previousReviewedRecordBeforeProfileLinkObservation": {
+    "labId": "ucsd-live-lab-c53a46a8ac4496",
+    "status": "unresolved",
+    "summaryZh": "历史教师档案保存 Alexandrov Lab 链接；当前目标 robots 不可用，现有教师自述未明确界定实验室研究范围。",
+    "researchQuestions": [],
+    "topics": [],
+    "methods": [],
+    "evidence": [
+      {
+        "sourceId": "src-b588a6d8abf3c778",
+        "quote": "Alexandrov Lab",
+        "supports": [
+          "identity",
+          "affiliation"
+        ]
+      }
+    ],
+    "identity": {
+      "status": "uncertain",
+      "entityType": "lab",
+      "reason": "历史链接确认名称关联，但个人研究叙述不能自动代表整个实验室。"
+    },
+    "affiliation": {
+      "status": "source_reported",
+      "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+    },
+    "uncertainty": [
+      "研究主题与方法未知；抓取失败不表示实验室关闭。",
+      "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+    ],
+    "blockers": [
+      "destination_robots_unavailable",
+      "no_entity_local_research_text"
+    ],
+    "reviewedAt": "2026-10-16T01:50:05+00:00"
+  },
+  "profileLinkEvidenceReview": {
+    "reviewedAt": "2026-10-16T06:49:13+00:00",
+    "requestedURL": "http://alexandrov.ucsd.edu/",
+    "newOriginalListedURLChecks": 0,
+    "newAcceptedCanonicalURLs": 0,
+    "noIDMergeOrAlias": true,
+    "sourceIdsAdded": [
+      "src-7e288f2d49761026",
+      "src-ba617541487c7584",
+      "src-9d02dfeba70a3fd7"
+    ]
+  },
+  "researchContentSupport": {
+    "status": "supported",
+    "scope": "Explicit named-laboratory research prose; source binding independently established from preserved official profile literal link and actual related HTTP observation. Personal faculty prose, member biographies and publication-only methods excluded."
+  }
+}

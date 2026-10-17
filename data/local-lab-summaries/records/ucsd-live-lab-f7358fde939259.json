@@ -1,0 +1,116 @@
+{
+  "labId": "ucsd-live-lab-f7358fde939259",
+  "status": "supported",
+  "summaryZh": "Chen lab 研究阿尔茨海默病及相关痴呆，提出疾病成因和可能干预的问题。当前正文未明确方法。",
+  "researchQuestions": [
+    "阿尔茨海默病及相关痴呆由什么引起，可以采取哪些应对措施？"
+  ],
+  "topics": [
+    "阿尔茨海默病",
+    "相关痴呆"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-61382e56b7f41cac",
+      "quote": "Welcome to the Chen lab Alzheimer's disease research laboratory ​ We study Alzheimer' disease and related dementia: ​What causes the disease, and what can we do about it?",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-61382e56b7f41cac",
+      "quote": "Department of Neurosciences ​School of Medicine University of California, San Diego",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-61382e56b7f41cac",
+      "quote": "Welcome to the Chen lab Alzheimer's disease research laboratory ​ We study Alzheimer' disease and related dementia: ​What causes the disease, and what can we do about it?",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "正文明确列出 UC San Diego 医学院神经科学系。"
+  },
+  "uncertainty": [
+    "方法未明确。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "研究方法待核（限本轮已审阅材料）：已读短首页全文；仅提出阿尔茨海默病及相关痴呆原因与干预问题，没有技术采用叙述。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:08:51.257Z",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:47:30+00:00",
+    "candidateIndex": 156,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-61382e56b7f41cac",
+        "quote": "Welcome to the Chen lab Alzheimer's disease research laboratory ​ We study Alzheimer' disease and related dementia: ​What causes the disease, and what can we do about it?",
+        "sourceUrl": "https://www.xuchenlab-ucsd.org/",
+        "observedAt": "2026-10-16T01:06:55+00:00",
+        "bodySha256": "379715c6bf694d32458f3320e8ac5ad60d37a241b1641cf43f42299b95535d89"
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:08:51.257Z",
+    "previousRecordReviewedAt": "2026-10-16T07:41:11+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "已读短首页全文；仅提出阿尔茨海默病及相关痴呆原因与干预问题，没有技术采用叙述。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-61382e56b7f41cac",
+        "sourceUrl": "https://www.xuchenlab-ucsd.org/",
+        "sourceObservedAt": "2026-10-16T01:06:55+00:00",
+        "bodySha256": "379715c6bf694d32458f3320e8ac5ad60d37a241b1641cf43f42299b95535d89",
+        "textSha256": "c3303f4f052cdd1ea8605334301524dfcfb65d2aa2aed19831f942126c794cbc",
+        "textCharacters": 264,
+        "rangesActuallyRead": [
+          [
+            0,
+            264
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-e49ab97304a242de",
+        "sourceUrl": "https://profiles.ucsd.edu/xu.chen",
+        "sourceObservedAt": "2026-10-03T03:46:11+00:00",
+        "bodySha256": null,
+        "textSha256": "d5eafcd3a8ec786c3f1c59028f71a501c291fc4c04f4c100e1f54f1f84d41316",
+        "textCharacters": 42,
+        "rangesActuallyRead": [
+          [
+            0,
+            42
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

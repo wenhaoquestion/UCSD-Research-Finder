@@ -1,0 +1,97 @@
+{
+  "labId": "ucsd-live-lab-af83b7a0d3289e",
+  "status": "supported",
+  "summaryZh": "Gymrek Lab 研究与人类疾病有关的遗传变异及其在人群间的不同效应，尤其关注串联重复序列。团队开发面向生物样本库规模基因组数据的计算工具，并用高通量实验研究变异对分子和细胞表型的影响。",
+  "researchQuestions": [
+    "串联重复变异对性状以及分子、细胞表型有何影响？",
+    "遗传变异的效应如何在人群间变化？"
+  ],
+  "topics": [
+    "串联重复序列遗传变异",
+    "人群间遗传效应差异",
+    "疾病及分子细胞表型"
+  ],
+  "methods": [
+    "生物样本库规模基因组计算分析",
+    "高通量实验"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-5c5af581577f84ef",
+      "quote": "Gymrek Lab Homepage → http://gymreklab.github.io/",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-2c04c671c06fb89f",
+      "quote": "Redirecting to https://gymreklab.com",
+      "supports": [
+        "html_redirect_document_discovery_only"
+      ]
+    },
+    {
+      "sourceId": "src-45a858d307a0463d",
+      "quote": "The Gymrek Lab is located at the University of California San Diego.",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-45a858d307a0463d",
+      "quote": "Our overall goal is to understand genetic variants that underlie human disease and how their effects vary across different populations.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-45a858d307a0463d",
+      "quote": "We are particularly interested in repetitive DNA variants known as tandem repeats (TRs).",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-45a858d307a0463d",
+      "quote": "developing computational tools for analyzing TR variation in biobank-scale genomic datasets",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-45a858d307a0463d",
+      "quote": "using high-throughput experimental techniques to study the impacts of TR and other variants on molecular and cellcular phenotypes in healthy and disease states.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "原HTML明确meta refresh到同名Gymrek Lab站点；该独立缓存正文直接说明具名实验室及其研究，与原官方链接的名字一致。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "具名实验室正文明确写位于University of California San Diego，并分别说明Pediatrics/Medicine/CSE关系。"
+  },
+  "uncertainty": [
+    "原GitHub地址的观察到HTTP最终页仍是HTML跳转说明页；meta refresh与广告canonical不是已观察到的HTTP跳转，所列地址和稳定ID不变。",
+    "目的站实际采集于2026-10-16T01:03:11+00:00，早于原跳转说明页的01:06:51捕获，两者日期没有互相替代。",
+    "目的站说明Pediatrics Division of Genetics及Medicine/CSE关系；原基础字段不被静默覆盖，页面未标完整更新时间，当前隶属和持续运营未独立核验。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T03:08:19+00:00",
+  "researchContentSupport": {
+    "status": "supported",
+    "scope": "Direct named-lab overview before Featured publications. HTML client navigation is discovery only; separate target capture retains its earlier original date."
+  },
+  "previousReviewedAt": "2026-10-16T01:46:59+00:00"
+}

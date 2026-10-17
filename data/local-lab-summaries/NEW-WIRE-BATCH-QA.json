@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T03:27:56+00:00",
+  "passed": true,
+  "actionableIssues": [],
+  "scope": {
+    "observedAtCutoff": "2026-10-16T03:17:00+00:00",
+    "baselineResults": 70,
+    "baselineWires": 71,
+    "currentResults": 98,
+    "currentWires": 114,
+    "deltaResults": 28,
+    "deltaActualWires": 43,
+    "wireIndexRangeZeroBasedHalfOpen": [
+      71,
+      114
+    ],
+    "firstObservedAt": "2026-10-16T03:17:53+00:00",
+    "lastObservedAt": "2026-10-16T03:24:31+00:00",
+    "firstWireStartedAt": "2026-10-16T03:17:51+00:00",
+    "lastWireFinishedAt": "2026-10-16T03:24:31+00:00"
+  },
+  "counts": {
+    "modernSevenSourceReceipts": 28,
+    "exactPinnedSources": 7,
+    "pageOrRedirectWires": 33,
+    "robotsWires": 10,
+    "wireHTTPStatuses": {
+      "200": 35,
+      "301": 8
+    },
+    "actualPageReceipts": 28,
+    "responseBodyHashesVerified": 28,
+    "cachedRobotsReceiptsReused": 24,
+    "cachedRobotsCopiesEqualCollector": 24,
+    "newFinalRobotsReceipts": 4,
+    "uniqueAffectedLabsWithUnchangedListedRootMetadata": 23,
+    "sharedHostStateJSON": 915,
+    "sharedHostLocks": 915,
+    "requestsMadeByThisQA": 0,
+    "testsRunByThisQA": 0
+  },
+  "hashProofs": [
+    {
+      "file": "collect_ucsd_coverage.py",
+      "sha256": "aee6c49634e619c2e7f3f6369dee843604b71647e6a20ec77130e0bac7fcc11c",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "network_coordination.py",
+      "sha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "collection_lock.py",
+      "sha256": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "collection_scope.py",
+      "sha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "refresh_labs.py",
+      "sha256": "cdbd7832f6d6e7baeb1988da0535b85c8abcd7e06a6b62d740b81dc670237ead",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "refresh_faculty_directories.py",
+      "sha256": "012184fb455602fc21d57fad477487dc4f815ba75888806c8d37e69e3199a8f8",
+      "matchesProcessReceipt": true
+    },
+    {
+      "file": "lab_destinations.py",
+      "sha256": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "matchesProcessReceipt": true
+    }
+  ],
+  "receiptProof": {
+    "gapResultsSha256": "363a12bb6550d0bfb4284c9b39503a50f58208593dcd6167e37c1fa945d4cce4",
+    "processJsonSha256": "ca31eecdd74e387da1cc2095d5f749665f5a224171ac16ebf3b726bd760a00a5",
+    "deltaReceiptSha256": "38be4cfcc9bbd05ca3325c53ed8c5778cff273020305ff666eb20a5148599c9e",
+    "deltaWireEventsSha256": "bc1c10326441ec3442ebeee937cfeb433acd5a8c4c6e8666eae7715efe2ab73b",
+    "responseBodyHashListSha256": "9eb81c71ac59480d18bd8c0c29dc72eac6bcc8be53e04f64139305d4da317ad8"
+  },
+  "items": [
+    {
+      "url": "https://tongyan.physics.ucsd.edu/research/",
+      "observedAt": "2026-10-16T03:17:53+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:51+00:00",
+      "wireEventRange": [
+        71,
+        72
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://jschen.eng.ucsd.edu/research",
+      "observedAt": "2026-10-16T03:17:54+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:53+00:00",
+      "wireEventRange": [
+        72,
+        73
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://www.brialong.com/research",
+      "observedAt": "2026-10-16T03:17:55+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:55+00:00",
+      "wireEventRange": [
+        73,
+        74
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://theodorakisgroup.ucsd.edu/page1.html",
+      "observedAt": "2026-10-16T03:17:56+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:56+00:00",
+      "wireEventRange": [
+        74,
+        75
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://ndao.ucsd.edu/research.html",
+      "observedAt": "2026-10-16T03:17:57+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:57+00:00",
+      "wireEventRange": [
+        75,
+        76
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://profheath.org/research",
+      "observedAt": "2026-10-16T03:18:00+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:58+00:00",
+      "wireEventRange": [
+        76,
+        78
+      ],
+      "wireCount": 2,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://profheath.org/about-us/",
+      "observedAt": "2026-10-16T03:18:01+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:00+00:00",
+      "wireEventRange": [
+        78,
+        79
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://dickenson.ucsd.edu/research/swag-lab",
+      "observedAt": "2026-10-16T03:18:02+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:01+00:00",
+      "wireEventRange": [
+        79,
+        80
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://dickenson.ucsd.edu/research/swag-lab-members",
+      "observedAt": "2026-10-16T03:18:03+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:02+00:00",
+      "wireEventRange": [
+        80,
+        81
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://pulmonary.ucsd.edu/research/labs-centers/darquenne/research/index.html",
+      "observedAt": "2026-10-16T03:18:04+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:04+00:00",
+      "wireEventRange": [
+        81,
+        82
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://konopackygroup.ucsd.edu/research/",
+      "observedAt": "2026-10-16T03:18:06+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:05+00:00",
+      "wireEventRange": [
+        82,
+        83
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/research",
+      "observedAt": "2026-10-16T03:18:07+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:06+00:00",
+      "wireEventRange": [
+        83,
+        84
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://sites.google.com/ucsd.edu/microcirculation-autodigestion/people/about-microcirculation",
+      "observedAt": "2026-10-16T03:18:08+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:07+00:00",
+      "wireEventRange": [
+        84,
+        85
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "http://ebennettlab.com/",
+      "observedAt": "2026-10-16T03:18:12+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:09+00:00",
+      "wireEventRange": [
+        85,
+        89
+      ],
+      "wireCount": 4,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "http://bierlab.weebly.com/",
+      "observedAt": "2026-10-16T03:18:14+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:13+00:00",
+      "wireEventRange": [
+        89,
+        91
+      ],
+      "wireCount": 2,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://labs.biology.ucsd.edu/kiger/Amy_Kiger_Lab_at_UCSD/Home.html",
+      "observedAt": "2026-10-16T03:18:14+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:14+00:00",
+      "wireEventRange": [
+        91,
+        92
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://greenspanlab.ucsd.edu/projects.html",
+      "observedAt": "2026-10-16T03:18:15+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:15+00:00",
+      "wireEventRange": [
+        92,
+        93
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "http://www.nickspitzerlab.org/",
+      "observedAt": "2026-10-16T03:18:26+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:20+00:00",
+      "wireEventRange": [
+        93,
+        102
+      ],
+      "wireCount": 9,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://lab3.ucsd.edu/projects",
+      "observedAt": "2026-10-16T03:18:28+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:27+00:00",
+      "wireEventRange": [
+        102,
+        104
+      ],
+      "wireCount": 2,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://oirlab.ucsd.edu/index.php",
+      "observedAt": "2026-10-16T03:18:29+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:29+00:00",
+      "wireEventRange": [
+        104,
+        105
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://langcoglab.ucsd.edu/",
+      "observedAt": "2026-10-16T03:18:31+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:30+00:00",
+      "wireEventRange": [
+        105,
+        107
+      ],
+      "wireCount": 2,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "http://flyingv.ucsd.edu/krstic/Research.html",
+      "observedAt": "2026-10-16T03:18:32+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:32+00:00",
+      "wireEventRange": [
+        107,
+        108
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://dickenson.ucsd.edu/research",
+      "observedAt": "2026-10-16T03:18:33+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:32+00:00",
+      "wireEventRange": [
+        108,
+        109
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://xugroup.eng.ucsd.edu/research-overview/",
+      "observedAt": "2026-10-16T03:18:34+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:33+00:00",
+      "wireEventRange": [
+        109,
+        110
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://bertrandgroup.ucsd.edu/Bertrands_group.html",
+      "observedAt": "2026-10-16T03:18:35+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:35+00:00",
+      "wireEventRange": [
+        110,
+        111
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "http://thiemensgroup.ucsd.edu/research.html",
+      "observedAt": "2026-10-16T03:18:36+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:36+00:00",
+      "wireEventRange": [
+        111,
+        112
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://kitpogliano.ucsd.edu/research/",
+      "observedAt": "2026-10-16T03:18:38+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:36+00:00",
+      "wireEventRange": [
+        112,
+        113
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    },
+    {
+      "url": "https://oirlab.ucsd.edu/team1.php",
+      "observedAt": "2026-10-16T03:24:31+00:00",
+      "liveCheckedAt": "2026-10-16T03:24:31+00:00",
+      "wireEventRange": [
+        113,
+        114
+      ],
+      "wireCount": 1,
+      "pageRequestMade": true,
+      "allChecksPassed": true
+    }
+  ],
+  "boundaries": [
+    "Followup result.finalUrl applies only to that fetched candidate, never changes original listedWebsite or root HTTP final destination. All affected packet root observations predate this batch; new sources have followup roles.",
+    "24 cached robots receipt uses are copies from read-only collector response storage and retain original observation times; cached robots use does not imply a new wire. New robots hops and redirects are explicitly counted.",
+    "Only host-<sha256>.json and .lock files were present in shared storage; response bodies and wire temporary storage belong to owned gap-cache. This QA did not create or mutate shared state.",
+    "Recorded running collector hashes match exact owned snapshots despite a differing later working-tree collector revision. No test rerun, fetcher import/compile, PID probe, or wire request was performed."
+  ]
+}

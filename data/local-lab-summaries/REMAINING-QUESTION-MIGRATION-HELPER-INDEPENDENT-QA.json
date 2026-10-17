@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T08:52:54+00:00",
+  "status": "passed_readonly_helper_and_preapply_plan_review",
+  "passed": true,
+  "helper": {
+    "path": "data/local-lab-summaries/apply_remaining_question_fields.py",
+    "sha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d"
+  },
+  "plan": {
+    "path": "data/local-lab-summaries/REMAINING-QUESTION-FIELD-APPLICATION-PLAN.json",
+    "sha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+    "state": "immutable_plan_not_applied",
+    "counts": {
+      "reviewed": 434,
+      "addRecords": 194,
+      "questionsAdded": 273,
+      "explicitUnavailabilityRecords": 240,
+      "literalProofs": 273
+    },
+    "components": {
+      "REMAINING-QUESTION-FIELD-INVENTORY.json": "3800eb1f2b2f86e175ada0a1f735238771f54b07bcf0f8bdd01433178fd94e44",
+      "PRIOR29-QUESTION-FIELD-RECHECK-INVENTORY.json": "d9c7ca4fb9fa09c29460d4c9549fc6f8296bf3ab1932cc730d43fa3ad2858e94",
+      "REMAINING-QUESTION-FIELD-REVIEW-000-134.json": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+      "REMAINING-QUESTION-FIELD-REVIEW-135-269.json": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+      "REMAINING-QUESTION-FIELD-REVIEW-270-404.json": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+      "REMAINING-QUESTION-MESIROV-ADDENDUM.json": "3aa7f78aeb9bc9464074969524e4beb5cd3828558004ee360655e16a9d4cb50e",
+      "REMAINING-QUESTION-SCOPE-REVISIONS.json": "df38a162df6e98571d914706d8f0a8207345ae320b609a1b8933dd42285131d4",
+      "REMAINING-QUESTION-MIDRANGE-ADDENDUM.json": "74e1d8890204e9c83c57be5e49bd113839ee40bee895d61ce02b9d7dab2149cb",
+      "PRIOR29-QUESTION-FIELD-REVIEW.json": "8eff973cc745e4f1539900e309d8740d61bd5e09574a474f4e7774b7c939393c",
+      "PRIOR29-QUESTION-FIELD-REVIEW-009-028.json": "82ba1f2dd6d8dfcdc1fe0f1f8d7dce51a86fbb20030cdf79778a3008d37b9c6a",
+      "REMAINING-QUESTION-FIELD-CROSS-QA-000-134.json": "0e3c8d6418220862f8418eb9b8407c70c2cf045eb4786311ed81a85c1f3af934",
+      "REMAINING-QUESTION-FIELD-CROSS-QA-135-269.json": "eb48a6b4566a9cb9e3b2486e0a79dd03b808c4b12de3f3bb7452b0e678546101",
+      "REMAINING-QUESTION-FIELD-CROSS-QA-270-404.json": "8f0f90f08344910ae12a86d891bf9039389cd259579c28692813df4a68f54f71",
+      "PRIOR29-QUESTION-FIELD-CROSS-QA-000-008.json": "f20c4aefa5d3677b3fae930f7fb72391cc1b27445ccb0a8066e9483974bf4aa2",
+      "PRIOR29-QUESTION-FIELD-CROSS-QA-009-028.json": "66949086d4fe60a69639dc0c9c6419761af2990b314366ca729e04d2205a61e1",
+      "REMAINING-QUESTION-FIELD-DRAFT-INTEGRITY.json": "bb11565493866b728d0f627a0148ee263f6d1c38fd68d1bb38ced9290b77860d"
+    }
+  },
+  "independentDataChecks": {
+    "reviewedUniqueRecords": 434,
+    "exactSupportedEmptyFieldInventory": true,
+    "all884RawFrozen": true,
+    "all884PacketsFrozen": true,
+    "unaffectedRawCount": 450,
+    "allComponentHashesMatch": true,
+    "all273QuotesLiteralAndWithinRecordedReadRanges": true,
+    "all273SourceTimesAndBodyHashesExplicitAndMatchPacket": true,
+    "all240NegativeNotesHaveReasonsAndNonemptyActualReadRange": true,
+    "oldEvidenceAndUncertaintyPrefixesExact": true,
+    "changedRawFieldsAndCounts": {
+      "reviewedAt": 434,
+      "uncertainty": 240,
+      "questionFieldReview": 434,
+      "researchQuestions": 194,
+      "evidence": 194
+    },
+    "all434HydratedUrlCoreEqual": true,
+    "modelReviewTimeRange": [
+      "2026-10-16T08:11:10.640933+00:00",
+      "2026-10-16T08:47:07+00:00"
+    ],
+    "noModelReviewTimeCopiedFromProofObservedAt": true,
+    "actualJournalExists": false
+  },
+  "blockingBugs": [],
+  "codeReferences": [
+    {
+      "lines": "51–121",
+      "finding": "405+29 contiguous review indices and434 unique lab IDs; all and only supported empty RQ inventory."
+    },
+    {
+      "lines": "128–145",
+      "finding": "Frozen raw/packet SHA and source coverage/date/hash/range checks."
+    },
+    {
+      "lines": "149–182",
+      "finding": "Only RQ, associated evidence, bounded negative uncertainty, questionFieldReview metadata and model reviewedAt are constructed; original source times preserved."
+    },
+    {
+      "lines": "183–192",
+      "finding": "Hydrated URL/scientific invariants and old evidence/uncertainty prefixes checked."
+    },
+    {
+      "lines": "205–237",
+      "finding": "Approved plan/helper/component/packet/unaffected-record hashes; old/new record hash guards; atomic per-record resumable journal."
+    }
+  ],
+  "offlineMemoryCases": {
+    "cases": [
+      {
+        "name": "initial_apply_434_in_memory",
+        "outcome": "complete",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 869
+      },
+      {
+        "name": "resume_after_atomic_record_before_first_journal",
+        "outcome": "resumed_complete",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 869
+      },
+      {
+        "name": "reject_qa_plan_hash_change",
+        "outcome": "rejected_before_mutation",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 0
+      },
+      {
+        "name": "reject_packet_snapshot_change",
+        "outcome": "rejected_before_mutation",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 0
+      },
+      {
+        "name": "reject_unaffected_record_change",
+        "outcome": "rejected_before_mutation",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 0
+      },
+      {
+        "name": "reject_unexpected_touched_record",
+        "outcome": "rejected_before_mutation",
+        "fileSystemWrites": 0,
+        "simulatedWrites": 0
+      }
+    ],
+    "allPassed": true,
+    "actualNetworkRequests": 0,
+    "actualRawPacketPlanJournalWrites": 0
+  },
+  "limitationsZh": [
+    "这是字段迁移helper和真实plan的只读数据完整性QA；未重新审读全部科研正文，不替代另一代理的semantic plan QA。",
+    "helper绑定独立语义QA组件hash和单独的approved plan SHA；不会自动解释QA报告正文作语义接受。",
+    "恢复是逐条原子checkpoint，不是434条全局单事务；完整旧raw在immutable plan中保存。",
+    "最初拟作截获atomic的内存plan dry-run，被并行已创建plan的不可变入口守卫拒绝，未写任何文件。",
+    "此helper不在430 production suite覆盖内；已对实际apply函数执行6个完全内存模拟场景。"
+  ],
+  "networkRequests": 0,
+  "psCalls": 0,
+  "actualRawPacketPlanJournalCodeCollectorSharedWrites": 0,
+  "errors": []
+}

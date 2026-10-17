@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "ordinal": 835,
+  "labId": "ucsd-electrical-and-computer-engineering-lab-wsil-group",
+  "labName": "WSIL Group",
+  "listedWebsite": "https://profheath.org/",
+  "listedDepartment": "Electrical and Computer Engineering",
+  "listedInstitution": "University of California San Diego",
+  "listedSubtype": "research_group",
+  "sources": [
+    {
+      "sourceUrl": "https://profheath.org/",
+      "queueUrl": "https://profheath.org/",
+      "requestedUrl": "https://profheath.org/",
+      "checkedUrl": "https://profheath.org/",
+      "observedAt": "2026-10-16T01:07:37+00:00",
+      "sourceContentDates": [],
+      "title": "Research in wireless communication and signal processing",
+      "headings": [
+        "Professor Robert W. Heath Jr.",
+        "Visions for the next generation of MIMO",
+        "Sponsors",
+        "Contact us"
+      ],
+      "text": "Professor Robert W. Heath Jr. Welcome! I am the Charles Lee Powell Chair in Wireless Communication at the University of California, San Diego. My research group focuses on the theoretical and practical aspects of MIMO communication systems, including applications to sixth generation cellular networks, local area networks and connected environments. My group is always looking to establish collaborations with new research sponsors, and to recruit the best talent to work on those projects. Visions for the next generation of MIMO Sponsors Contact us rwheathjr@ucsd.edu Jacobs School of Engineering University of California, San Diego 9500 Gilman Drive, MC0407 La Jolla, CA 92093",
+      "textTruncated": false,
+      "bodySha256": "f568c8fcf72bcb85976ce5c7adf9e4193fb545c05d48a2c9e7b9f6d8e647a293",
+      "collectorSha256": "f568c8fcf72bcb85976ce5c7adf9e4193fb545c05d48a2c9e7b9f6d8e647a293",
+      "canonicalLinkUrls": [
+        "https://profheath.org/"
+      ],
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/52d95b06232696e4abc96375873a58eaba9bcf043be3cb3e31fbec43bcf69358.html",
+      "captureOrigin": "collection_cache_reuse",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "listed_lab_destination",
+      "sourceId": "src-d52c7e6505cea29d"
+    },
+    {
+      "sourceUrl": "https://profheath.org/research/",
+      "queueUrl": "https://profheath.org/research",
+      "requestedUrl": "https://profheath.org/research",
+      "checkedUrl": "https://profheath.org/research",
+      "observedAt": "2026-10-16T03:18:00+00:00",
+      "sourceContentDates": [],
+      "title": "Research",
+      "headings": [
+        "Research",
+        "Physically consistent information theory: bringing back circuits and electromagnetics",
+        "Tri-Hybrid MIMO architecture",
+        "Reconfigurable antennas, dynamic metasurface antennas, and parasitic arrays",
+        "Communication at Upper Mid-band frequencies",
+        "AI/ML for configuring MIMO communication links",
+        "Position and sensor-aided MIMO communication leveraging AI/ML",
+        "Reinforcement learning fundamentals and applications to wireless communications",
+        "Energy-efficient MIMO for next generation RAN architectures"
+      ],
+      "text": "Research Welcome to the WSIL research page! This page provides a snapshot of current and ongoing research projects in Professor Robert Heath’s research group at UC San Diego. The page is brief so that it can be updated frequently. We want to acknowledge current and recent support for our research including the National Science Foundation under grant nos. NSF-ECCS-2435261, NSF-CCF-2435254, NSF-CNS-2433782, funds from federal agencies and industry partners as specified in the Resilient & Intelligent NextG Systems (RINGS) program, the Army Research Office under Grant W911NF2410107, Qualcomm Innovation Fellowship, Nokia, and Samsung. Physically consistent information theory: bringing back circuits and electromagnetics MIMO communication systems support more antennas, with wider bandwidths, higher frequencies, and more complicated array configurations. The classical theory used to analyze such systems makes several simplifying assumptions that may not hold in these more extreme regions of operation. The WSIL and external collaborators are progressing in developing information and communication theory based on physically consistent models. This results in research that leverages circuits and electromagnetics to introduce new approaches for analyzing systems, devising performance bounds, and designing algorithms. [1] A. Mezghani et al., “Reincorporating circuit theory into information theory,” IEEE BITS Information Theory Magazine, pp. 1–17, 2023, doi: 10.1109/MBITS.2023.3346329. [2] V. Shyianov, M. Akrout, F. Bellili, A. Mezghani, and R. W. Heath, “Achievable rate with antenna size constraint: Shannon meets Chu and Bode,” IEEE Transactions on Communications, vol. 70, no. 3, pp. 2010–2024, Mar. 2022, doi: 10.1109/TCOMM.2021.3099842. [3] N. V. Deshpande, M. R. Castellanos, S. R. Khosravirad, J. Du, H. Viswanathan, and R. W. Heath, “A generalization of the achievable rate of a MISO system using bode-fano wideband matching theory,” IEEE Transactions on Wireless Communications, vol. 23, no. 10, pp. 13313–13329, Oct. 2024, doi: 10.1109/TWC.2024.3400793. Tri-Hybrid MIMO architecture The next evolution in the hybrid MIMO architecture is the tri-hybrid architecture where beamforming is done using a combination of digital, analog, and reconfigurable antennas. Incorporating reconfigurable antennas makes it possible to scale up the aperture in size while reducing the number of components and the overall power consumption. Beyond enabling large apertures, reconfigurable antennas can dynamically alter many of their primary characteristics, including polarization, gain pattern, and frequency to retune based on spectral and spatial considerations. For example, it would allow for optimizing the gain for the target bandwidth, changing the operating frequency without switching to a different array, and matching the polarization and direction of the signal to better paths in the channel. We are currently developing precoding and combining algorithms for the tri-hybrid architecture and studying how the architecture adapts to different types of antennas. [1] M. R. Castellanos, J. Carlson, and R. W. Heath, “Energy-efficient tri-hybrid precoding with dynamic metasurface antennas,” in 2023 57th Asilomar Conference on Signals, Systems, and Computers, Oct. 2023, pp. 1625–1630. doi: 10.1109/IEEECONF59524.2023.10476911. Reconfigurable antennas, dynamic metasurface antennas, and parasitic arrays Reconfigurable antennas are an important new ingredient of MIMO communication systems. The WSIL is doing fundamental research to understand reconfigurable antennas in terms of communication theoretic performance measurements. Our current work involves devising new models for reconfigurable antennas, simulating and prototyping the antennas, and developing algorithms to integrate the antennas into MIMO systems as part of the tri-hybrid MIMO architecture. [1] J. Carlson, M. R. Castellanos, and R. W. Heath, “Dynamic metasurface antennas for energy-efficient MISO communications,” in GLOBECOM 2023 – 2023 IEEE global communications conference, Dec. 2023, pp. 7502–7507. doi: 10.1109/GLOBECOM54140.2023.10436779. [2] J. Carlson, M. R. Castellanos, and R. W. Heath, “Hierarchical codebook design with dynamic metasurface antennas for energy-efficient arrays,” IEEE Transactions on Wireless Communications, vol. 23, no. 10, pp. 14790–14804, Oct. 2024, doi: 10.1109/TWC.2024.3419107. Communication at Upper Mid-band frequencies The upper mid-band is the next spectrum gold rush. It comprises frequencies from 6 GHz to 24 GHz and is known as FR3 in the cellular world. There are several new challenges for MIMO systems in the upper mid-band. (1) The arrays are larger due to shrinking antenna sizes and there is a desire to retain the same coverage at lower frequencies. (2) The spectrum is occupied by many incumbents such as satellites, space-based sensing, and radars. The WSIL is exploring methods to address these new challenges. One line of research is to understand when and how near-field communication can be useful for multiuser MIMO in the upper mid-band frequencies. Another line of research is developing MIMO techniques to reduce the interference inflicted on incumbent spectrum users by exploiting information about their characteristics. [1] R. W. Heath and N. González-Prelcic, “Beamsharing in mixed near-field / far-field MIMO systems for the upper mid-band,” in 2024 IEEE 25th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC), Sep. 2024, pp. 786–790. doi: 10.1109/SPAWC60668.2024.10694278. AI/ML for configuring MIMO communication links Next-generation cellular and WiFi networks continue to increase the MIMO communication dimensions. Configuring these extreme MIMO links with low overhead remains a challenge. The WSIL has been an early pioneer of AI/ML algorithms for MIMO communication systems since 2009. Our early work was focused on smart rate adaptation in MIMO communication links, where the problem of modulation, coding, and number of MIMO streams was formulated as a classification problem. Our recent work focuses on codebook design for beam-based MIMO including the SSB and the CSI-RS codebooks. We have found that AI/ML can design new beam codebooks with several decibels of performance improvements while staying completely within the constraints of current 5G systems. [1] R. M. Dreifuerst and R. W. Heath, “Machine learning codebook design for initial access and CSI type-II feedback in sub-6-ghz 5G NR,” IEEE Transactions on Wireless Communications, vol. 23, no. 6, pp. 6411–6424, Jun. 2024, doi: 10.1109/TWC.2023.3331313. [2] R. M. Dreifuerst and R. W. Heath, “Hierarchical ML codebook design for extreme MIMO beam management,” IEEE Transactions on Machine Learning in Communications and Networking, vol. 2, pp. 688–702, 2024, doi: 10.1109/TMLCN.2024.3402178. [3] A. Rico-Alvarino and R. W. Heath, “Learning-Based Adaptive Transmission for Limited Feedback Multiuser MIMO-OFDM,” IEEE Transactions on Wireless Communications, vol. 13, no. 7, pp. 3806–3820, Jul. 2014, doi: 10.1109/TWC.2014.2314104. [4] R. C. Daniels, C. M. Caramanis, and R. W. Heath, “Adaptation in Convolutionally Coded MIMO-OFDM Wireless Systems Through Supervised Learning and SNR Ordering,” IEEE Transactions on Vehicular Technology, vol. 59, no. 1, pp. 114–126, Jan. 2010, doi: 10.1109/TVT.2009.2029693. Position and sensor-aided MIMO communication leveraging AI/ML Wireless communication systems are increasingly integrating sensor data to support applications such as automated vehicles and robotics. This data may be generated by sensors like radar, camera, and lidar located on the infrastructure and devices, or by integrated sensing and communications (ISAC) where the communication waveform is also used for sensing. This sensor data is collected in the same physical environment where radio propagation is occurring. As such, there are potential congruences between sensing and communication that can be exploited. The WSIL is developing strategies for reducing the overheads in configuring MIMO communication links by exploiting location and sensing information. We continue to develop AI/ML strategies for uncovering the relationships between sensor data and communication strategies. [1] K. Patel and R. W. Heath, “Harnessing multimodal sensing for multi-user beamforming in mmWave systems,” IEEE Transactions on Wireless Communications, pp. 1–1, 2024, doi: 10.1109/TWC.2024.3475950. [2] I. Kilinc, R. M. Dreifuerst, J. Kim, and R. W. Heath, “Beam training in mmWave vehicular systems: Machine learning for decoupling beam selection,” in 2024 IEEE International Black Sea Conference on Communications and Networking (BlackSeaCom), Jun. 2024, pp. 54–59. doi: 10.1109/BlackSeaCom61746.2024.10646235. [3] Y. Wang, A. Klautau, M. Ribero, A. C. K. Soong, and R. W. Heath, “MmWave Vehicular Beam Selection With Situational Awareness Using Machine Learning,” IEEE Access, vol. 7, pp. 87479–87493, 2019, doi: 10.1109/ACCESS.2019.2922064. [4] V. Va, J. Choi, T. Shimizu, G. Bansal, and R. W. Heath, “Inverse Multipath Fingerprinting for Millimeter Wave V2I Beam Alignment,” IEEE Transactions on Vehicular Technology, vol. 67, no. 5, pp. 4042–4058, May 2018, doi: 10.1109/TVT.2017.2787627. Reinforcement learning fundamentals and applications to wireless communications Reinforcement learning (RL) is a powerful approach for distributed decision-making with broad applications to wireless communication systems. It is well suited for problems in distributed networks including device-to-device communication, relays, and mobile ad hoc networks. The WSIL is investigating how reinforcement learning can solve challenging problems in MIMO link configuration. We are exploring the applications of more advanced regret formulations and are interested in devising new RL methods based on quantized feedback. Reinforcement learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. [1] D. Kim, M. R. Castellanos, and R. W. Heath, “Joint band assignment and beam management using hierarchical reinforcement learning for multi-band communication,” IEEE Transactions on Vehicular Technology, vol. 73, no. 9, pp. 13451–13465, Sep. 2024, doi: 10.1109/TVT.2024.3397615. [2] C. V. Nahum et al., “Intent-aware radio resource scheduling in a RAN slicing scenario using reinforcement learning,” IEEE Transactions on Wireless Communications, vol. 23, no. 3, pp. 2253–2267, Mar. 2024, doi: 10.1109/TWC.2023.3297014. [3] Y. Zhang and R. W. Heath, “Reinforcement learning-based joint user scheduling and link configuration in millimeter-wave networks,” IEEE Transactions on Wireless Communications, vol. 22, no. 5, pp. 3038–3054, May 2023, doi: 10.1109/TWC.2022.3215922. [4] V. H. L. Lopes et al., “Deep reinforcement learning-based scheduling for multiband massive MIMO,” IEEE Access, vol. 10, pp. 125509–125525, 2022, doi: 10.1109/ACCESS.2022.3224808. Energy-efficient MIMO for next generation RAN architectures Energy efficiency (EE) and sustainability are key metrics in 6G radio access networks (RAN). Traditional MIMO architectures focus on maximizing spectral efficiency, but this often comes at the cost of high power consumption. To address this, we are exploring a flexible design that can dynamically balance spectral efficiency and energy efficiency depending on user traffic load and realistic deployment conditions. Our research develops algorithms that explore these tradeoffs, combining PHY-layer (link-level) with system-level optimization and AI-driven adaptation . Ultimately, we are aiming to enable next-generation RANs that support not only high-capacity but also high EE.",
+      "textTruncated": false,
+      "bodySha256": "a59522044fcb3bfb51931a3f08d72e4908f4544d608ee9a05a312dfe4639f2d8",
+      "collectorSha256": "a59522044fcb3bfb51931a3f08d72e4908f4544d608ee9a05a312dfe4639f2d8",
+      "canonicalLinkUrls": [
+        "https://profheath.org/research/"
+      ],
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/37e9423d7ed80c0053ecaec61d0bc7f522c182b9eba00e7febf5a6bb380af0bb.html",
+      "captureOrigin": "summary_gap_live_fetch",
+      "redirectChain": [
+        {
+          "from": "https://profheath.org/research",
+          "to": "https://profheath.org/research/",
+          "httpStatus": 301
+        }
+      ],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "explicit_linked_research_subpage",
+      "sourceId": "src-b226b6e4c228c37b"
+    },
+    {
+      "sourceUrl": "https://ece.ucsd.edu/people/faculty",
+      "observedAt": "2026-10-07T22:54:31+00:00",
+      "text": "Website -> http://www.profheath.org",
+      "title": "Historical field evidence: labName",
+      "headings": [],
+      "sourceContentDates": [],
+      "sourceId": "src-98e0b7a73cdf0d13",
+      "role": "historical_field_labName",
+      "originalMethod": "manual_review_official_page_links_lab_site",
+      "textTruncated": false
+    },
+    {
+      "sourceUrl": "https://www.ece.ucsd.edu/people/faculty",
+      "queueUrl": "https://www.ece.ucsd.edu/people/faculty",
+      "requestedUrl": "https://www.ece.ucsd.edu/people/faculty",
+      "checkedUrl": "https://www.ece.ucsd.edu/people/faculty",
+      "observedAt": "2026-10-16T00:57:23+00:00",
+      "sourceContentDates": [],
+      "title": "Faculty | Electrical and Computer Engineering",
+      "headings": [
+        "Faculty",
+        "Nicholas A. Antipa",
+        "Nikolay A. Atanasov",
+        "Saharnaz Baghdadchi",
+        "Dinesh Bharadia",
+        "Pamela C. Cosman",
+        "Shadi A. Dayeh",
+        "Sujit Dey",
+        "Y. Shaya Fainman",
+        "Massimo Franceschetti",
+        "Eric Fullerton",
+        "Ian A. Galton",
+        "Nuria Gonzalez-Prelcic",
+        "Drew A. Hall",
+        "Robert W. Heath Jr",
+        "Tzu-Chien Hsueh",
+        "Tara Javidi",
+        "Andrew B. Kahng",
+        "Mingu Kang",
+        "Pradeep K. Khosla",
+        "Farinaz Koushanfar",
+        "Duygu Kuzum",
+        "Hanh-Phuc Le",
+        "Bill Lin",
+        "Zhaowei Liu"
+      ],
+      "text": "Faculty Nicholas A. Antipa Assistant Professor nantipa@ucsd.edu Lab Web Nikolay A. Atanasov Professor natanasov@ucsd.edu Saharnaz Baghdadchi Associate Teaching Professor sabaghdadchi@ucsd.edu Dinesh Bharadia Associate Professor dbharadi@ucsd.edu Web page Pamela C. Cosman Chair, Department of ECE Distinguished Professor pcosman@ucsd.edu 858-822-0157 Shadi A. Dayeh Professor sdayeh@ucsd.edu 858-534-5171 Sujit Dey Distinguished Professor sdey@ucsd.edu 858-534-0750 Y. Shaya Fainman Distinguished Professor yfainman@ucsd.edu 858-534-8909 Massimo Franceschetti Professor mfranceschetti@ucsd.edu 858-822-2284 Eric Fullerton Distinguished Professor efullerton@ucsd.edu 858-534-9639 Ian A. Galton Distinguished Professor iagalton@ucsd.edu 858-822-1332 Nuria Gonzalez-Prelcic Professor ngprelcic@ucsd.edu Drew A. Hall Professor dahall@ucsd.edu 858-534-3855 Robert W. Heath Jr Professor rwheathjr@ucsd.edu Website Tzu-Chien Hsueh Associate Professor tzhsueh@ucsd.edu Tara Javidi Professor tjavidi@ucsd.edu 858-822-4924 Andrew B. Kahng Distinguished Professor akahng@ucsd.edu 858-822-4884 Mingu Kang Associate Professor m7kang@ucsd.edu VVIP Lab Pradeep K. Khosla Chancellor, UC San Diego Distinguished Professor chancellor@ucsd.edu 858-534-3135 Farinaz Koushanfar Professor fkoushanfar@ucsd.edu ACES Lab Duygu Kuzum Professor dkuzum@ucsd.edu Hanh-Phuc Le Associate Professor hanhphuc@ucsd.edu (858) 246-5337‬ Website Bill Lin Professor Associate Dean for Research billlin@ucsd.edu 858-822-1383 Zhaowei Liu Professor z4liu@ucsd.edu 858-822-3470 Yu-Hwa Lo Distinguished Professor ylo@ucsd.edu 858-822-3429 Vitaliy Lomakin Professor vlomakin@ucsd.edu 858-822-4726 Yiorgos Makris Professor ymakris@ucsd.edu Patrick P. Mercier Professor pmercier@ucsd.edu Florian Meyer Associate Professor flmeyer@ucsd.edu Siavash Mirarab (Mir arabbaygi) Professor smirarabbaygi@ucsd.edu 858-822-6245 Shayan Mookherjea Professor smookherjea@ucsd.edu 858-534-4483 Karcher Morris Associate Teaching Professor k6morris@ucsd.edu Parinaz Naghizadeh Assistant Professor pnaghizadeh@ucsd.edu Website Abdoulaye Ndao Associate Professor a1ndao@ucsd.edu Website Tse Nga Ng Professor tnn046@ucsd.edu 858-534-4898 Truong Nguyen Distinguished Professor tqn001@ucsd.edu 858-822-5554 Kenji Nomura Professor kenomura@ucsd.edu Alon Orlitsky Professor aorlitsky@ucsd.edu 858-822-0228 Piya Pal Professor pipal@ucsd.edu 858-246-2565 Website Rahul Parhi Assistant Professor rparhi@ucsd.edu Website Albert P. Pisano Dean, Jacobs School of Engineering Distinguished Professor appisano@ucsd.edu 858-534-6237 Jorge Poveda Associate Professor jipoveda@ucsd.edu Ramesh R. Rao Distinguished Professor rrao@ucsd.edu 858-822-4572 Gabriel M. Rebeiz Distinguished Professor grebeiz@ucsd.edu 858-534-8001 Noah Rubin Assistant Professor noahrubin@ucsd.edu Website Rajeev Sahay Assistant Teaching Professor r2sahay@ucsd.edu Website Curt Schurgers Teaching Professor cschurgers@ucsd.edu (858) 246-1442 Yuanyuan Shi Assistant Professor yus047@ucsd.edu Website Paul H. Siegel Distinguished Professor psiegel@ucsd.edu 858-534-6210 Daniel F. Sievenpiper Professor dsievenpiper@ucsd.edu 858-822-6678 Yatish G. Turakhia Assistant Professor yturakhia@ucsd.edu (858) 534-4493 Nuno M. Vasconcelos Professor nvasconcelos@ucsd.edu 858-534-5550 Edward Wang Associate Professor ejaywang@ucsd.edu Jun-Kun Wang Assistant Professor jkw005@ucsd.edu Xiaolong Wang Associate Professor xiw012@ucsd.edu Website Pengtao Xie Associate Professor p1xie@ucsd.edu Website Michael Yip Professor yip@ucsd.edu 858-822-4778 Paul K. Yu Provost, Revelle College Distinguished Professor pyu@ucsd.edu 858-534-1571 Kenneth A. Zeger Professor zeger@ucsd.edu 858-822-0440 Xinyu Zhang Professor Director, Center for Wireless Communications xyzhang@ucsd.edu (858) 534-6426 Yang Zheng Assistant Professor yaz058@ucsd.edu Website",
+      "textTruncated": false,
+      "bodySha256": "f5629bc29ed986e4c919eb573b90f770dabae18cb2db3c10ab47863875260166",
+      "collectorSha256": "f5629bc29ed986e4c919eb573b90f770dabae18cb2db3c10ab47863875260166",
+      "canonicalLinkUrls": [],
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/78c128809362f1039e71d1d60e9ddec26605b6e914b71413779db2f1c5f57ad1.html",
+      "captureOrigin": "collection_cache_reuse",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "listed_official_source_requires_entity_localization",
+      "sourceId": "src-21666f9fbba0dc81"
+    },
+    {
+      "sourceUrl": "https://profheath.org/about-us/",
+      "queueUrl": "https://profheath.org/about-us/",
+      "requestedUrl": "https://profheath.org/about-us/",
+      "checkedUrl": "https://profheath.org/about-us/",
+      "observedAt": "2026-10-16T03:18:01+00:00",
+      "sourceContentDates": [],
+      "title": "WSIL Group",
+      "headings": [
+        "WSIL group",
+        "Prof. Robert W. Heath Jr.",
+        "Graduate students"
+      ],
+      "text": "WSIL group Prof. Robert W. Heath Jr. Robert W. Heath Jr. is the Charles Lee Powell Chair in Wireless Communications and a Professor in the Department of Electrical and Computer Engineering at the University of California, San Diego. He received the B.S. and M.S. degrees from the University of Virginia, Charlottesville, VA, in 1996 and 1997 respectively, and the Ph.D. from Stanford University, Stanford, CA, in 2002, all in electrical engineering. From 2020-2023 he was with the North Carolina State University where he was most recently the Lampe Distinguished Chair. From 2002-2020 he was with The University of Texas at Austin, most recently as Cockrell Family Regents Chair in Engineering and Director of UT SAVES. He is also President and CEO of MIMO Wireless Inc. Dr. Heath authored “Introduction to Wireless Digital Communication” (Prentice Hall, 2017) and “Digital Wireless Communication: Physical Layer Exploration Lab Using the NI USRP” (National Technology and Science Press, 2012), and co-authored “Millimeter Wave Wireless Communications” (Prentice Hall, 2014) and “Foundations of MIMO Communication” (Cambridge University Press, 2018). He has been a co-author of a number award winning conference and journal papers including in the 2020 and 2024 IEEE Signal Processing Society Donald G. Fink Overview Paper Awards, the 2021 IEEE Vehicular Technology Society Neal Shepherd Memorial Best Propagation Paper Award, and the 2022 IEEE Vehicular Technology Society Best Vehicular Electronics Paper Award. Other notable recognitions include the 2017 EURASIP Technical Achievement award, the 2019 IEEE Kiyo Tomiyasu Award, the 2021 IEEE Vehicular Technology Society James Evans Avant Garde Award, and the 2025 IEEE / RSE James Clerk Maxwell Medal. He was became a Fellow of the IEEE in 2011, a Fellow of the National Academy of Inventors in 2017 and a Fellow of the American Academy of Arts and Sciences in 2023. He was a member-at-large on the IEEE Communications Society Board-of-Governors (2020-2022) and the IEEE Signal Processing Society Board-of-Governors (2016-2018). He was Editor-in-Chief of IEEE Signal Processing Magazine from 2018-2020. He is also a licensed Amateur Radio Operator, a Private Pilot, a registered Professional Engineer in Texas. He is an elected Member of the US National Academy of Engineering. Graduate students Ibrahim Kilinc Ibrahim Kilinc is a PhD student in the Electrical and Computer Engineering at the University of California, San Diego. He received his B.S. degree in Electrical and Electronics Engineering and a minor degree in Information Systems and Technologies from Bilkent University, Ankara, Turkey in 2023, where he was awarded full-scholarship (ranking 0.01% nationwide) with high honors. He started working under the supervision of Prof. Robert W. Heath Jr. in Fall 2023. His research interests include sensor-aided beam management in heterogeneous devices, AI/ML-based low-overhead solutions for CSI feedback, hardware impairments, UAV relay optimization. He enjoys MIMO communications, AI/ML, signal processing, optimization, and especially farming. Jaebum Park Jaebum Park is a Ph.D. student in the Department of Electrical and Computer Engineering at the University of California, San Diego. He received his B.S. in Electrical and Electronic Engineering from Yonsei University, Seoul, South Korea in 2015 and his M.S. in Electrical and Electronic Engineering from the Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea in 2017. From 2017 to 2024, Jaebum was a Staff Engineer in the 6G research team at Samsung Research (SR), Seoul, South Korea, where he cultivated deep expertise in physical layer algorithms, RAN architectures, and 3GPP RAN1 LTE/NR standards. In Fall 2024, he began working under the supervision of Prof. Robert Heath. His research interests include DPD techniques, energy-efficient MIMO for next-generation RAN and AI-RAN. For more information, please visit https://jpark-wireless.github.io/ . Nima Razavi Nima Razavi is a Ph.D. student at the University of California, San Diego, in the Department of Electrical and Computer Engineering. He received a B.S. in Electrical and Computer Engineering from the University of Virginia in Spring 2024. He began working under the co-supervision of Prof. Nuria Gonzalez Prelic and Prof. Robert Heath at UC San Diego in Fall 2024. His research interests include MIMO for spectrum sharing and signal processing for upper midband frequencies. Arnaud Lamy Arnaud Lamy is a PhD student at the University of California, San Diego where he is a Centaur Graduate Fellow for Electrical Engineering. He graduated from Columbia University in May 2025 with a B.S. in Electrical Engineering with a minor in Computer Science; his background includes classical machine learning, signal processing, and manifold denoising. He joined the WSIL group in August 2025 and has been interested in quantum error mitigation, variational quantum algorithms, and quantum information theory more broadly. He is advised by Prof. Robert Heath. Till-Yannic Müller Till-Yannic Müller is a Ph.D. student in the Department of Electrical and Computer Engineering at the University of California, San Diego. He is a Centaur Graduate Fellow in Electrical Engineering. He received his B.Sc. degree in Electrical Engineering, Information Technology, and Computer Engineering from RWTH Aachen University, Germany, in 2023, and his M.Sc. degree in Electrical Engineering and Information Technology from ETH Zürich, Switzerland, in 2025. In Fall 2026, he began working under the supervision of Prof. Robert W. Heath Jr. Yiğit Yıldırım Yiğit Yıldırım is a Ph.D. student in the Department of Electrical and Computer Engineering at the University of California San Diego. He received his B.S. and M.S. degrees in Electrical and Electronics Engineering from Bilkent University, Ankara, Turkey, in 2023 and 2026, respectively. During his M.S. studies, his research focused on goal-oriented communications, connected autonomous systems and machine learning for wireless communications. In Fall 2026, he joined the Wireless Systems Innovation Laboratory (WSIL) under the supervision of Prof. Robert W. Heath Jr. Ayberk Çınar Ayberk is a Ph.D. student in the Department of Electrical and Computer Engineering at the University of California, San Diego, and a recipient of the Centaur Graduate Fellowship for Electrical Engineering. He received B.S. degrees in Electrical and Electronics Engineering and Physics from Bilkent University, Turkey, in 2026, completing a double major and graduating summa cum laude in both programs. He began working under the supervision of Prof. Robert W. Heath Jr. in Fall 2026. His research interests include wireless communications, electromagnetics, physical-layer signal processing, AI/ML-assisted communication systems, and physically consistent MIMO communication. He is particularly interested in bridging electromagnetics and wireless communications to develop physically consistent communication systems. Alfredo Gonzalez Alfredo Gonzalez is a Joint Doctoral Student at the University of California, San Diego and San Diego State University. In 2019, he received his B.Sc. in Electrical Engineering from Florida International University, where he was awarded the Graduate of the Year in Electrical Engineering. In 2021, he completed his M.Sc. in Electrical Engineering at Florida International University as a NASA MUREP Fellow under the tutelage of Dr. John L. Volakis. From 2021 to 2025, he worked at Apple Inc. as a Wireless Systems Engineer, contributing to the U1, U2, and N1 chip platforms. In 2025, he began his doctoral studies under the joint supervision of Dr. Robert Heath and Dr. Tharm Ratnarajah. His current research interests are in power-efficient wave-domain signal processing through reconfigurable metasurfaces. Afreen Haider Afreen Haider is a M.S. student in the Department of Electrical and Computer Engineering at the University of California, San Diego. She received her B.Tech degree in Electrical Engineering and from the Indian Institute of Technology, Delhi in 2024. She is being advised by Prof. Robert W. Heath Jr. on her ongoing Master’s thesis. Her current research interests include adaptive base station network switching for energy optimisation and the applications of Reinforcement Learning in wireless communications. Diya Arun Diya Arun is a M.S. student in the Department of Electrical and Computer Engineering at the University of California San Diego. She joined the Communication Theory and Systems track in Fall 2025. She has graduated from the Indian Institute of Technology Guwahati with a B.Tech. degree in Electronics and Communication Engineering and a minor in Mathematics. Her current research interests include the application of pixel arrays in tri-hybrid MIMO architecture. She has previously worked on RSMA and ISAC for 6G communication systems and wireless for ML. She is advised by Prof. Robert W. Heath Jr. in her master’s thesis. Shehla Amir Shehla Amir is a PhD student in the department of Electrical and computer engineering at North Carolina State University since Spring 2022. She obtained her BS in Electrical Engineering from Lahore University of management sciences, Lahore, Pakistan in 2021. Her research interests include the areas of joint communication radar and sensing, signal processing and wireless communications. Feng Zhu Feng Zhu received his B.S. degree in Communication Engineering and his M.S. degree in Communications and Information Systems from Fudan University, Shanghai, China in 2020 and 2023, respectively. He is currently a Ph.D. student in the Department of Electrical and Computer Engineering. His research interests include federated learning, reinforcement learning and their applications in the wireless system. He is also co-advised by Prof. Aritra Mitra and Prof. Heath",
+      "textTruncated": false,
+      "bodySha256": "a082a2e751c705a9e8b9ce268df2e28d5c6793459b9f5df8be296a7f47e5b596",
+      "collectorSha256": "a082a2e751c705a9e8b9ce268df2e28d5c6793459b9f5df8be296a7f47e5b596",
+      "canonicalLinkUrls": [
+        "https://profheath.org/about-us/"
+      ],
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/117e0027e78fb915eeb8f6bc24ed8cc137124943170bf05eee09fbfb18fd645e.html",
+      "captureOrigin": "summary_gap_live_fetch",
+      "redirectChain": [],
+      "httpStatus": 200,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "htmlMetaRefreshes": [],
+      "sourceDecodingMethod": "utf8_replacement",
+      "sourceDecodingWarning": null,
+      "role": "reviewed_followup_requires_entity_match",
+      "sourceId": "src-f92619227a30a316"
+    }
+  ],
+  "latestDestinationFetch": {
+    "sourceUrl": "https://profheath.org/",
+    "observedAt": "2026-10-16T01:07:37+00:00",
+    "status": "ok",
+    "redirects": [],
+    "robots": {
+      "sourceUrl": "https://profheath.org/robots.txt",
+      "observedAt": "2026-10-16T01:07:36+00:00",
+      "httpStatus": 200,
+      "retrievedEpoch": 1792112856.326705,
+      "error": "",
+      "redirects": [],
+      "status": "checked"
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://profheath.org/",
+    "contentType": "text/html; charset=UTF-8",
+    "error": "",
+    "sha256": "f568c8fcf72bcb85976ce5c7adf9e4193fb545c05d48a2c9e7b9f6d8e647a293",
+    "retrievedEpoch": 1792112857.527734
+  },
+  "latestDestinationCheckOrigin": "reused_collection_capture",
+  "destinationQueueStates": [
+    "done"
+  ],
+  "historicalWebsiteCheck": {
+    "url": "http://www.profheath.org",
+    "httpStatus": 200,
+    "finalUrl": "https://profheath.org/",
+    "title": "Research in wireless communication and signal processing",
+    "status": "ok"
+  },
+  "preparedAt": "2026-10-16T03:40:17+00:00",
+  "latestDestinationCheckScope": "listed_url_direct_request",
+  "relatedDestinationChecks": [],
+  "followupChecks": [
+    {
+      "discoveryUrl": "https://profheath.org/research",
+      "requestedUrl": "https://profheath.org/research",
+      "checkMatchesDiscoveryUrl": true,
+      "finalUrl": "https://profheath.org/research/",
+      "redirectChain": [
+        {
+          "from": "https://profheath.org/research",
+          "to": "https://profheath.org/research/",
+          "httpStatus": 301
+        }
+      ],
+      "transportStatus": "ok",
+      "observedAt": "2026-10-16T03:18:00+00:00",
+      "liveCheckedAt": "2026-10-16T03:17:58+00:00",
+      "checkOrigin": "summary_task_live_request",
+      "notAnAcceptedCanonicalLabUrl": true,
+      "checkedUrl": "https://profheath.org/research",
+      "pageRequestProven": true
+    },
+    {
+      "discoveryUrl": "https://profheath.org/about-us/",
+      "requestedUrl": "https://profheath.org/about-us/",
+      "checkMatchesDiscoveryUrl": true,
+      "finalUrl": "https://profheath.org/about-us/",
+      "redirectChain": [],
+      "transportStatus": "ok",
+      "observedAt": "2026-10-16T03:18:01+00:00",
+      "liveCheckedAt": "2026-10-16T03:18:00+00:00",
+      "checkOrigin": "summary_task_live_request",
+      "notAnAcceptedCanonicalLabUrl": true,
+      "checkedUrl": "https://profheath.org/about-us/",
+      "pageRequestProven": true
+    }
+  ],
+  "destinationAttemptHistory": [
+    {
+      "sourceUrl": "https://profheath.org/",
+      "observedAt": "2026-10-16T01:07:37+00:00",
+      "status": "ok",
+      "redirects": [],
+      "robots": {
+        "sourceUrl": "https://profheath.org/robots.txt",
+        "observedAt": "2026-10-16T01:07:36+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112856.326705,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "httpStatus": 200,
+      "finalUrl": "https://profheath.org/",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "sha256": "f568c8fcf72bcb85976ce5c7adf9e4193fb545c05d48a2c9e7b9f6d8e647a293",
+      "retrievedEpoch": 1792112857.527734
+    }
+  ],
+  "latestDestinationPageRequestProven": true,
+  "latestDestinationRequestMatchesListed": true
+}

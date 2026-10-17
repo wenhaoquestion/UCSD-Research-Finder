@@ -1,0 +1,2709 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:30:44+00:00",
+  "task": "continuation641fd9a finite entry-shell discovery audit",
+  "networkRequestsMade": 0,
+  "onlyOwnReportPairWritten": true,
+  "scientificBodyReviews": 0,
+  "identityAndResearchAcceptances": 0,
+  "all14MismatchGatesUnchanged": true,
+  "counts": {
+    "rootHashVerified": 3,
+    "finiteCandidates": 6,
+    "targetCaptures": 0,
+    "targetRefusalsFound": 0,
+    "sameHostPendingQueueItems": 11,
+    "sameHostRunningQueueItems": 0,
+    "otherRootsMarkupScanned": 18,
+    "otherCandidates": 0
+  },
+  "snapshot": {
+    "queueUpdatedAt": "2026-10-16T05:30:42+00:00",
+    "queueSha256": "7463540527e98b25341bfecbddcc6d4796af09ccd7a775bb067b1a3ffb32d042",
+    "gapResultsSha256": "e427ff2c8bba6130f9013711c845ec60da81065be057317b05b51520efe16284",
+    "gapItemCount": 187,
+    "gapWireEvents": 329,
+    "sameHostPendingChronology": "Earlier read found6 labs.biology plus1 r2g pending; final queue updated05:30:42/read05:30:44 has10 plus1. Earlier no-pending statement withdrawn. No exacttarget queue entry/capture/attempt was found in final snapshot."
+  },
+  "roots": [
+    {
+      "sourceId": "src-89f0f296045c7f5f",
+      "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "queueUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "observedAt": "2026-10-16T04:56:28+00:00",
+      "bodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/4fd22c5ccb609c81173acb3d1a7b86afe4b3804e1a4631a59abbe666a4cbfc33.html",
+      "title": "Yanofsky Lab - Welcome",
+      "httpStatus": 200,
+      "redirectChain": [],
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "ordinal": 142,
+      "rawStatus": "partial",
+      "rawIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题与正文材料支持该实体身份，但研究正文不足。"
+      },
+      "preparedAt": "2026-10-16T03:40:06+00:00",
+      "latestDestinationFetch": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+        "observedAt": "2026-10-16T04:56:28+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+        "retrievedEpoch": 1792126588.843461,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T04:56:28+00:00",
+        "actualPageRequestMade": true
+      },
+      "cacheHashVerified": true,
+      "actualAnchorCount": 0,
+      "discoveryOnly": true
+    },
+    {
+      "sourceId": "src-6e7a68c11632c48b",
+      "sourceUrl": "https://ips.ucsd.edu/",
+      "queueUrl": "https://ips.ucsd.edu/",
+      "requestedUrl": "https://ips.ucsd.edu/",
+      "checkedUrl": "https://ips.ucsd.edu/",
+      "observedAt": "2026-10-16T01:07:30+00:00",
+      "bodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/6884d052ade65084801e366e0827d4c358d09def1e55ca34aca3fc6edd92922f.html",
+      "title": "A&A/ISEE IPS Space Weather Forecast",
+      "httpStatus": 200,
+      "redirectChain": [],
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "ordinal": 783,
+      "rawStatus": "partial",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "当前为预报页，实验室身份及研究仅有历史目录描述。"
+      },
+      "preparedAt": "2026-10-16T03:40:16+00:00",
+      "latestDestinationFetch": {
+        "sourceUrl": "https://ips.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:30+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+        "retrievedEpoch": 1792112850.4983082
+      },
+      "cacheHashVerified": true,
+      "actualAnchorCount": 0,
+      "discoveryOnly": true
+    },
+    {
+      "sourceId": "src-04a051aebaebcc7c",
+      "sourceUrl": "http://r2g.ucsd.edu/",
+      "queueUrl": "http://r2g.ucsd.edu",
+      "requestedUrl": "http://r2g.ucsd.edu/",
+      "checkedUrl": "http://r2g.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:07+00:00",
+      "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ece64ff7df4e7d06ed971e975bd1a4a83b081453a9dce7069f5739b737860777.html",
+      "title": "Intro Animation",
+      "httpStatus": 200,
+      "redirectChain": [],
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+      "ordinal": 705,
+      "rawStatus": "partial",
+      "rawIdentity": {
+        "status": "confirmed",
+        "entityType": "research_group",
+        "reason": "来源明确标识此实体。"
+      },
+      "preparedAt": "2026-10-16T03:40:15+00:00",
+      "latestDestinationFetch": {
+        "sourceUrl": "http://r2g.ucsd.edu/",
+        "observedAt": "2026-10-16T04:57:07+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:57:06+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792126626.590121,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://r2g.ucsd.edu/",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+        "retrievedEpoch": 1792126627.414764,
+        "summaryPageMaxBytes": 2000000,
+        "liveCheckedAt": "2026-10-16T04:57:07+00:00",
+        "actualPageRequestMade": true
+      },
+      "cacheHashVerified": true,
+      "actualAnchorCount": 0,
+      "discoveryOnly": true
+    }
+  ],
+  "items": [
+    {
+      "url": "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ],
+      "ordinal": 142,
+      "sourceId": "src-89f0f296045c7f5f",
+      "linkedFrom": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "sourceObservedAt": "2026-10-16T04:56:28+00:00",
+      "sourceBodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "navigation.htm",
+      "htmlAttributeName": "src",
+      "exactMarkup": "<frame name=\"banner\" scrolling=\"no\" noresize target=\"contents\" src=\"navigation.htm\">",
+      "label": "banner",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sameHostPendingOrRunningQueueItems": [
+        {
+          "url": "http://labs.biology.ucsd.edu/bennett",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/cleland",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/meyer",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/murre",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/suel",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/kurle/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/nieh/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/estelle/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/schroeder/index.html",
+          "state": "pending"
+        }
+      ],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true
+    },
+    {
+      "url": "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ],
+      "ordinal": 142,
+      "sourceId": "src-89f0f296045c7f5f",
+      "linkedFrom": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+      "sourceObservedAt": "2026-10-16T04:56:28+00:00",
+      "sourceBodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "content.htm",
+      "htmlAttributeName": "src",
+      "exactMarkup": "<frame name=\"Yanofsky _ Main\" src=\"content.htm\" scrolling=\"auto\">",
+      "label": "Yanofsky _ Main",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:21:30+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792124490.788895,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "checked"
+      },
+      "sameHostPendingOrRunningQueueItems": [
+        {
+          "url": "http://labs.biology.ucsd.edu/bennett",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/cleland",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/meyer",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/murre",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/suel",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/yanofsky/home.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/kurle/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/nieh/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/estelle/index.html",
+          "state": "pending"
+        },
+        {
+          "url": "http://labs.biology.ucsd.edu/schroeder/index.html",
+          "state": "pending"
+        }
+      ],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true
+    },
+    {
+      "url": "https://ips.ucsd.edu/leftmenu_v_n.html",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "ordinal": 783,
+      "sourceId": "src-6e7a68c11632c48b",
+      "linkedFrom": "https://ips.ucsd.edu/",
+      "sourceObservedAt": "2026-10-16T01:07:30+00:00",
+      "sourceBodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "leftmenu_v_n.html",
+      "htmlAttributeName": "src",
+      "exactMarkup": "<frame marginwidth=1 noresize scrolling=\"yes\" name=\"left\" src=\"leftmenu_v_n.html\">",
+      "label": "left",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sameHostPendingOrRunningQueueItems": [],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true
+    },
+    {
+      "url": "https://ips.ucsd.edu/banner.html",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "ordinal": 783,
+      "sourceId": "src-6e7a68c11632c48b",
+      "linkedFrom": "https://ips.ucsd.edu/",
+      "sourceObservedAt": "2026-10-16T01:07:30+00:00",
+      "sourceBodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "banner.html",
+      "htmlAttributeName": "src",
+      "exactMarkup": "<frame scrolling=\"no\" marginwidth=1 name=\"banner\" src=\"banner.html\">",
+      "label": "banner",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sameHostPendingOrRunningQueueItems": [],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true
+    },
+    {
+      "url": "https://ips.ucsd.edu/splash_v_n.html",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "ordinal": 783,
+      "sourceId": "src-6e7a68c11632c48b",
+      "linkedFrom": "https://ips.ucsd.edu/",
+      "sourceObservedAt": "2026-10-16T01:07:30+00:00",
+      "sourceBodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "splash_v_n.html",
+      "htmlAttributeName": "src",
+      "exactMarkup": "<frame name=\"middle\" src=\"splash_v_n.html\">",
+      "label": "middle",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T01:07:29+00:00",
+        "httpStatus": 200,
+        "retrievedEpoch": 1792112849.475637,
+        "error": "",
+        "redirects": [],
+        "status": "checked"
+      },
+      "sameHostPendingOrRunningQueueItems": [],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true
+    },
+    {
+      "url": "http://r2g.ucsd.edu/home.html",
+      "labIds": [
+        "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero"
+      ],
+      "ordinal": 705,
+      "sourceId": "src-04a051aebaebcc7c",
+      "linkedFrom": "http://r2g.ucsd.edu/",
+      "sourceObservedAt": "2026-10-16T04:57:07+00:00",
+      "sourceBodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_document_preload",
+      "originalHtmlAttribute": "home.html",
+      "htmlAttributeName": "href",
+      "exactMarkup": "<link rel=\"preload\" href=\"home.html\" as=\"document\">",
+      "label": "document preload",
+      "reviewedAt": "2026-10-16T05:30:44+00:00",
+      "decision": "finite_candidate_only",
+      "reason": "Exact literal same-site displayed frame or document preload in original captured root; target has no capture/attempt/refusal found. Later execution needs fresh exact-target checks and normal shared-v2 gate. No identity or science accepted.",
+      "identityAcceptance": "not_automatically_accepted",
+      "targetCaptured": false,
+      "targetObservedAt": null,
+      "targetBodySha256": null,
+      "fetchMatchesIncludingProtocolVariants": [],
+      "wireMatches": [],
+      "exactCacheFiles": [],
+      "cachedRobotsBoundary": null,
+      "rootRobotsEvidence": {
+        "sourceUrl": "http://r2g.ucsd.edu/robots.txt",
+        "observedAt": "2026-10-16T04:57:06+00:00",
+        "httpStatus": 404,
+        "retrievedEpoch": 1792126626.590121,
+        "error": "",
+        "redirects": [],
+        "attempts": 1,
+        "status": "not_found"
+      },
+      "sameHostPendingOrRunningQueueItems": [
+        {
+          "url": "http://r2g.ucsd.edu/",
+          "state": "pending"
+        }
+      ],
+      "hostRetryAfter": null,
+      "networkRequestsMade": 0,
+      "metadataAndMarkupOnly": true,
+      "corroboratingConstantStatement": "window.location.href = \"home.html\";",
+      "scriptExecuted": false,
+      "newMechanismRecommendation": "Only literal reviewed link rel=preload as=document, no CSS apparent anchors or arbitrary script execution."
+    }
+  ],
+  "priorAudit": {
+    "oldAuditReviewedAt": "2026-10-16T03:06:55+00:00",
+    "rootCoverage": [
+      {
+        "category": "coverage",
+        "entry": {
+          "labId": "ucsd-biology-topic-lab-yanofsky",
+          "ordinal": 142,
+          "latestDestinationStatus": "ok",
+          "auditStatus": "verified_current_root_html",
+          "rootSourceId": "src-947ef86bf1f53a64",
+          "rootUrl": "https://labs.biology.ucsd.edu/yanofsky/home.html",
+          "rootObservedAt": "2026-10-16T01:04:45+00:00",
+          "rootBodySha256": "8e8a126cca71a66e423ac6220cbdee79aa4dfab65730d3ccc359ac58f0634912"
+        }
+      },
+      {
+        "category": "coverage",
+        "entry": {
+          "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+          "ordinal": 705,
+          "latestDestinationStatus": "ok",
+          "auditStatus": "verified_current_root_html",
+          "rootSourceId": "src-16348f4142c7262a",
+          "rootUrl": "https://r2g.ucsd.edu/",
+          "rootObservedAt": "2026-10-16T01:07:13+00:00",
+          "rootBodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707"
+        }
+      },
+      {
+        "category": "coverage",
+        "entry": {
+          "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+          "ordinal": 783,
+          "latestDestinationStatus": "ok",
+          "auditStatus": "verified_current_root_html",
+          "rootSourceId": "src-6e7a68c11632c48b",
+          "rootUrl": "https://ips.ucsd.edu/",
+          "rootObservedAt": "2026-10-16T01:07:30+00:00",
+          "rootBodySha256": "78652ce230477753b1478682226e22fb085d769ee65f579d85a9a9f077a4c279"
+        }
+      }
+    ],
+    "conclusion": "Older anchor/meta audit covered roots but neither listed nor rejected six targets. Earlier no-auto-frame notes were scope, not denial. Parent05:25:54 additions are this continuation, not an old capture/refusal.",
+    "literalScanFiles": [
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ADDITIONAL-RESEARCH-LINK-AUDIT.md",
+        "sha256": "95d04d0e20ef72141f241839b9b6470ad91fc79abf7252e26a08b69000d3582b"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-000-022.md",
+        "sha256": "7922ed243f13de5481b84372775cbb4014fcb03d5b58c3c86d37d5393e76605b"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-023-045.md",
+        "sha256": "add7f9ba405d4464553272649a9dd97211431a87158c3971485c164ed751aa56"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GAP-REVIEW-046-068.md",
+        "sha256": "e4a059525f64dfff1ede46933f0792ffdd92dc35f529aae00654f70b4b75f02e"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CACHED-GROUP-REVIEW-PARENT.md",
+        "sha256": "492776d9e6f336ae79f622694d11462fa3cee373ae97d99101365e4e2b1799c1"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CHECKPOINT-884-REVIEW.json",
+        "sha256": "2b8bfe19a375b027b18a3fc93984ae4a8a3fdf01682c8ce6a4f9486fe5b00b02"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CHECKPOINT-884-REVIEW.md",
+        "sha256": "6b75a25a608374d03eceb542f90640b753ef1a3b9874af6cdb300963a8aedd24"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/COLLECTOR-REVISION-22AD-REVIEW.json",
+        "sha256": "03b837c157133015c2d8df9a0eb7152e5ea82225bb65d84f6d847b7163de6df7"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/COLLECTOR-REVISION-22AD-REVIEW.md",
+        "sha256": "aea9359c557398b28bde1f2adcea4d0880adca6471ca87b00d367e4bb6bc2c43"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/COLLECTOR-REVISION-6A5D-REVIEW.json",
+        "sha256": "ea3c5e51182ecd001c679be5a2ee8a26f94fdb59a0997c5c4c5d9baab46eab0e"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/COLLECTOR-REVISION-6A5D-REVIEW.md",
+        "sha256": "f25cffd447cf8ef7e0143366cf776eaeaa14b2883f764c8f59f5029cd370b55c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CURRENT-COLLECTOR-ADAPTER-REVIEW.json",
+        "sha256": "be1f428e2598bbe8d27b7eb6584a38eb106be4ed78c36696b1d5654f82b56af8"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/CURRENT-COLLECTOR-ADAPTER-REVIEW.md",
+        "sha256": "4cb7d20c4aa595d53f87cbd97e1cfa6f23d0eb3a890eaf42a28703d76d53bb1c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DELTA-ASSOCIATION-SCOPE-REVIEW.json",
+        "sha256": "0f7adc0e5f7f4ca63713d5556a297c664a9b3fb3e82ddd0cf9bbc4b7ce859d8c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DELTA-ASSOCIATION-SCOPE-REVIEW.md",
+        "sha256": "8bad994ad61ab0c963f81abd8b5cfc06f95bda56726fc3eceb95546bc687af89"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIRECT-REQUEST-IDENTITY-BINDING-REVIEW.json",
+        "sha256": "61cda1ee1867cf2159ed25845c897c49c0f21da137bdea5bfef716ea2d054eea"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/DIRECT-REQUEST-IDENTITY-BINDING-REVIEW.md",
+        "sha256": "a0e3aa03db7d223680fc96e0323ec10be06de17f20fc657c66d0238d4f649e1f"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/FRAME-FOLLOWUP-BODY-REVIEW.json",
+        "sha256": "a577d3b946ae1f7bdec552f6c93db6a5cce9601dbd5cf5a4ff63094aa4a6c2ef"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/FRAME-FOLLOWUP-BODY-REVIEW.md",
+        "sha256": "a3b8405fdcb3d427d03d415617a3034ca7b491e3b4579ec6d978dbbbbfa18161"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HANDOFF-16-DELTA-REVIEW.json",
+        "sha256": "0d1db2cb9bdb46395edb350e794d7f364c915d22459041b04b671351738d04ce"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HANDOFF-16-DELTA-REVIEW.md",
+        "sha256": "01ba37807f4cda8446d829c764ebfb1320f7d95b691079d7ddb6e288c6e7dfe1"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HANDOFF-DELTA-REVIEW-LATEST.json",
+        "sha256": "26b10e080f354720979e23b6de26913a9cb9f936e91beddb7fe3708511ef326c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HANDOFF-DELTA-REVIEW-LATEST.md",
+        "sha256": "b10a12e7ca5d7e0ccdd2e1b18436a549a5469b45a1d351abe1514c948e979736"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HANDOFF-REVISION-AUDIT.md",
+        "sha256": "684adab7c6e1647f9a0bf0e171331a4d62d878ea974c4f145c5c7a853f2d14ba"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HERMANN-RECOVERED-RESEARCH-REVIEW.json",
+        "sha256": "1272ef81e8ff9805fc928dc536756720d6b04882c97bcd8356d49edf799eb6f4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HERMANN-RECOVERED-RESEARCH-REVIEW.md",
+        "sha256": "7340d0669bbe520f04ef82431694ece02f8e17fbc0d6bfefea1e904b97aa224a"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HERMANN-RESEARCH-ANCHOR-REVIEW.json",
+        "sha256": "16c2c0585520f20e1a929c4ccb7b1e4717ae9a600fd92b872143ac315b6f3474"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/HERMANN-RESEARCH-ANCHOR-REVIEW.md",
+        "sha256": "bd29ec0601871bbb90b781a7e1493f97b36cd2dd625d8fd4dbc414ba97120a8d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/KOMIYAMA-CROSS-RECORD-EVIDENCE-REVIEW.json",
+        "sha256": "707a4650f2adaf5cdb4ab7c93f98ecb6a8fa0b1c9c5100c03a03d6637d09213f"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/KOMIYAMA-CROSS-RECORD-EVIDENCE-REVIEW.md",
+        "sha256": "6ce6e854f20836ce96c13d6f0334db761faa55061b177515cf6a4608179c1076"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/KOMIYAMA-CROSS-RECORD-TITLE-IDENTITY-REVIEW.json",
+        "sha256": "e55b19b78b6182cb1c55417ea012862978bd881be032b8213900b4bfb64b2ae9"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LISTED-URL-DIRECT-GAP-REVIEW.json",
+        "sha256": "cf4736ac4ed3a02d415746cee52f408c39db7ca9e85621ef93becfb700a0229c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LISTED-URL-DIRECT-GAP-REVIEW.md",
+        "sha256": "d11d80060e3e333ca89c69e37f263a0a5bee333817096f66840481c4aed92562"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-OIR-IDENTITY-REVIEW.json",
+        "sha256": "f7c92e8b322c5c0e1586691d0d30ec4f30ba4d255fe55aae36e561fdbc3ca279"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-OIR-IDENTITY-REVIEW.md",
+        "sha256": "00418fe31f63ecb6bb9d351739dbbb505cd16252ccfd4d212016f895985f73c1"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-REVIEW-000.json",
+        "sha256": "0b61b64db7a9bc42a4b92d7a58d7506f776c432270b8b819fd61428a132c1bb2"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-REVIEW-000.md",
+        "sha256": "9da354eeb49afe009ee7faa78d7442ada480deafb2fd5740847f0f75c151bb1b"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-REVIEW-001.json",
+        "sha256": "495934219f3b89a3c7db9f7bc1fdaeb5265345b82f2d82f92db0ac7d659b05a4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-REVIEW-001.md",
+        "sha256": "5ec18722d793e6f92f8e1545e435c9b7fc0a02cba06ebe10554d19bc3990d7c0"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/LIVE-GAP-REVIEW-PARENT.md",
+        "sha256": "b6935d2ec2fe0295bfb1b864d1d3892ba74d663b1473140b44ebbeff97f63bab"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-000-014.json",
+        "sha256": "96594039a016c654a8fe63304eca679b58f830e63b98bc42a2b5783d126b91d9"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-000-014.md",
+        "sha256": "c8971317e8447bdcf44a006a5013e760c3d23eb74fa57495b54e6c4fa628d8bc"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-015-029.json",
+        "sha256": "d293115668004cdd2ee3b0b84b466538a6f2738e0f2759e2932b9966b69b453e"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-015-029.md",
+        "sha256": "8a9ca709602b6ce2045d4c060fd3ca63e3757ca7f7ed7ae481c946d5bc20560f"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-030-047.json",
+        "sha256": "990d94eb188b1f807f5624755bccc4c951e93908b78317dd12a7c1a1a42af605"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-HTTP-IDENTITY-REVIEW-030-047.md",
+        "sha256": "8b9246cefc4af62a6123a47688f114df739f22aae4fa7d62e013b25003542d32"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-URI-RESPONSE-CAP-REVIEW.json",
+        "sha256": "aa938337a58b6cd67a649d39743687f5d1a4267ce03de84bd13e131ffab2abf3"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/ORIGINAL-URI-RESPONSE-CAP-REVIEW.md",
+        "sha256": "55a8282c6c2a9715fa80ebd67b7cf510acacb8c7aaa74d26d34a1ee3999b9331"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/RECOVERED-ROOT-SCIENCE-PARENT-REVIEW.json",
+        "sha256": "300a3588506709801ff13cd518108ed11a80758d4f797c4e8d83fe05413dd339"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REGAINED-ROOT-REVIEW-033-036.json",
+        "sha256": "8791d6274226fa6de377c565ae5f9e283239bf185538645e61d9f297cd521b98"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REGAINED-ROOT-REVIEW-033-036.md",
+        "sha256": "1287e4b3eddd781a1ece72f680f4f279afb78056e443e945d1bfdb8626a6cb6d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REGAINED-ROOT-REVIEW-116-121.json",
+        "sha256": "5f8c02c9d044dde5ba92b737fcbea5d76f6340b2095e684485c65228f7fbd905"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REGAINED-ROOT-REVIEW-116-121.md",
+        "sha256": "929d28cba6c2a152554affc10e31bbfaab2f483584f7c099a972d8df852be2fe"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-FRAME-RESEARCH-GAP-REVIEW.json",
+        "sha256": "29f8fdc5eeaf3a88277b45fb77f49de9d759cc125ac3e1f9ba1a13a9bff1a394"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-FRAME-RESEARCH-GAP-REVIEW.md",
+        "sha256": "789db3922c308dec3b7189e5f3d9e60aacf57268a30b37d52c7fdb054f87f44d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-000-011.json",
+        "sha256": "0651fcf1f8ed450f2bc684367aac0dad87ae2ba3a6a396c759a5b7d31e79cdf9"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-000-011.md",
+        "sha256": "ef23a53e7aab3436387df0f0d10125432b94e42362e57ce69b65001c12433abe"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-012-023.json",
+        "sha256": "cba7da0bdf3c15dfc7f338cd5b37664d48001fce5df12cbe281aaac26ec1cc70"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-012-023.md",
+        "sha256": "756728fe63e243c935bcf389f1ac2000ea5e3df4b6a7a8c644b581e373585458"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-024-033.json",
+        "sha256": "1fe27bf1fd7d33919d065dd874a259379d52a57ae6a2b8489d38c605c10d03e0"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-024-033.md",
+        "sha256": "7327a2adc06fcc6f4364a05d89c4a74711068c20db8ae0504f1c3e8663063062"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-000-011.json",
+        "sha256": "ff613b0047f644bbd382eb9ad050e6a7c298f738a9f1fb82c98ad9882182cc57"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-000-011.md",
+        "sha256": "9f48614d17a0c182af987e922f4ee7c6c4c406aa5431c560ec35466f27e2e29a"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-012-023.json",
+        "sha256": "4b363e0951efe0927fc80dd338a3fa74e2cd86d6128c78b86365c3a5076378d4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-012-023.md",
+        "sha256": "b320b82681ba39702c4aaf3602a13001f460d92ae5982f33f2065ddf97c4e218"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-024-034.json",
+        "sha256": "b27e93e6f0bc080633e2ff490ff7556d19a0d5e192b9d535f5e9ea15f848a161"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-024-034.md",
+        "sha256": "7bce032f1b263ee9c10c67c67738e1aa09a60e2244168e0ca29b9332790fdd0f"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEW.md",
+        "sha256": "be8b44951580e6560545609bf43eed22cf39751d1f21828a20181809143d206b"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEWED-14-ADMISSION-QA.json",
+        "sha256": "e17775039a986f3d3f2d99004500d32dfcc72c74bce5386fae0a516ceaf4a1cf"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEWED-14-ADMISSION-QA.md",
+        "sha256": "e9b57bf773e9c89992de7371c0618d8af8c0b9d37ca1dc7ce506a8609d2b8c79"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEWED-14-NEW-LAB-SUMMARIES.json",
+        "sha256": "67324350c6bd6256ad00e031f33ac07854514392bbe37641af333585df4f9690"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEWED-16-ADMISSION-QA.json",
+        "sha256": "027767ffa94fb74e86498fee56e94072a86c63d97307f1083923e84f2b31661c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEWED-16-ADMISSION-QA.md",
+        "sha256": "46b34aec9fb448c3c078ebc22284130d333592745307e56b275781c90a225ae4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/TEZCAN-RECOVERED-HTTP-ANCHOR-REVIEW.json",
+        "sha256": "c25061dc161dd68f2fe86c1bda30605a681805d7831b146201caa3c1f52a91fd"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/additional-research-link-audit-inventory.json",
+        "sha256": "2a154aa968604cea94d14a6f4766098acbd00b1266e745a5ec8179e56344c48d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/before-reviewed16-append-packet-hashes.json",
+        "sha256": "5e7e61e00f753c3616a911d6c8e18e6021ebc2cf65efbc4039cb91f4c5745a12"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/cross-record-review-280-559.json",
+        "sha256": "b643d4e9b7925f34d3e7f9cbf8237ba46f82c8e5d5d486b5d14c7df97dc31e27"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/extraction-gap-audit-4.json",
+        "sha256": "5ccb814c6fd85113529e57484ed2f521a03a3497dea092266594aa1f0d1c469f"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/extraction-review-000-279.json",
+        "sha256": "57cbde8df05e0ec1e5d66be186a17af6ca7bd23984ed7793674f52a961f39eaa"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/extraction-review-280-559.json",
+        "sha256": "98b7785b54da96eccff4ebb09e811742ddcac5c616d6ec722f85da32b699392c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/extraction-review-560-867.json",
+        "sha256": "95e7fbb8c46e1eb390c3376b9ee697cf7191428e1a20e40db04ca1dd3ae6ef31"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/extraction-review-parent-qa.json",
+        "sha256": "d36bbe098f09e1c46f7033f0a53812c207cfc54a4b69b0dfad377c17a0e5eb55"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-plan.json",
+        "sha256": "3c06b6535047df0e977608a556db8f86b6b1087222a0a6238199195a23156585"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-review-baseline-15-20261016.json",
+        "sha256": "c43f0915fa9555369f01a9b681f616e1d63e49b2617a1a39a4e2e160841b2510"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/group-cache-review-parent.json",
+        "sha256": "a25c6e0f0d6abf4c741a286daf01c60b50155654ef00589f676601bc381c6338"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gymrek-html-navigation-review.json",
+        "sha256": "438f44140d91a1f1ccd81c9fb46290661650432172f708c5d5df618855ca2bf7"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/handoff-import-audit.json",
+        "sha256": "5b8b0fb970b9c4a0f63d3b7aa90219a75f0baf7432525cfd73a4faf0062370a3"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/incremental-12-draft-review.json",
+        "sha256": "7f9bb91ae4cd6bf4c810678f6f94e9a70736c5ac4f0fed6c40b546407f0a99ee"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/incremental-12-record-review.json",
+        "sha256": "0b449011de3f1f5995528ac2b88ef9f4eced59acc7e2f9dbd35ccd1bc22fdc17"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/latest-capture-identity-review-plan.json",
+        "sha256": "a644b7e0c36a520b4df75bacdb2aa36d32f30231a3acfec520fe18ba72107cbe"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/latest-capture-identity-review.json",
+        "sha256": "8a41e8fafbf984a521bbf1e8d9626c3e8033554b6e9dcc1e13c2c5ae6189acd4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/listed-url-direct-gap-inventory-20261016.json",
+        "sha256": "29116241ba3db1dbd29661cc9cedf28308acc860d5ecaa09220a197365c68da0"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/live-gap-review-parent.json",
+        "sha256": "df955b7b927a4264235a697aa1f250456eb3a81bcd1f55ce366308fe962bfb15"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/remaining-related-request-provenance-review-inventory.json",
+        "sha256": "c27b6f1d7953813c9e5a2b9fb78032000c5ff0a52a6ecfb041f3413a054d51d4"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-280-559.json",
+        "sha256": "bcac91e39dd0000f01ec1754465990565bcc62b27689c207140e03e57b17d505"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-gap-batch2-560-agent-part1.json",
+        "sha256": "a72b5c415c8641baad73219039b9fefe1a6d8871ef046c846cfe49d1c10b496d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-gap-batch2-560-agent-part2.json",
+        "sha256": "1793b6c5ffdd2d9133d5221f54e72bcb21987ac2608993960545d7b435d61457"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-gap-batch2-560-agent.json",
+        "sha256": "b6b778af40ca792b051f99e0470db6199ffd91ae2f4fee9fcd5d1dc2e2e58a63"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-gap-parent-qa.json",
+        "sha256": "7408f79d49f83aed4f4a7d8cfd0062b6942cf6b6378f5480a7d452aa94ba502e"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-gap-parent.json",
+        "sha256": "02f6f29acd5f3c0c69780e5dff05ed0c3e54aadd2758a08d119b3dabd22441aa"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-identity-decisions.json",
+        "sha256": "c14a575e2481c2ee2d30d36a3cd2fbcbc7f501b9e593218f7d10b6c271571809"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-identity-followups.json",
+        "sha256": "6977f10a68bda592b4808aed1a3d1fc12c22898931c3eefda117104d976be0a3"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/review-parent-840-867.json",
+        "sha256": "27fcda2af1d94809675b10721d7f051fd4f5f46af264d5b7c21edf8599f59e4d"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-880-delta-milestone.json",
+        "sha256": "5a5df97af423ce178030789cf10851b45aca46920e6fbf385ae5643cd44d7fd5"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-880-milestone.json",
+        "sha256": "f0c4441bad810c29a2bcac1c351cb40c7a1c11979f66db2edd14a2a86652ddff"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-880-original-http-milestone.json",
+        "sha256": "0b7d196e09b7be92f59f5cc54a79e6a98d1575c2380628e5f8bb40d142f6c35a"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-880-regained-root-milestone.json",
+        "sha256": "6f8635ccfe315919b998bedd4b9d18b94e8d15d8ccbabb545ed37e8d8a8ff26c"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-880-request-provenance-milestone.json",
+        "sha256": "4a858b4288105b9dc2b530134369c379c33ddb6a1e529a677c1af16e016fb554"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-882-two-new-labs-milestone.json",
+        "sha256": "4e330f38a65f84726f9e1309ff31a168955d86fff62d66b9ff6d140491eefed0"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-gap-additions.json",
+        "sha256": "a91dbf1e7bcf81c4e2bbaeae8cec5d6206178862b08756f67a27f55755a0c58a"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-incremental-import-receipt-12-id.json",
+        "sha256": "f4011985df8516e36fc8728f7d9b7b61720ccb459a03b4e3363ecea5720aa42e"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-incremental-import-receipt-14-id.json",
+        "sha256": "a7002aa39e29e45e61853e51a541646cb73b4d61701d149ac2c5fa65f3108013"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-incremental-import-receipt.json",
+        "sha256": "163a58297388db73623b3b20b36ee8826de65e5716e41a1615821f759eb93f02"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-listed-url-gaps.json",
+        "sha256": "925071c8b924cd27bd7d2045747efd24d229a90b4014d1e1ed77819a82addc6a"
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-original-uri-observations.json",
+        "sha256": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f"
+      }
+    ],
+    "literalMentionHits": [
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-000-011.json",
+        "sha256": "0651fcf1f8ed450f2bc684367aac0dad87ae2ba3a6a396c759a5b7d31e79cdf9",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-BODY-REVIEW-000-011.md",
+        "sha256": "ef23a53e7aab3436387df0f0d10125432b94e42362e57ce69b65001c12433abe",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-000-011.json",
+        "sha256": "ff613b0047f644bbd382eb9ad050e6a7c298f738a9f1fb82c98ad9882182cc57",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-SCOPE-REVIEW-000-011.md",
+        "sha256": "9f48614d17a0c182af987e922f4ee7c6c4c406aa5431c560ec35466f27e2e29a",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REVIEW.md",
+        "sha256": "be8b44951580e6560545609bf43eed22cf39751d1f21828a20181809143d206b",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/additional-research-link-audit-inventory.json",
+        "sha256": "2a154aa968604cea94d14a6f4766098acbd00b1266e745a5ec8179e56344c48d",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/remaining-related-request-provenance-review-inventory.json",
+        "sha256": "c27b6f1d7953813c9e5a2b9fb78032000c5ff0a52a6ecfb041f3413a054d51d4",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-gap-additions.json",
+        "sha256": "a91dbf1e7bcf81c4e2bbaeae8cec5d6206178862b08756f67a27f55755a0c58a",
+        "literalTargetsMentioned": [
+          "http://labs.biology.ucsd.edu/yanofsky/navigation.htm",
+          "http://labs.biology.ucsd.edu/yanofsky/content.htm",
+          "https://ips.ucsd.edu/leftmenu_v_n.html",
+          "https://ips.ucsd.edu/banner.html",
+          "https://ips.ucsd.edu/splash_v_n.html",
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      },
+      {
+        "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-original-uri-observations.json",
+        "sha256": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f",
+        "literalTargetsMentioned": [
+          "http://r2g.ucsd.edu/home.html"
+        ]
+      }
+    ]
+  },
+  "other18RootMarkupScan": [
+    {
+      "labId": "ucsd-anesthesiology-lab-patel-lab",
+      "ordinal": 6,
+      "sourceId": "src-576d8bb4c05b5f8b",
+      "sourceUrl": "https://cardiacneuroprotection.com/people/",
+      "observedAt": "2026-10-16T00:57:40+00:00",
+      "bodySha256": "4f7be7462acea6ea4194b8ac18d1fbef20e844c154d96aa16794e633b0303c94",
+      "cacheHashVerified": true,
+      "entryTags": [
+        {
+          "tag": "iframe",
+          "attributes": {
+            "src": "https://widgets.wp.com/likes/master.html?ver=20261016#ver=20261016",
+            "scrolling": "no",
+            "id": "likes-master",
+            "name": "likes-master",
+            "style": "display:none;"
+          },
+          "exactMarkup": "<iframe src='https://widgets.wp.com/likes/master.html?ver=20261016#ver=20261016' scrolling='no' id='likes-master' name='likes-master' style='display:none;'>"
+        }
+      ],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "https://cardiacneuroprotection.com/",
+            "class": "custom-logo-link",
+            "rel": "home"
+          },
+          "image": {
+            "width": "60",
+            "height": "7",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png",
+            "class": "custom-logo",
+            "alt": "Cardiac & Neuro Protection Laboratories",
+            "decoding": "async",
+            "srcset": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=60&h=7 60w, https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=120&h=15 120w",
+            "sizes": "(max-width: 60px) 100vw, 60px",
+            "data-attachment-id": "360",
+            "data-permalink": "https://cardiacneuroprotection.com/?attachment_id=360",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png",
+            "data-orig-size": "839,104",
+            "data-comments-opened": "1",
+            "data-image-title": "flamingtext__25308116638366758",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=839"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:hepatel@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "123",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/patel_piyush/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg",
+            "data-orig-size": "150,213",
+            "data-comments-opened": "1",
+            "data-image-title": "Patel_piyush",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=150",
+            "class": "  wp-image-123 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/hemalpatel.png?w=114&h=176",
+            "alt": "Hemal Patel",
+            "width": "114",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:dchuss@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "124",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/dr-head-pix/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dr-head-pix.jpg",
+            "data-orig-size": "250,249",
+            "data-comments-opened": "1",
+            "data-image-title": "Dr-Head-Pix",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dr-head-pix.jpg?w=250",
+            "class": "wp-image-124 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dawna.jpg?w=114&h=176",
+            "alt": "Dawna",
+            "width": "114",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:ppatel@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "123",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/patel_piyush/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg",
+            "data-orig-size": "150,213",
+            "data-comments-opened": "1",
+            "data-image-title": "Patel_piyush",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=150",
+            "class": "wp-image-123 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=114&h=176",
+            "alt": "Patel_piyush",
+            "width": "114",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:bhead@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "124",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/dr-head-pix/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dr-head-pix.jpg",
+            "data-orig-size": "250,249",
+            "data-comments-opened": "1",
+            "data-image-title": "Dr-Head-Pix",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dr-head-pix.jpg?w=250",
+            "loading": "lazy",
+            "class": "wp-image-124 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/dr-head-pix.jpg?w=161&h=176",
+            "alt": "Dr-Head-Pix",
+            "width": "161",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:droth@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "122",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/roth/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/roth.jpg",
+            "data-orig-size": "120,150",
+            "data-comments-opened": "1",
+            "data-image-title": "roth",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/roth.jpg?w=120",
+            "loading": "lazy",
+            "class": "alignnone  wp-image-122 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/roth.jpg?w=128&h=176",
+            "alt": "roth",
+            "width": "128",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:azemljicharpf@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "123",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/patel_piyush/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg",
+            "data-orig-size": "150,213",
+            "data-comments-opened": "1",
+            "data-image-title": "Patel_piyush",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=150",
+            "loading": "lazy",
+            "class": "wp-image-123 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/zemlji-harpf.jpg?w=114&h=176",
+            "alt": "Alice",
+            "width": "114",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:mpearn@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "122",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/roth/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/roth.jpg",
+            "data-orig-size": "120,150",
+            "data-comments-opened": "1",
+            "data-image-title": "roth",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/roth.jpg?w=120",
+            "loading": "lazy",
+            "class": "alignnone  wp-image-122 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/matthew_pearn.jpg?w=128&h=176",
+            "alt": "Matt P",
+            "width": "128",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:mattdiya@att.net"
+          },
+          "image": {
+            "data-attachment-id": "123",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/patel_piyush/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg",
+            "data-orig-size": "150,213",
+            "data-comments-opened": "1",
+            "data-image-title": "Patel_piyush",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=150",
+            "loading": "lazy",
+            "class": "wp-image-123 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/matt.jpg?w=114&h=176",
+            "alt": "Matt S",
+            "width": "114",
+            "height": "176"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:shanshan198844@126.com"
+          },
+          "image": {
+            "data-attachment-id": "123",
+            "data-permalink": "https://cardiacneuroprotection.com/collaboration/patel_piyush/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg",
+            "data-orig-size": "150,213",
+            "data-comments-opened": "1",
+            "data-image-title": "Patel_piyush",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/patel_piyush.jpg?w=150",
+            "loading": "lazy",
+            "class": "wp-image-123 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/3.jpg?w=138&h=191",
+            "alt": "Shanshan",
+            "width": "138",
+            "height": "191"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:mnazarbe@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "596",
+            "data-permalink": "https://cardiacneuroprotection.com/people/image2/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2019/04/image2-e1556537968122.jpeg",
+            "data-orig-size": "730,730",
+            "data-comments-opened": "1",
+            "data-image-title": "image2",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2019/04/image2-e1556537968122.jpeg?w=730",
+            "loading": "lazy",
+            "class": "alignnone  wp-image-596 aligncenter",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2019/04/image2-e1556537968122.jpeg?w=145&h=151",
+            "alt": "",
+            "width": "145",
+            "height": "151"
+          }
+        },
+        {
+          "anchor": {
+            "href": "mailto:mthio@ucsd.edu"
+          },
+          "image": {
+            "data-attachment-id": "632",
+            "data-permalink": "https://cardiacneuroprotection.com/people/thio/",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2019/09/thio.jpg",
+            "data-orig-size": "1416,2530",
+            "data-comments-opened": "1",
+            "data-image-meta": "{\"aperture\":\"25\",\"credit\":\"Brandon Lao\",\"camera\":\"NIKON D7000\",\"created_timestamp\":\"1560441472\",\"copyright\":\"Brandon Lao\",\"focal_length\":\"25\",\"iso\":\"320\",\"shutter_speed\":\"0.125\",\"orientation\":\"1\"}",
+            "data-image-title": "Thio",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2019/09/thio.jpg?w=573",
+            "loading": "lazy",
+            "class": "alignnone  wp-image-632",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2019/09/thio.jpg?w=145&h=238",
+            "alt": "Thio.jpg",
+            "width": "145",
+            "height": "238"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://cardiacneuroprotection.com/",
+            "class": "custom-logo-link",
+            "rel": "home"
+          },
+          "image": {
+            "loading": "lazy",
+            "width": "20",
+            "height": "2",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png",
+            "class": "custom-logo",
+            "alt": "Cardiac & Neuro Protection Laboratories",
+            "decoding": "async",
+            "srcset": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=20&h=2 20w, https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=40&h=5 40w",
+            "sizes": "auto, (max-width: 20px) 100vw, 20px",
+            "data-attachment-id": "360",
+            "data-permalink": "https://cardiacneuroprotection.com/?attachment_id=360",
+            "data-orig-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png",
+            "data-orig-size": "839,104",
+            "data-comments-opened": "1",
+            "data-image-title": "flamingtext__25308116638366758",
+            "data-image-description": "",
+            "data-image-caption": "",
+            "data-large-file": "https://cardiacneuroprotection.com/wp-content/uploads/2017/09/flamingtext__25308116638366758.png?w=839"
+          }
+        },
+        {
+          "anchor": {
+            "class": "actnbr-menu__item actnbr-sitename",
+            "href": "https://cardiacneuroprotection.com"
+          },
+          "image": {
+            "loading": "lazy",
+            "alt": "",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=50",
+            "srcset": "https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=50 1x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=75 1.5x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=100 2x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=150 3x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=176 4x",
+            "class": "avatar avatar-50",
+            "height": "50",
+            "width": "50"
+          }
+        },
+        {
+          "anchor": {
+            "role": "menuitem",
+            "class": "actnbr-menu__item actnbr-sitename",
+            "href": "https://cardiacneuroprotection.com"
+          },
+          "image": {
+            "loading": "lazy",
+            "alt": "",
+            "src": "https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=50",
+            "srcset": "https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=50 1x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=75 1.5x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=100 2x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=150 3x, https://cardiacneuroprotection.com/wp-content/uploads/2017/10/flamingtext__25308847372738598.png?w=176 4x",
+            "class": "avatar avatar-50",
+            "height": "50",
+            "width": "50"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "Hidden cross-host WordPress likes iframe; widget rejected.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-anthropology-lab-human-comparative-neuroanatomy-laboratory",
+      "ordinal": 856,
+      "sourceId": "src-e34bc1ae0e671ed6",
+      "sourceUrl": "https://anthropology.ucsd.edu/people/faculty/faculty-profiles/katerina-semendeferi.html",
+      "observedAt": "2026-10-16T01:00:52+00:00",
+      "bodySha256": "fc78795250586bd9bf2eb2e163f7055ddce3f408eff86594b251f438dcdee6a8",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "https://ucsd.edu/"
+          },
+          "image": {
+            "alt": "UCSD homepage",
+            "class": "img-responsive footer-logo",
+            "src": "https://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-mccammon-group",
+      "ordinal": 727,
+      "sourceId": "src-669c03a4ab347122",
+      "sourceUrl": "https://mccammon.ucsd.edu/",
+      "observedAt": "2026-10-16T01:07:20+00:00",
+      "bodySha256": "ce50657ee5ce63fee0ed39c8776d4ee4417c2b1708c8968be12b8ad1ef737372",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "http://mccammon.ucsd.edu"
+          },
+          "image": {
+            "src": "/images/header/logo.png",
+            "alt": "McCammon Group",
+            "border": "0"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.youtube.com/watch?v=ui1ZysMFcKk",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "style": "display:block;text-decoration:none;color:inherit;"
+          },
+          "image": {
+            "src": "https://img.youtube.com/vi/ui1ZysMFcKk/hqdefault.jpg",
+            "alt": "YouTube thumbnail: Nobel Symposium lecture",
+            "style": "width:160px;height:auto;border-radius:6px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "http://www.beyondsecurity.com/vulnerability-scanner-verification/mccammon.ucsd.edu"
+          },
+          "image": {
+            "src": "https://secure.beyondsecurity.com/verification-images/mccammon.ucsd.edu/vulnerability-scanner-2.gif",
+            "alt": "Website Security Test",
+            "border": "0"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-susan-taylor-lab",
+      "ordinal": 731,
+      "sourceId": "src-d189d9d474b0a7d0",
+      "sourceUrl": "https://susantaylorlab.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:20+00:00",
+      "bodySha256": "6ecc346828c1aa26d665bc4bf1a04f495a4591c6fec1359d1c8cbaa2749d059e",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-bioengineering-lab-khojah-lab",
+      "ordinal": 21,
+      "sourceId": "src-44b3aab6628272c8",
+      "sourceUrl": "https://reemkhojah.com/",
+      "observedAt": "2026-10-16T01:06:22+00:00",
+      "bodySha256": "5ef3d1b4e86fa101531f764738af46074e10b72d0fd4c48176e5cea50c69bffa",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://youtu.be/HRHbcGIY710?si=ItjmylwY-f5YniTT",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-08-27%20at%2011.20.12%20AM.png/:/cr=t:4.57%25,l:0%25,w:100%25,h:90.86%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE0_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/33831219/",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.56.36%20AM-bffb513.png/:/cr=t:4.51%25,l:0%25,w:100%25,h:90.99%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE2_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://youtu.be/NcKw88psHMM?si=gDYDZo9BlRE6Lmdz",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.50.24%20AM.png/:/cr=t:4.69%25,l:0%25,w:100%25,h:90.62%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE3_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://pubs.rsc.org/en/content/articlehtml/2017/lc/c7lc00355b",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.53.12%20AM.png/:/cr=t:4.6%25,l:0%25,w:100%25,h:91.04%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE4_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://pubs.aip.org/aip/apl/article/115/8/082402/38677",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.49.46%20AM.png/:/cr=t:4.36%25,l:0%25,w:100%25,h:91.28%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE5_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://iopscience.iop.org/article/10.1088/2399-7532/aae4d7/meta",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.49.34%20AM.png/:/cr=t:4.47%25,l:0%25,w:100%25,h:91.06%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE7_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        },
+        {
+          "anchor": {
+            "data-ux": "Element",
+            "href": "https://arxiv.org/abs/2101.07242",
+            "target": "_blank",
+            "rel": "noopener",
+            "class": "x-el x-el-a c1-1 c1-2 c1-2m c1-2p c1-b c1-c c1-d c1-e c1-f c1-g"
+          },
+          "image": {
+            "data-ux": "Image",
+            "data-lazyimg": "true",
+            "data-srclazy": "//img1.wsimg.com/isteam/ip/d70c1055-8d81-466c-ac1e-ff0b6361c171/Screen%20Shot%202024-03-12%20at%204.49.10%20AM-e394905.png/:/cr=t:4.48%25,l:0%25,w:100%25,h:91.04%25/rs=w:600,h:600,cg:true",
+            "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+            "srcset": "//img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:451,h:451,cg:true,m,i:true/qt=q:1/ll=n:true 451w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 768w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1024w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1280w, //img1.wsimg.com/isteam/ip/static/transparent_placeholder.png/:/rs=w:600,h:600,cg:true,m,i:true/qt=q:1/ll=n:true 1536w",
+            "sizes": "(min-width: 451px) and (max-width: 767px) 767px, (min-width: 768px) and (max-width: 1023px) 1023px, (min-width: 1024px) and (max-width: 1279px) 1279px, (min-width: 1280px) and (max-width: 1535px) 1535px, (min-width: 1536px) 1536px",
+            "data-aid": "GALLERY_IMAGE8_RENDERED",
+            "class": "x-el x-el-img gallery-8-img c1-1 c1-2 c1-3c c1-2u c1-3q c1-3r c1-21 c1-23 c1-4m c1-7w c1-97 c1-5c c1-98 c1-99 c1-9a c1-7y c1-b c1-c c1-d c1-4u c1-9b c1-e c1-f c1-g"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "External publication image anchor rejected.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-figueroa-lab",
+      "ordinal": 689,
+      "sourceId": "src-621e88a131d66f27",
+      "sourceUrl": "https://figueroagroup.ucsd.edu/",
+      "observedAt": "2026-10-16T01:07:07+00:00",
+      "bodySha256": "2bc435cc40ddee151ea970f3d34bed87cee8d186d5cdf4e452cab5f65e67fb67",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "XMyrgf",
+            "href": "/home"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vCoVIw61o7Xp0JZl2yayt1TfLlMweo1rMHNIhsEsG6YKbwWWszJxndJalSnqChmJCpvjaYFuDyXi42_IqHS4wJB4N1yuhEHbU9CNnWzehAr7Clz1sQEoWo49Tooj4wWXwqpT7v_wYais1gAo6rqW6jPxElAQnfG1Zz9cMnP4CPheWSDoYlc0_GaMapo8o=w16383",
+            "class": "r9CsCb",
+            "role": "img",
+            "aria-label": "Site home"
+          }
+        },
+        {
+          "anchor": {
+            "class": "GAuSPc",
+            "jsname": "jIujaf",
+            "href": "/home"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vCoVIw61o7Xp0JZl2yayt1TfLlMweo1rMHNIhsEsG6YKbwWWszJxndJalSnqChmJCpvjaYFuDyXi42_IqHS4wJB4N1yuhEHbU9CNnWzehAr7Clz1sQEoWo49Tooj4wWXwqpT7v_wYais1gAo6rqW6jPxElAQnfG1Zz9cMnP4CPheWSDoYlc0_GaMapo8o=w16383",
+            "class": "lzy1Td",
+            "role": "img",
+            "aria-label": "Site home",
+            "jsname": "SwcDWb"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-electrical-and-computer-engineering-lab-turakhia-lab",
+      "ordinal": 817,
+      "sourceId": "src-3374fa252facc9da",
+      "sourceUrl": "https://turakhia.ucsd.edu/",
+      "observedAt": "2026-10-16T01:01:22+00:00",
+      "bodySha256": "6b4516990ea1c89f21955ba10b6061024817f85f510a91d9655938f943879cf7",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "index.html"
+          },
+          "image": {
+            "src": "images/logos/turakhia-lab-icon.png",
+            "alt": "Turakhia Lab logo",
+            "style": "width:40px;height:40px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "index.html"
+          },
+          "image": {
+            "src": "images/logos/turakhia-lab-icon.png",
+            "alt": "Turakhia Lab logo",
+            "style": "width:40px;height:40px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "#main-content"
+          },
+          "image": {
+            "src": "images/people/yatish_turakhia.jpeg",
+            "alt": "Yatish Turakhia",
+            "class": "img-fluid"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://ece.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/ece-logo.png",
+            "alt": "Ece Logo",
+            "style": "height:70px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://cse.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/cse-logo.png",
+            "alt": "Cse Logo",
+            "style": "height:70px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://be.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/be-logo.png",
+            "alt": "Be Logo",
+            "style": "height:70px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://mics.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/mics-logo.jpeg",
+            "alt": "Mics Logo",
+            "style": "height:100px;margin:10px;margin-right:40px;margin-top:40px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://cmi.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/igm-logo.png",
+            "alt": "Igm Logo",
+            "style": "height:80px;margin:10px;margin-right:60px;margin-top:40px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://cmi.ucsd.edu/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/cmi-logo.png",
+            "alt": "Cmi Logo",
+            "style": "height:60px;margin:10px;margin-top:40px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.cdc.gov",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/cdc-logo.svg",
+            "alt": "Cdc Logo",
+            "style": "height:120px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.cdph.ca.gov/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/CDPH-Logo.png",
+            "alt": "Cdph Logo",
+            "style": "height:120px;margin:20px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.nih.gov/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/NIH-Logo.svg",
+            "alt": "Nih Logo",
+            "style": "height:120px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.amd.com/en.html",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/AMD-logo.svg",
+            "alt": "Amd Logo",
+            "style": "height:120px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.hellmanfellows.org/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/hellman-logo.png",
+            "alt": "Hellman Logo",
+            "style": "height:100px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.amd.com/en/corporate/hpc-fund.html",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/amd-hpc-logo.avif",
+            "alt": "Amd Hpc Logo",
+            "style": "height:100px;margin:10px;"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.amazon.science/research-awards",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          "image": {
+            "src": "images/logos/ara-logo-2.jpg",
+            "alt": "Ara Logo 2",
+            "style": "height:100px;margin:20px;"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "External Amazon Research Awards funding image anchor rejected.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-electrical-and-computer-engineering-lab-vlsi-cad-lab",
+      "ordinal": 199,
+      "sourceId": "src-e019db031a5d2f86",
+      "sourceUrl": "https://vlsicad.ucsd.edu/",
+      "observedAt": "2026-10-16T00:59:44+00:00",
+      "bodySha256": "285a23f99c1498902234939f7587c4d238b6fc63080b20f2deafbdf79de45735",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [],
+      "decision": "no_new_candidate",
+      "reason": "No new target; existing research-path robots refusal preserved.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-global-policy-and-strategy-lab-wavemaker-lab",
+      "ordinal": 206,
+      "sourceId": "src-bf86fb2df06235ad",
+      "sourceUrl": "https://ccgt.ucsd.edu/initiatives/wavemaker-lab/index.html",
+      "observedAt": "2026-10-16T01:05:00+00:00",
+      "bodySha256": "2a032a7c1e7d4757a83058ef90c0eb4f0185c4e9e871f1e12caddff1d230230f",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "cms-school-logo gps-logo",
+            "href": "https://gps.ucsd.edu/"
+          },
+          "image": {
+            "alt": "UC San Diego School of Global Policy and Strategy logo",
+            "src": "https://cdn.ucsd.edu/cms/decorator-5/img/logos/blue-gold/ucsdlogo-globalpolicystrategy-bluegold.png"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://ucsd.edu/"
+          },
+          "image": {
+            "alt": "UCSD homepage",
+            "class": "img-responsive footer-logo",
+            "src": "https://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-live-lab-5dba8659c4ddd7",
+      "ordinal": 557,
+      "sourceId": "src-40a7068cc7c80547",
+      "sourceUrl": "https://neuralcrossroads.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:38+00:00",
+      "bodySha256": "e8fd801cd5f04356a8cae61fa1c88e23a6ebcca342ae43f80c65185a6d2026b5",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2024/07/24/resonant-responses/"
+          },
+          "image": {
+            "width": "375",
+            "height": "337",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2024/07/40ASSRIcon-01.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2023/06/20/dissertation-defenses/"
+          },
+          "image": {
+            "width": "420",
+            "height": "338",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2023/06/Grad-collage-2-420x338.jpg",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2023/06/20/dentate-gyrus-discoveries-and-debates/"
+          },
+          "image": {
+            "width": "420",
+            "height": "254",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2023/06/Screen-Shot-2023-06-20-at-2.14.59-PM-420x254.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2023/01/17/optimal-oscillations/"
+          },
+          "image": {
+            "width": "354",
+            "height": "206",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2023/01/Figure_6_proof_thumbpng-2.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2022/09/30/estimating-engagement-in-rhythmic-subcircuits/"
+          },
+          "image": {
+            "width": "418",
+            "height": "300",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2022/09/Riviere2022-03.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2020/08/28/combinatorial-coupling-at-cosyne/"
+          },
+          "image": {
+            "width": "375",
+            "height": "159",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2020/08/Cosyne-Coupling-Featured-Image3.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2019/03/12/making-mazes/"
+          },
+          "image": {
+            "width": "400",
+            "height": "300",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2019/03/Screen-Shot-2019-03-12-at-11.02.37-AM-e1552413979288.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2019/01/07/the-right-regressor/"
+          },
+          "image": {
+            "width": "375",
+            "height": "299",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2019/01/JCNS_cartoonfigure-01.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2019/01/07/informative-interneurons/"
+          },
+          "image": {
+            "width": "420",
+            "height": "596",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2019/01/AWM_Fig1InterneuronRasters-420x596.png",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://neuralcrossroads.ucsd.edu/2019/01/03/friendships-and-fellowships/"
+          },
+          "image": {
+            "width": "420",
+            "height": "580",
+            "src": "https://neuralcrossroads.ucsd.edu/files/2019/01/Lara_and_Pam2-1-420x580.jpg",
+            "class": "attachment-thumbnail size-thumbnail wp-post-image",
+            "alt": "",
+            "decoding": "async",
+            "loading": "lazy"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-live-lab-730746a3af9b60",
+      "ordinal": 526,
+      "sourceId": "src-619921af434f6f5c",
+      "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/vira-kravets",
+      "observedAt": "2026-10-16T01:00:34+00:00",
+      "bodySha256": "a08c7a050d55e5c47322e84cbb7f452364184d37a91350f73732371a1389a38c",
+      "cacheHashVerified": true,
+      "entryTags": [
+        {
+          "tag": "iframe",
+          "attributes": {
+            "src": "https://www.googletagmanager.com/ns.html?id=GTM-5LK9HJ2",
+            "height": "0",
+            "width": "0",
+            "style": "display:none;visibility:hidden"
+          },
+          "exactMarkup": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5LK9HJ2\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\">"
+        }
+      ],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "/",
+            "title": "Home",
+            "rel": "home",
+            "class": "navbar-brand"
+          },
+          "image": {
+            "src": "/sites/default/files/UCSDLogo_JSOE_BlueGold_0_0.png",
+            "alt": "Home",
+            "class": "img-fluid d-inline-block align-top"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/"
+          },
+          "image": {
+            "alt": "jsoe_logo_white.png",
+            "data-entity-type": "",
+            "data-entity-uuid": "",
+            "height": "321",
+            "src": "/sites/default/files/groups/all/img/jsoe_logo_white.png",
+            "width": "1371"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "Hidden Google Tag Manager iframe rejected.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-live-lab-790eafae9a0a66",
+      "ordinal": 570,
+      "sourceId": "src-1b4174d186ea27a5",
+      "sourceUrl": "https://ramanathan.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:39+00:00",
+      "bodySha256": "7aab4d5bb2e0323d5e0813bfa52df7da0e49c08010f81109cd78025dd22d19e2",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "x-img newbanner-left x-img-link x-img-none",
+            "href": "https://ramanathan.ucsd.edu/ramanathan-lab/",
+            "data-options": "thumbnail: '21539:full'"
+          },
+          "image": {
+            "decoding": "async",
+            "src": "https://ramanathan.ucsd.edu/wp-content/uploads/sites/460/2024/09/ramnew1.jpg"
+          }
+        },
+        {
+          "anchor": {
+            "class": "x-img newbanner-left x-img-link x-img-none",
+            "style": "height:100vh; width:110%;",
+            "href": "https://ramanathan.ucsd.edu/crc2/",
+            "data-options": "thumbnail: '21945:full'"
+          },
+          "image": {
+            "decoding": "async",
+            "src": "https://ramanathan.ucsd.edu/wp-content/uploads/sites/460/2025/05/CRC2_HOME-page2-1-scaled.jpg"
+          }
+        },
+        {
+          "anchor": {
+            "class": "x-img newbanner-left x-img-link x-img-none",
+            "href": "https://ramanathan.ucsd.edu/ramanathan-lab",
+            "data-options": "thumbnail: '21540:full'"
+          },
+          "image": {
+            "decoding": "async",
+            "src": "https://ramanathan.ucsd.edu/wp-content/uploads/sites/460/2024/09/rammobile1.jpg"
+          }
+        },
+        {
+          "anchor": {
+            "class": "x-img newbanner-left x-img-link x-img-none",
+            "style": "height:100vh; width:110%;",
+            "href": "https://ramanathan.ucsd.edu/crc2/",
+            "data-options": "thumbnail: '21945:full'"
+          },
+          "image": {
+            "decoding": "async",
+            "src": "https://ramanathan.ucsd.edu/wp-content/uploads/sites/460/2025/05/CRC2_HOME-page2-1-scaled.jpg"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-live-lab-96c9f61bb3f82f",
+      "ordinal": 538,
+      "sourceId": "src-5f50c28a61122b07",
+      "sourceUrl": "https://microbiome.ucsd.edu/user/romak/",
+      "observedAt": "2026-10-16T01:00:29+00:00",
+      "bodySha256": "dd030935f3c94a5c7a0f22c22f7a7974d200550fc2949d40a1c9c61c01756366",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "same-logo",
+            "href": "https://cmi.ucsd.edu/"
+          },
+          "image": {
+            "class": " preload-me",
+            "src": "https://cmi.ucsd.edu/wp-content/uploads/2021/01/CMI_Logo_blue-550x124-1.png",
+            "srcset": "https://cmi.ucsd.edu/wp-content/uploads/2021/01/CMI_Logo_blue-550x124-1.png 550w",
+            "width": "275",
+            "height": "62",
+            "sizes": "275px",
+            "alt": "Center for Microbiome Innovation"
+          }
+        },
+        {
+          "anchor": {
+            "class": "same-logo",
+            "href": "https://cmi.ucsd.edu/"
+          },
+          "image": {
+            "class": "mobile-logo preload-me",
+            "src": "https://cmi.ucsd.edu/wp-content/uploads/2021/01/CMI_Logo_blue-550x124-1.png",
+            "srcset": "https://cmi.ucsd.edu/wp-content/uploads/2021/01/CMI_Logo_blue-550x124-1.png 550w, https://cmi.ucsd.edu/wp-content/uploads/2021/01/CMI_Logo_blue-550x124-1.png 550w",
+            "width": "550",
+            "height": "124",
+            "sizes": "550px",
+            "alt": "Center for Microbiome Innovation"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://cmi.ucsd.edu/user/romak/",
+            "class": "um-profile-photo-img",
+            "title": "Robert Mak"
+          },
+          "image": {
+            "decoding": "async",
+            "src": "https://cmi.ucsd.edu/wp-content/uploads/ultimatemember/132/profile_photo.png?1792112429",
+            "class": "gravatar avatar avatar-190 um-avatar um-avatar-uploaded",
+            "width": "190",
+            "height": "190",
+            "alt": "Robert Mak",
+            "data-default": "https://cmi.ucsd.edu/wp-content/plugins/ultimate-member/assets/img/default_avatar.jpg",
+            "onerror": "if ( ! this.getAttribute('data-load-error') ){ this.setAttribute('data-load-error', '1');this.setAttribute('src', this.getAttribute('data-default'));}",
+            "loading": "lazy"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://jacobsschool.ucsd.edu/"
+          },
+          "image": {
+            "decoding": "async",
+            "style": "margin: 5px 0px 5px 0px; max-width: 100%;",
+            "src": "https://cmi.ucsd.edu/wp-content/uploads/2021/01/UCSDLogo_JSOE_White.png",
+            "width": "500",
+            "alt": "UC San Diego Jacobs School of Engineering Logo"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://www.cookieyes.com/"
+          },
+          "image": {
+            "src": "https://cmi.ucsd.edu/wp-content/plugins/cookie-law-info/legacy/public/images/logo-cookieyes.svg",
+            "alt": "CookieYes Logo"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-live-lab-dc77b90e91d80c",
+      "ordinal": 599,
+      "sourceId": "src-0f573363be8a3abb",
+      "sourceUrl": "https://dickenson.ucsd.edu/",
+      "observedAt": "2026-10-16T01:06:42+00:00",
+      "bodySha256": "73389a0e06271b8ae5cf8dc75fcc4ea01566e91497509e9808ea88976e89cabd",
+      "cacheHashVerified": true,
+      "entryTags": [
+        {
+          "tag": "iframe",
+          "attributes": {
+            "jsname": "WMhH6e",
+            "class": " YMEQtf",
+            "frameborder": "0",
+            "sandbox": "allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation",
+            "id": "53b0425c9e4104d2_17",
+            "name": "53b0425c9e4104d2_17",
+            "scrolling": "no",
+            "title": "Custom embed",
+            "aria-label": "Custom embed"
+          },
+          "exactMarkup": "<iframe jsname=\"WMhH6e\" class=\" YMEQtf\" frameborder=\"0\" sandbox=\"allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation\" id=\"53b0425c9e4104d2_17\" name=\"53b0425c9e4104d2_17\" scrolling=\"no\" title=\"Custom embed\" aria-label=\"Custom embed\">"
+        }
+      ],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "XMyrgf",
+            "href": "/home"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tugeKtGTEOur4-AuqgJvet0SdiV1VEnuDVK90HqCSFRFOMzI-SYVsgxjARhT8l9mOYrMtYrQs3Ia_rpLSaR8IDbeRaKwXwpbU_u_xCfcbNgR9qxfuebUuvHPLQG5kJqv5I6F75YuiJMuFkc6N0uXTN97ch0-XfzSGckaOBH2zLwYxx2HIhlVxbh-xAD2A=w16383",
+            "class": "r9CsCb",
+            "role": "img",
+            "aria-label": "Site home"
+          }
+        },
+        {
+          "anchor": {
+            "class": "GAuSPc",
+            "jsname": "jIujaf",
+            "href": "/home"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tugeKtGTEOur4-AuqgJvet0SdiV1VEnuDVK90HqCSFRFOMzI-SYVsgxjARhT8l9mOYrMtYrQs3Ia_rpLSaR8IDbeRaKwXwpbU_u_xCfcbNgR9qxfuebUuvHPLQG5kJqv5I6F75YuiJMuFkc6N0uXTN97ch0-XfzSGckaOBH2zLwYxx2HIhlVxbh-xAD2A=w16383",
+            "class": "lzy1Td",
+            "role": "img",
+            "aria-label": "Site home",
+            "jsname": "SwcDWb"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/research",
+            "class": "fqo2vd"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tYFf4SzdkLLix-QcEuOFBgYrUICF0hSIX4XKATKY84XvL0lT9EcX1_BVGb6q7E05dgU3lNZltamheM34BGpn57Xql1Js4FXrx0Ya05_kXwt-JkUEGX9cYSy12Hw-8CeI-OE3E-d9kWWufNCg4PHNdZQy5FBdaC_IrE7ZyU5Zn9S-uJ7Nq6CZxuoTBArwaGr0QeRza29BVMo2-PEcjpvIAWqjquR6iz5xdV4SQHAwI=w1280",
+            "class": "CENy8b"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/teaching",
+            "class": "fqo2vd"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vYf9GonZQvNBEZ8ncvV2ifYkhi5VjdHPY0n6gi_BbuBgDulijDrtfTsr7rDzxF36IeOx6U4bsRFL3QYnzlZegViSUYKCoRRBID9bpbwjcwFRmaDeHulmZh-w2FmmM5F2MelK3MmnhtpPr7CqgAwnnV-nxzQpWcX3u__aySG2esoICSAxHNIhrrm90rPo5bPvLKlHn07OxPdds6wio_BBF-aqFnyoMvXxoOqtYnpCU=w1280",
+            "class": "CENy8b"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/clinical-work",
+            "class": "fqo2vd"
+          },
+          "image": {
+            "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72s8BRL_Hgd7RNs0qKDUL2pbhbp1SPV9Q-fFT1mubs562hB8FvqvSUVCIPfOMYXX2U4hY-b1_eZtMIH8ZSYiUbVEm0uouDNDUkJlxQkF0FaSSOWGYBGxxKVkJXzsRA9VRPf5UMOo4suAXKp6ddweWOFRtTxvl2e5aR3ncay6kG0GNRC5namjn5oEiNjD81wGMiy2Eo-6vhyCgnQDaDCL3rncx1cRniEAnnpEyA759qs=w1280",
+            "class": "CENy8b"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "Research already captured03:18:33; Clinical Work previously rejected service page; iframe no src.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-boutelle-lab",
+      "ordinal": 319,
+      "sourceId": "src-54ce33ed10f3e070",
+      "sourceUrl": "https://chear.ucsd.edu/",
+      "observedAt": "2026-10-16T01:00:01+00:00",
+      "bodySha256": "27ee7a1c24b98c13d9252f3d45af7bee4f5d198c71324e25bcb86948682c4fd1",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "https://fraudblocker.com",
+            "rel": "nofollow"
+          },
+          "image": {
+            "src": "https://monitor.fraudblocker.com/fbt.gif?sid=phBlf7eV99GR6Zfg_7Y36",
+            "alt": "Fraud Blocker"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://fraudblocker.com",
+            "rel": "nofollow"
+          },
+          "image": {
+            "src": "https://monitor.fraudblocker.com/ctrack.js?sid=phBlf7eV99GR6Zfg_7Y36",
+            "alt": "Fraud Blocker"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/"
+          },
+          "image": {
+            "width": "300",
+            "height": "64",
+            "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2064'%3E%3C/svg%3E",
+            "class": "attachment-medium size-medium wp-image-1214 ewww_webp_lazy_load",
+            "alt": "",
+            "data-lazy-srcset": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png 300w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1024x220.png 1024w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-768x165.png 768w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1536x329.png 1536w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped.png 1800w",
+            "data-lazy-sizes": "(max-width: 300px) 100vw, 300px",
+            "data-lazy-src": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png",
+            "data-lazy-src-webp": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png.webp",
+            "data-lazy-srcset-webp": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png.webp 300w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1024x220.png.webp 1024w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-768x165.png.webp 768w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1536x329.png.webp 1536w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped.png.webp 1800w"
+          }
+        },
+        {
+          "anchor": {
+            "href": "/"
+          },
+          "image": {
+            "width": "300",
+            "height": "64",
+            "src": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png",
+            "class": "attachment-medium size-medium wp-image-1214",
+            "alt": "",
+            "srcset": "https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-300x64.png 300w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1024x220.png 1024w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-768x165.png 768w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped-1536x329.png 1536w, https://chear.ucsd.edu/wp-content/uploads/2020/03/CHEAR_Logo_wo_Background_color_cropped.png 1800w",
+            "sizes": "(max-width: 300px) 100vw, 300px"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-physics-research-site-tongyan-lin",
+      "ordinal": 381,
+      "sourceId": "src-0552281114ee8d0d",
+      "sourceUrl": "https://tongyan.physics.ucsd.edu/",
+      "observedAt": "2026-10-16T01:05:29+00:00",
+      "bodySha256": "44daf4c957737e6b28add9ae66c9cdf6d36a606b32b58d25b259a1ae7b2a17ce",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-neurocognition-and-movement-lab",
+      "ordinal": 400,
+      "sourceId": "src-763de3e38870b0e8",
+      "sourceUrl": "https://psychiatry.ucsd.edu/index.html",
+      "observedAt": "2026-10-16T01:03:03+00:00",
+      "bodySha256": "85a381cdfb173b4d195ffe6b3e295619f2c9c1c4ab6c8fc9020018fcf990bc29",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "class": "cms-school-logo ",
+            "href": "https://medschool.ucsd.edu/"
+          },
+          "image": {
+            "alt": "UC San Diego School of Medicine logo",
+            "src": "https://cdn.ucsd.edu/cms/decorator-5/img/logos/blue-gold/ucsdlogo-som-bluegold.png"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://medschool.ucsd.edu/education/md-combined/student-life/mentorship-support/ghhs/student-clinician-ceremony.html"
+          },
+          "image": {
+            "alt": "photo of lauren d'andrea ",
+            "class": "img-responsive",
+            "src": "_images/homepage/announcements_recognitions/lauren dandrea.png"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://adminrecords.ucsd.edu/Notices/2024/2024-1-29-1.html"
+          },
+          "image": {
+            "alt": "lauren bookman-frazee profile photo",
+            "class": "img-responsive",
+            "src": "_images/homepage/announcements_recognitions/Lauren Brookman-Frazee Inclusive Excellence HIGHLIGHT"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://vchs.ucsd.edu/blog/2023/10/uc-san-diego-scientists-awarded-young-investigator-grants.html"
+          },
+          "image": {
+            "alt": "Aaron D. Besterman, MD and William E. Pelham III, PhD",
+            "class": "img-responsive",
+            "src": "_images/homepage/announcements_recognitions/besterman and pelham highlight"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://today.ucsd.edu/photo-essays/patients-family-reunites-with-life-saving-team-at-east-campus-medical-center"
+          },
+          "image": {
+            "alt": "From left, Charlene Zettel, former UC Regent and former California State Assemblymember; Julie Bronstein, Executive Director of Development for UC San Diego Health Sciences; Jeff Daskalakis, MD, chair of the department of Psychiatry at UC San Diego; Carol Chang, UC San Diego Board of Trustees; Steve Koh, MD; UC San Diego Chancellor Pradeep K. Khosla",
+            "class": "img-responsive",
+            "src": "_images/homepage/in_the_news/DOP Homepage Module Image.png"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://www.kpbs.org/news/health/2024/05/21/supervisors-advance-mental-health-care-proposal-with-ucsd-health"
+          },
+          "image": {
+            "alt": "The San Diego County Administration building in downtown San Diego. Sep. 25, 2013.",
+            "class": "img-responsive",
+            "src": "_images/homepage/in_the_news/San Diego Courthouse.png"
+          }
+        },
+        {
+          "anchor": {
+            "alt": "link to news item",
+            "class": "panel panel-default",
+            "href": "https://today.ucsd.edu/story/uc-san-diego-secures-several-top-spots-in-latest-national-rankings-for-nih-funding"
+          },
+          "image": {
+            "alt": "DOP Ranked #4 in the U.S. among psychiatry departments for NIH funding, according to the Blue Ridge Institute for Medical Research",
+            "class": "img-responsive",
+            "src": "_images/homepage/in_the_news/resized nih funding announcement.png"
+          }
+        },
+        {
+          "anchor": {
+            "href": "https://ucsd.edu/"
+          },
+          "image": {
+            "alt": "UCSD homepage",
+            "class": "img-responsive footer-logo",
+            "src": "https://cdn.ucsd.edu/developer/decorator/5.0.2/img/ucsd-footer-logo-white.png"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "Department news/NIH-ranking image anchors rejected for wrong entity/scope.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    },
+    {
+      "labId": "ucsd-structural-engineering-lab-multifunctional-materials-research-laboratory-mmrl",
+      "ordinal": 825,
+      "sourceId": "src-3bf96383b726f054",
+      "sourceUrl": "http://mmrl.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:39+00:00",
+      "bodySha256": "9eeb38742f2f5d6b90b866022f7af2024241a4ff6c7fca6d69b1b3b5972f34b7",
+      "cacheHashVerified": true,
+      "entryTags": [],
+      "imageAnchors": [
+        {
+          "anchor": {
+            "href": "http://structures.ucsd.edu/"
+          },
+          "image": {
+            "border": "0",
+            "width": "93",
+            "height": "24",
+            "src": "index_files/image002.jpg",
+            "v:shapes": "_x0000_i1029"
+          }
+        },
+        {
+          "anchor": {
+            "href": "http://matsci.ucsd.edu/"
+          },
+          "image": {
+            "border": "0",
+            "width": "165",
+            "height": "26",
+            "src": "index_files/image004.jpg",
+            "v:shapes": "Picture_x0020_2"
+          }
+        },
+        {
+          "anchor": {
+            "href": "http://jacobsschool.ucsd.edu/"
+          },
+          "image": {
+            "border": "0",
+            "width": "93",
+            "height": "23",
+            "src": "index_files/image006.jpg",
+            "v:shapes": "Picture_x0020_3"
+          }
+        },
+        {
+          "anchor": {
+            "href": "http://www.ucsd.edu/"
+          },
+          "image": {
+            "border": "0",
+            "width": "39",
+            "height": "24",
+            "src": "index_files/image008.gif",
+            "v:shapes": "Picture_x0020_4"
+          }
+        }
+      ],
+      "decision": "no_new_candidate",
+      "reason": "No new frame/meta/document-preload/image-anchor entry target.",
+      "markupOnly": true,
+      "scientificBodyReviewed": false
+    }
+  ],
+  "skipped": [
+    "logo_panel.htm",
+    "clock_time.php",
+    "clock_date.php",
+    "preloaded image/style assets",
+    "apparent CSS anchors",
+    "all JS execution"
+  ],
+  "processVerification": {
+    "queueRunningItems": [],
+    "psReadOnlyAttempt": "sandbox denied operation not permitted; no escalation",
+    "limitation": "No independent process-absence certification. Parent current exact-process/pins guard required."
+  },
+  "constraints": [
+    "Finite candidates only, no target science/identity inferred.",
+    "No protocol switch, HTTP redirect/canonical rewrite, login/challenge/robots/TLS bypass, JS execution or autocrawl.",
+    "Fresh exact-target queue/capture/attempt and cooldown checks immediately before any execution. Pending otherURI work is not itself overlap; every actual request including robots must hold shared v2 host lock through response.",
+    "Current process/pins guard and normal robots/TLS/Retry-After remain required. Default page2000000/robots300000 caps unchanged.",
+    "Root sources/originaldates/hash/URI/redirect/preparedAt/raw science/mismatch gates untouched."
+  ],
+  "inputHashes": {
+    "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json": "7463540527e98b25341bfecbddcc6d4796af09ccd7a775bb067b1a3ffb32d042",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json": "e427ff2c8bba6130f9013711c845ec60da81065be057317b05b51520efe16284",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-biology-topic-lab-yanofsky.json": "182e6512b21cfc8bb5393fdb3bde101b0e522279b77d99bc36f2362085f22018",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-biology-topic-lab-yanofsky.json": "d5a1ca19ad5c0dffccda21a24b4e4cef1675c441f6cc57effb3b2a48e79e0c49",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory.json": "8274a9f3929004d462829a3e6046b5162ebe1a6346859352f26da5e7ecf203b9",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory.json": "866fb9eafb7d2a719921a1f0c83299dd063af6b89e7eb339097aef497759dac3",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/packets/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json": "f3663821108984038cf43dea1b18108444b9d2da459343e7eb9c29702bf78068",
+    "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/records/ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero.json": "acaf430429504fa58aa92769ed940869fa849e665d9f17f72ba0f108d86358fc"
+  }
+}

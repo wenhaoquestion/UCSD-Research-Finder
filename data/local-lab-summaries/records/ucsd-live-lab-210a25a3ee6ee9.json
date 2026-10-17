@@ -1,0 +1,117 @@
+{
+  "labId": "ucsd-live-lab-210a25a3ee6ee9",
+  "status": "supported",
+  "summaryZh": "Arshad Desai 的实验室研究复制后的基因组如何在细胞分裂中准确分离。保存的官方摘要未进一步明确方法。",
+  "researchQuestions": [
+    "复制后的基因组如何在细胞分裂过程中准确分离？"
+  ],
+  "topics": [
+    "基因组分离",
+    "细胞分裂"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-cfa8fa4af4a9811e",
+      "quote": "Lab Website → https://cmm.ucsd.edu/odlabweb/Sites/",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-3ac71b0dfbb43e10",
+      "quote": "Our lab is interested in understanding how the replicated genome is accurately segregated during cell division.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-3ac71b0dfbb43e10",
+      "quote": "Our lab is interested in understanding how the replicated genome is accurately segregated during cell division.",
+      "supports": [
+        "researchQuestions"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "关联官方资料明确以 Our lab 描述实验室研究。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "目标HTTP错误；研究来自保存的官方资料，当前隶属未确认。",
+    "方法未明确。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "研究方法待核（限本轮已审阅材料）：保存官方研究摘要191字符完整只给复制基因组分离目标和Cell Division/Genetics and Genomics分类；没有方法实际采用叙述。旧网址名称不补技术。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:07:27.638Z",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:11+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:10+00:00",
+    "candidateIndex": 148,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-3ac71b0dfbb43e10",
+        "quote": "Our lab is interested in understanding how the replicated genome is accurately segregated during cell division.",
+        "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+        "observedAt": "2026-10-07T22:02:07+00:00",
+        "bodySha256": null
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:07:27.638Z",
+    "previousRecordReviewedAt": "2026-10-16T07:41:11+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "保存官方研究摘要191字符完整只给复制基因组分离目标和Cell Division/Genetics and Genomics分类；没有方法实际采用叙述。旧网址名称不补技术。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-cfa8fa4af4a9811e",
+        "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+        "sourceObservedAt": "2026-10-03T01:42:39+00:00",
+        "bodySha256": null,
+        "textSha256": "809cadc6da349f626270ef049e133a4bfe4bca15ad0bd2a011a92dc81966527f",
+        "textCharacters": 50,
+        "rangesActuallyRead": [
+          [
+            0,
+            50
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-3ac71b0dfbb43e10",
+        "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+        "sourceObservedAt": "2026-10-07T22:02:07+00:00",
+        "bodySha256": null,
+        "textSha256": "5c03be76da03e449b3c29d1a9039fed10d3c894b3e9ffefb23bf92dd358f3251",
+        "textCharacters": 191,
+        "rangesActuallyRead": [
+          [
+            0,
+            191
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "observedAt": "2026-10-16T07:08:17+00:00",
+  "processReceipt": {
+    "pid": 55354,
+    "startedAt": "2026-10-16T07:05:22+00:00",
+    "networkCoordination": {
+      "protocolVersion": "fcntl-host-clock-v2",
+      "directory": "/tmp/ucsd-research-network-20261016",
+      "legacyClocksImported": 936,
+      "legacyCooldownsImported": 1,
+      "cacheObservationTimestampsModified": false,
+      "state": "active",
+      "activatedAt": "2026-10-16T07:05:22+00:00",
+      "robotsAndRedirectsIncluded": true,
+      "profilesMinimumSeconds": 10,
+      "collectorCodeSha256": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+      "coordinationCodeSha256": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "scopePolicyCodeSha256": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+      "requiredSourceFiles": {
+        "collect_ucsd_coverage.py": "a07158ed32b17f11819f1ae468d7e63c459ca6bc2cc923c2ba4f27497c30360b",
+        "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+        "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+        "collection_scope.py": "6f589d2673f44c5cbbe7681b60655c460b4f196bd8decf47373b452a44483029",
+        "refresh_labs.py": "063ae6effe54c5a6543c09a952800cbc859461bc897a19ef0e66e4aaf5eaa59b",
+        "refresh_faculty_directories.py": "29757f294a7b8cc576d211c4dd3089c17b64553189c4e5cb4956d9d959c36896",
+        "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd"
+      }
+    }
+  },
+  "actualPidProbe": {
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "matchingActualCollectorProcessRows": [],
+  "queueUpdatedAt": "2026-10-16T07:05:22+00:00",
+  "queueCounts": {
+    "done": 6021,
+    "unresolved": 814,
+    "scope_excluded": 288,
+    "retained_prior_evidence": 1859,
+    "pending": 10273
+  },
+  "newNetworkRequests": 0,
+  "notEvidenceThatGlobalCollectionIsComplete": true
+}

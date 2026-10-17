@@ -1,0 +1,276 @@
+{
+  "labId": "ucsd-medicine-lab-zuraw-lab",
+  "status": "supported",
+  "summaryZh": "Zuraw lab 研究血管性水肿和哮喘。研究涉及缓激肽相关肿胀、严重程度的遗传因素和诊断检测，以及气道上皮、GILZ 与相关受体通道在炎症中的作用。页面介绍以人类研究为主要研究方式，并按需使用动物模型。",
+  "researchQuestions": [
+    "哪些遗传因素决定血管性水肿的严重程度？",
+    "GILZ 对下调气道炎症有何影响？"
+  ],
+  "topics": [
+    "血管性水肿",
+    "哮喘",
+    "缓激肽与气道炎症"
+  ],
+  "methods": [
+    "人类研究",
+    "动物模型（按需使用）"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-d4e2b36d2c21e75e",
+      "quote": "The Zuraw lab conducts research in angioedema and asthma. Angioedema studies explore bradykinin-mediated swelling, genetic determinants of angioedema severity, and the role of bradykinin receptors, alongside investigating improved diagnostic assays.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-d4e2b36d2c21e75e",
+      "quote": "Asthma studies focus on the airway epithelial cell's role in inflammatory airway disease, examining glucocorticoid-induced leucine zipper (GILZ) impact on airway inflammation",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-d4e2b36d2c21e75e",
+      "quote": "in the Department of Medicine, UC San Diego.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-2c7cc431b7bd43c2",
+      "quote": "Angioedema studies are focused on bradykinin-mediated swelling, investigating genetic determinants of angioedema severity, the role of bradykinin receptors in swelling, and the cell biology of C1 inhibitor deficiency.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-2c7cc431b7bd43c2",
+      "quote": "The laboratory is studying the impact of glucocorticoid-induced leucine zipper (GILZ) in down-regulating airway inflammation",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    },
+    {
+      "sourceId": "src-2c7cc431b7bd43c2",
+      "quote": "The focus of the laboratory is to study diseases relevant to Allergy & Immunology. The primary model of investigation has involved human studies, however, animal models are also used when appropriate.",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        0,
+        1
+      ],
+      "provenanceNote": "Zuraw实验室自身About页直接描述the laboratory的主要研究方式及按需采用的动物模型。 原文has involved/are also used；无研究期具体日期，不推断2026年某项目状态。"
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "页面明确列出负责人 UC San Diego 医学系任职。"
+  },
+  "uncertainty": [
+    "来源仅提供人类研究及按需动物模型的基本类别，未细化实验设计、技术或物种。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:55:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:19:47.650657+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:51:02+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具名lab About明确investigating determinants及studying impact；不从疾病背景和诊断开发发明机制。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-d4e2b36d2c21e75e",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:17+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            1455
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            1554
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-c77eceecd9ad8abb",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/contact/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:04+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            538
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-3c9d8d303ad562da",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:07+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            139
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-9e7d115314568c24",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-07T22:55:15+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            329
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-ac8a32a974af42b4",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:07+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            521
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "quote": "Angioedema studies are focused on bradykinin-mediated swelling, investigating genetic determinants of angioedema severity, the role of bradykinin receptors in swelling, and the cell biology of C1 inhibitor deficiency.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+        "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "bodySha256UnavailableReason": null
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "quote": "The laboratory is studying the impact of glucocorticoid-induced leucine zipper (GILZ) in down-regulating airway inflammation",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+        "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  },
+  "methodFieldReview": {
+    "reviewedAt": "2026-10-16T08:55:24+00:00",
+    "sourceScopeReviewedAt": "2026-10-16T08:46:04.756Z",
+    "previousRecordReviewedAt": "2026-10-16T08:19:47.650657+00:00",
+    "proposalPath": "METHOD-FIELD-SCOPE-REVIEW.json",
+    "proposalSha256": "3248021953a5483a17d1afc9189e626ffa0278209f6a5fb7462b6769d4cc2980",
+    "terminologyAddendumSha256": "7c2aabb5262160c10b4fcd4c5e8e2cea9a4ee741f29206123315d1d10a6ee9af",
+    "proposalDecision": "add_explicit_basic_method_categories",
+    "reasonZh": "About页直接描述实际研究模式；仅采基本类别，不添加临床试验设计、动物种属或技术。",
+    "methodEvidence": [
+      {
+        "methodIndices": [
+          0,
+          1
+        ],
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "quote": "The focus of the laboratory is to study diseases relevant to Allergy & Immunology. The primary model of investigation has involved human studies, however, animal models are also used when appropriate.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+        "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "supports": [
+          "research",
+          "methods"
+        ],
+        "packetTextRange": {
+          "start": 6,
+          "end": 206
+        },
+        "scopeZh": "Zuraw实验室自身About页直接描述the laboratory的主要研究方式及按需采用的动物模型。",
+        "timeScopeZh": "原文has involved/are also used；无研究期具体日期，不推断2026年某项目状态。"
+      }
+    ],
+    "scopeOrRejectionEvidence": [],
+    "evidenceReclassifications": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-2c7cc431b7bd43c2",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/about/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:01+00:00",
+        "bodySha256": "fdd374aebeebce5a92cbfa8073ff13c3de1bd9e1cf8b4f8fab046d9eee91e883",
+        "readScopeZh": "About全文",
+        "textLength": 1554,
+        "packetTextRangeActuallyRead": {
+          "start": 0,
+          "end": 1554
+        }
+      },
+      {
+        "sourceId": "src-d4e2b36d2c21e75e",
+        "sourceUrl": "https://allergyimmunology.ucsd.edu/research/faculty-labs/zuraw/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:17+00:00",
+        "bodySha256": "e87fa3e2fdd24b90f0a16c4ddf89a74db881c01d56f1e16d6369584abca2a0a1",
+        "readScopeZh": "原accepted研究段及实验室名；非重复全读",
+        "textLength": 1455
+      }
+    ],
+    "notReviewedSourceIds": [
+      "src-c77eceecd9ad8abb",
+      "src-3c9d8d303ad562da",
+      "src-9e7d115314568c24",
+      "src-ac8a32a974af42b4"
+    ],
+    "notReviewedSourcesReasonZh": "本轮只复核指定方法候选及相关primary局部语境；未重读无关目录、联系页、重复历史摘录或其余出版材料。",
+    "questionApplicationPlanSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf"
+  }
+}

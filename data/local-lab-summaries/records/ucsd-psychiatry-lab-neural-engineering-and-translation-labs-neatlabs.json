@@ -1,0 +1,234 @@
+{
+  "labId": "ucsd-psychiatry-lab-neural-engineering-and-translation-labs-neatlabs",
+  "status": "supported",
+  "summaryZh": "NEATLabs 研究全生命周期中的神经认知回路，利用神经工程刺激目标回路可塑性并改变行为。研究同时使用动物模型和人类研究，开发结合移动认知评估与无线 EEG 的 BrainE 平台。",
+  "researchQuestions": [
+    "精神神经障碍如何影响认知行为所依赖的神经回路？",
+    "在创伤性脑损伤和精神分裂症的啮齿类动物模型中，遗传和／或环境扰动如何导致特定认知损伤？",
+    "神经、认知和心理健康因素如何与多样的环境挑战相互作用？"
+  ],
+  "topics": [
+    "神经认知回路",
+    "脑可塑性",
+    "行为与精神健康"
+  ],
+  "methods": [
+    "神经工程",
+    "动物模型与人类研究",
+    "认知评估",
+    "无线EEG"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-8558255968226112",
+      "quote": "Neural Engineering and Translation Labs aim to advance the understanding of neuro-cognitive circuits across the lifespan. We apply neural engineering methods in both animal models and human research to stimulate brain plasticity in target circuits and change behavior.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-8558255968226112",
+      "quote": "the Brain Engagement platform ( BrainE for short) that deploys rapid, mobile cognitive assessments with wireless electroencephalography (EEG).",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-4077ec791f400e4f",
+      "quote": "Department of Psychiatry Department of Psychiatry UC San Diego School of Medicine",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-4077ec791f400e4f",
+      "quote": "Neural Engineering and Translation Labs (NEATLABS) -- Jyoti Mishra Ramanathan, PhD & Dhakshin Ramanathan, MD, PhD",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-8558255968226112",
+      "quote": "To better understand how neural circuits underlying cognitive behaviors are impacted in neuropsychiatric disorders.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-8558255968226112",
+      "quote": "Our animal studies are currently examining rodent models of traumatic brain Injury and schizophrenia to understand how genetic and/or environmental perturbations result in specific cognitive impairments.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    },
+    {
+      "sourceId": "src-8558255968226112",
+      "quote": "to better understand how neural, cognitive and mental health factors interact with diverse environmental challenges",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        2
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "UC San Diego School of Medicine精神科官方Labs目录明确列出NEATLABS及两位负责人；目录未注明当前关系日期。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:36:30+00:00",
+  "previousReviewedAt": "2026-10-16T01:52:41+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:36:30+00:00",
+    "previousRecordReviewedAt": "2026-10-16T02:38:46+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "保留原文Our animal studies、rodent models及具体疾病模型范围，不向所有人类认知障碍外推。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [
+      {
+        "path": "REMAINING-QUESTION-SCOPE-REVISIONS.json",
+        "sha256": "df38a162df6e98571d914706d8f0a8207345ae320b609a1b8933dd42285131d4"
+      }
+    ],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-8558255968226112",
+        "sourceUrl": "https://neatlabs.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:00:49+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ],
+          [
+            1746,
+            3321
+          ],
+          [
+            3724,
+            4228
+          ],
+          [
+            14934,
+            15327
+          ],
+          [
+            15925,
+            16319
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-f2d01674ece0e7cc",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/labs-listing.html",
+        "sourceObservedAt": "2026-10-07T23:02:55+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            374
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-9cf16ff9290d0ca2",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/labs-listing.html",
+        "sourceObservedAt": "2026-10-16T01:09:46+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            914
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-f716f1397d8309e2",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/index.html",
+        "sourceObservedAt": "2026-10-16T00:59:31+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1400
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-4077ec791f400e4f",
+        "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/labs-listing.html",
+        "sourceObservedAt": "2026-10-16T01:09:46+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            1737
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-8558255968226112",
+        "quote": "To better understand how neural circuits underlying cognitive behaviors are impacted in neuropsychiatric disorders.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:49+00:00",
+        "bodySha256": "e14599694cea6af56e8520e1cc4fc838a7b6a4582fd2fa758d44e7f154981064",
+        "bodySha256UnavailableReason": null
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-8558255968226112",
+        "quote": "Our animal studies are currently examining rodent models of traumatic brain Injury and schizophrenia to understand how genetic and/or environmental perturbations result in specific cognitive impairments.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:49+00:00",
+        "bodySha256": "e14599694cea6af56e8520e1cc4fc838a7b6a4582fd2fa758d44e7f154981064",
+        "bodySha256UnavailableReason": null
+      },
+      {
+        "questionIndex": 2,
+        "sourceId": "src-8558255968226112",
+        "quote": "to better understand how neural, cognitive and mental health factors interact with diverse environmental challenges",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:49+00:00",
+        "bodySha256": "e14599694cea6af56e8520e1cc4fc838a7b6a4582fd2fa758d44e7f154981064",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

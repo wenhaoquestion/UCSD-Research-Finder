@@ -1,0 +1,1547 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+  "verdict": "PASS",
+  "scope": {
+    "candidateIndices": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "individualReviews": 44,
+    "sourceReading": "每项逐字引文与相关主文局部语境；新闻/成员/方法流程排除项补读研究介绍，未泛读无关全文。"
+  },
+  "draft": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/QUESTION-FIELD-REVIEW-045-088.json",
+    "sha256": "78977f5e6f0d79a0490b9003e4c2a6e7f08efdcc8af6b420ed5c9f7cfee6d7a4",
+    "reviewedAt": "2026-10-16T07:43:59+00:00"
+  },
+  "inputInventory": {
+    "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/SOURCE-EXPLICIT-QUESTION-CANDIDATES.json",
+    "sha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24",
+    "inventoriedAt": "2026-10-16T07:34:40+00:00",
+    "baseCommit": "19be64adac1cb5cb463637e745a5bb59261923f6"
+  },
+  "aggregate": {
+    "reviewed": 44,
+    "passed": 44,
+    "failed": 0,
+    "draftAddQuestions": 34,
+    "draftUnchanged": 10,
+    "proposedQuestions": 48,
+    "exactEvidenceEntries": 48,
+    "rawFrozenShaMatches": 44,
+    "packetFrozenShaMatches": 44,
+    "originalSourceTuplesPreserved": 44,
+    "semanticIssues": 0
+  },
+  "historicalSourceLimits": {
+    "indices": [
+      58,
+      86
+    ],
+    "reasonZh": "仅历史官方字段正文，原2026-10-02时间、sourceId/URL和bodySHA=null保留；不能冒称存在完整原HTML哈希或当前项目/任职观察。"
+  },
+  "openIssues": [],
+  "items": [
+    {
+      "candidateIndex": 45,
+      "labId": "ucsd-lab-from-faculty-adrenaline-ucsd-edu-kirsh-lab-html",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Interactive Cognition Lab/We do basic research 明确团队范围；how to increase Context Awareness 直译为交互环境情境感知能力，不补方法。",
+      "sourceIdsRead": [
+        "src-0f9dc0f52a2b63d1"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-0f9dc0f52a2b63d1",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/lab.html",
+          "observedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "20b3e6c0d807908b8343c31fd3d27df5e32f709eab5e6ed103412187a20de73b",
+          "packetTextSha256": "a86835bbc1629a231f1dc2443aed12643a4439dafbea2321c08bb23422b40822",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 46,
+      "labId": "ucsd-dermatology-lab-dr-matthew-hangauer-s-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Hangauer Lab Focus/The Hangauer lab 接续We seek两句；存活、适应与健康疾病以及非凋亡死亡敏感性均为字面未知问题。",
+      "sourceIdsRead": [
+        "src-b7842d7c88836f73"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-b7842d7c88836f73",
+          "sourceUrl": "https://dermatology.ucsd.edu/research/basic-science/hangauer-lab/index.html",
+          "observedAt": "2026-10-16T01:02:47+00:00",
+          "bodySha256": "793f0b25a51bc9e322768dc45e86ca90ded5e02df2ddbb75d77b36bf6d69ad08",
+          "packetTextSha256": "2107e3a6c4a679f331311bae4e087fe09dbb240f34fd4c4075cf6b26085a2c23",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 47,
+      "labId": "ucsd-dermatology-lab-dr-richard-gallo-s-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Gallo Lab Focus的Our research明确how skin/microbiome防御；中文环境影响没有加入具体病因或疗效。",
+      "sourceIdsRead": [
+        "src-ac7ad4b043c60da7"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-ac7ad4b043c60da7",
+          "sourceUrl": "https://dermatology.ucsd.edu/research/basic-science/gallo-lab/index.html",
+          "observedAt": "2026-10-16T01:02:48+00:00",
+          "bodySha256": "45cd2fd7e6daa5c5168a6649b529dc77cb641d188bdf0d0d2df34ef412f637d0",
+          "packetTextSha256": "2f1edff3a123a1c4b50676e66c3dd6b9aa18ee600d7fd8d91a174d04deb9dd9f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 48,
+      "labId": "ucsd-dstl",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "具名DSTL、our group overarching goal提出instructors use/or struggle software；困难是struggle直译。",
+      "sourceIdsRead": [
+        "src-dd3747ec39045ae7"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-dd3747ec39045ae7",
+          "sourceUrl": "https://dstl.ucsd.edu/",
+          "observedAt": "2026-10-16T01:04:59+00:00",
+          "bodySha256": "25cf56c510e95dc68c2e6630a9af9e90cd76a59946075721ebdbac90491fc3ef",
+          "packetTextSha256": "5e674f349faf128f6748ce7e1fbcf8fc6e7f338609edd4a21780cac0c6d8613e",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 49,
+      "labId": "ucsd-linguistics-lab-meaning-language-development-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "MeLD lab examines及Our work三研究主题明确整体范围；两条中文只取已引用成长与词义学习，不扩大其他发展机制。",
+      "sourceIdsRead": [
+        "src-de7337cd7512f3e2"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-de7337cd7512f3e2",
+          "sourceUrl": "https://sites.google.com/site/rachelelainedudley/lab",
+          "observedAt": "2026-10-16T01:05:01+00:00",
+          "bodySha256": "9920cdec814a2e43da00dcc113ed5afcbe4bd049a9617cd24947e33b47c3169e",
+          "packetTextSha256": "5b623d563891dfbf18d32b949955a12fb90df641f882dfc11fb33e467e040cec",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 50,
+      "labId": "ucsd-lab-from-faculty-jiang-lab-ucsd-com",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "About Our Research的The Jiang Laboratory直接提出两个how；保留pre-clinical实体瘤/血液肿瘤模型，不写成人体治疗成功。",
+      "sourceIdsRead": [
+        "src-112f9f74f79107d7"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-112f9f74f79107d7",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/jiang-lab/index.html",
+          "observedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "2a43975be52fa0291c2344a6643dae8c50083172812824fab8c63b69474b1e00",
+          "packetTextSha256": "5d70affee15c73cf8c40888bfa6b9a4c1028f731a8ab741a5edac514f7c08630",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 51,
+      "labId": "ucsd-medicine-lab-trey-ideker-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Ideker Lab/We are working研究领域和ongoing efforts绑定how transcriptional network remodeled；无从方法反推新问题。",
+      "sourceIdsRead": [
+        "src-58447f159c132a93"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-58447f159c132a93",
+          "sourceUrl": "https://gpm.ucsd.edu/research/ideker/index.html",
+          "observedAt": "2026-10-16T01:05:04+00:00",
+          "bodySha256": "320269bac704e4c1ae72fca0591c739c1c85b4824480347c78c89f283a60de22",
+          "packetTextSha256": "2700363863a5d71558a172b62e67fdec39d582ebb7e7899db600eefc53697dd9",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 52,
+      "labId": "ucsd-lab-from-faculty-lei-lab-ucsd-edu",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "what he calls是个人命名关系从句，不是研究疑问；unchanged正确。",
+      "sourceIdsRead": [
+        "src-3b36b03d3175f465"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-3b36b03d3175f465",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/lei-liang/index.html",
+          "observedAt": "2026-10-16T00:59:52+00:00",
+          "bodySha256": "db4d2f5d776deec0207c90d32c11980cad816bbde438d92d63bd191fbe2ae2b9",
+          "packetTextSha256": "2a4314d9a3a1b33b092dbff16bdf7d5bcc9ce81c8ea8d627311574a1718bd54f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 53,
+      "labId": "ucsd-neurosciences-lab-banks-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Banks Lab seeks to understand how sex/lifestyle等影响AD；中文病理与表现对应pathology/expression，未增加因果结论。",
+      "sourceIdsRead": [
+        "src-a2775ca7a6386c83"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-a2775ca7a6386c83",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/banks/index.html",
+          "observedAt": "2026-10-16T01:05:04+00:00",
+          "bodySha256": "5cf93f9670a58db87371e6c2be477b65ccdd8d6e7bc79d186edd47486271083a",
+          "packetTextSha256": "27234c13f8c7c488f01b93367958a30d765de9a328f2a7bacd961d3776a29494",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 54,
+      "labId": "ucsd-neurosciences-lab-brewer-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Human Memory Laboratory/Our Goal明确how brain parts make/retrieve memories；中文形成和提取忠实。",
+      "sourceIdsRead": [
+        "src-4f2e68c62cd756fa"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-4f2e68c62cd756fa",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/brewer/index.html",
+          "observedAt": "2026-10-16T01:05:05+00:00",
+          "bodySha256": "3ce2379a90c77e4724396d4cb23728d0b5dde7a55923bb2695e70a5743ed7b1b",
+          "packetTextSha256": "d91e3e3fd2d950bc58a6a6b7743614ed91b7d5d54b54766618ea7c96f4d421b3",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 55,
+      "labId": "ucsd-neurosciences-lab-campbell-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "The Campbell Lab开头两句We study/we investigate直接限定神经发育与redox/placenta/exposure问题；无疗效或发育结果断言。",
+      "sourceIdsRead": [
+        "src-b566ed2653df3a12"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-b566ed2653df3a12",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/campbell/index.html",
+          "observedAt": "2026-10-16T01:05:06+00:00",
+          "bodySha256": "b77c04ef7fe63e6d81cedb7901e5b94d49a8ea0208d834b5828c4432f7e2d9b1",
+          "packetTextSha256": "eed817661eb5b9dba8417f78eec44ec364b23b8295dd8280861ac6b461a8d34a",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 56,
+      "labId": "ucsd-neurosciences-lab-gleeson-neurogenetics-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 3,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our major focus areas列Novel Therapeutics asking与Brain Organoid Modeling exploring how；三条保留探索疑问，不把reverse/correct目标当已实现结果。",
+      "sourceIdsRead": [
+        "src-42b9f1eca5dae7f0"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-42b9f1eca5dae7f0",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/gleeson/index.html",
+          "observedAt": "2026-10-16T01:05:10+00:00",
+          "bodySha256": "217d83a7032198eed3eba7ff6510d0e28ec271b1adf14784b4997e62bbec680a",
+          "packetTextSha256": "7c6b4f59c4152607cf94549c8cf4bb95cf3df3d9ed5c686f3e7453be28d6dd54",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 57,
+      "labId": "ucsd-neurosciences-lab-zheng-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Zheng Lab/We are scientists studying why axons fail to regenerate是明确团队问题；中文部位和损伤后条件完整。",
+      "sourceIdsRead": [
+        "src-da886b131afaac3d"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-da886b131afaac3d",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/zheng/index.html",
+          "observedAt": "2026-10-16T01:05:21+00:00",
+          "bodySha256": "28f00273dccb6b816a1da495cd234460c3d5e4414e523aa38e102f4640a535c8",
+          "packetTextSha256": "ee84de69d96efb8136610f3bd3c9d85aa365c9f571474eac556347f9f471c448",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 58,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-burnett-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "历史官方Burnett Lab条目明示Dr. Burnett's lab/how metabolism impacts pelvic floor disorders；可补问题，保留2026-10-02原字段日期与bodySHA=null。",
+      "sourceIdsRead": [
+        "src-8ac63b8b82204378"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-8ac63b8b82204378",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "observedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "packetTextSha256": "78049a820c899b0221065b5200dc91085b1f6ab1365ae6c47fd16199a4c2d42f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 59,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-kauffman-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "About the Kauffman Lab具名主语接uses...study how brain/hormones interact；中文哺乳动物生殖范围忠实。",
+      "sourceIdsRead": [
+        "src-30f307bd68255bda"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-30f307bd68255bda",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/kauffman/index.html",
+          "observedAt": "2026-10-16T01:02:51+00:00",
+          "bodySha256": "1b21f31f59e46f82f3b394fd042d452be9dd90fcb146ef1f409f4ee57e953196",
+          "packetTextSha256": "f83d7f80ec1052f345971b3a07a8a40d30e57092bbf7201eed46c13d73619a49",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 60,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-lawson-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "The main focus of the Lawson Laboratory 明确how brain/pituitary interpret/respond；中文没有新增信号类型或调控结果。",
+      "sourceIdsRead": [
+        "src-2e3cd250b2cd7412"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-2e3cd250b2cd7412",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/index.html",
+          "observedAt": "2026-10-16T01:02:53+00:00",
+          "bodySha256": "b1fa30b1d63344f6732075fd3ca99f20c868f0a75ba8f63790bba7163d2f01ff",
+          "packetTextSha256": "20f13eee58f84a6dedf97fad161f8296939f75751a74a81c64bfc4ef994704b0",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 61,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-mellon-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Mellon具名页About the Lab/We are interested in how明确团队研究；神经内分泌调控生殖为原句。",
+      "sourceIdsRead": [
+        "src-4cfafd33885b0551"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-4cfafd33885b0551",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/mellon/index.html",
+          "observedAt": "2026-10-16T01:02:54+00:00",
+          "bodySha256": "91a550ffcb26cd4014e1a6028705c7a2d6fd4f974884938366e67c09aaf657e0",
+          "packetTextSha256": "5b91bbc942572faf5bc769c367aadbdbb3d5f2c62b65deed465759e43a5eef25",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 62,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-stupack-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our lab has the following projects active列两个实际项目问句；正确排除Why don't we understand it better泛化修辞，不将strong改写成具体耐药机制。",
+      "sourceIdsRead": [
+        "src-31a6616d9b0922fa"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-31a6616d9b0922fa",
+          "sourceUrl": "http://www.stupacklab.com/",
+          "observedAt": "2026-10-16T01:02:50+00:00",
+          "bodySha256": "9ca52306427f741e7b16fb5ceb313d1d32769dbe0bc0e8be4931c070f372baf8",
+          "packetTextSha256": "9de86b5c062396e67ab8ad5de9910b53fe7cb6c631b84e4dbad2019ac6ba6aa1",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 63,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-thackray-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "局部新闻标题how/why与About the Lab研究目标区已分开阅读；没有how目标可直接翻译，unchanged合理。",
+      "sourceIdsRead": [
+        "src-772e67b5763f5d14"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-772e67b5763f5d14",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/thackray/index.html",
+          "observedAt": "2026-10-16T01:02:59+00:00",
+          "bodySha256": "8c96c9dbc1c187e4c1d5ec3b74df73bcf68a5e5fa69c612964462392b2e00750",
+          "packetTextSha256": "5eb8df8a792236e58e650949e0fd6ac148344e609e6c1c05fbb53eca063d892c",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 64,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-wilkinson-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our laboratory is interested直接提出转录/转录后路径在发育及疾病中的how；中文指代一致。",
+      "sourceIdsRead": [
+        "src-182cf9e43dc9f858"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-182cf9e43dc9f858",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/index.html",
+          "observedAt": "2026-10-16T01:03:00+00:00",
+          "bodySha256": "fe75aa4facc110dcb9266fd5656982f2cb21fdd82c3a9fde7c44d79e6a01975c",
+          "packetTextSha256": "c0cfe011a884debc0fc6316495bc81c007718cc3ed68661dc62f4ea4ff87c645",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 65,
+      "labId": "ucsd-orthopaedic-surgery-lab-signal-transduction-and-immunometabolism-laboratory",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "具名实验室中Our lab studies how this crosstalk明确回指代谢/信号转导，中文保留病理状态与免疫细胞对象。",
+      "sourceIdsRead": [
+        "src-dc83011dd0e30eff"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-dc83011dd0e30eff",
+          "sourceUrl": "https://ortho.ucsd.edu/research/signal-transduction-immunometabolism.html",
+          "observedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "a970ca8c372260de1f6d385f2996d2b3cc625727190a711d0989564d5f0e5bbc",
+          "packetTextSha256": "20a93409572b0a4e9d46f064c0d62da16dc3d7be2b2db9c90d38eb88c86a6f44",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 66,
+      "labId": "ucsd-orthopaedic-surgery-lab-spine-neuromuscular-physiology-laboratory",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "how句主语She is particularly interested属于负责人个人兴趣；邻句Her lab工具陈述不能自动提升该个人问题，unchanged保守且合规。",
+      "sourceIdsRead": [
+        "src-82af9c355ba98a84"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-82af9c355ba98a84",
+          "sourceUrl": "https://ortho.ucsd.edu/research/spine-neuromuscular-physiology.html",
+          "observedAt": "2026-10-16T01:05:13+00:00",
+          "bodySha256": "d963fa9aaf569685f8da73076696e490e1c8f0d7d8622a4ea98fc527fe0af4b7",
+          "packetTextSha256": "c627dd8b01de0ebbeacd3449f81e9779bd33f66b47fd2e6d9adbd4713bba2b87",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 67,
+      "labId": "ucsd-otolaryngology-lab-ryan-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Another focus of my laboratory后In a project...we study how明确团队项目；中文patterned manner/朝cochlear implant一致，未使用后文I study个人项目。",
+      "sourceIdsRead": [
+        "src-2e78a2b40cbd42a4"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-2e78a2b40cbd42a4",
+          "sourceUrl": "https://oto.ucsd.edu/research/ryan-lab.html",
+          "observedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "41ffba1c0e511f6b60b9259b73580964115b4dd7b96440f86cec5f6dff771cf5",
+          "packetTextSha256": "8695e6aec5437292616f8d976fa515e05f64844ce63d7933e2b10ca3fa8bd995",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 68,
+      "labId": "ucsd-pathology-lab-christina-sigurdson-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 3,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our lab strives...四个how直述整体目标；三问题合并第二/第三子项为细胞间传播与清除，无新增因果链。",
+      "sourceIdsRead": [
+        "src-2359461176ae97c2"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-2359461176ae97c2",
+          "sourceUrl": "https://sigurdsonlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:14+00:00",
+          "bodySha256": "1679b3c1c07374cdd0aa2f1f939390ef832c21e811041a32111a8b11cbfec570",
+          "packetTextSha256": "8044e53825d702219a97b43ebb0305ad07ac93b9c922296939686bb95e503dde",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 69,
+      "labId": "ucsd-pathology-lab-david-cheresh-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Research Focus/Our research提出受体通过适应支持stress survival的侵袭表型how；原文已有by因果限定，中文没有加强。",
+      "sourceIdsRead": [
+        "src-4b37bd596c6f7765"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-4b37bd596c6f7765",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/cheresh/index.html",
+          "observedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "35f231621fe08a075d46b04496e8737047824241b1fea2faf1a1415e0f462b77",
+          "packetTextSha256": "0ec7be72116e8954f62daae65e266ff59276291f45ac2a8376f678fa3648e552",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 70,
+      "labId": "ucsd-pathology-lab-david-pride-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "The Pride Laboratory/We study...work to understand how phages promote health为目标；疑问句没有声称临床疗效。",
+      "sourceIdsRead": [
+        "src-450cd83c65f9a890"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-450cd83c65f9a890",
+          "sourceUrl": "https://www.thepridelaboratory.org/",
+          "observedAt": "2026-10-16T01:05:16+00:00",
+          "bodySha256": "963d6eb6792eae1f27bb19fe8e5d5cb4ae937c7b71a31ace8be5a8b40b1afa2e",
+          "packetTextSha256": "cb2cd73d2c21dbbefae69167da42412954b24b2278493715ff94b464e1e7406d",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 71,
+      "labId": "ucsd-pathology-lab-ina-stelzer-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "About the Lab/Our primary research goal/We are particularly interested框定围产母体神经免疫通信；中文母亲身份转变忠实于transition to motherhood。",
+      "sourceIdsRead": [
+        "src-42a7160c558fe53b"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-42a7160c558fe53b",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/stelzer/about.html",
+          "observedAt": "2026-10-16T01:33:32+00:00",
+          "bodySha256": "df7b77df0c54d8d917c1d7952ed88cfd10e12a9eb7d92dbe2f56fccc7d84febe",
+          "packetTextSha256": "5723d3abaa9ff9f53eee1bd3d8cb8b0221e602d78855b3966ac405dae3088d78",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 72,
+      "labId": "ucsd-pathology-lab-jack-bui-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 3,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our lab和The Bui Lab/Current projects共同限定三条how；未从后文论文标题、成员或技术生成问题。",
+      "sourceIdsRead": [
+        "src-d13a6813b983ab3c"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-d13a6813b983ab3c",
+          "sourceUrl": "https://jackbuilab.com/",
+          "observedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "18aea8b9a3d1cae1ad726dfe1ce25a8e4bde533a2246e88d326691c2c992d537",
+          "packetTextSha256": "d565f5ceb9916a11d1a5c579f7200bcb9105b2da166f580edfc3ff24c123cc26",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 73,
+      "labId": "ucsd-pathology-lab-mana-parast-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Learn more/how our lab uses stem cells是方法介绍链接，What is the Placenta为知识标题；不把教学提示当研究疑问。",
+      "sourceIdsRead": [
+        "src-a09301c51fc41364"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-a09301c51fc41364",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/parast/index.html",
+          "observedAt": "2026-10-16T01:05:20+00:00",
+          "bodySha256": "94ba00cf9e79d2c7a47b32595119417a29673e30a37ce97af94ba883be01d91f",
+          "packetTextSha256": "c65c8bfcba588bf2b9d5c7c0e0ba8cee4ffeccb65d04bcf3a26b377f2d08eb02",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 74,
+      "labId": "ucsd-pathology-lab-saravanan-raju-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "major component of the laboratory/study how immunity is achieved与B/T细胞保护免疫为明示范围，中文没有补病原体特异结论。",
+      "sourceIdsRead": [
+        "src-169f19f469d40759"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-169f19f469d40759",
+          "sourceUrl": "https://sites.ucsd.edu/rajulab/",
+          "observedAt": "2026-10-16T01:05:17+00:00",
+          "bodySha256": "33151f9267769f0b540f9eea1f5aff332fd96d5193608af9ad2397841ba79ab5",
+          "packetTextSha256": "b9d421e036f08b8e08e707ec03672da4f98595d88fc5d3e47f613f5e8944080f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 75,
+      "labId": "ucsd-pediatrics-lab-a-chavez-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "how well/how competitive只在升学祝贺新闻，About the lab研究简介无直接how问题；unchanged正确。",
+      "sourceIdsRead": [
+        "src-55d4e6327a506cde"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-55d4e6327a506cde",
+          "sourceUrl": "https://chavezlab.com/",
+          "observedAt": "2026-10-16T01:02:52+00:00",
+          "bodySha256": "555e1893128c58b2e1ceb69d0c291d0c92de2aae8b673de6170354231f22d7bd",
+          "packetTextSha256": "62aba492aa739935d14ef10d76cb722073a202d64193c6ee875c7f90a7c4b7cc",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 76,
+      "labId": "ucsd-pediatrics-lab-gaulton-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our lab及下游分析段明确understand stressor effects/how relate diabetes risk；中文保留相关而未声称应激造成糖尿病。",
+      "sourceIdsRead": [
+        "src-e98092f5b3546674"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-e98092f5b3546674",
+          "sourceUrl": "https://www.gaultonlab.org/",
+          "observedAt": "2026-10-16T01:05:19+00:00",
+          "bodySha256": "8bc98ef68a1c3dece7f98f2f16c088cb637763cf462bff17ab743178a4a467fa",
+          "packetTextSha256": "d998720bea020db32ca9f7a4863d7a58527f84ab172c31cc778c7e2fc7da276b",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 77,
+      "labId": "ucsd-pediatrics-lab-grossfeld-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "what we learn为研究潜在意义的关系从句；不从Jacobsen或其他疾病主题制造研究问题，unchanged正确。",
+      "sourceIdsRead": [
+        "src-93070f5ce1cdf232"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-93070f5ce1cdf232",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/grossfeld-lab/index.html",
+          "observedAt": "2026-10-16T01:02:55+00:00",
+          "bodySha256": "e8de2f6d3e743686b1d53425a8d7379d268a501fb9210cb83919a7fa25bd5e6a",
+          "packetTextSha256": "acbafbcb5165b7082b2abbe57cc274eb77095f5d1493debaf5f7dfb2b0686915",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 78,
+      "labId": "ucsd-pediatrics-lab-liu-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "primary aim of George Liu Lab/study how Gram-positive pathogens interact and productive infection；中文保留宿主免疫与感染，不加疗效。",
+      "sourceIdsRead": [
+        "src-b6987f7c052282e2"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-b6987f7c052282e2",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/liu-lab/index.html",
+          "observedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "81c5eace8d16cb9ba624981598a467710b3481c7b27b8feca21afc45b579ce79",
+          "packetTextSha256": "a3ec386be6a7c5af98a7691811476c6fe5b87aa8b820956bff4dca8adc36c05f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 79,
+      "labId": "ucsd-pediatrics-lab-mestan-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Research/Chronic lung diseases...But why后紧接The Mestan Lab标志物研究目标，构成实际研究问题而非孤立宣传修辞；中文只问婴儿间差异。",
+      "sourceIdsRead": [
+        "src-9ebe91a7c582dfc2"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-9ebe91a7c582dfc2",
+          "sourceUrl": "https://www.mestanlab.com/",
+          "observedAt": "2026-10-16T01:02:54+00:00",
+          "bodySha256": "ef4dda1776705827e811863ac78411c0a44d41300a7a144fa11d62f0e69d54d9",
+          "packetTextSha256": "c4c9b3f6298c6b8f0f416cd91e5fee42d0079fa2ce620dbc964041faefe84664",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 80,
+      "labId": "ucsd-pediatrics-lab-muotri-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "原文宏观设问由Dr. Muotri个人研究引入；没有以实验室整体明确限定问题，unchanged避免个人向团队扩张。",
+      "sourceIdsRead": [
+        "src-15d953271be72e2f"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-15d953271be72e2f",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/muotri-lab/index.html",
+          "observedAt": "2026-10-16T01:02:59+00:00",
+          "bodySha256": "34b63f3346ae6bc675f64539f15c0775ea36e1d7415f450f37ac9f412c3191ec",
+          "packetTextSha256": "eb3689f52541226cb622e853c4f54b779fa7e9ae4eb2a1dd4c455bb037ea79b9",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 81,
+      "labId": "ucsd-pediatrics-lab-rivera-chavez-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 3,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Our Research/My lab/We are interested三条how/whether直接团队目标；中文保留感染/暴发条件与whether，不把既往发现当新疑问或疗效。",
+      "sourceIdsRead": [
+        "src-68999013f0a4d878"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-68999013f0a4d878",
+          "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/rivera-chavez-lab/index.html",
+          "observedAt": "2026-10-16T01:03:04+00:00",
+          "bodySha256": "685873ce1fa98ac3eef7d01212d07eb4195090dc9ad26561349646c2dbd7ad9d",
+          "packetTextSha256": "e6bb46ac476de6303b0938ccf7296a8ae0d06e385a32854f183980454d9c3088",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 82,
+      "labId": "ucsd-pediatrics-lab-wildonger-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 2,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Research正文中Our goal/We are investigating前后承接两个研究小标题；标题是局部研究问题而非导航或论文题目，中文忠实。",
+      "sourceIdsRead": [
+        "src-1f15ebe82c671383"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-1f15ebe82c671383",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jwildonger",
+          "observedAt": "2026-10-16T01:02:53+00:00",
+          "bodySha256": "7b233647bf4dc3cdbd5df41c87b1e37a48fbbdbad80df550d9583b366447a6a2",
+          "packetTextSha256": "fdbb386c92761258bde942370e8a595829583f517f4800748f390c1a52f572cc",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 83,
+      "labId": "ucsd-pediatrics-lab-winzeler-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "how drug resistance emerges是Priyan Kapoor署名My work/I use成员自述；实验室介绍不自动吸收个人项目，unchanged正确。",
+      "sourceIdsRead": [
+        "src-c0c315f22a7bd48a"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-c0c315f22a7bd48a",
+          "sourceUrl": "https://winzeler.ucsd.edu/winzeler/",
+          "observedAt": "2026-10-16T00:59:58+00:00",
+          "bodySha256": "ecb5618363e0f0e5a7e5cdfb32e5715d31a55733fca54fdac62a27a44e744d13",
+          "packetTextSha256": "e6772142baab0ceba3dabfed487b0ab0801fbb9014a683dfec39ca43cf8da2a9",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 84,
+      "labId": "ucsd-physics-research-site-alex-frano",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "How We Do It/how is it done为样品制备/同步辐射流程和新闻亮点，未明示研究问题；unchanged正确。",
+      "sourceIdsRead": [
+        "src-8cd151f7baf84486"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-8cd151f7baf84486",
+          "sourceUrl": "https://xlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:21+00:00",
+          "bodySha256": "2eb8741d687ca7d176f4ac31794aef029aee2273ba3b94e4f47b5c0937236369",
+          "packetTextSha256": "b91ad368b8cd20b7517e6d48d6d3a730d1e7c5140d35bd28aad230d95b0550f4",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 85,
+      "labId": "ucsd-physics-duarte-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "unchanged",
+      "questionCount": 0,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Why is Attention Sparse是成员会议报告标题；Research directions未提出对应整体团队问题，unchanged正确。",
+      "sourceIdsRead": [
+        "src-bc7cebc72a743f37"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-bc7cebc72a743f37",
+          "sourceUrl": "https://jduarte.physics.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:22+00:00",
+          "bodySha256": "5964c214c70cc9ea64e7be9a9437c5f55f0de56d518d87c5a9afb742364a66f8",
+          "packetTextSha256": "0b48ee7ea8f81a37ed570cb4daae70f8eddd88f8c8abc272d12438c1139caed4",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 86,
+      "labId": "ucsd-physics-research-site-hongbo-zhao",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "历史Zhao Group条目we interested in how condensates...明确团队目标；中文细胞组分及非平衡活动忠实，保留2026-10-02日期/bodySHA=null。",
+      "sourceIdsRead": [
+        "src-fd07c9bbea3196ff"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-fd07c9bbea3196ff",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "packetTextSha256": "260c2a5f505b6c70241db6ebedebfd5ac0092030c2d26364acc3912cf1355e12",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 87,
+      "labId": "ucsd-physics-lab-jun-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Jun Lab/Our research combine...understand how living cells grow/organize/reproduce为整体目标，中文三过程不扩大方法结果。",
+      "sourceIdsRead": [
+        "src-f4ffbe0f0072fa8e"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-f4ffbe0f0072fa8e",
+          "sourceUrl": "https://jun.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:24+00:00",
+          "bodySha256": "5e20cf6b689e809d7c1049798c178f03b05dccc5673afdef0a950c130334fbed",
+          "packetTextSha256": "16d12ef73888f57ae81d0748c37581dbb61d0b485f891388c79d3450f059569f",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    },
+    {
+      "candidateIndex": 88,
+      "labId": "ucsd-physics-lab-kleinfeld-lab",
+      "reviewedAt": "2026-10-16T07:53:42.495118+00:00",
+      "verdict": "pass",
+      "draftDecision": "add_source_explicit_questions",
+      "questionCount": 1,
+      "checks": {
+        "inventoryIdentityMatches": true,
+        "rawShaMatchesInventoryAndDraft": true,
+        "packetShaMatchesInventoryAndDraft": true,
+        "supportedConfirmedLabOrGroup": true,
+        "existingQuestionsEmpty": true,
+        "allQuestionsHaveExactPrimaryAcceptedResearchQuotes": true,
+        "sourceUrlAndObservedAtPreserved": true,
+        "originalCaptureTuplesUnchanged": true
+      },
+      "semanticScopeReasonZh": "Brain vasodynamics/Our goal直接how reliable perfusion during transport/metabolic fluctuations；中文保留条件，无从方法增加新机制。",
+      "sourceIdsRead": [
+        "src-3cfd7f632e79120f"
+      ],
+      "sourceTupleProof": [
+        {
+          "sourceId": "src-3cfd7f632e79120f",
+          "sourceUrl": "https://neurophysics.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:25+00:00",
+          "bodySha256": "31ea0cad4c5d56dc5e0636f881fa2dbc9492a40db07662d7361ff71c42b9146b",
+          "packetTextSha256": "035fa482a680cd8fcac80aacc289056db49ccc29343d3ee1c93ba5ec8964b354",
+          "readingScope": "cited literal excerpts plus local research context; opening research section additionally checked for news/member/process rejections"
+        }
+      ],
+      "suggestedChange": null
+    }
+  ],
+  "networkRequestsMade": 0,
+  "productionEdits": 0,
+  "allowedWrites": [
+    "QUESTION-FIELD-CROSS-QA-045-088.json",
+    "QUESTION-FIELD-CROSS-QA-045-088.md"
+  ]
+}

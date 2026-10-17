@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:40:42+00:00",
+  "networkRequestsMade": 0,
+  "onlyOwnReportPairWritten": true,
+  "scope": "Full read of3 captured actualHTML/visible bodies; short scope/provenance review only, no repeated global queue/audit scan.",
+  "stagingPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/IMAGE-MAP-FOLLOWUP-SOURCE-STAGING.json",
+  "stagingSha256": "6c60d5dc3b11f99d1d95e82eb592d5ef9b7d55cc95befb161d51f81e87e68a45",
+  "counts": {
+    "fullHtmlBodiesRead": 3,
+    "sourceProvenancePass": 3,
+    "newLabResearchAccepted": 0,
+    "nestedFrameCandidates": 3
+  },
+  "sources": [
+    {
+      "sourceId": "src-47c4378ad78606e4",
+      "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "observedAt": "2026-10-16T05:39:10+00:00",
+      "bodySha256": "c7bfbc637538c4cc30f53777d0dd9b44f299f9037d431f2506533d2225150a0d",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/f16b8fe1d79d196b1d58d218ee8c3621240d9406874ee3bf40e5ba26f224d583.html",
+      "title": "MADS-box genes",
+      "sourceContentDates": [],
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 483,
+      "fullVisibleText": "MADS-box genes <body> <p>This page uses frames, but your browser doesn't support them.</p> </body>",
+      "visibleTextCharacters": 98,
+      "provenanceChecks": {
+        "sha256": true,
+        "originalObservedAt": true,
+        "actualURI": true,
+        "noRedirects": true,
+        "http200": true,
+        "pageProof": true,
+        "fullVisibleExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+        "observedAt": "2026-10-16T05:39:10+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "c7bfbc637538c4cc30f53777d0dd9b44f299f9037d431f2506533d2225150a0d",
+        "retrievedEpoch": 1792129150.5838668
+      },
+      "newLabResearchAccepted": false,
+      "methodsSupported": [],
+      "scope": "nested_frames_shell",
+      "conclusion": "MADS-box genes title and fallback only. Actual main frame mads-intro.htm may contain context; footer is navigation/chrome and not needed for finite basic body check.",
+      "evidence": [
+        {
+          "quote": "MADS-box genes",
+          "location": "title",
+          "supports": "title_only"
+        }
+      ],
+      "dateBoundary": "No explicit page-update statement; FrontPage3.0 is generator software."
+    },
+    {
+      "sourceId": "src-eb29b982b9a7a3ad",
+      "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+      "requestedUrl": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+      "checkedUrl": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+      "observedAt": "2026-10-16T05:39:11+00:00",
+      "bodySha256": "3e105ec43e0ac5cea5f0817c0efc408a771baedcb56564819c442a78ac47dbac",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/c67a16eee829754673a86fc939c8d931a83accc775324cf4e8543775c8a4b50e.html",
+      "title": "Flower Development",
+      "sourceContentDates": [],
+      "labId": "ucsd-biology-topic-lab-yanofsky",
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 6967,
+      "fullVisibleText": "Flower Development A rabidopsis flowers originate as small groups of undifferentiated cells called flower meristems on the flanks of the inflorescence (shoot) meristem . In contrast to the indeterminate shoot meristem which essentially gives rise to flower primordia indefinitely, flowers are determinate structures that produce a defined number of organ primordia. These organ primordia reside in four concentric rings called whorls, with four sepals in the outermost first whorl, followed by four petals, six stamens, and two fused carpels in the 2 nd , 3 rd , and 4 th whorls, respectively. There are numerous genes required for the initiation and development of flowers, and for simplicity they can be divided into distinct classes. The first class are Flowering Time genes , mutations in which cause early or late flowering. Flowering Time genes can themselves be divided into distinct classes, based on their differential responses to a number of environmental conditions, such as day length and vernalization. (See review by Weigel, Ann. Rev. Genet. 29:19-39, 1995 and references therein.) The second class specifies Meristem Identity , and includes genes such as LEAFY, APETALA1 , and CAULIFLOWER which specify flower meristem identity, as well as TERMINAL FLOWER which maintains inflorescence meristem identity. Wildtype flower A third class includes the Flower Organ Identity genes, which determine the fate of organ primordia and are incorporated into the \"ABC\" model of flower development. Examples of organ identity genes include APETALA1 (which is involved in both meristem and organ identity), APETALA2 , APETALA 3 , PISTILLATA and AGAMOUS . A fourth class includes late-acting genes that control ovule development and extensive genetic and recent molecular studies have begun to uncover the complex array of interactions among genes in this class. Related Links Flowering time genes Flower meristem identity Flower organ identity Ovule development LEAFY APETALA1 CAULIFLOWER APETALA2 APETALA3 PISTILLATA AGAMOUS",
+      "visibleTextCharacters": 2027,
+      "provenanceChecks": {
+        "sha256": true,
+        "originalObservedAt": true,
+        "actualURI": true,
+        "noRedirects": true,
+        "http200": true,
+        "pageProof": true,
+        "fullVisibleExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+        "observedAt": "2026-10-16T05:39:11+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "http://labs.biology.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T04:21:30+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792124490.788895,
+          "error": "",
+          "redirects": [],
+          "attempts": 1,
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "http://labs.biology.ucsd.edu/yanofsky/flower/intro_to_flower_dev.htm",
+        "contentType": "text/html",
+        "error": "",
+        "sha256": "3e105ec43e0ac5cea5f0817c0efc408a771baedcb56564819c442a78ac47dbac",
+        "retrievedEpoch": 1792129151.573026
+      },
+      "newLabResearchAccepted": false,
+      "methodsSupported": [],
+      "scope": "general_Arabidopsis_flower_development_primer",
+      "conclusion": "General description of flower development, gene classes and ABC model. No explicit named-lab research program, first-person group claim or lab-implemented method. Retain partial status; do not transfer general genetics/molecular studies or SEM alt to lab methods.",
+      "evidence": [
+        {
+          "quote": "There are numerous genes required for the initiation and development of flowers, and for simplicity they can be divided into distinct classes.",
+          "location": "body general primer paragraph",
+          "supports": "general_field_context_only"
+        },
+        {
+          "quote": "(See review by Weigel, Ann. Rev. Genet. 29:19-39, 1995 and references therein.)",
+          "location": "body review citation",
+          "supports": "citation_year_only"
+        },
+        {
+          "quote": "extensive genetic and recent molecular studies have begun to uncover the complex array of interactions among genes in this class.",
+          "location": "body ovule-development general paragraph",
+          "supports": "general_field_context_only"
+        }
+      ],
+      "dateBoundary": "1995 is cited review year, not page-update or lab-currentness date. No explicit page-update statement. No broad gene/publication crawl recommended."
+    },
+    {
+      "sourceId": "src-3f2c607d66ea81b9",
+      "sourceUrl": "https://ips.ucsd.edu/additional_information",
+      "requestedUrl": "https://ips.ucsd.edu/additional_information",
+      "checkedUrl": "https://ips.ucsd.edu/additional_information",
+      "observedAt": "2026-10-16T05:39:12+00:00",
+      "bodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/bc705cbe25d9b26e3fe810074c20f5c998771e3e0cc8f7d21f18ae56d9857095.html",
+      "title": "UCSD IPS Additional Information",
+      "sourceContentDates": [],
+      "labId": "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory",
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "fullHtmlRead": true,
+      "fullHtmlCharacters": 972,
+      "fullVisibleText": "UCSD IPS Additional Information <body> <p>Please, use a browser that supports frames</p> </body>",
+      "visibleTextCharacters": 96,
+      "provenanceChecks": {
+        "sha256": true,
+        "originalObservedAt": true,
+        "actualURI": true,
+        "noRedirects": true,
+        "http200": true,
+        "pageProof": true,
+        "fullVisibleExtraction": true
+      },
+      "originalCacheMetadata": {
+        "sourceUrl": "https://ips.ucsd.edu/additional_information",
+        "observedAt": "2026-10-16T05:39:12+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ips.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112849.475637,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://ips.ucsd.edu/additional_information",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574",
+        "retrievedEpoch": 1792129152.588786
+      },
+      "newLabResearchAccepted": false,
+      "methodsSupported": [],
+      "scope": "nested_frames_shell",
+      "conclusion": "UCSD IPS Additional Information title, metadata and fallback only; no actual purpose/research prose. Its two content/navigation frames are finite next candidates; banner already read, clock/date PHP skipped.",
+      "evidence": [
+        {
+          "quote": "UCSD IPS Additional Information",
+          "location": "title",
+          "supports": "project_title_only"
+        },
+        {
+          "quote": "IPS, Interplanetary Scintillation, WIPSS",
+          "location": "meta keywords",
+          "supports": "metadata_context_only"
+        }
+      ],
+      "dateBoundary": "HTML generated-comment2004/08/27 is not a visible update/current-affiliation date."
+    }
+  ],
+  "nestedFiniteCandidates": [
+    {
+      "url": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-intro.htm",
+      "labIds": [
+        "ucsd-biology-topic-lab-yanofsky"
+      ],
+      "sourceId": "src-47c4378ad78606e4",
+      "linkedFrom": "http://labs.biology.ucsd.edu/yanofsky/mads/mads-new.htm",
+      "sourceObservedAt": "2026-10-16T05:39:10+00:00",
+      "sourceBodySha256": "c7bfbc637538c4cc30f53777d0dd9b44f299f9037d431f2506533d2225150a0d",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "mads-intro.htm",
+      "label": "MADS-main",
+      "exactMarkup": "<frame name=\"MADS-main\" src=\"mads-intro.htm\" target=\"main\" scrolling=\"auto\">",
+      "sourceLine": 9,
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Actual displayed main/navigation frame in captured nested shell; target body and named-entity scope remain unreviewed. Parent must fresh-check cache/queue/refusals/currentpins/cooldown/shared-v2 before a bounded request.",
+      "targetProvenanceAuditedThisTask": false,
+      "networkRequestsMade": 0
+    },
+    {
+      "url": "https://ips.ucsd.edu/additional_info/leftmenu_3_n.html",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "sourceId": "src-3f2c607d66ea81b9",
+      "linkedFrom": "https://ips.ucsd.edu/additional_information",
+      "sourceObservedAt": "2026-10-16T05:39:12+00:00",
+      "sourceBodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "./additional_info/leftmenu_3_n.html",
+      "label": "left",
+      "exactMarkup": "<frame marginwidth=1 noresize scrolling=\"yes\" name=\"left\" src=\"./additional_info/leftmenu_3_n.html\">",
+      "sourceLine": 14,
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Actual displayed main/navigation frame in captured nested shell; target body and named-entity scope remain unreviewed. Parent must fresh-check cache/queue/refusals/currentpins/cooldown/shared-v2 before a bounded request.",
+      "targetProvenanceAuditedThisTask": false,
+      "networkRequestsMade": 0
+    },
+    {
+      "url": "https://ips.ucsd.edu/highres/splash_2.html",
+      "labIds": [
+        "ucsd-astronomy-and-astrophysics-lab-space-weather-laboratory"
+      ],
+      "sourceId": "src-3f2c607d66ea81b9",
+      "linkedFrom": "https://ips.ucsd.edu/additional_information",
+      "sourceObservedAt": "2026-10-16T05:39:12+00:00",
+      "sourceBodySha256": "edaa7654d1c18c36234211b0a4e83a60a6a43fb5718afd508003c2dcbccc5574",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_frame_source",
+      "originalHtmlAttribute": "./highres/splash_2.html",
+      "label": "middle",
+      "exactMarkup": "<frame name=\"middle\" src=\"./highres/splash_2.html\">",
+      "sourceLine": 18,
+      "reviewedAt": "2026-10-16T05:40:42+00:00",
+      "decision": "finite_candidate_only",
+      "identityAcceptance": "not_automatically_accepted",
+      "reason": "Actual displayed main/navigation frame in captured nested shell; target body and named-entity scope remain unreviewed. Parent must fresh-check cache/queue/refusals/currentpins/cooldown/shared-v2 before a bounded request.",
+      "targetProvenanceAuditedThisTask": false,
+      "networkRequestsMade": 0
+    }
+  ],
+  "exclusions": [
+    {
+      "literalTarget": "mads-footer.htm",
+      "reason": "Footer/chrome; no need for this finite main-body check."
+    },
+    {
+      "literalTarget": "banner.html",
+      "reason": "Already captured/read source src-93dbcd3100362768; no repeat request."
+    },
+    {
+      "literalTarget": "clock_time.php,clock_date.php",
+      "reason": "Clock/date scripts skipped."
+    },
+    {
+      "literalTarget": "Flower page gene/related publications/external labs/tracking CGI",
+      "reason": "No broad gene/publication crawl or tracking request."
+    }
+  ],
+  "constraints": [
+    "No raw/packet/code/receipt changes or new requests.",
+    "Parent fresh cache/queue/history/access/refusal/cooldown/current-process/pins checks required before any nested followup; normal shared-v2 robots/TLS gate and byte caps unchanged.",
+    "No protocol substitution, HTML-navigation-as-HTTPredirect claim, currentness inference or identity gate change.",
+    "All14 mismatch acceptance gates preserved."
+  ]
+}

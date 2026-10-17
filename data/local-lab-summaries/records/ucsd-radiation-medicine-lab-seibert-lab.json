@@ -1,0 +1,138 @@
+{
+  "labId": "ucsd-radiation-medicine-lab-seibert-lab",
+  "status": "supported",
+  "summaryZh": "Seibert 实验室研究癌症影像与基因组学，发展用于检测和治疗反应评估的定量成像标志物，以及侵袭性前列腺癌筛查风险模型。团队使用扩散 MRI 和基因组预测模型。",
+  "researchQuestions": [
+    "男性在什么年龄需要或不需要接受侵袭性前列腺癌筛查？"
+  ],
+  "topics": [
+    "癌症成像标志物",
+    "前列腺癌风险预测"
+  ],
+  "methods": [
+    "扩散 MRI",
+    "基因组预测模型"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-6ea07f861ddc5e93",
+      "quote": "Dr. Tyler Seibert Dr. Seibert's research efforts focus on two fronts: imaging and genomics. The goal is to develop quantitative imaging biomarkers for cancer detection and for evaluation of treatment response. We have implemented a novel imaging approach to characterizing radiation therapy effects on normal brain regions in brain tumor patients and are studying advanced diffusion MRI in localized and metastatic prostate cancer. Our genomics efforts have been focused on the development of a model to predict the age at which men do (or do not) need screening for aggressive prostate cancer. Support The Seibert lab is supported in part by grants from the National Institute of Biomedical Imaging and Bioengineering, the RMAS Center for Precision Radiation Medicine, the UC San Diego Center for Translational Imaging and Precision Medicine, and the Department of Defense. Explore the Lab People Discover the dedicated researchers and innovative minds at Dr. Tyler Seibert's lab. Meet Our Team Publications Delve into the impactful research and innovative findings from Dr. Tyler Seibert's lab. See Publications Featured Articles Measuring Radiation Effects on the Brain Developing Better Imaging for Precision Radiation Predicting Cancer Risk with Genomics",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-686030f8d7b124d8",
+      "quote": "Seibert Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-6ea07f861ddc5e93",
+      "quote": "Our genomics efforts have been focused on the development of a model to predict the age at which men do (or do not) need screening for aggressive prostate cancer.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:23:24+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:24+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Our genomics efforts明确预测目标就是筛查需要/不需要的年龄，忠实表达这个待确定的临床决策问题；不转成如何开发模型，也不给出筛查建议或推断年龄。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-6ea07f861ddc5e93",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/seibert/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+        "bodySha256": "5403f87294239d45f9a4f649708ec50af9ec7eba72541686f0cb3cc74f84fa88",
+        "textSha256": "6a0b8281d6d552f2b660918794c38d0525acbc33fd8be5031d36c9486433742f",
+        "textCharacters": 1259,
+        "readRanges": [
+          [
+            0,
+            1259
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-e5a1847b5083d47f",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/seibert/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:39+00:00",
+        "bodySha256": "cbdd21e9eedba959aeca88f38186eabe3c52d1e1820843fb8a69f68c0815a049",
+        "textSha256": "64b3570292c0cd795e8b2c4e28ba7e29fe9b4429c63c6ceaf0c199d8b4e74af4",
+        "textCharacters": 737,
+        "readRanges": [
+          [
+            0,
+            737
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-686030f8d7b124d8",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/",
+        "sourceObservedAt": "2026-10-02T22:42:11+00:00",
+        "bodySha256": null,
+        "textSha256": "749785ad5d52cbfd31f75e4b0ae479f74de370388699ec7e9b275404490edfcb",
+        "textCharacters": 156,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 192,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-699518b75f49de8d",
+        "sourceUrl": "https://radonc.ucsd.edu/research/labs/seibert/people.html",
+        "sourceObservedAt": "2026-10-16T01:34:39+00:00",
+        "bodySha256": "cbdd21e9eedba959aeca88f38186eabe3c52d1e1820843fb8a69f68c0815a049",
+        "textSha256": "fefe29034f6945178f2a349f16cf1b1c7994a1dcebc6f7bbc30a17327c437b67",
+        "textCharacters": 1442,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-e5a1847b5083d47f",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-6ea07f861ddc5e93",
+        "quote": "Our genomics efforts have been focused on the development of a model to predict the age at which men do (or do not) need screening for aggressive prostate cancer.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:06:34+00:00",
+        "bodySha256": "5403f87294239d45f9a4f649708ec50af9ec7eba72541686f0cb3cc74f84fa88"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

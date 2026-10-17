@@ -1,0 +1,1455 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:41:03+00:00",
+  "status": "draft_not_applied",
+  "questionIndexBase": 0,
+  "input": {
+    "path": "data/local-lab-summaries/SOURCE-EXPLICIT-QUESTION-CANDIDATES.json",
+    "sha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24",
+    "candidateSlice": [
+      89,
+      133
+    ],
+    "candidateCount": 44
+  },
+  "counts": {
+    "reviewed": 44,
+    "add_source_explicit_questions": 29,
+    "unchanged": 15,
+    "proposedQuestions": 44
+  },
+  "items": [
+    {
+      "candidateIndex": 89,
+      "labId": "ucsd-physics-research-site-m-brian-maple",
+      "labName": "M. Brian Maple Research Group",
+      "ordinal": 372,
+      "reviewedAt": "2026-10-16T07:41:03.478134+00:00",
+      "rawSha256": "da75b92107c411b42d182974cf0d3e4c5b539079e2f61e0ded9361ce6b1d2793",
+      "packetSha256": "298609727f7da0cc3b8d0d2bc206b93fb5b8e334e44689b9406508ad843910ce",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "what 仅描述材料合成与测量反馈中下一批样品的选择，未明示可独立翻译的具体科学研究问题；不从强关联材料主题另造问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-f6b3c9f0b426abc3",
+          "sourceUrl": "https://mbmlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:05:26+00:00",
+          "bodySha256": "b59af6bf8908725401ad022705cca1ae4d55f47c6c88bfec8218a0c438b87e9b",
+          "role": "related_destination_variant",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 90,
+      "labId": "ucsd-physics-lab-oh-lab",
+      "labName": "Oh Lab",
+      "ordinal": 374,
+      "reviewedAt": "2026-10-16T07:41:03.479216+00:00",
+      "rawSha256": "4d0ef7f1b53ca57c3ee0c01e27345f06a831044678e6bd01d675309bd24d3230",
+      "packetSha256": "9e956c23c55a8fcc474fefb1eb84302d63ca21c67d60127d161f91c14daa6929",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "生命如何调控自身的物理性质，尤其是单细胞的蛋白质和脂质质量、体积及密度？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-37527133992b1abc",
+          "quote": "We are interested in how life controls its physical properties and are currently focusing on single-cell regulation of protein and lipid mass, volume, and density."
+        }
+      ],
+      "reasonZh": "首页明确以 Our research group/Oh lab 为主体，how 直接陈述团队兴趣，并给出单细胞调节的研究范围。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-37527133992b1abc",
+          "sourceUrl": "https://www.seungeunohlab.org/",
+          "observedAt": "2026-10-16T01:05:28+00:00",
+          "bodySha256": "c67375565e533c292620693f7a9538c5bb007b69af73fddc133b7a026e2df77d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 91,
+      "labId": "ucsd-physics-lab-tan-lab",
+      "labName": "Tan Lab",
+      "ordinal": 379,
+      "reviewedAt": "2026-10-16T07:41:03.480167+00:00",
+      "rawSha256": "d053c06f9ef98b38974058de44ff51250ef2cc4e7209216305144f37516331d9",
+      "packetSha256": "54ed515e1edfb987be08407d483d64ba1e77d50ebed8166f4e3edab227d4a78b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "非平衡力如何使生命物质形成时空组织？",
+        "生物调控如何利用自组织能力形成具有功能的形态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-f6a34b085c2a06d0",
+          "quote": "Tan lab's overarching vision is to understand how nonequilibrium forces lead to spatiotemporal organization in living matter, and in turn, how biological regulation harness this self-organizing capacity to make functional forms."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-f6a34b085c2a06d0",
+          "quote": "Tan lab's overarching vision is to understand how nonequilibrium forces lead to spatiotemporal organization in living matter, and in turn, how biological regulation harness this self-organizing capacity to make functional forms."
+        }
+      ],
+      "reasonZh": "历史官方介绍明确归属于 Tan lab 的 overarching vision，两个 how 均是整组问题；保留历史来源边界。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-f6a34b085c2a06d0",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 92,
+      "labId": "ucsd-psychiatry-lab-cns-laboratory-of-memory-and-the-brain",
+      "labName": "CNS Laboratory of Memory and Brain",
+      "ordinal": 386,
+      "reviewedAt": "2026-10-16T07:41:03.480839+00:00",
+      "rawSha256": "7e2654242f5fe731a3ca33712e5dc2cad493eb8390609e802f79240607db3308",
+      "packetSha256": "8bd17924f544da2d167fa267eba67fd02d4271132c4d67e6a0d58a211441563a",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "命中内容是 My focus/My goal 的个人陈述；虽位于具名实验室首页，此段没有明确以实验室或团队为问题主体。本次不把个人目标扩展为整组问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d66fe22a377da180",
+          "sourceUrl": "https://cnsbrainlab.com/",
+          "observedAt": "2026-10-16T01:05:32+00:00",
+          "bodySha256": "52c19d7f9e86e695136edc61265ac7d814cdcb7b87be302183a49932751aa64d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 93,
+      "labId": "ucsd-psychiatry-lab-cheng-lab",
+      "labName": "Cheng Lab",
+      "ordinal": 387,
+      "reviewedAt": "2026-10-16T07:41:03.481333+00:00",
+      "rawSha256": "f56eefe784e6fa2cb6647d8aaf4aa60c2b2cf2015edfc512864a178c83470c0c",
+      "packetSha256": "0fdb0ef793098ea8d0a31e21beb11e183877b95bbb1eedc7ff25cd93655dc4ec",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "异常的转录调控回路如何促成人类疾病？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-2dcdf9c044a8a722",
+          "quote": "Dr. Cheng’s research program studies transcriptional regulatory network and aims to develop a comprehensive understanding of how aberrant regulatory circuits contribute to human disease."
+        }
+      ],
+      "reasonZh": "同段明确 Dr. Cheng’s laboratory/program 与实验和计算研究，how 是该研究计划的明示目标；不把资助项目标题当成额外问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-2dcdf9c044a8a722",
+          "sourceUrl": "https://www.chenglaboratory.com/",
+          "observedAt": "2026-10-16T01:02:57+00:00",
+          "bodySha256": "773b16dc749d4eb61c2998b2c1d7b061486d4706c380b713766e4c303084f963",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 94,
+      "labId": "ucsd-psychiatry-lab-courtney-lab",
+      "labName": "Courtney Lab",
+      "ordinal": 389,
+      "reviewedAt": "2026-10-16T07:41:03.482005+00:00",
+      "rawSha256": "c9ca4d8b29b1de99c4ca0a0be0597e87d189c22bac175f03ab4d0506b11fdcc8",
+      "packetSha256": "b69e13e767cbcb5da0e2af801abeba9c3144df4f0548ee55ae2f60de772a533d",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "年轻成人的大脑如何响应尼古丁？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1ba28d12c9980e18",
+          "quote": "The NicAdmin Study is being conducted to better understand how the brain responds to nicotine in young adults."
+        }
+      ],
+      "reasonZh": "NicAdmin 列于 Courtney Lab 的研究项目下，问题限于该项目明示的人群和尼古丁响应，不从新闻成果或治疗愿景追加问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-1ba28d12c9980e18",
+          "sourceUrl": "https://sites.google.com/view/courtneylab",
+          "observedAt": "2026-10-16T01:02:56+00:00",
+          "bodySha256": "6602b9afebcd501a75f09d54d18b07d0de0b5d3c4daec9d2a97958f3a79eea1d",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 95,
+      "labId": "ucsd-psychiatry-lab-functional-neuroscience-lab",
+      "labName": "Functional Neuroscience Lab",
+      "ordinal": 390,
+      "reviewedAt": "2026-10-16T07:41:03.482530+00:00",
+      "rawSha256": "d92862ab3e1f5bdbd9da8d6f6489fe0d06e437ac774cea709403eb42acdad15e",
+      "packetSha256": "eae2aa1fbb258821aade70b33e618b7c4d96856f6aed86484566dcfaa6ab010e",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "What is Neurofeedback 是面向读者的定义性FAQ，回答神经反馈是什么；不是实验室所检验的科学问题。其疗效研究主题不据此改写为新问句。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-12de66987ff4c2b8",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/functional-neuroscience-lab/index.html",
+          "observedAt": "2026-10-16T01:02:58+00:00",
+          "bodySha256": "75e541a72f9c958881a877769564c7c6c394001e69e2c4b209c1586e3f9f9373",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 96,
+      "labId": "ucsd-psychiatry-lab-george-lab",
+      "labName": "Olivier George — lab website",
+      "ordinal": 391,
+      "reviewedAt": "2026-10-16T07:41:03.483202+00:00",
+      "rawSha256": "e85e77e4ec42175fe3e4daea285203f0f0667ca799fe7c7e86f5d3b5c67b7488",
+      "packetSha256": "d6db9b0236e82ea52cc8ccd5ce13a37fd624d4b1e7de0a47f6aa1d5f9dcb651a",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how 位于成瘾科学史说明，why/question 位于新闻标题；首页研究概述没有相应的 whole-lab 明示问题。不将新闻或科普问题泛化为整组研究目标。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-bae3fbfd44e4a777",
+          "sourceUrl": "https://www.oliviergeorge.com/",
+          "observedAt": "2026-10-16T01:05:30+00:00",
+          "bodySha256": "a5432198a0027b03d349f608eb6a8bb9e9e450604d1463326b62141902a3e354",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 97,
+      "labId": "ucsd-psychiatry-lab-iakoucheva-lab",
+      "labName": "Iakoucheva Lab",
+      "ordinal": 393,
+      "reviewedAt": "2026-10-16T07:41:03.483707+00:00",
+      "rawSha256": "119d8845ad16334f84736bfbbe40d95ab86f0a5014bf6a1aa9b5961049314124",
+      "packetSha256": "522b3b0120bf5e34756de9bea27846794dac6eb3cd2c61f5bb4a8b8642f00901",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "遗传变异如何影响特定组织中表达的转录本？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3ffd5387a1925ee6",
+          "quote": "exTSP (expression-based Tissue-Specific Pathogenicity) is a scoring system that evaluates how genetic variants affect transcripts expressed in specific tissues."
+        }
+      ],
+      "reasonZh": "该句位于实验室 Our projects 的组织特异性剪接项目介绍，问题严格限于该项目评估的变异与转录本关系；不采用下方单篇论文的问题或结果概括全实验室。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-3ffd5387a1925ee6",
+          "sourceUrl": "https://iakouchevalab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:01+00:00",
+          "bodySha256": "9bd13a624d1de17bb481c1db62fa7a3ecf74f5e79553082b1cca025723a96b55",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 98,
+      "labId": "ucsd-psychiatry-lab-nstar-lab",
+      "labName": "NSTAR Lab",
+      "ordinal": 399,
+      "reviewedAt": "2026-10-16T07:41:03.484216+00:00",
+      "rawSha256": "78b6dd9a3bce304b164ea4f44ee5ba353b48f6b0ef3ac826b58585f2da79c58a",
+      "packetSha256": "5d8f012146fa9eb9399976eee46088c8c2de8b52276a97ea9d8aa0ca143d7c8d",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how to join 是参与研究的招募说明；没有明示相应的科学问题，不能从临床试验与治疗开发主题自行推导问句。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-635d416ac418638c",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/nstar-lab/index.html",
+          "observedAt": "2026-10-16T01:03:01+00:00",
+          "bodySha256": "a322b431b532c9daaa69c8039fccc4a141a711e9a6ad6009dada78550f480178",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 99,
+      "labId": "ucsd-psychiatry-lab-telese-lab",
+      "labName": "Telese Lab",
+      "ordinal": 408,
+      "reviewedAt": "2026-10-16T07:41:03.485059+00:00",
+      "rawSha256": "4f73a6a946e1e739e3a53f4a06e04fbd329011ececf3bc05b8e67b48a1a44613",
+      "packetSha256": "32dab3aff670d0c0f9e3e920bbe1759d82f152a77b01ddf9979c126acb166db4",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "Whether 引出面向研究生、博士后和科研人员的招募邀请，不是研究命题；前面的 Our laboratory 目标只有机制与主题概述，本次不另造问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-bf0d3d4d9d0da7c0",
+          "sourceUrl": "https://profiles.ucsd.edu/francesca.telese",
+          "observedAt": "2026-10-07T22:05:47+00:00",
+          "bodySha256": null,
+          "role": "associated_faculty_research_requires_lab_scope_check",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 100,
+      "labId": "ucsd-psychiatry-lab-twamley-smart-lab",
+      "labName": "Twamley SMART Lab",
+      "ordinal": 409,
+      "reviewedAt": "2026-10-16T07:41:03.485702+00:00",
+      "rawSha256": "2c7cfa79c3830055f625bc093fdb3933aa033a83f20d737ab5bc87dd0c7e18a3",
+      "packetSha256": "010fba3b7825a182cf5408363273538be2d24af72c014e6ea7fedc85525d34fe",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how to improve cognitive skills 描述向参与者教授策略的干预内容，而非实验室正在求解的明示问题。保留开发/评估干预的主题，不把教学说明改成研究问句。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-8287085519d64d68",
+          "sourceUrl": "https://smartlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:02+00:00",
+          "bodySha256": "1b891f463faa83ec16e557b18c3fd437ce01d87541b3074d0ebc50dcd28aca17",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 101,
+      "labId": "ucsd-psychiatry-lab-welsh-mccarthy-lab",
+      "labName": "Welsh-McCarthy Lab",
+      "ordinal": 412,
+      "reviewedAt": "2026-10-16T07:41:03.486197+00:00",
+      "rawSha256": "72d19d560d510f7783697461ce6e4a941b7046dc3a6ca56856641589c0168f90",
+      "packetSha256": "1acf484119988f9349a32df2ab389d26d5de72ca0fd18ccd15695102f830e6e9",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "多巴胺和抗精神病药物可能如何扰乱昼夜节律，并改变胰岛素释放的时间模式？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-5279a0379e3336d2",
+          "quote": "Using pancreatic islet cells, we are measuring circadian rhythms, and examining how dopamine and antipsychotic drugs may disturb circadian rhythms to alter the temporal pattern of insulin release."
+        }
+      ],
+      "reasonZh": "McCarthy 分支研究页明确以 we 描述该项目，保留 may 的不确定性；问题仅归于 Welsh-McCarthy 已接受的该分支项目，不外推其他成员研究。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-5279a0379e3336d2",
+          "sourceUrl": "https://psychiatry.ucsd.edu/research/programs-centers/welsh-mccarthy-lab/research/mccarthy-lab.html",
+          "observedAt": "2026-10-16T01:03:54+00:00",
+          "bodySha256": "01f2ec1f4a295141450b69fb02165100fd808dfe34ff258a329af09af17d30c0",
+          "role": "explicit_linked_research_subpage",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T02:36:11+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 102,
+      "labId": "ucsd-public-health-lab-the-e-commerce-lab",
+      "labName": "The E-commerce Lab",
+      "ordinal": 416,
+      "reviewedAt": "2026-10-16T07:41:03.486843+00:00",
+      "rawSha256": "7b1b679702776c7e46cb8fbea8940f0fcd80aa171080f7c7000b1bf63fa3f46d",
+      "packetSha256": "3bda5c31c37c63acbf3c08288679593a17101bf505b455f35c7d4262d9722475",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "受监管及新兴消费品如何在数字环境中被营销、销售、讨论和使用？",
+        "谁在使用新兴且快速变化的产品，他们为什么使用？",
+        "感知收益和潜在不良事件在真实世界情境中如何被报告？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-48038f8799beb3ab",
+          "quote": "The E-commerce Lab studies how regulated and emerging consumer products are marketed, sold, discussed, and used in digital environments."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-48038f8799beb3ab",
+          "quote": "The team generates timely, policy-relevant evidence by auditing online and app-based retail markets, conducting survey research, and analyzing social media and online communities to understand who is using new and rapidly evolving products, why they are using them, and how perceived benefits and potential adverse events are reported in real-world settings."
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-48038f8799beb3ab",
+          "quote": "The team generates timely, policy-relevant evidence by auditing online and app-based retail markets, conducting survey research, and analyzing social media and online communities to understand who is using new and rapidly evolving products, why they are using them, and how perceived benefits and potential adverse events are reported in real-world settings."
+        }
+      ],
+      "reasonZh": "官方历史条目明确 The E-commerce Lab/The team，how、who、why 均直接陈述研究内容；不加入具体产品的未陈述机制或结果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-48038f8799beb3ab",
+          "sourceUrl": "https://hwsph.ucsd.edu/research/faculty-research-labs/index.html",
+          "observedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 103,
+      "labId": "ucsd-radiation-medicine-lab-moore-lab",
+      "labName": "Moore Lab",
+      "ordinal": 426,
+      "reviewedAt": "2026-10-16T07:41:03.487564+00:00",
+      "rawSha256": "27c93dd8ec400c9b3217552f8fd124dba09bdef8904311c92eb6c38f46dc2f79",
+      "packetSha256": "3e603cd60247f85f29d389621648b8467d511a6477378507a5eeb6dc32a79cf3",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how to understand and safely adopt 是向临床人员教育和推广方法的内容，不是所求解的科学问题；不从知识驱动放疗计划主题制造问句。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-7e3746036e45c778",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/moore/index.html",
+          "observedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "ac0d7d78fe760786a485d01d2f10f7f8f0bd07c3ec34f2d542c4d0690f963072",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 104,
+      "labId": "ucsd-radiation-medicine-lab-sharabi-lab",
+      "labName": "Sharabi Lab",
+      "ordinal": 431,
+      "reviewedAt": "2026-10-16T07:41:03.488131+00:00",
+      "rawSha256": "fba476f8b0a7819a7bb3659973f387f0dd51d03f68f999cdcc74674683489f85",
+      "packetSha256": "82b6856a3cf2dedbb75002eaa286401bb0598e4f62fd51baf935ef9df729be5c",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how radiation can augment immunotherapy 位于PI既往发表工作的描述中；未在本段以 whole-lab 问题目标陈述。依本次严格范围不把个人论文概述转成整组问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-ac782442f231ae2e",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/sharabi/index.html",
+          "observedAt": "2026-10-16T01:03:07+00:00",
+          "bodySha256": "f54106232378e385ec72fbf7d237def1010cfa1ce2a5590aaf82eb81e7f7230f",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 105,
+      "labId": "ucsd-lab-from-faculty-cohab-lab-net",
+      "labName": "cohab-lab.net",
+      "ordinal": 441,
+      "reviewedAt": "2026-10-16T07:41:03.488758+00:00",
+      "rawSha256": "a14ee394479179ab993e46a6a5d74ce4a4d0c95b8bdaac06fa83755aebe725a5",
+      "packetSha256": "38f0924b140e99f0ad05f78d3bbda7ed0b8959b2ca12ad938fe17e4fca72ccc2",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "新兴技术如何影响亲密生活空间？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-475ef1a9ab7e9712",
+          "quote": "We explore intersections of human and machine perception, particularly how emerging technology impacts sites of intimate life."
+        }
+      ],
+      "reasonZh": "Machine Cohabitation Lab 的整组 we 研究概述直接给出 how 问题；不把 what we ask our machines to do 的反思性表达另造为科学问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-475ef1a9ab7e9712",
+          "sourceUrl": "https://cohab-lab.net/",
+          "observedAt": "2026-10-16T01:03:03+00:00",
+          "bodySha256": "8a17102b62e547398e790782f0580c6b8c66c5a57d0ef9e9c4a507ee62f0e6d7",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 106,
+      "labId": "ucsd-live-lab-2b0b6b6ef98660",
+      "labName": "Adams Lab",
+      "ordinal": 444,
+      "reviewedAt": "2026-10-16T07:41:03.489507+00:00",
+      "rawSha256": "f250c8e11ad14f42ba36c445eec199eb265b9c1eabaeebbef69b0a0f2985501c",
+      "packetSha256": "fdbb3459a8fa8420dc4323aa17cf06cb07556166b2c4413b2ac192e82648dacf",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "磷酸化如何控制 mRNA 剪接和人类蛋白质组的复杂性？",
+        "SRPK 和 CLK 激酶如何在分子和细胞层面影响 SR 蛋白功能与剪接结果？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "quote": "Our laboratory is interested in understanding how phosphorylation controls the splicing of mRNA and complexity of the human proteome."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "quote": "Our laboratory applies various biochemical, biological and structural techniques to understand how these enzymes work at both the molecular and cellular levels to affect SR protein function and splicing outcomes."
+        }
+      ],
+      "reasonZh": "官方教师页以 Our laboratory 明确研究范围，these enzymes 的前文指向 SRPKs 和 CLKs；只翻译两个已明示 how，不增加癌症疗效结论。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-91e9e5e5c13c0f19",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/joseph-adams.html",
+          "observedAt": "2026-10-16T01:00:05+00:00",
+          "bodySha256": "5b4108583383d37788b0605049659b6e1867b78bad954d4f414869e30c20d1ba",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 107,
+      "labId": "ucsd-live-lab-f852bd0bd92d00",
+      "labName": "Aguado Lab",
+      "ordinal": 445,
+      "reviewedAt": "2026-10-16T07:41:03.490610+00:00",
+      "rawSha256": "4b638f9b5f46af7cfd46836a9df2cfc6598f781a3801f5d16d3536342061171f",
+      "packetSha256": "2cc4b3336d52d4d219add0c53039b99214f7fcb3c83829ae7d77b2f78d4c7389",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "性激素、性染色体、心脏细胞、组织微环境的生化与机械信号及炎症如何促成心血管疾病中的性别差异？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d7646a4c3accab79",
+          "quote": "We operate at multiple length scales to understand how sex hormones, sex chromosomes, cardiac cells, biochemical/mechanical cues from the tissue microenvironment, and inflammation all contribute to sex differences in cardiovascular diseases."
+        }
+      ],
+      "reasonZh": "官方介绍明确 Aguado iBiomaterials Research Group/Our multidisciplinary team，how 是具名研究组的目标；不添加协同机制或治疗有效性。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d7646a4c3accab79",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=533",
+          "observedAt": "2026-10-16T01:00:06+00:00",
+          "bodySha256": "59b450ad24d6f83a2828ea21504a2bf66ad7c7ac24aabfe77320c3eeabf8e10e",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 108,
+      "labId": "ucsd-live-lab-900a1da046671f",
+      "labName": "Amy Non’s Epigenetic Anthropology Lab",
+      "ordinal": 449,
+      "reviewedAt": "2026-10-16T07:41:03.492703+00:00",
+      "rawSha256": "d6c58a2d8c4d945b41866b7a9f374723057c82d08e4c97f77f09f8eea9a6214e",
+      "packetSha256": "cc5ad5d3111f86e0ed1dc560a9df4780ac4c2a33693f73d07f128509d76f6ec9",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "早期社会经历如何嵌入生物过程，并影响整个生命历程的健康？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1f2b242edf62cfdb",
+          "quote": "My lab investigates how social experiences can become biologically embedded early in life to affect health throughout the life course."
+        }
+      ],
+      "reasonZh": "命中句明确 My lab 而非仅个人兴趣；问题限于原句，不采用下方新闻评论的问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-1f2b242edf62cfdb",
+          "sourceUrl": "https://amynon.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:27+00:00",
+          "bodySha256": "72f670a383e309bb59e95dd4dd534d7c2ac44ba2e4460715a40b03514bc491d5",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 109,
+      "labId": "ucsd-live-lab-e730dbff4e8fd2",
+      "labName": "Anastasia Kiyonaga | Kiyonaga Lab | La Jolla, CA",
+      "ordinal": 450,
+      "reviewedAt": "2026-10-16T07:41:03.496750+00:00",
+      "rawSha256": "3e02d422a2a1e8465cae18070bb84f87079932635e063b48679e83273572acde",
+      "packetSha256": "cd8addf3713950d1b1c8953316f28cf134c8bdc2b57dbc595cb20c61561bffe4",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "工作记忆如何与知觉、注意和行动相互作用？",
+        "神经系统如何维持指导复杂行为的短暂目标表征？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-b74983775625f773",
+          "quote": "Research in the lab examines how working memory interacts with perception, attention, and action."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-b74983775625f773",
+          "quote": "We use a combination of behavioral, neuroimaging (fMRI, EEG), brain stimulation (TMS), and physiological monitoring (eye-tracking, EMG) methods to study how the nervous system maintains transient goal representations that guide complex behavior."
+        }
+      ],
+      "reasonZh": "具名实验室 about 页明确 Research in the lab/We，两个 how 直接对应研究问题；不将方法或设备信息另作问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-b74983775625f773",
+          "sourceUrl": "https://www.kiyonagalab.org/about",
+          "observedAt": "2026-10-16T01:34:24+00:00",
+          "bodySha256": "d633e2b7427eff88b125bb7c9469f8e6c24859a5ebb4d169b2e23fe75c5dd5a6",
+          "role": "explicit_linked_research_subpage",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 110,
+      "labId": "ucsd-live-lab-c1cb41c6661a91",
+      "labName": "Andrew Mendiola — lab website",
+      "ordinal": 452,
+      "reviewedAt": "2026-10-16T07:41:03.502614+00:00",
+      "rawSha256": "48b9d7e7dc52421d5a54c2b8d3e5ec78c67204f011512504c9834dbee934fa56",
+      "packetSha256": "9facfd7a82d86496b8e745e89f1555b0dde63d700624db98450fe951bd392166",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "先天免疫细胞如何驱动神经系统疾病中的炎症？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d8e133fe7ec35213",
+          "quote": "We are a brain immunology research laboratory investigating how innate immune cells drive inflammation in neurological diseases."
+        }
+      ],
+      "reasonZh": "Research Vision 明确研究实验室主体；仅使用该 whole-lab how，不将下方具体论文中血液蛋白的问题扩展为全组目标。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d8e133fe7ec35213",
+          "sourceUrl": "https://mendiolalab.com/",
+          "observedAt": "2026-10-16T01:06:28+00:00",
+          "bodySha256": "e91cfc43d2a84d3f0b2bbfa91680e73e118f4544e8fddc145efd71db9d6bc20a",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 111,
+      "labId": "ucsd-live-lab-932e1c69552100",
+      "labName": "BioNE Lab",
+      "ordinal": 459,
+      "reviewedAt": "2026-10-16T07:41:03.516764+00:00",
+      "rawSha256": "acbca0300bed8ff38e99f2981445450599c6a3b37fe000c36e03d8320780cce9",
+      "packetSha256": "a0eea8ff1e9aee3f01c7426e93b34653b52b78ce0f6ad07741acd61993cc4ba6",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "细胞如何响应机械和生化应激？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-292a46c16f269ba3",
+          "quote": "Our lab builds nanoscale tools to study how cells respond to mechanical and biochemical stress and to enable precise access to cellular compartments for delivery and sensing."
+        }
+      ],
+      "reasonZh": "BioNE Lab Mission 以 Our lab 直接给出 how，问题限于细胞应激响应，不额外发明递送机制。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-292a46c16f269ba3",
+          "sourceUrl": "https://www.zjahed.com/",
+          "observedAt": "2026-10-16T01:03:09+00:00",
+          "bodySha256": "d650ef881d31dd5eb7611974e0481038f9f19568574d07e9f0ae050a8a33ee06",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 112,
+      "labId": "ucsd-live-lab-772273389bdfc0",
+      "labName": "Christian M. Metallo — lab website",
+      "ordinal": 471,
+      "reviewedAt": "2026-10-16T07:41:03.518976+00:00",
+      "rawSha256": "98333e0a1efe552eaf093d162642a1e60ce25852d6848397cae209af293aa5ba",
+      "packetSha256": "8df9ff11625f247933c372c3818c4270e5310936876dbd2b9a86851b2739f8d2",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "癌基因、抑癌基因、信号通路和微环境如何调控代谢通路活性，并促进癌细胞生长与存活？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-db9cabd60e4deb96",
+          "quote": "These studies enable the lab to characterize how oncogenes and tumor suppressors (genes that have the potential to cause cancer) , signaling pathways, and the microenvironment control the activity of metabolic pathways and promote cancer cell growth and survival."
+        }
+      ],
+      "reasonZh": "官方研究介绍明确 Metallo Lab/the lab，how 直接规定研究对象与作用关系；不从教授履历或合作机构推导额外问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-db9cabd60e4deb96",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=332",
+          "observedAt": "2026-10-16T01:00:18+00:00",
+          "bodySha256": "2681cba1a61f762acdccc64f91616817ac9ecd3acf388f3e81e8aeeb5df5ec92",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 113,
+      "labId": "ucsd-live-lab-d59ce522fdf757",
+      "labName": "Christopher Obara — lab website",
+      "ordinal": 474,
+      "reviewedAt": "2026-10-16T07:41:03.519552+00:00",
+      "rawSha256": "9dc3a25dc77c21d5d64636b11b9c794fc3b9289f4197a813a9c39d19679cbc0b",
+      "packetSha256": "bc02ce61d2c11991637f8b68e6591645174c7953aa72676be8adac12e7206f75",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "生命是什么？",
+        "代谢如何运作？",
+        "什么导致衰老？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quote": "The Obara Lab is a team of creative, open-minded individuals working together, trying to address the big questions in cell biology and biophysics. What is life? How does metabolism work? What causes aging?"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quote": "The Obara Lab is a team of creative, open-minded individuals working together, trying to address the big questions in cell biology and biophysics. What is life? How does metabolism work? What causes aging?"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-bb3f3ad2107ed834",
+          "quote": "The Obara Lab is a team of creative, open-minded individuals working together, trying to address the big questions in cell biology and biophysics. What is life? How does metabolism work? What causes aging?"
+        }
+      ],
+      "reasonZh": "三句问句由正文明确标为 Obara Lab 要处理的细胞生物学与生物物理大问题，非FAQ或招募修辞；只作忠实翻译，不补充具体因果假设。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-bb3f3ad2107ed834",
+          "sourceUrl": "https://obaralab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:15+00:00",
+          "bodySha256": "7b95ef72775bcf96ee0e52d59e4d55610e6518a55e9e8b3b0fc682430571bdcb",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 114,
+      "labId": "ucsd-live-lab-2340e3890ad4ea",
+      "labName": "Corina Antal — lab website",
+      "ordinal": 477,
+      "reviewedAt": "2026-10-16T07:41:03.520252+00:00",
+      "rawSha256": "b6d92c70f4dd2fa0a2c6b21a40b60a44c04c2fae5e302b3b8cb007bf830751a9",
+      "packetSha256": "8014dc9278800079bd992c069c5b40ec183202e1bbb35473e085a9d869de0f89",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "RNA 加工如何与细胞信号通路相互作用，推动癌症进展？",
+        "信号网络通过哪些机制动态调控 RNA 结合蛋白的功能？",
+        "这些调控机制如何在癌症中失调？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-11ad93aa64ad8952",
+          "quote": "Our goal is to understand how RNA processing interfaces with cell signaling pathways to drive cancer progression."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-11ad93aa64ad8952",
+          "quote": "RNA-binding proteins (RBPs) are central regulators of gene expression, yet the mechanisms by which signaling networks dynamically control RBP function and how these mechanisms become dysregulated in cancer remain poorly understood."
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-11ad93aa64ad8952",
+          "quote": "RNA-binding proteins (RBPs) are central regulators of gene expression, yet the mechanisms by which signaling networks dynamically control RBP function and how these mechanisms become dysregulated in cancer remain poorly understood."
+        }
+      ],
+      "reasonZh": "Research Interests 的 Our goal 与紧接的 Our laboratory aims 明确 whole-lab 范围；三个问题均取自未解目标，不引用下方发表结果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-11ad93aa64ad8952",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/corina-antal.html",
+          "observedAt": "2026-10-16T01:00:17+00:00",
+          "bodySha256": "e3e0d4593eb8d1e8670954ee7682ab6c8d0644c9f20856fa4971ede3c58a6549",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 115,
+      "labId": "ucsd-live-lab-002fe65114a2ab",
+      "labName": "Coufal Lab",
+      "ordinal": 478,
+      "reviewedAt": "2026-10-16T07:41:03.523574+00:00",
+      "rawSha256": "753c08d64bfa1033b8c056d5e049a4e75c99c1eee071e3dbabea7fbf8268a9d1",
+      "packetSha256": "b59b54be955e10b454ede19e7526c802a4b8b91cce36ee8369614869e36cfe17",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "小胶质细胞功能障碍如何促成人类神经系统疾病？",
+        "哪些情境和条件下，小胶质细胞可成为新的治疗靶点？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3aece4ea71058c9d",
+          "quote": "A major focus of our lab is understanding how microglial dysfunction contributes to human neurological disease and to determine in what contexts and situations microglia represent a novel therapeutic target."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-3aece4ea71058c9d",
+          "quote": "A major focus of our lab is understanding how microglial dysfunction contributes to human neurological disease and to determine in what contexts and situations microglia represent a novel therapeutic target."
+        }
+      ],
+      "reasonZh": "Our lab 的 major focus 同时明确 how 与 what contexts；保持靶点问题而不声称已有治疗有效性。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-3aece4ea71058c9d",
+          "sourceUrl": "https://www.coufallab.com/",
+          "observedAt": "2026-10-16T01:06:30+00:00",
+          "bodySha256": "491d56f33097d57802b9e2fc38e0a84df65ed618f6815d9f6db88a9bf5d0f747",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 116,
+      "labId": "ucsd-live-lab-0908e6aba4a9ea",
+      "labName": "Developmental Cognitive Neuroscience Lab",
+      "ordinal": 482,
+      "reviewedAt": "2026-10-16T07:41:03.524652+00:00",
+      "rawSha256": "8c81e32550e897e3f9b7a24d498716ee4902c36aa306d7b4a3317c8c1116370a",
+      "packetSha256": "627c8fb09cc279ca04c30e97512a898099ddb9ebcdd50207459a2381b7b136f4",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "皮层与皮层下脑系统如何发育、形成个体差异并相互作用，以支持典型和非典型发育中的认知、运动和感觉功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1a904e86b60703e2",
+          "quote": "The Greene Developmental Cognitive Neuroscience Laboratory seeks to understand how cortical and subcortical brain systems develop, become individualized, and interact to support cognitive, motor, and sensory functions in typical and atypical development, with a particular focus on Tourette syndrome."
+        }
+      ],
+      "reasonZh": "具名实验室 seeks to understand how 直接给出整组问题；保留典型/非典型发育范围，不推导Tourette因果或治疗。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-1a904e86b60703e2",
+          "sourceUrl": "https://greenelab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:03:37+00:00",
+          "bodySha256": "f955543c8750a8ba08ab8ee9a3912df8f0db7223a6121029d4520c9c82b38bb8",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 117,
+      "labId": "ucsd-live-lab-fbec895318f5ad",
+      "labName": "Dorrestein Lab",
+      "ordinal": 483,
+      "reviewedAt": "2026-10-16T07:41:03.525814+00:00",
+      "rawSha256": "ae7c8140be1228b968bb59cd97e7322d0da374095915bc08761257b620cd0a31",
+      "packetSha256": "f83e09a40de8a9fbe3d4ca016e887fc0c21325d612bba29888d337f5602f5ca6",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "微生物内部的化学过程如何影响生态系统？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-855812cc91be1c61",
+          "quote": "Understand Chemistry within microbes and how it impacts the ecosystem"
+        }
+      ],
+      "reasonZh": "The Dorrestein Laboratory Research Aims 的第2项目标直接给出 how；不把工具开发目标改造成未陈述的问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-855812cc91be1c61",
+          "sourceUrl": "https://dorresteinlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:20+00:00",
+          "bodySha256": "7bc177c34e28c0e1a8c178df565656efcf010d1f6bed116ece0cb629846766a6",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 118,
+      "labId": "ucsd-live-lab-25356b3d44ef3f",
+      "labName": "Engler Lab",
+      "ordinal": 487,
+      "reviewedAt": "2026-10-16T07:41:03.526781+00:00",
+      "rawSha256": "31f174550f22c7f300c86b4b8e5b8ee7b6e7f1fd41ad96dad6b2040345c1e1e1",
+      "packetSha256": "598f360cc482cfa88d6152b68b3681409601de39aba404877e7c219f4a395eff",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "三维细胞外基质的力学和生化性质如何引导细胞行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-31167b84c71f16df",
+          "quote": "Investigations in the lab revolve around how the mechanical and biochemical properties of this 3D ECM direct the cell behavior, i.e. mechanobiology."
+        }
+      ],
+      "reasonZh": "官方页明确 Investigations in the lab，how 与前文三维ECM定义直接相连；不把已发表细胞效应或个人训练经历改写为新问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-31167b84c71f16df",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=271",
+          "observedAt": "2026-10-16T00:57:55+00:00",
+          "bodySha256": "6da56e43bbb6391a7de4261646fac65092359a1097a20408ec450db8fcc11886",
+          "role": "associated_faculty_profile_requires_lab_scope_check",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 119,
+      "labId": "ucsd-live-lab-3fb493ff6136bb",
+      "labName": "Frazer Lab",
+      "ordinal": 490,
+      "reviewedAt": "2026-10-16T07:41:03.527284+00:00",
+      "rawSha256": "369952b0f55cd5de1c15541bb7a96df48261a9d2b2cb493780546004610485ff",
+      "packetSha256": "f22116e20054f8e2af18ad65d8123048cad1ee916c2134f234f470b88215059b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "遗传变异如何影响不同诱导分化细胞类型的分子和生理性状？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-e9e0fdc0ea4aa75a",
+          "quote": "iPSCORE provides a powerful tool to examine how genetic variants influence molecular and physiological traits across a variety of derived cell types, as well as to functionally interrogate variants underlying a variety of GWAS phenotypes."
+        }
+      ],
+      "reasonZh": "iPSCORE 段明确 our lab 建立资源并正在用于相关性研究，how 是该实验室项目所检验的问题；不将CAST整体目标移作Frazer独有问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-e9e0fdc0ea4aa75a",
+          "sourceUrl": "https://frazer.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:18+00:00",
+          "bodySha256": "81c4f5c105559987c517909d325c657de62191aa33674be23cdd1bd7256fa2c7",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 120,
+      "labId": "ucsd-live-lab-7a564d19924e8f",
+      "labName": "Front Page | Mobile Systems Design Lab",
+      "ordinal": 491,
+      "reviewedAt": "2026-10-16T07:41:03.527832+00:00",
+      "rawSha256": "3bab696965b9221ee4829acd4670a5b8ca49cb56dedea55ace59c8e37d9f13fb",
+      "packetSha256": "2125012ac386df9550c21174b81a9afe36b96609311f9a85984222950a151fb3",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "What will the Wi-Fi of the Future be like 是BBC采访新闻标题，不是本段所明示的整组研究问题；项目概述只有目标与技术，不由此制造问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d9506eb2f0ecc5df",
+          "sourceUrl": "https://esdat.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:31+00:00",
+          "bodySha256": "b712fd01916cb1438f88a5d817f0bf69a189a2814aa17c1b44748c58564caed0",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 121,
+      "labId": "ucsd-live-lab-30d5277524f91a",
+      "labName": "Goldenfeld Group",
+      "ordinal": 493,
+      "reviewedAt": "2026-10-16T07:41:03.528424+00:00",
+      "rawSha256": "ed875655b36fd6b471266062626359e7969d50b5e8a691b840255c5df08872b1",
+      "packetSha256": "1766b1f54fa3a3d932d6313a69fbb90e2b6ee3255940c72fbb0228834d292269",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how patterns evolve 描述 Nigel 个人兴趣；历史条目虽名为 Goldenfeld Group，未明确以整组为问题主体。本次不自动把个人兴趣扩展为实验室问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-4c5bff2df58cdc1b",
+          "sourceUrl": "https://biophysics.ucsd.edu/",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "role": "historical_field_labName",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 122,
+      "labId": "ucsd-live-lab-f3a5edc06ada6b",
+      "labName": "Gurol M. Suel — lab website",
+      "ordinal": 496,
+      "reviewedAt": "2026-10-16T07:41:03.528863+00:00",
+      "rawSha256": "3dc628a22b3e210d99a959005aaad8d82fef75ff60cc2433390c4dca02349c46",
+      "packetSha256": "1251e53a508a1acf693084a225b4a896c6566ecd3997e66a1d6156b00b9cd02b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "分子和细胞相互作用如何在微生物系统中产生涌现动态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-a0972a46c86d2337",
+          "quote": "Dr. Süel's lab is fascinated by how molecular and cellular interactions can give rise to emergent dynamics in microbial systems."
+        }
+      ],
+      "reasonZh": "官方页面明确 Dr. Süel’s lab，how 直接表达实验室问题；不追加超出这段既有引文的机制或结果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-a0972a46c86d2337",
+          "sourceUrl": "https://matsci.ucsd.edu/faculty/gurol-suel",
+          "observedAt": "2026-10-16T01:00:21+00:00",
+          "bodySha256": "16155577e9cb1745eb4922515b9914e6d9b20efd6fcc483017e7f6741876c0e4",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:51:54+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 123,
+      "labId": "ucsd-live-lab-788dffcb20dbbc",
+      "labName": "Gutkind Lab",
+      "ordinal": 498,
+      "reviewedAt": "2026-10-16T07:41:03.529400+00:00",
+      "rawSha256": "0ecc53dd8f9d1f8be0e74a933f49551a0018f016c476bdfe2d6f7c4812b9130a",
+      "packetSha256": "d7d8aa70ce8ea4ad4a9d9c463b01caad239f5dab1e155e828afbe9e5ffa2905e",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "GPCR 的突变及自分泌激活如何促成肿瘤进展、免疫逃逸和治疗抵抗？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-72112d86861302ba",
+          "quote": "We are now investigating the mechanisms by which genetic mutations in Gαq proteins initiate uveal and cutaneous melanoma, the role of Gαs and its target, PKA, in cancer, and how mutations and autocrine activation of GPCRs contribute to tumor progression, immune evasion, and therapy resistance."
+        }
+      ],
+      "reasonZh": "Our laboratory/We are now investigating 明确研究主体，how 明示GPCR问题；不采用发表论文结果或推断治疗效果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-72112d86861302ba",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/j-silvio-gutkind.html",
+          "observedAt": "2026-10-16T01:00:21+00:00",
+          "bodySha256": "aa9d47f4a7750d1e61b475e635bf21dc19c6cf7dc341e8965e2c0c4638d3ed7b",
+          "role": "listed_official_source_requires_entity_localization",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 124,
+      "labId": "ucsd-live-lab-c7aab6c5f348ec",
+      "labName": "Gymrek Lab",
+      "ordinal": 499,
+      "reviewedAt": "2026-10-16T07:41:03.530154+00:00",
+      "rawSha256": "de3e5b833c8d0994013e94d4767ca36b1f72edcd6e1cbde0d7980600a278aabc",
+      "packetSha256": "bbd9f53c8c55b39c0defb4ca2ab437ab573755e0db90a6c81b7cdc332f7cf5ca",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "人类疾病相关遗传变异的效应如何在不同人群之间变化？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-45a858d307a0463d",
+          "quote": "Our overall goal is to understand genetic variants that underlie human disease and how their effects vary across different populations."
+        }
+      ],
+      "reasonZh": "具名Gymrek Lab概述明确 Our overall goal；仅翻译其跨人群效应问题，不采用后续单篇论文结果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-45a858d307a0463d",
+          "sourceUrl": "https://gymreklab.com/",
+          "observedAt": "2026-10-16T01:03:11+00:00",
+          "bodySha256": "88113141cce0b0786054c57087ac435245012b754d8ef43a9953443e25545d10",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 125,
+      "labId": "ucsd-live-lab-25630d3163ab24",
+      "labName": "Health Behaviors, Aging, & Cognition Lab",
+      "ordinal": 503,
+      "reviewedAt": "2026-10-16T07:41:03.530702+00:00",
+      "rawSha256": "c9a69d3818a83f6fbe847f7e7858c825660e860bdf6c529b041644cbf4002abf",
+      "packetSha256": "7e4ec97687adf7f8b81afdc01a6ddfa691c234c2c90ce69d8a586f8f6fa3ab03",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "身体活动和久坐行为如何影响认知健康、身体功能及生物衰老？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d3b5afa639d2da71",
+          "quote": "The Health Behaviors, Aging, & Cognition Lab at UC San Diego studies how physical activity and sedentary behavior affect cognitive health, physical function, and biological aging — with a focus on cancer survivors and older adults."
+        }
+      ],
+      "reasonZh": "整组 Our Focus 直接给出how；只翻译该明示问题，不将已完成临床试验重新描述为当前研究或追加疗效结果。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d3b5afa639d2da71",
+          "sourceUrl": "https://sites.ucsd.edu/hartman-research-group/",
+          "observedAt": "2026-10-16T01:04:10+00:00",
+          "bodySha256": "2e9adf6957d76ed104f0e4f061e2a432964e626e022d7a4c35515aa4c4ca8855",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 126,
+      "labId": "ucsd-live-lab-b7ed8defbfbb77",
+      "labName": "HXI Research Lab",
+      "ordinal": 508,
+      "reviewedAt": "2026-10-16T07:41:03.531601+00:00",
+      "rawSha256": "9e38216e9b2dd0ace3ad74aedbd77e8f92c81e9c743a2c0e0023def273e91fa1",
+      "packetSha256": "a1abcdc48fe8e17cd04a785093b6f2c5145ae7c2b4bba0d5de40da5c70d9f97f",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "候选中的 How 位于 Recent Publications 的单篇论文标题；团队介绍没有相应明示问题。不把个人页面列出的论文标题扩展成whole-lab研究问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-513bed47157bf7d4",
+          "sourceUrl": "https://hxi.ucsd.edu/weibel/",
+          "observedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "62a9e2f3e1236ac22f92a817d923b908cbeced83b286b810a1b7d92656612041",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 127,
+      "labId": "ucsd-live-lab-6b32da6d5c1343",
+      "labName": "Jack Bui Lab",
+      "ordinal": 512,
+      "reviewedAt": "2026-10-16T07:41:03.532118+00:00",
+      "rawSha256": "0ba60533145da51513b262dc6e83f402be7d0f00fe39e48dbda7215d5f94df90",
+      "packetSha256": "be5900ce863f580bec2f5af69a420caaa3533361ceaaf4d5beede60b518067ac",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "肿瘤细胞与免疫细胞如何相互改变对方的行为？",
+        "干扰素如何调控癌症干细胞和造血？",
+        "PD1、CTLA4 等共受体如何限制抗肿瘤和抗病原体免疫？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d13a6813b983ab3c",
+          "quote": "Our lab studies immune responses to tumors using animal and human models. We focus on both the tumor cell and immune cells and how each modifies the behavior of the other."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-d13a6813b983ab3c",
+          "quote": "Current projects include the role of the innate cytokine IL-17D in skin inflammation and wound healing, how interferons regulate cancer stem cells and hematopoiesis, how co-receptors such as PD1 and CTLA4 limit tumor and pathogen immunity, how NK cells influence pregnancy and placental biology, and how microplastics affect macrophages."
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-d13a6813b983ab3c",
+          "quote": "Current projects include the role of the innate cytokine IL-17D in skin inflammation and wound healing, how interferons regulate cancer stem cells and hematopoiesis, how co-receptors such as PD1 and CTLA4 limit tumor and pathogen immunity, how NK cells influence pregnancy and placental biology, and how microplastics affect macrophages."
+        }
+      ],
+      "reasonZh": "Our lab 与 The Bui Lab/Current projects 明确whole-lab范围，选取至多3个原文how问题；不从下方论文结果概括额外机制。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d13a6813b983ab3c",
+          "sourceUrl": "https://jackbuilab.com/",
+          "observedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "18aea8b9a3d1cae1ad726dfe1ce25a8e4bde533a2246e88d326691c2c992d537",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 128,
+      "labId": "ucsd-live-lab-d24b4dc229ae01",
+      "labName": "Joiner Lab",
+      "ordinal": 517,
+      "reviewedAt": "2026-10-16T07:41:03.532786+00:00",
+      "rawSha256": "baf47ee9b808ad4f381a042ae672d427da5196b13c17f26bae6f55b7bdec9269",
+      "packetSha256": "55462ced0f66b5e1ee807c3798dafd7e8079357614003fdc2d5e6caf41928f98",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "Ly6 蛋白可能如何参与阿尔茨海默病、尼古丁成瘾和睡眠调节？",
+        "针对 Ly6–nAChR 相互作用的模拟物或拮抗剂，能否提供选择性的药理手段来对抗疾病状态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-aaac3b87b0a782e2",
+          "quote": "Roles have been proposed for nAChRs or their modulators in Alzheimer’s disease, nicotine addiction, and sleep regulation, including sleep-dependent consolidation of cortical plasticity. We are studying how Ly6 proteins may contribute to these conditions."
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-aaac3b87b0a782e2",
+          "quote": "We are also studying whether mimetics or antagonists of Ly6-nAChR interactions may provide selective pharmacological means of combating disease states."
+        }
+      ],
+      "reasonZh": "Joiner lab研究正文明确 We are studying how/whether；保留 may 与能否，不将拟议药理方向写成已证实疗效。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-aaac3b87b0a782e2",
+          "sourceUrl": "http://www.joinerlab.com/",
+          "observedAt": "2026-10-16T01:03:14+00:00",
+          "bodySha256": "32b6b354324014fa16c99356ed39c09c4be95138dab847ef4da376362846e7ea",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 129,
+      "labId": "ucsd-live-lab-087593d9bb69c5",
+      "labName": "Kate Ricke ☁️ Ricke Lab @ UCSD",
+      "ordinal": 519,
+      "reviewedAt": "2026-10-16T07:41:03.533281+00:00",
+      "rawSha256": "ee41f91f53671e848ab3cb5a409da05667438b040d9e97f5dc4c1bf8eef90745",
+      "packetSha256": "c54482e90bc1a183ec08b8f5266d271b6780e434ec60d83ce2fbe57c16cac1db",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how 只出现在列出的论文题目中；前段为个人研究领域与方法概述，没有whole-lab明示问题。本次不从论文标题或主题推导实验室问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-f03b49961631dba4",
+          "sourceUrl": "https://katericke.com/",
+          "observedAt": "2026-10-16T01:06:34+00:00",
+          "bodySha256": "9cbb4ec267622f591497b75b7e4b285c7e8d01f861daff42cbebde7d45f68131",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 130,
+      "labId": "ucsd-live-lab-20a7c3b49b7458",
+      "labName": "Koslover Group",
+      "ordinal": 524,
+      "reviewedAt": "2026-10-16T07:41:03.533816+00:00",
+      "rawSha256": "37c3d46ff52c282e1511973ebb54113b64a36373aa85fcfe813550ceddbf9a9c",
+      "packetSha256": "1cd052bb6d8999926a2c77f98a1ee73d670d45bb78d63ff07c92a5afdf96db0b",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "从分子到细胞器的不同组分如何在活细胞内部的复杂环境中移动？",
+        "细胞器之间的相互作用如何促进细胞组分的分布与分散？",
+        "大尺度结构（例如网状细胞器网络）如何由较小尺度的动态过程产生？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quote": "Many of the questions we address center on intracellular dynamics and transport -- how do different components, ranging from molecules to organelles, navigate the complex world inside a living cell?"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quote": "How do interactions between organelles contribute to distributing and dispersing cellular components?"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-d8bbc95d38d6f641",
+          "quote": "How do large-scale structures (eg: reticulated organelle networks) emerge from smaller-scale dynamic processes?"
+        }
+      ],
+      "reasonZh": "Koslover group明确标为 questions we address，并逐句给出三个how问句，直接翻译而不添加动力学机制。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-d8bbc95d38d6f641",
+          "sourceUrl": "https://koslover.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:35+00:00",
+          "bodySha256": "1e8479a670e7584df2d57de9783886939cbba7b33601413ada6d72887a9247e0",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 131,
+      "labId": "ucsd-live-lab-4f6cbd2289cdd6",
+      "labName": "Laboratory for Energy Storage and Conversion",
+      "ordinal": 528,
+      "reviewedAt": "2026-10-16T07:41:03.534369+00:00",
+      "rawSha256": "9f37b6178d61f2f2fc6bf7edef586757e69b0c408828f7c8203950b175b0a1b9",
+      "packetSha256": "655a885fb2bd3ded6657e54c0b35371334a7566c082377358ab99fbc4dd75db7",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how 命中新闻链接路径而非研究主文的问题句；整组介绍陈述材料设计与表征目标，没有可忠实翻译的具体明示问题。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-44011791806126dd",
+          "sourceUrl": "https://smeng.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:31+00:00",
+          "bodySha256": "905d8182af6f33ac25cd574218d84d2fb60fd9aa6939e542e700d97c1e1c659f",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    },
+    {
+      "candidateIndex": 132,
+      "labId": "ucsd-live-lab-caa34ae32a8126",
+      "labName": "Lagrangian Drifter Laboratory",
+      "ordinal": 529,
+      "reviewedAt": "2026-10-16T07:41:03.534827+00:00",
+      "rawSha256": "6c0806f7af0a6266d05f2ffeb22dde4e39394296e332f796a1b0a1bcb450305c",
+      "packetSha256": "6c3b8bf8a85c124e13c202d4b8d2277ca684db8ee6d36af63bb96bd73fe5ddc2",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "What’s new 是导航栏目，What are drifters and drogues 是仪器定义FAQ；均非实验室明示的科学问题。不从漂流器服务与技术开发主题另造问句。",
+      "sourceMetadataReviewed": [
+        {
+          "sourceId": "src-f27bb4ca25fc9578",
+          "sourceUrl": "https://gdp.ucsd.edu/ldl/",
+          "observedAt": "2026-10-16T01:06:35+00:00",
+          "bodySha256": "1c89fcf2c9312074b2a0775e735697a87efe64108097f7f82ca6422f6a28eeb5",
+          "role": "listed_lab_destination",
+          "quoteContextReviewed": true
+        }
+      ],
+      "preserveRawMainReviewedAt": "2026-10-16T01:55:29+00:00",
+      "scope": "questions_field_draft_only"
+    }
+  ],
+  "networkRequests": 0,
+  "rawPacketCodeCollectorWrites": 0,
+  "policy": "Manual per-entity literal question translation with packet local context; questions-only draft, no science/source/date/identity/affiliation/PI/root URL acceptance or field mutation. Generic FAQ/recruitment/news/paper-only/personal-only questions excluded.",
+  "draftValidation": {
+    "all44FrozenRawAndPacketHashesMatch": true,
+    "allQuestionEvidenceLiteralSubstringsOfPacketAndAcceptedCandidateQuote": true,
+    "allIndicesCoveredExactly": true,
+    "allQuestionIndicesZeroBasedContiguous": true
+  },
+  "finalizedAt": "2026-10-16T07:41:46+00:00"
+}

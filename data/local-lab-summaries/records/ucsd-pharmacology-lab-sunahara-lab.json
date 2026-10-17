@@ -1,0 +1,142 @@
+{
+  "labId": "ucsd-pharmacology-lab-sunahara-lab",
+  "status": "supported",
+  "summaryZh": "Sunahara 实验室研究激素与 G 蛋白偶联受体结合后如何启动信号，以及激素结合与 G 蛋白活化之间的变构关系。方法结合生化、生物物理和药理学。",
+  "researchQuestions": [
+    "激素与 G 蛋白偶联受体结合后，如何引发信号级联活化？",
+    "激素结合与 G 蛋白活化之间的变构关系是什么？"
+  ],
+  "topics": [
+    "G蛋白偶联受体",
+    "激素信号",
+    "变构调控"
+  ],
+  "methods": [
+    "生化",
+    "生物物理",
+    "药理学"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-4a990d0c893d31e3",
+      "quote": "Roger Sunahara, Ph.D.",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-4a990d0c893d31e3",
+      "quote": "My laboratory primarily focuses on understanding the mechanism by which hormone binding to G protein-coupled receptors (GPCRs) lead to activation of signaling cascades.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-4a990d0c893d31e3",
+      "quote": "My laboratory is keenly interested in the nature of the allosteric relationship between hormone binding and G protein activation. We utilize biochemical, biophysical and pharmacological approaches",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-4a990d0c893d31e3",
+      "quote": "My laboratory primarily focuses on understanding the mechanism by which hormone binding to G protein-coupled receptors (GPCRs) lead to activation of signaling cascades.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    },
+    {
+      "sourceId": "src-4a990d0c893d31e3",
+      "quote": "My laboratory is keenly interested in the nature of the allosteric relationship between hormone binding and G protein activation.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        1
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "官方教师页明确以 My laboratory 说明实验室研究。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:22:02.178855+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:22:02.178855+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:41+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "明确My laboratory的机制与变构关系求解目标，保留关系不增具体分子结果。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-4a990d0c893d31e3",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/roger-sunahara.html",
+        "sourceObservedAt": "2026-10-16T01:00:48+00:00",
+        "readScope": "research-introduction and goal/question local ranges; excluded remainder not read",
+        "rangesRead": [
+          [
+            0,
+            1951
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": true
+      },
+      {
+        "sourceId": "src-966feff5607b3f69",
+        "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/roger-sunahara.html",
+        "sourceObservedAt": "2026-10-07T23:00:18+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            114
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-4a990d0c893d31e3",
+        "quote": "My laboratory primarily focuses on understanding the mechanism by which hormone binding to G protein-coupled receptors (GPCRs) lead to activation of signaling cascades.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:48+00:00",
+        "bodySha256": "072ad5fce8bfc89a87436098e39800a760a256be52d9c149c6914cc60bc1d47a",
+        "bodySha256UnavailableReason": null
+      },
+      {
+        "questionIndex": 1,
+        "sourceId": "src-4a990d0c893d31e3",
+        "quote": "My laboratory is keenly interested in the nature of the allosteric relationship between hormone binding and G protein activation.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:00:48+00:00",
+        "bodySha256": "072ad5fce8bfc89a87436098e39800a760a256be52d9c149c6914cc60bc1d47a",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

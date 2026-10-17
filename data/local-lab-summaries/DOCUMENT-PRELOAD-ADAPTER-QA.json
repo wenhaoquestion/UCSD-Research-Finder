@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T05:28:56+00:00",
+  "verdict": "PASS",
+  "baseCommit": "641fd9abbcdc2cc3382847acb241695384a0faec",
+  "baseAdapterSha256": "2e691409cab7ec3dff70b9876bc98b9260c2c4af19d9532b65cb4944433a4aea",
+  "adapterSha256": "f8d71d075a96ccf22f25a8cf4d5ca24e7a65250c3805c726b8a86237cf0a79ae",
+  "newTestSha256": "9dbcb51c64d594bd02797128d8f5154f1de7910a5281d68856a1971231753280",
+  "providedPinsMatch": true,
+  "networkRequests": 0,
+  "productionPlanCalls": 0,
+  "productionCodeDataReceiptRecordPacketCollectorWrites": 0,
+  "implementationReview": {
+    "changedTopLevelDefinitions": [
+      "plan"
+    ],
+    "allOtherModuleASTEqual": true,
+    "delta": "Extend existing strict frame review-marker requirement to html_document_preload, plus a narrow document-preload DOM branch.",
+    "requiredAdmissionChecks": [
+      "Explicit curated reviewed-gap-additions entry; sourceId present in bound packet.",
+      "Actual zoned sourceObservedAt and reviewedAt; sourceObservedAt matches source.",
+      "Lowercase 64-digit SHA required; review SHA equals packet SHA and actual cached bytes.",
+      "Latest root status ok and no explicit root/robots/auth/challenge/prior access boundary.",
+      "Actual parsed link element, rel token preload, as=document, exact literal nonempty href.",
+      "urljoin(source.sourceUrl,literal href) exactly matches request_key(entry.url), preserving scheme/host/www/port/path/query.",
+      "Target host equals source host; public-origin validation and transport remain unchanged."
+    ],
+    "antiSpoofCoverage": [
+      "Script literal and script redirect are not link nodes.",
+      "HTML comments and CSS/style pseudo-links are not link nodes.",
+      "Anchor/image tags and stylesheet/style/image/missing-as/preloader links do not qualify.",
+      "A document preload without an explicit reviewed entry is not automatically discovered."
+    ],
+    "boundaries": [
+      "Discovery only; not an entity acceptance, scientific statement, redirect observation or canonical-URL migration.",
+      "No JS execution added.",
+      "No changes outside plan: loader, safe_url adapter, transport, TLS, shared host gate, retry/deadlines, one-shot journal, caps and execution checks are AST-identical to base."
+    ]
+  },
+  "actualRomero": {
+    "labId": "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero",
+    "source": {
+      "sourceId": "src-04a051aebaebcc7c",
+      "requestedUrl": "http://r2g.ucsd.edu/",
+      "sourceUrl": "http://r2g.ucsd.edu/",
+      "observedAt": "2026-10-16T04:57:07+00:00",
+      "bodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "cachePath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-cache/ece64ff7df4e7d06ed971e975bd1a4a83b081453a9dce7069f5739b737860777.html"
+    },
+    "reviewedEntry": {
+      "url": "http://r2g.ucsd.edu/home.html",
+      "labIds": [
+        "ucsd-chemistry-biochemistry-lab-romero-research-group-erik-romero"
+      ],
+      "sourceId": "src-04a051aebaebcc7c",
+      "linkedFrom": "http://r2g.ucsd.edu/",
+      "sourceObservedAt": "2026-10-16T04:57:07+00:00",
+      "sourceBodySha256": "25c774bbc43f61f0d282c3cd44b9a1f796bf24ba6e44c3a00b0aed43d355b707",
+      "kind": "reviewed_identity_research_gap",
+      "discoveryMechanism": "html_document_preload",
+      "originalHtmlAttribute": "home.html",
+      "label": "reviewed displayed frame or document entry target",
+      "reviewedAt": "2026-10-16T05:25:54+00:00",
+      "reason": "Actual captured root names a literal same-site displayed frame or document-preload target. No prior target capture/attempt/refusal or active host conflict was found. Read target body to assess whole-lab scope; navigation, constant JavaScript and page title alone do not establish research. No script execution, protocol substitution, HTTP redirect or canonical migration.",
+      "identityAcceptance": "not_automatically_accepted",
+      "discoveryAudit": "REMAINING-ENTRY-SHELL-GAP-REVIEW-0526.json"
+    },
+    "checks": {
+      "sourceId": true,
+      "sourceObservedAt": true,
+      "observedAtZoned": true,
+      "reviewedAtZoned": true,
+      "reviewShaMatchesPacket": true,
+      "actualCacheShaMatches": true,
+      "rootStatusOk": true,
+      "rootNoExplicitAccessBoundary": true,
+      "sourceMatchesActualRootFetch": true,
+      "sameExactHost": true,
+      "literalDocumentPreloadTarget": true
+    },
+    "exactHtmlDeclaration": "<link rel=\"preload\" href=\"home.html\" as=\"document\">",
+    "excludedActualOtherPreloads": [
+      "<link rel=\"preload\" href=\"assets/images/logo.png\" as=\"image\">",
+      "<link rel=\"preload\" href=\"styles.css\" as=\"style\">"
+    ],
+    "actualCSSAndScriptNotUsed": "The root contains stray anchor-looking CSS and a window.location.href script. Neither contributes to admission; the literal link document preload is sufficient. No script was executed.",
+    "targetBodyRead": false,
+    "targetScienceOrIdentityAccepted": false
+  },
+  "independentlyRunOfflineTests": {
+    "total": 64,
+    "passed": 64,
+    "failed": 0,
+    "suites": [
+      {
+        "file": "tests/test_local_lab_document_preload.py",
+        "count": 10,
+        "passed": 10
+      },
+      {
+        "file": "tests/test_local_lab_frame_discovery.py",
+        "count": 13,
+        "passed": 13
+      },
+      {
+        "file": "tests/test_local_lab_shared_adapter.py",
+        "count": 11,
+        "passed": 11
+      },
+      {
+        "file": "tests/test_local_lab_original_uri_scope.py",
+        "count": 30,
+        "passed": 30
+      }
+    ],
+    "fixtureScope": "Temporary isolated plan files and mocked transports only; production plan/receipt unchanged.",
+    "full209Or331SuiteIndependentlyRun": false
+  },
+  "receiptBoundary": {
+    "observedAdapterVerificationCheckedAt": "2026-10-16T05:21:06+00:00",
+    "observedAdapterVerificationSha256": "2e691409cab7ec3dff70b9876bc98b9260c2c4af19d9532b65cb4944433a4aea",
+    "currentAdapterSha256": "f8d71d075a96ccf22f25a8cf4d5ca24e7a65250c3805c726b8a86237cf0a79ae",
+    "reviewerRefreshedReceipt": false,
+    "expectedNextStep": "Parent refreshes current process/dependency pins, test verification and execution receipt before any public fetch. The older receipt does not authorize this changed adapter."
+  },
+  "actionableIssues": []
+}

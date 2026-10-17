@@ -1,0 +1,127 @@
+{
+  "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-komives-lab",
+  "status": "supported",
+  "summaryZh": "Komives Lab 研究非球状蛋白介导的蛋白相互作用。当前体系包括凝血酶与血栓调节蛋白、NFκB、Cullin 5 E3 连接酶及尿激酶与 uPAR，并采用酰胺氢氘交换研究相互作用界面的溶剂可及性。",
+  "researchQuestions": [
+    "哪些参数支配非球状蛋白介导的蛋白质相互作用？"
+  ],
+  "topics": [
+    "蛋白相互作用",
+    "NFκB信号",
+    "凝血与蛋白酶体系"
+  ],
+  "methods": [
+    "酰胺氢氘交换"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-2254b43b5fb824fa",
+      "quote": "Work in the Komives Lab is focused on understanding the parameters that govern protein-protein interactions mediated by non-globular proteins.",
+      "supports": [
+        "identity",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-2254b43b5fb824fa",
+      "quote": "We were the first lab to do amide H/D exchange to understand what happens to the solvent accessibility of the protein-protein interface during protein-protein interactions.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-2254b43b5fb824fa",
+      "quote": "The systems currently under study include the thrombin-thrombomodulin interaction, the NFkB signaling system, the Cullin 5 E3 ligases and the urokinase-uPAR interaction.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-2254b43b5fb824fa",
+      "quote": "Work in the Komives Lab is focused on understanding the parameters that govern protein-protein interactions mediated by non-globular proteins.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:18:56.533440+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:18:56.533440+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:49:25+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具名lab明确待理解的支配参数目标；未将已做H/D交换的历史发现重新标成当前未知。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-2254b43b5fb824fa",
+        "sourceUrl": "https://komiveslab.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:06:17+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            888
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-64c487cb87438fa9",
+        "sourceUrl": "https://bmb.ucsd.edu/faculty",
+        "sourceObservedAt": "2026-10-07T22:53:34+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            37
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-adb12bae50dedef6",
+        "sourceUrl": "https://bmb.ucsd.edu/faculty",
+        "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+        "readScope": "reused identical directory source, introduction range 0:1400 previously read at indices315/326; directory unrelated to entity-local questions",
+        "rangesRead": [],
+        "coverageReasonZh": "复用前述已读同一目录source的范围；部门/相邻实体目录不作本实体问题。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-2254b43b5fb824fa",
+        "quote": "Work in the Komives Lab is focused on understanding the parameters that govern protein-protein interactions mediated by non-globular proteins.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:06:17+00:00",
+        "bodySha256": "d1ed7b9e2db082b19f1e419c51694c4234e5a3ddf320b0890be14bd3ee133baa",
+        "bodySha256UnavailableReason": null
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

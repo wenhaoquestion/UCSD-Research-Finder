@@ -1,0 +1,109 @@
+{
+  "labId": "ucsd-biology-topic-lab-saier",
+  "status": "supported",
+  "summaryZh": "Saier 实验室研究细菌的转录与代谢调控、转运蛋白演化，以及转座子介导的定向突变。实验室采用生化、分子遗传学、生理学和生物信息学方法，并创建和维护转运蛋白分类数据库 TCDB。",
+  "researchQuestions": [
+    "细菌的转录与代谢如何受到调控？",
+    "转运蛋白如何演化？",
+    "转座子介导的定向突变如何发生？"
+  ],
+  "topics": [
+    "细菌转录与代谢调控",
+    "转运蛋白演化",
+    "转座子介导的定向突变",
+    "转运蛋白分类数据库 TCDB"
+  ],
+  "methods": [
+    "生化方法",
+    "分子遗传学方法",
+    "生理学方法",
+    "生物信息学方法"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-a122b7ee4c4707e9",
+      "quote": "Welcome to the Saier Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-a122b7ee4c4707e9",
+      "quote": "Dr. Milton Saier is the head of the laboratory.",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-a122b7ee4c4707e9",
+      "quote": "Our laboratory takes a multidisciplinary approach to science, using biochemical, molecular genetic, physiological, and bioinformatic approaches.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a122b7ee4c4707e9",
+      "quote": "We have three primary research interests, one concerned with transcriptional and metabolic regulation in bacteria, a second with transport protein evolution, and a third with the recently identified process of transposon-mediated directed mutation.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-a122b7ee4c4707e9",
+      "quote": "We also created and now maintain the Transporter Classification DataBase ( TCDB ), which was adopted by the International Union of Biochemistry and Molecular Biology ( IUBMB ) as the primary source of information relating to molecular transport.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "根页明确写有 Welcome to the Saier Lab，并说明 Milton Saier 是实验室负责人；our laboratory 与 three primary research interests 限定为实验室整体研究。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "当前 packet 的实验室科研正文未包含实体局部机构隶属声明；未把网页通用校院导航或 UCSD 域名当作该声明。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+    "科研段落未标明整体更新时间；新闻条目的日期不用于推断整个实验室科研说明的更新时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T04:10:21+00:00",
+  "regainedRootReviews": [
+    {
+      "reviewedAt": "2026-10-16T04:10:21+00:00",
+      "newSourceId": "src-a122b7ee4c4707e9",
+      "captureObservedAt": "2026-10-16T03:47:27+00:00",
+      "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+      "decision": "supported_from_entity_scoped_regained_root",
+      "reason": "欢迎语、负责人句及 three primary research interests 清楚限定同一实验室；摘要仅采用该整体科研段落，未用后续论文新闻外推方向。",
+      "previousReviewPreserved": {
+        "status": "unresolved",
+        "summaryZh": null,
+        "identity": {
+          "status": "uncertain",
+          "entityType": "unconfirmed",
+          "reason": "无可用于确认该实体的正文。"
+        },
+        "affiliation": {
+          "status": "uncertain",
+          "reason": "来源未明确说明该实体的机构隶属。"
+        },
+        "uncertainty": [
+          "无可用研究或身份正文；网址失败或空白不能证明实验室关闭。",
+          "所审阅来源未明确说明研究方法。",
+          "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+        ],
+        "blockers": [
+          "Destination robots_unavailable; packet has no sources."
+        ],
+        "reviewedAt": "2026-10-16T01:49:16+00:00"
+      },
+      "networkRequestsMade": 0
+    }
+  ]
+}

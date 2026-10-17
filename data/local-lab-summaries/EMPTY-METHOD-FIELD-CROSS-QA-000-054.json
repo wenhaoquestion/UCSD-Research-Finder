@@ -1,0 +1,4434 @@
+{
+  "schemaVersion": 1,
+  "state": "complete",
+  "startedAt": "2026-10-16T09:20:38+00:00",
+  "passed": true,
+  "draftSha256": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+  "inventorySha256": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+  "assignedRange": [
+    0,
+    54
+  ],
+  "counts": {
+    "reviewed": 55,
+    "pending": 0,
+    "addDraftRowsReviewed": 7,
+    "unchangedDraftRowsReviewed": 48,
+    "actionableIssues": 0,
+    "proposedMethods": 13,
+    "literalMethodProofs": 10,
+    "packetSourceAssociationsCovered": 186
+  },
+  "structuralVerification": {
+    "records": 55,
+    "frozenRawPacketHashesMatch": true,
+    "packetSourceAssociations": 186,
+    "literalMethodProofs": 10,
+    "allOriginalSourceMetadataAndTextHashesMatch": true,
+    "allProofQuotesWithinDraftReadRanges": true,
+    "allOptionalOldSummaryAndUncertaintyLiteralsMatchCurrentRaw": true,
+    "methodSourceActualBytesAndSidecars": {
+      "src-cdde6c6f4fcec449": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.html",
+        "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "observedAt": "2026-10-16T01:01:11+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-1bc1f8be726ece99": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f7dc5cdbf6899a5a0d3d16334745f6e526d374abf19690c88bca3edb8beecda3.html",
+        "bodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+        "observedAt": "2026-10-16T01:04:12+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-b16a10555171132b": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/377f8ef12a11aaccd9f2d6be38b2376a42c452df870a324f04bee4d07abf59cd.html",
+        "bodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+        "observedAt": "2026-10-16T01:04:48+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-ae7ea5068e21375c": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/ec9f71cf847bac6a6b8641bb603a1f7d7ee58c9d28ab684e700bacc7130a3fde.html",
+        "bodySha256": "9da8bbf29686af920503b62ead58b9defba2e3f894349036b914b520a19ac931",
+        "observedAt": "2026-10-16T01:04:59+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-155a4223751e14dc": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/bf46f56c6e473e33902c0e6780d3f6a1cab9765872180b4539a9afea2ecd7308.html",
+        "bodySha256": "b259b408b02e2843897724a5e666c78cf7c0397923dd6e0fcbf8c75ecc9d3576",
+        "observedAt": "2026-10-16T01:05:00+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-3810a1910ffb6dcc": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/55ab46fcc5c18ae38b67470a2eb502853d14d1f61da86d4dca4726271583f565.html",
+        "bodySha256": "cabf9b1ea06b3df3980592288d2a878e363d68dd195dcd73eb01f0bceeaa6d10",
+        "observedAt": "2026-10-16T02:41:01+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      },
+      "src-cc3ee27d92332efe": {
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c2c6cad479fcc130993596023db0a89c4431147659d8bb09211fdca6ebc9c924.html",
+        "bodySha256": "a90cda8448dfb8a00752666e707eccf09486621ac491486c4b845cf71c655747",
+        "observedAt": "2026-10-16T01:33:22+00:00",
+        "sidecarOriginalUrlTimeHashMatches": true
+      }
+    }
+  },
+  "items": [
+    {
+      "reviewIndex": 0,
+      "labId": "ucsd-anesthesiology-lab-cuomo-lab",
+      "labName": "Cuomo Lab",
+      "reviewedAt": "2026-10-16T09:21:02+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "764a30e79094b0675bb1197368c49fb1c8211a0d243c0af6793b8d8807c69018",
+      "frozenPacketSha256": "33809c677527894b81711984a97352f42ce36dc3c08a80455383a1fc7e084682",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "主文只有风险/治疗/政策/结局方向；具名PI段是经历、声誉与合作，没有可归入本实验室的具体采用方法；排除邻近Head段合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-5c457a11a15c2866",
+          "sourceUrl": "https://sites.google.com/view/cuomo-lab",
+          "sourceObservedAt": "2026-10-16T00:57:39+00:00",
+          "bodySha256": "26525d4c06d56624c2d49c0366fb1c26b8ce5e5c5ab853f52537d50debabb022",
+          "textSha256": "46ad4435d4dbb48335532e10310fb90d3f52f1ee066843bca99b0a525715cc9f",
+          "textCharacters": 415,
+          "rangesActuallyRead": [
+            [
+              0,
+              415
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-b1bb69df335df96d",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "8b7bd6e1968c71b57641ba467a2f3ff5dedecfda1a3cc5662abfbe59bf50facd",
+          "textCharacters": 135,
+          "rangesActuallyRead": [
+            [
+              0,
+              135
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c4eab18c7531198f",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/basic-research-faculty/index.html",
+          "sourceObservedAt": "2026-10-07T22:55:30+00:00",
+          "bodySha256": null,
+          "textSha256": "61d9e37ea7711f967afd1f61e28492f73bf9e7b05312652a31d6c27697b35f0e",
+          "textCharacters": 176,
+          "rangesActuallyRead": [
+            [
+              0,
+              176
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-f666f44c15427f7b",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "f6243503950826a6d37bef5b144e291c22bcd58599c31b1c089fe7cebafe04f0",
+          "textCharacters": 259,
+          "rangesActuallyRead": [
+            [
+              0,
+              259
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-22a85c1d551125ce",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/basic-research-faculty/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:08+00:00",
+          "bodySha256": "3db60d81d3e5e2558b041cc9f2e7b6b2a3795b00c11be6cd80e079a9e00768f2",
+          "textSha256": "987514b83e9152589f2fbfdebe52c39df40b3b6adbb1a4437fcab8dae8799f21",
+          "textCharacters": 15851,
+          "rangesActuallyRead": [
+            [
+              1875,
+              4323
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-59edfb361f0d0560",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "8ca9fe73e7c4bc8c000356e6d68fcc14165bf1473132539c692ea87d52b2e1f4",
+          "textCharacters": 1004,
+          "rangesActuallyRead": [
+            [
+              0,
+              180
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 1,
+      "labId": "ucsd-anesthesiology-lab-kistler-lab",
+      "labName": "Kistler Lab",
+      "reviewedAt": "2026-10-16T09:21:02+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "1ae9071634ebe3ae12d33911cbc3a125fe5050ba5216b870b18bd735c6e4464b",
+      "frozenPacketSha256": "46edb52f70a22a4751d07cd2d5843505fa6ce671e83d88fb57a249c76749a4dc",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "已读短首页全部，研究对象与会议新闻不构成方法；gabexate给药和休克仅出现在单篇标题中，保留空方法合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-919abc5f951f4a0c",
+          "sourceUrl": "https://kistlerlab.wixsite.com/kistlerlab",
+          "sourceObservedAt": "2026-10-16T00:57:41+00:00",
+          "bodySha256": "5c7e504362495ca532d8e93d27cfb70c72f083060f3bbd018be3e0cf880dfb1e",
+          "textSha256": "8c5bf0691aba520d98d1b8e8f1ebc0b9f21fe75cb6ae0705fdd2a61b642bdd45",
+          "textCharacters": 617,
+          "rangesActuallyRead": [
+            [
+              0,
+              617
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-b1bb69df335df96d",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "8b7bd6e1968c71b57641ba467a2f3ff5dedecfda1a3cc5662abfbe59bf50facd",
+          "textCharacters": 135,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 0,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-b1bb69df335df96d",
+          "reusedReadRanges": [
+            [
+              0,
+              135
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f666f44c15427f7b",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "f6243503950826a6d37bef5b144e291c22bcd58599c31b1c089fe7cebafe04f0",
+          "textCharacters": 259,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 0,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-f666f44c15427f7b",
+          "reusedReadRanges": [
+            [
+              0,
+              259
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-59edfb361f0d0560",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "8ca9fe73e7c4bc8c000356e6d68fcc14165bf1473132539c692ea87d52b2e1f4",
+          "textCharacters": 1004,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 0,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-59edfb361f0d0560",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 2,
+      "labId": "ucsd-anesthesiology-lab-shubayev-lab",
+      "labName": "Shubayev Lab",
+      "reviewedAt": "2026-10-16T09:21:02+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "69820dd41fe8a96ed33e46cbdeb6032e0c879f25fefd97814252b20b4c0ae5e3",
+      "frozenPacketSha256": "144b16e1e8fb586cb5b89058cbbdd270c4623a1c0f7ddb322dc09e00da9db621",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整研究介绍中的algorithm为再生机制隐喻，MMP/屏障等为研究对象；没有具体实验技术，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-f666f44c15427f7b",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "f6243503950826a6d37bef5b144e291c22bcd58599c31b1c089fe7cebafe04f0",
+          "textCharacters": 259,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 0,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-f666f44c15427f7b",
+          "reusedReadRanges": [
+            [
+              0,
+              259
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bc4d28835d54a851",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/shubayev-research-laboratory/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:13+00:00",
+          "bodySha256": "fd70f54a0cd24c20d8038b445236d30e80e9641f720feeeda53f53598a5d1f3a",
+          "textSha256": "2cd00de83c9cfc5f945b1621db02a2f454fbe8724c2c2413e2737655d7e27d91",
+          "textCharacters": 1896,
+          "rangesActuallyRead": [
+            [
+              0,
+              1896
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-59edfb361f0d0560",
+          "sourceUrl": "https://anesthesia.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "a0bbaa821ecd5eff7d3b3b61a304927f0da8dbe5b4774680febafbcc4a30e20b",
+          "textSha256": "8ca9fe73e7c4bc8c000356e6d68fcc14165bf1473132539c692ea87d52b2e1f4",
+          "textCharacters": 1004,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 0,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-59edfb361f0d0560",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 3,
+      "labId": "ucsd-lab-from-faculty-sites-ucsd-edu-mind-lab",
+      "labName": "Adebowale Lab",
+      "reviewedAt": "2026-10-16T09:21:02+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "2ba287efdc59cd7c7a2069cfa610d858236ab0485133f400795780bff59d7dfa",
+      "frozenPacketSha256": "036e453b6e697f016e0c9ba79062c66003c1d2bdd64b9b27fbf3d8a402a949fa",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "实验室主页与具名官方档案描述免疫机械线索和治疗开发目标，未明确采用技术；工程设计principles是目标框架，个人训练和部门名单不补方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-2ca08ccd09b83362",
+          "sourceUrl": "https://sites.ucsd.edu/mind-lab/",
+          "sourceObservedAt": "2026-10-16T00:59:32+00:00",
+          "bodySha256": "9dac49b29c4d631c3089edd838b07807c37828612d900df88bf61a8b0928f127",
+          "textSha256": "d3a1e6001d7898c85319a457d07a86531dc1c555c1b022965dfb370454078c60",
+          "textCharacters": 874,
+          "rangesActuallyRead": [
+            [
+              0,
+              874
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6e91147ce9a815b6",
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "cb036728989d46aa84e3e50473e1b137d0e0e24196d7fb2e0899af29a97f71e4",
+          "textCharacters": 84,
+          "rangesActuallyRead": [
+            [
+              0,
+              84
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-eaaace022526cfec",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/kolade-adebowale",
+          "sourceObservedAt": "2026-10-16T00:57:53+00:00",
+          "bodySha256": "189e5c942aadc9bad2278be57ca37204fdc02c1e8712362bd7dc580c84867d2d",
+          "textSha256": "70057ef6b46dbed7bffcb49579913d66ebf837178fc3265b4f2812fc4821f6e8",
+          "textCharacters": 1091,
+          "rangesActuallyRead": [
+            [
+              0,
+              1091
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-10695595490a141e",
+          "sourceUrl": "https://be.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:23+00:00",
+          "bodySha256": "1f62c2b41b7d970d7e0f39679c2374c11aea40db436afda4e14e42e07afcd4e3",
+          "textSha256": "60c0a6d68364b7cfb626aee5bb8c63b6ab2ec6f2f73d0556450d1d4e77956cf2",
+          "textCharacters": 5021,
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-b09b9e12988e8b05",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:43+00:00",
+          "bodySha256": "56b524196302232556f43fdc60ad7f706ad10c47ef96c08f06d8ca7c36a3f5df",
+          "textSha256": "61b703484a3591fe51e7c7e27a4f148e30c448ee67c6b85b599719a63bb48620",
+          "textCharacters": 323,
+          "rangesActuallyRead": [
+            [
+              0,
+              323
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-041d4227b74be63a",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/research/centers-institutes",
+          "sourceObservedAt": "2026-10-16T00:59:30+00:00",
+          "bodySha256": "82e9f8eb8402f8ffede9c3ba50c8d570c5ad52752a5f9572a4e4331e8105bf95",
+          "textSha256": "e581898782d97ea051f53ee172b2826a0ab65b4849ab1eb0ff7d929cf1ccf56f",
+          "textCharacters": 1629,
+          "rangesActuallyRead": [
+            [
+              0,
+              1629
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-619879218642aac1",
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+          "bodySha256": "d3d93da81ca169354da9049aa878ba00e2fe4e57c3f77215a80954bad5408957",
+          "textSha256": "ec5c1dc0ca8f1211776af4f948cf795cc29437f07add3aadd90909650f8ebddf",
+          "textCharacters": 18000,
+          "rangesActuallyRead": [
+            [
+              3731,
+              4467
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 4,
+      "labId": "ucsd-bioengineering-smarr-lab",
+      "labName": "Smarr Lab",
+      "reviewedAt": "2026-10-16T09:21:02+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "官方档案所述负责人研究：生物系统时间序列分析",
+        "负责人 TemPredict 项目：整合可穿戴设备数据与每日症状报告"
+      ],
+      "frozenRawSha256": "6a3bd9b5a494c33577f96e509871e4c9693a11623db3df6e0a4faba6f4bcd343",
+      "frozenPacketSha256": "e5a254d5962c60348d811d00c4ede38d26f4b5e40fee591ad66e5d52988883a8",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "两个方法的主体清楚分为负责人时间序列研究及TemPredict数据整合；完整官方档案支持，原Currently未被译成2026正在用，uncertainty与方法分界一致。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-e30fa826c042d48e",
+          "sourceUrl": "https://smarr.eng.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T00:57:53+00:00",
+          "bodySha256": "3e9d04e355d294b8a9a4e6ca46f7588e4fdd2832bef6edcd10ca07aae394796c",
+          "textSha256": "2c4c056c5bdc480f575e27d21e1259450846eec41aa590671bef4cf34ac245ec",
+          "textCharacters": 1626,
+          "rangesActuallyRead": [
+            [
+              0,
+              1626
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-439bceb09c59f5a7",
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "d4dbca4eaa123187f34f0b437fdbb21b9ee5c229c71c9430a7054af27acaefea",
+          "textCharacters": 74,
+          "rangesActuallyRead": [
+            [
+              0,
+              74
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-619879218642aac1",
+          "sourceUrl": "https://bioengineering.ucsd.edu/research-focus",
+          "sourceObservedAt": "2026-10-16T02:14:30+00:00",
+          "bodySha256": "d3d93da81ca169354da9049aa878ba00e2fe4e57c3f77215a80954bad5408957",
+          "textSha256": "ec5c1dc0ca8f1211776af4f948cf795cc29437f07add3aadd90909650f8ebddf",
+          "textCharacters": 18000,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 3,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-619879218642aac1",
+          "reusedReadRanges": [
+            [
+              3731,
+              4467
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-5db1745119f15ed7",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "sourceObservedAt": "2026-10-02T22:43:17+00:00",
+          "bodySha256": null,
+          "textSha256": "bd20dbb634e07523835ea284eadd8e94a9fa0e5e7dfda4723de997d6fbf2c530",
+          "textCharacters": 403,
+          "rangesActuallyRead": [
+            [
+              0,
+              403
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-cdde6c6f4fcec449",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+          "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+          "textSha256": "fc42a53306cd24305ffdd4ce676c57a2a21544014e21b323ba72ae8887c74648",
+          "textCharacters": 847,
+          "rangesActuallyRead": [
+            [
+              0,
+              847
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 5,
+      "labId": "ucsd-biology-topic-lab-brenda-bloodgood",
+      "labName": "Brenda Bloodgood Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "8206fab5104bace5f880fdc8603ea7590d54a60846a1de2b0b659b39ef3667d9",
+      "frozenPacketSha256": "3f367755e6b262ed744587c6c6eacf25ec38d395cff4bcd6066b7dc82e2dbf5f",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "全文仅经验依赖可塑性与基因表达机制目标，未将生物过程当测量/操纵技术；保留空方法合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-019208420df96792",
+          "sourceUrl": "https://bloodgoodlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:03:54+00:00",
+          "bodySha256": "bc0e3c8e86cdbcf1dcdd930c1d8217bd47da1ceb3f4fc7bc30c96ed5195a3dfa",
+          "textSha256": "6d8b7e35aba94cd03f0cf6397cb25f112b2836a1d7e952c7238fed136b362cf1",
+          "textCharacters": 1191,
+          "rangesActuallyRead": [
+            [
+              0,
+              1191
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 6,
+      "labId": "ucsd-biology-topic-lab-daniel-hollern",
+      "labName": "Daniel Hollern Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "6d444318b11ea62021686f0702d237795bbf4b0f826a344dc37479c059c44374",
+      "frozenPacketSha256": "a54779ee4d0ffdb3f9d3f50283eff6042febd28fe4b59af4108919b2a04adb3f",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "按现personal_research_site主体审全文，两个合并学科与未说明类型的innovative models不提供具体采用方式；未借训练或免疫发现反推实验。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-a046cf1b696cd1ae",
+          "sourceUrl": "https://www.salk.edu/scientist/daniel-hollern/",
+          "sourceObservedAt": "2026-10-16T01:03:58+00:00",
+          "bodySha256": "619447a8e7ce88a1abc10ab13b3685558048779bc124f107939f735206eb2548",
+          "textSha256": "b737ffcdceaf27e8047bf89cbda20fd60ba498efde83e1dfeac01cace1276eab",
+          "textCharacters": 2570,
+          "rangesActuallyRead": [
+            [
+              0,
+              2570
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 7,
+      "labId": "ucsd-biology-topic-lab-david",
+      "labName": "David Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "cae7dfccabfdb8405e2f9b26d0b9f3f4ee77657719f4ae97e279cde9346e8753",
+      "frozenPacketSha256": "f687f10fc4c6a466dc6bdb5162f0841ba54c3f3ef9b40a59df77c7dcf91580d2",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "Our laboratory段落给干扰素机制/先天免疫目标，临床广泛应用为背景；两协议源同正文且各自真实时间保留，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-7cd7f2ac19b736e9",
+          "sourceUrl": "https://labs.biology.ucsd.edu/david/",
+          "sourceObservedAt": "2026-10-16T00:59:39+00:00",
+          "bodySha256": "c0cb07cef6a1901725705189190848ad7e3137df765d5ea0e113798f95e43b38",
+          "textSha256": "9ecf349eb95b3fc1829e069d0bd934533e990eca921ab44e4579032311abc913",
+          "textCharacters": 1446,
+          "rangesActuallyRead": [
+            [
+              0,
+              1446
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-43dc19aabde0173f",
+          "sourceUrl": "http://labs.biology.ucsd.edu/david/",
+          "sourceObservedAt": "2026-10-16T04:21:41+00:00",
+          "bodySha256": "c0cb07cef6a1901725705189190848ad7e3137df765d5ea0e113798f95e43b38",
+          "textSha256": "9ecf349eb95b3fc1829e069d0bd934533e990eca921ab44e4579032311abc913",
+          "textCharacters": 1446,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 7,
+          "identicalTextSourceId": "src-7cd7f2ac19b736e9",
+          "reusedReadRanges": [
+            [
+              0,
+              1446
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 8,
+      "labId": "ucsd-biology-topic-lab-estelle",
+      "labName": "Estelle Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "7c6394fd3ce1a17a8e622fb067506398449e76f9f54d721ed2fac565c5011014",
+      "frozenPacketSha256": "094ee733981053cdd433544c1bb9edba7a0418b34af2008a1bdaf347956ae7ea",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "About Us全文仅生长素通路研究及联系信息；三个同体提取不增加方法证据。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-5acec1022ba6b995",
+          "sourceUrl": "https://labs.biology.ucsd.edu/estelle/",
+          "sourceObservedAt": "2026-10-16T00:59:37+00:00",
+          "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+          "textSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+          "textCharacters": 913,
+          "rangesActuallyRead": [
+            [
+              0,
+              913
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-a5b1b3198825310e",
+          "sourceUrl": "https://labs.biology.ucsd.edu/estelle/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:03+00:00",
+          "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+          "textSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+          "textCharacters": 913,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 8,
+          "identicalTextSourceId": "src-5acec1022ba6b995",
+          "reusedReadRanges": [
+            [
+              0,
+              913
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-9b3c265e2a6b5017",
+          "sourceUrl": "http://labs.biology.ucsd.edu/estelle/",
+          "sourceObservedAt": "2026-10-16T04:21:45+00:00",
+          "bodySha256": "4235089686904b16a4715116e430c46c5866421130de7fa50e137d5cc8e7026b",
+          "textSha256": "4e23f7a81d6ecb160d7ce74ca26ff25f6ef3d2ef3224dd45fcf91c397b377632",
+          "textCharacters": 913,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 8,
+          "identicalTextSourceId": "src-5acec1022ba6b995",
+          "reusedReadRanges": [
+            [
+              0,
+              913
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 9,
+      "labId": "ucsd-biology-topic-lab-feng-lab",
+      "labName": "Feng Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "a1c5a9a230f821d9598c5f31f016aa1d5bea06900586ffb5a9435a74a384f181",
+      "frozenPacketSha256": "df2722b331f5a10ab5f89cf168fe5141d3f1713ea39f9f6d5e9a3cb3f5340ccd",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "研究介绍的肝癌分子矛盾为目标；后续Featured Work是结果/潜力摘要，单细胞转录组等为论文题名，不推广研究方法合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-80534bf7f9648252",
+          "sourceUrl": "https://sites.google.com/ucsd.edu/fenglivercancerresearch/home",
+          "sourceObservedAt": "2026-10-16T01:04:01+00:00",
+          "bodySha256": "76765c7514c2ddd73356c109c3094d35feabbd1cf236fbfb096b4c5bd0417604",
+          "textSha256": "d11eec1cea556c91fa9a6b69b2d7b032beac2dfd1cd43804d36f31bf2f2fe3c7",
+          "textCharacters": 4148,
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 10,
+      "labId": "ucsd-biology-topic-lab-goldrath",
+      "labName": "Goldrath Lab",
+      "reviewedAt": "2026-10-16T09:21:29+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "e3c5af7c547dd91f8c30e293872948ce80f7c75646c1aecdea8fedec253bb61d",
+      "frozenPacketSha256": "43a8b5d8aae69c394393bcaaf90d2c11e89a223433e745b732eef764b8060220",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "已读主研究段、官方详细段与文献区边界，CD8生物过程及疫苗背景没有明确采用技术；文献标题不补方法，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-acffd3486037cd5c",
+          "sourceUrl": "https://goldrathlab.com/",
+          "sourceObservedAt": "2026-10-16T00:59:53+00:00",
+          "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "textSha256": "6864f8249c207b4d0a2d187825724c8b7ec28e50b74b1a2f6e89a5b89fbd83c5",
+          "textCharacters": 1219,
+          "rangesActuallyRead": [
+            [
+              0,
+              1219
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-97b5ecab21a7d35a",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/agoldrath",
+          "sourceObservedAt": "2026-10-16T01:07:48+00:00",
+          "bodySha256": "658991736f48e6c6c70657d30838aa76dbdf2c1bf26155706ca6d02254c1f6b5",
+          "textSha256": "38414930b37b4cbfdf663d5aae11244d49fa2aaa319640b86d925f676aca240f",
+          "textCharacters": 4300,
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6cf67ff1ffd79d15",
+          "sourceUrl": "https://goldrathlab.com/",
+          "sourceObservedAt": "2026-10-16T04:56:17+00:00",
+          "bodySha256": "7414a2497b82e92f26d7fe2289596a32e5402eb60ce43faad80ed0c941140e46",
+          "textSha256": "6864f8249c207b4d0a2d187825724c8b7ec28e50b74b1a2f6e89a5b89fbd83c5",
+          "textCharacters": 1219,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 10,
+          "identicalTextSourceId": "src-acffd3486037cd5c",
+          "reusedReadRanges": [
+            [
+              0,
+              1219
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 11,
+      "labId": "ucsd-biology-topic-lab-gulcin-pekkurnaz",
+      "labName": "Gulcin Pekkurnaz Lab",
+      "reviewedAt": "2026-10-16T09:21:40+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "58c1eb2fe88f3074138adaa057476b41b545e9a33a7f278055ff8be0af60113e",
+      "frozenPacketSha256": "48d4bdd5957d087b6e8083f6f149c83666cead71642b40589b9c7cf962ad2726",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整短主文研究代谢/线粒体过程，未列测量或干预操作；不把trafficking等对象变成方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-8197a1becbe490d6",
+          "sourceUrl": "https://www.pekkurnazlab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:03+00:00",
+          "bodySha256": "07f9161da8923808e95509d7fd06ca98d3f438f8bfbcca4beb0d919d28dafc3a",
+          "textSha256": "e496deec8ae413649897aa1b0b254c54ab238b178cd2cd0ead6a89c537d693e3",
+          "textCharacters": 524,
+          "rangesActuallyRead": [
+            [
+              0,
+              524
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 12,
+      "labId": "ucsd-biology-topic-lab-isaac-alex-chaim",
+      "labName": "Isaac (Alex) Chaim Lab",
+      "reviewedAt": "2026-10-16T09:21:40+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "6fe88c1815606973de8cf272f62406f38f6cdf2898bf4298016d86537ed33db5",
+      "frozenPacketSha256": "dd108d4e1e1c79ecc24eb8783f7eb5a711ba082ca9f34ad9edef9bb5cb672616",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整短主页仅DNA/RNA机制目标；Wet/Dry Lab是房间标签，unchanged解释具体且合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-eda382abb2e1d6f1",
+          "sourceUrl": "https://chaimlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:05+00:00",
+          "bodySha256": "aaca6d0ef9816ba851795702b0dc85281e32c0b2f9ebb198eeb0d260e1162ee3",
+          "textSha256": "10cf02e67a9287d83d1198b1bba573eec3dd9963ce6cdcf9831586f2022777e8",
+          "textCharacters": 598,
+          "rangesActuallyRead": [
+            [
+              0,
+              598
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 13,
+      "labId": "ucsd-biology-topic-lab-lena-mueller",
+      "labName": "Lena Mueller Lab",
+      "reviewedAt": "2026-10-16T09:21:40+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "5ca5d0653ac703def8e02284258655e08318e92caf0aa740317e46c1d871a768",
+      "frozenPacketSha256": "bceb0696bda057c9fe872ac95d9421708fad32423c54f85c549aa8f5a37d2503",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整短主页明确interested in兴趣领域；分子生物学/遗传学未被叙述为采用技术，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-cf99be5afd700442",
+          "sourceUrl": "https://mueller.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:14+00:00",
+          "bodySha256": "770d4eb3cceb39cd187238846fb5e62113e1b7a9ae904590b9d11b2789a6a3fa",
+          "textSha256": "5c1c7379600ed17063bb6399333669004cde8a3192f442096a68dfa20c50dafb",
+          "textCharacters": 427,
+          "rangesActuallyRead": [
+            [
+              0,
+              427
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 14,
+      "labId": "ucsd-biology-topic-lab-leutgeb",
+      "labName": "Leutgeb Lab",
+      "reviewedAt": "2026-10-16T09:21:40+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "2025年所述工作：分析缺失特定输入时的CA3网络活动，并用计算模型研究齿状回相关序列编码",
+        "2021年所述工作：实验性改变海马和内嗅皮层的局部theta频率，考察空间工作记忆任务",
+        "2023年所述工作：在特定海马神经元群体中表达人突变APP"
+      ],
+      "frozenRawSha256": "76c3f0454a343591b7f42034bad23a87fa1ee25c9eecb040e8601c31c0069609",
+      "frozenPacketSha256": "339338e3c2fe55c1d94ab34d8f341f517a72f31ab5221f3056d22d73d8263303",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "独立读完整8136字页面，后三段为具名年份研究的实际分析/建模/实验叙述，超出论文标题；3方法都忠实保留2021/2023/2025范围，未增光遗传、品系或因果结果。摘要及替换未知限制与该范围一致。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-1bc1f8be726ece99",
+          "sourceUrl": "https://www.leutgeblabs.com/",
+          "sourceObservedAt": "2026-10-16T01:04:12+00:00",
+          "bodySha256": "75319327c613a4e235fdd17fcfc38489ba65d229412d134782e5bc23c68f5c4b",
+          "textSha256": "33c19bab2cdcdc7dde2d3810ac4f5f7c1870cecab397b7def4aa82591cc87c3a",
+          "textCharacters": 8136,
+          "rangesActuallyRead": [
+            [
+              0,
+              8136
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 15,
+      "labId": "ucsd-biology-topic-lab-mayfield",
+      "labName": "Mayfield Lab",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "56e2a4024e34e1cddbb02209095ae1cca33ac51338cfe59962447e0f6c4b737d",
+      "frozenPacketSha256": "924f2211062485d240699a578a294e2a0ab826ad901ea2a21c9fe74cec3943dd",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "已读两种完整提取，藻类生物技术生产对象未给制备/工程程序；历史重捕获同体，无须借主题补方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-611ef351583a53d2",
+          "sourceUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:04+00:00",
+          "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+          "textSha256": "71eb583c52c795456534d34f471275740e65b4a5555776cfd53d06dedf97fc83",
+          "textCharacters": 307,
+          "rangesActuallyRead": [
+            [
+              0,
+              307
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-a62b5b169b3e0c76",
+          "sourceUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:04+00:00",
+          "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+          "textSha256": "dd901c7401f5c7ac91061f664392c34ece6633674b0fa1a94ab0bf4d9cfb246d",
+          "textCharacters": 571,
+          "rangesActuallyRead": [
+            [
+              0,
+              571
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c168f23baafbc1ee",
+          "sourceUrl": "https://algae.ucsd.edu/mayfield/index.html",
+          "sourceObservedAt": "2026-10-16T04:21:59+00:00",
+          "bodySha256": "d855c9197bb6251cafd0ee5e328f4031a97e5e8bbaf2fee060313869628f1a4e",
+          "textSha256": "71eb583c52c795456534d34f471275740e65b4a5555776cfd53d06dedf97fc83",
+          "textCharacters": 307,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 15,
+          "identicalTextSourceId": "src-611ef351583a53d2",
+          "reusedReadRanges": [
+            [
+              0,
+              307
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 16,
+      "labId": "ucsd-biology-topic-lab-monique-smith",
+      "labName": "Smith Lab",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "82c551150e1062cc69d414d9dfbd19bee9ac0426972c4496e4f26823303dc20b",
+      "frozenPacketSha256": "7287a10a387de1ace1da895ddc4116300bc752125f8a4e1b8c8e988cac24a9c2",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "已读完整主文与新闻，具名小鼠项目仅题名而非操作叙述；病理模型未细化，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-017c17cef7f35b38",
+          "sourceUrl": "https://smithlab.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:17+00:00",
+          "bodySha256": "eb82307f18065dac214bd8a351b34aef5e78f81b7654946b00c4ec27a6b0d1de",
+          "textSha256": "433b368c024144cf041bf4128cfa03a53f5e838c350eb7c6ded53573ef42c1ce",
+          "textCharacters": 2031,
+          "rangesActuallyRead": [
+            [
+              0,
+              2031
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e123fdf30bd18815",
+          "sourceUrl": "https://profiles.ucsd.edu/monique.smith",
+          "sourceObservedAt": "2026-10-07T22:10:47+00:00",
+          "bodySha256": null,
+          "textSha256": "190cd89d7b94ca6dfd3044ab2b750f63db44db0c7247130026d7808b03a4371a",
+          "textCharacters": 42,
+          "rangesActuallyRead": [
+            [
+              0,
+              42
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 17,
+      "labId": "ucsd-biology-topic-lab-nguyenqvu",
+      "labName": "NguyenQVu Lab",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "df1d2dd6c576fe45886298ef8030d6655da5c4fd8a344435664517e12e2a0b32",
+      "frozenPacketSha256": "0ba0436e14b5bab78a7f0905fc55f5c66cdf0ba0c39e8f24b44d47910695fff3",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "短全文提出细胞核定位问题，Tools只有导航，不构成方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-52483458ca14d48b",
+          "sourceUrl": "https://nguyenlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "bodySha256": "1a51be508375be763ed260de317280cf1abeb365d3bfe3b93646a57938788970",
+          "textSha256": "f3b3a8a3d2f3d3d38a342a35da8789c3d46c7e794b639781a1075076cbc9b42b",
+          "textCharacters": 794,
+          "rangesActuallyRead": [
+            [
+              0,
+              794
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 18,
+      "labId": "ucsd-biology-topic-lab-nicola-allen",
+      "labName": "Nicola Allen Lab",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "3b9d3d92ecfd824ae3745fa7c123a6c11d7cfcf959fd9cfca5429d6f8070271a",
+      "frozenPacketSha256": "92a8bc83d9b116432f6e2d52003c79bac65905a4d296afa349c619080e586f94",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整主文中的基因表达/分泌为生物结果与机制，没有测量/操纵方式，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-c68fced39a71fbf9",
+          "sourceUrl": "https://allen.salk.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:18+00:00",
+          "bodySha256": "9b3a414a1f78b868515e3613b9c7f3a2a706c72d92dee9690d89c2127b34fea9",
+          "textSha256": "b7bbe2b9517f4c0d88f91003c904410e9fcf9bfe8cbeabd7bcb693813ae34656",
+          "textCharacters": 2211,
+          "rangesActuallyRead": [
+            [
+              0,
+              2211
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 19,
+      "labId": "ucsd-biology-topic-lab-patrick-rohner",
+      "labName": "Patrick Rohner Lab",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "b8621fe5eb70272bf03fa880b146561ad0c6c80abf47192777ac2b12f3b0b57a",
+      "frozenPacketSha256": "76e62dffe708d67929a3ed95d0e537005dd6c6fcff72abd873e03dc7133a05a3",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "主文整合concepts and approaches from三个学科，未命名实际实验或分析方式；保持学科范围与方法字段区分合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-81d426a858c0f8ab",
+          "sourceUrl": "https://rohnerlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "bodySha256": "acbbf2e73b93fa11cb73cc5c3e255545c7feedae48f926014d04243a3c1ac25c",
+          "textSha256": "9bb9ebb0f69689ba529a08f69a965bf2e7d45cf689cbf9a8fd52341ec30b68a5",
+          "textCharacters": 999,
+          "rangesActuallyRead": [
+            [
+              0,
+              999
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 20,
+      "labId": "ucsd-biology-topic-lab-ryan-hibbs",
+      "labName": "Ryan E. Hibbs — lab website",
+      "reviewedAt": "2026-10-16T09:21:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "9f76aa12c960e3aafdeb8a62886c60c777491dd999ea29292acd8d30d8d41e80",
+      "frozenPacketSha256": "a089770d00b3ebe3a7ea6fae2bdca1cec5aa07bc488884c80cfdb677dd7065f1",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整主页/官方档案只列学科和受体机制，结构标题不证明冷冻电镜或其他技术，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-e8353a013d147c01",
+          "sourceUrl": "https://sites.google.com/view/hibbslab/",
+          "sourceObservedAt": "2026-10-16T01:06:22+00:00",
+          "bodySha256": "81d5a4163106000196b56f37e32a3fa61869af953e329e90230b8adfb5a7a538",
+          "textSha256": "17ad11e1b59a583f3ad8ec28e05fa8683f6c1085bb4da86a3bddefc62d660338",
+          "textCharacters": 370,
+          "rangesActuallyRead": [
+            [
+              0,
+              370
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-744914cdb3d6d656",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/ryan-hibbs.html",
+          "sourceObservedAt": "2026-10-02T22:46:04+00:00",
+          "bodySha256": null,
+          "textSha256": "e5f0cd934adb9b6b3c72d314ed52d75d72908958ccb4274fa6fbf8a8ca1dc4f1",
+          "textCharacters": 53,
+          "rangesActuallyRead": [
+            [
+              0,
+              53
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-63986a25afc7d430",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/ryan-hibbs.html",
+          "sourceObservedAt": "2026-10-16T00:59:33+00:00",
+          "bodySha256": "830edaccf1c610e1d7aa9b472c6039ce57b9af81e7a6b246c73c4e3a114022b2",
+          "textSha256": "7df6062ec7e03eb03c9cc87760b6f03854df67f57f0c41966004374dad31ef73",
+          "textCharacters": 2220,
+          "rangesActuallyRead": [
+            [
+              0,
+              2220
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 21,
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "labName": "Scott Biering Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "65b9875842b2f195bce2495502ad160acc7518b139129f97477f5d4202c12a81",
+      "frozenPacketSha256": "55117b6adb90f51e901de8e40038c420598290a310bcd090dcfa670a52015d04",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整短主页只有病毒致病机制及疫苗开发背景困难，没有实验方案，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-7f324059177c4a9a",
+          "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T03:57:30+00:00",
+          "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+          "textSha256": "30b858f227898b56301243df5206e78ad63d869eaf7b9c57178678c89fdecfc9",
+          "textCharacters": 556,
+          "rangesActuallyRead": [
+            [
+              0,
+              556
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 22,
+      "labId": "ucsd-biology-topic-lab-shermin-de-silva",
+      "labName": "Shermin de Silva Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "e43c2986d488ca08f0cf17ae3d3848c84ef6f935306b13bd0376f39db81bbc29",
+      "frozenPacketSha256": "7068e797290b5808c007082311bcdb97885a3b8a42af095665b8ce1b764ff222",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整主页只称多学科approaches，未具体列观察/调查/建模方式；合作关系与生态主题不补方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-12cadc916ea5ba0f",
+          "sourceUrl": "https://www.elephantresearch.net/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "bodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7",
+          "textSha256": "cef07afe47ad02dda40f0d62acdf19228d0c83698938815be0177e8201f4dc0f",
+          "textCharacters": 1602,
+          "rangesActuallyRead": [
+            [
+              0,
+              1602
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-5d4c5902f8d9de9f",
+          "sourceUrl": "https://www.elephantresearch.net/index.html",
+          "sourceObservedAt": "2026-10-16T02:40:12+00:00",
+          "bodySha256": "3cda5b42306a7a86ace3ad0130ca1b29d8af37d333d62cb7ab3d0e39269e29e7",
+          "textSha256": "cef07afe47ad02dda40f0d62acdf19228d0c83698938815be0177e8201f4dc0f",
+          "textCharacters": 1602,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "reusedFromReviewIndex": 22,
+          "identicalTextSourceId": "src-12cadc916ea5ba0f",
+          "reusedReadRanges": [
+            [
+              0,
+              1602
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 23,
+      "labId": "ucsd-biology-topic-lab-shurin",
+      "labName": "Shurin Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "426ba5eb126a08a53174039d2c9255d1c740180aeda129e604e22e2ae1ebd279",
+      "frozenPacketSha256": "6a4fa64ed8e7691edda9982c71c3c06359f9c22165ef59271b96e4fa61867435",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整研究介绍研究水生态变异和韧性，缺具体采样或实验叙述，unchanged理由适当。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-c7f42f7bdeea0e21",
+          "sourceUrl": "https://shurinlab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:43+00:00",
+          "bodySha256": "62f72a0c629fec8bcaec74011c314d6b9e7bfc446edd6ca027de23c4ef7f201d",
+          "textSha256": "0163f49d1f30a3f533dbb2ecde2454ab6726aed54a64941708c48c7875ccb377",
+          "textCharacters": 1170,
+          "rangesActuallyRead": [
+            [
+              0,
+              1170
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 24,
+      "labId": "ucsd-biology-topic-lab-spitzer",
+      "labName": "Spitzer Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "ccd2f4e6579a6cbfcec36e9bbf099929edfa54279844fb6895435cb37d26ad9f",
+      "frozenPacketSha256": "8f2317ff3931b6ba503e7e8bfa0ba350e601e02472996f208058139ed3c1b920",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "短项目文字中的重复药物暴露是结果陈述，未指明团队如何实施或其研究模型；不推断药物处理/电生理，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-d064f0b5261fc28f",
+          "sourceUrl": "https://labs.biology.ucsd.edu/spitzer/",
+          "sourceObservedAt": "2026-10-16T00:59:54+00:00",
+          "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "textCharacters": 0,
+          "rangesActuallyRead": [
+            [
+              0,
+              0
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-f79eb7d2691acb9e",
+          "sourceUrl": "https://nickspitzerlab.org/",
+          "sourceObservedAt": "2026-10-16T03:18:26+00:00",
+          "bodySha256": "b0c83164b9c0ced68f7537d02753f1c3072441b3c52a84b6d5db6bacd94ed835",
+          "textSha256": "3867fe5cd7b58fd1260f9df344998717cbf95b1fdc615aaf182dca84d15d1c70",
+          "textCharacters": 1954,
+          "rangesActuallyRead": [
+            [
+              0,
+              1954
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e0224176cdecd4ab",
+          "sourceUrl": "http://labs.biology.ucsd.edu/spitzer/",
+          "sourceObservedAt": "2026-10-16T04:56:26+00:00",
+          "bodySha256": "d2bf0b44a3e77666df4f903c873468e9c93bff09f5ffc7bd0250d6f5480894ff",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "textCharacters": 0,
+          "rangesActuallyRead": [],
+          "disposition": "empty_packet_text_checked",
+          "reasonZh": "当前来源可见正文为空；已核标题/元数据，不将空正文视为方法证据。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 25,
+      "labId": "ucsd-biology-topic-lab-stacey-glasgow",
+      "labName": "Stacey Glasgow Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "fc2bff8fcbfa835b93a6db376b61ef120996f50f09370ec249e137b4549f48ec",
+      "frozenPacketSha256": "05cc4daf6f8debd9d41fb2248c3bcee47f5ffed43d706a861a4dd8271b4070b1",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整研究介绍的染色质/转录因子是待解对象，新闻及文献标题未当作方法，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-cab0e267e1af42e7",
+          "sourceUrl": "https://www.theglasgowlab.com/",
+          "sourceObservedAt": "2026-10-16T01:04:40+00:00",
+          "bodySha256": "a972302ac2ad1c1c28dd818e4708b36954277b82b65c1d91f6491f322be66ac6",
+          "textSha256": "ff8f35dc78d31450a8236ce56f20a69614d965a54660e4cf294a6d9979392638",
+          "textCharacters": 2733,
+          "rangesActuallyRead": [
+            [
+              0,
+              2733
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 26,
+      "labId": "ucsd-biology-topic-lab-zhang-dong-er",
+      "labName": "Dong-Er Zhang Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "e81b149e01021e439d41b33d8c4280afe7e8cf79bd9ddec167bb269e83bc8ac1",
+      "frozenPacketSha256": "8e5d8facab55160da2abee48577a07cb1f36ee998a92fc36fdaea0b226c295e2",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整Overview与文献区边界清楚，RNA加工/蛋白修饰为对象，文献中的小鼠/突变不泛化为团队技术。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-d94271561f974d5a",
+          "sourceUrl": "https://zhanglab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:47+00:00",
+          "bodySha256": "7f295d8aec52059aeb67772964ca704180a60515d6688f79e25350811ef95a40",
+          "textSha256": "5723090d290fc024d4e2b1a32cf353e6adf660639ed9209f670879480b5b4e99",
+          "textCharacters": 3123,
+          "rangesActuallyRead": [
+            [
+              0,
+              3123
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fe66b0f07f0363c3",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "557b6ee17fbcc056c25ad89be8a05e91a75a55cc3b2c69e85d2b670c952c3889",
+          "textCharacters": 363,
+          "rangesActuallyRead": [
+            [
+              0,
+              363
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 27,
+      "labId": "ucsd-biology-topic-lab-zhao",
+      "labName": "Zhao Lab",
+      "reviewedAt": "2026-10-16T09:22:14+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "73d832c532613a348fb72da989a5ab2c59a133227ad466fda47f5e0ac73372e0",
+      "frozenPacketSha256": "10cccc07cbd44a0d14a789c0b5ea9a0be5d85e5fb52f8a9af909b6da25d17182",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "短正文技术开发未命名具体技术，保留空字段合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-570789932f06859f",
+          "sourceUrl": "https://zhaolab.biosci.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:47+00:00",
+          "bodySha256": "137c6762456a19a2ada381f7cdc9b2da81f81a8d9236e144af84ac78264d0dfc",
+          "textSha256": "5f3f5c30b9e6dd91ce8f2a6c736a9927384b40c0ee8fda3dfa624325b20ed09e",
+          "textCharacters": 182,
+          "rangesActuallyRead": [
+            [
+              0,
+              182
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 28,
+      "labId": "ucsd-cellular-molecular-medicine-lab-cleveland-lab",
+      "labName": "Cleveland Lab",
+      "reviewedAt": "2026-10-16T09:22:24+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "b7e4afde1ad01511449e883ba23a171a773f16c7a3e103fb908d834817ef794c",
+      "frozenPacketSha256": "22b87ff73ffa42474c06d0febf59e35baedf9d6b3cbc7c4a87f98ffa2fb25a7f",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "所有实体相关短段已读，FDA批准是外部治疗事件，神经退行/染色体方向没有明确研究操作；导航设施名称不借入方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-6a283252e0fbe413",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "bodySha256": "8150f497fb2345f2d2430457dbbfcb6abef5864a6785fe2760f5980c14930310",
+          "textSha256": "6acd99bba6af4a52946d9efdeb7dd5472b3c524a1395c2b3a7231225a1f9c992",
+          "textCharacters": 784,
+          "rangesActuallyRead": [
+            [
+              0,
+              784
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6dc98fe5a91cdc77",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/contact.html",
+          "sourceObservedAt": "2026-10-16T01:30:41+00:00",
+          "bodySha256": "2ad12ec2e133c133e39a4e0c2a313dd106aef3df141b96a916e4fa11d3e913fe",
+          "textSha256": "9af00564275006ba149500f0e39ad18afcd5126504f333b177a2e39bfa6ab6f6",
+          "textCharacters": 206,
+          "rangesActuallyRead": [
+            [
+              0,
+              206
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-310ab349878981d2",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "09064936e9f8c8fc3ad2dcb36c98201dfb5636049e195fc626369b43b19b9821",
+          "textCharacters": 13,
+          "rangesActuallyRead": [
+            [
+              0,
+              13
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1c6df0a57807721b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "592deb4df45943e45a55967b6589eb3e2192ed35125d78ee4507eec7369dba4b",
+          "textCharacters": 396,
+          "rangesActuallyRead": [
+            [
+              0,
+              396
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e817c018eadde444",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "bodySha256": "8150f497fb2345f2d2430457dbbfcb6abef5864a6785fe2760f5980c14930310",
+          "textSha256": "0be42a9336c0011a504ea40c93a10eafa5aadaaceb0640b8d5f857745426a515",
+          "textCharacters": 1677,
+          "rangesActuallyRead": [
+            [
+              0,
+              1677
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-f63405e93881e21d",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/contact.html",
+          "sourceObservedAt": "2026-10-16T01:30:41+00:00",
+          "bodySha256": "2ad12ec2e133c133e39a4e0c2a313dd106aef3df141b96a916e4fa11d3e913fe",
+          "textSha256": "1d57248955589429aa8734fa6a75fabacb178073e2cdd9ed151785a900080d1d",
+          "textCharacters": 1078,
+          "rangesActuallyRead": [
+            [
+              0,
+              1078
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-3ab5126a73730e0c",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "516378176a06a9e32ce5023b2451b268d1c52fec6e7cb1c5c9376342089de405",
+          "textCharacters": 1268,
+          "rangesActuallyRead": [
+            [
+              0,
+              1268
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 29,
+      "labId": "ucsd-cellular-molecular-medicine-lab-ferro-novick-lab",
+      "labName": "Ferro-Novick Lab",
+      "reviewedAt": "2026-10-16T09:22:24+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "页面图示研究：使用Lunapark（LNPK）敲除细胞考察Akita凝聚体与内质网结构",
+        "页面图示研究：最大强度投影与三维重建展示Akita凝聚体"
+      ],
+      "frozenRawSha256": "95073c925f143db942038f242be86f2771768e106bd8ca16c554c4ba0a3e9484",
+      "frozenPacketSha256": "88e966b4ec03327f86576e61167290d2607af32a5bc0b71a08cb3820abc64a4d",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整主文图例明确LNPK KO细胞与Akita凝聚体，以及最大强度投影/3D重建；两方法限定图示且不推断采集平台/敲除制备，摘要与unknown替换匹配。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-b16a10555171132b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/ferro-novick/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:48+00:00",
+          "bodySha256": "86a5a89c76d7d3a365d3cf37fc2a49d14fceeb51baecf41f092b724a46fd303c",
+          "textSha256": "272f5aa610a32e9591c8e63b040077235a0d17ed028e999b7620dd72135f1be1",
+          "textCharacters": 2670,
+          "rangesActuallyRead": [
+            [
+              0,
+              2670
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-2c428d3101ab72fd",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "4593ba8ec517355775492485330991751d7eb95fbe4f1825558b8af82afec63a",
+          "textCharacters": 16,
+          "rangesActuallyRead": [
+            [
+              0,
+              16
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1c6df0a57807721b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "592deb4df45943e45a55967b6589eb3e2192ed35125d78ee4507eec7369dba4b",
+          "textCharacters": 396,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 28,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-1c6df0a57807721b",
+          "reusedReadRanges": [
+            [
+              0,
+              396
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-3ab5126a73730e0c",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "516378176a06a9e32ce5023b2451b268d1c52fec6e7cb1c5c9376342089de405",
+          "textCharacters": 1268,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 28,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-3ab5126a73730e0c",
+          "reusedReadRanges": [
+            [
+              0,
+              1268
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 30,
+      "labId": "ucsd-cellular-molecular-medicine-lab-sebat-lab",
+      "labName": "The Sebat Lab",
+      "reviewedAt": "2026-10-16T09:22:24+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "24628bc5d4d9043417231260d07190767f40d27ff13b7ab35c724268089b24de",
+      "frozenPacketSha256": "2d8d5a022fd9495dd8d1db063badd8f8e590fa7150b41e7d0baeeab8f812d2a4",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "短根页仅主题，PI摘要的WGS为专长、SV为早期贡献、trio为领域趋势；无当前具体项目采用，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-87a59aa9bad2e48a",
+          "sourceUrl": "https://sebatlab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:50+00:00",
+          "bodySha256": "b9558bafcf1d739ff2557198640d7d6877f691f23f808067cfb8ecbe350caf3e",
+          "textSha256": "c936cfb2a03de9f339808488ea139d604cd5bcc4a3fb769be33fb3860a5d6976",
+          "textCharacters": 265,
+          "rangesActuallyRead": [
+            [
+              0,
+              265
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c25de2c1e7493a30",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "f53e517021aa12023966f0c0619cd407a5c40fc80ab4cbffc2aac7ba2e57b82a",
+          "textCharacters": 9,
+          "rangesActuallyRead": [
+            [
+              0,
+              9
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-a3ef073f28608923",
+          "sourceUrl": "https://profiles.ucsd.edu/jonathan.sebat",
+          "sourceObservedAt": "2026-10-03T01:48:28+00:00",
+          "bodySha256": null,
+          "textSha256": "7d6755045c54840bd9f706fa6f57e5c77cd774676e9087d63ed1add381b56f55",
+          "textCharacters": 38,
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1c6df0a57807721b",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "592deb4df45943e45a55967b6589eb3e2192ed35125d78ee4507eec7369dba4b",
+          "textCharacters": 396,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 28,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-1c6df0a57807721b",
+          "reusedReadRanges": [
+            [
+              0,
+              396
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7158d9fe6dbc91d4",
+          "sourceUrl": "https://profiles.ucsd.edu/jonathan.sebat",
+          "sourceObservedAt": "2026-10-07T22:08:17+00:00",
+          "bodySha256": null,
+          "textSha256": "7c8cb6b69b744c91db1aabb736e245c67d1d4a3d62965369ddd8046270cd012f",
+          "textCharacters": 900,
+          "rangesActuallyRead": [
+            [
+              0,
+              900
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-3ab5126a73730e0c",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/",
+          "sourceObservedAt": "2026-10-16T02:14:31+00:00",
+          "bodySha256": "5211e37e71d1825a1003d18ffa3487debd139bed4e58d49bb1996c8667d6b0d8",
+          "textSha256": "516378176a06a9e32ce5023b2451b268d1c52fec6e7cb1c5c9376342089de405",
+          "textCharacters": 1268,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 28,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-3ab5126a73730e0c",
+          "reusedReadRanges": [
+            [
+              0,
+              1268
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 31,
+      "labId": "ucsd-cogsci-interactive-cognition-lab",
+      "labName": "Interactive Cognition Lab",
+      "reviewedAt": "2026-10-16T09:22:24+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "1beb96a78a5c12b187e60c604105b61f6aeafdefb1e8496b6ff82d6b3d8f8ee0",
+      "frozenPacketSha256": "0a83d19afb666e10ba8253e6f8c92fd7d6c0de458f3cd250555b0ffe4199d664",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "实验室My Lab完整段是交互设计研究方向/项目目标，个人传记与旧空页无方法；未由增强视频目标创造操作方法。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-d53ccd72f82f752b",
+          "sourceUrl": "https://adrenaline.ucsd.edu/",
+          "sourceObservedAt": "2026-10-16T01:04:54+00:00",
+          "bodySha256": "5242b30e2cd51bb89b846254466123f17f06c3d73ed4923f6a4d154aac63dfce",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "textCharacters": 0,
+          "rangesActuallyRead": [
+            [
+              0,
+              0
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fb3e73c0cd9cdfb7",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/index.html",
+          "sourceObservedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "4f3584b5a1dd0bf3cd87653fb0a3e0e04360f453651f7312e9a9ec269a3b438a",
+          "textSha256": "b8621d9d2822d0a7eb98807e491485768b4bfe1479b2f79dcd0ec3579d7b49a0",
+          "textCharacters": 857,
+          "rangesActuallyRead": [
+            [
+              0,
+              857
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-37ad1b363039a6a9",
+          "sourceUrl": "https://cogsci.ucsd.edu/research/research-labs.html",
+          "sourceObservedAt": "2026-10-02T22:42:09+00:00",
+          "bodySha256": null,
+          "textSha256": "c04dcbba92349b54fdafcd4231462a38d79fcce57740472efb1c9c721eaae103",
+          "textCharacters": 80,
+          "rangesActuallyRead": [
+            [
+              0,
+              80
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-0f9dc0f52a2b63d1",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/lab.html",
+          "sourceObservedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "20b3e6c0d807908b8343c31fd3d27df5e32f709eab5e6ed103412187a20de73b",
+          "textSha256": "a86835bbc1629a231f1dc2443aed12643a4439dafbea2321c08bb23422b40822",
+          "textCharacters": 603,
+          "rangesActuallyRead": [
+            [
+              0,
+              603
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 32,
+      "labId": "ucsd-communication-lab-laboratory-of-comparative-human-cognition",
+      "labName": "Laboratory of Comparative Human Cognition",
+      "reviewedAt": "2026-10-16T09:22:24+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "711c5ca417e6cf98b8d5d73c6e8222647ee9e2ee2fde04a5d313173ef3dc823d",
+      "frozenPacketSha256": "affb5c342b5316d9c45ec0ba68c2b4803790a574f29ffdecf81047510d7c7e8c",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整LCHC主文是文化/活动理论方法问题和共同体介绍，文献区与主任个人兴趣不证明研究技术，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-63be98169b1e0849",
+          "sourceUrl": "https://communication.ucsd.edu/research/groups/lchc/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:47+00:00",
+          "bodySha256": "ae38d46fde295e3ceb678fd023b63106d9325b7877c40f151aa2a9441ed29d00",
+          "textSha256": "740b99061d273c87a7ddbb128a663a502b960bd068eb79bcd8a6f50096416912",
+          "textCharacters": 2783,
+          "rangesActuallyRead": [
+            [
+              0,
+              2783
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-dba7368855197f50",
+          "sourceUrl": "https://communication.ucsd.edu/people/faculty/Index.html",
+          "sourceObservedAt": "2026-10-07T23:08:02+00:00",
+          "bodySha256": null,
+          "textSha256": "7472219f5faf02eaa01515bbad9b21b0c98bb7a75b4e4507c1243b1cbce3159e",
+          "textCharacters": 75,
+          "rangesActuallyRead": [
+            [
+              0,
+              75
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fbfaf2ee2a43d43b",
+          "sourceUrl": "https://communication.ucsd.edu/people/faculty/Index.html",
+          "sourceObservedAt": "2026-10-16T00:59:36+00:00",
+          "bodySha256": "dd09d42369bc65c11d4a1cb76fd9c86d7ff9ec9bc6a74424c279684c80171845",
+          "textSha256": "cd6f3fa2a1e3ee5ff594d81a06b5deb66154313d2489308cc2f1b44559d20dff",
+          "textCharacters": 9689,
+          "rangesActuallyRead": [
+            [
+              8578,
+              9689
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 33,
+      "labId": "ucsd-lab-from-faculty-act-lab-org",
+      "labName": "Act Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "ce0b8a9e36fc4ae6c0d6d8f75c4ab1bf10b411e5dd050b16516f1be2dcbdc3bf",
+      "frozenPacketSha256": "6cc90b65d99542f22744f476a02a84c14df0096f721639e45a584b139cb0b205",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "ACT页面实际Georgia Tech实体及旧新闻范围保留；cross-stack solutions为开发目标，发布代码/获奖题名未当采用方法，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-343357bc93d98a66",
+          "sourceUrl": "http://act-lab.org/",
+          "sourceObservedAt": "2026-10-16T01:04:56+00:00",
+          "bodySha256": "809c8efe35c7d9eb767325a896bd62130181540f464f2bd1442eda7c472b5131",
+          "textSha256": "ca4ccaa695f512c686a143d3839174ab384eca14e116557429190a0faac3764f",
+          "textCharacters": 2521,
+          "rangesActuallyRead": [
+            [
+              0,
+              2521
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-935faf1628807778",
+          "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/hadi-esmaeilzadeh",
+          "sourceObservedAt": "2026-10-16T00:59:37+00:00",
+          "bodySha256": "a0ce12fe2bc640de98e43f65845132214617587d010a543ea52fe1baac874aba",
+          "textSha256": "29f05b692de8bfad585da150e2331d3ab1e56f4c8eac755169ca8255062b1bdf",
+          "textCharacters": 43,
+          "rangesActuallyRead": [
+            [
+              0,
+              43
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 34,
+      "labId": "ucsd-lab-from-faculty-adrenaline-ucsd-edu-kirsh-lab-html",
+      "labName": "My Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "156a107507ca51d3c4b256d352a3ea62e39f8bf96bc1ccb44cc6b6a735d6cb6b",
+      "frozenPacketSha256": "9a5d5c4c17c5e573546876d31dec44d425e66cbca9563d50a698f033231447b7",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "My Lab同体研究介绍已读且跨ID不合并；cognitive ethnography仅个人兴趣，目录无方法，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-0f9dc0f52a2b63d1",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/lab.html",
+          "sourceObservedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "20b3e6c0d807908b8343c31fd3d27df5e32f709eab5e6ed103412187a20de73b",
+          "textSha256": "a86835bbc1629a231f1dc2443aed12643a4439dafbea2321c08bb23422b40822",
+          "textCharacters": 603,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 31,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-0f9dc0f52a2b63d1",
+          "reusedReadRanges": [
+            [
+              0,
+              603
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7bbb0535965752cd",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/research.html",
+          "sourceObservedAt": "2026-10-02T22:42:09+00:00",
+          "bodySha256": null,
+          "textSha256": "8c23cccc8fa30ba16f435439be4918505e815db619505e106b64cd94ee457020",
+          "textCharacters": 6,
+          "rangesActuallyRead": [
+            [
+              0,
+              6
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e7cd09369199ffa7",
+          "sourceUrl": "https://cse.ucsd.edu/people/faculty-profiles/david-kirsh",
+          "sourceObservedAt": "2026-10-16T00:59:41+00:00",
+          "bodySha256": "96def34c509723ba06814bd9495d76168089a3b7e87cc62a170fcd1f41601a2c",
+          "textSha256": "4e8fe16a48ec4394823f6d140a111395cb50ac2f7a6bb52bb005db4f01ffc4b5",
+          "textCharacters": 56,
+          "rangesActuallyRead": [
+            [
+              0,
+              56
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fb3e73c0cd9cdfb7",
+          "sourceUrl": "https://adrenaline.ucsd.edu/Kirsh/index.html",
+          "sourceObservedAt": "2026-10-16T01:06:32+00:00",
+          "bodySha256": "4f3584b5a1dd0bf3cd87653fb0a3e0e04360f453651f7312e9a9ec269a3b438a",
+          "textSha256": "b8621d9d2822d0a7eb98807e491485768b4bfe1479b2f79dcd0ec3579d7b49a0",
+          "textCharacters": 857,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 31,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-fb3e73c0cd9cdfb7",
+          "reusedReadRanges": [
+            [
+              0,
+              857
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-cddc87ee2b163c52",
+          "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/david-kirsh.html",
+          "sourceObservedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "32ac482893e352e93b32a8a0f72e6c9a697fd2602c6106977d2c0e6381cee2d5",
+          "textSha256": "6f6c8dc42e9f58ddcf4862e36adb61641a40a6f6c803b1cf15191097ed128b76",
+          "textCharacters": 274,
+          "rangesActuallyRead": [
+            [
+              0,
+              274
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-bd040de6251d3a34",
+          "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/index.html",
+          "sourceObservedAt": "2026-10-16T00:57:36+00:00",
+          "bodySha256": "276612c2e768d4032392f9bd89fc4687980f91de10c409e65ab6acecbdc8cfe1",
+          "textSha256": "8c8aa6ca049179c19f52ed9b489d9381151cf3a344ebf97a1c038fbcdef2f265",
+          "textCharacters": 2858,
+          "rangesActuallyRead": [
+            [
+              0,
+              220
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-9234a18dbfa84289",
+          "sourceUrl": "https://catalog.ucsd.edu/faculty/COGS.html",
+          "sourceObservedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "ccf7a43d723670587972f5ad86c35cf88b105cd009acf7bd7e91a0da8b2ef7b6",
+          "textSha256": "25e10347ce48428bb1c26bcb49346838f95874d135e28182d3a898b90dd5bff9",
+          "textCharacters": 1179,
+          "rangesActuallyRead": [
+            [
+              0,
+              220
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-5bdd183c1ba90c8d",
+          "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/david-kirsh.html",
+          "sourceObservedAt": "2026-10-16T00:59:42+00:00",
+          "bodySha256": "32ac482893e352e93b32a8a0f72e6c9a697fd2602c6106977d2c0e6381cee2d5",
+          "textSha256": "a02f368854e12ad57703e21653e83a6daec6dc7394caa1ff014b55096a8edba0",
+          "textCharacters": 1047,
+          "rangesActuallyRead": [
+            [
+              0,
+              1047
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 35,
+      "labId": "ucsd-dermatology-lab-dr-matthew-hangauer-s-lab",
+      "labName": "Dr. Matthew Hangauer's Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "feb82ace12a283bf726cbe617a029d57033755ac1708ecee52ae71ecc243946b",
+      "frozenPacketSha256": "43ceca27f98bf1f0bc79e2f651b47ad0382496b712c7391cc98d163b03e8c28a",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整Focus仅细胞毒应激/死亡机制待解目标，没有施加/检测方法，未从研究对象推断技术。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-b7842d7c88836f73",
+          "sourceUrl": "https://dermatology.ucsd.edu/research/basic-science/hangauer-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:47+00:00",
+          "bodySha256": "793f0b25a51bc9e322768dc45e86ca90ded5e02df2ddbb75d77b36bf6d69ad08",
+          "textSha256": "2107e3a6c4a679f331311bae4e087fe09dbb240f34fd4c4075cf6b26085a2c23",
+          "textCharacters": 1027,
+          "rangesActuallyRead": [
+            [
+              0,
+              1027
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-20a916c6f84af406",
+          "sourceUrl": "https://dermatology.ucsd.edu/research/basic-science/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:09+00:00",
+          "bodySha256": null,
+          "textSha256": "ea7a952abb885325591dcc59c29ec6c2dd2b9a73b47846fab54835d66e8d1b5d",
+          "textCharacters": 26,
+          "rangesActuallyRead": [
+            [
+              0,
+              26
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 36,
+      "labId": "ucsd-global-policy-and-strategy-lab-cuhk-uc-san-diego-joint-laboratory-on-chinese-economy",
+      "labName": "CUHK-UC San Diego Joint Laboratory on Chinese Economy",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "7998fccd13ca7d5c9da607ca8847927181420d22c7b12737ba73cc177dd37917",
+      "frozenPacketSha256": "cc071ea0853b01203e9a95f05810f4f948ea86ea2263ab392093da2cf4ababae",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整合作实验室研究清单与人员已读，seminar/workshop为学术交流，不是实证研究方法，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-218c3952dd5d8cd6",
+          "sourceUrl": "https://china.ucsd.edu/research/cuhk-uc-san-diego-joint-laboratory.html",
+          "sourceObservedAt": "2026-10-16T01:04:59+00:00",
+          "bodySha256": "042fb26e6f101fa6e7d8512745659aa73616da3cd5afe29ec2c617d79d409c35",
+          "textSha256": "770a599df43458417077003f81a3b659f999e09f28b1b64a111c93b07663a963",
+          "textCharacters": 1850,
+          "rangesActuallyRead": [
+            [
+              0,
+              1850
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-24fb097bee76d141",
+          "sourceUrl": "https://gps.ucsd.edu/faculty-research/research/index.html",
+          "sourceObservedAt": "2026-10-02T23:42:45+00:00",
+          "bodySha256": null,
+          "textSha256": "d10e814563dbc0be4ee6393399fddeb7d2af0fdf7a712abd72ef9d84445724db",
+          "textCharacters": 53,
+          "rangesActuallyRead": [
+            [
+              0,
+              53
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 37,
+      "labId": "ucsd-hdsi-ada-lab",
+      "labName": "Arun's Data Analytics (ADA) Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "数据系统与算法构建",
+        "实证分析与理论分析"
+      ],
+      "frozenRawSha256": "ca182029ba788c6dec62e504b8e7b8727cd33bd29bc3f7c077655fefdabf2378",
+      "frozenPacketSha256": "1c41e9830f4c89db58009e5c19a00e0c9c27d759aa511deff7e7b2e7aeb17cf9",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "已读Introduction和完整Overview实际方法句及后续上下文，our work明确构建系统/算法和实证/理论分析，2方法未细化未述技术，summary和unknown替换一致。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-ae7ea5068e21375c",
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "sourceObservedAt": "2026-10-16T01:04:59+00:00",
+          "bodySha256": "9da8bbf29686af920503b62ead58b9defba2e3f894349036b914b520a19ac931",
+          "textSha256": "ac6dace3d6ca6545bc25b1b1348576f16e4cf69324cdcd551cccf2aca7ff7609",
+          "textCharacters": 6491,
+          "rangesActuallyRead": [
+            [
+              0,
+              3300
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-9eca05fea1a14707",
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "sourceObservedAt": "2026-10-03T00:05:51+00:00",
+          "bodySha256": null,
+          "textSha256": "7612429647856f0c684172942175d8b9d2914697871b24e7f6a7450afe553d44",
+          "textCharacters": 183,
+          "rangesActuallyRead": [
+            [
+              0,
+              183
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-22b80252ba77f340",
+          "sourceUrl": "https://datascience.ucsd.edu/people/arun-kumar/",
+          "sourceObservedAt": "2026-10-16T00:59:47+00:00",
+          "bodySha256": "ce6004a83217a1b158ea234e0bad441c3ebeaad0cd1f60eec037f941ab883efe",
+          "textSha256": "e00f6b01c3b582a7768b712f8fe020eda52c43d8c1f9d37b3e2994237a28914f",
+          "textCharacters": 606,
+          "rangesActuallyRead": [
+            [
+              0,
+              606
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 38,
+      "labId": "ucsd-hdsi-mlsys",
+      "labName": "UC San Diego ML Systems Group",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "6e25200118428748a1fb46435e22fb904b15d73839c5a04a2bad93a3c2a803ce",
+      "frozenPacketSha256": "d2a460035bd702da4d02ec07afcf34878ac55682fedc2be9dd5ed9800cde9f85",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整当前团队/Research Areas及新闻主体已读；EAGLE等技术明确属于外部seminar讲者，未移植为该组方法，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-1dd2d67f717bfe32",
+          "sourceUrl": "https://mlsys-ucsd.org/",
+          "sourceObservedAt": "2026-10-16T01:05:03+00:00",
+          "bodySha256": "29546693e7231a6c3bcdfe1471bbc0ef8178e9b9b7964deed1a11cd1860269d0",
+          "textSha256": "caa134ce2113e7b05175d3a79fa319a1c574af1143b6bb916d2658f28f0a2a86",
+          "textCharacters": 3102,
+          "rangesActuallyRead": [
+            [
+              0,
+              3102
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-2ceb1ee0081c0d75",
+          "sourceUrl": "https://mlsys-ucsd.org/",
+          "sourceObservedAt": "2026-10-03T00:05:52+00:00",
+          "bodySha256": null,
+          "textSha256": "cf42e073f7636175c12a02aaedbe5a76906b1bdc3cc4434681046bfd028cb995",
+          "textCharacters": 111,
+          "rangesActuallyRead": [
+            [
+              0,
+              111
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-163021c4e7dac40b",
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "sourceObservedAt": "2026-10-03T00:05:51+00:00",
+          "bodySha256": null,
+          "textSha256": "2e9711bdedb2f4db327603b1a5655f77c4b593a8c6949aa7fa385b73cdaa3519",
+          "textCharacters": 85,
+          "rangesActuallyRead": [
+            [
+              0,
+              85
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-22b80252ba77f340",
+          "sourceUrl": "https://datascience.ucsd.edu/people/arun-kumar/",
+          "sourceObservedAt": "2026-10-16T00:59:47+00:00",
+          "bodySha256": "ce6004a83217a1b158ea234e0bad441c3ebeaad0cd1f60eec037f941ab883efe",
+          "textSha256": "e00f6b01c3b582a7768b712f8fe020eda52c43d8c1f9d37b3e2994237a28914f",
+          "textCharacters": 606,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 37,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-22b80252ba77f340",
+          "reusedReadRanges": [
+            [
+              0,
+              606
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 39,
+      "labId": "ucsd-hdsi-database-lab",
+      "labName": "UCSD Database Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "成员Babak Salimi研究：结合数据库理论、因果推断与机器学习技术"
+      ],
+      "frozenRawSha256": "1d40522358fd48dc24bea87ca9b0ab78da2374cd59b46d02bd4009fa4dc03dd0",
+      "frozenPacketSha256": "c0812ce6f508a0878cb2001b69f1c3351972999959a3c9ce420ad664de32055a",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "独立读团队简介与Faculty/成员局部全文，Babak的His work unifies techniques为实际方法而非前句兴趣；1方法及摘要/限制均保留该成员范围。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-155a4223751e14dc",
+          "sourceUrl": "https://dbucsd.github.io/",
+          "sourceObservedAt": "2026-10-16T01:05:00+00:00",
+          "bodySha256": "b259b408b02e2843897724a5e666c78cf7c0397923dd6e0fcbf8c75ecc9d3576",
+          "textSha256": "f83535a2659447ee8c0c665c8f946388d9de10197fc67894a86c8d079e30bf4b",
+          "textCharacters": 8149,
+          "rangesActuallyRead": [
+            [
+              0,
+              4800
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1799dbadef1a2f24",
+          "sourceUrl": "https://dbucsd.github.io/",
+          "sourceObservedAt": "2026-10-03T00:05:52+00:00",
+          "bodySha256": null,
+          "textSha256": "54fb69b4d64db0e1fec57794160bc58ebdfb0fa938dcd481f64e7222b16f0784",
+          "textCharacters": 183,
+          "rangesActuallyRead": [
+            [
+              0,
+              183
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1e9764007b067a8a",
+          "sourceUrl": "https://adalabucsd.github.io/",
+          "sourceObservedAt": "2026-10-03T00:05:51+00:00",
+          "bodySha256": null,
+          "textSha256": "a8d9787946736468e8a268bce8cb0d3fdbe2ec312d0b487514906a8a0fb905a8",
+          "textCharacters": 77,
+          "rangesActuallyRead": [
+            [
+              0,
+              77
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-22b80252ba77f340",
+          "sourceUrl": "https://datascience.ucsd.edu/people/arun-kumar/",
+          "sourceObservedAt": "2026-10-16T00:59:47+00:00",
+          "bodySha256": "ce6004a83217a1b158ea234e0bad441c3ebeaad0cd1f60eec037f941ab883efe",
+          "textSha256": "e00f6b01c3b582a7768b712f8fe020eda52c43d8c1f9d37b3e2994237a28914f",
+          "textCharacters": 606,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 37,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-22b80252ba77f340",
+          "reusedReadRanges": [
+            [
+              0,
+              606
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 40,
+      "labId": "ucsd-linguistics-lab-meaning-language-development-lab",
+      "labName": "Meaning & Language Development Lab",
+      "reviewedAt": "2026-10-16T09:22:57+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "41277c1ae50a2ff8d019bb334506c18df9d3ae1b08629617cfc97a94704482c0",
+      "frozenPacketSha256": "3f5bfceb1ecfea24c0628c77e44aa49a5709e59ef82a6457b817ce5fc9610caa",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整MeLD研究段仅语言发展问题，参加研究的联系招募未给任务或设计，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-de7337cd7512f3e2",
+          "sourceUrl": "https://sites.google.com/site/rachelelainedudley/lab",
+          "sourceObservedAt": "2026-10-16T01:05:01+00:00",
+          "bodySha256": "9920cdec814a2e43da00dcc113ed5afcbe4bd049a9617cd24947e33b47c3169e",
+          "textSha256": "5b623d563891dfbf18d32b949955a12fb90df641f882dfc11fb33e467e040cec",
+          "textCharacters": 1149,
+          "rangesActuallyRead": [
+            [
+              0,
+              1149
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-4e03d591f5107907",
+          "sourceUrl": "https://linguistics.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "4732d44d375e2f11013d72a3eb52e460ce35bb933c32a4077e7afebbe04c1261",
+          "textCharacters": 308,
+          "rangesActuallyRead": [
+            [
+              0,
+              308
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1f70e75a93fa8924",
+          "sourceUrl": "https://sites.google.com/site/rachelelainedudley/lab",
+          "sourceObservedAt": "2026-10-07T23:02:21+00:00",
+          "bodySha256": null,
+          "textSha256": "ded6e85ac1146464932c66f63dacedf42cf8c5f3d7c836238ec9be57bd3d02ba",
+          "textCharacters": 35,
+          "rangesActuallyRead": [
+            [
+              0,
+              35
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 41,
+      "labId": "ucsd-lab-from-faculty-insync-lab-org",
+      "labName": "Mamadou Diagne — lab website",
+      "reviewedAt": "2026-10-16T09:23:11+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "04a9e90e5dfbd416b3626e48d689c6732152f6e0a5ef2cae1261bd8bf6fd12d3",
+      "frozenPacketSha256": "52493ec30bf4b88d83001c2c21fbf489d7e98ff1ff5915959f8d17a7d5bf2969",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整InSyNC标题明确Research Interests，控制技术列表不是实际采用叙述；具名PI研究微分方程是对象，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-06aac9d715b3a692",
+          "sourceUrl": "https://www.insync-lab.org/",
+          "sourceObservedAt": "2026-10-16T01:05:01+00:00",
+          "bodySha256": "9a24feb162d81b5e8708bb87567ba4e70e64c71333bf4bf62a8165ed01e01c92",
+          "textSha256": "0f1364fe8bff620c99ad7abec2400404aa645003b1709bac3922fee3fa46dcef",
+          "textCharacters": 415,
+          "rangesActuallyRead": [
+            [
+              0,
+              415
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fdc8be031b7b844c",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/mamadou-diagne-0",
+          "sourceObservedAt": "2026-10-02T22:48:54+00:00",
+          "bodySha256": null,
+          "textSha256": "30a146acdee5948a9f839f5d5591d93bbb84b2fa9642332e54466663a63c7964",
+          "textCharacters": 41,
+          "rangesActuallyRead": [
+            [
+              0,
+              41
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-945d8c636542b0a2",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/people/profile/mamadou-diagne-0",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "bodySha256": "ea229be12a7bb4dcd83bb41df6b08714ac4ce0943f21d22af62a424829cb81d0",
+          "textSha256": "999843d813a2ed2747cdd616380c20f83c2515e90dd9eef58eea786d1e2df025",
+          "textCharacters": 715,
+          "rangesActuallyRead": [
+            [
+              0,
+              715
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-0e40bfe81b0faa51",
+          "sourceUrl": "https://mae.ucsd.edu/people/faculty-profiles",
+          "sourceObservedAt": "2026-10-16T00:57:23+00:00",
+          "bodySha256": "902b7ca8298d5d6e112fb089519f011d6ba7cb6ba3779493c991d1f5a324bb9b",
+          "textSha256": "0454a740ebe697db5b04ed2b42f1de562abc77720dad6ddd0cac57f96c9ecf64",
+          "textCharacters": 4090,
+          "rangesActuallyRead": [
+            [
+              0,
+              4000
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-b09b9e12988e8b05",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty",
+          "sourceObservedAt": "2026-10-16T00:57:43+00:00",
+          "bodySha256": "56b524196302232556f43fdc60ad7f706ad10c47ef96c08f06d8ca7c36a3f5df",
+          "textSha256": "61b703484a3591fe51e7c7e27a4f148e30c448ee67c6b85b599719a63bb48620",
+          "textCharacters": 323,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 3,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-b09b9e12988e8b05",
+          "reusedReadRanges": [
+            [
+              0,
+              323
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-041d4227b74be63a",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/research/centers-institutes",
+          "sourceObservedAt": "2026-10-16T00:59:30+00:00",
+          "bodySha256": "82e9f8eb8402f8ffede9c3ba50c8d570c5ad52752a5f9572a4e4331e8105bf95",
+          "textSha256": "e581898782d97ea051f53ee172b2826a0ab65b4849ab1eb0ff7d929cf1ccf56f",
+          "textCharacters": 1629,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 3,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-041d4227b74be63a",
+          "reusedReadRanges": [
+            [
+              0,
+              1629
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 42,
+      "labId": "ucsd-lab-from-faculty-endocrinologymetabolism-ucsd-edu-research-webster-lab",
+      "labName": "Webster Lab",
+      "reviewedAt": "2026-10-16T09:23:11+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "9d2440d6bd002330760ec8e3422cceeda475baada69e20e3cc5f3a07e802dc4a",
+      "frozenPacketSha256": "6cbd2d23b487404710df948752ccd04946e4af32ea5bf9db32977e2fcdec6a43",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "两版研究主文仅项目标签及信号机制，Time-Restricted Eating未给实施方式；未由目录借他组技术。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-b8ead77616373153",
+          "sourceUrl": "https://endocrinologymetabolism.ucsd.edu/research/webster-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:05+00:00",
+          "bodySha256": "d85fd6fcea925e585d04c5299de5d4eb84671fc479789f89ad52710f66226fb1",
+          "textSha256": "1df129d09a7b4d505edd77de23dd28daecb8f9524dbde1499858f43fc2e5ffe6",
+          "textCharacters": 396,
+          "rangesActuallyRead": [
+            [
+              0,
+              396
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-134a42c1bd94ca2d",
+          "sourceUrl": "https://profiles.ucsd.edu/nicholas.webster",
+          "sourceObservedAt": "2026-10-03T02:56:54+00:00",
+          "bodySha256": null,
+          "textSha256": "81fb9ffb4e21da9b1f3026463e7c323b97fa27571b2088ae11d904b7177c565a",
+          "textCharacters": 86,
+          "rangesActuallyRead": [
+            [
+              0,
+              86
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-2ea99dcff672a266",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceObservedAt": "2026-10-16T00:57:26+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "textSha256": "e0b6087da122a3195a0c379a66035115c642b759a6f602c0d489a4cb54ed5644",
+          "textCharacters": 18000,
+          "rangesActuallyRead": [
+            [
+              5285,
+              5955
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-dc3554ade8f916b5",
+          "sourceUrl": "https://endocrinologymetabolism.ucsd.edu/research/webster-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:05+00:00",
+          "bodySha256": "d85fd6fcea925e585d04c5299de5d4eb84671fc479789f89ad52710f66226fb1",
+          "textSha256": "26faaa6d778daf18f2e21bf8961f77b60079b7de8620f4f422cb8a0ce541aa76",
+          "textCharacters": 919,
+          "rangesActuallyRead": [
+            [
+              0,
+              919
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 43,
+      "labId": "ucsd-lab-from-faculty-lei-lab-ucsd-edu",
+      "labName": "Lei Lab",
+      "reviewedAt": "2026-10-16T09:23:11+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "9715dea0e4409d608b052768e8402163ad5584d174e0bae74bac15549d4a904e",
+      "frozenPacketSha256": "a8fe34457ad625c14dac37d90a3fb650e51051621e60563676d6813d487cb7ef",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整PI简介在具名Lei Lab句仅叙述跨学科合作；后文个人recent works声化未明确绑定实验室项目，历史驻留亦未转入方法，范围审慎。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-0f223d6b6dd761d2",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/lei-liang/index.html",
+          "sourceObservedAt": "2026-10-02T22:49:00+00:00",
+          "bodySha256": null,
+          "textSha256": "a1b6467048525591a7b322682135dc9716dea8998b7505225adbe4cc12a59aa5",
+          "textCharacters": 35,
+          "rangesActuallyRead": [
+            [
+              0,
+              35
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-3b36b03d3175f465",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/regular_faculty/lei-liang/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:52+00:00",
+          "bodySha256": "db4d2f5d776deec0207c90d32c11980cad816bbde438d92d63bd191fbe2ae2b9",
+          "textSha256": "2a4314d9a3a1b33b092dbff16bdf7d5bcc9ce81c8ea8d627311574a1718bd54f",
+          "textCharacters": 3306,
+          "rangesActuallyRead": [
+            [
+              0,
+              3306
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-819a6d756495f285",
+          "sourceUrl": "https://music-cms.ucsd.edu/people/faculty/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:53+00:00",
+          "bodySha256": "8d57d40b7b996fa660910e2625e12d6fabd539a8476d52e014ede78e32b4e630",
+          "textSha256": "c1a101b5b33e0a33bd0199f4bd2dad876a7febe1d5bd0ba69d787803ab2a5882",
+          "textCharacters": 5852,
+          "rangesActuallyRead": [
+            [
+              1818,
+              2614
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 44,
+      "labId": "ucsd-neurosciences-lab-cleveland-lab",
+      "labName": "Cleveland Lab – Ludwig Cancer Research",
+      "reviewedAt": "2026-10-16T09:23:11+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "de743fa9368ccd6c7f4bbdd533751f39a1d5bd7a8f329d66b66fa6ce087fb55a",
+      "frozenPacketSha256": "4bdcf37df810e0438948e6b01de547dd98ee426cbf90359c92c3556927b82958",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "保持独立ID；复用Cleveland根页已读正文及目录范围，无方法技术，旧404不被替换或修复。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-ddaf59f7f5123982",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "f65dbf7a48e62020d4b7bb995d1e1daff65ca43eb82c974f99f230b5d7511549",
+          "textCharacters": 38,
+          "rangesActuallyRead": [
+            [
+              0,
+              38
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-d81f1215c84293b2",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+          "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644",
+          "textSha256": "422d7750b7bf3eb5003fe0c76b9eb2848a75d0bb519b126034597bcce148b6e2",
+          "textCharacters": 1242,
+          "rangesActuallyRead": [
+            [
+              0,
+              180
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6a283252e0fbe413",
+          "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/index.html",
+          "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+          "bodySha256": "8150f497fb2345f2d2430457dbbfcb6abef5864a6785fe2760f5980c14930310",
+          "textSha256": "6acd99bba6af4a52946d9efdeb7dd5472b3c524a1395c2b3a7231225a1f9c992",
+          "textCharacters": 784,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 28,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-6a283252e0fbe413",
+          "reusedReadRanges": [
+            [
+              0,
+              784
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 45,
+      "labId": "ucsd-neurosciences-lab-mobley-lab",
+      "labName": "Mobley Lab",
+      "reviewedAt": "2026-10-16T09:23:22+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "43cc4db7ececb98096e50eaddf926082795b9dc7b4e121be7dd3a86b422bb203",
+      "frozenPacketSha256": "4e0a83ca036ca3f60d25af13a6b087cb0526d694c93c1120350d67ae70dc6714",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "两版完整实体主文只有神经营养信号假设；Microscopy Core在全院导航，不作采用证据，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-e1994649fa62b5f5",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/mobley/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:15+00:00",
+          "bodySha256": "40b433b261f3ba76c6f50455a9d98ecdd36b12ef23ec42de0459fb5e2878bfd5",
+          "textSha256": "6313487b13a65e8033d2f97d38ba2a02fa9f884e1b8e0a649204eee7bbb61eb3",
+          "textCharacters": 691,
+          "rangesActuallyRead": [
+            [
+              0,
+              691
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-34ab76f2263c431b",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "e1b10c3f981367a90539a01b9d27e2a37b992aa853ed3aa4b68c59403808981c",
+          "textCharacters": 10,
+          "rangesActuallyRead": [
+            [
+              0,
+              10
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-d81f1215c84293b2",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+          "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644",
+          "textSha256": "422d7750b7bf3eb5003fe0c76b9eb2848a75d0bb519b126034597bcce148b6e2",
+          "textCharacters": 1242,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 44,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-d81f1215c84293b2",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7237fb0bb25442ea",
+          "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/mobley/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:15+00:00",
+          "bodySha256": "40b433b261f3ba76c6f50455a9d98ecdd36b12ef23ec42de0459fb5e2878bfd5",
+          "textSha256": "2e83cb1a4ab46fe95cb7700507ca528c33fef33c8c54300b8b64edd93361e54b",
+          "textCharacters": 1674,
+          "rangesActuallyRead": [
+            [
+              0,
+              1674
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 46,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-burnett-lab",
+      "labName": "Burnett Lab",
+      "reviewedAt": "2026-10-16T09:23:22+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "cc0cff2daec23568f5a551e99d3ba4d027d9e3cac172290c0eb2719d7224e2e6",
+      "frozenPacketSha256": "0ab0f4581672c97cf3ab8ab5f4dd3142b6712cfb5a81415d01219a623748ab95",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整本组简介/人员/联系已读；细胞分子生物学为专业经验，资助小鼠模型仅项目题名，未借目录其他实验室操作，保留空值合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-ae7bc428f5554c4a",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/burnett/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:48+00:00",
+          "bodySha256": "e981018e6b7767138f476fe3a289217adb16683cb41a698511480f819a6b4ba1",
+          "textSha256": "296bdfeeaa0fa926949a483ac5f6bd5657ef148b53b678606aeba889ca4062e0",
+          "textCharacters": 1431,
+          "rangesActuallyRead": [
+            [
+              0,
+              1431
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-1ab5e41bbbecf416",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/burnett/people.html",
+          "sourceObservedAt": "2026-10-16T02:40:29+00:00",
+          "bodySha256": "139e3ebad0e230a2ec7663d0c1093863a244da6f1f39e1a40ceb1d511ed3c86e",
+          "textSha256": "184b14260e14e7e6be9ee534a9a8bc9a5125f2eb01af21aa6229811a19e30475",
+          "textCharacters": 329,
+          "rangesActuallyRead": [
+            [
+              0,
+              329
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-a05d570d7bf0358b",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/burnett/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:24+00:00",
+          "bodySha256": "f7bc5c0f84459152a4a9754e78b106d5bc99b5ef236a4ef88bc928aaecb2010b",
+          "textSha256": "617ac2b3d94ae957da3532dfdd4edf9f15bb4eae4d38179ab8c3625f9e0e94f9",
+          "textCharacters": 307,
+          "rangesActuallyRead": [
+            [
+              0,
+              307
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-8ac63b8b82204378",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "78049a820c899b0221065b5200dc91085b1f6ab1365ae6c47fd16199a4c2d42f",
+          "textCharacters": 254,
+          "rangesActuallyRead": [
+            [
+              0,
+              254
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [
+            [
+              0,
+              180
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-3d2acc2d9e978f26",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/burnett/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:48+00:00",
+          "bodySha256": "e981018e6b7767138f476fe3a289217adb16683cb41a698511480f819a6b4ba1",
+          "textSha256": "4770cfabfd5abdb8289cd6e70213ae29cf57dfd190493b8132b820039c314f4a",
+          "textCharacters": 2994,
+          "rangesActuallyRead": [
+            [
+              0,
+              2994
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-d50cd0a2a0b3f618",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/burnett/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:24+00:00",
+          "bodySha256": "f7bc5c0f84459152a4a9754e78b106d5bc99b5ef236a4ef88bc928aaecb2010b",
+          "textSha256": "5dbbc071f4df92bb68498ea70a369af4b7bf4a412bc26df6c4a8781670d0f48a",
+          "textCharacters": 1851,
+          "rangesActuallyRead": [
+            [
+              0,
+              1851
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 47,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-cook-andersen-lab",
+      "labName": "Cook-Andersen Lab",
+      "reviewedAt": "2026-10-16T09:23:22+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "5051731c1a61b9b29ea5ea52d7bf38ed8babb064ab685dfb3380b617b8b75c99",
+      "frozenPacketSha256": "87b001ede35428fca6d371a8da690c5074532f9fcf03fa5015de4f2eabf70bb9",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "两版主页列发育/转录调控对象，没有核重编程等实验操作叙述；历史目录不补技术，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-9ba4869e633907bb",
+          "sourceUrl": "https://cookandersenlaboratory.com/",
+          "sourceObservedAt": "2026-10-16T01:02:49+00:00",
+          "bodySha256": "40d497e83ac788653c15a9d373ddd2f6f9d78bb0e0a7d0810ffaaa10b7228ae0",
+          "textSha256": "ad4bb21776d7bfa3042a7f3066db45cbaaa5f3a6de2fc165b4b11db271b6bc00",
+          "textCharacters": 819,
+          "rangesActuallyRead": [
+            [
+              0,
+              819
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-90c5520b6c257162",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "214211dfa330518bcd4f42c54db2d3d042aa5d56ccda38502900300ca5e65816",
+          "textCharacters": 293,
+          "rangesActuallyRead": [
+            [
+              0,
+              293
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c23823d3f3f2f2e3",
+          "sourceUrl": "https://profiles.ucsd.edu/heidi.cook-andersen",
+          "sourceObservedAt": "2026-10-03T01:47:00+00:00",
+          "bodySha256": null,
+          "textSha256": "8addf6dae676f7f90235b2478db946d78f1da18c79a4c2481e525a9c147d03e0",
+          "textCharacters": 56,
+          "rangesActuallyRead": [
+            [
+              0,
+              56
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 46,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-475a525364a71297",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-32e4d9378a70005a",
+          "sourceUrl": "https://cookandersenlaboratory.com/",
+          "sourceObservedAt": "2026-10-16T01:02:49+00:00",
+          "bodySha256": "40d497e83ac788653c15a9d373ddd2f6f9d78bb0e0a7d0810ffaaa10b7228ae0",
+          "textSha256": "9ceb1e4f6287e65a4ff00514498e1661e2adc93e544f32aa8599432f9a50a991",
+          "textCharacters": 424,
+          "rangesActuallyRead": [
+            [
+              0,
+              424
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 48,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-fisch-lab",
+      "labName": "Fisch Lab",
+      "reviewedAt": "2026-10-16T09:23:22+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "4db0ab1085aadd46f7b75609e078f7c5fc14d864edb62ff8166ddb94609b08db",
+      "frozenPacketSha256": "a7abab7a92b27f12256f9d0484d310d79788916d65dc009f726050eb00067a50",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "两版About明确分开CCBB/CPD机构职务与本lab研究；计算基因组基础设施支持不属于本lab采用方法证明，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-cc63630985ec0f7d",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/fisch/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:50+00:00",
+          "bodySha256": "01c5152ec4ede336674c9e4393dabad9ca4a1e806360b256a7f08b44f77a7f87",
+          "textSha256": "f27a93be29d73864663d037be169b2eb8a4608826dd4182f1e12ae65cb23627e",
+          "textCharacters": 1428,
+          "rangesActuallyRead": [
+            [
+              0,
+              1428
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-cc6261e8b10e8090",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "4e0e61d9fc0093433544a0cc83aa2dbac6bba9c945d739aee3a9ab3b080c2f2e",
+          "textCharacters": 182,
+          "rangesActuallyRead": [
+            [
+              0,
+              182
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-098f02a9a7ec2e3a",
+          "sourceUrl": "https://profiles.ucsd.edu/kathleen.fisch",
+          "sourceObservedAt": "2026-10-03T03:52:38+00:00",
+          "bodySha256": null,
+          "textSha256": "7f1963dbba69afe6ab7501f3a933138c3ac934a48a851db58daf35fc0b45672a",
+          "textCharacters": 73,
+          "rangesActuallyRead": [
+            [
+              0,
+              73
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 46,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-475a525364a71297",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f414dc1a74201ac5",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/fisch/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:50+00:00",
+          "bodySha256": "01c5152ec4ede336674c9e4393dabad9ca4a1e806360b256a7f08b44f77a7f87",
+          "textSha256": "6248253c62af466b8417400a989c795becd586e2cb42def00820aefbf68d1bc5",
+          "textCharacters": 2972,
+          "rangesActuallyRead": [
+            [
+              0,
+              2972
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 49,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-lawson-lab",
+      "labName": "Lawson Lab",
+      "reviewedAt": "2026-10-16T09:23:32+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "57fcca0b1dfa5f9bbbf93f620ffd78ac7e62c48134868c057857e191f25c3e59",
+      "frozenPacketSha256": "40a4b9c10e14f5bd02155b2beb937ff66c8d4331b6d1ef379c9998279861ebb0",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整本组研究/成员/联系段没有操作技术，unique training为背景，新闻仅激素研究发现；目录邻组研究未借入，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-2e3cd250b2cd7412",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:53+00:00",
+          "bodySha256": "b1fa30b1d63344f6732075fd3ca99f20c868f0a75ba8f63790bba7163d2f01ff",
+          "textSha256": "20f13eee58f84a6dedf97fad161f8296939f75751a74a81c64bfc4ef994704b0",
+          "textCharacters": 1538,
+          "rangesActuallyRead": [
+            [
+              0,
+              1538
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-0721d35604a89c37",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/people.html",
+          "sourceObservedAt": "2026-10-16T02:40:39+00:00",
+          "bodySha256": "c678b6ad471949ed0d7feadaa538e426477662e6c5ad82d9536b0f229e2c285a",
+          "textSha256": "57d09710a2e42aeb9cd231f01241716abd6ea6cc15858c6111ebc12cb9ccc4cf",
+          "textCharacters": 535,
+          "rangesActuallyRead": [
+            [
+              0,
+              535
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-05b7aedf2de2e56f",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:35+00:00",
+          "bodySha256": "312bf0e15ae8a170b01e526d07ca48a5301c1063e0ac91d0cdcb68fdcd8e8849",
+          "textSha256": "eaa8e1ebe18147e6468d266d65a3e747fad424220d24d150f01a82656a8504e4",
+          "textCharacters": 604,
+          "rangesActuallyRead": [
+            [
+              0,
+              604
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-b21fc39d849d4ee3",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "4fa7ccbda9c883f13c85fe107b13214703fb7550ba1d4db16602f193d9f112b4",
+          "textCharacters": 204,
+          "rangesActuallyRead": [
+            [
+              0,
+              204
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6caef6431c737ea9",
+          "sourceUrl": "https://profiles.ucsd.edu/mark.lawson",
+          "sourceObservedAt": "2026-10-03T03:55:08+00:00",
+          "bodySha256": null,
+          "textSha256": "e1d4b8b7ab66378106cd8dc9aa404f9786b7c6853085f4cf4c725b000066ed95",
+          "textCharacters": 67,
+          "rangesActuallyRead": [
+            [
+              0,
+              67
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 46,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-475a525364a71297",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-10c4fa3498665c6e",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/index.html",
+          "sourceObservedAt": "2026-10-16T01:02:53+00:00",
+          "bodySha256": "b1fa30b1d63344f6732075fd3ca99f20c868f0a75ba8f63790bba7163d2f01ff",
+          "textSha256": "e1ea73199bcf34f8f8b76934b6d3603e58ebae3c1d66ad5866441c48c9922119",
+          "textCharacters": 3100,
+          "rangesActuallyRead": [
+            [
+              0,
+              3100
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e9506db403aba1b2",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/lawson/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:35+00:00",
+          "bodySha256": "312bf0e15ae8a170b01e526d07ca48a5301c1063e0ac91d0cdcb68fdcd8e8849",
+          "textSha256": "ab40685866a4f824188f5d53006df60cc1c4dfc810db9820c8324b21d83035e2",
+          "textCharacters": 2148,
+          "rangesActuallyRead": [
+            [
+              0,
+              2148
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 50,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-stupack-lab",
+      "labName": "Stupack Lab",
+      "reviewedAt": "2026-10-16T09:23:32+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "e021ac1034e488e07d63f9e6477a003e3582d6ff7086db41f4e7e38f8abffe7a",
+      "frozenPacketSha256": "8053ae4946af5c76202bd744a071254829876f7512aa93c3770f78a9424e2207",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整active projects研究问题已读，Genomic Analysis为项目标题，Shiny Apps导航不说明方法，unchanged理由具体。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-31a6616d9b0922fa",
+          "sourceUrl": "http://www.stupacklab.com/",
+          "sourceObservedAt": "2026-10-16T01:02:50+00:00",
+          "bodySha256": "9ca52306427f741e7b16fb5ceb313d1d32769dbe0bc0e8be4931c070f372baf8",
+          "textSha256": "9de86b5c062396e67ab8ad5de9910b53fe7cb6c631b84e4dbad2019ac6ba6aa1",
+          "textCharacters": 2148,
+          "rangesActuallyRead": [
+            [
+              0,
+              2148
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-35781ab036b5c478",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "21d461fe6166d14e5f71fbd91a2326f899dc2e98016352b2d9469d0ce86f40a5",
+          "textCharacters": 154,
+          "rangesActuallyRead": [
+            [
+              0,
+              154
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 46,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-475a525364a71297",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "reviewIndex": 51,
+      "labId": "ucsd-obstetrics-gynecology-reproductive-sciences-lab-wilkinson-lab",
+      "labName": "Wilkinson Lab",
+      "reviewedAt": "2026-10-16T09:23:32+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "成员Jenna Cecil项目：调节microRNA与NMD途径的囊性纤维化疗法研发",
+        "成员Beate Illek研究：使用患者来源细胞模型开展临床前研究"
+      ],
+      "frozenRawSha256": "2b590b761c7557069f4c92cb9517954179904af8b7e20041165db64bd894f950",
+      "frozenPacketSha256": "8e66a6d7351cb931d4712c6fa8a9889123a4a297407d791198cb38565bdcfcb7",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整People页中Jenna正在研发调节microRNA/NMD疗法及Beate实际utilizing患者来源细胞模型，均为本lab具名成员工作；2方法、摘要和限制相称，未暗示临床疗效或全组通用，未添电生理技术。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-182cf9e43dc9f858",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:00+00:00",
+          "bodySha256": "fe75aa4facc110dcb9266fd5656982f2cb21fdd82c3a9fde7c44d79e6a01975c",
+          "textSha256": "c0cfe011a884debc0fc6316495bc81c007718cc3ed68661dc62f4ea4ff87c645",
+          "textCharacters": 698,
+          "rangesActuallyRead": [
+            [
+              0,
+              698
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-a057135636d56e53",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:33:59+00:00",
+          "bodySha256": "0068ff24803d858515c47ae6f6863d3b08279f42e28030535a9e9f8103a4d087",
+          "textSha256": "87b86663c94c3223bb21f69343f978ad66e2e3e585eca25a6f7c2a3719b673f7",
+          "textCharacters": 338,
+          "rangesActuallyRead": [
+            [
+              0,
+              338
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-3810a1910ffb6dcc",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/people.html",
+          "sourceObservedAt": "2026-10-16T02:41:01+00:00",
+          "bodySha256": "cabf9b1ea06b3df3980592288d2a878e363d68dd195dcd73eb01f0bceeaa6d10",
+          "textSha256": "52ac001cfcaba4a9e03519de5489455e6f67e89b1c8bf92cf86c1b007e37fc5d",
+          "textCharacters": 5556,
+          "rangesActuallyRead": [
+            [
+              0,
+              5556
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c224ebfdcbd8d4c7",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:02+00:00",
+          "bodySha256": "545cec6b118640e84c7f8d1e2fd1111bca5c6d12aa5b4d4969af7498308ad7ba",
+          "textSha256": "25fe81f727d1632855e7f94ceda2246344075833e85a2cf19cae02099ceba5cb",
+          "textCharacters": 637,
+          "rangesActuallyRead": [
+            [
+              0,
+              637
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-7d754b78ede282c4",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+          "bodySha256": null,
+          "textSha256": "2f32bc7459c4cda649160267cb4661e0d0a97ba2f0977114f578bdd339805424",
+          "textCharacters": 131,
+          "rangesActuallyRead": [
+            [
+              0,
+              131
+            ]
+          ],
+          "disposition": "directory_local_scope_exclusion",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-475a525364a71297",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "2864c619b5b90d01aabb0a20ac041a04aa6998ba1fedc8a240507edfc707a349",
+          "textSha256": "ba3eab8a758153e407d47cf80db41190b9b81a26a9f7a5be5044c038ac08ec7d",
+          "textCharacters": 13241,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 46,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-475a525364a71297",
+          "reusedReadRanges": [
+            [
+              0,
+              180
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0568896215ce1e1d",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/index.html",
+          "sourceObservedAt": "2026-10-16T01:03:00+00:00",
+          "bodySha256": "fe75aa4facc110dcb9266fd5656982f2cb21fdd82c3a9fde7c44d79e6a01975c",
+          "textSha256": "55fd951cc86995c8519101bbde641cecab5a66806fa7a7d537f11d7c646adc9d",
+          "textCharacters": 2256,
+          "rangesActuallyRead": [
+            [
+              0,
+              2256
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-e8c0f99c2ebc8265",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:33:59+00:00",
+          "bodySha256": "0068ff24803d858515c47ae6f6863d3b08279f42e28030535a9e9f8103a4d087",
+          "textSha256": "86cb55df8c9cc79930905998cf9fc29b5cdbd5e20f8ecd931e78c01a4446bc8e",
+          "textCharacters": 1882,
+          "rangesActuallyRead": [
+            [
+              0,
+              1882
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-6a98d52e1b696cee",
+          "sourceUrl": "https://obgyn.ucsd.edu/research/labs/wilkinson/contact.html",
+          "sourceObservedAt": "2026-10-16T01:34:02+00:00",
+          "bodySha256": "545cec6b118640e84c7f8d1e2fd1111bca5c6d12aa5b4d4969af7498308ad7ba",
+          "textSha256": "5d4b103dcf79a271fc2b7df9ebc9abc364a51203505b100d6b93c791f23ce9e6",
+          "textCharacters": 2181,
+          "rangesActuallyRead": [
+            [
+              0,
+              2181
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 52,
+      "labId": "ucsd-otolaryngology-lab-friedman-lab",
+      "labName": "Visit the Friedman Lab",
+      "reviewedAt": "2026-10-16T09:23:54+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "331920086e7354a577904f764d134d13321a0fdf98d82d90c50b456ecd4a53f6",
+      "frozenPacketSha256": "95588117a6e413af5ce5147a8909609ccc73486ecdee8337326f4013455656f6",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "实验室/团队/联系各短段完整读，听力遗传是研究主题，临床治疗专长非实验室技术；没有研究方法，unchanged合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-57e2402247722e5c",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "3003c60bd2d6cae0e9c43a55fd1f7da1289ad7e059478850e3c3e8491dfabaa3",
+          "textSha256": "d09622c9f9b1cbb34919a82472b5d1e7b8987dd12cd54467f484471cf62a53dd",
+          "textCharacters": 288,
+          "rangesActuallyRead": [
+            [
+              0,
+              288
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c7f85616c854999a",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/team.html",
+          "sourceObservedAt": "2026-10-16T01:33:21+00:00",
+          "bodySha256": "8a7a993f15bf9a50aa630f3aa2d6e949fdabbd38db2d49553d876865488690a5",
+          "textSha256": "bc3742d7418fee54e80253939ca10e716171abd1df282724cc5f50e1ad57eb62",
+          "textCharacters": 362,
+          "rangesActuallyRead": [
+            [
+              0,
+              362
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-ad49b462e7a59554",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:22+00:00",
+          "bodySha256": "456893b45b01891e415bae5d6310a9426a93f9b935d6f5320278403dc073227d",
+          "textSha256": "acab0fd6dab5159df8b831b19b50ace20d5d0726386cc4ba5b41d71f88fa0953",
+          "textCharacters": 302,
+          "rangesActuallyRead": [
+            [
+              0,
+              302
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-95fc0947e9745fe8",
+          "sourceUrl": "https://oto.ucsd.edu/research/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:10+00:00",
+          "bodySha256": null,
+          "textSha256": "788c3607c80dfaa9222e853b877bf93f0c1a126a6f264e78de388a632c6b4495",
+          "textCharacters": 22,
+          "rangesActuallyRead": [
+            [
+              0,
+              22
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c43025d5af449e66",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "3003c60bd2d6cae0e9c43a55fd1f7da1289ad7e059478850e3c3e8491dfabaa3",
+          "textSha256": "0620f004f61197de0c12cee44fd5762791d832c8cde5aaa8a4b67ba1620ab840",
+          "textCharacters": 690,
+          "rangesActuallyRead": [
+            [
+              0,
+              690
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-5aa32ebed24e79c7",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/team.html",
+          "sourceObservedAt": "2026-10-16T01:33:21+00:00",
+          "bodySha256": "8a7a993f15bf9a50aa630f3aa2d6e949fdabbd38db2d49553d876865488690a5",
+          "textSha256": "8680c8c439f74f705fb087768020ac43c3669c89f75acdc0d9b3d6158c61f357",
+          "textCharacters": 751,
+          "rangesActuallyRead": [
+            [
+              0,
+              751
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-c8bfae50e83f870a",
+          "sourceUrl": "https://oto.ucsd.edu/research/friedman-lab/contact.html",
+          "sourceObservedAt": "2026-10-16T01:33:22+00:00",
+          "bodySha256": "456893b45b01891e415bae5d6310a9426a93f9b935d6f5320278403dc073227d",
+          "textSha256": "a25059694dcc24fafd62aa84f1ffa0bd4e1259077e89e4477aebadd332e0ebac",
+          "textCharacters": 691,
+          "rangesActuallyRead": [
+            [
+              0,
+              691
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 53,
+      "labId": "ucsd-pathology-lab-david-cheresh-lab",
+      "labName": "David Cheresh Lab",
+      "reviewedAt": "2026-10-16T09:23:54+00:00",
+      "passed": true,
+      "draftDecision": "unchanged",
+      "proposedMethods": [],
+      "frozenRawSha256": "92e0ac5f6be74cd1b872d91660ef7a78433ccc4a15b6b8bf2468a419bda1d1cf",
+      "frozenPacketSha256": "327b23c6e103089aab4676f66cc0614a2e4825cbb1cddd5a85a90c581f60bcd9",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "全部实体正文已读，抗体工具段明确Early in my career，后续公司/药物史并未绑定当前lab采用；不扩写为全组方法且保留既往范围合理。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-4b37bd596c6f7765",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/cheresh/index.html",
+          "sourceObservedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "35f231621fe08a075d46b04496e8737047824241b1fea2faf1a1415e0f462b77",
+          "textSha256": "0ec7be72116e8954f62daae65e266ff59276291f45ac2a8376f678fa3648e552",
+          "textCharacters": 1447,
+          "rangesActuallyRead": [
+            [
+              0,
+              1447
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-21b911e996157191",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/cheresh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:33:21+00:00",
+          "bodySha256": "3742b1180e5346988ce62beb1c19b4b9374e36953de24e6921874c6c341b525e",
+          "textSha256": "047ada1f9de38833f89bde831730c6010360eab1273c45c8d478fa14e8657c6d",
+          "textCharacters": 2360,
+          "rangesActuallyRead": [
+            [
+              0,
+              2360
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fdf0e2925f2005ae",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/cheresh/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:33:24+00:00",
+          "bodySha256": "e3beb577eb8f5c53eda844ba595b4ec9e5ca15952c53caac9ddd415437e2baee",
+          "textSha256": "a0c129ca68c62775072daf487f6b2eccc6a7239bb2861b2585e0bbe5b845ab9f",
+          "textCharacters": 704,
+          "rangesActuallyRead": [
+            [
+              0,
+              704
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fe66b0f07f0363c3",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "557b6ee17fbcc056c25ad89be8a05e91a75a55cc3b2c69e85d2b670c952c3889",
+          "textCharacters": 363,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 26,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-fe66b0f07f0363c3",
+          "reusedReadRanges": [
+            [
+              0,
+              363
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0f6110d2f1dac830",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/cheresh/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:33:24+00:00",
+          "bodySha256": "e3beb577eb8f5c53eda844ba595b4ec9e5ca15952c53caac9ddd415437e2baee",
+          "textSha256": "11d6d332eb79ea6531f76435fda037e9d37980f8e641320a8ad5ebc72e98629b",
+          "textCharacters": 1495,
+          "rangesActuallyRead": [
+            [
+              0,
+              1495
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 54,
+      "labId": "ucsd-pathology-lab-david-pride-lab",
+      "labName": "David Pride Lab",
+      "reviewedAt": "2026-10-16T09:23:54+00:00",
+      "passed": true,
+      "draftDecision": "add_source_explicit_methods",
+      "proposedMethods": [
+        "噬菌体治疗研发：构建和演化噬菌体资源库，开发噬菌体鸡尾酒"
+      ],
+      "frozenRawSha256": "92d0f10332bfd06cd802fbff5a845a9418c40da10d152118c850613b125f2b30",
+      "frozenPacketSha256": "00aff82b86d2e5b9b621469ac80e8861c2fffb259bf7ebad2dc68fdf56a493a2",
+      "exactProofScopeAndTimeAccepted": true,
+      "optionalSummaryAndUncertaintyConsistent": true,
+      "reasonZh": "完整根页与About明确实验室构建/演化phage collection并开发cocktails，1方法忠实限定治疗研发，未暗示临床使用/疗效或具体培养测序技术；摘要和unknown替换一致。",
+      "sourceCoverageActuallyRead": [
+        {
+          "sourceId": "src-450cd83c65f9a890",
+          "sourceUrl": "https://www.thepridelaboratory.org/",
+          "sourceObservedAt": "2026-10-16T01:05:16+00:00",
+          "bodySha256": "963d6eb6792eae1f27bb19fe8e5d5cb4ae937c7b71a31ace8be5a8b40b1afa2e",
+          "textSha256": "cb2cd73d2c21dbbefae69167da42412954b24b2278493715ff94b464e1e7406d",
+          "textCharacters": 1960,
+          "rangesActuallyRead": [
+            [
+              0,
+              1960
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-cc3ee27d92332efe",
+          "sourceUrl": "https://www.thepridelaboratory.org/about",
+          "sourceObservedAt": "2026-10-16T01:33:22+00:00",
+          "bodySha256": "a90cda8448dfb8a00752666e707eccf09486621ac491486c4b845cf71c655747",
+          "textSha256": "e15a705000d9f9b6a3fae1334a235217f1609bfb4b30ed3e60b48687c096f8aa",
+          "textCharacters": 1898,
+          "rangesActuallyRead": [
+            [
+              0,
+              1898
+            ]
+          ],
+          "disposition": "entity_local_primary_text_read",
+          "reasonZh": "仅审所列实际范围；目录/历史证据只核实体范围，不借其他实体方法；未读尾部不被否定。"
+        },
+        {
+          "sourceId": "src-fe66b0f07f0363c3",
+          "sourceUrl": "https://pathology.ucsd.edu/research/labs/index.html",
+          "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+          "bodySha256": null,
+          "textSha256": "557b6ee17fbcc056c25ad89be8a05e91a75a55cc3b2c69e85d2b670c952c3889",
+          "textCharacters": 363,
+          "rangesActuallyRead": [],
+          "disposition": "reused_identical_primary_text_scope_review",
+          "reusedFromReviewIndex": 26,
+          "reasonZh": "当前源textSHA与此前实际已读可见正文逐字相同，复用该已读范围的语义/作用域判断；本源原URI、时间与bodySHA独立保留。",
+          "identicalTextSourceId": "src-fe66b0f07f0363c3",
+          "reusedReadRanges": [
+            [
+              0,
+              363
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "networkRequests": 0,
+  "psChecks": 0,
+  "rawPacketCodeCollectorSharedWrites": 0,
+  "draftNotApplied": true,
+  "lastCheckpointAt": "2026-10-16T09:23:54+00:00",
+  "reviewedAt": "2026-10-16T09:24:55+00:00",
+  "scopeAddendumSha256": "2c84fb63628f35c86d7a83861a884ea9394e95a2de860fbab53417d57103f863",
+  "scopeAddendumReview": {
+    "path": "data/local-lab-summaries/EMPTY-METHOD-FIELD-SCOPE-ADDENDUM.json",
+    "revisedIndices": [
+      110
+    ],
+    "assignedIndicesChanged": [],
+    "index4UnchangedAndCorrectlySeparatesActorAndProjectScopes": true,
+    "noteZh": "统一修订仅调整另一段110的uncertainty限定；本QA不代替110所属段审阅，已确认不修改000–054冻结提案。"
+  },
+  "fieldPreservationCounterfactuals": [
+    {
+      "reviewIndex": 0,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 1,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 2,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 3,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 4,
+      "changedFieldsInCounterfactual": [
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 5,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 6,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 7,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 8,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 9,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 10,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 11,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 12,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 13,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 14,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 15,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 16,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 17,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 18,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 19,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 20,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 21,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 22,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 23,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 24,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 25,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 26,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 27,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 28,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 29,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 30,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 31,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 32,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 33,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 34,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 35,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 36,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 37,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 38,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 39,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 40,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 41,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 42,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 43,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 44,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 45,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 46,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 47,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 48,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 49,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 50,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 51,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 52,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 53,
+      "changedFieldsInCounterfactual": [],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    },
+    {
+      "reviewIndex": 54,
+      "changedFieldsInCounterfactual": [
+        "summaryZh",
+        "methods",
+        "evidence",
+        "uncertainty"
+      ],
+      "oldEvidenceExactPrefixPreserved": true,
+      "questionsQuestionReviewIdentityAffiliationAndAllOtherRawFieldsPreserved": true
+    }
+  ],
+  "finalVerification": {
+    "all55FrozenRawPacketHashesStillMatch": true,
+    "all186OwnCoverageMetadataAndRangesVerified": true,
+    "all10QuotesInsideActuallyReadOrIdenticalReusedRanges": true,
+    "all7AdmittedSourceOriginalBytesAndSidecarsVerified": true,
+    "scopeAndTimeQualifiersSemanticallyReviewed": true,
+    "newProofsMethodsOnlyCounterfactual": true,
+    "oldEvidenceExactPrefixAndUnrelatedRawFieldsPreservedCounterfactual": true,
+    "noApplicationRun": true
+  }
+}

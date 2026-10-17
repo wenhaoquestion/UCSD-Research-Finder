@@ -1,0 +1,111 @@
+{
+  "labId": "ucsd-see-lab",
+  "status": "supported",
+  "summaryZh": "SEE Lab 研究如何在资源受限边缘设备上高效运行机器学习，并在精度、能耗与计算资源之间协调。团队跨系统层面开发学习算法、优化新硬件并分配计算与通信，也采用超维计算建立高效分类和聚类方法。",
+  "researchQuestions": [
+    "如何在满足嵌入式边缘设备资源约束的同时实现高准确率机器学习？"
+  ],
+  "topics": [
+    "高效机器学习",
+    "边缘计算",
+    "系统能效",
+    "超维计算"
+  ],
+  "methods": [
+    "机器学习算法开发",
+    "硬件优化",
+    "分布式计算与通信",
+    "超维计算"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-5d62025490fe9feb",
+      "quote": "research in SEE Lab tackles these questions across all levels of system design, using novel algorithmic approaches for machine learning, developing optimized hardware based on emerging technologies, and distributing computation and communication throughout a system to extend system lifetime.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-5d62025490fe9feb",
+      "quote": "Our work leverages the paradigm of “hyperdimensional computing” (HD)",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-5d62025490fe9feb",
+      "quote": "SEE Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-5d62025490fe9feb",
+      "quote": "However, these algorithms are often too computationally demanding to run on resource-constrained edge devices, which lack the required power and computation resources, necessitating the development of novel algorithmic techniques which can deliver high accuracy while meeting the resource constraints of embedded devices. research in SEE Lab tackles these questions across all levels of system design",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "所审阅正文未明确陈述该实体的机构隶属；域名本身不足为据。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:19:10.098809+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:52:47+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具体计算准确率与资源限制问题紧接research in SEE Lab tackles these questions明确绑定，不从硬件平台/工程愿景泛造问题。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-5d62025490fe9feb",
+        "sourceUrl": "https://seelab.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:04:57+00:00",
+        "bodySha256": "bc7a31a2a0b83b43f919a16648faa8edbc34e5354ad64c87a55bbd33711e4a63",
+        "textSha256": "24f79bf88f296e24d3640316de48b4f4eb37bf456c081377eac72f2edb5f238f",
+        "textCharacters": 9614,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            4000
+          ]
+        ],
+        "reasonZh": "读取前述范围；后续未读部分不声称已审阅，当前已读科研介绍与后续新闻/论文/成员边界另列。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-5d62025490fe9feb",
+        "quote": "However, these algorithms are often too computationally demanding to run on resource-constrained edge devices, which lack the required power and computation resources, necessitating the development of novel algorithmic techniques which can deliver high accuracy while meeting the resource constraints of embedded devices. research in SEE Lab tackles these questions across all levels of system design",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:04:57+00:00",
+        "bodySha256": "bc7a31a2a0b83b43f919a16648faa8edbc34e5354ad64c87a55bbd33711e4a63",
+        "sourceUrl": "https://seelab.ucsd.edu/"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

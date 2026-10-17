@@ -1,0 +1,89 @@
+{
+  "labId": "ucsd-pathology-lab-laboratory-genomic-medicine",
+  "status": "partial",
+  "summaryZh": "目标页面实际介绍 UC San Diego 的实验室与基因组医学分部，涵盖临床检验、基因组医学及生物医学研究；它不是单一实验室的介绍。无法据此概括一个独立实验室。",
+  "researchQuestions": [],
+  "topics": [],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-2cdd416c55f40272",
+      "quote": "Division of Laboratory and Genomic Medicine",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-2cdd416c55f40272",
+      "quote": "advancing UC San Diego Health's tripartite mission",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-2cdd416c55f40272",
+      "quote": "Laboratory & Genomic Medicine",
+      "quoteLocation": "title",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "mismatch",
+    "entityType": "departmental_division",
+    "reason": "页面明确为由 Division Chief 负责、包含多位教师及临床检验服务的院系分部，不是单一研究实验室。 后续来源复核：复读已存分部页面，Division Chief、临床服务和多位教师仍支持院系分部分类；不能作为单一lab接受，本轮无新请求。",
+    "acceptanceStatus": "rejected_non_lab",
+    "hasUnresolvedMismatch": true,
+    "observedPageName": "Division of Laboratory and Genomic Medicine",
+    "observedPageType": "departmental_division",
+    "silentIdMigrationAllowed": false,
+    "proposedCorrections": [
+      {
+        "field": "entityClassification",
+        "value": "departmental_division",
+        "status": "candidate_only_not_applied"
+      }
+    ],
+    "requiresLiveIdentityFollowup": false,
+    "followupReviewedAt": "2026-10-16T02:17:52+00:00",
+    "followupFindings": [
+      {
+        "targetUrl": "https://pathology.ucsd.edu/divisions/laboratory-genomic-medicine/index.html",
+        "state": "reviewed_existing_capture_non_lab_classification_unchanged",
+        "reviewedAt": "2026-10-16T02:17:52+00:00",
+        "actualPageRequestMade": false,
+        "liveCheckedAt": null,
+        "sourceObservedAt": "2026-10-16T00:57:27+00:00",
+        "sourceId": "src-2cdd416c55f40272",
+        "checkOrigin": "reused_collection_capture",
+        "originalDestinationRechecked": false,
+        "identityAccepted": false,
+        "findingZh": "复读已存分部页面，Division Chief、临床服务和多位教师仍支持院系分部分类；不能作为单一lab接受，本轮无新请求。"
+      }
+    ],
+    "followupConclusion": "复读已存分部页面，Division Chief、临床服务和多位教师仍支持院系分部分类；不能作为单一lab接受，本轮无新请求。",
+    "liveCheckedAt": null,
+    "liveCheckedAtScope": null,
+    "originalDestinationRechecked": false
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "独立实验室的研究问题与方法未知。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "复读已存分部页面，Division Chief、临床服务和多位教师仍支持院系分部分类；不能作为单一lab接受，本轮无新请求。"
+  ],
+  "blockers": [
+    "destination_is_division_not_lab",
+    "页面明确为由 Division Chief 负责、包含多位教师及临床检验服务的院系分部，不是单一研究实验室。"
+  ],
+  "reviewedAt": "2026-10-16T02:17:52+00:00",
+  "researchContentSupport": {
+    "status": "not_applicable_to_lab",
+    "scope": "The observed resource is explicitly not an independent lab/group."
+  },
+  "previousReviewedAt": "2026-10-16T02:08:49+00:00"
+}

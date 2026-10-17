@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T03:47:48+00:00",
+  "originalBindingReceiptSha256": "707a4650f2adaf5cdb4ab7c93f98ecb6a8fa0b1c9c5100c03a03d6637d09213f",
+  "firstTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00",
+  "scope": "Finite identity-only refinement for the same two IDs after corrected actual-request source selection. No packet/code/aggregate/collector/network changes.",
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-komiyama-lab",
+      "ordinal": 84,
+      "firstTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00",
+      "titleIdentityRefinementReviewedAt": "2026-10-16T03:47:48+00:00",
+      "decision": "exact_title_identity_supported_with_confirmed_same_lab_binding",
+      "addedEvidence": {
+        "sourceId": "src-1f3f2b4080bb6ebe",
+        "quote": "Komiyama Lab |",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "actualSelectedRootCapture": {
+        "sourceId": "src-1f3f2b4080bb6ebe",
+        "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "listedUrl": "https://komiyamalab.biosci.ucsd.edu",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:11+00:00",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/150d0b69b57c8feb170a3d15500106e8adeaa205edbf1bc2cc9ebc2a5aaec5dc.html",
+        "title": "Komiyama Lab |",
+        "mainTextEmpty": true,
+        "httpRedirectChain": []
+      },
+      "sameSiteBinding": {
+        "rootHtmlHref": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "researchSourceId": "src-ed1a3b9e0c08c68e",
+        "researchObservedAt": "2026-10-16T02:40:05+00:00",
+        "researchBodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+        "scienceReReviewed": false
+      },
+      "strictSourceMatchesFetch": true,
+      "negativeMismatchChecksRejected": [
+        "actual_request",
+        "body_hash",
+        "observation_time",
+        "final_url"
+      ],
+      "hydratedPageIdentity": "confirmed",
+      "canCountAsVerifiedLabGroupURL": true,
+      "listedUrlDirectlyChecked": true,
+      "lastCheckedAt": "2026-10-16T01:04:11+00:00",
+      "liveCheckedAt": null,
+      "scienceAndAffiliationUnchanged": true,
+      "packetUnchangedSha256": "d3548bf66cf1b8297e0f493a40b3ba08469d02398026e30ef271ae9eb9e954d2",
+      "noNetworkRequest": true
+    },
+    {
+      "labId": "ucsd-live-lab-421d1a9d198202",
+      "ordinal": 627,
+      "firstTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00",
+      "titleIdentityRefinementReviewedAt": "2026-10-16T03:47:48+00:00",
+      "decision": "exact_title_identity_supported_with_confirmed_same_lab_binding",
+      "addedEvidence": {
+        "sourceId": "src-19163a4c45db52fd",
+        "quote": "Komiyama Lab |",
+        "quoteLocation": "title",
+        "supports": [
+          "identity"
+        ]
+      },
+      "actualSelectedRootCapture": {
+        "sourceId": "src-19163a4c45db52fd",
+        "requestedUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "listedUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "finalUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:46+00:00",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/421d1a9d198202080c288003aaba2eb03dea42dd5afb30cba98b84775a9affde.html",
+        "title": "Komiyama Lab |",
+        "mainTextEmpty": true,
+        "httpRedirectChain": [
+          {
+            "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "to": "https://komiyamalab.biosci.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ]
+      },
+      "sameSiteBinding": {
+        "rootHtmlHref": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "researchSourceId": "src-ed1a3b9e0c08c68e",
+        "researchObservedAt": "2026-10-16T02:40:05+00:00",
+        "researchBodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+        "scienceReReviewed": false
+      },
+      "strictSourceMatchesFetch": true,
+      "negativeMismatchChecksRejected": [
+        "actual_request",
+        "body_hash",
+        "observation_time",
+        "final_url"
+      ],
+      "hydratedPageIdentity": "confirmed",
+      "canCountAsVerifiedLabGroupURL": true,
+      "listedUrlDirectlyChecked": true,
+      "lastCheckedAt": "2026-10-16T01:06:46+00:00",
+      "liveCheckedAt": null,
+      "scienceAndAffiliationUnchanged": true,
+      "packetUnchangedSha256": "edf1b2684e125ce3dbc4d4981352f53a4b32a636a18a93622fbdce983905f655",
+      "noNetworkRequest": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Incremental review: eligible 912
+
+Kosuri Lab (ucsd-live-lab-f65b4596f0a5e3) adds one supported research summary and one directly verified original URL, using the actual HTTPS capture from2026-10-16T01:36:56+00:00. It is a Salk Institute lab with an independently evidenced UCSD Bioinformatics and Systems Biology graduate-program relationship and its own rotation guidance. This is not a new UCSD-owned laboratory, UCSD department assignment or UCSD professor/PI appointment. Institution remains Salk, affiliation is external, department/PI/professor-ID unknowns are preserved.
+
+The own research statement concerns movement and biological function across molecular, ensemble and organ scales; methods include DNA self-assembly/origami devices, synthetic muscle models, computational methods, functional imaging and spatially resolved transcriptomics. Contact and rotation guidance lie beyond the automatic18k-character excerpt. The complete25,278-character captured main text was independently read under the same raw body hash and original time. The campus evidence is the exact named Pallav Kosuri card with DOM id21218 and its literal Lab Site href. No other faculty card or generic program membership was borrowed.
+
+An explicit fixed-ID admission guard retains Salk ownership and requires separate own-student-access and named-campus-card evidence; it creates no general external-lab exception. The original receipt normalized the raw no-slash href into a slash-terminated URL; its declared derivative restores the literal attribute, while the actual HTTPS request URI and original snapshot bytes remain distinct and unchanged. The prior43 lab objects remain unchanged.
+
+All prior911 packet and record files remain byte-identical and old projected per-ID values identical. The batch creates only one new packet/record, two small immutable source-body copies and required pinned admission/validation metadata; it does not copy a whole atlas or rebuild large previews. All84 handoff capture hashes and provenance guards pass. No new network requests, model workers or collection writes occurred.
+
+Current stage totals:912 processed/912eligible;749 supported lab/group summaries, including this explicitly external affiliate;597 directly verified accepted original lab/group URLs, a subset. Across all entity types763 supported;59partial and90unresolved. Global collection/final review remain incomplete.
+
+Data validation and341relevant offline tests pass with no evidence-cache warnings. The six previously observed network-adapter dependency-mismatch integration cases remain unchanged; this offline task did not need or relax that adapter. No push, merge or deployment.

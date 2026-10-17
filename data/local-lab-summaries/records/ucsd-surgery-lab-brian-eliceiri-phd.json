@@ -1,0 +1,212 @@
+{
+  "labId": "ucsd-surgery-lab-brian-eliceiri-phd",
+  "status": "supported",
+  "summaryZh": "Eliceiri 实验室研究免疫监视、组织修复及自然信号过程，发展伤口愈合和乳腺癌治疗。具体方法未明确。",
+  "researchQuestions": [
+    "免疫监视与组织修复涉及哪些机制？"
+  ],
+  "topics": [
+    "免疫监视",
+    "组织修复",
+    "伤口愈合与乳腺癌"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-35d3935062650b02",
+      "quote": "About the Eliceiri Lab Developing therapeutics in wound healing and breast cancer based on a molecular understanding of natural signaling processes. Our lab provides a multidisciplinary training environment for defining mechanisms of immune surveillance and tissue repair to develop therapeutics. The concept of cancer as a wound that doesn’t heal is the foundation of our tumor immunology program and cutaneous wound healing program. Our lab is located in the Altman Clinical Translational Research Institute, with Brian Eliceiri, Ph.D., having a dual appointment in the Department of Surgery and the Department of Dermatology. We focus on training Ph.D. post-doctoral fellows and resident surgeons and partner with junior faculty for mentorship opportunities.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-35d3935062650b02",
+      "quote": "Eliceiri Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-35d3935062650b02",
+      "quote": "with Brian Eliceiri, Ph.D., having a dual appointment in the Department of Surgery and the Department of Dermatology.",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-35d3935062650b02",
+      "quote": "Our lab provides a multidisciplinary training environment for defining mechanisms of immune surveillance and tissue repair to develop therapeutics.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "方法未明确。",
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。",
+    "研究方法待核（限本轮已审阅材料）：实验室完整About只说明机制目标、研究项目与培训环境，没有具体实验或计算方法；成员页为名单。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:08:41+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:24:20+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "Our lab明确以defining mechanisms为目标且承接肿瘤免疫/创伤修复项目；不把治疗开发目标当成疗效结论。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-35d3935062650b02",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:25+00:00",
+        "bodySha256": "9f90c56937a290fca8dad230fbc9a34228abeeefbafc8fa3f3ca146901eab07b",
+        "textSha256": "a9dd007e8b0eb564580c91ce36a1f5928760987dc2c878d954505e333fd5ec43",
+        "textCharacters": 761,
+        "readRanges": [
+          [
+            0,
+            761
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-ea1e8ba499a4d45d",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:34:18+00:00",
+        "bodySha256": "5b2f4b15050525920e6376702604bef150ccca7400584b4301626ceb0a902d27",
+        "textSha256": "f6607970b9fa65dbd7be2615078d20b5dc0a411d73a0646db7051c43c81c8e7c",
+        "textCharacters": 565,
+        "readRanges": [
+          [
+            0,
+            565
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取成员/联系/发表页局部范围作作用域筛查，个人履历与论文标题不作为整体研究问题。"
+      },
+      {
+        "sourceId": "src-6750d91622618261",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:25+00:00",
+        "bodySha256": "9f90c56937a290fca8dad230fbc9a34228abeeefbafc8fa3f3ca146901eab07b",
+        "textSha256": "eac8e9a810361d898185abb985fa4024720611e1c7c5a5c1bcac96ffc2e25e5f",
+        "textCharacters": 1739,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-35d3935062650b02",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      },
+      {
+        "sourceId": "src-fad321445a3374ac",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:34:18+00:00",
+        "bodySha256": "5b2f4b15050525920e6376702604bef150ccca7400584b4301626ceb0a902d27",
+        "textSha256": "7d019e213e99e6877820be4b0f59ad2bf7214f53dcda0a92669e8d46eb80236a",
+        "textCharacters": 1543,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-ea1e8ba499a4d45d",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-35d3935062650b02",
+        "quote": "Our lab provides a multidisciplinary training environment for defining mechanisms of immune surveillance and tissue repair to develop therapeutics.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:06:25+00:00",
+        "bodySha256": "9f90c56937a290fca8dad230fbc9a34228abeeefbafc8fa3f3ca146901eab07b"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:08:41+00:00",
+    "previousRecordReviewedAt": "2026-10-16T08:24:20+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "实验室完整About只说明机制目标、研究项目与培训环境，没有具体实验或计算方法；成员页为名单。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-055-109.json",
+    "reviewComponentSha256": "e0ec6d91d1488bc15681812210a2bbfa8f1327423c33b1c690be29b6c933f254",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-35d3935062650b02",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:25+00:00",
+        "bodySha256": "9f90c56937a290fca8dad230fbc9a34228abeeefbafc8fa3f3ca146901eab07b",
+        "textSha256": "a9dd007e8b0eb564580c91ce36a1f5928760987dc2c878d954505e333fd5ec43",
+        "textCharacters": 761,
+        "rangesActuallyRead": [
+          [
+            0,
+            761
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      },
+      {
+        "sourceId": "src-ea1e8ba499a4d45d",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:34:18+00:00",
+        "bodySha256": "5b2f4b15050525920e6376702604bef150ccca7400584b4301626ceb0a902d27",
+        "textSha256": "f6607970b9fa65dbd7be2615078d20b5dc0a411d73a0646db7051c43c81c8e7c",
+        "textCharacters": 565,
+        "rangesActuallyRead": [
+          [
+            0,
+            565
+          ]
+        ],
+        "disposition": "entity_local_prose_read",
+        "reasonZh": "只读取所列实际范围；未读尾段不作无方法断言，个人履历/论文/新闻与工具主题不自动视为方法采用。"
+      },
+      {
+        "sourceId": "src-6750d91622618261",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:06:25+00:00",
+        "bodySha256": "9f90c56937a290fca8dad230fbc9a34228abeeefbafc8fa3f3ca146901eab07b",
+        "textSha256": "eac8e9a810361d898185abb985fa4024720611e1c7c5a5c1bcac96ffc2e25e5f",
+        "textCharacters": 1739,
+        "rangesActuallyRead": [],
+        "disposition": "duplicate_extraction_excluded",
+        "duplicateOf": "src-35d3935062650b02",
+        "reasonZh": "同一sourceURL逐字相同正文，或仅前置院系导航的重复提取；采用对应正文版本。"
+      },
+      {
+        "sourceId": "src-fad321445a3374ac",
+        "sourceUrl": "https://surgery.ucsd.edu/divisions/acute-care/research/eliceiri-lab/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:34:18+00:00",
+        "bodySha256": "5b2f4b15050525920e6376702604bef150ccca7400584b4301626ceb0a902d27",
+        "textSha256": "7d019e213e99e6877820be4b0f59ad2bf7214f53dcda0a92669e8d46eb80236a",
+        "textCharacters": 1543,
+        "rangesActuallyRead": [],
+        "disposition": "duplicate_extraction_excluded",
+        "duplicateOf": "src-ea1e8ba499a4d45d",
+        "reasonZh": "同一sourceURL逐字相同正文，或仅前置院系导航的重复提取；采用对应正文版本。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": 1,
+  "status": "complete_readonly_proposal_review",
+  "reviewedAt": "2026-10-16T08:59:59+00:00",
+  "inputDelta": {
+    "path": "data/local-lab-summaries/QUESTION-METHOD-FINAL-SCIENCE-CACHE-DELTA.json",
+    "sha256": "32e3cfad55fcc5683503ebb7759eb8cb5d49a3c08146e35ad92819e6f67e3c8c"
+  },
+  "frozenQueueSnapshotFromInput": {
+    "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+    "readAt": "2026-10-16T08:55:39+00:00",
+    "readExactlyOnce": true,
+    "bytes": 47447424,
+    "sha256": "c93267b6d0fd6bbaa6c3174f8b6eec52834cd42e11daa59ecd70039a78321d6e",
+    "updatedAt": "2026-10-16T08:55:31+00:00",
+    "itemCount": 19506,
+    "counts": {
+      "done": 6976,
+      "unresolved": 822,
+      "scope_excluded": 291,
+      "retained_prior_evidence": 1734,
+      "pending": 9682,
+      "running": 1
+    }
+  },
+  "queueRereadDuringThisReview": false,
+  "scope": {
+    "newTuplesReviewed": 5,
+    "successfulPrimaryHTMLFullyRead": 4,
+    "failed404MetadataReviewed": 1,
+    "targetStableIDs": 4,
+    "wholeLabScientificImprovementCandidates": 0,
+    "newEntityAcceptanceCandidates": 0,
+    "sameBodyAndFullVisibleTextNewObservationOnly": 2
+  },
+  "extraction": {
+    "implementation": "scripts/lab_summary_content.py: ContentDOM/decode_cached_html",
+    "sha256": "002bdd9c87071ba62b18d0a1d5daeeba567e84f58efdb1bfb51f08bf27427ba0",
+    "collectorImported": false,
+    "networkUsed": false
+  },
+  "sources": [
+    {
+      "queueKey": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+      "queueUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+      "queueState": "done",
+      "requestedUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+      "finalUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+      "observedAt": "2026-10-16T08:32:12+00:00",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "bodySha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7",
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-live-lab-5dba8659c4ddd7"
+      ],
+      "reviewedAt": "2026-10-16T08:59:59+00:00",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0eb49cf833c02d8fd892dae7a6474dbf864693e396755c9f8d53b18a709447eb.json",
+      "metadataSha256": "0ea9d6f8b23078b89a4b1190c65076b2ac71ad173af401c04a30109240466eac",
+      "sidecarMetadata": {
+        "sourceUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "observedAt": "2026-10-16T08:32:12+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://cogsci.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:20+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112240.787207,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://cogsci.ucsd.edu/people/faculty/lara-rangel.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7",
+        "retrievedEpoch": 1792139532.706629
+      },
+      "sidecarTupleMatchesDelta": true,
+      "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0eb49cf833c02d8fd892dae7a6474dbf864693e396755c9f8d53b18a709447eb.html",
+      "bodyPresent": true,
+      "newCaptureObservedByReviewer": false,
+      "collectorCaptureReusedOffline": true,
+      "targetScopeReasonZh": "该正式教师页给Lara Rangel个人研究兴趣；Personal Website字面指向HTTP Neural Crossroads站点，可保留个人与站点关联。没有Our lab/具名Neural Crossroads整体研究声明，不能将个人方向搬到该lab或补whole-lab科学字段。",
+      "scienceProposal": null,
+      "targetIdentityAcceptanceProposed": false,
+      "targetAffiliationUpgradeProposed": false,
+      "proposedPacketAppend": false,
+      "actualBodySha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7",
+      "bodyBytes": 74299,
+      "bodyHashMatchesDeltaAndSidecar": true,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "decodingMethod": "utf8_replacement",
+      "decodingWarning": null,
+      "title": "Lara Rangel",
+      "mainElement": {
+        "tag": "section",
+        "attrs": {
+          "aria-label": "Profile Container",
+          "class": "col-xs-12 col-sm-9 main-content-container main-section pull-right"
+        }
+      },
+      "visibleTextCharacters": 342,
+      "visibleTextSha256": "b1835db9cdb1f2a3b8d877ac9aacfae12b132944ab60dd842d864151aff2fcff",
+      "actualReadRanges": [
+        [
+          0,
+          342
+        ]
+      ],
+      "readScope": "Full ContentDOM.main visible text plus document title; excluded navigation/scripts/bibliography not treated as science.",
+      "candidateSourceIdNotAppended": "src-d1f43c7386034fef",
+      "evidence": [
+        {
+          "quote": "Lara Rangel Associate Professor",
+          "quoteLocation": "body",
+          "charRange": [
+            0,
+            31
+          ],
+          "scope": "personal_identity",
+          "sourceObservedAt": "2026-10-16T08:32:12+00:00",
+          "bodySha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7"
+        },
+        {
+          "quote": "Rhythmic coordination of brain activity, information processing in neural networks, dynamic interactions between neurons, learning, memory, neuromodulation.",
+          "quoteLocation": "body",
+          "charRange": [
+            186,
+            342
+          ],
+          "scope": "personal_research_interests",
+          "sourceObservedAt": "2026-10-16T08:32:12+00:00",
+          "bodySha256": "6c2a58857001a5815396cb2294c41614f515529d136b533c6b8e65bb5e29a1b7"
+        }
+      ],
+      "relevantActualAnchors": [
+        {
+          "label": "Personal Website",
+          "literalHref": "http://neuralcrossroads.ucsd.edu/",
+          "resolvedLiteralUrl": "http://neuralcrossroads.ucsd.edu/",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "li",
+              "id": null,
+              "class": "personal-website"
+            },
+            {
+              "tag": "ul",
+              "id": null,
+              "class": "profile-contact-list"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            },
+            {
+              "tag": "article",
+              "id": null,
+              "class": "profile-section-contact pull-right"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"http://neuralcrossroads.ucsd.edu/\" title=\"http://neuralcrossroads.ucsd.edu/\">Personal Website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        }
+      ],
+      "sameFullVisibleTextPriorPacketSources": [],
+      "decision": "personal_profile_or_associated_link_only_no_whole_lab_science"
+    },
+    {
+      "queueKey": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "queueUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "queueState": "unresolved",
+      "requestedUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "finalUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "observedAt": "2026-10-16T08:38:00+00:00",
+      "fetchStatus": "http_error",
+      "httpStatus": 404,
+      "bodySha256": null,
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-live-lab-bbf8c0855a7019"
+      ],
+      "reviewedAt": "2026-10-16T08:59:59+00:00",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/90744ae64a3ed3572c31e53b4da5efd5c6efb9f043f376697a90fffd2ca060c1.json",
+      "metadataSha256": "dd77a38acadcd2b6f1013f220a05c438d50f3c797c67cfd6078e24de493abbfb",
+      "sidecarMetadata": {
+        "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "observedAt": "2026-10-16T08:38:00+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://www.ece.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.551392,
+          "error": "",
+          "status": "checked"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792139880.106487
+      },
+      "sidecarTupleMatchesDelta": true,
+      "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/90744ae64a3ed3572c31e53b4da5efd5c6efb9f043f376697a90fffd2ca060c1.html",
+      "bodyPresent": false,
+      "newCaptureObservedByReviewer": false,
+      "collectorCaptureReusedOffline": true,
+      "targetScopeReasonZh": "此次真实原URI检查返回HTTP404且没有保存成功HTML正文；不提供科研/当前实体接受证据，也不据404推断实验室关闭或不存在。",
+      "scienceProposal": null,
+      "targetIdentityAcceptanceProposed": false,
+      "targetAffiliationUpgradeProposed": false,
+      "proposedPacketAppend": false,
+      "actualBodySha256": null,
+      "bodyHashMatchesDeltaAndSidecar": null,
+      "actualReadRanges": [],
+      "decision": "http404_no_scientific_body",
+      "evidence": [],
+      "relevantActualAnchors": []
+    },
+    {
+      "queueKey": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+      "queueUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+      "queueState": "done",
+      "requestedUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+      "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+      "observedAt": "2026-10-16T08:34:12+00:00",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab"
+      ],
+      "reviewedAt": "2026-10-16T08:59:59+00:00",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3a7efdaf27a789f15905b971aace6082928604b0608785a9a06194d32af7b3f9.json",
+      "metadataSha256": "8e0ad4d27f87d99f3e9c8d0e13fe476de4759db65cd4f8dc4af207cad428459f",
+      "sidecarMetadata": {
+        "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "observedAt": "2026-10-16T08:34:12+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://linguistics.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:21+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112241.8480692,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+        "retrievedEpoch": 1792139652.071081
+      },
+      "sidecarTupleMatchesDelta": true,
+      "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/3a7efdaf27a789f15905b971aace6082928604b0608785a9a06194d32af7b3f9.html",
+      "bodyPresent": true,
+      "newCaptureObservedByReviewer": false,
+      "collectorCaptureReusedOffline": true,
+      "targetScopeReasonZh": "页内仅Rachel Mayberry个人联系信息及Personal Website；实际目标为grammar.ucsd.edu/mayberrylab/RachelMayberry.html，与LLP语言学习设施不同。不得将姓名、个人网站或共享导航Language Lab链接作为该设施的PI/科研绑定。",
+      "scienceProposal": null,
+      "targetIdentityAcceptanceProposed": false,
+      "targetAffiliationUpgradeProposed": false,
+      "proposedPacketAppend": false,
+      "actualBodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+      "bodyBytes": 72122,
+      "bodyHashMatchesDeltaAndSidecar": true,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "decodingMethod": "utf8_replacement",
+      "decodingWarning": null,
+      "title": "Rachel Mayberry",
+      "mainElement": {
+        "tag": "section",
+        "attrs": {
+          "aria-label": "Profile Container",
+          "class": "col-xs-12 col-sm-9 main-content-container main-section pull-right"
+        }
+      },
+      "visibleTextCharacters": 103,
+      "visibleTextSha256": "5660e822790ef8f2e0a5ed5503dcc589d1e0bcd675e80b796f689e392da3673c",
+      "actualReadRanges": [
+        [
+          0,
+          103
+        ]
+      ],
+      "readScope": "Full ContentDOM.main visible text plus document title; excluded navigation/scripts/bibliography not treated as science.",
+      "candidateSourceIdNotAppended": "src-4b3c6226aa5941d6",
+      "evidence": [
+        {
+          "quote": "Rachel Mayberry Professor",
+          "quoteLocation": "body",
+          "charRange": [
+            0,
+            25
+          ],
+          "scope": "personal_identity",
+          "sourceObservedAt": "2026-10-16T08:34:12+00:00",
+          "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a"
+        }
+      ],
+      "relevantActualAnchors": [
+        {
+          "label": "Personal Website",
+          "literalHref": "http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html",
+          "resolvedLiteralUrl": "http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "li",
+              "id": null,
+              "class": "personal-website"
+            },
+            {
+              "tag": "ul",
+              "id": null,
+              "class": "profile-contact-list"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            },
+            {
+              "tag": "article",
+              "id": null,
+              "class": "profile-section-contact pull-right"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html\" title=\"http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html\">Personal Website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        },
+        {
+          "label": "Personal website",
+          "literalHref": "http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html",
+          "resolvedLiteralUrl": "http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "resp-tab-content"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "resp-tabs-container"
+            },
+            {
+              "tag": "article",
+              "id": "profileTab",
+              "class": "profile-section profile-section-tabs pull-left"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "class": "col-xs-12 col-sm-9 main-content-container main-section pull-right"
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"http://grammar.ucsd.edu/mayberrylab/RachelMayberry.html\">Personal website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        }
+      ],
+      "sameFullVisibleTextPriorPacketSources": [
+        {
+          "labId": "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab",
+          "sourceId": "src-ab17fbcbf6a3f0f0",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+          "sourceObservedAt": "2026-10-16T00:59:54+00:00",
+          "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+          "sameBodySha256": true,
+          "preserveOldSourceTimestamp": true
+        }
+      ],
+      "decision": "same_bytes_and_visible_text_new_observation_no_science_delta"
+    },
+    {
+      "queueKey": "https://profiles.ucsd.edu/Arpi.Minassian",
+      "queueUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+      "queueState": "done",
+      "requestedUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+      "finalUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+      "observedAt": "2026-10-16T08:34:06+00:00",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030",
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-live-lab-8e21407776c12e"
+      ],
+      "reviewedAt": "2026-10-16T08:59:59+00:00",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/1d56402992889f520da91bb8f73597c7d39cc01f9b61b817afe0c1041ebca1ef.json",
+      "metadataSha256": "87705653a83f7bbb112a2e27a2416009bb525480f7933adc6ced2571c68792b3",
+      "sidecarMetadata": {
+        "sourceUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "observedAt": "2026-10-16T08:34:06+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://profiles.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:01:29+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112489.452821,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+        "contentType": "text/html; charset=utf-8",
+        "error": "",
+        "sha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030",
+        "retrievedEpoch": 1792139646.1552799
+      },
+      "sidecarTupleMatchesDelta": true,
+      "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/1d56402992889f520da91bb8f73597c7d39cc01f9b61b817afe0c1041ebca1ef.html",
+      "bodyPresent": true,
+      "newCaptureObservedByReviewer": false,
+      "collectorCaptureReusedOffline": true,
+      "targetScopeReasonZh": "个人简介有研究计划、方法及未具名research laboratory地点，并有Featured Content中的TRIPEC lab website精确旧href。这只能确认档案关联该网址，不能自动认定个人研究计划或未具名lab地点就是TRIPEC整体研究/机构隶属；不提升目标identity或affiliation。",
+      "scienceProposal": null,
+      "targetIdentityAcceptanceProposed": false,
+      "targetAffiliationUpgradeProposed": false,
+      "proposedPacketAppend": false,
+      "actualBodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030",
+      "bodyBytes": 153192,
+      "bodyHashMatchesDeltaAndSidecar": true,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "decodingMethod": "utf8_replacement",
+      "decodingWarning": null,
+      "title": "Arpi Minassian | UCSD Profiles",
+      "mainElement": {
+        "tag": "div",
+        "attrs": {
+          "id": "ctl00_divProfilesContentMain",
+          "class": "profilesContentMain profilesMaxWidth",
+          "itemscope": "itemscope",
+          "itemtype": "http://schema.org/Person"
+        }
+      },
+      "visibleTextCharacters": 2745,
+      "visibleTextSha256": "96768c14eebf842efe7bd80eecabc383d1f1fff5c9fba21323cbf82de658ec7f",
+      "actualReadRanges": [
+        [
+          0,
+          2745
+        ]
+      ],
+      "readScope": "Full ContentDOM.main visible text plus document title; excluded navigation/scripts/bibliography not treated as science.",
+      "candidateSourceIdNotAppended": "src-8574420edaebe653",
+      "evidence": [
+        {
+          "quote": "Dr. Minassian’s research program is focused upon understanding the relationship between biology and behavior in mental illness, medical illness, and substance abuse.",
+          "quoteLocation": "body",
+          "charRange": [
+            865,
+            1030
+          ],
+          "scope": "personal_research_program",
+          "sourceObservedAt": "2026-10-16T08:34:06+00:00",
+          "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030"
+        },
+        {
+          "quote": "Her research laboratory is located at the UCSD Medical Center in Hillcrest.",
+          "quoteLocation": "body",
+          "charRange": [
+            636,
+            711
+          ],
+          "scope": "unnamed_research_lab_location",
+          "sourceObservedAt": "2026-10-16T08:34:06+00:00",
+          "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030"
+        },
+        {
+          "quote": "Much of her research has implemented physiological and cognitive paradigms to understand brain dysfunction in psychiatric populations such as bipolar disorder, schizophrenia, PTSD, and substance addiction as well as neuromedical conditions such as HIV.",
+          "quoteLocation": "body",
+          "charRange": [
+            1031,
+            1283
+          ],
+          "scope": "personal_methods_not_TRIPEC_methods",
+          "sourceObservedAt": "2026-10-16T08:34:06+00:00",
+          "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030"
+        },
+        {
+          "quote": "TRIPEC lab website",
+          "quoteLocation": "body",
+          "charRange": [
+            2424,
+            2442
+          ],
+          "scope": "associated_link_label_only",
+          "sourceObservedAt": "2026-10-16T08:34:06+00:00",
+          "bodySha256": "5eaa87c191a93da2753a44ddf73494e2685af598777f2bb93d6552d205e17030"
+        }
+      ],
+      "relevantActualAnchors": [
+        {
+          "label": "TRIPEC lab website",
+          "literalHref": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+          "resolvedLiteralUrl": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "td",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "tr",
+              "id": null,
+              "class": "website-table"
+            },
+            {
+              "tag": "tbody",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "table",
+              "id": null,
+              "class": "collapsible"
+            },
+            {
+              "tag": "div",
+              "id": "view_links_table",
+              "class": null
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx\">TRIPEC lab website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        }
+      ],
+      "sameFullVisibleTextPriorPacketSources": [],
+      "decision": "personal_profile_or_associated_link_only_no_whole_lab_science"
+    },
+    {
+      "queueKey": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+      "queueUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+      "queueState": "done",
+      "requestedUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+      "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+      "observedAt": "2026-10-16T08:34:18+00:00",
+      "fetchStatus": "ok",
+      "httpStatus": 200,
+      "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+      "positions": [
+        "attemptHistory[0]",
+        "fetch"
+      ],
+      "currentTargetLabIds": [
+        "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab"
+      ],
+      "reviewedAt": "2026-10-16T08:59:59+00:00",
+      "metadataPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c24df225aa72b2a91576ef5361e6f35efeb0669331ea49e8616df755c89d6b27.json",
+      "metadataSha256": "f3d741da0ac90fb42d69f7f869caec56be25de68335efb63dbe99ed0352c1c45",
+      "sidecarMetadata": {
+        "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "observedAt": "2026-10-16T08:34:18+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://linguistics.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:21+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112241.8480692,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+        "retrievedEpoch": 1792139658.040822
+      },
+      "sidecarTupleMatchesDelta": true,
+      "bodyPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/c24df225aa72b2a91576ef5361e6f35efeb0669331ea49e8616df755c89d6b27.html",
+      "bodyPresent": true,
+      "newCaptureObservedByReviewer": false,
+      "collectorCaptureReusedOffline": true,
+      "targetScopeReasonZh": "页内仅Andrew Kehler个人联系信息及Personal Website，实际目标为akehler.github.io；无LLP语言设施研究、PI或机构归属声明。",
+      "scienceProposal": null,
+      "targetIdentityAcceptanceProposed": false,
+      "targetAffiliationUpgradeProposed": false,
+      "proposedPacketAppend": false,
+      "actualBodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+      "bodyBytes": 72026,
+      "bodyHashMatchesDeltaAndSidecar": true,
+      "textExtractionVersion": "summary-visible-content-v2",
+      "decodingMethod": "utf8_replacement",
+      "decodingWarning": null,
+      "title": "Andrew Kehler",
+      "mainElement": {
+        "tag": "section",
+        "attrs": {
+          "aria-label": "Profile Container",
+          "class": "col-xs-12 col-sm-9 main-content-container main-section pull-right"
+        }
+      },
+      "visibleTextCharacters": 99,
+      "visibleTextSha256": "ecd446fc7075a4506a44cc98702c18038662e094b8af25c2ada31d859b029324",
+      "actualReadRanges": [
+        [
+          0,
+          99
+        ]
+      ],
+      "readScope": "Full ContentDOM.main visible text plus document title; excluded navigation/scripts/bibliography not treated as science.",
+      "candidateSourceIdNotAppended": "src-473dec68d55bb891",
+      "evidence": [
+        {
+          "quote": "Andrew Kehler Professor",
+          "quoteLocation": "body",
+          "charRange": [
+            0,
+            23
+          ],
+          "scope": "personal_identity",
+          "sourceObservedAt": "2026-10-16T08:34:18+00:00",
+          "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782"
+        }
+      ],
+      "relevantActualAnchors": [
+        {
+          "label": "Personal Website",
+          "literalHref": "https://akehler.github.io/",
+          "resolvedLiteralUrl": "https://akehler.github.io/",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "li",
+              "id": null,
+              "class": "personal-website"
+            },
+            {
+              "tag": "ul",
+              "id": null,
+              "class": "profile-contact-list"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            },
+            {
+              "tag": "article",
+              "id": null,
+              "class": "profile-section-contact pull-right"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"https://akehler.github.io/\" title=\"https://akehler.github.io/\">Personal Website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        },
+        {
+          "label": "Personal Website",
+          "literalHref": "https://akehler.github.io/",
+          "resolvedLiteralUrl": "https://akehler.github.io/",
+          "location": "actual main content anchor; not navigation",
+          "ancestors": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": null
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "resp-tab-content"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "resp-tabs-container"
+            },
+            {
+              "tag": "article",
+              "id": "profileTab",
+              "class": "profile-section profile-section-tabs pull-left"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "clearfix"
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "class": "col-xs-12 col-sm-9 main-content-container main-section pull-right"
+            }
+          ],
+          "literalHtmlExcerpt": "<a href=\"https://akehler.github.io/\" title=\"https://akehler.github.io/\">Personal Website</a>",
+          "interpretation": "website association only; no HTTP redirect/canonical/whole-lab science or entity acceptance"
+        }
+      ],
+      "sameFullVisibleTextPriorPacketSources": [
+        {
+          "labId": "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab",
+          "sourceId": "src-db933ba8884cfdbb",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+          "sourceObservedAt": "2026-10-16T00:59:51+00:00",
+          "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+          "sameBodySha256": true,
+          "preserveOldSourceTimestamp": true
+        }
+      ],
+      "decision": "same_bytes_and_visible_text_new_observation_no_science_delta"
+    }
+  ],
+  "targets": [
+    {
+      "labId": "ucsd-live-lab-5dba8659c4ddd7",
+      "labName": "Neural Crossroads Laboratory",
+      "listedWebsite": "https://neuralcrossroads.ucsd.edu/",
+      "rawSha256": "a2025173266083ffa26190e52416ac6a4e5146c94245f451324747f1867f9fd6",
+      "packetSha256": "0a230b5705384c1b16c496f4c6bd6a00edf7a3e04fee166ede7a7ad36b5de022",
+      "rawStatus": "partial",
+      "identity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+      },
+      "affiliation": {
+        "status": "source_reported",
+        "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+      },
+      "rawReviewedAtPreserved": "2026-10-16T01:54:03+00:00",
+      "sourceInventoryCount": 2,
+      "existingSourceEvidenceScopesRead": [
+        {
+          "sourceId": "src-40a7068cc7c80547",
+          "sourceUrl": "https://neuralcrossroads.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:38+00:00",
+          "bodySha256": "e8fd801cd5f04356a8cae61fa1c88e23a6ebcca342ae43f80c65185a6d2026b5",
+          "rangesRead": [
+            [
+              0,
+              1911
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-dd4360951ed64d73",
+          "sourceUrl": "https://cogsci.ucsd.edu/research/research-labs.html",
+          "observedAt": "2026-10-02T22:42:09+00:00",
+          "bodySha256": null,
+          "rangesRead": [
+            [
+              0,
+              99
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        }
+      ],
+      "existingRootFetch": {
+        "sourceUrl": "https://neuralcrossroads.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:38+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://neuralcrossroads.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:06:37+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112797.473588,
+          "error": "",
+          "redirects": [],
+          "status": "checked"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://neuralcrossroads.ucsd.edu/",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "e8fd801cd5f04356a8cae61fa1c88e23a6ebcca342ae43f80c65185a6d2026b5",
+        "retrievedEpoch": 1792112798.235412
+      },
+      "recommendedAction": "preserve_current_record_and_packet",
+      "reasonZh": "该正式教师页给Lara Rangel个人研究兴趣；Personal Website字面指向HTTP Neural Crossroads站点，可保留个人与站点关联。没有Our lab/具名Neural Crossroads整体研究声明，不能将个人方向搬到该lab或补whole-lab科学字段。",
+      "sourceCaptureDatesNotReplaced": true
+    },
+    {
+      "labId": "ucsd-live-lab-bbf8c0855a7019",
+      "labName": "Ultrafast and Nanoscale Optics Group",
+      "listedWebsite": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20(Professor%20Shaya%20Fainman)",
+      "rawSha256": "db99a0280666bad1fdc72c914147070c4adafe2826f3260881d61175ba41da06",
+      "packetSha256": "7d92a6aa2164d865da8c664546cfe189f8e818004a068c3327f15fc8143e2ec9",
+      "rawStatus": "unresolved",
+      "identity": {
+        "status": "uncertain",
+        "entityType": "research_group",
+        "reason": "历史目录确认曾列出的名称与负责人；当前历史目标404，不能确认当前目的页身份。"
+      },
+      "affiliation": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "rawReviewedAtPreserved": "2026-10-16T02:19:08+00:00",
+      "sourceInventoryCount": 3,
+      "existingSourceEvidenceScopesRead": [
+        {
+          "sourceId": "src-63fd14a94a99cbca",
+          "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-02T22:42:04+00:00",
+          "bodySha256": null,
+          "rangesRead": [
+            [
+              0,
+              62
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-e6d031865ff052bb",
+          "sourceUrl": "https://emerald.ucsd.edu/",
+          "observedAt": "2026-10-07T23:03:17+00:00",
+          "bodySha256": null,
+          "rangesRead": [
+            [
+              0,
+              58
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-32de4fdeaf8e5afb",
+          "sourceUrl": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+          "rangesRead": [
+            [
+              0,
+              1399
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        }
+      ],
+      "existingRootFetch": {
+        "sourceUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20%28Professor%20Shaya%20Fainman%29",
+        "observedAt": "2026-10-16T02:16:23+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://www.ece.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:12+00:00",
+          "httpStatus": 200,
+          "retrievedEpoch": 1792112232.551392,
+          "error": "",
+          "status": "checked"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://www.ece.ucsd.edu/faculty-research/Ultrafast%20and%20Nanoscale%20Optics%20Group%20%28Professor%20Shaya%20Fainman%29",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792116983.163029,
+        "liveCheckedAt": "2026-10-16T02:16:22+00:00",
+        "actualPageRequestMade": true
+      },
+      "recommendedAction": "preserve_current_record_and_packet",
+      "reasonZh": "此次真实原URI检查返回HTTP404且没有保存成功HTML正文；不提供科研/当前实体接受证据，也不据404推断实验室关闭或不存在。",
+      "sourceCaptureDatesNotReplaced": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-llp-ucsd-edu-language-lab",
+      "labName": "Language Lab",
+      "listedWebsite": "https://llp.ucsd.edu/language-lab/index.html",
+      "rawSha256": "e4be69108a234931caec1e1f41fbe3b111f0c0ad5acaca20c4c020ae590af2b0",
+      "packetSha256": "fb1887ebe3320f37e409c625e580a4653caffa62bf8896f02e3913b165b7a199",
+      "rawStatus": "partial",
+      "identity": {
+        "status": "confirmed",
+        "entityType": "facility",
+        "reason": "正文直接标识语言教学实验室与图书馆；临时关闭来自明确声明而非抓取失败。"
+      },
+      "affiliation": {
+        "status": "uncertain",
+        "reason": "可用正文未明确陈述该实体机构隶属。"
+      },
+      "rawReviewedAtPreserved": "2026-10-16T01:53:40+00:00",
+      "sourceInventoryCount": 11,
+      "existingSourceEvidenceScopesRead": [
+        {
+          "sourceId": "src-1d8e4b75590fdb93",
+          "sourceUrl": "https://llp.ucsd.edu/language-lab/index.html",
+          "observedAt": "2026-10-16T00:59:47+00:00",
+          "bodySha256": "dadca41445d33a69de7fa2c843212afc5d7ae23f4cfc0998c8fb24b07470244c",
+          "rangesRead": [
+            [
+              0,
+              2577
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-db933ba8884cfdbb",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+          "observedAt": "2026-10-16T00:59:51+00:00",
+          "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+          "rangesRead": [
+            [
+              0,
+              99
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-ab17fbcbf6a3f0f0",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+          "observedAt": "2026-10-16T00:59:54+00:00",
+          "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+          "rangesRead": [
+            [
+              0,
+              103
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-3c558b9cf8108406",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/andrew-kehler.html",
+          "observedAt": "2026-10-16T00:59:51+00:00",
+          "bodySha256": "5854b582fa3b7926e030cbb97f15e8637782a1af5ae47b3cdcf5b88142e52782",
+          "rangesRead": [
+            [
+              0,
+              1025
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        },
+        {
+          "sourceId": "src-e48f53c64bdac7fc",
+          "sourceUrl": "https://linguistics.ucsd.edu/people/faculty/profiles/rachel-mayberry.html",
+          "observedAt": "2026-10-16T00:59:54+00:00",
+          "bodySha256": "541c10497e82fd8e25f7f4de2f3c632a9222b3370a7d1939285952c88ed1451a",
+          "rangesRead": [
+            [
+              0,
+              1029
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        }
+      ],
+      "existingRootFetch": {
+        "sourceUrl": "https://llp.ucsd.edu/language-lab/index.html",
+        "observedAt": "2026-10-16T00:59:47+00:00",
+        "status": "ok",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://llp.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:59:45+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112385.8476422,
+          "error": "",
+          "redirects": [],
+          "status": "not_found"
+        },
+        "httpStatus": 200,
+        "finalUrl": "https://llp.ucsd.edu/language-lab/index.html",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "sha256": "dadca41445d33a69de7fa2c843212afc5d7ae23f4cfc0998c8fb24b07470244c",
+        "retrievedEpoch": 1792112387.417163
+      },
+      "recommendedAction": "preserve_current_record_and_packet",
+      "reasonZh": "页内仅Rachel Mayberry个人联系信息及Personal Website；实际目标为grammar.ucsd.edu/mayberrylab/RachelMayberry.html，与LLP语言学习设施不同。不得将姓名、个人网站或共享导航Language Lab链接作为该设施的PI/科研绑定。；页内仅Andrew Kehler个人联系信息及Personal Website，实际目标为akehler.github.io；无LLP语言设施研究、PI或机构归属声明。",
+      "identityBoundaryZh": "现实体是Leonard D. Newmark语言教学实验室与图书馆facility，不是Mayberry/Kehler研究团队；既有明确临时关闭声明保留，不能由新个人页推断重开或研究计划。",
+      "sourceCaptureDatesNotReplaced": true
+    },
+    {
+      "labId": "ucsd-live-lab-8e21407776c12e",
+      "labName": "TRIPEC lab website",
+      "listedWebsite": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+      "rawSha256": "5b6cae82e88b2d97f1a7380f6939cdf2c7945c97e58e30017ebbb15157db7206",
+      "packetSha256": "4c8bb8ba4fe0c9930d434e7aa9ac50f9dce5e0b678bc38b299c9757b2e4029d5",
+      "rawStatus": "unresolved",
+      "identity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接。"
+      },
+      "affiliation": {
+        "status": "uncertain",
+        "reason": "来源不足以确认机构隶属。"
+      },
+      "rawReviewedAtPreserved": "2026-10-16T01:48:03+00:00",
+      "sourceInventoryCount": 1,
+      "existingSourceEvidenceScopesRead": [
+        {
+          "sourceId": "src-5b698f4d46caa374",
+          "sourceUrl": "https://profiles.ucsd.edu/Arpi.Minassian",
+          "observedAt": "2026-10-03T05:01:14+00:00",
+          "bodySha256": null,
+          "rangesRead": [
+            [
+              0,
+              97
+            ]
+          ],
+          "scope": "existing local source text read for identity/research context; no full-source claim beyond range"
+        }
+      ],
+      "existingRootFetch": {
+        "sourceUrl": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:06:59+00:00",
+        "status": "http_error",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://medschool.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T00:57:17+00:00",
+          "httpStatus": 404,
+          "retrievedEpoch": 1792112237.3471382,
+          "error": "",
+          "status": "not_found"
+        },
+        "httpStatus": 404,
+        "finalUrl": "https://medschool.ucsd.edu/som/psychiatry/research/TRIPEC/Pages/default.aspx",
+        "contentType": "text/html; charset=UTF-8",
+        "error": "",
+        "retrievedEpoch": 1792112819.407048
+      },
+      "recommendedAction": "preserve_current_record_and_packet",
+      "reasonZh": "个人简介有研究计划、方法及未具名research laboratory地点，并有Featured Content中的TRIPEC lab website精确旧href。这只能确认档案关联该网址，不能自动认定个人研究计划或未具名lab地点就是TRIPEC整体研究/机构隶属；不提升目标identity或affiliation。",
+      "identityBoundaryZh": "TRIPEC具名链接仅提供档案与旧网址关联；未具名Her research laboratory不能自动绑定TRIPEC实体/地点/个人科研，旧根404保持单独原观察。",
+      "sourceCaptureDatesNotReplaced": true
+    }
+  ],
+  "conclusionZh": "四个成功捕获均不足以为原目标补充whole-lab科研。Mayberry与Kehler两页与旧packet正文/字节完全一致，仅新观察tuple，不更新旧source捕获时间。Rangel个人研究兴趣与Minassian个人研究计划不能补lab；TRIPEC字面href只保留关联，不作为具名科研/identity接受。Fainman404没有科研正文，不表示关闭。",
+  "currentMigrationExcluded": {
+    "question434FrozenPlanUnchanged": true,
+    "sourcesNotAddedToPackets": true,
+    "rawsUnchanged": true,
+    "requiresAnyFutureScienceOrIdentityChangeSeparateReview": true
+  },
+  "networkRequestsMade": 0,
+  "psChecks": 0,
+  "rawPacketCollectorSharedCodeReceiptWrites": 0,
+  "openIssues": [],
+  "validation": {
+    "validatedAt": "2026-10-16T09:00:38+00:00",
+    "allFourActualHTMLHashesAndFiveSidecarTuplesMatch": true,
+    "allLiteralBodyQuotesAndMainAnchorsPresent": true,
+    "allFourTargetRawPacketHashesUnchanged": true,
+    "twoOlderSameBodySourceDatesPreserved": true,
+    "noAppliedScienceOrIdentityChange": true
+  }
+}

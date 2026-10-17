@@ -1,0 +1,138 @@
+{
+  "labId": "ucsd-pediatrics-lab-leibel-lab",
+  "status": "supported",
+  "summaryZh": "Leibel 实验室研究人肺发育和疾病，关注表面活性物质、RSV 感染及炎症对发育肺的影响。团队使用诱导多能干细胞衍生的三维人肺类器官。",
+  "researchQuestions": [
+    "肺表面活性物质缺乏时，炎症、高氧及牵张通过哪些分子机制影响发育中的肺？"
+  ],
+  "topics": [
+    "肺发育",
+    "表面活性物质缺乏",
+    "RSV 感染"
+  ],
+  "methods": [
+    "iPSC 衍生三维人肺类器官"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-0318da648c935254",
+      "quote": "Leibel Lab About Leibel Lab The Leibel lab is interested in studying human lung development and disease, specifically the effects of surfactant on normal lung development, in the setting of RSV infection as well as the molecular mechanisms of inflammation, hyperoxia and stretch on the developing lung in the setting of surfactant deficiency. Using induced pluripotent stem cell derived 3D human lung organoids, we aim to understand the racial disparities of preterm babies with respiratory distress syndrome and the genetic and epigenetic profiles of babies at risk of severe bronchopulmonary dysplasia (BPD). We aim to develop novel therapies to increase surfactant production and secretion in preterm babies including allogenic cell transfer, nanotechnology and therapeutics.",
+      "supports": [
+        "methods",
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-0318da648c935254",
+      "quote": "Leibel Lab",
+      "supports": [
+        "affiliation",
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-0318da648c935254",
+      "quote": "The Leibel lab is interested in studying human lung development and disease, specifically the effects of surfactant on normal lung development, in the setting of RSV infection as well as the molecular mechanisms of inflammation, hyperoxia and stretch on the developing lung in the setting of surfactant deficiency.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源正文明确以该实验室或研究团队描述其研究。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "官方院系页面列出该实体，或实体正文明确陈述 UC San Diego 归属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的现任任职声明；采集时间不等于任职生效时间。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:15:30+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:15:30+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:55:29+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "具名实验室明确研究表面活性物质缺乏背景下的分子机制，保留该条件及三项因素；不从种族差异主题另外推导原因。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-135-269.json",
+    "reviewComponentSha256": "bd716b90b8c5167c2f3dd5859532dd656d6bc0ddd7b7456d64c2b0d92ea4cff8",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-0318da648c935254",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/leibel-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:02:57+00:00",
+        "bodySha256": "e50510cf9781fb3a7bd1b5707d4a79bd1da399df4da34cee64e76329adf8fa41",
+        "textSha256": "05d34b8a1a137fffd957523a679c0492b15bbe85c70234a750d1789e799a2b4a",
+        "textCharacters": 778,
+        "readRanges": [
+          [
+            0,
+            778
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-3800d0a643fb1cd0",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:06+00:00",
+        "bodySha256": null,
+        "textSha256": "6d56fbb7365ae944352c3d92e1e524c031c0e5e4330b802831b50731cce75bf1",
+        "textCharacters": 107,
+        "readRanges": [
+          [
+            0,
+            107
+          ]
+        ],
+        "coverage": "full_packet_text_read",
+        "reasonZh": "读取所列主文与局部上下文；未读范围不冒称全文。"
+      },
+      {
+        "sourceId": "src-45fa95d3f5b9a413",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/index.html",
+        "sourceObservedAt": "2026-10-16T00:59:12+00:00",
+        "bodySha256": "3cf2555d91b63ae5ec59e4670a1cbbb5ec6adbe04e350a7f4eaea3727978c84a",
+        "textSha256": "4a9a94e4c6db0e839101d09fcd8c54449422015fc4dcaf9afd6215268ab63eca",
+        "textCharacters": 1659,
+        "readRanges": [],
+        "coverage": "reused_exact_generic_directory_or_link_read",
+        "reusedFromReviewIndex": 143,
+        "reasonZh": "精确同一已读目录/字面链接来源，只作实体绑定，不将邻近实验室或院系通用文字作为本项问题。"
+      },
+      {
+        "sourceId": "src-df359148b5278a8b",
+        "sourceUrl": "https://pediatrics.ucsd.edu/research/faculty-labs/leibel-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:02:57+00:00",
+        "bodySha256": "e50510cf9781fb3a7bd1b5707d4a79bd1da399df4da34cee64e76329adf8fa41",
+        "textSha256": "e5ae5765b1aa962d094ee0271410bf375e29910e33b679b80542ed061136c3a7",
+        "textCharacters": 1945,
+        "readRanges": [],
+        "coverage": "excluded_duplicate_extraction",
+        "duplicateOf": "src-0318da648c935254",
+        "reasonZh": "同URL重复正文或仅增加院系导航的提取版本，使用逐字对应来源审阅。"
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-0318da648c935254",
+        "quote": "The Leibel lab is interested in studying human lung development and disease, specifically the effects of surfactant on normal lung development, in the setting of RSV infection as well as the molecular mechanisms of inflammation, hyperoxia and stretch on the developing lung in the setting of surfactant deficiency.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:02:57+00:00",
+        "bodySha256": "e50510cf9781fb3a7bd1b5707d4a79bd1da399df4da34cee64e76329adf8fa41"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:00:29.699352+00:00",
+  "baseCommit": "920f81f",
+  "verdict": "PASS_3_finite_literal_historical_profile_link_draft_entries",
+  "metadataOnly": true,
+  "networkRequestsMade": 0,
+  "adapterSha256": "76d7631f8235c540023841c0cdb41c9d59e0c2c83892f3a261de8406dc1e6bbf",
+  "coverageReportSha256": "bcd9e552c5e367faec9d583ef083bca8d82e9119cd2b29dfeb906409ba0548a2",
+  "baselineSha256": "ed451d2888bdbd34024ea16b951e5ae1d3a81262c75aa42a35531f2814ddc44e",
+  "snapshotProofCount": 3,
+  "draftItemCount": 3,
+  "currentHelperResultCount": 3,
+  "helperCheckMechanism": "Read-only production helper with in-memory reader substitution for draft entries only; active file and all code unchanged; no plan/execute invoked.",
+  "inputSnapshots": [
+    {
+      "path": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/queue.json",
+      "sha256": "ba6707f61c829495e6c30853b95c734f00b1e82aa58c0735d9948892ab558060",
+      "updatedAt": "2026-10-16T07:00:23+00:00",
+      "captureCount": 19241
+    },
+    {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/gap-results.json",
+      "sha256": "61f839b5b9ab88dde85345c415714e86c62cbcd60519e23d861d4e1ca7c3655b",
+      "updatedAt": "2026-10-16T06:45:58+00:00",
+      "wireEvents": 353
+    },
+    {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/reviewed-profile-lab-links.json",
+      "sha256": "c239a8e63f0aa3fd37804970caf9568dafec3db98e7dec5d1839437097d78a05"
+    },
+    {
+      "path": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/identity-decisions.json",
+      "sha256": "d03f63cfc224974df2951ebbc152619fc05289431dbcb69781c888df5874362a",
+      "excludedIDCount": 14
+    }
+  ],
+  "items": [
+    {
+      "labId": "ucsd-cellular-molecular-medicine-lab-esko-lab",
+      "ordinal": 150,
+      "labName": "Esko Lab",
+      "reviewedAt": "2026-10-16T07:00:28.181242+00:00",
+      "decision": "PASS_for_single_related_literal_HTTP_observation_draft_only",
+      "literalAnchor": {
+        "label": "Esko Lab",
+        "href": "http://eskolab.ucsd.edu/",
+        "literalAnchorMatchesFieldLabel": true,
+        "literalHTTPAndListedHTTPSRelated": true,
+        "candidateRequestKey": [
+          "http",
+          "eskolab.ucsd.edu",
+          null,
+          "/",
+          ""
+        ]
+      },
+      "actualRawAnchorTags": [
+        {
+          "rawStartTag": "<a href=\"http://eskolab.ucsd.edu/\">",
+          "attributes": {
+            "href": "http://eskolab.ucsd.edu/"
+          }
+        }
+      ],
+      "requestKey": [
+        "http",
+        "eskolab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "eskolab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "kaufmanNoTrailingSlashLiteralPreserved": null,
+      "notAnHTTPRedirectInference": true,
+      "wholeFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/jeffrey.esko",
+        "observedAt": "2026-10-07T21:45:57+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Esko Lab → https://eskolab.ucsd.edu/",
+        "status": "verified"
+      },
+      "wholeFieldProofSha256": "352f53fb19ad3e167f9df1f71ebed70b50fe66ce579065a7b124292e81c505c9",
+      "allMatchingProfessorRelations": [
+        {
+          "professorId": "ucsd-cellular-molecular-medicine-jeffrey-esko",
+          "officialProfileUrl": "https://profiles.ucsd.edu/jeffrey.esko"
+        }
+      ],
+      "selectedExistingProfessorId": "ucsd-cellular-molecular-medicine-jeffrey-esko",
+      "professorScope": "Existing baseline relation only; duplicate officialProfileUrl relationships retained, no person/lab merge or current PI inference.",
+      "profileCapture": {
+        "bodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/11d562a6eecc313d36e4c801785d514c56cae7598205409290c6601f81eebd8d.html",
+        "metadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/11d562a6eecc313d36e4c801785d514c56cae7598205409290c6601f81eebd8d.json",
+        "sourceUrl": "https://profiles.ucsd.edu/jeffrey.esko",
+        "finalUrl": "https://profiles.ucsd.edu/jeffrey.esko",
+        "observedAt": "2026-10-07T21:45:57+00:00",
+        "bodySha256": "0da0ed727c6709cf595af64828ae43bb3eca97d613727f50e5be07b1852c9833",
+        "metadataSha256": "81b606c6e483b84383f49fcaee4a02179938b8a63afd013e4af2a56259d5b4f5"
+      },
+      "snapshotReceiptPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/0da0ed727c6709cf595af64828ae43bb3eca97d613727f50e5be07b1852c9833.admission-receipt.json",
+      "snapshotReceiptSha256": "bd0bf0a7173fc2bcdaa63c6c75bd46abdaf1e6a0fdff265ed8857ce330e8abcb",
+      "originalBodyAndMetadataBytesVerified": true,
+      "profileMainFeaturedWebpageVisibleAnchorVerified": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "confirmed",
+        "entityType": "lab",
+        "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+      },
+      "rawSha256": "2c22f900815a260a1d75338289b30a641f71319c6df805a3b39c8694626ef7f8",
+      "packetSha256": "fae558201935b6b7e1cc346ce49067dc5d1a135d075985fd3a68c36184cf766d",
+      "rawAndPacketHashesUnchangedSinceCoverage": true,
+      "latestDestinationFetch": {
+        "sourceUrl": "https://eskolab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:19:39+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://eskolab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:39+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113579.585409,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://eskolab.ucsd.edu/",
+        "retrievedEpoch": 1792113579.602016
+      },
+      "rootFetchWholeDictMatchesCoverage": true,
+      "rootAndRelatedExplicitBoundaryChecks": "Performed by current full admission helper over packet/current history/related checks and frozen queue+own ledger.",
+      "HTTPOriginRobotsUnavailable": false,
+      "cachedHTTPRobotsDenial": null,
+      "HTTPRobotsObservationAbsentNotPermission": true,
+      "noRootRecheckOrCanonicalIdentityScienceAcceptance": true,
+      "exactTargetAttemptsOrPending": [],
+      "ownWireEvents": [],
+      "ownOneShotStarts": [],
+      "productionHelperAdmittedUnderDraftReader": true,
+      "HTTPOriginRobotsSidecarInventoryAtFinalReview": []
+    },
+    {
+      "labId": "ucsd-live-lab-ebefe055ae9fce",
+      "ordinal": 520,
+      "labName": "Kaufman Lab Site",
+      "reviewedAt": "2026-10-16T07:00:28.181242+00:00",
+      "decision": "PASS_for_single_related_literal_HTTP_observation_draft_only",
+      "literalAnchor": {
+        "label": "Kaufman Lab Site",
+        "href": "http://kaufmanlab.ucsd.edu",
+        "literalAnchorMatchesFieldLabel": true,
+        "literalHTTPAndListedHTTPSRelated": true,
+        "candidateRequestKey": [
+          "http",
+          "kaufmanlab.ucsd.edu",
+          null,
+          "/",
+          ""
+        ]
+      },
+      "actualRawAnchorTags": [
+        {
+          "rawStartTag": "<a href=\"http://kaufmanlab.ucsd.edu\">",
+          "attributes": {
+            "href": "http://kaufmanlab.ucsd.edu"
+          }
+        }
+      ],
+      "requestKey": [
+        "http",
+        "kaufmanlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "kaufmanlab.ucsd.edu",
+        null,
+        "/",
+        ""
+      ],
+      "kaufmanNoTrailingSlashLiteralPreserved": true,
+      "notAnHTTPRedirectInference": true,
+      "wholeFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/dan.kaufman",
+        "observedAt": "2026-10-07T21:44:17+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Kaufman Lab Site → https://kaufmanlab.ucsd.edu/",
+        "status": "verified"
+      },
+      "wholeFieldProofSha256": "b3bf34b68eb3106d17582b756a265542e1d1e39e3c3f3e444b593c2444f1f91c",
+      "allMatchingProfessorRelations": [
+        {
+          "professorId": "ucsd-bioengineering-dan-kaufman",
+          "officialProfileUrl": "https://profiles.ucsd.edu/dan.kaufman"
+        },
+        {
+          "professorId": "ucsd-medicine-dan-samuel-kaufman",
+          "officialProfileUrl": "https://profiles.ucsd.edu/dan.kaufman"
+        }
+      ],
+      "selectedExistingProfessorId": "ucsd-medicine-dan-samuel-kaufman",
+      "professorScope": "Existing baseline relation only; duplicate officialProfileUrl relationships retained, no person/lab merge or current PI inference.",
+      "profileCapture": {
+        "bodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6f1c8dcd93b16620b217bec429b9d8383a54873db167eb900fef77b7189d7437.html",
+        "metadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/6f1c8dcd93b16620b217bec429b9d8383a54873db167eb900fef77b7189d7437.json",
+        "sourceUrl": "https://profiles.ucsd.edu/dan.kaufman",
+        "finalUrl": "https://profiles.ucsd.edu/dan.kaufman",
+        "observedAt": "2026-10-07T21:44:17+00:00",
+        "bodySha256": "c849db11030f9478cfa79f06ec7edec64229862e38102f2c2a1e355aa71e6a78",
+        "metadataSha256": "53aab280399a4c587aae5a4824304c0d31a0b321e5e37effadee605add3340fa"
+      },
+      "snapshotReceiptPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/c849db11030f9478cfa79f06ec7edec64229862e38102f2c2a1e355aa71e6a78.admission-receipt.json",
+      "snapshotReceiptSha256": "5ffd6225320a5b4ea069eedae7688b9fc3a6e98e7c221a2ba4cf828f1eae7a5b",
+      "originalBodyAndMetadataBytesVerified": true,
+      "profileMainFeaturedWebpageVisibleAnchorVerified": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅有历史链接，当前目标未取得内容。"
+      },
+      "rawSha256": "358fb28ae1dbadf66490f6b2da415c16c19c903bc2a855bde2eddf55dd436be8",
+      "packetSha256": "cf466826c061ad8d2a4b094eafc724245de4cf5eb067326d34240ec5c53b213d",
+      "rawAndPacketHashesUnchangedSinceCoverage": true,
+      "latestDestinationFetch": {
+        "sourceUrl": "https://kaufmanlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:19:41+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://kaufmanlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:41+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113581.7619562,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://kaufmanlab.ucsd.edu/",
+        "retrievedEpoch": 1792113581.784567
+      },
+      "rootFetchWholeDictMatchesCoverage": true,
+      "rootAndRelatedExplicitBoundaryChecks": "Performed by current full admission helper over packet/current history/related checks and frozen queue+own ledger.",
+      "HTTPOriginRobotsUnavailable": false,
+      "cachedHTTPRobotsDenial": null,
+      "HTTPRobotsObservationAbsentNotPermission": true,
+      "noRootRecheckOrCanonicalIdentityScienceAcceptance": true,
+      "exactTargetAttemptsOrPending": [],
+      "ownWireEvents": [],
+      "ownOneShotStarts": [],
+      "productionHelperAdmittedUnderDraftReader": true,
+      "HTTPOriginRobotsSidecarInventoryAtFinalReview": []
+    },
+    {
+      "labId": "ucsd-live-lab-eb8a5809f8da0f",
+      "ordinal": 625,
+      "labName": "Ghosh Lab",
+      "reviewedAt": "2026-10-16T07:00:28.181242+00:00",
+      "decision": "PASS_for_single_related_literal_HTTP_observation_draft_only",
+      "literalAnchor": {
+        "label": "Ghosh Lab",
+        "href": "http://ghoshlab.ucsd.edu/Pages/default.aspx",
+        "literalAnchorMatchesFieldLabel": true,
+        "literalHTTPAndListedHTTPSRelated": true,
+        "candidateRequestKey": [
+          "http",
+          "ghoshlab.ucsd.edu",
+          null,
+          "/Pages/default.aspx",
+          ""
+        ]
+      },
+      "actualRawAnchorTags": [
+        {
+          "rawStartTag": "<a href=\"http://ghoshlab.ucsd.edu/Pages/default.aspx\">",
+          "attributes": {
+            "href": "http://ghoshlab.ucsd.edu/Pages/default.aspx"
+          }
+        }
+      ],
+      "requestKey": [
+        "http",
+        "ghoshlab.ucsd.edu",
+        null,
+        "/Pages/default.aspx",
+        ""
+      ],
+      "listedRequestKey": [
+        "https",
+        "ghoshlab.ucsd.edu",
+        null,
+        "/Pages/default.aspx",
+        ""
+      ],
+      "kaufmanNoTrailingSlashLiteralPreserved": null,
+      "notAnHTTPRedirectInference": true,
+      "wholeFieldProof": {
+        "sourceUrl": "https://profiles.ucsd.edu/pradipta.ghosh",
+        "observedAt": "2026-10-07T22:11:28+00:00",
+        "method": "official_profile_explicit_lab_link",
+        "evidence": "Ghosh Lab → https://ghoshlab.ucsd.edu/Pages/default.aspx",
+        "status": "verified"
+      },
+      "wholeFieldProofSha256": "be25bc6f776089269ce353dc666e146186b5ad1adfaaf2d0b9076c7dfa59418d",
+      "allMatchingProfessorRelations": [
+        {
+          "professorId": "ucsd-faculty-pradipta-ghosh",
+          "officialProfileUrl": "https://profiles.ucsd.edu/pradipta.ghosh"
+        }
+      ],
+      "selectedExistingProfessorId": "ucsd-faculty-pradipta-ghosh",
+      "professorScope": "Existing baseline relation only; duplicate officialProfileUrl relationships retained, no person/lab merge or current PI inference.",
+      "profileCapture": {
+        "bodyPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/0f9dbae61d761a7608527c6e2bfbde0b1a089a2ec64a793a0d87b4c1668afbc1.html",
+        "metadataPath": "/Users/question/Desktop/research web/.cache/atlas/profiles/0f9dbae61d761a7608527c6e2bfbde0b1a089a2ec64a793a0d87b4c1668afbc1.json",
+        "sourceUrl": "https://profiles.ucsd.edu/pradipta.ghosh",
+        "finalUrl": "https://profiles.ucsd.edu/pradipta.ghosh",
+        "observedAt": "2026-10-07T22:11:28+00:00",
+        "bodySha256": "039993a71478a4184622c817944caa672db948e0a4b90d1bd36ee538470f7cc3",
+        "metadataSha256": "54562aea4a596a73f3fd8ecbfc2e19d9a55972f338c8de6f62b69f351f2cfbfc"
+      },
+      "snapshotReceiptPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/profile-link-admission-snapshots/039993a71478a4184622c817944caa672db948e0a4b90d1bd36ee538470f7cc3.admission-receipt.json",
+      "snapshotReceiptSha256": "0f6382a645c9d795fd0d857e25fdb847db5315cbb6f67eaa5938945856e5e64b",
+      "originalBodyAndMetadataBytesVerified": true,
+      "profileMainFeaturedWebpageVisibleAnchorVerified": true,
+      "currentRawStatus": "unresolved",
+      "rawIdentity": {
+        "status": "uncertain",
+        "entityType": "lab",
+        "reason": "仅历史链接。"
+      },
+      "rawSha256": "e0eb0c6e82fd8a5ba164b94bf0005f0e11aa7a0e401b067eca34f180f3a5ac1a",
+      "packetSha256": "bc394684b331697670fceb652f1c4ec5def23c7ad29c387ae224e8d746a1a49b",
+      "rawAndPacketHashesUnchangedSinceCoverage": true,
+      "latestDestinationFetch": {
+        "sourceUrl": "https://ghoshlab.ucsd.edu/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:19:43+00:00",
+        "status": "robots_unavailable",
+        "redirects": [],
+        "robots": {
+          "sourceUrl": "https://ghoshlab.ucsd.edu/robots.txt",
+          "observedAt": "2026-10-16T01:19:43+00:00",
+          "httpStatus": 302,
+          "retrievedEpoch": 1792113583.098811,
+          "error": "robots_redirect_is_not_a_robots_file",
+          "redirects": [],
+          "status": "unavailable"
+        },
+        "blockedUrl": "https://ghoshlab.ucsd.edu/Pages/default.aspx",
+        "retrievedEpoch": 1792113583.1333382
+      },
+      "rootFetchWholeDictMatchesCoverage": true,
+      "rootAndRelatedExplicitBoundaryChecks": "Performed by current full admission helper over packet/current history/related checks and frozen queue+own ledger.",
+      "HTTPOriginRobotsUnavailable": false,
+      "cachedHTTPRobotsDenial": null,
+      "HTTPRobotsObservationAbsentNotPermission": true,
+      "noRootRecheckOrCanonicalIdentityScienceAcceptance": true,
+      "exactTargetAttemptsOrPending": [],
+      "ownWireEvents": [],
+      "ownOneShotStarts": [],
+      "productionHelperAdmittedUnderDraftReader": true,
+      "HTTPOriginRobotsSidecarInventoryAtFinalReview": []
+    }
+  ],
+  "blockedExclusions": [
+    {
+      "labId": "ucsd-lab-from-faculty-raidivision-ucsd-edu-research-firestein-lab-pages-default-aspx",
+      "ordinal": 223,
+      "url": "http://raidivision.ucsd.edu/research/firestein-lab/Pages/default.aspx",
+      "HTTPOriginRobotsUnavailableStillTrue": true,
+      "decision": "excluded_not_in_draft"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-gastro-ucsd-edu-schnabl-lab",
+      "ordinal": 233,
+      "url": "http://gastro.ucsd.edu/schnabl-lab",
+      "HTTPOriginRobotsUnavailableStillTrue": true,
+      "decision": "excluded_not_in_draft"
+    }
+  ],
+  "watchedActiveLedgerPacketRawBytesUnchanged": true,
+  "activeEntriesModified": false,
+  "codeModified": false,
+  "sourceDatesRetimed": false,
+  "openIssues": [],
+  "limitations": [
+    "No HTTP-origin robots observation for these3; absence is not permission. Normal robots/public-origin/shared gate/TLS/redirect/cap checks are still required by execution.",
+    "One finite observation only after owner append+independent QA+fresh loaded-source/process readiness; original HTTPS failure is not rechecked or overwritten.",
+    "Successful transport is not entity/science/affiliation/current-PI acceptance; returned bodies require separate actual source review.",
+    "Kaufman literal href has no terminal slash; effective root request path/ key is /, which is URI comparison, not an observed HTTP redirect."
+  ],
+  "draftPath": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/PROFILE-LINK-COHORT2-DRAFT.json",
+  "draftSha256": "a55c5350efe1339edb3aa493bea3f6b981d42b71e9d684700b76217ed73c2b67",
+  "finalStaticVerifiedAt": "2026-10-16T07:01:11.429043+00:00",
+  "newTestsRun": 0,
+  "testScopeNote": "No source/test changes; no test rerun. Production admission helper independently evaluated current frozen metadata with draft reader only."
+}

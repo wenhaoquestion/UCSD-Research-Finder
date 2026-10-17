@@ -1,0 +1,196 @@
+{
+  "labId": "ucsd-neurosciences-lab-cleveland-lab",
+  "status": "supported",
+  "summaryZh": "Cleveland 实验室的官方介绍列出两项主要研究方向：癌症中的基因组重排，以及人类神经退行性疾病的机制与治疗。所审阅页面未明确说明具体实验方法。",
+  "researchQuestions": [],
+  "topics": [
+    "癌症中的基因组重排",
+    "人类神经退行性疾病的机制与治疗"
+  ],
+  "methods": [],
+  "evidence": [
+    {
+      "sourceId": "src-ddaf59f7f5123982",
+      "quote": "Cleveland Lab – Ludwig Cancer Research",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-6a283252e0fbe413",
+      "quote": "Don Cleveland Lab",
+      "supports": [
+        "identity"
+      ],
+      "quoteLocation": "title"
+    },
+    {
+      "sourceId": "src-6a283252e0fbe413",
+      "quote": "About the Lab Dr. Cleveland’s research efforts are focused in 2 major directions: Genome rearrangement in cancer Mechanism and therapy for human neurodegenerative disease",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-6a283252e0fbe413",
+      "quote": "Don W. Cleveland Department Chair, Cellular and Molecular Medicine (CMM) Professor, Cellular and Molecular Medicine",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "原神经科学目录将Cleveland Lab–Ludwig指向含donclevelandlab姓名的旧CMM路径；已缓存CMM具名Don Cleveland Lab页明确Don W. Cleveland、About the Lab及Ludwig Institute联系地址，与原具名主体及机构一致。复用这两项实验室研究方向，不把新闻中药物批准当实验方法，不接受URL别名或替换旧404检查。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "匹配 UCSD 官方实验室目录历史条目。"
+  },
+  "uncertainty": [
+    "正文仅概括两项研究方向，所审阅页面未明确说明具体实验方法。",
+    "旧CMM网址的404状态保持；补充具名页不是旧网址的新重定向观察。",
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。",
+    "研究问题待核（限本轮已审阅材料）：当前ID复用具名Cleveland正文但仅列两项宽泛方向及FDA治疗新闻；历史目录无科研问题，不从疾病机制标签生成具体疑问。",
+    "研究方法待核（限本轮已审阅材料）：独立稳定ID的具名Cleveland正文同样仅两个研究方向，FDA新闻不说明实验室方法；院系Research Labs目录仅身份，不能借邻近具名lab技术。保持旧404与补充页关系。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:15:39+00:00",
+  "researchContentSupport": {
+    "status": "reviewed_cached_lab_content_supported",
+    "scope": "Research statements explicitly scoped to the named laboratory. Cached capture times are retained; listed URL acceptance is not inferred."
+  },
+  "previousReviewedAt": "2026-10-16T01:54:28+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:23:14.188078+00:00",
+    "previousRecordReviewedAt": "2026-10-16T03:03:28+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "当前ID复用具名Cleveland正文但仅列两项宽泛方向及FDA治疗新闻；历史目录无科研问题，不从疾病机制标签生成具体疑问。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-ddaf59f7f5123982",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+        "bodySha256": null,
+        "textSha256": "f65dbf7a48e62020d4b7bb995d1e1daff65ca43eb82c974f99f230b5d7511549",
+        "textCharacters": 38,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            38
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-d81f1215c84293b2",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+        "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644",
+        "textSha256": "422d7750b7bf3eb5003fe0c76b9eb2848a75d0bb519b126034597bcce148b6e2",
+        "textCharacters": 1242,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            1242
+          ]
+        ],
+        "reasonZh": "同sourceId及textSHA的Neurosciences Research Labs目录已在reviewIndex103完整读取；名单不是目标团队科研，不重复借用邻lab研究。"
+      },
+      {
+        "sourceId": "src-6a283252e0fbe413",
+        "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/index.html",
+        "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+        "bodySha256": "8150f497fb2345f2d2430457dbbfcb6abef5864a6785fe2760f5980c14930310",
+        "textSha256": "6acd99bba6af4a52946d9efdeb7dd5472b3c524a1395c2b3a7231225a1f9c992",
+        "textCharacters": 784,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            784
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:15:39+00:00",
+    "previousRecordReviewedAt": "2026-10-16T08:23:14.188078+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "独立稳定ID的具名Cleveland正文同样仅两个研究方向，FDA新闻不说明实验室方法；院系Research Labs目录仅身份，不能借邻近具名lab技术。保持旧404与补充页关系。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-000-054.json",
+    "reviewComponentSha256": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-ddaf59f7f5123982",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-02T22:42:05+00:00",
+        "bodySha256": null,
+        "textSha256": "f65dbf7a48e62020d4b7bb995d1e1daff65ca43eb82c974f99f230b5d7511549",
+        "textCharacters": 38,
+        "role": "historical_field_labName",
+        "title": "Historical field evidence: labName",
+        "readRanges": [
+          [
+            0,
+            38
+          ]
+        ],
+        "coverage": "historical_field_scope_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      },
+      {
+        "sourceId": "src-d81f1215c84293b2",
+        "sourceUrl": "https://neurosciences.ucsd.edu/research/labs/index.html",
+        "sourceObservedAt": "2026-10-16T02:14:28+00:00",
+        "bodySha256": "57a14ef5ed46ed7f9387e01f8a6725beab44ef3379d94dae49be22e1e4968644",
+        "textSha256": "422d7750b7bf3eb5003fe0c76b9eb2848a75d0bb519b126034597bcce148b6e2",
+        "textCharacters": 1242,
+        "role": "listed_official_source_requires_entity_localization",
+        "title": "Research Labs",
+        "readRanges": [
+          [
+            0,
+            1242
+          ]
+        ],
+        "coverage": "entity_local_prose_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      },
+      {
+        "sourceId": "src-6a283252e0fbe413",
+        "sourceUrl": "https://cmm.ucsd.edu/research/labs/don-cleveland/index.html",
+        "sourceObservedAt": "2026-10-16T01:04:46+00:00",
+        "bodySha256": "8150f497fb2345f2d2430457dbbfcb6abef5864a6785fe2760f5980c14930310",
+        "textSha256": "6acd99bba6af4a52946d9efdeb7dd5472b3c524a1395c2b3a7231225a1f9c992",
+        "textCharacters": 784,
+        "role": "reviewed_cached_followup_requires_entity_match",
+        "title": "Don Cleveland Lab",
+        "readRanges": [
+          [
+            0,
+            784
+          ]
+        ],
+        "coverage": "entity_local_prose_read",
+        "reasonZh": "读取所列实际正文范围，方法采纳与个人/成员/历史/目录作用域按本条具体判断；未读范围不作不存在方法的否定。"
+      }
+    ],
+    "methodEvidence": [],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

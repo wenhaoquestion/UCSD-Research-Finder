@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "scannedAt": "2026-10-16T04:06:09+00:00",
+  "basedOnCommit": "85b7fbd80811d8b1c37d141efecfce4487b28e47",
+  "previousMetadataScanAt": "2026-10-16T03:31:11+00:00",
+  "queueSnapshotAt": "2026-10-16T04:05:59+00:00",
+  "queueSnapshotSha256": "70df5133421b1c49bdea095b6305f9b8e37765ede67b402b95681d37dab72760",
+  "queueCounts": {
+    "done": 4145,
+    "unresolved": 703,
+    "scope_excluded": 302,
+    "retained_prior_evidence": 1859,
+    "pending": 11138
+  },
+  "recordsExamined": 880,
+  "incompleteRecordsExamined": 174,
+  "rootDeltas": [
+    {
+      "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+      "ordinal": 32,
+      "before": {
+        "sourceUrl": "https://sung-lab.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T00:57:52+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://sung-lab.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:32+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "related_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-andrew-muroyama",
+      "ordinal": 33,
+      "before": {
+        "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T00:57:54+00:00",
+        "sha256": null,
+        "finalUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "status": "http_error",
+        "httpStatus": 0,
+        "redirects": [],
+        "error": ""
+      },
+      "after": {
+        "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "sha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04",
+        "finalUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-axel-nimmerjahn",
+      "ordinal": 35,
+      "before": {
+        "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "observedAt": "2026-10-16T00:57:54+00:00",
+        "sha256": null,
+        "finalUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+        "status": "http_error",
+        "httpStatus": 0,
+        "redirects": [
+          {
+            "from": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "to": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "httpStatus": 301
+          }
+        ],
+        "error": ""
+      },
+      "after": {
+        "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "sha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8",
+        "finalUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [
+          {
+            "from": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "to": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "httpStatus": 301
+          }
+        ],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-barry-grant",
+      "ordinal": 36,
+      "before": {
+        "sourceUrl": "http://thegrantlab.org/",
+        "observedAt": "2026-10-16T00:57:54+00:00",
+        "sha256": null,
+        "finalUrl": "http://thegrantlab.org/",
+        "status": "http_error",
+        "httpStatus": 0,
+        "redirects": [],
+        "error": ""
+      },
+      "after": {
+        "sourceUrl": "http://thegrantlab.org/",
+        "observedAt": "2026-10-16T03:47:24+00:00",
+        "sha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f",
+        "finalUrl": "http://thegrantlab.org/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-hwa-lab",
+      "ordinal": 69,
+      "before": {
+        "sourceUrl": "https://matisse.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:14+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://matisse.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:19+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-roy",
+      "ordinal": 116,
+      "before": {
+        "sourceUrl": "https://roylab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:39+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [
+          {
+            "from": "https://roylab.biosci.ucsd.edu/",
+            "to": "https://roylab.biology.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://roylab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "sha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+        "finalUrl": "https://roylab.biology.ucsd.edu/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [
+          {
+            "from": "https://roylab.biosci.ucsd.edu/",
+            "to": "https://roylab.biology.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-russell-lab-com",
+      "ordinal": 117,
+      "before": {
+        "sourceUrl": "https://www.russell-lab.com/",
+        "observedAt": "2026-10-16T01:04:38+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://www.russell-lab.com/",
+        "observedAt": "2026-10-16T03:47:26+00:00",
+        "sha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+        "finalUrl": "https://www.russell-lab.com/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-saier",
+      "ordinal": 119,
+      "before": {
+        "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:31+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:27+00:00",
+        "sha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+        "finalUrl": "https://saierlab.biosci.ucsd.edu/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "ordinal": 121,
+      "before": {
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:31+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:57:30+00:00",
+        "sha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "finalUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "status": "ok",
+        "httpStatus": 200,
+        "redirects": [],
+        "error": ""
+      },
+      "scope": "listed_url_direct_request"
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-traver",
+      "ordinal": 134,
+      "before": {
+        "sourceUrl": "https://traverlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:52+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://traverlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:49+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-web-mac-com-molinski-lab-molinski-lab",
+      "ordinal": 173,
+      "before": {
+        "sourceUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+        "observedAt": "2026-10-16T01:04:53+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+        "observedAt": "2026-10-16T03:49:35+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-electrical-and-computer-engineering-lab-statistical-visual-computing-laboratory",
+      "ordinal": 197,
+      "before": {
+        "sourceUrl": "https://www.svcl.ucsd.edu/",
+        "observedAt": "2026-10-16T00:59:53+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://www.svcl.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:20+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-electrical-and-computer-engineering-lab-translational-neuroengineering-lab",
+      "ordinal": 198,
+      "before": {
+        "sourceUrl": "https://neuro.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T01:04:57+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://neuro.eng.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:00+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-barshop-lab",
+      "ordinal": 317,
+      "before": {
+        "sourceUrl": "https://biochemgen.ucsd.edu/",
+        "observedAt": "2026-10-16T00:59:55+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://biochemgen.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:00+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-bode-lab",
+      "ordinal": 318,
+      "before": {
+        "sourceUrl": "http://www.bodelab.com/",
+        "observedAt": "2026-10-16T01:05:27+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "http://www.bodelab.com/",
+        "observedAt": "2026-10-16T03:54:58+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-pediatrics-lab-croker-lab",
+      "ordinal": 323,
+      "before": {
+        "sourceUrl": "https://www.crokerlab.com/",
+        "observedAt": "2026-10-16T01:05:18+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://www.crokerlab.com/",
+        "observedAt": "2026-10-16T03:49:37+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-physics-research-site-julio-barreiro",
+      "ordinal": 365,
+      "before": {
+        "sourceUrl": "https://barreirolab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:05:23+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://barreirolab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:39+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-psychiatry-lab-nievergelt-maihofer-psychiatric-genomics-lab",
+      "ordinal": 401,
+      "before": {
+        "sourceUrl": "https://nievergeltlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:10+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://nievergeltlab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:22+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "ordinal": 518,
+      "before": {
+        "sourceUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+        "observedAt": "2026-10-16T01:06:33+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-5c058fcd61d15f",
+      "ordinal": 527,
+      "before": {
+        "sourceUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+        "observedAt": "2026-10-16T01:00:46+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+        "observedAt": "2026-10-16T03:49:28+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-55424aea242e83",
+      "ordinal": 574,
+      "before": {
+        "sourceUrl": "https://sicl.ucsd.edu/",
+        "observedAt": "2026-10-16T01:01:07+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://sicl.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:23+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-11396e2a4edb16",
+      "ordinal": 593,
+      "before": {
+        "sourceUrl": "http://dnitz.com/",
+        "observedAt": "2026-10-16T01:06:41+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "http://dnitz.com/",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-cd8819aec34b38",
+      "ordinal": 620,
+      "before": {
+        "sourceUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+        "observedAt": "2026-10-16T01:06:44+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-7c03bec7416f6a",
+      "ordinal": 636,
+      "before": {
+        "sourceUrl": "https://ginsberglab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:48+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://ginsberglab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-5ead21eb34ab92",
+      "ordinal": 643,
+      "before": {
+        "sourceUrl": "http://bryanlabsite.edu/",
+        "observedAt": "2026-10-16T01:06:50+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "http://bryanlabsite.edu/",
+        "observedAt": "2026-10-16T03:49:45+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-4de94a86bcdd38",
+      "ordinal": 673,
+      "before": {
+        "sourceUrl": "https://nievergelt.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:09+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://nievergelt.ucsd.edu/",
+        "observedAt": "2026-10-16T03:50:01+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-live-lab-c4c7878f997535",
+      "ordinal": 676,
+      "before": {
+        "sourceUrl": "http://www.bipolar-aging.com/home",
+        "observedAt": "2026-10-16T01:07:01+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "http://www.bipolar-aging.com/home",
+        "observedAt": "2026-10-16T03:49:47+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "ordinal": 709,
+      "before": {
+        "sourceUrl": "https://tezcan.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:14+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://tezcan.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:28+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "related_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-medicine-lab-bazhenov-lab",
+      "ordinal": 748,
+      "before": {
+        "sourceUrl": "https://www.bazhlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:00:41+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://www.bazhlab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:09+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "listed_url_access_precheck_only"
+    },
+    {
+      "labId": "ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab",
+      "ordinal": 861,
+      "before": {
+        "sourceUrl": "https://sayginlab.ucsd.edu/",
+        "observedAt": "2026-10-16T01:07:41+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "after": {
+        "sourceUrl": "https://sayginlab.ucsd.edu/",
+        "observedAt": "2026-10-16T03:49:47+00:00",
+        "sha256": null,
+        "finalUrl": null,
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "redirects": [],
+        "error": null
+      },
+      "scope": "related_url_access_precheck_only"
+    }
+  ],
+  "newSourceRelationships": [
+    {
+      "labId": "ucsd-biology-topic-lab-andrew-muroyama",
+      "ordinal": 33,
+      "labName": "Andrew Muroyama Lab",
+      "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+      "requestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+      "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/49bbf7c828c76efbb13feef0d97b1c20bd2647b89e9b6ba3cf8d97dddb12fcbe.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-axel-nimmerjahn",
+      "ordinal": 35,
+      "labName": "Axel Nimmerjahn Lab",
+      "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+      "requestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+      "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/913a247ead89b8edd84cd59fd7832dba9a88a7cbfee20db4f93765911d9513c1.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-barry-grant",
+      "ordinal": 36,
+      "labName": "Barry Grant Lab",
+      "sourceUrl": "http://thegrantlab.org/",
+      "requestedUrl": "http://thegrantlab.org/",
+      "actualRequestedUrl": "http://thegrantlab.org/",
+      "observedAt": "2026-10-16T03:47:24+00:00",
+      "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4655034fed2808e989193501d99f7db8f7fa17e75ec02656f7e15eef8d1f6633.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-roy",
+      "ordinal": 116,
+      "labName": "Roy Lab",
+      "sourceUrl": "https://roylab.biology.ucsd.edu/",
+      "requestedUrl": "https://roylab.biosci.ucsd.edu/",
+      "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e4e2430a6a981732911ba6112ebe3138b68bb391c022870a56305ab61565a0ba.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-lab-from-faculty-russell-lab-com",
+      "ordinal": 117,
+      "labName": "Russell Lab",
+      "sourceUrl": "https://www.russell-lab.com/",
+      "requestedUrl": "https://www.russell-lab.com/",
+      "actualRequestedUrl": "https://www.russell-lab.com/",
+      "observedAt": "2026-10-16T03:47:26+00:00",
+      "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8f8d1da4503bd362a2a9783c8a06e7ca547f9c35ffb222919e9ce0a7f85b0675.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-saier",
+      "ordinal": 119,
+      "labName": "Saier Lab",
+      "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+      "requestedUrl": "https://saierlab.biosci.ucsd.edu/",
+      "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T03:47:27+00:00",
+      "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/72587ea607aea5c0cfb5f665ddf2c56e588e8cc7c55fa783d7b3f02e2c7083d8.html",
+      "notAcceptedAsLabResearch": true
+    },
+    {
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "ordinal": 121,
+      "labName": "Scott Biering Lab",
+      "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+      "requestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+      "actualRequestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+      "observedAt": "2026-10-16T03:57:30+00:00",
+      "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+      "discoveryReason": "previously_recorded_source_or_candidate_url",
+      "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/48b33698b55f664271c111a4149e82063a89569ec8b056585609ade8852734d8.html",
+      "notAcceptedAsLabResearch": true
+    }
+  ],
+  "excludedRelationshipCounts": {
+    "previously_scope_reviewed_body": 500,
+    "known_target_source_body": 221
+  },
+  "networkRequestsMade": 0,
+  "htmlBodiesRead": 0,
+  "policy": "Metadata discovery only. Exact real source URL plus body hash suppresses already reviewed semantic bodies; original-request changes remain separate root deltas. New candidates still require exact cache-byte verification and explicit target-specific model scope review."
+}

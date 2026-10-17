@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:46:38+00:00",
+  "verdict": "PASS",
+  "materialIssues": [],
+  "scope": "Independent QA of the two newly admitted lab summaries, strict reviewed14 frozen importer and append-only preservation; report-only, offline",
+  "strictImporterActualLoad": {
+    "verifiedAt": "2026-10-16T04:46:38+00:00",
+    "sourceFile": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/approved-handoff-snapshots/coverage-20261016-reviewed-lab-handoff-60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155.json",
+    "handoffSha256": "60ff319a0528908097ce5d53955017a04fab5e3a12e2cd1385349e2ffaed6155",
+    "decisionsSha256": "f472eafcf8619c081550b37ba22a39f38d19972cfe6d23369322f5e3a922ab83",
+    "usesFrozenApprovedSnapshot": true,
+    "mutableRevisionAutomaticallyAdmitted": false,
+    "actualAcceptedIds": [
+      "ucsd-live-lab-a8e8602372ef78",
+      "ucsd-live-lab-2982fe38ebc5a0",
+      "ucsd-live-lab-8627bc69d4ee7d",
+      "ucsd-live-lab-33e60c6bf35e2b",
+      "ucsd-live-lab-d4a949e47ec3f3",
+      "ucsd-live-lab-6244ff07b175a9",
+      "ucsd-live-lab-da307b4f0f98b5",
+      "ucsd-live-lab-f2a96ed0a66637",
+      "ucsd-live-lab-27d33fcd1710ce",
+      "ucsd-live-lab-f78bf84fc19eef",
+      "ucsd-live-lab-848c82d9aba60e",
+      "ucsd-live-lab-eb3be693359889",
+      "ucsd-live-lab-9c13d3e2e45efe",
+      "ucsd-live-lab-176619ff4af12d"
+    ],
+    "exactFrozen14IdSetMatched": true,
+    "validation": {
+      "acceptedRecords": 14,
+      "rawByteCapturesVerified": 26,
+      "actualQueueCaptureTimesVerified": 26,
+      "exactFieldQuotesVerified": 86
+    },
+    "aliasesIgnored": 30,
+    "updatesIgnored": 8,
+    "collectionState": "reviewed_incremental",
+    "isFinalExport": false,
+    "globalCollectionDeclaredComplete": false
+  },
+  "newRecordReviews": [
+    {
+      "labId": "ucsd-live-lab-eb3be693359889",
+      "ordinal": 880,
+      "status": "supported",
+      "reviewedAt": "2026-10-16T04:46:38+00:00",
+      "rawRecordSha256": "d20c823aed414310a12e6e4989f7c39d581260571f58227c90b65e40bb34d280",
+      "packetSha256": "3c7dc4a70eecde64b957b878c8a364317bb92ab6c22ce493ef265e2034dfeac6",
+      "rawReviewTime": "2026-10-16T04:43:25+00:00",
+      "packetPreparedAt": "2026-10-16T04:42:24+00:00",
+      "rootOriginalObservedAt": "2026-10-16T02:12:42+00:00",
+      "rootBodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+      "claimChecks": [
+        {
+          "claim": "人机交互、健康信息学与辅助技术",
+          "support": "Our research areas include human robot interaction , health informatics , and assistive technology",
+          "sourceId": "src-054708f0fbcb064f"
+        },
+        {
+          "claim": "人际与人机同步建模及机器人协调行为",
+          "support": "we created a series of methods to model human-human and human robot synchrony that can inform coordinated robot behavior, validated in experimental settings",
+          "sourceId": "src-054708f0fbcb064f"
+        }
+      ],
+      "exactRawEvidenceChecks": [
+        {
+          "sourceId": "src-054708f0fbcb064f",
+          "quote": "Healthcare Robotics Lab at UC San Diego",
+          "supports": [
+            "identity",
+            "affiliation"
+          ],
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-054708f0fbcb064f",
+          "quote": "human robot interaction , health informatics",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-054708f0fbcb064f",
+          "quote": "assistive technology",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-054708f0fbcb064f",
+          "quote": "model human-human and human robot synchrony",
+          "supports": [
+            "research",
+            "methods"
+          ],
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "exactQuoteVerified": true
+        }
+      ],
+      "methodsBoundary": "PASS: sole method is explicitly stated synchrony modeling in the whole-lab coordination section. No inferred clinical procedure, efficacy or extra modeling technique.",
+      "identity": "confirmed named whole lab",
+      "affiliation": "source_reported from entity-local lab body/contact page",
+      "hydratePassed": true,
+      "sourceMatchesLatestFetch": true,
+      "canCountAsVerifiedLabGroupURL": true,
+      "listedUrlDirectlyChecked": true,
+      "liveCheckedByThisQA": false,
+      "cacheBackedSourcesVerified": [
+        {
+          "sourceId": "src-054708f0fbcb064f",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/",
+          "requestedUrl": "https://healthrobotics.ucsd.edu/",
+          "observedAt": "2026-10-16T02:12:42+00:00",
+          "bodySha256": "4b224a6fff23b9f6b4f8634ba1045cc1b4f26730f2aa38fb55b3b9d82ab2618b",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/eb3be69335988910bbb20d93aeb3afdeeacd23a94edffe24690dde44c963dfc4.html",
+          "role": "listed_lab_destination",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-01022c8dfcb41947",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "requestedUrl": "https://healthrobotics.ucsd.edu/about.html",
+          "observedAt": "2026-10-16T02:12:44+00:00",
+          "bodySha256": "f1c60c4d5be9d27d6fba44f39caf57a0092c92bb67cc94bbde5ed64e31db3a10",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/355f1092a053990720530804674ce48a85aa5207e454cfccc129e91335adfb20.html",
+          "role": "explicit_linked_research_subpage",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-76f9030cf3b36db8",
+          "sourceUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "requestedUrl": "https://profiles.ucsd.edu/laurel.riek",
+          "observedAt": "2026-10-16T02:12:39+00:00",
+          "bodySha256": "c3406ea1704d3954a9b541308626f13d38498914e4b67259a98da96959ba8bf3",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f6af3a1d1c0e5b875685f926ced799033d4b71be4efbe50724b7cb4154019b6c.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-be91730f45230e98",
+          "sourceUrl": "https://healthrobotics.ucsd.edu/people/",
+          "requestedUrl": "https://healthrobotics.ucsd.edu/people/",
+          "observedAt": "2026-10-16T02:12:43+00:00",
+          "bodySha256": "033030f3511a4e9466034dc2b9b984864d01547b213f595c48df12349edf3b1a",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/008b1dfbdd389414091b0d88dcdb01ec7235a6b87f42b847d262fb5b8d56f42c.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        }
+      ],
+      "importUnknownsPreserved": {
+        "principalInvestigator": "Laurel Riek",
+        "principalInvestigatorProfileUrl": "Not found",
+        "principalInvestigatorIdentityScope": "source_reported_name_only",
+        "department": "Computer Science and Engineering",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "materialIssues": []
+    },
+    {
+      "labId": "ucsd-live-lab-9c13d3e2e45efe",
+      "ordinal": 881,
+      "status": "supported",
+      "reviewedAt": "2026-10-16T04:46:38+00:00",
+      "rawRecordSha256": "063737749d6512fdd5a6a54441981338984fa41df3a10a2734f87f6f7745f051",
+      "packetSha256": "74167c1a5971b59ae6cc5d360632dd389e4bfa0468235da47d13ac664d7ab581",
+      "rawReviewTime": "2026-10-16T04:43:25+00:00",
+      "packetPreparedAt": "2026-10-16T04:42:24+00:00",
+      "rootOriginalObservedAt": "2026-10-16T02:13:51+00:00",
+      "rootBodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+      "claimChecks": [
+        {
+          "claim": "年长拉丁裔人群参与阿尔茨海默病研究的影响因素",
+          "support": "factors that influence older Latinos’ participation in Alzheimer’s Disease research",
+          "sourceId": "src-8511ad6d61b260c1"
+        },
+        {
+          "claim": "神经心理测验常模数据开发",
+          "support": "developing normative data for neuropsychological tests",
+          "sourceId": "src-8511ad6d61b260c1"
+        },
+        {
+          "claim": "美国和拉丁美洲人群的文化与语言适配",
+          "support": "develop linguistically and culturally appropiate normative data for neuropsychological tests tailored to Latinos in both the U.S. and Latin America",
+          "sourceId": "src-0f6ed14455d5be59"
+        }
+      ],
+      "exactRawEvidenceChecks": [
+        {
+          "sourceId": "src-8511ad6d61b260c1",
+          "quote": "MILPAS LAB",
+          "supports": [
+            "identity"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-8511ad6d61b260c1",
+          "quote": "factors that influence older Latinos’ participation in Alzheimer’s Disease research",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-8511ad6d61b260c1",
+          "quote": "developing normative data for neuropsychological tests",
+          "supports": [
+            "research",
+            "topics",
+            "methods"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-0f6ed14455d5be59",
+          "quote": "linguistically and culturally appropiate normative data",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/research/",
+          "observedAt": "2026-10-16T03:17:09+00:00",
+          "bodySha256": "cc9c9c6c21b8df1084bd09636375cdf712868856d6ae330bde64055d6ac9bf2c",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-0f6ed14455d5be59",
+          "quote": "Latinos in both the U.S. and Latin America",
+          "supports": [
+            "research",
+            "topics"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/research/",
+          "observedAt": "2026-10-16T03:17:09+00:00",
+          "bodySha256": "cc9c9c6c21b8df1084bd09636375cdf712868856d6ae330bde64055d6ac9bf2c",
+          "exactQuoteVerified": true
+        },
+        {
+          "sourceId": "src-ad67b797204380e8",
+          "quote": "UC San Diego Health",
+          "supports": [
+            "affiliation"
+          ],
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "observedAt": "2026-10-16T03:19:09+00:00",
+          "bodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+          "exactQuoteVerified": true
+        }
+      ],
+      "methodsBoundary": "PASS: sole method is normative-data development, explicitly supported at that broad level. Sampling/statistical details remain unknown. Lumbar puncture, imaging and brain donation are participation contexts and do not appear in methods.",
+      "identity": "confirmed named whole lab",
+      "affiliation": "source_reported from entity-local lab body/contact page",
+      "hydratePassed": true,
+      "sourceMatchesLatestFetch": true,
+      "canCountAsVerifiedLabGroupURL": true,
+      "listedUrlDirectlyChecked": true,
+      "liveCheckedByThisQA": false,
+      "cacheBackedSourcesVerified": [
+        {
+          "sourceId": "src-8511ad6d61b260c1",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "requestedUrl": "https://sites.ucsd.edu/milpas-lab/",
+          "observedAt": "2026-10-16T02:13:51+00:00",
+          "bodySha256": "e8fe46d21e89a77f15b74d6f17938a147366fd99533849e6dda7ad192174a3ff",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9c13d3e2e45efe85ee20ca83e27cadf414ec629af0198eabe27ca134a7f733a9.html",
+          "role": "listed_lab_destination",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-0f6ed14455d5be59",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/research/",
+          "requestedUrl": "https://sites.ucsd.edu/milpas-lab/research/",
+          "observedAt": "2026-10-16T03:17:09+00:00",
+          "bodySha256": "cc9c9c6c21b8df1084bd09636375cdf712868856d6ae330bde64055d6ac9bf2c",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/f13e36562430add7a28ecf510c07868cc0f804403881f476421d3ed00a1db4d5.html",
+          "role": "explicit_linked_research_subpage",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-17a82c6bd1b0eb66",
+          "sourceUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "requestedUrl": "https://profiles.ucsd.edu/alejandra.morlettparedes",
+          "observedAt": "2026-10-16T02:13:49+00:00",
+          "bodySha256": "5e510be31f7c8d5a297b216847c4eb93d954297ba4bc9889dbe15a249d60172c",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0dba84559a6a192e3d0f96839b4eeb082a485e08672958f39e48a549e95bcba3.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-40ff44faa4acbc0c",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+          "requestedUrl": "https://sites.ucsd.edu/milpas-lab/people-2/",
+          "observedAt": "2026-10-16T03:17:39+00:00",
+          "bodySha256": "213ec368f7b65515ce0b4372be86fc59570a613795689871ec93e433e0f2c662",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/72392ed233981575fa835fa134d2c5637145bae85c4eb2b4b1980a87b61ac496.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-ad67b797204380e8",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "requestedUrl": "https://sites.ucsd.edu/milpas-lab/contact-us/",
+          "observedAt": "2026-10-16T03:19:09+00:00",
+          "bodySha256": "371a4df811b6861b5074257c7644003adc9d72490aeba3ae5297e94bf29bbf8d",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/123d2223641d57697bd05357073f203fdcb091437fdc5b610615786cc2eefb8a.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        },
+        {
+          "sourceId": "src-04ae7bd95a3ae075",
+          "sourceUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+          "requestedUrl": "https://sites.ucsd.edu/milpas-lab/people/",
+          "observedAt": "2026-10-16T03:18:09+00:00",
+          "bodySha256": "74de819e2ce5d5ae703a7eb02523bdf13c1995f1f09449c6efda2a6e6a75e7e0",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/0eebea80dc267d245bc542fc62d68eafff183582c4fe97a37af959c0e1c2a89d.html",
+          "role": "listed_official_source_requires_entity_localization",
+          "rawHashVerified": true,
+          "actualQueueTupleVerified": true,
+          "fullVisibleTextMatches": true
+        }
+      ],
+      "importUnknownsPreserved": {
+        "principalInvestigator": "Alejandra Morlett Paredes",
+        "principalInvestigatorProfileUrl": "Not found",
+        "principalInvestigatorIdentityScope": "source_reported_name_only",
+        "department": "Neurosciences",
+        "relationshipScope": "reviewed_ucsd_affiliation",
+        "relationshipType": "official_directory_same_record"
+      },
+      "materialIssues": []
+    }
+  ],
+  "newRecordRawProofsVerified": 10,
+  "newPacketUniqueCacheBackedSourcesVerified": 10,
+  "oldDataPreservation": {
+    "comparisonGitCommit": "7ddc7b291e1202635754ffe8e7480f91fb6ec90f",
+    "oldManifestItemCount": 880,
+    "newManifestItemCount": 882,
+    "oldItemsPrefixExactlyEqual": true,
+    "oldIdAndOrdinalOrderExactlyPreserved": true,
+    "oldImports12PrefixExactlyEqual": true,
+    "oldTrackedPacketsCheckedByGitDiff": 880,
+    "oldTrackedRawRecordsCheckedByGitDiff": 880,
+    "changedOldPacketOrRawPaths": [],
+    "oldDateOrProvenanceBytesChanged": false,
+    "previousLastId": "ucsd-live-lab-176619ff4af12d",
+    "previousLastOrdinal": 879,
+    "newIdsAppended": [
+      {
+        "ordinal": 880,
+        "labId": "ucsd-live-lab-eb3be693359889"
+      },
+      {
+        "ordinal": 881,
+        "labId": "ucsd-live-lab-9c13d3e2e45efe"
+      }
+    ]
+  },
+  "appendOnlyImplementation": {
+    "codeReviewed": "scripts/local_lab_summaries.py:191",
+    "findings": "Prior manifest insertion order drives existing ID order; per-ID name/URI/existence and ordinal assertions guard reuse; prior import objects retained; existing IDs append original manifest entries then continue before source extraction/packet writes; only new IDs receive freshly prepared packets. Actual old880 Git byte diff is empty.",
+    "inMemoryScenario": {
+      "passed": true,
+      "freshLoaderOrder": [
+        "new-c",
+        "old-b",
+        "old-a"
+      ],
+      "resultOrder": [
+        "old-a",
+        "old-b",
+        "new-c"
+      ],
+      "oldManifestItemsPreserved": true,
+      "oldImportDateAndReceiptPreserved": true,
+      "oldPacketWriteCalls": 0,
+      "newPacketWriteCalls": 1,
+      "filesystemWrites": 0,
+      "checkpointMocked": true,
+      "productionPrepareInvoked": false
+    }
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s tests -p test_local_lab_handoff.py -v",
+    "testsRun": 26,
+    "passed": 26,
+    "failures": 0,
+    "errors": 0,
+    "additionalInMemoryAppendOnlyScenarioPassed": true
+  },
+  "reviewedCodeHashes": {
+    "scripts/lab_summary_handoff.py": "03a354c8a1593cb44a991e8edeaeb4c4b2d0aa8d091825059392b5cce3fd8b61",
+    "scripts/local_lab_summaries.py": "c9b7f292b184df65dd0156b0f532bf45a8f4b96165ea705aec7cd150e1adbc03",
+    "tests/test_local_lab_handoff.py": "6df3ed1fe69bde52ee12837768b4ba7b859696ae00ca285160e422a8d1c5aca1"
+  },
+  "networkRequestsMade": 0,
+  "recordsChangedByQA": 0,
+  "packetsChangedByQA": 0,
+  "networkReceiptChangedByQA": false,
+  "collectorOrSharedWrites": 0,
+  "productionPrepareOrCheckpointRuns": 0
+}

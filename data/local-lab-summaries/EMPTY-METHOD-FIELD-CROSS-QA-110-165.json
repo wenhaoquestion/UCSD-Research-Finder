@@ -1,0 +1,4676 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "status": "complete",
+  "reviewedAt": "2026-10-16T09:22:43+00:00",
+  "draftPath": "data/local-lab-summaries/EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+  "draftSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+  "inventoryPath": "data/local-lab-summaries/REMAINING-METHOD-FIELD-INVENTORY.json",
+  "inventorySha256": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+  "scopeAddendumPath": "data/local-lab-summaries/EMPTY-METHOD-FIELD-SCOPE-ADDENDUM.json",
+  "scopeAddendumSha256": "2c84fb63628f35c86d7a83861a884ea9394e95a2de860fbab53417d57103f863",
+  "assignedRange": [
+    110,
+    165
+  ],
+  "counts": {
+    "reviewed": 56,
+    "addRecords": 7,
+    "methodEntries": 14,
+    "unchanged": 49,
+    "methodQuotes": 8,
+    "uniqueMethodBodySources": 7,
+    "sourceCoverageEntries": 203,
+    "verifiedDraftReuseBindings": 26
+  },
+  "mechanicalChecks": {
+    "checkedAt": "2026-10-16T09:20:30+00:00",
+    "draftSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "inventorySha256": "5b332ed31ded86b6a6af15929b04d1251bdc7d8e100074bc963f546fe54ae4d7",
+    "all56FrozenRawPacketHashesAndMethodsEmpty": true,
+    "all203SourceMetadataTextShaRangesAndIDs": true,
+    "reuseBindingsVerified": [
+      {
+        "reviewIndex": 117,
+        "sourceId": "src-43b5374c9e708af2",
+        "reuseReviewIndex": 116,
+        "reuseSourceId": "src-43b5374c9e708af2",
+        "textSha256": "d98b3e361f6d82d526f1464dd7985d011c976c4f02efcd1d9012caf363cfe4df"
+      },
+      {
+        "reviewIndex": 117,
+        "sourceId": "src-f36a14458458298d",
+        "reuseReviewIndex": 116,
+        "reuseSourceId": "src-f36a14458458298d",
+        "textSha256": "cb7234df8ea2605d24950170589ffbc51a4831547672f473b4b5f01cef897b38"
+      },
+      {
+        "reviewIndex": 123,
+        "sourceId": "src-614d734b64f23151",
+        "reuseReviewIndex": 123,
+        "reuseSourceId": "src-0fd0a962aaa5a375",
+        "textSha256": "df65ea11268af410a9f7d4d0189ea598c4de17f37cf9b463cb0c5bc5efd5418e"
+      },
+      {
+        "reviewIndex": 127,
+        "sourceId": "src-ad1952dbe19fb7d8",
+        "reuseReviewIndex": 126,
+        "reuseSourceId": "src-ad1952dbe19fb7d8",
+        "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699"
+      },
+      {
+        "reviewIndex": 127,
+        "sourceId": "src-859c890e93537989",
+        "reuseReviewIndex": 127,
+        "reuseSourceId": "src-92b1d5aa41720760",
+        "textSha256": "3b89d2c0cee9d34dab30b389b79ad0f405d169be7ddeca15d492fc08af2e2167"
+      },
+      {
+        "reviewIndex": 128,
+        "sourceId": "src-ad1952dbe19fb7d8",
+        "reuseReviewIndex": 126,
+        "reuseSourceId": "src-ad1952dbe19fb7d8",
+        "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699"
+      },
+      {
+        "reviewIndex": 128,
+        "sourceId": "src-4ff55423c2b5fa89",
+        "reuseReviewIndex": 128,
+        "reuseSourceId": "src-61dc67c7eacda35e",
+        "textSha256": "72fa390b60ce3eef5d58db76ce2f635a9b3a994f41a01442e688f559a0a70cf5"
+      },
+      {
+        "reviewIndex": 130,
+        "sourceId": "src-adb12bae50dedef6",
+        "reuseReviewIndex": 129,
+        "reuseSourceId": "src-adb12bae50dedef6",
+        "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563"
+      },
+      {
+        "reviewIndex": 134,
+        "sourceId": "src-2f2778580fed22ce",
+        "reuseReviewIndex": 133,
+        "reuseSourceId": "src-2f2778580fed22ce",
+        "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a"
+      },
+      {
+        "reviewIndex": 141,
+        "sourceId": "src-c4f932b065fd8427",
+        "reuseReviewIndex": 140,
+        "reuseSourceId": "src-c4f932b065fd8427",
+        "textSha256": "ed30ac61c65f08b74b0b707769ee70bc9199bb56545d9e02e2146704ed7f3181"
+      },
+      {
+        "reviewIndex": 141,
+        "sourceId": "src-51d1cd763d7dff81",
+        "reuseReviewIndex": 140,
+        "reuseSourceId": "src-51d1cd763d7dff81",
+        "textSha256": "405fe42e62f7dcd2a588e6b6ef7910d38ba8c0d7f16b21d081329814339ef54d"
+      },
+      {
+        "reviewIndex": 149,
+        "sourceId": "src-11b4f50c5487577f",
+        "reuseReviewIndex": 149,
+        "reuseSourceId": "src-322a2ca2584566c6",
+        "textSha256": "551da6ffe04789e1fafeab07dab1c9426fde39ae3fce11f5be4d5d5f05acc4f9"
+      },
+      {
+        "reviewIndex": 150,
+        "sourceId": "src-32de4fdeaf8e5afb",
+        "reuseReviewIndex": 113,
+        "reuseSourceId": "src-32de4fdeaf8e5afb",
+        "textSha256": "b070254363e97b48347713732d2de2036fda872b411c629eb269af0ead5c81ca"
+      },
+      {
+        "reviewIndex": 151,
+        "sourceId": "src-78fc5f4fd64950d0",
+        "reuseReviewIndex": 151,
+        "reuseSourceId": "src-a7325ccd6938272b",
+        "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "reviewIndex": 152,
+        "sourceId": "src-bad3a88fb4607788",
+        "reuseReviewIndex": 151,
+        "reuseSourceId": "src-bad3a88fb4607788",
+        "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644"
+      },
+      {
+        "reviewIndex": 153,
+        "sourceId": "src-bad3a88fb4607788",
+        "reuseReviewIndex": 151,
+        "reuseSourceId": "src-bad3a88fb4607788",
+        "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644"
+      },
+      {
+        "reviewIndex": 153,
+        "sourceId": "src-787541b8969257d3",
+        "reuseReviewIndex": 153,
+        "reuseSourceId": "src-be62b6c92d27644c",
+        "textSha256": "44f7a827794d072edd5715104ac9631b7a9a24362887941452f679f137070857"
+      },
+      {
+        "reviewIndex": 155,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 156,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 157,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 158,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 159,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 160,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 161,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 162,
+        "sourceId": "src-c04548c23c83144f",
+        "reuseReviewIndex": 154,
+        "reuseSourceId": "src-c04548c23c83144f",
+        "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2"
+      },
+      {
+        "reviewIndex": 163,
+        "sourceId": "src-1e0c0a7a0e405e80",
+        "reuseReviewIndex": 163,
+        "reuseSourceId": "src-f2593ef10b763844",
+        "textSha256": "f68cdcd93e28dcb0d129da081dfcde935339093cb8c5f774ec2bc9bbf5c1bbf3"
+      }
+    ],
+    "methodEvidenceProofs": [
+      {
+        "reviewIndex": 110,
+        "sourceId": "src-cdde6c6f4fcec449",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+        "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+        "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.json",
+        "sidecarSha256": "2b407b5320ff437b188007c1b14397478feb333e6f01da735fd307dbb8958158",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "reviewIndex": 113,
+        "sourceId": "src-67fe13c9f7da8c09",
+        "sourceUrl": "https://www.zhaowei.us/",
+        "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+        "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.json",
+        "sidecarSha256": "cc0e5d325fe439beac84571bb73e011f49aa33073ceebceeb01c74dce77b3776",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "reviewIndex": 134,
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.json",
+        "sidecarSha256": "73bacd1dffdd569f75e7739ef87fa5d8b406d03bd867ae60d2f3946329715104",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "reviewIndex": 134,
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.json",
+        "sidecarSha256": "73bacd1dffdd569f75e7739ef87fa5d8b406d03bd867ae60d2f3946329715104",
+        "quoteLiteral": true,
+        "methodIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "reviewIndex": 135,
+        "sourceId": "src-f008a8591c981529",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+        "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+        "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.json",
+        "sidecarSha256": "8c8ad10977ab93c4e2dc2ca489e838a1ac5a56ee1c864873d58bcad444050aa2",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0
+        ]
+      },
+      {
+        "reviewIndex": 136,
+        "sourceId": "src-7860c9151c7e8a82",
+        "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+        "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+        "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.json",
+        "sidecarSha256": "465e268cfea090da12eef839ed6f2ea35d13d5f240804c262733cce67bfa9f38",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0
+        ]
+      },
+      {
+        "reviewIndex": 144,
+        "sourceId": "src-ecb5f3bfb3b5c8a7",
+        "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+        "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+        "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.json",
+        "sidecarSha256": "207f70da15eee2e16f3795a6485ebefc3a0792cd1cc54bf6984440c138b014de",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0
+        ]
+      },
+      {
+        "reviewIndex": 150,
+        "sourceId": "src-8b426b44eccb9855",
+        "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=401",
+        "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+        "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.html",
+        "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.json",
+        "sidecarSha256": "4c5aa9fa209d1c49f6fbb6f0bea0def6234f0da96a5016bb35f587b8828a893c",
+        "quoteLiteral": true,
+        "methodIndices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "summaryAndUnknownOldFieldsMatch": true,
+    "errors": []
+  },
+  "resolvedFindings": [
+    {
+      "reviewIndex": 110,
+      "labId": "ucsd-live-lab-ba4098836b71d6",
+      "issue": "Smarr旧unknown替换只限TemPredict，与负责人时间序列方法范围不一致。",
+      "resolution": "固定SHA scopeAddendum仅修改uncertaintyReplacements，分开负责人研究/TemPredict数据整合；其他方法/证据/摘要不动。",
+      "revisedAt": "2026-10-16T09:21:21+00:00",
+      "resolved": true
+    }
+  ],
+  "crossRecordConsistency": {
+    "ownIndex4DraftSha256": "951c09c5e7bacffb9efcf8f588ef422d662f4a74b82841b65baee5f596a2841d",
+    "index4NeedsRevision": false,
+    "noteZh": "index4本来已写负责人研究/项目两个范围；与110有效补丁后保持同源解释，两个稳定ID仍独立。"
+  },
+  "items": [
+    {
+      "reviewIndex": 110,
+      "labId": "ucsd-live-lab-ba4098836b71d6",
+      "labName": "UCSD Smarr lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass_with_resolved_addendum",
+      "methodCount": 2,
+      "rawSha256": "4548317cde80d8e509d92890179d85cb3db0adc2a6cbf93d41f571256aa73a9e",
+      "packetSha256": "e4313f66ef157cc918b1a09a449764a6ab8b4dff0844884caed68f94993584d3",
+      "scopeAssessmentZh": "方法与摘要正确分开负责人时间序列研究和TemPredict数据整合；原unknown替换仅限TemPredict的不一致已由固定SHA addendum修复。无2026状态或疗效外推。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-12e0aa5bbc55146e",
+          "title": "UCSD Smarr lab",
+          "n": 1626,
+          "url": "https://smarr.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70",
+          "textSha256": "2c4c056c5bdc480f575e27d21e1259450846eec41aa590671bef4cf34ac245ec",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1626
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-6abc8972ebacce77",
+          "title": "Historical field evidence: labName",
+          "n": 40,
+          "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "observedAt": "2026-10-02T22:43:17+00:00",
+          "bodySha256": null,
+          "textSha256": "8f7adeaf2676f5da3511b520043a72ceda336b5272b8a3149f0cde1577b9a2fd",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              40
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-cdde6c6f4fcec449",
+          "title": "Faculty Profiles | Jacobs School of Engineering",
+          "n": 847,
+          "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "observedAt": "2026-10-16T01:01:11+00:00",
+          "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+          "textSha256": "fc42a53306cd24305ffdd4ce676c57a2a21544014e21b323ba72ae8887c74648",
+          "kind": "prior_own_method_review",
+          "reasonZh": "已在index4独立阅读全文，本ID不合并",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              847
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 110,
+          "sourceId": "src-cdde6c6f4fcec449",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=510",
+          "sourceObservedAt": "2026-10-16T01:01:11+00:00",
+          "bodySha256": "685bbc8a51b0ed78797dc1e7f558175a0a4f21f2461c8d16afbc9e598a558946",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/142f1685dbf5bc26b7dd72bf73d6076b7ece44a43ba2b8eeb9d7c1b32d6d08f2.json",
+          "sidecarSha256": "2b407b5320ff437b188007c1b14397478feb333e6f01da735fd307dbb8958158",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0,
+            1
+          ],
+          "quote": "Smarr’s research focuses on time series analysis in biological systems, with an emphasis on practical information extraction for translational applications. Currently his main project is TemPredict, which brings together wearable device data from 50K people with over 1 million daily symptom reports. This massive data object is being used to identify signs of COVID-19 onset, progression, and recovery.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "方法与摘要均正确分开负责人时间序列研究和TemPredict数据整合；原unknown替换仅限TemPredict不一致，待父addendum修复。未把采集日视作当前项目日期。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 111,
+      "labId": "ucsd-live-lab-a36c380ec359c5",
+      "labName": "Welcome to the UCSD N ano B io E lectronic ( NBE ) Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "050b85d82d32590ac57721d90a83bcf337e45c1d05035d74f44bcb88a3d8936e",
+      "packetSha256": "eac006d44afb0db40c568f25ef2193e684907977ae11f094b60ac4569c56f601",
+      "scopeAssessmentZh": "主页主体为领域/指标/新闻题名，profile为个人interests与书目；不据wearable/nanomachine术语推已采用具体技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-e1314a372a1d92d8",
+          "title": "Joseph Wang - Nanoengineering - UCSD | Wearable Sensors | Nanomotors",
+          "n": 5726,
+          "url": "https://joewang.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:44+00:00",
+          "bodySha256": "065b26ef1cdea671637682dce51cbfb0d3125f7376b3251a13963ac1b500fc85",
+          "textSha256": "ac061354cff95ef30332ec4dba32db9d8abd0474fb673375fe1ae47d5bacdd7b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              5726
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-72500e987e1bee3f",
+          "title": "Historical field evidence: labName",
+          "n": 124,
+          "url": "https://joewang.ucsd.edu/",
+          "observedAt": "2026-10-02T23:43:14+00:00",
+          "bodySha256": null,
+          "textSha256": "d5f88ec4ef389830ede4cb4a12bf586cf1b270163457ec3b992d6d1d13238028",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              124
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-5d042e97981acb95",
+          "title": "Faculty Profiles | Jacobs School of Engineering",
+          "n": 2878,
+          "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=278",
+          "observedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "e6b25da233cc5b45786eedccfe78991fe53827e0f862a64977c902f132389376",
+          "textSha256": "cc58ee372692f58dea3b46530eb72328a94d58c154a48e95a45a26e7ea712beb",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2878
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 112,
+      "labId": "ucsd-live-lab-c71c7e3b160200",
+      "labName": "Xi Fang Laboratory",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "9fbd666ef061ed818ebfaed1dc72ce8f583053ec4734db76ab2848ea2b24f570",
+      "packetSha256": "ae48aea1dca1f23c7a969b974f9ed1201fb01d4f59ecc64237cbde1bc6ae0dd7",
+      "scopeAssessmentZh": "Research Focus仅心脏分子机制，其余毕业/获奖及论文题名，不足补具体方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-038a1b4e59f894da",
+          "title": "Xi Fang Lab – Understanding the molecular basis of cardiac development and disease",
+          "n": 1688,
+          "url": "https://xifanglab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:44+00:00",
+          "bodySha256": "2f95a3a430f9aa300fc6d6b2017ee77f91e75e09f2d805ea5bf6ce45db26f29e",
+          "textSha256": "d4d5a7d99e8c4f9f1f06770a4616c23332d565177f0a0fea25f5e4256d36ad13",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1688
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0296095e054ae200",
+          "title": "Historical field evidence: labName",
+          "n": 18,
+          "url": "https://cardiology.ucsd.edu/research/labs/index.html",
+          "observedAt": "2026-10-02T22:42:07+00:00",
+          "bodySha256": null,
+          "textSha256": "38118612cc29e81907f4d9b0d22f27f261770af02fdf424461fd03d9347cd7f9",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              18
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 113,
+      "labId": "ucsd-live-lab-94374f5e44bb8e",
+      "labName": "Zhaowei Liu's Research Group",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 2,
+      "rawSha256": "ec0d35f3c4a2aa26f1b41a7d56f728772f01c6aeae94e26d4285da6243d59dc2",
+      "packetSha256": "3aab1cc9f1ededd22510e8c7bd770b7690dd0e482c2a88266c8dab9e030e2b46",
+      "scopeAssessmentZh": "Group Mission直接说明研究通常组合工程设计优化及器件制备表征；不是从Detailed topics或新闻论文借用；方法类别与摘要/限制匹配。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-67fe13c9f7da8c09",
+          "title": "Zhaowei Liu Research Group",
+          "n": 2150,
+          "url": "https://www.zhaowei.us/",
+          "observedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+          "textSha256": "cf78fe0122bc39e1e5faddb5a6983a51e24ba0c0fbfbd05fb30c95e9c7584a43",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2150
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0056ad94906d676f",
+          "title": "Historical field evidence: labName",
+          "n": 52,
+          "url": "https://www.ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-02T22:42:04+00:00",
+          "bodySha256": null,
+          "textSha256": "fea5460e3c3edc087f9a8765cc75cf3e17329f0812ad9c67eff406019e1ec8af",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              52
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-32de4fdeaf8e5afb",
+          "title": "ECE Laboratories | Electrical and Computer Engineering",
+          "n": 1399,
+          "url": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+          "textSha256": "b070254363e97b48347713732d2de2036fda872b411c629eb269af0ead5c81ca",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1399
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-630823d4a2b1d679",
+          "title": "Faculty Profiles | Jacobs School of Engineering",
+          "n": 1908,
+          "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=276",
+          "observedAt": "2026-10-16T01:01:16+00:00",
+          "bodySha256": "72b141f40285c511f598a0c1c9495e4b83822b5b5a2f85bb52813153b5531383",
+          "textSha256": "3ccdffb59a4e80fcbfae0990d8d8b44601fe4ad8e22754e77e1e17e55b064213",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1908
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 113,
+          "sourceId": "src-67fe13c9f7da8c09",
+          "sourceUrl": "https://www.zhaowei.us/",
+          "sourceObservedAt": "2026-10-16T01:03:15+00:00",
+          "bodySha256": "b771cd45cf8fecca80a8930286264d2b65ffdd4f1ba4f42dacd4d1db8fc351fe",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/94374f5e44bb8e8f135d7e4f7e0dd8c052a376432c78b72f5b7cadfde372e014.json",
+          "sidecarSha256": "cc0e5d325fe439beac84571bb73e011f49aa33073ceebceeb01c74dce77b3776",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0,
+            1
+          ],
+          "quote": "The research topics transcend the boundaries of traditional disciplines and are typically a combination of fundamental science exploration, engineering design and optimization, device fabrication and characterization, and various applications.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "Group Mission直接说明研究通常组合工程设计优化及器件制备表征；不是从Detailed topics或新闻论文借用；方法类别与摘要/限制匹配。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 114,
+      "labId": "ucsd-live-lab-977587ed98de04",
+      "labName": "Muotri Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "de0407d886ac451dbb92ab4a13bf41ca40f4a08fc9ec6348cd34dbf707bc3e48",
+      "packetSha256": "05a3119d0ff38f2aea334d8c589a1c14afc48f38f8699f06db7bb97553abff0d",
+      "scopeAssessmentZh": "900字符历史摘要确在The lab uses后截断，缺方法宾语；不借常识补类器官或iPSC。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-ed5f8b233e355346",
+          "title": "Historical field evidence: labName",
+          "n": 37,
+          "url": "https://profiles.ucsd.edu/alysson.muotri",
+          "observedAt": "2026-10-07T22:01:27+00:00",
+          "bodySha256": null,
+          "textSha256": "171e9e19b15bf773abcc323a14774595818a1c92302961989c80a246c24727e1",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              37
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-46160ac8198612da",
+          "title": "Associated faculty research: Alysson Muotri",
+          "n": 900,
+          "url": "https://profiles.ucsd.edu/alysson.muotri",
+          "observedAt": "2026-10-07T22:01:27+00:00",
+          "bodySha256": null,
+          "textSha256": "f6492c0076639ea085a1771f19861355d699a74031951586961d7cf833528db3",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              900
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 115,
+      "labId": "ucsd-live-lab-210a25a3ee6ee9",
+      "labName": "Arshad B. Desai — lab website",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "70d12ac25c7cd63867f1692da603d7c82a72115f894a87d3e36375ee24da2a21",
+      "packetSha256": "e34e150677c8f298467c62c8dcd098221eaf63fd4e1a2375a1f91049a7f40ba4",
+      "scopeAssessmentZh": "191字符摘要只有染色体分离目标与分类，无法补采用技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-cfa8fa4af4a9811e",
+          "title": "Historical field evidence: labName",
+          "n": 50,
+          "url": "https://profiles.ucsd.edu/arshad.desai",
+          "observedAt": "2026-10-03T01:42:39+00:00",
+          "bodySha256": null,
+          "textSha256": "809cadc6da349f626270ef049e133a4bfe4bca15ad0bd2a011a92dc81966527f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              50
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-3ac71b0dfbb43e10",
+          "title": "Associated faculty research: Arshad B. Desai",
+          "n": 191,
+          "url": "https://profiles.ucsd.edu/arshad.desai",
+          "observedAt": "2026-10-07T22:02:07+00:00",
+          "bodySha256": null,
+          "textSha256": "5c03be76da03e449b3c29d1a9039fed10d3c894b3e9ffefb23bf92dd358f3251",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              191
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 116,
+      "labId": "ucsd-live-lab-493c2d3c113de8",
+      "labName": "Hamilton Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "2ca475d23967dd7f783691c2f077254f72a4ff92f56ca7fe0006ba5903e4a099",
+      "packetSha256": "4b7e482e9b09e9bd5c69f39c567738fb880b8c0251c8b02e138430f2a59642ae",
+      "scopeAssessmentZh": "官方profile科研团队段只有三方向；Drosophila/positional cloning为早期训练，资助项目题名不当独立方法主文。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-e4773d151cf151b9",
+          "title": "Historical field evidence: labName",
+          "n": 96,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "16607669306821365780c6e01238fa9e1f4df4fd2f33945f78f7d3a6b931bde0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              96
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-43b5374c9e708af2",
+          "title": "Associated faculty research: Bruce Hamilton",
+          "n": 900,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "d98b3e361f6d82d526f1464dd7985d011c976c4f02efcd1d9012caf363cfe4df",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              900
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f36a14458458298d",
+          "title": "Bruce Hamilton | UCSD Profiles",
+          "n": 3896,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": "9ff4279cc7fc83c9302f07bbc24e292b62203511d203713182da21ef0950382e",
+          "textSha256": "cb7234df8ea2605d24950170589ffbc51a4831547672f473b4b5f01cef897b38",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              3896
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 117,
+      "labId": "ucsd-live-lab-cd8819aec34b38",
+      "labName": "Hamilton Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "efc0cc132fbe2bb1dcfd3a47cf65b42f5bda441572ea486a0040b20e185e2367",
+      "packetSha256": "9a1175bfd2a2d045cb78f5c03908a4e797c655812049cba1fc231ea13c6b077b",
+      "scopeAssessmentZh": "与116同正文hash但独立ID；同样排除训练/资助题名，不合并身份或日期。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-96cc2e93adfc341c",
+          "title": "Historical field evidence: labName",
+          "n": 100,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "937426ea94974930c971815ca4b30cc3df89c83c4e7a657191048886a102519b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              100
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-43b5374c9e708af2",
+          "title": "Associated faculty research: Bruce Hamilton",
+          "n": 900,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": null,
+          "textSha256": "d98b3e361f6d82d526f1464dd7985d011c976c4f02efcd1d9012caf363cfe4df",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(116, 'src-43b5374c9e708af2')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-f36a14458458298d",
+          "title": "Bruce Hamilton | UCSD Profiles",
+          "n": 3896,
+          "url": "https://profiles.ucsd.edu/bruce.hamilton",
+          "observedAt": "2026-10-07T22:02:57+00:00",
+          "bodySha256": "9ff4279cc7fc83c9302f07bbc24e292b62203511d203713182da21ef0950382e",
+          "textSha256": "cb7234df8ea2605d24950170589ffbc51a4831547672f473b4b5f01cef897b38",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(116, 'src-f36a14458458298d')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 118,
+      "labId": "ucsd-live-lab-0fd0529e6aefbc",
+      "labName": "Signer Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "bbefaae718a3ee7d6039fb3f8d77b7d5ca34e6bf54e78af6e2ebc65577f2304f",
+      "packetSha256": "ac448b163361879f1aaec67e1d3beb87a7e2d7c1e6ea295d1d3285bc068ae83a",
+      "scopeAssessmentZh": "完整使命句只干细胞与健康寿命目标，无实际技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-26e0a94abc32a89a",
+          "title": "SIGNER LABORATORY | UNLOCKING THE MYSTERIES OF STEM CELLS",
+          "n": 435,
+          "url": "https://signerlab.com/",
+          "observedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "3bf275b7c5e9863a791d3116dc3cb0032b7b62799dcfeb82374e6360f00a870f",
+          "textSha256": "58237ab41a0dbebdd91cb63155d11e695fc317f282cc2c544d98e369a1a86f8d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              435
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ff3ce8310d33b469",
+          "title": "Historical field evidence: labName",
+          "n": 34,
+          "url": "https://profiles.ucsd.edu/robert.signer",
+          "observedAt": "2026-10-07T22:12:18+00:00",
+          "bodySha256": null,
+          "textSha256": "2357634a311355263a648f9bc7cfdea69bb3e75d57bfa930c9b0129e2e16b8f5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              34
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f9e686a79b187290",
+          "title": "SIGNER LABORATORY | UNLOCKING THE MYSTERIES OF STEM CELLS",
+          "n": 187,
+          "url": "https://signerlab.com/",
+          "observedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "3bf275b7c5e9863a791d3116dc3cb0032b7b62799dcfeb82374e6360f00a870f",
+          "textSha256": "695193cdc2f11e6a3f7df28e39bf286de1a6d906e71162d367db6f26483bb66c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              187
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 119,
+      "labId": "ucsd-live-lab-41588a6e1edd2b",
+      "labName": "Bejar Lab Homepage",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "ab37321560522f1d14f5bf45569acac01ba7f0c9054a2143255459ccc486f4bc",
+      "packetSha256": "1425693cd45eea5aa0f510cf962e8763e182d8c6ecb60c5353e58bf230a37fe7",
+      "scopeAssessmentZh": "遗传病因是目标，clinical trials/transplantation是拟整合专长；图片标签未说明研究技术，保留未知合理。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-8c44f8cce93251fc",
+          "title": "Moores Cancer Research Center",
+          "n": 1038,
+          "url": "https://www.bejarlab.org/",
+          "observedAt": "2026-10-16T01:06:54+00:00",
+          "bodySha256": "5f9a117603b1cbc481e5144c79836bd6026c766156647ac7f288a9fffea9155e",
+          "textSha256": "625aaf4e1eded8d5fbd0ccd8a8f86c0c892d53a729aa1ead5fab755ea2cb01af",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1038
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7e19f0fd42ae7685",
+          "title": "Historical field evidence: labName",
+          "n": 45,
+          "url": "https://profiles.ucsd.edu/rafael.bejar",
+          "observedAt": "2026-10-03T03:03:23+00:00",
+          "bodySha256": null,
+          "textSha256": "7b032b6d31589a81a8e45ec7ddc8380d67366ad0fb754b2571db35d8c507fcf2",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              45
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 120,
+      "labId": "ucsd-live-lab-81890c1cb6a9e3",
+      "labName": "Naviaux Lab Site",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "fd3c872d9b57ee84f9a27e5e2a8fa2a3349c98510dde86f19159aff2194ab834",
+      "packetSha256": "99a71a740edb9b4a77bc91ba14216440e501038629b8b4c2c6f88ef8f99c1bb9",
+      "scopeAssessmentZh": "分组中的ecogenetics/metabolomics是研究方向，具体平台未明；疾病导航不补采用。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-0f938977a5159496",
+          "title": "Naviaux Lab",
+          "n": 1849,
+          "url": "https://naviauxlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:43+00:00",
+          "bodySha256": "dfff5e979c0d080ac47eb84ad62c5c6688376f8e08f09c96382144f6c2e7b9a2",
+          "textSha256": "b7ce6e07bdf8564469fd9084ff7e4daaa644f6aace6f9c39b38ff5929206592c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1849
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-55ae16860bdbf7c3",
+          "title": "About – Naviaux Lab",
+          "n": 1445,
+          "url": "https://naviauxlab.ucsd.edu/about/",
+          "observedAt": "2026-10-16T01:02:31+00:00",
+          "bodySha256": "b16872b0d7d214bd65f588bf2f13151d8f42b95794dab3632a2f2b451022c8eb",
+          "textSha256": "b404da4982495d39327ffe62f3d66179e17057b082e5e9f37fe499072cd59793",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1445
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c4a61ed973f12269",
+          "title": "Historical field evidence: labName",
+          "n": 47,
+          "url": "https://profiles.ucsd.edu/robert.naviaux",
+          "observedAt": "2026-10-03T03:05:43+00:00",
+          "bodySha256": null,
+          "textSha256": "b8c7272d96b8aad2d5197f9347a7d68e0455e391d5a3d87efe09ca85b06e6033",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              47
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 121,
+      "labId": "ucsd-live-lab-4fe603900f7f71",
+      "labName": "Megan Fitzhugh — lab website",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "cf5250c9e8eb117ebb8bd1e9b208f3cdec96127de5bafdade523f4df3f385e5c",
+      "packetSha256": "06e0c2022245247d9e18dd2efbcde7c98b3d9e5bb7966b06417fb6cb82df0e81",
+      "scopeAssessmentZh": "招募年龄/听损条件明确但无测量技术，不从研究参与者范围推影像或听觉测试。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-cb6a70f6dde8aa4b",
+          "title": "Hearing & Brain Health Lab",
+          "n": 725,
+          "url": "https://www.hearingbrainlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:53+00:00",
+          "bodySha256": "e9c5c817e629f4b643b185d3170527d66e958d809506363d61ecae910f196d2b",
+          "textSha256": "cc79fcd3e72be87cb1fd1a115f60a824a0cbe61540b7c2c430bdd7e8a9edcac8",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              725
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-40df0b8bb0e6f0d1",
+          "title": "Historical field evidence: labName",
+          "n": 51,
+          "url": "https://profiles.ucsd.edu/megan.fitzhugh",
+          "observedAt": "2026-10-03T03:40:22+00:00",
+          "bodySha256": null,
+          "textSha256": "e0d2fdaf063e471c0d97a88e7e502b249fd0d78ec07bf49c8aa14ff8bb731ca3",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              51
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f0dca20f173df321",
+          "title": "Hearing & Brain Health Lab",
+          "n": 103,
+          "url": "https://www.hearingbrainlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:53+00:00",
+          "bodySha256": "e9c5c817e629f4b643b185d3170527d66e958d809506363d61ecae910f196d2b",
+          "textSha256": "5cf25f48054e4384cdb1169c548c1a46b775ddcfedbe10eb9711e90312d8b810",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              103
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 122,
+      "labId": "ucsd-live-lab-f7358fde939259",
+      "labName": "Chen Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "cac6c2e38ae0898f951da53b8227da2c23cbe14d36ec33e16829adba68992f5d",
+      "packetSha256": "f3ddc4e41c9d66fe420243d196f32a44f9ddcd4f08beb15286461ce05b4079ff",
+      "scopeAssessmentZh": "根页短正文只原因与干预问题，无方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-61382e56b7f41cac",
+          "title": "Alzheimer's disease research | Xu Chen Lab UCSD | United States",
+          "n": 264,
+          "url": "https://www.xuchenlab-ucsd.org/",
+          "observedAt": "2026-10-16T01:06:55+00:00",
+          "bodySha256": "379715c6bf694d32458f3320e8ac5ad60d37a241b1641cf43f42299b95535d89",
+          "textSha256": "c3303f4f052cdd1ea8605334301524dfcfb65d2aa2aed19831f942126c794cbc",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              264
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e49ab97304a242de",
+          "title": "Historical field evidence: labName",
+          "n": 42,
+          "url": "https://profiles.ucsd.edu/xu.chen",
+          "observedAt": "2026-10-03T03:46:11+00:00",
+          "bodySha256": null,
+          "textSha256": "d5eafcd3a8ec786c3f1c59028f71a501c291fc4c04f4c100e1f54f1f84d41316",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              42
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 123,
+      "labId": "ucsd-live-lab-f426b74f514b6d",
+      "labName": "Palmer Lab Website",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "320301bc50a3eeb86fa3d469007b9daacc1aea26fd80f66153da9e4a874f62d7",
+      "packetSha256": "99d66bb4f00e1d262fdea6d62bbdc3833eeb2b2a8109a4900cf83a33e75ba2be",
+      "scopeAssessmentZh": "全页新闻中的GWAS、建模、大鼠为论文题名，不转为实际方法；短使命段也无技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-0fd0a962aaa5a375",
+          "title": "PalmerLab.org -",
+          "n": 3406,
+          "url": "https://palmerlab.org/",
+          "observedAt": "2026-10-16T01:07:02+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "df65ea11268af410a9f7d4d0189ea598c4de17f37cf9b463cb0c5bc5efd5418e",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              3406
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-a6d146e136ec2ff3",
+          "title": "Historical field evidence: labName",
+          "n": 46,
+          "url": "https://profiles.ucsd.edu/Abraham.Palmer",
+          "observedAt": "2026-10-03T04:57:54+00:00",
+          "bodySha256": null,
+          "textSha256": "8224b9bec2e81677fc18fc7ac3083fa56c74b0dd9b57e8cf94fa8cb0f0372e06",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              46
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-614d734b64f23151",
+          "title": "PalmerLab.org -",
+          "n": 3406,
+          "url": "https://palmerlab.org/",
+          "observedAt": "2026-10-16T01:36:56+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "df65ea11268af410a9f7d4d0189ea598c4de17f37cf9b463cb0c5bc5efd5418e",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(123, 'src-0fd0a962aaa5a375')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-4e45e5e69ba46de5",
+          "title": "PalmerLab.org -",
+          "n": 199,
+          "url": "https://palmerlab.org/",
+          "observedAt": "2026-10-16T01:07:02+00:00",
+          "bodySha256": "9cd864afd4d732b89f3bfc91fb7389db2e94c6da7fb0543142402287cf797b5a",
+          "textSha256": "bb2967ad57ab9f9b380fda7f461bf263e9ee5a393693f8ef664a435f1e0e84b1",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              199
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 124,
+      "labId": "ucsd-live-lab-abd12eba39c46d",
+      "labName": "Lee Lab site",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "9bdde1befe43333c2a59cca84752603ac358e07bf7836b56ab8d7dded5171e57",
+      "packetSha256": "e587cad219b419502dee539351f63ef95e74394ed0118af6dd1437eff75c1bcc",
+      "scopeAssessmentZh": "睡眠/炎症/孤独为兴趣，3D脑图片标签不作成像采用。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-1087f8bfce7fc811",
+          "title": "LEE LABORATORY",
+          "n": 442,
+          "url": "https://www.leelaboratory.com/",
+          "observedAt": "2026-10-16T01:07:01+00:00",
+          "bodySha256": "f2a13e4553b318f580b0ba26445af74cc999805373a40562396151d8589db2c3",
+          "textSha256": "a516208f00e25c5be57badb71a2fb96958812b3807f7f889337295a8ddcd3b9c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              442
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-776a8d566889ba76",
+          "title": "Historical field evidence: labName",
+          "n": 45,
+          "url": "https://profiles.ucsd.edu/ellen.lee",
+          "observedAt": "2026-10-03T05:10:24+00:00",
+          "bodySha256": null,
+          "textSha256": "5ed35dc7183cb107e623d9191b650c3d4abe3d405d78af83aa9588a2e1ca7662",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              45
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 125,
+      "labId": "ucsd-live-lab-86c289fa737e94",
+      "labName": "Mental Health in Design Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "e3f44351f4bda0d73a138b9a9317c3b2a6caaca4488d1920b0949f3b81c445e3",
+      "packetSha256": "716ce5c03084a2b823effeb8fb6a1d3cf85bcbad9656be29207553b82874b5be",
+      "scopeAssessmentZh": "技术设计理念/AI类别和外部统计不说明团队实际用户研究或实验方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-0869aa97b8c3dbba",
+          "title": "MIDLAB - Home",
+          "n": 1469,
+          "url": "https://mentalhealthindesign.weebly.com/",
+          "observedAt": "2026-10-16T01:07:06+00:00",
+          "bodySha256": "6002052376282caa4606c57687ddc0cfa46b756031dd232f481433cee63a51c7",
+          "textSha256": "4c99a43429fd783b5cc655b3033f00839bd15b098130a71d812835ff32b0c86f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1469
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-fe79233a783c7cf1",
+          "title": "Historical field evidence: labName",
+          "n": 62,
+          "url": "https://profiles.ucsd.edu/elizabeth.eikey",
+          "observedAt": "2026-10-03T05:47:23+00:00",
+          "bodySha256": null,
+          "textSha256": "d407290a332f9d83c505b73f6e3a90b4a694549d88701cf6d35fec16493815bc",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              62
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 126,
+      "labId": "ucsd-chemistry-biochemistry-lab-ap-lab-applied-photochemistry-pun-lab",
+      "labName": "AP Lab (Applied Photochemistry, Pun Lab)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "4b41592044d1c87b71818cb05c2dcf13908170d3293efd7f3b25af9fca7a1a3c",
+      "packetSha256": "7b148ee3e5ae0baa724b5c7cf98b07f8e714176ff18999d5060dc233f23f8078",
+      "scopeAssessmentZh": "AP目标是激子应用，官方简介Coming soon，师资学科类别不补具体光谱技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-6a20bd8154ffff4f",
+          "title": "AP Lab",
+          "n": 373,
+          "url": "https://aplab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:13+00:00",
+          "bodySha256": "c39f73379940126945c692176b7fc13bb02ffd31afc02e9878bc0c83d792d0ff",
+          "textSha256": "18dadd69419160a1e5653a4fcb3e8f172f00227b0a7398d49cf5ffd161fdf0c0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              373
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-46b70cb75f810ebb",
+          "title": "Historical field evidence: labName",
+          "n": 32,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "f6785ee0a075f8518cf8fc517a57350567e422e098beb2431ae74bfe412e461a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "title": "Faculty Profiles | Department of Chemistry",
+          "n": 8082,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "kind": "directory_scope",
+          "reasonZh": "广泛学科/师资目录，本轮只读标题与实体类别；不借其他PI技术",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              250
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-3b13b10b86e5c006",
+          "title": "Andrew Pun | Department of Chemistry",
+          "n": 337,
+          "url": "https://chemistry.ucsd.edu/faculty/profiles/andrew-pun",
+          "observedAt": "2026-10-16T01:01:48+00:00",
+          "bodySha256": "81abd01512ce2beec5b9ad30abd6b4fa3521b971bf27c0e201f3f4a343c53bd3",
+          "textSha256": "7c76fa7b817327a95f95cf70e4d98de1d118461d8fb6dcd0f8f175c9b0bbe688",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              337
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 127,
+      "labId": "ucsd-chemistry-biochemistry-lab-romero-polymer-lab",
+      "labName": "Romero Polymer Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "9b9e00f8817e69d6dbd71cbc52ef38ce55acf9b150ed79a7cb54ee43eeb6e57d",
+      "packetSha256": "c2a2312a67d44409772486dc350f67b18c5ae6cca1802cf5f3445da47b6596da",
+      "scopeAssessmentZh": "组目标是开发合成工具/材料，但没有具体反应或分析采用；PI履历、书目信息不补技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-92b1d5aa41720760",
+          "title": "Romero Polymer Lab",
+          "n": 589,
+          "url": "https://romeropolymerlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:14+00:00",
+          "bodySha256": "a9abe7c3308ff3394d1aaa77c91bb9038875343d675e308df433c93bfbdbe9f6",
+          "textSha256": "3b89d2c0cee9d34dab30b389b79ad0f405d169be7ddeca15d492fc08af2e2167",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              589
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-9b415d1606bec9a5",
+          "title": "Historical field evidence: labName",
+          "n": 43,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "fde42af66abe4e9cb9e99c4988586b1329e3ac787d6ae92fcfe7ce1ad475b69b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              43
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-25163f1e17ba8bf5",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 142,
+          "url": "http://romeropolymerlab.ucsd.edu",
+          "observedAt": "2026-10-07T22:56:19+00:00",
+          "bodySha256": null,
+          "textSha256": "6c79249b1c5cbe7d8b9b4fa102da1923292c264118b9c356481633a82475c58a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              142
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "title": "Faculty Profiles | Department of Chemistry",
+          "n": 8082,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(126, 'src-ad1952dbe19fb7d8')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-e84290007d5ea217",
+          "title": "Nathan Romero | Department of Chemistry",
+          "n": 611,
+          "url": "https://chemistry.ucsd.edu/faculty/profiles/nathan-romero",
+          "observedAt": "2026-10-16T01:01:50+00:00",
+          "bodySha256": "08b347bc2b27fd16418df0055d090f9584a4cb245d2d26648f31703360ac6710",
+          "textSha256": "cbbb8dad4e7116d0169c9dd9d9a2db68d67437b7179b920bfe45b71fab453c54",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              611
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-859c890e93537989",
+          "title": "Romero Polymer Lab",
+          "n": 589,
+          "url": "http://romeropolymerlab.ucsd.edu/",
+          "observedAt": "2026-10-16T04:22:53+00:00",
+          "bodySha256": "a9abe7c3308ff3394d1aaa77c91bb9038875343d675e308df433c93bfbdbe9f6",
+          "textSha256": "3b89d2c0cee9d34dab30b389b79ad0f405d169be7ddeca15d492fc08af2e2167",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(127, 'src-92b1d5aa41720760')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 128,
+      "labId": "ucsd-chemistry-biochemistry-lab-tor-lab",
+      "labName": "Tor Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "2d0312f6875bb403fdbb6a42f745e407876f1dfec75f869f36fb8593855ecb49",
+      "packetSha256": "d206c15af81e336cac49c2202ac6be1607b7c77c9e75ba5a69f2fbc8371e040d",
+      "scopeAssessmentZh": "探针是to be used的开发目标，后续实时监测等为单篇新闻题名，不当已采用。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-61dc67c7eacda35e",
+          "title": "Tor Lab Home",
+          "n": 2260,
+          "url": "https://torgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+          "textSha256": "72fa390b60ce3eef5d58db76ce2f635a9b3a994f41a01442e688f559a0a70cf5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2260
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-badc000ecf949b63",
+          "title": "Historical field evidence: labName",
+          "n": 35,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-07T22:53:04+00:00",
+          "bodySha256": null,
+          "textSha256": "a6ac538d1a46b60ffa0b28876bcdf5e0556b9de6a67933d71a41bb6d2cf53405",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              35
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ad1952dbe19fb7d8",
+          "title": "Faculty Profiles | Department of Chemistry",
+          "n": 8082,
+          "url": "https://chemistry.ucsd.edu/faculty/alphabetical",
+          "observedAt": "2026-10-16T00:59:05+00:00",
+          "bodySha256": "466cfae91d012a8083dc3b0bcb3f3a29af6417dc325e5ba4c5ed1ca1fa289745",
+          "textSha256": "13c39ce9b896b0d9f9b9c882c3e3333b233a464b11681076b522ff1a31d98699",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(127, 'src-ad1952dbe19fb7d8')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-955a1f00a2957102",
+          "title": "Yitzhak Tor | Department of Chemistry",
+          "n": 1126,
+          "url": "https://chemistry.ucsd.edu/faculty/profiles/yitzhak-tor",
+          "observedAt": "2026-10-16T01:01:57+00:00",
+          "bodySha256": "09128b41ffac50dd1867bee1f5c4800dd1e5862f5860a331faa985fdbbe230f8",
+          "textSha256": "4a5d90fe02db2840ec7b125c598dd3db22736d767d7e8d940f34f19007eccac8",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1126
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-4ff55423c2b5fa89",
+          "title": "Tor Lab Home",
+          "n": 2260,
+          "url": "http://torgroup.ucsd.edu/",
+          "observedAt": "2026-10-16T04:23:31+00:00",
+          "bodySha256": "66dcf35d601d7224ab6394333d2896f18776662be76187ad81b5e40c1de91338",
+          "textSha256": "72fa390b60ce3eef5d58db76ce2f635a9b3a994f41a01442e688f559a0a70cf5",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(128, 'src-61dc67c7eacda35e')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 129,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-budin-lab-laboratory-of-lipid-biology-and-cell-membrane-biophysics",
+      "labName": "Budin Lab (Laboratory of Lipid Biology and Cell Membrane Biophysics)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "96efe45562b73d99e5af174dcc7a476a98fdb68596d990356650b6489c5f8254",
+      "packetSha256": "21cd5c93e2fbddc1e4268d280a9f485cc45392de0872dfe5155b819f81c8e8b6",
+      "scopeAssessmentZh": "interdisciplinary/new tools未具名；人员学历与师资Research Areas不等于本组实施。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-c6deef290f2cbc9e",
+          "title": "Budin Lab – Laboratory of Lipid Biology and Cell Membrane Biophysics",
+          "n": 587,
+          "url": "https://budinlab.com/",
+          "observedAt": "2026-10-16T01:07:16+00:00",
+          "bodySha256": "34b61b78a87fc17da714b4b1fb6663c069a9643aee85e9205693213d170de508",
+          "textSha256": "5518f825c34b15cbfa3ac68d54ba20def8d3b77d31d189e8a74adb586fb27b9d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              587
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-73525050316bbd68",
+          "title": "Historical field evidence: labName",
+          "n": 34,
+          "url": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-07T22:53:34+00:00",
+          "bodySha256": null,
+          "textSha256": "d1b687c47a9c484c16a3494b2921eff7c9b9eba16b06e81a00b2fa72c96e4b6f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              34
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "title": "Faculty | Department of Biochemistry and Molecular Biophysics",
+          "n": 5256,
+          "url": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+          "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              5256
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-22387c5b36ed6272",
+          "title": "People – Budin Lab",
+          "n": 1923,
+          "url": "https://budinlab.com/people/",
+          "observedAt": "2026-10-16T01:35:45+00:00",
+          "bodySha256": "3e4f1c7bafcb7eade621cd2a131d1ff390cbee5b1cf6fae5d7883d80776e0749",
+          "textSha256": "bcc0ba499cd41390988f47f344cdb89d081bceecebb366196bb12053dd0d26ac",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1923
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 130,
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-debelouchina-lab",
+      "labName": "Debelouchina Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "5aebc142ae44c9bfa17a4c14cb2620afe349374a4d82c623a0e7dbabe343136a",
+      "packetSha256": "96057a1b8e83b4edaeb418b81d0798d59127ab9ec3b2741320637af5abd6df98",
+      "scopeAssessmentZh": "只有gene regulation/aging标语和Research导航，无方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-bc8c1c4c00e2f284",
+          "title": "DEBELOUCHINA LAB AT UC SAN DIEGO - Home",
+          "n": 306,
+          "url": "https://galialab.weebly.com/",
+          "observedAt": "2026-10-16T01:07:17+00:00",
+          "bodySha256": "bfd4c06d3387108cb4bfffdc8ac082ad419cff200f3cc863a7de157e8000886b",
+          "textSha256": "02d8c1541d017e5e0705c3d9b926e0a4684890906f4da7af079ab48cf4cacb47",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              306
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-8af835d1385ed0e3",
+          "title": "Historical field evidence: labName",
+          "n": 39,
+          "url": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-07T22:53:34+00:00",
+          "bodySha256": null,
+          "textSha256": "19c7d06419768d41d5664307a2be1b5aad5a83826dafcfc7c3c8c7cac20ecd7f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-adb12bae50dedef6",
+          "title": "Faculty | Department of Biochemistry and Molecular Biophysics",
+          "n": 5256,
+          "url": "https://bmb.ucsd.edu/faculty",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "f7e1417bea9cac8ef88472d037865ab74aa815186f1f9047d304d5cfd28380ef",
+          "textSha256": "253f99432c2950f8149d8c3a2292d19cfb2454bbb9c2cf6a385a456de5127563",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(129, 'src-adb12bae50dedef6')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 131,
+      "labId": "ucsd-medicine-lab-alan-saltiel-lab",
+      "labName": "Alan Saltiel Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "06837078d2d67ccea0cc79d4cb4aeba560be3cd6c5c05dfa40f89c2120db764e",
+      "packetSha256": "9fcd8797d54ebfeed146fc2b6a1cf65d6583b130028c236aed0d017ef6dbb9e1",
+      "scopeAssessmentZh": "激素/营养调节目标及试剂资助没有具体采用，保留未知。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-15b11d38d4bb4322",
+          "title": "Alan Saltiel Lab – University of California, San Diego",
+          "n": 968,
+          "url": "https://sites.ucsd.edu/saltiellab/",
+          "observedAt": "2026-10-16T01:07:22+00:00",
+          "bodySha256": "0e562c6459cfe973d33422bbd1bad0bf499db63aa98efe46c0eddd00b3720005",
+          "textSha256": "af4ef62b91b263dbea5b1bf2bd4181ecb26c3dd4afdff5bf71476b8efa1178a5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              968
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e2034847e7735a2c",
+          "title": "Historical field evidence: labName",
+          "n": 305,
+          "url": "https://endocrinologymetabolism.ucsd.edu/research/index.html",
+          "observedAt": "2026-10-07T22:53:29+00:00",
+          "bodySha256": null,
+          "textSha256": "fb930dd3be18068175f762b585c7ced955e99094f80758c3ec7b9d2e903d559d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              305
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 132,
+      "labId": "ucsd-medicine-lab-jung-lab",
+      "labName": "Jung Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "fae0834bba15a9570e9390edfaccc49414721a2e923a04df7d560532e9c52cae",
+      "packetSha256": "d917e78b9da3670bad0f0a69ed0b11ca7298ee64b96089efbaabdb67ee3722c2",
+      "scopeAssessmentZh": "manipulate activin signaling是治疗研发目标，未给操作技术；联络/成员页无补充。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-3196e8d92daa9e3d",
+          "title": "Jung Lab",
+          "n": 1138,
+          "url": "https://gastroenterology.ucsd.edu/research/labs/jung/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "6aff065569224f9a2de5c6484be62d6a3832ad9253f0119a35d9100dee90a2b4",
+          "textSha256": "88fa1ee55820b23c1201413f8ac29e00c12dac480ee82af3919628cb683aa2d4",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1138
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e52af173e0b64643",
+          "title": "Lab Members",
+          "n": 201,
+          "url": "https://gastroenterology.ucsd.edu/research/labs/jung/team.html",
+          "observedAt": "2026-10-16T02:41:41+00:00",
+          "bodySha256": "bf44deaa03323d1cbfccacdb94fc7a865381b518b37f4b7e8b07fd4b7d032dc1",
+          "textSha256": "269aecec5c48b9de0208ce4083aee4e41dca4680dfeec6de4c94b254f04cbfe6",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              201
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-336aa7f4ed19af67",
+          "title": "Contact Us",
+          "n": 413,
+          "url": "https://gastroenterology.ucsd.edu/research/labs/jung/contact.html",
+          "observedAt": "2026-10-16T01:35:56+00:00",
+          "bodySha256": "49a16d91eccd70efc3ff7a1d3cbf9cd4769d227aeee4c86c60629a7041931419",
+          "textSha256": "61f984eb5f392f62f5df522497183e45368abe91cebbaffa30ddafd272e341cf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              413
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-26bb048842488858",
+          "title": "Historical field evidence: labName",
+          "n": 326,
+          "url": "https://gastroenterology.ucsd.edu/research/labs/index.html",
+          "observedAt": "2026-10-07T22:53:33+00:00",
+          "bodySha256": null,
+          "textSha256": "5766acd4ec99e43cb9e6964faa7614857626373ccec25e11ba76bd0f0a89e2bf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              326
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-eaec3c75133177ac",
+          "title": "Contact Us",
+          "n": 775,
+          "url": "https://gastroenterology.ucsd.edu/research/labs/jung/contact.html",
+          "observedAt": "2026-10-16T01:35:56+00:00",
+          "bodySha256": "49a16d91eccd70efc3ff7a1d3cbf9cd4769d227aeee4c86c60629a7041931419",
+          "textSha256": "a8a115f45bbab3cad51a4ae2503afcd1439480433f3f102efcb330f0b5ca6407",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              775
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 133,
+      "labId": "ucsd-medicine-lab-crotty-alexander-lab",
+      "labName": "Crotty Alexander Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "b753b0c7fd48bff41de1d2fc0aa162d40fdbdd33118cdaa8fb52f3532893cac8",
+      "packetSha256": "a13c681072fcf8d2b9eaa9970ed9593631caf4ac1b02f543f237f77c28d3fe86",
+      "scopeAssessmentZh": "研究方向/招募与论文引用不说明独立方法；case series/metabolomic signatures仅标题。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-cae0968a102773d3",
+          "title": "Crotty Alexander Lab",
+          "n": 5071,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/crotty-alexander/index.html",
+          "observedAt": "2026-10-16T01:03:18+00:00",
+          "bodySha256": "5f6365e94eb416b28cf878016009c1c0eec255e89029840c3c558e0603c85932",
+          "textSha256": "f82fd0b6b8b59a64a140490aea3bbcfb5a89ff67927a41aa0d731c9ee86974bc",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              5071
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-8d1ab9bc0b14cbae",
+          "title": "Historical field evidence: labName",
+          "n": 355,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "observedAt": "2026-10-07T22:53:40+00:00",
+          "bodySha256": null,
+          "textSha256": "a9124e54cc57df414d9b20715343e704cf07a6478f3e2eabca9b3b8e818ec0a1",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              355
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d0111215a9951a91",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 70,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/crotty-alexander/index.html",
+          "observedAt": "2026-10-07T22:58:17+00:00",
+          "bodySha256": null,
+          "textSha256": "fe00682964aec050dc0081e997f20d432825bac3bdec9417a048c695d176ebf8",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              70
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2f2778580fed22ce",
+          "title": "Research",
+          "n": 1734,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "observedAt": "2026-10-16T00:59:08+00:00",
+          "bodySha256": "6c120c287187710444379eeb619579f17f966bb8823b116bdea9e5ce59e05dc1",
+          "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1734
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 134,
+      "labId": "ucsd-medicine-lab-owens-lab",
+      "labName": "Owens Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 5,
+      "rawSha256": "ee4e60c11a396e33a663893469e7dcdce9c745cc3a5933045a5bbf5fe3025791",
+      "packetSha256": "9a99412b4d7d57a5fefdd44559d3eb19f477658a1af865c68dcaf35e146d7d78",
+      "scopeAssessmentZh": "Dae Kang明确Owens指导及development and implementation三类工具；Stuti明确已测环境/开展试验。PhD训练与未来model-based目标排除正确；五方法不扩至全组。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-8ab945f4c3a0e0bd",
+          "title": "Owens Lab",
+          "n": 1069,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/owens/index.html",
+          "observedAt": "2026-10-16T01:03:19+00:00",
+          "bodySha256": "295842b717a40364f32fc9b9a0ecd45142a12035616f1c5c714867dba6e953bb",
+          "textSha256": "a0b14209598feddd26ccf4037b559e55a66bbebecec685a4811035d588be26fb",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1069
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "title": "People",
+          "n": 6122,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+          "observedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "textSha256": "3384f182b051d566ea6019de03b1a924d5e11cc9378d2d66290899b366900d83",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              6000
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-71e6cfac839785aa",
+          "title": "Historical field evidence: labName",
+          "n": 322,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "observedAt": "2026-10-07T22:53:40+00:00",
+          "bodySha256": null,
+          "textSha256": "1ec538d2841ea32983d2083c3dc486022f9df9c188302762a62bc75294e7c69b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              322
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2f2778580fed22ce",
+          "title": "Research",
+          "n": 1734,
+          "url": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+          "observedAt": "2026-10-16T00:59:08+00:00",
+          "bodySha256": "6c120c287187710444379eeb619579f17f966bb8823b116bdea9e5ce59e05dc1",
+          "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(133, 'src-2f2778580fed22ce')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 134,
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.json",
+          "sidecarSha256": "73bacd1dffdd569f75e7739ef87fa5d8b406d03bd867ae60d2f3946329715104",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0,
+            1,
+            2
+          ],
+          "quote": "Dae Kang, Ph.D. I am a NHLBI T32 Postdoctoral Research Fellow in the Department of Medicine, Division of Pulmonary, Critical Care, and Sleep Medicine at UC San Diego, under the advisory and mentorship of Dr. Robert Owens. My research involves the development and implementation of novel physiological sensing, signals processing, and machine learning tools for the estimation and prediction of sleep-based health outcomes.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "Dae Kang明确Owens指导及development and implementation三类工具；Stuti明确已测环境/开展试验。PhD训练与未来model-based目标排除正确；五方法不扩至全组。"
+        },
+        {
+          "reviewIndex": 134,
+          "sourceId": "src-f6c3d16c4f7a9500",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+          "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+          "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/9feb9cd8bb4c29a1ae67c20ae4f5fc7cdc16a2511980bed2b6c29586c2f101e3.json",
+          "sidecarSha256": "73bacd1dffdd569f75e7739ef87fa5d8b406d03bd867ae60d2f3946329715104",
+          "quoteLiteral": true,
+          "methodIndices": [
+            3,
+            4
+          ],
+          "quote": "I have carefully measured the hospital environment for sleep, and have conducted multiple clinical trials to try and improve sleep using drugs like melatonin.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "Dae Kang明确Owens指导及development and implementation三类工具；Stuti明确已测环境/开展试验。PhD训练与未来model-based目标排除正确；五方法不扩至全组。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 135,
+      "labId": "ucsd-medicine-lab-guma-lab",
+      "labName": "Guma Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 1,
+      "rawSha256": "31f06de039c4d0a193bcb14692743c8fc237adc8100fe9d4490ed1b71ec7bd01",
+      "packetSha256": "10bf1c50a6ca49b7c97aeb9ed4dec971fe0fd53d27fae289ee09d2b887adf5cc",
+      "scopeAssessmentZh": "We conduct clinical and translational research为明确最低研究类别，限循环代谢标志物项目；不补代谢组平台或ITIS随机试验。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-f008a8591c981529",
+          "title": "Dr. Monica Guma Lab",
+          "n": 2263,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+          "textSha256": "6b08c59c22d475fab741f7017640c58c7a437b8fb24870a42cb594c685d1cd70",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2263
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-9fc6e6e45cbd4d26",
+          "title": "About the Lab",
+          "n": 1774,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/about/index.html",
+          "observedAt": "2026-10-16T01:36:01+00:00",
+          "bodySha256": "c8d9c48fd9b6796d06010dbdaf7f7f25e29f227564c3bdd84b79fbddf82a28fd",
+          "textSha256": "f9c77a10193e498265c69f928a5384e17791aebb7b84acec5b91657ab4ae0b92",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1774
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d6ad53eb5c6a48e8",
+          "title": "Contact Us",
+          "n": 523,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/contact/index.html",
+          "observedAt": "2026-10-16T01:36:04+00:00",
+          "bodySha256": "aadebef729cf29399452ba03801a594b76f7ea6180704af50407361e763576cf",
+          "textSha256": "9f0a608ffffd5d491ff05ed6263c7e035bee99631182f22d3980f9aeb5f5dcd9",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              523
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-6af44ef463f9ce39",
+          "title": "People",
+          "n": 392,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/people/index.html",
+          "observedAt": "2026-10-16T01:36:07+00:00",
+          "bodySha256": "b146bca7fbf110e007dff94c4ece6e2b69736447446e33339821cc75bdb73c80",
+          "textSha256": "c38791919f3950c19e55f2ba7e819dc7facd59489255a663e15124c954ef1c1b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              392
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-1b23499c0e060d14",
+          "title": "Historical field evidence: labName",
+          "n": 326,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "observedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "54efd52949fe91bc8d9c7eda60743d668f1236080174b42ca801dd6ee964f36e",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              326
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0dea6c59e60f3e7e",
+          "title": "Contact Us",
+          "n": 1010,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/contact/index.html",
+          "observedAt": "2026-10-16T01:36:04+00:00",
+          "bodySha256": "aadebef729cf29399452ba03801a594b76f7ea6180704af50407361e763576cf",
+          "textSha256": "aea3a89b4e24b13eab649e4ee6069e351b70f2b138454e8ccbc7d59aed35df6d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1010
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ccaae0e62ab1d01e",
+          "title": "People",
+          "n": 879,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/people/index.html",
+          "observedAt": "2026-10-16T01:36:07+00:00",
+          "bodySha256": "b146bca7fbf110e007dff94c4ece6e2b69736447446e33339821cc75bdb73c80",
+          "textSha256": "ed65c68bc1f5cc92ce21fd0ba155bdb2c6a2ba7a13904942face896e49e575db",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              879
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 135,
+          "sourceId": "src-f008a8591c981529",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+          "sourceObservedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/2c18b00907d54fd23c1845fa76704999874fa4f2a7ab0e77f54c3870cb19d2a2.json",
+          "sidecarSha256": "8c8ad10977ab93c4e2dc2ca489e838a1ac5a56ee1c864873d58bcad444050aa2",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0
+          ],
+          "quote": "We also conduct clinical and translational research to identify noninvasive circulating metabolic biomarkers and to determine how they change after therapeutic interventions.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "We conduct clinical and translational research为明确最低研究类别，限循环代谢标志物项目；不补代谢组平台或ITIS随机试验。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 136,
+      "labId": "ucsd-medicine-lab-kavanaugh-lab",
+      "labName": "Kavanaugh Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 1,
+      "rawSha256": "ecf80d7c883f41150c2566d569ba8686de8460746a8f835e66bc1d33c2b4874c",
+      "packetSha256": "0eed518fc2ff51e02503369b3088d6be32fc8578acccde59b7dd70d7bda25eec",
+      "scopeAssessmentZh": "The Kavanaugh lab conducts clinical research主体明确，限六种疾病；无随机/对照/采样细节，未借异常Research Highlights扩展。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-dc0912fe4f6ea509",
+          "title": "Kavanaugh Lab",
+          "n": 1117,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/index.html",
+          "observedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "e9eb4fb4a887635e2f4c6392031b4cbd376fdc19636ba1fb547083332174af9b",
+          "textSha256": "a16fee3f35f79bd6b404acaf0834fb0ee0a0ce5dbf672592de3f9d4f342a0a86",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1117
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7860c9151c7e8a82",
+          "title": "About the Lab",
+          "n": 185,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+          "observedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "textSha256": "78c768892b84ed59717b2ba832ab7dad201b34f37f92cfb530534d1765c743bf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              185
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-481f2c6a7c53750a",
+          "title": "Contact Us",
+          "n": 494,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/contact/index.html",
+          "observedAt": "2026-10-16T01:36:13+00:00",
+          "bodySha256": "8d3a180b9de76916e074506accbe24299c056b36b136595ad1a46b7228e43a46",
+          "textSha256": "169f8b32660ee0aed30bafc6023a475e5346fec350c0996f76d505facf542502",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              494
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-9c4c1a802186d68a",
+          "title": "People",
+          "n": 670,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/people/index.html",
+          "observedAt": "2026-10-16T01:36:16+00:00",
+          "bodySha256": "a2a02845ba08676c24139e0f1b76890bf2a1a3d553b423cc3f94439ef9c03ead",
+          "textSha256": "d7e98ced378ea50ca6c57640dc7208429890b1b5b5e020aa2f8fa8df065b2fcf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              670
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-03b389d3c3285175",
+          "title": "Historical field evidence: labName",
+          "n": 341,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "observedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "63ea10a9e26f53ff8fe0ec5f9573512641e5baa1cd4151327a8e4e904ad317aa",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              341
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2e1af47a6ba44401",
+          "title": "About the Lab",
+          "n": 672,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+          "observedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "textSha256": "6c17a5c73464f58d55583501a3b0285834e1a1548f9ebfeb739b5fe2fe9c63ba",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              672
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-8eabc242d9ae0ce2",
+          "title": "Contact Us",
+          "n": 981,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/contact/index.html",
+          "observedAt": "2026-10-16T01:36:13+00:00",
+          "bodySha256": "8d3a180b9de76916e074506accbe24299c056b36b136595ad1a46b7228e43a46",
+          "textSha256": "59a2f3849252a92a27b6113f8b079d3e74a023504e69368fd321f6ac942ccc96",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              981
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 136,
+          "sourceId": "src-7860c9151c7e8a82",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/kavanaugh/about/index.html",
+          "sourceObservedAt": "2026-10-16T01:36:11+00:00",
+          "bodySha256": "c24dfab0c647a23e4f1baaf73548d2fc0c005e1c0ce95e3a845bf5fa7992b891",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/79f8766eba2eec41f5bac33ea5b9072fc609f7b78b0ac4e32187a073748b788a.json",
+          "sidecarSha256": "465e268cfea090da12eef839ed6f2ea35d13d5f240804c262733cce67bfa9f38",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0
+          ],
+          "quote": "The Kavanaugh lab conducts clinical research in the following: Lupus (SLE) Rheumatoid Arthritis (RA) Ankylosing Spondylitis (AS) Scleroderma (PSS) Gout Psoriatic arthritis",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "The Kavanaugh lab conducts clinical research主体明确，限六种疾病；无随机/对照/采样细节，未借异常Research Highlights扩展。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 137,
+      "labId": "ucsd-medicine-lab-raz-lab",
+      "labName": "Raz Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "254bcdb59b8b6dd0264d325dc79284ceee24575d722359cf70bcf5f978da3401",
+      "packetSha256": "569ebbe17de795bab85a73e8cd629657661ce02b2ee1a4fa9871173b9ef2a210",
+      "scopeAssessmentZh": "TLR刺激为宿主反应研究对象，Dynavax试验属于关联公司；没有本组具体操作说明。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-5cf29339278831c2",
+          "title": "Eyal Raz Lab",
+          "n": 1411,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/index.html",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "0eb641a12712885400bbd77de02ea51a4fe7730eeb99413797142526d086ef67",
+          "textSha256": "84450587523876ede7f647307efd2b27a546727635e5738247bdeb59b5a873f5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1411
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0b8773a79365277e",
+          "title": "About the Lab",
+          "n": 733,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/about/index.html",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "bodySha256": "9e2f9c3431ca55a05ccf547dab7af3fb45ee0b05195bd5a77963bb525d66967e",
+          "textSha256": "93e9fb062634d19644a81ed69fbbc4313bca17a84b85a739adda9b0815cfdf1e",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              733
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2d98b9a003bcbf79",
+          "title": "Contact Us",
+          "n": 699,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/contact/index.html",
+          "observedAt": "2026-10-16T01:36:20+00:00",
+          "bodySha256": "656bdfada9af0ab94633ffd203d2157cf0bb9490575ef204fcbd1443ad3643d2",
+          "textSha256": "4cea6a1c09827aebf979ed5df1b47141432d8191996b9c5db20c92f0af3b7151",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              699
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e15c8946fb01958e",
+          "title": "People",
+          "n": 43,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/people/index.html",
+          "observedAt": "2026-10-16T01:36:23+00:00",
+          "bodySha256": "6a5f6f2da015cf978993170fe8362d2dd52212055812fca786730afab012ed24",
+          "textSha256": "b350d0099829061162868e92ed515031186edccb26b187c6a6c0b4b3b40c0ecf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              43
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-9b704fc25ee5bf85",
+          "title": "Historical field evidence: labName",
+          "n": 322,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/index.html",
+          "observedAt": "2026-10-07T22:54:11+00:00",
+          "bodySha256": null,
+          "textSha256": "9617ff6378f0922cf4fbbe73f436a0ae81b5b958c73730bbab176639b036d449",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              322
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-05fa1fe5b93c4bb7",
+          "title": "People",
+          "n": 530,
+          "url": "https://rheumatology.ucsd.edu/research/faculty-labs/raz/people/index.html",
+          "observedAt": "2026-10-16T01:36:23+00:00",
+          "bodySha256": "6a5f6f2da015cf978993170fe8362d2dd52212055812fca786730afab012ed24",
+          "textSha256": "1dca8e663fc84dc2c2108a94eb1ee3b3f3efc2322e9010c4ae119fd2fcfb6f62",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              530
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 138,
+      "labId": "ucsd-medicine-lab-broide-lab",
+      "labName": "Broide Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "25f6321c5f56eec1f8b0c5b3128cdbca5635bdc3e806c87e052210a8d7faa680",
+      "packetSha256": "fcccf92378e965e5596c2eb8a833f7088544939e82b8e141d9e401c980ef1737",
+      "scopeAssessmentZh": "气道炎症/机制研究及训练/经费背景未给具体采用技术；不从ORMDL3等对象猜测。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-ae20467ab6983edc",
+          "title": "Broide Lab",
+          "n": 1159,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/index.html",
+          "observedAt": "2026-10-16T01:03:16+00:00",
+          "bodySha256": "b9022e4f387c35aa10aa4716adb82c65ca008de301cffdff234f3dbb78568956",
+          "textSha256": "b2ec3d5beaed30d906b6634eb7e06e654d8cd73d36218cded7b1246539f3ee99",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1159
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-4c6c03496f982a1a",
+          "title": "About",
+          "n": 281,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/about/index.html",
+          "observedAt": "2026-10-16T01:35:52+00:00",
+          "bodySha256": "a40a930d202cd793dfdb6f542bc2848bc1901d41699969831a1a3857feab4df1",
+          "textSha256": "27b22002e0a4f128da4b62dfe870f65a6e1d12110218f924033211fc3be0aed5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              281
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e2f69934e2b9ca26",
+          "title": "Contact",
+          "n": 239,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/contact/index.html",
+          "observedAt": "2026-10-16T01:35:55+00:00",
+          "bodySha256": "40a6fd8b09e621843af21e15f54f2e5c1a106d5f1baeb9c2860390874aaa6c1f",
+          "textSha256": "d08435ab929c3d03a65f443d3a841cad0e60a67f11bed92586771201c4bc5143",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              239
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-62b08118cc297592",
+          "title": "People",
+          "n": 137,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/people/index.html",
+          "observedAt": "2026-10-16T01:35:57+00:00",
+          "bodySha256": "0cb4d9f5fa8fc4dd2f4b64dddcb82a7b259244f445004d96f132ae05730db9f3",
+          "textSha256": "7edc5b0a0d16528b08d6c62381bd7c4db5193e5e8553dd6998250d25471a9aac",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              137
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-cbd9d505de7fc5a4",
+          "title": "Historical field evidence: labName",
+          "n": 333,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/index.html",
+          "observedAt": "2026-10-07T22:55:15+00:00",
+          "bodySha256": null,
+          "textSha256": "e1be72f62c6979180bb69e7fc9cb134cecaa6d131f4a867894f8ec8b7764f9db",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              333
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-57a67a31c9a413bf",
+          "title": "About",
+          "n": 663,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/about/index.html",
+          "observedAt": "2026-10-16T01:35:52+00:00",
+          "bodySha256": "a40a930d202cd793dfdb6f542bc2848bc1901d41699969831a1a3857feab4df1",
+          "textSha256": "475206a94f8180a7cebf2c68b3515597157750600fd30118cfba18e6f6830f9c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              663
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0fae4c20adfe101c",
+          "title": "Contact",
+          "n": 621,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/contact/index.html",
+          "observedAt": "2026-10-16T01:35:55+00:00",
+          "bodySha256": "40a6fd8b09e621843af21e15f54f2e5c1a106d5f1baeb9c2860390874aaa6c1f",
+          "textSha256": "c3699b8eae145b84bffa5ec11dedc8e09b5969f4bb318722c2d3eb4fe16a20f1",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              621
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2f1179122c2b0a0c",
+          "title": "People",
+          "n": 519,
+          "url": "https://allergyimmunology.ucsd.edu/research/faculty-labs/broide/people/index.html",
+          "observedAt": "2026-10-16T01:35:57+00:00",
+          "bodySha256": "0cb4d9f5fa8fc4dd2f4b64dddcb82a7b259244f445004d96f132ae05730db9f3",
+          "textSha256": "9660954cedefdb38f7ea40176b8f80caec72d0421ff513963a5368f9c507cded",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              519
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 139,
+      "labId": "ucsd-medicine-lab-kentson-lam-lab",
+      "labName": "Kentson Lam Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "96192385d31bd52c61553f668d8634feea8f6ade6a1bc21488d8b6afb19a9efc",
+      "packetSha256": "821af9c4bbaf032edea8080b7b24d2de99e6a0be389db488e80ff2ae10f3122c",
+      "scopeAssessmentZh": "蛋白稳态/防御破坏为机制与治疗目标，无实际检测或干预方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-5d47919443316405",
+          "title": "Lam Lab",
+          "n": 1460,
+          "url": "https://regenmed.ucsd.edu/research/lam-lab/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "c3f52c8c355cea698dd7aec942d799db78e8e1e118c2842c89cb11ba793bca20",
+          "textSha256": "316a4d779cd63cba60c27143f5bc7efbb6969cb8bee83da569a81351e39f5934",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1460
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-2b89047ccf6f4aa9",
+          "title": "Historical field evidence: labName",
+          "n": 64,
+          "url": "https://regenmed.ucsd.edu/research/index.html",
+          "observedAt": "2026-10-07T22:55:15+00:00",
+          "bodySha256": null,
+          "textSha256": "0c9bc86d045385f17948cf018cace3b30845cb665dbd3735b0b724b535520947",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              64
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 140,
+      "labId": "ucsd-medicine-lab-gerry-boss-laboratory",
+      "labName": "Gerry Boss Laboratory",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "71ec0a2112d796df7f1b44beb96c911bdcd89bde85d6ed860995c197a77313ff",
+      "packetSha256": "c766996ff993f72d160659929269c2ebaa8462a7c7468405083eccc4556d02e9",
+      "scopeAssessmentZh": "主要活动是cobinamide研发和嘌呤调控；临床试验仍hope in2023，非已实施；文献标题不补模型/给药方式。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-51d1cd763d7dff81",
+          "title": "Boss Lab",
+          "n": 10914,
+          "url": "https://gim.ucsd.edu/research/boss-lab.html",
+          "observedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a4a26d64df5ed47b25bc6b318c2706dd44a3d2c146990d4991e50eb54e01fb44",
+          "textSha256": "405fe42e62f7dcd2a588e6b6ef7910d38ba8c0d7f16b21d081329814339ef54d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              6000
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c4f932b065fd8427",
+          "title": "Golomb Lab",
+          "n": 7090,
+          "url": "https://gim.ucsd.edu/research/golomb-lab.html",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "6c74d0b03cc535afa5efb21d1394fb9714d470f454875764cf5bb49a1a99a499",
+          "textSha256": "ed30ac61c65f08b74b0b707769ee70bc9199bb56545d9e02e2146704ed7f3181",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              6000
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-836bdc0f695811ac",
+          "title": "Historical field evidence: labName",
+          "n": 55,
+          "url": "https://gim.ucsd.edu/",
+          "observedAt": "2026-10-07T22:55:11+00:00",
+          "bodySha256": null,
+          "textSha256": "39c067b4c0edf08031042bf6f90cfe4f28673068e851c8768f07c79ebf6b5b4d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              55
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 141,
+      "labId": "ucsd-medicine-lab-golomb-research-group",
+      "labName": "Golomb Research Group",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "637ce6c37eb91069eee1f0d6ec6032d7f490cfacf5c17c56eb83c44a16ad9cf9",
+      "packetSha256": "ed936216bf1ddd16839990cb63c559ce3202302fe263145ed2f3b528a12a4e29",
+      "scopeAssessmentZh": "方法学是研究关注对象，而非采用叙述；placebo/effect modification及FDA分析标题不自动填方法；Boss源另实体。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-c4f932b065fd8427",
+          "title": "Golomb Lab",
+          "n": 7090,
+          "url": "https://gim.ucsd.edu/research/golomb-lab.html",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "6c74d0b03cc535afa5efb21d1394fb9714d470f454875764cf5bb49a1a99a499",
+          "textSha256": "ed30ac61c65f08b74b0b707769ee70bc9199bb56545d9e02e2146704ed7f3181",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(140, 'src-c4f932b065fd8427')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-51d1cd763d7dff81",
+          "title": "Boss Lab",
+          "n": 10914,
+          "url": "https://gim.ucsd.edu/research/boss-lab.html",
+          "observedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a4a26d64df5ed47b25bc6b318c2706dd44a3d2c146990d4991e50eb54e01fb44",
+          "textSha256": "405fe42e62f7dcd2a588e6b6ef7910d38ba8c0d7f16b21d081329814339ef54d",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(140, 'src-51d1cd763d7dff81')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-bc9cf0cf2254ea0e",
+          "title": "Historical field evidence: labName",
+          "n": 59,
+          "url": "https://gim.ucsd.edu/",
+          "observedAt": "2026-10-07T22:55:11+00:00",
+          "bodySha256": null,
+          "textSha256": "e1e38ded451e89c3868bdd936b194e894eef82e38ff33e8c56b0a45c04b129b0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              59
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 142,
+      "labId": "ucsd-medicine-lab-molina-lab-mitochondrial-bioenergetics-and-healthy-aging",
+      "labName": "Molina Lab (Mitochondrial Bioenergetics and Healthy Aging)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "cd611ff561e0049fe362cd640b8cf186c73d66095a65d8c6fdb9b810106582d6",
+      "packetSha256": "51e6a3521c4854e00b21793f941ae0655603ed9161c142ad72bb269acca80778",
+      "scopeAssessmentZh": "bioenergetic signatures是标志物假设/目标，multi-omic为项目名，无实际测定平台。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-dbc5c352949223c8",
+          "title": "Molina Lab",
+          "n": 2662,
+          "url": "https://www.molinalab.com/",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "969781d320bcc2172b5a775b25670f0fcc221616615060b1ecce4c1b89e8f1c6",
+          "textSha256": "e216804fbb116e6abab21bf2b81b185b83696af9fe544c4ab032efb4ae8e803b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2662
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-1bd0d33740ae54ff",
+          "title": "Historical field evidence: labName",
+          "n": 75,
+          "url": "https://gerigeropal.ucsd.edu/research/faculty.html",
+          "observedAt": "2026-10-07T22:55:22+00:00",
+          "bodySha256": null,
+          "textSha256": "5d5143606ae4c4cde0a8f46bcb3bbcf1144f126722c406e972a5ce9ce3ae3ec2",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              75
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 143,
+      "labId": "ucsd-orthopaedic-surgery-lab-muscle-biology-laboratory",
+      "labName": "Muscle Biology Laboratory",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "7ce0075df94488aacd9075e60b0f981b9442596ff705357fcfd98630b384d4b3",
+      "packetSha256": "9f95e840d0058d748059ff1309731240c5f6ad3db1cb92a66375abe0fcea2ed4",
+      "scopeAssessmentZh": "Schenk原文为研究兴趣和may be induced的解释，没有实际实施；另外四篇各有独立具名lab，明确方法不借给Muscle Biology。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-8efcaff7e0b0fede",
+          "title": "Muscle Biology Laboratory",
+          "n": 2678,
+          "url": "https://ortho.ucsd.edu/research/muscle-biology.html",
+          "observedAt": "2026-10-16T01:07:27+00:00",
+          "bodySha256": "a05408721925b5c6c29f73f43e9c9d6d918adcfca52b6d9fdc73417320b40f77",
+          "textSha256": "7924f3975630e3176862006e6a9eca989278ae310218ffc2d38c11b7e32649ff",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2678
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-4e7cb8c9e35e1b6f",
+          "title": "Hughes-Austin Lab",
+          "n": 4229,
+          "url": "https://ortho.ucsd.edu/research/epidemiology-bone-and-vascular-calcification.html",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "0d6717f83335ccba72468ebbb4497bfb533a7d5d08186d989b2114e22ac4091d",
+          "textSha256": "521c9b5c1cefd8cce131133eb09329ebe050f077eda108b89bf92a317a184c50",
+          "kind": "entity_scope_read",
+          "reasonZh": "仅实际读到具名Hughes-Austin与开头400字符：另一个实体，方法不借给Schenk。",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              400
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7f03a2b680abda4c",
+          "title": "Musculoskeletal Imaging and Translational Engineering Laboratory",
+          "n": 2731,
+          "url": "https://ortho.ucsd.edu/research/musculoskeletal-imaging-and-translational-engineering-laboratory.html",
+          "observedAt": "2026-10-16T01:05:10+00:00",
+          "bodySha256": "35a03f0d3eecd90317776b0d29f97967de8bf4aafb1d298e17ba73a923f3d397",
+          "textSha256": "67cb57266c4dc18d1d7b4305ac5ecbd52314105680c5e3fba2e2178360f1912d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2731
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-4387b074ea768ac9",
+          "title": "Neuromuscular Bioengineering Laboratory",
+          "n": 2760,
+          "url": "https://ortho.ucsd.edu/research/neuromuscular-bioengineering.html",
+          "observedAt": "2026-10-16T01:05:11+00:00",
+          "bodySha256": "5953acdf38db6e2a7ac054eaf8539a08cafa5a2c9a9f8949dd5d0b972f516493",
+          "textSha256": "fd2e83999154b6c64aaa67ab7e1d6196a72c8de887437c36f8348f2205b101d2",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2760
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-dc83011dd0e30eff",
+          "title": "Signal Transduction and Immunometabolism Laboratory",
+          "n": 3290,
+          "url": "https://ortho.ucsd.edu/research/signal-transduction-immunometabolism.html",
+          "observedAt": "2026-10-16T01:05:12+00:00",
+          "bodySha256": "a970ca8c372260de1f6d385f2996d2b3cc625727190a711d0989564d5f0e5bbc",
+          "textSha256": "20a93409572b0a4e9d46f064c0d62da16dc3d7be2b2db9c90d38eb88c86a6f44",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              3290
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d96d4244880fe5b7",
+          "title": "Historical field evidence: labName",
+          "n": 340,
+          "url": "https://ortho.ucsd.edu/research/index.html",
+          "observedAt": "2026-10-07T22:54:35+00:00",
+          "bodySha256": null,
+          "textSha256": "a0f1d566c6160a99f0e257ee7d2ac3978e54ef65ac016927d3e0809664245447",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              340
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-b59ee174fca4081e",
+          "title": "Research Faculty",
+          "n": 520,
+          "url": "https://ortho.ucsd.edu/faculty/research.html",
+          "observedAt": "2026-10-16T00:59:09+00:00",
+          "bodySha256": "0c9931db0989dea73cc2c33a757754d9822de7a28bba1afa76434854cb9b0b51",
+          "textSha256": "5a6d9cd47bca6af466c29254d39871365c66d7f482e73580431d82f15fac9dd2",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              520
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-785aee2a6377bc65",
+          "title": "Research Faculty",
+          "n": 1306,
+          "url": "https://ortho.ucsd.edu/faculty/research.html",
+          "observedAt": "2026-10-16T00:59:09+00:00",
+          "bodySha256": "0c9931db0989dea73cc2c33a757754d9822de7a28bba1afa76434854cb9b0b51",
+          "textSha256": "5cc16ab20d6f9662d8447c832b63ae75e81665fa8eee66fd7515c7f40875c7e0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1306
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 144,
+      "labId": "ucsd-unknown-moores-cancer-center-department-not-stated-on-fetched-pages-lab-carson-laboratory",
+      "labName": "Carson Laboratory",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 1,
+      "rawSha256": "1d4895d175b53c275f94126fa6c86a354606b872574c045c4cd3974e213b9073",
+      "packetSha256": "836062159bb74a8e80d56281a95fa9289b65dd836af42913d1f0c6b3178d9396",
+      "scopeAssessmentZh": "Carson团队药物段实际being tested in patients with cancer，支持最低患者测试类别；不补分期、RCT、有效性或邻中心试验。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-ecb5f3bfb3b5c8a7",
+          "title": "Carson Laboratory",
+          "n": 592,
+          "url": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+          "observedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "textSha256": "4789b118a9fc2104288df0ba5d1880febde1ae20301a578667892485c4046745",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              592
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-dbc1b2032671fe39",
+          "title": "Historical field evidence: labName",
+          "n": 94,
+          "url": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-07T23:00:12+00:00",
+          "bodySha256": null,
+          "textSha256": "7463d764cb73680179ab4af7267374386882243d728cbefc060f3113d4324d3f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              94
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c1d3e54bcab133f6",
+          "title": "Centers and Labs",
+          "n": 588,
+          "url": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+          "textSha256": "4dec479d8d80cdaa6499c969ade3d526b47e566555c3a6eccfe3ccaadd0d5a0d",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              588
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-16ab40dfc1e1d1ec",
+          "title": "Carson Laboratory",
+          "n": 1924,
+          "url": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+          "observedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "textSha256": "be951f57e81eb23511264f7f80c63c624b925c0b1a0cc5a6c69a6ca6b81ede25",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1924
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-7520d1ee48f7dd96",
+          "title": "Centers and Labs",
+          "n": 1920,
+          "url": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/index.html",
+          "observedAt": "2026-10-16T00:59:03+00:00",
+          "bodySha256": "d2c30417f359b01cc1a48d7e727b86aba6a75ab4fd6a41d3f36dc8ce8314395d",
+          "textSha256": "3cae555b2f5e284dca6b5ec493c5181736a141cb1f29dcceeadbd2eb58d5dce9",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1920
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 144,
+          "sourceId": "src-ecb5f3bfb3b5c8a7",
+          "sourceUrl": "https://moorescancercenter.ucsd.edu/about/centers-and-labs/carson-lab/index.html",
+          "sourceObservedAt": "2026-10-16T01:00:41+00:00",
+          "bodySha256": "be3174855666f2c1a32bd7d7ea260ed8142b27c021f27d7eb9bde9e03f5372a6",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/dc3aecac19f5d25a9e12ec1577140fa125aafd088afae3cbabb77ad0c373bf79.json",
+          "sidecarSha256": "207f70da15eee2e16f3795a6485ebefc3a0792cd1cc54bf6984440c138b014de",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0
+          ],
+          "quote": "The drugs are also being tested as immunotherapeutic agents in patients with cancer.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "Carson团队药物段实际being tested in patients with cancer，支持最低患者测试类别；不补分期、RCT、有效性或邻中心试验。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 145,
+      "labId": "ucsd-ophthalmology-lab-shaw-lab",
+      "labName": "Shaw Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "abbaac5e3a60d66d637849e4ac995ff0e440c6324c68ff20ef58217e26bac107",
+      "packetSha256": "6adc0397ddfcfcdc636221e7265dff418189762b378917a7e184bf456d9ecb53",
+      "scopeAssessmentZh": "AMD分子机制及靶点目标/成员名录无方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-c78e9f0ab65656be",
+          "title": "Shaw Lab",
+          "n": 703,
+          "url": "https://sites.ucsd.edu/shawlab/",
+          "observedAt": "2026-10-16T01:09:22+00:00",
+          "bodySha256": "5666373ad9b64a015427550e705cfb319db2e56943361589ba07ca834c1ac601",
+          "textSha256": "02475f9ee47392bd40cde2ef2a53dddf97558f7fe9ce3237f7d91a1420d7f623",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              703
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f46a07a1893714e2",
+          "title": "Historical field evidence: labName",
+          "n": 292,
+          "url": "https://shileyeye.ucsd.edu/research/ophthalmic-lab-sites",
+          "observedAt": "2026-10-07T22:58:44+00:00",
+          "bodySha256": null,
+          "textSha256": "84b73060e78930e9e4dd8ca115f987566f46febed517c784fe786d6f002977f0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              292
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e291af7cb2e46e1b",
+          "title": "Lab Members – Shaw Lab",
+          "n": 783,
+          "url": "https://sites.ucsd.edu/shawlab/lab-members/",
+          "observedAt": "2026-10-16T01:01:40+00:00",
+          "bodySha256": "d4c0f0cf7f61fde7db908a6ac6f0a611911510552899521c4b9c6d05a329cf58",
+          "textSha256": "7b387f07fa71086ae3bf1c08f7ba7c43ebad6a15a501fcc3143419f17e112582",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              783
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 146,
+      "labId": "ucsd-ophthalmology-lab-toomey-lab",
+      "labName": "Toomey Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "61577211c9aae963e0025f811f3d2e0baa41aad3955e5306173948312d2b6a04",
+      "packetSha256": "4a7478eef71c8494c4dbaca072e5978570d0cb118159de0a453dde909575c009",
+      "scopeAssessmentZh": "脂蛋白结合是已报告发现，无检测技术；modern molecular biology为框架评论，手术专长不作lab方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-294398e61739e3ad",
+          "title": "Toomey Lab",
+          "n": 1843,
+          "url": "https://sites.ucsd.edu/toomeylab/",
+          "observedAt": "2026-10-16T01:11:22+00:00",
+          "bodySha256": "c0a73902bb647f9c66c6f5cbdf3a8907d20a393c42df58a24447ef7279caa50c",
+          "textSha256": "f6e3f23b2e43dd5bac37903f2ec7a799d95041b8713621dcc078aa9e1abc5cad",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1843
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-cc2b6f9f32b2644d",
+          "title": "Historical field evidence: labName",
+          "n": 298,
+          "url": "https://shileyeye.ucsd.edu/research/ophthalmic-lab-sites",
+          "observedAt": "2026-10-07T22:58:44+00:00",
+          "bodySha256": null,
+          "textSha256": "6fde8634d7365f10db3b1635fbad78ca546284b94a15710f958dfe1f6a7b2240",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              298
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-f0e850ce59632e7a",
+          "title": "Lab Members – Toomey Lab",
+          "n": 2411,
+          "url": "https://sites.ucsd.edu/toomeylab/lab-members/",
+          "observedAt": "2026-10-16T01:02:10+00:00",
+          "bodySha256": "4c96abc10ba502d27c5669b7a85adae3ed120ac84c12aadf4caaecf6a4f32956",
+          "textSha256": "7b44a203ca1f21160cbb7887bde1ab3c3ed00cb498c8eabc51856b36c0d213bf",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2411
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 147,
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-evans-lab",
+      "labName": "Evans Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "53db99949701fc2aca48e783198facfa07a149c6eba94e10075a50ff8af2d596",
+      "packetSha256": "4d050ddd065dc9492443ae98321b95e6f7376e49723fa605ff40d3839f0f67a5",
+      "scopeAssessmentZh": "历史Evans摘要为细胞谱系问题，当前师资目录不借其他教授方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-819287c7dc1c3600",
+          "title": "Historical field evidence: labName",
+          "n": 320,
+          "url": "https://pharmacy.ucsd.edu/faculty/evans",
+          "observedAt": "2026-10-07T22:53:49+00:00",
+          "bodySha256": null,
+          "textSha256": "cbd6db264e0648fb6cfb4532f82191e7340e7169ea875c6ce9e20b48c9cea5f5",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              320
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-03e9a43b91893370",
+          "title": "Faculty",
+          "n": 4064,
+          "url": "https://pharmacology.ucsd.edu/faculty/department-faculty.html",
+          "observedAt": "2026-10-16T00:57:28+00:00",
+          "bodySha256": "3837b802fb5d4dcf21f3d6cd52ecafb84b81865eb66b957f5102d3be33dd656f",
+          "textSha256": "2155a9708a55513d6438495859e83fcfe4b6aa6520513d2d236ca0013912a7b5",
+          "kind": "directory_scope",
+          "reasonZh": "广泛学科/师资目录，本轮只读标题与实体类别；不借其他PI技术",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              250
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 148,
+      "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-hook-laboratory",
+      "labName": "Hook Laboratory",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "f04f230053411388a47dd25b092acc61a115d9423074350198ca2f6e9c01f847",
+      "packetSha256": "bd6ace9985b93734570a3cb54b84b1f195c0f555085023923e335feb74a97732",
+      "scopeAssessmentZh": "截断历史Hook摘要只有肽/蛋白酶机制和靶点目标，不能补未知宾语。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-35b31b72b4bfafd5",
+          "title": "Historical field evidence: labName",
+          "n": 325,
+          "url": "https://pharmacy.ucsd.edu/faculty/hook",
+          "observedAt": "2026-10-07T22:54:07+00:00",
+          "bodySha256": null,
+          "textSha256": "029038ef63a9bc6573a32b9a1cee7cc24c2ada5fa44cbc6e8fe9b8fd749b72e0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              325
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 149,
+      "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "labName": "Lykke-Andersen Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "2ccb32d8699c13a5d026ac1c1aabb96a2203735abaa9f8a94d080823f8774e70",
+      "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+      "scopeAssessmentZh": "完整科研段给mRNA调控问题和2010/2011发现，但未述具体检测/基因操作，ATP水解失败不推突变技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-322a2ca2584566c6",
+          "title": "Jens Lykke-Andersen",
+          "n": 11121,
+          "url": "https://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+          "textSha256": "551da6ffe04789e1fafeab07dab1c9426fde39ae3fce11f5be4d5d5f05acc4f9",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              6000
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c9e9af6d3e344604",
+          "title": "Historical field evidence: labName",
+          "n": 92,
+          "url": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "observedAt": "2026-10-07T23:04:38+00:00",
+          "bodySha256": null,
+          "textSha256": "90fb46f0ad8c8fabe22ef8235ac3f3d756c4dc2348df6da28413ee4d01c6999b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              92
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-11b4f50c5487577f",
+          "title": "Jens Lykke-Andersen",
+          "n": 11121,
+          "url": "http://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "observedAt": "2026-10-16T04:23:45+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32",
+          "textSha256": "551da6ffe04789e1fafeab07dab1c9426fde39ae3fce11f5be4d5d5f05acc4f9",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(149, 'src-322a2ca2584566c6')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 150,
+      "labId": "ucsd-electrical-and-computer-engineering-lab-advanced-robotics-and-controls-lab-arclab",
+      "labName": "Advanced Robotics and Controls Lab (ARCLab)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "add_source_explicit_methods",
+      "decision": "pass",
+      "methodCount": 2,
+      "rawSha256": "e3ddb5a2c225a810dd0a9d6e9b0cf263cd7c166ccd397827b0dbdb1c3c95ace5",
+      "packetSha256": "cfef966958a30a1404f8019e053d31dffd6806005c8e9d947743ea14437d1f41",
+      "scopeAssessmentZh": "官方profile明确His group through the use及His lab applies，深度/强化学习可绑定机器人控制/规划和手术应用，未移植早前个人经历。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-7148f67d11a7b404",
+          "title": "UCSD ARCLAB – Advanced Robotics and Controls Lab at UC San Diego",
+          "n": 1988,
+          "url": "https://ucsdarclab.com/",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "ad1855dfa32082a4e355e82f667e5c7fa3e083cffac2a85fd9d0cfc94a981e8c",
+          "textSha256": "2869e7448e510c3c65e290220f6c803d54621905ba8e839bc8dac729aa61821f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1988
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-a0ae99dd21feb592",
+          "title": "Historical field evidence: labName",
+          "n": 259,
+          "url": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "8603204659b27a1410a9b5ea726a3d7030f66662d02f2fda17bba9b296d4111e",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              259
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-aed9f7c5383ff2e1",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 47,
+          "url": "https://ucsdarclab.com/",
+          "observedAt": "2026-10-07T23:01:48+00:00",
+          "bodySha256": null,
+          "textSha256": "ca6c655b3a056562ce46939e4e4ee01e53c02f3beccb5cbc9e285bb2e15bd28a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              47
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-32de4fdeaf8e5afb",
+          "title": "ECE Laboratories | Electrical and Computer Engineering",
+          "n": 1399,
+          "url": "https://ece.ucsd.edu/faculty-research/ece-laboratories",
+          "observedAt": "2026-10-16T00:59:12+00:00",
+          "bodySha256": "e66d3cc76bd9b96b1650f33225dcc6bccc52f4372ee106a63e3bdeb0cfc8889e",
+          "textSha256": "b070254363e97b48347713732d2de2036fda872b411c629eb269af0ead5c81ca",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(113, 'src-32de4fdeaf8e5afb')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-8b426b44eccb9855",
+          "title": "Faculty Profiles | Jacobs School of Engineering",
+          "n": 2697,
+          "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=401",
+          "observedAt": "2026-10-16T01:01:19+00:00",
+          "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+          "textSha256": "b7fe81e4c74476bc13ec4c96600f8c0a1e6e654d9c460ea5be92618bbd2a5b1b",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2697
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": [
+        {
+          "reviewIndex": 150,
+          "sourceId": "src-8b426b44eccb9855",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=401",
+          "sourceObservedAt": "2026-10-16T01:01:19+00:00",
+          "bodySha256": "d22a4034b7a2c34642d2651a8d337a4e2aba783ab2920f02ad791ca6e5562e41",
+          "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.html",
+          "sidecarPath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/02ff346d9ab052efb6ef71d1ce5de350c6f7525854007dd90700fa56336bfcd4.json",
+          "sidecarSha256": "4c5aa9fa209d1c49f6fbb6f0bea0def6234f0da96a5016bb35f587b8828a893c",
+          "quoteLiteral": true,
+          "methodIndices": [
+            0,
+            1
+          ],
+          "quote": "His group currently focuses on solving problems in data-efficient and computationally efficient robot control and motion planning through the use of various forms of learning representations, including deep learning and reinforcement learning strategies. His lab applies these ideas to surgical robotics and the automation of surgical procedures.",
+          "quoteLocation": "body",
+          "scopeAssessmentZh": "官方profile明确His group through the use及His lab applies，深度/强化学习可绑定机器人控制/规划和手术应用，未移植早前个人经历。"
+        }
+      ]
+    },
+    {
+      "reviewIndex": 151,
+      "labId": "ucsd-structural-engineering-lab-ucsd-structural-health-monitoring-shm-group",
+      "labName": "UCSD Structural Health Monitoring (SHM) Group",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "95c7296a097a5a01138fb30b82d21b5c481cd6dfd8be0ec81efe6d9b04021514",
+      "packetSha256": "5dd891f7486628e4a1e8e0caf6fa116e713ff18a188ef6f41744a5cc6527595c",
+      "scopeAssessmentZh": "What is SHM中的传感/数据挖掘/统计是any strategy通用定义，不证明本组实际具体采用；旧新闻不确证当前。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-a7325ccd6938272b",
+          "title": "",
+          "n": 0,
+          "url": "https://shm.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:47+00:00",
+          "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-0a3e3120209350f7",
+          "title": "Historical field evidence: labName",
+          "n": 34,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "3ef55ba271b1095304089883cf39be6236969acd9ebfc4aa50134f2ef261a260",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              34
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-4097577e6b7a099b",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 29,
+          "url": "http://shm.ucsd.edu/Site/Home.html",
+          "observedAt": "2026-10-07T23:06:45+00:00",
+          "bodySha256": null,
+          "textSha256": "64c691993bc50da916c3db599cdd2afa7a6ad6c15453ff2c477d5d30ce9ac75f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              29
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "title": "Faculty | Structural Engineering",
+          "n": 1978,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1978
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-78fc5f4fd64950d0",
+          "title": "",
+          "n": 0,
+          "url": "http://shm.ucsd.edu/",
+          "observedAt": "2026-10-16T04:57:37+00:00",
+          "bodySha256": "3f8230dc8b243bf8ee4d8fde603d812f6935f9425e972e3495057c525bbbb5c5",
+          "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(151, 'src-a7325ccd6938272b')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-0de7802df1ac58fb",
+          "title": "UCSD SHM",
+          "n": 4882,
+          "url": "http://shm.ucsd.edu/Site/Home.html",
+          "observedAt": "2026-10-16T05:16:24+00:00",
+          "bodySha256": "1b4e9cbb73cfab12830a535e4ed0948125ec7987651de148c696e8a7d05a2843",
+          "textSha256": "692bcb30ac575757a3ff3002de9737d717c506aba52d6b554b0c1761ed60c891",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              4882
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 152,
+      "labId": "ucsd-structural-engineering-lab-tehrani-group",
+      "labName": "Tehrani Group",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "b48c8afe21e3caa0a8e41ecb8ff182af7bffaf0232bd6cd00f56d763a5ba440b",
+      "packetSha256": "805aec5465360942a4298c5b0771137b18b66aa32957e3e0641d06d3cb872f33",
+      "scopeAssessmentZh": "Additive Manufacturing/领域标签不说明实际制造工艺。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-9a7be7756af8b7c5",
+          "title": "Home",
+          "n": 603,
+          "url": "https://sites.google.com/ucsd.edu/tehranigroup/home",
+          "observedAt": "2026-10-16T01:07:35+00:00",
+          "bodySha256": "beaa5a01d86d2ea73b7b94db94d83b90bd47bc7335f10c69257fbb5529b44cd9",
+          "textSha256": "383f4ba4a5877dfb394feaed66c281caa1ec57543fbca30a66e17075694d1a6a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              603
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d85599e769b05c83",
+          "title": "Historical field evidence: labName",
+          "n": 66,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "5a2ea522ae090b4412726b71e0a3e15ed68ac7cb4a6f709b96517da76d579666",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              66
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "title": "Faculty | Structural Engineering",
+          "n": 1978,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(151, 'src-bad3a88fb4607788')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 153,
+      "labId": "ucsd-structural-engineering-lab-fluid-effects-on-structural-systems-research-group-fessrg",
+      "labName": "Fluid Effects on Structural Systems Research Group (FESSRG)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "0f6b26c2b3dd74d9804a0757001e1aca47bdfbab7466c9e4124b7660e3e9d613",
+      "packetSha256": "e76c52e6baa949a17ff85e3c42d773cc80cfb9f0839da9726a75393bb4318691",
+      "scopeAssessmentZh": "正在分析fluid interactions但analysis methods仅预告，无具体计算/实验操作。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-be62b6c92d27644c",
+          "title": "Home | Fluid Effects on Structural Systems Group",
+          "n": 1168,
+          "url": "https://fessrg.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:51+00:00",
+          "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+          "textSha256": "44f7a827794d072edd5715104ac9631b7a9a24362887941452f679f137070857",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1168
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-3f597a2161dffa20",
+          "title": "Historical field evidence: labName",
+          "n": 38,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-07T23:05:35+00:00",
+          "bodySha256": null,
+          "textSha256": "00982b9b34b496356ed872ece8979e45a7d223653f4e70e8795a982d9dd56197",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bad3a88fb4607788",
+          "title": "Faculty | Structural Engineering",
+          "n": 1978,
+          "url": "https://se.ucsd.edu/people/faculty",
+          "observedAt": "2026-10-16T00:57:24+00:00",
+          "bodySha256": "31c10298ffb90b50a5d670231ecf000ac7ffdae5a8054b944f982440cd377b4f",
+          "textSha256": "7cd73fd738354fde2c31f9cf43b53002fb26f1d829c99f7c7a1bd80cd1f91644",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(152, 'src-bad3a88fb4607788')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-787541b8969257d3",
+          "title": "Home | Fluid Effects on Structural Systems Group",
+          "n": 1168,
+          "url": "http://fessrg.ucsd.edu/",
+          "observedAt": "2026-10-16T04:23:56+00:00",
+          "bodySha256": "53e1c2f1115ebeacb2b791a317746bd3361326f7ca033a50c4e229d3455fcd52",
+          "textSha256": "44f7a827794d072edd5715104ac9631b7a9a24362887941452f679f137070857",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(153, 'src-be62b6c92d27644c')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 154,
+      "labId": "ucsd-psychology-lab-bambah-mukku-lab",
+      "labName": "Bambah-Mukku Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "bc810399820eb7c4656b9acd8c39ab8965461de5bf95b05bec23516933cae098",
+      "packetSha256": "8ea8ce9178d1eefc6fccb57c6921320b4af9c8aae70963c42bd2a79c346b34ec",
+      "scopeAssessmentZh": "细胞/回路及动物状态是研究对象，未明操作/记录技术。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-1f1a6bee97db518e",
+          "title": "The Bambah-Mukku lab at UCSD",
+          "n": 603,
+          "url": "https://www.bambahmukkulab.com/",
+          "observedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "10e9598c87827b0895cacdf205f203c8a4fdd020e639ea4b6ab3833e61cfad2a",
+          "textSha256": "59d016dd9c35889e0a0474aa95dd194b55d0e4d9fab588b4e610d394ad08ed37",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              603
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-6ba302c3494d8c4f",
+          "title": "Historical field evidence: labName",
+          "n": 42,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "2df57a4b3fa6aa2b2b3a3d6c36c9bfb28043ba636f1019f025a5f83c5a423189",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              42
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "directory_scope",
+          "reasonZh": "广泛学科/师资目录，本轮只读标题与实体类别；不借其他PI技术",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              250
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 155,
+      "labId": "ucsd-psychology-lab-language-development-lab",
+      "labName": "Language & Development Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "68a1c71a47ee2007f6ff931b08cc51c29898785876235264f16e954512e17ef6",
+      "packetSha256": "e1765ec948a8ea376b2357e10c661405138a0264712824718100426aa04d35a3",
+      "scopeAssessmentZh": "儿童语言/物体事件理解目标，没有实际任务/分析。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-123dc8d9ca6b1f2d",
+          "title": "Language & Development Lab",
+          "n": 327,
+          "url": "https://ladlab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "de56d228c2c88e96c06aa96e05a129683d280636dde60561cbf6f935f2604445",
+          "textSha256": "75d71c2147eeb26a052ddcca41a46203bca43631891a28479ca082d38729a872",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              327
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-e4e5e3d0d66c88d0",
+          "title": "Historical field evidence: labName",
+          "n": 39,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "160153139c586442ccc7919999a897e7e3041245d77ca3485ae1ca7e78ff629c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(154, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 156,
+      "labId": "ucsd-psychology-lab-uc-san-diego-developmental-neuroscience-lab",
+      "labName": "UC San Diego Developmental Neuroscience Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "46afeb4c80e6bfb73a32260bcaa8eeb0f82a5932a7d4d90c2754323b8d4e0115",
+      "packetSha256": "92c9ac9e3b0905381300b2bbb1c603cac17e19f1268d61804998b66c24511d69",
+      "scopeAssessmentZh": "问题/招募/论文新闻无具体方法主文；electrophysiological signatures只有题名。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-7f781b3ced69f6af",
+          "title": "UC San Diego Developmental Neuroscience Lab",
+          "n": 4034,
+          "url": "https://dnlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:38+00:00",
+          "bodySha256": "9633576d48f0e5a31e6b71067bd4b63938e34365b3a6ef541b028e020405a1f2",
+          "textSha256": "21f3318ae28389b1c70aaafde609e817386e6c566755db01480db9ac0af1fe57",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              4034
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-09443ac96292e93d",
+          "title": "Historical field evidence: labName",
+          "n": 34,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "74ca99966a77ed5901779bd5c45bae754617c4afaf96629395aa1a2af5ad3f29",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              34
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-a822dc1cce9de42c",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 71,
+          "url": "https://dnlab.ucsd.edu/",
+          "observedAt": "2026-10-07T22:53:46+00:00",
+          "bodySha256": null,
+          "textSha256": "90e4083ea0d076ffc351fb7d57fa3de5ff847d7296727b2d124a3f41a0d291d6",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              71
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(155, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 157,
+      "labId": "ucsd-psychology-lab-language-production-lab",
+      "labName": "Language Production Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "2ca6e79007f51d77ec84acbfb0843e60d2cc11eb4f4f500a808fd8f3b626f056",
+      "packetSha256": "694f8a204a3e1e2d75807bc78665c3422eb582e848c49b87d88c80ff893b7c17",
+      "scopeAssessmentZh": "语言产生/沟通是目标，目录个人computational modelling兴趣不作团队采用。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-44c441ff64d6d19b",
+          "title": "Language Production Lab",
+          "n": 310,
+          "url": "https://lpl.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "b15fc6a96f3eeea8c4bd9f358178108ccae21fea74efa97cab2877d823f5163a",
+          "textSha256": "a01a4a6cb289edcb58b816b9771b50adcd75b502e22f20bf3365f53f51a1083f",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              310
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-00cc44c0b596516b",
+          "title": "Historical field evidence: labName",
+          "n": 32,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "d8e1c108061488d83344835b3b0c0cc13fa4ea5de2a6ea0e934e089085acce6c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(156, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 158,
+      "labId": "ucsd-psychology-lab-lime-lab-learning-and-instruction-in-multimedia-environments",
+      "labName": "LIME Lab (Learning and Instruction in Multimedia Environments)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "432cc936e813792c862b164d958cc6002671879efc6a65c17f128664affb411a",
+      "packetSha256": "cc275f4977562660b47458d273638e1d1292d5ac6c4a175f296bdd4e34fcf33d",
+      "scopeAssessmentZh": "研究教学tools/techniques为对象，未说明实验设计或实施。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-2a8bd8f55ddd2f99",
+          "title": "LIME Lab UCSD",
+          "n": 598,
+          "url": "https://www.lime-lab-ucsd.com/",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "7281944b2687dadef9c427bd8d913323b4e03d889c7529fa58b989d51c683c1d",
+          "textSha256": "4852f0739ef5858a74b1ab4c85b5d86d5751c6e836427e9f3f3a3914a4ef5eb2",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              598
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bc52ff9f34572eb2",
+          "title": "Historical field evidence: labName",
+          "n": 41,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "497d19379346d7cd9de4725360cfd7e53f7dc239d60518b1543ec29f3cf2f6b0",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              41
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(157, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 159,
+      "labId": "ucsd-psychology-lab-sciminds-social-computations-interacting-minds-research-studio",
+      "labName": "SciMinds - Social Computations & Interacting Minds Research Studio",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "6351d93a4818f879fd9bdd011ba0072006f3a8b1e0c06eb73cdaae5b2c042bc6",
+      "packetSha256": "898a69783a212c294e79ccc206a9126cd00f03f4eded0a6afd980622851c9f70",
+      "scopeAssessmentZh": "drawing inspiration跨学科及自然情境science为方向，未给具体任务；目录个人naturalistic fMRI不能直接归studio。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-703be7803125c398",
+          "title": "SciMinds - Social Computations & Interacting Minds Research Studio",
+          "n": 64,
+          "url": "https://sciminds.studio/",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "4e53e489ce25db9a371de0e2b58dcbb6a808f1efeac81c27c311461c915f71b9",
+          "textSha256": "25e13bc4b6d7708bca6e79ac43012ec3bd88bacfa0f56940cd325e9721361e1a",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              64
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-57beca3a233018aa",
+          "title": "Focus | SciMinds",
+          "n": 1344,
+          "url": "https://sciminds.studio/focus",
+          "observedAt": "2026-10-16T02:17:41+00:00",
+          "bodySha256": "7267cb37cc823c9ea98cf746927b9af01c042882df7c99bb961263f056ee78ff",
+          "textSha256": "335f940658ee3488b76dab2976eed60910a7c649a9cd0025abdfaa9520db7d15",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1344
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-faa0ab6297015f20",
+          "title": "Historical field evidence: labName",
+          "n": 413,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:55:13+00:00",
+          "bodySha256": null,
+          "textSha256": "e13115c9e95c8279c4dcb0a17def5c80658290988c69fc2ad4d7c5e1342701e4",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              413
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(158, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 160,
+      "labId": "ucsd-psychology-lab-cortical-systems-and-behavior-lab",
+      "labName": "Cortical Systems and Behavior Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "7a56763e92815e0d41e420a3173bbe94a4e389faea72a4d3e55ec8c74573dabd",
+      "packetSha256": "49b85117171f6767b163a2989a21b892c72121002d0c1c10f4043cd3d1b9baac",
+      "scopeAssessmentZh": "首页只有自然行为问题和两类入口，无记录技术或模型采用。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-93799647134ff6be",
+          "title": "Cortical Systems and Behavior Lab",
+          "n": 1067,
+          "url": "https://millerbrainlab.com/",
+          "observedAt": "2026-10-16T01:07:39+00:00",
+          "bodySha256": "0f75c92712a39dc3bd9a74700c776780b3e0cb8ae6a6fb2eed94aed63426046f",
+          "textSha256": "4afb1ebe2db66a0ee256c8b122dae486af232ecff976caa14387a3802b3ae0cc",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1067
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ceba61c42bf70e76",
+          "title": "Historical field evidence: labName",
+          "n": 38,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "3051f89228971bbdbb46a22895e21f097b96254cbaca55c451e1515761b78b32",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(159, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 161,
+      "labId": "ucsd-psychology-lab-rickard-lab-cognition-and-cognitive-neuroscience-laboratory",
+      "labName": "Rickard Lab (Cognition and Cognitive Neuroscience Laboratory)",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "8fd26979d087e840ed71a13649fae6c6cca5c8ddb0bd4319bfa7a7f6982b92e8",
+      "packetSha256": "4a6fd4e5924913b45976b4956dfff7e9ceede7d7a2bc8cb6f6f5687714cddef4",
+      "scopeAssessmentZh": "human learning/skill/memory及Publication类目无方法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-14423c3b373d75cc",
+          "title": "Welcome to the Rickard Lab!",
+          "n": 467,
+          "url": "https://rickardlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:41+00:00",
+          "bodySha256": "2c88f330fba46e75cac236eeee0b6fe904a09e12dc236087ae05d88038a104f8",
+          "textSha256": "b147f411941562356255ed1a800da7cc8c252ec7581453ec903757c35089ee21",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              467
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-89bfdaf46989b370",
+          "title": "Historical field evidence: labName",
+          "n": 39,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "e406d9676271fdf45bf6a2dd4d48a0f26d3e4c63fa56d88eb90a7713a4c2a622",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(160, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 162,
+      "labId": "ucsd-psychology-lab-early-learning-and-cognition-lab",
+      "labName": "Early Learning and Cognition Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "938ddcf3904556cb1607c5c4065ee47d4b1f47aa380113ad4bad458d0c356271",
+      "packetSha256": "e8fad7bfbe7d02dc908227f17a7ef1ff020a25ff55e27d711f6bfb58b62d11e8",
+      "scopeAssessmentZh": "科学思维是研究视角，photos testing未给具体任务/测量；不由caption补访谈/行为实验。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-97f616d214b1c451",
+          "title": "Early Learning and Cognition Lab",
+          "n": 5912,
+          "url": "https://elc-lab-ucsd.com/",
+          "observedAt": "2026-10-16T01:03:39+00:00",
+          "bodySha256": "5559b13515c60c7b4a1b8be1c79de76b6485eee1b304f214006d38cc86ec0f9c",
+          "textSha256": "4cd7285bb697c22fceea7e34d219e7fe18107559938300477b900e5dc2913e75",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              5912
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-ba0844693c4d2ca3",
+          "title": "Historical field evidence: labName",
+          "n": 36,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-07T22:53:12+00:00",
+          "bodySha256": null,
+          "textSha256": "e1943e71f5f38c96ef743b0d7ee8b351950f4682f9a592733285124431b7f935",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              36
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d1c88a19e19f7f2f",
+          "title": "Historical field evidence: principalInvestigator",
+          "n": 132,
+          "url": "https://elc-lab-ucsd.com/",
+          "observedAt": "2026-10-07T22:54:48+00:00",
+          "bodySha256": null,
+          "textSha256": "06ff5ff60f1cee8f0720ba636b82e1499dedc92dd0d6a1b7765767cb6566f832",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              132
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c04548c23c83144f",
+          "title": "Faculty",
+          "n": 6411,
+          "url": "https://psychology.ucsd.edu/people/faculty.html",
+          "observedAt": "2026-10-16T00:57:33+00:00",
+          "bodySha256": "fdee54ea8481062b0443033e7c9b933f787282df5e74abdf5d452734c857cebf",
+          "textSha256": "27b6088a937d6d56344060edebff0a1b688f916276d56ebe5056929f2b64e9c2",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(161, 'src-c04548c23c83144f')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 163,
+      "labId": "ucsd-cognitive-science-lab-mooshagian-lab",
+      "labName": "Mooshagian Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "fadc1b402bfa80b6266d58ceb49ec0ba06a95897f0d431f0751a8af171cd41a7",
+      "packetSha256": "ea102d0eb5069c7a67a88726ecb5dcf93bfa417272d772db276b0646add8e2b2",
+      "scopeAssessmentZh": "非人灵长类明确在此前学位训练，成员软件支持未述具体测量/分析操作；People中PI段仅感觉运动问题。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-f2593ef10b763844",
+          "title": "Mooshagian Lab",
+          "n": 107,
+          "url": "https://mooshagianlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:44+00:00",
+          "bodySha256": "25393568cf795988f15901973119cc770c0c3cfd77c221048e2c7959c9fa7b3a",
+          "textSha256": "f68cdcd93e28dcb0d129da081dfcde935339093cb8c5f774ec2bc9bbf5c1bbf3",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              107
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-1e0c0a7a0e405e80",
+          "title": "Mooshagian Lab",
+          "n": 107,
+          "url": "https://mooshagianlab.ucsd.edu/research",
+          "observedAt": "2026-10-16T01:37:31+00:00",
+          "bodySha256": "fc82306f920fec720aec44e2939405db40875ca6ef94bf3e480d4e58e2f01e63",
+          "textSha256": "f68cdcd93e28dcb0d129da081dfcde935339093cb8c5f774ec2bc9bbf5c1bbf3",
+          "kind": "exact_text_reuse",
+          "reasonZh": "正文exact SHA同已审(163, 'src-f2593ef10b763844')；本ID实体范围另核",
+          "rangesActuallyReadByCrossReviewer": []
+        },
+        {
+          "sourceId": "src-cf85a0e4317a6cd4",
+          "title": "Historical field evidence: labName",
+          "n": 42,
+          "url": "https://cogsci.ucsd.edu/people/faculty/index.html",
+          "observedAt": "2026-10-07T23:00:04+00:00",
+          "bodySha256": null,
+          "textSha256": "f53c942b46906b227923de24eb7f6099662af660e6e70a8998703841267973ed",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              42
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-bd040de6251d3a34",
+          "title": "Faculty",
+          "n": 2858,
+          "url": "https://cogsci.ucsd.edu/people/faculty/index.html",
+          "observedAt": "2026-10-16T00:57:36+00:00",
+          "bodySha256": "276612c2e768d4032392f9bd89fc4687980f91de10c409e65ab6acecbdc8cfe1",
+          "textSha256": "8c8aa6ca049179c19f52ed9b489d9381151cf3a344ebf97a1c038fbcdef2f265",
+          "kind": "directory_scope",
+          "reasonZh": "广泛学科/师资目录，本轮只读标题与实体类别；不借其他PI技术",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              250
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-41da4d939dc1f9c1",
+          "title": "Mooshagian Lab - PEOPLE",
+          "n": 4309,
+          "url": "https://mooshagianlab.ucsd.edu/people",
+          "observedAt": "2026-10-16T01:36:30+00:00",
+          "bodySha256": "37258b31f53ae30b89b5011db72178e0a921b282ab2025196888c43b10c49453",
+          "textSha256": "c3bc5504419dbab888643a2e382b50b89cfb552bcf8d63e22736137a2c779277",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              4309
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 164,
+      "labId": "ucsd-global-policy-and-strategy-lab-power-transformation-lab",
+      "labName": "Power Transformation Lab",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "005ea0be0df8c8f4bc40579de6cd602e4099cc346e26796f0eada0fa6cbb3fc4",
+      "packetSha256": "72e8e9c71521f6221747e65eccc9a0f3554aff5dca6137b10fba74b1da64b703",
+      "scopeAssessmentZh": "planning/markets/political economy为方向，open models/data仅资源/导航，技术词在题目中，无采用主文。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-d91165ef014ab14a",
+          "title": "Home - Power Transformation Lab",
+          "n": 2945,
+          "url": "https://pwrlab.org/",
+          "observedAt": "2026-10-16T01:07:45+00:00",
+          "bodySha256": "b5da3771ffe04fafc2e8886b36d090f117451df207451e0ce3ba3679e1886c24",
+          "textSha256": "d82c805d520b74fa55b83149ee1b6b104ab99c475f465a08e01bf472e97b72c1",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2945
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-a3163e063b7420a9",
+          "title": "About the Lab - Power Transformation Lab",
+          "n": 1098,
+          "url": "https://pwrlab.org/about.html",
+          "observedAt": "2026-10-16T01:07:46+00:00",
+          "bodySha256": "887e58291651f643114bd8b0e04f7cef9530b0d86e2cf501a1ccef3c3b3eb962",
+          "textSha256": "747f58523d2c848167752ea84a4087bc0542bda41f76cf6d0733c6519acf813c",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              1098
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-c4a2d56cb5f372b2",
+          "title": "Historical field evidence: labName",
+          "n": 39,
+          "url": "https://gps.ucsd.edu/faculty-directory/michael-davidson.html",
+          "observedAt": "2026-10-07T23:06:54+00:00",
+          "bodySha256": null,
+          "textSha256": "43a787cb5f36f7a586c25830fa50b5e7fb7178590a111897593f03410ec4b462",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d66ca94f0b893b71",
+          "title": "Michael Davidson",
+          "n": 2007,
+          "url": "https://gps.ucsd.edu/faculty-directory/michael-davidson.html",
+          "observedAt": "2026-10-16T01:00:52+00:00",
+          "bodySha256": "dc96371040f422f4d38ce5d2bac4ce6d44113b1705e09aa6fbea31f7d4b10fe7",
+          "textSha256": "331de2707710ba5461980a58dac46071e2c97520efe340ad3366147704c9fa56",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              2007
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    },
+    {
+      "reviewIndex": 165,
+      "labId": "ucsd-live-lab-da307b4f0f98b5",
+      "labName": "Computational Phonology Research Group",
+      "reviewedAt": "2026-10-16T09:22:43+00:00",
+      "draftDecision": "unchanged",
+      "decision": "pass",
+      "methodCount": 0,
+      "rawSha256": "ebc2f9c9c4775ad95ba2354badcd0aab4528f26bcbf47c8b46c993722827e958",
+      "packetSha256": "f5514fd1397f970f28a3a01b9faf479922b5f2bcabb648b92bc063b06765eb27",
+      "scopeAssessmentZh": "ComPhy是讨论论坛，formal/computational devices为音系学通用解释，不移植个人兴趣成组算法。",
+      "sourceScopeCoverage": [
+        {
+          "sourceId": "src-85edebb1b547501a",
+          "title": "Computational Phonology",
+          "n": 357,
+          "url": "https://sites.ucsd.edu/compphon/",
+          "observedAt": "2026-10-16T01:10:52+00:00",
+          "bodySha256": "f9dfa37b19d860bd5fae4294120c5f826f86462be5d83c16905392ccea048090",
+          "textSha256": "46a2d712d19cc21bec3284dd5c9275f3793cb7d1336e88c738bac0ddb7654289",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              357
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-d326d70a0edc3d85",
+          "title": "Historical field evidence: labWebsiteUrl",
+          "n": 38,
+          "url": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+          "observedAt": "2026-10-16T01:09:12+00:00",
+          "bodySha256": null,
+          "textSha256": "39ae079b9eacc99fbaaa0c4c169360a7ef4f30e1e7ab2e1a5f34ba30713d92f8",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "sourceId": "src-5f4195e0c64192e1",
+          "title": "Eric Baković",
+          "n": 941,
+          "url": "https://linguistics.ucsd.edu/people/faculty/profiles/eric-bakovic.html",
+          "observedAt": "2026-10-16T01:09:12+00:00",
+          "bodySha256": "48b6d6c363cd96957a68ca2c668e7cc689d8cc80c87fd797236a0ac54f820e29",
+          "textSha256": "670afb1ffc23c84cc8df5f9b3f9179fc2cfe4397e0a01cd0d599b21dca0e4931",
+          "kind": "entity_scope_read",
+          "reasonZh": "所列实体正文实际阅读范围；未读部分不作全无方法判断",
+          "rangesActuallyReadByCrossReviewer": [
+            [
+              0,
+              941
+            ]
+          ]
+        }
+      ],
+      "methodEvidenceAudit": []
+    }
+  ],
+  "openIssues": [],
+  "limitationsZh": [
+    "交叉审阅逐实体科研主文及所列实际范围；广泛目录仅范围排除/已读片段，未声称重读所有目录或未截断原HTML。",
+    "原稿203项coverage元数据、范围边界与复用hash已核验；这不把审阅者自述的阅读动作机械证明为全HTML阅读全文。",
+    "临床与转化研究、患者药物测试等仅原文明示基本类别；不补试验设计、平台或疗效。",
+    "未调用网络、PS、collector代码或修改原稿、raw、packet、code、receipt、projection。"
+  ],
+  "networkRequestsMade": 0,
+  "psChecks": 0,
+  "productionWrites": 0
+}

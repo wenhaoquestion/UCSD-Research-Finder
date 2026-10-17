@@ -1,0 +1,216 @@
+{
+  "labId": "ucsd-medicine-lab-owens-lab",
+  "status": "supported",
+  "summaryZh": "Owens Lab 研究院内外睡眠及其健康影响。方向包括阻塞性睡眠呼吸暂停的发生与后果、睡眠监测技术，以及患者和家属的住院睡眠中断与 ICU 谵妄。成员项目中，Dae Kang开发并实施生理传感、信号处理和机器学习；Stuti Jaiswal描述了医院睡眠环境测量及临床试验。",
+  "researchQuestions": [
+    "住院期间患者和家属的睡眠如何受到干扰，这种干扰可能如何引发 ICU 谵妄等状况？"
+  ],
+  "topics": [
+    "睡眠呼吸暂停",
+    "住院睡眠",
+    "ICU谵妄"
+  ],
+  "methods": [
+    "生理传感（成员Dae Kang睡眠健康项目）",
+    "信号处理（成员Dae Kang睡眠健康项目）",
+    "机器学习（成员Dae Kang睡眠健康项目）",
+    "医院睡眠环境测量（成员Stuti Jaiswal项目）",
+    "临床试验（成员Stuti Jaiswal住院睡眠项目）"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-8ab945f4c3a0e0bd",
+      "quote": "About Owens Lab",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-8ab945f4c3a0e0bd",
+      "quote": "Out of the hospital this includes the pathogenesis and consequences of obstructive sleep apnea",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-8ab945f4c3a0e0bd",
+      "quote": "the increasing use of technology to monitor and increase understanding about sleep. In the hospital, we are interested in how sleep is disrupted for both patients and family members, and how this might lead to conditions such as ICU delirium.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-8ab945f4c3a0e0bd",
+      "quote": "the increasing use of technology to monitor and increase understanding about sleep. In the hospital, we are interested in how sleep is disrupted for both patients and family members, and how this might lead to conditions such as ICU delirium.",
+      "supports": [
+        "researchQuestions"
+      ]
+    },
+    {
+      "sourceId": "src-f6c3d16c4f7a9500",
+      "quote": "Dae Kang, Ph.D. I am a NHLBI T32 Postdoctoral Research Fellow in the Department of Medicine, Division of Pulmonary, Critical Care, and Sleep Medicine at UC San Diego, under the advisory and mentorship of Dr. Robert Owens. My research involves the development and implementation of novel physiological sensing, signals processing, and machine learning tools for the estimation and prediction of sleep-based health outcomes.",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        0,
+        1,
+        2
+      ],
+      "provenanceNote": "Owens官网People页明确Dae Kang在Dr. Robert Owens指导下任职，其项目development and implementation方法；限定该成员睡眠健康项目，不取其Coleman早年训练。 页面称current work但无内容日期；不以采集日断定2026仍在开展。"
+    },
+    {
+      "sourceId": "src-f6c3d16c4f7a9500",
+      "quote": "I have carefully measured the hospital environment for sleep, and have conducted multiple clinical trials to try and improve sleep using drugs like melatonin.",
+      "quoteLocation": "body",
+      "supports": [
+        "methods"
+      ],
+      "methodIndices": [
+        3,
+        4
+      ],
+      "provenanceNote": "实验室People页Stuti Jaiswal段的医院睡眠研究，明示have measured/have conducted；不取同段PhD期间的电生理/免疫组化/Western训练。 已开展的成员研究，试验年份未明；不声明2026在招募或临床疗效成立。"
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "方法各限Dae Kang或Stuti Jaiswal在实验室People页介绍的项目；未给项目实施年份、具体试验设计或疗效证据。",
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T09:10:49.479Z",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T07:41:12+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:51:02+00:00",
+    "candidateIndex": 166,
+    "draftPath": "data/local-lab-summaries/QUESTION-FIELD-REVIEW-133-176.json",
+    "draftSha256": "a348c74f1c104283d62824e2e527824abce054b589b0b20f34f61cd34fe88cd9",
+    "minimalRevisionsSha256": null,
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-8ab945f4c3a0e0bd",
+        "quote": "the increasing use of technology to monitor and increase understanding about sleep. In the hospital, we are interested in how sleep is disrupted for both patients and family members, and how this might lead to conditions such as ICU delirium.",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/index.html",
+        "observedAt": "2026-10-16T01:03:19+00:00",
+        "bodySha256": "295842b717a40364f32fc9b9a0ecd45142a12035616f1c5c714867dba6e953bb"
+      }
+    ],
+    "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+  },
+  "emptyMethodFieldReview": {
+    "reviewedAt": "2026-10-16T09:10:49.479Z",
+    "previousRecordReviewedAt": "2026-10-16T07:41:12+00:00",
+    "availability": "source_explicit_scoped_method",
+    "reasonZh": "People页两位具名成员明确实际实施技术或已开展临床试验，Dae Kang还明确Robert Owens指导关系。按成员项目限定5项；不从Orr未来model-based开发目标或Stuti早年PhD训练补其他方法。",
+    "reviewComponent": "EMPTY-METHOD-FIELD-REVIEW-110-165.json",
+    "reviewComponentSha256": "c9af08fc34b6a1ec9d102bd23157fa71b2f44111f129d7ead63485a86df0f95a",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-8ab945f4c3a0e0bd",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/index.html",
+        "sourceObservedAt": "2026-10-16T01:03:19+00:00",
+        "bodySha256": "295842b717a40364f32fc9b9a0ecd45142a12035616f1c5c714867dba6e953bb",
+        "textSha256": "a0b14209598feddd26ccf4037b559e55a66bbebecec685a4811035d588be26fb",
+        "textCharacters": 1069,
+        "rangesActuallyRead": [
+          [
+            0,
+            1069
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/people/index.html",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "textSha256": "3384f182b051d566ea6019de03b1a924d5e11cc9378d2d66290899b366900d83",
+        "textCharacters": 6122,
+        "rangesActuallyRead": [
+          [
+            0,
+            6122
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-71e6cfac839785aa",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+        "sourceObservedAt": "2026-10-07T22:53:40+00:00",
+        "bodySha256": null,
+        "textSha256": "1ec538d2841ea32983d2083c3dc486022f9df9c188302762a62bc75294e7c69b",
+        "textCharacters": 322,
+        "rangesActuallyRead": [
+          [
+            0,
+            322
+          ]
+        ],
+        "coverageZh": "读取完整packet text（不等同未截断HTML）；仅将实体内明确实际采用语境作为方法，名字/目录/新闻标题/兴趣和训练不补方法。"
+      },
+      {
+        "sourceId": "src-2f2778580fed22ce",
+        "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/index.html",
+        "sourceObservedAt": "2026-10-16T00:59:08+00:00",
+        "bodySha256": "6c120c287187710444379eeb619579f17f966bb8823b116bdea9e5ce59e05dc1",
+        "textSha256": "55fe73422c7403796567129dccaf02cd26100ee755e1cba7eba3da7145c7a57a",
+        "textCharacters": 1734,
+        "rangesActuallyRead": [
+          [
+            0,
+            1734
+          ]
+        ],
+        "coverageZh": "复用此前已读的完全相同textSHA正文及所列范围；并未声称重新阅读全文。原sourceId/observedAt/bodySHA分别保存，实体仍按本条reason判断。",
+        "reuseReviewIndex": 133,
+        "reuseSourceId": "src-2f2778580fed22ce"
+      }
+    ],
+    "methodEvidence": [
+      {
+        "methodIndices": [
+          0,
+          1,
+          2
+        ],
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "quote": "Dae Kang, Ph.D. I am a NHLBI T32 Postdoctoral Research Fellow in the Department of Medicine, Division of Pulmonary, Critical Care, and Sleep Medicine at UC San Diego, under the advisory and mentorship of Dr. Robert Owens. My research involves the development and implementation of novel physiological sensing, signals processing, and machine learning tools for the estimation and prediction of sleep-based health outcomes.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "scopeZh": "Owens官网People页明确Dae Kang在Dr. Robert Owens指导下任职，其项目development and implementation方法；限定该成员睡眠健康项目，不取其Coleman早年训练。",
+        "timeScopeZh": "页面称current work但无内容日期；不以采集日断定2026仍在开展。"
+      },
+      {
+        "methodIndices": [
+          3,
+          4
+        ],
+        "sourceId": "src-f6c3d16c4f7a9500",
+        "quote": "I have carefully measured the hospital environment for sleep, and have conducted multiple clinical trials to try and improve sleep using drugs like melatonin.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:35:51+00:00",
+        "bodySha256": "d75d9665d5a1b5337ac8c16c120e8a83ae1fcd8aa43b3dd9eb0336204d0d2bd2",
+        "scopeZh": "实验室People页Stuti Jaiswal段的医院睡眠研究，明示have measured/have conducted；不取同段PhD期间的电生理/免疫组化/Western训练。",
+        "timeScopeZh": "已开展的成员研究，试验年份未明；不声明2026在招募或临床疗效成立。"
+      }
+    ],
+    "scope": "Only actually read entity-local prose; unread or excluded material is not a negative finding."
+  }
+}

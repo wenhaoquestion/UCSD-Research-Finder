@@ -1,0 +1,1033 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T07:41:12+00:00",
+  "candidateInventorySha256": "3ccbd3b2c9f32cdebf25cbbcce9e96c966bc588648a6b84889dc9d0a85322e24",
+  "range": [
+    133,
+    177
+  ],
+  "reviewed": 44,
+  "accepted": 40,
+  "unchanged": 4,
+  "newQuestions": 50,
+  "networkRequests": 0,
+  "rawPacketCodeWrites": 0,
+  "items": [
+    {
+      "labId": "ucsd-live-lab-a4f6662f2b69d3",
+      "candidateIndex": 133,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "2798d32e122e72105108ee55cae388dd7473f65002a4c9f45f14baaaed822828",
+      "packetSha256": "1ccb26a7abc8d586e4422749a99e40a51e170524056fc355aeee091b013937bc",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "how仅出现在蝴蝶翅膀癌症诊断的新闻/视频标题；其余为研究目标陈述，不能把新闻标题直接转成整个lab研究问题。"
+    },
+    {
+      "labId": "ucsd-live-lab-c03b2edf0c268b",
+      "candidateIndex": 134,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "59ae8f30c04851bb17563b32ed913777e75f0d167421b59eb744ab5635353a94",
+      "packetSha256": "d35bea0f79947fde37b252b7526be1c13c60a13f8d0a374464db813aae1779d6",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "匹配what来自“What's new”新闻栏标题，正文概述研究方向但没有相应显式问题；保留空字段。"
+    },
+    {
+      "labId": "ucsd-live-lab-4f4cb10b3f5b5e",
+      "candidateIndex": 135,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "fe3422cb8a0a7d72a02254fb8bab48b10663f0c87f5c481853726d1b4944d67b",
+      "packetSha256": "068df05d8c9729a2e1fac2e1f39e6fc5b2616fbafdf315e8bf28a88e33f09419",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "婴儿、儿童和成人如何发展语言能力并成为熟练的语言使用者？",
+        "儿童如何学习新词和概念，哪些因素驱动并激励这些学习？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d3fd4759f6dde1ef",
+          "quote": "LIL Lab Welcome to the Language and Infant Learning Lab! In the LIL (Language and Infant Learning) Lab , we study how language and cognition develops. We are part of the Department of Cognitive Science at the University of California, San Diego . In our research, we study how infants, children, and adults develop and become skilled language users. We ask questions about how children learn new words and concepts, as well as investigate the driving factors that motivate learning. Learn more on our research page or read up on our recent publications . If you're interested in participating in our current studies, check out this page ! Click here if you're interested in joining the lab! Learn more about our research Lab News",
+          "sourceUrl": "https://lillab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:28+00:00",
+          "bodySha256": "de5e2e703015a78eb0055edfb488e1b228408a667e96841ab7a0245634a90cc2"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-d3fd4759f6dde1ef",
+          "quote": "LIL Lab Welcome to the Language and Infant Learning Lab! In the LIL (Language and Infant Learning) Lab , we study how language and cognition develops. We are part of the Department of Cognitive Science at the University of California, San Diego . In our research, we study how infants, children, and adults develop and become skilled language users. We ask questions about how children learn new words and concepts, as well as investigate the driving factors that motivate learning. Learn more on our research page or read up on our recent publications . If you're interested in participating in our current studies, check out this page ! Click here if you're interested in joining the lab! Learn more about our research Lab News",
+          "sourceUrl": "https://lillab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:28+00:00",
+          "bodySha256": "de5e2e703015a78eb0055edfb488e1b228408a667e96841ab7a0245634a90cc2"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-e30fe35b7a43b5",
+      "candidateIndex": 136,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "c0fce397be3664b29db964b6fa9bae6751e3ab87c969dc46a000990def401211",
+      "packetSha256": "283b6ac58d7dd07f8da3060eb337f25b8167d05fd05acb65120314ce10627465",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "为何部分局部晚期宫颈癌患者在治疗后复发，部分患者出现治疗毒性？",
+        "如何提高肿瘤较大或有淋巴结转移患者的治愈率？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-d568e6508653a27b",
+          "quote": "Questions that drive our research include: “Why do certain patients recur with cancer and why do some experience toxicity from our treatment? How can be increase the cure rate for patients with large tumors or those with lymph node spread?”",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/mayadev/index.html",
+          "observedAt": "2026-10-16T01:03:12+00:00",
+          "bodySha256": "9cabf0ec972fd11eace2d9cd95a3bf82430a3ab52ad7f68be889741badc1ab74"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-d568e6508653a27b",
+          "quote": "Questions that drive our research include: “Why do certain patients recur with cancer and why do some experience toxicity from our treatment? How can be increase the cure rate for patients with large tumors or those with lymph node spread?”",
+          "sourceUrl": "https://radonc.ucsd.edu/research/labs/mayadev/index.html",
+          "observedAt": "2026-10-16T01:03:12+00:00",
+          "bodySha256": "9cabf0ec972fd11eace2d9cd95a3bf82430a3ab52ad7f68be889741badc1ab74"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-9dfceef622d2b2",
+      "candidateIndex": 137,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "0ae4ea5342b88971a1175af79850079dfe8d903554bdec7243c213f8ef421ede",
+      "packetSha256": "cb9cbae3dcd5dd50183981536de9e3ca939118fd8a85c46fbc7e8347e3a33c47",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "人的音乐性为何在生命早期就发展，并从早期就产生社会影响？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-71844e972fc0771c",
+          "quote": "Welcome to the Mind and Development Lab at UC San Diego! We study the cognitive processes that allow children to understand other people, and the social meaning of things people create, such as tools, art, music, and technology. We also explore the origins of musicality, asking why human musicality is so early developing and socially impactful from early in life. Our work has been funded by the NSF, NIH, APF, and GRAMMY Foundation.",
+          "sourceUrl": "https://madlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:00:32+00:00",
+          "bodySha256": "2e87e8b7db9152dcf4c92518adf6321e714e088a529f48c1de5cc4f486f99596"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-ed45a5a6e04fae",
+      "candidateIndex": 138,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "aabe46ade9274c5fe6276834e46cde453687a31521d62c829d412f42c0cee32e",
+      "packetSha256": "73f0ccf7b6a5ec573fcd50c3aaaa9cd03e1d2c373bc55f84f91c9995857e9ddb",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "人脑如何学习感知周围世界？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3ca14da59a811c64",
+          "quote": "We are interested in how we learn, both from a neural and computational point of view. We study the computational properties of machine learning algorithms and also investigate what physiological recordings and the constraints and limitations of human performance tell us about how our brains learn.",
+          "sourceUrl": "https://pages.ucsd.edu/~desa/",
+          "observedAt": "2026-10-16T01:06:38+00:00",
+          "bodySha256": "34092a9b57a19de84f1cc97f757cd0e75cfdd16dcdb77ee64e0503d9ce871d73"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-410779c74cfa9f",
+      "candidateIndex": 139,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "23c2d49e07e84e490ea0a6371b79ade3587a402e36d8dae9953bfb3374e3a041",
+      "packetSha256": "41e36b2eaa478a695a23a0180d879919083ac09d2fc8750fb2682ce06db64323",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "发育中的人类心脏包含哪些细胞类型，它们如何协调并相互作用以形成正常心脏结构？",
+        "人类心脏发育中肌球蛋白重链基因如何受到调控？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-bb8e2714e7c1f9cc",
+          "quote": "However, the identity of these cell-types and how they coordinate and interact with each other to lead to the proper formation of the human heart remain to be fully elucidated.",
+          "sourceUrl": "https://cardiology.ucsd.edu/research/labs/chi/research/index.html",
+          "observedAt": "2026-10-16T01:37:23+00:00",
+          "bodySha256": "7a9f290d68fb532b9a33aff7cd98340cd271cdbc50720adfbb74bf0545e1b969"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-bb8e2714e7c1f9cc",
+          "quote": "Specifically, studying how the myosin heavy chain genes are regulated during human cardiac development.",
+          "sourceUrl": "https://cardiology.ucsd.edu/research/labs/chi/research/index.html",
+          "observedAt": "2026-10-16T01:37:23+00:00",
+          "bodySha256": "7a9f290d68fb532b9a33aff7cd98340cd271cdbc50720adfbb74bf0545e1b969"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-5ed3878b3c1ef6",
+      "candidateIndex": 140,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "15e2accdb9cfb916b6342cd7863cfeeb0279d4d7f9133683b605289915e0d9cb",
+      "packetSha256": "5aac986b3aafd723cf7d6053a243d8109553a82567cea757a6c222b87a53ca68",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "神经元在人类认知、衰老和疾病中发挥哪些功能与计算作用？",
+        "神经系统如何相互作用而产生注意和工作记忆等认知现象，这些系统的生物学约束带来哪些行为与认知限制？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-f80eee9184c416a6",
+          "quote": "We care deeply about how we use data to learn about how the brain “works”: what are the functional/computational roles that neurons play in human cognition, aging, and disease?",
+          "sourceUrl": "https://voyteklab.com/about",
+          "observedAt": "2026-10-16T01:35:04+00:00",
+          "bodySha256": "1fc13f30a394dd02a5b4c81e0033b5bc6725bf92a8f5f24232006b79aa0e98f6"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-f80eee9184c416a6",
+          "quote": "Rather than asking questions like, “What brain regions correlate with working memory or attentional load?” we ask, “Given what we know about the computational properties of neurons and neural systems, how can those systems interact to give rise to cognitive phenomena we equate with ‘attention’ and ‘working memory’, and what are the behavioral and cognitive limitations and consequences of these biological constraints?”",
+          "sourceUrl": "https://voyteklab.com/about",
+          "observedAt": "2026-10-16T01:35:04+00:00",
+          "bodySha256": "1fc13f30a394dd02a5b4c81e0033b5bc6725bf92a8f5f24232006b79aa0e98f6"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-cfe3491eea0ff1",
+      "candidateIndex": 141,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "04d9a0d542f45faee88068f62e6803652d2c2265a40a0469fc0c9db4d9fc6b2c",
+      "packetSha256": "4723ecc8a48bd7cb05fedc6b19418f713182fc432388c37fc5a3ece9ab966ddd",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "细胞如何在分子层面转导信息？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-a520aca498ba6a1b",
+          "quote": "Our lab investigates the basic molecular mechanisms of how cells transduce information, a process know as cell signaling.",
+          "sourceUrl": "https://newtonlab.ucsd.edu/about/",
+          "observedAt": "2026-10-16T01:35:06+00:00",
+          "bodySha256": "040a615ed759ffb08a14231fe42352d626c96b1a0a9ddf38416a2a322546cc93"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-e7dc037098a9c0",
+      "candidateIndex": 142,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "42f6993efa716355f4a596f1bc8a98eb22b1ce7ad97b44a08384be9df4fdf6d2",
+      "packetSha256": "ba09167f93354056e7ab60dc999dc163a356d5d96c068da2ced92576b221b122",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "如何调节细胞与材料界面，以引导体内血细胞和免疫细胞的行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-27553a28d4b3efb3",
+          "quote": "Shah's laboratory focuses on understanding how the cell-material interface can be tuned to guide the behavior of blood and immune cells in the body, with the aim of developing new therapeutic approaches for tissue repair, cancer and autoimmune diseases.",
+          "sourceUrl": "https://jacobsschool.ucsd.edu/faculty/profile?id=468",
+          "observedAt": "2026-10-16T01:00:51+00:00",
+          "bodySha256": "d8904b849c732a4219270623b4f75d1e22b503f7012c7be1d7b7c45b2f0bfe6b"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-67d21f4c042ac9",
+      "candidateIndex": 143,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "43fa72744e0de7ff526d5452ae5bb7b7806fcfa219250b42676a7a51e12b4bcd",
+      "packetSha256": "4b1169fcb162260d266bacb7b40d096f85303a7ebb2899f13e5b1ca3ec4f58e0",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "细胞如何感知、运动和组织，组织又如何发育？",
+        "心脏中的电波如何产生正常节律及心律失常？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-8a1289f374bd72ff",
+          "quote": "The Rappel Lab at UC San Diego uses physics-based theory, computational modeling, cell experiments, and quantitative data analysis to understand complex biological systems. We study how cells sense, move, and organize, how tissues develop, and how electrical waves in the heart give rise to normal rhythm and arrhythmias.",
+          "sourceUrl": "https://rappel.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:39+00:00",
+          "bodySha256": "23ac217cc950bf260774b674a4fc9cc70f11196ae64d2446d021c3367739c6ea"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-8a1289f374bd72ff",
+          "quote": "The Rappel Lab at UC San Diego uses physics-based theory, computational modeling, cell experiments, and quantitative data analysis to understand complex biological systems. We study how cells sense, move, and organize, how tissues develop, and how electrical waves in the heart give rise to normal rhythm and arrhythmias.",
+          "sourceUrl": "https://rappel.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:39+00:00",
+          "bodySha256": "23ac217cc950bf260774b674a4fc9cc70f11196ae64d2446d021c3367739c6ea"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-c6c7976154bf05",
+      "candidateIndex": 144,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "219a384b59a00176d42a6f7cd0f243cde4f12c3a9c3d61c8d4f91a054adc3368",
+      "packetSha256": "9b34248a74b913792ac8d846fc627416c20981ad2d8c21a0c7812d95daf76b69",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "“So what do we do in S2ML lab?”是介绍团队工作的修辞提问；不据此发明科学问题。"
+    },
+    {
+      "labId": "ucsd-live-lab-be884233f3b1f1",
+      "candidateIndex": 145,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "2f75631eb1aac1ad0706437db45129465697a52966a5a0cdaf264195b1256414",
+      "packetSha256": "ebe8ad5d399406eb12abd397633d46875b7f6c496bc8d2cfaad997e6e11ff593",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "微量金属如何影响地球环境与人类健康？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-c4ae077a752139ef",
+          "quote": "Global Biogeochemical Health @ The Schartup Lab We study how trace metals affect our planet and our health",
+          "sourceUrl": "https://www.aminaschartup.com/",
+          "observedAt": "2026-10-16T01:06:40+00:00",
+          "bodySha256": "e82630696ee1be451a2a39e44c624ae4dbe970c5faafb386eb77e87ece8a84d4"
+        }
+      ],
+      "reasonZh": "仅补We study how原文明示的广义问题；来源未提供更具体机制或方法，原摘要“没有进一步说明具体研究问题”之范围保留。"
+    },
+    {
+      "labId": "ucsd-live-lab-56d64d10b3b052",
+      "candidateIndex": 146,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "30f9ed33c7db39ed983bf735dacf6c46c68581c00c61ba998a5d7de3ea356842",
+      "packetSha256": "1fe504841de6c57135e99e5139c0f29c8e9f36d7f7236d98421f94b4cd4dc5cf",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "大脑如何编码和处理信息？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-723caf100d0b4543",
+          "quote": "Our work is at the intersection of neuroscience, physics, and applied mathematics. It explores how the brain encodes and processes information",
+          "sourceUrl": "https://www.silva.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:42+00:00",
+          "bodySha256": "078f39881d48961f764149969bc3ffbddeeaabd6ea2119f075333603b6229cdd"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-ba4098836b71d6",
+      "candidateIndex": 147,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "493a399ec245efa23287f65d247bd1f9f2b989aa0eacd06a5ac22106a0da5279",
+      "packetSha256": "e4313f66ef157cc918b1a09a449764a6ab8b4dff0844884caed68f94993584d3",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "生命如何利用时间？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-12e0aa5bbc55146e",
+          "quote": "UCSD Smarr lab Prof. Benjamin Smarr & Lab Understand how life uses time. Use this knowledge to improve health, education, and the world.",
+          "sourceUrl": "https://smarr.ucsd.edu/",
+          "observedAt": "2026-10-16T01:01:13+00:00",
+          "bodySha256": "da39c6e4b27f8a322645570d8de6ddec0512122a78a367c4220622149f527d70"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-210a25a3ee6ee9",
+      "candidateIndex": 148,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "22347c44130fb9c72f1625e126c7a52f8d944959b72a814da63714956287b94a",
+      "packetSha256": "e34e150677c8f298467c62c8dcd098221eaf63fd4e1a2375a1f91049a7f40ba4",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "复制后的基因组如何在细胞分裂过程中准确分离？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3ac71b0dfbb43e10",
+          "quote": "Our lab is interested in understanding how the replicated genome is accurately segregated during cell division.",
+          "sourceUrl": "https://profiles.ucsd.edu/arshad.desai",
+          "observedAt": "2026-10-07T22:02:07+00:00",
+          "bodySha256": null
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-5beac8e73ba186",
+      "candidateIndex": 149,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "3167b146dc9c4560835d214e5da919734ec6c7375e69b4ca3af2e91345a52e7c",
+      "packetSha256": "25c49729a9cfd8f696392a05021eb493a2cd295410cdfce2d83744476198fa99",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "疟原虫如何与人肝细胞相互作用？",
+        "耐药性如何产生？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-7131c9e2febb02e0",
+          "quote": "We are interested in host pathogen signaling and how malaria parasites interact with human liver cells",
+          "sourceUrl": "https://winzeler.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:45+00:00",
+          "bodySha256": "5291b18467c25c17586650506291e618747853739599fca3819f7ce2f3afd6c0"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-7131c9e2febb02e0",
+          "quote": "We are using a variety of experimental systems, including yeast and human cells, to understand how drug resistance emerges",
+          "sourceUrl": "https://winzeler.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:45+00:00",
+          "bodySha256": "5291b18467c25c17586650506291e618747853739599fca3819f7ce2f3afd6c0"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-066c05006a933f",
+      "candidateIndex": 150,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "725800d00ee2047e86d984538cbeb5dda773ed510018aa20319dcf3aedfd519b",
+      "packetSha256": "c27ecd18a2a0dbfbe26a5884b53a022ced9639c07c9d8afc28f651721d535395",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "肠道细菌病原体如何利用毒力因子调节宿主与微生物的代谢，以增殖至高浓度并传播到新宿主？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-288a6728550c2846",
+          "quote": "Our lab is interested in understanding how bacterial enteric pathogens use their virulence factors to modulate host-microbe metabolism in order to grow to high concentrations and transmit to a new host during infection. We use animal models of disease coupled with bacterial and host genetics to study the molecular mechanisms of toxin-mediated pathogen growth and transmission.",
+          "sourceUrl": "https://riverachavezlab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:46+00:00",
+          "bodySha256": "3b667d590c042dc07c2475c2a8da09aad52b9358eac89bf74030b048c7181191"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-8faf85a74eb832",
+      "candidateIndex": 151,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "34f685e109ad644e5b3024a370e232c0eb6ca12cbaed4280c307ea4ea0ab4fe5",
+      "packetSha256": "b5998cf1737048af34cd94a385525c6a0191006adbbd4a79dbd723a91c287302",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "调控 DNA、转录、表观遗传与三维基因组结构如何相互影响？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-35726394fd9646e5",
+          "quote": "The laboratory develops computational and experimental technologies to study how transcription is regulated, analyzing how regulatory DNA, transcription, epigenetics, and 3D genome structure exert influence on one another.",
+          "sourceUrl": "https://profiles.ucsd.edu/christopher.benner",
+          "observedAt": "2026-10-07T22:28:18+00:00",
+          "bodySha256": null
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-205e8b1bb2cdda",
+      "candidateIndex": 152,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "afcb78faca6b79b875aec05021895a97578f170290c27878a3f4809d594b2c87",
+      "packetSha256": "9c9099bbe0c452027f0da52e816a63cc45bb3f570e3d328001db8f7c88a8b799",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "不同低氧模型如何影响重要生理结局？",
+        "低氧条件下，肥胖如何影响心血管与代谢生理？",
+        "低氧条件下，肝细胞 HIF-1 如何影响葡萄糖和脂质代谢？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-add21199ab91c190",
+          "quote": "Our laboratory uses in vivo approaches to understand ​how different models of hypoxia influence important physiological outcomes.",
+          "sourceUrl": "https://www.mesarwilab.com/",
+          "observedAt": "2026-10-16T01:06:51+00:00",
+          "bodySha256": "db7d9181ae32689a656b198db1373362080e03cbcd9d10edfcb90346eeee9c6a"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-add21199ab91c190",
+          "quote": "The impact of lung tissue hypoxia in acute lung injury in COVID-19 How obesity impacts cardiovascular and metabolic physiology in hypoxia How hepatocyte hypoxia inducible factor-1 (HIF-1) impacts glucose and lipid metabolism in hypoxia The impact of time restricted feeding on dysglycemia in intermittent hypoxia",
+          "sourceUrl": "https://www.mesarwilab.com/",
+          "observedAt": "2026-10-16T01:06:51+00:00",
+          "bodySha256": "db7d9181ae32689a656b198db1373362080e03cbcd9d10edfcb90346eeee9c6a"
+        },
+        {
+          "questionIndex": 2,
+          "sourceId": "src-add21199ab91c190",
+          "quote": "The impact of lung tissue hypoxia in acute lung injury in COVID-19 How obesity impacts cardiovascular and metabolic physiology in hypoxia How hepatocyte hypoxia inducible factor-1 (HIF-1) impacts glucose and lipid metabolism in hypoxia The impact of time restricted feeding on dysglycemia in intermittent hypoxia",
+          "sourceUrl": "https://www.mesarwilab.com/",
+          "observedAt": "2026-10-16T01:06:51+00:00",
+          "bodySha256": "db7d9181ae32689a656b198db1373362080e03cbcd9d10edfcb90346eeee9c6a"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-1424116f3dbcfe",
+      "candidateIndex": 153,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "3b12de4a21ac23dc7a988d479566c31ff988703314b9c150df7a97ca1a527048",
+      "packetSha256": "7e060974f3dfa17511dd3304134353ca66ff98ce99536cfe251c725528b4342c",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "RNA 和 DNA 编辑酶在不同细胞环境中如何受到调控，又如何靶向这些通路？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-112f9f74f79107d7",
+          "quote": "The Jiang Laboratory studies the molecular mechanisms of RNA and DNA editing in normal and cancer stem cells, how these editase enzymes are regulated in different cellular contexts, and how to target these pathways",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/jiang-lab/index.html",
+          "observedAt": "2026-10-16T01:06:49+00:00",
+          "bodySha256": "2a43975be52fa0291c2344a6643dae8c50083172812824fab8c63b69474b1e00"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-41588a6e1edd2b",
+      "candidateIndex": 154,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "d83e9198db23d454a33216cf3d497534250abfdea135af8a0598a9b5a935bc6a",
+      "packetSha256": "1425693cd45eea5aa0f510cf962e8763e182d8c6ecb60c5353e58bf230a37fe7",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "MDS 的遗传病因如何用于个体化治疗并改善患者照护？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-8c44f8cce93251fc",
+          "quote": "In the lab, we examine the genetic causes of MDS to understand how they can be used to personalize therapy and better care for patients.",
+          "sourceUrl": "https://www.bejarlab.org/",
+          "observedAt": "2026-10-16T01:06:54+00:00",
+          "bodySha256": "5f9a117603b1cbc481e5144c79836bd6026c766156647ac7f288a9fffea9155e"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-b469e9c10576a4",
+      "candidateIndex": 155,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "3de381cb00b78c1811a58e56de57c8103f32f0df21b01f04abd65512cd7c0d20",
+      "packetSha256": "3102813f9ffa50761f739bc7b909d0967dfd3c24a89a01a19eebb14019135acd",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "人如何响应其生活环境，这些响应对健康、表现和恢复力为何重要？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-a6e5662f7bcda6ad",
+          "quote": "At the Simonson Lab, we bring together multiple approaches to understand how people respond to the environments they live in—and why this matters for health, performance, and resilience. From local communities to the world’s highest inhabited regions, we unite genomics, physiology, and molecular biology",
+          "sourceUrl": "https://www.simonsonlab.com/",
+          "observedAt": "2026-10-16T01:06:51+00:00",
+          "bodySha256": "7ba2aae6ca7e887f393f197126a4e2653e2faf00fbf9e7e372aabccd633ff456"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-live-lab-f7358fde939259",
+      "candidateIndex": 156,
+      "reviewedAt": "2026-10-16T07:41:11+00:00",
+      "rawSha256": "2f74fda33232cfde21164ad8e77ab4f0b25db2587f8faceb11024cece6c2bdf0",
+      "packetSha256": "f3ddc4e41c9d66fe420243d196f32a44f9ddcd4f08beb15286461ce05b4079ff",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "阿尔茨海默病及相关痴呆由什么引起，可以采取哪些应对措施？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-61382e56b7f41cac",
+          "quote": "Welcome to the Chen lab Alzheimer's disease research laboratory ​ We study Alzheimer' disease and related dementia: ​What causes the disease, and what can we do about it?",
+          "sourceUrl": "https://www.xuchenlab-ucsd.org/",
+          "observedAt": "2026-10-16T01:06:55+00:00",
+          "bodySha256": "379715c6bf694d32458f3320e8ac5ad60d37a241b1641cf43f42299b95535d89"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-partho-ghosh-lab",
+      "candidateIndex": 157,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "5e2ca8813855a43a6f7d82256d74edea9b7533191e5aefdc83eaf7f5bdb885d1",
+      "packetSha256": "c9e94264896f5ae10897d39bfd80ea83dafddc5b417759de8f93afe8570766ea",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "细菌病原体的毒力因子如何与哺乳动物宿主细胞靶标相互作用并引发感染性疾病？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1f28af86a7b5b7bf",
+          "quote": "The Ghosh lab studies how virulence factors of bacterial pathogens interact with their mammalian host cell targets to cause infectious diseases.",
+          "sourceUrl": "https://pghosh.ucsd.edu/",
+          "observedAt": "2026-10-16T01:07:20+00:00",
+          "bodySha256": "7aee83bdc5e32b46228cb35695ab99761675f3b4cf7d21455dcbb6257e50f573"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-mishanina-lab",
+      "candidateIndex": 158,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "dac9e857f107e76e3ce26b8660a1d22d1142c9faf296e57973f8bb8bcb4ab467",
+      "packetSha256": "2260cfde54e032532b7ad6efec7921aa41c7e74e4bd0c788bce849371536840d",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "RNA 聚合酶如何通过暂停调控转录，并在线粒体中协调 RNA 合成、DNA 复制及 RNA 加工？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-c289036a8c468b9a",
+          "quote": "We explore how RNA polymerase, the central enzyme in gene expression, regulates transcription through pausing, coordinates RNA synthesis with DNA replication and RNA processing in mitochondria",
+          "sourceUrl": "https://www.mishaninalab.com/",
+          "observedAt": "2026-10-16T01:07:24+00:00",
+          "bodySha256": "a6489d0b159f20c244ed05f67bcd08f21e6196b51fc470828c249e56f109d450"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-ribozymes",
+      "candidateIndex": 159,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "c9502f0cbf211624731a06e84e0bf51c57c065cfac10d0c4b5bed4670e0fffa4",
+      "packetSha256": "0c7fdf5635a893672a8282e05090ed07715f8f014c05e05165699279e27b4092",
+      "decision": "unchanged",
+      "questions": [],
+      "questionEvidence": [],
+      "reasonZh": "“How did Life Start?”位于Ulrich Muller PI个人介绍，紧接I believe；此处不能单凭个人问句补wholelab独立问题。另需单独复核既有lab研究作用域，不在本字段草案改变接受结论。",
+      "existingResearchScopeNeedsSeparateReview": true
+    },
+    {
+      "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-zid-lab",
+      "candidateIndex": 160,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "fd5604e817bef4d0a33b51cb8c62c939400f38f578572a7f96f39744d9da75e6",
+      "packetSha256": "a5087eb1ec462d5def90c2256b30a01174a59177835e2a019be060a4b3028237",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "细胞如何在变化的环境条件下维持稳态？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-eb99cdce3c82573c",
+          "quote": "The Zid Lab at UC San Diego is generally interested in how cells maintain homeostasis in fluctuating environmental conditions. We use a variety of approaches to investigate our questions including biochemistry, molecular biology, genomics, quantitative microscopy, and computational modeling.",
+          "sourceUrl": "https://zidlab.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:18+00:00",
+          "bodySha256": "1da49bd884a8fcd0d48820c9587f42a29f55dfc64624a4c8aed236e57d6837e6"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-alan-saltiel-lab",
+      "candidateIndex": 161,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "a9fe5c3c16ed89eef9026d2da8005f55aabd8a690d9742c838b20cd7c92af56f",
+      "packetSha256": "9fcd8797d54ebfeed146fc2b6a1cf65d6583b130028c236aed0d017ef6dbb9e1",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "健康与疾病状态下，代谢活跃细胞如何响应激素与营养来控制能量储存和利用？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-15b11d38d4bb4322",
+          "quote": "About Saltiel Laboratory Our lab investigates how metabolically active cells control energy storage and utilization in response to hormones and nutrients in health and disease.",
+          "sourceUrl": "https://sites.ucsd.edu/saltiellab/",
+          "observedAt": "2026-10-16T01:07:22+00:00",
+          "bodySha256": "0e562c6459cfe973d33422bbd1bad0bf499db63aa98efe46c0eddd00b3720005"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-hsu-lab",
+      "candidateIndex": 162,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "e3aaeee23a5372a9d67831be4b50d739624c4441924f5f79cdce5eb50897f7fb",
+      "packetSha256": "bd01060e79bfa8bec532a71977702c1fe53a5ef8260cea351fd1ebfcb2fe6568",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "肠道微生物组如何影响酒精使用障碍和酒精相关肝病的风险与恢复力？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-95fa672216f700a9",
+          "quote": "The Hsu Lab explores how the gut microbiome shapes risk and resilience in alcohol use disorder and alcohol-related liver disease. By combining human biospecimen analysis, gnotobiotic mouse models, and state‑of‑the‑art microbiology culturing, sequencing, and metabolomics",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/hsu/index.html",
+          "observedAt": "2026-10-16T01:07:24+00:00",
+          "bodySha256": "30b9d4b89e0e475152f6aa826e5382aa51d5b22b2a51b41f6931b79dfd289532"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-jung-lab",
+      "candidateIndex": 163,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "a0b1f1666cf46a1ba31444b27e80f4d001765c15bd806a60758732a543e14470",
+      "packetSha256": "d917e78b9da3670bad0f0a69ed0b11ca7298ee64b96089efbaabdb67ee3722c2",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "activin A 如何促进胃肠道系统疾病？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-3196e8d92daa9e3d",
+          "quote": "The Jung lab has been dedicated to identifying how the molecule activin A promotes disease in the GI system",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/jung/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "6aff065569224f9a2de5c6484be62d6a3832ad9253f0119a35d9100dee90a2b4"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-rivera-lab-immune-cell-traffic-in-ibd",
+      "candidateIndex": 164,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "638fbeae92979eb4018982ab977d9b0175f83f69bf20eb4d529df76d3c9c15b8",
+      "packetSha256": "d0b1c199553fe35f12cab7ae690201e4d5c49be2686b37e534f6149a4e972976",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "免疫细胞如何特异性地归巢至不同肠段？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-636b802cf5cd4834",
+          "quote": "The goal of our research if to further understand how are immune cells to home specifically to distinct intestinal segments",
+          "sourceUrl": "https://gastroenterology.ucsd.edu/research/labs/rivera/index.html",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "bodySha256": "81055b5ebeedf622a9c4e0b2e5ec900dbfb2c19ac233587ef8f4060828bfb741"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-breen-lab",
+      "candidateIndex": 165,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "7ad0ab50ab0d434489faa258ef4a4a42f87cfbefcb41877e0cbcd6568ff0c078",
+      "packetSha256": "1637c17e786add50e89043453a207a7e2a1bae0a0b6ad3fed5f4097cf7d315da",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "运动训练和慢性肺病中，氧如何供应给骨骼肌线粒体？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-6245be78e3e521dd",
+          "quote": "developed several in vivo mouse models to understand how O 2 is made available to skeletal muscle mitochondria in response to exercise training and chronic pulmonary disease.",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/breen/index.html",
+          "observedAt": "2026-10-16T01:03:17+00:00",
+          "bodySha256": "1daf9d912f682d6b44d91a9b58c19eb89f0565dcde0cc4ed5e73be53160e2203"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-owens-lab",
+      "candidateIndex": 166,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "3c83925a8d5e9e320b55d53b74b86edb7fb1a507504f7f333f598c0d690516ed",
+      "packetSha256": "9a99412b4d7d57a5fefdd44559d3eb19f477658a1af865c68dcaf35e146d7d78",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "住院期间患者和家属的睡眠如何受到干扰，这种干扰可能如何引发 ICU 谵妄等状况？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-8ab945f4c3a0e0bd",
+          "quote": "the increasing use of technology to monitor and increase understanding about sleep. In the hospital, we are interested in how sleep is disrupted for both patients and family members, and how this might lead to conditions such as ICU delirium.",
+          "sourceUrl": "https://pulmonary.ucsd.edu/research/labs-centers/owens/index.html",
+          "observedAt": "2026-10-16T01:03:19+00:00",
+          "bodySha256": "295842b717a40364f32fc9b9a0ecd45142a12035616f1c5c714867dba6e953bb"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-guma-lab",
+      "candidateIndex": 167,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "58ba2ab8525adf5dc70c0db060b68b2d7c692a74e0828e249b08db80d75f5cd1",
+      "packetSha256": "10bf1c50a6ca49b7c97aeb9ed4dec971fe0fd53d27fae289ee09d2b887adf5cc",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "非侵入性循环代谢生物标志物在治疗干预后如何变化？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-f008a8591c981529",
+          "quote": "We also conduct clinical and translational research to identify noninvasive circulating metabolic biomarkers and to determine how they change after therapeutic interventions.",
+          "sourceUrl": "https://rheumatology.ucsd.edu/research/faculty-labs/guma/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "664a0656346cde783398a6ea892fcf94555f03c3950067162cf259637ec3f4ca"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-gur-cohen-lab",
+      "candidateIndex": 168,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "05583bfe9b28cc949df7a8d01aa022f32cb8a07c42e0939723c50976c9681510",
+      "packetSha256": "d55baae33908ab102363a94c57902020d501683b9a69f50735e9401a437c6d6f",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "上皮干细胞如何与支持它们的微环境沟通？",
+        "环境信号如何被解读并引导干细胞行为？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-567958efd0211b36",
+          "quote": "Research efforts in the Gur-Cohen’s lab focus on mechanisms of how epithelial stem cells are communicating with their supporting microenvironment",
+          "sourceUrl": "https://gurcohenlab.com/",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "bodySha256": "bbc07cd643491b63b6623669d28f005412bf379da9610892ea72c02e4980032b"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-567958efd0211b36",
+          "quote": "elucidating how environmental cues are interpreted to guide stem cell behavior.",
+          "sourceUrl": "https://gurcohenlab.com/",
+          "observedAt": "2026-10-16T01:07:29+00:00",
+          "bodySha256": "bbc07cd643491b63b6623669d28f005412bf379da9610892ea72c02e4980032b"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-kentson-lam-lab",
+      "candidateIndex": 169,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "7eb50f9a7e444097c3a194858d95d0dbc884475049c25157a36918cf0407a20e",
+      "packetSha256": "821af9c4bbaf032edea8080b7b24d2de99e6a0be389db488e80ff2ae10f3122c",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "白血病和癌症干细胞如何依赖蛋白稳态网络在治疗中存活？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-5d47919443316405",
+          "quote": "Dr. Lam’s lab investigates how leukemia and cancer stem cells survive treatment by relying on proteostasis, which is a network of pathways comprised of the cell’s protein quality‑control and stress‑response systems.",
+          "sourceUrl": "https://regenmed.ucsd.edu/research/lam-lab/index.html",
+          "observedAt": "2026-10-16T01:07:26+00:00",
+          "bodySha256": "c3f52c8c355cea698dd7aec942d799db78e8e1e118c2842c89cb11ba793bca20"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-medicine-lab-molina-lab-mitochondrial-bioenergetics-and-healthy-aging",
+      "candidateIndex": 170,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "aa9c948fa981c0d4dd198d88e201d26a8889f73091fe0fd5783c25878e32198a",
+      "packetSha256": "51e6a3521c4854e00b21793f941ae0655603ed9161c142ad72bb269acca80778",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "线粒体功能与衰老及年龄相关疾病的发生有何关系？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-dbc5c352949223c8",
+          "quote": "The Molina Lab focuses on understanding how mitochondrial function is related to aging and the development of age-related diseases.",
+          "sourceUrl": "https://www.molinalab.com/",
+          "observedAt": "2026-10-16T01:07:28+00:00",
+          "bodySha256": "969781d320bcc2172b5a775b25670f0fcc221616615060b1ecce4c1b89e8f1c6"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-pharmacology-lab-idoyaga-lab",
+      "candidateIndex": 171,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "4db7392a279114dc82aa0d7fc930296539416a659dda11eb9775429e54c3e931",
+      "packetSha256": "db56a26db4d080e4799fc02d0511905e44fe3c7d1f0df857b25cbeafb33e23c0",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "树突状细胞如何控制淋巴细胞反应？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-c4283a5d6192722f",
+          "quote": "Our lab is driven by one central question: how do dendritic cells (DCs)—the immune system’s decision-makers—control lymphocyte responses?",
+          "sourceUrl": "https://pharmacology.ucsd.edu/faculty/department-faculty1/juliana-idoyaga.html",
+          "observedAt": "2026-10-16T01:00:46+00:00",
+          "bodySha256": "59c7f54bb805fbbb42c2b2b34e0b97ed1267e48ffc2cf50f33df6624ff98cddc"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biological-sciences-lab-lykke-andersen-lab",
+      "candidateIndex": 172,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "0139637051c6c44dac0e1b5761cdf2349457ca68ff7ae6ab5a4085fcd85a7e47",
+      "packetSha256": "e943ad6bb31637532ad86e93a4080d7773d5e30dfcc0393f996b9e65715b2ffa",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "特定 mRNA 如何被靶向并快速降解？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-322a2ca2584566c6",
+          "quote": "How are specific mRNAs targeted for rapid decay?",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/jlykkeandersen",
+          "observedAt": "2026-10-16T01:07:34+00:00",
+          "bodySha256": "5dc45263a47ae3c5a61adc1b10bb97e6edf7c42dca2f6a2a17ca7e076046db32"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biological-sciences-lab-kryazhimskiy-lab",
+      "candidateIndex": 173,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "b2e909dc6583414fa66becb70ecdfb07438d2dbf7082c2b40432db1481627774",
+      "packetSha256": "0182744a0585546fb4297373ae6b19e3ca97883de9c5e7e199a0b05c2679d1d7",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "突变如何影响基因表达、代谢通量等不同层次的表型，这些影响又如何共同决定生物在不同环境中的适合度？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-a9e2cce5f55b42cf",
+          "quote": "how mutations affect phenotypes at multiple levels of biological organization (gene expression, metabolic fluxes, etc.), and how these effects combine to determine organism’s fitness across environments.",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/skryazhimskiy",
+          "observedAt": "2026-10-16T01:07:35+00:00",
+          "bodySha256": "034ec901b57297103a367c071ddb059ef4c825a41ab132f451dc09594318a3e0"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-biological-sciences-lab-jackrel-lab",
+      "candidateIndex": 174,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "f2b6fe64611207a7c64493e839865ec10e472c3a5086c7dbbbf1dda346bb93a4",
+      "packetSha256": "5645ae63fd46218007096d1d48698a731aae42478257e769a9fec0384304ae7e",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "不同尺度的生物多样性何时以及如何调控生态系统功能？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-544b5d38b78800fb",
+          "quote": "Research in the Jackrel lab focuses on understanding when and how biological diversity at multiple scales regulates ecosystem functions.",
+          "sourceUrl": "https://biology.ucsd.edu/research/faculty/sjackrel",
+          "observedAt": "2026-10-16T01:07:37+00:00",
+          "bodySha256": "92189ecf4dd2764710c54fe1396f6b4bdcf6a80467807a90967728835962d0e7"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-psychology-lab-bambah-mukku-lab",
+      "candidateIndex": 175,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "11f387fbdcb960fc2c4ec4108a5304e69fa45fee13184ec1a6a0866db10f2162",
+      "packetSha256": "8ea8ce9178d1eefc6fccb57c6921320b4af9c8aae70963c42bd2a79c346b34ec",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "动物的性别、年龄和生理状态如何调节神经回路？",
+        "情绪状态如何影响行为，又如何由大脑产生？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-1f1a6bee97db518e",
+          "quote": "The Bambah-Mukku lab studies cell-type and circuit specific mechanisms governing ethologically meaningful social behaviors. We are particularly interested in how neural circuits are modulated by the sex, age and physiological state of the animal.",
+          "sourceUrl": "https://www.bambahmukkulab.com/",
+          "observedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "10e9598c87827b0895cacdf205f203c8a4fdd020e639ea4b6ab3833e61cfad2a"
+        },
+        {
+          "questionIndex": 1,
+          "sourceId": "src-1f1a6bee97db518e",
+          "quote": "How do emotional states influence behavior and how are they generated by the brain?",
+          "sourceUrl": "https://www.bambahmukkulab.com/",
+          "observedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "10e9598c87827b0895cacdf205f203c8a4fdd020e639ea4b6ab3833e61cfad2a"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    },
+    {
+      "labId": "ucsd-psychology-lab-language-development-lab",
+      "candidateIndex": 176,
+      "reviewedAt": "2026-10-16T07:41:12+00:00",
+      "rawSha256": "5520a975c33727d7a1e46eaae6437782c797c40b78750a4da79d334f5d7343c2",
+      "packetSha256": "e1765ec948a8ea376b2357e10c661405138a0264712824718100426aa04d35a3",
+      "decision": "add_source_explicit_questions",
+      "questions": [
+        "儿童如何学习语言，并形成对世界中物体和事件的理解？"
+      ],
+      "questionEvidence": [
+        {
+          "questionIndex": 0,
+          "sourceId": "src-123dc8d9ca6b1f2d",
+          "quote": "The Language & Development Lab at UCSD, a member of Kid Science Labs , is interested in how children learn language and develop an understanding of objects and events in the world.",
+          "sourceUrl": "https://ladlab.ucsd.edu/home",
+          "observedAt": "2026-10-16T01:03:38+00:00",
+          "bodySha256": "de56d228c2c88e96c06aa96e05a129683d280636dde60561cbf6f935f2604445"
+        }
+      ],
+      "reasonZh": "已核对既有实验室研究引证及相关主文语境；仅将原文明示how/why/what/when研究目标译成问题，不新增结论、方法或身份关系。"
+    }
+  ],
+  "scope": "Question-field draft only; no new science result, source capture, method, identity or URL acceptance."
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:52:57+00:00",
+  "status": "pass",
+  "canProceedWithExisting34CandidateScope": true,
+  "openActionableFindings": [],
+  "reviewScope": "stable repaired source, original exact counterexamples, exception/journal proof boundaries and current admission metadata",
+  "networkRequestsMade": 0,
+  "codeReceiptRecordPacketChangesByReviewer": 0,
+  "originalQAChronologyPreserved": {
+    "markdownPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-ADAPTER-QA.md",
+    "markdownSha256": "e21c7a93321275cd60c7ff24b4eda5d1f9119253a3f276ed342a559a3d3153b5",
+    "jsonPath": "/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/REMAINING-URI-ADAPTER-QA.json",
+    "jsonSha256": "75ad361282e0959756b78a147ee5d2002aaf181a6b013b8796e6de7a7770ccf1"
+  },
+  "stableSourceProof": {
+    "adapterPath": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+    "adapterSha256": "34ebac1ceaf1ba5eae5773b59099b34d993d40aa0135b9698c360a766f3ff02c",
+    "newTestsPath": "/tmp/ucsd-lab-summaries-20261016/tests/test_local_lab_original_uri_scope.py",
+    "newTestsSha256": "a74ff8b91cb26be2d5cbe69b2927369d0aa58537efc27299908e6635d18b1856",
+    "newTestCount": 30,
+    "exactCollectorSha256": "6a5d3c3b8739ad4ae2b9abeaaaa0c9e545bd677f680779691c44e94fa8e0aa82",
+    "references": {
+      "durableAttemptKeys": [
+        81,
+        87
+      ],
+      "reviewedOriginalURIAdmission": [
+        113,
+        169
+      ],
+      "wireFootprintAndTransportOutcome": [
+        392,
+        420
+      ],
+      "journalStart": 461,
+      "exceptionReceipt": 475,
+      "finallyReset": 479,
+      "pageProofGate": 488,
+      "postReceiptReraise": 498
+    }
+  },
+  "resolvedFindings": [
+    {
+      "id": "URIQA-1",
+      "status": "resolved",
+      "originalSnapshot": "19a92ccd594e4632d38e302bae8dbdf5b12b1ffe3e058ad1376140f3568685f4",
+      "recheck": "Replayed exact original queue-top-level403/authentication_required fixture. Previously live=1; fixed snapshot live=0.",
+      "actualResult": {
+        "liveCandidateCount": 0
+      },
+      "fixReference": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+        "definition": "reviewed_original_uri_observations",
+        "lines": [
+          130,
+          156
+        ]
+      }
+    },
+    {
+      "id": "URIQA-2",
+      "status": "resolved",
+      "originalSnapshot": "19a92ccd594e4632d38e302bae8dbdf5b12b1ffe3e058ad1376140f3568685f4",
+      "recheck": "Replayed exact fake RuntimeError transport fixture. Durable journal/owned wire and accurate exception item now close the next plan.",
+      "actualResult": {
+        "wireEvents": 1,
+        "completedExceptionItems": 1,
+        "nextLiveCandidateCount": 0,
+        "status": "fetch_exception",
+        "actualPageRequestMade": false,
+        "liveCheckedAt": null,
+        "inventedHttpStatusFinalUrlShaOrRedirects": false,
+        "pageCapAfterException": 2000000,
+        "originalObservationContextAfterException": null
+      },
+      "fixReference": {
+        "path": "/tmp/ucsd-lab-summaries-20261016/scripts/local_lab_summary_gaps.py",
+        "definition": "original_uri_attempt_keys / instrumented_fetcher / execute",
+        "lines": [
+          81,
+          87,
+          392,
+          500
+        ]
+      }
+    }
+  ],
+  "additionalIndependentFootprintReplays": [
+    {
+      "case": "orphan original page event only",
+      "admittedCandidates": 0,
+      "listedPageProof": false
+    },
+    {
+      "case": "orphan robots event with originalObservationUrl owner",
+      "admittedCandidates": 0,
+      "listedPageProof": false
+    },
+    {
+      "case": "journal only with zero wire events",
+      "admittedCandidates": 0,
+      "listedPageProof": false
+    }
+  ],
+  "suiteEvidence": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_local_lab*.py'",
+    "actualTestsRun": 161,
+    "actualPassed": 161,
+    "failures": 0,
+    "durationSecondsReported": 1.516,
+    "realNetworkTransportUsed": false,
+    "coveredFixedTests": [
+      "real top-level related refusal history",
+      "separate same-origin robots refusal",
+      "unrelated path refusal isolation",
+      "orphan page/robots owner/journal-only closure",
+      "RuntimeError and TimeoutExpired before wire/robots/page",
+      "KeyboardInterrupt propagation before wire/robots/page",
+      "returned original response followed by later exception",
+      "returned curl code0 vs zero-wire RetryAfterDeferred",
+      "cap and original context reset in finally",
+      "2M/8M scoped cap and unchanged300K robots"
+    ]
+  },
+  "currentAdmissionMetadata": {
+    "reviewedEntryCount": 34,
+    "admittedCandidatesWithoutPlanWrite": 34,
+    "capCounts": {
+      "2000000": 32,
+      "8000000": 2
+    },
+    "cachedOriginalHTTPRobotsDenials": 0,
+    "currentMatchingJournalStartsOrWireFootprints": 0,
+    "savedPlanLiveCount": 34,
+    "savedPlanAt": "2026-10-16T04:51:17+00:00",
+    "routeReviewSha256": "022c3ccda49ad3db58330988ee8616342b43a3ab2b1f45e12482f12f0c00981f",
+    "gapResultsSha256UnchangedByReview": "1daeca1e92e076a394d7e10b8e3a88c3c77c84b2d38ed3af1d22f10b6e9387f0",
+    "noScienceBodiesRead": true
+  },
+  "proofBoundaryConclusion": "A durable start or orphan transport closes one-shot admission but never by itself proves an actual page request. Ordinary incomplete exceptions save no invented HTTP status/final/redirect/SHA; only a returned original page transport tuple including code0, or a returned original redirect before later failure, can establish attempt proof.",
+  "executionConclusion": "The repaired code passes independent QA for the existing34 reviewed candidates, preserving normal TLS/robots/shared-v2 gate and current verification/startup hash guards; only the two already-reviewed size exceptions receive8M. This review itself executes no live request and expands no scope."
+}

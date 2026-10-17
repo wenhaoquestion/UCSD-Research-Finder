@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "status": "complete_read_only_preapply_review",
+  "passed": true,
+  "planSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+  "helperSha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+  "scope": "Independent review of the exact immutable 434-record application plan, effective reviewed inputs and offline application helper. This file is the plan/helper hash gate; it does not execute apply.",
+  "independentPlanChecks": {
+    "checkedAt": "2026-10-16T08:52:10+00:00",
+    "planSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+    "helperSha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+    "passed": true,
+    "counts": {
+      "explicitUnavailabilityRecords": 240,
+      "reviewed": 434,
+      "addRecords": 194,
+      "questionsAdded": 273,
+      "literalProofs": 273
+    },
+    "allComponentsCurrentHashesMatch": true,
+    "componentCount": 16,
+    "complete405AndPrior29Disjoint": true,
+    "all884RawBytesFrozen": true,
+    "all884PacketBytesFrozen": true,
+    "untouchedRawCount": 450,
+    "changedKeySets": {
+      "questionFieldReview,reviewedAt,uncertainty": 240,
+      "evidence,questionFieldReview,researchQuestions,reviewedAt": 194
+    },
+    "literalSourceTimeHashProofs": 273,
+    "historicalNullBodyHashProofs": [
+      {
+        "labId": "ucsd-biology-topic-lab-kevin-corbett",
+        "sourceId": "src-953a1968dd3bcea6",
+        "observedAt": "2026-10-07T22:08:57+00:00"
+      },
+      {
+        "labId": "ucsd-cellular-molecular-medicine-lab-glass-lab",
+        "sourceId": "src-603e6f8c168a931a",
+        "observedAt": "2026-10-07T22:03:48+00:00"
+      },
+      {
+        "labId": "ucsd-cellular-molecular-medicine-lab-rana-lab",
+        "sourceId": "src-30bb15a87cf6ff99",
+        "observedAt": "2026-10-07T21:47:06+00:00"
+      },
+      {
+        "labId": "ucsd-lab-from-faculty-goren-lab-github-io",
+        "sourceId": "src-25901e8b16e00852",
+        "observedAt": "2026-10-07T22:20:08+00:00"
+      },
+      {
+        "labId": "ucsd-neurosciences-lab-roy-lab",
+        "sourceId": "src-266b00f0436ae066",
+        "observedAt": "2026-10-07T22:14:38+00:00"
+      },
+      {
+        "labId": "ucsd-live-lab-bb208b550a9c23",
+        "sourceId": "src-03a47b1cbd9dc586",
+        "observedAt": "2026-10-07T21:46:26+00:00"
+      },
+      {
+        "labId": "ucsd-live-lab-e927cea65b32ba",
+        "sourceId": "src-44b61760caaace64",
+        "observedAt": "2026-10-02T22:42:07+00:00"
+      },
+      {
+        "labId": "ucsd-live-lab-977587ed98de04",
+        "sourceId": "src-46160ac8198612da",
+        "observedAt": "2026-10-07T22:01:27+00:00"
+      },
+      {
+        "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-evans-lab",
+        "sourceId": "src-819287c7dc1c3600",
+        "observedAt": "2026-10-07T22:53:49+00:00"
+      },
+      {
+        "labId": "ucsd-pharmacy-and-pharmaceutical-sciences-lab-hook-laboratory",
+        "sourceId": "src-35b31b72b4bfafd5",
+        "observedAt": "2026-10-07T22:54:07+00:00"
+      },
+      {
+        "labId": "ucsd-psychiatry-lab-telese-lab",
+        "sourceId": "src-bf0d3d4d9d0da7c0",
+        "observedAt": "2026-10-07T22:05:47+00:00"
+      }
+    ],
+    "urlSemanticChanges": [],
+    "unexpectedSummaryChanges": [],
+    "derivedObservedAtUnionChanges": [
+      {
+        "labId": "ucsd-biology-topic-lab-kevin-corbett",
+        "old": [
+          "2026-10-02T22:42:07+00:00",
+          "2026-10-16T01:04:10+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:07+00:00",
+          "2026-10-07T22:08:57+00:00",
+          "2026-10-16T01:04:10+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-cellular-molecular-medicine-lab-rana-lab",
+        "old": [
+          "2026-10-16T01:04:50+00:00",
+          "2026-10-16T01:30:41+00:00"
+        ],
+        "new": [
+          "2026-10-07T21:47:06+00:00",
+          "2026-10-16T01:04:50+00:00",
+          "2026-10-16T01:30:41+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-lab-from-faculty-goren-lab-github-io",
+        "old": [
+          "2026-10-16T01:05:04+00:00",
+          "2026-10-16T01:36:53+00:00"
+        ],
+        "new": [
+          "2026-10-07T22:20:08+00:00",
+          "2026-10-16T01:05:04+00:00",
+          "2026-10-16T01:36:53+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-neurosciences-lab-gholipour-lab",
+        "old": [
+          "2026-10-16T01:03:47+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:03:47+00:00",
+          "2026-10-16T02:40:27+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-neurosciences-lab-roy-lab",
+        "old": [
+          "2026-10-02T22:42:05+00:00",
+          "2026-10-16T01:05:10+00:00",
+          "2026-10-16T02:42:15+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:05+00:00",
+          "2026-10-07T22:14:38+00:00",
+          "2026-10-16T01:05:10+00:00",
+          "2026-10-16T02:42:15+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-pediatrics-lab-feldstein-lab",
+        "old": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T01:02:54+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T01:02:54+00:00",
+          "2026-10-16T01:33:44+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-pediatrics-lab-maltez-lab",
+        "old": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T01:02:53+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T01:02:53+00:00",
+          "2026-10-16T01:33:30+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-pediatrics-lab-zengler-lab",
+        "old": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T00:59:58+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:06+00:00",
+          "2026-10-16T00:59:58+00:00",
+          "2026-10-16T01:02:58+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-radiation-medicine-lab-rose-lab",
+        "old": [
+          "2026-10-02T22:42:11+00:00",
+          "2026-10-16T01:03:06+00:00"
+        ],
+        "new": [
+          "2026-10-02T22:42:11+00:00",
+          "2026-10-16T01:00:04+00:00",
+          "2026-10-16T01:03:06+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-komor-lab",
+        "old": [
+          "2026-10-16T01:06:15+00:00",
+          "2026-10-16T04:23:38+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:06:15+00:00",
+          "2026-10-16T01:06:20+00:00",
+          "2026-10-16T04:23:38+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-medicine-lab-bertin-lab",
+        "old": [
+          "2026-10-16T01:07:24+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:07:24+00:00",
+          "2026-10-16T01:35:52+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-medicine-lab-zuraw-lab",
+        "old": [
+          "2026-10-16T01:03:17+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:03:17+00:00",
+          "2026-10-16T01:36:01+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-pathology-lab-mana-parast-lab",
+        "old": [
+          "2026-10-16T01:05:20+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:05:20+00:00",
+          "2026-10-16T01:37:21+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-pediatrics-lab-grossfeld-lab",
+        "old": [
+          "2026-10-16T01:02:55+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:02:55+00:00",
+          "2026-10-16T01:33:50+00:00"
+        ]
+      },
+      {
+        "labId": "ucsd-live-lab-a4f6662f2b69d3",
+        "old": [
+          "2026-10-16T01:00:30+00:00"
+        ],
+        "new": [
+          "2026-10-16T01:00:30+00:00",
+          "2026-10-16T01:00:39+00:00"
+        ]
+      }
+    ],
+    "effectiveReviewRevisions": [
+      96,
+      154,
+      160,
+      161,
+      213,
+      306,
+      309,
+      380
+    ],
+    "dependencies": {
+      "scripts/local_lab_summaries.py": "e0a254c2c749f4cceb69b0ebc307380e69427542760a43e72562ff2404326c6b"
+    },
+    "errors": []
+  },
+  "actualPrimaryByteChecks": {
+    "checkedAt": "2026-10-16T08:52:44+00:00",
+    "distinctQuestionSources": 192,
+    "counts": {
+      "actualBytesHashMatch": 181,
+      "historicalNullBodyHash": 11
+    },
+    "exceptions": [],
+    "manifestSha256": "0643a2c285eb8055255c51b61a1487e5369c5fe80264f7617ff005917a5a5553",
+    "all884ManifestRawPacketIdSetsMatch": true
+  },
+  "offlineInMemoryApplyChecks": {
+    "checkedAt": "2026-10-16T08:53:40+00:00",
+    "planSha256": "58d1eed9436f742a0a37c6a3cba0592c2869b6287cecc803c0d23345ae5ee2cf",
+    "helperSha256": "097076be5f33eeaa24136d0412d76f2a100e73e8a6e5a3424dbd1edcbce6e10d",
+    "simulation": "Exact helper apply function with all reads/writes/digests/snapshots for mutable application state replaced by in-memory objects; current component files only read for hash checks. No physical helper apply or journal write.",
+    "scenarios": [
+      {
+        "name": "normal_complete",
+        "passed": true,
+        "firstPassException": null,
+        "memoryWritesBeforeRestart": 869,
+        "resumed": false,
+        "physicalWrites": 0
+      },
+      {
+        "name": "ordinary_exception_after_record",
+        "passed": true,
+        "firstPassException": "RuntimeError",
+        "memoryWritesBeforeRestart": 1,
+        "resumed": true,
+        "physicalWrites": 0
+      },
+      {
+        "name": "hard_interrupt_after_record",
+        "passed": true,
+        "firstPassException": "KeyboardInterrupt",
+        "memoryWritesBeforeRestart": 1,
+        "resumed": true,
+        "physicalWrites": 0
+      },
+      {
+        "name": "ordinary_exception_after_journal",
+        "passed": true,
+        "firstPassException": "RuntimeError",
+        "memoryWritesBeforeRestart": 2,
+        "resumed": true,
+        "physicalWrites": 0
+      },
+      {
+        "name": "guard_rejects_stale_record",
+        "passed": true,
+        "firstPassException": "AssertionError",
+        "memoryWritesBeforeRestart": 0,
+        "resumed": false,
+        "physicalWrites": 0
+      },
+      {
+        "name": "guard_rejects_stale_component",
+        "passed": true,
+        "firstPassException": "AssertionError",
+        "memoryWritesBeforeRestart": 0,
+        "resumed": false,
+        "physicalWrites": 0
+      },
+      {
+        "name": "guard_rejects_stale_helper",
+        "passed": true,
+        "firstPassException": "AssertionError",
+        "memoryWritesBeforeRestart": 0,
+        "resumed": false,
+        "physicalWrites": 0
+      },
+      {
+        "name": "guard_rejects_stale_packet",
+        "passed": true,
+        "firstPassException": "AssertionError",
+        "memoryWritesBeforeRestart": 0,
+        "resumed": false,
+        "physicalWrites": 0
+      },
+      {
+        "name": "guard_rejects_stale_untouched",
+        "passed": true,
+        "firstPassException": "AssertionError",
+        "memoryWritesBeforeRestart": 0,
+        "resumed": false,
+        "physicalWrites": 0
+      }
+    ],
+    "scenarioCount": 9,
+    "passed": true,
+    "physicalWrites": 0,
+    "networkRequests": 0
+  },
+  "independentHelperQA": {
+    "path": "data/local-lab-summaries/REMAINING-QUESTION-MIGRATION-HELPER-INDEPENDENT-QA.json",
+    "sha256": "d3f50a188008f00a0236752c2bd4a9bffc2470c47e2f201f0fea7e7baf60966a",
+    "passed": true,
+    "scenarioCount": 6
+  },
+  "reviewedInputBindings": {
+    "inventory405": "3800eb1f2b2f86e175ada0a1f735238771f54b07bcf0f8bdd01433178fd94e44",
+    "prior29Inventory": "d9c7ca4fb9fa09c29460d4c9549fc6f8296bf3ab1932cc730d43fa3ad2858e94",
+    "midrangeAddendum": "74e1d8890204e9c83c57be5e49bd113839ee40bee895d61ce02b9d7dab2149cb",
+    "mesirovAddendum": "3aa7f78aeb9bc9464074969524e4beb5cd3828558004ee360655e16a9d4cb50e",
+    "scopeRevisions": "df38a162df6e98571d914706d8f0a8207345ae320b609a1b8933dd42285131d4",
+    "prior29Coverage": "Parent report intentionally contains only recheck0..8; separate9..28 report completes the exact29 unique IDs. Separate QA files cover both ranges. The parent report in_progress top-level is not interpreted as a claim to have read the other20."
+  },
+  "semanticEffectiveReview": [
+    {
+      "reviewIndex": 96,
+      "result": "pass",
+      "reasonZh": "已重新读取完整当前packet Mesirov具名实验室主文；find molecular markers为明确目标，中文保留癌症及辅助诊断、预后、治疗范围，不借另一ID也不声称标记已临床有效。"
+    },
+    {
+      "reviewIndex": 154,
+      "result": "pass",
+      "reasonZh": "与261完全同sourceId、原日期/哈希及明确Lewis lab通路调控目标；分别绑定各自packet，不合并或迁移URL。"
+    },
+    {
+      "reviewIndex": 160,
+      "result": "pass",
+      "reasonZh": "over epithelia收窄为上皮上的，未增加跨屏障移动。"
+    },
+    {
+      "reviewIndex": 161,
+      "result": "pass",
+      "reasonZh": "Q3 contribute to改促成，Q1 causes仍译引起，因果强度区分正确。"
+    },
+    {
+      "reviewIndex": 213,
+      "result": "pass",
+      "reasonZh": "问题字段明确以往研究关注，保持Previous work范围。"
+    },
+    {
+      "reviewIndex": 306,
+      "result": "pass",
+      "reasonZh": "原early/late proximal tubule改解剖早段/晚段，非病程阶段。"
+    },
+    {
+      "reviewIndex": 309,
+      "result": "pass",
+      "reasonZh": "连续同源引文包含KMF命名、模型及通路目标，问题加KMF卵巢癌模型限定。"
+    },
+    {
+      "reviewIndex": 380,
+      "result": "pass",
+      "reasonZh": "第二问保留原文啮齿类动物及TBI/精神分裂症模型，其他两问原范围保持。"
+    }
+  ],
+  "invariants": {
+    "allAndOnly434SupportedEmptyQuestionRecords": true,
+    "review405AndPrior29CompleteDisjoint": true,
+    "all16CurrentComponentHashesMatch": true,
+    "all884RawCurrentBytesMatchPlanBefore": true,
+    "all884PacketBytesMatchPlanBefore": true,
+    "untouched450RawByteHashesFrozen": true,
+    "planned194ChangesOnly": [
+      "researchQuestions",
+      "evidence",
+      "questionFieldReview",
+      "reviewedAt"
+    ],
+    "planned240ChangesOnly": [
+      "uncertainty",
+      "questionFieldReview",
+      "reviewedAt"
+    ],
+    "oldEvidencePrefixesPreserved": true,
+    "oldUncertaintyPrefixesPreserved": true,
+    "previousScientificReviewTimeStoredExactly": true,
+    "all273QuestionProofSourceTimesPreserved": true,
+    "allHydratedURLSemanticFieldsEqual": true,
+    "allHydratedOtherScientificFieldsEqual": true,
+    "entityIdentityAffiliationPIURLsMethodsTopicsSummaryStatusAndBlockersPreserved": true,
+    "noAutomaticIdentityAcceptanceOrAlias": true
+  },
+  "applicationRecoveryReviewZh": "helper只在独立QA passed且plan/helper/components精确hash匹配时执行；先冻结884packet和450非目标raw，每条目标raw仅允许oldSha或newSha。m.atomic写同目录临时文件、flush/fsync后os.replace；写record后才记journal。record已成功而journal未写的中断可按newSha恢复并标recoveredAfterRecordWrite。journal已持久化的条目跳过重复写；第三种raw哈希/变化的输入会拒绝。完整434条旧新对象保存在immutable plan中。应用是逐条原子checkpoint，不是434条全局事务；任何后续完整projection/validation仍由owner执行。",
+  "limitationsZh": [
+    "本轮在已钉住的逐段独立语义QA基础上审应用组合、有效patch及全部字段不变量；没有冒称重新读完434条全部来源正文。midrange135条与prior29后20条此前为本审阅者逐项语义研究，Mesirov目标本轮再次完整读主文。",
+    "11个历史question proof原bodySha256=null，保留真实10/02或10/07日期，不伪造原HTML核验；其余181个独立question source的实际缓存字节hash均匹配，合计192个独立来源。",
+    "15条summary.observedAt引用日期集合因新增引用已存在的真实source而扩展；这是证据日期集合，非重写原捕获时间或产生新capture。packet/原根检查日期和原URL均冻结。",
+    "纯内存恢复模拟没有调用生产m.atomic、没有真实record/journal写入；只对exact helper apply控制流及guard作故障注入。此helper不在430生产suite内，独立模拟9项均通过，另560独立6项均通过。"
+  ],
+  "findings": [],
+  "openIssues": [],
+  "networkRequestsMade": 0,
+  "psChecks": 0,
+  "actualRawPacketPlanJournalCodeCollectorSharedWrites": 0,
+  "reviewedAt": "2026-10-16T08:55:00+00:00"
+}

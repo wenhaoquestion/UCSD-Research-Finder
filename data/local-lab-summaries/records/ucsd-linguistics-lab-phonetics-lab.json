@@ -1,0 +1,112 @@
+{
+  "labId": "ucsd-linguistics-lab-phonetics-lab",
+  "status": "supported",
+  "summaryZh": "UCSD Phonetics Lab 研究成年人的语音发音、声学、感知与模式组织。页面列有隔音室录音、电声门图、气流与气压测量，以及用于语音感知实验的眼动追踪能力。",
+  "researchQuestions": [
+    "成人语音的发音、声学、感知与模式组织具有哪些特征？"
+  ],
+  "topics": [
+    "成人语音产生与感知",
+    "语音声学及模式组织"
+  ],
+  "methods": [
+    "隔音室语音录音",
+    "电声门图（间接测量声带接触）",
+    "气流与气压测量",
+    "语音感知实验中的眼动追踪"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-4e03d591f5107907",
+      "quote": "Phonetics Lab",
+      "supports": [
+        "identity",
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-997eb2f9147bba79",
+      "quote": "Welcome to UCSD’s Phonetics Lab!",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-997eb2f9147bba79",
+      "quote": "The focus of the laboratory is to study sound articulation, acoustics, perception, and patterning in adults.",
+      "supports": [
+        "research",
+        "topics"
+      ]
+    },
+    {
+      "sourceId": "src-997eb2f9147bba79",
+      "quote": "The lab is currently equipped with a sound booth for high-quality audio recordings, electroglottography for measuring indirect vocal fold contact, a system for measuring airflow and air pressure, and an eye-tracker for speech perception experiments.",
+      "supports": [
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-997eb2f9147bba79",
+      "quote": "UCSD Linguistics Department",
+      "supports": [
+        "affiliation"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "本次独立HTTP捕获正文直接具名实验室且陈述实验室研究，与原官方实验室目录条目一致；保留稳定ID和原始HTTPS检查。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "新HTTP正文明确UCSD Phonetics Lab及UCSD Linguistics Department；来源无内容日期，不据采集时间确认带日期的当前隶属。"
+  },
+  "uncertainty": [
+    "页面列举的是设备与测量能力，无日期的currently equipped不证明2026年每项设备仍可用。",
+    "Footer2013并非研究更新时间；来源未具名PI，现任负责人仍未知。",
+    "原始HTTPS404保留；本次HTTP成功是独立相关捕获，没有HTTP重定向或HTTPS恢复证据。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T06:07:26+00:00",
+  "previousRecordBeforeRelatedHTTPCacheReview": {
+    "labId": "ucsd-linguistics-lab-phonetics-lab",
+    "status": "unresolved",
+    "summaryZh": "Phonetics Lab 的官方目录或历史记录仍在，但目的页本次未获得可用研究正文。现有材料仅支持身份线索，不能据抓取失败判断实验室关闭。",
+    "researchQuestions": [],
+    "topics": [],
+    "methods": [],
+    "evidence": [
+      {
+        "sourceId": "src-4e03d591f5107907",
+        "quote": "Phonetics Lab",
+        "supports": [
+          "identity",
+          "affiliation"
+        ]
+      }
+    ],
+    "identity": {
+      "status": "confirmed",
+      "entityType": "lab",
+      "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+    },
+    "affiliation": {
+      "status": "source_reported",
+      "reason": "匹配 UCSD 官方实验室目录历史条目。"
+    },
+    "uncertainty": [
+      "所审阅来源未明确说明研究方法。",
+      "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+    ],
+    "blockers": [
+      "Destination http_error; no adequate research description in packet."
+    ],
+    "reviewedAt": "2026-10-16T01:53:40+00:00"
+  },
+  "researchContentSupport": {
+    "status": "explicit_named_lab_from_related_http_capture",
+    "scope": "Only direct named-lab research/technique prose in actual cached HTTP body; original listed HTTPS404 remains independent and unverified."
+  }
+}

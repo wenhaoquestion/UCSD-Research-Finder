@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T04:08:29+00:00",
+  "status": "metadata_and_scientific_review_complete",
+  "metadataPassed": true,
+  "errors": [],
+  "counts": {
+    "rootDeltaPackets": 30,
+    "exactOriginalMetadataMatches": 30,
+    "robotsOnlyPrechecksNoPageNewLiveOrVerified": 23,
+    "newOKSourcesByteHashVerified": 7,
+    "oldSourcesPrefixPreserved": 30,
+    "rawRecordsByteIdenticalToBeforeRefresh": 30,
+    "packetPreparedAtPreserved": 30,
+    "unresolvedMismatches": 13,
+    "unresolvedMismatchesAccepted": 0,
+    "networkRequestsMade": 0,
+    "scientificContentModelReviews": 0,
+    "HTMLContentReads": 0,
+    "newRawBodyByteHashesOnly": 7
+  },
+  "referenceProof": {
+    "preRefreshGitRef": "85b7fbd",
+    "packetRefreshReceipt": "/private/tmp/ucsd-lab-summaries-20261016/data/local-lab-summaries/cache-delta-packet-refresh-20261016-0405.json",
+    "packetRefreshReceiptSha256": "a3d75f8566fd8211cac83732ca841c6ff4922d58fea9794cb2523cb9653fe7ce",
+    "collectorQueueSnapshotReadAt": "2026-10-16T04:08:25+00:00",
+    "collectorQueueJsonSha256AtAudit": "14f08c3228b6e01149912845bd0dc8ceb783ffffa5a9fb219ce671b4dcbd650e"
+  },
+  "phaseBoundary": "Phase1 is provenance/metadata/byte-integrity verification only. None of the seven new scientific bodies has been model-reviewed in this phase; author results and independent phase2 remain pending. Comparing prior raw/source bytes is not scientific content review.",
+  "pendingContentReviewLabIds": [],
+  "items": [
+    {
+      "ordinal": 32,
+      "labId": "ucsd-lab-from-faculty-sung-lab-eng-ucsd-edu",
+      "listedUrl": "http://sung-lab.eng.ucsd.edu/",
+      "actualTargetUrl": "https://sung-lab.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:32+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "related_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://sung-lab.eng.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://sung-lab.eng.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "0cb8e21d465b7cecf28a99fd048165b3ae6af959291e06e2e89f08818a6e40a5",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 4,
+      "newSourceCount": 4,
+      "preparedAtPreserved": "2026-10-16T03:40:05+00:00",
+      "packetSha256AtMetadataAudit": "157d4854b04bf8605450d642c2134abec5ddac2d091e154b322080d885e51c97",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 33,
+      "labId": "ucsd-biology-topic-lab-andrew-muroyama",
+      "listedUrl": "https://muroyamalab.biosci.ucsd.edu",
+      "actualTargetUrl": "https://muroyamalab.biosci.ucsd.edu/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://muroyamalab.biosci.ucsd.edu/",
+      "redirectChain": [],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-4c17d2b53a3645c1",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://muroyamalab.biosci.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://muroyamalab.biosci.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "1929fc46095aa274683823a60b4c15738eb1acb09d6f892753be24aa4a2a02f8",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:05+00:00",
+      "packetSha256AtMetadataAudit": "e991cabdee894d8fc82cdad7042b93a173bbe1d33298968a62468690bfb57922",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-4c17d2b53a3645c1",
+        "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "requestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "checkedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "queueUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/49bbf7c828c76efbb13feef0d97b1c20bd2647b89e9b6ba3cf8d97dddb12fcbe.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 35,
+      "labId": "ucsd-biology-topic-lab-axel-nimmerjahn",
+      "listedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+      "actualTargetUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+      "redirectChain": [
+        {
+          "from": "https://www.salk.edu/scientist/axel-nimmerjahn",
+          "to": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+          "httpStatus": 301
+        }
+      ],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-f8b1728f4e2e382c",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "0640700586ba1d7f4a066d913897e63d31b9d50e847fdd61e65bdc35a3c3caa0",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:05+00:00",
+      "packetSha256AtMetadataAudit": "4db59b4069c6529d804b30bd61a4045d4c48843bfa6a8a4178fb16379f1d3785",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-f8b1728f4e2e382c",
+        "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+        "requestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "checkedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "queueUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/913a247ead89b8edd84cd59fd7832dba9a88a7cbfee20db4f93765911d9513c1.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 36,
+      "labId": "ucsd-biology-topic-lab-barry-grant",
+      "listedUrl": "http://thegrantlab.org",
+      "actualTargetUrl": "http://thegrantlab.org/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:24+00:00",
+      "httpStatus": 200,
+      "finalUrl": "http://thegrantlab.org/",
+      "redirectChain": [],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-a53c90d169459382",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://thegrantlab.org/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://thegrantlab.org/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "3dbfe5608417ba142392b007a0cfb63fe109546714dc97ecd329000abc46a908",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:05+00:00",
+      "packetSha256AtMetadataAudit": "8fcb8e21b15e71c254ce78b69c6c4c4cf9f123039563b22e9fa5ee632670c898",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-a53c90d169459382",
+        "sourceUrl": "http://thegrantlab.org/",
+        "requestedUrl": "http://thegrantlab.org/",
+        "checkedUrl": "http://thegrantlab.org/",
+        "queueUrl": "http://thegrantlab.org/",
+        "observedAt": "2026-10-16T03:47:24+00:00",
+        "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/4655034fed2808e989193501d99f7db8f7fa17e75ec02656f7e15eef8d1f6633.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 69,
+      "labId": "ucsd-biology-topic-lab-hwa-lab",
+      "listedUrl": "https://matisse.ucsd.edu/",
+      "actualTargetUrl": "https://matisse.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:19+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://matisse.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://matisse.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "82df02d8371d18547635682e6e318c7f346e14c78cad1916d98c1c83d6b6bb14",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:05+00:00",
+      "packetSha256AtMetadataAudit": "d7f0a09598c46c9dc0830ea2fb1948539df7956e3044b527a3916b74f3f95fcb",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 116,
+      "labId": "ucsd-biology-topic-lab-roy",
+      "listedUrl": "https://roylab.biosci.ucsd.edu",
+      "actualTargetUrl": "https://roylab.biosci.ucsd.edu/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:25+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://roylab.biology.ucsd.edu/",
+      "redirectChain": [
+        {
+          "from": "https://roylab.biosci.ucsd.edu/",
+          "to": "https://roylab.biology.ucsd.edu/",
+          "httpStatus": 301
+        }
+      ],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-ef21a4f6fd81f0a6",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://roylab.biosci.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://roylab.biosci.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "013c051b2fb527d5718388be1c6d6c5ac4943ae656e70648ec5cea871200474e",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "871239dcab2941066ae745d3664d08ce10cb600413c4c5377e68caa75a3a1947",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-ef21a4f6fd81f0a6",
+        "sourceUrl": "https://roylab.biology.ucsd.edu/",
+        "requestedUrl": "https://roylab.biosci.ucsd.edu/",
+        "checkedUrl": "https://roylab.biosci.ucsd.edu/",
+        "queueUrl": "https://roylab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:25+00:00",
+        "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/e4e2430a6a981732911ba6112ebe3138b68bb391c022870a56305ab61565a0ba.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 117,
+      "labId": "ucsd-lab-from-faculty-russell-lab-com",
+      "listedUrl": "https://www.russell-lab.com/",
+      "actualTargetUrl": "https://www.russell-lab.com/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:26+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.russell-lab.com/",
+      "redirectChain": [],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-5e3a018cefd1f8a7",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://www.russell-lab.com/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://www.russell-lab.com/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "6a1a10ea77a663c135faafddeb82829c6d488fc71fddfb2e97077f337620378d",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "e915db2057da203dd4fdf6605ff61e4ba8a769fff09b8ef0bd991d51ddaa9ce6",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-5e3a018cefd1f8a7",
+        "sourceUrl": "https://www.russell-lab.com/",
+        "requestedUrl": "https://www.russell-lab.com/",
+        "checkedUrl": "https://www.russell-lab.com/",
+        "queueUrl": "https://www.russell-lab.com/",
+        "observedAt": "2026-10-16T03:47:26+00:00",
+        "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/8f8d1da4503bd362a2a9783c8a06e7ca547f9c35ffb222919e9ce0a7f85b0675.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 119,
+      "labId": "ucsd-biology-topic-lab-saier",
+      "listedUrl": "https://saierlab.biosci.ucsd.edu",
+      "actualTargetUrl": "https://saierlab.biosci.ucsd.edu/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:47:27+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://saierlab.biosci.ucsd.edu/",
+      "redirectChain": [],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-a122b7ee4c4707e9",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://saierlab.biosci.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://saierlab.biosci.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "8036f9a6f48bb560daf2a7a7a98934ef0c572ca3f5d1abc3580a948227af8e27",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "e0bd41edaedbb0ddd6c1417318f088b322f6b9bacb9ac0a2c758b54db676d271",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-a122b7ee4c4707e9",
+        "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+        "requestedUrl": "https://saierlab.biosci.ucsd.edu/",
+        "checkedUrl": "https://saierlab.biosci.ucsd.edu/",
+        "queueUrl": "https://saierlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:47:27+00:00",
+        "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/72587ea607aea5c0cfb5f665ddf2c56e588e8cc7c55fa783d7b3f02e2c7083d8.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 121,
+      "labId": "ucsd-biology-topic-lab-scott-biering",
+      "listedUrl": "https://bieringlab.biosci.ucsd.edu",
+      "actualTargetUrl": "https://bieringlab.biosci.ucsd.edu/",
+      "status": "ok",
+      "observedAt": "2026-10-16T03:57:30+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://bieringlab.biosci.ucsd.edu/",
+      "redirectChain": [],
+      "checkScope": "listed_url_direct_request",
+      "pageRequestProven": true,
+      "newSourceId": "src-7f324059177c4a9a",
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://bieringlab.biosci.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://bieringlab.biosci.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "6b75189871ad121fd981c1365c394dd4d10e4a569b2dfe4aded97ff5088643e0",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "55117b6adb90f51e901de8e40038c420598290a310bcd090dcfa670a52015d04",
+      "sourceContentModelReviewedInThisPhase": false,
+      "newSourceMetadata": {
+        "sourceId": "src-7f324059177c4a9a",
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "requestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "checkedUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "queueUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T03:57:30+00:00",
+        "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/48b33698b55f664271c111a4149e82063a89569ec8b056585609ade8852734d8.html",
+        "captureOrigin": "collection_cache_reuse",
+        "role": "listed_lab_destination"
+      },
+      "cachedBytesSHA256Verified": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+      "modelReviewPending": true
+    },
+    {
+      "ordinal": 134,
+      "labId": "ucsd-biology-topic-lab-traver",
+      "listedUrl": "https://traverlab.biosci.ucsd.edu",
+      "actualTargetUrl": "https://traverlab.biosci.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:49+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://traverlab.biosci.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://traverlab.biosci.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "bc74d4802cb8b39b82dc51cb127efa13278a795ac86625f5322cd797cfd92ddd",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 0,
+      "newSourceCount": 0,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "ec4a18eafa4ced628e98493d63b3c1867bbfbab0e5c83e37e2a93e754759d237",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 173,
+      "labId": "ucsd-lab-from-faculty-web-mac-com-molinski-lab-molinski-lab",
+      "listedUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+      "actualTargetUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:35+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://web.mac.com/molinski_lab/Molinski_Lab",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "12fb55d4deb49eb8dae6d578fe4395b56dde089b7286750f0356e645bd7353c6",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 5,
+      "newSourceCount": 5,
+      "preparedAtPreserved": "2026-10-16T03:40:06+00:00",
+      "packetSha256AtMetadataAudit": "db8524c38c9b056e452c7604275d1d4ab22796c4a2fbc130eb50dae8cc4474ff",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 197,
+      "labId": "ucsd-electrical-and-computer-engineering-lab-statistical-visual-computing-laboratory",
+      "listedUrl": "https://www.svcl.ucsd.edu/",
+      "actualTargetUrl": "https://www.svcl.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:20+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://www.svcl.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://www.svcl.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "e263f4690af34895f832ac4481d09ce6538be5b7ef286dc92990b6034f33fc68",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:07+00:00",
+      "packetSha256AtMetadataAudit": "8581d0e095e3a2e06a935775f893c19e32b7ccf63a378685829058c2aaf1f276",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 198,
+      "labId": "ucsd-electrical-and-computer-engineering-lab-translational-neuroengineering-lab",
+      "listedUrl": "https://neuro.eng.ucsd.edu",
+      "actualTargetUrl": "https://neuro.eng.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:00+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://neuro.eng.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://neuro.eng.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "c2e5efa41effdd64394274dad5aa3c59dd09b8bd374709a271ab1fa17138e342",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:07+00:00",
+      "packetSha256AtMetadataAudit": "296b8c9bf24da85307bd4a9994ec11bde58e8ef8f62a001b1d0807aaecec5a03",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 317,
+      "labId": "ucsd-pediatrics-lab-barshop-lab",
+      "listedUrl": "https://biochemgen.ucsd.edu/",
+      "actualTargetUrl": "https://biochemgen.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:00+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://biochemgen.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://biochemgen.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "ea948bb1dd02dfc4035cc8bf6abd3fe60b6c550a4c99ee5f0abe3bc418390a91",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:09+00:00",
+      "packetSha256AtMetadataAudit": "c56f4828e0fccefbe282acea2d24613660623aa85c0b4b498af4a3ad6da9012a",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 318,
+      "labId": "ucsd-pediatrics-lab-bode-lab",
+      "listedUrl": "http://www.bodelab.com/",
+      "actualTargetUrl": "http://www.bodelab.com/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:54:58+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://www.bodelab.com/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://www.bodelab.com/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "4be6fcb54c1b289bd8b66bab1fe57e023ea371749349ed8135cb042fe1363a93",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 3,
+      "newSourceCount": 3,
+      "preparedAtPreserved": "2026-10-16T03:40:09+00:00",
+      "packetSha256AtMetadataAudit": "bc55e220994ce22c2896b7d9c95c66ad0e2fdcde79a8538d88abd793d2817df4",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 323,
+      "labId": "ucsd-pediatrics-lab-croker-lab",
+      "listedUrl": "https://www.crokerlab.com/",
+      "actualTargetUrl": "https://www.crokerlab.com/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:37+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://www.crokerlab.com/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://www.crokerlab.com/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "aabe5e0e7ee2b372ff94a1f6a0c5672a0aced1f8be8c6c0535ad7179ce6075f8",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:09+00:00",
+      "packetSha256AtMetadataAudit": "2a003d7fad0f1a83c599621c0adbb8ccd5d16a0ebd486986efb11331ccace018",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 365,
+      "labId": "ucsd-physics-research-site-julio-barreiro",
+      "listedUrl": "https://barreirolab.ucsd.edu/",
+      "actualTargetUrl": "https://barreirolab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:39+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://barreirolab.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://barreirolab.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "42246814332983dfb8d8c05bbb3dc56f10aa2341278b3ce4abc9e9dcc9cab6bb",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:09+00:00",
+      "packetSha256AtMetadataAudit": "ea2dafbda5a44491ac07cf3a48cb4f14d66a715fbeae4bc773a44df8e6871848",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 401,
+      "labId": "ucsd-psychiatry-lab-nievergelt-maihofer-psychiatric-genomics-lab",
+      "listedUrl": "https://nievergeltlab.ucsd.edu/",
+      "actualTargetUrl": "https://nievergeltlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:22+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://nievergeltlab.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://nievergeltlab.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "a22fa73d15b8786e931e147a3586e48fa34ecaa1f73ded3c457671a3a34fd88e",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:10+00:00",
+      "packetSha256AtMetadataAudit": "b871581c89d6ac4f1cbb474470b776f21b56f1f92f55c0f567c37f10fca71c84",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 518,
+      "labId": "ucsd-live-lab-98174ce75b39b1",
+      "listedUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+      "actualTargetUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:45+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://juchenlab.ucsd.edu/homepage.htm",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "2a49c037f5573a23fd8ee3862ac6f0a14fef241c2d65815408dfff696fe4bcf9",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:12+00:00",
+      "packetSha256AtMetadataAudit": "432b1d2696ec8bfdcc6e1cb04a6261c0454753247a6a49ff2088c0dfeda4f0a7",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 527,
+      "labId": "ucsd-live-lab-5c058fcd61d15f",
+      "listedUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+      "actualTargetUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:28+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://genome-tech.ucsd.edu/ZhangLab/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "68173e019c7f16c889246e00f3444b192a6dc8b0ccd5ac9eb87d8e62d31cbaa6",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:13+00:00",
+      "packetSha256AtMetadataAudit": "9056826a48ba77c850ce67a6392c60f82b09747446e3b9ede432fdcf747b7f0b",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 574,
+      "labId": "ucsd-live-lab-55424aea242e83",
+      "listedUrl": "https://sicl.ucsd.edu/",
+      "actualTargetUrl": "https://sicl.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:23+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://sicl.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://sicl.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "758f5070e9a999e2e63612c2cbba2bd317729e5278dffcca1f49c06477ca5d6b",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:14+00:00",
+      "packetSha256AtMetadataAudit": "6ab0a5a7026808d680fe79cb0976f182a60042d906d20c1d3670a9387ccce8fc",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 593,
+      "labId": "ucsd-live-lab-11396e2a4edb16",
+      "listedUrl": "http://dnitz.com/",
+      "actualTargetUrl": "http://dnitz.com/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:45+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://dnitz.com/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://dnitz.com/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "e63d94780b296bd4a11e0e6997a8992a51ea7b2cc7572dc83f8b43cc06256ab8",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:14+00:00",
+      "packetSha256AtMetadataAudit": "7150d232727c347c9d15b7f852390086beb9029d08b33174b1574e5999154d6d",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 620,
+      "labId": "ucsd-live-lab-cd8819aec34b38",
+      "listedUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+      "actualTargetUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:45+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://edithealthsciences.ucsd.edu/som/cmm/research/labs/hamilton/Pages/default.aspx",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "3ee3b8ad69046e38f9513e63093be05bc42e1fd7fbca6def373f1d0664546e7b",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:14+00:00",
+      "packetSha256AtMetadataAudit": "f5072d9d3ea067c24e9d6d4deb98ca116e0b9650cd708185aaae97bca33e2381",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 636,
+      "labId": "ucsd-live-lab-7c03bec7416f6a",
+      "listedUrl": "https://ginsberglab.ucsd.edu/",
+      "actualTargetUrl": "https://ginsberglab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:45+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://ginsberglab.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://ginsberglab.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "c3d8a05c691bd3890b459ebcc407a36dedaecea4f44c5bb3f4f64c23d3ec6cbf",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:14+00:00",
+      "packetSha256AtMetadataAudit": "5f303c3a15a8732015086a8fa83a020e00c77df5ba43a4a5019e59f33ec91685",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 643,
+      "labId": "ucsd-live-lab-5ead21eb34ab92",
+      "listedUrl": "http://bryanlabsite.edu/",
+      "actualTargetUrl": "http://bryanlabsite.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:45+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://bryanlabsite.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://bryanlabsite.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "4fd50a59986e961fd7e54dcc9cc85fcc9a12f14feb942b232221b14d5ae3a167",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:14+00:00",
+      "packetSha256AtMetadataAudit": "96008471f77fa5157a4f67740d05ed200bb2c91474e0a68f0f172fd92965edfb",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 673,
+      "labId": "ucsd-live-lab-4de94a86bcdd38",
+      "listedUrl": "https://nievergelt.ucsd.edu/",
+      "actualTargetUrl": "https://nievergelt.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:50:01+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://nievergelt.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://nievergelt.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "1829bde26fd54c683e8d4b8cd5ea50782c0b4dc71ffc048f4c388de2370fb12d",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:15+00:00",
+      "packetSha256AtMetadataAudit": "8842b6458741f13769f195d6ae9569d16da25bec415069d8d953f52ed049273d",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 676,
+      "labId": "ucsd-live-lab-c4c7878f997535",
+      "listedUrl": "http://www.bipolar-aging.com/home",
+      "actualTargetUrl": "http://www.bipolar-aging.com/home",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:47+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "http://www.bipolar-aging.com/home",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "http://www.bipolar-aging.com/home",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "f14b0dda03c4ae5709a337aeb6835d483d9fd9155c49424d3d48ff1cdeedd542",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 1,
+      "newSourceCount": 1,
+      "preparedAtPreserved": "2026-10-16T03:40:15+00:00",
+      "packetSha256AtMetadataAudit": "f5b8ffc05db6197f63d8fa348cede4cee6fe3a710099dd27b17bf2ca12f43309",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 709,
+      "labId": "ucsd-chemistry-biochemistry-lab-tezcan-lab",
+      "listedUrl": "http://tezcan.ucsd.edu",
+      "actualTargetUrl": "https://tezcan.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:28+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "related_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://tezcan.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://tezcan.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "6fbe94333c9c6941b08031df00fcc82f9d1f86a360324c6857f689a0a147cc3a",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 3,
+      "newSourceCount": 3,
+      "preparedAtPreserved": "2026-10-16T03:40:15+00:00",
+      "packetSha256AtMetadataAudit": "5c60bb5bd83f413943e5fd9ec06890ed809db1bae8c2250fabbb2f7d9cee48b3",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 748,
+      "labId": "ucsd-medicine-lab-bazhenov-lab",
+      "listedUrl": "https://www.bazhlab.ucsd.edu/",
+      "actualTargetUrl": "https://www.bazhlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:09+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "listed_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://www.bazhlab.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://www.bazhlab.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "aa754d617d095a01f50897bb9a0924e924bd408130c7f1f1fe0c7c575ee23af1",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 2,
+      "newSourceCount": 2,
+      "preparedAtPreserved": "2026-10-16T03:40:16+00:00",
+      "packetSha256AtMetadataAudit": "bd764485916e7ed19e7fbdf514974b4f779719574a47ef6103dc3144ea75d87f",
+      "sourceContentModelReviewedInThisPhase": false
+    },
+    {
+      "ordinal": 861,
+      "labId": "ucsd-cognitive-science-lab-cognitive-neuroscience-and-neuropsychology-lab",
+      "listedUrl": "http://sayginlab.ucsd.edu/",
+      "actualTargetUrl": "https://sayginlab.ucsd.edu/",
+      "status": "robots_unavailable",
+      "observedAt": "2026-10-16T03:49:47+00:00",
+      "httpStatus": null,
+      "finalUrl": null,
+      "redirectChain": [],
+      "checkScope": "related_url_access_precheck_only",
+      "pageRequestProven": false,
+      "newSourceId": null,
+      "exactOriginalQueueMatches": [
+        {
+          "queueUrl": "https://sayginlab.ucsd.edu/",
+          "matchKind": "latest_fetch"
+        },
+        {
+          "queueUrl": "https://sayginlab.ucsd.edu/",
+          "matchKind": "retained_attemptHistory"
+        }
+      ],
+      "rawBytesUnchangedAtThisMetadataAudit": true,
+      "rawSha256AtMetadataAudit": "afc2909f2e7e9c09e96b8079a0bd5e6f5b4cc299db18091250956b691fe218be",
+      "oldSourcesExactPrefix": true,
+      "oldSourceCount": 3,
+      "newSourceCount": 3,
+      "preparedAtPreserved": "2026-10-16T03:40:17+00:00",
+      "packetSha256AtMetadataAudit": "ca0788d26f0f55555b0158dbf7622543de0081f97b1ce6e2f3d81c8de7c08897",
+      "sourceContentModelReviewedInThisPhase": false
+    }
+  ],
+  "phase2": {
+    "reviewedAt": "2026-10-16T04:13:24+00:00",
+    "status": "complete",
+    "passed": true,
+    "errors": [],
+    "scope": "Independent full-source scientific review of only seven regained roots, plus final raw literal evidence/identity/affiliation/actual-capture metadata. Distinct from earlier phase1 metadata-only review.",
+    "counts": {
+      "fullScientificSourcesModelRead": 7,
+      "fullVisibleCharactersRead": 16534,
+      "unresolvedToSupportedUpgradesVerified": 7,
+      "labEntities": 6,
+      "researchGroupEntities": 1,
+      "affiliationCounts": {
+        "uncertain": 3,
+        "external": 1,
+        "source_reported": 3
+      },
+      "emptyMethodsRetained": 1,
+      "hydratePassed": 7,
+      "unresolvedMismatches": 13,
+      "unresolvedMismatchesAccepted": 0,
+      "outstandingContentConcerns": 0,
+      "networkRequestsMade": 0,
+      "recordsOrPacketsEditedByIndependentReviewer": 0
+    },
+    "authorReportHashProof": [
+      {
+        "path": "data/local-lab-summaries/REGAINED-ROOT-REVIEW-033-036.json",
+        "sha256": "8791d6274226fa6de377c565ae5f9e283239bf185538645e61d9f297cd521b98"
+      },
+      {
+        "path": "data/local-lab-summaries/REGAINED-ROOT-REVIEW-116-121.json",
+        "sha256": "5f8c02c9d044dde5ba92b737fcbea5d76f6340b2095e684485c65228f7fbd905"
+      }
+    ],
+    "reviewItems": [
+      {
+        "ordinal": 33,
+        "labId": "ucsd-biology-topic-lab-andrew-muroyama",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-4c17d2b53a3645c1",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 563,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04",
+        "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T03:47:25+00:00",
+        "HTTPRedirectChain": [],
+        "rawReviewedAt": "2026-10-16T04:09:27+00:00",
+        "rawSha256": "3d10021db7645d5948a18029b8d3cafc25a8c4116f6ca60107440832ba79f30f",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "uncertain",
+        "methodCount": 3,
+        "summaryZh": "Muroyama 实验室研究植物如何通过单个细胞的协同行为建立组织，重点探究细胞如何识别其组织位置并据此形成新器官，以及这些机制在不同组织和物种间的保守性。研究采用活体成像、遗传学和蛋白质组学。",
+        "assessmentZh": "具名Muroyama Lab及We are a group/Our Research明确全组植物细胞与发育范围；位置/器官形成与跨组织物种保守性问题、live-imaging/genetics/proteomics均来自正文。机构uncertain适当，不把UCSD页头/域名当实体局部声明。",
+        "keyEntityScopeQuote": "Muroyama Lab Welcome! We are a group of cell and developmental biologists who are passionate about understanding how plants create tissues.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-4c17d2b53a3645c1",
+            "quote": "Muroyama Lab Welcome! We are a group of cell and developmental biologists who are passionate about understanding how plants create tissues.",
+            "supports": [
+              "identity",
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04"
+          },
+          {
+            "sourceId": "src-4c17d2b53a3645c1",
+            "quote": "How do cells know their positions within a tissue and use that information to create new organs? How conserved are these pathways across plant tissues and species?",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04"
+          },
+          {
+            "sourceId": "src-4c17d2b53a3645c1",
+            "quote": "We interrogate these mechanisms using a range of techniques including live-imaging, genetics, and proteomics.",
+            "supports": [
+              "methods"
+            ],
+            "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04"
+          },
+          {
+            "sourceId": "src-4c17d2b53a3645c1",
+            "quote": "The amazing diversity in plant form that we see around us arises from the collective actions of individual cells.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://muroyamalab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "2e42414e3523defcf0d2fe402a9e1b401af9c8bfb501dfd83b84a5d4adfb8e04"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 35,
+        "labId": "ucsd-biology-topic-lab-axel-nimmerjahn",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-f8b1728f4e2e382c",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 4389,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8",
+        "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+        "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+        "sourceObservedAt": "2026-10-16T03:47:25+00:00",
+        "HTTPRedirectChain": [
+          {
+            "from": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "to": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "httpStatus": 301
+          }
+        ],
+        "rawReviewedAt": "2026-10-16T04:09:27+00:00",
+        "rawSha256": "0d18890e21adbde95f48db29a363d88fbfab7243fdfecfd7863194e7b842494f",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "external",
+        "methodCount": 4,
+        "summaryZh": "Nimmerjahn 实验室开发显微成像和分析工具，研究胶质细胞在健康或患病中枢神经系统中的作用。实验室将显微镜微型化为可穿戴设备，并开发细胞类型特异性染色、遗传操控和大规模成像数据分析工具。",
+        "assessmentZh": "虽为官方Salk人物页，但his lab、the team、they created tools及Nimmerjahn’s lab明确实验室作用域。摘要只采用实验室显微镜/染色/遗传操控/数据分析与胶质细胞问题，没有扩张个人既往发现或背景疾病列表。external Salk正确，不接受UCSD隶属或推断任职变动。",
+        "keyEntityScopeQuote": "To enable cellular-resolution measurements under naturalistic conditions, his lab has worked to shrink the size of microscopes to make them wearable.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-f8b1728f4e2e382c",
+            "quote": "Axel Nimmerjahn, PhD Professor Waitt Advanced Biophotonics Center Victor Wild Endowed Chair Salk Institute for Biological Studies",
+            "supports": [
+              "identity",
+              "affiliation"
+            ],
+            "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8"
+          },
+          {
+            "sourceId": "src-f8b1728f4e2e382c",
+            "quote": "To enable cellular-resolution measurements under naturalistic conditions, his lab has worked to shrink the size of microscopes to make them wearable.",
+            "supports": [
+              "identity",
+              "research",
+              "methods"
+            ],
+            "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8"
+          },
+          {
+            "sourceId": "src-f8b1728f4e2e382c",
+            "quote": "Additionally, they have created new tools for cell type-specific staining and genetic manipulation and for analysis of large-scale imaging data. This has allowed them to address long-standing questions regarding the role of glial cells in the intact healthy or diseased CNS.",
+            "supports": [
+              "research",
+              "topics",
+              "methods"
+            ],
+            "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8"
+          },
+          {
+            "sourceId": "src-f8b1728f4e2e382c",
+            "quote": "Nimmerjahn’s lab used cutting-edge microscopy approaches to visualize the blood-brain barrier breakdown after stroke.",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://www.salk.edu/scientist/axel-nimmerjahn/",
+            "actualRequestedUrl": "https://www.salk.edu/scientist/axel-nimmerjahn",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "ec64fa28143f9b2198a0ba1e281a65d2c927dce6242db41755daff52ba000ea8"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 36,
+        "labId": "ucsd-biology-topic-lab-barry-grant",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-a53c90d169459382",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 1964,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f",
+        "sourceUrl": "http://thegrantlab.org/",
+        "actualRequestedUrl": "http://thegrantlab.org/",
+        "sourceObservedAt": "2026-10-16T03:47:24+00:00",
+        "HTTPRedirectChain": [],
+        "rawReviewedAt": "2026-10-16T04:09:27+00:00",
+        "rawSha256": "e7732b426d2432bb29c10bb088529a7ddb8e568cf6c69d811ff222ed3cfd237d",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "source_reported",
+        "methodCount": 4,
+        "summaryZh": "Grant 实验室利用计算生物物理与生物信息学研究生物大分子的结构、功能和演化，重点探索分子马达与分子开关如何工作及如何调控。研究采用生物分子模拟、序列—结构—功能分析、虚拟筛选与基于结构的药物设计，并开发 Bio3D 结构生物信息学软件。",
+        "assessmentZh": "GrantLab/Our research及三个计算研究方法段落明确整体lab范围；分子马达/开关、生物分子模拟、结构生物信息、药物设计和Bio3D均有字面依据。UCSD机构句为实体局部来源声明；localhost HTML canonical未作为实际HTTP终点或新别名。",
+        "keyEntityScopeQuote": "Our research involves the use of computational approaches, based on both biophysics and bioinformatics , to study the structure, function and evolution of key biological macromolecules.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "GrantLab Grant Lab : Computational Biophysics & Bioinformatics Our research involves the use of computational approaches, based on both biophysics and bioinformatics , to study the structure, function and evolution of key biological macromolecules.",
+            "supports": [
+              "identity",
+              "research",
+              "topics",
+              "methods"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          },
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "We are particularly interested in nature’s nanomachines: molecular motors and switches , which lie at the heart of important biological processes",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          },
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "A major portion of our research is focused on deciphering how these fascinating proteins work, and how to manipulate them for industrial and medical advantage.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          },
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "Biomolecular Simulation Application of advanced molecular simulation techniques to probe the structure, dynamics and interactions of biomolecules. Structural Bioinformatics Development and application of bioinformatics methods for the analysis of protein sequence-structure-function relationships. Drug Discovery & Design Virtual screening, structure-based drug design, cheminformatics and molecular modeling supporting drug discovery and design.",
+            "supports": [
+              "research",
+              "topics",
+              "methods"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          },
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "We lead the development of the Bio3D package used by thousands of researchers around the world to investigate protein sequence-structure-function relationships.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          },
+          {
+            "sourceId": "src-a53c90d169459382",
+            "quote": "The Grant lab is part of the Section of Molecular Biology within the Division of Biological Sciences at the University of California, San Diego .",
+            "supports": [
+              "identity",
+              "affiliation"
+            ],
+            "sourceUrl": "http://thegrantlab.org/",
+            "actualRequestedUrl": "http://thegrantlab.org/",
+            "observedAt": "2026-10-16T03:47:24+00:00",
+            "bodySha256": "59dc80ee1c4ddb428edcc6e299d108caab7fb0dc1afa36ad9e595b1036c8dc9f"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 116,
+        "labId": "ucsd-biology-topic-lab-roy",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-ef21a4f6fd81f0a6",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 5530,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5",
+        "sourceUrl": "https://roylab.biology.ucsd.edu/",
+        "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T03:47:25+00:00",
+        "HTTPRedirectChain": [
+          {
+            "from": "https://roylab.biosci.ucsd.edu/",
+            "to": "https://roylab.biology.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "rawReviewedAt": "2026-10-16T04:10:51+00:00",
+        "rawSha256": "933cf65c5aeec06b7ef1a75a2d13a992676ecfdb3fb40949b9a86415182f1f77",
+        "status": "supported",
+        "entityType": "research_group",
+        "affiliation": "source_reported",
+        "methodCount": 2,
+        "summaryZh": "Roy 研究组关注大尺度生物多样性梯度的形成与维持，以及气候变化和人类活动对这些格局的生态与演化影响。研究以沿岸海洋无脊椎动物及其微生物组为对象，结合更新世与全新世记录、分子标记、地球化学和表型数据，并用模拟模型研究灭绝造成的多样性损失。",
+        "assessmentZh": "Kaustuv Roy’s research group at UCSD及research in the lab/We多个项目段落明确组范围。问题与更新世/全新世记录、分子标记、地球化学、表型数据和模拟模型均被正文直接说明。biosci→biology是真实301，不由内容相似推测别名。",
+        "keyEntityScopeQuote": "Welcome to Kaustuv Roy’s research group at the University of California San Diego.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "Welcome to Kaustuv Roy’s research group at the University of California San Diego.",
+            "supports": [
+              "identity",
+              "affiliation"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "Our research is focused on better understanding: (i) the processes that generate and maintain large scale spatial gradients in biodiversity (ii) how such gradients are being impacted by climate change and other anthropogenic impacts (e.g. human harvesting) and (iii) the ecological and evolutionary consequences of such changes.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "The research in the lab is interdisciplinary and we address these questions using data for coastal marine invertebrates as well as the microbial taxa associated with them (i.e. their microbiomes).",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "We have recently initiated research projects that will quantify (i) how the microbiomes of marine mollusks vary across large spatial and environmental gradients and the functional consequences of such variation (ii) how such patterns have evolved and (iii) how they are affected by anthropogenic impacts such as coastal eutrophication and climate change.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "Using a combination of the Pleistocene and Holocene record of living species, molecular markers, geochemical data and phenotypic measurements we are investigating how marine molluscan species responded to past changes in climate.",
+            "supports": [
+              "research",
+              "methods"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "But we still know little about how human-caused extinctions erode phenotypic diversity and evolutionary histories of clades and how such losses compare to those in the past. We are exploring this issue using simulation models as well as empirical data for marine and terrestrial mollusks.",
+            "supports": [
+              "research",
+              "topics",
+              "methods"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          },
+          {
+            "sourceId": "src-ef21a4f6fd81f0a6",
+            "quote": "Origin and maintenance of the Latitudinal Diversity gradient",
+            "supports": [
+              "topics"
+            ],
+            "sourceUrl": "https://roylab.biology.ucsd.edu/",
+            "actualRequestedUrl": "https://roylab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:25+00:00",
+            "bodySha256": "f0b9a5e7227ede34eba608353888b3b011735d67599f5e76830b37c5aa8ce8d5"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 117,
+        "labId": "ucsd-lab-from-faculty-russell-lab-com",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-5e3a018cefd1f8a7",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 1096,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673",
+        "sourceUrl": "https://www.russell-lab.com/",
+        "actualRequestedUrl": "https://www.russell-lab.com/",
+        "sourceObservedAt": "2026-10-16T03:47:26+00:00",
+        "HTTPRedirectChain": [],
+        "rawReviewedAt": "2026-10-16T04:10:21+00:00",
+        "rawSha256": "e21a7f683ff6e5f1931a9686fa8aa70575fc333ea7063bf7853c2accd4257dcf",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "uncertain",
+        "methodCount": 4,
+        "summaryZh": "Russell 实验室研究病毒群体变异如何驱动先天免疫应答，以及哪些细胞特征决定干扰素诱导的罕见性及其随感染进程的变化，重点关注流感。研究结合单细胞转录组学与基因组学、流式细胞术、群体水平测序和精细遗传分析，并探索这些认识对治疗干预与候选疫苗的意义。",
+        "assessmentZh": "Russell laboratory标题和My lab studies/We use明确实验室整体病毒变异、先天免疫、干扰素和流感研究；四组方法逐字列出。旧个人名录不被用来确认当前PI或实验室机构，affiliation uncertain正确；治疗/候选疫苗只是研究目标。",
+        "keyEntityScopeQuote": "My lab studies these rare events that define the subsequent immune response, particularly in the context of an important human pathogen, influenza.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-4ed8e037ffac47b1",
+            "quote": "Alistair Russell, PhD",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://catalog.ucsd.edu/faculty/BIOL.html",
+            "actualRequestedUrl": "https://catalog.ucsd.edu/faculty/BIOL.html",
+            "observedAt": "2026-10-16T00:59:04+00:00",
+            "bodySha256": "79c3c737b97c7521eea0cecd6254e5c744c0f5d55ebcd0ada793ca05a3545074"
+          },
+          {
+            "sourceId": "src-5e3a018cefd1f8a7",
+            "quote": "Russell laboratory",
+            "quoteLocation": "title",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://www.russell-lab.com/",
+            "actualRequestedUrl": "https://www.russell-lab.com/",
+            "observedAt": "2026-10-16T03:47:26+00:00",
+            "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673"
+          },
+          {
+            "sourceId": "src-5e3a018cefd1f8a7",
+            "quote": "My lab studies these rare events that define the subsequent immune response, particularly in the context of an important human pathogen, influenza.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://www.russell-lab.com/",
+            "actualRequestedUrl": "https://www.russell-lab.com/",
+            "observedAt": "2026-10-16T03:47:26+00:00",
+            "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673"
+          },
+          {
+            "sourceId": "src-5e3a018cefd1f8a7",
+            "quote": "We use a multidisciplinary approach, leveraging single cell transcriptomics/genomics, flow cytometry, population-level sequencing, and fine-grained genetic analysis to explore the following concepts:",
+            "supports": [
+              "methods"
+            ],
+            "sourceUrl": "https://www.russell-lab.com/",
+            "actualRequestedUrl": "https://www.russell-lab.com/",
+            "observedAt": "2026-10-16T03:47:26+00:00",
+            "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673"
+          },
+          {
+            "sourceId": "src-5e3a018cefd1f8a7",
+            "quote": "How does variation in viral populations drive the resultant innate immune response? What cellular features control the rarity of interferon induction? How do they change as infection progresses? Can we leverage our knowledge of these processes to develop improved therapeutic interventions and vaccine candidates?",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://www.russell-lab.com/",
+            "actualRequestedUrl": "https://www.russell-lab.com/",
+            "observedAt": "2026-10-16T03:47:26+00:00",
+            "bodySha256": "d3cf5b1d3c7b7eb8fa3d888748672f702c7ef106074ece36579996a29e73b673"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 119,
+        "labId": "ucsd-biology-topic-lab-saier",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-a122b7ee4c4707e9",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 2436,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf",
+        "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+        "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T03:47:27+00:00",
+        "HTTPRedirectChain": [],
+        "rawReviewedAt": "2026-10-16T04:10:21+00:00",
+        "rawSha256": "395ee4b1cc91d1db15be81ae7d190aef29b85c21f4bf20e22e09dcef1b05d8a3",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "uncertain",
+        "methodCount": 4,
+        "summaryZh": "Saier 实验室研究细菌的转录与代谢调控、转运蛋白演化，以及转座子介导的定向突变。实验室采用生化、分子遗传学、生理学和生物信息学方法，并创建和维护转运蛋白分类数据库 TCDB。",
+        "assessmentZh": "Saier Lab/Our laboratory/three primary research interests明确全组范围，方法和TCDB创建维护均直接表述。Milton Saier负责人的句子明确，但未以UCSD通用导航推断机构；后部论文新闻未外推为当前全组项目或正文更新时间。",
+        "keyEntityScopeQuote": "We have three primary research interests, one concerned with transcriptional and metabolic regulation in bacteria, a second with transport protein evolution, and a third with the recently identified process of transposon-mediated directed mutation.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-a122b7ee4c4707e9",
+            "quote": "Welcome to the Saier Lab",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:27+00:00",
+            "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf"
+          },
+          {
+            "sourceId": "src-a122b7ee4c4707e9",
+            "quote": "Dr. Milton Saier is the head of the laboratory.",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:27+00:00",
+            "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf"
+          },
+          {
+            "sourceId": "src-a122b7ee4c4707e9",
+            "quote": "Our laboratory takes a multidisciplinary approach to science, using biochemical, molecular genetic, physiological, and bioinformatic approaches.",
+            "supports": [
+              "methods"
+            ],
+            "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:27+00:00",
+            "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf"
+          },
+          {
+            "sourceId": "src-a122b7ee4c4707e9",
+            "quote": "We have three primary research interests, one concerned with transcriptional and metabolic regulation in bacteria, a second with transport protein evolution, and a third with the recently identified process of transposon-mediated directed mutation.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:27+00:00",
+            "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf"
+          },
+          {
+            "sourceId": "src-a122b7ee4c4707e9",
+            "quote": "We also created and now maintain the Transporter Classification DataBase ( TCDB ), which was adopted by the International Union of Biochemistry and Molecular Biology ( IUBMB ) as the primary source of information relating to molecular transport.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://saierlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://saierlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:47:27+00:00",
+            "bodySha256": "8a9f9dbdd9de8075ddcdc43f9c46c49eb7690051fb6f4a0741e9b845272abebf"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      },
+      {
+        "ordinal": 121,
+        "labId": "ucsd-biology-topic-lab-scott-biering",
+        "reviewDecision": "supported_content_identity_affiliation_and_provenance_verified",
+        "sourceId": "src-7f324059177c4a9a",
+        "fullScientificVisibleTextRead": true,
+        "fullVisibleCharactersRead": 556,
+        "packetTextEqualsFullExtraction": true,
+        "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88",
+        "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "actualRequestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T03:57:30+00:00",
+        "HTTPRedirectChain": [],
+        "rawReviewedAt": "2026-10-16T04:10:21+00:00",
+        "rawSha256": "65b9875842b2f195bce2495502ad160acc7518b139129f97477f5d4202c12a81",
+        "status": "supported",
+        "entityType": "lab",
+        "affiliation": "source_reported",
+        "methodCount": 0,
+        "summaryZh": "Biering 病毒学实验室位于 UCSD 生物科学学院分子生物学系，研究病毒与宿主之间的相互作用，旨在发现驱动病毒致病的机制。首页未明确具体病毒对象或研究方法。",
+        "assessmentZh": "短正文仍明确Biering Virology Lab、We are a virology research lab及UCSD系院，并直接说明病毒宿主互作/病毒致病机制。methods=[]正确；疫苗/治疗的背景意义未被升级为具体研究对象、项目或方法。",
+        "keyEntityScopeQuote": "We are fascinated by the interactions between viruses and their hosts. We aim to discover the mechanisms that drive viral pathogenesis.",
+        "exactFinalEvidenceProofs": [
+          {
+            "sourceId": "src-7f324059177c4a9a",
+            "quote": "Welcome to the Biering Virology Lab",
+            "supports": [
+              "identity"
+            ],
+            "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:57:30+00:00",
+            "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88"
+          },
+          {
+            "sourceId": "src-7f324059177c4a9a",
+            "quote": "We are a virology research lab located in the department of Molecular Biology in the School of Biological Sciences at UCSD.",
+            "supports": [
+              "identity",
+              "affiliation"
+            ],
+            "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:57:30+00:00",
+            "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88"
+          },
+          {
+            "sourceId": "src-7f324059177c4a9a",
+            "quote": "We are fascinated by the interactions between viruses and their hosts. We aim to discover the mechanisms that drive viral pathogenesis.",
+            "supports": [
+              "research",
+              "topics"
+            ],
+            "sourceUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "actualRequestedUrl": "https://bieringlab.biosci.ucsd.edu/",
+            "observedAt": "2026-10-16T03:57:30+00:00",
+            "bodySha256": "eb0b7187acc7d3a927b4300f204db61671103e1920e477c0f30196b5e68ddb88"
+          }
+        ],
+        "hydratePassed": true,
+        "currentRootIdentityCaptureMatched": true,
+        "outstandingConcerns": []
+      }
+    ],
+    "evidenceCoverageRepair": {
+      "ordinal": 33,
+      "sourceId": "src-4c17d2b53a3645c1",
+      "findingZh": "原摘要的单细胞协同行为有完整正文依据，但初版evidence未覆盖该字面句。",
+      "exactQuote": "The amazing diversity in plant form that we see around us arises from the collective actions of individual cells.",
+      "repairedByParent": true,
+      "independentlyConfirmedInFinalRaw": true,
+      "sourceOriginalTimeUnchanged": true,
+      "resolution": "closed"
+    },
+    "noOtherContentIssuesFound": true
+  },
+  "latestAssessment": {
+    "reviewedAt": "2026-10-16T04:13:24+00:00",
+    "metadataPhasePassed": true,
+    "scientificPhasePassed": true,
+    "independentScientificSourceReviews": 7,
+    "pendingScientificReviews": 0,
+    "outstandingIssues": 0
+  }
+}

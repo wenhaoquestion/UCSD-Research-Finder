@@ -1,0 +1,148 @@
+{
+  "labId": "ucsd-medicine-lab-jill-mesirov-lab",
+  "status": "supported",
+  "summaryZh": "Mesirov 实验室将机器学习与统计方法应用于功能基因组数据，以理解疾病机制、区分治疗结局并寻找药物靶点。团队开发开放源代码分析工具，并在癌症基因组学中开发分子标记和基因集富集分析等方法。",
+  "researchQuestions": [
+    "哪些分子标记能够辅助癌症的诊断、预后判断和治疗？"
+  ],
+  "topics": [
+    "功能基因组学",
+    "癌症基因组学",
+    "疾病机制",
+    "治疗分层"
+  ],
+  "methods": [
+    "机器学习",
+    "统计方法",
+    "开源软件开发",
+    "基因集富集分析"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-a296f660787a5adf",
+      "quote": "Research in the Mesirov lab focuses on applying machine-learning and statistical methods to functional genomics data with the goal of better understanding the underlying biological mechanisms of disease, improving stratification of patients with respect to different treatment outcomes, and identifying novel drug targets.",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a296f660787a5adf",
+      "quote": "Our lab is committed to the development of practical, accessible, open source software tools",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a296f660787a5adf",
+      "quote": "a statistical methodology called Gene Set Enrichment Analysis (GSEA)",
+      "supports": [
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-a296f660787a5adf",
+      "quote": "Jill Mesirov Laboratory",
+      "supports": [
+        "identity"
+      ]
+    },
+    {
+      "sourceId": "src-ffab6f54b09afbcc",
+      "quote": "Jill Mesirov Lab GenomeSpace data analysis platform",
+      "supports": [
+        "affiliation"
+      ]
+    },
+    {
+      "sourceId": "src-a296f660787a5adf",
+      "quote": "We develop and apply new machine learning and statistical techniques to find molecular markers to aid in the diagnosis, prognosis, and treatment of cancer as well as to understand the underlying biological processes.",
+      "quoteLocation": "body",
+      "supports": [
+        "researchQuestions"
+      ],
+      "questionIndices": [
+        0
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "页面标题、正文中的研究主体及包内身份材料相互对应；实体类型按实际页面内容记录。"
+  },
+  "affiliation": {
+    "status": "source_reported",
+    "reason": "正文或匹配官方目录明确报告 UCSD 关联。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明，现时隶属关系仍待核实。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:30:20+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:30:20+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:53:40+00:00",
+    "availability": "source_explicit_research_goal",
+    "reasonZh": "采用具名实验室原文明示的find molecular markers目标，并保留癌症与辅助诊断/预后/治疗范围；不泛问所有疾病机制、不声称标记已获临床验证、不借用另一ID来源。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-000-134.json",
+    "reviewComponentSha256": "a86585ec4380407fc6b40883481391d368dd661265184c7a5f6e267fb2dda0b7",
+    "reviewAddenda": [
+      {
+        "path": "REMAINING-QUESTION-MESIROV-ADDENDUM.json",
+        "sha256": "3aa7f78aeb9bc9464074969524e4beb5cd3828558004ee360655e16a9d4cb50e"
+      }
+    ],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-a296f660787a5adf",
+        "sourceUrl": "https://gpm.ucsd.edu/research/mesirov/index.html",
+        "sourceObservedAt": "2026-10-16T01:05:02+00:00",
+        "bodySha256": "ee9aea0ec444fd71a413d1251f73b2343577257ebb7ee41ae0c07584744d8a06",
+        "textSha256": "0040843057a998a47cad6d636aa043f86fabc99cbf6f49adc5b8e3b30b42a1e3",
+        "textCharacters": 4012,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            4000
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      },
+      {
+        "sourceId": "src-ffab6f54b09afbcc",
+        "sourceUrl": "https://med.ucsd.edu/research/focus-areas.html",
+        "sourceObservedAt": "2026-10-02T22:42:10+00:00",
+        "bodySha256": null,
+        "textSha256": "2e5039eb13ebc4fc3e7d539515b9d8d4b5fdf5a1d98b74b03d5a07ef7c7e8ce5",
+        "textCharacters": 51,
+        "disposition": "entity_local_prose_read",
+        "rangesActuallyRead": [
+          [
+            0,
+            51
+          ]
+        ],
+        "reasonZh": "Read displayed source slice; any remaining tail not claimed read or used. Publication/news/member/teaching context excluded from question synthesis."
+      }
+    ],
+    "questionEvidence": [
+      {
+        "questionIndex": 0,
+        "sourceId": "src-a296f660787a5adf",
+        "quote": "We develop and apply new machine learning and statistical techniques to find molecular markers to aid in the diagnosis, prognosis, and treatment of cancer as well as to understand the underlying biological processes.",
+        "quoteLocation": "body",
+        "sourceObservedAt": "2026-10-16T01:05:02+00:00",
+        "bodySha256": "ee9aea0ec444fd71a413d1251f73b2343577257ebb7ee41ae0c07584744d8a06",
+        "sourceUrl": "https://gpm.ucsd.edu/research/mesirov/index.html"
+      }
+    ],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-16T03:34:40+00:00",
+  "scope": "Only two target-ID bindings to an already model-reviewed Komiyama source. No new observation or general research reread.",
+  "networkRequestsMade": 0,
+  "collectorAliasesApplied": false,
+  "IDsMergedOrRenamed": false,
+  "items": [
+    {
+      "labId": "ucsd-biology-topic-lab-komiyama-lab",
+      "ordinal": 84,
+      "reviewedAt": "2026-10-16T03:34:40+00:00",
+      "decision": "supported_after_target_specific_cached_source_binding",
+      "beforeStatus": "unresolved",
+      "afterStatus": "supported",
+      "originalListedWebsite": "https://komiyamalab.biosci.ucsd.edu",
+      "listedWebsiteUnchanged": true,
+      "stableIdUnchanged": true,
+      "rootBinding": {
+        "sourceId": "src-19163a4c45db52fd",
+        "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:46+00:00",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "title": "Komiyama Lab |",
+        "mainTextEmpty": true,
+        "actualHttpRequestSourceUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "actualHttpRedirectChain": [
+          {
+            "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "to": "https://komiyamalab.biosci.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "linkedHomeAttribute": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "linkedHomeAnchorText": "",
+        "attributeEvidenceNature": "parsed_cached_html_anchor_attribute",
+        "rootTitleIsNotWholeLabResearchEvidence": true
+      },
+      "historicalOfficialTargetLinkEvidence": [],
+      "reusedResearchSource": {
+        "sourceId": "src-ed1a3b9e0c08c68e",
+        "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "observedAt": "2026-10-16T02:40:05+00:00",
+        "bodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/92dce3333cf7bd9df524f7bcc19c733d3cfbac4ad245e1bbb7a5e5d4237632af.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "priorSourceReviewedAt": "2026-10-16T03:03:28+00:00",
+        "newTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00"
+      },
+      "exactReusedQuotes": [
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "Komiyama Lab",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "We want to know how this large ensemble of neurons works coherently to control an animal’s behavior. We want to know how it might change when animals experience the environment, learn new skills and form new memories. We want to know how it might be compromised in diseased states.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "We are combining behavioral, genetic, imaging and electrophysiological techniques to tackle these questions.",
+          "supports": [
+            "methods"
+          ]
+        }
+      ],
+      "identityReview": {
+        "decision": "same_named_lab_content_reuse_only",
+        "targetLabId": "ucsd-biology-topic-lab-komiyama-lab",
+        "donorLabId": "ucsd-neurosciences-lab-komiyama-lab",
+        "reviewedAt": "2026-10-16T03:34:40+00:00",
+        "reason": "本目标原列出根网址就是komiyamalab.biosci.ucsd.edu；目标自身捕获记录旧Komiyama Home路径HTTP301至该根站，根标题Komiyama Lab且实际HTML锚点直接指向同站/home/。该已审/home/正文明确Komiyama Lab、We研究问题和技术，足以将研究归于此具名目标。原根页空正文/仅标题不升级为目的页正文身份证据；不靠别名或另一个ID的结论建立关系。",
+        "bindingProof": {
+          "sourceId": "src-19163a4c45db52fd",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:46+00:00",
+          "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+          "title": "Komiyama Lab |",
+          "mainTextEmpty": true,
+          "actualHttpRequestSourceUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+          "actualHttpRedirectChain": [
+            {
+              "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "to": "https://komiyamalab.biosci.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ],
+          "linkedHomeAttribute": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "linkedHomeAnchorText": "",
+          "attributeEvidenceNature": "parsed_cached_html_anchor_attribute",
+          "rootTitleIsNotWholeLabResearchEvidence": true
+        },
+        "historicalTargetSources": [],
+        "notAnAcceptedCanonicalLabUrl": true,
+        "silentIdMigrationAllowed": false,
+        "collectorAliasesApplied": false,
+        "limitations": [
+          "Original listed website and original actual root tuple are preserved. Two target IDs and the earlier neuroscience ID remain separate. Source identity/text/time/hash are reused unchanged; no new fetch.",
+          "The original root is title-only with empty visible body. URI page identity remains conservative despite supported lab research from the distinct /home/ subpage."
+        ]
+      },
+      "affiliation": {
+        "status": "uncertain",
+        "reason": "新复用/home/研究正文没有明确实验室机构隶属声明；历史Profiles实验室链接与UCSD域名仅作身份关联，不据此确认带日期的当前隶属。"
+      },
+      "urlProjectionCheck": {
+        "pageIdentityStatus": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "lastCheckedAt": "2026-10-16T01:06:46+00:00",
+        "liveCheckedAt": null,
+        "redirectChain": [
+          {
+            "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "to": "https://komiyamalab.biosci.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ]
+      },
+      "recordSemanticFingerprintSha256": "bc10877eb11f2bad855a3904ec0facf15803cd8ecdd3a6b641953dd3ae16a4f6",
+      "sourceSemanticFingerprintSha256": "79120f9f1b3ec1c346c5073eda545148d2e8653710f23ac3504475d3a96c89ab",
+      "hydrationPassed": true
+    },
+    {
+      "labId": "ucsd-live-lab-421d1a9d198202",
+      "ordinal": 627,
+      "reviewedAt": "2026-10-16T03:34:40+00:00",
+      "decision": "supported_after_target_specific_cached_source_binding",
+      "beforeStatus": "partial",
+      "afterStatus": "supported",
+      "originalListedWebsite": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+      "listedWebsiteUnchanged": true,
+      "stableIdUnchanged": true,
+      "rootBinding": {
+        "sourceId": "src-19163a4c45db52fd",
+        "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+        "observedAt": "2026-10-16T01:06:46+00:00",
+        "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+        "title": "Komiyama Lab |",
+        "mainTextEmpty": true,
+        "actualHttpRequestSourceUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+        "actualHttpRedirectChain": [
+          {
+            "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "to": "https://komiyamalab.biosci.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ],
+        "linkedHomeAttribute": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "linkedHomeAnchorText": "",
+        "attributeEvidenceNature": "parsed_cached_html_anchor_attribute",
+        "rootTitleIsNotWholeLabResearchEvidence": true
+      },
+      "historicalOfficialTargetLinkEvidence": [
+        {
+          "sourceId": "src-dc2c563b51d1742f",
+          "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+          "observedAt": "2026-10-03T01:55:35+00:00",
+          "quote": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+          "bodySha256": null,
+          "evidenceNature": "preserved_historical_field_evidence"
+        }
+      ],
+      "reusedResearchSource": {
+        "sourceId": "src-ed1a3b9e0c08c68e",
+        "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "requestedUrl": "https://komiyamalab.biosci.ucsd.edu/home/",
+        "observedAt": "2026-10-16T02:40:05+00:00",
+        "bodySha256": "2f2fd496e3de1dc27a23b8efe239bddf551740d7c31d42cc4a011ef3734313e9",
+        "cachePath": "/tmp/ucsd-research-20261016/.cache/coverage-20261016/responses/92dce3333cf7bd9df524f7bcc19c733d3cfbac4ad245e1bbb7a5e5d4237632af.html",
+        "textExtractionVersion": "summary-visible-content-v2",
+        "priorSourceReviewedAt": "2026-10-16T03:03:28+00:00",
+        "newTargetBindingReviewedAt": "2026-10-16T03:34:40+00:00"
+      },
+      "exactReusedQuotes": [
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "Komiyama Lab",
+          "supports": [
+            "identity"
+          ]
+        },
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "We want to know how this large ensemble of neurons works coherently to control an animal’s behavior. We want to know how it might change when animals experience the environment, learn new skills and form new memories. We want to know how it might be compromised in diseased states.",
+          "supports": [
+            "research",
+            "topics"
+          ]
+        },
+        {
+          "sourceId": "src-ed1a3b9e0c08c68e",
+          "quote": "We are combining behavioral, genetic, imaging and electrophysiological techniques to tackle these questions.",
+          "supports": [
+            "methods"
+          ]
+        }
+      ],
+      "identityReview": {
+        "decision": "same_named_lab_content_reuse_only",
+        "targetLabId": "ucsd-live-lab-421d1a9d198202",
+        "donorLabId": "ucsd-neurosciences-lab-komiyama-lab",
+        "reviewedAt": "2026-10-16T03:34:40+00:00",
+        "reason": "本目标自身保留Takaki Komiyama官方Profiles历史Lab Website到旧Komiyama Home路径的精确链接；该同一旧网址在本目标实际HTTP301捕获中到达Komiyama Lab根站，根HTML锚点又直接指向同站/home/。已审/home/正文明确具名实验室与整体We研究计划，支持该目标的实验室研究范围。历史人物链接不扩展为现任PI确认，不采用收集器别名或合并ID；根页仅标题仍不足单独确认目的页正文身份。",
+        "bindingProof": {
+          "sourceId": "src-19163a4c45db52fd",
+          "sourceUrl": "https://komiyamalab.biosci.ucsd.edu/",
+          "observedAt": "2026-10-16T01:06:46+00:00",
+          "bodySha256": "24303545ccbdc9fd651405aee20691fb7c6e5fec5046e34fb37888ea2fdcfbe7",
+          "title": "Komiyama Lab |",
+          "mainTextEmpty": true,
+          "actualHttpRequestSourceUrl": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+          "actualHttpRedirectChain": [
+            {
+              "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+              "to": "https://komiyamalab.biosci.ucsd.edu/",
+              "httpStatus": 301
+            }
+          ],
+          "linkedHomeAttribute": "https://komiyamalab.biosci.ucsd.edu/home/",
+          "linkedHomeAnchorText": "",
+          "attributeEvidenceNature": "parsed_cached_html_anchor_attribute",
+          "rootTitleIsNotWholeLabResearchEvidence": true
+        },
+        "historicalTargetSources": [
+          {
+            "sourceId": "src-dc2c563b51d1742f",
+            "sourceUrl": "https://profiles.ucsd.edu/takaki.komiyama",
+            "observedAt": "2026-10-03T01:55:35+00:00",
+            "quote": "Lab Website → https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "evidenceNature": "preserved_historical_field_evidence"
+          }
+        ],
+        "notAnAcceptedCanonicalLabUrl": true,
+        "silentIdMigrationAllowed": false,
+        "collectorAliasesApplied": false,
+        "limitations": [
+          "Original listed website and original actual root tuple are preserved. Two target IDs and the earlier neuroscience ID remain separate. Source identity/text/time/hash are reused unchanged; no new fetch.",
+          "The original root is title-only with empty visible body. URI page identity remains conservative despite supported lab research from the distinct /home/ subpage."
+        ]
+      },
+      "affiliation": {
+        "status": "uncertain",
+        "reason": "新复用/home/研究正文没有明确实验室机构隶属声明；历史Profiles实验室链接与UCSD域名仅作身份关联，不据此确认带日期的当前隶属。"
+      },
+      "urlProjectionCheck": {
+        "pageIdentityStatus": "uncertain",
+        "canCountAsVerifiedLabGroupURL": false,
+        "lastCheckedAt": "2026-10-16T01:06:46+00:00",
+        "liveCheckedAt": null,
+        "redirectChain": [
+          {
+            "from": "https://labs.biology.ucsd.edu/komiyama/html/Home.html",
+            "to": "https://komiyamalab.biosci.ucsd.edu/",
+            "httpStatus": 301
+          }
+        ]
+      },
+      "recordSemanticFingerprintSha256": "2442dcdf34d66c402bd4ecd5d22f2554d3c5f0ea3a2cb9f228d6572bce4d855a",
+      "sourceSemanticFingerprintSha256": "79120f9f1b3ec1c346c5073eda545148d2e8653710f23ac3504475d3a96c89ab",
+      "hydrationPassed": true
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "labId": "ucsd-biochemistry-and-molecular-biophysics-lab-toor-lab",
+  "status": "supported",
+  "summaryZh": "Toor Lab 研究 RNA 结构与生物学的关系，并探索用于治疗的 RNA 化学修饰。方法包括冷冻电镜、单分子荧光和有机化学。",
+  "researchQuestions": [],
+  "topics": [
+    "RNA结构与生物学",
+    "RNA治疗修饰"
+  ],
+  "methods": [
+    "冷冻电镜",
+    "单分子荧光",
+    "有机化学"
+  ],
+  "evidence": [
+    {
+      "sourceId": "src-0e9ac488b86bbd8d",
+      "quote": "Welcome to the Toor Lab! We investigate the relationship between RNA structure and biology. We use tools ranging from cryo-EM to single-molecule fluorescence. In addition, we also use organic chemistry to expand the universe of chemical modifications that can be added to RNA for therapeutics.",
+      "supports": [
+        "identity",
+        "research",
+        "topics",
+        "methods"
+      ]
+    },
+    {
+      "sourceId": "src-63a8a61dea803852",
+      "quote": "Welcome to the Toor Lab!",
+      "supports": [
+        "identity"
+      ]
+    }
+  ],
+  "identity": {
+    "status": "confirmed",
+    "entityType": "lab",
+    "reason": "来源明确标识此实体。"
+  },
+  "affiliation": {
+    "status": "uncertain",
+    "reason": "来源不足以确认机构隶属。"
+  },
+  "uncertainty": [
+    "来源未提供带日期的当前隶属声明；不据域名确认当前隶属。",
+    "研究问题待核（限本轮已审阅材料）：完整首页为RNA结构与生物学关系的宽泛方向及化学修饰工具开发；未明确具体未知，不机械转成how。"
+  ],
+  "blockers": [],
+  "reviewedAt": "2026-10-16T08:18:56.534512+00:00",
+  "identityBindingReviewedAt": "2026-10-16T04:27:36+00:00",
+  "questionFieldReview": {
+    "reviewedAt": "2026-10-16T08:18:56.534512+00:00",
+    "previousRecordReviewedAt": "2026-10-16T01:50:12+00:00",
+    "availability": "not_explicit_in_reviewed_entity_local_prose",
+    "reasonZh": "完整首页为RNA结构与生物学关系的宽泛方向及化学修饰工具开发；未明确具体未知，不机械转成how。",
+    "reviewComponent": "REMAINING-QUESTION-FIELD-REVIEW-270-404.json",
+    "reviewComponentSha256": "589791856d29e6800ba30629da2ebc60ec53a5424d60424c1b9d7a2d4ba03c1e",
+    "reviewAddenda": [],
+    "sourceCoverage": [
+      {
+        "sourceId": "src-0e9ac488b86bbd8d",
+        "sourceUrl": "https://rna.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T01:07:22+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            333
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-4a0189c12e81823f",
+        "sourceUrl": "https://bmb.ucsd.edu/faculty",
+        "sourceObservedAt": "2026-10-07T22:53:34+00:00",
+        "readScope": "full packet text",
+        "rangesRead": [
+          [
+            0,
+            31
+          ]
+        ],
+        "coverageReasonZh": "已读列出的研究/介绍或局部目标段；身份/目录/联系/人员与重复材料按本条reason排除，不声称读取未列范围。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-adb12bae50dedef6",
+        "sourceUrl": "https://bmb.ucsd.edu/faculty",
+        "sourceObservedAt": "2026-10-16T00:59:03+00:00",
+        "readScope": "reused identical directory source, introduction range 0:1400 previously read at indices315/326; directory unrelated to entity-local questions",
+        "rangesRead": [],
+        "coverageReasonZh": "复用前述已读同一目录source的范围；部门/相邻实体目录不作本实体问题。",
+        "excludedRemainderNotRead": false
+      },
+      {
+        "sourceId": "src-63a8a61dea803852",
+        "sourceUrl": "http://rna.ucsd.edu/",
+        "sourceObservedAt": "2026-10-16T04:23:40+00:00",
+        "readScope": "duplicate identical text in record",
+        "rangesRead": [],
+        "coverageReasonZh": "与本记录已读source文本逐字相同，复用先前阅读，不额外声称重读正文。",
+        "excludedRemainderNotRead": false
+      }
+    ],
+    "questionEvidence": [],
+    "scope": "Available entity-local prose within explicitly recorded read ranges; excluded or unread material is not a negative finding."
+  }
+}
