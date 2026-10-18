@@ -1,6 +1,6 @@
 {
   "schemaVersion": "3.0.0",
-  "generatedAt": "2026-10-18T03:32:19+00:00",
+  "generatedAt": "2026-10-18T03:38:13+00:00",
   "datasetName": "Research Atlas UCSD dataset",
   "description": "Recovered UCSD records from committed structured evidence. Original source dates are preserved; source caches and part of the expanded faculty dataset were lost in a computer crash.",
   "collectionPolicy": {
@@ -1423941,11 +1423941,27 @@
       "actualRawAvailable": true,
       "networkRequests": 0,
       "servedAtlasModified": false
+    },
+    {
+      "batchId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "mode": "fresh",
+      "beforeProfessors": 6182,
+      "afterProfessors": 6182,
+      "labs": 902,
+      "added": 0,
+      "alreadyOwned": 0,
+      "pending": 30,
+      "existingWholeRecordsUnchanged": true,
+      "labRecordsEntirelyUnchanged": true,
+      "idAndForeignKeyValidation": "passed",
+      "actualRawAvailable": true,
+      "networkRequests": 0,
+      "servedAtlasModified": false
     }
   ],
   "recoveryBackfill": {
     "status": "in_progress",
-    "latestBatchId": "identity-holds-20261018",
+    "latestBatchId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
     "professors": 6182,
     "labs": 902,
     "countGapComparedWithLost6220Candidate": 38,

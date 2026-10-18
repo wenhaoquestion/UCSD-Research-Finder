@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T03:32:19+00:00",
+  "generatedAt": "2026-10-18T03:38:13+00:00",
   "before": {
     "professors": 4335,
     "labs": 545,
@@ -2882,15 +2882,15 @@
   },
   "historicalReportGeneratedAt": "2026-10-07T23:29:40+00:00",
   "recoveryIntegration": {
-    "sourceCandidateSha256": "a817678e6868884036c82b0eaffcfa6cd5403063312f07f6c0b1728caa8e28ac",
-    "servedSha256": "5184db35a781f86e572c411ed51e916bd0f532efd7386518a0d792eef2da4462",
-    "latestBatchId": "identity-holds-20261018",
+    "sourceCandidateSha256": "8ad9af9801d7d737cfb40215ba261d2ad8cae2e9a7af6b6983bdbe9f3e66735f",
+    "servedSha256": "e6990e6fd7d7fb2782fe33c78c8542c21de503e3dca5a4ac27fe23ee6147a23d",
+    "latestBatchId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
     "pipeline": {
       "pipelineId": "recovery-pipeline-overlap-retry-20261018",
-      "status": "running",
-      "cursor": 0,
+      "status": "stopped_at_batch_boundary",
+      "cursor": 30,
       "manifestRows": 115,
-      "remainingManifestRows": 115
+      "remainingManifestRows": 85
     },
     "coverageScope": "after and departments reflect current served arrays; before, remediationCounts, sourceCheckStatuses, quarantinedRecords and captureCoverage retain historical report accounting.",
     "fieldDatesPreserved": true,

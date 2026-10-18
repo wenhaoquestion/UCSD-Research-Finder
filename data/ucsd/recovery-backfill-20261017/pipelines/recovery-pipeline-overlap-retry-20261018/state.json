@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "pipelineId": "recovery-pipeline-overlap-retry-20261018",
+  "manifestPath": "/private/tmp/ucsd-research-20261016/data/ucsd/recovery-backfill-20261017/manifests/overlap-eligible-retry-20261018.json",
+  "manifestSha256": "f7ff803c49d8bf2122e28fdf04d74568d10b3112fd1b473522eff083402d2c23",
+  "manifestRows": 115,
+  "batchSize": 30,
+  "workers": 6,
+  "maxBatchesPerInvocation": 4,
+  "stopAtProfessors": 6220,
+  "basePath": "/private/tmp/ucsd-research-20261016/data/ucsd/recovery-backfill-20261017/candidate.json",
+  "baseSha256AtPreparation": "a817678e6868884036c82b0eaffcfa6cd5403063312f07f6c0b1728caa8e28ac",
+  "sourceHashes": {
+    "atlas_urls.py": "2770176cb42de8439af2761634650f4b427264334dfd702bc504e52d96f1c2a0",
+    "checkpoint_ucsd_recovery_batch.py": "c6eb7ce8d291a89250b9ab2678c2a6989e28d33933534229e0564de563387ca3",
+    "collect_ucsd_coverage.py": "d47f57488b109b45ed09a14c5cd743c81b7d0508c50524c4dfe7ce92c37ada68",
+    "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+    "collection_schedule.py": "1e56491d0c2b1f958acc1a68de53e7317c50cc915398f862371c1fcfdaff45cc",
+    "collection_scope.py": "956fb5dc71e268162af4debbe2b2789165c9695424ba1dcb869bab6c0c573dbb",
+    "import_ucsd_recovery_batch.py": "7c492e75b3e8bf07541f0ce96fbf095eb508b8c11d88a0fedf2cebaa7740255a",
+    "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+    "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+    "queue_resource_keys.py": "1f3051e20eefc5603161de121eaafcba3a28dc377d521c3477fc58e4a3cfe6f5",
+    "refresh_faculty_directories.py": "e3a35fce31e31721ca5a09f7c89c18720a7bbdfff8846b963bde7ef3d87ec9fc",
+    "refresh_labs.py": "eb59835eb68d877f843a8e7063e731dc7ce7af89e8bc8e37d3dbda190dad671f",
+    "run_ucsd_recovery_pipeline.py": "06977e840c0d8fabae1ab1bb7843955081060d35c2b86385244a99bff5862759",
+    "start_ucsd_recovery_backfill.py": "7e8e110c6b461a20c57d396781b9985fed4be347026666d9eb319005f33160db"
+  },
+  "profilesMinimumSeconds": 10,
+  "networkTransport": "unchanged finite launcher and shared PublicFetcher gate",
+  "networkCoordinationDirectory": "/tmp/ucsd-research-network-20261016",
+  "originalQueueRestored": false,
+  "automaticOldQueueSeeding": false,
+  "servedAtlasModified": false,
+  "status": "stopped_at_batch_boundary",
+  "cursor": 30,
+  "terminalPages": {
+    "https://profiles.ucsd.edu/anthony.hunter": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/anthony.magit": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/ashley.juavinett": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/audrey.terras": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/ayse.saygin": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/barbara.walter": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/barnaby.rickett": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/barry.grant": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/ben.williams": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/benjamin.appel": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/benjamin.ochoa": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/bradley.werner": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/branislav.slantchev": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/brenda.bloodgood": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/brenda.wilson": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/bruce.driver": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/camille.forbes": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/carl.gibson": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/carolyn.choy": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/carolyn.kurle": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/charles.perrin": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/charles.tu": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christen.sasaki": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christian.metallo": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christina.schneider": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christina.towers": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christopher.charles": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/christopher.day": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/clark.gibson": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    },
+    "https://profiles.ucsd.edu/clark.guest": {
+      "state": "done",
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "fetchStatus": "ok",
+      "holdReason": null
+    }
+  },
+  "batches": [
+    {
+      "runId": "recovery-pipeline-batch-overlap-retry-20261018-0001",
+      "manifest": "data/ucsd/recovery-backfill-20261017/pipelines/recovery-pipeline-overlap-retry-20261018/recovery-pipeline-batch-overlap-retry-20261018-0001-manifest.json",
+      "rows": [
+        {
+          "url": "https://profiles.ucsd.edu/anthony.hunter",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/anthony.hunter",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/anthony.magit",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/anthony.magit",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/ashley.juavinett",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/ashley.juavinett",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/audrey.terras",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/audrey.terras",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/ayse.saygin",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/ayse.saygin",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/barbara.walter",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/barbara.walter",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/barnaby.rickett",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/barnaby.rickett",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/barry.grant",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/barry.grant",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/ben.williams",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/ben.williams",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/benjamin.appel",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/benjamin.appel",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/benjamin.ochoa",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/benjamin.ochoa",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/bradley.werner",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/bradley.werner",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/branislav.slantchev",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/branislav.slantchev",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/brenda.bloodgood",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/brenda.bloodgood",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/brenda.wilson",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/brenda.wilson",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/bruce.driver",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/bruce.driver",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/camille.forbes",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/camille.forbes",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/carl.gibson",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/carl.gibson",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/carolyn.choy",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/carolyn.choy",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/carolyn.kurle",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/carolyn.kurle",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/charles.perrin",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/charles.perrin",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/charles.tu",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/charles.tu",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christen.sasaki",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christen.sasaki",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christian.metallo",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christian.metallo",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christina.schneider",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christina.schneider",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christina.towers",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christina.towers",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christopher.charles",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christopher.charles",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/christopher.day",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/christopher.day",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/clark.gibson",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/clark.gibson",
+          "depth": 0
+        },
+        {
+          "url": "https://profiles.ucsd.edu/clark.guest",
+          "department": "Unknown",
+          "kind": "profile",
+          "sourceUrl": "https://profiles.ucsd.edu/clark.guest",
+          "depth": 0
+        }
+      ],
+      "cursorStart": 0,
+      "cursorEnd": 30,
+      "stage": "complete",
+      "baseSha256": "a817678e6868884036c82b0eaffcfa6cd5403063312f07f6c0b1728caa8e28ac",
+      "reportedChildWireRequests": 30,
+      "archiveSha256": "77ee1d3a47c005ba558aca494970cb823da63fae5eb77e3f4946adb8193ef9df",
+      "rawCommit": "af763bced29dcce3a308eb7a94f19c7d81f305fb",
+      "candidateCommit": "894be717ef8466651eae99e5dc1cb02ffdb5b3f5"
+    }
+  ],
+  "activeBatch": null,
+  "startedAt": "2026-10-18T03:33:18+00:00",
+  "networkRequestsByRunner": 0,
+  "wireAccountingScope": "Completed child receipts only; active/interrupted wire totals may be unavailable",
+  "pid": 57665,
+  "session": {
+    "threadId": "01a14234-6289-72f3-b8d1-5ed6bf1d43a0",
+    "invokedAt": "2026-10-18T03:33:18+00:00"
+  },
+  "remainingManifestRows": 85,
+  "remainingFrontierPreservedInImmutableManifest": true,
+  "countTargetIsNotOriginalRawIdsOrQueueRecovery": true,
+  "updatedAt": "2026-10-18T03:38:16+00:00",
+  "validatedCandidateProfessors": 6182,
+  "finishedInvocationAt": "2026-10-18T03:38:16+00:00"
+}
