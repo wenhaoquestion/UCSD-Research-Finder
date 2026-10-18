@@ -100,52 +100,53 @@
         </div>
 
         <div class="rail-body">
-          <fieldset class="filter-group">
-            <legend>Quick filters</legend>
-            <div class="quick-filters">
-              <button type="button" data-quick="checked" aria-pressed="false">Source checked</button>
-              <button type="button" data-quick="courses" aria-pressed="false">With courses</button>
-              <button type="button" data-quick="ratings" aria-pressed="false">With ratings</button>
+          <section class="filter-group" aria-labelledby="fieldHeading">
+            <div class="group-head">
+              <h3 id="fieldHeading">Research field</h3>
+              <button class="text-button group-clear" type="button" data-clear-group="field" hidden>Clear</button>
             </div>
-          </fieldset>
+            <ul class="facet-list" id="fieldFacet" aria-labelledby="fieldHeading"></ul>
+          </section>
 
-          <fieldset class="filter-group">
-            <legend>Research field</legend>
-            <select id="fieldFilter" aria-label="Research field"></select>
-            <select id="areaFilter" class="sub-select" aria-label="Specific research area"></select>
-          </fieldset>
-
-          <fieldset class="filter-group">
-            <legend>School &amp; department</legend>
-            <select id="divisionFilter" aria-label="School or division"></select>
-            <select id="departmentFilter" class="sub-select" aria-label="Department"></select>
-          </fieldset>
-
-          <fieldset class="filter-group">
-            <legend>Available evidence</legend>
-            <select id="evidenceFilter" aria-label="Available evidence">
-              <option value="all">All records</option>
-              <option value="courses">Official teaching records</option>
-              <option value="ratings">Any published rating</option>
-              <option value="rateMyPI">PI Review score</option>
-              <option value="rateMyProfessors">Rate My Professors score</option>
-              <option value="needs_review">Needs verification</option>
-            </select>
-            <label class="check">
-              <input id="verifiedOnly" type="checkbox" />
-              <span>Source checked only</span>
+          <section class="filter-group" aria-labelledby="schoolHeading">
+            <div class="group-head">
+              <h3 id="schoolHeading">School &amp; department</h3>
+              <button class="text-button group-clear" type="button" data-clear-group="division" hidden>Clear</button>
+            </div>
+            <label class="facet-search">
+              <span class="visually-hidden">Find a department</span>
+              <input id="departmentSearch" type="search" placeholder="Find a department" autocomplete="off" spellcheck="false" />
             </label>
-          </fieldset>
+            <ul class="facet-list" id="schoolFacet" aria-labelledby="schoolHeading"></ul>
+          </section>
 
-          <fieldset class="filter-group">
-            <legend>Recruiting</legend>
-            <select id="recruitingFilter" aria-label="Recruiting status">
-              <option value="all">Any status</option>
-              <option value="Recruiting">Actively recruiting</option>
-              <option value="Not recruiting">Not recruiting</option>
-              <option value="Unknown">No statement found</option>
-            </select>
-          </fieldset>
+          <section class="filter-group" aria-labelledby="evidenceHeading">
+            <div class="group-head">
+              <h3 id="evidenceHeading">Evidence</h3>
+              <button class="text-button group-clear" type="button" data-clear-group="evidence" hidden>Clear</button>
+            </div>
+            <p class="group-hint">Show records that have all selected.</p>
+            <div class="toggle-chips" id="evidenceChips" role="group" aria-labelledby="evidenceHeading">
+              <button type="button" data-evidence="checked" aria-pressed="false">Source checked</button>
+              <button type="button" data-evidence="courses" aria-pressed="false">Courses</button>
+              <button type="button" data-evidence="ratings" aria-pressed="false">Any rating</button>
+              <button type="button" data-evidence="rateMyPI" aria-pressed="false">PI Review</button>
+              <button type="button" data-evidence="rateMyProfessors" aria-pressed="false">Rate My Professors</button>
+              <button type="button" data-evidence="needs_review" aria-pressed="false">Needs verification</button>
+            </div>
+          </section>
+
+          <section class="filter-group" aria-labelledby="recruitingHeading">
+            <div class="group-head">
+              <h3 id="recruitingHeading">Recruiting</h3>
+            </div>
+            <div class="segmented" id="recruitingChips" role="radiogroup" aria-labelledby="recruitingHeading">
+              <button type="button" role="radio" data-recruiting="all" aria-checked="true">Any</button>
+              <button type="button" role="radio" data-recruiting="Recruiting" aria-checked="false">Recruiting</button>
+              <button type="button" role="radio" data-recruiting="Not recruiting" aria-checked="false">Not recruiting</button>
+              <button type="button" role="radio" data-recruiting="Unknown" aria-checked="false">No statement</button>
+            </div>
+          </section>
 
           <section class="saved" aria-labelledby="savedHeading">
             <h3 id="savedHeading" class="saved-head">Saved <span id="savedCount">0</span></h3>

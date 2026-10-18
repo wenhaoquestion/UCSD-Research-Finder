@@ -50,6 +50,8 @@ const DIVISIONS = [
     departments: [
       { name: "Biological Sciences", aliases: ["biological sciences", "school of biological sciences"], field: "life" },
       { name: "Biochemistry and Molecular Biophysics", aliases: ["biochemistry and molecular biophysics"], sub: "molecular" },
+      { name: "Cell and Developmental Biology", aliases: ["cell and developmental biology"], sub: "development" },
+      { name: "Molecular Biology", aliases: ["molecular biology"], sub: "molecular" },
     ],
   },
   {

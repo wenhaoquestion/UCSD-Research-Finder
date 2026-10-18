@@ -178,4 +178,13 @@ assert.equal(evaluate('recoveryAppointmentDetails({appointmentAsListed:{titleAsL
   'a role without its own source metadata cannot borrow unrelated field evidence');
 assert.equal(evaluate('sourceChecked({ verification: { status: "source_checked", rawUnavailable: false } })'), true);
 
+// Rail evidence toggles combine, and older single-value links still parse.
+assert.equal(evaluate('state.evidence = "courses"; evidenceKeys().join()'), 'courses');
+assert.equal(evaluate('setEvidenceKeys(["ratings", "courses", "bogus"]); state.evidence'), 'courses,ratings',
+  'evidence keys are stored in a stable order and unknown keys are dropped');
+assert.equal(evaluate('state.evidence = "courses,ratings"; matchesFilters({ facts: { courses: 2, ratings: [], checked: true } })'), false,
+  'selected evidence filters must all hold');
+assert.equal(evaluate('matchesFilters({ facts: { courses: 2, ratings: ["rateMyPI"], checked: true } })'), true);
+evaluate('state.evidence = "all"');
+
 console.log('PASS: person/lab identity, recovered archives and appointments, field verification, missing scores, course indexing, taxonomy, and fuzzy search');

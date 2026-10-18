@@ -107,6 +107,8 @@ const state = {
   facetCounts: null,
   suggestions: [],
   suggestionIndex: -1,
+  liveFacetCounts: null,
+  expandedDivisions: new Set(),
   visibleLimit: PAGE_SIZE,
   activeId: "",
   userSelected: false,
@@ -118,17 +120,15 @@ const els = {
   query: document.querySelector("#query"),
   typeButtons: [...document.querySelectorAll("[data-type-choice]")],
   typeCounts: [...document.querySelectorAll("[data-count]")],
-  quickButtons: [...document.querySelectorAll("[data-quick]")],
-  division: document.querySelector("#divisionFilter"),
-  department: document.querySelector("#departmentFilter"),
-  field: document.querySelector("#fieldFilter"),
-  area: document.querySelector("#areaFilter"),
+  fieldFacet: document.querySelector("#fieldFacet"),
+  schoolFacet: document.querySelector("#schoolFacet"),
+  departmentSearch: document.querySelector("#departmentSearch"),
+  evidenceChips: [...document.querySelectorAll("[data-evidence]")],
+  recruitingChips: [...document.querySelectorAll("[data-recruiting]")],
+  groupClears: [...document.querySelectorAll("[data-clear-group]")],
   suggest: document.querySelector("#suggestions"),
   fieldStrip: document.querySelector("#fieldStrip"),
   searchNote: document.querySelector("#searchNote"),
-  evidence: document.querySelector("#evidenceFilter"),
-  verifiedOnly: document.querySelector("#verifiedOnly"),
-  recruiting: document.querySelector("#recruitingFilter"),
   sort: document.querySelector("#sortFilter"),
   clear: document.querySelector("#clearFilters"),
   filtersButton: document.querySelector("#filtersButton"),
@@ -878,18 +878,30 @@ function termMatches(term, indexed) {
   return term.alts.some((alt) => textHas(indexed.haystack, alt)) || term.fuzzyTokens.some((alt) => indexed.haystack.includes(alt));
 }
 
+// Evidence filters combine: "courses,ratings" keeps records that have both. A single value
+// is the same string as before, so older shared links still work.
+function evidenceKeys() {
+  return state.evidence === "all" ? [] : state.evidence.split(",").filter((key) => EVIDENCE_LABELS[key]);
+}
+
+function setEvidenceKeys(keys) {
+  const ordered = Object.keys(EVIDENCE_LABELS).filter((key) => keys.includes(key));
+  state.evidence = ordered.length ? ordered.join(",") : "all";
+}
+
+function hasEvidence(facts, key) {
+  if (key === "courses") return facts.courses > 0;
+  if (key === "ratings") return facts.ratings.length > 0;
+  if (key === "needs_review") return !facts.checked || facts.needsReview;
+  return facts.ratings.includes(key);
+}
+
 function matchesFilters(record) {
   const { facts } = record;
   if (state.savedOnly && !state.saved.has(record.id)) return false;
-  if (state.division !== "all" && !record.divisions.includes(state.division)) return false;
-  if (state.department !== "all" && !record.departments.includes(state.department)) return false;
   if (state.recruiting !== "all" && (record.recruitingStatus || UNKNOWN) !== state.recruiting) return false;
   if (state.verifiedOnly && !facts.checked) return false;
-  if (state.evidence === "courses" && !facts.courses) return false;
-  if (state.evidence === "ratings" && !facts.ratings.length) return false;
-  if (["rateMyPI", "rateMyProfessors"].includes(state.evidence) && !facts.ratings.includes(state.evidence)) return false;
-  if (state.evidence === "needs_review" && facts.checked && !facts.needsReview) return false;
-  return true;
+  return evidenceKeys().every((key) => hasEvidence(facts, key));
 }
 
 // Where a word appears decides its weight: a name beats a research area beats body text.
@@ -945,11 +957,15 @@ function increment(map, key) {
 }
 
 // One pass computes the visible rows, the per-type counts under every other filter (so the
-// type tabs show what each tab would reveal), and field counts for the browse strip.
+// type tabs show what each tab would reveal), and facet counts for the field and school
+// lists. Each list counts records under every filter except its own, so its numbers say
+// what clicking an entry would show.
 function collectRows(query, required) {
   const counts = { all: 0, professor: 0, lab: 0, resource: 0, archive: 0 };
   const fieldCounts = new Map();
   const areaCounts = new Map();
+  const divisionCounts = new Map();
+  const departmentCounts = new Map();
   const rows = [];
   state.records.forEach((record, position) => {
     if (!matchesFilters(record)) return;
@@ -958,18 +974,26 @@ function collectRows(query, required) {
     if (matched.length < required) return;
     const inField = state.field === "all" || record.fieldIds.includes(state.field);
     const inArea = state.area === "all" || record.subfieldIds.includes(state.area);
+    const inDivision = state.division === "all" || record.divisions.includes(state.division);
+    const inDepartment = state.department === "all" || record.departments.includes(state.department);
     const inType = state.type === "all" || record.recordType === state.type;
     if (inType) {
-      record.fieldIds.forEach((id) => increment(fieldCounts, id));
-      if (inField) record.subfieldIds.forEach((id) => increment(areaCounts, id));
+      if (inDivision && inDepartment) {
+        record.fieldIds.forEach((id) => increment(fieldCounts, id));
+        if (inField) record.subfieldIds.forEach((id) => increment(areaCounts, id));
+      }
+      if (inField && inArea) {
+        record.divisions.forEach((id) => increment(divisionCounts, id));
+        record.departments.forEach((name) => increment(departmentCounts, name));
+      }
     }
-    if (!inField || !inArea) return;
+    if (!inField || !inArea || !inDivision || !inDepartment) return;
     counts.all += 1;
     counts[record.recordType] += 1;
     if (!inType) return;
     rows.push({ record, score: state.sort === "relevance" ? scoreRecord(record, indexed, matched, query) : 0 });
   });
-  return { rows, counts, fieldCounts, areaCounts };
+  return { rows, counts, fieldCounts, areaCounts, divisionCounts, departmentCounts };
 }
 
 function computeResults() {
@@ -1026,7 +1050,7 @@ function readUrl() {
   }
   if (!["all", ...TYPE_KEYS].includes(state.type)) state.type = "all";
   if (!SORTERS[state.sort]) state.sort = "relevance";
-  if (state.evidence !== "all" && !EVIDENCE_LABELS[state.evidence]) state.evidence = "all";
+  if (state.evidence !== "all") setEvidenceKeys(state.evidence.split(","));
   if (params.has("id")) {
     state.activeId = params.get("id");
     state.userSelected = true;
@@ -1056,50 +1080,96 @@ function countMap(values) {
   return counts;
 }
 
-function option(label, value, count) {
-  return new Option(count === undefined ? label : `${label} (${formatNumber(count)})`, value);
+const DEPARTMENTS_SHOWN = 8;
+
+function facetRow(label, count, data, { pressed = false, expanded = null, meta = "" } = {}) {
+  const item = make("li");
+  const button = make("button", "facet-row");
+  button.type = "button";
+  Object.assign(button.dataset, data);
+  button.setAttribute("aria-pressed", String(pressed));
+  if (expanded !== null) button.setAttribute("aria-expanded", String(expanded));
+  const text = make("span", "facet-text");
+  text.append(make("span", "facet-label", label));
+  if (meta) text.append(make("span", "facet-meta", meta));
+  button.append(text, make("span", "facet-count", formatNumber(count)));
+  item.append(button);
+  return item;
 }
 
-function optionGroup(label, options) {
-  const group = document.createElement("optgroup");
-  group.label = label;
-  group.append(...options);
-  return group;
+// Broad fields stay listed so the reader can switch; the chosen one opens its detailed areas.
+// Clicking a chosen entry again steps back up a level.
+function renderFieldFacet(fieldCounts, areaCounts) {
+  const items = RESEARCH_FIELDS
+    .filter((field) => fieldCounts.get(field.id) || field.id === state.field)
+    .map((field) => {
+      const open = field.id === state.field;
+      const item = facetRow(field.label, fieldCounts.get(field.id) || 0, { facetField: field.id }, { pressed: open && state.area === "all", expanded: open });
+      if (open) {
+        const subs = field.subfields.filter((sub) => areaCounts.get(sub.id) || sub.id === state.area);
+        const children = make("ul", "facet-children");
+        children.append(...subs.map((sub) => facetRow(sub.label, areaCounts.get(sub.id) || 0, { facetArea: sub.id }, { pressed: sub.id === state.area })));
+        if (subs.length) item.append(children);
+        item.classList.add("is-open");
+      }
+      return item;
+    });
+  els.fieldFacet.replaceChildren(...(items.length ? items : [make("li", "facet-empty", "No field matches the current search.")]));
 }
 
-// Each pair of selects is broad -> detailed: the detailed list follows the broad choice,
-// and picking a detailed entry also sets its broad group.
-function renderFacets() {
-  const counts = state.facetCounts;
-  const divisionIds = [...TAXONOMY.divisions.keys()].filter((id) => counts.divisions.get(id));
-  els.division.replaceChildren(
-    option("All schools & divisions", "all"),
-    ...divisionIds.map((id) => option(divisionLabel(id), id, counts.divisions.get(id))),
-  );
-  const divisions = state.division === "all" ? divisionIds : [state.division];
-  const departmentGroups = divisions.map((division) => {
-    const names = [...counts.departments.keys()]
-      .filter((name) => state.departmentDivision.get(name) === division)
-      .sort((a, b) => a.localeCompare(b));
-    return [division, names.map((name) => option(name, name, counts.departments.get(name)))];
-  }).filter(([, options]) => options.length);
-  els.department.replaceChildren(
-    option(state.division === "all" ? "All departments" : `All of ${divisionLabel(state.division)}`, "all"),
-    ...(state.division === "all" ? departmentGroups.map(([division, options]) => optionGroup(divisionLabel(division), options)) : departmentGroups.flatMap(([, options]) => options)),
-  );
+function departmentMatches(name, query) {
+  const key = normalize(name);
+  const aliases = TAXONOMY.departments.get(departmentKey(name))?.aliases || [];
+  return key.includes(query) || aliases.some((alias) => normalize(alias).startsWith(query));
+}
 
-  els.field.replaceChildren(
-    option("All research fields", "all"),
-    ...RESEARCH_FIELDS.filter((field) => counts.fields.get(field.id)).map((field) => option(field.label, field.id, counts.fields.get(field.id))),
-  );
-  const fields = RESEARCH_FIELDS.filter((field) => state.field === "all" || field.id === state.field);
-  const areaGroups = fields.map((field) => [field, field.subfields
-    .filter((sub) => counts.areas.get(sub.id))
-    .map((sub) => option(sub.label, sub.id, counts.areas.get(sub.id)))]).filter(([, options]) => options.length);
-  els.area.replaceChildren(
-    option(state.field === "all" ? "All specific areas" : `Any area in ${fieldLabel(state.field)}`, "all"),
-    ...(state.field === "all" ? areaGroups.map(([field, options]) => optionGroup(field.label, options)) : areaGroups.flatMap(([, options]) => options)),
-  );
+function renderSchoolFacet(divisionCounts, departmentCounts) {
+  const query = normalize(els.departmentSearch.value);
+  // Searching lists matching departments directly, with their school for context.
+  if (query) {
+    const names = [...departmentCounts.keys()]
+      .filter((name) => departmentMatches(name, query))
+      .sort((a, b) => departmentCounts.get(b) - departmentCounts.get(a))
+      .slice(0, 30);
+    const items = names.map((name) => facetRow(name, departmentCounts.get(name), { facetDepartment: name }, {
+      pressed: name === state.department, meta: divisionLabel(state.departmentDivision.get(name)),
+    }));
+    els.schoolFacet.replaceChildren(...(items.length ? items : [make("li", "facet-empty", "No department matches.")]));
+    return;
+  }
+  const items = [...TAXONOMY.divisions.keys()]
+    .filter((id) => divisionCounts.get(id) || id === state.division)
+    .map((id) => {
+      const open = id === state.division;
+      const item = facetRow(divisionLabel(id), divisionCounts.get(id) || 0, { facetDivision: id }, { pressed: open && state.department === "all", expanded: open });
+      if (!open) return item;
+      item.classList.add("is-open");
+      const names = [...departmentCounts.keys()]
+        .filter((name) => state.departmentDivision.get(name) === id)
+        .sort((a, b) => departmentCounts.get(b) - departmentCounts.get(a) || a.localeCompare(b));
+      const showAll = state.expandedDivisions.has(id);
+      const shown = showAll ? names : names.slice(0, DEPARTMENTS_SHOWN);
+      if (state.department !== "all" && names.includes(state.department) && !shown.includes(state.department)) shown.push(state.department);
+      const children = make("ul", "facet-children");
+      children.append(...shown.map((name) => facetRow(name, departmentCounts.get(name), { facetDepartment: name }, { pressed: name === state.department })));
+      if (names.length > DEPARTMENTS_SHOWN) {
+        const more = make("button", "text-button facet-more", showAll ? "Show fewer" : `Show all ${names.length}`);
+        more.type = "button";
+        more.dataset.facetMore = id;
+        const li = make("li");
+        li.append(more);
+        children.append(li);
+      }
+      if (names.length) item.append(children);
+      return item;
+    });
+  els.schoolFacet.replaceChildren(...(items.length ? items : [make("li", "facet-empty", "No school matches the current search.")]));
+}
+
+function renderFacetLists(counts) {
+  state.liveFacetCounts = counts;
+  renderFieldFacet(counts.fieldCounts, counts.areaCounts);
+  renderSchoolFacet(counts.divisionCounts, counts.departmentCounts);
 }
 
 function computeFacetCounts() {
@@ -1150,38 +1220,23 @@ function setArea(value) {
   if (value !== "all") state.field = TAXONOMY.subfields.get(value)?.field || state.field;
 }
 
-function syncStateFromControls(changed = null) {
+function syncStateFromControls() {
   state.query = els.query.value.trim();
-  if (changed === els.division) setDivision(els.division.value);
-  if (changed === els.department) setDepartment(els.department.value);
-  if (changed === els.field) setField(els.field.value);
-  if (changed === els.area) setArea(els.area.value);
-  state.evidence = els.evidence.value;
-  state.verifiedOnly = els.verifiedOnly.checked;
-  state.recruiting = els.recruiting.value;
   state.sort = els.sort.value;
 }
 
 function syncControls() {
   if (els.query.value.trim() !== state.query) els.query.value = state.query;
-  if (state.facetCounts) renderFacets();
-  els.division.value = state.division;
-  els.department.value = state.department;
-  els.field.value = state.field;
-  els.area.value = state.area;
-  els.evidence.value = state.evidence;
-  els.verifiedOnly.checked = state.verifiedOnly;
-  els.recruiting.value = state.recruiting;
   els.sort.value = state.sort;
-  for (const select of [els.division, els.department, els.field, els.area, els.evidence, els.recruiting]) {
-    select.classList.toggle("is-set", select.value !== "all");
-  }
-  els.savedToggle.setAttribute("aria-pressed", String(state.savedOnly));
-  els.quickButtons.forEach((button) => {
-    const key = button.dataset.quick;
-    const active = key === "checked" ? state.verifiedOnly : state.evidence === key;
-    button.setAttribute("aria-pressed", String(active));
+  const evidence = evidenceKeys();
+  els.evidenceChips.forEach((chip) => {
+    const key = chip.dataset.evidence;
+    chip.setAttribute("aria-pressed", String(key === "checked" ? state.verifiedOnly : evidence.includes(key)));
   });
+  els.recruitingChips.forEach((chip) => chip.setAttribute("aria-checked", String(chip.dataset.recruiting === state.recruiting)));
+  const groupSet = { field: state.field !== "all", division: state.division !== "all", evidence: state.verifiedOnly || evidence.length > 0 };
+  els.groupClears.forEach((button) => { button.hidden = !groupSet[button.dataset.clearGroup]; });
+  els.savedToggle.setAttribute("aria-pressed", String(state.savedOnly));
 }
 
 function activeFilterEntries() {
@@ -1191,8 +1246,8 @@ function activeFilterEntries() {
   if (state.area !== "all") entries.push(["area", "Area", subfieldLabel(state.area)]);
   if (state.division !== "all" && state.department === "all") entries.push(["division", "School", divisionLabel(state.division)]);
   if (state.department !== "all") entries.push(["department", "Dept", state.department]);
-  if (state.evidence !== "all") entries.push(["evidence", "Evidence", EVIDENCE_LABELS[state.evidence]]);
-  if (state.verifiedOnly) entries.push(["verifiedOnly", "Data", "source checked"]);
+  if (state.verifiedOnly) entries.push(["verifiedOnly", "Evidence", "Source checked"]);
+  for (const key of evidenceKeys()) entries.push([`evidence:${key}`, "Evidence", EVIDENCE_LABELS[key]]);
   if (state.recruiting !== "all") entries.push(["recruiting", "Status", state.recruiting]);
   return entries;
 }
@@ -1223,6 +1278,7 @@ function renderActiveFilters() {
 function resetFilters({ keepQuery = false } = {}) {
   const query = state.query;
   Object.assign(state, DEFAULT_FILTERS);
+  els.departmentSearch.value = "";
   if (keepQuery) state.query = query;
   syncControls();
   update({ scroll: true });
@@ -1234,9 +1290,23 @@ function clearFilter(key) {
     resetFilters({ keepQuery: true });
     return;
   }
-  state[key] = DEFAULT_FILTERS[key];
+  if (key.startsWith("evidence:")) setEvidenceKeys(evidenceKeys().filter((item) => `evidence:${item}` !== key));
+  else state[key] = DEFAULT_FILTERS[key];
   if (key === "field") state.area = "all";
   if (key === "division") state.department = "all";
+  syncControls();
+  update({ scroll: true });
+}
+
+// Clears one rail group: a field or school with its detailed entry, or every evidence toggle.
+function clearGroup(group) {
+  if (group === "evidence") {
+    state.verifiedOnly = false;
+    state.evidence = "all";
+  } else {
+    clearFilter(group);
+    return;
+  }
   syncControls();
   update({ scroll: true });
 }
@@ -1272,9 +1342,12 @@ function renderFieldStrip(fieldCounts, areaCounts) {
   els.fieldStrip.replaceChildren(...(items.length ? [make("span", "strip-label", state.field === "all" ? "Fields" : "Areas"), ...items] : []));
 }
 
-function applyQuickFilter(key) {
+function toggleEvidence(key) {
   if (key === "checked") state.verifiedOnly = !state.verifiedOnly;
-  else state.evidence = state.evidence === key ? "all" : key;
+  else {
+    const keys = evidenceKeys();
+    setEvidenceKeys(keys.includes(key) ? keys.filter((item) => item !== key) : [...keys, key]);
+  }
   syncControls();
   update({ scroll: true });
 }
@@ -1446,6 +1519,7 @@ function render() {
   renderSearchNote(result);
   renderCounts(counts);
   renderFieldStrip(result.fieldCounts, result.areaCounts);
+  renderFacetLists(result);
   renderActiveFilters();
   renderEmpty(records.length);
 
@@ -2518,13 +2592,44 @@ function bindEvents() {
     if (item) chooseSuggestion(state.suggestions[Number(item.dataset.suggestIndex)]);
   });
 
-  for (const control of [els.division, els.department, els.field, els.area, els.evidence, els.verifiedOnly, els.recruiting, els.sort]) {
-    control.addEventListener("change", () => {
-      syncStateFromControls(control);
+  els.sort.addEventListener("change", () => {
+    syncStateFromControls();
+    update({ scroll: true });
+  });
+
+  els.rail.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-facet-field], [data-facet-area], [data-facet-division], [data-facet-department], [data-facet-more], [data-evidence], [data-recruiting], [data-clear-group]");
+    if (!target) return;
+    const { facetField, facetArea, facetDivision, facetDepartment, facetMore, evidence, recruiting, clearGroup: group } = target.dataset;
+    // The lists re-render on every change; remember which entry had focus to restore it.
+    const [focusKey, focusValue] = Object.entries(target.dataset)[0];
+    if (facetMore) {
+      if (state.expandedDivisions.has(facetMore)) state.expandedDivisions.delete(facetMore);
+      else state.expandedDivisions.add(facetMore);
+      renderFacetLists(state.liveFacetCounts);
+    } else if (evidence) {
+      toggleEvidence(evidence);
+    } else if (group) {
+      clearGroup(group);
+    } else {
+      if (facetField) setField(state.field === facetField && state.area === "all" ? "all" : facetField);
+      if (facetField && state.field === facetField) state.area = "all";
+      if (facetArea) setArea(state.area === facetArea ? "all" : facetArea);
+      if (facetDivision) setDivision(state.division === facetDivision && state.department === "all" ? "all" : facetDivision);
+      if (facetDivision && state.division === facetDivision) state.department = "all";
+      if (facetDepartment) setDepartment(state.department === facetDepartment ? "all" : facetDepartment);
+      if (recruiting) state.recruiting = recruiting;
       syncControls();
       update({ scroll: true });
-    });
-  }
+    }
+    const attribute = focusKey.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
+    const again = els.rail.querySelector(`[data-${attribute}="${CSS.escape(focusValue)}"]`);
+    (again && !again.hidden ? again : els.rail.querySelector(".rail-body"))?.focus?.({ preventScroll: true });
+  });
+
+  els.departmentSearch.addEventListener("input", () => {
+    if (state.liveFacetCounts) renderSchoolFacet(state.liveFacetCounts.divisionCounts, state.liveFacetCounts.departmentCounts);
+  });
 
   els.fieldStrip.addEventListener("click", (event) => {
     const button = event.target.closest("[data-strip-field], [data-strip-area]");
@@ -2544,10 +2649,6 @@ function bindEvents() {
       state.type = button.dataset.typeChoice || "all";
       update({ scroll: true });
     });
-  });
-
-  els.quickButtons.forEach((button) => {
-    button.addEventListener("click", () => applyQuickFilter(button.dataset.quick));
   });
 
   els.activeFilters.addEventListener("click", (event) => {
