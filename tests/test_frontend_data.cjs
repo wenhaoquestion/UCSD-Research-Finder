@@ -116,4 +116,56 @@ assert.equal(evaluate('textHas(" ai safety", "ai")'), true);
 assert.equal(evaluate('textHas(" frank wuerthwein", "wu")'), true, 'two letters still find names that start with them');
 assert.equal(evaluate('textHas(" danna zhang", "ang")'), true, 'three-letter terms match inside words, as before');
 
-console.log('PASS: person and lab identity, field verification, missing scores, course-code indexing, taxonomy, and fuzzy search');
+// Recovered archives keep stable links and whole snapshots without becoming people,
+// active labs, REAL Portal resources, or sources of current contact/ratings claims.
+const oldSnapshot = { id: 'old-directory', email: 'old@ucsd.edu', ratings: { rateMyPI: { score: 4.8 } }, lastVerified: '2020-01-01' };
+context.recoveryFixture = {
+  professors: [{ id: 'active-professor', name: 'Active Professor', department: 'Physics' }],
+  labs: [{ id: 'active-lab', labName: 'Active Lab', department: 'Physics' }],
+  recovery: {
+    directorySources: [{ id: 'old-directory', label: 'Faculty Emeriti', department: 'Physics', sourceUrl: 'https://physics.ucsd.edu/faculty',
+      previousProfessorObservations: ['original_record', 'previous_candidate', 'assembled_record'].map(scope => ({ scope, record: oldSnapshot })) }],
+    retiredLabResources: [{ id: 'old-lab', aliasIds: ['older-lab'], label: 'Old Resource', department: 'Physics', sourceUrl: 'https://physics.ucsd.edu/resources',
+      classification: 'historical_record_not_active_lab', reason: 'Historical resource; not an active lab.',
+      previousLabObservations: [{ scope: 'original_record', record: { id: 'old-lab', contactEmail: 'old-lab@ucsd.edu', principalInvestigator: 'Earlier PI' } }] }],
+  },
+};
+context.recoveryRealFixture = { resources: [{ id: 'real-entry', title: 'REAL Entry' }] };
+evaluate('state.records = buildRecords(recoveryFixture, recoveryRealFixture); state.index = buildIndex(state.records); state.byId = makeRecordIndex(state.records)');
+assert.equal(evaluate('state.byId.get("old-directory").recordType'), 'archive');
+assert.equal(evaluate('state.byId.get("older-lab").id'), 'old-lab');
+assert.equal(evaluate('state.byId.get("old-lab").displayKind'), 'Retired resource');
+assert.equal(evaluate('state.byId.get("old-directory").email'), '');
+assert.equal(evaluate('state.byId.get("old-directory").facts.ratings.length'), 0);
+assert.equal(evaluate('sourceChecked(state.byId.get("old-directory"))'), false);
+assert.deepEqual(JSON.parse(evaluate('JSON.stringify(collectRows(compileQuery(""), 0).counts)')),
+  { all: 5, professor: 1, lab: 1, resource: 1, archive: 2 });
+assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-directory")))').includes('old@ucsd.edu'));
+assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-directory")))').includes('Previous reviewed record'));
+assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-directory")))').includes('Record at archive time'));
+assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-lab")))').includes('Earlier PI'));
+assert(evaluate('state.index.find(row => row.name.includes("faculty emeriti")).haystack.includes("physics")'), 'archives retain the current taxonomy/search model');
+
+context.historicalAppointmentFixture = {
+  historicalAppointmentAsListed: { titleAsListed: 'Associate Professor, Physics' },
+  historicalFieldEvidence: { appointmentStatus: [{ sourceUrl: 'https://profiles.ucsd.edu/example', observedAt: '2020-01-01', evidence: 'Earlier appointment quote' }] },
+  verification: { status: 'needs_review', rawUnavailable: true },
+  fieldEvidence: { name: [{ sourceUrl: 'https://profiles.ucsd.edu/example', observedAt: '2020-01-01' }] },
+};
+const historicalAppointment = evaluate('JSON.stringify(recoveryAppointmentDetails(historicalAppointmentFixture))');
+assert(historicalAppointment.includes('Historical appointment'));
+assert(historicalAppointment.includes('Associate Professor, Physics'));
+assert(historicalAppointment.includes('2020-01-01'));
+assert(historicalAppointment.includes('not freshly verified'));
+assert.equal(evaluate('sourceChecked(historicalAppointmentFixture)'), false);
+context.freshAppointmentFixture = { appointmentAsListed: { titleAsListed: 'Assistant Professor', sourceUrl: 'https://profiles.ucsd.edu/fresh', observedAt: '2026-10-17' } };
+assert(evaluate('JSON.stringify(recoveryAppointmentDetails(freshAppointmentFixture))').includes('Captured appointment'));
+context.freshAppointmentFixture = { appointmentAsListed: { namedFacultyListing: { listedRole: 'Lecturer', sourceUrl: 'https://physics.ucsd.edu/faculty', observedAt: '2026-10-17' } } };
+assert(evaluate('JSON.stringify(recoveryAppointmentDetails(freshAppointmentFixture))').includes('Lecturer'));
+context.freshAppointmentFixture = { appointmentAsListed: { namedFacultyListing: { listedRole: 'Assistant Professor', capture: { sourceUrl: 'https://physics.ucsd.edu/faculty', observedAt: '2026-10-17' } } } };
+assert(evaluate('JSON.stringify(recoveryAppointmentDetails(freshAppointmentFixture))').includes('https://physics.ucsd.edu/faculty'));
+assert.equal(evaluate('recoveryAppointmentDetails({appointmentAsListed:{titleAsListed:"Professor"},fieldEvidence:{appointmentStatus:[{sourceUrl:"https://other.ucsd.edu/",observedAt:"2026-10-17"}]}})'), null,
+  'a role without its own source metadata cannot borrow unrelated field evidence');
+assert.equal(evaluate('sourceChecked({ verification: { status: "source_checked", rawUnavailable: false } })'), true);
+
+console.log('PASS: person/lab identity, recovered archives and appointments, field verification, missing scores, course indexing, taxonomy, and fuzzy search');

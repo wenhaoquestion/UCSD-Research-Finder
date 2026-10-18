@@ -74,7 +74,7 @@ const URL_KEYS = {
   sort: "sort",
 };
 
-const TYPE_KEYS = ["professor", "lab", "resource"];
+const TYPE_KEYS = ["professor", "lab", "resource", "archive"];
 const EVIDENCE_LABELS = {
   courses: "Official teaching records",
   ratings: "Any published rating",
@@ -318,6 +318,7 @@ function profileLinkNeedsReview(record) {
 }
 
 function sourceChecked(record) {
+  if (record.recordType === "archive" || record.verification?.rawUnavailable === true) return false;
   if (profileLinkNeedsReview(record)) return false;
   if (record.destinationIdentityAssessment?.identityStatus === "mismatch" || record.verification?.destinationIdentityStatus === "mismatch") return false;
   return record.verification?.status === "source_checked" || evidenceFields(record).length > 0;
@@ -663,7 +664,30 @@ function buildRecords(data, realPortalData = null) {
     recruitingEvidence: { text: "", url: "" },
   }, uniqueByNormalized([item.organization]), "campus")));
 
-  return [...professors, ...labs, ...resources];
+  const archives = [
+    ...(data.archivedFacultyResources || []),
+    ...(data.recovery?.directorySources || []),
+    ...(data.recovery?.retiredLabResources || []),
+  ].map((item) => withFacts(assignDepartments({
+    ...item,
+    recordType: "archive",
+    displayName: knownText(item.label) || NOT_FOUND,
+    displayKind: item.classification === "historical_record_not_active_lab" ? "Retired resource" : "Directory source",
+    summary: knownText(item.reason),
+    email: "",
+    researchAreas: [],
+    researchKeywords: [],
+    sourceUrls: item.sourceUrls || [item.sourceUrl].filter(isKnown),
+    links: [["Original source", item.sourceUrl]].filter(([, url]) => isKnown(url)),
+    recruitingStatus: UNKNOWN,
+    recruitingEvidence: { text: "", url: "" },
+    fieldEvidence: {},
+    teaching: { courses: [] },
+    ratings: {},
+    verification: { status: "needs_review", fieldsVerified: [] },
+  }, [item.department])));
+
+  return [...professors, ...labs, ...resources, ...archives];
 }
 
 // Person identities are resolved by the source-reviewed data build. The UI
@@ -922,7 +946,7 @@ function increment(map, key) {
 // One pass computes the visible rows, the per-type counts under every other filter (so the
 // type tabs show what each tab would reveal), and field counts for the browse strip.
 function collectRows(query, required) {
-  const counts = { all: 0, professor: 0, lab: 0, resource: 0 };
+  const counts = { all: 0, professor: 0, lab: 0, resource: 0, archive: 0 };
   const fieldCounts = new Map();
   const areaCounts = new Map();
   const rows = [];
@@ -1877,6 +1901,8 @@ function facultyDirectoryDetails(record) {
     }
     parts.push(list);
   }
+  const recoveredAppointments = recoveryAppointmentDetails(record);
+  if (recoveredAppointments) parts.push(recoveredAppointments);
   const normalization = record.departmentLabelNormalization;
   if (normalization?.captureVerified) {
     const unitList = make("ul", "evidence-list unit-label-normalization");
@@ -1890,6 +1916,41 @@ function facultyDirectoryDetails(record) {
   }
   parts.push(note("These roles describe how official directories list this person. A directory listing alone does not confirm current employment."));
   return detailSection("Faculty roles & affiliations", ...parts);
+}
+
+function recoveryAppointmentDetails(record) {
+  const list = make("ul", "evidence-list");
+  const seen = new Set();
+  const append = (appointment, proof, historical) => {
+    if (!appointment || !proof) return;
+    const role = appointment.titleAsListed || appointment.roleAsListed || appointment.listedRole;
+    const uri = proof.sourceUrl || proof.exactOfficialOwnUri;
+    const date = proof.observedAt || proof.observedAtAsCommitted;
+    if (!isKnown(role) || !isKnown(uri) || !date) return;
+    const key = JSON.stringify([historical, role, uri, date]);
+    if (seen.has(key)) return;
+    seen.add(key);
+    list.append(evidenceItem(
+      `${historical ? "Historical appointment" : "Captured appointment"} · ${role}`,
+      `Observed ${dateLabel(date)}${historical ? " · original response unavailable; not freshly verified" : ""}`,
+      typeof proof.evidence === "string" ? proof.evidence : proof.evidence?.evidence || "",
+      [["Appointment source", uri]],
+    ));
+  };
+  for (const observation of record.historicalQualificationRecovery?.sourceRowObservations || []) {
+    for (const capture of observation.qualificationCaptures || []) append(capture, capture, true);
+  }
+  const historicalProofs = record.historicalFieldEvidence?.appointmentStatus || record.historicalFieldEvidence?.name || [];
+  for (const proof of Array.isArray(historicalProofs) ? historicalProofs : [historicalProofs]) {
+    append(record.historicalAppointmentAsListed, proof, true);
+  }
+  const appointment = record.appointmentAsListed;
+  if (appointment) {
+    const listing = appointment.namedFacultyListing || appointment;
+    const proof = listing.observedAt ? listing : listing.capture || listing.evidence;
+    append(listing, proof, false);
+  }
+  return list.children.length ? list : null;
 }
 
 function detailFields(record) {
@@ -2006,9 +2067,29 @@ function detailSources(record) {
   return section;
 }
 
+function archiveDetails(record) {
+  const context = detailSection(record.displayKind, note(record.reason || "Historical resource retained under its original ID; excluded from professor and lab counts."), fieldGrid([
+    ["Department", record.department],
+    ["Page heading", record.documentHeadingAsPublished],
+  ]));
+  const history = detailSection("Preserved observations");
+  const labels = { original_record: "Original record", previous_candidate: "Previous reviewed record", assembled_record: "Record at archive time" };
+  for (const observation of [...(record.previousProfessorObservations || []), ...(record.previousLabObservations || [])]) {
+    const details = make("details", "source-details");
+    const text = make("pre", "archive-record", JSON.stringify(observation.record, null, 2));
+    details.append(make("summary", "", labels[observation.scope] || observation.scope), text);
+    history.append(details);
+  }
+  return [context, history];
+}
+
 function renderDetail(record) {
   const root = make("article", "detail-record");
   root.append(detailHead(record));
+  if (record.recordType === "archive") {
+    root.append(detailLinks(record), ...archiveDetails(record), verificationDetails(record), detailSources(record));
+    return root;
+  }
   const sections = [detailLinks(record), detailOverview(record)];
   if (record.recordType === "professor") {
     sections.push(

@@ -1,5 +1,11 @@
 # Research Atlas
 
+<!-- recovery-integration:start -->
+当前本地正式数据：**6,158 位教授、902 个实验室**。Claude 与网站统一读取 `data/research-atlas.json`。
+
+恢复批次存档与证据在 `data/ucsd/recovery-backfill-20261017/`；同步来源、SHA 和批次状态见 `docs/operations/desktop-recovery-integration-20261017.json`。历史来源日期保留；恢复数量不代表所有字段均已重新核验。
+<!-- recovery-integration:end -->
+
 A static UC San Diego research finder with faculty profiles, labs, contacts, teaching schedules, PI Review mentoring ratings, Rate My Professors teaching ratings, and public REAL Portal opportunities.
 
 The served dataset uses **schema v3**. Each newly asserted field includes its source, supporting text, extraction method, and actual observation time. A successful page request does not verify every fact on the page. Current counts and unresolved gaps are generated in [the data quality report](docs/DATA_QUALITY_REPORT.md); machine-readable coverage by department is in `data/quality/refresh-report.json`.

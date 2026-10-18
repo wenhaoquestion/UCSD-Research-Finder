@@ -1,0 +1,1839 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Minimal still-unfetched explicit directory person links from original 45 followups; candidate/cache snapshot filter only, zero network.",
+  "candidatePath": "data/ucsd/recovery-backfill-20261017/candidate.json",
+  "candidateSha256": "8a1d95ff69a6400e883038f18e44f6b83305c69d2d76232c32188ee22d35869d",
+  "candidatePeople": 5707,
+  "inputPath": "data/ucsd/recovery-backfill-20261017/new-person-link-manifest-01.json",
+  "inputSha256": "e737f50be1d1b2bed679056345ca4a35149fd9cc0815d9696dc620e5637e7757",
+  "networkRequests": 0,
+  "rows": [
+    {
+      "url": "https://providers.ucsd.edu/details/32997/belal-al_khiami-cardiology-la_jolla-san_diego?Specialties=6&amp%3bSubSpecialties=426",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Al Khiami, Belal Outhman, MBBS",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Belal Outhman Al Khiami",
+        "nameAsPublished": "Al Khiami, Belal Outhman, MBBS",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/32997/belal-al_khiami-cardiology-la_jolla-san_diego?Specialties=6&amp%3bSubSpecialties=426",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/32997/belal-al_khiami-cardiology-la_jolla-san_diego?Specialties=6&amp%3bSubSpecialties=426",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Al Khiami, Belal Outhman, MBBS Cardiovascular Medicine",
+          "nameAsPublished": "Al Khiami, Belal Outhman, MBBS",
+          "rawHref": "https://providers.ucsd.edu/details/32997/belal-al_khiami-cardiology-la_jolla-san_diego?Specialties=6&amp%3bSubSpecialties=426",
+          "linkUrl": "https://providers.ucsd.edu/details/32997/belal-al_khiami-cardiology-la_jolla-san_diego?Specialties=6&amp%3bSubSpecialties=426"
+        },
+        "rowTextAsPublished": "Al Khiami, Belal Outhman, MBBS Cardiovascular Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-78933e8110015c",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Belal Outhman Al Khiami",
+      "sourceExpectedName": "Al Khiami, Belal Outhman, MBBS",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/natalie.afshari",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Natalie A. Afshari, M.D., F.A.C.S.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Natalie A. Afshari",
+        "nameAsPublished": "Natalie A. Afshari, M.D., F.A.C.S.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/natalie.afshari",
+        "namedLinkUrl": "https://profiles.ucsd.edu/natalie.afshari",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Natalie A. Afshari, M.D., F.A.C.S. | Academic Profile -> https://profiles.ucsd.edu/natalie.afshari",
+          "nameAsPublished": "Natalie A. Afshari, M.D., F.A.C.S.",
+          "rawHref": "https://profiles.ucsd.edu/natalie.afshari",
+          "linkUrl": "https://profiles.ucsd.edu/natalie.afshari"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-3adaf8b835e7ea",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Natalie A. Afshari",
+      "sourceExpectedName": "Natalie A. Afshari, M.D., F.A.C.S.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33193/nicholas-phreaner-cardiology-la_jolla-san_diego",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Phreaner, Nicholas John, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Nicholas John Phreaner",
+        "nameAsPublished": "Phreaner, Nicholas John, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/33193/nicholas-phreaner-cardiology-la_jolla-san_diego",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/33193/nicholas-phreaner-cardiology-la_jolla-san_diego",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Phreaner, Nicholas John, M.D. Cardiovascular Medicine",
+          "nameAsPublished": "Phreaner, Nicholas John, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/33193/nicholas-phreaner-cardiology-la_jolla-san_diego",
+          "linkUrl": "https://providers.ucsd.edu/details/33193/nicholas-phreaner-cardiology-la_jolla-san_diego"
+        },
+        "rowTextAsPublished": "Phreaner, Nicholas John, M.D. Cardiovascular Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-8c8744fa2e9f44",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Nicholas John Phreaner",
+      "sourceExpectedName": "Phreaner, Nicholas John, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/dirk-uwe.bartsch",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Dirk-Uwe Bartsch, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Dirk-Uwe Bartsch",
+        "nameAsPublished": "Dirk-Uwe Bartsch, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/dirk-uwe.bartsch",
+        "namedLinkUrl": "https://profiles.ucsd.edu/dirk-uwe.bartsch",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Dirk-Uwe Bartsch, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/dirk-uwe.bartsch",
+          "nameAsPublished": "Dirk-Uwe Bartsch, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/dirk-uwe.bartsch",
+          "linkUrl": "https://profiles.ucsd.edu/dirk-uwe.bartsch"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-9fb53446ae79fc",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Dirk-Uwe Bartsch",
+      "sourceExpectedName": "Dirk-Uwe Bartsch, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11413/sotirios-tsimikas-cardiology-la_jolla",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Tsimikas, Sotirios, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Sotirios Tsimikas",
+        "nameAsPublished": "Tsimikas, Sotirios, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/11413/sotirios-tsimikas-cardiology-la_jolla",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/11413/sotirios-tsimikas-cardiology-la_jolla",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Tsimikas, Sotirios, M.D. Cardiovascular Medicine",
+          "nameAsPublished": "Tsimikas, Sotirios, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/11413/sotirios-tsimikas-cardiology-la_jolla",
+          "linkUrl": "https://providers.ucsd.edu/details/11413/sotirios-tsimikas-cardiology-la_jolla"
+        },
+        "rowTextAsPublished": "Tsimikas, Sotirios, M.D. Cardiovascular Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-85fe733f4b083b",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Sotirios Tsimikas",
+      "sourceExpectedName": "Tsimikas, Sotirios, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/akram.belghith",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Akram Belghith, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Akram Belghith",
+        "nameAsPublished": "Akram Belghith, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/akram.belghith",
+        "namedLinkUrl": "https://profiles.ucsd.edu/akram.belghith",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Akram Belghith, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/akram.belghith",
+          "nameAsPublished": "Akram Belghith, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/akram.belghith",
+          "linkUrl": "https://profiles.ucsd.edu/akram.belghith"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-ace6209051a8df",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Akram Belghith",
+      "sourceExpectedName": "Akram Belghith, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/32996/michael-wilkinson-cardiology-encinitas-la_jolla",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Wilkinson, Michael John, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Michael John Wilkinson",
+        "nameAsPublished": "Wilkinson, Michael John, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/32996/michael-wilkinson-cardiology-encinitas-la_jolla",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/32996/michael-wilkinson-cardiology-encinitas-la_jolla",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Wilkinson, Michael John, M.D. Cardiovascular Medicine",
+          "nameAsPublished": "Wilkinson, Michael John, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/32996/michael-wilkinson-cardiology-encinitas-la_jolla",
+          "linkUrl": "https://providers.ucsd.edu/details/32996/michael-wilkinson-cardiology-encinitas-la_jolla"
+        },
+        "rowTextAsPublished": "Wilkinson, Michael John, M.D. Cardiovascular Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-592c14c9eb148a",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Michael John Wilkinson",
+      "sourceExpectedName": "Wilkinson, Michael John, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/christopher.bowd",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Christopher Bowd, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Christopher Bowd",
+        "nameAsPublished": "Christopher Bowd, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/christopher.bowd",
+        "namedLinkUrl": "https://profiles.ucsd.edu/christopher.bowd",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Christopher Bowd, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/christopher.bowd",
+          "nameAsPublished": "Christopher Bowd, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/christopher.bowd",
+          "linkUrl": "https://profiles.ucsd.edu/christopher.bowd"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-8b95321addc3b5",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Christopher Bowd",
+      "sourceExpectedName": "Christopher Bowd, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33272/calvin-yeang-cardiology-san_diego?Index=5&amp%3bPractices=10075",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Yeang, Calvin, M.D., PhD",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Calvin Yeang",
+        "nameAsPublished": "Yeang, Calvin, M.D., PhD",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/33272/calvin-yeang-cardiology-san_diego?Index=5&amp%3bPractices=10075",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/33272/calvin-yeang-cardiology-san_diego?Index=5&amp%3bPractices=10075",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Yeang, Calvin, M.D., PhD Cardiovascular Medicine",
+          "nameAsPublished": "Yeang, Calvin, M.D., PhD",
+          "rawHref": "https://providers.ucsd.edu/details/33272/calvin-yeang-cardiology-san_diego?Index=5&amp%3bPractices=10075",
+          "linkUrl": "https://providers.ucsd.edu/details/33272/calvin-yeang-cardiology-san_diego?Index=5&amp%3bPractices=10075"
+        },
+        "rowTextAsPublished": "Yeang, Calvin, M.D., PhD Cardiovascular Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-fa5113da7311c7",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Calvin Yeang",
+      "sourceExpectedName": "Yeang, Calvin, M.D., PhD",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/stuart.brown",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Stuart I. Brown, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Stuart I. Brown",
+        "nameAsPublished": "Stuart I. Brown, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/stuart.brown",
+        "namedLinkUrl": "https://profiles.ucsd.edu/stuart.brown",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Stuart I. Brown, M.D. | Academic Profile -> https://profiles.ucsd.edu/stuart.brown",
+          "nameAsPublished": "Stuart I. Brown, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/stuart.brown",
+          "linkUrl": "https://profiles.ucsd.edu/stuart.brown"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-cff666954939bc",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Stuart I. Brown",
+      "sourceExpectedName": "Stuart I. Brown, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33340/primary-care-internal-medicine",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Abeles, Ruth Hsiu-Ts Cheng, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Ruth Hsiu-Ts Cheng Abeles",
+        "nameAsPublished": "Abeles, Ruth Hsiu-Ts Cheng, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/33340/primary-care-internal-medicine",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/33340/primary-care-internal-medicine",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Abeles, Ruth Hsiu-Ts Cheng, M.D. General Internal Medicine",
+          "nameAsPublished": "Abeles, Ruth Hsiu-Ts Cheng, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/33340/primary-care-internal-medicine",
+          "linkUrl": "https://providers.ucsd.edu/details/33340/primary-care-internal-medicine"
+        },
+        "rowTextAsPublished": "Abeles, Ruth Hsiu-Ts Cheng, M.D. General Internal Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-b6baa5bef1bfa3",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Ruth Hsiu-Ts Cheng Abeles",
+      "sourceExpectedName": "Abeles, Ruth Hsiu-Ts Cheng, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/andrew.camp",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Andrew Camp, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Andrew Camp",
+        "nameAsPublished": "Andrew Camp, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/andrew.camp",
+        "namedLinkUrl": "https://profiles.ucsd.edu/andrew.camp",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Andrew Camp, M.D. | Academic Profile -> https://profiles.ucsd.edu/andrew.camp",
+          "nameAsPublished": "Andrew Camp, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/andrew.camp",
+          "linkUrl": "https://profiles.ucsd.edu/andrew.camp"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-3679e265f79d5b",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Andrew Camp",
+      "sourceExpectedName": "Andrew Camp, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/11791/primary-care-internal-medicine",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Ackerman, William Joseph",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "William Joseph Ackerman",
+        "nameAsPublished": "Ackerman, William Joseph",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/11791/primary-care-internal-medicine",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/11791/primary-care-internal-medicine",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Ackerman, William Joseph General Internal Medicine",
+          "nameAsPublished": "Ackerman, William Joseph",
+          "rawHref": "https://providers.ucsd.edu/details/11791/primary-care-internal-medicine",
+          "linkUrl": "https://providers.ucsd.edu/details/11791/primary-care-internal-medicine"
+        },
+        "rowTextAsPublished": "Ackerman, William Joseph General Internal Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-8ebd9551033cfb",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "William Joseph Ackerman",
+      "sourceExpectedName": "Ackerman, William Joseph",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lingyun.cheng",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Lingyun Cheng, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Lingyun Cheng",
+        "nameAsPublished": "Lingyun Cheng, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/lingyun.cheng",
+        "namedLinkUrl": "https://profiles.ucsd.edu/lingyun.cheng",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Lingyun Cheng, M.D. | Academic Profile -> https://profiles.ucsd.edu/lingyun.cheng",
+          "nameAsPublished": "Lingyun Cheng, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/lingyun.cheng",
+          "linkUrl": "https://profiles.ucsd.edu/lingyun.cheng"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-87755c06e1442f",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Lingyun Cheng",
+      "sourceExpectedName": "Lingyun Cheng, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/22446/sonia-bajwa-dulai-internal_medicine-primary_care-san_diego",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Bajwa Dulai, Sonia T, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Sonia T Bajwa Dulai",
+        "nameAsPublished": "Bajwa Dulai, Sonia T, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/22446/sonia-bajwa-dulai-internal_medicine-primary_care-san_diego",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/22446/sonia-bajwa-dulai-internal_medicine-primary_care-san_diego",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Bajwa Dulai, Sonia T, M.D. General Internal Medicine",
+          "nameAsPublished": "Bajwa Dulai, Sonia T, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/22446/sonia-bajwa-dulai-internal_medicine-primary_care-san_diego",
+          "linkUrl": "https://providers.ucsd.edu/details/22446/sonia-bajwa-dulai-internal_medicine-primary_care-san_diego"
+        },
+        "rowTextAsPublished": "Bajwa Dulai, Sonia T, M.D. General Internal Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-a77dbef8af0f3b",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Sonia T Bajwa Dulai",
+      "sourceExpectedName": "Bajwa Dulai, Sonia T, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jiun.do",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Jiun Do, M.D., Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Jiun Do",
+        "nameAsPublished": "Jiun Do, M.D., Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/jiun.do",
+        "namedLinkUrl": "https://profiles.ucsd.edu/jiun.do",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Jiun Do, M.D., Ph.D. | Academic Profile -> https://profiles.ucsd.edu/jiun.do",
+          "nameAsPublished": "Jiun Do, M.D., Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/jiun.do",
+          "linkUrl": "https://profiles.ucsd.edu/jiun.do"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-4fce67562dbb14",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Jiun Do",
+      "sourceExpectedName": "Jiun Do, M.D., Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33200/joseph-diaz-internal_medicine-primary_care-la_jolla",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Diaz Jr., Joseph David, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Joseph David Diaz Jr.",
+        "nameAsPublished": "Diaz Jr., Joseph David, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/33200/joseph-diaz-internal_medicine-primary_care-la_jolla",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/33200/joseph-diaz-internal_medicine-primary_care-la_jolla",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Diaz Jr., Joseph David, M.D. General Internal Medicine",
+          "nameAsPublished": "Diaz Jr., Joseph David, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/33200/joseph-diaz-internal_medicine-primary_care-la_jolla",
+          "linkUrl": "https://providers.ucsd.edu/details/33200/joseph-diaz-internal_medicine-primary_care-la_jolla"
+        },
+        "rowTextAsPublished": "Diaz Jr., Joseph David, M.D. General Internal Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-7f184b96b72565",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Joseph David Diaz Jr.",
+      "sourceExpectedName": "Diaz Jr., Joseph David, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/henry.ferreyra",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Henry A. Ferreyra, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Henry A. Ferreyra",
+        "nameAsPublished": "Henry A. Ferreyra, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/henry.ferreyra",
+        "namedLinkUrl": "https://profiles.ucsd.edu/henry.ferreyra",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Henry A. Ferreyra, M.D. | Academic Profile -> https://profiles.ucsd.edu/henry.ferreyra",
+          "nameAsPublished": "Henry A. Ferreyra, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/henry.ferreyra",
+          "linkUrl": "https://profiles.ucsd.edu/henry.ferreyra"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-0939bef32c9e26",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Henry A. Ferreyra",
+      "sourceExpectedName": "Henry A. Ferreyra, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/22211/primary-care-internal-medicine",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Nguyen, Christine, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Christine Nguyen",
+        "nameAsPublished": "Nguyen, Christine, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/22211/primary-care-internal-medicine",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/22211/primary-care-internal-medicine",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Nguyen, Christine, M.D. General Internal Medicine",
+          "nameAsPublished": "Nguyen, Christine, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/22211/primary-care-internal-medicine",
+          "linkUrl": "https://providers.ucsd.edu/details/22211/primary-care-internal-medicine"
+        },
+        "rowTextAsPublished": "Nguyen, Christine, M.D. General Internal Medicine",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-8da01fb400f888",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Christine Nguyen",
+      "sourceExpectedName": "Nguyen, Christine, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/william.freeman",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "William R. Freeman, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "William R. Freeman",
+        "nameAsPublished": "William R. Freeman, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/william.freeman",
+        "namedLinkUrl": "https://profiles.ucsd.edu/william.freeman",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "William R. Freeman, M.D. | Academic Profile -> https://profiles.ucsd.edu/william.freeman",
+          "nameAsPublished": "William R. Freeman, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/william.freeman",
+          "linkUrl": "https://profiles.ucsd.edu/william.freeman"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-57a2ba85d17d43",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "William R. Freeman",
+      "sourceExpectedName": "William R. Freeman, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33219/chelsey-smith-rheumatology-la_jolla-san_diego?FreeText:Last+name=Forbess+Smith",
+      "department": "Medicine",
+      "kind": "profile",
+      "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+      "depth": 1,
+      "nameAsPublished": "Smith, Chelsey Jessica Forbess, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Chelsey Jessica Forbess Smith",
+        "nameAsPublished": "Smith, Chelsey Jessica Forbess, M.D.",
+        "department": "Medicine",
+        "profileUrl": "https://providers.ucsd.edu/details/33219/chelsey-smith-rheumatology-la_jolla-san_diego?FreeText:Last+name=Forbess+Smith",
+        "namedLinkUrl": "https://providers.ucsd.edu/details/33219/chelsey-smith-rheumatology-la_jolla-san_diego?FreeText:Last+name=Forbess+Smith",
+        "listedRole": "",
+        "directorySection": "Named faculty table; rank unstated unless explicit in this row",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7",
+          "method": "actual_named_directory_local_person_link",
+          "evidenceType": "directory_named_link",
+          "evidence": "Smith, Chelsey Jessica Forbess, M.D. Rheumatology, Autoimmunity, & Inflammation",
+          "nameAsPublished": "Smith, Chelsey Jessica Forbess, M.D.",
+          "rawHref": "https://providers.ucsd.edu/details/33219/chelsey-smith-rheumatology-la_jolla-san_diego?FreeText:Last+name=Forbess+Smith",
+          "linkUrl": "https://providers.ucsd.edu/details/33219/chelsey-smith-rheumatology-la_jolla-san_diego?FreeText:Last+name=Forbess+Smith"
+        },
+        "rowTextAsPublished": "Smith, Chelsey Jessica Forbess, M.D. Rheumatology, Autoimmunity, & Inflammation",
+        "capture": {
+          "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+          "observedAt": "2026-10-17T23:09:15+00:00",
+          "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+        },
+        "proposedStableId": "ucsd-recovery-person-6b5e3cd4c10dc2",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Chelsey Jessica Forbess Smith",
+      "sourceExpectedName": "Smith, Chelsey Jessica Forbess, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "sourceUrl": "https://med.ucsd.edu/about/faculty-directory.html",
+        "observedAt": "2026-10-17T23:09:15+00:00",
+        "bodySha256": "955495e5cc4bcd099fdcd18851335de40781926f71b09ff4c00cb2b3b1c5bdb7"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/michael.goldbaum",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Michael H. Goldbaum, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Michael H. Goldbaum",
+        "nameAsPublished": "Michael H. Goldbaum, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/michael.goldbaum",
+        "namedLinkUrl": "https://profiles.ucsd.edu/michael.goldbaum",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Michael H. Goldbaum, M.D. | Academic Profile -> https://profiles.ucsd.edu/michael.goldbaum",
+          "nameAsPublished": "Michael H. Goldbaum, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/michael.goldbaum",
+          "linkUrl": "https://profiles.ucsd.edu/michael.goldbaum"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-b3678adbd1b61a",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Michael H. Goldbaum",
+      "sourceExpectedName": "Michael H. Goldbaum, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/david.granet",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "David B. Granet, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "David B. Granet",
+        "nameAsPublished": "David B. Granet, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/david.granet",
+        "namedLinkUrl": "https://profiles.ucsd.edu/david.granet",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "David B. Granet, M.D. | Academic Profile -> https://profiles.ucsd.edu/david.granet",
+          "nameAsPublished": "David B. Granet, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/david.granet",
+          "linkUrl": "https://profiles.ucsd.edu/david.granet"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-fd1cd882c73217",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "David B. Granet",
+      "sourceExpectedName": "David B. Granet, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/weldon.haw",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Weldon W. Haw, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Weldon W. Haw",
+        "nameAsPublished": "Weldon W. Haw, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/weldon.haw",
+        "namedLinkUrl": "https://profiles.ucsd.edu/weldon.haw",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Weldon W. Haw, M.D. | Academic Profile -> https://profiles.ucsd.edu/weldon.haw",
+          "nameAsPublished": "Weldon W. Haw, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/weldon.haw",
+          "linkUrl": "https://profiles.ucsd.edu/weldon.haw"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-95a2b56d8378cf",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Weldon W. Haw",
+      "sourceExpectedName": "Weldon W. Haw, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/don.kikkawa",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Don O. Kikkawa, M.D., F.A.C.S.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Don O. Kikkawa",
+        "nameAsPublished": "Don O. Kikkawa, M.D., F.A.C.S.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/don.kikkawa",
+        "namedLinkUrl": "https://profiles.ucsd.edu/don.kikkawa",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Don O. Kikkawa, M.D., F.A.C.S. | Academic Profile -> https://profiles.ucsd.edu/don.kikkawa",
+          "nameAsPublished": "Don O. Kikkawa, M.D., F.A.C.S.",
+          "rawHref": "https://profiles.ucsd.edu/don.kikkawa",
+          "linkUrl": "https://profiles.ucsd.edu/don.kikkawa"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-087520c7811637",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Don O. Kikkawa",
+      "sourceExpectedName": "Don O. Kikkawa, M.D., F.A.C.S.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/lanning.kline",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Lanning Kline, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Lanning Kline",
+        "nameAsPublished": "Lanning Kline, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/lanning.kline",
+        "namedLinkUrl": "https://profiles.ucsd.edu/lanning.kline",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Lanning Kline, M.D. | Academic Profile -> https://profiles.ucsd.edu/lanning.kline",
+          "nameAsPublished": "Lanning Kline, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/lanning.kline",
+          "linkUrl": "https://profiles.ucsd.edu/lanning.kline"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-68feee6dadeef0",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Lanning Kline",
+      "sourceExpectedName": "Lanning Kline, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/bobby.korn",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Bobby S. Korn, M.D., Ph.D., F.A.C.S.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Bobby S. Korn",
+        "nameAsPublished": "Bobby S. Korn, M.D., Ph.D., F.A.C.S.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/bobby.korn",
+        "namedLinkUrl": "https://profiles.ucsd.edu/bobby.korn",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Bobby S. Korn, M.D., Ph.D., F.A.C.S. | Academic Profile -> https://profiles.ucsd.edu/bobby.korn",
+          "nameAsPublished": "Bobby S. Korn, M.D., Ph.D., F.A.C.S.",
+          "rawHref": "https://profiles.ucsd.edu/bobby.korn",
+          "linkUrl": "https://profiles.ucsd.edu/bobby.korn"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-005ad859a98566",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Bobby S. Korn",
+      "sourceExpectedName": "Bobby S. Korn, M.D., Ph.D., F.A.C.S.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jeffrey.lee",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Jeffrey E. Lee, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Jeffrey E. Lee",
+        "nameAsPublished": "Jeffrey E. Lee, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/jeffrey.lee",
+        "namedLinkUrl": "https://profiles.ucsd.edu/jeffrey.lee",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Jeffrey E. Lee, M.D. | Academic Profile -> https://profiles.ucsd.edu/jeffrey.lee",
+          "nameAsPublished": "Jeffrey E. Lee, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/jeffrey.lee",
+          "linkUrl": "https://profiles.ucsd.edu/jeffrey.lee"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-f8ba9180b113ae",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Jeffrey E. Lee",
+      "sourceExpectedName": "Jeffrey E. Lee, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/john.liu",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "John H.K. Liu, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "John H.K. Liu",
+        "nameAsPublished": "John H.K. Liu, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/john.liu",
+        "namedLinkUrl": "https://profiles.ucsd.edu/john.liu",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "John H.K. Liu, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/john.liu",
+          "nameAsPublished": "John H.K. Liu, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/john.liu",
+          "linkUrl": "https://profiles.ucsd.edu/john.liu"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-18bad0d58ea7bd",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "John H.K. Liu",
+      "sourceExpectedName": "John H.K. Liu, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/thao.nguyen",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Thao P. Nguyen, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Thao P. Nguyen",
+        "nameAsPublished": "Thao P. Nguyen, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/thao.nguyen",
+        "namedLinkUrl": "https://profiles.ucsd.edu/thao.nguyen",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Thao P. Nguyen, M.D. | Academic Profile -> https://profiles.ucsd.edu/thao.nguyen",
+          "nameAsPublished": "Thao P. Nguyen, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/thao.nguyen",
+          "linkUrl": "https://profiles.ucsd.edu/thao.nguyen"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-8b414e928d84a9",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Thao P. Nguyen",
+      "sourceExpectedName": "Thao P. Nguyen, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/peter.savino",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Peter J. Savino, M.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Peter J. Savino",
+        "nameAsPublished": "Peter J. Savino, M.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/peter.savino",
+        "namedLinkUrl": "https://profiles.ucsd.edu/peter.savino",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Peter J. Savino, M.D. | Academic Profile -> https://profiles.ucsd.edu/peter.savino",
+          "nameAsPublished": "Peter J. Savino, M.D.",
+          "rawHref": "https://profiles.ucsd.edu/peter.savino",
+          "linkUrl": "https://profiles.ucsd.edu/peter.savino"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-a73c01ce948c41",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Peter J. Savino",
+      "sourceExpectedName": "Peter J. Savino, M.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/peter.shaw",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Peter Shaw, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Peter Shaw",
+        "nameAsPublished": "Peter Shaw, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/peter.shaw",
+        "namedLinkUrl": "https://profiles.ucsd.edu/peter.shaw",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Peter Shaw, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/peter.shaw",
+          "nameAsPublished": "Peter Shaw, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/peter.shaw",
+          "linkUrl": "https://profiles.ucsd.edu/peter.shaw"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-7e51a6ca17fb82",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Peter Shaw",
+      "sourceExpectedName": "Peter Shaw, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    },
+    {
+      "url": "https://profiles.ucsd.edu/linda.zangwill",
+      "department": "Ophthalmology",
+      "kind": "profile",
+      "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+      "depth": 1,
+      "nameAsPublished": "Linda M. Zangwill, Ph.D.",
+      "requiresOwnAppointmentSource": true,
+      "directoryObservation": {
+        "name": "Linda M. Zangwill",
+        "nameAsPublished": "Linda M. Zangwill, Ph.D.",
+        "department": "Ophthalmology",
+        "profileUrl": "https://profiles.ucsd.edu/linda.zangwill",
+        "namedLinkUrl": "https://profiles.ucsd.edu/linda.zangwill",
+        "listedRole": "",
+        "directorySection": "Named faculty heading and its adjacent Academic Profile link",
+        "appointmentStatus": "appointment_not_stated",
+        "minimumRecordEligible": false,
+        "requiresOwnAppointmentSource": true,
+        "evidence": {
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99",
+          "method": "actual_named_faculty_heading_adjacent_academic_profile",
+          "evidence": "Linda M. Zangwill, Ph.D. | Academic Profile -> https://profiles.ucsd.edu/linda.zangwill",
+          "nameAsPublished": "Linda M. Zangwill, Ph.D.",
+          "rawHref": "https://profiles.ucsd.edu/linda.zangwill",
+          "linkUrl": "https://profiles.ucsd.edu/linda.zangwill"
+        },
+        "capture": {
+          "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+          "observedAt": "2026-10-17T23:09:18+00:00",
+          "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+        },
+        "proposedStableId": "ucsd-recovery-person-4447c23860ca0d",
+        "existingCandidateIdsByExactPrimary": [],
+        "existingCandidateIdsByPublishedName": [],
+        "possibleExistingCandidateIdsByFirstLastName": [],
+        "newPersonCandidate": true
+      },
+      "expectedName": "Linda M. Zangwill",
+      "sourceExpectedName": "Linda M. Zangwill, Ph.D.",
+      "directoryCapture": {
+        "requestedUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "sourceUrl": "https://oph.ucsd.edu/faculty/index.html",
+        "observedAt": "2026-10-17T23:09:18+00:00",
+        "bodySha256": "26f90b552fc0492a8777302fa9ece8e9acea82caf1be36364f042e84b1cdec99"
+      }
+    }
+  ],
+  "omitted": [
+    {
+      "url": "https://providers.ucsd.edu/details/33000/gordon-ho-cardiology-la_jolla-san_diego",
+      "expectedName": "Gordon Ho",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-731ed78889bea9"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/33209/anjoulie-pujji-primary_care-senior_medicine-la_jolla?FreeText:Keyword=Pujji",
+      "expectedName": "Anjoulie Pujji",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-d83f6295095eab"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://providers.ucsd.edu/details/1417311325/hematology-blood-diseases-cancer",
+      "expectedName": "Kentson Lam",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-e97eb082c1dd4a"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/sally.baxter",
+      "expectedName": "Sally L. Baxter",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-0df50c5032b715"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/shyamanga.borooah",
+      "expectedName": "Shyamanga Borooah",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-64a8df6a05d677"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/alex.huang",
+      "expectedName": "Alex A. Huang",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-8dca8966e98dd8"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/eric.nudleman",
+      "expectedName": "Eric Nudleman",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-e001c78df50343"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/cristiana.vasile",
+      "expectedName": "Cristiana Vasile",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-de1cd22befcc79"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/karl.wahlin",
+      "expectedName": "Karl Wahlin",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-410df97d79ea1b"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/derek.welsbie",
+      "expectedName": "Derek S. Welsbie",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-d6eabaad6a6a8f"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/jennifer.dumdie",
+      "expectedName": "Jennifer CHOUSAL",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-e1d3fe053df08b"
+      ],
+      "cache": null
+    },
+    {
+      "url": "https://profiles.ucsd.edu/kari.hird",
+      "expectedName": "Kari HIRD",
+      "reason": "current_exact_primary_alias_or_published_name",
+      "existingCandidateIds": [
+        "ucsd-profile-faculty-60bf1beef78c96"
+      ],
+      "cache": null
+    }
+  ],
+  "summary": {
+    "originalFollowups": 45,
+    "pendingPages": 33,
+    "omitted": 12,
+    "omittedByReason": {
+      "current_exact_primary_alias_or_published_name": 12
+    },
+    "pendingByHost": {
+      "providers.ucsd.edu": 11,
+      "profiles.ucsd.edu": 22
+    }
+  }
+}
