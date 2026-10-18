@@ -1,7 +1,7 @@
 # UCSD 数据更新与质量报告
 
 <!-- recovery-integration:start -->
-当前正式数据已整合恢复批次：**6,158 位教授 / 902 个实验室**。
+当前正式数据已整合恢复批次：**6,182 位教授 / 902 个实验室**。
 
 当前计数与字段覆盖请读取 `data/research-atlas.json` 的数组及 `dataQuality.coverage`；同步回执见 `docs/operations/desktop-recovery-integration-20261017.json`。**以下内容保留为 2026-10-07 的历史质量报告，不代表当前记录数量。**
 <!-- recovery-integration:end -->
