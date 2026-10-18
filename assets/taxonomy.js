@@ -3,14 +3,17 @@
    Loaded before app.js; plain data plus a few patterns, no DOM access. */
 
 // Departments and campus units, grouped by UC San Diego school/division.
+// A division's `field` is the broad research field implied for professors and labs in one of
+// its units that has no field of its own (e.g. a Scripps research division).
 // `aliases` are matched after departmentKey() strips "Department of", parentheses and "&".
 // `field`/`sub` give the research field a department implies when a record has no topic text.
 const DIVISIONS = [
   {
     id: "engineering",
+    field: "engineering",
     label: "Engineering",
     aliases: ["jacobs", "工程"],
-    match: /\bengineering\b|jacobs school|qualcomm institute|design lab|institue? of engineering/,
+    match: /\bengineering\b|jacobs school|qualcomm institute|design lab|institue? of engineering|structural system/,
     departments: [
       { name: "Bioengineering", aliases: ["bioengineering"], sub: "bioeng" },
       { name: "Computer Science and Engineering", aliases: ["computer science and engineering", "cse"], field: "computing" },
@@ -22,19 +25,21 @@ const DIVISIONS = [
   },
   {
     id: "computing",
+    field: "computing",
     label: "Computing & Data Science",
     aliases: ["data science", "scids", "数据科学"],
     match: /data science|supercomputer|carpentries|research it/,
     departments: [
-      { name: "Halicioğlu Data Science Institute", aliases: ["halicioglu data science institute", "hdsi"], sub: "data" },
+      { name: "Halicioğlu Data Science Institute", aliases: ["halicioglu data science institute", "halicioglu data science inst", "hdsi"], sub: "data" },
       { name: "San Diego Supercomputer Center", aliases: ["san diego supercomputer center", "sdsc"], field: "computing" },
     ],
   },
   {
     id: "physical",
+    field: "physical",
     label: "Physical Sciences",
     aliases: ["物理科学"],
-    match: /physical sciences|mrsec|materials research|energy research/,
+    match: /physical sciences|mrsec|materials research|energy research|astrophysics/,
     departments: [
       { name: "Astronomy and Astrophysics", aliases: ["astronomy and astrophysics"], sub: "astro" },
       { name: "Chemistry & Biochemistry", aliases: ["chemistry and biochemistry"], sub: "chemistry" },
@@ -44,11 +49,12 @@ const DIVISIONS = [
   },
   {
     id: "biological",
+    field: "life",
     label: "Biological Sciences",
     aliases: ["biology", "生物"],
     match: /biological sciences|bioconnect|biophysics|neuroscience|neural computation/,
     departments: [
-      { name: "Biological Sciences", aliases: ["biological sciences", "school of biological sciences"], field: "life" },
+      { name: "Biological Sciences", aliases: ["biological sciences", "school of biological sciences", "division of biological science", "division of biological sciences"], field: "life" },
       { name: "Biochemistry and Molecular Biophysics", aliases: ["biochemistry and molecular biophysics"], sub: "molecular" },
       { name: "Cell and Developmental Biology", aliases: ["cell and developmental biology"], sub: "development" },
       { name: "Molecular Biology", aliases: ["molecular biology"], sub: "molecular" },
@@ -56,15 +62,17 @@ const DIVISIONS = [
   },
   {
     id: "ocean",
+    field: "earth",
     label: "Scripps Oceanography",
     aliases: ["scripps", "sio", "oceanography", "earth sciences", "海洋"],
-    match: /scripps institution|\bsio\b|oceanograph|atmosphere|weather and water|igpp|marine|geosciences|birch aquarium|sea grant|natural reserve/,
+    match: /scripps institution|\bsio\b|oceanograph|atmospher|weather and water|igpp|geophysics and planetary|marine|geosciences|birch aquarium|sea grant|natural reserve/,
     departments: [
       { name: "Scripps Institution of Oceanography", aliases: ["scripps institution of oceanography", "sio"], field: "earth" },
     ],
   },
   {
     id: "health",
+    field: "health",
     label: "Health Sciences",
     aliases: ["medicine", "school of medicine", "医学"],
     match: /medicine|medical|health|hospital|cancer center|pharmac|surgery|clinic|optometric|retina/,
@@ -75,21 +83,22 @@ const DIVISIONS = [
       { name: "Cellular & Molecular Medicine", aliases: ["cellular and molecular medicine"], sub: "molecular" },
       { name: "Dermatology", aliases: ["dermatology"], sub: "clinical" },
       { name: "Emergency Medicine", aliases: ["emergency medicine"], sub: "clinical" },
+      { name: "Emergency Medical Services", aliases: ["emergency medical services"], sub: "clinical" },
       { name: "Family Medicine", aliases: ["family medicine", "family medicine and public health"], sub: "clinical" },
       { name: "Moores Cancer Center", aliases: ["moores cancer center", "unknown"], sub: "cancer" },
       { name: "Neurological Surgery", aliases: ["neurological surgery"], sub: "clinical" },
       { name: "Neurosciences", aliases: ["neurosciences"], sub: "neuro" },
-      { name: "Obstetrics, Gynecology & Reproductive Sciences", aliases: ["obstetrics, gynecology and reproductive sciences", "obstetrics gynecology and reproductive sciences"], sub: "maternal" },
+      { name: "Obstetrics, Gynecology & Reproductive Sciences", aliases: ["obstetrics, gynecology and reproductive sciences", "ob/gyn & reproductive sciences"], sub: "maternal" },
       { name: "Ophthalmology", aliases: ["ophthalmology"], sub: "clinical" },
-      { name: "Orthopaedic Surgery", aliases: ["orthopaedic surgery"], sub: "clinical" },
+      { name: "Orthopaedic Surgery", aliases: ["orthopaedic surgery", "orthopedic surgery"], sub: "clinical" },
       { name: "Otolaryngology", aliases: ["otolaryngology"], sub: "clinical" },
       { name: "Pathology", aliases: ["pathology"], field: "health" },
       { name: "Pediatrics", aliases: ["pediatrics"], sub: "maternal" },
       { name: "Pharmacology", aliases: ["pharmacology"], sub: "pharma" },
-      { name: "Pharmacy and Pharmaceutical Sciences", aliases: ["pharmacy and pharmaceutical sciences", "skaggs school of pharmacy and pharmaceutical sciences"], sub: "pharma" },
+      { name: "Pharmacy and Pharmaceutical Sciences", aliases: ["pharmacy and pharmaceutical sciences", "skaggs school of pharmacy and pharmaceutical sciences", "school of pharmacy and pharmaceutical science"], sub: "pharma" },
       { name: "Psychiatry", aliases: ["psychiatry"], sub: "mental" },
-      { name: "Public Health", aliases: ["public health", "herbert wertheim school of public health"], sub: "publichealth" },
-      { name: "Radiation Medicine", aliases: ["radiation medicine"], sub: "imaging" },
+      { name: "Public Health", aliases: ["public health", "herbert wertheim school of public health", "herbert wertheim school of public health & human longevity science"], sub: "publichealth" },
+      { name: "Radiation Medicine", aliases: ["radiation medicine", "radiation medicine and applied science", "radiation medicine and applied sciences"], sub: "imaging" },
       { name: "Radiology", aliases: ["radiology"], sub: "imaging" },
       { name: "Surgery", aliases: ["surgery"], sub: "clinical" },
       { name: "Urology", aliases: ["urology"], sub: "clinical" },
@@ -97,6 +106,7 @@ const DIVISIONS = [
   },
   {
     id: "social",
+    field: "society",
     label: "Social Sciences",
     aliases: ["社会科学"],
     match: /social sciences|immigration studies|human development|global health/,
@@ -107,6 +117,7 @@ const DIVISIONS = [
       { name: "Economics", aliases: ["economics"], sub: "economics" },
       { name: "Education Studies", aliases: ["education studies"], sub: "education" },
       { name: "Ethnic Studies", aliases: ["ethnic studies"], sub: "society" },
+      { name: "Global Health Program", aliases: ["global health program", "global health"], sub: "publichealth" },
       { name: "Linguistics", aliases: ["linguistics"], sub: "linguistics" },
       { name: "Political Science", aliases: ["political science"], sub: "politics" },
       { name: "Psychology", aliases: ["psychology"], sub: "psychology" },
@@ -116,6 +127,7 @@ const DIVISIONS = [
   },
   {
     id: "arts",
+    field: "arts",
     label: "Arts & Humanities",
     aliases: ["humanities", "人文", "艺术"],
     match: /arts and humanities|artpower|music|theatre|visual arts|history|philosophy|literature/,
@@ -124,18 +136,36 @@ const DIVISIONS = [
       { name: "Literature", aliases: ["literature"], sub: "literature" },
       { name: "Music", aliases: ["music"], sub: "arts" },
       { name: "Philosophy", aliases: ["philosophy"], sub: "philosophy" },
-      { name: "Theatre & Dance", aliases: ["theatre and dance"], sub: "arts" },
+      { name: "Theatre & Dance", aliases: ["theatre and dance", "theatre"], sub: "arts" },
       { name: "Visual Arts", aliases: ["visual arts"], sub: "arts" },
     ],
   },
   {
     id: "policy",
+    field: "society",
     label: "Policy & Management",
     aliases: ["business", "商学", "管理"],
     match: /global policy|rady school|school of management|entrepreneurship|innovation and commercialization/,
     departments: [
-      { name: "Global Policy and Strategy", aliases: ["global policy and strategy", "school of global policy and strategy", "gps"], sub: "politics" },
+      { name: "Global Policy and Strategy", aliases: ["global policy and strategy", "school of global policy and strategy", "school of global policy & strategy", "gps"], sub: "politics" },
       { name: "Rady School of Management", aliases: ["rady school of management", "rady"], sub: "business" },
+    ],
+  },
+  {
+    id: "colleges",
+    label: "Undergraduate Colleges",
+    aliases: ["college", "writing program", "书院"],
+    // Faculty titles name college programs as "Provost - Muir"; REAL lists the same colleges.
+    match: null,
+    departments: [
+      { name: "Revelle College", aliases: ["revelle college", "provost revelle"] },
+      { name: "John Muir College", aliases: ["muir college", "john muir college", "provost muir"] },
+      { name: "Thurgood Marshall College", aliases: ["thurgood marshall college", "marshall college", "provost third", "provost marshall"] },
+      { name: "Earl Warren College", aliases: ["warren college", "earl warren college", "provost warren"] },
+      { name: "Eleanor Roosevelt College", aliases: ["eleanor roosevelt college", "roosevelt college", "provost roosevelt"] },
+      { name: "Sixth College", aliases: ["sixth college", "sixth college academic affairs", "provost sixth"] },
+      { name: "Seventh College", aliases: ["seventh college", "provost seventh"] },
+      { name: "Eighth College", aliases: ["eighth college", "provost eighth"] },
     ],
   },
   {
@@ -376,4 +406,11 @@ const CJK_SYNONYMS = {
   教授: ["professor"],
   实验室: ["lab", "laboratory"],
   招生: ["recruiting"],
+};
+
+// A verified listing on a department's own faculty roster names that department.
+const DEPARTMENT_ROSTER_HOSTS = {
+  "pediatrics.ucsd.edu": "Pediatrics",
+  "neurosciences.ucsd.edu": "Neurosciences",
+  "emergencymed.ucsd.edu": "Emergency Medicine",
 };

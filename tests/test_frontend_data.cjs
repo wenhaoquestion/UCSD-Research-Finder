@@ -187,4 +187,16 @@ assert.equal(evaluate('state.evidence = "courses,ratings"; matchesFilters({ fact
 assert.equal(evaluate('matchesFilters({ facts: { courses: 2, ratings: ["rateMyPI"], checked: true } })'), true);
 evaluate('state.evidence = "all"');
 
+// Unknown reviewed departments fall back to the unit in the record's own captured listing.
+assert.equal(evaluate('unitFromTitle("Lecturer - Academic Year, Provost - Muir")'), 'Provost - Muir');
+assert.equal(evaluate('resolveDepartment("Provost - Muir").name'), 'John Muir College');
+assert.equal(evaluate('resolveDepartment("Ob/Gyn & Reproductive sciences").name'), 'Obstetrics, Gynecology & Reproductive Sciences');
+const listed = evaluate(`JSON.stringify(buildRecords({ professors: [{ id: "u1", name: "Example Person", department: "Unknown",
+  appointmentAsListed: { namedFacultyListing: { titleAsListed: "Assistant Clinical Professor",
+    evidence: { sourceUrl: "https://pediatrics.ucsd.edu/faculty/index.html", observedAt: "2026-10-17T00:00:00Z" } } } }] })[0])`);
+assert(JSON.parse(listed).departments.includes('Pediatrics'), 'a verified department roster listing names the department');
+assert.equal(JSON.parse(listed).department, 'Unknown', 'the reviewed department field itself is left unchanged');
+assert.equal(evaluate('buildRecords({ professors: [{ id: "u2", name: "No Evidence", department: "Unknown" }] })[0].departments.length'), 0,
+  'without captured evidence no department is invented');
+
 console.log('PASS: person/lab identity, recovered archives and appointments, field verification, missing scores, course indexing, taxonomy, and fuzzy search');

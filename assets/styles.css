@@ -1055,9 +1055,10 @@ svg {
 
 .results-tools {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
-  gap: 16px;
+  column-gap: 16px;
   border-bottom: 1px solid var(--hair);
 }
 
@@ -1121,6 +1122,7 @@ svg {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: auto;
   color: var(--muted);
   font-size: 13px;
 }
@@ -2407,10 +2409,12 @@ svg {
 
   .results-tools {
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 0;
   }
 
   .sort-field {
+    margin-left: 0;
     padding: 8px 0;
     border-top: 1px solid var(--hair);
   }

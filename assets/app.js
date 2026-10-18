@@ -584,11 +584,73 @@ function classifyRecord(record) {
     const department = TAXONOMY.departments.get(departmentKey(name));
     if (department?.sub) subfields.add(department.sub);
     if (department?.field) fields.add(department.field);
+    // Research units without their own entry inherit their school's broad field. REAL
+    // listings are skipped: a campus office's school says little about its topic.
+    if (!department && ["professor", "lab"].includes(record.recordType)) {
+      const field = TAXONOMY.divisions.get(state.departmentDivision.get(name))?.field;
+      if (field) fields.add(field);
+    }
   }
   for (const id of subfields) fields.add(TAXONOMY.subfields.get(id).field);
   record.subfieldIds = [...subfields];
   record.fieldIds = RESEARCH_FIELDS.map((field) => field.id).filter((id) => fields.has(id));
   return record;
+}
+
+// Unit named in an appointment title: "Lecturer, Provost - Muir" -> "Provost - Muir".
+function unitFromTitle(title) {
+  const text = String(title || "");
+  if (!text.includes(",")) return "";
+  return text.split(",").slice(1).join(",")
+    .split(/\b(?:(?:Assistant|Associate|Adjunct|Clinical|Teaching|Research)\s+)*(?:Professor|Lecturer)\b/i)[0]
+    .replace(/^[\s,;]+|[\s,;]+$/g, "")
+    .replace(/^Department of\s+/i, "");
+}
+
+function rosterDepartment(url) {
+  try {
+    return DEPARTMENT_ROSTER_HOSTS[new URL(url).hostname] || "";
+  } catch {
+    return "";
+  }
+}
+
+// When the reviewed department field is Unknown, the record's own captured evidence often
+// still names the unit: an official profile's appointment table, a verified listing on a
+// department's faculty roster, or an earlier captured appointment title. These are shown as
+// "as listed", with source and date; they never replace the reviewed field in the data.
+function listedDepartments(record) {
+  const found = [];
+  const add = (unit, sourceUrl, observedAt, basis) => {
+    if (isKnown(unit) && isKnown(sourceUrl)) found.push({ unit: cleanText(unit), sourceUrl, observedAt, basis });
+  };
+  for (const listing of Array.isArray(record.directoryListings) ? record.directoryListings : []) {
+    add(listing.departmentAsListed, listing.sourceUrl, listing.observedAt, "Official profile appointment table");
+  }
+  const named = record.appointmentAsListed?.namedFacultyListing || record.appointmentAsListed;
+  if (named) {
+    const proof = named.evidence || named;
+    add(rosterDepartment(proof.sourceUrl), proof.sourceUrl, proof.observedAt, "Department faculty roster");
+    add(named.departmentAsListed || unitFromTitle(named.titleAsListed || named.listedRole), proof.sourceUrl, proof.observedAt, "Captured appointment title");
+  }
+  const historical = record.historicalAppointmentAsListed;
+  if (historical) {
+    const proofs = [].concat(record.historicalFieldEvidence?.appointmentStatus || record.historicalFieldEvidence?.name || []);
+    const proof = proofs.find((item) => item?.sourceUrl) || historical;
+    add(historical.departmentAsListed || unitFromTitle(historical.titleAsListed), proof.sourceUrl, proof.observedAt, "Earlier captured appointment title");
+  }
+  for (const observation of record.historicalQualificationRecovery?.sourceRowObservations || []) {
+    for (const capture of observation.qualificationCaptures || []) {
+      add(unitFromTitle(capture.titleAsListed || capture.roleAsListed), capture.sourceUrl, capture.observedAt, "Earlier captured appointment title");
+    }
+  }
+  const seen = new Set();
+  return found.filter((item) => {
+    const key = departmentKey(item.unit);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function assignDepartments(record, names, fallbackDivision) {
@@ -633,7 +695,11 @@ function buildRecords(data, realPortalData = null) {
     researchAreas: cleanAreas(item.researchAreas),
     sourceUrls: item.sourceUrls || [],
     links: professorLinks(item),
-  })).map((record) => withFacts(assignDepartments({ ...record }, departmentNames(record))));
+  })).map((record) => {
+    const reviewed = departmentNames(record);
+    const listed = reviewed.length ? [] : listedDepartments(record);
+    return withFacts(assignDepartments({ ...record, listedDepartments: listed }, reviewed.length ? reviewed : listed.map((item) => item.unit)));
+  });
 
   const labs = (data.labs || []).map((item) => withFacts(assignDepartments({
     ...item,
@@ -1947,6 +2013,19 @@ function facultyDirectoryDetails(record) {
   if (record.aliasNames?.length) fields.push(["Also listed as", record.aliasNames]);
   if (record.directorySection) fields.push(["Directory section", record.directorySection]);
   const parts = [fieldGrid(fields)];
+  if (record.listedDepartments?.length) {
+    const list = make("ul", "evidence-list");
+    for (const item of record.listedDepartments) {
+      const resolved = resolveDepartment(item.unit);
+      list.append(evidenceItem(
+        `Department as listed · ${item.unit}${resolved && resolved.name !== item.unit ? ` (shown as ${resolved.name})` : ""}`,
+        `${item.basis} · observed ${dateLabel(item.observedAt)}`,
+        "",
+        [["Listing source", item.sourceUrl]],
+      ));
+    }
+    parts.push(list, note("The reviewed department field is still Unknown. The department shown is read from this record's own captured listing above and is used for browsing only."));
+  }
   const listings = Array.isArray(record.directoryListings) ? record.directoryListings : [];
   if (listings.length) {
     const list = make("ul", "evidence-list");
