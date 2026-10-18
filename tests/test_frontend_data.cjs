@@ -146,6 +146,16 @@ assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-directory")))
 assert(evaluate('JSON.stringify(archiveDetails(state.byId.get("old-lab")))').includes('Earlier PI'));
 assert(evaluate('state.index.find(row => row.name.includes("faculty emeriti")).haystack.includes("physics")'), 'archives retain the current taxonomy/search model');
 
+context.pendingIdentityData = { professors: [], labs: [], recovery: { pendingProfileResources: [{
+  id: 'possible-person', label: 'Possible existing person', classification: 'pending_person_identity',
+  department: 'Physics', sourceUrl: 'https://profiles.ucsd.edu/possible.person',
+  previousProfessorObservations: [{ scope: 'source_observation', record: oldSnapshot }],
+}] } };
+assert.equal(evaluate('buildRecords(pendingIdentityData)[0].recordType'), 'archive');
+assert.equal(evaluate('buildRecords(pendingIdentityData)[0].displayKind'), 'Profile observation');
+assert.equal(evaluate('sourceChecked(buildRecords(pendingIdentityData)[0])'), false);
+assert(evaluate('JSON.stringify(archiveDetails(buildRecords(pendingIdentityData)[0]))').includes('Captured source record'));
+
 context.historicalAppointmentFixture = {
   historicalAppointmentAsListed: { titleAsListed: 'Associate Professor, Physics' },
   historicalFieldEvidence: { appointmentStatus: [{ sourceUrl: 'https://profiles.ucsd.edu/example', observedAt: '2020-01-01', evidence: 'Earlier appointment quote' }] },

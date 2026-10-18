@@ -1,0 +1,1876 @@
+{
+  "runId": "recovery-pipeline-batch-overlap-probe-20261018-0005",
+  "createdAt": "2026-10-18T02:47:12+00:00",
+  "mode": "execute",
+  "processInspection": {
+    "checkedAt": "2026-10-18T02:47:11+00:00",
+    "processListSha256": "ff4318e119b6c287c454eb8b7694f0950137888931f33753bf3ab602770c2d1b",
+    "matchingCollectors": [],
+    "oldCollectorAbsent": true,
+    "oldCacheProcessReceiptExists": false
+  },
+  "originalQueueRestored": false,
+  "originalRawCacheRestored": false,
+  "automaticOldQueueSeeding": false,
+  "manifestPath": "/private/tmp/ucsd-research-20261016/data/ucsd/recovery-backfill-20261017/pipelines/recovery-pipeline-overlap-probe-20261018/recovery-pipeline-batch-overlap-probe-20261018-0005-manifest.json",
+  "manifestSha256": "b8a5f7f127454b29a250c407cde521a084dd12bcff1ebea9f347cda00fd85f8c",
+  "manifestTotalUniqueRows": 30,
+  "finiteLogicalPageLimit": 30,
+  "workers": 6,
+  "wireLimit": 360,
+  "networkCoordination": {
+    "state": "active",
+    "protocolVersion": "fcntl-host-clock-v2",
+    "directory": "/tmp/ucsd-research-network-20261016",
+    "profilesMinimumSeconds": 10,
+    "requiredSourceFiles": {
+      "collect_ucsd_coverage.py": "d47f57488b109b45ed09a14c5cd743c81b7d0508c50524c4dfe7ce92c37ada68",
+      "network_coordination.py": "3cec5f78dff65ff19fe49e5f2e394bf98c12c6a843e3e4fecd102c176894938c",
+      "collection_lock.py": "06b3b4968f62e32f259c723c02637c701261b778814e387e5ad810b7afc72056",
+      "collection_scope.py": "956fb5dc71e268162af4debbe2b2789165c9695424ba1dcb869bab6c0c573dbb",
+      "refresh_labs.py": "eb59835eb68d877f843a8e7063e731dc7ce7af89e8bc8e37d3dbda190dad671f",
+      "refresh_faculty_directories.py": "e3a35fce31e31721ca5a09f7c89c18720a7bbdfff8846b963bde7ef3d87ec9fc",
+      "lab_destinations.py": "d5c0578a3135e344ec59391468d8511f1fe1ef549f2f0ff2462ec70ddfb5aecd",
+      "atlas_urls.py": "2770176cb42de8439af2761634650f4b427264334dfd702bc504e52d96f1c2a0",
+      "queue_resource_keys.py": "1f3051e20eefc5603161de121eaafcba3a28dc377d521c3477fc58e4a3cfe6f5",
+      "collection_schedule.py": "1e56491d0c2b1f958acc1a68de53e7317c50cc915398f862371c1fcfdaff45cc"
+    }
+  },
+  "hostPolicy": {
+    "retainedConstraintObservations": [
+      {
+        "sourceFile": "data/ucsd/faculty-global-original-source-observations-20261016.json",
+        "sourceFileSha256": "218cfae9d9b2bd500aeea6e225a8486d35f6861a6db27bc287ed545627070c32",
+        "pointer": "/entries/18/capture/robots",
+        "host": "hci.ucsd.edu",
+        "urls": [
+          "http://hci.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 200,
+        "error": "robots_response_is_html",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/4/selectedRequestObservation/robots",
+        "host": "cisa3.calit2.net",
+        "urls": [
+          "http://cisa3.calit2.net/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/5/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/6/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/7/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/8/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/9/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/10/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/11/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/12/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/13/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/14/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/15/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/16/selectedRequestObservation/robots",
+        "host": "cms.ucsd.edu",
+        "urls": [
+          "https://cms.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/17/selectedRequestObservation/robots",
+        "host": "cseweb.ucsd.edu",
+        "urls": [
+          "https://cseweb.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/18/selectedRequestObservation/robots",
+        "host": "gleesonlab.ucsd.edu",
+        "urls": [
+          "https://gleesonlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/20/selectedRequestObservation/robots",
+        "host": "ctleelab.ucsd.edu",
+        "urls": [
+          "https://ctleelab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/21/selectedRequestObservation/robots",
+        "host": "cseweb.ucsd.edu",
+        "urls": [
+          "https://cseweb.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/22/selectedRequestObservation/robots",
+        "host": "smallucsd.com",
+        "urls": [
+          "https://smallucsd.com/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: smallucsd.com",
+        "notBeforeEpoch": 1792122692.871721,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/22/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "smallucsd.com",
+        "urls": [
+          "https://smallucsd.com/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: smallucsd.com",
+        "notBeforeEpoch": 1792122500.392517,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/23/selectedRequestObservation",
+        "host": "sites.google.com",
+        "urls": [
+          "https://sites.google.com/a/logroup.ucsd.edu/web/home",
+          "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/logroup.ucsd.edu/web/home&followup=https://sites.google.com/a/logroup.ucsd.edu/web/home"
+        ],
+        "status": "authentication_required",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/24/selectedRequestObservation",
+        "host": "sites.google.com",
+        "urls": [
+          "https://sites.google.com/a/eng.ucsd.edu/amps-lab/home",
+          "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home&followup=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home"
+        ],
+        "status": "authentication_required",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/29/selectedRequestObservation/robots",
+        "host": "healthsciences.ucsd.edu",
+        "urls": [
+          "https://healthsciences.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/32/selectedRequestObservation/robots",
+        "host": "hnrc.hivresearch.ucsd.edu",
+        "urls": [
+          "https://hnrc.hivresearch.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/33/selectedRequestObservation/robots",
+        "host": "sleepresearch.ucsd.edu",
+        "urls": [
+          "https://sleepresearch.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/35/selectedRequestObservation/robots",
+        "host": "eceweb.ucsd.edu",
+        "urls": [
+          "http://eceweb.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/36/selectedRequestObservation/robots",
+        "host": "yeolab.ucsd.edu",
+        "urls": [
+          "http://yeolab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: yeolab.ucsd.edu",
+        "notBeforeEpoch": 1792130449.629367,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/36/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "yeolab.ucsd.edu",
+        "urls": [
+          "http://yeolab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: yeolab.ucsd.edu",
+        "notBeforeEpoch": 1792129007.274878,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/36/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "yeolab.ucsd.edu",
+        "urls": [
+          "http://yeolab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: yeolab.ucsd.edu",
+        "notBeforeEpoch": 1792129489.530672,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/37/selectedRequestObservation/robots",
+        "host": "nizetlab.ucsd.edu",
+        "urls": [
+          "http://nizetlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/39/selectedRequestObservation/robots",
+        "host": "devarajgroup.ucsd.edu",
+        "urls": [
+          "http://devarajgroup.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: devarajgroup.ucsd.edu",
+        "notBeforeEpoch": 1792130580.202809,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/39/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "devarajgroup.ucsd.edu",
+        "urls": [
+          "http://devarajgroup.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: devarajgroup.ucsd.edu",
+        "notBeforeEpoch": 1792129139.671894,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/39/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "devarajgroup.ucsd.edu",
+        "urls": [
+          "http://devarajgroup.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: devarajgroup.ucsd.edu",
+        "notBeforeEpoch": 1792129619.872621,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/40/selectedRequestObservation/robots",
+        "host": "mishaninalab.ucsd.edu",
+        "urls": [
+          "http://mishaninalab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: mishaninalab.ucsd.edu",
+        "notBeforeEpoch": 1792130491.655948,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/40/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "mishaninalab.ucsd.edu",
+        "urls": [
+          "http://mishaninalab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: mishaninalab.ucsd.edu",
+        "notBeforeEpoch": 1792129049.733523,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/40/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "mishaninalab.ucsd.edu",
+        "urls": [
+          "http://mishaninalab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: mishaninalab.ucsd.edu",
+        "notBeforeEpoch": 1792129531.4471092,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/42/selectedRequestObservation/robots",
+        "host": "primelab.eng.ucsd.edu",
+        "urls": [
+          "http://primelab.eng.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to primelab.eng.ucsd.edu:443",
+        "notBeforeEpoch": 1792129070.61833,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/42/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "primelab.eng.ucsd.edu",
+        "urls": [
+          "http://primelab.eng.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to primelab.eng.ucsd.edu:443",
+        "notBeforeEpoch": 1792128873.979916,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/42/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "primelab.eng.ucsd.edu",
+        "urls": [
+          "http://primelab.eng.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to primelab.eng.ucsd.edu:443",
+        "notBeforeEpoch": 1792128936.434762,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/45/selectedRequestObservation/robots",
+        "host": "genomes.ucsd.edu",
+        "urls": [
+          "http://genomes.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to genomes.ucsd.edu port 80 after 10007 ms: Timeout was reached",
+        "notBeforeEpoch": 1792130536.692397,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/45/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "genomes.ucsd.edu",
+        "urls": [
+          "http://genomes.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to genomes.ucsd.edu port 80 after 10009 ms: Timeout was reached",
+        "notBeforeEpoch": 1792129075.780333,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/45/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "genomes.ucsd.edu",
+        "urls": [
+          "http://genomes.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to genomes.ucsd.edu port 80 after 10006 ms: Timeout was reached",
+        "notBeforeEpoch": 1792129566.3451798,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/47/selectedRequestObservation/robots",
+        "host": "cseweb.ucsd.edu",
+        "urls": [
+          "http://cseweb.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/50/selectedRequestObservation/robots",
+        "host": "nanomaterials.ucsd.edu",
+        "urls": [
+          "http://nanomaterials.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/51/selectedRequestObservation/robots",
+        "host": "chem-faculty.ucsd.edu",
+        "urls": [
+          "http://chem-faculty.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: chem-faculty.ucsd.edu",
+        "notBeforeEpoch": 1792132272.69712,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/51/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "chem-faculty.ucsd.edu",
+        "urls": [
+          "http://chem-faculty.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: chem-faculty.ucsd.edu",
+        "notBeforeEpoch": 1792129391.148512,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/51/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "chem-faculty.ucsd.edu",
+        "urls": [
+          "http://chem-faculty.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: chem-faculty.ucsd.edu",
+        "notBeforeEpoch": 1792130352.04572,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/52/selectedRequestObservation/robots",
+        "host": "guanlab.ucsd.edu",
+        "urls": [
+          "http://guanlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/53/selectedRequestObservation/robots",
+        "host": "adamslab.ucsd.edu",
+        "urls": [
+          "http://adamslab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/56/selectedRequestObservation/robots",
+        "host": "raidivision.ucsd.edu",
+        "urls": [
+          "http://raidivision.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/58/selectedRequestObservation/robots",
+        "host": "www-insel.ucsd.edu",
+        "urls": [
+          "http://www-insel.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to www-insel.ucsd.edu port 80 after 10004 ms: Timeout was reached",
+        "notBeforeEpoch": 1792142668.180542,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/58/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "www-insel.ucsd.edu",
+        "urls": [
+          "http://www-insel.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to www-insel.ucsd.edu port 80 after 10004 ms: Timeout was reached",
+        "notBeforeEpoch": 1792142283.3728378,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/58/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "www-insel.ucsd.edu",
+        "urls": [
+          "http://www-insel.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to www-insel.ucsd.edu port 80 after 10005 ms: Timeout was reached",
+        "notBeforeEpoch": 1792142414.152312,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/59/selectedRequestObservation/robots",
+        "host": "blog.matryx.ai",
+        "urls": [
+          "https://blog.matryx.ai/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Connection timeout after 10010 ms",
+        "notBeforeEpoch": 1792143209.606677,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/59/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "blog.matryx.ai",
+        "urls": [
+          "https://blog.matryx.ai/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Connection timeout after 10008 ms",
+        "notBeforeEpoch": 1792142823.620063,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/59/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "blog.matryx.ai",
+        "urls": [
+          "https://blog.matryx.ai/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Connection timeout after 10008 ms",
+        "notBeforeEpoch": 1792142958.572108,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/60/selectedRequestObservation/robots",
+        "host": "dsp.ucsd.edu",
+        "urls": [
+          "http://dsp.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: dsp.ucsd.edu",
+        "notBeforeEpoch": 1792143238.724565,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/60/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "dsp.ucsd.edu",
+        "urls": [
+          "http://dsp.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: dsp.ucsd.edu",
+        "notBeforeEpoch": 1792142873.471977,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/60/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "dsp.ucsd.edu",
+        "urls": [
+          "http://dsp.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (6) Could not resolve host: dsp.ucsd.edu",
+        "notBeforeEpoch": 1792142993.872161,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/61/selectedRequestObservation/robots",
+        "host": "bioinformatics-renlab.ucsd.edu",
+        "urls": [
+          "http://bioinformatics-renlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to bioinformatics-renlab.ucsd.edu port 80 after 10009 ms: Timeout was reached",
+        "notBeforeEpoch": 1792143328.831983,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/61/selectedRequestObservation/robots/attemptHistory/0",
+        "host": "bioinformatics-renlab.ucsd.edu",
+        "urls": [
+          "http://bioinformatics-renlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to bioinformatics-renlab.ucsd.edu port 80 after 10002 ms: Timeout was reached",
+        "notBeforeEpoch": 1792142943.8876212,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/61/selectedRequestObservation/robots/attemptHistory/1",
+        "host": "bioinformatics-renlab.ucsd.edu",
+        "urls": [
+          "http://bioinformatics-renlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to bioinformatics-renlab.ucsd.edu port 80 after 10006 ms: Timeout was reached",
+        "notBeforeEpoch": 1792143078.580076,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/67/selectedRequestObservation/robots",
+        "host": "kaufmanlab.ucsd.edu",
+        "urls": [
+          "http://kaufmanlab.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/68/selectedRequestObservation/robots",
+        "host": "healthsciences.ucsd.edu",
+        "urls": [
+          "https://healthsciences.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 301,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/72/selectedRequestObservation/robots",
+        "host": "zhaoresearchgroup.com",
+        "urls": [
+          "http://zhaoresearchgroup.com/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 403,
+        "error": "access_challenge",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/73/selectedRequestObservation/robots",
+        "host": "pstp.ucsd.edu",
+        "urls": [
+          "http://pstp.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/74/selectedRequestObservation",
+        "host": "matisse.ucsd.edu",
+        "urls": [
+          "http://matisse.ucsd.edu/~hwa",
+          "http://matisse.ucsd.edu/~hwa"
+        ],
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 1792197810.808471,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-current-source-constraints-20261016.json",
+        "sourceFileSha256": "2915c570fe4754c448c7135b4a6fcaf5cd86ab2cb59b9e977a87a9e95d549cd3",
+        "pointer": "/cases/74/selectedRequestObservation/robots",
+        "host": "matisse.ucsd.edu",
+        "urls": [
+          "http://matisse.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to matisse.ucsd.edu port 80 after 10010 ms: Timeout was reached",
+        "notBeforeEpoch": 1792197810.808471,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-materials-virtual-source-constraints-20261016.json",
+        "sourceFileSha256": "e882742621d5da7a2cdf72e279a5ae92cc20df40f9971a5ed8e223ec688620ac",
+        "pointer": "/actualBoundedNavigationAttempt/capture/robots",
+        "host": "forsale.godaddy.com",
+        "urls": [
+          "https://forsale.godaddy.com/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 403,
+        "error": "access_challenge",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/lab-materials-virtual-source-constraints-20261016.json",
+        "sourceFileSha256": "e882742621d5da7a2cdf72e279a5ae92cc20df40f9971a5ed8e223ec688620ac",
+        "pointer": "/blockedTargetRobotsObservation",
+        "host": "forsale.godaddy.com",
+        "urls": [
+          "https://forsale.godaddy.com/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 403,
+        "error": "access_challenge",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/profile-vcard-source-constraints-20261016.json",
+        "sourceFileSha256": "4f7312ef31400aca514ff529dd681b25811f2395ac89112409b56531b3ecd0ef",
+        "pointer": "/constraints/0/actualAttempt",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/profile-vcard-source-constraints-20261016.json",
+        "sourceFileSha256": "4f7312ef31400aca514ff529dd681b25811f2395ac89112409b56531b3ecd0ef",
+        "pointer": "/constraints/0/actualAttempt/capture",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475",
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/profile-vcard-source-constraints-20261016.json",
+        "sourceFileSha256": "4f7312ef31400aca514ff529dd681b25811f2395ac89112409b56531b3ecd0ef",
+        "pointer": "/constraints/1/actualAttempt",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/profile-vcard-source-constraints-20261016.json",
+        "sourceFileSha256": "4f7312ef31400aca514ff529dd681b25811f2395ac89112409b56531b3ecd0ef",
+        "pointer": "/constraints/1/actualAttempt/capture",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785",
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/published-personal-cv-source-constraints-20261016.json",
+        "sourceFileSha256": "5e81fcddd1415b7a5b2687786ed014038af6ecee0e35123cbcca3a214b586391",
+        "pointer": "/actualBoundedAttempt",
+        "host": "www.dropbox.com",
+        "urls": [
+          "https://www.dropbox.com/scl/fi/pwnm0whghihohc8051an8/KazemianPooyan_CV.pdf?rlkey=alpxz75s88dmxgl3atvjt3m5o&dl=0"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "data/ucsd/published-personal-cv-source-constraints-20261016.json",
+        "sourceFileSha256": "5e81fcddd1415b7a5b2687786ed014038af6ecee0e35123cbcca3a214b586391",
+        "pointer": "/actualBoundedAttempt/capture",
+        "host": "www.dropbox.com",
+        "urls": [
+          "https://www.dropbox.com/scl/fi/pwnm0whghihohc8051an8/KazemianPooyan_CV.pdf?rlkey=alpxz75s88dmxgl3atvjt3m5o&dl=0",
+          "https://www.dropbox.com/scl/fi/pwnm0whghihohc8051an8/KazemianPooyan_CV.pdf?rlkey=alpxz75s88dmxgl3atvjt3m5o&dl=0"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/cooldown-transition-20261016.json",
+        "sourceFileSha256": "2624c3d9a57203cfaadda050906bf9e9a26ff0abf68d899256df5c5aad179929",
+        "pointer": "/profilesGateSample",
+        "host": "profiles.ucsd.edu",
+        "urls": [],
+        "status": null,
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 1792118563.801265,
+        "minimumIntervalSeconds": 10.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-current-capture-preview-20261016.json",
+        "sourceFileSha256": "d9e6bac54c79837645e149b86ae56a58d6e32e7b8f34075d30308465f5a0e0dc",
+        "pointer": "/sourceCohort/priorFailedSelectedObservationChanges/0/previousSelectedObservation",
+        "host": "pharmacy.ucsd.edu",
+        "urls": [
+          "https://pharmacy.ucsd.edu/index.php/faculty/kufareva",
+          "https://pharmacy.ucsd.edu/index.php/faculty/kufareva"
+        ],
+        "status": "http_error",
+        "httpStatus": 500,
+        "error": "",
+        "notBeforeEpoch": 1792193818.8409011,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-current-capture-preview-20261016.json",
+        "sourceFileSha256": "d9e6bac54c79837645e149b86ae56a58d6e32e7b8f34075d30308465f5a0e0dc",
+        "pointer": "/sourceCohort/priorFailedSelectedObservationChanges/0/newSelectedObservation",
+        "host": "pharmacy.ucsd.edu",
+        "urls": [
+          "https://pharmacy.ucsd.edu/index.php/faculty/kufareva",
+          "https://pharmacy.ucsd.edu/index.php/faculty/kufareva"
+        ],
+        "status": "http_error",
+        "httpStatus": 500,
+        "error": "",
+        "notBeforeEpoch": 1792197419.0749,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-followup-capture-preview-20261016.json",
+        "sourceFileSha256": "a8f9bf8a40a7b2f96aa77a42213118eb2f158bf1216bab6b7b398383a158e445",
+        "pointer": "/sourceCohort/priorFailedSelectedObservationChanges/0/previousFetch",
+        "host": "pharmacy.ucsd.edu",
+        "urls": [
+          "https://pharmacy.ucsd.edu/index.php/faculty/alle",
+          "https://pharmacy.ucsd.edu/index.php/faculty/alle"
+        ],
+        "status": "http_error",
+        "httpStatus": 500,
+        "error": "",
+        "notBeforeEpoch": 1792199286.9213,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-followup-capture-preview-20261016.json",
+        "sourceFileSha256": "a8f9bf8a40a7b2f96aa77a42213118eb2f158bf1216bab6b7b398383a158e445",
+        "pointer": "/sourceCohort/priorFailedSelectedObservationChanges/0/selectedFetch",
+        "host": "pharmacy.ucsd.edu",
+        "urls": [
+          "https://pharmacy.ucsd.edu/index.php/faculty/alle",
+          "https://pharmacy.ucsd.edu/index.php/faculty/alle"
+        ],
+        "status": "http_error",
+        "httpStatus": 500,
+        "error": "",
+        "notBeforeEpoch": 1792199348.1312268,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-source-refresh-20261016.json",
+        "sourceFileSha256": "8063e73e5255551b91b7682e56b901cb4a92bd43ab39a8c5b29eb8e266b39cc4",
+        "pointer": "/mathScriptRequestOutcome/requests/1/attemptHistory/0",
+        "host": "www.math.ucsd.edu",
+        "urls": [
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb",
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+        "notBeforeEpoch": 1792179035.609099,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/faculty-source-refresh-20261016.json",
+        "sourceFileSha256": "8063e73e5255551b91b7682e56b901cb4a92bd43ab39a8c5b29eb8e266b39cc4",
+        "pointer": "/mathScriptRequestOutcome/requests/1/attemptHistory/1",
+        "host": "www.math.ucsd.edu",
+        "urls": [
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb",
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+        "notBeforeEpoch": 1792179162.066598,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-original-profile-preview-20261016.json",
+        "sourceFileSha256": "a5c32d63b0f4c1ae379175eaca07560990cd704bee2a2da438b1564205244cd4",
+        "pointer": "/sourceCorpus/requests/4/capture/robots",
+        "host": "raidivision.ucsd.edu",
+        "urls": [
+          "http://raidivision.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-remaining-source-preview-20261016.json",
+        "sourceFileSha256": "15888030568b74d726bab21ef6ff2014ef9c0cf1fca0aef92c19da1b871eb145",
+        "pointer": "/sourceCorpusReceipt/additionalActualPublishedReferences/0/capture/robots",
+        "host": "pstp.ucsd.edu",
+        "urls": [
+          "http://pstp.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 302,
+        "error": "robots_redirect_is_not_a_robots_file",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-remaining-source-preview-20261016.json",
+        "sourceFileSha256": "15888030568b74d726bab21ef6ff2014ef9c0cf1fca0aef92c19da1b871eb145",
+        "pointer": "/sourceCorpusReceipt/additionalActualPublishedReferences/1/capture",
+        "host": "matisse.ucsd.edu",
+        "urls": [
+          "http://matisse.ucsd.edu/~hwa",
+          "http://matisse.ucsd.edu/~hwa"
+        ],
+        "status": "robots_unavailable",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 1792197810.808471,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-remaining-source-preview-20261016.json",
+        "sourceFileSha256": "15888030568b74d726bab21ef6ff2014ef9c0cf1fca0aef92c19da1b871eb145",
+        "pointer": "/sourceCorpusReceipt/additionalActualPublishedReferences/1/capture/robots",
+        "host": "matisse.ucsd.edu",
+        "urls": [
+          "http://matisse.ucsd.edu/robots.txt"
+        ],
+        "status": "unavailable",
+        "httpStatus": 0,
+        "error": "curl: (28) Failed to connect to matisse.ucsd.edu port 80 after 10010 ms: Timeout was reached",
+        "notBeforeEpoch": 1792197810.808471,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-scoped-statements-preview-20261016.json",
+        "sourceFileSha256": "cf8b27f3627ecaedce33a25d3d05590c90f45dd07a7687533d0fd1d0c6410518",
+        "pointer": "/supplementalConstraintPreservation/records/22",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/lab-scoped-statements-preview-20261016.json",
+        "sourceFileSha256": "cf8b27f3627ecaedce33a25d3d05590c90f45dd07a7687533d0fd1d0c6410518",
+        "pointer": "/supplementalConstraintPreservation/records/23",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/math-dynamic-display-source-audit-20261016.json",
+        "sourceFileSha256": "7edb6d785947bb6df8e1f45441b219c9a5c932f2fe87bd3bb13a5449fbb9d0d4",
+        "pointer": "/sourceInspection/scriptTextRead/requests/0/actualDocumentReceipt",
+        "host": "www.math.ucsd.edu",
+        "urls": [
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tmsxxm",
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tmsxxm"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+        "notBeforeEpoch": 1792181109.756462,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/math-dynamic-display-source-audit-20261016.json",
+        "sourceFileSha256": "7edb6d785947bb6df8e1f45441b219c9a5c932f2fe87bd3bb13a5449fbb9d0d4",
+        "pointer": "/sourceInspection/scriptTextRead/requests/1/previousLiveQueueItem/attemptHistory/0",
+        "host": "www.math.ucsd.edu",
+        "urls": [
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb",
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+        "notBeforeEpoch": 1792179035.609099,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/math-dynamic-display-source-audit-20261016.json",
+        "sourceFileSha256": "7edb6d785947bb6df8e1f45441b219c9a5c932f2fe87bd3bb13a5449fbb9d0d4",
+        "pointer": "/sourceInspection/scriptTextRead/requests/1/previousLiveQueueItem/attemptHistory/1",
+        "host": "www.math.ucsd.edu",
+        "urls": [
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb",
+          "https://www.math.ucsd.edu/sites/math.ucsd.edu/themes/bootstrap_math/js/faculty-profile.js?tn06pb"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.math.ucsd.edu:443",
+        "notBeforeEpoch": 1792179162.066598,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/network-transition-20261016.json",
+        "sourceFileSha256": "f41dffefb90dc33f8d47fe24d2e8b067412e5f09808ec3218352364131e66737",
+        "pointer": "/profilesClockSample",
+        "host": "profiles.ucsd.edu",
+        "urls": [],
+        "status": null,
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 1792116579.077,
+        "minimumIntervalSeconds": 10.0
+      },
+      {
+        "sourceFile": "docs/operations/network-transition-20261016.json",
+        "sourceFileSha256": "f41dffefb90dc33f8d47fe24d2e8b067412e5f09808ec3218352364131e66737",
+        "pointer": "/profilesClockLaterSample",
+        "host": "profiles.ucsd.edu",
+        "urls": [],
+        "status": null,
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 1792116619.091624,
+        "minimumIntervalSeconds": 10.0
+      },
+      {
+        "sourceFile": "docs/operations/organization-resource-preview-20261016.json",
+        "sourceFileSha256": "f5dce9159509533dfd6238743975d966dfc01c83294f954333cad662b8c5facb",
+        "pointer": "/supplementalConstraintPreservation/records/22",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/organization-resource-preview-20261016.json",
+        "sourceFileSha256": "f5dce9159509533dfd6238743975d966dfc01c83294f954333cad662b8c5facb",
+        "pointer": "/supplementalConstraintPreservation/records/23",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/professor-biography-preview-20261016.json",
+        "sourceFileSha256": "5cc799833e20f33defc90ae9aa103a1b5a6a76f0b51d9f6b29ac2a371f005f49",
+        "pointer": "/supplementalConstraintPreservation/records/22",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": "docs/operations/professor-biography-preview-20261016.json",
+        "sourceFileSha256": "5cc799833e20f33defc90ae9aa103a1b5a6a76f0b51d9f6b29ac2a371f005f49",
+        "pointer": "/supplementalConstraintPreservation/records/23",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785"
+        ],
+        "status": "robots_denied",
+        "httpStatus": null,
+        "error": null,
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": ".cache/recovery-backfill-20261017/recovery-pipeline-batch-overlap-probe-20261018-0003/responses/ca9588ca5c64dbb0a8f2d8ec2904b8494c028049124944ec07ed27075fc8af77.json",
+        "sourceFileSha256": "6d6c142ed9e6181613d3cc28d6f62d135d04f5f330419a43e26ab49cd8d78eff",
+        "pointer": "",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/anthony.hunter",
+          "https://profiles.ucsd.edu/anthony.hunter"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (28) SSL connection timeout",
+        "notBeforeEpoch": 1792291678.468009,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": ".cache/recovery-backfill-20261017/recovery-profiles-directories-02-20261017/responses/4fdc2bc267d4f6c1897aab143062c71720f1d91d2498a904287ea5ecdaa7298f.json",
+        "sourceFileSha256": "d5510f95a5236191080f8a8bec4eb55ff36377f087361e44a439edb66e8c7fc6",
+        "pointer": "",
+        "host": "cse.ucsd.edu",
+        "urls": [
+          "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares",
+          "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares"
+        ],
+        "status": "http_error",
+        "httpStatus": 403,
+        "error": "",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": ".cache/recovery-backfill-20261017/responses/4fdc2bc267d4f6c1897aab143062c71720f1d91d2498a904287ea5ecdaa7298f.json",
+        "sourceFileSha256": "d5510f95a5236191080f8a8bec4eb55ff36377f087361e44a439edb66e8c7fc6",
+        "pointer": "",
+        "host": "cse.ucsd.edu",
+        "urls": [
+          "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares",
+          "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares"
+        ],
+        "status": "http_error",
+        "httpStatus": 403,
+        "error": "",
+        "notBeforeEpoch": 0.0,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      },
+      {
+        "sourceFile": ".cache/recovery-backfill-20261017/responses/ca9588ca5c64dbb0a8f2d8ec2904b8494c028049124944ec07ed27075fc8af77.json",
+        "sourceFileSha256": "6d6c142ed9e6181613d3cc28d6f62d135d04f5f330419a43e26ab49cd8d78eff",
+        "pointer": "",
+        "host": "profiles.ucsd.edu",
+        "urls": [
+          "https://profiles.ucsd.edu/anthony.hunter",
+          "https://profiles.ucsd.edu/anthony.hunter"
+        ],
+        "status": "fetch_error",
+        "httpStatus": 0,
+        "error": "curl: (28) SSL connection timeout",
+        "notBeforeEpoch": 1792291678.468009,
+        "lastRequestAt": 0.0,
+        "minimumIntervalSeconds": 0.0
+      }
+    ],
+    "hosts": {
+      "hci.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "cisa3.calit2.net": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "cms.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "cseweb.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "gleesonlab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "ctleelab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "smallucsd.com": {
+        "notBeforeEpoch": 1792122692.871721,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "sites.google.com": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "healthsciences.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "hnrc.hivresearch.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "sleepresearch.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "eceweb.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "yeolab.ucsd.edu": {
+        "notBeforeEpoch": 1792130449.629367,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "nizetlab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "devarajgroup.ucsd.edu": {
+        "notBeforeEpoch": 1792130580.202809,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "mishaninalab.ucsd.edu": {
+        "notBeforeEpoch": 1792130491.655948,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "primelab.eng.ucsd.edu": {
+        "notBeforeEpoch": 1792129070.61833,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "genomes.ucsd.edu": {
+        "notBeforeEpoch": 1792130536.692397,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "nanomaterials.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "chem-faculty.ucsd.edu": {
+        "notBeforeEpoch": 1792132272.69712,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "guanlab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "adamslab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "raidivision.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "www-insel.ucsd.edu": {
+        "notBeforeEpoch": 1792142668.180542,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "blog.matryx.ai": {
+        "notBeforeEpoch": 1792143209.606677,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "dsp.ucsd.edu": {
+        "notBeforeEpoch": 1792143238.724565,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "bioinformatics-renlab.ucsd.edu": {
+        "notBeforeEpoch": 1792143328.831983,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "kaufmanlab.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "zhaoresearchgroup.com": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "pstp.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "matisse.ucsd.edu": {
+        "notBeforeEpoch": 1792197810.808471,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "forsale.godaddy.com": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": true,
+        "consecutiveTransientFailures": 0
+      },
+      "profiles.ucsd.edu": {
+        "notBeforeEpoch": 1792291678.468009,
+        "lastRequestAt": 1792118563.801265,
+        "minimumIntervalSeconds": 10.0,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "www.dropbox.com": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "pharmacy.ucsd.edu": {
+        "notBeforeEpoch": 1792199348.1312268,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 1
+      },
+      "www.math.ucsd.edu": {
+        "notBeforeEpoch": 1792181109.756462,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      },
+      "cse.ucsd.edu": {
+        "notBeforeEpoch": 0,
+        "lastRequestAt": 0,
+        "minimumIntervalSeconds": 1,
+        "hardHold": false,
+        "consecutiveTransientFailures": 0
+      }
+    },
+    "blockedExactUris": [
+      "http://zhaoresearchgroup.com/robots.txt",
+      "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home&followup=https://sites.google.com/a/eng.ucsd.edu/amps-lab/home",
+      "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://sites.google.com/a/logroup.ucsd.edu/web/home&followup=https://sites.google.com/a/logroup.ucsd.edu/web/home",
+      "https://cse.ucsd.edu/people/faculty-profiles/edwin-solares",
+      "https://forsale.godaddy.com/robots.txt",
+      "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=416073785",
+      "https://profiles.ucsd.edu/profile/modules/CustomViewPersonGeneralInfo/vcard.aspx?subject=418815475",
+      "https://sites.google.com/a/eng.ucsd.edu/amps-lab/home",
+      "https://sites.google.com/a/logroup.ucsd.edu/web/home",
+      "https://www.dropbox.com/scl/fi/pwnm0whghihohc8051an8/KazemianPooyan_CV.pdf?rlkey=alpxz75s88dmxgl3atvjt3m5o&dl=0"
+    ],
+    "missingHistoricalSharedState": true,
+    "oldRawResponseCacheRestored": false,
+    "sensitiveHostPolicy": "Profiles require explicit opt-in and >=10s; non-campus hosts and hard robots/challenge hosts stay isolated. Expired deadlines remain evidence, never reset stronger shared state."
+  },
+  "networkRequests": 0,
+  "cachePath": "/private/tmp/ucsd-research-20261016/.cache/recovery-backfill-20261017/recovery-pipeline-batch-overlap-probe-20261018-0005",
+  "persistentTaskResponseCache": "/private/tmp/ucsd-research-20261016/.cache/recovery-backfill-20261017/responses",
+  "archivedResponseDependencyFiles": 0,
+  "finishedAt": "2026-10-18T02:47:12+00:00",
+  "stateCounts": {
+    "held": 30
+  },
+  "durableBatch": {
+    "archivePath": "/private/tmp/ucsd-research-20261016/data/ucsd/recovery-backfill-20261017/batches/recovery-pipeline-batch-overlap-probe-20261018-0005.tar.gz",
+    "archiveSha256": "d5f7f9a465b34b4edbc6e4c380777293b8473125a72c9a75a225272617adcf29",
+    "savedFiles": 6
+  }
+}

@@ -668,11 +668,12 @@ function buildRecords(data, realPortalData = null) {
     ...(data.archivedFacultyResources || []),
     ...(data.recovery?.directorySources || []),
     ...(data.recovery?.retiredLabResources || []),
+    ...(data.recovery?.pendingProfileResources || []),
   ].map((item) => withFacts(assignDepartments({
     ...item,
     recordType: "archive",
     displayName: knownText(item.label) || NOT_FOUND,
-    displayKind: item.classification === "historical_record_not_active_lab" ? "Retired resource" : "Directory source",
+    displayKind: item.classification === "pending_person_identity" ? "Profile observation" : item.classification === "historical_record_not_active_lab" ? "Retired resource" : "Directory source",
     summary: knownText(item.reason),
     email: "",
     researchAreas: [],
@@ -2073,7 +2074,7 @@ function archiveDetails(record) {
     ["Page heading", record.documentHeadingAsPublished],
   ]));
   const history = detailSection("Preserved observations");
-  const labels = { original_record: "Original record", previous_candidate: "Previous reviewed record", assembled_record: "Record at archive time" };
+  const labels = { original_record: "Original record", previous_candidate: "Previous reviewed record", assembled_record: "Record at archive time", source_observation: "Captured source record" };
   for (const observation of [...(record.previousProfessorObservations || []), ...(record.previousLabObservations || [])]) {
     const details = make("details", "source-details");
     const text = make("pre", "archive-record", JSON.stringify(observation.record, null, 2));

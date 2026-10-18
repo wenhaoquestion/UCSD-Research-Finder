@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "batchId": "identity-holds-20261018",
+  "mode": "identity_hold_review",
+  "professors": [],
+  "pending": [
+    {
+      "id": "ucsd-profile-faculty-955ce854383e83",
+      "label": "Craig Mc Kenzie",
+      "institution": "University of California San Diego",
+      "department": "Rady School of Management",
+      "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+      "sourceUrls": [
+        "https://profiles.ucsd.edu/craig.mckenzie"
+      ],
+      "classification": "pending_person_identity",
+      "reason": "This captured faculty profile may be a preferred-name or split-surname variant of an existing record. The saved page supplies no explicit own-page link or shared identity identifier to resolve it. Retain the complete observation without counting a distinct new professor or merging identities.",
+      "possibleCanonicalProfessorIds": [
+        "ucsd-faculty-craig-mckenzie"
+      ],
+      "reviewedAt": "2026-10-18T03:32:19+00:00",
+      "sourceCapture": {
+        "queuePath": ".cache/recovery-backfill-20261017/recovery-pipeline-batch-overlap-probe-20261018-0001/queue.json",
+        "bodySha256": "6a9a02a260e65ec3055e29dc8c85607910542294c0c930a7a7300ed01050ca5d",
+        "observedAt": "2026-10-18T02:39:28+00:00",
+        "httpStatus": 200,
+        "transportSucceeded": true,
+        "identityAssociation": "unresolved",
+        "rdfLinkIsNotFetchedEvidence": true
+      },
+      "previousProfessorObservations": [
+        {
+          "scope": "source_observation",
+          "record": {
+            "id": "ucsd-profile-faculty-955ce854383e83",
+            "name": "Craig Mc Kenzie",
+            "institution": "University of California San Diego",
+            "department": "Rady School of Management",
+            "officialProfileUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+            "personalWebsiteUrl": "Not found",
+            "email": "Not found",
+            "researchAreas": [],
+            "researchSummary": "Not found",
+            "googleScholarUrl": "Not found",
+            "labAffiliation": "Not found",
+            "labAffiliationUrl": "Not found",
+            "recruitingStatus": "Unknown",
+            "recruitingEvidence": {
+              "text": "",
+              "url": ""
+            },
+            "sourceUrls": [
+              "https://profiles.ucsd.edu/craig.mckenzie"
+            ],
+            "lastVerified": "2026-10-18",
+            "appointmentStatus": "listed_faculty",
+            "verificationScope": "Exact own name and displayed faculty appointment only",
+            "verification": {
+              "status": "source_checked",
+              "rawUnavailable": false,
+              "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+              "observedAt": "2026-10-18T02:39:28+00:00",
+              "identityMatched": true,
+              "fieldsVerified": [
+                "name",
+                "officialProfileUrl",
+                "appointmentStatus"
+              ],
+              "issues": []
+            },
+            "fieldEvidence": {
+              "name": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+                  "observedAt": "2026-10-18T02:39:28+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "Craig Mc Kenzie | Professor, Rady School of Management",
+                  "status": "verified",
+                  "bodySha256": "6a9a02a260e65ec3055e29dc8c85607910542294c0c930a7a7300ed01050ca5d",
+                  "rawUnavailable": false
+                }
+              ],
+              "officialProfileUrl": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+                  "observedAt": "2026-10-18T02:39:28+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "Craig Mc Kenzie | Professor, Rady School of Management",
+                  "status": "verified",
+                  "bodySha256": "6a9a02a260e65ec3055e29dc8c85607910542294c0c930a7a7300ed01050ca5d",
+                  "rawUnavailable": false
+                }
+              ],
+              "appointmentStatus": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+                  "observedAt": "2026-10-18T02:39:28+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "Craig Mc Kenzie | Professor, Rady School of Management",
+                  "status": "verified",
+                  "bodySha256": "6a9a02a260e65ec3055e29dc8c85607910542294c0c930a7a7300ed01050ca5d",
+                  "rawUnavailable": false
+                }
+              ]
+            },
+            "appointmentAsListed": {
+              "nameAsDisplayed": "Craig Mc Kenzie",
+              "identityHeadingMethod": "profiles_page_title_h2",
+              "titleAsListed": "Professor, Rady School of Management",
+              "schoolAsListed": "Vc-academic Affairs",
+              "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+              "observedAt": "2026-10-18T02:39:28+00:00",
+              "status": "explicit_faculty_appointment_as_listed",
+              "departmentAsListed": "Rady School of Management",
+              "mappedDepartment": "Rady School of Management"
+            },
+            "recoveryBatch": {
+              "batchId": "recovery-pipeline-batch-overlap-probe-20261018-0001",
+              "actualRawAvailable": true,
+              "newFacultyClaimBeyondListedAppointment": false
+            },
+            "teaching": {
+              "status": "not_checked",
+              "lastChecked": null,
+              "courses": []
+            },
+            "qualificationSourceObservations": [
+              {
+                "requestedUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+                "sourceUrl": "https://profiles.ucsd.edu/craig.mckenzie",
+                "observedAt": "2026-10-18T02:39:28+00:00",
+                "bodySha256": "6a9a02a260e65ec3055e29dc8c85607910542294c0c930a7a7300ed01050ca5d",
+                "nameAsDisplayed": "Craig Mc Kenzie",
+                "nameMethod": "profiles_page_title_h2",
+                "canonicalUri": "https://profiles.ucsd.edu/craig.mckenzie",
+                "rdfAlternateUri": "https://researcherprofiles.org/profile/179890/179890.rdf"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ucsd-profile-faculty-1414506320ad83",
+      "label": "June Vuong",
+      "institution": "University of California San Diego",
+      "department": "Computer Science and Engineering",
+      "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+      "sourceUrls": [
+        "https://profiles.ucsd.edu/june.vuong"
+      ],
+      "classification": "pending_person_identity",
+      "reason": "This captured faculty profile may be a preferred-name or split-surname variant of an existing record. The saved page supplies no explicit own-page link or shared identity identifier to resolve it. Retain the complete observation without counting a distinct new professor or merging identities.",
+      "possibleCanonicalProfessorIds": [
+        "ucsd-cse-thuy-duong-june-vuong"
+      ],
+      "reviewedAt": "2026-10-18T03:32:19+00:00",
+      "sourceCapture": {
+        "queuePath": ".cache/recovery-backfill-20261017/recovery-pipeline-batch-overlap-probe-20261018-0001/queue.json",
+        "bodySha256": "fbde90b8bd9244acf28272cd8cbea3a1490f416b83efed9b74c371ffba25c44f",
+        "observedAt": "2026-10-18T02:40:18+00:00",
+        "httpStatus": 200,
+        "transportSucceeded": true,
+        "identityAssociation": "unresolved",
+        "rdfLinkIsNotFetchedEvidence": true
+      },
+      "previousProfessorObservations": [
+        {
+          "scope": "source_observation",
+          "record": {
+            "id": "ucsd-profile-faculty-1414506320ad83",
+            "name": "June Vuong",
+            "institution": "University of California San Diego",
+            "department": "Computer Science and Engineering",
+            "officialProfileUrl": "https://profiles.ucsd.edu/june.vuong",
+            "personalWebsiteUrl": "Not found",
+            "email": "Not found",
+            "researchAreas": [],
+            "researchSummary": "Not found",
+            "googleScholarUrl": "Not found",
+            "labAffiliation": "Not found",
+            "labAffiliationUrl": "Not found",
+            "recruitingStatus": "Unknown",
+            "recruitingEvidence": {
+              "text": "",
+              "url": ""
+            },
+            "sourceUrls": [
+              "https://profiles.ucsd.edu/june.vuong"
+            ],
+            "lastVerified": "2026-10-18",
+            "appointmentStatus": "listed_faculty",
+            "verificationScope": "Exact own name and displayed faculty appointment only",
+            "verification": {
+              "status": "source_checked",
+              "rawUnavailable": false,
+              "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+              "observedAt": "2026-10-18T02:40:18+00:00",
+              "identityMatched": true,
+              "fieldsVerified": [
+                "name",
+                "officialProfileUrl",
+                "appointmentStatus"
+              ],
+              "issues": []
+            },
+            "fieldEvidence": {
+              "name": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+                  "observedAt": "2026-10-18T02:40:18+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "June Vuong | Assistant Professor, Computer Science and Engineering",
+                  "status": "verified",
+                  "bodySha256": "fbde90b8bd9244acf28272cd8cbea3a1490f416b83efed9b74c371ffba25c44f",
+                  "rawUnavailable": false
+                }
+              ],
+              "officialProfileUrl": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+                  "observedAt": "2026-10-18T02:40:18+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "June Vuong | Assistant Professor, Computer Science and Engineering",
+                  "status": "verified",
+                  "bodySha256": "fbde90b8bd9244acf28272cd8cbea3a1490f416b83efed9b74c371ffba25c44f",
+                  "rawUnavailable": false
+                }
+              ],
+              "appointmentStatus": [
+                {
+                  "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+                  "observedAt": "2026-10-18T02:40:18+00:00",
+                  "method": "fresh_exact_own_faculty_appointment",
+                  "evidence": "June Vuong | Assistant Professor, Computer Science and Engineering",
+                  "status": "verified",
+                  "bodySha256": "fbde90b8bd9244acf28272cd8cbea3a1490f416b83efed9b74c371ffba25c44f",
+                  "rawUnavailable": false
+                }
+              ]
+            },
+            "appointmentAsListed": {
+              "nameAsDisplayed": "June Vuong",
+              "identityHeadingMethod": "profiles_page_title_h2",
+              "titleAsListed": "Assistant Professor, Computer Science and Engineering",
+              "schoolAsListed": "Vc-academic Affairs",
+              "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+              "observedAt": "2026-10-18T02:40:18+00:00",
+              "status": "explicit_faculty_appointment_as_listed",
+              "departmentAsListed": "Computer Science and Engineering",
+              "mappedDepartment": "Computer Science and Engineering"
+            },
+            "recoveryBatch": {
+              "batchId": "recovery-pipeline-batch-overlap-probe-20261018-0001",
+              "actualRawAvailable": true,
+              "newFacultyClaimBeyondListedAppointment": false
+            },
+            "teaching": {
+              "status": "not_checked",
+              "lastChecked": null,
+              "courses": []
+            },
+            "qualificationSourceObservations": [
+              {
+                "requestedUrl": "https://profiles.ucsd.edu/june.vuong",
+                "sourceUrl": "https://profiles.ucsd.edu/june.vuong",
+                "observedAt": "2026-10-18T02:40:18+00:00",
+                "bodySha256": "fbde90b8bd9244acf28272cd8cbea3a1490f416b83efed9b74c371ffba25c44f",
+                "nameAsDisplayed": "June Vuong",
+                "nameMethod": "profiles_page_title_h2",
+                "canonicalUri": "https://profiles.ucsd.edu/june.vuong",
+                "rdfAlternateUri": "https://researcherprofiles.org/profile/694203475/694203475.rdf"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "networkRequests": 0,
+  "existingWholeRecordsUnchanged": false,
+  "allBaselineWholeRecordsUnchanged": true,
+  "allQuarantinedWholeRecordsArchived": true
+}
