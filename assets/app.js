@@ -837,11 +837,16 @@ function compileQuery(query) {
   return { terms, phrase: words.length > 1 ? words.join(" ") : "" };
 }
 
-// Indexed text is padded with spaces: two-letter terms ("ai", "ml") must be whole words,
-// three-letter terms must start a word, and longer terms may match anywhere.
+// Indexed text is padded with spaces. Terms of three or more letters match anywhere, as
+// before; one- and two-letter terms must start a word ("wu" finds "Wuerthwein", not every
+// "would"), and known abbreviations ("ai", "ml") must be whole words so "html" stays out.
+function isAbbreviation(alt) {
+  return alt.length <= 2 && Object.hasOwn(SEARCH_SYNONYMS, alt);
+}
+
 function textHas(text, alt) {
-  if (CJK_PATTERN.test(alt) || alt.length > 3) return text.includes(alt);
-  return text.includes(alt.length <= 2 ? ` ${alt} ` : ` ${alt}`);
+  if (CJK_PATTERN.test(alt) || alt.length > 2) return text.includes(alt);
+  return text.includes(isAbbreviation(alt) ? ` ${alt} ` : ` ${alt}`);
 }
 
 function termMatches(term, indexed) {
@@ -963,8 +968,8 @@ function buildHighlighter(query) {
   const words = query.terms.flatMap((term) => [...term.alts, ...term.fuzzyTokens]);
   const usable = unique(words).filter((word) => word.length > 1).sort((a, b) => b.length - a.length);
   const source = usable.map((word) => {
-    if (word.length > 3 || CJK_PATTERN.test(word)) return escapeRegExp(word);
-    return word.length <= 2 ? `\\b${escapeRegExp(word)}\\b` : `\\b${escapeRegExp(word)}`;
+    if (word.length > 2 || CJK_PATTERN.test(word)) return escapeRegExp(word);
+    return isAbbreviation(word) ? `\\b${escapeRegExp(word)}\\b` : `\\b${escapeRegExp(word)}`;
   });
   return source.length ? new RegExp(source.join("|"), "gi") : null;
 }

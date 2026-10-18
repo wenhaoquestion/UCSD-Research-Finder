@@ -111,7 +111,9 @@ assert.equal(evaluate('editDistance("nueroscience", "neuroscience", 2)'), 1, 'a 
 assert(evaluate('compileQuery("ml").terms[0].alts.includes("machine learning")'));
 assert(evaluate('compileQuery("机器学习").terms[0].alts.includes("machine learning")'));
 assert.equal(evaluate('compileQuery("机器学习实验室").terms.length'), 2, 'known Chinese words become separate required terms');
-assert.equal(evaluate('textHas(" email maintained", "ai")'), false, 'short terms match at word starts only');
+assert.equal(evaluate('textHas(" email maintained", "ai")'), false, 'abbreviations match whole words only');
 assert.equal(evaluate('textHas(" ai safety", "ai")'), true);
+assert.equal(evaluate('textHas(" frank wuerthwein", "wu")'), true, 'two letters still find names that start with them');
+assert.equal(evaluate('textHas(" danna zhang", "ang")'), true, 'three-letter terms match inside words, as before');
 
 console.log('PASS: person and lab identity, field verification, missing scores, course-code indexing, taxonomy, and fuzzy search');
