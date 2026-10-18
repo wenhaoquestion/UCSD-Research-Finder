@@ -199,4 +199,18 @@ assert.equal(JSON.parse(listed).department, 'Unknown', 'the reviewed department 
 assert.equal(evaluate('buildRecords({ professors: [{ id: "u2", name: "No Evidence", department: "Unknown" }] })[0].departments.length'), 0,
   'without captured evidence no department is invented');
 
+// Labs with an Unknown reviewed department use their own site's statement, or a PI named there.
+const labObs = { entries: [
+  { labId: "l1", basis: "lab_site_statement", unitsAsPublished: ["Department: MAE"].map(() => "MAE"), sourceUrl: "https://lab.ucsd.edu/", observedAt: "2026-10-18", evidence: ["Department: MAE, UCSD"] },
+  { labId: "l2", basis: "named_principal_investigator", principalInvestigatorId: "p1", sourceUrl: "https://lab2.ucsd.edu/", observedAt: "2026-10-18", evidence: ["Jane Doe"] },
+] };
+context.labObs = labObs;
+const labRows = JSON.parse(evaluate(`JSON.stringify(buildRecords({ professors: [{ id: "p1", name: "Jane Doe", department: "Physics" }],
+  labs: [{ id: "l1", labName: "One Lab", department: "Unknown" }, { id: "l2", labName: "Two Lab", department: "Unknown" }, { id: "l3", labName: "Three Lab", department: "Unknown" }] }, null, labObs))`));
+const labById = Object.fromEntries(labRows.map((r) => [r.id, r]));
+assert.equal(labById.l1.departments.join(), 'Mechanical & Aerospace Engineering', 'a lab site naming its unit maps to the department');
+assert.equal(labById.l2.departments.join(), 'Physics', 'a PI named on the lab site lends the department from their record');
+assert.equal(labById.l3.departments.length, 0, 'labs without an observation stay unassigned');
+assert.equal(labById.l1.department, 'Unknown', 'the reviewed lab department field is unchanged');
+
 console.log('PASS: person/lab identity, recovered archives and appointments, field verification, missing scores, course indexing, taxonomy, and fuzzy search');

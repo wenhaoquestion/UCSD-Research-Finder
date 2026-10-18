@@ -1,5 +1,6 @@
 const DATA_URL = "data/research-atlas.json";
 const REAL_PORTAL_DATA_URL = "data/ucsd/real-portal-resources.json";
+const LAB_DEPARTMENT_DATA_URL = "data/ucsd/lab-department-observations.json";
 const NOT_FOUND = "Not found";
 const UNKNOWN = "Unknown";
 const PAGE_SIZE = 40;
@@ -684,7 +685,18 @@ function withFacts(record) {
   return record;
 }
 
-function buildRecords(data, realPortalData = null) {
+// Labs whose reviewed department is Unknown can still name their unit on their own website
+// (data/ucsd/lab-department-observations.json). A named PI's existing record can too.
+function labListedDepartments(lab, observation, professorsById) {
+  if (!observation) return [];
+  const basis = observation.basis === "named_principal_investigator" ? "PI named on the lab's own site" : "Lab's own website";
+  const units = observation.basis === "named_principal_investigator"
+    ? departmentNames(professorsById.get(observation.principalInvestigatorId) || {})
+    : observation.unitsAsPublished || [];
+  return units.filter(isKnown).map((unit) => ({ unit, sourceUrl: observation.sourceUrl, observedAt: observation.observedAt, basis, quote: (observation.evidence || []).join(" … ") }));
+}
+
+function buildRecords(data, realPortalData = null, labDepartmentData = null) {
   const professors = (data.professors || []).map((item) => ({
     ...item,
     recordType: "professor",
@@ -701,17 +713,24 @@ function buildRecords(data, realPortalData = null) {
     return withFacts(assignDepartments({ ...record, listedDepartments: listed }, reviewed.length ? reviewed : listed.map((item) => item.unit)));
   });
 
-  const labs = (data.labs || []).map((item) => withFacts(assignDepartments({
-    ...item,
-    recordType: "lab",
-    displayName: knownText(item.labName) || NOT_FOUND,
-    displayKind: item.recordSubtype === "ngo" ? "NGO" : item.recordSubtype === "research_group" ? "Research group" : "Lab",
-    summary: knownText(item.description),
-    email: knownText(item.contactEmail),
-    researchAreas: cleanAreas(item.researchAreas),
-    sourceUrls: item.sourceUrls || [],
-    links: labLinks(item),
-  }, departmentNames(item))));
+  const professorsById = new Map((data.professors || []).map((item) => [item.id, item]));
+  const labObservations = new Map((labDepartmentData?.entries || []).map((entry) => [entry.labId, entry]));
+  const labs = (data.labs || []).map((item) => {
+    const reviewed = departmentNames(item);
+    const listed = reviewed.length ? [] : labListedDepartments(item, labObservations.get(item.id), professorsById);
+    return withFacts(assignDepartments({
+      ...item,
+      recordType: "lab",
+      displayName: knownText(item.labName) || NOT_FOUND,
+      displayKind: item.recordSubtype === "ngo" ? "NGO" : item.recordSubtype === "research_group" ? "Research group" : "Lab",
+      summary: knownText(item.description),
+      email: knownText(item.contactEmail),
+      researchAreas: cleanAreas(item.researchAreas),
+      sourceUrls: item.sourceUrls || [],
+      links: labLinks(item),
+      listedDepartments: listed,
+    }, reviewed.length ? reviewed : listed.map((entry) => entry.unit)));
+  });
 
   const resources = (realPortalData?.resources || []).map((item) => withFacts(assignDepartments({
     ...item,
@@ -2005,6 +2024,22 @@ function academicDetails(record) {
   return detailSection("Academic metrics", grid, note(status), make("h4", "sub-heading", "Recent publications"), list);
 }
 
+// Evidence behind a department shown while the reviewed field is Unknown.
+function listedDepartmentDetails(record) {
+  if (!record.listedDepartments?.length) return [];
+  const list = make("ul", "evidence-list");
+  for (const item of record.listedDepartments) {
+    const resolved = resolveDepartment(item.unit);
+    list.append(evidenceItem(
+      `Department as listed · ${item.unit}${resolved && resolved.name !== item.unit ? ` (shown as ${resolved.name})` : ""}`,
+      `${item.basis} · observed ${dateLabel(item.observedAt)}`,
+      item.quote || "",
+      [["Listing source", item.sourceUrl]],
+    ));
+  }
+  return [list, note("The reviewed department field is still Unknown. The department shown is read from the listing above and is used for browsing only.")];
+}
+
 function facultyDirectoryDetails(record) {
   const fields = [
     ["Directory status", facultyLabel(record)],
@@ -2013,19 +2048,7 @@ function facultyDirectoryDetails(record) {
   if (record.aliasNames?.length) fields.push(["Also listed as", record.aliasNames]);
   if (record.directorySection) fields.push(["Directory section", record.directorySection]);
   const parts = [fieldGrid(fields)];
-  if (record.listedDepartments?.length) {
-    const list = make("ul", "evidence-list");
-    for (const item of record.listedDepartments) {
-      const resolved = resolveDepartment(item.unit);
-      list.append(evidenceItem(
-        `Department as listed · ${item.unit}${resolved && resolved.name !== item.unit ? ` (shown as ${resolved.name})` : ""}`,
-        `${item.basis} · observed ${dateLabel(item.observedAt)}`,
-        "",
-        [["Listing source", item.sourceUrl]],
-      ));
-    }
-    parts.push(list, note("The reviewed department field is still Unknown. The department shown is read from this record's own captured listing above and is used for browsing only."));
-  }
+  parts.push(...listedDepartmentDetails(record));
   const listings = Array.isArray(record.directoryListings) ? record.directoryListings : [];
   if (listings.length) {
     const list = make("ul", "evidence-list");
@@ -2126,6 +2149,7 @@ function detailFields(record) {
       ["Legacy verification date", record.lastVerified],
     ]);
     const parts = [fields];
+    if (record.listedDepartments?.length) parts.push(make("h4", "sub-heading", "Department"), ...listedDepartmentDetails(record));
     const connections = programConnections(record);
     if (connections.length) {
       const list = make("ul", "evidence-list");
@@ -2611,17 +2635,19 @@ function renderStats() {
 /* ---------- Data loading ---------- */
 
 async function loadData() {
-  const [data, realPortalData] = await Promise.all([
+  const optional = (url) => fetch(url, DATA_FETCH_OPTIONS)
+    .then((response) => (response.ok ? response.json() : null))
+    .catch(() => null);
+  const [data, realPortalData, labDepartmentData] = await Promise.all([
     fetch(DATA_URL, DATA_FETCH_OPTIONS).then((response) => {
       if (!response.ok) throw new Error(`Could not load ${DATA_URL} (HTTP ${response.status}).`);
       return response.json();
     }),
-    fetch(REAL_PORTAL_DATA_URL, DATA_FETCH_OPTIONS)
-      .then((response) => (response.ok ? response.json() : null))
-      .catch(() => null),
+    optional(REAL_PORTAL_DATA_URL),
+    optional(LAB_DEPARTMENT_DATA_URL),
   ]);
   state.data = data;
-  state.records = buildRecords(data, realPortalData);
+  state.records = buildRecords(data, realPortalData, labDepartmentData);
   state.index = buildIndex(state.records);
   state.vocabulary = null;
   fuzzyCache.clear();

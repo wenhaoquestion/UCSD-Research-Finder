@@ -1064,7 +1064,7 @@ svg {
 
 .type-tabs {
   display: flex;
-  gap: clamp(14px, 2vw, 28px);
+  gap: clamp(12px, 1.4vw, 22px);
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -1121,7 +1121,7 @@ svg {
 .sort-field {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
   margin-left: auto;
   color: var(--muted);
   font-size: 13px;
@@ -1133,6 +1133,19 @@ svg {
   border-color: transparent;
   color: var(--ink);
   font-weight: 600;
+}
+
+.sort-glyph {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.8;
+}
+
+/* Sized to the chosen option rather than the longest one, so the tabs keep one row. */
+.sort-field select {
+  field-sizing: content;
+  padding-left: 4px;
 }
 
 .active-filters {
