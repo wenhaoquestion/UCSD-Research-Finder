@@ -13,7 +13,7 @@ python3 scripts/validate_data.py
 python3 -m http.server 8000
 ```
 
-Open http://localhost:8000. Search accepts professor names, research text, and course codes such as `CSE151A`. Filters include courses, both rating platforms, and records with field evidence. Details show dates, sample sizes, all confirmed lab associations, and original sources. Former and emeritus faculty retain their source-reported category.
+Open http://localhost:8000. Search accepts professor names, research text, and course codes such as `CSE151A`. It tolerates typos (`nueroscience`), expands common abbreviations (`ml`, `nlp`, `hci`, `stats`) and Chinese field names (`机器学习`, `神经科学`), and falls back to records matching most words when none match all of them; the results say when either happened. Suggestions under the search box jump straight to a research field, department, or record. Research fields and departments are both two-level: a broad group (e.g. "Computing & AI", "Engineering") with optional detailed entries (e.g. "Machine learning & AI", "Electrical and Computer Engineering"). A strip above the results shows how the current results split across fields. Filters include courses, both rating platforms, and records with field evidence. Details show dates, sample sizes, all confirmed lab associations, and original sources. Former and emeritus faculty retain their source-reported category.
 
 ## Refresh public data
 
@@ -146,6 +146,7 @@ The old UCSD index and old collectors remain for historical discovery. They refu
 ## Files
 
 - `index.html`, `assets/app.js`, `assets/styles.css`: static search and details UI.
+- `assets/taxonomy.js`: browse groupings (schools/divisions with their departments, broad research fields with detailed areas), query synonyms, and Chinese translations. Field membership is a browse aid inferred in the browser from a record's department and its sourced research text; it is not stored in the dataset or presented as a sourced claim.
 - `data/research-atlas.json`: served professor and lab records.
 - `data/ucsd/*-evidence.json`: independent captures and unresolved identity candidates.
 - `data/ucsd/lab-identity-review.json`: sourced decisions about duplicate lab websites, incorrect directory destinations, and research-group membership.

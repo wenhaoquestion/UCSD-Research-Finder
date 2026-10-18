@@ -48,7 +48,9 @@ const METRIC_STOPWORDS = new Set([
 const DEFAULT_FILTERS = {
   query: "",
   type: "all",
+  division: "all",
   department: "all",
+  field: "all",
   area: "all",
   recruiting: "all",
   evidence: "all",
@@ -61,7 +63,9 @@ const DEFAULT_FILTERS = {
 const URL_KEYS = {
   query: "q",
   type: "type",
+  division: "school",
   department: "dept",
+  field: "field",
   area: "area",
   recruiting: "status",
   evidence: "evidence",
@@ -98,6 +102,11 @@ const state = {
   byId: new Map(),
   results: [],
   highlighter: null,
+  vocabulary: null,
+  departmentDivision: new Map(),
+  facetCounts: null,
+  suggestions: [],
+  suggestionIndex: -1,
   visibleLimit: PAGE_SIZE,
   activeId: "",
   userSelected: false,
@@ -110,8 +119,13 @@ const els = {
   typeButtons: [...document.querySelectorAll("[data-type-choice]")],
   typeCounts: [...document.querySelectorAll("[data-count]")],
   quickButtons: [...document.querySelectorAll("[data-quick]")],
+  division: document.querySelector("#divisionFilter"),
   department: document.querySelector("#departmentFilter"),
+  field: document.querySelector("#fieldFilter"),
   area: document.querySelector("#areaFilter"),
+  suggest: document.querySelector("#suggestions"),
+  fieldStrip: document.querySelector("#fieldStrip"),
+  searchNote: document.querySelector("#searchNote"),
   evidence: document.querySelector("#evidenceFilter"),
   verifiedOnly: document.querySelector("#verifiedOnly"),
   recruiting: document.querySelector("#recruitingFilter"),
@@ -168,12 +182,14 @@ function writeStoredList(key, values) {
   }
 }
 
+// Lower-case and drop diacritics, so "Halicioğlu" and "halicioglu" compare equal.
+function foldText(value) {
+  const text = String(value || "");
+  return (/[^\x00-\x7f]/.test(text) ? text.normalize("NFKD").replace(/\p{M}+/gu, "") : text).toLowerCase();
+}
+
 function normalize(value) {
-  return String(value || "")
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[^\p{L}\p{N}@.+-]+/gu, " ")
-    .trim();
+  return foldText(value).replace(/[^\p{L}\p{N}@.+-]+/gu, " ").trim();
 }
 
 function isKnown(value) {
@@ -467,6 +483,123 @@ function resourceAreas(resource) {
   return unique(areas);
 }
 
+/* ---------- Taxonomy: broad groups with detailed entries (assets/taxonomy.js) ---------- */
+
+const OTHER_DIVISION = { id: "other", label: "Other units", aliases: [], departments: [] };
+const CJK_PATTERN = /[\u3400-\u9fff]/;
+
+// Matching key for department and organization names: "Department of Physics" and
+// "Electrical and Computer Engineering (ECE)" reduce to their plain names.
+function departmentKey(value) {
+  return foldText(value)
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/&/g, " and ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .replace(/^(the )?department of /, "")
+    .replace(/ department$/, "");
+}
+
+function buildTaxonomy() {
+  const divisions = new Map([...DIVISIONS, OTHER_DIVISION].map((division) => [division.id, division]));
+  const departments = new Map();
+  for (const division of DIVISIONS) {
+    for (const department of division.departments) {
+      const entry = { ...department, division: division.id };
+      for (const alias of [department.name, ...(department.aliases || [])]) departments.set(departmentKey(alias), entry);
+    }
+  }
+  const fields = new Map();
+  const subfields = new Map();
+  for (const field of RESEARCH_FIELDS) {
+    fields.set(field.id, field);
+    for (const sub of field.subfields) {
+      subfields.set(sub.id, { ...sub, field: field.id, pattern: new RegExp(`\\b(?:${sub.patterns.join("|")})`, "i") });
+    }
+  }
+  // Campus units are checked first so "Student Health" is not filed under Medicine.
+  const divisionOrder = [...DIVISIONS].sort((a, b) => (b.id === "campus") - (a.id === "campus"));
+  // Chinese names translate to the English label they belong to; the search index stays
+  // English-only because CJK text would make every indexed string slower to scan.
+  const cjk = {};
+  const addCjk = (key, values) => { cjk[key] = unique([...(cjk[key] || []), ...values]); };
+  for (const entry of [...fields.values(), ...subfields.values(), ...DIVISIONS]) {
+    for (const alias of entry.aliases || []) if (CJK_PATTERN.test(alias)) addCjk(alias, [entry.label]);
+  }
+  for (const [key, values] of Object.entries(CJK_SYNONYMS)) addCjk(key, values);
+  return { divisions, departments, fields, subfields, divisionOrder, cjk };
+}
+
+const TAXONOMY = buildTaxonomy();
+
+function resolveDepartment(raw, fallbackDivision = OTHER_DIVISION.id) {
+  const key = departmentKey(raw);
+  if (!key) return null;
+  const known = TAXONOMY.departments.get(key);
+  if (known) return known;
+  const division = TAXONOMY.divisionOrder.find((item) => item.match?.test(key));
+  return { name: cleanText(raw), division: division?.id || fallbackDivision };
+}
+
+function divisionLabel(id) {
+  return TAXONOMY.divisions.get(id)?.label || slugLabel(id);
+}
+
+function fieldLabel(id) {
+  return TAXONOMY.fields.get(id)?.label || slugLabel(id);
+}
+
+function subfieldLabel(id) {
+  return TAXONOMY.subfields.get(id)?.label || slugLabel(id);
+}
+
+// Raw area lists mix "Physical Chemistry|Materials Chemistry", trailing commas and case variants.
+function cleanAreas(values) {
+  return uniqueByNormalized((values || [])
+    .flatMap((value) => String(value).split("|"))
+    .map((value) => value.replace(/[\s,;:.]+$/, "").trim())
+    .filter((value) => value.length > 2));
+}
+
+function subfieldsForText(text) {
+  const folded = foldText(text);
+  if (!folded.trim()) return [];
+  return [...TAXONOMY.subfields.values()].filter((sub) => sub.pattern.test(folded)).map((sub) => sub.id);
+}
+
+// Fields come from sourced topic text plus the field each department implies, so records
+// without a captured summary still appear under their broad field.
+function classifyRecord(record) {
+  const text = [
+    ...(record.researchAreas || []),
+    ...(record.researchKeywords || []),
+    record.summary,
+    record.recordType === "professor" ? "" : record.displayName,
+    ...(record.labAffiliations || []).map((lab) => lab.labName),
+  ].filter(isKnown).join(" · ");
+  const subfields = new Set(subfieldsForText(text));
+  const fields = new Set();
+  for (const name of record.departments || []) {
+    const department = TAXONOMY.departments.get(departmentKey(name));
+    if (department?.sub) subfields.add(department.sub);
+    if (department?.field) fields.add(department.field);
+  }
+  for (const id of subfields) fields.add(TAXONOMY.subfields.get(id).field);
+  record.subfieldIds = [...subfields];
+  record.fieldIds = RESEARCH_FIELDS.map((field) => field.id).filter((id) => fields.has(id));
+  return record;
+}
+
+function assignDepartments(record, names, fallbackDivision) {
+  const resolved = names.map((name) => resolveDepartment(name, fallbackDivision)).filter(Boolean);
+  for (const { name, division } of resolved) {
+    if (!state.departmentDivision.has(name)) state.departmentDivision.set(name, division);
+  }
+  record.departments = uniqueByNormalized(resolved.map((item) => item.name));
+  record.divisions = unique(resolved.map((item) => item.division));
+  return record;
+}
+
 function professorKind(item) {
   const flagged = ["emeritus", "former", "deceased"].includes(item.facultyStatus)
     || ["affiliate", "emeritus", "lecturer", "adjunct"].includes(item.appointmentStatus);
@@ -475,6 +608,7 @@ function professorKind(item) {
 
 // Derived facts are computed once so filtering and sorting stay cheap on every keystroke.
 function withFacts(record) {
+  classifyRecord(record);
   const rating = bestRating(record);
   record.facts = {
     courses: coursesFor(record).length,
@@ -495,28 +629,24 @@ function buildRecords(data, realPortalData = null) {
     displayKind: professorKind(item),
     summary: knownText(item.researchSummary),
     email: knownText(item.email),
-    researchAreas: item.researchAreas || [],
+    researchAreas: cleanAreas(item.researchAreas),
     sourceUrls: item.sourceUrls || [],
     links: professorLinks(item),
-  })).map((record) => withFacts({
-    ...record,
-    departments: departmentNames(record),
-  }));
+  })).map((record) => withFacts(assignDepartments({ ...record }, departmentNames(record))));
 
-  const labs = (data.labs || []).map((item) => withFacts({
+  const labs = (data.labs || []).map((item) => withFacts(assignDepartments({
     ...item,
     recordType: "lab",
     displayName: knownText(item.labName) || NOT_FOUND,
     displayKind: item.recordSubtype === "ngo" ? "NGO" : item.recordSubtype === "research_group" ? "Research group" : "Lab",
-    departments: departmentNames(item),
     summary: knownText(item.description),
     email: knownText(item.contactEmail),
-    researchAreas: item.researchAreas || [],
+    researchAreas: cleanAreas(item.researchAreas),
     sourceUrls: item.sourceUrls || [],
     links: labLinks(item),
-  }));
+  }, departmentNames(item))));
 
-  const resources = (realPortalData?.resources || []).map((item) => withFacts({
+  const resources = (realPortalData?.resources || []).map((item) => withFacts(assignDepartments({
     ...item,
     id: item.id || `real-${item.title}`,
     recordType: "resource",
@@ -524,7 +654,6 @@ function buildRecords(data, realPortalData = null) {
     displayKind: "REAL resource",
     institution: "University of California San Diego",
     department: knownText(item.organization),
-    departments: uniqueByNormalized([item.organization]),
     summary: knownText(item.description),
     email: knownText(item.contactEmails?.[0]),
     researchAreas: resourceAreas(item),
@@ -532,7 +661,7 @@ function buildRecords(data, realPortalData = null) {
     links: resourceLinks(item),
     recruitingStatus: UNKNOWN,
     recruitingEvidence: { text: "", url: "" },
-  }));
+  }, uniqueByNormalized([item.organization]), "campus")));
 
   return [...professors, ...labs, ...resources];
 }
@@ -555,9 +684,22 @@ function programConnections(record) {
   return (record.campusProgramRelationships || []).filter((entry) => entry.captureVerified === true && entry.relationship === "program_listing_and_own_rotation_guidance");
 }
 
+function taxonomyTerms(record) {
+  const named = (map, ids) => ids.flatMap((id) => {
+    const entry = map.get(id);
+    return entry ? [entry.label, ...(entry.aliases || []).filter((alias) => !CJK_PATTERN.test(alias))] : [];
+  });
+  return [
+    ...named(TAXONOMY.fields, record.fieldIds || []),
+    ...named(TAXONOMY.subfields, record.subfieldIds || []),
+    ...named(TAXONOMY.divisions, record.divisions || []),
+  ];
+}
+
 function buildIndex(records) {
   return records.map((record) => {
     const departments = record.departments || departmentNames(record);
+    const topics = taxonomyTerms(record);
     const fields = [
       record.displayName,
       record.displayKind,
@@ -587,51 +729,167 @@ function buildIndex(records) {
       ...Object.values(record.ratings || {}).map((rating) => rating.platform),
       ...(record.researchAreas || []),
       ...(record.researchKeywords || []),
+      // Field and school names let "neuroscience" or "engineering" find records whose own text never says so.
+      ...topics,
       ...(record.links || []).flatMap(([label, url]) => [label, url]),
       ...(record.sourceUrls || []),
     ];
 
+    // Leading spaces let short terms match at word starts only (" ai" but not "email").
     return {
-      haystack: normalize(fields.filter(isKnown).join(" ")),
-      name: normalize(record.displayName),
+      haystack: ` ${normalize(fields.filter(isKnown).join(" "))} `,
+      name: ` ${normalize([record.displayName, ...(record.aliasNames || [])].join(" "))} `,
       departments: departments.map(normalize),
-      areas: (record.researchAreas || []).map(normalize),
+      areas: [...(record.researchAreas || []), ...(record.researchKeywords || [])].map(normalize),
+      topics: ` ${normalize(topics.join(" "))} `,
     };
   });
 }
 
-/* ---------- Search & filtering ---------- */
-
-function compileTerms() {
-  return normalize(state.query).split(/\s+/).filter(Boolean);
+// Word -> record count, used only to widen a misspelled term to the words it was meant to be.
+// Built on the first query that needs it, so page load doesn't pay for it.
+function buildVocabulary(index) {
+  const vocabulary = new Map();
+  for (const indexed of index) {
+    for (const token of new Set(indexed.haystack.split(" "))) {
+      if (token.length > 2 && /^\p{L}+$/u.test(token)) vocabulary.set(token, (vocabulary.get(token) || 0) + 1);
+    }
+  }
+  return vocabulary;
 }
 
-function matchesFilters(record, indexed, terms) {
+/* ---------- Search & filtering ---------- */
+
+const fuzzyCache = new Map();
+
+// Optimal string alignment distance (a transposition counts as one edit), abandoned past `max`.
+function editDistance(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let before = null;
+  let previous = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i += 1) {
+    const row = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j += 1) {
+      let value = Math.min(previous[j] + 1, row[j - 1] + 1, previous[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) value = Math.min(value, before[j - 2] + 1);
+      row[j] = value;
+      rowMin = Math.min(rowMin, value);
+    }
+    if (rowMin > max) return max + 1;
+    before = previous;
+    previous = row;
+  }
+  return previous[b.length];
+}
+
+// A term that already occurs somewhere is taken literally; only unknown words get spelling help.
+// Whole-word corrections ("cancr" -> "cancer") win over prefix ones, which keep half-typed
+// words useful ("nuerosci" -> "neurosci"). Corrections then match like typed text.
+function spellingCorrections(term) {
+  if (fuzzyCache.has(term)) return fuzzyCache.get(term);
+  let result = [];
+  if (/^\p{L}{5,}$/u.test(term) && !state.index.some((indexed) => indexed.haystack.includes(term))) {
+    state.vocabulary ||= buildVocabulary(state.index);
+    const max = term.length >= 8 ? 2 : 1;
+    const candidates = [];
+    for (const [token, weight] of state.vocabulary) {
+      if (token[0] !== term[0] && token[1] !== term[1]) continue;
+      const whole = editDistance(term, token, max);
+      if (whole <= max) candidates.push({ text: token, rank: whole * 2, weight });
+      else if (token.length > term.length && editDistance(term, token.slice(0, term.length), max) <= max) {
+        candidates.push({ text: token.slice(0, term.length), rank: max * 2 + 1, weight });
+      }
+    }
+    const best = Math.min(...candidates.map((candidate) => candidate.rank));
+    const weights = new Map();
+    for (const candidate of candidates.filter((item) => item.rank === best)) {
+      weights.set(candidate.text, (weights.get(candidate.text) || 0) + candidate.weight);
+    }
+    result = [...weights].sort((a, b) => b[1] - a[1]).slice(0, 4).map(([text]) => text);
+  }
+  fuzzyCache.set(term, result);
+  return result;
+}
+
+function makeTerm(raw, alternatives) {
+  return { raw, alts: unique(alternatives.map(normalize)), fuzzyTokens: spellingCorrections(raw) };
+}
+
+// Chinese has no spaces, so known words inside a query become separate required terms.
+function cjkKeys(word) {
+  const keys = Object.keys(TAXONOMY.cjk).filter((key) => word.includes(key));
+  return keys.filter((key) => !keys.some((other) => other !== key && other.includes(key)));
+}
+
+function compileQuery(query) {
+  const words = normalize(query).split(/\s+/).filter(Boolean);
+  const terms = [];
+  for (const word of words) {
+    if (CJK_PATTERN.test(word)) {
+      const keys = cjkKeys(word);
+      if (keys.length > 1) keys.forEach((key) => terms.push(makeTerm(key, [key, ...TAXONOMY.cjk[key]])));
+      else terms.push(makeTerm(word, [word, ...keys.flatMap((key) => TAXONOMY.cjk[key])]));
+    } else {
+      terms.push(makeTerm(word, [word, ...(SEARCH_SYNONYMS[word] || [])]));
+    }
+  }
+  return { terms, phrase: words.length > 1 ? words.join(" ") : "" };
+}
+
+// Indexed text is padded with spaces: two-letter terms ("ai", "ml") must be whole words,
+// three-letter terms must start a word, and longer terms may match anywhere.
+function textHas(text, alt) {
+  if (CJK_PATTERN.test(alt) || alt.length > 3) return text.includes(alt);
+  return text.includes(alt.length <= 2 ? ` ${alt} ` : ` ${alt}`);
+}
+
+function termMatches(term, indexed) {
+  return term.alts.some((alt) => textHas(indexed.haystack, alt)) || term.fuzzyTokens.some((alt) => indexed.haystack.includes(alt));
+}
+
+function matchesFilters(record) {
   const { facts } = record;
   if (state.savedOnly && !state.saved.has(record.id)) return false;
+  if (state.division !== "all" && !record.divisions.includes(state.division)) return false;
   if (state.department !== "all" && !record.departments.includes(state.department)) return false;
-  if (state.area !== "all" && !record.researchAreas.includes(state.area)) return false;
   if (state.recruiting !== "all" && (record.recruitingStatus || UNKNOWN) !== state.recruiting) return false;
   if (state.verifiedOnly && !facts.checked) return false;
   if (state.evidence === "courses" && !facts.courses) return false;
   if (state.evidence === "ratings" && !facts.ratings.length) return false;
   if (["rateMyPI", "rateMyProfessors"].includes(state.evidence) && !facts.ratings.includes(state.evidence)) return false;
   if (state.evidence === "needs_review" && facts.checked && !facts.needsReview) return false;
-  if (terms.length && !terms.every((term) => indexed.haystack.includes(term))) return false;
   return true;
 }
 
-function scoreRecord(record, indexed, terms) {
+// Where a word appears decides its weight: a name beats a research area beats body text.
+function placementScore(indexed, alt) {
+  if (indexed.name.startsWith(` ${alt}`)) return 18;
+  if (textHas(indexed.name, alt) && indexed.name.includes(` ${alt}`)) return 14;
+  if (indexed.name.includes(alt) && alt.length > 3) return 8;
+  if (indexed.areas.some((area) => area.includes(alt))) return 7;
+  if (textHas(indexed.topics, alt)) return 6;
+  if (indexed.departments.some((department) => department.includes(alt))) return 5;
+  return textHas(indexed.haystack, alt) ? 2 : 0;
+}
+
+function scoreRecord(record, indexed, matched, query) {
   const { facts } = record;
   // Without a query, records with more checked evidence surface first.
   let score = (facts.checked ? 4 : 0) + (facts.courses ? 3 : 0) + (facts.ratings.length ? 2 : 0) + (facts.metrics.verified ? 2 : 0);
-  for (const term of terms) {
-    if (indexed.name.startsWith(term)) score += 6;
-    if (indexed.name.includes(term)) score += 10;
-    if (indexed.departments.some((department) => department.includes(term))) score += 5;
-    if (indexed.areas.some((area) => area.includes(term))) score += 6;
-    if (indexed.haystack.includes(term)) score += 1;
+  for (const term of matched) {
+    // Spelling-corrected words count, but below anything the reader typed exactly.
+    const best = Math.max(
+      ...term.alts.map((alt) => placementScore(indexed, alt)),
+      ...term.fuzzyTokens.map((alt) => placementScore(indexed, alt) * 0.75),
+    );
+    score += best || 1;
   }
+  if (query.phrase) {
+    if (indexed.name.includes(query.phrase)) score += 25;
+    else if (indexed.haystack.includes(query.phrase)) score += 8;
+  }
+  score += matched.length * 20;
   if (record.recruitingStatus === "Recruiting") score += 3;
   return score;
 }
@@ -652,27 +910,63 @@ const SORTERS = {
   sources: (a, b) => b.record.sourceUrls.length - a.record.sourceUrls.length || byName(a, b),
 };
 
-// One pass computes the visible rows and the per-type counts under every other filter,
-// so the type tabs always show how many records each tab would reveal.
-function computeResults() {
-  const terms = compileTerms();
-  const counts = { all: 0, professor: 0, lab: 0, resource: 0 };
-  const rows = [];
-  state.records.forEach((record, i) => {
-    const indexed = state.index[i];
-    if (!matchesFilters(record, indexed, terms)) return;
-    counts.all += 1;
-    counts[record.recordType] += 1;
-    if (state.type !== "all" && record.recordType !== state.type) return;
-    rows.push({ record, score: state.sort === "relevance" ? scoreRecord(record, indexed, terms) : 0 });
-  });
-  rows.sort(SORTERS[state.sort] || SORTERS.relevance);
-  return { records: rows.map((row) => row.record), counts, terms };
+function increment(map, key) {
+  map.set(key, (map.get(key) || 0) + 1);
 }
 
-function buildHighlighter(terms) {
-  const usable = terms.filter((term) => term.length > 1).sort((a, b) => b.length - a.length);
-  return usable.length ? new RegExp(usable.map(escapeRegExp).join("|"), "gi") : null;
+// One pass computes the visible rows, the per-type counts under every other filter (so the
+// type tabs show what each tab would reveal), and field counts for the browse strip.
+function collectRows(query, required) {
+  const counts = { all: 0, professor: 0, lab: 0, resource: 0 };
+  const fieldCounts = new Map();
+  const areaCounts = new Map();
+  const rows = [];
+  state.records.forEach((record, position) => {
+    if (!matchesFilters(record)) return;
+    const indexed = state.index[position];
+    const matched = query.terms.filter((term) => termMatches(term, indexed));
+    if (matched.length < required) return;
+    const inField = state.field === "all" || record.fieldIds.includes(state.field);
+    const inArea = state.area === "all" || record.subfieldIds.includes(state.area);
+    const inType = state.type === "all" || record.recordType === state.type;
+    if (inType) {
+      record.fieldIds.forEach((id) => increment(fieldCounts, id));
+      if (inField) record.subfieldIds.forEach((id) => increment(areaCounts, id));
+    }
+    if (!inField || !inArea) return;
+    counts.all += 1;
+    counts[record.recordType] += 1;
+    if (!inType) return;
+    rows.push({ record, score: state.sort === "relevance" ? scoreRecord(record, indexed, matched, query) : 0 });
+  });
+  return { rows, counts, fieldCounts, areaCounts };
+}
+
+function computeResults() {
+  const query = compileQuery(state.query);
+  let result = collectRows(query, query.terms.length);
+  let relaxed = false;
+  // Nothing has every word: fall back to records with most of them, ranked by how many.
+  if (!result.counts.all && query.terms.length > 1) {
+    const partial = collectRows(query, Math.ceil(query.terms.length / 2));
+    if (partial.counts.all) {
+      result = partial;
+      relaxed = true;
+    }
+  }
+  result.rows.sort(SORTERS[state.sort] || SORTERS.relevance);
+  const corrections = query.terms.filter((term) => term.fuzzyTokens.length).map((term) => [term.raw, term.fuzzyTokens.slice(0, 3)]);
+  return { ...result, records: result.rows.map((row) => row.record), query, relaxed, corrections };
+}
+
+function buildHighlighter(query) {
+  const words = query.terms.flatMap((term) => [...term.alts, ...term.fuzzyTokens]);
+  const usable = unique(words).filter((word) => word.length > 1).sort((a, b) => b.length - a.length);
+  const source = usable.map((word) => {
+    if (word.length > 3 || CJK_PATTERN.test(word)) return escapeRegExp(word);
+    return word.length <= 2 ? `\\b${escapeRegExp(word)}\\b` : `\\b${escapeRegExp(word)}`;
+  });
+  return source.length ? new RegExp(source.join("|"), "gi") : null;
 }
 
 function highlight(value) {
@@ -726,32 +1020,112 @@ function writeUrl() {
 
 /* ---------- Facets & controls ---------- */
 
-function countBy(values) {
+function countMap(values) {
   const counts = new Map();
-  for (const value of values) {
-    if (isKnown(value)) counts.set(value, (counts.get(value) || 0) + 1);
-  }
-  return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  for (const value of values) if (isKnown(value)) increment(counts, value);
+  return counts;
 }
 
-function setSelectOptions(select, entries, allLabel, current) {
-  const options = [new Option(allLabel, "all")];
-  for (const [value, count] of entries) options.push(new Option(`${value} (${formatNumber(count)})`, value));
-  select.replaceChildren(...options);
-  select.value = entries.some(([value]) => value === current) ? current : "all";
+function option(label, value, count) {
+  return new Option(count === undefined ? label : `${label} (${formatNumber(count)})`, value);
 }
 
+function optionGroup(label, options) {
+  const group = document.createElement("optgroup");
+  group.label = label;
+  group.append(...options);
+  return group;
+}
+
+// Each pair of selects is broad -> detailed: the detailed list follows the broad choice,
+// and picking a detailed entry also sets its broad group.
 function renderFacets() {
-  setSelectOptions(els.department, countBy(state.records.flatMap((record) => record.departments)), "All departments", state.department);
-  setSelectOptions(els.area, countBy(state.records.flatMap((record) => record.researchAreas)), "All research areas", state.area);
-  state.department = els.department.value;
-  state.area = els.area.value;
+  const counts = state.facetCounts;
+  const divisionIds = [...TAXONOMY.divisions.keys()].filter((id) => counts.divisions.get(id));
+  els.division.replaceChildren(
+    option("All schools & divisions", "all"),
+    ...divisionIds.map((id) => option(divisionLabel(id), id, counts.divisions.get(id))),
+  );
+  const divisions = state.division === "all" ? divisionIds : [state.division];
+  const departmentGroups = divisions.map((division) => {
+    const names = [...counts.departments.keys()]
+      .filter((name) => state.departmentDivision.get(name) === division)
+      .sort((a, b) => a.localeCompare(b));
+    return [division, names.map((name) => option(name, name, counts.departments.get(name)))];
+  }).filter(([, options]) => options.length);
+  els.department.replaceChildren(
+    option(state.division === "all" ? "All departments" : `All of ${divisionLabel(state.division)}`, "all"),
+    ...(state.division === "all" ? departmentGroups.map(([division, options]) => optionGroup(divisionLabel(division), options)) : departmentGroups.flatMap(([, options]) => options)),
+  );
+
+  els.field.replaceChildren(
+    option("All research fields", "all"),
+    ...RESEARCH_FIELDS.filter((field) => counts.fields.get(field.id)).map((field) => option(field.label, field.id, counts.fields.get(field.id))),
+  );
+  const fields = RESEARCH_FIELDS.filter((field) => state.field === "all" || field.id === state.field);
+  const areaGroups = fields.map((field) => [field, field.subfields
+    .filter((sub) => counts.areas.get(sub.id))
+    .map((sub) => option(sub.label, sub.id, counts.areas.get(sub.id)))]).filter(([, options]) => options.length);
+  els.area.replaceChildren(
+    option(state.field === "all" ? "All specific areas" : `Any area in ${fieldLabel(state.field)}`, "all"),
+    ...(state.field === "all" ? areaGroups.map(([field, options]) => optionGroup(field.label, options)) : areaGroups.flatMap(([, options]) => options)),
+  );
 }
 
-function syncStateFromControls() {
+function computeFacetCounts() {
+  state.facetCounts = {
+    divisions: countMap(state.records.flatMap((record) => record.divisions)),
+    departments: countMap(state.records.flatMap((record) => record.departments)),
+    fields: countMap(state.records.flatMap((record) => record.fieldIds)),
+    areas: countMap(state.records.flatMap((record) => record.subfieldIds)),
+  };
+}
+
+// Shared links from before the taxonomy used raw names ("dept=Department of Physics",
+// "area=Machine learning"); map them onto the current entries instead of dropping them.
+function normalizeTaxonomyState() {
+  const counts = state.facetCounts;
+  if (state.department !== "all" && !counts.departments.has(state.department)) {
+    const resolved = resolveDepartment(state.department);
+    state.department = resolved && counts.departments.has(resolved.name) ? resolved.name : "all";
+  }
+  if (state.department !== "all") state.division = state.departmentDivision.get(state.department) || state.division;
+  if (state.division !== "all" && !counts.divisions.has(state.division)) state.division = "all";
+  if (state.area !== "all" && !TAXONOMY.subfields.has(state.area)) {
+    const [match] = subfieldsForText(state.area);
+    if (!match && !state.query) state.query = state.area;
+    state.area = match || "all";
+  }
+  if (state.area !== "all") state.field = TAXONOMY.subfields.get(state.area).field;
+  if (state.field !== "all" && !TAXONOMY.fields.has(state.field)) state.field = "all";
+}
+
+function setDivision(value) {
+  state.division = value;
+  if (value !== "all" && state.department !== "all" && state.departmentDivision.get(state.department) !== value) state.department = "all";
+}
+
+function setDepartment(value) {
+  state.department = value;
+  if (value !== "all") state.division = state.departmentDivision.get(value) || state.division;
+}
+
+function setField(value) {
+  state.field = value;
+  if (value !== "all" && state.area !== "all" && TAXONOMY.subfields.get(state.area)?.field !== value) state.area = "all";
+}
+
+function setArea(value) {
+  state.area = value;
+  if (value !== "all") state.field = TAXONOMY.subfields.get(value)?.field || state.field;
+}
+
+function syncStateFromControls(changed = null) {
   state.query = els.query.value.trim();
-  state.department = els.department.value;
-  state.area = els.area.value;
+  if (changed === els.division) setDivision(els.division.value);
+  if (changed === els.department) setDepartment(els.department.value);
+  if (changed === els.field) setField(els.field.value);
+  if (changed === els.area) setArea(els.area.value);
   state.evidence = els.evidence.value;
   state.verifiedOnly = els.verifiedOnly.checked;
   state.recruiting = els.recruiting.value;
@@ -760,13 +1134,16 @@ function syncStateFromControls() {
 
 function syncControls() {
   if (els.query.value.trim() !== state.query) els.query.value = state.query;
+  if (state.facetCounts) renderFacets();
+  els.division.value = state.division;
   els.department.value = state.department;
+  els.field.value = state.field;
   els.area.value = state.area;
   els.evidence.value = state.evidence;
   els.verifiedOnly.checked = state.verifiedOnly;
   els.recruiting.value = state.recruiting;
   els.sort.value = state.sort;
-  for (const select of [els.department, els.area, els.evidence, els.recruiting]) {
+  for (const select of [els.division, els.department, els.field, els.area, els.evidence, els.recruiting]) {
     select.classList.toggle("is-set", select.value !== "all");
   }
   els.savedToggle.setAttribute("aria-pressed", String(state.savedOnly));
@@ -780,8 +1157,10 @@ function syncControls() {
 function activeFilterEntries() {
   const entries = [];
   if (state.savedOnly) entries.push(["savedOnly", "Saved", "only"]);
+  if (state.field !== "all" && state.area === "all") entries.push(["field", "Field", fieldLabel(state.field)]);
+  if (state.area !== "all") entries.push(["area", "Area", subfieldLabel(state.area)]);
+  if (state.division !== "all" && state.department === "all") entries.push(["division", "School", divisionLabel(state.division)]);
   if (state.department !== "all") entries.push(["department", "Dept", state.department]);
-  if (state.area !== "all") entries.push(["area", "Area", state.area]);
   if (state.evidence !== "all") entries.push(["evidence", "Evidence", EVIDENCE_LABELS[state.evidence]]);
   if (state.verifiedOnly) entries.push(["verifiedOnly", "Data", "source checked"]);
   if (state.recruiting !== "all") entries.push(["recruiting", "Status", state.recruiting]);
@@ -819,14 +1198,48 @@ function resetFilters({ keepQuery = false } = {}) {
   update({ scroll: true });
 }
 
+// Removing a detailed chip steps back to its broad group; removing a broad chip clears both.
 function clearFilter(key) {
   if (key === "*") {
     resetFilters({ keepQuery: true });
     return;
   }
   state[key] = DEFAULT_FILTERS[key];
+  if (key === "field") state.area = "all";
+  if (key === "division") state.department = "all";
   syncControls();
   update({ scroll: true });
+}
+
+/* ---------- Browse by field ---------- */
+
+function stripButton(label, count, data, pressed = false) {
+  const button = make("button", "", label);
+  button.type = "button";
+  Object.assign(button.dataset, data);
+  button.setAttribute("aria-pressed", String(pressed));
+  if (count !== null) button.append(make("span", "", formatNumber(count)));
+  return button;
+}
+
+// Field counts follow the current query and filters, so after typing "imaging" the strip shows
+// which fields those results fall into; a broad field then opens its detailed areas.
+function renderFieldStrip(fieldCounts, areaCounts) {
+  const items = [];
+  if (state.field === "all") {
+    const fields = RESEARCH_FIELDS.filter((field) => fieldCounts.get(field.id));
+    if (state.query) fields.sort((a, b) => fieldCounts.get(b.id) - fieldCounts.get(a.id));
+    items.push(...fields.map((field) => stripButton(field.label, fieldCounts.get(field.id), { stripField: field.id })));
+  } else {
+    const field = TAXONOMY.fields.get(state.field);
+    items.push(stripButton("All fields", null, { stripField: "all" }));
+    items[0].classList.add("strip-back");
+    items.push(stripButton(field.label, fieldCounts.get(field.id) || 0, { stripField: field.id }, state.area === "all"));
+    const subs = field.subfields.filter((sub) => areaCounts.get(sub.id) || sub.id === state.area);
+    items.push(...subs.map((sub) => stripButton(sub.label, areaCounts.get(sub.id) || 0, { stripArea: sub.id }, sub.id === state.area)));
+  }
+  els.fieldStrip.hidden = items.length === 0;
+  els.fieldStrip.replaceChildren(...(items.length ? [make("span", "strip-label", state.field === "all" ? "Fields" : "Areas"), ...items] : []));
 }
 
 function applyQuickFilter(key) {
@@ -871,6 +1284,7 @@ function rowTags(record) {
   const tags = record.researchAreas.filter((area) => !departments.has(normalize(area)));
   // Profile keywords fill in for records whose prose matched no controlled area.
   if (tags.length < 3) tags.push(...(record.researchKeywords || []).slice(0, 4 - tags.length));
+  if (!tags.length && record.recordType !== "resource") tags.push(...record.subfieldIds.slice(0, 2).map(subfieldLabel));
   if (record.recordType === "lab" && isKnown(record.principalInvestigator)) {
     tags.unshift(`${unverifiedOwnershipPi(record) ? "Earlier PI label (unverified):" : "PI"} ${record.principalInvestigator}`);
   }
@@ -957,6 +1371,19 @@ function renderHeading(total) {
   else els.coverageLine.textContent = "across UC San Diego";
 }
 
+// Says plainly when results rely on spelling correction or on only some of the words.
+function renderSearchNote({ relaxed, corrections, query }) {
+  const parts = [];
+  if (corrections.length) {
+    parts.push(`Including similar spellings: ${corrections.map(([raw, tokens]) => `${raw} → ${tokens.join(", ")}`).join("; ")}.`);
+  }
+  if (relaxed) {
+    parts.push(`No record contains all ${query.terms.length} words, so these match most of them.`);
+  }
+  els.searchNote.hidden = parts.length === 0;
+  els.searchNote.textContent = parts.join(" ");
+}
+
 function renderEmpty(total) {
   els.empty.hidden = total !== 0;
   if (total !== 0) return;
@@ -966,7 +1393,7 @@ function renderEmpty(total) {
   } else if (state.query && filters) {
     els.emptyHint.textContent = `No records match “${state.query}” with ${filters} filter${filters > 1 ? "s" : ""} applied. Try removing a filter.`;
   } else if (state.query) {
-    els.emptyHint.textContent = `No records contain “${state.query}”. Try a shorter or more general term — course codes work with or without the space.`;
+    els.emptyHint.textContent = `No records contain “${state.query}”. Try a shorter or broader term, or browse a research field — course codes work with or without the space.`;
   } else {
     els.emptyHint.textContent = "The current filters exclude every record. Remove one to widen the search.";
   }
@@ -979,12 +1406,16 @@ function renderLoadMore() {
 }
 
 function render() {
-  const { records, counts, terms } = computeResults();
+  const result = computeResults();
+  const { records, counts } = result;
   state.results = records;
-  state.highlighter = buildHighlighter(terms);
+  state.resultsQuery = state.query;
+  state.highlighter = buildHighlighter(result.query);
 
   renderHeading(records.length);
+  renderSearchNote(result);
   renderCounts(counts);
+  renderFieldStrip(result.fieldCounts, result.areaCounts);
   renderActiveFilters();
   renderEmpty(records.length);
 
@@ -1000,6 +1431,7 @@ function render() {
     highlightSelectedRow();
   }
   renderSaved();
+  if (document.activeElement === els.query) renderSuggestions();
   writeUrl();
 }
 
@@ -1223,21 +1655,30 @@ function detailLinks(record) {
 function detailOverview(record) {
   const body = record.summary ? make("p", "", record.summary) : note("No public summary was captured for this record.");
   let tags = null;
-  if (record.researchAreas.length) {
+  if (record.fieldIds.length) {
     tags = make("div", "tag-list");
-    for (const area of record.researchAreas.slice(0, 14)) {
-      const tag = make("button", "", area);
+    const covered = new Set(record.subfieldIds.map((id) => TAXONOMY.subfields.get(id).field));
+    for (const id of record.subfieldIds) {
+      const tag = make("button", "", subfieldLabel(id));
       tag.type = "button";
-      tag.dataset.areaFilter = area;
-      tag.title = `Filter by ${area}`;
+      tag.dataset.areaFilter = id;
+      tag.title = `Show all records in ${subfieldLabel(id)}`;
+      tags.append(tag);
+    }
+    for (const id of record.fieldIds.filter((field) => !covered.has(field))) {
+      const tag = make("button", "", fieldLabel(id));
+      tag.type = "button";
+      tag.dataset.fieldFilter = id;
+      tag.title = `Show all records in ${fieldLabel(id)}`;
       tags.append(tag);
     }
   }
   let keywords = null;
-  if (record.researchKeywords?.length) {
+  const terms = uniqueByNormalized([...record.researchAreas, ...(record.researchKeywords || [])]);
+  if (terms.length && record.recordType !== "resource") {
     keywords = make("div", "keyword-list");
-    keywords.append(make("span", "keyword-label", "Profile keywords"));
-    for (const keyword of record.researchKeywords) {
+    keywords.append(make("span", "keyword-label", "Research areas & keywords"));
+    for (const keyword of terms.slice(0, 20)) {
       const button = make("button", "", keyword);
       button.type = "button";
       button.dataset.searchKeyword = keyword;
@@ -1580,6 +2021,151 @@ function renderDetail(record) {
   return root;
 }
 
+/* ---------- Search suggestions ---------- */
+
+const SUGGESTION_GROUPS = [
+  ["topic", "Research fields", 5],
+  ["place", "Schools & departments", 3],
+  ["record", "Top matches", 4],
+];
+
+function buildSuggestionEntries() {
+  const counts = state.facetCounts;
+  const entries = [];
+  for (const field of RESEARCH_FIELDS) {
+    if (counts.fields.get(field.id)) {
+      entries.push({ group: "topic", kind: "field", value: field.id, label: field.label, meta: "All areas", count: counts.fields.get(field.id), keys: [field.label, ...field.aliases] });
+    }
+    for (const sub of field.subfields) {
+      if (!counts.areas.get(sub.id)) continue;
+      entries.push({ group: "topic", kind: "area", value: sub.id, label: sub.label, meta: field.label, count: counts.areas.get(sub.id), keys: [sub.label, ...sub.aliases] });
+    }
+  }
+  for (const [id, count] of counts.divisions) {
+    const division = TAXONOMY.divisions.get(id);
+    entries.push({ group: "place", kind: "division", value: id, label: division.label, meta: "School / division", count, keys: [division.label, ...(division.aliases || [])] });
+  }
+  for (const [name, count] of counts.departments) {
+    const known = TAXONOMY.departments.get(departmentKey(name));
+    entries.push({ group: "place", kind: "department", value: name, label: name, meta: divisionLabel(state.departmentDivision.get(name)), count, keys: [name, ...(known?.aliases || [])] });
+  }
+  return entries.map((entry) => ({ ...entry, keys: unique(entry.keys.map(normalize)) }));
+}
+
+function suggestionScore(entry, q, synonyms) {
+  let best = 0;
+  for (const key of entry.keys) {
+    if (key === q) best = Math.max(best, 10);
+    else if (q.length <= 2 && !CJK_PATTERN.test(q)) best = Math.max(best, ` ${key} `.includes(` ${q} `) ? 6 : 0);
+    else if (key.startsWith(q)) best = Math.max(best, 8);
+    else if (` ${key}`.includes(` ${q}`)) best = Math.max(best, 6);
+    else if (q.length >= 3 && key.includes(q)) best = Math.max(best, 4);
+    else if (CJK_PATTERN.test(q) && key.length > 1 && q.includes(key)) best = Math.max(best, 5);
+    if (synonyms.some((synonym) => ` ${key}`.includes(` ${synonym}`))) best = Math.max(best, 7);
+  }
+  if (!best && /^\p{L}{4,}$/u.test(q)) {
+    const words = entry.keys.flatMap((key) => key.split(" "));
+    if (words.some((word) => editDistance(q, word, 1) <= 1 || editDistance(q, word.slice(0, q.length), 1) <= 1)) best = 3;
+  }
+  return best;
+}
+
+function suggestionOption(entry, index) {
+  const item = make("div", "suggest-item");
+  item.id = `suggest-${index}`;
+  item.setAttribute("role", "option");
+  item.setAttribute("aria-selected", "false");
+  item.dataset.suggestIndex = index;
+  const text = make("span", "suggest-text");
+  text.append(make("span", "suggest-label", entry.label), make("span", "suggest-meta", entry.meta));
+  item.append(text);
+  if (entry.count !== undefined) item.append(make("span", "suggest-count", formatNumber(entry.count)));
+  return item;
+}
+
+function renderSuggestions() {
+  const q = normalize(els.query.value);
+  if (q.length < 2 || !state.suggestionEntries) {
+    closeSuggestions();
+    return;
+  }
+  const synonyms = [...(SEARCH_SYNONYMS[q] || []), ...cjkKeys(q).flatMap((key) => TAXONOMY.cjk[key])].map(normalize);
+  const scored = state.suggestionEntries
+    .map((entry) => [entry, suggestionScore(entry, q, synonyms)])
+    .filter(([, score]) => score > 0)
+    .sort((a, b) => b[1] - a[1] || b[0].count - a[0].count)
+    .map(([entry]) => entry);
+  const records = state.resultsQuery === state.query
+    ? state.results.map((record) => ({
+      group: "record", kind: "record", value: record.id, label: record.displayName,
+      meta: [record.displayKind, record.departments[0]].filter(Boolean).join(" · "),
+    }))
+    : [];
+  const groups = SUGGESTION_GROUPS
+    .map(([key, label, limit]) => [label, (key === "record" ? records : scored.filter((entry) => entry.group === key)).slice(0, limit)])
+    .filter(([, entries]) => entries.length);
+  state.suggestions = groups.flatMap(([, entries]) => entries);
+  state.suggestionIndex = -1;
+  if (!state.suggestions.length) {
+    closeSuggestions();
+    return;
+  }
+  let index = 0;
+  els.suggest.replaceChildren(...groups.flatMap(([label, entries]) => [
+    make("p", "suggest-group", label),
+    ...entries.map((entry) => suggestionOption(entry, index++)),
+  ]));
+  els.suggest.hidden = false;
+  els.query.setAttribute("aria-expanded", "true");
+  els.query.removeAttribute("aria-activedescendant");
+}
+
+function closeSuggestions() {
+  els.suggest.hidden = true;
+  state.suggestionIndex = -1;
+  els.query.setAttribute("aria-expanded", "false");
+  els.query.removeAttribute("aria-activedescendant");
+}
+
+function moveSuggestion(delta) {
+  const total = state.suggestions.length;
+  if (!total) return;
+  state.suggestionIndex = state.suggestionIndex === -1 && delta < 0 ? total - 1 : (state.suggestionIndex + delta + total) % total;
+  els.suggest.querySelectorAll("[role=option]").forEach((item) => {
+    const active = Number(item.dataset.suggestIndex) === state.suggestionIndex;
+    item.setAttribute("aria-selected", String(active));
+    if (active) {
+      els.query.setAttribute("aria-activedescendant", item.id);
+      item.scrollIntoView({ block: "nearest" });
+    }
+  });
+}
+
+// Picking a field or department turns the typed words into a filter, so the query is cleared.
+function chooseSuggestion(entry) {
+  closeSuggestions();
+  if (!entry) return;
+  if (entry.kind === "record") {
+    openDetail(entry.value);
+    return;
+  }
+  state.query = "";
+  if (entry.kind === "field") {
+    state.field = entry.value;
+    state.area = "all";
+  } else if (entry.kind === "area") {
+    setArea(entry.value);
+  } else if (entry.kind === "division") {
+    state.division = entry.value;
+    state.department = "all";
+  } else if (entry.kind === "department") {
+    setDepartment(entry.value);
+  }
+  syncControls();
+  update({ scroll: true });
+  if (DRAWER_QUERY.matches) els.query.blur();
+}
+
 /* ---------- Overlays (filter drawer, detail sheet) ---------- */
 
 let lastFocus = null;
@@ -1670,6 +2256,22 @@ function handleKeydown(event) {
     event.preventDefault();
     focusSearch();
     return;
+  }
+  if (event.target === els.query && !els.suggest.hidden) {
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      moveSuggestion(event.key === "ArrowDown" ? 1 : -1);
+      return;
+    }
+    if (event.key === "Enter" && state.suggestionIndex >= 0) {
+      event.preventDefault();
+      chooseSuggestion(state.suggestions[state.suggestionIndex]);
+      return;
+    }
+    if (event.key === "Escape") {
+      closeSuggestions();
+      return;
+    }
   }
   if (event.key === "Escape") {
     if (els.detailPanel.classList.contains("is-open")) closeSheet();
@@ -1781,10 +2383,14 @@ async function loadData() {
   state.data = data;
   state.records = buildRecords(data, realPortalData);
   state.index = buildIndex(state.records);
+  state.vocabulary = null;
+  fuzzyCache.clear();
   state.byId = makeRecordIndex(state.records);
   state.saved = new Set([...state.saved].map((id) => state.byId.get(id)?.id || id));
+  computeFacetCounts();
+  normalizeTaxonomyState();
+  state.suggestionEntries = buildSuggestionEntries();
 
-  renderFacets();
   syncControls();
   renderStats();
   render();
@@ -1805,6 +2411,7 @@ function bindEvents() {
 
   els.form.addEventListener("submit", (event) => {
     event.preventDefault();
+    closeSuggestions();
     syncStateFromControls();
     update({ scroll: true });
     if (DRAWER_QUERY.matches) els.query.blur();
@@ -1812,16 +2419,38 @@ function bindEvents() {
 
   els.query.addEventListener("input", () => {
     syncStateFromControls();
+    renderSuggestions();
     debouncedUpdate();
   });
+  els.query.addEventListener("focus", renderSuggestions);
+  els.query.addEventListener("blur", closeSuggestions);
+  // Keep focus in the field while an option is clicked, so blur doesn't close the list first.
+  els.suggest.addEventListener("pointerdown", (event) => event.preventDefault());
+  els.suggest.addEventListener("click", (event) => {
+    const item = event.target.closest("[data-suggest-index]");
+    if (item) chooseSuggestion(state.suggestions[Number(item.dataset.suggestIndex)]);
+  });
 
-  for (const control of [els.department, els.area, els.evidence, els.verifiedOnly, els.recruiting, els.sort]) {
+  for (const control of [els.division, els.department, els.field, els.area, els.evidence, els.verifiedOnly, els.recruiting, els.sort]) {
     control.addEventListener("change", () => {
-      syncStateFromControls();
+      syncStateFromControls(control);
       syncControls();
       update({ scroll: true });
     });
   }
+
+  els.fieldStrip.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-strip-field], [data-strip-area]");
+    if (!button) return;
+    if (button.dataset.stripArea) setArea(state.area === button.dataset.stripArea ? "all" : button.dataset.stripArea);
+    else if (button.dataset.stripField === "all") setField("all");
+    else {
+      setField(button.dataset.stripField);
+      state.area = "all";
+    }
+    syncControls();
+    update({ scroll: true });
+  });
 
   els.typeButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -1861,15 +2490,16 @@ function bindEvents() {
 
   // Delegated clicks: row titles, saved list, save toggles, tags, copy buttons.
   document.addEventListener("click", (event) => {
-    const target = event.target.closest("[data-open-id], [data-save-id], [data-area-filter], [data-search-keyword], [data-copy], [data-copy-record-link]");
+    const target = event.target.closest("[data-open-id], [data-save-id], [data-area-filter], [data-field-filter], [data-search-keyword], [data-copy], [data-copy-record-link]");
     if (!target) return;
     if (target.dataset.saveId) {
       toggleSaved(target.dataset.saveId);
     } else if (target.dataset.openId) {
       closeRail();
       openDetail(target.dataset.openId);
-    } else if (target.dataset.areaFilter) {
-      state.area = target.dataset.areaFilter;
+    } else if (target.dataset.areaFilter || target.dataset.fieldFilter) {
+      if (target.dataset.areaFilter) setArea(target.dataset.areaFilter);
+      else setField(target.dataset.fieldFilter);
       syncControls();
       closeSheet();
       update({ scroll: true });
@@ -1890,7 +2520,7 @@ function bindEvents() {
   DRAWER_QUERY.addEventListener("change", resetOverlaysForLayout);
 
   const syncPlaceholder = () => {
-    els.query.placeholder = COMPACT_QUERY.matches ? "Search" : "Search a professor, lab, course, or topic";
+    els.query.placeholder = COMPACT_QUERY.matches ? "Search people, labs, fields" : "Search a professor, lab, course, or field — e.g. machine learning";
   };
   COMPACT_QUERY.addEventListener("change", syncPlaceholder);
   syncPlaceholder();

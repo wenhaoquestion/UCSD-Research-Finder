@@ -66,13 +66,18 @@
           id="query"
           name="query"
           type="search"
-          placeholder="Search a professor, lab, course, or topic"
+          placeholder="Search a professor, lab, course, or field — e.g. machine learning"
           autocomplete="off"
           spellcheck="false"
           enterkeyhint="search"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-controls="suggestions"
+          aria-expanded="false"
         />
         <kbd class="search-kbd" aria-hidden="true">/</kbd>
       </label>
+      <div class="suggest" id="suggestions" role="listbox" aria-label="Search suggestions" hidden></div>
       <div class="searchbar-actions">
         <button class="bar-button" id="filtersButton" type="button" aria-controls="filterRail" aria-expanded="false">
           Filters <span class="bar-count" id="filterCount" hidden>0</span>
@@ -105,13 +110,15 @@
           </fieldset>
 
           <fieldset class="filter-group">
-            <legend>Department</legend>
-            <select id="departmentFilter" aria-label="Department"></select>
+            <legend>Research field</legend>
+            <select id="fieldFilter" aria-label="Research field"></select>
+            <select id="areaFilter" class="sub-select" aria-label="Specific research area"></select>
           </fieldset>
 
           <fieldset class="filter-group">
-            <legend>Research area</legend>
-            <select id="areaFilter" aria-label="Research area"></select>
+            <legend>School &amp; department</legend>
+            <select id="divisionFilter" aria-label="School or division"></select>
+            <select id="departmentFilter" class="sub-select" aria-label="Department"></select>
           </fieldset>
 
           <fieldset class="filter-group">
@@ -185,7 +192,11 @@
           </label>
         </div>
 
+        <div id="fieldStrip" class="field-strip" role="group" aria-label="Browse by research field" hidden></div>
+
         <div id="activeFilters" class="active-filters" aria-label="Active filters" hidden></div>
+
+        <p id="searchNote" class="search-note" aria-live="polite" hidden></p>
 
         <ol id="results" class="result-list" aria-busy="true">
           <li class="row-skeleton" aria-hidden="true"></li>
@@ -233,6 +244,7 @@
       <p>Public pages only. Set in Inter.<br />Built for UC San Diego students.</p>
     </footer>
 
+    <script src="assets/taxonomy.js" defer></script>
     <script src="assets/app.js" defer></script>
   </body>
 </html>

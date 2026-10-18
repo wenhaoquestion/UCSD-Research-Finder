@@ -12,7 +12,9 @@ const context = vm.createContext({
   fetch: () => new Promise(() => {}),
   URL,
 });
-vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/app.js'), 'utf8'), context);
+for (const file of ['../assets/taxonomy.js', '../assets/app.js']) {
+  vm.runInContext(fs.readFileSync(path.join(__dirname, file), 'utf8'), context);
+}
 const evaluate = expression => vm.runInContext(expression, context);
 
 assert.equal(evaluate('buildRecords({professors:[{id:"one",name:"One Professor",email:"department@ucsd.edu"},{id:"two",name:"Another Professor",email:"department@ucsd.edu"}]}).length'), 2,
@@ -84,4 +86,32 @@ context.ownershipLab.unverifiedFields = [];
 assert.equal(evaluate('JSON.stringify(detailFields(ownershipLab))').includes('Earlier PI label (unverified)'),false,
   'an independently verified PI is not relabeled by an institution-only review');
 
-console.log('PASS: person and lab identity, field verification, missing scores, and course-code indexing');
+
+// Departments: variant names collapse to one entry inside a broad school/division.
+assert.equal(evaluate('resolveDepartment("Department of Physics").name'), 'Physics');
+assert.equal(evaluate('resolveDepartment("Electrical and Computer Engineering (ECE)").division'), 'engineering');
+assert.equal(evaluate('resolveDepartment("Halicioglu Data Science Institute (HDSI)").name'), 'Halicioğlu Data Science Institute');
+assert.equal(evaluate('resolveDepartment("Student Health and Well-Being", "campus").division'), 'campus',
+  'campus services are not filed under Medicine because their name says health');
+assert.equal(evaluate('resolveDepartment("Psychiatry").division'), 'health');
+
+// Research fields: raw area strings are cleaned and classified into broad + detailed fields.
+assert.equal(evaluate('JSON.stringify(cleanAreas(["Physical Chemistry|Materials Chemistry", "Biochemistry|BB", "International Economics,"]))'),
+  JSON.stringify(['Physical Chemistry', 'Materials Chemistry', 'Biochemistry', 'International Economics']));
+assert(evaluate('subfieldsForText("deep learning for robot navigation").includes("ml")'));
+assert(evaluate('subfieldsForText("deep learning for robot navigation").includes("robotics")'));
+assert.equal(evaluate('subfieldsForText("laboratory techniques").includes("economics")'), false, '"labor" must not match "laboratory"');
+assert.equal(evaluate('subfieldsForText("macrophages in tumor surveillance").includes("economics")'), false, '"macro" must not match "macrophages"');
+assert.equal(evaluate('subfieldsForText("thin films for neural circuits").includes("arts")'), false, 'thin films are not cinema');
+assert.equal(evaluate('classifyRecord({ departments: ["Psychiatry"], researchAreas: [], summary: "" }).fieldIds.join()'), 'health',
+  'a department alone still places a record in its broad field');
+
+// Search: typos, abbreviations and Chinese field names.
+assert.equal(evaluate('editDistance("nueroscience", "neuroscience", 2)'), 1, 'a transposition is one edit');
+assert(evaluate('compileQuery("ml").terms[0].alts.includes("machine learning")'));
+assert(evaluate('compileQuery("机器学习").terms[0].alts.includes("machine learning")'));
+assert.equal(evaluate('compileQuery("机器学习实验室").terms.length'), 2, 'known Chinese words become separate required terms');
+assert.equal(evaluate('textHas(" email maintained", "ai")'), false, 'short terms match at word starts only');
+assert.equal(evaluate('textHas(" ai safety", "ai")'), true);
+
+console.log('PASS: person and lab identity, field verification, missing scores, course-code indexing, taxonomy, and fuzzy search');
